@@ -1,6 +1,6 @@
 ---
 name: hr-corporate-income-tax
-description: "Use this skill for Croatian profit tax (porez na dobit) in tax year 2026 under the Profit Tax Act in force from 1 January 2026 (last amended NN 151/25) and the Profit Tax Rulebook. It covers who pays and residence (art. 2 and 3), the 10% and 18% rates split at EUR 1,000,000 of revenue in the period (art. 28), the base and the main add-backs (50% of representation and of passenger car costs, fines, gifts above 2%), depreciation rates and the car cap, bad debts, provisions, losses carried forward for 5 years, thin capitalisation (art. 8) and the 30% EBITDA interest limit (art. 30.a), monthly advances, the PD return due 30 April, and fines. Trigger on: Croatia corporate tax, porez na dobit 2026, PD obrazac, d.o.o. tax Croatia, predujam poreza na dobit, 10% or 18% profit tax. Out of scope: transfer pricing (hr-transfer-pricing), withholding and treaties in depth (cross-border skill), VAT (croatia-vat-return), individuals (croatia-income-tax)."
+description: "Use this skill for Croatian profit tax (porez na dobit) in tax year 2026 under the Profit Tax Act in force from 1 January 2026 (last amended NN 151/25) and the Profit Tax Rulebook. It covers who pays and residence (art. 2 and 3), the 10% and 18% rates split at EUR 1,000,000 of revenue in the period (art. 28), the base and the main add-backs (50% of representation and of passenger car costs, fines, donations above 2%), depreciation rates and the car cap, bad debts, provisions, losses carried forward for 5 years, thin capitalisation (art. 8) and the 30% EBITDA interest limit (art. 30.a), monthly advances, the PD return due 30 April, and fines. Trigger on: Croatia corporate tax, porez na dobit 2026, PD obrazac, d.o.o. tax Croatia, predujam poreza na dobit, 10% or 18% profit tax. Out of scope: transfer pricing (hr-transfer-pricing), withholding and treaties in depth (cross-border skill), VAT (croatia-vat-return), individuals (croatia-income-tax)."
 jurisdiction: HR
 category: international
 tax_year: 2026
@@ -36,7 +36,7 @@ The law is the Profit Tax Act (Zakon o porezu na dobit, "ZPD", consolidated text
 
 **Residence (ZPD art. 3).** A person is resident if its seat is entered in a Croatian court or other register, or its place of effective management and supervision is in Croatia. A resident is taxed on profit made in Croatia and abroad. A non-resident is taxed only on profit made in Croatia (art. 5(2) and (3)).
 
-**Out of this skill.** Transfer pricing, withholding tax in depth, treaties, tonnage tax, CFC rules (ZPD art. 30.b and 30.c) and the investment-promotion and assisted-area reliefs. They are flagged, not computed.
+**Out of this skill.** Transfer pricing, withholding tax in depth, treaties, tonnage tax, CFC rules (ZPD art. 30.b and 30.c) and the Investment Promotion Act and Tourism Act reliefs. They are flagged, not computed. The assisted-area relief is summarised under "Tax due" but not computed.
 
 ## Rates, bands and thresholds
 
@@ -65,7 +65,7 @@ The law is the Profit Tax Act (Zakon o porezu na dobit, "ZPD", consolidated text
 | Thin capitalisation: shareholder holding | at least 25% of shares, capital or votes | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 8(1)) |
 | Thin capitalisation: loans above which interest is not deductible | 4 times the shareholder's share of capital | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 8(1) and (3)) |
 | Interest limitation on exceeding borrowing costs | 30% of tax EBITDA or EUR 3,000,000, whichever is higher; excess carried forward 3 periods | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 30.a(1) and (9)) |
-| Advances | prior period liability divided by its months, paid monthly by the end of the next month | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 34(1)) |
+| Advances | prior period liability divided by its months, paid monthly by the end of the next month; the new amount is fixed on the last day of the filing deadline | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 34(1)); https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro23 (Rulebook art. 48(1)) |
 | PD return and payment | 4 months after period end: 30 April 2027 for calendar 2026 | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 35(1) and (2)) |
 | Withholding tax: interest, royalties (to non-individuals) | 15% | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 31(4) and (6)) |
 | Withholding tax: dividends and profit shares; foreign performers paid through a company | 10% | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 (ZPD art. 31(7) and (10)) |
@@ -121,17 +121,17 @@ Where income tax is paid on the item as a benefit to a person, the add-back does
 - A standalone taxpayer (no accounting consolidation group, no related person, no permanent establishment, no loans to or from its members) and financial undertakings are outside the rule (art. 30.a(5) and (6)).
 - Amounts already added back under art. 8 or art. 14 reduce the art. 30.a add-back (art. 30.a(11)). The disallowed excess is carried forward for 3 periods (art. 30.a(9)). The add-back goes on PD line 12.
 
-**Tax due.** The base after losses (PD line 38) times the rate (line 43) gives the liability (line 44). Reliefs for assisted areas, Vukovar and the Investment Promotion and Tourism Acts reduce it (lines 45 to 52). The foreign tax credit (line 54; ZPD art. 30) and advances paid (line 56) come off to give the balance due or refundable (Rulebook art. 47(3)).
+**Tax due.** The base after losses (PD line 38) times the rate (line 43) gives the liability (line 44). Reliefs for assisted areas, Vukovar and the Investment Promotion and Tourism Acts reduce it (lines 45 to 52). A taxpayer working in the City of Vukovar pays no profit tax, and one working in a local unit in development group I pays half the rate, if it employs more than 5 people on open-ended contracts and more than 50% of them live in group I areas or Vukovar; the relief counts as de minimis aid (ZPD art. 28.a(1) to (3); Rulebook art. 47(3), lines 46 and 47). The foreign tax credit (line 54; ZPD art. 30) and advances paid (line 56) come off to give the balance due or refundable (Rulebook art. 47(3)).
 
 ## Deadlines and filing
 
 - **Registration.** A company enters the register of taxpayers kept by the Tax Administration when it registers its business. A public body or association that starts a taxable activity must register within 8 days (ZPD art. 2(7)).
-- **Advances.** Paid monthly, by the end of the month for the month before, at the prior period's liability divided by the number of months in that period (ZPD art. 34(1)). A new business pays no advances until its first return (art. 34(3)). The Tax Administration may change the amount by decision, on request or after an audit (art. 34(2)).
+- **Advances.** Paid monthly, by the end of the month for the month before, at the prior period's liability divided by the number of months in that period (ZPD art. 34(1)). The advance from a return is fixed on the last day of the deadline for filing that return, 30 April for a calendar year (Rulebook art. 48(1)); until then the advance from the earlier return applies. A new business pays no advances until its first return (art. 34(3)). The Tax Administration may change the amount by decision, on request or after an audit; the decision binds until the next return (art. 34(2); Rulebook art. 48(2)). Taxpayers in bankruptcy or liquidation pay no advances (Rulebook art. 48(7)).
 - **PD return (Prijava poreza na dobit).** Filed within 4 months after the period ends: by **30 April 2027** for calendar 2026 (ZPD art. 35(1)). The tax shown is due on the last day of that deadline (art. 35(2); art. 32(2) as amended by NN 151/25). Cash-basis taxpayers file form PD-NN instead (Rulebook art. 46(1)).
 - **Electronic filing for everyone.** From 2026 every taxpayer must file the PD return electronically through e-Porezna. NN 151/25 deleted the words that limited this duty to large and medium-sized businesses (ZPD art. 35(3); Rulebook art. 46(3)).
 - **Attachments.** The balance sheet and profit and loss account go with the return; those already filed with FINA on time count as filed (ZPD art. 35(6); Rulebook art. 46(5)). Depending on the facts, also: the related-party form PD-IPO (see [hr-transfer-pricing](hr-transfer-pricing.md)), the CFC report, the relief calculations and the art. 30.a schedule (Rulebook art. 39.a(3), art. 46(2)).
 - **Overpaid advances** are refunded on request or set against the next period (ZPD art. 35(5)).
-- **Short periods.** On bankruptcy, merger or division the return is due within 30 days after the period ends; at the end of liquidation or on closing without liquidation, within 8 days (art. 35(7)). Liquidation and closure must be announced to the Tax Administration 30 days before the formal steps (art. 29(4)).
+- **Short periods.** On a merger or division, or when liquidation or bankruptcy opens, the return is due within 30 days after the period ends; at the end of liquidation or on closing without liquidation, within 8 days (art. 35(7)). Moving the seat abroad, a merger or division, the end of liquidation and a closure must be announced to the Tax Administration 30 days before the formal steps (art. 29(3) and (4)).
 - **No return filed.** The Tax Administration assesses the tax by estimate, using earlier periods' revenue, liabilities, assets and bank balances (art. 35(8)).
 
 ## Penalties and interest
@@ -152,7 +152,7 @@ Where income tax is paid on the item as a benefit to a person, the add-back does
 
 ### Example 1: small d.o.o. at 10% with add-backs and a loss
 
-A Croatian d.o.o. has 2026 revenue of EUR 600,000 and accounting profit of EUR 80,000. Its books show EUR 4,000 of representation (client lunches and gifts), EUR 6,000 of fuel, servicing and depreciation on the director's car with no salary benefit assessed, and a EUR 500 traffic fine. It has a EUR 10,000 tax loss from 2023. Its 2025 tax was EUR 6,000, so it paid advances of EUR 500 a month in 2026.
+A Croatian d.o.o. has 2026 revenue of EUR 600,000 and accounting profit of EUR 80,000. Its books show EUR 4,000 of representation (client lunches and gifts), EUR 6,000 of fuel, servicing and depreciation on the director's car with no salary benefit assessed, and a EUR 500 traffic fine. It has a EUR 10,000 tax loss from 2023. Its 2024 and 2025 returns each showed tax of EUR 6,000, so every 2026 advance was EUR 500 (ZPD art. 34(1); Rulebook art. 48(1)).
 
 1. Representation add-back: 50% of EUR 4,000 = EUR 2,000 (ZPD art. 7(1)(3); PD line 6).
 2. Car add-back: 50% of EUR 6,000 = EUR 3,000 (art. 7(1)(4); line 7). No insurance or interest is in the EUR 6,000.
@@ -160,7 +160,7 @@ A Croatian d.o.o. has 2026 revenue of EUR 600,000 and accounting profit of EUR 8
 4. Base before losses: EUR 80,000 + 2,000 + 3,000 + 500 = EUR 85,500. Less the 2023 loss, still inside 5 years: EUR 75,500 (art. 17(2)).
 5. Revenue is up to EUR 1,000,000, so the rate is 10% (art. 28). Tax: EUR 7,550.
 6. Advances paid: 12 x EUR 500 = EUR 6,000. Balance due by 30 April 2027: EUR 1,550 (art. 35(2) and (4)).
-7. New monthly advance from the 2026 return: EUR 7,550 / 12 = EUR 629.17 (art. 34(1)).
+7. New monthly advance from the 2026 return: EUR 7,550 / 12 = EUR 629.17 (art. 34(1); PD line 59), fixed on 30 April 2027 (Rulebook art. 48(1)).
 
 ```oa-check
 name: Croatian d.o.o., revenue EUR 600,000, profit EUR 80,000, 2023 loss EUR 10,000 (2026, 10% rate)
@@ -248,7 +248,8 @@ expected:
 |---|---|---|
 | Zakon o porezu na dobit, consolidated text in force from 1 January 2026 (NN 177/04 to 151/25), arts. 2, 3, 5, 5.a, 6, 7, 7.a, 8, 9, 10, 11, 12, 17, 28, 29, 30, 30.a, 31, 32, 34, 35, 38 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 | 2026-10-23 |
 | Zakon o izmjenama i dopunama Zakona o porezu na dobit, NN 151/2025 (2026 changes: funds, sponsorship, art. 30, art. 32, e-filing for all) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2261.html | 2026-10-23 |
-| Pravilnik o porezu na dobit, consolidated text (NN 95/05 to 39/26), arts. 23, 25, 32, 38, 39.a, 46, 47 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro23 | 2026-10-23 |
+| Pravilnik o porezu na dobit, consolidated text in force from 16 April 2026 (NN 95/05 to 39/26), arts. 23, 25, 32, 38, 39.a, 46, 47, 48 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro23 | 2026-10-23 |
 | Opći porezni zakon, consolidated text in force from 1 January 2026 (NN 115/16 to 151/25), arts. 130, 193 | https://porezna-uprava.gov.hr/Propisi | 2026-10-23 |
+| Zakon o kamatama (NN 94/04) and Uredba o visini stope zatezne kamate (NN 153/04), in the Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
-Not yet confirmed: the late payment interest rate on tax debts for 2026 (OPZ art. 130(1) points to a separate law that was not read); which return's advance applies in the months before the new return is filed, where the Tax Administration has issued no decision (art. 34 read alone does not say); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the assisted-area, Vukovar, Investment Promotion Act and Tourism Act reliefs, which this skill only flags.
+Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags.

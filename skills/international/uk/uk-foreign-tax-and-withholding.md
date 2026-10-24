@@ -1,13 +1,16 @@
 ---
 name: uk-foreign-tax-and-withholding
 description: "Two cross-border methods for the UK for tax year 2026/27 and company periods in 2026. First, foreign tax credit relief for UK residents, individuals and companies: the TIOPA 2010 credit, the limit to UK tax on the same income source by source, unilateral relief, the treaty cap, deduction instead of credit and SA106 with HS263. Second, UK withholding on outbound payments: 20% on yearly interest and on royalties, no withholding on ordinary dividends, 20% on REIT property income distributions, relief at source through DT-Company, DT-Individual and the treaty passport scheme, CT61 quarterly returns, and a treaty rate table for 12 partners. Trigger phrases: foreign tax credit relief, FTCR, double tax relief, SA106, HS263, withholding tax on interest, royalty withholding UK, CT61, DTTP2, DT-Company, treaty rate. Out of scope: non-residents with UK income (uk-non-resident-sa109), FIG regime (uk-non-dom), dividend tax computation (uk-dividends), corporation tax (uk-corporation-tax)."
-jurisdiction: GB
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: GB
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # UK foreign tax credit relief and withholding on outbound payments v0.2
@@ -328,3 +331,23 @@ expected:
 | Synthesised MLI texts (Ireland, France, Netherlands, Spain, India, China, Japan), example: UK-India | https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force | 2026-10-23 |
 
 Not yet confirmed: whether SI 2006/2867 itself has been amended so that UK-REITs deduct at 22% from 6 April 2027 (ITA s.974 now permits it; the regulations were not read); the 2026/27 (SA106 2027) form and box numbers, not yet published; whether a given loan carries "yearly" interest, which the Act does not define.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

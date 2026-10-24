@@ -1,14 +1,15 @@
 ---
 name: cz-corporate-income-tax
 description: "Use this skill for Czech corporate income tax (daň z příjmů právnických osob, DPPO) in tax year 2026. It covers who is a taxpayer and who is resident (Income Taxes Act § 17), the 21% rate and the 5%, 0% and 15% special rates (§ 21), the tax base and the main non-deductible costs (§§ 23 to 25), tax depreciation (§§ 26 to 33), losses (back 2 years, forward 5, § 34), the participation exemption (§ 19), the limit on exceeding borrowing costs (30% of tax EBITDA or CZK 80 million, § 23e), advances (§ 38a), return and payment deadlines for 2026, penalties and late payment interest. Trigger on: Czech corporate tax, DPPO, s.r.o. tax, daňové přiznání právnických osob, zálohy na daň, daňové odpisy, daňová ztráta, úroky 23e. Out of scope: transfer pricing and thin capitalisation (cz-transfer-pricing), withholding on payments abroad and exit tax (cz-cross-border), VAT (cz-vat-return), top-up tax for large groups."
-jurisdiction: CZ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CZ
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Czech Republic: corporate income tax (2026) v0.1
@@ -261,3 +262,23 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the Financial Administration had not published the filing dates for 2026 corporate returns, so 1 April, 3 May and 1 July 2027 are counted from TC §§ 33(4) and 136 in the same way as cz-income-tax; the full conditions of the investment incentive credit (§ 35a, § 35b) and the R&D deduction (§ 34(4) and § 34a onwards) were not read here.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

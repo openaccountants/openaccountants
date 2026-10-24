@@ -1,14 +1,15 @@
 ---
 name: sk-cross-border
 description: "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% on dividends to individuals and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
-jurisdiction: SK
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: SK
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovakia: cross-border income tax (2026)
@@ -266,3 +267,23 @@ expected:
 | Financial Directorate, list of Slovak tax treaties in force (1/MZ/2022/IM, as at 1 Jan 2022; shows the Russia treaty) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |
 
 Not yet confirmed: treaty withholding rates for individual states; the subsistence minimum (životné minimum) at 1 January 2026, so the 2026 individual bands are given here as multiples only; the ECB base rate used for interest and fines on a given date; the text of a later version of Act No. 595/2003 in force from 31 December 2026 (Act No. 406/2025 Coll.), which is not covered here.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

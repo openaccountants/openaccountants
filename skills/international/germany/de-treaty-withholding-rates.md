@@ -1,13 +1,16 @@
 ---
 name: de-treaty-withholding-rates
 description: "Use this skill when a German company, bank or licensee pays dividends, interest or royalties to a person outside Germany, tax year 2026. Covers the domestic withholding (Kapitalertragsteuer 25% plus 5.5% solidarity surcharge, 26.375% in all; § 50a 15% on royalties), the treaty limits for Germany's main partners (Austria, Switzerland, Netherlands, France, Italy, Spain, UK, Ireland, Luxembourg, US, Poland, Czech Republic) read from the treaty texts, the exemption certificate and refund at the BZSt (§ 50c EStG), the EU Parent-Subsidiary exemption (§ 43b), the Interest and Royalties exemption (§ 50g), the two-fifths refund for foreign companies (§ 44a(9)) and the anti-treaty-shopping rule (§ 50d(3)). Trigger on: Quellensteuer Deutschland, Kapitalertragsteuer Erstattung, Freistellungsbescheinigung, § 50c, § 43b, § 50g, § 50d Abs. 3, DBA Quellensteuersatz, German withholding tax rate treaty. Out of scope: assessing non-residents (de-non-resident-tax), foreign tax on a German resident's income (de-capital-gains), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-jurisdiction: DE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: DE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026
@@ -244,3 +247,23 @@ expected:
 The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.
 
 Not yet confirmed: whether the BZSt in practice applies the Italian, US and Czech limits to tax and surcharge together (those treaties do not name supplements; the refund formula assumes they do); the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the BZSt table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

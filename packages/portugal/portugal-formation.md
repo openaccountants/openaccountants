@@ -4,11 +4,9 @@ description: "Utilize esta skill sempre que lhe perguntarem sobre constituição
 version: 1.0
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
-source_checked: 2026-10-17
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - company-formation-workflow-base
 category: formation
@@ -20,11 +18,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Portugal — Constituição de Empresa e Selecção de Entidade — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
+Source-cited draft: not reviewed by an accountant.
 
 ### Constituição de Empresa
 
@@ -228,6 +224,8 @@ A Empresa na Hora é um dos processos de constituição de empresas mais rápido
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento jurídico, fiscal ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de qualquer actuação.
 
 A versão mais actualizada e verificada desta skill encontra-se em [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

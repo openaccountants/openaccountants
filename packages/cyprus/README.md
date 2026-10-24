@@ -7,14 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `cy-non-dom.md`
-4. `cyprus-income-tax.md`
-5. `cyprus-payroll.md`
-6. `cyprus-social-contributions.md`
-7. `cyprus-tax-optimization.md`
-8. `cyprus-vat-return.md`
-9. `eu-vat-directive.md`
-10. `payroll-workflow-base.md`
+3. `README.md`
+4. `cy-corporate-tax.md`
+5. `cy-cross-border.md`
+6. `cy-non-dom.md`
+7. `cy-transfer-pricing.md`
+8. `cyprus-income-tax.md`
+9. `cyprus-payroll.md`
+10. `cyprus-social-contributions.md`
+11. `cyprus-tax-optimization.md`
+12. `cyprus-vat-return.md`
+13. `eu-vat-directive.md`
+14. `payroll-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

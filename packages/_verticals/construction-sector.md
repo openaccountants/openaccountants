@@ -1,10 +1,10 @@
 ---
 name: construction-sector
 description: "Use this skill whenever a construction contractor, subcontractor, developer, or design-build firm asks about sector-specific tax / accounting. Trigger on phrases like \"construction industry scheme\", \"CIS\", \"CIS deduction\", \"reverse charge construction VAT\", \"domestic reverse charge construction services\", \"developer's relief\", \"long-term contract\", \"percentage of completion\", \"completed contract\", \"ASC 606 construction\", \"uninstalled materials\", \"retention\", \"subcontractor 1099\", \"USDOL prevailing wage\", \"Davis-Bacon\", \"construction VAT zero-rate new residential\", or any construction-sector tax question. Covers UK Construction Industry Scheme (CIS), UK domestic reverse charge VAT for construction services (effective 1 March 2021), US construction tax (long-term contracts under IRC §460; percentage-of-completion-capitalisable; small contractor exception), EU developer reliefs and new-build zero/reduced VAT rates, retentions and progress billing accounting. Does NOT cover: construction safety regulation, building permit procedures, or technical engineering standards."
-version: 0.1
+version: 0.2
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -113,6 +113,67 @@ Small contractor may use Completed Contract Method (CCM) or Cash method for shor
 
 - **Progress billing treatment** — Issue progress invoice based on completion; Recognise revenue on % completion (not invoice timing); Variance between billed amount and earned revenue → contract asset (earned > billed) or contract liability (billed > earned)  _([T1])_
 
+### 5.3 Australian worked WIP review: cost-to-cost
+
+Apply this example only after a reviewer establishes the contract, performance obligations,
+over-time recognition criteria and a cost input method that faithfully depicts progress under
+AASB 15. It is a financial reporting workpaper, not an Australian income-tax calculation. Identify
+the reporting period, currency, contract version, approved modifications, variable consideration
+assessment, costs to date, estimate to complete, prior recognised revenue and cumulative billings.
+Missing estimates or an unassessed recognition basis leave the calculation incomplete.
+
+**Fabricated case, AUD, cumulative at the reporting date:** one contract and one performance
+obligation qualify for over-time recognition. The transaction price is $1,000,000. A separate
+$100,000 unapproved variation is excluded in full on the reviewer's supplied enforceability and
+variable-consideration assessment; no automatic percentage of an unapproved claim is included.
+Costs incurred are $320,000, including $20,000 of abnormal wasted material that does not depict
+progress and was not reflected in the contract price. The remaining eligible costs to complete
+are $300,000. Assume there are no receipts, advances or other contract balances beyond those
+described below. There are no uninstalled materials, capitalised contract costs or other adjustments
+in this example. All incurred costs are expensed here.
+
+| Calculation | Working | Result |
+| --- | --- | --- |
+| Eligible costs incurred | $320,000 less $20,000 abnormal waste | $300,000 |
+| Eligible total costs | $300,000 incurred plus $300,000 to complete | $600,000 |
+| Progress | $300,000 / $600,000 | 50% |
+| Cumulative revenue | $1,000,000 x 50% | $500,000 |
+| Current-period revenue, if prior cumulative revenue was $450,000 | $500,000 less $450,000 | $50,000 |
+| Cumulative margin under the stated expense assumption | $500,000 less $320,000 | $180,000 |
+| Forecast total margin, including abnormal waste | $1,000,000 less ($320,000 + $300,000) | $380,000 |
+| Margin fade from a prior forecast of $400,000 | $380,000 less $400,000 | $20,000 decrease |
+
+Assume cumulative billings of $450,000 are unconditional receivables and the remaining earned
+consideration is conditional on further performance. The unbilled contract asset is $50,000;
+any unpaid billed receivable is presented separately. If the otherwise identical contract had
+billings of $600,000, it would instead have a $100,000 contract liability. Apply the presentation
+assessment at the contract level, including any required contract combination; do not offset an
+asset on one unrelated contract against a liability on another.
+
+**Reviewer controls and acceptance cases:**
+
+- Removing the abnormal waste from progress does not erase the expense or improve the forecast
+  margin. Including it in both progress numerator and denominator would give $320,000 / $620,000
+  and would not depict progress on the stated facts.
+- Do not treat every uninstalled-material cost as zero revenue. AASB 15 B19(b) can require revenue
+  equal to the cost of transferred goods when its conditions are met. Assess control, procurement
+  and the relevant conditions separately before adjusting progress and revenue.
+- An unsupported estimate to complete, missing prior cumulative revenue or unresolved variation
+  assessment must remain visible. Do not default missing costs to zero or call the margin verified.
+- Reconcile contract revenue, billings, assets/liabilities and incurred costs to the ledger. Explain
+  changes in estimate and assess loss-making contracts under applicable requirements separately;
+  this example does not calculate an onerous-contract provision or tax adjustment.
+
+Primary authority: [AASB 15, December 2022 compilation](https://standards.aasb.gov.au/aasb-15-dec-2022),
+paragraphs 18-19 and 22-35 (modifications and performance obligations), 39-45 and B18-B19
+(progress), 50-59 (variable consideration), 98(b) (waste) and 105-109 (presentation). Check the
+[AASB standards index](https://standards.aasb.gov.au/accounting-standards) for the compilation and
+amendments applicable to the reporting period. As checked on 21 October 2026, the December 2022
+compilation must be read with amendments applicable from 1 July 2026;
+[AASB 2022-9, paragraph 18](https://www.legislation.gov.au/F2023L00015/asmade/2023-01-04/text/original/pdf)
+deletes Aus5.3, the public-sector-insurance exception, without changing this example's provisions.
+The amounts above are fabricated arithmetic, not statutory thresholds.
+
 ## Section 6 — Subcontractor classification
 
 - **Employment vs self-employed status** — material in construction: US: §530 relief; misclassification penalties; specific Department of Labor (Davis-Bacon) prevailing wage requirements on federal contracts; UK: IR35 test for personal service companies; off-payroll worker rules; Many jurisdictions: "deemed employment" tests for construction subcontractors  _([T1])_
@@ -149,6 +210,8 @@ Small contractor may use Completed Contract Method (CCM) or Cash method for shor
 ## Section 9 — Disclaimer
 
 Construction sector taxation is highly fact-specific. Outputs must be reviewed by credentialed construction sector practitioners. The most up-to-date version is at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

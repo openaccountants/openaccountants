@@ -1,13 +1,13 @@
 ---
 name: belgium-crypto-tax
-description: "Use this skill whenever asked about Belgium cryptocurrency or digital asset taxation. Trigger on phrases like \"crypto tax Belgium\", \"Bitcoin Belgium\", \"cryptocurrency gains Belgium\", \"crypto income Belgium\", \"staking Belgium\", \"mining income Belgium\", \"NFT tax Belgium\", \"goede huisvader crypto\", \"bon père de famille crypto\", \"speculative income Belgium\", \"miscellaneous income Belgium\", \"divers inkomen crypto\", \"revenus divers crypto\", \"professional income crypto Belgium\", \"Ruling Commission crypto\", \"Service des Décisions Anticipées crypto\", \"SDA crypto\", \"Belgian crypto audit\", or any question about the income tax, capital gains, or reporting treatment of cryptocurrency, tokens, or digital assets for Belgian tax residents. Covers the three-tier classification system (normal management / speculative / professional), SDA ruling criteria, the 25% wealth threshold, and the upcoming 2026 capital gains regime. ALWAYS read this skill before touching any Belgium crypto work."
+description: "Use this skill whenever asked about Belgium cryptocurrency or digital asset taxation. Trigger on phrases like \"crypto tax Belgium\", \"Bitcoin Belgium\", \"cryptocurrency gains Belgium\", \"crypto income Belgium\", \"staking Belgium\", \"mining income Belgium\", \"NFT tax Belgium\", \"goede huisvader crypto\", \"bon père de famille crypto\", \"speculative income Belgium\", \"miscellaneous income Belgium\", \"divers inkomen crypto\", \"revenus divers crypto\", \"professional income crypto Belgium\", \"Ruling Commission crypto\", \"Service des Décisions Anticipées crypto\", \"SDA crypto\", \"Belgian crypto audit\", or any question about the income tax, capital gains, or reporting treatment of cryptocurrency, tokens, or digital assets for Belgian tax residents. Covers the three-tier classification system (normal management / speculative / professional), SDA ruling criteria, the 25% wealth threshold, and the 10% capital gains regime in force from 1 January 2026. ALWAYS read this skill before touching any Belgium crypto work"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/belgium-crypto-tax"
   jurisdiction: "BE"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -32,7 +32,7 @@ metadata:
 | Filing portal | MyMinfin (Tax-on-web) |
 | Filing deadline | Typically late June–mid July of the following year (varies; paper earlier) |
 | EU reporting | DAC8 / CARF — exchanges report from 2026 |
-| Three-tier system | (1) Tax-free (normal management); (2) 33% + municipal surcharge (speculative); (3) Progressive 25%–50% + social security (professional) |
+| Three-tier system | (1) Normal management: tax-free for gains to 31 December 2025; from 1 January 2026 taxed at 10% with the EUR 10,000 exemption and the 31 December 2025 value step-up (see be-capital-gains); (2) 33% + municipal surcharge (speculative); (3) Progressive 25%–50% + social security (professional) |
 | 2026 change | New 10% capital gains tax on crypto from 1 Jan 2026 for normal management gains (EUR 10,000 annual exemption) |
 | Validated by | Pending — requires sign-off by a Belgian belastingconsulent / conseil fiscal |
 | Skill version | 1.0 |
@@ -43,7 +43,7 @@ metadata:
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown whether normal management or speculative | Treat as speculative (taxable at 33%) |
+| Unknown whether normal management or speculative | Gains from 1 January 2026: report under the 10% regime. The return is presumed correct and the administration must prove speculation or abnormal management (Circular 2026/C/74, no. 192). Gains to 31 December 2025: treat as speculative (taxable at 33%) |
 | Unknown whether speculative or professional | Treat as professional (progressive rates) |
 | Unknown cost basis | STOP — cannot compute gain without acquisition cost |
 | Unknown residency status | STOP — determines worldwide taxation |
@@ -70,7 +70,7 @@ The Dienst Voorafgaande Beslissingen (DVB/SDA) uses a detailed questionnaire to 
 
 **Classification Factors table**
 
-| Factor | Normal Management (Tax-Free) | Speculative (33%) | Professional (25–50%) |
+| Factor | Normal Management (tax-free to 31 Dec 2025; 10% from 1 Jan 2026) | Speculative (33%) | Professional (25–50%) |
 | --- | --- | --- | --- |
 | Crypto as % of movable wealth | < 25% (SDA informal threshold) | > 25% | High and systematic |
 | Transaction frequency | Low; buy-and-hold | High volume trading | Very high; daily trading |
@@ -107,20 +107,20 @@ Citation: Loi du 24 décembre 2002 / Wet van 24 december 2002 (DVB/SDA organic l
 
 ## Section 3 -- Rate Tables
 
-### 3.1 Tax Rates by Classification (Income Year 2025)
+### 3.1 Tax Rates by Classification (Income Year 2026)
 
-**Tax Rates by Classification table**  _(Art. 130–145 WIB 92; Art. 171 WIB 92; FOD Financiën "Belastingtarieven — Inkomstenjaar 2025 (Aanslagjaar 2026)")_
+**Tax Rates by Classification table**  _([Art. 130 WIB 92, income 2026](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96); Art. 171 WIB 92)_
 
 | Classification | Federal Rate | Municipal Surcharge | Effective Rate | Social Security |
 | --- | --- | --- | --- | --- |
-| Normal management | 0% | N/A | **0%** | No |
+| Normal management | 0% on gains to 31 December 2025; 10% on gains from 1 January 2026 after the EUR 10,000 exemption (see be-capital-gains) | No | **0% / 10%** | No |
 | Speculative (miscellaneous income) | 33% | ~7–8% of federal tax | **~35.4–35.6%** | No |
-| Professional income bracket 1 | 25% on 0–€16,320 | ~7–8% | ~26.8–27.0% | Yes (~20.5% self-employed) |
-| Professional income bracket 2 | 40% on €16,320–€28,800 | ~7–8% | ~42.8–43.2% | Yes |
-| Professional income bracket 3 | 45% on €28,800–€49,840 | ~7–8% | ~48.2–48.6% | Yes |
-| Professional income bracket 4 | 50% on €49,840+ | ~7–8% | ~53.5–54.0% | Yes |
+| Professional income bracket 1 | 25% on 0–€16,720 | ~7–8% | ~26.8–27.0% | Yes (~20.5% self-employed) |
+| Professional income bracket 2 | 40% on €16,720–€29,510 | ~7–8% | ~42.8–43.2% | Yes |
+| Professional income bracket 3 | 45% on €29,510–€51,070 | ~7–8% | ~48.2–48.6% | Yes |
+| Professional income bracket 4 | 50% on €51,070+ | ~7–8% | ~53.5–54.0% | Yes |
 
-- **Personal tax allowance (belastingvrije som)** — EUR 10,910 EUR (income year 2025)  _(Art. 130–145 WIB 92; Art. 171 WIB 92; FOD Financiën "Belastingtarieven — Inkomstenjaar 2025 (Aanslagjaar 2026)")_
+- **Personal tax allowance (belastingvrije som)** — EUR 11,550 (income year 2026). It is not deducted from income: the scale applies to the whole taxable income and the tax on the tax-free amount (25% on the first EUR 11,750 of it) is then subtracted  _([Art. 131](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751) and art. 134 WIB 92, income 2026; see be-income-tax)_
 
 ### 3.2 Staking / Passive Income Classification
 
@@ -132,20 +132,20 @@ Citation: Loi du 24 décembre 2002 / Wet van 24 december 2002 (DVB/SDA organic l
 | --- | --- | --- |
 | Staking rewards (interest analogy) | 30% (précompte mobilier / roerende voorheffing) | Self-assessed if no Belgian intermediary |
 
-### 3.3 Upcoming 2026 Regime (Important Context for 2025 Planning)
+### 3.3 The 2026 Regime (in force from 1 January 2026)
 
-From 1 January 2026, a new capital gains tax applies:
+From 1 January 2026, a capital gains tax applies to normal-management gains. The full rules are in `be-capital-gains`:
 
-**2026 Regime table**  _(Programme law (Programmawet) 2025; Art. 90, al. 1, 9°, c) WIB 92 (new))_
+**2026 Regime table**  _(Law of 6 April 2026 introducing a tax on capital gains on financial assets; Art. 90, al. 1, 9°, c) WIB 92 (new))_
 
 | Aspect | Detail |
 | --- | --- |
 | Rate on "normal management" gains | 10% (replaces tax-free treatment) |
 | Annual exemption | EUR 10,000 per taxpayer |
-| Historical gains exempt | Gains accrued up to 31 December 2025 are exempt if documented |
+| Historical gains exempt | Gains accrued up to 31 December 2025 are exempt: the 31 December 2025 value replaces cost for assets held then |
 | Speculative gains | Still taxed at 33% |
 | Professional gains | Still taxed at progressive rates |
-| Carry-forward of unused exemption | Up to EUR 1,000/year for max 5 years |
+| Carry-forward of unused exemption | A supplementary exemption of up to EUR 1,000 built from the unused basic exemption; the first one comes from income 2026 and is usable for income 2027 (see be-capital-gains) |
 
 ## Section 4 -- Cost Basis Methods
 
@@ -280,15 +280,16 @@ Belgium applies the same three-tier classification to NFTs as to other crypto as
 | Penalty for non-declaration | Fines and potential criminal prosecution |
 | Belgian exchanges | Not required (domestic accounts) |
 
-### 7.3 Filing Deadlines (Income Year 2025)
+### 7.3 Filing Deadlines (Income Year 2026)
 
 **Filing Deadlines table**
 
 | Method | Deadline |
 | --- | --- |
-| Paper filing | Late June 2026 (exact date published annually) |
-| Tax-on-web (e-filing) | Mid-July 2026 (exact date published annually) |
-| Via tax advisor (mandataris) | Late October 2026 |
+| Paper filing | By 30 June 2027 (art. 308, §1 WIB 92) |
+| Tax-on-web (e-filing) | By 15 July 2027 (art. 308, §1 WIB 92) |
+| E-filing with professional income (professional crypto) | By 16 October 2027 (art. 308/1 WIB 92) |
+| Via tax advisor (mandataris) | Administrative extension; the date for income 2026 is not yet published |
 
 ### 7.4 Record-Keeping
 
@@ -313,7 +314,7 @@ Belgium applies the same three-tier classification to NFTs as to other crypto as
 
 | Classification | Loss Offset | Carry-Forward |
 | --- | --- | --- |
-| Normal management | N/A (gains are tax-free, so losses are irrelevant) | No |
+| Normal management | Gains to 31 December 2025: N/A (gains were tax-free). From 1 January 2026: losses offset gains in the 10% regime in the same year (see 8.3 and be-capital-gains) | No |
 | Speculative (miscellaneous income) | Losses can **only** offset gains within the **same category** (miscellaneous/speculative crypto gains) in the **same tax year** | **No carry-forward** |
 | Professional income | Losses deductible as business losses; can offset other professional income | Carry-forward possible under normal business loss rules |
 
@@ -323,7 +324,7 @@ Belgium applies the same three-tier classification to NFTs as to other crypto as
 
 ### 8.3 2026 Regime — Loss Rules
 
-- **2026 loss rules** — Under the new 10% capital gains tax from 2026: Losses are deductible only against gains in the same sub-category of financial assets; Crypto losses cannot offset, e.g., share gains; No carry-forward of losses
+- **2026 loss rules** — Under the 10% capital gains tax from 2026, a loss offsets gains only if realised in the same taxable period, by the same taxpayer, and in the same regime (art. 90, al. 1, 9°, c) WIB 92). All financial assets in that regime mix, crypto included: a crypto loss offsets a gain on, for example, listed shares in the same year. For crypto held before 2026, the loss is measured from the 31 December 2025 value. No carry-forward or carry-back. _(Art. 102, §5 WIB 92; Circular 2026/C/74, no. 174)_
 
 ## Section 9 -- Anti-Avoidance Rules
 
@@ -352,7 +353,7 @@ Belgian tax authorities have significantly increased crypto-related audits since
 
 ## Section 10 -- Worked Examples
 
-### Example 1 -- Normal Management (Tax-Free in 2025)
+### Example 1 -- Normal Management (sale in 2025, income 2025)
 
 **Input:** Belgian resident, employed engineer. Bought 2 BTC in January 2023 at EUR 20,000 each. Sold 2 BTC in November 2025 at EUR 55,000 each. Total 3 trades in 3 years. Crypto represents 15% of movable wealth. No leverage, no bots, no mining.
 
@@ -374,7 +375,7 @@ Tax:   EUR 0 (tax-free under normal management)
 
 **Recommendation:** Obtain an SDA ruling to confirm classification, especially given the significant gain amount.
 
-### Example 2 -- Speculative Gains (33%)
+### Example 2 -- Speculative Gains (33%, income 2025)
 
 **Input:** Belgian resident. Made 150+ trades in 2025 across 4 exchanges. Mix of short-term and medium-term positions. Crypto represents 40% of movable wealth. Net gain of EUR 25,000 after costs. No leverage but uses portfolio tracking tools actively.
 
@@ -397,9 +398,9 @@ Total tax:      EUR 8,868.75
 Reporting: Part 2, Section XV — Diverse inkomsten (Code 1440)
 ```
 
-### Example 3 -- Professional Income
+### Example 3 -- Professional Income (income 2026)
 
-**Input:** Belgian resident, no other employment. Full-time crypto trader. 1,000+ trades in 2025. Uses leverage and automated bots. Manages a small fund for friends. Net income EUR 80,000.
+**Input:** Belgian resident, single, no other employment. Full-time crypto trader. 1,000+ trades in 2026. Uses leverage and automated bots. Manages a small fund for friends. Net taxable professional income EUR 80,000 (after costs and social contributions). Municipal surcharge 7.5%. The regional surcharge is assumed to offset the federal autonomy cut exactly.
 
 **Classification analysis:**
 ```
@@ -411,22 +412,21 @@ Factors:
 
 Classification: Professional income (Art. 23, §1 WIB 92)
 
-Taxable income: EUR 80,000
-Personal allowance: EUR 10,910 (tax-free)
-Remaining: EUR 69,090
+Taxable income: EUR 80,000 (the scale applies to all of it)
 
 Tax computation:
-  EUR 16,320 × 25%              = EUR 4,080.00
-  (EUR 28,800 - EUR 16,320) × 40% = EUR 4,992.00
-  (EUR 49,840 - EUR 28,800) × 45% = EUR 9,468.00
-  (EUR 69,090 - EUR 49,840) × 50% = EUR 9,625.00
-  Subtotal:                        EUR 28,165.00
-  Less personal allowance credit:  EUR 10,910 × 25% = EUR -2,727.50
-  Federal tax:                     EUR 25,437.50
-  Municipal surcharge (7.5%):      EUR 1,907.81
-  Total income tax:                EUR 27,345.31
-  Social security (~20.5%):        EUR 80,000 × 20.5% = EUR 16,400.00
-  TOTAL TAX BURDEN:                EUR 43,745.31 (~54.7%)
+  EUR 16,720 × 25%                 = EUR 4,180.00
+  (EUR 29,510 - EUR 16,720) × 40% = EUR 5,116.00
+  (EUR 51,070 - EUR 29,510) × 45% = EUR 9,702.00
+  (EUR 80,000 - EUR 51,070) × 50% = EUR 14,465.00
+  Subtotal:                        EUR 33,463.00
+  Less tax on tax-free amount:     EUR 11,550 × 25% = EUR -2,887.50
+  Tax:                             EUR 30,575.50
+  Municipal surcharge (7.5%):      EUR 2,293.16
+  Total income tax:                EUR 32,868.66
+  Social contributions 2026 (be-social-contributions):
+    20.50% × 75,024.54 + 14.16% × (80,000 - 75,024.54) = EUR 15,380.03 + EUR 704.53 = EUR 16,084.56
+  TOTAL TAX BURDEN:                EUR 48,953.22 (~61.2% of EUR 80,000)
 
 Reporting: Part 1 — Beroepsinkomsten / Revenus professionnels
 ```
@@ -466,6 +466,8 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
+> Contributed by Ryan Duguid.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -486,4 +488,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
