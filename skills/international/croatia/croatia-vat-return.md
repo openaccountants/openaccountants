@@ -5,7 +5,7 @@ jurisdiction: HR
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 version: 3.0
 verified_by: pending
 review_status: pending_review
@@ -20,11 +20,11 @@ Source-cited draft: not reviewed by an accountant, not for filing.
 The statute is the Zakon o porezu na dodanu vrijednost (ZPDV), Narodne novine (NN) 73/13 with amendments up to NN 48/26. The Tax Administration (Porezna uprava) keeps the consolidated text in its register of regulations. Article numbers below refer to it. Forms and line rules sit in the Pravilnik o porezu na dodanu vrijednost (VAT Rulebook). E-invoicing sits in a separate law, the Zakon o fiskalizaciji (NN 89/25). Interest and the limitation period sit in the Opći porezni zakon (OPZ, General Tax Act).
 
 **What changed for 2026.**
-- NN 151/25, in force 1 January 2026: the PDV return, the PDV-S and the ZP are now due by the last day of the month after the period. Before 2026 they were due by the 20th. The last 2025 period (December 2025, or October to December 2025) still followed the old law and its 20th deadline (151/25 Art. 10).
+- NN 151/25, in force 1 January 2026: the PDV return, the PDV-S and the ZP are now due by the last day of the month after the period. Before 2026 they were due by the 20th. Payment did not move: it was already due by the last day of the following month (Art. 76(1), not amended by NN 151/25). The last 2025 period (December 2025, or October to December 2025) still followed the old law and its 20th deadline (151/25 Art. 10).
 - NN 151/25 also removed the need for the buyer's consent to receive an e-invoice where the Fiscalisation Act requires one (ZPDV Art. 80(2)).
 - Zakon o fiskalizaciji (NN 89/25): B2B e-invoicing, e-invoice fiscalisation and e-reporting apply from 1 January 2026 for VAT-registered businesses. Businesses outside the VAT register must issue e-invoices from 1 January 2027 (Art. 80).
 - NN 32/26, in force 30 March 2026: the temporary 5% rate on gas, heating, firewood, pellets, briquettes and wood chips now runs to 31 March 2027 (Art. 38(4) and (5)).
-- NN 48/26, in force the day after publication in May 2026: new Article 38.a lets the Government set, by decree and for a limited time, the VAT rate on energy products subject to excise duty.
+- NN 48/26, published 8 May 2026 and in force 9 May 2026: new Article 38.a lets the Government set, by decree and for a limited time, the VAT rate on energy products subject to excise duty. No such decree appears in Narodne novine issues 1 to 124 of 2026 (checked 24 October 2026); the 2026 decrees on energy products change excise duty only. Motor fuels therefore stay at 25%.
 
 This skill replaces version 2.0, which carried 2025 figures and some wrong rules (for example a full block on passenger cars, which is in fact a 50% block). If you used it, recheck those points.
 
@@ -35,7 +35,7 @@ This skill replaces version 2.0, which carried 2025 figures and some wrong rules
 - **What counts toward the EUR 60,000.** Taxable supplies, zero-rated solar supplies, exempt supplies with deduction under Arts. 41 and 45 to 49, and real estate and financial supplies unless ancillary. Sales of the business's own fixed assets are left out (Art. 90(3) and (4)).
 - **Voluntary registration.** An exempt small business can ask to be taxed normally. It must then stay in the normal scheme for the current and the next calendar year. The request is treated as accepted if the Tax Administration does not decide within 8 days (Art. 90.h).
 - **EU SME scheme.** A business from another member state can use the Croatian exemption if its EU-wide turnover is not more than **EUR 100,000** and its Croatian supplies are not more than EUR 60,000 (Art. 90(2)). It needs an EX number from its home state (Art. 90(5) and (6)) and files a quarterly report there within one month of each quarter (Art. 90.b).
-- **Exempt small businesses still file a PDV return** when they supply services to taxable persons in other EU states or third countries where the customer accounts for the VAT (Art. 85(3)).
+- **Exempt small businesses still file a PDV return** for each period in which they supply services to taxable persons in other EU states or third countries where the customer accounts for the VAT (Art. 85(3)), and for each period in which they acquire goods from the EU or receive services on which they must self-assess VAT (Rulebook Art. 173(2)).
 - **Non-established businesses.** A foreign business without a Croatian establishment that sells to a Croatian VAT-registered customer does not charge Croatian VAT. The customer pays it (Art. 75(1) point 6 and 75(2)). A foreign business that sells to consumers in Croatia registers and files monthly (Art. 84(4)), unless it uses the OSS or IOSS schemes.
 
 ## Rates, bands and thresholds
@@ -47,7 +47,7 @@ This skill replaces version 2.0, which carried 2025 figures and some wrong rules
 | Reduced rate: bread, milk, specialist and educational books, approved medicines, certain disability aids, cinema, concert, sporting and cultural tickets, daily newspapers, scientific journals, baby food, edible oils and fats, butter and margarine, live animals, fresh meat, fish and shellfish, fresh vegetables, fruit and nuts, eggs, seedlings and seeds, fertilisers and pesticides, animal feed (not pet food) | 5% | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx (ZPDV Art. 38(2)) |
 | Temporary rate: natural gas (from 1 April 2022), heating from heating plants, firewood, pellets, briquettes, wood chips | 5% to 31 March 2027 | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_03_32_377.html (ZPDV Art. 38(4) and (5)) |
 | Supply and installation of solar panels on homes and public-interest buildings | 0% | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx (ZPDV Art. 38(6)) |
-| Government power to set the rate on excise energy products by decree | rate set by decree | from May 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_48_578.html (ZPDV Art. 38.a) |
+| Government power to set the rate on excise energy products by decree (no decree issued to 23 October 2026) | rate set by decree | from 9 May 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_48_578.html (ZPDV Art. 38.a) |
 | Small business exemption (domestic annual turnover) | EUR 60,000 | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2508.html (ZPDV Art. 90(1)) |
 | EU SME scheme, EU-wide annual turnover cap | EUR 100,000 | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2508.html (ZPDV Art. 90(2)) |
 | Quarterly periods allowed if prior-year supplies including VAT were below | EUR 110,000 | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx (ZPDV Art. 84(2)) |
@@ -68,9 +68,9 @@ This skill replaces version 2.0, which carried 2025 figures and some wrong rules
 - **Input VAT.** A registered business deducts VAT on purchases used for taxable supplies (Arts. 57 and 58). It cannot deduct:
   - VAT on entertainment of business partners: gifts, hospitality, holidays, sport and leisure, and hire of cars, boats, aircraft or holiday homes for them (Art. 61(1));
   - 50% of the VAT on buying or leasing passenger cars (up to 8 passenger seats) and on all related goods and services, such as fuel and servicing (Art. 61(2)). The block does not apply to cars used for driving schools, testing, servicing, carrying passengers or goods, funeral transport, rental, or bought for resale, nor to certain N1 vans (Art. 61(3)).
-- **Mixed use.** A business with taxable and exempt supplies deducts a pro-rata share. The share is taxable turnover over total turnover for the year, rounded up to the next whole percent. During the year it uses last year's share and corrects in the last return of the year (Art. 62).
+- **Mixed use.** A business with taxable and exempt supplies deducts a pro-rata share. The share is turnover with deduction over total turnover for the year (the denominator also includes subsidies not linked to the price of supplies), rounded up to the next whole percent. Occasional real estate and financial transactions and sales of the business's own fixed assets are left out (Art. 62(2) to (4)). During the year it uses last year's share and corrects in the last return of the year (Art. 62).
 - **Capital goods.** If deduction conditions change within 5 years (10 for real estate), correct 1/5 (or 1/10) of the VAT per year after the change (Art. 64).
-- **Cash accounting.** A business with prior-year supplies of not more than EUR 2,000,000 excluding VAT can account for VAT when paid and deduct input VAT when it pays (Art. 125.i). Its invoices must say "obračun prema naplaćenim naknadama". It does not cover intra-EU supplies of goods (Art. 125.j).
+- **Cash accounting.** A business with prior-year supplies of not more than EUR 2,000,000 excluding VAT can account for VAT when paid and deduct input VAT when it pays (Art. 125.i). Its invoices must say "obračun prema naplaćenim naknadama". It does not cover intra-EU supplies and acquisitions of goods, B2B services received from abroad, or supplies where the customer pays the VAT under the reverse charge (Art. 125.j).
 
 ## Deadlines and filing
 
@@ -87,11 +87,11 @@ This skill replaces version 2.0, which carried 2025 figures and some wrong rules
 | E-reporting of payments received on e-invoices | month | 20th of the following month | Zakon o fiskalizaciji Art. 53(1) |
 | E-reporting of rejected e-invoices | month | 20th of the following month | Zakon o fiskalizaciji Art. 52(1) |
 
-- **Tax period.** The period is the calendar month (Art. 84(1)). A business whose supplies including VAT in the prior year were below EUR 110,000 uses calendar quarters, and may choose months instead (Art. 84(2)). Quarters are not available to a business that carries out intra-EU transactions (Art. 84(3)), or to a foreign business registered in Croatia (Art. 84(4)).
+- **Tax period.** The period is the calendar month (Art. 84(1)). A business whose supplies including VAT in the prior year were below EUR 110,000 uses calendar quarters, and may choose months instead (Art. 84(2)). Quarters are not available to a business that carries out intra-EU transactions (Art. 84(3)), or to a foreign business registered in Croatia (Art. 84(4)). The choice between months and quarters is made by 15 January of the year. A quarterly filer that starts intra-EU transactions during a quarter files a monthly return for each month of that quarter, and a business that stops intra-EU transactions stays monthly to the end of the year (Rulebook Art. 173(4) and (5)).
 - **The return.** Filed electronically through ePorezna on Obrazac PDV. Part I holds exempt and non-taxable supplies, including the domestic reverse charge sales (I.1), intra-EU goods (I.3) and B2B services to other EU states (I.4). Part II holds output VAT by rate (II.1 at 5%, II.2 at 13%, II.3 at 25%), domestic reverse charge received (II.4), EU acquisitions (II.5 to II.7), EU services received (II.8 to II.10) and other reverse charge supplies from non-established suppliers (II.11 to II.13). Part III holds input VAT on the same lines. Part IV is the net amount to pay or reclaim (Rulebook Arts. 174 to 177).
 - **Year-end.** The return for the last period of the year must carry all annual corrections, including the final pro-rata (Art. 85(7)).
 - **Refunds.** Excess input VAT is refunded or carried forward. If a refund is asked for, the Tax Administration must pay within 30 days of the return being filed, or within 90 days of starting an audit (Art. 66).
-- **E-invoicing (Fiskalizacija 2.0).** From 1 January 2026 a VAT-registered business established in Croatia must issue e-invoices to business customers for domestic transactions (Zakon o fiskalizaciji Art. 38(1) point 1 and (2)). Every business must be able to receive them (Art. 41). Both issuer and recipient fiscalise each e-invoice in the Tax Administration's system (Arts. 47 and 48). Each line carries a six-digit KPD product code (Art. 42). Income-tax and profit-tax payers outside the VAT register, and public bodies outside it, must issue e-invoices from 1 January 2027 (Art. 80). They can use the free MIKROeRAČUN application (Arts. 54 and 55). E-invoices are kept for 6 years (Art. 35).
+- **E-invoicing (Fiskalizacija 2.0).** From 1 January 2026 a VAT-registered business established in Croatia must issue e-invoices to business customers for domestic transactions (Zakon o fiskalizaciji Art. 38(1) point 1 and (2)). From 1 January 2026 every business established in Croatia must receive them, including income-tax and profit-tax payers outside the VAT register and public bodies (Arts. 2 point 24, 41 and 80). Both issuer and recipient fiscalise each e-invoice in the Tax Administration's system (Arts. 47 and 48). Each line carries a six-digit KPD product code (Art. 42). Income-tax and profit-tax payers outside the VAT register, and public bodies outside it, must issue e-invoices from 1 January 2027 (Art. 80). Businesses outside the VAT register can use the free MIKROeRAČUN application; VAT-registered businesses cannot (Arts. 54 and 55(1)). E-invoices are kept for 6 years (Art. 35).
 - **Cash and card sales to consumers** stay under fiscalisation of receipts, not e-invoices (Zakon o fiskalizaciji Art. 39).
 
 ## Penalties and interest
@@ -103,7 +103,7 @@ This skill replaces version 2.0, which carried 2025 figures and some wrong rules
   - Not fiscalising an e-invoice in the required way and time: legal persons EUR 2,650 to EUR 66,360; self-employed individuals EUR 1,320 to EUR 39,810 (Art. 72).
   - Late or missing e-reporting of payments or rejections, or no KPD codes: legal persons EUR 1,320 to EUR 26,540 (Art. 73).
 - **Interest.** Interest runs on unpaid VAT from the due date (OPZ Art. 130(3)), at the rate set by a separate regulation (OPZ Art. 130(1)).
-- **Limitation.** The right to assess and collect tax and interest expires 6 years after the end of the year in which the liability arose (OPZ, limitation article).
+- **Limitation.** The right to assess tax and interest expires 6 years after the end of the year in which the liability arose (OPZ Art. 108(1) and (2)).
 - **Business closure.** Where tax is unpaid, the Tax Administration can ban the business from operating until payment, by sealing its premises (ZPDV Art. 128).
 
 ## Cross-border points
@@ -190,7 +190,7 @@ expected:
 3. What exactly do you sell? Check each item against the 5% and 13% lists, and say whether you make exempt supplies (financial, medical, education, residential property).
 4. Do you buy construction work, scrap, rebar or property from other Croatian VAT payers, or services and goods from foreign suppliers?
 5. Do you have passenger cars, entertainment costs or mixed-use assets on the books?
-6. Are you issuing and receiving e-invoices through an information intermediary or MIKROeRAČUN, and are payment and rejection reports filed by the 20th?
+6. Which information intermediary do you use to issue, receive and fiscalise e-invoices, and are payment and rejection reports filed by the 20th of each month?
 
 ## Sources
 
@@ -200,11 +200,12 @@ expected:
 | Zakon o izmjenama i dopunama ZPDV, NN 152/2024 (EUR 60,000 threshold, EU SME scheme, from 1 January 2025) | https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2508.html | 2026-10-23 |
 | Zakon o izmjenama i dopunama ZPDV, NN 151/2025 (deadlines moved to the last day of the month, from 1 January 2026) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2262.html | 2026-10-23 |
 | Zakon o izmjeni ZPDV, NN 32/2026 (5% on gas and heating extended to 31 March 2027) | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_03_32_377.html | 2026-10-23 |
-| Zakon o dopuni ZPDV, NN 48/2026 (Article 38.a, energy rate by decree) | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_48_578.html | 2026-10-23 |
-| Pravilnik o porezu na dodanu vrijednost, consolidated text to NN 11/26 (Obrazac PDV lines, Arts. 174 to 178; ZP deadline), Tax Administration register | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx | 2026-10-23 |
+| Zakon o dopuni ZPDV, NN 48/2026 (Article 38.a, energy rate by decree; published 8 May 2026) | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_48_578.html | 2026-10-24 |
+| Narodne novine, official part, 2026 issues 1 to 124 searched by title for a decree under Article 38.a (none found) | https://narodne-novine.nn.hr/search.aspx | 2026-10-24 |
+| Pravilnik o porezu na dodanu vrijednost, consolidated text to NN 11/26 (return deadline and quarterly rules, Art. 173; Obrazac PDV lines, Arts. 174 to 178; PDV-S, Art. 182), Tax Administration register | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx | 2026-10-23 |
 | Pravilnik o izmjeni Pravilnika o PDV-u, NN 35/2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_04_35_427.html | 2026-10-23 |
 | Zakon o fiskalizaciji, NN 89/2025 (e-invoicing, e-reporting, fines, start dates) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_06_89_1233.html | 2026-10-23 |
 | Tax Administration, Fiskalizacija 2.0 / eRačun (non-VAT-registered issue e-invoices from 1 January 2027) | https://porezna-uprava.gov.hr/hr/fiskalizacija-2-0-eracun/8073 | 2026-10-23 |
-| Opći porezni zakon, consolidated text to NN 151/25 (interest, limitation), Tax Administration register, Porezni postupak | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx | 2026-10-23 |
+| Opći porezni zakon, consolidated text to NN 151/25 (interest, Art. 130; limitation, Art. 108), Tax Administration register, Porezni postupak | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx | 2026-10-24 |
 
-Not yet confirmed: whether the Government has issued any decree under Article 38.a setting a different rate on fuels (none found by title in NN issues 1 to 120 of 2026); the rate of late-payment interest on tax debts for 2026 (the OPZ points to a separate regulation that was not read); whether receiving EU services alone counts as an "intra-EU transaction" that rules out quarterly filing under Article 84(3); the exact treatment of the single supply that takes a small business over EUR 60,000 (Article 90.f(2) says the exemption stops "from the moment" the threshold is passed); the Rulebook amendments in NN 11/26 beyond the PDV form lines, which were not read in full.
+Not yet confirmed: the rate of late-payment interest on tax debts for 2026 (OPZ Art. 130(1) points to a special regulation; the register still lists the Interest Act NN 94/04 and the 15% decree NN 153/04, which predate the Obligations Act Art. 29 formula, and no official text read ties a 2026 rate to tax debts); whether receiving EU services alone counts as an "intra-EU transaction" that rules out quarterly filing under Article 84(3); the exact treatment of the single supply that takes a small business over EUR 60,000 (Article 90.f(2) says the exemption stops "from the moment" the threshold is passed); the Rulebook amendments in NN 11/26 beyond the PDV form lines, which were not read in full.
