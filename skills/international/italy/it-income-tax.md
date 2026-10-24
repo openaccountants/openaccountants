@@ -1,10 +1,10 @@
 ---
 name: it-income-tax
-description: Use this skill whenever asked about Italian income tax for self-employed individuals (lavoratori autonomi, liberi professionisti) under regime ordinario. Trigger on phrases like "Modello Redditi PF", "Quadro RE", "IRPEF", "redditi di lavoro autonomo", "imposta sul reddito Italy", "deduzioni", "detrazioni", "addizionale regionale", "addizionale comunale", "regime ordinario", "acconti IRPEF", "no tax area", "INPS Gestione Separata", "rivalsa INPS", or any question about filing or computing income tax for an Italian freelancer or professional. Also trigger when preparing or reviewing a Modello Redditi PF, computing deductions, or advising on regime ordinario tax obligations. This skill covers progressive IRPEF brackets, deduzioni, detrazioni, addizionali, acconti, Quadro RE structure, rivalsa INPS, and penalties. ALWAYS read this skill before touching any Italian income tax work. Does NOT cover the regime forfettario, which is in it-regime-forfettario.
-version: 2.0
+description: "Italian personal income tax (IRPEF) for self-employed professionals (lavoratori autonomi, liberi professionisti) under the regime ordinario, tax year 2026, filed in 2027. Covers the 2026 bands (23%, 33%, 43%; the middle rate cut from 35% by the Legge di Bilancio 2026, L. 199/2025), the art. 13 detrazioni for self-employed, employment and pension income and their phase-outs, the cuneo fiscale in brief, the 19% detrazioni and their cuts above EUR 75,000, 120,000 and 200,000, regional and municipal surcharges, the cash-basis professional income rules and expense limits, the 20% withholding on fees, the forfettario test and the expired flat tax incrementale, Modello Redditi PF and 730 deadlines, acconti, penalties and ravvedimento. Trigger on: IRPEF autonomo, Quadro RE, Redditi PF, detrazioni, addizionale regionale, ritenuta d'acconto 20%, ravvedimento. Out of scope, see: it-irpef-employees, it-regime-forfettario, it-estimated-tax, it-inps-contributions, it-impatriati, italy-payroll, italy-crypto-tax, it-cross-border."
+version: 2.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,672 +14,285 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Italian income tax (IRPEF) for the self-employed: regime ordinario, with the forfettario test
-
-How Italy taxes one self-employed professional under IRPEF: rates, surcharges, expense rules, INPS gestione separata, acconti, the return and penalties, plus the test for the forfettario (flat-rate) regime that replaces all of this when it applies. Figures are for tax year 2026. Italy's tax year is the calendar year: 2026 income is declared in 2027. For 2026 income the old TUIR (D.P.R. 917/1986) applies. The new TUIR (D.Lgs. 117/2026) applies only from 1° gennaio 2027 (art. 377), so Normattiva can show old articles as repealed; statutes here were read as in force on 30 June 2026. Two sources carry another year: the Agenzia rate page (13 January 2026) gives the 2026 change only in a note; the 730 pages are the 2026 edition, for 2025 income. The 2026 detrazioni for self-employed income are in Section 1, from TUIR art. 13(5); the cuneo fiscale applies to employees only and is in `italy-payroll`.
-
-## Section 1: Quick Reference
-
-| Field | Value |
-| --- | --- |
-| Country | Italy |
-| Tax | IRPEF plus addizionale regionale and addizionale comunale |
-| Currency | EUR only |
-| Tax year | Calendar year |
-| Primary legislation | TUIR, D.P.R. 917/1986, for 2026 income. New TUIR (D.Lgs. 117/2026) from 1 January 2027 |
-| Tax authority | Agenzia delle Entrate |
-| Return (professional with VAT number) | Modello Redditi PF online by 31 October of the following year. Not the 730 |
-| Status | Drafted from the official pages. No accountant has reviewed it yet |
-
-### IRPEF Brackets 2025 (Regime Ordinario) [T1]
-
-The 2025 table is replaced. For 2026 the bracket limits are unchanged and the middle rate falls. The Agenzia table still shows the old middle rate; only its note gives the 2026 one.
-
-**IRPEF bracket limits 2026 (TUIR art. 11)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig= |
-| Top of the first bracket of taxable income | EUR 28,000 | "a) fino a 28.000 euro, 23 per cento" |
-| Top of the second bracket | EUR 50,000 | "fino a 50.000 euro" |
-
-**IRPEF rates 2026 (Agenzia delle Entrate)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
-| First bracket | 23% | "sull’intero importo" |
-| Second bracket, from 2026 income | 33% | "dal 35 al 33 per cento" |
-| Old second-bracket rate, 2024 and 2025 only. Not for 2026 | 35% | "Dall’anno 2024" |
-| Above the second bracket | 43% | "sul reddito eccedente i 50.000 euro" |
-| Gross tax on the first EUR 50,000 at 2026 rates | EUR 13,700 | "pari a 13.700 euro" |
-
-**High-income offset (L. 199/2025 art. 1 comma 4, TUIR D.P.R. 917/1986 art. 16-ter(5-bis))**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 |
-| Total income (reddito complessivo) above which it applies | EUR 200,000 | "reddito complessivo superiore a 200.000 euro" |
-| Cut to the detrazioni for certain expenses (oneri) | EUR 440 | "pari a 440 euro" |
-
-- **Tax formula.** Each rate applies only to income inside its bracket. Above the second limit: the Agenzia amount in the table plus the top rate on the excess. Taxable income = total income less oneri deducibili.
-- **The offset** is a flat cut to the detrazioni for the oneri the law lists (mainly the 19 per cento items, not medical costs). It is not a surcharge.
-- **No-tax area.** For self-employed income the detrazione of EUR 1,265 equals 23% of EUR 5,500, so with no other income or oneri no IRPEF is due up to EUR 5,500 of total income (TUIR art. 13(5)(a); table below).
-
-**Cap on detrazioni for oneri (TUIR art. 16-ter, L. 207/2024 art. 1 comma 10)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 |
-| Total income above which the cap applies | EUR 75,000 | "reddito complessivo superiore a 75.000 euro" |
-| Total income at which the base amount drops | EUR 100,000 | "non superiore a 100.000 euro" |
-| Base amount, income above 75,000 up to 100,000 | EUR 14,000 | "a) 14.000 euro" |
-| Base amount, income above 100,000 | EUR 8,000 | "b) 8.000 euro" |
-| Family coefficient, no qualifying children | 0,50 | "a) 0,50, se nel nucleo familiare non sono presenti figli" |
-
-- **The cap.** Above the first limit, oneri and expenses giving a detrazione count only up to the base amount times a family coefficient (TUIR art. 16-ter(3): see the table for no qualifying children; higher with children). Some items are left out (art. 16-ter(4)). The offset above applies after this cap.
-
-### Addizionali (Regional + Municipal Surtaxes) [T1]
-
-**Addizionale regionale (D.Lgs. 68/2011 art. 6)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30 |
-| Base rate | 1.23% | "pari a 1,23 per cento" |
-
-- **The region sets its own rate.** An ordinary-statute region may raise or lower the base rate by law; from 2015 the rise may not exceed 2.1 percentage points ("a 2,1 punti percentuali a decorrere dall'anno 2015"). Many regions use bands. Special-statute regions have their own rules.
-- **Addizionale comunale.** Each comune decides; the variation may not exceed 0.8 percentage points in total, and the comune may set an exemption threshold (D.Lgs. 360/1998 art. 1). The live Guide's upper figure for comuni was not proven and is removed.
-- **Base.** Both apply to taxable income (after oneri deducibili, before detrazioni), and the comunale is due only if net IRPEF is due for the same year (D.Lgs. 360/1998 art. 1(4)); treat the regionale the same way and confirm. Forfettario income is not subject to them.
-
-### Detrazioni per Lavoro Autonomo (Reduce Tax Payable) [T1]
-
-**Detrazione for self-employed income, 2026 (TUIR art. 13(5) and (5-ter))**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 (text in force 1 January 2025 to 31 December 2026, read 2026-10-22) |
-| Total income not above EUR 5,500 | EUR 1,265 | "a) 1.265 euro, se il reddito complessivo non supera 5.500 euro" |
-| Total income above EUR 5,500, not above EUR 28,000 | EUR 500 + 765 x (28,000 - total income) / 22,500 | "b) 500 euro, aumentata del prodotto fra 765 euro e ... 22.500 euro" |
-| Total income above EUR 28,000, not above EUR 50,000 | EUR 500 x (50,000 - total income) / 22,000 | "b-bis) 500 euro ... 22.000 euro" |
-| Total income above EUR 50,000 | nil | no band in art. 13(5) |
-| Extra amount, total income above EUR 11,000 and not above EUR 17,000 | EUR 50 | "aumentata di un importo pari a 50 euro" (comma 5-ter) |
-
-- **Who gets it.** Anyone whose total income includes self-employed income (art. 53), business income of an impresa minore (art. 66) or the other items listed in comma 5. It cannot be combined with the employee or pension detrazione in commi 1 to 4: take one.
-- **How.** The ratio is taken to four decimal places (comma 6). Total income here excludes the main home and its appurtenances (comma 6-bis). The detrazione is not apportioned for part of the year.
-- **Example.** Total income EUR 40,000: 500 x (50,000 - 40,000) / 22,000 = 500 x 0.4545 = EUR 227.25.
-- The Agenzia IRPEF page (link above) says detrazioni are subtracted from gross tax, not income, capped at tax due, with no refund; non-residents get only some unless "Schumacker" conditions are met.
-
-### INPS Gestione Separata (Social Contributions) [T1]
-
-**INPS gestione separata 2026 (Circolare n. 8 of 3 February 2026)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf |
-| Professionals with a VAT number and no other compulsory cover | 26.07% | "Soggetti non assicurati presso altra forma" |
-| Pensioners, or insured with another compulsory scheme | 24% | "l’aliquota è confermata" |
-| Maximum income on which contributions are due | EUR 122,295 | "è pari a 122.295,00 euro" |
-| Income needed for a fully credited year (not a minimum payment) | EUR 18,808 | "è pari a 18.808,00 euro" |
-| Contribution at the full rate for a fully credited year | EUR 4,903.25 | "4.903,25 euro" |
-
-- **Which rate.** A member of a profession's own fund (cassa: Inarcassa, ENPAM and others) pays that fund, not the gestione separata. The live Guide wrongly used the lower rate for cassa members.
-- Contributions are due on net professional income up to the cap in the table (the live Guide used the 2025 cap).
-- **Rivalsa INPS.** A professional without a cassa may charge the client a rivalsa (L. 662/1996 art. 1 comma 212). The Agenzia withholding page treats this charge as part of the fee, subject to withholding; a cassa contribution charged to the client is not income (Section 5.1). The page is undated; confirm after D.Lgs. 192/2024. More: `it-inps-contributions`.
-
-### Acconti IRPEF (Advance Payments) [T1]
-
-**Payments on account (Agenzia, "Come si paga l'Irpef", 12 March 2026)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| No acconto unless the tax declared, after detrazioni, credits and withholdings, is above | EUR 51.65 | "superiore a 51,65 euro" |
-| Acconto as a share of last year's tax (or of the lower tax expected) | 100% | "dell’imposta dichiarata nell’anno" |
-| Below this: one payment by 30 November | EUR 257.52 | "se l’acconto è inferiore a 257,52 euro" |
-| First instalment, 30 June, with last year's balance | 40% | "entro il 30 giugno" |
-| Second instalment, 30 November | 60% | "entro il 30 novembre" |
-| ISA and forfettario taxpayers: one payment by 30 November if the total is not above | EUR 206 | "non supera 206 euro" |
-| Surcharge for paying balance and first acconto in the 30 days after 30 June | 0.40% | "pagando una maggiorazione" |
-
-ISA and forfettario taxpayers otherwise pay two EQUAL instalments on the same dates. Check whether the professional's activity is subject to ISA before using this rule. Payments go by F24.
-
-### Forfettario or ordinario: which regime applies [T1]
-
-Decide this first. A forfettario taxpayer pays one substitute tax instead of IRPEF and the surcharges, and the rest of this Guide does not apply.
-
-**Forfettario rules (Agenzia delle Entrate, 21 July 2026)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
-| Entry: PREVIOUS-year revenue or fees, annualised, all ATECO codes together, not above | EUR 85,000 | "ragguagliati ad anno, non superiori a 85.000 euro" |
-| Exit in the SAME year once revenue or fees go over | EUR 100,000 | "dallo stesso anno" |
-| Entry: previous-year gross spending on staff and collaborators not above | EUR 20,000 | "20.000 euro lordi" |
-| Exclusion: previous-year employment income above (standing rule) | EUR 30,000 | "superiore a 30.000 euro" |
-| The same limit for the years 2025 and 2026 | EUR 35,000 | "elevato a 35.000 euro" |
-| Substitute tax (replaces IRPEF and both surcharges) | 15% | "sostitutiva" |
-| Start-up rate, first five years, if conditions are met | 5% | "per i primi cinque anni" |
-| EU or EEA non-resident: share of total income that must arise in Italy | 75% | "producono in Italia almeno" |
-
-**Profitability coefficients (L. 145/2018 allegato 2, Agenzia copy)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 |
-| Professional, scientific, technical, health, education, financial services | 78% | Allegato 2 |
-| Other activities (includes IT services) | 67% | Allegato 2 |
-
-- **Two limits, not one.** Over the entry limit, the regime ends the FOLLOWING year; over the higher limit, it ends the SAME year, with VAT due from the crossing sale.
-- **Employment income** is tested on the previous year, unless that job ended then. The raised limit is "for the years 2025 and 2026"; for the regime in 2027 the standing limit returns unless extended by law.
-- **Other exclusions** (same page) include a related partnership stake or S.r.l. control, and working mainly for a current or recent employer.
-- **Taxable income** = revenue times coefficient, less compulsory contributions. No actual costs. Forfettari are not subject to the fee withholding (Section 5.9).
-
-### Conservative Defaults [T1]
-
-| Situation | Default Assumption |
-| --- | --- |
-| Regional surtax unknown | Base rate from the regional table, flagged. It is not a minimum |
-| Municipal surtax unknown | None, flagged for the client |
-| Cassa membership unknown | Full gestione separata rate from the INPS table, flagged |
-| Rivalsa INPS on invoices unclear | Do NOT assume one was added. Ask |
-| Deductible or not disputed | Non-deductible. Flag |
-| Payment received: unclear if taxable | Taxable. Flag |
-| Invoice date vs payment date | Cash basis (Section 5.1) |
-| Refund or reimbursement | Not income if charged analytically to the client (TUIR art. 54(2)(b)); otherwise taxable |
-
-### Red Flag Thresholds [T1]
-
-**Cash limit (D.Lgs. 231/2007 art. 49)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231~art49!vig=2026-06-30 |
-| Cash transfers between different persons prohibited at or above, from 1 January 2023 | EUR 5,000 | "alla cifra di ((5.000 euro))" |
-
-| Flag | Threshold |
-| --- | --- |
-| Previous-year receipts at or below EUR 85,000 | Forfettario? Check before using this Guide |
-| INPS contributions far below the INPS table rate on net income | Possible error. Review |
-| No acconto payments recorded | Check whether acconti were due |
-| Cash payments at or above EUR 5,000 | Cash limit. Flag |
-| Any expense with no documentation | Reject |
-
-## Section 2: Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-- **Minimum viable.** Full-year bank statement (CSV, PDF or text). Regime (ordinario or forfettario), region and comune.
-- **Recommended.** Invoices issued, F24 receipts (acconti IRPEF and INPS), gestione separata or cassa statements, last year's Modello Redditi.
-- **Ideal.** Complete books, asset register with depreciation, invoices received, family details (for detrazioni).
-
-### Refusal Catalogue
-
-- **R-IT-1.** Only bank totals, no itemised expenses. "Request an itemised expense list with F24 forms and receipts first."
-- **R-IT-2.** Both regimes in one year. Happens only if forfettario receipts cross the same-year exit limit in the forfettario table. Otherwise "Verify which regime applies and for which period."
-- **R-IT-3.** Previous-year receipts above the forfettario entry limit, but the client claims the regime this year. "The regime ended from this year. Proceed under regime ordinario." Crossing it this year ends the regime next year, unless the same-year limit was also crossed.
-- **R-IT-4.** Non-resident claiming full detrazioni. "Restricted for non-residents. Clarify residency and escalate."
-- **R-IT-5.** Private vehicle without a usage log. "Nothing beyond the capped share in art. 164 TUIR."
-
-## Section 3: Transaction Pattern Library
-
-Pre-classifier: apply the treatment when a bank line matches, else use Section 5, whose tables give the percentages.
-
-### 3.1 Income Patterns (Credits)
-
-| Pattern | Tax Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| BONIFICO DA [client name] | Professional receipts | Revenue | SEPA credit from client |
-| VB DA [client name] / VB ENTRATA | Professional receipts | Revenue | UniCredit/BancoBPM notation |
-| ACCREDITO DA [client] | Professional receipts | Revenue | Generic credit |
-| STRIPE PAYMENTS EUROPE / STRIPE PAYOUT | Receipts, online | Revenue | Gross up; fee deductible |
-| PAYPAL TRANSFER / PAYPAL ACCREDITO | Receipts | Revenue | Gross up; fee deductible |
-| SATISPAY BUSINESS PAYOUT | Receipts | Revenue | Fee deductible |
-| NEXI PAGAMENTI / NEXI POS VERSAMENTO | Receipts, card | Revenue | Gross up |
-| SUMUP PAYOUT / ZETTLE PAYOUT | Receipts, card | Revenue | Gross up |
-| REVERSALE [client] / RIMESSA CLIENTI | Receipts | Revenue | Public body or factoring |
-| RIVALSA INPS (portion of invoice) | In receipts | Revenue | Legacy treatment; see Section 1, INPS |
-| INTERESSI ATTIVI / INTERESSI MATURATI | Capital income | NOT professional | TUIR art. 54(3-bis) |
-| RIMBORSO SPESE [client] | Not income if charged analytically | Flag | Section 5.1 |
-| STIPENDIO / SALARIO [employer] | Employment income | NOT professional | Separate head |
-
-### 3.2 Expense Patterns (Debits)
-
-| Pattern | Tax Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AFFITTO UFFICIO / CANONE LOCAZIONE / PIGIONE | Rent | Full if used only for work | Home also lived in: 50%, only with no other office in the comune |
-| ENEL / ENI PLENITUDE / A2A ENERGIA | Utilities, premises used both ways | 50% | Full only for work-only premises |
-| TELECOM ITALIA / TIM FIBRA / FASTWEB / WIND3 | Telecoms | 80% | Art. 54-quinquies(4) |
-| VODAFONE MOBILE / TIM MOBILE / ILIAD | Mobile | 80% | Same |
-| ADOBE / MICROSOFT 365 / GOOGLE WORKSPACE | Software | Full | |
-| COMMERCIALISTA / CONSULENTE FISCALE / STUDIO [name] | Professional fees | Full | |
-| AVVOCATO / NOTAIO | Legal fees | Full if professional | Flag personal matters |
-| TRENITALIA / ITALO / FRECCIAROSSA | Travel | Full if professional | In Italy, traceable payment only |
-| RYANAIR / EASYJET / ITA AIRWAYS / ALITALIA | Air travel | Full if professional | Itinerary and purpose |
-| HOTEL / AGODA / BOOKING.COM | Accommodation | 75%, within fee cap | Art. 54-septies(1) |
-| RISTORANTE / PIZZERIA / CAFFE | Meals | 75%, within fee cap | Social meals: none |
-| INPS F24 / CONTRIBUTI GESTIONE SEPARATA | Social contributions | Deduct from total income | Oneri deducibili, not a work cost |
-| F24 ACCONTO IRPEF / F24 SALDO IRPEF | Tax | NOT deductible | |
-| ASSICURAZIONE PROFESSIONALE / RC PROFESSIONALE | Insurance | Full | |
-| ADDIZIONALE REGIONALE / ADDIZIONALE COMUNALE | Tax | EXCLUDE | |
-| SPESE BANCARIE / COMMISSIONI BANCARIE / CANONE CONTO | Bank fees | Full | |
-| AMORTAMENTO / BENE STRUMENTALE | Asset | Depreciate | Section 5.5 |
-| AUTONOLEGGIO / NOLEGGIO AUTO | Car hire | 20% | Art. 164, one vehicle |
-| CARBURANTE / ENI / Q8 / SHELL | Fuel | 20% | Traceable payment |
-| FORMAZIONE / CORSO / SEMINARIO | Training | Full up to yearly cap | Art. 54-septies(3) |
-| CANCELLERIA / MATERIALE UFFICIO / UNIEURO (office) | Supplies | Full | |
-| CONTRIBUTO CASSA [profession] / ENPAM / INARCASSA | Cassa contributions | Deduct from total income | Replaces gestione separata |
-| STRIPE FEE / PAYPAL FEE / SATISPAY FEE | Processor fees | Full | |
-
-## Section 4: Worked Examples
-
-Bank amounts are sample data in the bank's own format.
-
-### Example 1: Intesa Sanpaolo (Milan, Graphic Designer)
-
-`03/01/2026;;BONIFICO DA STUDIO GAMBA SRL;;3.500,00`
-
-Client credit. No cassa: full gestione separata rate. Quadro RE, cash basis, net of IVA. **Classification:** professional receipt.
-
-### Example 2: UniCredit (Turin, IT Consultant)
-
-`10/01/2026 | VB DA ACCENTURE SRL | AVERE | 6.500,00`
-
-Monthly fee from one client. Check it is not a recent employer and no forfettario applies. **Classification:** professional receipt; flag single-client concentration.
-
-### Example 3: FinecoBank (Rome, Photographer)
-
-`15/03/2026;NEXI POS VERSAMENTO;Entrata;7.000,00`
-
-Net of fees: gross up from the portal; fee deductible. **Classification:** receipt at the gross amount.
-
-### Example 4: N26 Italy (Florence, Translator)
-
-`2026-05-20,STRIPE,,,STRIPE PAYOUT,22000.00,,,`
-
-Net of fees: the receipt is the gross in the Stripe report; fee deductible. **Classification:** receipt at the gross amount.
-
-### Example 5: Hype Business (Naples, E-commerce)
-
-`2026-07-15;SUMUP PAYOUT;ENTRATA;15.000,00`
-
-Selling goods online is business income (reddito d'impresa): Quadro RF or RG, not RE. **Classification:** RED FLAG, confirm lavoro autonomo or impresa before filing.
-
-### Example 6: BancoBPM (Bergamo, Architect: Inarcassa Member)
-
-`20/04/2026 | BONIFICO DA STUDIO ARCHITETTURA XYZ | AVERE | 8.500,00`
-
-Inarcassa member: no gestione separata. Inarcassa's rates are on no allowed page; use his fund statement. **Classification:** professional receipt; flag cassa.
-
-## Section 5: Tier 1 Rules (When Data Is Clear)
-
-Expense rules are TUIR art. 54 to 54-octies as rewritten by D.Lgs. 192/2024, read as in force on 30 June 2026.
-
-**Expense limits (TUIR art. 54-quinquies)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
-| Unit cost up to which an asset is deducted in full in the year bought | EUR 516.40 | "euro 516,40" |
-| Goods (not vehicles) and premises used both for work and privately | 50% | "nella misura del 50 per cento" |
-| Telecom terminal equipment and its use | 80% | "dell'80 per cento" |
-
-**Other limits (TUIR art. 54-septies)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54septies!vig=2026-06-30 |
-| Hotel and meals: deductible share | 75% | "del 75 per cento" |
-| Hotel and meals: overall cap, share of fees received in the year | 2% | "al 2 per cento" |
-| Rappresentanza: cap, share of fees received | 1% | "dell'1 per cento" |
-| Training, masters, conferences, with travel and stay: yearly cap | EUR 10,000 | "10.000 euro" |
-
-**Vehicles (TUIR art. 164)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
-| Individual professional: one vehicle only | 20% | "un solo veicolo" |
-| Sales agents and representatives | 80% | "attività di agenzia" |
-| Vehicles given to employees for mixed use most of the year | 70% | "uso promiscuo" |
-
-### 5.1 Cash Basis for Freelancers
-
-- Income = everything received in the year for the profession, less costs paid that year (TUIR art. 54(1)). A fee from a withholding agent received in the next year counts in the year the agent had to withhold.
-- **Not income** (art. 54(2)): contributions that the law itself puts on the client, such as the cassa contributo integrativo; job expenses charged analytically to the client; recharges of shared office costs. The optional gestione separata rivalsa is part of the fee, subject to withholding (Section 1, INPS).
-- **Traceable payment.** Meals, lodging, travel and taxis in Italy are deductible only if paid by bank, post or another traceable method (art. 54-septies(6-bis)); a reimbursement of such costs paid otherwise is income (art. 54(2-bis)).
-
-### 5.2 INPS Gestione Separata Deductibility
-
-- Compulsory gestione separata or cassa contributions paid in the year are oneri deducibili, deducted from total income before the brackets (Agenzia IRPEF page).
-
-### 5.3 Telecoms 80% Cap
-
-- Telecom equipment and its running costs: the art. 54-quinquies(4) share (the live Guide cited art. 54).
-
-### 5.4 Vehicles 20% Cap
-
-- Individual professional: the art. 164 share, ONE vehicle. The cost cap is printed only in lire ("lire 35 milioni"). Fuel needs traceable payment.
-
-### 5.5 Equipment Threshold (Beni Strumentali)
-
-- An asset with unit cost not above EUR 516.40 is deducted in full in the year bought; above it, depreciate at no more than the ministerial coefficients, halved in year one (art. 54-quinquies(1)). The coefficient table (D.M. 31 December 1988) was not read.
-- Mixed-use goods (not vehicles), and the rent and running costs of premises used both ways, are deducted at 50%; premises only if there is no other office in the same comune.
-
-### 5.6 IVA (VAT) Not Included in Income or Expenses
-
-- Strip IVA: receipts net of IVA, costs net of deductible IVA. See `italy-vat-return`.
-
-### 5.7 F24 Tax Payments Are Not Deductible
-
-- IRPEF (balance and acconti), surcharges and IVA paid by F24 are taxes, not costs.
-
-### 5.8 Hospitality (Meals/Accommodation) 75% Cap
-
-- The art. 54-septies(1) share, within the fee-linked cap; traceable payment in Italy; social meals none. The live Guide cited art. 109, the business rule.
-
-### 5.9 Tax Computation Flow
-
-**Withholding on fees (D.P.R. 600/1973 art. 25)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/aliquote-f24_rit_red_lav_aut |
-| Withholding on account on fees paid to resident professionals | 20% | "la ritenuta, effettuata a titolo d’acconto, è pari al 20%" |
-
-- **Flow.** Receipts less costs = net professional income (Quadro RE). Plus other income, less oneri deducibili (INPS or cassa) = taxable income. Brackets, less detrazioni = net IRPEF. Less withholdings and acconti = balance. Surcharges on taxable income.
-- Normattiva's text of D.P.R. 600/1973 art. 25 still prints the original 1973 rate; later laws raised it, shown only in its notes. Use the rate in the table. Forfettari are not subject to this withholding.
-
-### 5.10 Filing Deadlines
-
-| Item | Deadline |
-| --- | --- |
-| Modello Redditi PF, online | 15 April to 31 October of the following year (D.P.R. 322/1998 art. 2(1)) |
-| Modello Redditi PF on paper, post office (only where allowed) | 15 April to 30 June of the following year |
-| IRPEF balance + first acconto | 30 June, or the next 30 days with the surcharge in the acconti table |
-| Second or single acconto | 30 November |
-| Modello 730 | Not for income needing a VAT number. The 2026 edition was due 30 September 2026 |
-
-- A return filed within ninety days of the deadline is valid, but late penalties apply; later, it counts as not filed (art. 2(7)).
-- The 730 covers employment and pension income and self-employed income needing no VAT number, such as occasional work. Pages: see Sources.
-
-### 5.11 Penalties
-
-**D.Lgs. 471/1997 art. 1, violations from 1 September 2024**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30 |
-| Return not filed: centoventi per cento (one hundred and twenty per cent) of the tax due, minimum | EUR 250 | "minimo di euro 250" |
-| Return not filed, no tax due: from the minimum above up to (may be doubled for those who must keep accounts) | EUR 1,000 | "da euro 250 a euro 1.000" |
-| Understated return (infedele): settanta per cento (seventy per cent) of the extra tax, minimum | EUR 150 | "minimo di euro 150" |
-
-- **Late payment** (art. 13): venticinque per cento (twenty-five per cent) of each unpaid amount, halved up to ninety days late, less again up to fifteen days.
-- The statute prints these rates only in words. The start date is in note 40 of art. 1. The live Guide's rates were pre-September 2024; invoice penalties are in `italy-vat-return`.
-
-## Section 6: Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Deduction
-
-- Home used also for work: the art. 54-quinquies share of rent (or rendita if owned) and running costs, only with no other office in the comune. Work-only premises: full.
-
-### 6.2 Mixed-Use Vehicle (Auto ad Uso Promiscuo)
-
-- Individual professional: the art. 164 share, one vehicle. Higher shares only for agents and employee cars, with evidence.
-
-### 6.3 Regime Ordinario vs Regime Forfettario Comparison
-
-- Near the forfettario limits: show both computations, do not recommend, flag.
-
-### 6.4 Cassa Previdenziale Contributions (Inarcassa, ENPAM, etc.)
-
-- Each fund sets its own rates, on no allowed page. Use the yearly statement; do not estimate.
-
-### 6.5 Rappresentanza (Entertainment/Promotional) Expenses
-
-- Deductible within the fee-linked cap in the art. 54-septies table, only if paid traceably. Gifts of goods and art objects count. Flag near the cap.
-
-### 6.6 Foreign Client Compensation
-
-- Foreign withholding and credit may apply; needs treaty analysis. Escalate. See `italy-transfer-pricing` for related-party pricing.
-
-### 6.7 Crypto Income or NFT Sales
-
-**Crypto (L. 199/2025)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 |
-| Substitute tax on crypto gains, 2026 | 33% | "ordinaria del 33 per cento" |
-| Rate kept for euro e-money tokens | 26% | "del 26 per cento" |
-
-- Taxed apart from professional income, never in Quadro RE. The live Guide's single rate is the pre-2026 one. See `italy-crypto-tax`.
-
-### 6.8 Occasional Work (Lavoro Autonomo Occasionale)
-
-**Occasional work and INPS (D.L. 269/2003 art. 44)**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-06-30 |
-| Enrolment in the gestione separata only if yearly income from it is above | EUR 5,000 | "superiore ad euro 5.000" |
-
-- An INPS threshold, not a tax exemption. Occasional work needs no VAT number and can go on the 730.
-
-## Section 7: Excel Working Paper Template
-
-~~~
-ITALIAN INCOME TAX WORKING PAPER (REGIME ORDINARIO)
-Taxpayer: ____ CF: ____ FY: 2026 Region: ____
-
-A: INCOME (Quadro RE)
-Gross professional receipts (net of IVA) ____
-
-B: DEDUCTIBLE COSTS
-Rent / utilities (professional portion) ____
-Telecoms (80% of total) ____
-Software, professional and legal fees ____
-Training (within yearly cap) ____
-Travel (professional) ____
-Hotel and meals (75%, fee cap) ____
-Insurance, bank charges, processor fees ____
-Depreciation (ammortamento) ____
-TOTAL COSTS ____
-
-C: NET PROFESSIONAL INCOME (A less B) ____
-
-D: IRPEF
-Other income ____
-Less: INPS gestione separata / cassa (____)
-Taxable income ____
-Gross IRPEF (brackets) ____
-Less: detrazioni (____)
-Less: ritenute d'acconto, acconti (F24) (____)
-IRPEF balance / (refund) ____
-
-E: ADDIZIONALI
-Regionale (___%) + Comunale (___%) ____
-
-F: INPS GESTIONE SEPARATA
-Net income x 26.07% (or cassa rate) ____
-Less: contributions already paid (____)
-
-G: REVIEWER FLAGS
-[ ] Forfettario test (previous year at or below EUR 85,000?)
-[ ] Vehicle: 20% share, one vehicle?
-[ ] Assets above EUR 516.40 depreciated?
-[ ] Telecoms 80%, hotel and meals 75% and fee cap?
-[ ] Travel and meals in Italy paid traceably?
-[ ] Home office: no other office in the comune?
-[ ] Acconti checked against F24; IVA stripped; cassa or gestione separata confirmed?
-~~~
-
-## Section 8: Bank Statement Reading Guide
-
-### Italian Bank Statement Formats
-
-| Bank | Format | Key Fields |
-| --- | --- | --- |
-| Intesa Sanpaolo | CSV (semicolon) | Data movimento; Valuta; Descrizione; Dare; Avere |
-| UniCredit | CSV / PDF | Data; Descrizione operazione; Dare; Avere; Saldo |
-| BancoBPM | PDF / Excel | Data; Causale; Importo Dare; Importo Avere |
-| FinecoBank | CSV | Data; Entrata; Uscita; Descrizione; Tipo |
-| N26 Italy | CSV (app export) | Date,Payee,Account number,Transaction type,Payment reference,Amount (EUR) |
-| Hype Business | CSV | Data;Descrizione;Importo;Tipo (ENTRATA/USCITA) |
-| Revolut Italy | CSV | Type,Product,Started Date,Completed Date,Description,Amount,Fee,Currency,State |
-
-### Key Italian Banking Narrations
-
-| Narration | Meaning | Classification Hint |
-| --- | --- | --- |
-| BONIFICO DA [sender] | Transfer in | Professional income |
-| ACCREDITO BONIFICO SEPA | SEPA credit | Income |
-| VB DA [sender] | UniCredit credit | Income |
-| BONIFICO A FAVORE [payee] | Transfer out | Expense |
-| ADDEBITO | Direct debit | Recurring expense |
-| PAGAMENTO F24 | Tax payment | Exclude |
-| NEXI PAGAMENTI | Card settlement | Income |
-| INTERESSI ATTIVI | Interest | Capital income |
-| CANONE CONTO | Account fee | Bank charges |
-
-### Amount Format Notes
-
-- Italian banks `1.234,56`; N26 `1234.56`; FinecoBank comma decimal, no thousands separator.
-- Dates: DD/MM/YYYY (Italian banks); YYYY-MM-DD (N26). Revolut: keep `State = COMPLETED` rows only.
-
-## Section 9: Onboarding Fallback
-
-If the client cannot answer at once:
-
-1. Treat credits from S.r.l. and S.p.A. clients as possible professional income.
-2. F24 payments are taxes, NOT expenses; INPS contributions ARE deductible from total income.
-3. Apply the conservative defaults (Section 1) and the Section 5 shares.
-4. Produce the working paper with PENDING flags, and ask:
-
-~~~
-ONBOARDING QUESTIONS: ITALY IRPEF, REGIME ORDINARIO
-1. Regime: ordinario o forfettario? Ricavi o compensi del 2025?
-2. Regione e comune di residenza fiscale?
-3. Cassa previdenziale o Gestione separata INPS? Gia pensionato?
-4. Rivalsa INPS in fattura?
-5. Compensi incassati nel 2026, al netto dell'IVA?
-6. Acconti IRPEF e contributi INPS versati nel 2026?
-7. Familiari a carico?
-8. Auto usata per lavoro? Una sola?
-9. Studio in casa? Altro studio nello stesso comune?
-~~~
-
-## Section 10: Reference Material
-
-### Key Legislation
-
-| Topic | Reference |
-| --- | --- |
-| Professional income | TUIR art. 53; art. 54 to 54-octies (D.Lgs. 192/2024) |
-| Assets, mixed use, telecoms | TUIR art. 54-quinquies |
-| Hotel, meals, rappresentanza, training | TUIR art. 54-septies |
-| Vehicles | TUIR art. 164 |
-| Brackets; high-income offset | TUIR art. 11 and art. 16-ter(5-bis), L. 199/2025 art. 1 commi 3-4 |
-| Detrazioni | TUIR art. 13 |
-| Surcharges | D.Lgs. 68/2011 art. 6; D.Lgs. 360/1998 art. 1 |
-| Returns; withholding | D.P.R. 322/1998 art. 2; D.P.R. 600/1973 art. 25 |
-| Penalties | D.Lgs. 471/1997 art. 1 and 13 |
-| Depreciation coefficients | D.M. 31 December 1988 (not read) |
-| New TUIR from 2027 | D.Lgs. 117/2026 art. 377 |
-
-### Known Gaps / Out of Scope
-
-- Forfettario beyond the test in Section 1; IRES and IRAP (`it-irap`); non-residents; capital gains; crypto (`italy-crypto-tax`); rental income; impatriati (`it-impatriati`); employee payroll and the cuneo fiscale (`italy-payroll`)
-
-### Changelog
-
-| Version | Date | Change |
-| --- | --- | --- |
-| 3.1 | October 2026 | 2026 self-employed detrazioni added from TUIR art. 13(5); forfettario pointer now it-regime-forfettario |
-| 3.0 | September 2026 | Tax year 2026 refresh against official pages; detrazioni table removed as unproven |
-| 2.0 | April 2026 | Full rewrite: bank formats, pattern library, worked examples |
-| 1.0 | 2025 | Initial version |
-
-### Self-Check
-
-- [ ] Forfettario ruled out first?
-- [ ] Cash basis; IVA stripped; F24 taxes excluded?
-- [ ] Telecom, vehicle (one), hotel and meal shares and the fee cap applied?
-- [ ] Travel and meals in Italy paid traceably?
-- [ ] Assets above the small-asset limit depreciated?
-- [ ] Contributions deducted from total income before the brackets?
-- [ ] 2026 middle rate, not the 2025 one?
-- [ ] Surcharges at the region's and comune's own rates?
-- [ ] Detrazioni treated as tax credits?
-
-## The method, step by step
-
-1. Test the forfettario conditions on the Agenzia forfettario page: previous-year figures for entry, this year's receipts for the same-year exit. If it applies, stop. (See Sources.)
-2. Confirm professional income (TUIR art. 53) and find it on the cash basis under art. 54, applying art. 54-quinquies, 54-septies and the vehicle rule of art. 164.
-3. Work out gestione separata from INPS Circolare n. 8/2026 (or use the cassa statement); deduct contributions paid from total income.
-4. Apply TUIR art. 11 with the middle rate changed by L. 199/2025, then the detrazioni of art. 13, cut under art. 16-ter(5-bis) above its income limit.
-5. Add the regional surcharge (base in D.Lgs. 68/2011 art. 6) and the municipal one at the local rates.
-6. Subtract withholdings and acconti; set the new acconti; pay by F24 on 30 June and 30 November.
-7. File the Modello Redditi PF online by 31 October of the following year (D.P.R. 322/1998 art. 2).
+# Italian income tax (IRPEF) for the self-employed: regime ordinario, 2026
+
+> **General reference only.** This skill is general tax reference material for AI-assisted work. No accountant has reviewed it. Do not rely on it to file, pay or take a tax position without review by a qualified Italian professional (commercialista).
+
+How Italy taxes a resident self-employed professional under IRPEF for tax year 2026. The tax year is the calendar year, so 2026 income is declared and settled in 2027. The authority is the Agenzia delle Entrate; the currency is the euro. For 2026 income the old TUIR (D.P.R. 917/1986) applies. The new TUIR (D.Lgs. 117/2026) applies only from 1 January 2027, so Normattiva may show some old articles as repealed for later dates. Every statute here was read as in force on 24 October 2026.
+
+This skill does not repeat its siblings:
+
+- employees, pensioners, investment and rental income, the cuneo fiscale in full, family detrazioni: `it-irpef-employees`;
+- the flat-rate regime in full (coefficients, start-up conditions, exit year): `it-regime-forfettario`;
+- acconti methods (storico and previsionale), F24 codes: `it-estimated-tax`;
+- INPS gestione separata rates, cap and rivalsa: `it-inps-contributions`; artigiani, commercianti and the casse: `it-inps-artigiani-commercianti`;
+- inbound workers and the flat tax for new residents: `it-impatriati`; residence and treaties: `it-cross-border`;
+- employer withholding, payslips and the CU: `italy-payroll`; crypto: `italy-crypto-tax`; VAT: `italy-vat-return`; IRAP: `it-irap`.
+
+## Who this applies to
+
+- **Resident individuals** (TUIR art. 2; the residence tests are in `it-cross-border`). They pay IRPEF on income from anywhere in the world.
+- **Professionals with self-employed income** (redditi di lavoro autonomo, TUIR art. 53) taxed under the **regime ordinario**: income worked out on the cash basis (art. 54) and declared in Quadro RE of the Modello Redditi PF.
+- **People with mixed income.** A professional who is also an employee or a pensioner gets only one of the art. 13 detrazioni (the rates table gives all three). The cuneo fiscale goes only to employees.
+
+Decide the regime first. A person is in the **regime forfettario** (L. 190/2014 art. 1 commi 54-89) if, in the previous year, revenue or fees (annualised, all ATECO codes together) were not above EUR 85,000, staff and collaborator costs were not above EUR 20,000, and no exclusion in comma 57 applies (for example employment income above EUR 35,000 in 2025, a related partnership stake or S.r.l. control, or working mainly for a current or recent employer). A forfettario taxpayer pays one 15% substitute tax (5% for the first five years if the start-up conditions are met) instead of IRPEF, both surcharges and IRAP, and this skill does not apply: use `it-regime-forfettario`. The regime ends the year after a condition fails, but in the same year once revenue or fees go above EUR 100,000, with VAT due from the sale that crosses it.
+
+**Flat tax incrementale.** The 15% substitute tax on the increase in business or professional income (L. 197/2022 art. 1 comma 55) applied "per il solo anno 2023". The text in force on 24 October 2026 has not extended it, so it is not available for 2026.
+
+Out of scope:
+
+- business income (reddito d'impresa: selling goods, e-commerce, trade), declared in Quadro RF or RG, not RE. The bands and detrazioni below still apply, but the income rules do not;
+- non-residents beyond the points in `## Cross-border points`;
+- cassa contribution rates (each fund sets its own: use the fund's statement);
+- anything to be filed: every result here is an estimate for a commercialista to confirm.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| IRPEF band 1, taxable income up to EUR 28,000 | 23% | 2026 | TUIR art. 11(1)(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-24 |
+| IRPEF band 2, EUR 28,000 to 50,000 | 33% (35% in 2024 and 2025) | 2026 | TUIR art. 11(1)(b) as amended by L. 199/2025 art. 1 comma 3, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 |
+| IRPEF band 3, above EUR 50,000 | 43% | 2026 | TUIR art. 11(1)(c), link above |
+| Gross tax on the first EUR 50,000 | EUR 13,700 (was 14,140) | 2026 | Agenzia delle Entrate, IRPEF rates page, https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
+| Self-employed detrazione, total income up to EUR 5,500 | EUR 1,265 | 2026 | TUIR art. 13(5)(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 |
+| Self-employed detrazione, EUR 5,500 to 28,000 | EUR 500 + 765 x (28,000 - total income) / 22,500 | 2026 | TUIR art. 13(5)(b), link above |
+| Self-employed detrazione, EUR 28,000 to 50,000; nil above 50,000 | EUR 500 x (50,000 - total income) / 22,000 | 2026 | TUIR art. 13(5)(b-bis), link above |
+| Self-employed detrazione, extra if total income is above EUR 11,000 and not above 17,000 | EUR 50 | 2026 | TUIR art. 13(5-ter), link above |
+| Employment detrazione, total income up to EUR 15,000 (minimum 690; 1,380 for fixed-term) | EUR 1,955 | 2026 | TUIR art. 13(1)(a), link above |
+| Employment detrazione, EUR 15,000 to 28,000 | EUR 1,910 + 1,190 x (28,000 - total income) / 13,000 | 2026 | TUIR art. 13(1)(b), link above |
+| Employment detrazione, EUR 28,000 to 50,000; nil above 50,000 | EUR 1,910 x (50,000 - total income) / 22,000 | 2026 | TUIR art. 13(1)(c), link above |
+| Employment detrazione, extra if total income is above EUR 25,000 and not above 35,000 | EUR 65 | 2026 | TUIR art. 13(1.1), link above |
+| Pension detrazione, total income up to EUR 8,500 (minimum 713) | EUR 1,955 | 2026 | TUIR art. 13(3)(a), link above |
+| Pension detrazione, EUR 8,500 to 28,000 | EUR 700 + 1,255 x (28,000 - total income) / 19,500 | 2026 | TUIR art. 13(3)(b), link above |
+| Pension detrazione, EUR 28,000 to 50,000; nil above 50,000 | EUR 700 x (50,000 - total income) / 22,000 | 2026 | TUIR art. 13(3)(c), link above |
+| Pension detrazione, extra if total income is above EUR 25,000 and not above 29,000 | EUR 50 | 2026 | TUIR art. 13(3-bis), link above |
+| Cuneo fiscale, employees with total income up to EUR 20,000: tax-free sum, share of employment income | 7.1% / 5.3% / 4.8% (pay up to 8,500 / up to 15,000 / above) | 2026 | L. 207/2024 art. 1 comma 4, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
+| Cuneo fiscale, employees with total income above EUR 20,000: extra detrazione | EUR 1,000 to 32,000, then 1,000 x (40,000 - total income) / 8,000; nil above 40,000 | 2026 | L. 207/2024 art. 1 comma 6, link above |
+| 19% detrazioni (oneri), e.g. medical costs above EUR 129.11 | 19% | 2026 | TUIR art. 16-ter(5-bis)(a); Agenzia, https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio |
+| 19% detrazioni in full up to total income of | EUR 120,000; then x (240,000 - total income) / 120,000; nil from 240,000 | 2026 | TUIR art. 15(3-bis), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art15!vig=2026-10-24 |
+| Cap on oneri giving a detrazione, total income above EUR 75,000 and up to 100,000: base amount | EUR 14,000 | 2026 | TUIR art. 16-ter(1)-(2), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art16ter!vig=2026-10-24 |
+| Same cap, total income above EUR 100,000: base amount | EUR 8,000 | 2026 | TUIR art. 16-ter(2)(b), link above |
+| Cap coefficient by qualifying children: none / one / two / more or a disabled child | 0.50 / 0.70 / 0.85 / 1 | 2026 | TUIR art. 16-ter(3), link above |
+| Cut to 19% detrazioni (not medical), political gifts and disaster insurance, total income above EUR 200,000 | EUR 440 | 2026 | TUIR art. 16-ter(5-bis), inserted by L. 199/2025 art. 1 comma 4, link above |
+| Addizionale regionale, base rate | 1.23%; regions may add up to 2.1 points | 2026 | D.Lgs. 68/2011 art. 6, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-10-24 |
+| Addizionale comunale, maximum rate set by the comune | 0.8% | 2026 | D.Lgs. 360/1998 art. 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-10-24 |
+| Withholding on account on fees paid to resident professionals by a withholding agent | 20% | 2026 | Agenzia, rates on self-employed income, https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/aliquote-f24_rit_red_lav_aut |
+| Forfettario entry limit, previous-year revenue or fees | EUR 85,000 | 2026 | L. 190/2014 art. 1 comma 54(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
+| Forfettario same-year exit | above EUR 100,000 | 2026 | L. 190/2014 art. 1 comma 71, link above |
+| Forfettario staff and collaborator costs, previous year | EUR 20,000 | 2026 | L. 190/2014 art. 1 comma 54(b), link above |
+| Forfettario exclusion: previous-year employment income above | EUR 35,000 (EUR 30,000 standing rule) | 2025 and 2026 | L. 207/2024 art. 1 comma 12 as amended by L. 199/2025 art. 1 comma 27 |
+| Forfettario substitute tax / start-up rate | 15% / 5% | 2026 | L. 190/2014 art. 1 commi 64-65, link above |
+| Small asset expensed in full in the year bought, unit cost up to | EUR 516.40 | 2026 | TUIR art. 54-quinquies(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54quinquies!vig=2026-10-24 |
+| Goods and premises used both for work and privately | 50% | 2026 | TUIR art. 54-quinquies, link above |
+| Telecom equipment and its running costs | 80% | 2026 | TUIR art. 54-quinquies, link above |
+| Hotel and meals: share deductible / overall cap as share of fees received | 75% / 2% | 2026 | TUIR art. 54-septies(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54septies!vig=2026-10-24 |
+| Entertainment (rappresentanza) cap, share of fees received | 1% | 2026 | TUIR art. 54-septies, link above |
+| Training, masters, conferences with travel and stay: yearly cap | EUR 10,000 | 2026 | TUIR art. 54-septies(3), link above |
+| Car used by an individual professional, one vehicle only | 20% | 2026 | TUIR art. 164, https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art164!vig=2026-10-24 |
+| Car used by sales agents / car given to an employee for mixed use | 80% / 70% | 2026 | TUIR art. 164, link above |
+| Occasional self-employment: INPS enrolment only if yearly income from it is above | EUR 5,000 | 2026 | D.L. 269/2003 art. 44, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-24 |
+| Cash payments between different persons prohibited at or above | EUR 5,000 | 2026 | D.Lgs. 231/2007 art. 49, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231~art49!vig=2026-10-24 |
+| Crypto gains, substitute tax (euro e-money tokens 26%) | 33% | 2026 | L. 207/2024 art. 1 comma 24 as amended by L. 199/2025 art. 1 comma 28 |
+
+How the table works:
+
+- **Bands** apply to taxable income: total income (reddito complessivo) less oneri deducibili (art. 10), such as compulsory INPS or cassa contributions paid in the year. Each rate applies only to the slice inside its band.
+- **Detrazioni** come off gross tax, never off income, and only up to the tax due: no refund of the excess (art. 11(3)). The art. 13 detrazioni use **total income**, before oneri deducibili and without the main home (art. 13(6-bis)). Each ratio is taken to four decimal places, cut off, not rounded (art. 13(6)).
+- **One art. 13 detrazione only.** The self-employed one (comma 5) cannot be combined with the employment (comma 1) or pension (comma 3) one. Employment and pension amounts are scaled to the days worked or drawn in the year; the self-employed one is not.
+- **No-tax area for the self-employed.** EUR 1,265 is 23% of EUR 5,500, so with no other income or oneri no IRPEF is due up to EUR 5,500 of total income.
+- **Order for oneri.** First the art. 16-ter cap (above EUR 75,000), then the art. 15(3-bis) phase-out (above EUR 120,000), then the EUR 440 cut (above EUR 200,000), which cannot take the detrazione below nil. Medical costs and some start-up investments are outside the art. 16-ter cap; mortgage interest, insurance and multi-year building instalments from contracts or spending up to 31 December 2024 are also outside it (art. 16-ter(4)-(5)).
+- **Cuneo fiscale** is for employees only (L. 207/2024 commi 4-9). A professional with no employment income gets neither part. The details, the separate trattamento integrativo and the 2026 payroll substitute taxes are in `it-irpef-employees` and `italy-payroll`.
+
+## The taxable base
+
+**Professional income on the cash basis (TUIR art. 54).** Fees received in the year less costs paid in the year, net of VAT. A fee from a withholding agent received in January counts in the year the agent had to withhold. Not income (art. 54(2)): contributions the law itself puts on the client (the cassa contributo integrativo), job expenses recharged analytically to the client, recharges of shared office costs. The optional 4% gestione separata rivalsa is part of the fee and subject to withholding (see `it-inps-contributions`). Interest on the business account is capital income, not professional income.
+
+**Expense limits** (rates table for the figures):
+
+- **Mixed-use goods and premises** at 50% (art. 54-quinquies). A home also used as an office: 50% of the rent (or of the rendita if owned) and running costs, only if there is no other office in the same comune. Work-only premises: in full.
+- **Telecom equipment and use** at 80%.
+- **Assets.** Unit cost up to EUR 516.40: expensed in the year bought. Above it: depreciated at no more than the ministerial coefficients, halved in the first year.
+- **Hotel and meals** at 75%, within a total cap of 2% of fees received; meals with no work purpose: nil.
+- **Entertainment** within 1% of fees received, paid traceably.
+- **Training** in full up to the yearly cap.
+- **Car.** One vehicle at 20% for an individual professional; the cost cap in art. 164 is still printed in lire ("lire 35 milioni"). Higher shares only for agents and employee cars, with evidence.
+- **Traceable payment.** Meals, lodging, travel and taxis in Italy are deductible only if paid by bank, post or another traceable method (art. 54-septies(6-bis)).
+- **Never deductible:** IRPEF, surcharges and VAT paid by F24 (they are taxes, not costs).
+
+**Contributions.** Compulsory gestione separata or cassa contributions paid in the year are oneri deducibili. They come off total income, not off professional income (Agenzia IRPEF page). A cassa member pays the fund, not the gestione separata.
+
+**The computation.** Fees less costs = net professional income (Quadro RE). Add other income = total income. Less oneri deducibili = taxable income. Apply the bands = gross tax. Less the art. 13 detrazione, other detrazioni (art. 15 and others) = net IRPEF. Less the 20% withholdings suffered and the acconti paid = balance due or credit. Then the surcharges: both are worked out on taxable income at the region's and comune's own rates, and the comunale is due only if net IRPEF is due for the year (D.Lgs. 360/1998 art. 1(4)). A comune may set an exemption threshold. Forfettario income is outside both.
+
+**Reading bank lines.** Credits such as BONIFICO DA, VB DA, ACCREDITO, STRIPE, PAYPAL, SATISPAY, NEXI, SUMUP or ZETTLE payouts are receipts: gross up card and platform payouts to the amount in the processor report, and deduct the fee. STIPENDIO is employment income, INTERESSI ATTIVI capital income, PAGAMENTO F24 a tax (exclude), RIMBORSO SPESE income unless recharged analytically. Selling goods online (an e-commerce payout pattern) points to business income in Quadro RF or RG: flag it. A credit from a recent employer may block the forfettario. Italian banks print amounts as 1.234,56; app banks (N26, Revolut) as 1234.56, and in a Revolut export only COMPLETED rows count.
+
+**Red flags.** Previous-year fees at or below EUR 85,000 (test the forfettario first); contributions far below the rate on net income; no acconti paid; cash payments at or above EUR 5,000; any cost with no document (reject it); one client providing nearly all fees.
+
+**Other income that stays out of Quadro RE.** Crypto gains (33% substitute tax, `italy-crypto-tax`); occasional self-employment with no VAT number (income from art. 67, can go on the 730; INPS only above EUR 5,000); foreign fees paid with foreign tax (see `## Cross-border points`).
+
+## Deadlines and filing
+
+| Item | Deadline for 2026 income | Source |
+|---|---|---|
+| Modello Redditi PF, online | 15 April to 31 October 2027. 31 October 2027 is a Sunday, so it moves to the first working day after | D.P.R. 322/1998 art. 2(1); D.L. 70/2011 art. 7(2)(l) |
+| Modello Redditi PF on paper at a post office (only where paper is allowed) | 15 April to 30 June 2027 | D.P.R. 322/1998 art. 2(1) |
+| Modello 730 (employees, pensioners, and self-employed income needing no VAT number) | 30 September 2027 | D.M. 164/1999 art. 13; Agenzia, 730/2026 page (30 September 2026 for 2025 income) |
+| IRPEF balance for 2026 and first acconto for 2027 | 30 June 2027, or the next 30 days with a 0.40% surcharge | Agenzia, "Come si paga l'Irpef" |
+| Second or single acconto for 2026 | 30 November 2026 | Agenzia, "Come si paga l'Irpef" |
+
+- **Which return.** A professional with a VAT number files the Modello Redditi PF. The 730 is not for income that needs a VAT number.
+- **Late return.** A return filed within 90 days of the deadline is valid, with penalties for the delay; after 90 days it counts as not filed (D.P.R. 322/1998 art. 2(7)).
+- **Acconti.** No acconto if the tax declared for the year, after detrazioni, credits and withholdings, is not above EUR 51.65. Otherwise the acconto is 100% of it (or of the lower tax expected). Below EUR 257.52: one payment by 30 November; otherwise 40% by 30 June and 60% by 30 November. Taxpayers subject to ISA pay two equal instalments on the same dates, or one by 30 November if the total is not above EUR 206. Methods and F24 codes: `it-estimated-tax`.
+- **Payment** is by F24, online.
+
+## Penalties and interest
+
+| Item | Rule | Source |
+|---|---|---|
+| Return not filed | 120% of the tax due, minimum EUR 250; no tax due: EUR 250 to 1,000 (up to double for those who must keep books) | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-24 |
+| Return filed more than 90 days late, before any audit and within the assessment period | 75% of the tax due (three times the 25% late-payment penalty) | D.Lgs. 471/1997 art. 1(1), link above |
+| Understated return (infedele) | 70% of the extra tax, minimum EUR 150; cut by a third if the extra tax is under 3% of the tax declared and under EUR 30,000 | D.Lgs. 471/1997 art. 1(2) and (4), link above |
+| Late payment | 25% of the unpaid amount; half (12.5%) if paid within 90 days; within 15 days, one fifteenth of that half for each day late | D.Lgs. 471/1997 art. 13(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 |
+| Ravvedimento: unpaid tax or acconto paid within 30 days | one tenth of the minimum penalty | D.Lgs. 472/1997 art. 13(1)(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 |
+| Ravvedimento: within 90 days of the error, or of the return deadline for errors in the return | one ninth of the minimum | D.Lgs. 472/1997 art. 13(1)(a-bis), link above |
+| Ravvedimento: by the return deadline for the year of the violation | one eighth of the minimum | D.Lgs. 472/1997 art. 13(1)(b), link above |
+| Ravvedimento: after that deadline | one seventh of the minimum | D.Lgs. 472/1997 art. 13(1)(b-bis), link above |
+| Ravvedimento: return filed up to 90 days late | one tenth of the minimum omitted-return penalty (EUR 25 on the EUR 250 minimum) | D.Lgs. 472/1997 art. 13(1)(c), link above |
+| Interest with ravvedimento | legal rate, day by day: 1.60% a year from 1 January 2026 | D.Lgs. 472/1997 art. 13(2); D.M. 10 December 2025, GU n. 289 of 13 December 2025 |
+
+Ravvedimento is barred once a notice of assessment or liquidation is served (art. 13(1-ter)). The reduced penalty, the tax and the interest are paid together. Lower reductions (one sixth, one fifth) apply after an audit report or a draft assessment; refer those. Invoice and VAT penalties are in `italy-vat-return`.
+
+## Cross-border points
+
+- **Residence** decides the base: residents pay on worldwide income, non-residents only on income produced in Italy (Agenzia IRPEF page). The residence tests and treaties are in `it-cross-border`.
+- **Non-residents** may deduct only some oneri (TUIR art. 24(2)) and claim only some detrazioni (art. 24(3)). A non-resident with at least 75% of total income from Italy and no similar relief at home ("Schumacker") gets all deductions and detrazioni (Agenzia IRPEF page; D.M. 21 September 2015).
+- **Fees paid to non-residents** for work done in Italy bear a final 30% withholding (Agenzia withholding page), unless a treaty reduces it.
+- **Foreign clients.** Fees a resident earns abroad are taxed in Italy; foreign tax may give a credit under TUIR art. 165 within its limits. Check the treaty and escalate.
+- **Inbound workers** may exempt part of their income under the impatriati regime, and new residents may opt for the EUR 300,000 flat tax on foreign income (raised from EUR 200,000 for those moving from 1 January 2026, L. 199/2025 art. 1 commi 25-26): see `it-impatriati`.
+- **Forfettario for EU and EEA residents** is open only to those producing at least 75% of their income in Italy (Agenzia forfettario page).
+
+## Worked examples
+
+### Example 1: Graphic designer in Milan, regime ordinario, 2026
+
+Fees received in 2026, net of VAT: EUR 60,000, of which EUR 40,000 from business clients that withheld 20%. Deductible costs paid: EUR 14,000. Gestione separata contributions paid in 2026: EUR 9,000. No other income, no oneri giving a detrazione.
+
+Net professional income is 60,000 less 14,000 = EUR 46,000, which is also total income. Taxable income is 46,000 less the 9,000 contributions = EUR 37,000. Gross tax: 23% of 28,000 = 6,440, plus 33% of 9,000 = 2,970, total EUR 9,410. The self-employed detrazione uses total income: (50,000 - 46,000) / 22,000 = 0.181818, cut to 0.1818, times 500 = EUR 90.90. Net IRPEF EUR 9,319.10. Withholdings were 20% of 40,000 = EUR 8,000, so EUR 1,319.10 is due by 30 June 2027, before the surcharges at the Lombardy and Milan rates and before acconti.
+
+```oa-check
+name: Self-employed designer, fees EUR 60,000, regime ordinario (2026 bands)
+inputs:
+  fees: 60000
+  costs: 14000
+  contributions: 9000
+  fees_withheld: 40000
+steps:
+  - net_income: fees - costs
+  - taxable: net_income - contributions
+  - band_23: min(taxable, 28000) * 0.23
+  - band_33: (min(taxable, 50000) - 28000) * 0.33
+  - gross_tax: band_23 + band_33
+  - ratio: floor((50000 - net_income) / 22000 * 10000) / 10000
+  - detrazione: round(500 * ratio, 2)
+  - net_irpef: gross_tax - detrazione
+  - withholding: fees_withheld * 0.2
+  - balance: net_irpef - withholding
+expected:
+  net_income: 46000
+  taxable: 37000
+  gross_tax: 9410.00
+  ratio: 0.1818
+  detrazione: 90.90
+  net_irpef: 9319.10
+  withholding: 8000.00
+  balance: 1319.10
+```
+
+### Example 2: Consultant above EUR 75,000 with one child, the art. 16-ter cap (2026)
+
+Net professional income EUR 95,000 (total income). Gestione separata contributions paid EUR 15,000. One qualifying child. Oneri at 19% paid in 2026: EUR 12,000, none medical, all from contracts made after 2024, each already within its own limit.
+
+Taxable income is 95,000 less 15,000 = EUR 80,000. Gross tax: 13,700 on the first 50,000 plus 43% of 30,000 = 12,900, total EUR 26,600. Total income is above EUR 50,000, so there is no self-employed detrazione. Total income is above EUR 75,000 and not above 100,000, so the oneri count only up to 14,000 x 0.70 = EUR 9,800. Total income is not above EUR 120,000, so no phase-out, and not above EUR 200,000, so no EUR 440 cut. Detrazione: 19% of 9,800 = EUR 1,862. Net IRPEF EUR 24,738, before withholdings, acconti and the surcharges. Without the cap the detrazione would have been 19% of 12,000 = EUR 2,280.
+
+```oa-check
+name: Consultant, total income EUR 95,000, art. 16-ter cap, one child (2026)
+inputs:
+  net_income: 95000
+  contributions: 15000
+  oneri_19: 12000
+  coefficient: 0.70
+steps:
+  - taxable: net_income - contributions
+  - band_23: min(taxable, 28000) * 0.23
+  - band_33: (min(taxable, 50000) - 28000) * 0.33
+  - band_43: max(taxable - 50000, 0) * 0.43
+  - gross_tax: band_23 + band_33 + band_43
+  - autonomo: 500 * clamp((50000 - net_income) / 22000, 0, 1)
+  - cap: 14000 * coefficient
+  - allowed: min(oneri_19, cap)
+  - phase: clamp((240000 - net_income) / 120000, 0, 1)
+  - detrazione_19: round(allowed * 0.19 * phase, 2)
+  - net_irpef: gross_tax - autonomo - detrazione_19
+expected:
+  taxable: 80000
+  gross_tax: 26600.00
+  autonomo: 0
+  cap: 9800.00
+  allowed: 9800.00
+  phase: 1
+  detrazione_19: 1862.00
+  net_irpef: 24738.00
+```
 
 ## Ask the client first
 
-- Revenue or fees last year, and so far this year? (Forfettario entry and exit.)
-- Employment or pension income last year, how much, and did the job end?
-- Enrolled in a cassa, or only in the INPS gestione separata? Already a pensioner?
-- Region and comune of tax residence?
-- Total income likely above EUR 75,000 or EUR 200,000?
-- Work from home, another office in the same comune, one car for work?
-
-## When to refuse or refer
-
-- Forfettario applies, or the same-year exit limit was crossed: refer for the forfettario return and the VAT.
-- Business income (goods, e-commerce, trade), not a profession: Quadro RF or RG, outside this Guide.
-- Employee income and the cuneo fiscale: see `italy-payroll`.
-- Non-residents, "Schumacker" claims, impatriati (`it-impatriati`), foreign income, treaties.
-- Cassa rates, rivalsa disputes, penalties and ravvedimento.
-- Anything to be filed: every computation here is an estimate for a commercialista to confirm.
+- Revenue or fees in 2025, and so far in 2026, and staff costs? (Forfettario entry and same-year exit.)
+- Any employment or pension income in 2025 or 2026, how much, and did the job end? (Forfettario bar; which art. 13 detrazione.)
+- A cassa member, or only the INPS gestione separata? Already a pensioner? Rivalsa added on invoices?
+- Region and comune of tax residence? (Surcharge rates.)
+- Total income likely above EUR 75,000, 120,000 or 200,000, and how many qualifying children? (Detrazione caps.)
+- Work from home with no other office in the comune, one car for work, any clients abroad?
 
 ## Sources
 
-- Agenzia, amounts subject to withholding: https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/importi-su-cui-si-applica-la-ritenuta-f24_rit_red_lav_aut
-- TUIR art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=
-- TUIR art. 13: https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22
-- TUIR art. 54: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30
-- TUIR art. 54-quinquies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30
-- TUIR art. 54-septies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54septies!vig=2026-06-30
-- TUIR art. 164: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30
-- L. 199/2025: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199
-- D.Lgs. 117/2026 art. 377: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377
-- D.Lgs. 68/2011 art. 6: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30
-- D.Lgs. 360/1998 art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-06-30
-- D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30
-- D.P.R. 600/1973 art. 25: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art25!vig=
-- D.Lgs. 471/1997 art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30
-- D.Lgs. 471/1997 art. 13: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30
-- D.L. 269/2003 art. 44: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-06-30
-- D.Lgs. 231/2007 art. 49: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231~art49!vig=2026-06-30
-- Agenzia, IRPEF rates: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef
-- Agenzia, paying IRPEF: https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef
-- Agenzia, forfettario: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-
-- Agenzia, forfettario coefficients: https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218
-- Agenzia, 730/2026: https://www.agenziaentrate.gov.it/portale/730-2026/chi-puo-presentare-il-730 and https://www.agenziaentrate.gov.it/portale/quando-e-come-presentare-il-730-2026
-- INPS Circolare n. 8/2026: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf
+| Source | URL | Read on |
+|---|---|---|
+| TUIR, D.P.R. 917/1986, art. 11 (bands) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 13 (detrazioni by type of income) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 15 (detrazioni for oneri, phase-out above EUR 120,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art15!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 16-ter (cap above EUR 75,000; EUR 440 cut above EUR 200,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art16ter!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 54 (professional income, cash basis) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 54-quinquies (assets, mixed use, telecoms) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54quinquies!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 54-septies (hotel, meals, entertainment, training, traceability) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54septies!vig=2026-10-24 | 2026-10-24 |
+| TUIR art. 164 (vehicles) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art164!vig=2026-10-24 | 2026-10-24 |
+| L. 199/2025 (Legge di Bilancio 2026), art. 1 commi 3-4, 25-28 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-10-24 | 2026-10-24 |
+| L. 207/2024 (Legge di Bilancio 2025), art. 1 commi 2-12 (cuneo fiscale, art. 16-ter, forfettario EUR 35,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 | 2026-10-24 |
+| L. 197/2022, art. 1 comma 55 (flat tax incrementale, 2023 only) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2022-12-29;197~art1!vig=2026-10-24 | 2026-10-24 |
+| L. 190/2014, art. 1 commi 54-89 (regime forfettario) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 68/2011 art. 6 (addizionale regionale) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 360/1998 art. 1 (addizionale comunale) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 322/1998 art. 2 (Redditi PF deadlines, late returns) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-24 | 2026-10-24 |
+| D.M. 164/1999 art. 13 (730 by 30 September) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.finanze:decreto:1999-05-31;164~art13!vig=2026-10-24 | 2026-10-24 |
+| D.L. 70/2011 art. 7(2)(l) (deadlines on a Saturday or holiday) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 471/1997 arts. 1 and 13 (penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 472/1997 art. 13 (ravvedimento) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 | 2026-10-24 |
+| D.M. 10 December 2025, legal interest rate for 2026 (GU n. 289, 13 December 2025) | https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&tipoSerie=serie_generale&tipoVigenza=originario | 2026-10-24 |
+| D.L. 269/2003 art. 44 (occasional work, INPS) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 231/2007 art. 49 (cash limit) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231~art49!vig=2026-10-24 | 2026-10-24 |
+| Agenzia delle Entrate, IRPEF rates and calculation (notes the 33% rate) | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-10-24 |
+| Agenzia delle Entrate, how IRPEF is paid (acconti) | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef | 2026-10-24 |
+| Agenzia delle Entrate, when to file the 730/2026 | https://www.agenziaentrate.gov.it/portale/quando-e-come-presentare-il-730-2026 | 2026-10-24 |
+| Agenzia delle Entrate, regime forfettario rules | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- | 2026-10-24 |
+| Agenzia delle Entrate, withholding rates on self-employed income | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/aliquote-f24_rit_red_lav_aut | 2026-10-24 |
+| Agenzia delle Entrate, medical expenses (19% above EUR 129.11, traceable payment) | https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio | 2026-10-24 |
 
-## PROHIBITIONS
+Not yet confirmed:
 
-- NEVER compute forfettario tax with this Guide; it gives only the test
-- NEVER use the 2025 middle IRPEF rate for 2026, or the rate printed in the body of D.P.R. 600/1973 art. 25 as the withholding rate
-- NEVER exceed the telecom, vehicle (one vehicle) or hotel and meal shares, or the fee-linked cap
-- NEVER fully expense an asset above the small-asset limit
-- NEVER deduct F24 tax payments, or include IVA in income or costs
-- NEVER use the accruals basis for professionals
-- NEVER assume gestione separata for a cassa member
-- NEVER present a computation as final: label it an estimate for a commercialista
-
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Commercialista, Consulente del Lavoro, or equivalent licensed practitioner in Italy) before filing or acting upon.
+- **19% rate in the statute.** Normattiva's text of TUIR art. 15(1) still prints "22 per cento"; the 19% rests on later law that the consolidated text does not show in that article, on art. 16-ter(5-bis)(a) as inserted by L. 199/2025 ("nella misura del 19 per cento") and on the Agenzia pages. The amending act was not read.
+- **Consolidated codes from 2027.** The 2026 balance, the acconti and any penalties fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any figure above.
+- **Depreciation coefficients** (D.M. 31 December 1988) and the car cost cap in euro: not read.
+- **Regional and municipal rates for 2026**: each region and comune sets its own; none read.
+- **ISA**: which professions are subject to ISA (equal acconti) was not read; see `it-estimated-tax`.
+- **Moved, not dropped:** the gestione separata rates and cap (26.07%, 24%, EUR 122,295, EUR 18,808) are in `it-inps-contributions`; the forfettario coefficients (78%, 67% and the full table) in `it-regime-forfettario`; the 2026 cuneo fiscale detail and family detrazioni in `it-irpef-employees`.
 
 > Contributed by OpenAccountants.
 
