@@ -18,7 +18,7 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return (periodic settlement and LIPE), it-dichiarazione-iva-annuale (annual return, December acconto, credits and refunds) | source-cited draft |
 | SC, social contributions | it-inps-contributions (gestione separata), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee and employer INPS and INAIL in it-employer-contributions | source-cited draft |
-| PR, payroll withholding | italy-payroll (IRPEF withholding, payslip, CU, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | source-cited draft |
+| PR, payroll withholding | italy-payroll (IRPEF withholding and conguaglio, cuneo fiscale, 2026 substitute taxes, fringe benefits, employee INPS, TFR, payslip, CU, 770, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | source-cited draft |
 | TP, transfer pricing | italy-transfer-pricing | source-cited draft |
 | XB, cross-border | it-cross-border (hub), it-impatriati | source-cited draft |
 
