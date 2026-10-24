@@ -38,12 +38,12 @@ See also: `ie-income-tax-form11` (computing the Form 11 liability and the return
 | Preliminary tax due date (not direct debit) | 31 October of the tax year: 31 October 2026 for 2026 | 2026 | s.959AO(1); https://www.irishstatutebook.ie/eli/2012/act/9/enacted/en/print |
 | Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026 | s.959AO(3)(b)(i); same |
 | Safe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026 | s.959AO(3)(b)(ii); same |
-| Safe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil | 2026 | s.959AO(3)(b)(iii); same |
+| Safe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil, or is taken as nil because the person was not a chargeable person for 2024 | 2026 | s.959AO(3)(b)(iii); same |
 | Preceding or pre-preceding year when not a chargeable person then | Taken as nil | 2026 | s.959AO(4)(a); same |
 | ROS extension, 2025 Form 11 balance and 2026 preliminary tax | Wednesday 18 November 2026, only if the person both pays and files through ROS | 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
 | Balance of 2026 tax (if preliminary tax was sufficient and on time) | Specified return date: 31 October 2027 | 2026 | s.959AO(2), s.959A; https://www.irishstatutebook.ie/eli/2012/act/9/enacted/en/print |
-| Direct debit collection day | 9th of the month, or next working day | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/collection/direct-debit/preliminary-income-tax-direct-debit-guidelines.pdf |
-| Direct debit minimum monthly amount | EUR 10 | 2026 | same |
+| Direct debit collection day | 9th of the month, or next working day | 2026 | Collector-General's conditions under s.959AP(1)(b); https://www.revenue.ie/en/tax-professionals/tdm/collection/direct-debit/preliminary-income-tax-direct-debit-guidelines.pdf |
+| Direct debit minimum monthly amount | EUR 10 | 2026 | s.959AP(1)(b) conditions; same |
 | Direct debit: minimum number of instalments in law | None. Finance Act 2025 s.100 deleted s.959AP(2) to (4) (the 3 and 8 equal monthly instalment rule) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/100/enacted/en/html |
 | Interest on late income tax, USC and Class S | 0.0219% a day, for each day or part of a day, from 1 July 2009 | 2026 | s.1080(2); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part47.pdf |
 | Late return surcharge, filed within 2 months of the return date | 5% of the tax, capped at EUR 12,695 | 2026 | s.1084(2)(a); same |
@@ -59,7 +59,7 @@ Preliminary tax is not a separate tax. It is a payment on account of the year's 
 
 1. 90% of the final 2026 liability. This needs an estimate. If the estimate turns out low, the test fails.
 2. 100% of the final 2025 liability. No estimate needed; this is the safe choice when 2026 is uncertain.
-3. 105% of the final 2024 liability, only for a person who pays by direct debit under s.959AP, and not if the 2024 liability was nil (s.959AO(3)(b)(iii)).
+3. 105% of the final 2024 liability, only for a person who pays by direct debit under s.959AP, and not if the 2024 liability was nil or is taken as nil under s.959AO(4)(a) (s.959AO(3)(b)(iii)).
 
 **What counts in the earlier years' figures.**
 - A person who was not a chargeable person for 2025 (or 2024) is taken to have a nil liability for that year (s.959AO(4)(a)). So in the first year of self-assessment the 100% test is normally nil and no preliminary tax is needed to avoid interest. Paying 90% of the current year is still allowed and reduces the next year's bill ([Revenue, what is preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
@@ -101,7 +101,7 @@ Preliminary tax is not a separate tax. It is a payment on account of the year's 
 
 ### Example 1: sole trader, the 100% test, paying on ROS
 
-Niamh is a sole trader. Her final 2025 liability is income tax EUR 13,000, USC EUR 2,100 and PRSI EUR 3,300: EUR 18,400 in all. She paid EUR 16,000 preliminary tax for 2025. She expects her 2026 liability to be EUR 21,000. She does not pay by direct debit, so only two tests apply. 90% of 2026 is EUR 18,900. 100% of 2025 is EUR 18,400. The lower, EUR 18,400, is her minimum 2026 preliminary tax. Her 2025 balance is 18,400 - 16,000 = EUR 2,400. She files the 2025 Form 11 and pays EUR 20,800 through ROS by 18 November 2026. If she files on paper, or pays outside ROS, both are due by 31 October 2026.
+Niamh is a sole trader. Her final 2025 liability is income tax EUR 13,000, USC EUR 2,100 and PRSI EUR 3,300: EUR 18,400 in all. She paid EUR 16,000 preliminary tax for 2025 on time. Her final 2024 liability was EUR 15,000, so that payment met the 100% test for 2025 and her 2025 balance carries no interest. She expects her 2026 liability to be EUR 21,000. She does not pay by direct debit, so only two tests apply. 90% of 2026 is EUR 18,900. 100% of 2025 is EUR 18,400. The lower, EUR 18,400, is her minimum 2026 preliminary tax. Her 2025 balance is 18,400 - 16,000 = EUR 2,400. She files the 2025 Form 11 and pays EUR 20,800 through ROS by 18 November 2026. If she files on paper, or pays outside ROS, both are due by 31 October 2026.
 
 ```oa-check
 name: Sole trader, 2025 liability EUR 18,400, 2026 estimate EUR 21,000, no direct debit
@@ -128,7 +128,7 @@ expected:
 
 ### Example 2: direct debit payer who falls short, backdating and interest
 
-Declan pays 2026 preliminary tax by direct debit: 10 debits of EUR 1,000 from March to December 2026, EUR 10,000 in all, each paid as scheduled. His final liabilities are EUR 12,000 for 2024, EUR 30,000 for 2025 and EUR 15,000 for 2026. Because he pays by direct debit and his 2024 liability was not nil, three tests apply: 90% of 2026 is EUR 13,500; 100% of 2025 is EUR 30,000; 105% of 2024 is EUR 12,600. The lowest is EUR 12,600. He paid EUR 10,000, which is EUR 2,600 short. So all of his 2026 liability is treated as due on 31 October 2026 (s.959AO(3)(b)). His debits count as paid on 31 October 2026 (s.959AP(5)), so the unpaid part from that date is 15,000 - 10,000 = EUR 5,000. He pays it with his 2026 Form 11 on 31 October 2027, 365 days later. Interest is 5,000 x 0.0219% x 365 = EUR 399.68. Had his debits totalled EUR 12,600 or more, the EUR 5,000 or less balance would have been due on 31 October 2027 with no interest.
+Declan pays 2026 preliminary tax by direct debit: 10 debits of EUR 1,000 from January to October 2026, EUR 10,000 in all, each paid as scheduled, so all of it is paid by 31 October 2026. His final liabilities are EUR 12,000 for 2024, EUR 30,000 for 2025 and EUR 15,000 for 2026. Because he pays by direct debit and his 2024 liability was not nil, three tests apply: 90% of 2026 is EUR 13,500; 100% of 2025 is EUR 30,000; 105% of 2024 is EUR 12,600. The lowest is EUR 12,600. He paid EUR 10,000, which is EUR 2,600 short. So all of his 2026 liability is treated as due on 31 October 2026 (s.959AO(3)(b)). All his debits were paid by 31 October 2026, so the unpaid part from that date is 15,000 - 10,000 = EUR 5,000. He pays it with his 2026 Form 11 on 31 October 2027, 365 days later. Interest is 5,000 x 0.0219% x 365 = EUR 399.68. Had his debits totalled EUR 12,600 or more, the EUR 5,000 or less balance would have been due on 31 October 2027 with no interest.
 
 ```oa-check
 name: Direct debit payer, EUR 10,000 paid against a 105% test of EUR 12,600, balance paid 365 days after 31 October 2026
@@ -189,7 +189,7 @@ expected:
 | Social Welfare Consolidation Act 2005, revised, s.23(4) (Class S paid with income tax) | https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html | 2026-10-24 |
 | DSP, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
-Not yet confirmed: (1) whether the 3 and 8 instalment minimums still apply in 2026 as a Collector-General condition under s.959AP(1)(b) after Finance Act 2025 s.100 removed them from the law (TDM 41-00-28, August 2026, still prints them; the October 2025 direct debit guidelines do not); (2) the exact commencement of Finance Act 2025 s.100 (Part 6 has no date of its own in s.107; taken as the date of passing, 23 December 2025); (3) amendments to ss.959AN to 959AP between Finance Act 2013 and Finance Act 2024, not read one by one (Revenue's Finance Act 2025 Notes for Guidance agree with the text used here); (4) the text of s.579(4)(b) on non-residents, not read; (5) whether s.1080 interest also runs on the late return surcharge; (6) the legal basis of the 10% LPT surcharge on the income tax liability (Revenue page only); (7) the S.I. for Budget 2027 or a Finance Bill 2026 change to preliminary tax, not read; (8) a minimum below which no preliminary tax is needed: none found in the law, so none is given.
+Not yet confirmed: (1) whether the 3 and 8 instalment minimums still apply in 2026 as a Collector-General condition under s.959AP(1)(b) after Finance Act 2025 s.100 removed them from the law (TDM 41-00-28, August 2026, still prints them; the October 2025 direct debit guidelines do not); (2) the exact commencement of Finance Act 2025 s.100 (Part 6 has no date of its own in s.107; taken as the date of passing, 23 December 2025); (3) amendments to ss.959AN to 959AP between Finance Act 2013 and Finance Act 2024, not read one by one (Revenue's Finance Act 2025 Notes for Guidance agree with the text used here); (4) the text of s.579(4)(b) on non-residents, not read; (5) whether s.1080 interest also runs on the late return surcharge; (6) the legal basis of the 10% LPT surcharge on the income tax liability (Revenue page only); (7) the S.I. for Budget 2027 or a Finance Bill 2026 change to preliminary tax, not read; (8) a minimum below which no preliminary tax is needed: none found in the law, so none is given. (9) where a direct debit payer fails every test, whether the s.959AP(5) deemed date of 31 October also sets the s.1080 interest start for debits actually collected in November and December (s.959AP(5) is stated to be for the purposes of s.959AO only); Example 2 avoids the point by ending the debits in October.
 
 <!-- openaccountants-cta-block -->
 
