@@ -1,5 +1,5 @@
 ---
-name: de-income-tax
+name: de-self-employed-income-tax
 description: "Use this skill to turn a German self-employed person's year of bank transactions into profit (Anlage EÜR) and the 2026 income tax, for a Freiberufler (Anlage S) or a sole trader (Anlage G) resident in Germany. Tax year 2026, filed in 2027. Covers sorting receipts and costs, the § 4(5) EStG limits (entertainment 70%, gifts EUR 50, home office EUR 6 a day up to EUR 1,260), cars, low-value assets (EUR 800), depreciation, § 7g, the § 19 UStG small-business limits (EUR 25,000 / 100,000), the 2026 tariff, solidarity surcharge, church tax, the § 35 trade tax credit, prepayments, deadlines and penalties. Trigger on: Einkommensteuer Selbständige, Anlage EÜR, Betriebsausgaben, Bewirtung, Arbeitszimmer, GWG, Vorauszahlungen, Gewerbesteuer Anrechnung, Freiberufler tax. Out of scope: employees (de-employee-income-tax), non-residents (de-non-resident-tax), trade tax computation (de-trade-tax), companies (de-corporate-tax), partnerships."
 version: 2.1
 jurisdiction: DE
