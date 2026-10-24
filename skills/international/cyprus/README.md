@@ -14,7 +14,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cyprus-income-tax | source-cited draft |
+| IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | source-cited draft |
 | IT-CORP, corporate income tax | cy-corporate-tax | source-cited draft |
 | VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | source-cited draft |
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
@@ -30,6 +30,8 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - Income Tax (Amendment) (No. 4) Law 244(I)/2025, s. 17 (2026 transfer pricing thresholds and the director rule): https://www.cylaw.org/nomoi/arith/2025_1_244.pdf (read 2026-10-23)
 - Administrative Cooperation in Taxation Law 205(I)/2012, consolidated (CyLaw), article 7C and Annex III (country-by-country reporting): https://www.cylaw.org/nomoi/enop/non-ind/2012_1_205/full.html (read 2026-10-23)
 - Transfer pricing regulations K.D.P. 273/2022 and notice K.D.P. 314/2022 (CyLaw): https://www.cylaw.org/KDP/data/2022_1_273.pdf, https://www.cylaw.org/KDP/data/2022_1_314.pdf (read 2026-10-23)
+- Income Tax (Amendment) (No. 4) Law 244(I)/2025, SDC (Amendment) (No. 4) Law 245(I)/2025 and Assessment and Collection of Taxes (Amendment) (No. 2) Law 243(I)/2025: https://www.cylaw.org/nomoi/arith/2025_1_244.pdf, https://www.cylaw.org/nomoi/arith/2025_1_245.pdf, https://www.cylaw.org/nomoi/arith/2025_1_243.pdf (read 2026-10-24)
+- Tax Department FAQs on the 2026 reform for individuals (11 May 2026): https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf (read 2026-10-24)
 - Capital Gains Tax Law 52/1980, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html (read 2026-10-23)
 - Regulation (EC) 883/2004, consolidated (EUR-Lex), arts. 11 to 13: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 (read 2026-10-23)
 - OECD Transfer Pricing Guidelines 2022, Chapter X (financial transactions): https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf (read 2026-10-23)
