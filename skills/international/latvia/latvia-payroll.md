@@ -1,6 +1,6 @@
 ---
 name: latvia-payroll
-description: "Latvian payroll for tax year 2026: how an employer computes and withholds wage tax (algas nodoklis) and state social insurance contributions (VSAOI) each month. Covers the flat 25.5% monthly withholding, the EUR 570 monthly non-taxable minimum and EUR 250 dependant relief through the wage tax book, employee 10.5% and employer 23.59% contributions, the EUR 105,300 maximum base and solidarity tax, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base, the employer's monthly report by the 17th and payment by the 23rd, the year-end top-up to 33%, and late-payment interest of 0.05% a day. Trigger on: Latvia payroll, gross to net Latvia, darba devēja ziņojums, algas nodokļa grāmatiņa, Latvian wage tax. Out of scope: contribution rules in depth and self-employed contributions (latvia-social-contributions), the annual return (latvia-income-tax), non-residents (lv-cross-border)."
+description: "Latvian payroll for tax year 2026: how an employer computes and withholds wage tax (algas nodoklis) and state social insurance contributions (VSAOI) each month. Covers the flat 25.5% monthly withholding, the EUR 550 monthly non-taxable minimum and EUR 250 dependant relief through the wage tax book, employee 10.5% and employer 23.59% contributions, the EUR 105,300 maximum base and solidarity tax, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base, the employer's monthly report by the 17th and payment by the 23rd, the 33% band settled in the annual return, and late-payment interest of 0.05% a day. Trigger on: Latvia payroll, gross to net Latvia, darba devēja ziņojums, algas nodokļa grāmatiņa, Latvian wage tax. Out of scope: contribution rules in depth and self-employed contributions (latvia-social-contributions), the annual return (latvia-income-tax), non-residents (lv-cross-border)."
 jurisdiction: LV
 category: international
 tax_year: 2026
@@ -38,7 +38,7 @@ Related skills in this pack:
 |---|---|---|---|
 | Monthly wage tax withheld by the employer | 25.5% | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 15(3)) |
 | Annual tax on income above the maximum contribution base (settled in the annual return) | 33% | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 15(2)(2)) |
-| Monthly non-taxable minimum (only where the wage tax book is filed) | EUR 570 a month | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 12(1)) |
+| Monthly non-taxable minimum (only where the wage tax book is filed) | EUR 550 a month (s. 12(1) says EUR 570; transitional provision 197 sets EUR 550 for 2026) | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 12(1); transitional provision 197) |
 | Relief for each dependant | EUR 250 a month | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 13(1.2)) |
 | Social contributions, employee fully insured | 34.09% total: employer 23.59%, employee 10.50% | 2026 | https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu (s. 18(1)) |
 | Social contributions, employee of state pension age | 30.02% total: employer 20.77%, employee 9.25% | 2026 | https://www.vid.gov.lv/lv/valsts-socialas-apdrosinasanas-obligato-iemaksu-likmes |
@@ -61,14 +61,14 @@ The business risk state fee (uzņēmējdarbības riska valsts nodeva) is a furth
 **Wage tax.** For a resident whose wage tax book (algas nodokļa grāmatiņa) is filed with this employer, the monthly taxable pay is gross pay less (PIT Law s. 17(3)(1), s. 10(2)):
 
 1. the employee's social contributions (10.5%, and the employee share of solidarity tax);
-2. the EUR 570 non-taxable minimum;
+2. the EUR 550 non-taxable minimum (PIT Law transitional provision 197);
 3. EUR 250 for each dependant recorded in the book.
 
 Then 25.5% applies (s. 15(3)). Where the book is not filed with this employer, only the employee contributions come off (s. 17(3)(2)). For a non-resident, s. 17(3)(3) applies. A person has only one wage tax book and files it with one payer of their choice (PIT Law s. 6).
 
-**Pay above EUR 8,775 a month.** One twelfth of EUR 105,300 is EUR 8,775. If monthly pay exceeds it, the deductions come off the part up to EUR 8,775 first (PIT Law s. 3(2.4)). Monthly withholding still uses 25.5% for everyone covered by Latvian social insurance (s. 15(3)). The 33% rate for income above EUR 105,300 is settled in the annual return. There the band is tested on income before deductions, and the deductions come off the 25.5% part first (s. 3(2.4), s. 15(15)). Example 2 shows the top-up.
+**Pay above EUR 8,775 a month.** One twelfth of EUR 105,300 is EUR 8,775. If monthly pay exceeds it, the deductions come off the part up to EUR 8,775 first (PIT Law s. 3(2.4)). Monthly withholding still uses 25.5% for everyone covered by Latvian social insurance (s. 15(3)). The 33% rate for income above EUR 105,300 is settled in the annual return. There the band is tested on income before deductions, and the deductions come off the 25.5% part first (s. 3(2.4), s. 15(15)). The part of the solidarity tax moved to the income tax account counts as tax paid (s. 2(3)), and the deductible contributions are cut by the same amount (s. 10(1.10)). Example 2 shows the result.
 
-**Above the maximum base.** Once a person's pay for the year passes EUR 105,300, the employer keeps withholding and paying contributions at the same rates. The excess is solidarity tax, not pension contributions (SI Law s. 21.2; Solidarity Tax Law s. 6.2(1)). The employer gets back the difference between what was paid and 25% (see latvia-social-contributions).
+**Above the maximum base.** Once a person's pay for the year passes EUR 105,300, the employer keeps withholding and paying contributions at the same rates. The excess is solidarity tax, not pension contributions (SI Law s. 21.2; Solidarity Tax Law s. 6.2(1)). The employer gets back the difference between what was paid and 25% (see latvia-social-contributions). Ten points of the 25% count as the employee's income tax paid (PIT Law s. 2(3); Solidarity Tax Law s. 8.1).
 
 **Minimum contributions.** If an employee's base for a quarter is below EUR 2,340, the State Social Insurance Agency (VSAA) works out the gap and the employer pays contributions on it from its own funds (SI Law s. 20.4(1), (2)). Bases with several employers are added together. Pensioners, people with a disability, full-time students under 24, parents of a child under 3 and other listed groups are exempt (s. 20.4(4)). Unpaid leave, childcare leave and sick leave days on sheet B reduce the minimum pro rata (s. 20.4(5)).
 
@@ -102,7 +102,7 @@ Then 25.5% applies (s. 15(3)). Where the book is not filed with this employer, o
 
 ## Worked examples
 
-**Example 1: standard monthly payslip.** A resident employee earns EUR 2,000 gross in March 2026. The wage tax book is filed with this employer and records one dependant child. Employee contributions are 10.5%: EUR 210. Taxable pay is EUR 2,000 less EUR 210, EUR 570 and EUR 250, which is EUR 970. Wage tax at 25.5% is EUR 247.35. Net pay is EUR 1,542.65. The employer adds 23.59%, EUR 471.80, so salary and contributions cost EUR 2,471.80, before the business risk fee. The report is due by 17 April 2026. Contributions are due by 23 April 2026. If the March pay is paid out in April, the wage tax is also due by 23 April.
+**Example 1: standard monthly payslip.** A resident employee earns EUR 2,000 gross in March 2026. The wage tax book is filed with this employer and records one dependant child. Employee contributions are 10.5%: EUR 210. Taxable pay is EUR 2,000 less EUR 210, EUR 550 and EUR 250, which is EUR 990. Wage tax at 25.5% is EUR 252.45. Net pay is EUR 1,537.55. The employer adds 23.59%, EUR 471.80, so salary and contributions cost EUR 2,471.80, before the business risk fee. The report is due by 17 April 2026. Contributions are due by 23 April 2026. If the March pay is paid out in April, the wage tax is also due by 23 April.
 
 ```oa-check
 name: Gross EUR 2,000 a month, one dependant, wage tax book filed (2026)
@@ -112,46 +112,48 @@ inputs:
 steps:
   - ee_vsaoi: gross * 0.105
   - er_vsaoi: gross * 0.2359
-  - taxable: gross - ee_vsaoi - 570 - 250 * dependants
+  - taxable: gross - ee_vsaoi - 550 - 250 * dependants
   - wage_tax: taxable * 0.255
   - net: gross - ee_vsaoi - wage_tax
   - employer_cost: gross + er_vsaoi
 expected:
   ee_vsaoi: 210
   er_vsaoi: 471.80
-  taxable: 970
-  wage_tax: 247.35
-  net: 1542.65
+  taxable: 990
+  wage_tax: 252.45
+  net: 1537.55
   employer_cost: 2471.80
 ```
 
-**Example 2: high earner, top-up in the annual return.** A resident earns EUR 12,000 a month in 2026, EUR 144,000 for the year. The wage tax book is filed, with no dependants and no other income. Each month the employer withholds 10.5% contributions, EUR 1,260. Wage tax is 25.5% of EUR 12,000 less EUR 1,260 less EUR 570, which is EUR 2,593.35. That is EUR 31,120.20 for the year. The employee keeps paying 10.5% after pay passes EUR 105,300 in September. The excess is solidarity tax, and it is still deductible (PIT Law s. 10(1)(1.1)). In the annual return, income of EUR 144,000 exceeds EUR 105,300. The deductions, EUR 15,120 contributions and EUR 6,840 minimum (EUR 21,960 in all), come off the 25.5% part (s. 3(2.4)). So EUR 83,340 is taxed at 25.5% (EUR 21,251.70) and EUR 38,700 at 33% (EUR 12,771). Tax for the year is EUR 34,022.70, and the employee pays the EUR 2,902.50 difference. Income is over EUR 105,300, so the return is filed 1 April to 1 July 2027 and paid by 23 July 2027 (latvia-income-tax). Income is under EUR 200,000, so there is no 3% surcharge.
+**Example 2: high earner, annual return.** A resident earns EUR 12,000 a month in 2026, EUR 144,000 for the year. The wage tax book is filed, with no dependants and no other income. Each month the employer withholds 10.5% contributions, EUR 1,260. Wage tax is 25.5% of EUR 12,000 less EUR 1,260 less EUR 550, which is EUR 2,598.45. That is EUR 31,181.40 for the year. The employee keeps paying 10.5% after pay passes EUR 105,300 in September. On the EUR 38,700 above the cap this is solidarity tax. Of the 25% solidarity tax, 10 points (EUR 3,870) go to the personal income tax account and count as income tax paid by the employee (PIT Law s. 2(3); Solidarity Tax Law s. 8.1). In the annual return the deductible contributions are cut by that EUR 3,870 (PIT Law s. 10(1.10)): EUR 15,120 less EUR 3,870 is EUR 11,250. With the EUR 6,600 minimum, deductions are EUR 17,850, and they come off the 25.5% part (s. 3(2.4)). So EUR 87,450 is taxed at 25.5% (EUR 22,299.75) and EUR 38,700 at 33% (EUR 12,771). Tax for the year is EUR 35,070.75. Less the EUR 31,181.40 withheld and the EUR 3,870 credit, the employee pays EUR 19.35. Income is over EUR 105,300, so the return is filed 1 April to 1 July 2027 and paid by 23 July 2027 (latvia-income-tax). Income is under EUR 200,000, so there is no 3% surcharge.
 
 ```oa-check
-name: EUR 12,000 a month, monthly 25.5% withholding and annual 33% top-up (2026)
+name: EUR 12,000 a month, monthly 25.5% withholding and annual 33% band with the solidarity tax credit (2026)
 inputs:
   monthly: 12000
   months: 12
   cap: 105300
 steps:
   - ee_vsaoi_month: monthly * 0.105
-  - wage_tax_month: (monthly - ee_vsaoi_month - 570) * 0.255
+  - wage_tax_month: (monthly - ee_vsaoi_month - 550) * 0.255
   - withheld_year: wage_tax_month * months
   - income: monthly * months
-  - deductions: income * 0.105 + 570 * months
-  - low_band: max(min(income, cap) - deductions, 0)
   - high_band: max(income - cap, 0)
+  - solidarity_pit_credit: high_band * 0.10
+  - deductions: income * 0.105 - solidarity_pit_credit + 550 * months
+  - low_band: max(min(income, cap) - deductions, 0)
   - annual_tax: low_band * 0.255 + high_band * 0.33
-  - top_up: annual_tax - withheld_year
+  - balance_due: annual_tax - withheld_year - solidarity_pit_credit
 expected:
   ee_vsaoi_month: 1260
-  wage_tax_month: 2593.35
-  withheld_year: 31120.20
-  deductions: 21960
-  low_band: 83340
+  wage_tax_month: 2598.45
+  withheld_year: 31181.40
   high_band: 38700
-  annual_tax: 34022.70
-  top_up: 2902.50
+  solidarity_pit_credit: 3870
+  deductions: 17850
+  low_band: 87450
+  annual_tax: 35070.75
+  balance_due: 19.35
 ```
 
 ## Ask the client first
@@ -159,7 +161,7 @@ expected:
 1. Is the employee's wage tax book filed with you, and which dependants does it record? Without it, no minimum or relief is given.
 2. Has the employee reached state pension age, or do they receive a service or disability special pension? A different contribution rate applies.
 3. Is the employee covered by another country's social insurance (A1 certificate), or a non-resident?
-4. Will pay for the year pass EUR 105,300? If so, expect solidarity tax, a refund to you, and a top-up for the employee.
+4. Will pay for the year pass EUR 105,300? If so, expect solidarity tax, a refund to you, and a 33% band settled in the employee's annual return.
 5. Is the person a board member without an employment contract, part-time, or in an exempt group for the minimum contribution base?
 6. On what date is each month's pay paid out? This fixes the wage tax deadline.
 
@@ -167,7 +169,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law On Personal Income Tax (Par iedzīvotāju ienākuma nodokli), consolidated, in force 1 January 2026: ss. 3(2), 3(2.4), 6, 10(1), 10(2), 12(1), 13(1.2), 15(2), 15(3), 15(15), 15(16), 17 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-24 |
+| Law On Personal Income Tax (Par iedzīvotāju ienākuma nodokli), consolidated, in force 1 January 2026: ss. 2(3), 3(2), 3(2.4), 6, 10(1), 10(1.10), 10(2), 12(1), 13(1.2), 15(2), 15(3), 15(15), 15(16), 17; transitional provision 197 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-24 |
 | Law On State Social Insurance (Par valsts sociālo apdrošināšanu), consolidated with amendments to 16 April 2026: ss. 14, 16, 18, 20, 20.1, 20.4, 21, 21.2, 23 | https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu | 2026-10-24 |
 | Solidarity Tax Law (Solidaritātes nodokļa likums), version in force from 1 January 2021: ss. 3, 6.1, 6.2, 8.1 | https://likumi.lv/ta/id/278636-solidaritates-nodokla-likums | 2026-10-24 |
 | Law On Taxes and Fees (Par nodokļiem un nodevām): ss. 29, 32, 141, 142 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-24 |
