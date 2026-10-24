@@ -1,10 +1,10 @@
 ---
 name: portugal-tax-optimization
 description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses — particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, estratégias de dedução, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social e linhas vermelhas. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on: \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
-version: 1.0
+version: 1.2
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,8 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Portugal Tax Optimization
 
-## Portugal — Optimização Fiscal — Skill v1.1
-
+## Portugal — Optimização Fiscal — Skill v1.2
 ## Rates and thresholds
 
 > Source-cited draft: not reviewed by an accountant.
@@ -57,7 +56,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Autoridade fiscal | Autoridade Tributária e Aduaneira (AT) |
 | Prazo de entrega | 1 de Abril – 30 de Junho do ano seguinte (Modelo 3 IRS) |
 | Taxa marginal máxima (pessoas singulares) | 48% + taxa adicional de solidariedade de 5% (acima de €250.000) = até 53% |
-| Taxa de IRC (sociedades) | 21% taxa normal; 17% sobre os primeiros €50.000 para PMEs |
+| Taxa de IRC (sociedades) | 19% taxa normal em 2026 (20% em 2025); 15% sobre os primeiros €50.000 para PMEs (16% em 2025). Art. 87.º CIRC; ver pt-corporate-tax |
 | Taxa normal de IVA | 23% (continente); 22% Madeira; 16% Açores |
 | Segurança social (trabalhador independente) | 21,4% sobre a base calculada |
 
@@ -86,7 +85,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **Regime simplificado** — rendimentos brutos ≤€200.000. Rendimento tributável = bruto × coeficiente (ex.: 0,75 para serviços profissionais listados no Art 151.º CIRS; 0,35 para outros serviços; 0,15 para venda de bens). Não pode deduzir despesas adicionais para além do coeficiente — é um pacote fechado. Tem de justificar 15% do bruto como despesas profissionais (facturas com NIF).  _(Art 151.º CIRS)_
 - **Contabilidade organizada** — obrigatória se rendimentos brutos >€200.000, opcional abaixo. Deduz despesas profissionais reais. Requer contabilista certificado (CC). Mais vantajosa quando as despesas reais excedem significativamente a dedução implícita no coeficiente.
-- **Sociedade (Sociedade Unipessoal por Quotas, Lda, ou SA)** — IRC a 21% (17% sobre os primeiros €50.000 para PMEs). Lucros distribuídos como dividendos tributados a 28% (taxa liberatória) ou incluídos no IRS por englobamento a taxas progressivas (exclusão de 50% para sócios residentes — tributação por englobamento). Carga administrativa superior.
+- **Sociedade (Sociedade Unipessoal por Quotas, Lda, ou SA)** — IRC a 19% em 2026 (15% sobre os primeiros €50.000 para PMEs; art. 87.º CIRC, ver pt-corporate-tax). Lucros distribuídos como dividendos tributados a 28% (taxa liberatória) ou incluídos no IRS por englobamento a taxas progressivas (exclusão de 50% para sócios residentes — tributação por englobamento). Carga administrativa superior.
 - **Regra de decisão (quadro de comparação de regimes)** — Cat B simplificado: óptimo para freelancers com baixas despesas reais (o coeficiente já implica 25%+ de despesas automaticamente). Cat B organizada: mudar quando as despesas documentadas excedam a margem implícita do coeficiente. Lda (Sociedade): ponderar incorporação quando o lucro consistentemente excede ~€60.000–€80.000, pesando os custos adicionais de contabilidade, derrama, tributações autónomas e formalismos societários.
 
 ### Tributação Conjunta
@@ -158,7 +157,7 @@ peça sempre NIF em todas as compras profissionais. A diferença entre €4.587,
 
 ### IRC (Sociedades)
 
-- **IRC (Sociedades) — Prejuízos** — Os prejuízos fiscais reportam-se por 12 anos. Podem compensar até 65% do lucro tributável em cada ano subsequente. Sujeito à manutenção de >50% de continuidade na titularidade.  _(Art 52.º CIRC)_
+- **IRC (Sociedades) — Prejuízos** — Os prejuízos fiscais deduzem-se aos lucros tributáveis de um ou mais períodos posteriores, sem limite de tempo, nas deduções feitas em períodos iniciados a partir de 1 de janeiro de 2023, incluindo prejuízos anteriores cujo prazo ainda corria nessa data. A dedução de cada ano não pode exceder 65% do lucro tributável desse ano; a parte não deduzida passa para os anos seguintes. O limite sobe 10 pontos (75%) quando a diferença resulta de prejuízos de 2020 e 2021. Prejuízos anteriores a 2023 de períodos abrangidos pelo REAID (art. 6.º, n.º 1, da Lei 61/2014) mantêm o prazo em vigor em 31 de dezembro de 2022. Os prejuízos perdem-se se mudar a titularidade de mais de 50% do capital ou a maioria dos direitos de voto, salvo as exceções do n.º 9 ou razões económicas válidas. Ver a skill pt-corporate-tax.  _(Art 52.º, n.os 1, 2, 8 e 9, CIRC; art. 228.º da Lei 24-D/2022; art. 11.º, n.º 2, da Lei 27-A/2020)_
 
 ### Menos-Valias (Categoria G)
 
