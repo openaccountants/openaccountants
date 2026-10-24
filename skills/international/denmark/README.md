@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 |---|---|---|
 | IT-IND, individual income tax | dk-income-tax, dk-capital-gains | source-cited draft |
 | IT-CORP, corporate income tax | dk-corporate-tax | source-cited draft |
-| VAT | dk-vat-return, denmark-vat-return | source-cited draft |
+| VAT | denmark-vat-return (2026 deep-tax), dk-vat-return (older duplicate, to be merged) | source-cited draft |
 | SC, social contributions | dk-social-contributions | source-cited draft |
 | PR, payroll withholding | dk-payroll | source-cited draft |
 | TP, transfer pricing | dk-transfer-pricing | source-cited draft |
@@ -40,4 +40,8 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Samlet Betaling and ATP rates 2026 (virk.dk): https://businessindenmark.virk.dk/guidance/samlet-betaling-bid/sb-employer/samlet-betaling-bid-contribution-rates (read 2026-10-23)
 - Lov nr. 750 of 20 June 2025 (transfer pricing documentation relief): https://www.retsinformation.dk/eli/lta/2025/750 (read 2026-10-23)
 - BEK nr. 883 of 24 June 2025 (transfer pricing documentation): https://www.retsinformation.dk/eli/lta/2025/883 (read 2026-10-23)
+- Momsloven (LBK nr. 209 of 27 February 2024, as amended by lov nr. 332/2024, 1693/2024, 1695/2024, 1783/2025 and 763/2026): https://www.retsinformation.dk/eli/lta/2024/209 (read 2026-10-24)
+- Momsbekendtgørelsen (BEK nr. 1435 of 29 November 2023, as amended by BEK nr. 518 and 850 of 2025): https://www.retsinformation.dk/eli/lta/2023/1435 (read 2026-10-24)
+- Lov nr. 16 of 14 January 2025 (Opkrævningsloven § 4, stk. 2 provisional-assessment fee DKK 1,400): https://www.retsinformation.dk/eli/lta/2025/16 (read 2026-10-24)
+- Bogføringsloven (lov nr. 700 of 24 May 2022) and BEK nr. 297 of 20 March 2025 (digital bookkeeping from 2026): https://www.retsinformation.dk/eli/lta/2022/700 (read 2026-10-24)
 - Skattestyrelsen: https://skat.dk
