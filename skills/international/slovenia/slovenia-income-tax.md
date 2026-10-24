@@ -6,12 +6,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
-# Slovenia: personal income tax (dohodnina) 2026 v0.2
+# Slovenia: personal income tax (dohodnina) 2026 v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Personal Income Tax Act (ZDoh-2) and the Tax Procedure Act (ZDavP-2) as consolidated on pisrs.si, the amending act ZDoh-2AB (Uradni list RS 104/24), and the Financial Administration (FURS) notice of the 2026 scale and allowances, all read on 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -75,7 +75,7 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 
 **The annual base.** Add up the year's employment, business (actual expenses), basic farming, royalty and other income, each net of its own deductions. Take off the allowances. The result is the net annual base, taxed on the 2026 scale (ZDoh-2 art. 119). Tax withheld or paid in advance during the year is credited (art. 123).
 
-**Employment.** The base is gross employment income less the employee's compulsory social contributions (ZDoh-2 art. 41(1)). Contribution rates are in [slovenia-social-contributions](slovenia-social-contributions.md).
+**Employment.** The base is gross employment income less the employee's compulsory social contributions (ZDoh-2 art. 41(1)). These include the 1% long-term care contribution and the flat monthly compulsory health contribution (OZP: EUR 37.17 a month in January and February 2026, EUR 39.36 from March, so EUR 467.94 for a full year 2026), both compulsory social security contributions the employee must pay (ZPSV art. 1; ZZVZZ art. 48; ZDOsk-1 arts. 51(2) and 56.a(1)). Contribution rates are in [slovenia-social-contributions](slovenia-social-contributions.md).
 
 **The general allowance and its taper.** Every resident gets EUR 5,551.93 in 2026, unless another resident claims them as a dependant (art. 111(1)). If total income is up to EUR 17,766.18, the resident also gets 20,832.39 minus 1.17259 times total income. The extra amount falls to nil at EUR 17,766.18 (art. 111(3) and the 2026 FURS notice). Total income means employment, business (but not s.p. income on normed expenses), basic farming, royalty and other income, leaving out exempt income. The law counts the income itself, not the base after contributions (arts. 37 and 111(3)). Business income counts as profit before contributions (art. 111(4)).
 
@@ -169,7 +169,7 @@ There is no fine for a late return if the tax is paid under a voluntary disclosu
 
 ## Worked examples
 
-**Example 1: employee with a flat let to a private tenant (2026).** A resident employee earns gross salary of EUR 36,000. Employee contributions are 23.1% of gross (15.5% pension, 6.36% health, 0.14% unemployment, 0.1% parental, 1% long-term care), so EUR 8,316. The example leaves out the flat monthly compulsory health contribution. There are no dependants. The employee also lets a flat to a private individual for EUR 12,000 a year. A private tenant is not a withholding payer, so the landlord files a rent return by 28 February 2027.
+**Example 1: employee with a flat let to a private tenant (2026).** A resident employee earns gross salary of EUR 36,000. Employee contributions are 23.1% of gross (15.5% pension, 6.36% health, 0.14% unemployment, 0.1% parental, 1% long-term care), so EUR 8,316. The example leaves out the OZP to keep the figures simple; on a full year it also reduces the employment base, by EUR 467.94. There are no dependants. The employee also lets a flat to a private individual for EUR 12,000 a year. A private tenant is not a withholding payer, so the landlord files a rent return by 28 February 2027.
 
 - The employment base is 36,000 less 8,316 = EUR 27,684.
 - Total income is over EUR 17,766.18, so only the general allowance of EUR 5,551.93 applies.
@@ -198,7 +198,7 @@ expected:
   rent_tax: 2700
 ```
 
-**Example 2: low earner with a child and a share sale (2026).** A resident employee earns gross salary of EUR 17,000. Employee contributions at 23.1% are EUR 3,927. They support one child all year and claim the child. They also sell shares bought 7 years ago for EUR 20,000, for EUR 30,000.
+**Example 2: low earner with a child and a share sale (2026).** A resident employee earns gross salary of EUR 17,000. Employee contributions at 23.1% are EUR 3,927. As in Example 1 the OZP is left out; on a full year it also reduces the employment base, by EUR 467.94. They support one child all year and claim the child. They also sell shares bought 7 years ago for EUR 20,000, for EUR 30,000.
 
 - Total income of EUR 17,000 is under the EUR 17,766.18 limit, so the extra general allowance applies: 20,832.39 less 1.17259 times 17,000 = EUR 898.36. The total general allowance is 5,551.93 + 898.36 = EUR 6,450.29.
 - The employment base is EUR 13,073. Less the general allowance and the first-child allowance of EUR 2,995.83, the net base is EUR 3,626.88.
@@ -258,7 +258,8 @@ expected:
 | Prescribed Default Interest Rate Act (ZPOMZO-1): art. 2 | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
 | Minister of Finance, rate of default interest from 1 July 2026 (10.40%), Uradni list RS 1124/2026 | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
 | ECB key interest rates (main refinancing rate 2.15% from 11 June 2025, 2.40% from 17 June 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-24 |
-| Social Security Contributions Act (ZPSV) arts. 8 to 13 rates and Long-Term Care Act (ZDOsk-1) 1% contribution, for the example contribution rates | https://pisrs.si/pregledPredpisa?id=ZAKO984 and https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
+| Social Security Contributions Act (ZPSV) art. 1 and arts. 8 to 13 rates, and Long-Term Care Act (ZDOsk-1) arts. 51(2), 56 and 56.a(1), for the example contribution rates and their deduction | https://pisrs.si/pregledPredpisa?id=ZAKO984 and https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
+| Health Care and Health Insurance Act (ZZVZZ) art. 48 (OZP), and FURS self-employed contribution tables SZ 1/2026 and SZ 3/2026 for the OZP of EUR 37.17 and EUR 39.36 | https://pisrs.si/pregledPredpisa?id=ZAKO213 and https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/ | 2026-10-24 |
 | Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 
-Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). Whether the flat monthly compulsory health contribution (obvezni zdravstveni prispevek) reduces the employment base under ZDoh-2 art. 41(1). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.
+Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.

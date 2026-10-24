@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
@@ -72,7 +72,7 @@ Contribution period: the calendar month. Authority: the Financial Administration
 
 **OZP.** A flat EUR 39.36 a month from 1 March 2026, for every insured person, whatever their income (ZZVZZ art. 48). An s.p. pays it in the monthly contributions.
 
-**Income tax.** Contributions paid by the self-employed are expenses in computing profit (ZPSV art. 7). Employee contributions reduce the employee's tax base (ZDoh-2 art. 41(1)).
+**Income tax.** Contributions paid by the self-employed are expenses in computing profit (ZPSV art. 7). Employee contributions, including the 1% long-term care contribution and the OZP, reduce the employee's tax base: they are compulsory social security contributions the employee must pay (ZDoh-2 art. 41(1); ZPSV art. 1; ZZVZZ art. 48; ZDOsk-1 arts. 51(2) and 56.a(1)). See `slovenia-payroll`.
 
 ## Deadlines and filing
 
@@ -174,10 +174,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 3, 6, 7, 8, 10 to 15 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
+| Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 1, 3, 6, 7, 8, 10 to 15 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
 | Pension and Disability Insurance Act (ZPIZ-2), consolidated NPB 27 to Uradni list RS 90/25: arts. 14 to 17, 144, 145, 152 | https://pisrs.si/pregledPredpisa?id=ZAKO6280 | 2026-10-24 |
 | Health Care and Health Insurance Act (ZZVZZ), consolidated NPB 42: arts. 48, 50 | https://pisrs.si/pregledPredpisa?id=ZAKO213 | 2026-10-24 |
-| Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 54, 55, 56, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
+| Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 51, 54, 55, 56, 56.a, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Personal Income Tax Act (ZDoh-2): art. 41 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
 | Tax Procedure Act (ZDavP-2), consolidated to Uradni list RS 100/25: arts. 96, 283, 284, 352, 353, 353.a, 395, 397 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 | Act on the Prescribed Default Interest Rate (ZPOMZO-1): art. 2 | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |

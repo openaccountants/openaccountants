@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
@@ -58,7 +58,7 @@ Tax year: the calendar year. Authority: the Financial Administration (Finančna 
 
 **Compulsory health contribution (OZP).** A flat amount per calendar month, whatever the number of insured days. The main employer withholds it from the first payment for the month (ZZVZZ art. 48). It does not depend on pay.
 
-**Tax base for withholding.** Gross employment income less the contributions the employee must pay (ZDoh-2 art. 41(1)), less one twelfth of the allowances the employee is entitled to (art. 127(3)). This skill deducts the employee's 22.1%, the 1% long-term care contribution and the OZP: all three are compulsory contributions the employee owes, and the OZP is reported among the employee's social security contributions on the REK-O (field A072a). Then apply the monthly scale.
+**Tax base for withholding.** Gross employment income less the contributions the employee must pay (ZDoh-2 art. 41(1)), less one twelfth of the allowances the employee is entitled to (art. 127(3)). Deduct the employee's 22.1%, the 1% long-term care contribution and the OZP. All three are compulsory social security contributions the employee must pay: ZPSV art. 1 defines contributions for compulsory health insurance as social security contributions, ZZVZZ art. 48 levies the OZP as a health insurance contribution paid by the insured person, and ZDOsk-1 arts. 51(2) and 56.a(1) treat long-term care insurance as social insurance and its contribution as a compulsory social security contribution. The REK-O lists the OZP (field A072a) among the employee's social security contributions, whose total (A075) is taken into account in computing the withholding (Pravilnik, Uradni list RS 4/2025, Annex 1; FURS REK-O instructions, 10th edition, October 2026, point 5.4). Then apply the monthly scale.
 
 **General allowance.** EUR 462.66 a month, which is one twelfth of the EUR 5,551.93 annual allowance. If the month's gross employment income is up to EUR 1,480.51, the allowance rises by 1,736.03 minus 1.17259 times that gross. At EUR 1,480.51 and above the extra is nil. The employee can ask the employer to apply only the EUR 462.66 (FURS 2026 scale). Dependant allowances apply only if the employee tells the main employer in writing (ZDavP-2 art. 287). The allowance for employees under 29 and the other personal allowances are in `slovenia-income-tax`.
 
@@ -78,7 +78,7 @@ The REK-O has applied to payments from 1 January 2023. It replaced the REK-1, wh
 ## Penalties and interest
 
 - **REK-O not filed, filed late or filed wrongly.** Fine EUR 1,200 to 15,000 for a company, EUR 3,200 to 30,000 for a medium or large company, EUR 800 to 10,000 for an s.p. employer (ZDavP-2 art. 397(1) point 2). The responsible person of a company is fined EUR 600 to 4,000, or EUR 800 to 4,000 in a medium or large company (art. 397(3)).
-- **No fine on a proper correction.** An employer that files or corrects the return under the late-filing and correction rules (ZDavP-2 arts. 53 to 57) is not fined under art. 397(1) point 2 (art. 399).
+- **No fine on a proper correction.** An employer that files or corrects the return under the self-report and correction rules (ZDavP-2 arts. 53, 54, 54.a, 55 or 57) is not fined under art. 397(1) point 2 (art. 399).
 - **Late payment.** Tax and contributions paid late carry late interest at the statutory rate: 10.15% a year from 1 January 2026 and 10.40% from 1 July 2026 (ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Uradni list RS 2/2026 and 1124/2026). ZPSV art. 15 applies ZDavP-2 to contributions.
 - **OZP and long-term care.** Neither can be written off, deferred or paid in instalments on request (ZZVZZ art. 48; ZDOsk-1 art. 56(8)).
 
@@ -171,15 +171,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 3, 6, 8, 11 to 16 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
+| Social Security Contributions Act (ZPSV), consolidated NPB 14: arts. 1, 3, 6, 8, 11 to 16 | https://pisrs.si/pregledPredpisa?id=ZAKO984 | 2026-10-24 |
 | Pension and Disability Insurance Act (ZPIZ-2), consolidated NPB 27 to Uradni list RS 90/25: arts. 14, 144, 152 | https://pisrs.si/pregledPredpisa?id=ZAKO6280 | 2026-10-24 |
 | Health Care and Health Insurance Act (ZZVZZ), consolidated NPB 42: arts. 48, 50 | https://pisrs.si/pregledPredpisa?id=ZAKO213 | 2026-10-24 |
-| Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 54, 55, 56, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
+| Long-Term Care Act (ZDOsk-1), consolidated NPB 2: arts. 51, 54, 55, 56, 56.a, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Personal Income Tax Act (ZDoh-2): arts. 41, 111, 114, 116, 122, 127 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
 | Tax Procedure Act (ZDavP-2), consolidated to Uradni list RS 100/25: arts. 96, 283, 284, 287, 352, 353, 397, 399 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 | Act on the Prescribed Default Interest Rate (ZPOMZO-1): art. 2 | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
 | Minister of Finance, default interest rate from 1 January 2026, Uradni list RS 2/2026 | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011 | 2026-10-24 |
 | Minister of Finance, default interest rate from 1 July 2026, Uradni list RS 1124/2026 | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
+| FURS, REK-O form and filing instructions, 10th edition, October 2026: points 5.3 to 5.5 | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/rek_obrazci/ | 2026-10-24 |
 | Pravilnik o obračunu davčnih odtegljajev, Uradni list RS 4/2025, Annex 1 (REK-O fields) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-0139 | 2026-10-24 |
 | FURS, 2026 tax scale and allowances (notice of 15 December 2025) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx | 2026-10-24 |
 | FURS, contribution bases and amounts 2026 (self-employed tables for January, February, March and October 2026: average wage, 60% base, OZP) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/prispevki_za_socialno_varnost/osnove_za_placilo_ter_zneski_prispevkov_za_socialno_varnost/ | 2026-10-24 |
@@ -187,4 +188,4 @@ expected:
 | ZZZS, long-term care contribution table for insured persons supervised by FURS | https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf | 2026-10-24 |
 | Ministry of Labour, minimum wage for 2026 (28 January 2026) | https://www.gov.si/novice/2026-01-28-dolocen-znesek-minimalne-place-za-2026/ | 2026-10-24 |
 
-Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); no FURS text was read that says in words that the OZP and the long-term care contribution reduce the withholding base (this skill follows ZDoh-2 art. 41(1) and the REK-O layout); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
+Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
