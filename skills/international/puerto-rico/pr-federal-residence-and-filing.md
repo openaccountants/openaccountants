@@ -2,13 +2,16 @@
 name: pr-federal-residence-and-filing
 description: >
   Puerto Rico federal residence and filing reference for the 2025 tax year, checked against federal law and the IRS territory guide. Separates presence, tax home and closer connection from income sourcing and the federal exclusion. Covers alternative presence tests for US citizens and resident aliens, federal-government wages, departure exceptions and change-of-residence reporting. Explains why local registration or an incentive decree does not establish the federal tests. Includes a practical evidence checklist without promising a blanket tax exemption. Local personal tax calculations, investment sourcing, military exceptions and independent accountant review remain outside this initial draft.
-jurisdiction: PR
-category: international
-tax_year: 2025
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: PR
+tax_year: 2025
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Puerto Rico: federal residence, income source and filing
@@ -58,3 +61,23 @@ Retain a dated travel calendar, work-location records, home and family facts, ev
 ## Remaining review
 
 Checked 22 October 2026. Local personal-income rates, deductions, Act 60 eligibility, investment gains, move-year exceptions, military rules and information-return deadlines need their own verification. No independent accountant review has occurred. This is a source-cited federal framework, not comprehensive jurisdiction coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

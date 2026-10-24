@@ -2,13 +2,16 @@
 name: aw-social-contributions
 description: >
   Aruba social contribution reference for 2026 covering AOV and AWW employee and employer rates, AZV health contribution allocation and the new pensioner relief. Includes annual contribution examples, income-limit distinctions, employer-only sickness and accident insurance rates, and the annual Cessantia amount. Use for Aruba payroll insurance, SVB rates, pensioner AZV or employer contribution questions. The scope is rate calculation once insured status and contribution income have been established. It excludes net-pay calculations, individual coverage decisions, partial-year limits, benefit entitlement and unresolved sickness or accident threshold mechanics.
-jurisdiction: AW
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: AW
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Aruba social contributions: 2026
@@ -43,3 +46,23 @@ For an ordinary insured worker with established full-year contribution income of
 The [October 2026 DIMP calendar](https://www.impuesto.aw/kalender-digitale-aangifte-oktober-2026) lists 15 October for September LB and SV filing/payment. Do not use that calendar as evidence for separate SVB remittance deadlines.
 
 Resolve contribution-base deductions, multiple employers, age transitions, insurance exemptions and ZV/OV coverage mechanics before using this reference to run payroll. Retain the insured-status decision and separate employer/employee reconciliations. General research guidance only, not a complete payroll compliance pack.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

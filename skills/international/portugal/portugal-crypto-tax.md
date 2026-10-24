@@ -3,13 +3,14 @@ name: portugal-crypto-tax
 description: "Portuguese IRS on crypto assets for resident individuals, tax year 2026. Covers gains on crypto that is not a security (CIRS art. 10(1)(k)): the 28% autonomous rate or aggregation at the 2026 bands (12.5% to 48% plus the solidarity surcharge), the exclusion for crypto held 365 days or more (art. 10(22)), tax-free crypto-for-crypto swaps (art. 10(23)), the carve-out for non-cooperative counterparties (art. 10(24)), the exit charge on loss of residence (art. 10(25), art. 43(12)), FIFO per custodian, rewards paid in crypto or fiat, mining and trading as Category B (coefficients 0.15 and 0.95), losses, filing and fines. Article numbers follow Decreto-Lei 97/2026, which renumbered art. 10. Trigger on: 'crypto tax Portugal', 'Bitcoin Portugal 365 dias', 'criptoativos IRS', 'staking Portugal', 'exit tax crypto Portugal', 'Anexo G crypto'. Out of scope: self-employed rules in general (pt-income-tax), residence and other exit rules (pt-cross-border), NHR and IFICI (pt-nhr-ifici), companies (pt-corporate-tax)."
 version: 1.1
 jurisdiction: PT
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - pt-income-tax
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -216,6 +217,8 @@ expected:
 | Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 
 Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

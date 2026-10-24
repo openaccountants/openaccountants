@@ -2,13 +2,16 @@
 name: sh-personal-income-tax
 description: >
   Saint Helena island ordinary personal income tax reference checked for 2026. Covers the April-to-March tax year, personal allowance, statutory monthly eligibility, ordinary chargeable-income bands and worked annual examples. Distinguishes the rejected 2026 allowance proposal from enacted law and separates employee refund returns from business and property filing duties. Uses the Income Tax Ordinance and the government’s 2026 filing reminder. Excludes mixed preferential business income, dividend calculations, gains, pension allowance calculations and overseas tax credits. Does not apply to Ascension or Tristan da Cunha. Later-instrument reconciliation and independent accountant review remain outstanding.
-jurisdiction: SH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SH
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint Helena island: ordinary personal income tax
@@ -48,3 +51,23 @@ Schedule 1 has separate rules for dividends, gains and specified production acti
 ## Verification boundary
 
 Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

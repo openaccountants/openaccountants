@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-nhr-ifici"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-23"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -175,7 +175,7 @@ Notes on the matrix:
 - **"May be taxed" versus "taxed".** For NHR category A the test is actual taxation in the other state. For B, E, F and G, it is enough that the treaty allows that state to tax. Where a treaty gives the residence state sole taxing rights (commonly gains on shares, and royalties under the OECD Model), the NHR exemption is not met; the income is taxed in Portugal under the general rules (for example 28% on the net balance of listed gains). Read the actual treaty; do not assume the OECD Model. ([CIRS art. 72](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx))
 - **Pre-2020 pension exemption** ([art. 81 wording to March 2020](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202003.aspx)): a foreign pension was exempt, as far as it had not created a deduction under art. 25(2), if it was taxed in the other state under a treaty, or if it was not Portuguese-source under art. 18(1). Lei 2/2020 art. 329 keeps this for people registered as NHR, or with a request pending, when that law came into force, and for people resident then who applied by 31 March 2020 (for 2019) or 31 March 2021 (for 2020). They could opt into the 10% rate in their 2020 return ([Lei 2/2020 art. 329](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/artigo329_oe2020.aspx)).
 - **Crypto.** Gains on crypto assets held for 365 days or more are excluded from IRS under the general rules ([CIRS art. 10](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx)); neither regime changes this. For shorter holdings, decide the source before applying any exemption.
-- **Foreign tax credit (general rules).** The credit is the lower of the foreign tax paid and the share of Portuguese tax on that income. With a treaty it cannot exceed the tax the treaty allows. Unused credit can be carried forward five years (CIRS art. 81(1) to (3)).
+- **Foreign tax credit (general rules).** The credit is the lower of the foreign tax paid and the share of Portuguese tax on that income. With a treaty it cannot exceed the tax the treaty allows. Unused credit can be carried forward five years only where the year's Portuguese tax was too small to absorb it; credit above the share of Portuguese tax on that income is lost (CIRS art. 81(1) to (3)).
 
 ## Boundary and exception table
 
@@ -272,4 +272,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-nhr-ifici` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-nhr-ifici. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-nhr-ifici` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-nhr-ifici. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -11,16 +11,18 @@ description: >
   base. Produces a documented income classification and parcel reconciliation
   for professional review; excludes investment recommendations and complete
   income tax or capital gains tax calculations.
-jurisdiction: AU
-category: international
-tax_year: 2026
-tax_year_notes: "2026-27 income year; historical ATO example identified separately"
-tier: 2
-last_updated: 2026-10-18
 version: 0.2
+jurisdiction: AU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - workflow-base
-verified_by: pending
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia Dividend Substitution Share Plans (DSSP) v0.2
@@ -34,25 +36,6 @@ verified_by: pending
 **Tax year coverage.** This skill is current for tax year 2026-27 as of 18 October 2026. Its numerical example reproduces historical ATO facts to demonstrate allocation, not current share prices or allotment terms. Check the operative law, ruling status and actual scheme for the transaction date before applying a position.
 
 **The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
-
----
-
-## Section 1 — Scope statement
-
-This skill covers:
-
-- Australian resident shareholders holding fully paid ordinary shares on capital account, where the actual DSSP and shareholder fall within an applicable ATO ruling.
-- Separating a qualifying DSSP bonus allotment from a cash dividend or dividend reinvestment plan (DRP).
-- Determining dividend treatment, franking treatment, listed investment company (LIC) deduction treatment, acquisition dates and the first element of each parcel's cost base and reduced cost base.
-
-This skill does NOT cover:
-
-- Share trading stock, revenue-account holdings, employee share schemes, partly paid bonus shares, foreign tax treatment or holdings subject to the taxation of financial arrangements rules.
-- Choosing an investment or electing into a plan, a complete return, or calculating the final tax on a disposal.
-
-These limits follow the shareholder classes and scheme conditions in [CR 2012/10, paragraphs 3–6][afic], [CR 2023/61, paragraphs 4–6 and 16][argo] and [CR 2023/62, paragraphs 4–6 and 15][argo-infrastructure]. A ruling for one issuer does not establish another issuer's treatment.
-
----
 
 ## Section 2 — Filing requirements
 

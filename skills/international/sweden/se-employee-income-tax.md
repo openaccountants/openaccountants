@@ -1,13 +1,16 @@
 ---
 name: se-employee-income-tax
 description: "Use for the Swedish personal income tax return (Inkomstdeklaration 1) of an employee or a pensioner for income year 2026, filed in 2027. Covers who must file and the pre-filled return, the 3 May 2027 deadline, municipal tax (2026 average 32.38%, set by each kommun), state tax of 20% above SEK 643,000, the basic deduction (grundavdrag) and the higher amount from age 66, the job tax credit (jobbskatteavdrag), the 7% general pension contribution and its full credit, commuting and other work expense deductions, ROT and RUT credits, capital income at 30% and the deficit credit, the ISK standard income with the new SEK 300,000 tax-free amount, late-filing fees and cost interest. Trigger on: Swedish tax return, deklaration, kvarskatt, grundavdrag, jobbskatteavdrag, allmän pensionsavgift, reseavdrag, ROT, RUT, ISK tax, Sweden pensioner tax. Out of scope: se-income-tax (sole traders), se-social-contributions, sweden-payroll, se-capital-gains, se-cross-border, se-corporate-tax."
-jurisdiction: SE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: SE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Sweden: income tax for employees and pensioners (income year 2026)
@@ -203,3 +206,23 @@ expected:
 | Skatteverket, rot- och rutarbete | https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete.4.2e56d4ba1202f95012080002966.html | 2026-10-23 |
 
 Not yet confirmed: the average church fee rate (not on the page read); the base interest rate in force in 2027 when residual tax for 2026 is charged (Skatteverket shows 2.5% from 1 December 2024 and the rate can change); whether the job tax credit uses the price base amount multiple rounded before the municipal rate is applied (the example uses the unrounded product and drops öre as 67 kap. 1 § requires); the date Skatteverket will publish for the 2027 filing round (the law gives 3 May 2027).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

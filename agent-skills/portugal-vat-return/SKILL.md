@@ -1,679 +1,196 @@
 ---
 name: portugal-vat-return
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Portuguese VAT return (Declaração Periódica de IVA) for a self-employed individual or small business in Portugal. Trigger on phrases like \"prepare Declaração Periódica\", \"Portuguese VAT return\", \"IVA Portugal\", \"classify transactions for Portuguese VAT\", or any request involving Portugal VAT filing. This skill covers Continental Portugal only (standard regime). Madeira/Azores reduced rates, regime de isenção, partial exemption, margin scheme (regime da margem), and VAT groups are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Portuguese VAT work."
+description: "Portuguese VAT (IVA) for tax year 2026: who must charge it, the mainland rates of 23%, 13% and 6%, the Azores (16%, 9%, 4%) and Madeira (22%, 12%, 4%) rates, the art. 53 small-business exemption at EUR 15,000 with its 25% margin, the EU small-business scheme (EUR 100,000), monthly or quarterly periodic returns (EUR 650,000 test), return due on the 20th and payment on the 25th of the second month after the period (20 and 25 September for June and Q2, with deadlines on a weekend moving to the next working day), refunds after 12 months or above EUR 3,000, blocked input VAT, the domestic reverse charge on construction, late interest and RGIT fines. Trigger on: Portuguese VAT, IVA, declaração periódica, regime de isenção artigo 53, IVA trimestral mensal, autoliquidação, reembolso de IVA, coima IVA, Açores Madeira IVA. Out of scope: invoicing software, ATCUD and SAF-T (portugal-einvoice), bookkeeping (portugal-bookkeeping), income tax (pt-income-tax), corporate tax (pt-corporate-tax)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-vat-return"
   jurisdiction: "PT"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
+  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
+  review_status: "pending_review"
 ---
 
-# Portugal VAT Return
-
-## Portugal VAT Return Skill (Declaração Periódica de IVA) v2.0
-
-## Verified rates & thresholds (accountant-reviewed)
-
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### IVA
-
-- **Continente — taxa normal** — 23%  _(CIVA)_
-- **Continente — taxa intermédia** — 13%  _(CIVA)_
-- **Continente — taxa reduzida** — 6%  _(CIVA)_
-- **Açores — normal** — 16%  _(CIVA)_
-- **Açores — intermédia** — 9%  _(CIVA)_
-- **Açores — reduzida** — 4%  _(CIVA)_
-- **Madeira — normal** — 22%  _(CIVA)_
-- **Madeira — intermédia** — 12%  _(CIVA)_
-- **Madeira — reduzida** — 4%  _(Decreto Legislativo Regional n.º 6/2024/M, de 29 de julho, artº 21º)_
-- **Isenção Art. 53.º** — ≤ €15.000 (2026)  _(CIVA Art. 53.º, nº 1)_
-- **Declarações mensais** — Volume de negócios => €650.000  _(CIVA, artº 41º, nº 1, a))_
-- **Declarações trimestrais** — Volume de negócios < €650.000  _(CIVA, artº 41º, nº 1, b))_
-- **Mensal deadline** — 20.º dia do 2.º mês seguinte  _(CIVA, artº 41º, nº 1, a))_
-- **Trimestral deadline** — 20.º dia do 2.º mês seguinte ao trimestre  _(CIVA, artº 41º, nº 1, b))_
-
-## Section 1 — Quick reference
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Portugal (República Portuguesa) |
-| Standard rate | 23% (Continental); 22% (Madeira); 16% (Azores) |
-| Reduced rates | 13% Continental / 12% Madeira / 9% Azores (intermediate: restaurants, food products, diesel, some agricultural inputs); 6% Continental / 5% Madeira / 4% Azores (reduced: basic foodstuffs, water, books, medicines, passenger transport, hotels) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods) |
-| Return form | Declaração Periódica de IVA (campos/fields 1–41+) |
-| Filing portal | https://www.portaldasfinancas.gov.pt (Portal das Finanças) |
-| Authority | Autoridade Tributária e Aduaneira (AT) |
-| Currency | EUR only |
-| Filing frequencies | Monthly (turnover > €650,000 or Vol. B); Quarterly (turnover ≤ €650,000, Vol. A) |
-| Deadline | Monthly: 10th of 2nd month after period end; Quarterly: 15th of 2nd month after quarter end |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants contributors |
-| Validation date | April 2026 |
-
-**Key Declaração Periódica campos**
-
-| Campo | Meaning |
-| --- | --- |
-| 1 | Sales at standard rate — base (23%) |
-| 2 | Sales at standard rate — IVA |
-| 3 | Sales at intermediate rate — base (13%) |
-| 4 | Sales at intermediate rate — IVA |
-| 5 | Sales at reduced rate — base (6%) |
-| 6 | Sales at reduced rate — IVA |
-| 7 | Exempt sales with deduction right (exports, intra-EU) |
-| 8 | Exempt sales without deduction right |
-| 9 | Intra-EU acquisitions — base |
-| 10 | Intra-EU acquisitions — IVA (output, self-assessed) |
-| 16 | Other operations with IVA due by purchaser (reverse charge received) |
-| 17 | IVA due on campo 16 |
-| 20 | Total IVA due (sum of output fields) |
-| 21 | Deductible IVA — immobilizado (capital goods) |
-| 22 | Deductible IVA — existências (stock for resale) |
-| 23 | Deductible IVA — other goods and services |
-| 24 | Total deductible IVA |
-| 40 | IVA to pay (if 20 > 24) |
-| 41 | IVA credit (if 24 > 20) |
-
-**Conservative defaults — Portugal-specific**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 23% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Portugal (Continental) |
-| Unknown B2B vs B2C for EU customer | B2C, charge 23% |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction | €5,000 |
-| HIGH tax-delta conservative default | €400 |
-| MEDIUM counterparty concentration | >40% |
-| MEDIUM conservative-default count | >4 |
-| LOW absolute net VAT position | €10,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period. Acceptable from: CGD (Caixa Geral de Depósitos), Millennium BCP, Santander Portugal, Novo Banco, BPI, ActivoBank, Banco CTT, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices (especially intra-EU and reverse charge), purchase invoices above €400, the client's NIF (9 digits, PT prefix for EU context).
-
-**Ideal** — SAF-T (PT) extract from billing software, prior period Declaração Periódica, reconciliation of campo 41 credit.
-
-**Refusal policy if minimum is missing — SOFT WARN.** Same pattern as Malta v2.0.
-
-### Portugal-specific refusal catalogue
-
-- **R-PT-1 — Regime de isenção (Art. 53 CIVA)** — Trigger: client under the small business exemption (turnover ≤ €14,500 or ≤ €15,000 depending on current threshold). Message: "Regime de isenção clients do not charge IVA and cannot recover input IVA. They do not file the Declaração Periódica. This skill covers the normal regime only."  _(Art. 53 CIVA)_
-- **R-PT-2 — Partial exemption (pro rata / Art. 23 CIVA)** — Trigger: both taxable and exempt supplies, non-de-minimis. Message: "Mixed taxable and exempt supplies require pro rata under Art. 23 CIVA. Please use a contabilista certificado."  _(Art. 23 CIVA)_
-- **R-PT-3 — Margin scheme (regime da margem / Art. 50-A to 50-D)** — Trigger: second-hand goods, art, antiques. Message: "Regime da margem requires per-item computation. Out of scope."  _(Art. 50-A to 50-D)_
-- **R-PT-4 — VAT group (grupo de IVA)** — Trigger: VAT group. Message: "Grupo de IVA requires consolidation. Out of scope."
-- **R-PT-5 — Fiscal representative** — Trigger: non-resident with fiscal representative. Message: "Non-resident with representante fiscal — out of scope."
-- **R-PT-6 — Madeira / Azores rates** — Trigger: client operates in Madeira or Azores. Message: "Madeira (22%/12%/5%) and Azores (16%/9%/4%) have different rate tables. This skill covers Continental Portugal rates only. Please use a contabilista certificado familiar with regional rates."
-- **R-PT-7 — Real estate (IVA imobiliário)** — Trigger: property transactions. Message: "IVA on real estate is complex. Please use a contabilista certificado."
-- **R-PT-8 — Income tax instead of IVA** — Trigger: user asks about IRS/IRC instead of IVA. Message: "This skill handles Portuguese IVA only."
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Section 5.
-
-### 3.1 Portuguese banks (fees exempt — exclude)
-
-**Portuguese banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CGD, CAIXA GERAL, CAIXA GERAL DE DEPOSITOS | EXCLUDE for bank charges | Financial service, exempt |
-| MILLENNIUM BCP, BCP | EXCLUDE for bank charges | Same |
-| SANTANDER PORTUGAL, SANTANDER PT | EXCLUDE for bank charges | Same |
-| NOVO BANCO | EXCLUDE for bank charges | Same |
-| BPI, BANCO BPI | EXCLUDE for bank charges | Same |
-| ACTIVOBANK | EXCLUDE for bank charges | Same |
-| BANCO CTT | EXCLUDE for bank charges | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscriptions |
-| JUROS, JURO | EXCLUDE | Interest, out of scope |
-| EMPRESTIMO, CREDITO HABITACAO | EXCLUDE | Loan principal |
-
-### 3.2 Portuguese government and statutory bodies (exclude entirely)
-
-**Government bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PORTAL DAS FINANCAS, AT, AUTORIDADE TRIBUTARIA | EXCLUDE | Tax payment (IVA, IRS, IRC) |
-| SEGURANCA SOCIAL | EXCLUDE | Social security contributions |
-| FINANÇAS, DIRECAO GERAL | EXCLUDE | Tax authority |
-| CONSERVATORIA, REGISTO COMERCIAL | EXCLUDE | Commercial registry |
-| CAMARA MUNICIPAL | EXCLUDE | Municipal fees |
-| IRN, INSTITUTO REGISTOS E NOTARIADO | EXCLUDE | Government registry |
-| IAPMEI | EXCLUDE | Government agency |
-| ALFANDEGA, DIREÇÃO-GERAL DAS ALFÂNDEGAS | EXCLUDE | Customs (check for import IVA) |
-
-### 3.3 Portuguese utilities
-
-**Utilities table**
-
-| Pattern | Treatment | Campo | Notes |
-| --- | --- | --- | --- |
-| EDP, EDP ENERGIA, EDP COMERCIAL | Domestic 23% | 23 (input) | Electricity — standard rate |
-| GALP, GALP ENERGIA | Domestic 23% | 23 | Energy/fuel |
-| ENDESA PORTUGAL, IBERDROLA | Domestic 23% | 23 | Energy |
-| EPAL, AGUAS DE PORTUGAL | Domestic 6% | 23 | Water at reduced rate |
-| NOS, NOS COMUNICACOES | Domestic 23% | 23 | Telecoms — overhead |
-| MEO, ALTICE PORTUGAL | Domestic 23% | 23 | Telecoms/broadband |
-| VODAFONE PT, VODAFONE PORTUGAL | Domestic 23% | 23 | Telecoms |
-| NOWO | Domestic 23% | 23 | Telecoms |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| FIDELIDADE | EXCLUDE | Insurance, exempt |
-| AGEAS PORTUGAL, ALLIANZ PORTUGAL | EXCLUDE | Same |
-| TRANQUILIDADE, GENERALI PT | EXCLUDE | Same |
-| SEGURO, APOLICE | EXCLUDE | All insurance exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | Campo | Notes |
-| --- | --- | --- | --- |
-| CTT (standard mail) | EXCLUDE for standard postage |  | Universal service exempt |
-| CTT (parcels, CTT Expresso) | Domestic 23% | 23 | Non-universal taxable |
-| DHL EXPRESS PORTUGAL | Domestic 23% | 23 | Express courier |
-| CHRONOPOST PORTUGAL | Domestic 23% | 23 | Express |
-| FEDEX, UPS PORTUGAL | Domestic 23% | 23 | Courier |
-
-### 3.6 Transport (Portugal domestic)
-
-**Transport table**
-
-| Pattern | Treatment | Campo | Notes |
-| --- | --- | --- | --- |
-| CP, COMBOIOS DE PORTUGAL | Domestic 6% | 23 (input) | Rail at reduced rate |
-| METRO LISBOA, METRO PORTO | Domestic 6% | 23 | Urban rail |
-| CARRIS, CARRIS METROPOLITANA | Domestic 6% | 23 | Lisbon bus |
-| STCP | Domestic 6% | 23 | Porto bus |
-| UBER PT, UBER PORTUGAL | Domestic 6% (transport) | 23 | Ride-hailing |
-| BOLT PT | Domestic 6% | 23 | Ride-hailing |
-| TAXI | Domestic 6% | 23 | Local taxi |
-| TAP AIR PORTUGAL (domestic) | Domestic 6% | 23 | Domestic flights reduced |
-| TAP, RYANAIR, EASYJET (international) | EXCLUDE / 0% |  | International flights exempt |
-| BRISA, VIA VERDE | Domestic 23% | 23 | Motorway tolls |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-**Food retail table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CONTINENTE, MODELO | Default BLOCK input VAT | Personal provisioning |
-| PINGO DOCE, JERÓNIMO MARTINS | Default BLOCK | Same |
-| LIDL, ALDI, INTERMARCHE | Default BLOCK | Same |
-| MINIPREÇO, MERCADONA | Default BLOCK | Same |
-| RESTAURANTE, PASTELARIA, CAFÉ | Default BLOCK | Entertainment — see 5.12 |
-
-### 3.8 SaaS — EU suppliers (reverse charge / autoliquidação)
-
-**EU SaaS suppliers table**
-
-| Pattern | Billing entity | Campo | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 16/17 + 23 | Autoliquidação: output on 17, input on 23 |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 16/17 + 23 | Autoliquidação |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 16/17 + 23 | Autoliquidação |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 16/17 + 23 | Autoliquidação |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 16/17 + 23 | Autoliquidação |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 16/17 + 23 | EU, autoliquidação |
-| DROPBOX | Dropbox International Unlimited (IE) | 16/17 + 23 | Autoliquidação |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 16/17 + 23 | Autoliquidação |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 16/17 + 23 | EU, autoliquidação |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 16/17 + 23 | Autoliquidação |
-| STRIPE (subscription) | Stripe Technology Europe Ltd (IE) | 16/17 + 23 | Transaction fees exempt — see 3.11 |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge / autoliquidação)
-
-**Non-EU SaaS suppliers table**
-
-| Pattern | Billing entity | Campo | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | 16/17 + 23 | LU → EU autoliquidação |
-| NOTION | Notion Labs Inc (US) | 16/17 + 23 | Non-EU autoliquidação |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 16/17 + 23 | Non-EU autoliquidação |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 16/17 + 23 | Non-EU autoliquidação |
-| GITHUB | GitHub Inc (US) | 16/17 + 23 | Check IE entity |
-| FIGMA | Figma Inc (US) | 16/17 + 23 | Non-EU |
-| CANVA | Canva Pty Ltd (AU) | 16/17 + 23 | Non-EU |
-| HUBSPOT | HubSpot Inc (US) or IE — check | 16/17 + 23 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 16/17 + 23 | Non-EU |
-
-### 3.10 SaaS — the exception
-
-**SaaS exception table**
-
-| Pattern | Treatment | Why |
-| --- | --- | --- |
-| AWS EMEA SARL | EU autoliquidação campo 16/17 + 23 (LU entity) | Standard EU treatment. If invoice shows Portuguese IVA, treat as domestic 23%. |
-
-### 3.11 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (subscription) | EU autoliquidação 16/17 + 23 | IE entity |
-| SUMUP, SQUARE, ZETTLE | Check invoice | If Portuguese: domestic 23%; if EU: autoliquidação |
-| IFTHENPAY, EUPAGO | Check invoice | Portuguese payment processors — fees may be exempt |
-
-### 3.12 Professional services (Portugal)
-
-**Professional services table**
-
-| Pattern | Treatment | Campo | Notes |
-| --- | --- | --- | --- |
-| CONTABILISTA, GABINETE CONTABILIDADE | Domestic 23% | 23 | Always deductible |
-| ADVOGADO, ESCRITORIO ADVOCACIA | Domestic 23% | 23 | Business legal matters |
-| NOTARIO, CARTORIO | Domestic 23% | 23 | Business notarial fees |
-| SOLICITADOR | Domestic 23% | 23 | Legal practitioner |
-| REVISOR OFICIAL DE CONTAS, ROC | Domestic 23% | 23 | Auditor |
-
-### 3.13 Payroll and social security (exclude entirely)
-
-**Payroll table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SEGURANCA SOCIAL | EXCLUDE | Social security contributions |
-| SALARIO, VENCIMENTO, REMUNERACAO | EXCLUDE | Wages |
-| SUBSIDIO, SUBSIDIO FERIAS | EXCLUDE | Holiday/vacation pay |
-| FUNDO COMPENSACAO, FCT | EXCLUDE | Compensation fund |
-
-### 3.14 Property and rent
-
-**Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| RENDA COMERCIAL, ARRENDAMENTO COMERCIAL | Domestic 23% | Commercial lease with IVA option (Art. 12 n.1 al. e CIVA) |
-| RENDA, ARRENDAMENTO (residential) | EXCLUDE | Residential lease exempt |
-| IMI, IMPOSTO MUNICIPAL | EXCLUDE | Property tax |
-| AIMI | EXCLUDE | Additional property tax |
-
-### 3.15 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERENCIA INTERNA, MOVIMENTO INTERNO | EXCLUDE | Internal movement |
-| DIVIDENDO | EXCLUDE | Out of scope |
-| AMORTIZACAO EMPRESTIMO | EXCLUDE | Loan repayment |
-| LEVANTAMENTO, LEVANTAMENTO ATM | TIER 2 — ask | Default exclude |
-| REFORÇO DE CAPITAL, SUPRIMENTO | EXCLUDE | Owner injection / shareholder loan |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Portugal-based self-employed IT consultant (trabalhador independente, normal IVA regime).
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
-
-US entity. Non-EU autoliquidação under Art. 6 n.6 CIVA. Client self-assesses: output IVA on campo 17, input IVA deductible on campo 23. Net zero.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo (input) | Campo (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.38 | 23% | 23 | 16/17 | N | — | — |
-
-### Example 2 — EU service, autoliquidação (Google Ads)
-
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
-
-IE entity — EU autoliquidação. Output IVA on campo 17, input IVA on campo 23. Net zero.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo (input) | Campo (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 195.50 | 23% | 23 | 16/17 | N | — | — |
-
-### Example 3 — Entertainment, treatment in Portugal
-
-`15.04.2026 ; RESTAURANTE BELCANTO LISBOA ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-Restaurant. In Portugal, IVA on business meals (refeições de negócios) is generally deductible under Art. 21 n.1 al. d) CIVA, but only 50% deductible if they are considered despesas de representação (entertainment/representation expenses). The 50% limit applies to the IVA deduction (not just the income tax base). Default: block, flag for reviewer. If confirmed business with documentation → 50% IVA deductible.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTAURANTE BELCANTO LISBOA | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Restaurant: IVA 50% deductible if despesas de representação. Confirm business purpose." |
-
-### Example 4 — Capital goods (imobilizado)
-
-`18.04.2026 ; WORTEN (SONAE) ; DEBIT ; Laptop HP ; -1,595.00 ; EUR`
-
-€1,595 gross. In Portugal, assets used for >1 year and above a de minimis threshold are imobilizado (bens de investimento). Input IVA goes to campo 21 (IVA dedutível — imobilizado) rather than campo 23. Subject to regularisation over 5 years movable / 20 years immovable (Art. 24–26 CIVA).
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | WORTEN | -1,595.00 | -1,296.75 | -298.25 | 23% | 21 | N | — | — |
-
-### Example 5 — EU B2B service sale
-
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice PT-2026-018 IT consultancy ; +3,500.00 ; EUR`
-
-B2B services to Germany — place of supply is customer's country (Art. 6 n.6 al. a) CIVA / Art. 44 Directive). Report on campo 7 (operações isentas com direito a dedução). No output IVA. Verify German USt-IdNr on VIES.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 7 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6 — Motor vehicle, deduction rules
-
-`28.04.2026 ; ALD AUTOMOTIVE PORTUGAL ; DEBIT ; Lease payment VW Golf ; -450.00 ; EUR`
-
-Car lease. In Portugal, IVA on light passenger vehicles (viaturas ligeiras de passageiros) is generally NOT deductible (Art. 21 n.1 al. a) CIVA). Exceptions: taxis, driving schools, rental vehicles used in rental business, electric vehicles (50% deductible since 2020), hybrid plug-in vehicles (50% deductible). A VW Golf (non-electric) → blocked. If electric/hybrid → 50% deductible.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Campo | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | ALD AUTOMOTIVE PORTUGAL | -450.00 | -450.00 | 0 | — | — | Y | Q3 | "Viatura ligeira de passageiros: IVA blocked. Electric/hybrid (50% deductible)?" |
-
-### 5.1 Standard rate 23% (Art. 18 n.1 al. c) CIVA)
-
-- **Standard rate default** — Default rate for Continental Portugal. Sales → campo 1/2. Purchases → campo 23 (or 21/22).  _(Art. 18 n.1 al. c) CIVA)_
-
-### 5.2 Intermediate rate 13% (Art. 18 n.1 al. b), Lista II)
-
-- **Intermediate rate scope** — Restaurants (food + non-alcoholic drinks), diesel, certain food products (conserves, oils), wine, agricultural inputs. Sales → campo 3/4.  _(Art. 18 n.1 al. b), Lista II)_
-
-### 5.3 Reduced rate 6% (Art. 18 n.1 al. a), Lista I)
-
-- **Reduced rate scope** — Basic foodstuffs (bread, milk, fruit, vegetables, fish, meat), water, books, medicines, passenger transport, hotels, cultural events. Sales → campo 5/6.  _(Art. 18 n.1 al. a), Lista I)_
-
-### 5.4 Zero rate and exempt with credit
-
-- **Zero rate/exempt with credit** — Exports → campo 7. Intra-EU goods → campo 7. Intra-EU B2B services → campo 7.
-
-### 5.5 Exempt without credit (Art. 9 CIVA)
-
-- **Exempt without credit** — Medical, education, insurance, financial services, residential rent, postal universal service. If significant → **R-PT-2 refuses**.  _(Art. 9 CIVA)_
-
-### 5.6 Local purchases
-
-- **Local purchases treatment** — Input IVA on compliant fatura. Capital goods → campo 21. Stock → campo 22. Other → campo 23.
-
-### 5.7 Autoliquidação — EU services (Art. 6 n.6)
-
-- **EU services autoliquidação** — EU service: base → campo 16, output IVA → campo 17, input → campo 23. Net zero.  _(Art. 6 n.6)_
-
-### 5.8 Autoliquidação — EU goods (aquisições intracomunitárias)
-
-- **EU goods autoliquidação** — EU goods: base → campo 9, output IVA → campo 10, input → campo 23/21.
-
-### 5.9 Autoliquidação — non-EU
-
-- **Non-EU autoliquidação** — Non-EU: base → campo 16, output IVA → campo 17, input → campo 23.
-
-### 5.10 Domestic reverse charge (Art. 2 n.1 al. i-j CIVA)
-
-- **Domestic reverse charge** — Portugal has domestic reverse charge for construction services (empreitadas de obras), scrap metal, and CO2 emission allowances. The acquirer self-assesses IVA.  _(Art. 2 n.1 al. i-j CIVA)_
-
-### 5.11 Capital goods (bens de investimento)
-
-- **Capital goods rules** — Assets used >1 year → campo 21 for input IVA. Subject to regularização over 5 years (movable) or 20 years (immovable), Art. 24–26 CIVA.  _(Art. 24–26 CIVA)_
-
-### 5.12 Blocked/restricted input IVA (Art. 21 CIVA)
-
-- **Light passenger vehicles** — Light passenger vehicles (viaturas ligeiras de passageiros): IVA blocked. Exceptions: taxi, driving school, rental. Electric vehicles: 50% deductible. Hybrid plug-in: 50% deductible.  _(Art. 21 n.1 al. a) CIVA)_
-- **Fuel** — Diesel for VP 50% deductible; GPL/electric 100% deductible. Petrol: NOT deductible for VP.  _(Art. 21 CIVA)_
-- **Entertainment (despesas de representação)** — IVA 50% deductible. This includes business meals — 50% of IVA, not full deduction.  _(Art. 21 n.1 al. d) CIVA)_
-- **Travel and accommodation** — IVA deductible if business-related and documented.  _(Art. 21 CIVA)_
-- **Tobacco** — Not deductible.  _(Art. 21 CIVA)_
-- **Personal use** — Not deductible.  _(Art. 21 CIVA)_
-- **Gifts** — IVA deductible only if ≤ 5 per mille of turnover and unit cost ≤ €50.  _(Art. 21 CIVA)_
-
-### 5.13 SAF-T (PT)
-
-- **SAF-T requirement** — Portugal requires SAF-T (Standard Audit File for Tax) from all businesses using billing software. The SAF-T file must be submitted monthly to AT. It provides the most reliable data source for IVA classification. If available, prefer SAF-T data over bank statement.
-
-### 5.14 Sales — local domestic
-
-- **Local domestic sales** — Charge 23%, 13%, or 6%. Map to campo 1/3/5 as appropriate.
-
-### 5.15 Sales — cross-border B2C
-
-- **Cross-border B2C threshold** — Above €10,000 → **R-EU-5 OSS refusal fires**.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — Pattern: GALP, REPSOL, BP, CEPSA. Default: blocked (VP default). Question: "Viatura ligeira or comercial? Electric/hybrid (50% IVA deductible)? Diesel for VP is 50% IVA deductible."
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** — Pattern: restaurante, pastelaria, café. Default: block. Question: "Business meal (despesas de representação)? IVA 50% deductible with documentation."
-
-### 6.3 Ambiguous SaaS
-
-- **Ambiguous SaaS** — Default: non-EU autoliquidação campo 16/17 + 23. Question: "Check invoice for legal entity."
-
-### 6.4 Owner transfers
-
-- **Owner transfers** — Default: exclude as suprimento/reforço. Question: "Customer payment, own money, or loan?"
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — Default: domestic B2C 23%. Question: "Sale? Business or consumer?"
-
-### 6.6 Foreign incoming
-
-- **Foreign incoming** — Default: domestic 23%. Question: "B2B with NIF, B2C, goods/services, country?"
-
-### 6.7 Large purchases
-
-- **Large purchases** — Default: campo 21 if capital good. Question: "Confirm invoice total."
-
-### 6.8 Mixed-use phone, internet
-
-- **Mixed-use phone, internet** — Default: 0%. Question: "Dedicated business or mixed?"
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — Default: exclude. Question: "Contractor, wages, refund, personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — Default: exclude. Question: "What for?"
-
-### 6.11 Rent
-
-- **Rent** — Default: no IVA (residential). Question: "Commercial with IVA option (Art. 12 n.1 al. e)?"
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — Default: exclude from input IVA. Question: "Business trip?"
-
-### 6.13 Airbnb income
-
-- **Airbnb income** — Default: [T2] flag. Question: "Alojamento Local registration? Duration? 6% reduced rate for accommodation?"
-
-### 6.14 Construction reverse charge
-
-- **Construction reverse charge** — Pattern: empreiteiro, construção civil. Default: [T2] flag. Question: "Construction subcontractor subject to domestic reverse charge?"
-
-### 6.15 Platform sales
-
-- **Platform sales** — Default: if EU cross-border above €10,000 → R-EU-5. Otherwise domestic 23%. Question: "Sell outside Portugal?"
-
-## Section 7 — Excel working paper template (Portugal-specific)
-
-### Sheet "Transactions"
-
-Column H accepts campo codes from Section 1.
-
-### Sheet "Campo Summary"
-
-```
-| 1  | Sales 23% base | =SUMIFS(...) |
-| 2  | IVA on sales 23% | =1*0.23 |
-| 3  | Sales 13% base | =SUMIFS(...) |
-| 4  | IVA on sales 13% | =3*0.13 |
-| 5  | Sales 6% base | =SUMIFS(...) |
-| 6  | IVA on sales 6% | =5*0.06 |
-| 7  | Exempt with deduction right | =SUMIFS(...) |
-| 9  | Intra-EU acquisitions base | =SUMIFS(...) |
-| 10 | IVA on intra-EU | =9*0.23 |
-| 16 | Other reverse charge base | =SUMIFS(...) |
-| 17 | IVA on reverse charge | =16*0.23 |
-| 20 | Total IVA due | =2+4+6+10+17 |
-| 21 | Deductible IVA — imobilizado | =SUMIFS(input VAT, ..., "21") |
-| 22 | Deductible IVA — existências | =SUMIFS(..., "22") |
-| 23 | Deductible IVA — other | =SUMIFS(..., "23") |
-| 24 | Total deductible IVA | =21+22+23 |
-| 40 | IVA to pay | =MAX(0, 20-24) |
-| 41 | IVA credit | =MAX(0, 24-20) |
+# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.1
+
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Portugal.
+
+**What this skill does.** It sets out the law layer of Portuguese VAT for 2026: who is in, the rates on the mainland and in the autonomous regions, the small-business exemption, return frequency, deadlines, refunds and penalties. Figures come from the VAT Code (Código do IVA, "CIVA"), the General Tax Law ("LGT") and the General Regime for Tax Offences ("RGIT"), read on the Portal das Finanças, from AT circulars and from the Diário da República.
+
+**Sibling skills.** [pt-vat-return](pt-vat-return.md) is a pointer to this file. [portugal-einvoice](portugal-einvoice.md) covers certified invoicing software, ATCUD and SAF-T. [portugal-bookkeeping](portugal-bookkeeping.md), [pt-income-tax](pt-income-tax.md) and [pt-corporate-tax](pt-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
+
+## Who this applies to
+
+- **Taxable persons.** Anyone who independently carries on an activity of producing, trading or providing services, including liberal professions, and anyone who carries out a single taxable operation linked to such an activity (CIVA art. 2).
+- **Small-business exemption (regime especial de isenção, art. 53).** A taxable person with its seat or domicile in Portugal is exempt if it does not carry out exports or related activities and its annual turnover in Portugal in the previous calendar year did not exceed EUR 15,000. A business starting up uses its estimate for the current year (art. 53(1) and (5)). An exempt business charges no VAT and cannot deduct input VAT (art. 53(3)). The scheme does not apply to a single taxable operation or to intra-EU supplies of new means of transport (art. 53(6)).
+- **Losing the exemption (art. 58).** The exemption ends: from 1 January of the next year if turnover in the year exceeded EUR 15,000; at once if turnover in the current year exceeds EUR 15,000 by more than 25% (that is, above EUR 18,750); or when another condition stops being met (art. 58(2) and (4)). The business then files a change declaration (art. 32) within 15 working days of the year-end or of the moment it crossed the 25% margin (art. 58(5)).
+- **Moving into the exemption.** A business in the normal regime that meets the conditions files a change declaration (art. 32) to apply it (art. 54(1)). The declaration can only be filed in January and takes effect from 1 January of that year (art. 54(2)). The business must then adjust the VAT it deducted on capital goods and on stock left at the year-end, in the return for its last period (art. 54(4)).
+- **EU small-business scheme.** A business established in another EU state can use the Portuguese exemption if its EU turnover is at most EUR 100,000, it has notified its home state, and it holds a number with the suffix "EX" (art. 53(2)). A Portuguese business can use another state's exemption under art. 58-A. Rules in force since 2025 (Decree-Law 35/2025).
+- **Out of scope here.** The small retailers' scheme (art. 60 onwards), margin schemes, VAT groups, travel agents, farmers' flat-rate scheme and import VAT deferral. Refer them.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate, mainland | 23% | 2026 | CIVA art. 18(1)(c), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx |
+| Intermediate rate, mainland (List II: for example restaurant and catering services, excluding alcoholic drinks and soft drinks; certain tinned fish) | 13% | 2026 | CIVA art. 18(1)(b) and List II, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx |
+| Reduced rate, mainland (List I: for example basic foods, books, medicines, hotel accommodation, certain housing construction) | 6% | 2026 | CIVA art. 18(1)(a) and List I, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx |
+| Azores: reduced / intermediate / standard (set by the regional assembly under CIVA art. 18(3); in force since 1 July 2021) | 4% / 9% / 16% | 2026 | AT Ofício Circulado 25045/2024, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf |
+| Madeira: reduced (since 1 October 2024) / intermediate / standard. The Madeira budget for 2026 (Decreto Legislativo Regional 8/2025/M) does not change them | 4% / 12% / 22% | 2026 | AT Ofício Circulado 25045/2024, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf |
+| Construction or renovation contracts (empreitadas) for homes sold for the buyer's own permanent home or let as housing within the price and rent limits of Decree-Law 97/2026 (item 2.42.1), or for housing let under the investment-contract regime (item 2.42.2). Item 2.42.1 covers works whose licensing or notice procedure started between 25 September 2025 and 31 December 2029, with VAT due from 1 January 2026. In force from 1 July 2026, or from 1 January 2026 if supplier and customer jointly opt (DL 97/2026 art. 18(4), (5) and (7)). Item 2.42.1 ends on 31 December 2032 | 6% | 2026 | List I item 2.42, Decree-Law 97/2026, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx |
+| Small-business exemption: previous-year turnover in Portugal | EUR 15,000 | 2026 | CIVA art. 53(1), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx |
+| Exemption ends at once when current-year turnover exceeds the limit by more than | 25% (above EUR 18,750) | 2026 | CIVA art. 58(2)(b), (4)(b), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx |
+| EU small-business scheme: EU-wide turnover cap | EUR 100,000 | 2026 | CIVA art. 53(2)(a), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx |
+| Monthly periodic return: previous-year turnover at least | EUR 650,000 | 2026 | CIVA art. 41(1)(a), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx |
+| Refund: credit still outstanding after 12 months above | EUR 250 | 2026 | CIVA art. 22(5), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx |
+| Refund before 12 months: credit above | EUR 3,000 | 2026 | CIVA art. 22(6), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx |
+| AT may require a guarantee for refunds above | EUR 30,000 | 2026 | CIVA art. 22(7), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx |
+| Input VAT on diesel, LPG, natural gas and biofuels for ordinary vehicles | 50% deductible | 2026 | CIVA art. 21(1)(b), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva21.aspx |
+| Fine for a late or missing return: individual / company (limits doubled for companies) | EUR 150 to EUR 3,750 / EUR 300 to EUR 7,500 | 2026 | RGIT art. 116(1) and 26(4), https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx |
+
+## The taxable base
+
+- **What is taxed.** Supplies of goods and services in Portugal, intra-EU acquisitions and imports. The base is the consideration excluding VAT.
+- **Where a supply takes place inside Portugal matters.** Supplies treated as made in the Azores or Madeira take the regional rates (art. 18(3)).
+- **Exempt supplies.** Art. 9 lists the exemptions without deduction (for example health, education, most financial services and letting of property). A business with mixed supplies apportions input VAT.
+- **Customer pays the VAT (autoliquidação).** The Portuguese business customer self-assesses VAT on: services bought from suppliers not established in Portugal under the general rule (art. 2(1)(e)); construction work, including renovation, repair, maintenance and demolition, done under contract or subcontract for a customer with a right to deduct (art. 2(1)(j)); from 1 July 2026 (or 1 January 2026 by joint option) also for a customer with only exempt operations when it buys item 2.42 construction or renovation works (art. 2(1)(j) as amended by DL 97/2026); Annex E goods such as scrap (art. 2(1)(i)); emission rights (art. 2(1)(l)); and cork, wood, pine cones and pine nuts in shell (art. 2(1)(m)).
+- **Input VAT.** Deductible on goods and services bought for taxable operations with a valid invoice (art. 19-20). Not deductible (art. 21(1)): buying, leasing, using or repairing passenger cars, pleasure boats, aircraft and motorcycles; fuel for ordinary vehicles, except that 50% of the VAT on diesel, LPG, natural gas and biofuels is deductible; business travel and tolls; accommodation, food, drink, tobacco and reception costs. Exceptions are in art. 21(2).
+- **Credits.** An excess of deductible VAT is carried forward to later periods (art. 22(4)). Refunds are covered under Deadlines and filing.
+
+**Classifying transactions.** Plain sorting rules, each tied to the article above.
+
+| Transaction | Treatment | Rule |
+|---|---|---|
+| Sale in mainland Portugal | Charge 6%, 13% or 23% by List I, List II or the standard rate | art. 18(1) |
+| Sale treated as made in the Azores or Madeira | Regional rate | art. 18(3) |
+| Construction work for a Portuguese business customer with a right to deduct | No VAT on the invoice; the customer self-assesses | art. 2(1)(j) |
+| Services bought from a supplier not established in Portugal, general rule | Self-assess output VAT and deduct it in the same return if entitled | art. 2(1)(e), 19(1)(c) |
+| Goods bought from an EU supplier and transported to Portugal | Intra-EU acquisition: self-assess and deduct if entitled | Regime do IVA nas Transações Intracomunitárias (RITI) |
+| Purchase from a Portuguese supplier with a valid invoice | Deduct to the extent used for taxable operations | art. 19-20 |
+| Passenger car purchase, lease, use or repair; petrol; travel and tolls; hotels, meals, drinks, tobacco, reception | No deduction, unless an art. 21(2) exception applies | art. 21(1) |
+| Diesel, LPG, natural gas or biofuel for an ordinary car | 50% of the VAT deductible | art. 21(1)(b) |
+| Bank charges and other financial services, insurance, letting of property | Exempt: no VAT to deduct | art. 9 |
+| Wages, social security, tax payments, loan capital, dividends, transfers between own accounts, owner injections or drawings | No supply: not on the return | art. 1 |
+
+## Deadlines and filing
+
+- **Frequency.** Monthly if turnover in the previous calendar year was EUR 650,000 or more; quarterly if below (art. 41(1)). A quarterly business may opt for monthly returns: on registration, or by a change declaration filed in January, with effect from 1 January (art. 41(2)-(4)). A quarterly business that reached EUR 650,000 files a change declaration in January and moves to monthly from 1 January of that year (art. 41(5)). A part-year turnover is annualised (art. 41(7)), and a new business uses its estimate for the current year (art. 41(8)). Quarterly returns are not available to a business on the monthly refund register or that opted to pay import VAT through the return under art. 27(8) (art. 41(6), 22(15)).
+- **Return due dates.** The periodic return is filed electronically by the 20th of the second month after the month or quarter (art. 41(1)). The June return (monthly filers) and the Q2 return (quarterly filers) are due by 20 September (art. 41(10)).
+- **Payment due dates.** The VAT is paid by the 25th of the second month after the month or quarter (art. 27(1)). For June and Q2, by 25 September (art. 27(10)).
+- **Deadlines on a weekend or holiday.** A tax deadline that ends on a day the tax offices are closed moves to the next working day (CPPT art. 20(1), with LGT art. 57(3) and Civil Code art. 279).
+- **2026 dates for a quarterly filer.** Q1 2026: return by 20 May 2026, payment by 25 May 2026. Q2: return by 21 September 2026 (20 September is a Sunday), payment by 25 September 2026. Q3: 20 and 25 November 2026. Q4: return by 22 February 2027 (20 February is a Saturday), payment by 25 February 2027.
+- **Return when nothing happened.** The periodic return is still due for a period with no taxable operations (art. 29(2)).
+- **Refunds.** A refund can be asked once a credit above EUR 250 has persisted for 12 months; earlier if the credit exceeds EUR 3,000, or on ceasing activity or moving to a scheme without returns, if at least EUR 25 (art. 22(5)-(6)). AT pays by the end of the second month after the request, or within 30 days for businesses on the monthly refund register; after that, the business can ask for compensatory interest (art. 22(8)). Registration on the monthly refund register is requested by the end of November of the previous year (art. 22(14)).
+- **Invoicing and SAF-T.** Invoices must be issued through certified software and their data reported to AT. See [portugal-einvoice](portugal-einvoice.md).
+
+## Penalties and interest
+
+| Item | Rule | Source |
+|---|---|---|
+| Late payment interest (juros de mora) | At the rate for debts to the State that the IGCP publishes each year (for 2026: Aviso 18/2026/2), from the payment deadline until payment | LGT art. 44(1)-(3); CIVA art. 96 |
+| Compensatory interest (juros compensatórios) | At the legal interest rate (Civil Code art. 559(1)), counted daily from the filing deadline when the taxpayer's fault delays assessment. A late return always counts as a delay. Capped at 180 days for an error shown in the return | LGT art. 35 |
+| VAT charged but not paid over, up to 90 days or longer if not a crime | Fine between the unpaid tax and twice that amount | RGIT art. 114(1) |
+| Same, through negligence | Fine between 15% and half of the unpaid tax | RGIT art. 114(2) |
+| Late or missing periodic return | Fine of EUR 150 to EUR 3,750; EUR 300 to EUR 7,500 for a company | RGIT art. 116(1) and 26(4) |
+| Overall caps on fines | Companies: EUR 165,000 with intent, EUR 45,000 for negligence; individuals: half. Minimum fine EUR 50 | RGIT art. 26(1)-(3) |
+| Waiver of the fine | No fine if, in the previous five years, there was no conviction and no waiver or reduced fine; or if the failure caused no loss of revenue and was put right. Unpaid tax always counts as a loss | RGIT art. 29 |
+| Payment short of the declared amount | AT issues a debt certificate for the difference and starts enforcement | CIVA art. 27(6) |
+
+## Cross-border points
+
+- **Services bought from abroad.** The Portuguese business customer self-assesses VAT on services taxable in Portugal under the general rule and bought from a supplier not established in Portugal, and deducts it in the same return if entitled (art. 2(1)(e), 19(1)(c)).
+- **Services sold to EU businesses** under the general rule are taxed in the customer's state; they go on the return and on the recapitulative statement.
+- **Intra-EU supplies of goods** to VAT-registered customers are exempt with deduction; intra-EU acquisitions are self-assessed.
+- **Regional rates.** A mainland business supplying in the Azores or Madeira applies the regional rate where the operation is treated as made there (art. 18(3)).
+- **Non-established businesses** may use the Portuguese small-business exemption only through the EU scheme (art. 53(2)). Those that had used the old exemption lost it from 1 July 2025 (Decree-Law 35/2025, art. 10).
+- **Sales to EU consumers** at a distance and e-services above the EU-wide threshold are taxed in the customer's state, usually through the one-stop shop. See `eu-vat-directive`.
+
+## Worked examples
+
+**Example 1: quarterly return, Q3 2026, mainland.** A Lisbon Lda. with 2025 turnover of EUR 300,000 files quarterly. In July to September 2026 it invoices EUR 40,000 of services at 23%. It buys EUR 12,000 of goods and services at 23%, EUR 1,000 net of diesel at 23%, a EUR 300 net client lunch at 13% and EUR 600 net of passenger-car leasing at 23%. Output VAT is 9,200. Input VAT on general purchases is 2,760. The diesel VAT is 230, of which 50% is deductible: 115. The lunch VAT (39) and the car leasing VAT (138) are not deductible. VAT payable is 6,325. The return is due by 20 November 2026 and the payment by 25 November 2026. If it pays late, juros de mora run from 26 November 2026 at the IGCP rate for 2026, and RGIT art. 114 fines apply.
+
+```oa-check
+name: Portugal quarterly periodic return Q3 2026 with blocked and 50% input VAT
+inputs:
+  sales_net: 40000
+  purchases_net: 12000
+  diesel_net: 1000
+  lunch_net: 300
+  car_lease_net: 600
+steps:
+  - output_vat: sales_net * 0.23
+  - input_general: purchases_net * 0.23
+  - diesel_deductible: diesel_net * 0.23 * 0.50
+  - lunch_deductible: lunch_net * 0.13 * 0
+  - car_lease_deductible: car_lease_net * 0.23 * 0
+  - deductible: input_general + diesel_deductible + lunch_deductible + car_lease_deductible
+  - payable: output_vat - deductible
+expected:
+  output_vat: 9200
+  deductible: 2875
+  payable: 6325
 ```
 
-### Mandatory recalc step
+**Example 2: a freelancer crosses the 25% margin.** A designer in Porto is under the art. 53 exemption for 2026, having billed EUR 14,000 in 2025. By 31 October 2026 she has billed EUR 18,000. That is above EUR 15,000 but within the 25% margin (EUR 18,750), so she stays exempt for now. In November she bills EUR 1,500, taking the year to EUR 19,500, 30% over the limit. The exemption ends at that moment (art. 58(4)(b)). She files a change declaration within 15 working days and charges 23% from then. On EUR 2,000 of December invoices she charges EUR 460. Even had she stayed within the margin, her 2026 turnover above EUR 15,000 would have ended the exemption from 1 January 2027 (art. 58(4)(a)).
 
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/portugal-vat-<period>-working-paper.xlsx
+```oa-check
+name: Portugal art. 53 exemption, crossing the 25% margin in 2026
+inputs:
+  billed_to_october: 18000
+  november_invoice: 1500
+  limit: 15000
+  december_net: 2000
+steps:
+  - margin_ceiling: limit * 1.25
+  - year_to_november: billed_to_october + november_invoice
+  - excess_pct: (year_to_november - limit) / limit * 100
+  - over_ceiling: year_to_november - margin_ceiling
+  - vat_december: december_net * 0.23
+expected:
+  margin_ceiling: 18750
+  year_to_november: 19500
+  excess_pct: 30
+  over_ceiling: 750
+  vat_december: 460
 ```
 
-## Section 8 — Portuguese bank statement reading guide
+## Ask the client first
 
-**CSV format conventions.** Portuguese banks export CSV with semicolons and DD-MM-YYYY or DD/MM/YYYY dates. Common columns: Data, Descrição/Movimento, Débito, Crédito, Saldo. CGD and Millennium BCP use their own export formats.
+- What was your turnover in Portugal in 2025, and what will it be in 2026? Do you export? (Decides the EUR 15,000 exemption and the 25% margin.)
+- Was your 2025 turnover EUR 650,000 or more, and have you opted for monthly returns? (Decides monthly or quarterly.)
+- Where are your operations treated as made: mainland, Azores or Madeira? (Decides the rate.)
+- Do you make exempt supplies such as letting, health, education or financial services? (Decides apportionment.)
+- Do you have passenger cars, fuel, travel, meals or hospitality costs? (Decides blocked and 50% input VAT.)
+- Do you buy construction work, services from abroad or scrap? (Decides self-assessment.)
 
-**Portuguese language variants.** Renda (rent), salário/vencimento (salary), juros (interest), transferência (transfer), contribuições (contributions), fatura (invoice), reembolso (refund), depósito (deposit), levantamento (withdrawal).
+## Sources
 
-**Internal transfers.** "Transferência interna", "movimento entre contas". Exclude.
+| Source | URL | Read on |
+|---|---|---|
+| CIVA art. 2 (taxable persons, self-assessment) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva2.aspx | 2026-10-23 |
+| CIVA art. 18 (rates) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-23 |
+| CIVA Lists I and II | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx | 2026-10-23 |
+| CIVA art. 19 and 21 (deduction and exclusions) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva21.aspx | 2026-10-23 |
+| CIVA art. 22 (credits and refunds) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva22.aspx | 2026-10-23 |
+| CIVA art. 27 (payment deadlines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva27.aspx | 2026-10-23 |
+| CIVA art. 41 (periodic return deadlines and frequency) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-10-23 |
+| CIVA art. 53 (small-business exemption, with Decree-Law 35/2025 transitional rules) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-23 |
+| CIVA art. 54 and 58 (entering and leaving the exemption) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx | 2026-10-23 |
+| AT Ofício Circulado 25045/2024 (rates in the Azores and Madeira) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf | 2026-10-23 |
+| CIVA art. 29 (obligations, nil returns) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva29.aspx | 2026-10-23 |
+| LGT art. 35 and 44 (interest) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx | 2026-10-23 |
+| IGCP Aviso 18/2026/2 (late interest rate for 2026; page did not render, rate not read) | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-23 |
+| Decreto Legislativo Regional 8/2025/M (Madeira budget 2026; no VAT rate change) | https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/Decreto%20Legislativo%20Regional%20n.%C2%BA%208_2025_M%2C%20de%2030%20de%20dezembro.pdf | 2026-10-23 |
+| CIVA art. 54 (moving into the exemption) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva54.aspx | 2026-10-23 |
+| RGIT art. 26 (amount of fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-10-23 |
+| CPPT art. 20 (counting deadlines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt20.aspx | 2026-10-23 |
+| LGT art. 57 (deadlines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt57.aspx | 2026-10-23 |
+| RGIT art. 29, 114 and 116 (fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx | 2026-10-23 |
 
-**Portal das Finanças payments.** Tax payments appear as "AT", "FINANÇAS", "PAGAMENTO ESTADO". Always exclude.
+Not yet confirmed: the 2026 late-interest rate (secondary sources give 7.221% under IGCP Aviso 18/2026/2, but the Diário da República page did not render and no official copy was read) and whether it runs by day or by month; whether the Azores 2026 regional budget changed the Azores rates (the Azores budget was not read); whether the supply that takes turnover past the 25% margin is itself taxed or only later supplies; that the AT calendar shows 21 September 2026 and 22 February 2027 (the move follows from CPPT art. 20(1); the AT calendar itself was not read); the deadline for reporting invoice data to AT (left to portugal-einvoice); the return-form changes made by Portaria 298/2026/1 (published 16 July 2026, mostly for periods from 1 July 2027) are not described here.
 
-**Segurança Social.** Social security contributions appear as monthly direct debits. Always exclude.
-
-**SAF-T integration.** If SAF-T file is available, it provides structured invoice data including NIF of counterparties, IVA rates, and amounts. Prefer SAF-T data.
-
-**Foreign currency.** Convert to EUR at ECB rate.
-
-**IBAN prefix.** PT = Portugal. ES, IE, FR, DE = EU. US, GB, BR = non-EU.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type
-
-Inference: LDA = company; Unipessoal/Sociedade = company; trabalhador independente = freelancer/sole trader. Fallback: "Trabalhador independente, LDA, or SA?"
-
-### 9.2 IVA regime
-
-Fallback: "Normal regime or regime de isenção (Art. 53)?"
-
-### 9.3 NIF
-
-Fallback: "Your NIF? (9 digits, PT prefix for EU)"
-
-### 9.4 Filing period and frequency
-
-Fallback: "Monthly (Vol. B) or quarterly (Vol. A)?"
-
-### 9.5 Industry
-
-Fallback: "What does the business do?"
-
-### 9.6 Employees
-
-Inference: Segurança Social outgoing. Fallback: "Employees?"
-
-### 9.7 Exempt supplies
-
-Fallback: "Any exempt sales?" If yes → R-PT-2.
-
-### 9.8 Credit carried forward
-
-Always ask. "IVA credit from prior period? (Campo 41)"
-
-### 9.9 Cross-border customers
-
-Fallback: "Customers outside Portugal? EU/non-EU? B2B/B2C?"
-
-### 9.10 Madeira/Azores operations
-
-Conditional: "Do you have operations in Madeira or Azores?" If yes → R-PT-6 refuses.
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Código do IVA (CIVA) — https://info.portaldasfinancas.gov.pt
-2. RITI (Regime do IVA nas Transações Intracomunitárias) — D.L. 290/92
-3. Declaração Periódica form and instructions — Portal das Finanças
-4. SAF-T (PT) technical specifications — Portaria 302/2016
-5. Council Directive 2006/112/EC — via eu-vat-directive companion
-6. VIES — https://ec.europa.eu/taxation_customs/vies/
-
-### Known gaps
-
-1. Madeira/Azores rate tables not included (R-PT-6 refuses).
-2. Construction domestic reverse charge flagged T2 only.
-3. Electric/hybrid vehicle 50% IVA rule requires current vehicle classification.
-4. Regime de isenção threshold (€14,500/€15,000) — verify current.
-5. SAF-T integration is flagged but not automated.
-6. Restaurant 50% IVA deduction for despesas de representação requires documentation.
-7. Diesel 50% IVA deduction for VP is current — verify annually.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure.
-- **v1.0/1.1:** Initial skill.
-
-### Self-check (v2.0)
-
-1. Quick reference: yes. 2. Supplier library (15): yes. 3. Worked examples (6): yes. 4. Tier 1 (15): yes. 5. Tier 2 (15): yes. 6. Excel template: yes. 7. Onboarding (10): yes. 8. 8 refusals: yes. 9. Reference: yes. 10. Vehicle block with EV/hybrid 50% exception: yes. 11. Restaurant 50% IVA deduction: yes. 12. SAF-T requirement mentioned: yes. 13. Continental vs Madeira/Azores rates: yes. 14. Three-rate structure (23/13/6): yes. 15. Non-EU autoliquidação campo 16/17: yes.
-
-## End of Portugal VAT Return Skill v2.0
-
-This skill is incomplete without BOTH companion files: `vat-workflow-base` v0.1+ AND `eu-vat-directive` v0.1+.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contabilista certificado, revisor oficial de contas, or equivalent licensed practitioner) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -695,4 +212,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

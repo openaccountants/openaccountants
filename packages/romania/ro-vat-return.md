@@ -1,696 +1,251 @@
 ---
 name: ro-vat-return
-description: Use this skill whenever asked to prepare, review, or create a Romania VAT return (Declaratia 300 / D300 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in D300", "create the return", "Romanian VAT", "TVA", or any request involving Romania VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Romania VAT classification rules, box mappings, deductibility rules, reverse charge treatment, SAF-T obligations, e-invoicing (RO e-Factura), and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Romanian VAT-related work.
+description: "Use this skill for Romanian VAT (TVA, taxa pe valoarea adăugată) in tax year 2026: who must register, the 21% standard rate and 11% reduced rate set by Legea 141/2025 from 1 August 2025 and what the 11% list covers, the 9% transitional rate for homes ending 31 July 2026, the 395,000 lei small-enterprise exemption, monthly or quarterly D300 returns due on the 25th, the D394 local listing due on the 30th, the D390 EU listing, RO e-TVA pre-filled returns and compliance notices, RO e-Factura in five working days, domestic and EU reverse charge, intra-EU supplies, the 50% car restriction, refunds, interest and fines. Trigger phrases: Romanian VAT, TVA Romania, D300, decont de TVA, D394, e-TVA, cota TVA 21%, plafon 395.000 lei, VAT registration Romania. Out of scope: e-invoice formats and validation (romania-einvoice), company tax (ro-corporate-income-tax), residence and withholding (ro-cross-border), the system overview (ro-tax-overview)."
+version: 1.1
 jurisdiction: RO
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# romania-vat-return
+# Romania VAT (TVA): rates, registration, D300, D394 and RO e-TVA (2026)
 
-## Skill Metadata
+This skill covers Romanian VAT for the 2026 calendar year: who is in, the rates, registration, the D300 return and its rows, the information returns, the pre-filled RO e-TVA return, reverse charge, EU trade, refunds and penalties.
 
-- **Jurisdiction** — Romania
-- **Jurisdiction Code** — RO
-- **Primary Legislation** — Codul Fiscal (Fiscal Code, Law 227/2015, as amended by Law 296/2023 and OUG 59/2025)
-- **Supporting Legislation** — Normele Metodologice (Methodological Norms, HG 1/2016); OUG 59/2025 (rate changes); OPANAF 2131/2025 (D300 form)
-- **Tax Authority** — Agentia Nationala de Administrare Fiscala (ANAF)
-- **Filing Portal** — https://www.anaf.ro (SPV -- Spatiul Privat Virtual)
-- **Contributor** — Auto-generated draft -- requires validation
-- **Validated By** — Deep research verification, April 2026
-- **Validation Date** — 2026-04-10
-- **Skill Version** — 1.0
-- **Status** — validated
-- **Confidence Coverage** — Tier 1: box assignment, reverse charge, deductibility blocks, rate assignment. Tier 2: partial exemption pro-rata, simplified imports, vehicle mixed-use. Tier 3: complex group structures, fiscal consolidation, special fiscal regimes.
+The law is Title VII of Legea 227/2015 (Codul fiscal, "the Fiscal Code") and Legea 207/2015 (Codul de procedură fiscală, "the Procedure Code"). Every article below was read on 23 October 2026 in ANAF's consolidated texts, both shown as last updated by Legea 170/2026. ANAF notes that these consolidations are not an official republication. The current rates come from Legea 141/2025, art. II pt. 42, which rewrote art. 291(1) and (2) and took effect on 1 August 2025 (art. VII(1) of that law). Older drafts of this skill credited the change to OUG 59/2025; that was wrong. Superscript article numbers are written as 278^1, 13^2 and so on.
+
+Related skills: [romania-einvoice](romania-einvoice.md) (RO e-Factura formats, validation, archiving), [ro-corporate-income-tax](ro-corporate-income-tax.md), [ro-cross-border](ro-cross-border.md), [ro-tax-overview](ro-tax-overview.md). [romania-vat-return](romania-vat-return.md) is an older alias of this skill and points here.
+
+## Who this applies to
+
+**Taxable person.** Anyone who carries on an economic activity independently, whatever the purpose or result (art. 269). A supply of goods or services for consideration with its place in Romania is taxable unless exempt (art. 268).
+
+Sort the client first:
+
+| Group | Test | What follows |
+|---|---|---|
+| A. Established in Romania, normal VAT registration | Registered under art. 316 | Charges VAT, deducts input VAT, files D300, D394 and, for EU trade, D390 |
+| B. Established in Romania, small enterprise | Annual turnover not above 395,000 lei (art. 310(1)) | Exempt without deduction; must not show VAT on invoices (art. 310(10)); registers when the threshold is crossed |
+| C. Registered only for EU trade | Under art. 317 (intra-EU acquisitions above the limits, or B2B services bought from or sold to the EU) | Files a special return (D301) for taxable acquisitions and D390 |
+| D. Not established in Romania | No seat or fixed establishment in Romania | Registers only if it makes supplies in Romania for which it is the person liable; most B2B services and many B2B goods supplies are reverse charged to the Romanian customer (art. 307) |
 
-## Confidence Tier Definitions
+**Out of scope here:** customs procedure for imports, the special schemes for travel agents (art. 311), second-hand goods (art. 312) and investment gold (art. 313), and the e-invoice file format (romania-einvoice).
 
-Every rule in this skill is tagged with a confidence tier:
+## Rates, bands and thresholds
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified consultant fiscal must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified adviser.
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and CUI/CIF (tax ID)** [T1] -- RO prefix for VAT-registered entities
-2. **VAT registration status** [T1] -- Normal VAT payer (inregistrat in scopuri de TVA), small enterprise exempt (under threshold), or micro-enterprise (impozit pe veniturile microintreprinderilor)
-3. **Filing frequency** [T1] -- Monthly (turnover > EUR 100,000 prior year) or Quarterly (turnover <= EUR 100,000)
-4. **Industry/sector** [T2] -- impacts applicable reduced rates and deductibility
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required (pro-rata); reviewer must confirm
-6. **Does the business operate in agriculture?** [T1] -- special flat-rate scheme may apply (Art. 315^1)
-7. **SAF-T filing obligation** [T1] -- D406 filing required alongside D300
-8. **Excess credit brought forward** [T1] -- from prior period (soldul TVA de recuperat)
-9. **RO e-Factura compliance** [T1] -- mandatory B2B e-invoicing from 1 January 2026
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions.**
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-
-- **Transaction type determination** — Sale (TVA colectata -- output VAT) or Purchase (TVA deductibila -- input VAT). Salaries, social contributions (CAS, CASS), income tax (impozit pe venit), loan repayments, dividends = OUT OF SCOPE  _(Fiscal Code Art. 265-270 (taxable transactions), Art. 268 (supply of goods), Art. 271 (supply of services))_
-
-### 1b. Determine Counterparty Location [T1]
-
-- **Counterparty location determination** — Romania (domestic): supplier/customer country is RO. EU: AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, SK, SI, ES, SE. Non-EU: everything else. Note: UK is Non-EU post-Brexit. Moldova is Non-EU. Gibraltar is Non-EU.
-
-### 1c. Determine VAT Rate [T1]
-
-**VAT rate table (as of 1 August 2025)**  _(OPANAF 2131/2025)_
-
-| Rate | Category | Legislation |
-| --- | --- | --- |
-| 19% | Standard rate (until 31 July 2025) | Fiscal Code Art. 291(1) (pre-OUG 59/2025) |
-| 21% | Standard rate (from 1 August 2025) -- most goods and services | Fiscal Code Art. 291(1) (as amended by OUG 59/2025) |
-| 9% | Reduced -- residential property (transitional, until 31 July 2026, max 120 sqm useful area and max RON 600,000 excl. VAT); prostheses and similar accessories; hotel accommodation (pre-Aug 2025) | Fiscal Code Art. 291(2) (transitional) |
-| 11% | Reduced (from 1 August 2025) -- replacing most former 9% and 5% categories: food, non-alcoholic beverages, restaurant/catering, accommodation, medicines, medical devices, books, newspapers, water supply, heating, fertilizers | Fiscal Code Art. 291(2) (as amended by OUG 59/2025) |
-| 5% | Super-reduced (pre-Aug 2025) -- social housing, books, school supplies | Fiscal Code Art. 291(3) (pre-OUG 59/2025) |
-| 0% | Zero-rated -- exports (Art. 294), intra-EU supplies of goods (Art. 294) | Fiscal Code Art. 294 |
-| Exempt with credit | International transport, certain financial intermediation for international clients | Fiscal Code Art. 294 |
-| Exempt without credit | Healthcare (Art. 292(1)(a)), education (Art. 292(1)(b)), insurance (Art. 292(1)(d)), financial services (Art. 292(1)(e)), residential rental (Art. 292(2)(a)), postal services, gambling, transfer of going concern | Fiscal Code Art. 292 |
-
-### 1d. Determine Expense Category [T1]
-
-- **Expense category determination** — Capital goods: tangible fixed assets > RON 2,500 (or per entity capitalization policy) with useful life > 1 year. Immovable property: 20-year adjustment period. Movable capital goods: 5-year adjustment period. Resale: goods bought to resell. Overhead/services: everything else.  _(Fiscal Code Art. 305 (capital goods adjustment))_
-
-## Step 2: D300 Form Structure (VAT Return) [T1]
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Standard rate (art. 291(1), as rewritten by Legea 141/2025 art. II pt. 42, in force 1 August 2025) | 21% | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Reduced rate (art. 291(2)) | 11% | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Transitional rate for one home bought by an individual (up to 120 sq m and 600,000 lei excluding VAT, no other reduced-rate home bought since 1 January 2023) with an advance contract signed by 1 August 2025 and delivery by 31 July 2026; for contracts signed 3 to 31 July 2025, a 20% advance paid by 31 July 2025 (Legea 141/2025 art. III(1) and (2)) | 9% | to 31 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
+| In force date of the rate change (Legea 141/2025 art. VII(1)) | 1 August 2025 | 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
+| Small-enterprise exemption threshold, annual turnover (art. 310(1)) | 395,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| EU cross-border small-enterprise scheme, EU-wide turnover cap (art. 310^1(1)(a)) | EUR 100,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Quarterly return allowed if prior-year turnover did not exceed this, and no intra-EU acquisitions (art. 322(2)); lei value at the BNR rate for 31 December of the prior year (HG 1/2016 norms, pt. 103(2)) | EUR 100,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| VAT cash accounting ceiling, 1 March to 31 December 2026 (art. 282(3)(a), set by OUG 8/2026) | 5,000,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf |
+| VAT cash accounting ceiling from 1 January 2027 (art. 282(3)(b)) | 5,500,000 lei | 2027 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| EU distance sales and e-services threshold (art. 278^1(1)(c)) | EUR 10,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Domestic reverse charge on mobile phones, chips, consoles, tablets, laptops: minimum per invoice, excluding VAT (art. 331(7)) | 22,500 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Input VAT on road vehicles not used only for business (art. 298(1)) | 50% deductible | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Export to a non-EU traveller: the supply plus VAT must be above (art. 294(1)(b)(iii)) | EUR 175 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| RO e-TVA significant difference, both tests (OUG 70/2024 art. 5(1), as amended by OUG 87/2024) | 20% and 5,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_87_2024.pdf |
+| Late payment interest (Procedure Code art. 174(5)) | 0.02% per day | 2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
+| Late payment penalty (Procedure Code art. 176(2)) | 0.01% per day | 2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
+| Non-declaration penalty on tax set by ANAF (Procedure Code art. 181(1)) | 0.08% per day | 2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
 
-**Legislation:** OPANAF 2131/2025 (updated D300 form); Fiscal Code Art. 292-298.
-
-### Output VAT (TVA Colectata -- Sales Side)
-
-**Output VAT rows**  _(OPANAF 2131/2025 (updated D300 form); Fiscal Code Art. 292-298)_
-
-| Row | Description | Rate | Notes |
-| --- | --- | --- | --- |
-| Row 1 | Domestic supplies at standard rate (21% from Aug 2025 / 19% before) -- taxable base | 21%/19% | Standard-rated sales |
-| Row 1a | Output TVA at standard rate | -- | Calculated |
-| Row 2 | Domestic supplies at reduced rate (11% from Aug 2025 / 9% before) -- taxable base | 11%/9% | Food, accommodation, books etc. |
-| Row 2a | Output TVA at reduced rate | -- | Calculated |
-| Row 3 | Domestic supplies at second reduced rate (9% transitional) -- taxable base | 9% | Residential property (transitional) |
-| Row 3a | Output TVA at 9% transitional | -- | Calculated |
-| Row 4 | Exempt supplies with credit (exports, intra-EU) | 0% | No TVA charged |
-| Row 5 | Exempt supplies without credit | exempt | Financial, insurance, healthcare |
-| Row 6 | Intra-EU supplies of goods (livrari intracomunitare) | 0% | Report on D390 VIES |
-| Row 7 | Intra-EU supply of services (Art. 278(2)) | 0% | B2B services to EU |
-| Row 8 | Exports outside EU | 0% | Customs documentation required |
-| Row 9 | Intra-EU acquisitions of goods -- taxable base | RC | Self-assessed |
-| Row 9a | Output TVA on intra-EU acquisitions | -- | At applicable RO rate |
-| Row 10 | Import of services (EU and non-EU) -- taxable base | RC | B2B service imports |
-| Row 10a | Output TVA on import of services | -- | At applicable RO rate |
-| Row 11 | Domestic reverse charge supplies -- taxable base | RC | Buildings, waste, wood, cereals |
-| Row 11a | Output TVA on domestic reverse charge | -- | At applicable rate |
-| Row 12 | Self-supply / deemed supply | applicable | Private use, free gifts |
-
-### Input VAT (TVA Deductibila -- Purchase Side)
-
-**Input VAT rows**  _(OPANAF 2131/2025 (updated D300 form); Fiscal Code Art. 292-298)_
-
-| Row | Description | Notes |
-| --- | --- | --- |
-| Row 20 | Domestic purchases -- input TVA at standard rate (21%/19%) | Standard-rated input |
-| Row 21 | Domestic purchases -- input TVA at reduced rate (11%/9%) | Reduced-rated input |
-| Row 22 | Domestic purchases -- input TVA at second reduced rate (9% transitional) | Transitional rate |
-| Row 23 | Intra-EU acquisitions -- input TVA | Mirrors Row 9a |
-| Row 24 | Import of services -- input TVA | Mirrors Row 10a |
-| Row 25 | Imports of goods (customs) -- input TVA | From customs declaration (DVI) |
-| Row 26 | Domestic reverse charge -- input TVA | Mirrors Row 11a |
-| Row 27 | Fixed asset purchases -- input TVA | Capital goods separately tracked |
-
-### Summary
-
-**D300 Summary rows**  _(OPANAF 2131/2025 (updated D300 form); Fiscal Code Art. 292-298)_
-
-| Row | Description | Notes |
-| --- | --- | --- |
-| Row 30 | Total output TVA | Sum of all output TVA rows |
-| Row 31 | Total input TVA | Sum of all input TVA rows |
-| Row 32 | Regularizations (pro-rata adjustments, corrections) | Annual pro-rata true-up |
-| Row 33 | Net TVA payable (if Row 30 > Row 31) | Pay to ANAF |
-| Row 34 | Net TVA credit (if Row 31 > Row 30) | Excess credit |
-| Row 35 | Credit brought forward from prior period | From previous D300 |
-| Row 36 | Credit requested for refund | Subject to ANAF review |
-| Row 37 | Final amount payable | After offsetting credits |
-
-## Step 3: Transaction Classification Matrix [T1]
-
-### Purchases -- Domestic (Romanian Supplier)
-
-**Domestic purchase classification**
-
-| VAT Rate | Category | Input Row | Notes |
-| --- | --- | --- | --- |
-| 21% (std) | Overhead/services | Row 20 | Standard domestic purchase |
-| 11% (red) | Overhead/services | Row 21 | Food, accommodation, books |
-| 9% (trans) | Overhead/services | Row 22 | Transitional residential |
-| 0% | Any | -- | No TVA to claim |
-| Any | Capital > RON 2,500 | Row 27 | Capital goods scheme |
-| Any | Vehicle (mixed use) | Row 20/21 at 50% | Vehicle 50% rule |
-| Any | Blocked category | -- | No input TVA |
-
-### Purchases -- EU Supplier (Reverse Charge)
-
-**EU purchase reverse charge classification**
-
-| Type | Output Row | Input Row | Notes |
-| --- | --- | --- | --- |
-| Physical goods | Row 9 / Row 9a | Row 23 | Intra-EU acquisition |
-| Services (B2B, Art. 278(2)) | Row 10 / Row 10a | Row 24 | EU service RC |
-| Capital goods | Row 9/10 + Row 9a/10a | Row 27 | Also capital goods row |
-| Out-of-scope (wages etc.) | -- | -- | NEVER reverse charge |
-| Local consumption (hotel, restaurant abroad) | -- | -- | Foreign VAT at source |
-
-### Purchases -- Non-EU Supplier
-
-**Non-EU purchase classification**
-
-| Type | Output Row | Input Row | Notes |
-| --- | --- | --- | --- |
-| Services (B2B) | Row 10 / Row 10a | Row 24 | Non-EU service import |
-| Physical goods (customs) | -- | Row 25 | VAT paid to customs (DVI) |
-| Out-of-scope | -- | -- | NEVER reverse charge |
-
-### Sales -- Domestic
-
-**Domestic sales classification**
-
-| Rate | Row | Notes |
-| --- | --- | --- |
-| 21% (standard) | Row 1 / Row 1a | Standard-rated supply |
-| 11% (reduced) | Row 2 / Row 2a | Food, accommodation etc. |
-| 9% (transitional) | Row 3 / Row 3a | Residential property |
-| Exempt with credit | Row 4 | International transport |
-| Exempt without credit | Row 5 | Financial, insurance, healthcare |
-
-### Sales -- EU / Non-EU
-
-**EU/Non-EU sales classification**
-
-| Location | Type | Row | Notes |
-| --- | --- | --- | --- |
-| EU B2B goods | Intra-EU supply | Row 6 | Zero-rated, report on D390 |
-| EU B2B services | Art. 278(2) services | Row 7 | Place of supply in customer MS |
-| Non-EU | Export | Row 8 | Zero-rated, customs docs |
-
-## Step 4: Reverse Charge Mechanics [T1]
-
-**Legislation:** Fiscal Code Art. 307(2)-(6) (reverse charge); Art. 276-278 (place of supply for services).
-
-### Intra-EU Acquisitions of Goods (Art. 289)
-
-- **Intra-EU acquisitions procedure** — 1. Report taxable base in Row 9 2. Self-assess output TVA at applicable Romanian rate in Row 9a 3. Claim input TVA in Row 23 4. Net effect: zero for fully taxable businesses 5. Report on D390 VIES  _(Fiscal Code Art. 289)_
-
-### Import of Services -- EU and Non-EU B2B (Art. 278(2))
-
-- **Import of services procedure** — 1. Report taxable base in Row 10 2. Self-assess output TVA in Row 10a 3. Claim input TVA in Row 24 4. Net effect: zero for fully taxable businesses  _(Fiscal Code Art. 278(2))_
-
-### Domestic Reverse Charge (Art. 331)
-
-**Domestic reverse charge supply types**  _(Fiscal Code Art. 331)_
-
-| Supply Type | Legislation | Notes |
-| --- | --- | --- |
-| Supply of buildings/land (after first occupation) | Art. 331(2)(a) | When seller opts to tax |
-| Supply of wood and timber | Art. 331(2)(b) | All categories of wood |
-| Supply of cereals and industrial crops | Art. 331(2)(c) | Grain, oilseeds, etc. |
-| Supply of waste and recyclable materials | Art. 331(2)(d) | Scrap metal, paper, plastic |
-| Transfers of CO2 emission allowances | Art. 331(2)(e) | Greenhouse gas permits |
-| Supply of mobile phones and tablets (> RON 22,500) | Art. 331(2)(f) | Above threshold only |
-| Supply of gaming consoles and integrated circuits (> RON 22,500) | Art. 331(2)(g) | Above threshold only |
-
-### Domestic Reverse Charge (Art. 331)
-
-- **Domestic reverse charge procedure** — 1. Report taxable base in Row 11 2. Self-assess output TVA in Row 11a 3. Claim input TVA in Row 26  _(Fiscal Code Art. 331)_
-
-### Exceptions to Reverse Charge [T1]
-
-- **Reverse charge exceptions** — - Out-of-scope categories: NEVER reverse charge - Local consumption abroad: NOT reverse charge; foreign VAT paid at source - EU supplier charged their local VAT > 0%: NOT reverse charge - Mobile phones/tablets below RON 22,500: normal VAT applies
-
-## Step 5: Deductibility Check
-
-### Blocked / Restricted Categories [T1]
-
-**Blocked/restricted categories table**  _(Fiscal Code Art. 297-298)_
-
-| Category | VAT Recovery | Legislation | Notes |
-| --- | --- | --- | --- |
-| Passenger vehicles (50% rule) | 50% | Art. 297(4) | Unless exclusively for business with proof |
-| Fuel for 50%-restricted vehicles | 50% | Art. 297(4) | Same rule as vehicle |
-| Maintenance/repairs for 50%-restricted vehicles | 50% | Art. 297(4) | Follows vehicle rule |
-| Alcohol | 0% | Art. 297(1)(a) | Unless part of business activity (bar, shop, distributor) |
-| Tobacco | 0% | Art. 297(1)(a) | Unless business activity (tobacconist) |
-| Luxury goods for personal use | 0% | Art. 297(1)(b) | Non-deductible |
-| Business gifts > RON 100 per item | 0% | Art. 297(1)(c) | Blocked above threshold |
-| Business gifts <= RON 100 per item | Deductible | Art. 297(1)(c) | Promotional items OK |
-| Protocol/entertainment expenses | Deductible for TVA | Art. 297 | NOT blocked for TVA (unlike many EU countries) |
-| Protocol expenses | Limited for CIT | Art. 25(3)(a) Fiscal Code | 2% of accounting profit limit for CIT (not TVA) |
-| Supplies for exempt-without-credit activities | 0% | Art. 297(2) | Financial, insurance, education inputs |
-| Personal use items | 0% | Art. 297(1)(b) | No deduction |
-
-### Vehicle 50% Rule Details [T1]
-
-**Vehicle 50% rule scenarios**  _(Fiscal Code Art. 297(4))_
-
-| Scenario | TVA Deduction | Notes |
-| --- | --- | --- |
-| Passenger car (max 9 seats), mixed use | 50% | Default assumption |
-| Passenger car, exclusively business | 100% | Must have supporting evidence (trip sheets, GPS, contracts) |
-| Taxi, delivery vehicle, emergency vehicle | 100% | Qualifying activities |
-| Rental fleet vehicle (car rental business) | 100% | Part of business activity |
-| Van / truck (N1 category or higher) | 100% | No restriction |
-| Fuel for 50% vehicle | 50% | Follows vehicle rule |
-| Fuel for 100% vehicle | 100% | Follows vehicle rule |
-| Insurance, repairs, parking for 50% vehicle | 50% | Follows vehicle rule |
-
-### Registration-Based Recovery [T1]
-
-**Registration-based recovery table**
-
-| Registration Type | Input VAT Recovery | Legislation |
-| --- | --- | --- |
-| Normal TVA payer | Full recovery (subject to blocks) | Art. 297 |
-| Exempt entity (below threshold) | NO recovery | Art. 310 |
-| Micro-enterprise | NO TVA obligations (subject to micro-enterprise tax) | Art. 47 |
-
-### Partial Exemption (Pro-Rata) [T2]
-
-- **Recovery % formula** — Recovery % = (Taxable Turnover + Zero-Rated Turnover) / Total Turnover * 100  _(Fiscal Code Art. 300)_
-
-### Partial Exemption (Pro-Rata) [T2]
-
-**Pro-rata rules table**  _(Fiscal Code Art. 300)_
-
-| Rule | Detail | Legislation |
-| --- | --- | --- |
-| Rounding | Round UP to nearest whole percent | Art. 300(3) |
-| Provisional | Use prior year pro-rata during current year | Art. 300(4) |
-| Annual regularization | True-up at year-end in last D300 of the year | Art. 300(5) |
-| Excluded from calculation | Incidental financial/property transactions | Art. 300(2) |
-
-### Partial Exemption (Pro-Rata) [T2]
-
-**Flag for reviewer: annual regularization required. Provisional pro-rata used during year; final pro-rata calculated after year-end.**
-
-## Step 6: SAF-T Reporting (D406) [T1]
-
-**SAF-T reporting details**  _(OPANAF 1783/2021 (SAF-T), as amended)_
-
-| Feature | Detail |
-| --- | --- |
-| Filing form | D406 (Standard Audit File for Tax) |
-| Large taxpayers | Monthly, by 14th of month M+2 |
-| Medium/small taxpayers | Monthly, by last day of month M+3 |
-| Micro-enterprises | Monthly, by last day of month M+4 |
-| Content | General ledger, accounts receivable/payable, fixed assets, inventory, purchase/sales invoices |
-| Reconciliation | ANAF cross-checks D406 against D300; discrepancies must be explained within 20 days |
-| Penalty | Fines between RON 1,000 and RON 5,000 for non-compliance |
-
-## Step 6: SAF-T Reporting (D406) [T1]
-
-**From 2026:** Pre-filled VAT returns (RO e-TVA) are generated by ANAF from D406 + RO e-Factura data. Taxpayers must review and either accept or explain discrepancies.
-
-## Step 7: E-Invoicing (RO e-Factura) [T1]
-
-**E-invoicing obligations table**  _(OUG 120/2021, as amended; Law 296/2023)_
-
-| Obligation | Effective Date | Legislation |
-| --- | --- | --- |
-| B2G (government) | Mandatory since July 2022 | OUG 120/2021 |
-| B2B (all sectors) | Mandatory from 1 January 2026 | Law 296/2023 Art. I |
-| B2C | Mandatory from 1 January 2026 | Law 296/2023 Art. I |
-| Transmission deadline | Within 5 working days of invoice issuance | OUG 120/2021 Art. 10 |
-| Format | CIUS-RO (UBL 2.1 based) | OPANAF specification |
-| Platform | RO e-Factura via ANAF SPV portal | anaf.ro |
-
-## Step 7: E-Invoicing (RO e-Factura) [T1]
-
-**Consequence:** Invoices not transmitted via e-Factura may be denied input TVA deduction by ANAF from 2026.
-
-## Step 8: Key Thresholds
-
-**Key thresholds table**
-
-| Threshold | Value | Legislation |
-| --- | --- | --- |
-| VAT registration (domestic) | RON 395,000 annual turnover (from 1 September 2025) | Fiscal Code Art. 310 |
-| Previous threshold (before Sep 2025) | RON 300,000 | Art. 310 (old) |
-| Monthly filing trigger | Annual turnover > EUR 100,000 prior year | Art. 322(1) |
-| Capital goods adjustment -- movable | 5 years | Art. 305(1) |
-| Capital goods adjustment -- immovable | 20 years | Art. 305(2) |
-| Business gift deduction limit | RON 100 per item | Art. 297(1)(c) |
-| Vehicle 50% restriction | Passenger cars, max 9 seats | Art. 297(4) |
-| Domestic RC mobile phones/tablets | RON 22,500 per transaction | Art. 331(2)(f-g) |
-| EU distance selling (B2C) | EUR 10,000 (EU-wide OSS threshold) | EU Directive 2017/2455 |
-| Micro-enterprise tax threshold | EUR 500,000 revenue | Art. 47 |
-| EU SME scheme (from 2025) | EUR 85,000 domestic + EUR 100,000 EU-wide | EU Directive 2020/285 |
-
-## Step 9: VAT Registration [T1]
-
-**VAT registration table**
-
-| Feature | Detail | Legislation |
-| --- | --- | --- |
-| VAT number format | RO + CUI number (up to 10 digits) | Art. 316 |
-| Mandatory registration | Turnover > RON 395,000 (from Sep 2025) | Art. 310(1) |
-| Registration deadline | 10 days after exceeding threshold | Art. 316(1) |
-| Voluntary registration | May register below threshold | Art. 316(1)(b) |
-| Deregistration | If turnover drops below threshold | Art. 310(7) |
-| ANAF reactivation risk | ANAF may cancel VAT number if non-compliant (D300/D394 unfiled, inactive address, etc.) | Art. 316(11) |
-| Re-registration | Must apply and may require fiscal inspection | Art. 316(12) |
-| Fiscal representative | Required for non-EU businesses without Romanian establishment | Art. 318 |
-
-## Step 9: VAT Registration [T1]
-
-**Warning:** ANAF actively cancels VAT registrations for non-compliance. Re-registration can be difficult and time-consuming.
-
-## Step 10: Filing Deadlines and Penalties
-
-### Filing Deadlines [T1]
-
-**Filing deadlines table**
-
-| Filing | Period | Deadline | Legislation |
-| --- | --- | --- | --- |
-| D300 (monthly filer) | Monthly | 25th of following month | Art. 322(1) |
-| D300 (quarterly filer) | Quarterly | 25th of month after quarter end | Art. 322(2) |
-| D394 (local transactions report) | Monthly/Quarterly | Same as D300 deadline | OPANAF 3769/2015 |
-| D390 VIES (recapitulative statement) | Monthly | 25th of following month | Art. 325 |
-| D406 SAF-T (large taxpayers) | Monthly | 14th of M+2 | OPANAF 1783/2021 |
-| D406 SAF-T (medium/small) | Monthly | Last day of M+3 | OPANAF 1783/2021 |
-| TVA payment | Same as return | 25th | Tax Procedure Code Art. 156 |
-| RO e-Factura transmission | Per invoice | 5 working days from issuance | OUG 120/2021 Art. 10 |
-
-### Penalties [T1]
-
-**Penalties table**
-
-| Violation | Penalty | Legislation |
-| --- | --- | --- |
-| Late filing of D300 | RON 1,000 - RON 5,000 for legal entities | Tax Procedure Code Art. 336(1) |
-| Late filing (individuals) | RON 500 - RON 1,000 | Tax Procedure Code Art. 336(2) |
-| Late payment of TVA | 0.02% per day of delay (late interest) | Tax Procedure Code Art. 174(5) |
-| Tax shortfall (additional assessment) | 0% - 50% penalty depending on circumstances | Tax Procedure Code Art. 181-182 |
-| D406 SAF-T non-compliance | RON 1,000 - RON 5,000 per filing | OPANAF 1783/2021 |
-| e-Factura non-compliance | RON 5,000 - RON 10,000 (legal entities from 2026) | Law 296/2023 |
-| Failure to register for VAT | Back-assessment + penalties | Art. 310 |
-| Non-filing of D394 | RON 2,000 - RON 10,000 | OPANAF 3769/2015 |
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Hotel in another EU country [T1]
-
-- **EC1** — **Situation:** Romanian TVA payer pays for hotel in Italy. Invoice shows Italian 10% VAT. **Resolution:** NOT reverse charge. Italian VAT was charged and paid at source. No Romanian TVA entries. Italian VAT is irrecoverable cost.  _(Fiscal Code Art. 278(4)(b) -- place of supply for accommodation is where property is located)_
-
-### EC2 -- SaaS subscription from US provider (AWS, Google) [T1]
-
-- **EC2** — **Situation:** Monthly charge from US company, no VAT on invoice. **Resolution:** Import of services. Report in Row 10 (base) / Row 10a (output TVA at 21%) / Row 24 (input TVA). Net effect zero.  _(Fiscal Code Art. 278(2) -- place of supply for B2B services is customer's establishment)_
-
-### EC3 -- Intra-EU goods acquisition [T1]
-
-- **EC3** — **Situation:** Romanian company buys goods from German supplier at 0% with DE VAT number. **Resolution:** Report in Row 9 (base) / Row 9a (output TVA at 21%) / Row 23 (input TVA). Net effect zero. Report on D390 VIES.  _(Fiscal Code Art. 289)_
-
-### EC4 -- Passenger car purchase, mixed use (50% rule) [T1]
-
-- **EC4** — **Situation:** Company buys car for RON 100,000 + RON 21,000 TVA. Mixed use, no proof of exclusive business. **Resolution:** 50% deduction. Input TVA recoverable = RON 10,500. Remaining RON 10,500 is cost.  _(Fiscal Code Art. 297(4))_
-
-### EC5 -- Domestic reverse charge (waste materials) [T1]
-
-- **EC5** — **Situation:** Romanian supplier sells scrap metal to Romanian buyer. Both TVA registered. **Resolution:** Supplier invoices without TVA. Buyer self-assesses in Row 11/11a (output) and Row 26 (input). Net effect zero.  _(Fiscal Code Art. 331(2)(d))_
-
-### EC6 -- Credit note [T1]
-
-- **EC6** — **Situation:** Supplier issues credit note reducing an earlier invoice. **Resolution:** Reduce original row values. Report in the period the credit note is issued. Negative adjustment in applicable rows.  _(Fiscal Code Art. 287 (adjustment of tax base))_
-
-### EC7 -- Pre-filled VAT return discrepancy (RO e-TVA) [T2]
-
-- **EC7** — **Situation:** ANAF's pre-filled D300 (RO e-TVA) shows different figures than taxpayer's records. **Resolution:** Flag for reviewer. Taxpayer must either accept ANAF figures or provide written explanation (Notificare) within 20 days. Discrepancy may trigger audit.  _(OPANAF 2131/2025)_
-
-### EC8 -- Transitional rate period (August 2025) [T1]
-
-- **EC8** — **Situation:** Invoice issued 31 July 2025 at 19%, paid in August 2025. **Resolution:** TVA rate is determined by chargeability date (data exigibilitatii), not payment date. If supply occurred before 1 August 2025, old rate (19%) applies. If supply is after, new rate (21%) applies.  _(Fiscal Code Art. 282 (chargeability); OUG 59/2025 transitional provisions)_
-
-### EC9 -- Import of physical goods via customs [T2]
-
-- **EC9** — **Situation:** Client imports goods from China via Constanta port. **Resolution:** TVA assessed by customs on DVI (declaratie vamala de import). Input TVA from customs document reported in Row 25. Flag for reviewer: confirm customs documentation and any deferred payment scheme (Art. 326^1).  _(Fiscal Code Art. 293; Art. 326^1 (deferred import TVA))_
-
-### EC10 -- Business gift under RON 100 [T1]
-
-- **EC10** — **Situation:** Company distributes promotional items worth RON 50 each to clients. **Resolution:** Input TVA on purchase is deductible (under RON 100 threshold). No output TVA on distribution if promotional purpose is documented.  _(Fiscal Code Art. 297(1)(c))_
-
-### EC11 -- Business gift over RON 100 (blocked) [T1]
-
-- **EC11** — **Situation:** Company gives client a gift worth RON 200 + RON 42 TVA. **Resolution:** Input TVA of RON 42 is NOT deductible (exceeds RON 100 threshold). Full amount is cost.  _(Fiscal Code Art. 297(1)(c))_
-
-### EC12 -- ANAF cancellation of VAT registration [T2]
-
-- **EC12** — **Situation:** ANAF sends notice that client's TVA number is being cancelled for non-compliance. **Resolution:** ESCALATE. Client must regularize compliance issues (file missing returns, update registered address). Flag for reviewer: re-registration requires fiscal inspection.  _(Fiscal Code Art. 316(11)-(12))_
-
-### EC13 -- Domestic reverse charge (wood/timber) [T1]
-
-- **EC13** — **Situation:** Romanian lumber company sells processed timber to another Romanian TVA-registered company. **Resolution:** Domestic reverse charge applies. Seller invoices without TVA. Buyer: Row 11 (base) / Row 11a (output TVA at 21%) / Row 26 (input TVA). Net zero.  _(Fiscal Code Art. 331(2)(b))_
-
-### EC14 -- Mobile phones above RON 22,500 (domestic RC) [T1]
-
-- **EC14** — **Situation:** Romanian company buys smartphones worth RON 30,000 from another Romanian company. **Resolution:** Domestic reverse charge applies (above RON 22,500 threshold). Buyer self-assesses. Below threshold: normal TVA.  _(Fiscal Code Art. 331(2)(f))_
-
-### EC15 -- Deferred import TVA (Art. 326^1) [T2]
-
-- **EC15** — **Situation:** Company with authorization defers import TVA rather than paying at customs border. **Resolution:** TVA is reported on D300 instead of paying to customs. Output in Row 10a equivalent, input in Row 25. Flag for reviewer: confirm client has the deferred import TVA authorization from ANAF.  _(Fiscal Code Art. 326^1)_
-
-### EC16 -- Passenger car used exclusively for business (100% deduction) [T2]
-
-- **EC16** — **Situation:** Delivery company buys a car for RON 60,000 + RON 12,600 TVA. Used exclusively for deliveries. **Resolution:** If exclusive business use can be demonstrated (trip sheets, GPS tracking, contracts), 100% TVA deduction applies. Flag for reviewer: confirm evidence of exclusive business use.  _(Fiscal Code Art. 297(4) -- exception to 50% rule)_
-
-### EC17 -- Transitional rate: supply straddling August 2025 [T1]
-
-- **EC17** — **Situation:** Service contract signed in July 2025, partial delivery in July (19%) and partial in August (21%). **Resolution:** TVA rate follows chargeability date for each portion. July deliveries at 19%, August deliveries at 21%. Split invoicing required.  _(Fiscal Code Art. 282; OUG 59/2025 transitional provisions)_
-
-## Step 12: Comparison with Malta
-
-**Romania vs Malta comparison table**
-
-| Feature | Romania (RO) | Malta (MT) |
-| --- | --- | --- |
-| Standard rate | 21% (from Aug 2025; previously 19%) | 18% |
-| Reduced rates | 11%, 9% (transitional) | 12%, 7%, 5% |
-| Return form | D300 (~37 rows) | Malta periodic VAT return (~45 boxes) |
-| Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |
-| Filing deadline | 25th of following month | 21st of month after quarter (e-filing) |
-| Payment deadline | 25th | Same as filing |
-| Small enterprise threshold | RON 395,000 (~EUR 80,000) | EUR 35,000 |
-| Capital goods movable | > RON 2,500 (5 years) | > EUR 1,160 gross |
-| Capital goods immovable | 20-year adjustment | No specific adjustment period |
-| Blocked: passenger cars | 50% rule (mixed use) | Yes (fully blocked, 10th Schedule) |
-| Blocked: entertainment | NOT blocked for TVA (limited for CIT) | Yes (10th Schedule Item 3(1)(b)) |
-| Blocked: alcohol/tobacco | Yes (unless business activity) | Yes (10th Schedule) |
-| Domestic reverse charge | Buildings, waste, wood, cereals, emissions, phones | No domestic reverse charge |
-| SAF-T filing | D406 mandatory (phased) | No SAF-T |
-| E-invoicing | RO e-Factura mandatory from 2026 | No mandatory e-invoicing |
-| Pre-filled returns | RO e-TVA from ANAF | No pre-filled returns |
-| Refund mechanism | Request on D300, ANAF review | Carry forward / refund request |
-| Tax authority | ANAF | CFR |
-| Filing portal | anaf.ro (SPV) | cfr.gov.mt |
-| Currency | RON (Romanian Leu) | EUR |
-
-## Step 13: Derived Box Calculations [T1]
-
-- **Derived box calculations** — Row 30 = Sum of Row 1a + Row 2a + Row 3a + Row 9a + Row 10a + Row 11a + other output TVA Row 31 = Sum of Row 20 + Row 21 + Row 22 + Row 23 + Row 24 + Row 25 + Row 26 + Row 27 IF Row 30 > Row 31 THEN Row 33 = Row 30 - Row 31  -- Net TVA Payable Row 34 = 0 ELSE Row 33 = 0 Row 34 = Row 31 - Row 30  -- Net TVA Credit END Row 37 = Row 33 - Row 35  -- Final payable after credit brought forward
-
-## Step 14: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Consultant fiscal must confirm before filing.
+**What the 11% rate covers** (art. 291(2), letters a to n):
+- medicines for human use;
+- food, including drinks, for human and animal consumption, and live domestic animals and birds, except alcoholic drinks, non-alcoholic drinks under NC code 2202, foods with added sugar of at least 10 g per 100 g (infant milk powder excepted) and food supplements;
+- water supply and sewerage, and water for irrigation in agriculture;
+- fertilisers, pesticides, seeds and agricultural services of the kinds listed by joint order (chemical fertilisers and pesticides until 31 December 2031, art. 291(3^3));
+- school textbooks, books, newspapers and magazines, printed or electronic, except mainly video, music or advertising content;
+- entry to castles, museums, memorial houses, monuments, zoos and botanical gardens;
+- firewood, pellets and briquettes to individuals and to legal persons as end users (until 31 December 2029, art. 291(3^4));
+- heat in the cold season (1 November to 31 March) to households, hospitals, schools, NGOs, religious bodies and social service providers;
+- buildings delivered as social policy: old people's and pensioners' homes, children's homes and rehabilitation centres for disabled minors;
+- hotel and similar accommodation, including camping pitches;
+- restaurant and catering services, except alcoholic drinks and NC 2202 drinks.
+
+Anything not on that list, and not exempt, is at 21%. Since 1 August 2025 there is no 5% or 9% rate in art. 291. The 9% rate survives only in Legea 141/2025 art. III: for the transitional homes above, and, until 1 August 2026, for buildings sold to town halls for subsidised rent under advance contracts signed by 1 August 2025 (art. III(4)). D300 has a separate row 11 for it.
+
+**Which rate applies when the rate changes.** The rate in force when the chargeable event happens (delivery or performance). Where an invoice or advance came first, the rate at that earlier date applies and is regularised to the rate at delivery (art. 291(4) and (6)). Imports and intra-EU acquisitions take the rate for the same goods supplied in Romania (art. 291(7) and (8)).
+
+## The taxable base
+
+**Base.** Everything the supplier receives or will receive for the supply, including taxes and duties other than VAT and incidental costs charged to the customer (art. 286). Reduced by discounts and by cancelled or returned supplies (art. 287). For imports, the customs value plus duties and incidental costs to the first destination (art. 289). Foreign currency converts at the BNR or ECB rate, or the bank's rate if the contract says so, on the date VAT becomes chargeable (art. 290(2)).
+
+**When VAT is due.** At delivery or performance, or earlier on an invoice or advance (art. 282(1) and (2)). A taxpayer under the ceiling that opts for cash accounting charges VAT when it is paid, and its customers deduct it only when they pay (art. 282(3) to (8)).
+
+**Exempt without deduction** (art. 292): medical care, education, social care, financial and insurance services, lettings of immovable property (except hotels, parking, fixed machinery, safes), sales of old buildings and of land that is not building land. Letting and old-building sales can be opted into tax (art. 292(3)).
+
+**Exempt with deduction** (art. 294): exports, intra-EU supplies of goods to a customer with a valid VAT number from another member state, international transport and related services.
+
+**Deduction.** Input VAT on purchases used for taxable supplies is deductible (art. 297), with an invoice that meets art. 319 (art. 299). Between Romanian established taxpayers, only an invoice that meets the RO e-Factura rules counts as an invoice (art. 319(1^1)). Restrictions:
+- road vehicles not used only for business: 50% of input VAT on purchase, lease and running costs (art. 298(1)). Full deduction for vehicles over 3,500 kg or with more than 9 seats, and for taxis, driving schools, rental and leasing, sales agents, couriers, security and emergency vehicles, and vehicles held as stock (art. 298(2) and (3));
+- mixed businesses deduct by direct allocation and a pro rata for common costs (art. 300);
+- capital goods are adjusted over 5 years, or 20 for immovable property, when use changes (art. 305).
+
+**No losses.** VAT has no losses. An excess of input over output VAT is a negative amount, which is carried forward or claimed back (see Deadlines and filing).
+
+## Deadlines and filing
+
+**Registration** (art. 316). A Romanian business registers before it starts if it expects turnover above 395,000 lei, or if it opts in. A small enterprise that crosses the threshold during the year must apply at the latest on the date it crosses. The normal regime applies from that date, starting with the transaction that crosses it (art. 310(6)). If it registers late, ANAF registers it from the crossing date and collects the VAT it should have charged minus the VAT it could have deducted (art. 310(6^1)).
+
+**Return period** (art. 322). The calendar month is the default. A business whose prior-year turnover did not exceed EUR 100,000 and that made no intra-EU acquisitions files quarterly, and confirms this by a declaration of changes by 25 January (art. 322(6)). A quarterly filer that makes a taxable intra-EU acquisition becomes monthly from the month set by art. 322(7), for the rest of that year and the next (art. 322(8)). A business that registers during the year declares its expected turnover for the rest of the year and files quarterly if that stays under the limit scaled to the months left (art. 322(3)). A small enterprise that registers after crossing 395,000 lei annualises its turnover for the year: above EUR 100,000 it files monthly, otherwise quarterly unless it made an intra-EU acquisition (art. 322(4)). A business registered by ANAF of its own motion files monthly in the year of registration (HG 1/2016 norms, pt. 103(1)).
+
+| Return | Who | Due | Source |
+|---|---|---|---|
+| D300 VAT return (decont de TVA), form approved by OPANAF 174/2026 from the January 2026 period | Everyone registered under art. 316 | 25th of the month after the month (art. 323(1)); quarterly filers, 25th of the month after the quarter | OPANAF 174/2026 |
+| Payment of VAT | Same | Same day as the D300 (art. 326(1)) | Fiscal Code |
+| D394 local sales and purchases listing | Everyone registered under art. 316, even with nothing to report | 30th of the month after the D300 period; for a January monthly period, the last day of February | OPANAF 3769/2015 as amended by OPANAF 77/2022 |
+| D390 VIES recapitulative statement | Registered under art. 316 or 317 with intra-EU supplies, acquisitions or B2B services | 25th of the month after each month with such operations (art. 325) | OPANAF 705/2020 |
+| D301 special return | Persons registered only under art. 317, and others liable under art. 307(2) to (6) without art. 316 registration | 25th of the month after the month VAT became chargeable (art. 324(2)) | Fiscal Code |
+| D406 SAF-T file | Taxpayers in the SAF-T phases | Under the SAF-T orders; not covered here | Procedure Code art. 59^1 |
+
+The annual small-enterprise notices in art. 324(4) to (6) are suspended from 1 January 2024 to 31 December 2026 (OUG 115/2023 art. LXII, noted in ANAF's consolidated code).
+
+**D300 rows (OPANAF 174/2026)**, for orientation:
+- rows 1 and 2: intra-EU supplies exempt under art. 294(2)(a) and (d), and their regularisations;
+- rows 3 and 3.1: supplies with place of supply outside Romania, of which intra-EU B2B services;
+- rows 5 to 8: intra-EU acquisitions of goods and other reverse-charge purchases, collected side;
+- row 9: domestic supplies at 21%; row 10: at 11%; row 11: at 9% under Legea 141/2025 art. III;
+- row 12 (12.1 at 21%, 12.2 at 11%): domestic reverse-charge purchases, collected side; row 13: domestic reverse-charge sales;
+- row 14: exempt with deduction; row 15: exempt without deduction;
+- row 19: total VAT collected;
+- rows 20 to 23: reverse-charge purchases, deductible side; row 24: purchases at 21%; row 25: at 11%; row 26: domestic reverse charge;
+- row 30: total deductible; row 31: deducted after art. 297, 298 and 300; row 34: pro rata and adjustments; row 35: total deducted;
+- row 36 or 37: negative amount or VAT payable for the period; row 44 or 45: balance payable or negative balance at the end.
+
+**RO e-TVA pre-filled return** (OUG 70/2024, as amended by OUG 87/2024 and OUG 89/2025):
+- ANAF puts a pre-filled D300 in the taxpayer's electronic account by the 5th of the month after the D300 deadline (art. 3(2)). It is not a tax assessment (art. 3(5)).
+- Where a row of the filed D300 differs from it by at least 20% and at least 5,000 lei, ANAF sends a "Notificarea de conformare RO e-TVA" by the same 5th day (art. 5(1) and (5)). It may also send one below the threshold on risk grounds (art. 5(6)). Regularisation rows are not compared (art. 5(3)).
+- From 1 January 2026, OUG 89/2025 art. XII repealed art. 5(8) (the duty to answer within 20 days), art. 7 (the fine for not answering) and art. 8(1) and (3) (the risk indicators tied to the answer). For businesses on cash accounting, art. 5 and 8 were suspended until 30 September 2026 (OUG 89/2025 art. XIII), so from 1 October 2026 they receive compliance notices too.
+- In practice: reconcile the D300 to e-Factura before filing. A difference ANAF flags still feeds its risk analysis and can lead to an inspection.
+
+**RO e-Factura.** From 1 January 2026, invoices must be sent to RO e-Factura within 5 working days of issue, and no later than 5 working days after the latest issue date in art. 319(16) (OUG 120/2021 art. 10(7), as rewritten by OUG 89/2025 art. X pt. 2). From the same date this also covers supplies with place in Romania to customers that are not established but are VAT-registered in Romania, except intra-EU supplies to a customer with another member state's VAT number (art. 10(1^1)). Format, B2C and penalties: [romania-einvoice](romania-einvoice.md).
+
+**Refunds** (art. 303). A negative balance can be carried forward, or claimed by ticking the refund box on the D300; the return is then the refund claim (art. 303(7)). ANAF processes it under OPANAF 3699/2015. Its general deadline for deciding a taxpayer's request is 45 days, extended when it asks for more evidence (Procedure Code art. 77). A claim can be withdrawn until ANAF issues its decision (art. 303(8)). EU businesses not registered in Romania reclaim Romanian VAT through their home state, and Romanian businesses reclaim other states' VAT through ANAF (art. 302).
+
+## Penalties and interest
+
+| Failure | Consequence | Source |
+|---|---|---|
+| VAT paid late | Interest 0.02% per day plus late penalty 0.01% per day, from the day after the due date to the day of payment | Procedure Code art. 174(1) and (5), 176(1) and (2) |
+| Tax not declared or declared wrongly, then set by ANAF in an assessment | Non-declaration penalty 0.08% per day instead of the 0.01% penalty; cut by 75% if paid by the due date in the assessment or rescheduled; capped at the tax | Procedure Code art. 181(1), (2), (11); art. 176(4) |
+| D300 or D394 not filed on time | Fine 1,000 to 5,000 lei for medium and large taxpayers, 500 to 1,000 lei for others | Procedure Code art. 336(1)(b), (2)(d) |
+| D390 not filed on time | Fine 1,000 to 5,000 lei | Procedure Code art. 337(1)(a), (2)(a) |
+| D390 wrong or incomplete | Fine 500 to 1,500 lei; none if corrected by the next D390 deadline before ANAF finds it | Procedure Code art. 337(1)(b), (2)(b), (3) |
+| Late registration after crossing 395,000 lei | Registration backdated to the crossing date; VAT due on supplies since then less deductible VAT, plus interest | Fiscal Code art. 310(6^1) |
+| Invoice not sent through RO e-Factura | Fine of 15% of the invoice total, for the issuer and for a recipient that books it | OUG 120/2021 art. 13^2 (see romania-einvoice) |
+
+## Cross-border points
+
+- **Intra-EU supply of goods.** Exempt with deduction if the goods leave Romania for another member state and the customer has a valid VAT number there; report it in D390 and on D300 row 1 (art. 294(2)).
+- **Intra-EU acquisition of goods.** Taxable in Romania at the domestic rate; the buyer self-assesses (rows 5 and 20). A quarterly filer becomes monthly (art. 322(7)).
+- **B2B services.** The general rule taxes services where the customer is established (art. 278(2)). A Romanian business buying from abroad self-assesses under art. 307(2) (rows 7 and 22). Selling to an EU business, it reports row 3.1 and D390.
+- **Distance sales and e-services to EU consumers.** Taxed in the customer's state once EU-wide sales pass EUR 10,000 a year (art. 278^1). The Union OSS (art. 315) replaces registering in each state.
+- **Non-established businesses.** Where the customer is a Romanian VAT-registered business, the customer is usually liable (art. 307(2)). An EU business that must register in Romania can do so directly or through a fiscal representative. A non-EU business must appoint a fiscal representative (art. 316(7)).
+- **Domestic reverse charge** (art. 331), only between two Romanian VAT-registered parties: waste and scrap, timber, cereals and technical plants, emission and green certificates, electricity and gas to traders, buildings and land taxed by law or by option, investment gold under option, and mobile phones, chips, consoles, tablets and laptops from 22,500 lei per invoice. The cereals, certificates, energy and electronics items (letters c to f and i to l) run until 31 December 2026 (art. 331(6)).
+- **Treaties** do not affect VAT. Residence for income tax: [ro-cross-border](ro-cross-border.md).
+
+## Worked examples
+
+### Example 1: monthly filer, February 2026 return, paid 30 days late
+
+A Bucharest SRL files monthly. In February 2026 it sells goods at 21% for 100,000 lei and catering at 11% for 20,000 lei, both excluding VAT. It buys stock at 21% for 40,000 lei. It also pays 10,000 lei plus VAT to run a car the director also uses privately, so only 50% of that VAT is deductible (art. 298(1)). The D300 is due on Wednesday 25 March 2026 (art. 323(1)). The company files on time but pays on 24 April 2026, 30 days late (26 March to 24 April inclusive, Procedure Code art. 174(1)).
+
+Collected VAT is 21,000 lei (row 9) plus 2,200 lei (row 10), so 23,200 lei. Deductible VAT is 8,400 lei on stock plus half of the 2,100 lei car VAT, so 9,450 lei. VAT payable is 13,750 lei. Interest at 0.02% a day for 30 days is 82.50 lei, and the late penalty at 0.01% a day is 41.25 lei. The return was filed on time, so no fine applies.
+
+```oa-check
+name: Romania February 2026 D300, monthly SRL, paid 30 days late
+inputs:
+  sales_21: 100000
+  sales_11: 20000
+  stock_21: 40000
+  car_costs_21: 10000
+  days_late: 30
+steps:
+  - vat_row_9: sales_21 * 21 / 100
+  - vat_row_10: sales_11 * 11 / 100
+  - collected: vat_row_9 + vat_row_10
+  - input_stock: stock_21 * 21 / 100
+  - input_car_full: car_costs_21 * 21 / 100
+  - input_car_deductible: input_car_full * 50 / 100
+  - deducted: input_stock + input_car_deductible
+  - payable: collected - deducted
+  - interest: payable * 2 / 10000 * days_late
+  - late_penalty: payable * 1 / 10000 * days_late
+expected:
+  collected: 23200
+  deducted: 9450
+  payable: 13750
+  interest: 82.50
+  late_penalty: 41.25
 ```
 
-When a [T3] situation is identified, output:
+### Example 2: small enterprise crosses 395,000 lei in September 2026
 
+A consultancy PFA in Cluj uses the small-enterprise exemption. Its prices are agreed excluding VAT. Its turnover from January to 14 September 2026 is 372,000 lei. On 15 September it invoices a business client 40,000 lei. That takes its 2026 turnover to 412,000 lei, above the 395,000 lei threshold (art. 310(1)). It must apply to register by 15 September, and the normal regime applies from that invoice onwards (art. 310(6)). So the crossing invoice carries VAT at 21%, as does the 15,000 lei it invoices later in September. Input VAT on its purchases from 15 September is 1,200 lei and is deductible.
+
+The crossing invoice carries 8,400 lei of VAT and the later work 3,150 lei, so 11,550 lei is collected. After deducting 1,200 lei, 10,350 lei is payable. Turnover above the threshold on the crossing day is 17,000 lei. That figure is a check only: the whole crossing invoice is taxed, not just the excess. Had the PFA not registered, ANAF would register it from 15 September anyway and assess the same 10,350 lei, plus interest (art. 310(6^1)).
+
+```oa-check
+name: Romania small enterprise crosses 395,000 lei threshold, September 2026
+inputs:
+  turnover_before: 372000
+  crossing_invoice: 40000
+  later_invoices: 15000
+  threshold: 395000
+  input_vat_after: 1200
+steps:
+  - turnover_at_crossing: turnover_before + crossing_invoice
+  - excess_on_crossing_day: turnover_at_crossing - threshold
+  - vat_crossing: crossing_invoice * 21 / 100
+  - vat_later: later_invoices * 21 / 100
+  - collected: vat_crossing + vat_later
+  - payable: collected - input_vat_after
+expected:
+  turnover_at_crossing: 412000
+  excess_on_crossing_day: 17000
+  vat_crossing: 8400
+  collected: 11550
+  payable: 10350
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to consultant fiscal. Document gap.
-```
 
-## Step 15: Test Suite
+## Ask the client first
 
-### Test 1 -- Standard domestic purchase, 21% TVA [T1]
+1. Is the business established in Romania, and is it registered under art. 316, art. 317, or neither? If neither, what was its turnover so far this year and in 2025, measured as art. 310(2) says?
+2. Did 2025 turnover exceed EUR 100,000, and has it made any intra-EU acquisition of goods? That decides monthly or quarterly.
+3. What does it sell? Check each line against the 11% list. Does it sell homes that are still at 9% until 31 July 2026?
+4. Does it trade with other EU states, buy services from abroad, or sell online to consumers in other states?
+5. Does it use cars privately, make exempt supplies, or use cash accounting?
+6. Has it had a RO e-TVA compliance notice, or are there e-Factura invoices it has not booked?
 
-**Input:** Romanian supplier, office supplies, gross RON 1,210, TVA RON 210, net RON 1,000. Active VAT payer.
-**Expected output:** Row 20 += RON 210. Input TVA recoverable in full.
+## Sources
 
-### Test 2 -- Import of services from US (SaaS) [T1]
+| Source | URL | Read on |
+|---|---|---|
+| Fiscal Code, Legea 227/2015, Title VII (art. 265 to 334), with the HG 1/2016 methodological norms (pt. 103) printed in the same page, ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
+| Fiscal Procedure Code, Legea 207/2015 (art. 75, 77, 174, 176, 181, 336, 337), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
+| Legea 141/2025, art. II pt. 42 (art. 291 rates), art. III (9% transitional rate), art. VII(1) (in force 1 August 2025), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
+| OUG 8/2026 (cash accounting ceiling), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-10-23 |
+| OUG 89/2025, art. X (RO e-Factura 5 working days, non-established VAT-registered customers), art. XII to XIV (RO e-TVA changes from 1 January 2026), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
+| OUG 70/2024 (RO e-TVA), original text, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_70_2024.pdf | 2026-10-23 |
+| OUG 87/2024, art. III (RO e-TVA timing, 20% and 5,000 lei threshold, compliance notice), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_87_2024.pdf | 2026-10-23 |
+| OPANAF 174/2026, D300 form, rows and deadlines, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_174_2026.pdf | 2026-10-23 |
+| ANAF, D300 form page (OPANAF 174/2026 from the January 2026 period) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/300.html | 2026-10-23 |
+| OPANAF 77/2022 amending OPANAF 3769/2015, D394 deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_77_2022.pdf | 2026-10-23 |
+| ANAF, D394 form page | https://static.anaf.ro/static/10/Anaf/Declaratii_R/394.html | 2026-10-23 |
+| OPANAF 705/2020, D390 VIES form and deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_705_2020.pdf | 2026-10-23 |
+| OUG 115/2023, art. LXVIII pt. 15 (OUG 120/2021 art. 13^2, 15% fine), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_115_2023.pdf | 2026-10-23 |
 
-**Input:** US supplier, monthly fee EUR 50 (~RON 250), no VAT. Active VAT payer.
-**Expected output:** Row 10 = RON 250, Row 10a = RON 52.50 (21%), Row 24 = RON 52.50. Net = zero.
+Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024 and OUG 120/2021 were read as their original texts plus the amending acts listed, not as consolidated texts; an amendment made after OUG 89/2025 would not show here. When the 25th falls on a weekend or public holiday, Procedure Code art. 75 sends the computation to the Civil Procedure Code, which was not read for this skill, so the roll-over to the next working day is not stated here; Example 1 uses a period whose deadline is a working day. The cash accounting ceiling for 1 January to 28 February 2026, before OUG 8/2026 took effect, was not checked.
 
-### Test 3 -- Intra-EU goods acquisition [T1]
-
-**Input:** French supplier, machinery EUR 10,000, 0% invoice with FR VAT number.
-**Expected output:** Row 9 = RON equivalent, Row 9a = 21% output TVA, Row 23 = same input TVA. Net = zero.
-
-### Test 4 -- Mixed-use passenger car (50% rule) [T1]
-
-**Input:** Car RON 80,000 net + RON 16,800 TVA (21%). Mixed use, no exclusive business proof.
-**Expected output:** Row 20 += RON 8,400 (50% of RON 16,800). Remaining RON 8,400 is cost.
-
-### Test 5 -- Export of goods [T1]
-
-**Input:** Romanian company exports goods to US client, EUR 5,000.
-**Expected output:** Row 8 = RON equivalent. No output TVA. Zero-rated.
-
-### Test 6 -- Domestic reverse charge (scrap metal) [T1]
-
-**Input:** Romanian supplier sells recyclable waste RON 10,000 to Romanian buyer. Both TVA registered.
-**Expected output:** Row 11 = RON 10,000, Row 11a = RON 2,100 (21%), Row 26 = RON 2,100. Net = zero.
-
-### Test 7 -- Accommodation at 9% (transitional) [T1]
-
-**Input:** Hotel stay RON 500 + RON 45 TVA (9%). Business trip, before July 2026.
-**Expected output:** Row 22 += RON 45. Fully deductible (business purpose).
-
-### Test 8 -- Business gift over RON 100 (blocked) [T1]
-
-**Input:** Company gives client a gift worth RON 200 + RON 42 TVA.
-**Expected output:** Input TVA of RON 42 is NOT deductible. Full amount is cost.
-
-### Test 9 -- Fuel for 50%-restricted vehicle [T1]
-
-**Input:** Fuel RON 500 + RON 105 TVA (21%) for a mixed-use passenger car.
-**Expected output:** Row 20 += RON 52.50 (50% of RON 105). Remaining RON 52.50 is cost.
-
-### Test 10 -- EU B2B service sale [T1]
-
-**Input:** Romanian company invoices Bulgarian client EUR 2,000 for IT consulting. B2B.
-**Expected output:** Row 7 = RON equivalent. No output TVA. Report on D390 VIES.
-
-### Test 11 -- Alcohol purchase (blocked) [T1]
-
-**Input:** Company buys wine RON 1,000 + RON 210 TVA. Not a bar or restaurant.
-**Expected output:** Row 20 += RON 0. TVA BLOCKED (alcohol, Art. 297(1)(a)). Full RON 1,210 is cost.
-
-### Test 12 -- Protocol/entertainment expense (deductible for TVA) [T1]
-
-**Input:** Client dinner RON 500 + RON 105 TVA (21%). Business entertainment.
-**Expected output:** Row 20 += RON 105. Input TVA IS deductible in Romania (Art. 297 does not block entertainment for TVA purposes). Note: limited to 2% of accounting profit for CIT purposes only.
-
-## Step 16: TVA Rates -- Detailed Supply Classification [T1]
-
-### 21% Standard Rate (from 1 August 2025, Fiscal Code Art. 291(1))
-
-**21% standard rate categories**  _(Fiscal Code Art. 291(1))_
-
-| Supply Category | Examples |
-| --- | --- |
-| General goods | Electronics, furniture, clothing, household items, motor vehicles |
-| Professional services | Legal, accounting, consulting, IT, advertising |
-| Telecommunications | Mobile, fixed-line, internet services |
-| Alcohol | Beer, wine, spirits |
-| Tobacco | Cigarettes, cigars |
-| Construction materials | Cement, steel, timber, fixtures |
-| Energy | Electricity, gas (non-household tariffs) |
-
-### 11% Reduced Rate (from 1 August 2025, Fiscal Code Art. 291(2) as amended)
-
-**11% reduced rate categories**  _(Fiscal Code Art. 291(2) as amended)_
-
-| Supply Category | Examples |
-| --- | --- |
-| Food and non-alcoholic beverages | All food items, soft drinks, juice, water |
-| Restaurant and catering services | Dine-in meals, takeaway food (not alcohol) |
-| Accommodation | Hotels, guesthouses, camping, Airbnb (commercial) |
-| Books and periodicals | Printed and electronic books, newspapers, magazines |
-| Medicines and medical devices | Prescription and OTC pharmaceuticals, hearing aids, prosthetics |
-| Water supply | Drinking water distribution |
-| Heating | District heating, firewood, pellets |
-| Fertilizers and pesticides | Agricultural inputs |
-| School supplies | Notebooks, textbooks, educational materials |
-
-### 9% Transitional Rate (until 31 July 2026, Fiscal Code Art. 291(2) transitional)
-
-**9% transitional rate categories**  _(Fiscal Code Art. 291(2) transitional)_
-
-| Supply Category | Examples |
-| --- | --- |
-| Residential property (first sale) | New apartments and houses meeting social housing criteria |
-| Prostheses and similar accessories | Medical prosthetics, hearing aids (during transitional period) |
-
-### Pre-August 2025 Rates (for historical periods)
-
-**Pre-August 2025 rates**
-
-| Rate | Category |
-| --- | --- |
-| 19% | Standard rate (all periods before 1 August 2025) |
-| 9% | Reduced rate (food, accommodation, books, medicines, water, heating) |
-| 5% | Super-reduced (social housing, books, school supplies) |
-
-## Step 17: Out of Scope -- Direct Tax (Reference Only) [T3]
-
-This skill does not compute income tax. The following is reference information only. Escalate to qualified adviser.
-
-- **Corporate income tax (impozit pe profit):** 16% on adjusted profit (Fiscal Code Art. 13-46)
-- **Micro-enterprise tax:** 1% on revenue (if EUR 500,000 or below; from 2024)
-- **Dividend tax:** 8% withholding (Fiscal Code Art. 97)
-- **Social contributions (CAS):** 25% employee pension contribution
-- **Health contributions (CASS):** 10% employee health contribution
-- **Personal income tax:** 10% flat rate on employment income
-- **Local taxes:** Property tax, vehicle tax, advertising tax (administered by local authorities)
-- **Construction tax:** 1.5% on value of new constructions (administered by local authorities)
-- **Special construction tax:** 1% on buildings used for non-residential purposes over RON 2,500,000
-
-### Refund Process [T1]
-
-**Refund process table**
-
-| Feature | Detail | Legislation |
-| --- | --- | --- |
-| Refund request | Filed via D300 Row 36 | Art. 303(2) |
-| Automatic refund (with fiscal certificate) | 45 days from filing | Tax Procedure Code Art. 77 |
-| Audit-conditioned refund | ANAF may inspect before refund | Tax Procedure Code Art. 94 |
-| Risk classification | Low risk: automatic; high risk: audit first | ANAF internal procedure |
-
-## PROHIBITIONS [T1]
-
-- NEVER let AI guess VAT box assignment -- it is deterministic from transaction facts
-- NEVER apply old rates (19%/9%/5%) to transactions after 1 August 2025 without verifying transitional rules
-- NEVER claim 100% TVA on passenger cars without evidence of exclusive business use (Art. 297(4))
-- NEVER claim input TVA on alcohol/tobacco unless it is the business activity (Art. 297(1)(a))
-- NEVER apply reverse charge to out-of-scope categories (wages, dividends, bank charges)
-- NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi)
-- NEVER allow TVA-exempt entities to claim input TVA
-- NEVER ignore SAF-T / D406 filing obligations
-- NEVER file D300 without reconciling against D406 data (from 2026, ANAF cross-checks automatically)
-- NEVER ignore RO e-Factura obligations -- non-transmitted invoices may be denied deduction
-- NEVER apply domestic RC to mobile phones/tablets below RON 22,500 threshold
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
-
-## Contribution Notes
-
-This skill covers Romania's VAT system based on the Fiscal Code (Law 227/2015) as amended by OUG 59/2025. Key distinctive features include: the August 2025 rate changes (19% to 21%, 9%/5% consolidation to 11%), the RO e-Factura mandatory e-invoicing system, SAF-T (D406) reporting, the vehicle 50% rule, entertainment deductibility for TVA purposes, pre-filled returns (RO e-TVA), and ANAF's active cancellation of non-compliant VAT registrations. Validation by a qualified Romanian consultant fiscal or expert contabil is required before production use.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

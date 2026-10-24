@@ -1,673 +1,204 @@
 ---
 name: greece-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Greek VAT return (Periodiki Dilosi FPA) for a self-employed individual or small business in Greece. Trigger on phrases like "prepare VAT return", "do the VAT", "Greek VAT", "FPA", "myAADE", "TAXISnet", or any request involving Greece VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Greece only and only standard normal-regime registrations. Small business exemption (Art. 39), farmers flat-rate (Art. 41), travel agent scheme (Art. 43), and VAT groups are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Greek VAT work.
-version: 2.0
+description: >
+  Greek VAT (ΦΠΑ) for 2026 under the VAT Code ratified by ν. 5144/2024, which replaced ν. 2859/2000.
+  Covers who is a taxable person, the 24%, 13%, 6% and 4% rates and the 30% island reduction from
+  1 January 2026, the EUR 10,000 small business exemption and the EU SME scheme (EUR 100,000 Union
+  turnover), monthly and quarterly periodic returns, payment and the two-instalment option, input
+  VAT and blocked costs, the reverse charge, intra-EU supplies and acquisitions, recapitulative
+  statements, EU distance sales and OSS, refunds to foreign businesses, and the Tax Procedure Code
+  fines for late or wrong returns. Trigger on "Greek VAT", "ΦΠΑ", "periodic VAT return Greece",
+  "myAADE VAT", "Greek VAT rates 2026", "small business exemption Greece", "reverse charge Greece",
+  "Greek island VAT". Out of scope: e-invoicing and myDATA transmission (greece-einvoice), company
+  set-up (gr-company-formation), income tax (gr-income-tax), the country overview (gr-tax-overview),
+  cross-border income (gr-cross-border). gr-vat-return points here.
+version: 2.1
 jurisdiction: GR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Greece VAT Return
-
-## Section 1 — Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Greece (Elliniki Dimokratia / Ελληνική Δημοκρατία) |
-| Jurisdiction code | GR (EL for VIES purposes) |
-| Standard rate | 24% |
-| Reduced rates | 13% (food, energy, water supply, hotel accommodation, certain medical supplies), 6% (books, newspapers, theatre/cinema tickets, pharmaceuticals) |
-| Aegean island rates | 30% discount on standard (17%) and reduced (9%, 4%) for certain Aegean islands — see Section 5.4 |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods, international transport, certain shipping supplies) |
-| Return form | Periodiki Dilosi FPA (Περιοδική Δήλωση ΦΠΑ) — commonly "F2" |
-| Annual summary | Ekkatharistiki Dilosi FPA (Εκκαθαριστική Δήλωση ΦΠΑ) |
-| Filing portal | https://www.aade.gr (myTAXISnet / myAADE) |
-| Authority | AADE (Ανεξάρτητη Αρχή Δημοσίων Εσόδων — Independent Authority for Public Revenue) |
-| Currency | EUR only |
-| Filing frequencies | Monthly (diplografika vivlia — double-entry bookkeeping); Quarterly (aplografika vivlia — single-entry bookkeeping) |
-| Deadline | Monthly: last business day of month following period; Quarterly: last business day of month following quarter |
-| myDATA | Mandatory electronic book/document reporting platform (myDATA / IAPR) |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants |
-| Validated by | Pending — requires logistis-forotechnikos validation |
-| Validation date | Pending |
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Key F2 form fields (Periodiki Dilosi FPA)**
-
-| Code | Meaning |
-| --- | --- |
-| 301 | Taxable sales at standard rate (24%) — net |
-| 302 | Taxable sales at 13% — net |
-| 303 | Taxable sales at 6% — net |
-| 304 | Intra-EU supplies of goods — net |
-| 305 | Intra-EU supplies of services — net |
-| 306 | Exports — net |
-| 307 | Exempt without credit — net |
-| 308 | Island rate sales (17%) — net |
-| 309 | Island rate sales (9%) — net |
-| 310 | Island rate sales (4%) — net |
-| 331 | Output VAT at 24% |
-| 332 | Output VAT at 13% |
-| 333 | Output VAT at 6% |
-| 338 | Output VAT island rates |
-| 341 | Total output VAT |
-| 361 | Input VAT on domestic purchases |
-| 362 | Input VAT on intra-EU acquisitions |
-| 363 | Input VAT on imports |
-| 364 | Input VAT on services from abroad (reverse charge) |
-| 371 | Total input VAT |
-| 381 | Intra-EU acquisitions of goods — net |
-| 382 | Intra-EU acquisitions of services — net |
-| 383 | Output VAT on intra-EU acquisitions |
-| 384 | Purchases from non-EU (services — reverse charge) — net |
-| 385 | Output VAT on non-EU reverse charge |
-| 401 | VAT payable (341 − 371) if positive |
-| 402 | Excess credit (371 − 341) if negative |
-| 411 | Credit carried forward from prior period |
-| 421 | Net VAT payable after carry-forward |
-| 422 | Net credit to carry forward |
-
-**Conservative defaults — Greece-specific**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 24% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Greece |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 24% |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU (384/385) |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-| Unknown island vs mainland | Mainland rates |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | €3,000 |
-| HIGH tax-delta on a single conservative default | €250 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | €5,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Acceptable from: National Bank of Greece (Εθνική Τράπεζα), Alpha Bank, Piraeus Bank (Τράπεζα Πειραιώς), Eurobank, Attica Bank, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices (τιμολόγια), purchase invoices, AFM (ΑΦΜ), myDATA export for the period.
-
-**Ideal** — complete invoice register, myDATA classification codes, prior period F2, carry-forward credit reconciliation.
-
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement → hard stop. If bank statement only → reviewer brief warning.
-
-### Greece-specific refusal catalogue
-
-On top of EU-wide refusals in `eu-vat-directive` Section 13.
-
-- **R-GR-1 — Small business exemption (Art. 39)** — Small business exemption entities do not file periodic FPA returns. This skill covers normal-regime entities only. (Trigger: client is under the small business exemption threshold)  _(Art. 39)_
-- **R-GR-2 — Farmers flat-rate scheme (Art. 41)** — The farmers flat-rate scheme has different filing obligations. Out of scope. (Trigger: client is a farmer under the flat-rate scheme)  _(Art. 41)_
-- **R-GR-3 — Travel agent scheme (Art. 43)** — Travel agent margin scheme requires special computation. Out of scope. (Trigger: client uses the travel agent margin scheme)  _(Art. 43)_
-- **R-GR-4 — Partial exemption (pro-rata)** — You make both taxable and exempt supplies. Input VAT must be apportioned. Please use a logistis-forotechnikos. (Trigger: client makes both taxable and exempt supplies, exempt proportion non-de-minimis)  _(R-GR-4)_
-- **R-GR-5 — VAT grouping** — VAT groups require consolidated filing. Out of scope. (Trigger: client is part of a VAT group)  _(R-GR-5)_
-- **R-GR-6 — Shipping/maritime** — Maritime/shipping VAT has complex special rules. Out of scope. (Trigger: client is in the shipping sector with special VAT obligations)  _(R-GR-6)_
-- **R-GR-7 — Used goods margin scheme (Art. 45)** — Margin scheme requires transaction-level margin computation. Out of scope. (Trigger: client deals in second-hand goods under margin scheme)  _(Art. 45)_
-- **R-GR-8 — Income tax instead of FPA** — This skill handles FPA (VAT) only. (Trigger: user asks about income tax)  _(R-GR-8)_
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Greek banks (fees exempt — exclude)
-
-**Greek banks table**  _(Art. 22 §1)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ, NATIONAL BANK OF GREECE, NBG | EXCLUDE | Financial service, exempt Art. 22 §1 |
-| ALPHA BANK, ΑΛΦΑ ΤΡΑΠΕΖΑ | EXCLUDE | Same |
-| ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ, PIRAEUS BANK | EXCLUDE | Same |
-| EUROBANK, EUROBANK ERGASIAS | EXCLUDE | Same |
-| ATTICA BANK | EXCLUDE | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscriptions |
-| ΤΟΚΟΙ, INTEREST | EXCLUDE | Interest, out of scope |
-| ΔΑΝΕΙΟ, LOAN | EXCLUDE | Loan principal, out of scope |
-
-### 3.2 Greek government and statutory bodies (exclude entirely)
-
-**Government bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΑΑΔΕ, AADE, TAXISnet | EXCLUDE | Tax payment |
-| ΔΟΥ, ΕΦΟΡΙΑ | EXCLUDE | Tax office |
-| ΤΕΛΩΝΕΙΟ, CUSTOMS | EXCLUDE | Customs duty (see import VAT separately) |
-| ΕΦΚΑ, EFKA, ΙΚΑ | EXCLUDE | Social security contributions |
-| ΟΑΕΔ, DYPA | EXCLUDE | Employment agency/fund |
-| ΚΕΠ | EXCLUDE | Citizen service centre fees |
-| ΕΡΓΑΝΗ | EXCLUDE | Labour reporting system |
-
-### 3.3 Greek utilities
-
-**Utilities table**
-
-| Pattern | Treatment | Code | Notes |
-| --- | --- | --- | --- |
-| ΔΕΗ, ΔΕΔΔΗΕ, DEDDIE, PPC | Domestic 24% | 361 (input) | Electricity — overhead |
-| ΔΕΠΑ, ΦΥΣΙΚΟ ΑΕΡΙΟ | Domestic 24% | 361 (input) | Natural gas |
-| ΕΥΔΑΠ, EYDAP | Domestic 13% | 361 (input) | Water supply at 13% |
-| COSMOTE, ΟΤΕ, ΓΕΡΜΑΝΟΣ | Domestic 24% | 361 (input) | Telecoms — overhead |
-| VODAFONE GR, WIND HELLAS, NOVA | Domestic 24% | 361 (input) | Mobile telecoms |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**  _(Art. 22 §1(κα))_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΕΘΝΙΚΗ ΑΣΦΑΛΙΣΤΙΚΗ, ΕΥΡΩΠΑΙΚΗ ΠΙΣΤΗ | EXCLUDE | Insurance, exempt Art. 22 §1(κα) |
-| INTERAMERICAN, GENERALI GR, ALLIANZ GR | EXCLUDE | Same |
-| ΑΣΦΑΛΕΙΑ, ΑΣΦΑΛΙΣΤΗΡΙΟ | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | Code | Notes |
-| --- | --- | --- | --- |
-| ΕΛΤΑ, ELTA, HELLENIC POST | EXCLUDE for standard postage |  | Universal service, exempt |
-| ΕΛΤΑ COURIER | Domestic 24% | 361 | Non-universal, taxable |
-| ACS COURIER, SPEEDEX, ΓΕΝΙΚΗ ΤΑΧΥΔΡΟΜΙΚΗ | Domestic 24% | 361 | Courier, taxable |
-
-### 3.6 Transport (Greece domestic)
-
-**Transport table**
-
-| Pattern | Treatment | Code | Notes |
-| --- | --- | --- | --- |
-| ΚΤΕΛ, KTEL | Domestic 13% | 361 | Intercity bus at 13% |
-| ΟΑΣΑ, OASA, METRO, ΤΡΑΜ | Domestic 13% | 361 | Athens public transport at 13% |
-| ΤΡΕΝΟΣΕ, TRAINOSE, HELLENIC TRAIN | Domestic 13% | 361 | Rail at 13% |
-| ΤΑΞΙ, TAXI, BEAT, UBER GR | Domestic 24% | 361 | Taxi at 24% |
-| AEGEAN AIRLINES, OLYMPIC AIR (domestic) | Domestic 13% | 361 | Domestic flights at 13% |
-| AEGEAN, RYANAIR (international) | EXCLUDE / 0% |  | International flights zero rated |
-| BLUE STAR, ANEK LINES, MINOAN | Domestic 13% or 0% | 361 | Domestic ferry at 13%; international 0% |
-
-### 3.7 Food retail and entertainment (blocked unless hospitality)
-
-**Food retail and entertainment table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΣΚΛΑΒΕΝΙΤΗΣ, SKLAVENITIS | Default BLOCK | Supermarket — personal provisioning |
-| ΑΒ ΒΑΣΙΛΟΠΟΥΛΟΣ, AB VASSILOPOULOS | Default BLOCK | Same |
-| LIDL GR, ΜΑΣΟΥΤΗΣ, MASOUTIS, METRO CASH & CARRY | Default BLOCK | Same (Metro C&C may be deductible if wholesale for resale) |
-| RESTAURANTS, ΕΣΤΙΑΤΟΡΙΟ, ΤΑΒΕΡΝΑ | Default BLOCK | Entertainment — check deductibility |
-
-**Note on Greek entertainment:** Greece allows input VAT recovery on business meals/entertainment if properly documented with business purpose and the expense is genuinely business-related (no hard block like Malta). However, the burden of proof is on the taxpayer. Default: block. [T2] flag if client claims business purpose with documentation.
-
-### 3.8 SaaS — EU suppliers (reverse charge, 382/383/362)
-
-**SaaS EU suppliers table**
-
-| Pattern | Billing entity | Code | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 382/383/362 | EU service reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland (IE) | 382/383/362 | Reverse charge |
-| ADOBE | Adobe Ireland (IE) | 382/383/362 | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland (IE) | 382/383/362 | Reverse charge |
-| LINKEDIN (paid) | LinkedIn Ireland (IE) | 382/383/362 | Reverse charge |
-| SPOTIFY | Spotify AB (SE) | 382/383/362 | EU reverse charge |
-| DROPBOX | Dropbox Ireland (IE) | 382/383/362 | Reverse charge |
-| SLACK | Slack Ireland (IE) | 382/383/362 | Reverse charge |
-| ATLASSIAN | Atlassian BV (NL) | 382/383/362 | EU reverse charge |
-| ZOOM | Zoom Ireland (IE) | 382/383/362 | Reverse charge |
-| STRIPE (subscription) | Stripe IE | 382/383/362 | Transaction fees may be exempt |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge, 384/385/364)
-
-**SaaS non-EU suppliers table**
-
-| Pattern | Billing entity | Code | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | 382/383/362 | LU → EU reverse charge |
-| NOTION | Notion Labs Inc (US) | 384/385/364 | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 384/385/364 | Non-EU |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 384/385/364 | Non-EU |
-| GITHUB | GitHub Inc (US) | 384/385/364 | Check if billed by IE |
-| FIGMA | Figma Inc (US) | 384/385/364 | Non-EU |
-| CANVA | Canva Pty Ltd (AU) | 384/385/364 | Non-EU |
-| HUBSPOT | US or IE — check | 384/385 or 382/383 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 384/385/364 | Non-EU |
-
-### 3.10 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing exempt |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| VIVA WALLET, VIVA PAYMENTS | Check invoice | Greek acquirer — fees may be exempt financial services |
-
-### 3.11 Professional services (Greece)
-
-**Professional services table**
-
-| Pattern | Treatment | Code | Notes |
-| --- | --- | --- | --- |
-| ΔΙΚΗΓΟΡΟΣ, ΔΙΚΗΓΟΡΙΚΟ ΓΡΑΦΕΙΟ | Domestic 24% | 361 | Legal — deductible if business |
-| ΛΟΓΙΣΤΗΣ, ΛΟΓΙΣΤΙΚΟ ΓΡΑΦΕΙΟ | Domestic 24% | 361 | Accountant — always deductible |
-| ΣΥΜΒΟΛΑΙΟΓΡΑΦΟΣ, NOTARY | Domestic 24% | 361 | Notary |
-| ΓΕΜΗ, GEMI | EXCLUDE | Business registry fee, not a supply |  |
-
-### 3.12 Payroll and social security (exclude entirely)
-
-**Payroll table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΕΦΚΑ, EFKA, ΙΚΑ, ΑΣΦΑΛΙΣΤΙΚΕΣ ΕΙΣΦΟΡΕΣ | EXCLUDE | Social security |
-| ΜΙΣΘΟΔΟΣΙΑ, ΜΙΣΘΟΣ (outgoing) | EXCLUDE | Wages |
-| ΦΟΡΟΣ ΜΙΣΘΩΤΩΝ, ΦΜΥ | EXCLUDE | Payroll tax withholding |
-
-### 3.13 Property and rent
-
-**Property and rent table**  _(Art. 22 §1(κστ))_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΕΝΟΙΚΙΟ, ΜΙΣΘΩΜΑ (commercial, with FPA) | Domestic 24% | Commercial lease with VAT |
-| ΕΝΟΙΚΙΟ (residential, no FPA) | EXCLUDE | Residential lease, exempt Art. 22 §1(κστ) |
-| ΚΤΗΜΑΤΟΛΟΓΙΟ | EXCLUDE | Land registry fee |
-
-### 3.14 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ΜΕΤΑΦΟΡΑ, ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ | EXCLUDE | Internal movement |
-| ΜΕΡΙΣΜΑ, DIVIDEND | EXCLUDE | Dividend, out of scope |
-| ΔΟΣΗ ΔΑΝΕΙΟΥ | EXCLUDE | Loan repayment |
-| ΑΝΑΛΗΨΗ, ATM | TIER 2 — ask | Default exclude; ask about cash use |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Greek self-employed IT consultant.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code (output) | Code (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.52 | 24% | 384/385 | 364 | N | — | — |
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
-
-**Reasoning:**
-US entity. Non-EU service reverse charge. Net EUR 14.68 in code 384, output VAT (24% = EUR 3.52) in 385, input VAT EUR 3.52 in 364. Net effect zero.
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code (output) | Code (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 204.00 | 24% | 382/383 | 362 | N | — | — |
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April ; -850.00 ; EUR`
-
-**Reasoning:**
-IE entity. EU service reverse charge. Net EUR 850 in 382, output VAT (24% = EUR 204) in 383, input VAT EUR 204 in 362.
-
-### Example 3 — Entertainment, default block
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | ΤΑΒΕΡΝΑ Ο ΚΩΣΤΑΣ | -180.00 | -180.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked by default — recovery possible if business purpose documented" |
-
-**Input line:**
-`15.04.2026 ; ΤΑΒΕΡΝΑ Ο ΚΩΣΤΑΣ ; DEBIT ; Client dinner ; -180.00 ; EUR`
-
-**Reasoning:**
-Restaurant/taverna transaction. Greek law does not have a hard block on entertainment like Malta, but documentation requirements are strict. Default: block. [T2] flag.
-
-### Example 4 — Domestic purchase at 24%
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | ΠΛΑΙΣΙΟ COMPUTERS | -1,300.00 | -1,048.39 | -251.61 | 24% | 361 | N | — | — |
-
-**Input line:**
-`18.04.2026 ; ΠΛΑΙΣΙΟ COMPUTERS ; DEBIT ; Laptop Dell XPS ; -1,300.00 ; EUR`
-
-**Reasoning:**
-Greek electronics retailer. EUR 1,300 incl. 24% VAT. Net = EUR 1,048.39. VAT = EUR 251.61. Input VAT deductible in code 361.
-
-### Example 5 — EU B2B service sale (inbound receipt)
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 305 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice GR-2026-018 IT consultancy ; +3,500.00 ; EUR`
-
-**Reasoning:**
-Incoming from German company. B2B IT consulting — place of supply is Germany. Invoice at 0%, customer accounts for reverse charge. Report net in code 305 (EU services supplied). Verify German USt-IdNr on VIES.
-
-### Example 6 — Motor vehicle, restricted
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Code | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | AUTOHELLAS HERTZ | -500.00 | -500.00 | 0 | — | — | Y | Q3 | "Vehicle: blocked by default — deductible for business portion if documented" |
-
-**Input line:**
-`28.04.2026 ; AUTOHELLAS HERTZ ; DEBIT ; Car lease May ; -500.00 ; EUR`
-
-**Reasoning:**
-Car lease. In Greece, passenger vehicles used for business purposes: input VAT is generally deductible if the vehicle is used for taxable business activity (no hard block like Malta). However, personal use portion must be excluded. Default: block. [T2] — reviewer must determine business use proportion.
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 24% (Art. 21 §1)
-
-- **Standard rate 24%** — Default rate. Sales → 301 (net), 331 (output VAT). Purchases → 361 (input VAT).  _(Art. 21 §1)_
-
-### 5.2 Reduced rate 13% (Art. 21 §2, Annex III)
-
-- **Reduced rate 13%** — Food and non-alcoholic beverages, energy (electricity, gas), water supply, hotel accommodation, certain medical supplies, domestic transport. Sales → 302/332.  _(Art. 21 §2, Annex III)_
-
-### 5.3 Reduced rate 6% (Art. 21 §4)
-
-- **Reduced rate 6%** — Books, newspapers, periodicals, theatre/cinema tickets, pharmaceuticals, vaccines. Sales → 303/333.  _(Art. 21 §4)_
-
-### 5.4 Aegean island reduced rates
-
-- **Aegean island reduced rates** — Certain Aegean islands receive a 30% discount: standard 24% → 17%, 13% → 9%, 6% → 4%. Sales → 308/309/310 and 338. Applies to supplies made on and delivered to qualifying islands. **If client is island-based, [T2] flag — reviewer must confirm island qualification.**
-
-### 5.5 Zero rate / exempt with credit
-
-- **Zero rate / exempt with credit** — Exports → 306. Intra-EU B2B goods → 304 (requires VIES verification). Intra-EU B2B services → 305. International transport, ship supplies (Art. 27).  _(Art. 27)_
-
-### 5.6 Exempt without credit (Art. 22)
-
-- **Exempt without credit** — Medical/dental, hospital services, education, insurance, financial services, postal universal service, residential rent. Excluded from FPA return. If significant → **R-GR-4 refuses**.  _(Art. 22)_
-
-### 5.7 Reverse charge — EU services (Art. 14 §2)
-
-- **Reverse charge — EU services** — EU supplier at 0%: net → 382, output VAT → 383, input VAT → 362. Net effect zero.  _(Art. 14 §2)_
-
-### 5.8 Reverse charge — EU goods acquisitions (Art. 11)
-
-- **Reverse charge — EU goods acquisitions** — Physical goods from EU: net → 381, output VAT → 383, input VAT → 362.  _(Art. 11)_
-
-### 5.9 Reverse charge — non-EU services (Art. 14)
-
-- **Reverse charge — non-EU services** — Services from outside EU: net → 384, output VAT → 385, input VAT → 364.  _(Art. 14)_
-
-### 5.10 Import of goods
-
-- **Import of goods** — Goods from non-EU: import VAT on customs declaration. Input VAT → 363.
-
-### 5.11 Blocked / restricted input VAT
-
-- **Blocked / restricted input VAT** — - Entertainment: not hard-blocked in Greece, but documentation required. Default: block. [T2] for documented business entertainment. - Motor vehicles: deductible for business use (no hard block); private portion must be excluded. Default: block for IT consultants. - Tobacco: blocked. - Personal use: blocked. - Gifts above EUR 10: blocked (promotional gifts up to EUR 10 per item deductible).
-
-### 5.12 myDATA reporting
-
-- **myDATA reporting** — All income and expenses must be reported through myDATA (IAPR platform). The FPA return must reconcile with myDATA classifications. Classification codes (παραστατικά) must match. If discrepancies exist between bank statement and myDATA, flag for reviewer.
-
-### 5.13 Sales — local domestic
-
-- **Sales — local domestic** — Charge 24%, 13%, or 6%. Map to 301/302/303 and 331/332/333.
-
-### 5.14 Sales — cross-border B2C
-
-- **Sales — cross-border B2C** — EU consumers above €10,000 threshold → **R-EU-5 (OSS refusal)**. Below threshold → Greek VAT.  _(R-EU-5)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — *Pattern:* BP GR, Shell GR, EKO, Aegean Oil. *Default:* 0% recovery. *Question:* "Business vehicle or personal? What proportion of business use?"
-
-### 6.2 Entertainment
-
-- **Entertainment** — *Pattern:* restaurant, taverna, cafe. *Default:* block. *Question:* "Documented business purpose with attendees?"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities** — *Default:* non-EU reverse charge 384/385/364. *Question:* "Check invoice for legal entity."
-
-### 6.4 Round-number owner transfers
-
-- **Round-number owner transfers** — *Default:* exclude as owner injection. *Question:* "Customer payment, capital, or loan?"
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — *Default:* domestic B2C at 24%, 301/331. *Question:* "Sale? Country?"
-
-### 6.6 Foreign counterparty incoming
-
-- **Foreign counterparty incoming** — *Default:* domestic 24%. *Question:* "B2B with VAT number or B2C? Country?"
-
-### 6.7 Large one-off purchases
-
-- **Large one-off purchases** — *Default:* normal overhead in 361. *Question:* "Confirm invoice amount."
-
-### 6.8 Mixed-use phone/internet
-
-- **Mixed-use phone/internet** — *Pattern:* Cosmote, Vodafone personal lines. *Default:* 0% if mixed. *Question:* "Dedicated business line? Business percentage?"
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — *Default:* exclude as drawings. *Question:* "Contractor, wages, refund, or personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — *Pattern:* ΑΝΑΛΗΨΗ, ATM. *Default:* exclude. *Question:* "What was cash used for?"
-
-### 6.11 Rent payments
-
-- **Rent payments** — *Default:* no VAT (residential). *Question:* "Commercial? Does landlord charge FPA?"
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — *Default:* exclude from input VAT. *Question:* "Business trip?"
-
-### 6.13 Aegean island classification
-
-- **Aegean island classification** — *Pattern:* supplier address on qualifying island. *Default:* mainland rates. *Question:* "Is this business/supplier located on a qualifying Aegean island?"
-
-### 6.14 myDATA reconciliation
-
-- **myDATA reconciliation** — *Pattern:* any transaction without matching myDATA entry. *Default:* accept but flag. *Question:* "Has this been reported in myDATA? Classification code?"
-
-## Section 7 — Excel working paper template (Greece-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Greece-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("F2 code") accepts valid F2 codes from Section 1. Additional column M for myDATA classification code.
-
-### Sheet "Box Summary"
-
-**Box Summary formula template**
-
-```
-Output:
-| 301 | Sales 24% net | =SUMIFS(...) |
-| 302 | Sales 13% net | =SUMIFS(...) |
-| 303 | Sales 6% net | =SUMIFS(...) |
-| 304 | EU goods supplies net | =SUMIFS(...) |
-| 305 | EU services supplies net | =SUMIFS(...) |
-| 306 | Exports net | =SUMIFS(...) |
-| 331 | Output VAT 24% | =C[301]*0.24 |
-| 332 | Output VAT 13% | =C[302]*0.13 |
-| 333 | Output VAT 6% | =C[303]*0.06 |
-
-Acquisitions:
-| 381 | EU goods acquisitions net | =SUMIFS(...) |
-| 382 | EU services acquisitions net | =SUMIFS(...) |
-| 383 | Output VAT EU acquisitions | =(C[381]+C[382])*0.24 |
-| 384 | Non-EU services net | =SUMIFS(...) |
-| 385 | Output VAT non-EU | =C[384]*0.24 |
-
-| 341 | Total output VAT | =C[331]+C[332]+C[333]+C[383]+C[385] |
-
-Input:
-| 361 | Input VAT domestic | =SUMIFS(...) |
-| 362 | Input VAT EU acquisitions | =C[383] (mirror for fully taxable) |
-| 363 | Input VAT imports | =SUMIFS(...) |
-| 364 | Input VAT non-EU services | =C[385] (mirror for fully taxable) |
-| 371 | Total input VAT | =C[361]+C[362]+C[363]+C[364] |
-
-Bottom line:
-| 401 | VAT payable | =IF(C[341]>C[371], C[341]-C[371], 0) |
-| 402 | Excess credit | =IF(C[371]>C[341], C[371]-C[341], 0) |
-| 421 | Net payable after carry-forward | =C[401]-C[411] |
+# Greece VAT (ΦΠΑ), 2026: rates, returns, reverse charge and penalties (v2.1)
+
+Tax year: calendar 2026. Authority: AADE (Ανεξάρτητη Αρχή Δημοσίων Εσόδων). Law: the VAT Code (Κώδικας ΦΠΑ) ratified by ν. 5144/2024 (ΦΕΚ Α' 162/11.10.2024), read here in the Ministry of Finance administrative codification current to ν. 5313/2026 (in force to 18.9.2026). The old code, ν. 2859/2000, is repealed (VAT Code art. 71(5)); a reference to it in another law now means the matching article of the new code (art. 71(1)). Fines and interest are in the Tax Procedure Code, ν. 5104/2024 ("TPC"). Article numbers below are VAT Code articles unless marked TPC. Sub-points keep the Greek letters of the law (α, β, γ, δ, ε, στ, ζ, η, θ).
+
+Load this skill with eu-vat-directive (EU rules) and vat-workflow-base (the return workflow).
+
+## Who this applies to
+
+- **Taxable persons.** Anyone who carries on an economic activity independently, wherever established, is a taxable person (arts. 3 and 4). Tax is charged on supplies of goods and services in Greece for consideration, intra-EU acquisitions and imports (art. 2).
+- **Who pays.** Normally the supplier established in Greece (art. 40(1)(α)). The customer pays instead in the reverse-charge cases under "Cross-border points" and for listed domestic supplies such as recyclable scrap (art. 45).
+- **Registration.** The VAT number is the ordinary Greek tax number (ΑΦΜ) issued under the TPC (art. 41(2)). For intra-EU services it is used with the prefix EL (art. 41(5)(α), (6)(α)).
+- **Out (small businesses).** A business established in Greece can opt for exemption if its Greek turnover in the previous and the current year does not exceed EUR 10,000 (art. 44α(1)). It then charges no VAT, writes "χωρίς φόρο προστιθέμενης αξίας-απαλλαγή μικρών επιχειρήσεων" on its invoices, and cannot deduct input VAT (art. 44α(8)). The exemption is not available to farmers in the special scheme, for new means of transport, or for occasional property supplies (art. 44α(2)). It may leave the exemption voluntarily during the year and rejoin in the next year (art. 44α(4)).
+- **EU SME scheme.** From 1 January 2025 a business established in another member state can use the Greek exemption if its Greek turnover is not over EUR 10,000 and its Union turnover is not over EUR 100,000, in the current and previous year, after notifying its home state and getting an "EX" number (art. 44β(1)). It needs no Greek VAT number and files no Greek returns (art. 44ε(1)). A Greek business can use the same scheme in other member states through AADE (arts. 44γ, 44στ).
+- **Out (exempt only).** A person making only exempt supplies without deduction files no return (art. 41(3)(β)), except for periods in which it makes intra-EU acquisitions or receives reverse-charge supplies (art. 43(8)).
+- **Not covered in this skill.** Farmers' flat-rate scheme (arts. 48-49), travel agents (art. 50), margin schemes (arts. 52-53), investment gold (art. 54), the lump-sum scheme (art. 47), property supplies under art. 8. Refer these.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 24% | 2026 | VAT Code art. 26(1): https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf |
+| Reduced rate, goods and services in Annex III | 13% (for example hotel stays, passenger transport, restaurants and cafés except drinks, water supply) | 2026 | art. 26(1) and Annex III: same URL |
+| Lower rate where Annex III says so | 6% (for example books, medicines for human use, electricity and natural gas, theatre and cinema tickets) | 2026 | art. 26(1) and Annex III: same URL |
+| Lowest rate where Annex III says so | 4% (works to remove architectural barriers for people with disabilities, Annex III B.14) | 2026 | art. 26(1) and Annex III: same URL |
+| Island reduction, automatic | Rates cut by 30% on the islands of the North Aegean Region, Samothrace and the Dodecanese with a population of up to 20,000 at the latest census: 24% to 17%, 13% to 9%, 6% to 4%, 4% to 3% | From 1.1.2026 (ν. 5246/2025 arts. 11 and 47(5)) | art. 26(4A), (5), (6): same URL; ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025): https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf |
+| Island reduction, by ministerial decision | Rates cut by 30% on Lesvos, Kos, Samos and Chios while a migrant reception centre operates there. The decision in force is Α.1150/2021 (ΦΕΚ Β' 2828), so the cut applies on these four islands in 2026. Leros was taken out of art. 26(4) from 1.1.2026 and now gets the cut under art. 26(4A) | 2026 | art. 26(4): same URL; AADE circular Ε.2113/2025, point 1: https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf |
+| Islands that get the reduction | Only those in the annex to AADE circular Ε.2113/2025 (built from ELSTAT census data). Main islands: Agathonisi, Agios Efstratios, Astypalaia, Ikaria, Kalymnos, Karpathos, Kasos, Kos, Leipsoi, Leros, Lesvos, Limnos, Megisti, Nisyros, Oinousses, Patmos, Samothrace, Samos, Symi, Tilos, Fournoi, Chalki, Chios, Psara, plus the islets listed there. Rhodes is not on the list | 2026 | Ε.2113/2025, point 2 and annex: same URL |
+| Island reduction does not apply | Tobacco products and means of transport | 2026 | art. 26(4B): same URL |
+| Small business exemption, Greek turnover | EUR 10,000 (previous and current year) | From 1.1.2025 | art. 44α(1): same URL |
+| EU SME scheme, Union turnover | EUR 100,000 (previous and current year) | From 1.1.2025 | arts. 44β(1), 44δ(2): same URL |
+| EU distance sales and e-services threshold | EUR 10,000 a year, all member states together | 2026 | art. 19(1): same URL |
+| Net VAT payable carried forward instead of paid | Up to EUR 30 | 2026 | art. 43(6): same URL |
+| Two interest-free instalments allowed | Tax due over EUR 100 on a return filed on time | 2026 | art. 43(6): same URL |
+| VAT on exempt use deducted in full anyway | Up to EUR 30 a year | 2026 | art. 36(8): same URL |
+
+Rounding on islands: the reduced rate is rounded to the nearest whole number, with 0.5 rounded up (art. 26(6)). So 6% x 0.7 = 4.2% gives 4%, and 4% x 0.7 = 2.8% gives 3%. The reduction covers goods that, when the tax becomes chargeable, (βα) are on those islands and are supplied by a taxable person established there, (ββ) are sold from anywhere in Greece to a taxable person or a non-taxable legal person established there, (βγ) are acquired from another member state by such a person established there, or (βδ) are imported into those islands (art. 26(4)(β), applied to the art. 26(4A) islands by art. 26(4A)). It also covers services physically performed there by a business established there (art. 26(5)). A permanent island branch counts as being established there. A mainland seller delivering to a private consumer on an island charges the normal rate (Ε.2113/2025, point 5, examples 2 and 6).
+
+## The taxable base
+
+- **Base.** The consideration, without the VAT itself (art. 24). The rate is the one in force when the tax becomes chargeable (art. 26(2)).
+- **Input VAT.** Deductible on costs used for taxable supplies and for exempt supplies with credit, such as exports and intra-EU supplies (art. 35). The business must have registered its start of activity and hold a valid invoice (art. 37(1)).
+- **Blocked costs (art. 35(4)).** No deduction for: tobacco; alcohol not bought for taxable resale; receptions, entertainment and hospitality; housing, food, drink, travel and entertainment for staff or representatives; private passenger cars up to 9 seats, motorcycles, private leisure boats and aircraft, and their fuel, repair, maintenance, hire and running costs. The car block does not apply to vehicles held for sale, hire or paid passenger transport.
+- **Partial exemption (art. 36).** Common input VAT is deducted at the ratio of taxable (with credit) turnover to total turnover. Subsidies not in the taxable base go in the denominator. The percentage is rounded up to the next whole number (art. 36(2)). Sales of fixed assets and incidental property and financial transactions are left out (art. 36(3)). The ratio for the year is used for the final figure for that year and provisionally for the next year's returns (art. 36(4)).
+- **Capital goods.** Deductions on capital goods are adjusted under art. 38.
+- **Leaving or joining the exemption (art. 44α(5)-(7)).** On moving into the normal regime, VAT on stock held the day before is deducted; on moving into the exemption, VAT deducted on stock is repaid. Capital goods still inside the adjustment period are adjusted too. A stock declaration is filed within 2 months of the change. The deduction is claimed on the return for the period in which the stock declaration is filed.
+
+## Deadlines and filing
+
+- **Tax period (art. 43(1)).** One calendar month for a business on double-entry books. One calendar quarter for a business on single-entry books. AADE may set a different period, not shorter than 1 month or longer than 1 year (art. 43(12)(α)).
+- **Return deadline (art. 43(4)).** The last working day for public services of the month after the period ends. A return is filed for every period, including nil periods, unless the business has declared it is dormant or suspended (art. 43(3)).
+- **Payment (art. 43(6)).** Net VAT over EUR 30 is paid by the same day as the return is due. Up to EUR 30 is carried to the next period. A negative balance is carried forward or refunded under art. 39.
+- **Two instalments (art. 43(6)).** If the tax due is over EUR 100 and the return is on time, the business may pay in two equal interest-free instalments; the second is due by the last working day of the month after the return is filed.
+- **2026 return dates (computed from art. 43(4)).** June 2026 return: Friday 31 July 2026. Q3 2026 return: Friday 30 October 2026 (31 October is a Saturday). December 2026 and Q4 2026 returns: Friday 29 January 2027 (31 January is a Sunday). Check AADE for any extension (art. 43(12)(β)).
+- **No annual VAT return.** Art. 43 provides only periodic returns, plus a six-monthly return for the lump-sum scheme (art. 43(2)).
+- **Recapitulative statements (art. 41(4)-(7)).** Filed for intra-EU supplies of goods, intra-EU acquisitions, B2B services supplied to EU customers under the general rule, and B2B services received from EU suppliers. Each transaction goes into the period in which the tax becomes chargeable. Intrastat is filed monthly (art. 41(4)(γ)).
+- **Invoices and books.** Books and invoices follow the Greek Accounting Standards, ν. 4308/2014 (art. 41(3)(α)). Their data is sent electronically to AADE's myDATA platform under TPC art. 16. From 2 March 2026 (businesses with 2023 gross revenue over EUR 1,000,000) and 2 November 2026 (all others), domestic B2B, non-EU B2B and B2G invoices must be issued electronically. See greece-einvoice for the dates, channels and myDATA fines.
+- **Where.** Returns and payments go through AADE's online services (myAADE / TAXISnet).
+
+## Penalties and interest
+
+All from the TPC (ν. 5104/2024, AADE codification Ε.2109/2025, current to ν. 5259/2025), with art. 53 as amended by ν. 5301/2026 art. 37 (ΦΕΚ Α' 74/15.05.2026, applying to breaches from 19.4.2024). The TPC still names articles of the old VAT Code; art. 71(1) of the new code maps them to the new articles.
+
+- **Late or missing VAT return with tax due.** EUR 250 per breach on single-entry books, EUR 500 on double-entry books (TPC art. 53(2), as amended by ν. 5301/2026).
+- **Late or missing VAT return with no tax due.** EUR 100 per breach (TPC art. 53(1A), added by ν. 5301/2026).
+- **Return never filed where tax would be due.** 50% of the tax on the missing return (TPC art. 53(6)).
+- **Late amended VAT return.** No fixed fine under art. 53(1) or (2) if the original return was filed on time (TPC art. 53(7)(α)). Interest still runs.
+- **Inaccurate VAT return.** 50% of the difference between the tax declared and the tax AADE assesses (TPC art. 54(2)).
+- **Trading without registering the start of activity.** 50% of the VAT that should have been paid for the whole period of activity (TPC art. 53(10)).
+- **Late payment interest.** Runs from the day after the payment deadline. For a late or amended return, it runs from the date the tax should first have been paid. No interest on interest (TPC art. 52(1), (5)). The rate is not in the TPC; see "Not yet confirmed".
+- **Not issuing an e-invoice where one is required.** Treated as not issuing the invoice (AADE press release 17.2.2026, citing circular Ε.2004/2026). With VAT: 50% of the VAT on it, at least EUR 250 (single-entry) or EUR 500 (double-entry) per audit; 100% on a repeat (TPC art. 57(6)). Without VAT: EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit (TPC art. 57(5)). See greece-einvoice.
+
+## Cross-border points
+
+- **B2B services received from abroad.** Where the place of supply is Greece under the general rule (art. 18(2)(α)) and the supplier is not established in Greece, the Greek business customer pays the VAT (art. 40(1)(στ)). It declares output VAT and, if it has full deduction, the same amount as input VAT. It files a recapitulative statement for services from EU suppliers (art. 41(6)).
+- **Goods from non-established suppliers.** The Greek taxable customer pays the VAT on triangular onward supplies (art. 40(1)(ε)(εα)) and on supplies located in Greece under art. 17(3) (art. 40(1)(ε)(εβ)).
+- **Intra-EU acquisitions.** Taxed in Greece; the acquirer pays (arts. 14 and 40(1)(θ)). Same self-assessment as above.
+- **Intra-EU supplies of goods.** Exempt with credit under the conditions of art. 33. They are listed on the recapitulative statement and the customer's VAT number goes on the invoice (art. 41(4)).
+- **B2B services supplied to EU customers.** Place of supply is the customer's state under art. 18(2)(α); invoice without Greek VAT and list on the recapitulative statement (art. 41(5)).
+- **Exports.** Exempt with credit (art. 29).
+- **Distance sales and e-services to EU consumers.** Greek VAT applies only while the year's total of such sales stays at or below EUR 10,000 and did not exceed it last year (art. 19(1)). Above that, the customer's state's VAT applies, declared through the OSS schemes (arts. 56-58).
+- **Non-established businesses.** A business established outside the EU that is liable for Greek VAT must appoint a fiscal representative before its first taxable supply (art. 41(3)(δ)). An EU business without a Greek establishment may appoint one (art. 41(3)(ε)).
+- **Refunds to foreign businesses (art. 39(2)-(8)).** An EU business with no Greek establishment and no Greek supplies (other than listed exceptions) claims Greek VAT back through its home state's electronic portal, for a period of 3 months to 1 calendar year (art. 39(5), (6)). A non-EU business can claim only if its country gives Greek businesses the same right (art. 39(8)).
+- **Imports.** VAT is collected by customs; the rate is the domestic rate for the same goods (arts. 26(3), 67).
+
+## Worked examples
+
+### Example 1: Athens company, monthly return for June 2026
+
+An ΙΚΕ in Athens keeps double-entry books, so it files monthly. In June 2026 it sells goods for EUR 40,000 at 24% and food products for EUR 10,000 at 13%. It buys goods for EUR 5,000 from a German supplier who invoices it without VAT (an intra-EU acquisition). Its Greek purchase invoices carry EUR 6,000 of VAT, all on costs for taxable sales. It also paid EUR 300 of VAT on a client dinner.
+
+Output VAT: 40,000 x 24% = 9,600 and 10,000 x 13% = 1,300. The acquisition is self-assessed at 24%: 5,000 x 24% = 1,200 output and 1,200 input. The dinner VAT is blocked (art. 35(4)(γ)) and is left out. Total output is 12,100; deductible input is 6,000 + 1,200 = 7,200; net payable is 4,900. The return and payment are due by Friday 31 July 2026. Because the tax is over EUR 100 and the return is on time, the company may pay 2,450 by 31 July and 2,450 by Monday 31 August 2026. The acquisition also goes on the recapitulative statement and on Intrastat.
+
+```oa-check
+name: Athens company, June 2026 monthly VAT return
+inputs:
+  sales_24: 40000
+  sales_13: 10000
+  eu_acquisition: 5000
+  domestic_input_vat: 6000
+steps:
+  - output_24: pct(sales_24, 24)
+  - output_13: pct(sales_13, 13)
+  - acquisition_vat: pct(eu_acquisition, 24)
+  - total_output: output_24 + output_13 + acquisition_vat
+  - total_input: domestic_input_vat + acquisition_vat
+  - net_payable: total_output - total_input
+  - each_instalment: net_payable / 2
+expected:
+  output_24: 9600
+  output_13: 1300
+  acquisition_vat: 1200
+  total_output: 12100
+  total_input: 7200
+  net_payable: 4900
+  each_instalment: 2450
 ```
 
-### Mandatory recalc step
+### Example 2: sole trader crosses the EUR 10,000 small business limit in September 2026
 
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/greece-vat-<period>-working-paper.xlsx
+A graphic designer in Thessaloniki keeps single-entry books and uses the small business exemption. Her 2025 turnover was EUR 8,000. From 1 January to 19 September 2026 she invoices EUR 9,400. On 20 September 2026 she issues an invoice for EUR 1,500. In Q4 2026 she invoices a further EUR 3,000 and pays EUR 150 of input VAT on supplies. On the day before she left the exemption she held stock on which she had paid EUR 480 of VAT; she files the stock declaration in November 2026.
+
+The 20 September invoice takes her to 9,400 + 1,500 = 10,900, which is 900 over the limit. Under art. 44α(3) she enters the normal regime from that invoice, for its whole value, so it carries 1,500 x 24% = 360 of VAT. Her Q3 return shows 360 payable, due by Friday 30 October 2026. In Q4, output is 3,000 x 24% = 720. The stock VAT of 480 is deducted on the return for the quarter in which she filed the stock declaration (art. 44α(7)), so Q4 deducts 480 + 150 = 630, leaving 90 payable by Friday 29 January 2027. Because she exceeded EUR 10,000 in 2026, she cannot use the exemption in 2027 (art. 44δ(1)).
+
+```oa-check
+name: Sole trader leaves the small business exemption (2026)
+inputs:
+  sales_to_19_sep: 9400
+  crossing_invoice: 1500
+  q4_sales: 3000
+  threshold: 10000
+  stock_vat: 480
+  q4_input_vat: 150
+steps:
+  - turnover_after_crossing: sales_to_19_sep + crossing_invoice
+  - excess_over_limit: turnover_after_crossing - threshold
+  - q3_output: pct(crossing_invoice, 24)
+  - q4_output: pct(q4_sales, 24)
+  - q4_deductible: stock_vat + q4_input_vat
+  - q4_net_payable: q4_output - q4_deductible
+  - turnover_2026: turnover_after_crossing + q4_sales
+expected:
+  turnover_after_crossing: 10900
+  excess_over_limit: 900
+  q3_output: 360
+  q4_output: 720
+  q4_deductible: 630
+  q4_net_payable: 90
+  turnover_2026: 13900
 ```
 
-## Section 8 — Greece bank statement reading guide
+## Ask the client first
 
-**CSV format conventions.** National Bank of Greece and Alpha Bank exports use semicolons with DD/MM/YYYY dates. Piraeus Bank uses comma-separated. Common columns: Ημερομηνία (Date), Περιγραφή (Description), Ποσό (Amount), Υπόλοιπο (Balance).
+1. Double-entry or single-entry books? This sets monthly or quarterly returns (art. 43(1)) and the size of most fines.
+2. Where is the business established, and where are the goods or the services physically supplied? An island on the annex to AADE circular Ε.2113/2025 cuts the rate by 30% (art. 26(4), (4A), (5)).
+3. Turnover in 2025 and 2026 so far, in Greece and across the EU? This decides the small business exemption and the EU SME scheme (arts. 44α, 44β).
+4. Does it buy or sell across borders: EU goods, EU or non-EU services, sales to EU consumers? This brings in the reverse charge, recapitulative statements, Intrastat and OSS.
+5. Does it make any exempt supplies, or receive subsidies? This decides partial exemption (art. 36).
+6. Which costs are cars, fuel, meals, travel or entertainment? These are blocked (art. 35(4)).
 
-**Greek language variants.** Ενοίκιο (rent), μισθός (salary), τόκοι (interest), μεταφορά (transfer), ανάληψη (withdrawal), κατάθεση (deposit), τιμολόγιο (invoice). Treat as English equivalents.
+## Sources
 
-**Internal transfers.** Labelled "μεταφορά", "εσωτερική μεταφορά". Always exclude.
+| Source | URL | Read on |
+|---|---|---|
+| VAT Code (ν. 5144/2024), Ministry of Finance administrative codification to ν. 5313/2026, arts. 2-4, 18, 19, 24, 26, 29, 33, 35-41, 43, 44 to 44ζ, 45, 56-58, 67, 71 and Annex III | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
+| Ministry of Finance page publishing that codification (12.10.2026) | https://minfin.gov.gr/koinopoiisi-dioikitikis-kodikopoiisis-tou-n-5144-2024-gia-ton-kodika-tou-forou-prostithemenis-axias-symfona-me-tin-par-55-tou-arthr-83-tou-n-5104-2024/ | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025 (to ν. 5259/2025), arts. 52-54 and 57 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025), art. 11 (amends VAT Code art. 26) and art. 47(5) (in force 1.1.2026), copy hosted by AADE | https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf | 2026-10-23 |
+| AADE circular Ε.2113/31.12.2025 on the 30% island reduction (art. 26(4)-(5)), with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
+| ν. 5301/2026 (ΦΕΚ Α' 74/15.05.2026), art. 37 (amends TPC art. 53), copy hosted by AADE | https://www.aade.gr/sites/default/files/2026-05/%CE%BD%205301_2026.pdf | 2026-10-23 |
+| AADE, decision Α.1128/2025 on mandatory e-invoicing | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1128-15-09-2025 | 2026-10-23 |
+| AADE, decision Α.1197/2026 (second period moved to 2.11.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
+| AADE press release 17.2.2026 (e-invoicing dates and fines) | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 
-**Owner draws.** Ατομική επιχείρηση (sole trader) transfers to personal account are drawings — exclude.
+Not yet confirmed: the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.
 
-**Refunds.** Identify by "επιστροφή", "ακύρωση", "πιστωτικό". Book as negative.
-
-**Foreign currency.** Convert to EUR at ECB rate or bank statement rate.
-
-**IBAN prefix.** GR = Greece. IE, DE, FR = EU. US, GB, CH = non-EU.
-
-**myDATA cross-check.** For each classified transaction, note whether a corresponding myDATA entry exists. Discrepancies between bank data and myDATA should be flagged for reviewer.
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-- **Entity type** — *Inference rule:* ατομική επιχείρηση (sole trader) vs ΙΚΕ vs ΕΠΕ vs ΑΕ. *Fallback:* "Are you sole trader (ατομική), ΙΚΕ, ΕΠΕ, ΑΕ, or other?"
-
-### 9.2 VAT registration status
-
-- **VAT registration status** — *Inference rule:* if asking for FPA return, they are normal regime. *Fallback:* "Normal VAT regime or small business exemption (Art. 39)?"
-
-### 9.3 AFM
-
-- **AFM** — *Fallback:* "What is your ΑΦΜ? (9 digits, EL prefix for VIES)"
-
-### 9.4 Filing period and frequency
-
-- **Filing period and frequency** — *Inference rule:* transaction dates + bookkeeping type. *Fallback:* "Monthly or quarterly filer? Which period?"
-
-### 9.5 Industry
-
-- **Industry** — *Fallback:* "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees** — *Inference rule:* ΕΦΚΑ, μισθοδοσία outgoing. *Fallback:* "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies** — *Fallback:* "Do you make FPA-exempt sales?" *If yes → R-GR-4 may fire.*
-
-### 9.8 Credit brought forward
-
-- **Credit brought forward** — *Always ask:* "Excess credit from previous period? (Code 411)"
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers** — *Fallback:* "Customers outside Greece? EU or non-EU? B2B or B2C?"
-
-### 9.10 Island location
-
-- **Island location** — *Fallback:* "Is your business located on an Aegean island with reduced rates?"
-
-## Section 10 — Reference material
-
-### Validation status
-
-v2.0, rewritten April 2026. Awaiting validation by logistis-forotechnikos in Greece.
-
-### Sources
-
-1. N.2859/2000 (Kodikos FPA) — as amended
-2. N.4174/2013 (Tax Procedure Code)
-3. myDATA legislation (A.1138/2020, A.1052/2023)
-4. AADE guidance — https://www.aade.gr
-5. Council Directive 2006/112/EC — via eu-vat-directive companion skill
-6. VIES — https://ec.europa.eu/taxation_customs/vies/
-7. ECB exchange rates
-
-### Known gaps
-
-1. Aegean island reduced rates apply to specific islands — the full list is not enumerated here. Verify per AADE guidance.
-2. myDATA classification codes are not fully mapped — a future version should add the code table.
-3. Entertainment deductibility is more permissive than Malta but documentation standards are high — the skill defaults to block.
-4. The shipping/maritime sector is entirely excluded (R-GR-6).
-5. Capital goods scheme thresholds for Greece are not specified — verify per N.2859/2000.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to three-tier OpenAccountants architecture.
-- **v1.0 (April 2026):** Initial draft. Standalone monolithic document.
-
-### Self-check (v2.0)
-
-1. Quick reference with F2 code table and conservative defaults: yes (Section 1).
-2. Supplier library with Greek-language patterns: yes (Section 3, 14 sub-tables).
-3. Worked examples: yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 14 rules).
-5. Tier 2 catalogue: yes (Section 6, 14 items).
-6. Excel template with recalc: yes (Section 7).
-7. Onboarding as fallback: yes (Section 9, 10 items).
-8. All 8 Greece-specific refusals: yes (R-GR-1 through R-GR-8).
-9. Reference material at bottom: yes (Section 10).
-10. Three rates (24%/13%/6%) mapped: yes.
-11. Aegean island rates documented: yes (Section 1, Section 5.4).
-12. myDATA requirements documented: yes (Section 5.12).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

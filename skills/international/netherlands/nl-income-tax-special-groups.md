@@ -1,13 +1,16 @@
 ---
 name: nl-income-tax-special-groups
 description: "Dutch individual income tax for three groups the main skill does not compute, tax year 2026. (1) People at state pension (AOW) age: the lower first box 1 band rate (17.85%), the longer first band for people born before 1 January 1946, the month-by-month rate for people reaching AOW age in 2026, and the AOW-age general credit, labour credit, ouderenkorting and alleenstaande ouderenkorting. (2) Non-residents: the qualifying non-resident test (Wet IB 2001 art. 7.8) and which tax credits a non-resident gets, including the tax-part-only rule (art. 2.7 and 8.3). (3) Box 3: the actual-return route (tegenbewijsregeling, art. 5.25 to 5.31) against the 2026 deemed return, and the status of the Wet werkelijk rendement box 3. Trigger on: AOW, pensioner, ouderenkorting, gepensioneerd, non-resident tax credits, kwalificerende buitenlandse belastingplichtige, 90% test, belastingdeel heffingskorting, werkelijk rendement, tegenbewijsregeling, opgaaf werkelijk rendement. Out of scope: ordinary residents under AOW age (nl-income-tax), residence, emigration and treaties (nl-cross-border)."
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.1
@@ -221,3 +224,23 @@ expected:
 | Eerste Kamer, Wet werkelijk rendement box 3 (36.748) | https://www.eerstekamer.nl/wetsvoorstel/36748_wet_werkelijk_rendement_box | 2026-10-23 |
 
 Not yet confirmed: which of the two Belastingdienst monthly first-band tables is exact for April, May, June, October, November and December (the box 1 page and the Toelichting ch. 29 differ by 0.01 point); the general credit, labour credit and IACK amounts for someone who reaches AOW age during 2026 (the Toelichting gives no part-year table); the exact rounding of the tax part of each credit for non-residents; how art. 5.28 to 5.30 treat income that is received into a box 3 bank account and then withdrawn (the worked example counts it once, as a regular benefit); the final 2026 box 3 percentages for bank balances and debts (set early 2027); the 2026 filing date (the 2027 invitation to file is not yet published; 1 May is the usual date); whether and when the Eerste Kamer adopts the Wet werkelijk rendement box 3 and its novelle.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

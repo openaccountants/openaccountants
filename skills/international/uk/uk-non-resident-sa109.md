@@ -1,13 +1,16 @@
 ---
 name: uk-non-resident-sa109
 description: "UK income tax and capital gains tax for individuals who are not UK resident but have UK income or sell UK land, for tax year 2026/27 (6 April 2026 to 5 April 2027) and 2025/26 returns due by 31 January 2027. Covers what a non-resident is taxed on, the default rates, the limit on liability for disregarded income (ITA 2007 s.811), who can claim a Personal Allowance, the SA109 pages, the Non-resident Landlord Scheme and NRL1, non-resident CGT on UK property with 2015 and 2019 rebasing and the 60-day return, UK work days and treaty relief, deadlines and penalties. Trigger phrases: non-resident, non-resident landlord, NRL1, SA109, live abroad UK rental, expat selling UK flat, UK income while living abroad, disregarded income, 60-day return non-resident. Out of scope: the residence test itself (uk-statutory-residence-test), the FIG regime (uk-non-dom), relocation plans (uk-to-uae-relocation-tax, uk-to-italy-flat-tax-relocation)."
-jurisdiction: GB
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: GB
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # UK non-residents with UK income (SA109)
@@ -304,3 +307,23 @@ If Ben had UK income, his taxable UK income would use up the basic rate band fir
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
 
 Not yet confirmed: the 2026/27 SA109 notes and HS300 working sheet (only the 2025/26 editions, published in 2026, were available); the legislation.gov.uk text of SI 1995/2902 is shown in its original form, so later amendments to the regulation wording were not checked (the current HMRC guidance was used for the 20% rate and the GBP 100 a week test).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

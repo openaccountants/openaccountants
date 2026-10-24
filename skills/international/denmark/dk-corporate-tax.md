@@ -1,13 +1,16 @@
 ---
 name: dk-corporate-tax
 description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (dk-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
-jurisdiction: DK
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: DK
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Denmark: corporate income tax (selskabsskat) v0.1
@@ -225,3 +228,23 @@ expected:
 | skat.dk: global minimum tax for large groups (GloBE) | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe | 2026-10-22 |
 
 Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary acontoskat surcharge rates (Skattestyrelsen publishes them by 15 December 2026; the 2025 rates are shown above); the effective dates of the individual Pillar Two charging rules (income inclusion rule, undertaxed profits rule, Danish top-up tax); the R&D enhanced deduction percentages for 2026; the commencement order the Minister issued under lov nr. 1694/2024, § 18, stk. 2, for the 0.85-point addition (the Ministry table and Den juridiske vejledning apply 0.85 for 2026, but the order itself was not located).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
