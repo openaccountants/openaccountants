@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Ireland Universal Social Charge (USC), tax year 2026
 
-> **Source-cited draft.** Drafted from Part 18D of the Taxes Consolidation Act 1997 (sections 531AL to 531AAF) as amended by Finance Act 2025 s.2, read in Revenue's Notes for Guidance (Finance Act 2025 edition), the Universal Social Charge Regulations 2018 (S.I. No. 510 of 2018), Revenue's Tax and Duty Manual Part 18D-00-01 and Revenue's USC pages, all read on 2026-10-24. No accountant has reviewed it.
+> **Source-cited draft.** Drafted from Part 18D of the Taxes Consolidation Act 1997 (sections 531AL to 531AAF) as amended by Finance Act 2025 s.2, read in Revenue's Notes for Guidance (Finance Act 2025 edition) and checked against the enacted text of Finance Act 2011 s.3 and Finance Act 2012 s.3, the Universal Social Charge Regulations 2018 (S.I. No. 510 of 2018), Revenue's Tax and Duty Manual Part 18D-00-01 and Revenue's USC pages, all read on 2026-10-24. No accountant has reviewed it.
 
 Authority: the Revenue Commissioners. The tax year is the calendar year. Currency: euro. Section numbers are TCA 1997 unless another act is named. USC is a tax on income, but it is not "income tax" within the Tax Acts: it is a separate charge under Part 18D (Tax and Duty Manual 18D-00-01, para 2).
 
@@ -44,7 +44,7 @@ See also: `ie-payroll` (running a payroll, the RPN, emergency basis), `ie-income
 | Surcharge on relevant (non-PAYE) income over EUR 100,000 (s.531AN(2)) | 3% on the excess, so 11% in total on it | 2026 | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx |
 | Encashed private pension rights ring-fenced under s.787TA (s.531AN(3A)) | 2% on the full amount, not counted for the surcharge | 2026 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 | Bank bonuses from State-supported institutions (s.531AAD) | 45% on the full bonus; standard rates if bonuses are EUR 20,000 or less in the year | 2026 | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx |
-| Property relief surcharge on income sheltered by property or area-based reliefs (s.531AAE) | Extra 5%; does not apply if gross income is less than EUR 100,000 | 2026 | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx |
+| Property relief surcharge (s.531AAE(1), (3), inserted by Finance Act 2012 s.3) | Extra 5% of the part of aggregate income sheltered by specified property reliefs used in the year; only where aggregate income is EUR 100,000 or more | 2026 | https://www.irishstatutebook.ie/eli/2012/act/9/section/3/enacted/en/html |
 | Emergency basis (no RPN), USC Regulations 2018 reg. 19 | 8% on all pay, no cut-off | 2026 | https://www.revenue.ie/en/jobs-and-pensions/documents/emergency-rates.pdf |
 | Week 53 pay day (31 December, or 30/31 December in a leap year) (s.531AN(5) to (8)) | Bands, the EUR 60,000 limit and the EUR 13,000 exemption rise by 1/52 (weekly) or 1/26 (fortnightly), capped at the pay that day; not where pay days were changed | 2026 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf |
 
@@ -54,7 +54,9 @@ See also: `ie-payroll` (running a payroll, the RPN, emergency basis), `ie-income
 
 **How the non-PAYE surcharge works.** The test is relevant income only: income outside the PAYE system (self-employed profit, rental, investment income). PAYE salary does not count toward the EUR 100,000, and share option gains are not relevant income for this test (s.531AN(2A)). The 3% applies only to the part of relevant income above EUR 100,000. A large salary with modest side income pays no surcharge.
 
-**Two rules share EUR 100,000. Keep them apart.** The non-PAYE surcharge tests relevant income, applies when it is MORE than EUR 100,000, and is charged on the excess. The property relief surcharge tests gross income, does not apply when it is LESS than EUR 100,000 (so it can apply at exactly EUR 100,000), and is charged on the income sheltered by the reliefs. Refer property relief surcharge cases.
+**Two rules share EUR 100,000. Keep them apart.** The non-PAYE surcharge tests relevant income, applies when it is MORE than EUR 100,000, and is charged on the excess. The property relief surcharge tests aggregate income (all income for USC, PAYE included), applies when it is EUR 100,000 OR MORE (a "specified individual", s.531AAE(1)), and is charged on the income sheltered by the reliefs.
+
+**How the property relief surcharge works.** The specified property reliefs are the area-based capital allowances, writing down and balancing allowances on buildings and the other property-based accelerated allowances, and Section 23-type relief under s.372AP, including amounts carried forward (s.531AAE(1)). Only the part of a relief to which full effect is given in the year counts as used (s.531AAE(2)). The surcharge is 5% of that part of aggregate income against which the reliefs were used, on top of the ordinary USC (s.531AAE(3)). Property reliefs are treated as used before other High Earners Restriction reliefs (s.531AAE(4)(b)). Revenue's Notes for Guidance example (s.531AAE(3)): aggregate income EUR 150,000, EUR 50,000 of property relief used, surcharge EUR 2,500. The surcharge is computed on the reliefs claimed before the High Earners Restriction: with aggregate income EUR 150,000 and EUR 160,000 of property relief available, the surcharge is EUR 7,500 (5% of 150,000), not 5% of the restricted EUR 80,000 (Tax and Duty Manual 18D-00-01, para 18.3, Example A). Residential owner-occupier relief is outside it (para 18.1). Refer cases where the High Earners Restriction also applies.
 
 **Revenue's own 2026 examples (use them as tests).**
 
@@ -86,7 +88,7 @@ The Manual also shows EUR 12,500 (no USC) against EUR 13,500 (USC on the full am
 - Department of Social Protection payments and similar payments made by other bodies, including social welfare payments from another country, Community Employment, VTOS and Youthreach (s.531AM(1)(a)(I); [Revenue, exempt payments](https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx)).
 - Deposit interest subject to DIRT, credit union dividends, EU and non-EU deposit interest, and income from certain foreign life policies, investment undertakings and offshore funds (s.531AM(1)(b)(iii)).
 - Employer contributions to a PRSA, a PEPP or the auto-enrolment scheme (MyFutureFund) (s.531AM(1)(a)(VI) to (VIII)).
-- Termination payments within the basic and increased exemptions and Standard Capital Superannuation Relief (s.531AM(1)(a)(IV)). Statutory redundancy under the Redundancy Payments Act 1967 is exempt; ex-gratia redundancy above the statutory amount is exempt only "up to certain limits" ([Revenue, redundancy](https://www.revenue.ie/en/jobs-and-pensions/usc/redundancy-payments.aspx)).
+- Termination payments within the basic and increased exemptions and Standard Capital Superannuation Relief (s.531AM(1)(a)(IV)). Statutory redundancy under the Redundancy Payments Act 1967 is exempt. Ex-gratia payments above the statutory amount are exempt from income tax and USC within the limits; the basic exemption is EUR 10,160 plus EUR 765 for each full year of service, and the lifetime tax-exempt limit on ex-gratia payments is EUR 200,000 ([Revenue, basic exemption](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx); Tax and Duty Manual 18D-00-01, para 14). USC applies to the part above the limits. The increased exemption and Standard Capital Superannuation Benefit are not set out here (Tax and Duty Manual Part 05-05-19).
 - Pre-retirement access to AVCs (s.531AM(1)(a)(V)), income gifted to the Minister for Finance under s.483, and pay covered by a PAYE exclusion order (s.531AM(1)(a)(II), (III)).
 - Foreign employment income that gets Transborder Workers' Relief under s.825A (s.531AM(1)(b)(iv)).
 - The early childcare supplement, some employer benefits such as travel passes and Cycle to Work, childcare services relief income, Rent-a-room relief income and scholarships ([Revenue, exempt payments](https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx); full list in Tax and Duty Manual 18D-00-01, para 12).
@@ -134,7 +136,7 @@ The surcharge follows the return, not the payment: a late Form 11 is surcharged 
 - **Foreign social welfare** is exempt, like DSP payments ([Revenue, exempt payments](https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx)).
 - **Foreign deposit interest** (EU and non-EU) is outside relevant income (s.531AM(1)(b)(iii)).
 - **Posted and frontier workers and EU medical cards:** a person who qualifies for an Irish medical card under EU rules gets the reduced rate only if income is EUR 60,000 or less; frontier workers (including from Northern Ireland) without a full Irish medical card pay the standard rates (Manual para 13). Refer these cases.
-- **Treaties:** whether a tax treaty covers USC was not read for this skill. Treaty relief is in `ie-foreign-tax-and-withholding`.
+- **Treaties:** where a treaty applies to "identical or substantially similar taxes" imposed later, Revenue has told the treaty partner that USC is substantially similar to income tax and is covered, including the relieving provisions (Tax and Duty Manual 18D-00-01, para 13.2). Check the treaty text for that clause. Treaty relief is in `ie-foreign-tax-and-withholding`.
 
 ## Worked examples
 
@@ -197,10 +199,10 @@ expected:
 2. Any social welfare payments, DIRT-paid interest, redundancy or other exempt income? (Taken out of the charge and the tests.)
 3. Will you be 70 or over at any point in 2026, or did you hold a full medical card (not a GP visit card) at any time in 2026, and has Revenue been told? (Reduced rates, if income is EUR 60,000 or less.)
 4. Do you actively carry on the trade, or are you a lessor or a passive partner? Any trading losses carried forward? (Capital allowances and losses before USC.)
-5. Do you claim property-based capital allowances or Section 23 relief, or did you get a bonus from a State-supported bank? (Property relief surcharge or the 45% rate: refer.)
+5. Do you claim property-based capital allowances or Section 23 relief, and how much of it is used in 2026? Did you get a bonus from a State-supported bank? (Property relief surcharge at 5%; the 45% rate.)
 6. Do you pay or receive maintenance, is it legally enforceable, and are you jointly assessed? Do you work or live outside Ireland? (Maintenance exemption; non-resident and EU cases.)
 
-Refer to a qualified practitioner: property relief surcharge cases, bank bonuses, Week 53 cases where the result depends on the band increase, ex-gratia redundancy above the statutory amount, posted and frontier workers, EU medical card claims, and any tax year other than 2026.
+Refer to a qualified practitioner: property relief surcharge cases where the High Earners Restriction also applies, bank bonuses, Week 53 cases where the result depends on the band increase, ex-gratia redundancy above the statutory amount, posted and frontier workers, EU medical card claims, and any tax year other than 2026.
 
 ## Sources
 
@@ -208,6 +210,9 @@ Refer to a qualified practitioner: property relief surcharge cases, bank bonuses
 |---|---|---|
 | Finance Act 2025 (No. 18 of 2025) s.2: amends s.531AN (2026 bands, EUR 28,700, medical card end 2028) | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html | 2026-10-24 |
 | Revenue, Notes for Guidance TCA 1997 Part 18D, Finance Act 2025 edition (s.531AL to 531AAF) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf | 2026-10-24 |
+| Finance Act 2011 (No. 6 of 2011) s.3: inserts Part 18D, including s.531AM(2) ("does not exceed") | https://www.irishstatutebook.ie/eli/2011/act/6/section/3/enacted/en/html | 2026-10-24 |
+| Finance Act 2012 (No. 9 of 2012) s.3: inserts s.531AAE (property relief surcharge) | https://www.irishstatutebook.ie/eli/2012/act/9/section/3/enacted/en/html | 2026-10-24 |
+| Revenue, Basic exemption (termination payments) | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx | 2026-10-24 |
 | Universal Social Charge Regulations 2018 (S.I. No. 510 of 2018), regs. 14 and 19 | https://www.irishstatutebook.ie/eli/2018/si/510/made/en/html | 2026-10-24 |
 | Revenue, Tax and Duty Manual Part 18D-00-01 Universal Social Charge (last reviewed January 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18d/18D-00-01.pdf | 2026-10-24 |
 | Revenue, USC overview | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx | 2026-10-24 |
@@ -225,7 +230,7 @@ Refer to a qualified practitioner: property relief surcharge cases, bank bonuses
 | Revenue, eBrief 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
 | Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
-Not yet confirmed: (1) the consolidated statute text of Part 18D: the Law Reform Commission revised TCA 1997 could not be reached (revisedacts.lawreform.ie returned 404), so section wording is taken from Revenue's Notes for Guidance (Finance Act 2025 edition) read with Finance Act 2025 s.2; (2) that the s.1084 late filing surcharge is computed on USC as part of "tax due": it follows from s.531AAA applying Part 47, but no Revenue page read says so in terms; (3) the ex-gratia redundancy limits (Revenue's termination payments pages, not read here); (4) the property relief surcharge computation and its interaction with the High Earners Restriction (Manual para 18, not summarised); (5) whether any tax treaty covers USC; (6) Budget 2027 and Finance Bill 2026 changes to USC for 2027 were not read.
+Not yet confirmed: (1) the consolidated text of Part 18D: the Law Reform Commission's Revised Acts do not include the Taxes Consolidation Act 1997 (revisedacts.lawreform.ie returns 404 for it, and it is not in the alphabetical list, checked 2026-10-24), so section wording is taken from Revenue's Notes for Guidance (Finance Act 2025 edition), checked against the enacted Finance Act 2011 s.3, Finance Act 2012 s.3 and Finance Act 2025 s.2; later amendments between 2011 and 2024 were not read in their enacting acts; (2) that the s.1084 late filing surcharge is computed on USC as part of "tax due": it follows from s.531AAA(e) applying Part 47, but no Revenue page read says so in terms; (3) the increased exemption and Standard Capital Superannuation Benefit figures for termination payments (Tax and Duty Manual Part 05-05-19, not read here); (4) Budget 2027 and Finance Bill 2026 changes to USC for 2027 were not read.
 
 <!-- openaccountants-cta-block -->
 
