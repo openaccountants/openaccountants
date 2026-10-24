@@ -6,22 +6,19 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pt-social-contributions"
   jurisdiction: "PT"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
-  reviewed_by: "A licensed accountant (name withheld at their request)"
-  trust_label: "Checked by a licensed accountant (name withheld at their request)"
-  review_status: "current"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
+  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
+  review_status: "pending_review"
 ---
 
 # PT Social Contributions
 
 ## Portugal Social Contributions -- Self-Employed Skill v2.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
+Source-cited draft: not reviewed by an accountant.
 
 ### Segurança Social
 
@@ -58,8 +55,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Payment frequency | Monthly (between 10th and 20th) |
 | Currency | EUR only |
 | Contributor | Open Accountants |
-| Validated by | Verified by Mário Jorge da costa Vale (CA - 85883) on 2026-06-04 |
-| Validation date | Verified by Mário Jorge da costa Vale (CA - 85883) on 2026-06-04 |
+| Validated by | Not reviewed by an accountant |
+| Validation date | Not reviewed by an accountant |
 
 ## Section 2 -- Required inputs and refusal catalogue
 
@@ -98,7 +95,7 @@ Legislation: Código Contributivo, art. 162
 
 - **Quarterly to monthly conversion formula** — quarterly_relevant_income = sum of relevant_income for the 3 months in the quarter monthly_relevant_income = quarterly_relevant_income / 3
 
-## Section 4 -- Rates, base, and bounds (2025)
+## Section 4 -- Rates, base, and bounds (2026)
 
 Legislation: Código Contributivo, art. 163, 168
 
@@ -269,6 +266,8 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
+> Contributed by Ryan Duguid.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -289,4 +288,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

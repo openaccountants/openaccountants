@@ -7,17 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `references.md`
-4. `sk-company-formation.md`
-5. `sk-corporate-income-tax.md`
-6. `sk-payroll-social.md`
-7. `sk-tax-overview.md`
-8. `slovakia-pit.md`
-9. `slovakia-vat-registration-4-7-7a.md`
-10. `slovakia-vat-return.md`
-11. `eu-vat-directive.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+3. `README.md`
+4. `references.md`
+5. `sk-company-formation.md`
+6. `sk-corporate-income-tax.md`
+7. `sk-cross-border.md`
+8. `sk-payroll-social.md`
+9. `sk-tax-overview.md`
+10. `sk-transfer-pricing.md`
+11. `slovakia-pit.md`
+12. `slovakia-vat-registration-4-7-7a.md`
+13. `slovakia-vat-return.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -2,13 +2,16 @@
 name: mf-business-licence-and-patente-filing
 description: >
   French Saint-Martin business licence reference for habitual independent professional activities, distinguishing the fixed and premises-area components from the separate patente contribution. Covers scope, selected statutory exemptions, area rounding, the component-specific cap, establishment creation, operator changes and filing/payment dates. Includes worked licence examples and flags differences between the official code and business handbook. Patente rates, additional chamber levies and subsidy eligibility are not presumed verified. This source-cited draft requires independent review, current amendment checks and activity-specific classification before use and does not establish comprehensive business-tax coverage.
-jurisdiction: MF
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: MF
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # French Saint-Martin: business licence and patente filing
@@ -61,3 +64,23 @@ Use the official current digital filing procedure linked in the [TGCA Guide](mf-
 Confirm the activity's scope, who operates it, the reference-period premises, area rounding, component-specific cap and any creation/change conditions. Keep licence, patente and additional levies separately visible.
 
 Source-cited draft awaiting independent source and professional review. Detailed patente valuation/rates, value-added ceilings and minimum charges, chamber levy rates, multi-premises allocation, state-aid eligibility and appeals remain outside the completed calculation scope. A licence calculation is not a total annual business-tax bill.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

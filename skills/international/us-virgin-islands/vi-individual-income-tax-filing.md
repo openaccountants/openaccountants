@@ -2,13 +2,16 @@
 name: vi-individual-income-tax-filing
 description: >
   US Virgin Islands individual income-tax filing reference checked in 2026. Separates full-year bona fide residents from US citizens and resident aliens with Virgin Islands income who do not qualify, and explains worldwide reporting, joint-return residence, dual filing and tax allocation. Includes an adjusted-gross-income allocation example, payments reconciliation and the 2025 Form 8689 credit route. Records conflicting line references in IRS Publication 570 rather than carrying them into the computation. Flags separate self-employment obligations and source determinations. Does not publish unverified 2026 return lines, tax brackets, incentives or nonresident-alien filing instructions. Independent accountant review remains pending.
-jurisdiction: VI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: VI
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # US Virgin Islands: individual income-tax filing
@@ -58,3 +61,23 @@ A taxpayer with no ordinary US income-tax filing requirement can still have US s
 ## Verification limits
 
 Checked 22 October 2026 against the statute and downloaded IRS material. This draft does not settle incentives, foreign reporting, estate/trust rules, nonresident-alien cases, zero/negative AGI, all income-source exceptions or 2026 rate schedules. Independent accountant review and complete current-year reconciliation remain outstanding.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

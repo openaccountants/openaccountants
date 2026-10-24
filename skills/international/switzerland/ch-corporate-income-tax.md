@@ -1,14 +1,14 @@
 ---
 name: ch-corporate-income-tax
 description: "Swiss profit tax on companies for tax year 2026, from the law and ESTV publications. Covers who is taxable (seat or effective management, Swiss branches), the federal profit tax of 8.5% of net profit after tax (DBG art. 68, about 7.83% of profit before tax), how cantonal and communal profit tax is built from a simple rate times multipliers (Zurich 2026 worked through), the taxable base, 7-year loss carry-forward, the participation reduction (10% or CHF 1 million), the STAF measures (patent box, R&D super deduction, notional interest deduction, 70% relief cap), cantonal capital tax, the 15% Pillar Two minimum tax, filing, payment, late interest of 4.0% and penalties. Trigger on: Swiss corporate tax, Gewinnsteuer, Beteiligungsabzug, AG or GmbH tax Switzerland, Zurich company tax rate, patent box Switzerland, Ergänzungssteuer. Out of scope: ch-transfer-pricing, ch-cross-border, ch-cantonal-tax, ch-vat-return, ch-company-formation."
-jurisdiction: CH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CH
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -247,3 +247,23 @@ The edge cases: if Beta held 5% worth CHF 1.2 million, the dividend would still 
 | Kantonales Steueramt Zürich, ZStB 133.1, Aufforderung 2027 (deadline for 2026 returns) | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf | 2026-10-23 |
 
 Not yet confirmed: an official ESTV table of 2026 effective profit tax rates for every canton (the ESTV "Steuerbelastung" series for companies was not found; the skill gives the method and works Zurich city only); the Zurich due dates and instalments for cantonal and communal profit tax; the Zurich 2026 notional interest rate (tied to the 10-year Confederation bond yield, set by ordinance, not read); the ESTV practice for allocating financing cost to participations (Kreisschreiben not read); each canton's patent box and R&D percentages other than Zurich; the date the UTPR will apply.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

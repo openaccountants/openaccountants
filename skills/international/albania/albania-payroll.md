@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 depends_on:
   - payroll-workflow-base
 category: international
@@ -229,3 +228,23 @@ expected:
 | Social Insurance Institute, bilateral agreements in force | https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/ | 2026-10-23 |
 
 Not yet confirmed: when and on which form a resident employee of a foreign employer with no Albanian payroll agent pays the tax during the year (Instruction 26 para. 4.8 gives the duty, not the timing); how the listëpagesa rounds contribution and tax amounts (the examples here are unrounded); how the ALL 186,416 social cap is split between two employers in practice (Instruction 23 and listëpagesa categories 8 to 10 set the rules, not worked through today); whether art. 117 (withholding agents) or only art. 114 applies to employee contributions withheld but not paid; the ISSH page still says ALL 10,000 for every late listëpagesa and Instruction 23 para. 6.2 still says ALL 500,000 or 250,000 for an undeclared worker, while the consolidated Law 9920/2008 arts. 113 and 119 give the amounts in the table (this skill follows the law); whether the E-SIG 025/a form codes on tatime.gov.al match the current e-Filing screens; the E-SIG 027/a filing notes on tatime.gov.al still say the form goes in at least 48 hours before work starts, while Instruction 23/2014 para. 4.1 (consolidated to 2026) and Law 9920/2008 art. 119(1) say at least one calendar day (this skill follows the law).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

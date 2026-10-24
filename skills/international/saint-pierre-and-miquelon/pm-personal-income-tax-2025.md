@@ -2,13 +2,16 @@
 name: pm-personal-income-tax-2025
 description: >
   Saint-Pierre-et-Miquelon personal income tax reference for income earned in 2025 and declared in 2026. Covers the twelve-band local schedule, household shares, ordinary resident and nonresident filing deadlines, and the distinction between taxable income and gross salary. Includes a transparent one-share calculation before individual reliefs. Records the youth reduction introduced for the 2026 campaign with its household and multi-year limits, and identifies inconsistent departure instructions requiring resolution. Uses the local code and official filing notice; it does not substitute mainland French bands or claim to resolve treaties, payroll contributions or every deduction.
-jurisdiction: PM
-category: international
-tax_year: 2025
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: PM
+tax_year: 2025
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint-Pierre-et-Miquelon: 2025 personal income and 2026 filing
@@ -75,3 +78,23 @@ The short enacted provision does not settle all cases involving an earlier first
 ## Review boundary
 
 Checked 22 October 2026. Complete income-category deductions, indexed low-liability relief, departure instructions, youth-transition cases, treaty relief, collection, appeals and late-filing rules remain for review. No independent accountant review has occurred. This Guide does not cover payroll or social contributions and is not comprehensive territory coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

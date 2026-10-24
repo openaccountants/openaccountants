@@ -5,6 +5,8 @@ version: 1.0
 jurisdiction: PT
 tax_year: 2025
 last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
@@ -324,6 +326,8 @@ Reinvestir os €300.000 totais em nova habitação própria permanente em 36 me
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e computacionais e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuintes não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, consultor fiscal ou profissional licenciado equivalente na sua jurisdição) antes da entrega ou actuação.
 
 A versão mais actualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

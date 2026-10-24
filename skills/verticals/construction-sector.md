@@ -4,7 +4,7 @@ description: "Use this skill whenever a construction contractor, subcontractor, 
 version: 0.2
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-10-21
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -210,6 +210,8 @@ The amounts above are fabricated arithmetic, not statutory thresholds.
 ## Section 9 — Disclaimer
 
 Construction sector taxation is highly fact-specific. Outputs must be reviewed by credentialed construction sector practitioners. The most up-to-date version is at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

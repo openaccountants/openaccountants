@@ -1,13 +1,16 @@
 ---
 name: it-dichiarazione-iva-annuale
 description: "Italian annual VAT return (Dichiarazione IVA) for VAT year 2026, filed in 2027, and the December VAT acconto due December 2026. Covers who files and who is exempt, the 1 February to 30 April window, quadri VE, VF, VJ, VH, VL and VX and how the annual balance is built, the 16 March balance or deferral at 0.40% a month, quarterly filers' 1% interest, credits (refund conditions, the EUR 30,000 visto or guarantee rule, F24 offset and the EUR 5,000 visto threshold, carry forward), the acconto methods (storico and previsionale 88%, analitico 100%, EUR 103.29 floor), pro-rata and rettifica in summary, penalties and ravvedimento. Trigger on: dichiarazione IVA, quadro VL, saldo IVA 16 marzo, acconto IVA, rimborso IVA, visto di conformita, credito IVA. Out of scope: periodic settlement and LIPE (italy-vat-return), e-invoicing (italy-einvoice), forfettario (it-regime-forfettario)."
-jurisdiction: IT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: IT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Italy: annual VAT return (Dichiarazione IVA) and the December acconto, VAT year 2026
@@ -264,3 +267,23 @@ The analitico method avoids this risk: it pays 100% of a settlement run on the t
 | Agenzia delle Entrate, "Come pagare l'Iva" | https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva | 2026-10-23 |
 
 Not yet confirmed: row numbers are those of Modello IVA 2026 (VAT year 2025) until Modello IVA 2027 is approved; whether the storico base for a quarterly filer by option includes the 1% interest paid with last year's balance (Example 1 states the base as a single figure); the legal interest rate used in ravvedimento for 2026; when the repeal of art. 19-bis2(3) by D.Lgs. 186/2025 starts to apply.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

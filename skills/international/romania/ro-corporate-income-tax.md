@@ -1,13 +1,15 @@
 ---
 name: ro-corporate-income-tax
 description: "Use this skill for Romanian company tax in tax year 2026 (calendar year): who pays profit tax (impozit pe profit) and who may use the micro-enterprise turnover tax (impozit pe veniturile microîntreprinderilor). Covers the 16% profit tax rate, the 1% micro tax with its EUR 100,000 revenue ceiling and one-employee rule, the minimum turnover tax (IMCA) for companies above EUR 50 million at 0.5% for 2026 and its end on 31 December 2026, the taxable base, limited and non-deductible expenses, the sponsorship credit, losses (5 years, 70% cap), the interest limit (30% of EBITDA, EUR 1 million safe harbour), quarterly payments, the D101 return due 25 June, 16% dividend tax, and interest and penalties. Trigger phrases: Romanian corporate tax, impozit pe profit, microintreprindere 2026, D101, IMCA, SRL tax Romania. Out of scope: ro-cross-border, ro-income-tax, ro-payroll-social, ro-cas-cass, ro-vat-return, ro-company-formation."
-jurisdiction: RO
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: RO
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Romania company tax: profit tax and micro-enterprise tax (2026)
@@ -331,3 +333,23 @@ Not yet confirmed:
 - how long unused sponsorship carries forward (art. 25(4)(ț) refers to amounts carried forward without giving a period);
 - the official RON/EUR rate at 31 December 2025 for the micro and IMCA tests;
 - the Pillar Two minimum tax for large groups, which this skill does not cover.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
