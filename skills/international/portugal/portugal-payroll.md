@@ -35,6 +35,16 @@ Any employer (entidade devedora) that pays employment income (Category A) to an 
 - Residents of the Azores: Despacho 1179/2026.
 - Residents of Madeira: Despacho 19/2026 of the Regional Secretary of Finance (JORAM II série n.º 13, 20 January 2026, corrected by Declaração de Retificação 10/2026).
 
+**Which tables in which period (2026).**
+
+| Pay made available | Mainland | Azores | Madeira |
+|---|---|---|---|
+| 1 January to 31 October 2026 | Despacho 233-A/2026 in full | Despacho 1179/2026 in full | Despacho 19/2026 in full |
+| 1 to 30 November 2026 | 50% of the Despacho 233-A/2026 amount; full amount if monthly pay is above the upper limit of the second-to-last row (Despacho 12523-A/2026, points 1 to 3) | 50% of the Despacho 1179/2026 amount, same exception (Despacho 12610-A/2026, points 1 to 3) | Despacho 19/2026 in full (no November despacho found; see Not yet confirmed) |
+| From 1 December 2026 | Despacho 233-A/2026 in full (Despacho 12523-A/2026, points 7 and 9) | Despacho 1179/2026 in full (Despacho 12610-A/2026, points 7 and 9) | Despacho 19/2026 in full |
+
+The November cut passes on in advance a cut to the annual IRS rates. Lei 64-B/2026 of 22 October 2026 (from Proposta de Lei 108/XVII/2) only authorises the Government, for 180 days, to amend CIRS art. 68(1) and lower the rates of the first six bands to 12.2%, 15.2%, 20.7%, 23.6%, 30.6% and 34.6% (arts. 2 and 3). The rates change only when the Government publishes the decree-law. None had been published by 24 October 2026, and no despacho replaces the 2026 tables. Until that decree-law, the 2026 bands are those of CIRS art. 68(1) in the wording of Lei 73-A/2025.
+
 Inside each set, the table depends on the employee's situation: Table I (single without dependants, or married with two earners), Table II (single with one or more dependants), Table III (married, one earner), Tables IV to VII (employees with a disability) and Tables VIII to XI (pensions) (Despacho 233-A/2026, point 1). "Married, one earner" applies only when the spouse has no income that is aggregated, or one spouse earns 95% or more of the couple's aggregated income (CIRS art. 99-B(4); despacho point 9). Unmarried partners (união de facto) under CIRS art. 14 use the married tables (despacho point 8). If the employee gives no family details, the employer withholds as if there are no dependants (art. 99-B(3)).
 
 **Special cases.**
@@ -50,9 +60,6 @@ Inside each set, the table depends on the employee's situation: Table I (single 
 | Withholding formula, no dependants | Monthly pay x marginal rate - amount to deduct (parcela a abater); never below zero | 2026 | Despacho 233-A/2026, point 3(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
 | Withholding formula, with dependants | Monthly pay x marginal rate - amount to deduct - (extra amount per dependant x number of dependants) | 2026 | Despacho 233-A/2026, point 3(a) |
 | Mainland Table I: no withholding | Monthly pay up to EUR 920.00 | 2026 | Despacho 233-A/2026, Table I |
-| Mainland Table I: pay up to EUR 1,819 | 24.10%, less EUR 193.33 | 2026 | Despacho 233-A/2026, Table I |
-| Mainland Table I: pay up to EUR 2,499 | 34.90%, less EUR 401.19 | 2026 | Despacho 233-A/2026, Table I |
-| Mainland Table I: top row | Over EUR 20,221: 47.17%, less EUR 1,272.31 | 2026 | Despacho 233-A/2026, Table I |
 | Mainland Table III (married, one earner): no withholding | Monthly pay up to EUR 991.00 | 2026 | Despacho 233-A/2026, Table III |
 | Extra deduction per dependant, employment | EUR 21.43 (Table I, married two earners), EUR 34.29 (Table II), EUR 42.86 (Table III) | 2026 | Despacho 233-A/2026, Tables I to III |
 | Dependant with 60% or more disability | Add EUR 84.82 per dependant (single or married one earner), EUR 42.41 (married two earners) | 2026 | Despacho 233-A/2026, point 5(a) |
@@ -71,9 +78,11 @@ Inside each set, the table depends on the employee's situation: Table I (single 
 | Meal allowance exempt from IRS and Social Security, cash | Up to EUR 6.15 a day (the public-sector allowance) | From 1 Jan 2026 | CIRS art. 2(3)(b)(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx ; Portaria 51-B/2026/1, art. 1 and 3: https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf ; Contributions Code art. 46(2)(l) and (3) |
 | Meal allowance exempt, meal card or vouchers | Up to 70% more than the cash limit: EUR 6.15 x 1.7 = EUR 10.455 a day | From 1 Jan 2026 | CIRS art. 2(3)(b)(2), wording of Lei 45-A/2024 |
 | IRS Jovem exemption | 100% (year 1), 75% (years 2 to 4), 50% (years 5 to 7), 25% (years 8 to 10), capped at 55 x IAS = EUR 29,542.15 a year | 2026 | CIRS art. 12-B(1) and (5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
-| IRS Jovem cap in withholding | 55 x IAS / 14 = EUR 2,110.15 | 2026 | Despacho 233-A/2026, point 5(g) |
+| IRS Jovem cap in withholding | 55 x IAS / 14 = EUR 2,110.15 exempt per payment (each of the 14 payments) | 2026 | Despacho 233-A/2026, point 5(g); AT Ofício-Circulado 20274/2025 (monthly limit applied payment by payment): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf |
+| Annual IRS rates, bands 1 to 6 | Lowering to 12.2%, 15.2%, 20.7%, 23.6%, 30.6%, 34.6% is authorised, not yet in force | Authorisation from 23 Oct 2026, 180 days | Lei 64-B/2026, arts. 2 to 4: https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 |
 | IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
-| Minimum wage, mainland | EUR 920 a month | From 1 Jan 2026 | Decreto-Lei 139/2025, as reported by DGERT: https://www.dgert.gov.pt/retribuicao-minima-mensal-garantida-para-2026 |
+| Minimum wage, mainland | EUR 920 a month | From 1 Jan 2026 | Decreto-Lei 139/2025, arts. 2 and 3: https://diariodarepublica.pt/dr/detalhe/decreto-lei/139-2025-992879809 |
+| Minimum wage, Azores | EUR 966 a month (national EUR 920 plus 5%) | From 1 Jan 2026 | Decreto Legislativo Regional 8/2002/A, art. 3: https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252 |
 | Minimum wage, Madeira | EUR 980 a month | From 1 Jan 2026 | Decreto Legislativo Regional 1/2026/M, art. 2 and 4: https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf |
 | Overtime premium, first 100 hours a year | Working day: 25% first hour, 37.5% after; rest day or holiday: 50% | 2026 | Código do Trabalho art. 268(1): https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
 | Overtime premium, over 100 hours a year | Working day: 50% first hour, 75% after; rest day or holiday: 100% | 2026 | Código do Trabalho art. 268(2) |
@@ -81,7 +90,24 @@ Inside each set, the table depends on the employee's situation: Table I (single 
 | Night work premium | 25% | 2026 | Código do Trabalho art. 266(1) |
 | Late-payment interest (tax and Social Security debts) | 7.221% a year | From 1 Jan 2026 | IGCP Aviso 18/2026/2: https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 ; LGT art. 44(3); Contributions Code arts. 211 and 212 |
 
-Each region has 11 tables. Use the despacho for the region where the employee lives; the rows above are the zero-withholding limits and the rows the examples use.
+**Mainland Table I in full** (employment income, single without dependants or married with two earners; Despacho 233-A/2026, Table I). R is the monthly pay. The extra amount per dependant is EUR 21.43 on every row.
+
+| Monthly pay up to (EUR) | Marginal rate | Amount to deduct (EUR) |
+|---|---|---|
+| 920.00 | 0% | 0 |
+| 1,042.00 | 12.50% | 12.50% x 2.60 x (1,273.85 - R) |
+| 1,108.00 | 15.70% | 15.70% x 1.35 x (1,554.83 - R) |
+| 1,154.00 | 15.70% | 94.71 |
+| 1,212.00 | 21.20% | 158.18 |
+| 1,819.00 | 24.10% | 193.33 |
+| 2,119.00 | 31.10% | 320.66 |
+| 2,499.00 | 34.90% | 401.19 |
+| 3,305.00 | 38.36% | 487.66 |
+| 5,547.00 | 39.69% | 531.62 |
+| 20,221.00 | 44.95% | 823.40 |
+| Over 20,221.00 | 47.17% | 1,272.31 |
+
+Table II (single with dependants) uses the same rows, with EUR 34.29 per dependant (Despacho 233-A/2026, Table II). Each region has 11 tables. For Tables III to XI, and for the Azores and Madeira, use the despacho for the region where the employee lives; the rows in the rates table above are the zero-withholding limits.
 
 ## The taxable base
 
@@ -97,7 +123,7 @@ Each region has 11 tables. Use the despacho for the region where the employee li
 
 **Social Security base.** Pay as defined in Contributions Code arts. 44 to 48. It includes base pay, holiday pay, and the Christmas and holiday subsidies (art. 46(2)(a), (g), (h)). There is no ceiling for employees under art. 53. The details of what is in and out, and MOE bases, are in `pt-social-contributions`.
 
-**IRS Jovem in withholding.** An employee aged up to 35 who is not a dependant tells the employer the year of earning income they are in (CIRS art. 99-F(5)). The employer works out the withholding rate on all pay, exempt part included, and applies that rate only to the part that is not exempt (art. 99-F(4)). The exempt part taken through withholding is capped at 55 x IAS / 14 (Despacho 233-A/2026, point 5(g)). Former NHR or IFICI beneficiaries, people under the art. 12-A returnee regime and people with unpaid tax cannot use it (art. 12-B(9)). The final exemption is claimed on the annual return.
+**IRS Jovem in withholding.** An employee aged up to 35 who is not a dependant tells the employer the year of earning income they are in (CIRS art. 99-F(5)). The employer works out the withholding rate on all pay, exempt part included, and applies that rate only to the part that is not exempt (art. 99-F(4)). The exempt part taken through withholding is capped at 55 x IAS / 14 = EUR 2,110.15 in each payment, the 14 payments including the holiday and Christmas subsidies (Despacho 233-A/2026, point 5(g)). The tax authority applies this as a monthly limit on each payment: where the exempt share of a payment is higher, only EUR 2,110.15 is treated as exempt (AT Ofício-Circulado 20274/2025, worked cases). Former NHR or IFICI beneficiaries, people under the art. 12-A returnee regime and people with unpaid tax cannot use it (art. 12-B(9)). The final exemption is claimed on the annual return.
 
 **Higher rate by choice.** An employee may ask in writing for a higher whole-number rate (CIRS art. 98(6)). Only the marginal rate changes; the deductions stay (Despacho 233-A/2026, point 5(e)).
 
@@ -127,7 +153,7 @@ The ISS practical guide on paying contributions gives the same 1st to 25th windo
 - Withheld tax not paid over: fine of one to two times the tax (RGIT art. 114(1)). If by negligence: 15% to half of the tax (art. 114(2)). The same fines apply to tax that should have been withheld but was not (art. 114(4)).
 - Late or missing DMR: fine of EUR 150 to EUR 3,750 (RGIT art. 117(1)).
 - Withheld tax over EUR 7,500 not paid more than 90 days after the deadline, and not paid within 30 days of notice: crime of breach of trust, up to three years in prison or a fine of up to 360 days (RGIT art. 105(1) and (4)); over EUR 50,000, one to five years (art. 105(5)).
-- Compensatory interest runs day by day from the payment deadline for tax withheld or that should have been withheld (LGT art. 35(1) and (3)), at the legal interest rate (art. 35(10)). The employer owes it on late payment (Despacho 233-A/2026, point 13). An employee who wrongly used the "married, one earner" table owes compensatory interest on the shortfall (CIRS art. 99-F(3)).
+- Compensatory interest runs day by day from the payment deadline for tax withheld or that should have been withheld (LGT art. 35(1) and (3)), at the legal interest rate (art. 35(10)), which is 4% a year (Portaria 291/2003). The employer owes it on late payment (Despacho 233-A/2026, point 13). An employee who wrongly used the "married, one earner" table owes compensatory interest on the shortfall (CIRS art. 99-F(3)).
 - Late-payment interest: 7.221% a year for 2026 (LGT art. 44(1) and (3); IGCP Aviso 18/2026/2).
 
 **Social Security.** The fine bands (light, serious, very serious, raised by 50% or 100% for companies) are set out in `pt-social-contributions` (Contributions Code art. 233). Not declaring a worker's pay is very serious (art. 40(10)). Not confirming or correcting by the 20th, where the error changes what the worker is owed, is light if put right within 60 days and serious otherwise (art. 40(11)). Late contributions carry interest for each calendar month or part (art. 211), 7.221% for 2026.
@@ -243,9 +269,14 @@ expected:
 | ISS, Guia Prático, Pagamento de Contribuições à Segurança Social (deadlines F2, interest 7.221% for 2026) | https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla | 2026-10-24 |
 | IGCP Aviso 18/2026/2 (late interest 7.221%) | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-24 |
 | Código do Trabalho (consolidated), arts. 228, 238, 263, 264, 266, 268, 276 | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 | 2026-10-24 |
-| DGERT, minimum wage 2026 (Decreto-Lei 139/2025, EUR 920) | https://www.dgert.gov.pt/retribuicao-minima-mensal-garantida-para-2026 | 2026-10-24 |
+| Decreto-Lei 139/2025 (mainland minimum wage EUR 920) | https://diariodarepublica.pt/dr/detalhe/decreto-lei/139-2025-992879809 | 2026-10-24 |
+| Decreto Legislativo Regional 8/2002/A, art. 3 (Azores minimum wage: national plus 5%) | https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252 | 2026-10-24 |
+| Lei 64-B/2026 (authorisation to cut the rates of IRS bands 1 to 6) | https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 | 2026-10-24 |
+| Assembleia da República, Proposta de Lei 108/XVII (stages, publication as Lei 64-B/2026) | https://www.parlamento.pt/ActividadeParlamentar/Paginas/DetalheIniciativa.aspx?BID=377272 | 2026-10-24 |
+| AT Ofício-Circulado 20274/2025 (IRS Jovem withholding, monthly limit) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf | 2026-10-24 |
+| Portaria 291/2003 (legal interest rate 4%) | https://diariodarepublica.pt/dr/detalhe/portaria/291-2003-223663 | 2026-10-24 |
 | Decreto Legislativo Regional 1/2026/M (Madeira minimum wage EUR 980) | https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf | 2026-10-24 |
 | RGIT arts. 105, 114, 117 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx | 2026-10-24 |
 | LGT arts. 35 and 44 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx | 2026-10-24 |
 
-Not yet confirmed: the Diário da República text of Decreto-Lei 139/2025 itself (the EUR 920 figure is from DGERT and the preamble of Despacho 233-A/2026); the Azores 2026 minimum wage (EUR 966 in the old version of this skill; the regional decree was not found); whether Madeira adopted a November 2026 withholding cut (none found; the mainland and Azores despachos exclude Madeira); the Social Security declaration deadline during 2026 for employers still on the old reporting model (the old art. 40 text was not read); whether the IRS Jovem withholding cap in Despacho 233-A/2026 point 5(g) is per payment or cumulative over the year (the text speaks of the accumulated monthly exemptions); the mid-2026 cut to the first six IRS bands authorised by Proposta de Lei 108/XVII/2 (named in Despacho 12523-A/2026 but not read; it changes the annual assessment, not the January tables); the legal interest rate used for compensatory interest (LGT art. 35(10)); the rounding of the card limit to EUR 10.46 that the old version used; the remaining rows of each table and Tables IV to XI; the FCT and FGCT work compensation funds (the old version said contributions are suspended under Lei 13/2023); the 50% employer contribution cuts for first jobs and long-term unemployed hires; parental leave, sick pay (paid by Social Security from the 4th day at 55% to 75%), bereavement leave, 15 days marriage leave and compulsory work-accident insurance from the old version; record keeping periods (5 years labour, 10 years tax); the Relatório Único deadline (15 April); the annual return of income paid to others under CIRS art. 119(1)(c)(ii) by the end of February, wording of Decreto-Lei 49/2025.
+Not yet confirmed: whether Madeira adopted a November 2026 withholding cut (none found in JORAM or on the AT sites; the mainland and Azores despachos exclude Madeira); the decree-law under Lei 64-B/2026 that will set the new band rates, and whether it applies to 2026 income (Despacho 12523-A/2026 says the cut takes effect from 1 January 2026, but the law itself names no year); the Social Security declaration deadline during 2026 for employers still on the old reporting model (the old art. 40 text was not read); the rounding of the card limit to EUR 10.46 that the old version used; the remaining rows of each table and Tables IV to XI; the FCT and FGCT work compensation funds (the old version said contributions are suspended under Lei 13/2023); the 50% employer contribution cuts for first jobs and long-term unemployed hires; parental leave, sick pay (paid by Social Security from the 4th day at 55% to 75%), bereavement leave, 15 days marriage leave and compulsory work-accident insurance from the old version; record keeping periods (5 years labour, 10 years tax); the Relatório Único deadline (15 April); the annual return of income paid to others under CIRS art. 119(1)(c)(ii) by the end of February, wording of Decreto-Lei 49/2025.
