@@ -48,9 +48,10 @@ This skill computes the Slovenian corporate income tax of a company for a tax pe
 | R&D relief | 100% of R&D spend, unused part carried 5 periods | 2026 | ZDDPO-2 art. 55, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Investment relief | 40% of investment in equipment and intangibles, unused part carried 5 periods | 2026 | ZDDPO-2 art. 55.a, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Digital and green transition relief | 40% of qualifying spend, unused part carried 5 periods | 2026 | ZDDPO-2 art. 55.c, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
-| Employment relief | 45% of salary (55% for a first job under age 25), first 24 months | 2026 | ZDDPO-2 art. 55.b, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
+| Employment relief | 45% of salary of a new hire under 29, over 55 or in a shortage occupation; 55% for a first job under age 25; first 24 months; headcount must rise | 2026 | ZDDPO-2 art. 55.b, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Donations relief | up to 1% of taxable revenue, plus 0.2% and 3.8% for listed purposes | 2026 | ZDDPO-2 art. 59, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
-| Tax losses | carried forward 5 periods; use limited to 50% of the period's base | losses from periods starting on or after 1 Jan 2025 | ZDDPO-2 art. 36(2) and (4), https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
+| Tax losses, carry-forward | 5 tax periods | losses from periods starting on or after 1 Jan 2025 | ZDDPO-2 art. 36(2), https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
+| Tax losses, yearly use | at most 50% of the period's base (old and new losses alike) | 2026 | ZDDPO-2 art. 36(4), https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Losses from periods before 2025 | usable up to and including the tax period starting in 2029 | transitional | FURS, Pokrivanje davčne izgube (Feb 2025), https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Pokrivanje_davcne_izgube.doc |
 | Overall cap on reductions | losses plus reliefs in arts. 55 to 59 may cut the base by at most 63% | 2026 | ZDDPO-2 art. 59.a, https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Interest limitation | net borrowing costs deductible up to the higher of 30% of tax EBITDA or EUR 3,000,000 | 2026 | ZDDPO-2 art. 54.c(1), https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
@@ -101,14 +102,15 @@ This skill computes the Slovenian corporate income tax of a company for a tax pe
 - Losses from periods before 2025 ("old losses") can be used up to and including the tax period that starts in 2029 (FURS guidance, transitional rule of ZDDPO-2U).
 - The oldest loss is used first (art. 36(3)).
 - Loss relief in a period is limited to 50% of that period's base (art. 36(4)).
-- Losses are forfeited if ownership changes by more than 50% in a period and the company either had no activity for two years before, or substantially changes its activity within two years before or after (art. 36(5)). Changes made to keep jobs or to restructure are excluded (art. 36(7)).
+- Losses are forfeited if ownership changes by more than 50% in a period and the company either had no activity for two years before, or substantially changes its activity within two years before or after (art. 36(5)). If the change of activity is made to keep jobs or to restructure the business, the change-of-activity test does not apply (art. 36(7)). If the activity changes substantially within two years after the ownership change, losses already used are added back to the base (art. 36(6)).
 
 **Reliefs** (each is limited to the tax base of the period):
 - **R&D (art. 55).** 100% of spending on in-house R&D (including dedicated R&D equipment) and bought-in R&D services. The work must be in a business plan or a separate development project. Spending funded by non-repayable public or EU grants is excluded.
 - **Investment (art. 55.a).** 40% of investment in equipment and intangibles. Excluded: furniture and office equipment (computers are allowed), most motor vehicles (hybrid or electric cars and buses, and buses and trucks meeting at least EURO VI, are allowed), goodwill and real property rights. If the asset is sold within three years, the relief is clawed back (art. 55.a(6)).
 - **Digital and green transition (art. 55.c).** 40% of spending on cloud computing, AI and big data, and on green technologies and energy efficiency.
 - **One relief per spend.** Arts. 55, 55.a and 55.c cannot be claimed together for the same spend (arts. 55(7) and 55.c(2)).
-- **Other reliefs.** Employment of young, older or shortage-occupation workers (art. 55.b), employment of disabled persons (art. 56), apprentices (art. 57), voluntary pension premiums (art. 58) and donations (art. 59).
+- **Employment (art. 55.b).** 45% of the salary of a newly hired person under 29, over 55, or in a listed shortage occupation, who was not employed by the company or a related person in the last 24 months. 55% for a person under 25 in their first job. The relief runs for the first 24 months of employment, and only if total headcount on the last day of the period exceeds the 12-month average (art. 55.b(1) to (4)).
+- **Other reliefs.** Employment of disabled persons (art. 56), apprentices (art. 57), voluntary pension premiums (art. 58) and donations (art. 59).
 
 **The 63% cap.** All reductions from losses (art. 36), from the reliefs in arts. 55 to 59, and from reliefs in other laws, together with unused reliefs brought forward, may reduce the base by at most 63% (art. 59.a). At least 37% of the base is therefore always taxed. The 50% loss limit in art. 36(4) applies inside this cap.
 
