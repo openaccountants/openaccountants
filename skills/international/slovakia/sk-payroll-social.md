@@ -5,7 +5,7 @@ version: 0.2
 jurisdiction: SK
 category: international
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 verified_by: pending
@@ -25,7 +25,7 @@ See also: `slovakia-pit` (the annual return, other income, flat-rate expenses), 
 
 **Employers.** Any person or company that pays an employee is a social insurance payer and deducts the employee's share (Act 461/2003 §§ 128, 141(2)). It is also a health insurance payer and computes and pays health advances for each employee (Act 580/2004 §16(2)(a), (c), (4)). An employer resident in Slovakia, or a foreign one with a Slovak branch, is the tax payer (platiteľ dane) and withholds the monthly tax advance (Act 595/2003 §35(1)).
 
-**Employees.** People in an employment relationship (pracovný pomer) and people on work agreements (dohody). There is no minimum assessment base for an employee's social insurance: the base is the pay actually accounted (Act 461/2003 §138(1); Sociálna poisťovňa, 2026 tables, note 1). The employer must still pay at least the minimum wage under labour law.
+**Employees.** People in an employment relationship (pracovný pomer) and people on work agreements (dohody). There is no minimum assessment base for an employee's social insurance: the base is the pay actually accounted (Act 461/2003 §138(1); Sociálna poisťovňa, 2026 tables, note 1). The employer must still pay at least the minimum wage under labour law: EUR 915 a month from 1 January 2026 ([Ministry of Labour, minimum wage 2026](https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/historicky-narast-minimalnej-mzdy-je-realitou-roku-2026-je-minimalna-mzda-vo-vyske-915-eur.html)).
 
 **Self-employed (SZČO).** From 1 January 2026 a person aged 18 or over is an SZČO for social insurance if they hold a licence to do business or, by an honest declaration, carry on self-employed work that needs no licence (for example an artist or author). Income no longer decides this status (Sociálna poisťovňa, changes from 1 January 2026, item 22).
 - **New entrants** (no licence in the last 60 months) become compulsorily insured from the first day of the sixth calendar month after the month the licence starts.
@@ -51,8 +51,8 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 | Health insurance, employee | 5% (2.5% for a person with a disability), no cap | 2026 | [Act 580/2004](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html) §12(1)(a); [VšZP, changes from 1 January 2026](https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/) |
 | Health insurance, employer | 11% (5.5% for an employee with a disability), no cap, for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(c) |
 | Health insurance, SZČO | 16% (8% with a disability), for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(b); VšZP, changes from 1 January 2026 |
-| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability) | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |
-| Minimum monthly health advance per employee (16% of the subsistence minimum, EUR 284.13) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25) | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a |
+| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability); set by the Act, so the same at every insurer | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |
+| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25); set by the Act, so the same at every insurer | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1) |
 | Health deductible amount for a low-paid employee who claims it | Up to EUR 380 a month, zero from EUR 570 of pay; up to EUR 4,560 a year in the reconciliation | 2026 | Act 580/2004 §16(16) to (18), §13a; [VšZP, odpočítateľná položka](https://www.vszp.sk/platitelia/platenie-poistneho/odpocitatelna-polozka/) |
 | SZČO social insurance: sickness 4.4%, old age 18%, disability 6%, solidarity reserve 4.75% | 33.15% of the assessment base | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 132, 137 |
 | SZČO minimum social base (60% of EUR 1,524) and payment | EUR 914.40; EUR 303.11 a month | 2026 | Sociálna poisťovňa, 2026 tables, note 1; Act 461/2003 §138(8) |
@@ -65,7 +65,7 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 | Monthly advance bands | 19% to EUR 3,665.28; 25% to EUR 5,029.10; 30% to EUR 6,250.86; 35% above | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §35(2) |
 | Child tax bonus | EUR 100 a month per child under 15; EUR 50 from 15 to 18 | 2026 | Financial Directorate, 31/DZPaU/2025/I; Act 595/2003 §33(1) |
 | Tax bonus cap as a share of the employment tax base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | Act 595/2003 §33(6) |
-| Tax bonus taper | Each child's bonus falls by 1/10 of the tax base above EUR 27,432 a year (1.5 x 12 x EUR 1,524) | 2026 | Act 595/2003 §33(11) |
+| Tax bonus taper | Each child's bonus falls by 1/10 of the tax base above EUR 27,432 a year (1.5 x 12 x EUR 1,524, the 2024 average wage). In payroll the employer applies it to the month's base above EUR 2,286 (1/12) | 2026 | Act 595/2003 §33(11), §35(5); [Financial Directorate, tax bonus in 2026, question 5](https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026) |
 
 **Rounding.** Social insurance: each assessment base and each separate contribution is rounded down to the cent (Act 461/2003 §138(14); 2026 tables, closing note). Health: bases and advances are rounded down to the cent (Act 580/2004 §13(17), §16(1)). Income tax: amounts are rounded half up to two decimals (Act 595/2003 §47).
 
@@ -87,7 +87,7 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 
 Each component (4.4%, 18%, 6%, 4.75%) is rounded down separately.
 
-**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The advance is at least EUR 121.92 (Act 580/2004 §16(2)(b), (3), (8)(a)). The insurer states the amount in the annual reconciliation. An SZČO who is also an employee pays their own SZČO advance (§16(6)).
+**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The advance is at least EUR 121.92 (Act 580/2004 §16(2)(b), (3), (8)(a)). The insurer states the amount in the annual reconciliation. An SZČO who is also an employee pays their own SZČO advance, with no minimum (§16(6), (8)(e)).
 
 ## Deadlines and filing
 
@@ -98,7 +98,7 @@ Each component (4.4%, 18%, 6%, 4.75%) is rounded down separately.
 | Employer registers as a health insurance payer; reports each employee start and end | Within 8 working days | [VšZP, employer page](https://www.vszp.sk/platitelia/platenie-poistneho/zamestnavatel/) |
 | Employer social insurance payment and monthly report (výkaz poistného) | On the payday set for the month's pay; if none is set, the last day of the next month; a weekend or holiday moves it to the next working day | Act 461/2003 §143(2), §231(1)(g) |
 | Employer health advances | On the payday for the month's pay; if none is set, the last day of the next month | Act 580/2004 §17(1) |
-| Employer health monthly report (dávka 514), electronic | Within 3 days of the advance due date | VšZP, employer page; Act 580/2004 §20(1) |
+| Employer health monthly report (dávka 514), electronic | Within 3 days of the advance due date | Act 580/2004 §20(1), (6); Ministry of Health Decree 159/2018 §2(2); VšZP, employer page |
 | Wage tax advance remitted | Within 5 days after the payday | Act 595/2003 §35(6) |
 | Monthly tax summary (Prehľad) | By the end of the next month | Act 595/2003 §39(9)(a), §49(2) |
 | SZČO social insurance | By the 8th of the next month (January 2026 was due 9 February 2026) | Act 461/2003 §143(1); Sociálna poisťovňa, changes from 1 January 2026, item 23 |
@@ -119,12 +119,14 @@ Social insurance has no annual reconciliation for employees: each month is final
 | Health advance paid late | Interest of 4 x the ECB main rate on the due date, at least 15% a year, per day | Act 580/2004 §18(1) |
 | Health payer duties under §24 not met | ÚDZS fine up to EUR 3,319 per breach, doubled for a repeat within two years | Act 580/2004 §26(1)(c), (3) |
 | Wage tax advance paid late | Interest of 4 x the ECB main rate, at least 15% a year, per day, for at most four years | Act 563/2009 §156(1)(d), (2) |
+| Monthly Prehľad not filed within 5 days after its deadline, in a month with advances to pay or a bonus claimed | The tax office applies the Tax Procedure Code fines and late-payment interest | Act 595/2003 §39(11); Act 563/2009 §§ 155, 156 |
+| Employer does not do a tax reconciliation that an employee validly asked for | Fine of at least EUR 15 per employee, at most EUR 30,000 in total for the year | Act 595/2003 §38(9) |
 | Hlásenie filed late (it counts as a tax return) | Fine EUR 100 to 30,000; a range fine is not imposed on a first breach | Act 595/2003 §39(11); Act 563/2009 §154(1)(a), §155(1)(a), (4) |
 | Tax understated in a return or Hlásenie, found by the tax office | 3 x the ECB main rate a year, at least 10%, on the extra tax | Act 563/2009 §155(1)(f), (5) |
 
 ## Cross-border points
 
-- **EU coordination.** Within the EU, EEA and Switzerland one country's social and health law applies at a time. A worker posted from Slovakia keeps Slovak insurance with an A1 form issued by Sociálna poisťovňa. A worker posted to Slovakia with a foreign A1 pays no Slovak social insurance.
+- **EU coordination.** Within the EU, EEA and Switzerland a person is subject to one country's social security law at a time (Regulation 883/2004 Art. 11(1)). A worker posted from Slovakia for work expected to last up to 24 months stays under Slovak law (Art. 12(1)) and carries an A1 form issued by Sociálna poisťovňa. A worker posted to Slovakia with a foreign A1 pays no Slovak social insurance.
 - **Foreign employer.** A foreign employer with no Slovak branch is not the tax payer. A resident employee pays the tax advances themselves by the end of the next month (Act 595/2003 §35(10)). A non-resident does the same under §35(11), from the start of the stay if the contract shows more than 183 days.
 - **Pay taxed abroad.** The employer withholds no advance on pay that is taxed abroad (Act 595/2003 §35(8)). The tax bonus needs at least 90% of total income from Slovak sources (§33(9)). Treaty conditions and documents are in `sk-cross-border`.
 
@@ -237,6 +239,10 @@ expected:
 | VšZP, employer obligations | https://www.vszp.sk/platitelia/platenie-poistneho/zamestnavatel/ | 2026-10-23 |
 | VšZP, self-employed obligations | https://www.vszp.sk/platitelia/platenie-poistneho/samostatne-zarobkovo-cinna-osoba/ | 2026-10-23 |
 | VšZP, deductible amount (odpočítateľná položka) | https://www.vszp.sk/platitelia/platenie-poistneho/odpocitatelna-polozka/ | 2026-10-23 |
+| Financial Directorate, tax bonus on a dependent child in 2026 (podpora page; live site returned 503, read through the Wayback Machine copy of 15 October 2026) | https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026 | 2026-10-24 |
+| Ministry of Health Decree No. 159/2018 Coll. on reporting health insurance advances, version from 1 July 2025, §2(2) | https://static.slov-lex.sk/static/SK/ZZ/2018/159/20250701.html | 2026-10-24 |
+| Ministry of Labour, minimum wage for 2026 | https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/historicky-narast-minimalnej-mzdy-je-realitou-roku-2026-je-minimalna-mzda-vo-vyske-915-eur.html | 2026-10-24 |
+| Regulation (EC) No 883/2004, consolidated 31 July 2019, Art. 11 and 12 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-24 |
 | Financial Directorate, 31/DZPaU/2025/I, amounts for individuals' tax for 2026 | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf | 2026-10-23 |
 
-Not yet confirmed: the 2026 tax bonus taper point of EUR 27,432 a year (EUR 2,286 a month) is computed from Act 595/2003 §33(11) and the EUR 1,524 average monthly wage for 2024 that Sociálna poisťovňa uses; the Financial Directorate support page on the 2026 bonus returned HTTP 503 today, so its own figure was not read. The legal basis for the VšZP rule that the health monthly report is due within 3 days of the advance due date is a Ministry of Health decree under Act 580/2004 §20(6), not read today. Which tax fine applies to a late monthly Prehľad, as against the Hlásenie, was not settled. Whether Dôvera and Union publish the same minimum advances as VšZP was not checked. The A1 rules rest on EU Regulation 883/2004, which was not read today. The 2026 national minimum wage was not read today.
+Not yet confirmed: which fine band in Act 563/2009 §155 the tax office uses for a late monthly Prehľad (Act 595/2003 §39(11) points to §§ 155 and 156 without naming a band); the rule that Sociálna poisťovňa issues the A1 form rests on Regulation 987/2009 Art. 19(2), which was not read.
