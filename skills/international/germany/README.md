@@ -4,7 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
-partial: {}
+partial:
+  PR: "de-payroll and germany-payroll leave out benefits in kind, company cars and the flat-rate taxes of § 37b and § 40 EStG, employer pensions, and managing directors whose insurance status is open"
 ---
 
 # Germany: tax pack
