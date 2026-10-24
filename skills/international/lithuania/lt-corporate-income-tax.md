@@ -1,47 +1,247 @@
 ---
 name: lt-corporate-income-tax
-description: "Source-cited draft: corporate income tax for Lithuania (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Use this skill for Lithuanian corporate income tax (pelno mokestis) in tax year 2026. It covers the 17% standard rate, the 0% and 7% rates for entities with income up to EUR 300,000 and the related-entity test that removes them, the taxable profit computation, non-deductible items, representation costs, tax depreciation and immediate write-off, losses carried forward with the 70% cap, the 30% EBITDA interest limit with its EUR 3,000,000 floor, interest paid to related lenders, the investment project relief, advance payments, the annual return due by the 15th day of the 6th month, fines and late payment interest. Trigger on: Lithuanian corporate tax, pelno mokestis, UAB profit tax, 7% small company rate Lithuania, investicinis projektas, avansinis pelno mokestis. Out of scope: withholding and non-residents (lt-cross-border), transfer pricing (lt-transfer-pricing), payroll (lt-payroll-social), VAT (lithuania-vat-return), personal income tax (lithuania-pit)."
 jurisdiction: LT
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tax_year: 2026
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+last_updated: 2026-10-24
+version: 0.1
+verified_by: pending
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
-# Lithuania Corporate Income Tax
+# Lithuania: corporate income tax (2026) v0.1
 
-## Corporate income tax (pelno mokestis) - 2025
+This skill sets out how a Lithuanian company computes, files and pays corporate income tax (pelno mokestis) for tax year 2026. The law is the Law on Corporate Income Tax No. IX-675 (Pelno mokesčio įstatymas, PMĮ), in its consolidated version in force from 19 May 2026 to 31 December 2026. Procedure, fines and interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
-The standard corporate income tax rate is 16% for 2025 (rising to 17% in 2026). Small companies and start-ups can qualify for reduced or 0% rates. Tax is on worldwide profit for resident companies.
+Two related topics have their own skills. Withholding on payments to foreign entities, inbound dividends, foreign branches and the exit tax are in lt-cross-border. The arm's length rule, documentation and FR0528 are in lt-transfer-pricing.
 
-- **Standard CIT rate** — 16% (2025); 17% from 1 January 2026 percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/taxes-on-corporate-income)_
-- **Reduced rate for small companies** — 6% (2025) for companies with fewer than 10 employees and gross annual revenue below EUR 300,000; rises to 7% from 2026 percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/taxes-on-corporate-income)_
-- **Start-up 0% rate (first period)** — 0% for the first tax period for qualifying new small companies (extended to first two periods from 2026) percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/taxes-on-corporate-income)_
-- **Tax base** — Resident companies: worldwide taxable profit (income less allowable deductions); non-resident: Lithuanian-source / PE profit  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/income-determination)_
-- **Withholding tax on dividends** — 15% (2025); exempt under participation exemption where recipient holds at least 10% of voting shares for 12+ months continuously percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/withholding-taxes)_
-- **Withholding tax on interest** — 0% on interest paid to EEA or tax-treaty country entities; 10% otherwise percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/withholding-taxes)_
-- **Withholding tax on royalties** — 10% standard; 0% to qualifying related EU parties under the Interest and Royalties Directive percent  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/withholding-taxes)_
-- **Treaty WHT relief** — Reduced/exempt WHT under double-tax treaties; residence certificate (Form DAS-1) required  _(Form DAS-1 (residence certificate) — https://taxsummaries.pwc.com/lithuania/corporate/withholding-taxes)_
-- **Annual CIT return deadline** — 15th day of the 6th month after year-end (15 June for calendar-year taxpayers)  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/tax-administration)_
-- **Advance CIT payments** — Advance returns due by 15th day of 3rd and 9th months of the tax period (typically 15 March and 15 September)  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/tax-administration)_
-- **Final CIT payment deadline** — By the annual return deadline (15 June for calendar-year companies)  _(Law on Corporate Income Tax — https://taxsummaries.pwc.com/lithuania/corporate/tax-administration)_
+## Who this applies to
 
-<!-- openaccountants-cta-block -->
+- **Lithuanian entities (Lietuvos vienetai).** A Lithuanian entity is taxed on its worldwide income, from Lithuanian and foreign sources (PMĮ art. 4(1)). This covers companies (UAB, AB), individual enterprises (IĮ) and the other Lithuanian entities the PMĮ taxes.
+- **Foreign branches of Lithuanian entities.** Profit of a branch (permanent establishment) in an EEA or treaty state is left out of the Lithuanian base if it is taxed there by a profit tax or an equivalent tax (art. 4(1)). See lt-cross-border.
+- **Foreign entities.** A foreign entity is taxed on the profit of its Lithuanian permanent establishment and, by withholding, on some Lithuanian-source income (art. 5(1)(2), 11(2) and (3)). See lt-cross-border.
+- **Tax period.** The calendar year, unless VMI approves another 12-month period on request (art. 6(1) and (2)). The first period starts on registration (art. 6(3)).
+- **Named here only.** Shipping companies on the fixed profit tax (art. 38-2), the additional tax on credit institutions (art. 38-3), and the patent box computation (art. 5(7) to (10)).
 
----
+## Rates, bands and thresholds
 
-## Talk to a verified accountant
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate on taxable profit of a Lithuanian entity or PE (art. 5(1)(1)) | 17% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Small entity, income up to EUR 300,000: first and second tax periods, owners only individuals (art. 5(2)) | 0% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Small entity, income up to EUR 300,000: other tax periods (art. 5(2)) | 7% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Related-entity test that removes the 0% and 7% rates: combined income of the linked entities above (art. 5(3)) | EUR 300,000 | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Agricultural cooperatives, more than 50% of income from farming (art. 5(6)) | 7% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Patent box: profit from own-developed copyrighted software or patented invention (art. 5(7)) | 7% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Losses brought forward: cap as a share of the year's taxable profit before losses; no cap for entities taxed at 7% under art. 5(2) (art. 30(4)) | 70% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Losses on securities and derivatives (non-financial entities): carry-forward period (art. 30(5)) | 5 tax periods | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Net interest cap (art. 30-1(2)) | 30% of tax EBITDA | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Net interest always deductible up to (art. 30-1(3)) | EUR 3,000,000 | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Representation costs: share deductible, and cap on the deductible amount as a share of income (art. 22(3)) | 50%; 2% of income | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Residual value for tax depreciation, at most (art. 18(2)) | 10% of cost | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Small entity free to set its own depreciation periods (not buildings): average staff up to 10 and income up to (art. 18(3)) | EUR 150,000 | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Investment project relief: reduction of taxable profit, at most (art. 46-1(2)) | 100% | costs of 2009 to 2028 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Investment project relief: cap on qualifying lorry, trailer and semi-trailer costs per period (art. 46-1(1)) | EUR 300,000 | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| No advance payments if the previous period's income did not exceed (art. 47(5)) | EUR 300,000 | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Advance payments on the estimate method must reach at least (art. 47(2)(2)) | 80% of the final tax | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr |
+| Fine on tax understated, found in a tax audit (MAĮ art. 139(1)) | 20% to 100% | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr |
+| Late payment interest (delspinigiai), from 1 August 2026 | 0.027% a day | 2026 | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- |
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+The 2025 standard rate was 16%. The 17% rate in art. 5(1)(1) applies to 2026 profit.
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+## The taxable base
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+**The computation (PMĮ art. 11(1)).** Start from income. Take off non-taxable income (art. 12). Deduct allowable deductions and limited deductions (ribojamų dydžių leidžiami atskaitymai, such as depreciation and representation costs). The result is taxable profit. A cost is deductible only if it is backed by a document with the details accounting law requires (art. 11(4)). A structure set up mainly to get a tax advantage, without real commercial reasons, is ignored (art. 11(8)).
+
+**Small entity rates (art. 5(2) and (3)).**
+- An entity whose income for the tax period is not more than EUR 300,000 pays 0% in its first and second tax periods and 7% after that.
+- The 0% rate applies only if all owners are individuals, and only if during three tax periods in a row, counting the first two, the entity's activity is not suspended, it is not liquidated or reorganised, and its shares are not transferred to new owners.
+- Neither rate applies where linked entities together have income above EUR 300,000 for the period. Linked means: an IĮ whose owner or family members also own other IĮs; an owner and family members holding more than 50% of other entities on the last day of the period; or the same owner, or the same owners together, holding more than 50% in each entity on that day.
+- Art. 5(2) has no headcount test. The 10-employee test is in art. 18(3), for depreciation only.
+
+**Non-deductible items (art. 31(1)).** The main ones:
+- corporate income tax itself, and VAT paid to the budget (point 1);
+- contractual penalties, and fines, late payment interest and other sanctions paid to the state for breaking Lithuanian law (point 3);
+- interest or other payments for a related person's failure to perform a contract (point 4);
+- the part of a limited deduction above its limit (point 5);
+- costs deducted more than 18 months ago but still unpaid to an entity in a target territory (point 8);
+- support (donations) other than under art. 28, and gifts other than gifts to employees (point 9);
+- payments to entities in target territories unless the payer proves they relate to ordinary activity, the recipient has the assets for it, and the deal has economic substance (point 10, art. 31(2));
+- compensation for damage the entity caused (point 11);
+- dividends and other profit distributions (point 12);
+- costs not connected with earning income or unusual for the entity's activity (point 13);
+- corrections of prior-period errors booked under accounting rules (point 14);
+- revaluation losses on assets and liabilities, other than hedging derivatives (point 15);
+- costs attributable to non-taxable income (point 17);
+- costs of a crime, including bribes (point 20).
+Art. 31(3) to (6) deny deductions in hybrid mismatch cases.
+
+**Representation costs (art. 22(3)).** Only 50% is deductible, and the deductible amount cannot exceed 2% of the entity's income for the period.
+
+**Tax depreciation (art. 18 and annex 1).**
+- Fixed assets and goodwill are depreciated over a period the entity chooses, not shorter than the minimum in annex 1. Residual value is at most 10% of cost (art. 18(2)).
+- Methods: straight-line, double declining balance, or units of production, as annex 1 allows for each group. The chosen method is kept consistently (art. 18(4)).
+- Minimum periods in annex 1 include: new buildings used in business 8 years; residential buildings 20; other buildings 15; machinery and equipment 5; computers and communications equipment 3; software 3; acquired rights 3; other intangibles 4; cars up to 5 years old 6 (4 for rental, driving schools and transport); other cars 10; lorries, trailers and buses 4; furniture 6; other tangible assets 4; goodwill 15. Shorter periods (often 2 years) apply to assets used in R&D.
+- Start: an asset bought and put into use by the last day of the 6th month of the tax period is depreciated from that period; after that, from the next period (art. 18(8)). An entity may instead choose to start every asset from the first day of the month after it is put into use, straight-line (art. 18(11)).
+- Small entities with average staff up to 10 and income up to EUR 150,000, not caught by the art. 5(3) related-entity test, may set their own periods for all groups except buildings (art. 18(3)).
+- **Immediate write-off (art. 18(13)).** The full cost of machinery and equipment, structures, computers and communications equipment, software, acquired rights, and lorries, trailers and semi-trailers can be deducted in the period the asset is first used. If the asset is used for less than 3 years (with listed exceptions), past tax is recomputed on the annex 1 periods. It cannot be used for an asset whose cost already reduces profit under the investment project relief.
+
+**Losses (art. 30).**
+- Ordinary tax losses carry forward without time limit, oldest first (art. 30(3) and (4)). The carry-forward stops if the entity stops the activity that caused the loss, unless for reasons outside its control.
+- Losses brought forward can reduce a year's taxable profit by at most 70% of that profit, computed after non-taxable income and deductions but before the losses. The 70% cap does not apply to entities taxed at 7% under art. 5(2) (art. 30(4)).
+- Losses on securities and derivatives (non-financial entities) only offset income of the same kind, and carry forward for 5 tax periods (art. 30(2) and (5)). Losses on selling shares in an EEA or treaty company held at more than 10% for at least 2 years are neither deductible nor carried forward (art. 30(2)).
+- Art. 30 provides only a carry-forward, no carry-back. Loss transfers between group companies are in art. 56-1 and are not covered here.
+
+**Interest limitation (art. 30-1).**
+- Interest costs are deductible up to the entity's interest income (art. 30-1(1)).
+- Net interest (interest costs above interest income) is deductible up to the higher of 30% of tax EBITDA (art. 30-1(2)) and EUR 3,000,000 (art. 30-1(3)). Tax EBITDA is taxable profit before depreciation and amortisation, the R&D extra deduction, the film relief, support deducted, losses brought forward and net interest.
+- "Interest" is wide: profit-participating loans, convertible and zero-coupon bonds, finance lease charges, capitalised interest, guarantee fees on financing, related admin fees and currency differences (art. 30-1(6)).
+- In a group, the cap and the EUR 3,000,000 apply jointly to all Lithuanian group entities and PEs (except financial and insurance companies), shared pro rata (art. 30-1(4)). An equity escape applies if the entity's equity-to-assets ratio is no more than 2 percentage points below the group's consolidated ratio (art. 30-1(5)).
+- Disallowed net interest carries forward without time limit (art. 30-1(9)).
+- The rule does not apply to financial and insurance companies, qualifying EU public infrastructure loans, or **entities that have no related persons** (art. 30-1(7)).
+
+**Interest paid to controlling and related persons.** The consolidated PMĮ has no separate debt-to-equity ratio test: a search of the whole text for one found none. Interest paid to a related or associated lender is limited in two ways. First, the art. 30-1 cap applies, because the entity has related persons. Second, the rate and terms must be at arm's length under art. 40, and any excess is adjusted; that test and its documentation are in lt-transfer-pricing. Interest or penalties paid for a related person's breach of contract are never deductible (art. 31(1)(4)).
+
+**Investment project relief (art. 46-1).**
+- An entity carrying out an investment project can reduce taxable profit by the costs actually incurred in the period on qualifying assets: machinery and equipment, structures, computers and communications equipment, software, acquired rights, and lorries, trailers and semi-trailers (the last group capped at EUR 300,000 of costs per period). The assets must be unused and made no more than 2 years before first use (art. 46-1(1)).
+- The reduction can take taxable profit down by up to 100%. Unused costs carry forward for the next 4 tax periods (art. 46-1(2)).
+- Costs are reduced by state, EU or other public support used for them (art. 46-1(3)).
+- Only costs incurred in the 2009 to 2028 tax periods qualify (art. 46-1(4)).
+- The asset must be used in the business for at least 3 years, or the tax saved is paid back by recomputing past periods (art. 46-1(5)).
+
+**Exempt income.** Non-taxable income is listed in art. 12 and is not covered line by line here. Inbound dividends and gains on qualifying shareholdings are in lt-cross-border.
+
+## Deadlines and filing
+
+| What | Deadline | Source |
+|---|---|---|
+| Annual corporate income tax return (metinė pelno mokesčio deklaracija) for 2026, calendar-year entity | 15 June 2027 (15th day of the 6th month after the period) | PMĮ art. 51(2) |
+| Payment of the 2026 balance | 15 June 2027 | PMĮ art. 53(1) |
+| Return for the last period when the entity ends | within 30 days of the end of activity | PMĮ art. 51(2) |
+| Advance tax return, prior-year method: months 1 to 6 | 15 March (15th day of the 3rd month) | PMĮ art. 51(3)(1) |
+| Advance tax return, prior-year method: months 7 to 12 | 15 September (15th day of the 9th month) | PMĮ art. 51(3)(1) |
+| Advance tax return, estimate method | 15 March (15th day of the 3rd month) | PMĮ art. 51(3)(2) |
+| Advance tax payments | 15th day of the last month of each quarter (15 March, 15 June, 15 September, 15 December) | PMĮ art. 47(6) |
+
+- **Advance payments (art. 47).** The company chooses one of two methods. Prior-year method: each payment for the first two quarters is one quarter of the tax of the year before last; each payment for the last two quarters is one quarter of last year's tax. Estimate method: each quarter is one quarter of the expected tax for the year, and the total must be at least 80% of the final tax.
+- **Who does not pay advances.** Entities in their first tax year (art. 47(4)). Entities whose income in the previous tax period did not exceed EUR 300,000 (art. 47(5)). In the second year, a company on the prior-year method starts with the 7th month (art. 47(4)).
+- The annual balance is the tax for the year less the advances paid (art. 53(1)).
+- Related-party transactions are reported on FR0528 with the annual return. See lt-transfer-pricing.
+
+## Penalties and interest
+
+- **Late payment interest (delspinigiai).** Charged on tax not paid by its due date, and on tax found in an audit from the day after the original due date (MAĮ art. 96). The rate is set by the Minister of Finance from the 12-month government securities yield plus 7 points (MAĮ art. 99). From 1 August 2026 it is **0.027% a day** (VMI answer KM2633).
+- **Advance payments too low.** If the estimate in the advance return is below 80% of the final tax, late payment interest is charged on the unpaid advance for each quarter (PMĮ art. 47(2)(2)).
+- **Fine on tax understated.** Tax found understated in a tax audit carries a fine of **20% to 100%** of the shortfall (MAĮ art. 139(1)). VMI starts from the midpoint and adjusts for mitigating and aggravating circumstances (MAĮ art. 140). A repeat breach of the same tax law within 5 years doubles the fine (art. 139(3)).
+- **Voluntary correction.** No fine if the company files a corrected return before VMI orders an audit of it (MAĮ art. 139(4)).
+- **Time limit.** Tax can normally be assessed for the current year and the 3 previous calendar years (MAĮ art. 68(1)); 5 years for transfer pricing adjustments (art. 68(4)(4)).
+- **Relief.** VMI can waive fines and interest in the cases in MAĮ art. 141.
+- **Recomputed past tax.** Breaking the 0% conditions in art. 5(2), or disposing of an asset within 3 years after immediate write-off (art. 18(13)) or after investment project relief (art. 46-1(5)), means past tax is recomputed.
+
+## Cross-border points
+
+Covered in lt-cross-border; only the links are listed here.
+- Withholding on dividends, interest, royalties and other payments to foreign entities (PMĮ art. 5(1)(2), 34, 37).
+- Exempt profits of foreign branches in EEA or treaty states (art. 4(1)) and the foreign tax credit (art. 55).
+- Inbound dividends (art. 35), and losses on qualifying share sales (art. 30(2)).
+- Exit tax on transfers of assets abroad (art. 40-2).
+- Controlled foreign company income (art. 39).
+- Transfer pricing and FR0528: lt-transfer-pricing.
+
+## Worked examples
+
+### Example 1: a UAB on the 17% rate with losses brought forward
+
+A UAB had income of EUR 2,000,000 in 2026 and an accounting profit before tax of EUR 250,000. Charged in the books are EUR 40,000 of corporate income tax expense, a EUR 3,000 fine from a state inspectorate, and EUR 10,000 of representation costs. Tax losses brought forward from earlier years are EUR 300,000. It paid EUR 12,000 of advances for 2026. Its income is above EUR 300,000, so the 17% rate applies.
+
+1. Add back the tax expense (art. 31(1)(1)): EUR 40,000.
+2. Add back the fine (art. 31(1)(3)): EUR 3,000.
+3. Representation: 50% is deductible, EUR 5,000, which is below 2% of income (EUR 40,000). Add back the other 50%: EUR 5,000 (art. 22(3)).
+4. Taxable profit before losses: 250,000 + 40,000 + 3,000 + 5,000 = EUR 298,000.
+5. Loss cap: 70% of EUR 298,000 = EUR 208,600 (art. 30(4)). The losses (EUR 300,000) are higher, so EUR 208,600 is used.
+6. Taxable profit: EUR 89,400. Tax at 17%: EUR 15,198.
+7. Less advances of EUR 12,000: EUR 3,198 to pay by 15 June 2027 (art. 53(1)).
+8. Losses carried forward to 2027: 300,000 minus 208,600 = EUR 91,400.
+
+```oa-check
+name: UAB at 17% with the 70% loss cap (2026)
+inputs:
+  income: 2000000
+  accounting_profit: 250000
+  cit_expense: 40000
+  fine: 3000
+  representation: 10000
+  losses_bf: 300000
+  advances: 12000
+steps:
+  - repr_deductible: min(representation * 50 / 100, income * 2 / 100)
+  - repr_addback: representation - repr_deductible
+  - profit_before_losses: accounting_profit + cit_expense + fine + repr_addback
+  - loss_cap: profit_before_losses * 70 / 100
+  - losses_used: min(losses_bf, loss_cap)
+  - taxable_profit: profit_before_losses - losses_used
+  - tax: taxable_profit * 17 / 100
+  - balance_due: tax - advances
+  - losses_cf: losses_bf - losses_used
+expected:
+  repr_addback: 5000
+  profit_before_losses: 298000
+  loss_cap: 208600
+  losses_used: 208600
+  taxable_profit: 89400
+  tax: 15198
+  balance_due: 3198
+  losses_cf: 91400
+```
+
+### Example 2: a small UAB that loses the 7% rate through its owner's other company
+
+An individual owns 100% of UAB A, now in its fourth tax period. UAB A had income of EUR 280,000 in 2026 and taxable profit of EUR 60,000. On its own it would pay 7% (art. 5(2)). The same individual also owns 60% of UAB B, whose 2026 income was EUR 90,000.
+
+1. UAB A's own income, EUR 280,000, is not above EUR 300,000.
+2. But the same owner holds more than 50% of both companies on the last day of the period, so they are linked (art. 5(3)(3)). Combined income: 280,000 + 90,000 = EUR 370,000, which is EUR 70,000 above the EUR 300,000 limit.
+3. So art. 5(2) does not apply to UAB A. It pays 17%: 60,000 x 17% = EUR 10,200.
+4. At 7% it would have paid EUR 4,200. The link costs EUR 6,000.
+5. Two side effects. The 70% loss cap now applies to UAB A, because it is not taxed at 7% under art. 5(2). And because UAB A's own income for 2026 was not above EUR 300,000, it pays no advances in 2027 (art. 47(5)).
+
+```oa-check
+name: Related-entity test removes the 7% rate (2026)
+inputs:
+  income_a: 280000
+  income_b: 90000
+  threshold: 300000
+  taxable_profit_a: 60000
+steps:
+  - combined_income: income_a + income_b
+  - over_threshold: combined_income - threshold
+  - tax_at_17: taxable_profit_a * 17 / 100
+  - tax_at_7: taxable_profit_a * 7 / 100
+  - cost_of_link: tax_at_17 - tax_at_7
+expected:
+  combined_income: 370000
+  over_threshold: 70000
+  tax_at_17: 10200
+  tax_at_7: 4200
+  cost_of_link: 6000
+```
+
+## Ask the client first
+
+1. What was the company's income (not profit) for the period, and is it in its first, second or a later tax period?
+2. Who owns it, and do the owners or their family members hold more than 50% of any other entity, or own another IĮ? What was that entity's income?
+3. Are there losses brought forward, and from which activity (ordinary trading, securities, patent box)?
+4. What interest does it pay and receive, and does it have related persons or group companies?
+5. Did it buy machinery, computers, software, rights or lorries in the year, were they new, and will it keep them for 3 years?
+6. Which advance payment method does it use, and what was the tax for each of the last two years?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law on Corporate Income Tax No. IX-675, consolidated version from 19 May 2026 to 31 December 2026: art. 4, 5, 6, 11, 18, 22, 30, 30-1, 31, 46-1, 47, 51, 53 and annex 1 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-24 |
+| Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 68, 96, 99, 139 to 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-23 |
+| VMI, late payment interest, answer KM2633 (0.027% a day from 1 August 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
+
+Not yet confirmed: the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing the annual or advance return late (Code of Administrative Offences, not read); the VMI form codes for the annual and advance returns; whether VMI reads "income" in art. 5(2) and art. 47(5) as all income or only taxable income; whether any Minister of Finance debt-to-equity rule for controlling lenders still applies alongside art. 30-1 (none found in the PMĮ text); whether interest is charged when past tax is recomputed under art. 5(2), 18(13) or 46-1(5); the list of non-taxable income in art. 12 and the R&D extra deduction in art. 17-1 (not read for this skill); group loss transfers under art. 56-1; and the PMĮ version in force from 1 January 2027.
