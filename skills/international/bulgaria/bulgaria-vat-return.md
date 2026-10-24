@@ -15,7 +15,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 
 > **Source-cited draft.** Drafted from the consolidated Value Added Tax Act (Закон за данък върху добавената стойност, ZDDS, last amended ДВ бр. 69/2026), the Tax-Insurance Procedure Code (DOPK), the Euro Introduction Act and the Law on Interest on Taxes, Fees and Other Similar State Receivables, all on lex.bg, read on 2026-10-23 and 2026-10-24. No accountant has reviewed it. Do not file from it without review by a qualified Bulgarian professional.
 
-Authority: the National Revenue Agency (NRA, НАП, nra.bg). Currency: the euro from 1 January 2026. The ZDDS registration rules were rewritten with effect from 1 January 2026 (ДВ бр. 115/2025) and now state their thresholds in euro. The penalty chapter still prints amounts in leva. Under the Euro Introduction Act those are read as euro, converted at BGN 1.95583 per euro and rounded to the cent (arts. 11(2), 12, 13). Each converted figure below shows the lev amount next to it.
+Authority: the National Revenue Agency (NRA, НАП, nra.bg). Currency: the euro from 1 January 2026. The ZDDS registration rules were rewritten with effect from 1 January 2026 (ДВ бр. 115/2025) and now state their thresholds in euro. The penalty chapter still prints amounts in leva. Under the Euro Introduction Act those are read as euro, converted at BGN 1.95583 per euro and rounded to the cent (arts. 11(2), 12, 13). Fines and penalty payments are expressly brought under these conversion rules by § 5(1) of the Act's transitional provisions. Each converted figure below shows the lev amount next to it.
 
 ## Who this applies to
 
@@ -32,9 +32,9 @@ Authority: the National Revenue Agency (NRA, НАП, nra.bg). Currency: the euro
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate | 20% | 2026 | ZDDS art. 66(1), https://lex.bg/laws/ldoc/2135533201 |
-| Reduced rate: hotel and similar accommodation, holiday lets, camping and caravan pitches | 9% | 2026 | ZDDS art. 66а(1), https://lex.bg/laws/ldoc/2135533201 |
-| Reduced rate: books (print or electronic) and newspapers and magazines, except mainly advertising, video or music content | 9% | 2026 | ZDDS art. 66а(2), https://lex.bg/laws/ldoc/2135533201 |
-| Reduced rate: food for babies and young children, baby nappies and similar baby hygiene items (Annex 4) | 9% | 2026 | ZDDS art. 66а(3), https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: hotel and similar accommodation, holiday lets, camping and caravan pitches | 9% | 2026 | ZDDS art. 66а, item 1, https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: books (print or electronic) and newspapers and magazines, except mainly advertising, video or music content | 9% | 2026 | ZDDS art. 66а, item 2, https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: food for babies and young children, baby nappies and similar baby hygiene items (Annex 4) | 9% | 2026 | ZDDS art. 66а, item 3, https://lex.bg/laws/ldoc/2135533201 |
 | Zero rate: exports of goods outside the EU | 0% | 2026 | ZDDS art. 28, https://lex.bg/laws/ldoc/2135533201 |
 | Zero rate: intra-EU supplies of goods, with the documents held by the end of the following month | 0% | 2026 | ZDDS art. 53, https://lex.bg/laws/ldoc/2135533201 |
 | National registration threshold (calendar-year turnover in Bulgaria) | EUR 51,130 | 2026 | ZDDS arts. 96(1), 168д(2), https://lex.bg/laws/ldoc/2135533201 |
@@ -43,18 +43,18 @@ Authority: the National Revenue Agency (NRA, НАП, nra.bg). Currency: the euro
 | Intra-EU acquisitions threshold (non-registered persons) | EUR 10,000 per calendar year | 2026 | ZDDS art. 99(2), https://lex.bg/laws/ldoc/2135533201 |
 | EU-wide threshold for distance sales of goods and B2C telecom, broadcasting and e-services | EUR 10,000 per calendar year | 2026 | ZDDS art. 20б(1)(3), https://lex.bg/laws/ldoc/2135533201 |
 | Cash accounting scheme ceiling (turnover in current and previous year) | EUR 500,000 | 2026 | ZDDS art. 151а(1)(1), https://lex.bg/laws/ldoc/2135533201 |
-| Simplified invoice allowed up to | EUR 100 (tax base plus VAT) | 2026 | ZDDS art. 114, https://lex.bg/laws/ldoc/2135533201 |
-| Conversion rate for lev amounts | BGN 1.95583 = EUR 1, rounded to the cent | 2026 | Euro Introduction Act arts. 12, 13, https://lex.bg/bg/laws/ldoc/2137244903 |
+| Simplified invoice (without the recipient's details and the tax base and VAT per line) allowed up to | EUR 100 (tax base plus VAT), not for supplies placed in another EU state, intra-EU supplies or distance sales | 2026 | ZDDS art. 114(7)(2), https://lex.bg/laws/ldoc/2135533201 |
+| Conversion rate for lev amounts | BGN 1.95583 = EUR 1, rounded to the cent | 2026 | Euro Introduction Act arts. 11(2), 12, 13 and transitional § 5(1), https://lex.bg/bg/laws/ldoc/2137244903 |
 
-The EUR 51,130 threshold is the figure written in the statute. It is not the converted old BGN 100,000 (which would be EUR 51,129.19), and the old rolling 12-month test is gone: turnover is now counted per calendar year. There is no other 9% or 0% item in the ZDDS for 2026. Restaurant and catering services are at 20%.
+The EUR 51,130 threshold is the figure written in the statute. It is not the converted old BGN 100,000 (which would be EUR 51,129.19), and the old rolling 12-month test is gone: turnover is now counted per calendar year. There is no other 9% item in the ZDDS for 2026 (art. 66а has only the three items above). Restaurant and catering services are at 20%. Further zero-rated supplies are listed in Chapter Three (arts. 28 to 36), for example international passenger transport (art. 29), transport of goods to or from a non-EU country (art. 30).
 
 ## The taxable base
 
 - **Output VAT.** VAT is charged on taxable supplies with their place of supply in Bulgaria. The registered supplier owes it (art. 82(1)), except where the recipient owes it under the reverse charge (see Cross-border points).
 - **Monthly result.** For each month the result is output VAT less the input VAT deducted in that month (art. 88). A positive figure is VAT to pay; a negative figure is VAT to recover.
 - **Input VAT.** Deductible on goods and services used for taxable supplies. It may be claimed in the month the right arises or in any of the next 12 monthly periods (art. 72(1)).
-- **Blocked input VAT** (art. 70(1)): goods and services used for exempt supplies or for non-business purposes; representation and entertainment; purchase or import of cars and motorcycles; and their repair, upkeep and running costs. The ZDDS sets narrow exceptions in the same article; check them before claiming on a vehicle.
-- **Refunds.** VAT to recover is first set off against other NRA debts. Any balance is carried against VAT payable in the next two monthly periods. What is left after that is refunded within 30 days (art. 92(1)). Businesses with more than 30% zero-rated supplies in the last 12 months get a refund within 30 days of the return without the two-month wait (art. 92(3)(1)).
+- **Blocked input VAT** (art. 70(1)): goods and services used for exempt supplies or for non-business purposes; representation and entertainment; purchase or import of cars and motorcycles; and their repair, upkeep and running costs. The car and motorcycle block does not apply (art. 70(2)) where the vehicle is used only for transport or security services, taxi services, renting out, courier services or driver training, or is bought only for resale; or where such an activity is the business's main activity, even with other use.
+- **Refunds.** VAT to recover is first set off against other NRA debts. Any balance is carried against VAT payable in the next two monthly periods. What is left after that is set off against other NRA debts or refunded within 30 days of the last of those returns (art. 92(1)(4)). Businesses with more than 30% zero-rated supplies in the last 12 months get a refund within 30 days of the return without the two-month wait (art. 92(3)(1)).
 - **Cash accounting.** Registered businesses with turnover up to EUR 500,000 in both the current and the previous year, and no unpaid tax or recent audit liability, may opt to account for VAT when paid (art. 151а).
 - **Invoices.** Issue an invoice no later than 5 days after the tax point, or 5 days after an advance is received (art. 113(4)). For intra-EU supplies of goods, by the 15th of the month after the tax point (art. 113(5)). Amounts may be in any currency, but the tax base and VAT must be shown in euro (art. 114(5)).
 
@@ -63,7 +63,7 @@ The EUR 51,130 threshold is the figure written in the statute. It is not the con
 | Obligation | Deadline | Source |
 |---|---|---|
 | Registration application, threshold exceeded (art. 96(1), (2)) | Within 7 days of exceeding the threshold | ZDDS art. 96(6)(1) |
-| Registration date in that case | The day after the threshold is exceeded | ZDDS art. 103(1) |
+| Registration date in that case | The day after the threshold is exceeded | ZDDS art. 103, item 1 |
 | Registration application, EU or non-EU business with no threshold (art. 96(3), (4)) | At least 7 days before VAT on the first taxable supply becomes chargeable | ZDDS art. 96(6)(2) |
 | Tax period | The calendar month; the first period runs from the registration date to month end | ZDDS art. 87(2), (3) |
 | VAT return (справка-декларация), purchase and sales ledgers, and VIES declaration | By the 14th of the month after the period, electronically. A return is due even with no transactions | ZDDS art. 125(1) to (5), (7) |
@@ -81,10 +81,12 @@ The EUR 51,130 threshold is the figure written in the statute. It is not the con
 - **1 January 2029:** all large, medium and small enterprises at 31 December 2026.
 - **1 January 2030:** everyone else in scope.
 
+On these phased start dates the general six-month grace period for a first SAF-T obligation (DOPK art. 71к(5)) does not apply: files are due from the first month, and files may be corrected by refiling for 12 months from the start date (§ 17(2)).
+
 **Deregistration.**
 - A business registered because it crossed the threshold may deregister when the ground falls away (art. 108(1)(1)). If it exceeded the threshold in the previous year, it cannot deregister before the end of the current year (art. 108(5)).
 - A voluntary registrant cannot deregister for 12 months from the start of the year after it registered (art. 108(2)), nor before the end of the current year if it exceeded the threshold in the previous year (art. 108(7)).
-- Deregistration is compulsory on death, liquidation and the other events in art. 107. The application is due within 14 days of the event (art. 109(1)).
+- Deregistration is compulsory on death, liquidation and the other events in art. 107. Where the event is the striking-off of a sole trader, a liquidation or the dissolution of a foreign-established person, the application is due within 14 days of the event (art. 109(1)).
 - On deregistration the business is treated as supplying all goods and services it still holds on which it deducted input VAT. That VAT goes in the last return (art. 111(1), (3)).
 
 ## Penalties and interest
@@ -96,7 +98,7 @@ The EUR 51,130 threshold is the figure written in the statute. It is not the con
 | VAT not charged on time (including because the business did not register) | The VAT not charged, minimum BGN 500 (EUR 255.65); repeat: double, minimum BGN 1,000 (EUR 511.29) | ZDDS art. 180(1), (2) |
 | Same, but charged late within 6 months of the end of the month it was due | 5% of the VAT, minimum BGN 200 (EUR 102.26); repeat minimum BGN 400 (EUR 204.52) | ZDDS art. 180(3) |
 | Same, charged after 6 and within 18 months | 10% of the VAT, minimum BGN 400 (EUR 204.52); repeat minimum BGN 800 (EUR 409.03) | ZDDS art. 180(4) |
-| Reverse-charge VAT not self-assessed on time where full credit is due | Charged in the next period: up to 2%, minimum BGN 25 (EUR 12.78); NRA notified within two months: BGN 100 to 300 (EUR 51.13 to 153.39) | ZDDS art. 180а(3), (4) |
+| Reverse-charge VAT not self-assessed on time where full credit is due | 5% of the VAT, minimum BGN 50 (EUR 25.56); charged in the next period: up to 2%, minimum BGN 25 (EUR 12.78); NRA notified within two months: BGN 100 to 300 (EUR 51.13 to 153.39); repeat: 20%, minimum BGN 500 (EUR 255.65), or BGN 200 to 600 (EUR 102.26 to 306.78) where the NRA was notified | ZDDS art. 180а(1), (3) to (5) |
 | Ledger data not filed, or different from the ledgers | BGN 500 to 10,000 (EUR 255.65 to 5,112.92); repeat BGN 1,000 to 20,000 (EUR 511.29 to 10,225.84) | ZDDS art. 181 |
 | Invoice not issued, or a document left out of the ledgers, so VAT due is understated | The VAT involved, minimum BGN 1,000 (EUR 511.29); fixed in the next period: 25%, minimum BGN 250 (EUR 127.82) | ZDDS art. 182(1), (2) |
 | SAF-T not filed or filed late | Individuals BGN 500 to 2,000 (EUR 255.65 to 1,022.58); companies and sole traders BGN 5,000 to 15,000 (EUR 2,556.46 to 7,669.38); repeat doubles | DOPK art. 277а |
@@ -106,10 +108,10 @@ When the NRA registers a business that failed to apply, VAT is owed on its suppl
 
 ## Cross-border points
 
-- **Reverse charge on supplies from foreign suppliers.** When a supplier not established in Bulgaria makes a taxable supply placed in Bulgaria, the recipient owes the VAT if it is a taxable person receiving services, or a registered person receiving gas or electricity (art. 82(2)). A Bulgarian business that is not VAT-registered but receives such services must register under art. 97а at least 7 days before the VAT on them becomes chargeable (art. 97а(4)).
+- **Reverse charge on supplies from foreign suppliers.** When a supplier not established in Bulgaria makes a taxable supply placed in Bulgaria, the recipient owes the VAT if it is a taxable person receiving services (unless the supplier uses the EU small enterprise scheme in Bulgaria), or a registered person receiving gas, electricity or heating or cooling through a network (art. 82(2)). A Bulgarian business that is not VAT-registered but receives such services must register under art. 97а at least 7 days before the VAT on them becomes chargeable (art. 97а(4)).
 - **Domestic reverse charge.** Supplies of waste and scrap (Annex 2, part one) are reverse charged to a registered recipient (art. 163а(2)). Annex 2, part two (cereals and industrial crops) applies until 31 December 2026.
 - **Intra-EU supplies of goods** are zero-rated if the supplier holds the transport documents by the end of the following month (art. 53). Report them in the VIES declaration with the monthly return (art. 125(2)).
-- **Intra-EU acquisitions.** A registered business self-assesses VAT. An unregistered business or non-taxable legal person registers once acquisitions exceed EUR 10,000 in the calendar year (art. 99).
+- **Intra-EU acquisitions.** A registered business self-assesses VAT. An unregistered business or non-taxable legal person must apply to register at least 7 days before the acquisition that takes the year's total above EUR 10,000 (art. 99(2), (3)).
 - **Distance sales of goods and B2C e-services to other EU states.** Below EUR 10,000 a year EU-wide (current and previous year), VAT is Bulgarian. Above it, VAT is due in the customer's state (art. 20б). The Bulgarian business can account for it through the Union OSS scheme filed with the NRA (art. 156; return and payment quarterly, art. 159). Sales under OSS do not count toward the Bulgarian threshold (art. 168в(7)).
 - **Foreign businesses selling into Bulgaria.** EU businesses register from their first taxable supply unless they use the EU small enterprise scheme (art. 96(2), (3)). Non-EU businesses register before their first taxable supply (art. 96(4)).
 - **Triangulation.** The final customer in a simplified triangular deal owes the VAT (art. 82(3)).
@@ -144,7 +146,7 @@ expected:
 
 Petar is a self-employed designer in Plovdiv, not VAT-registered, with no 2025 registration duty. His 2026 turnover to 19 October is EUR 49,800. On 20 October he invoices EUR 2,000, taking his calendar-year turnover to EUR 51,800. That is EUR 670 over the EUR 51,130 threshold.
 
-He crossed the threshold on 20 October. His registration date is 21 October (art. 103(1)). He must apply by 27 October (7 days, art. 96(6)(1)). His first tax period runs from 21 to 31 October (art. 87(3)). In that period he bills EUR 3,000 net at 20% and has EUR 150 of deductible input VAT. He owes EUR 450, with the return due by 14 November 2026. If he misses the application, the NRA still charges VAT from 21 October (art. 102(3)), with interest and the art. 178 and art. 180 penalties.
+He crossed the threshold on 20 October. His registration date is 21 October (art. 103, item 1). He must apply by 27 October (7 days, art. 96(6)(1)). His first tax period runs from 21 to 31 October (art. 87(3)). In that period he bills EUR 3,000 net at 20% and has EUR 150 of deductible input VAT. He owes EUR 450, with the return due by 14 November 2026. Invoices for supplies from 21 October issued before the NRA serves his registration act must be issued or corrected with VAT within 5 days of service (arts. 113(4), 116(8)). If he misses the application, the NRA still charges VAT from 21 October (art. 102(3)), with interest and the art. 178 and art. 180 penalties.
 
 ```oa-check
 name: Bulgarian freelancer, 2026 threshold crossed and first VAT period
@@ -179,9 +181,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Value Added Tax Act (ZDDS), consolidated to ДВ бр. 69/2026: arts. 20, 20б, 28, 53, 66, 66а, 70, 72, 82, 87 to 89, 92, 96, 97а, 99 to 103, 107 to 111, 113, 114, 125, 126, 151а, 156, 159, 163а, 168в to 168е, 178 to 182; transitional § 63 (ДВ бр. 115/2025); Annex 2 | https://lex.bg/laws/ldoc/2135533201 | 2026-10-24 |
+| Value Added Tax Act (ZDDS), consolidated to ДВ бр. 69/2026: arts. 20, 20б, 28 to 36, 53, 66, 66а, 70, 72, 82, 87 to 89, 92, 96, 97а, 99 to 103, 107 to 111, 113, 114, 116, 125, 126, 151а, 156, 159, 163а, 168в to 168е, 178 to 182; transitional § 63 (ДВ бр. 115/2025); Annex 2 | https://lex.bg/laws/ldoc/2135533201 | 2026-10-24 |
 | Tax-Insurance Procedure Code (DOPK), consolidated: arts. 71з, 71и, 71к, 277а; § 17 of the transitional provisions of the State Budget Act 2025 | https://lex.bg/laws/ldoc/2135514513 | 2026-10-24 |
-| Euro Introduction Act (Закон за въвеждане на еврото в Република България): arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-23 |
+| Euro Introduction Act (Закон за въвеждане на еврото в Република България): arts. 11, 12, 13; transitional § 5(1) | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-23 |
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-23 |
 
-Not yet confirmed: the ZDDS Implementing Regulations (ППЗДДС) and the NRA's 2026 return and VIES form layouts were not read, so this skill gives no box numbers; the statutory late-payment interest rate after the euro changeover (set outside the interest law); the exact scope of the art. 70 exceptions for vehicles; whether the NRA rounds converted penalty amounts differently from the Euro Introduction Act rule used here.
+Not yet confirmed: the ZDDS Implementing Regulations (ППЗДДС) and the NRA's 2026 return and VIES form layouts were not read, so this skill gives no box numbers; the statutory late-payment interest rate after the euro changeover (set outside the interest law).
