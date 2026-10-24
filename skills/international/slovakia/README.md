@@ -6,7 +6,6 @@ covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
 partial:
-  IT-IND: "slovakia-pit carries 2025 figures; the 2026 bands of 19%, 25%, 30% and 35% and the new allowance multiples (Act 261/2025) are not in it"
   IT-CORP: "sk-corporate-income-tax carries 2025 figures; the 2026 minimum tax scale (EUR 340 to EUR 11,520) is not in it"
   SC: "sk-payroll-social carries 2025 figures and no self-employed (SZCO) contribution method"
   PR: "sk-payroll-social carries 2025 withholding bands; the 2026 monthly bands of 19%, 25%, 30% and 35% are not in it"
@@ -20,7 +19,7 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | slovakia-pit | source-cited draft |
+| IT-IND, individual income tax | slovakia-pit (2026: 19%, 25%, 30% and 35% bands at 154.8 x / 212.4 x / 264 x the subsistence minimum of EUR 284.13, 15% on business revenue up to EUR 100,000, allowance EUR 5,966.73 and phase-out, spouse allowance, 60% flat-rate expenses capped at EUR 20,000, child bonus EUR 100 / EUR 50 with taper above EUR 27,432, deadlines, advances, penalties) | source-cited draft |
 | IT-CORP, corporate income tax | sk-corporate-income-tax | source-cited draft |
 | VAT | slovakia-vat-return (2026: 23%, 19% and 5% under § 27 and Annexes 7 and 7a, foods moved to 23% from 1 January 2026, monthly or quarterly return and control statement at 25 days, refunds, domestic reverse charge, 50% passenger car cap under § 85n, EU SME scheme, fines and interest), slovakia-vat-registration-4-7-7a (2026: § 4 EUR 50,000 / 62,500 and five working days, § 7, § 7a, § 81 deregistration) | source-cited draft |
 | SC, social contributions | sk-payroll-social | source-cited draft |

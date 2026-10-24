@@ -6,7 +6,7 @@ jurisdiction: SK
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -24,7 +24,7 @@ This skill covers the annual income tax of an individual for the 2026 calendar y
 - [sk-payroll-social](sk-payroll-social.md): the employer's monthly withholding and social and health contributions.
 - [sk-corporate-income-tax](sk-corporate-income-tax.md): companies, including the minimum tax for legal persons.
 - [sk-tax-overview](sk-tax-overview.md): the system at a glance.
-- sk-cross-border: residence in detail, non-residents, withholding tax and treaties.
+- [sk-cross-border](sk-cross-border.md): residence in detail, non-residents, withholding tax and treaties.
 
 **Which text of the law.** Act No. 595/2003 Coll. on income tax (zákon o dani z príjmov), version in force from 1 January 2026 to 30 December 2026. Act No. 261/2025 Coll. made the 2026 changes to §11 and §15; under §52zzzj(1) they apply first for the 2026 tax year. A further version in force from 31 December 2026 adds an exemption for informal carers (§9(1)(t)) and amends §11(4), but §52zzzm says those apply first for 2027. Penalties come from Act No. 563/2009 Coll., the Tax Procedure Code (daňový poriadok).
 
@@ -79,14 +79,14 @@ Tax on a base B above EUR 75,010.32 is 19% x 43,983.32 + 25% x 16,365.89 + 30% x
 
 **Self-employed (§6(1),(2)).** Revenue minus either:
 - **actual expenses** (preukázateľné výdavky), with tax records or double-entry accounts (§6(11)); or
-- **flat-rate expenses** of 60% of revenue, capped at EUR 20,000, if the person is not a VAT payer, or was one for only part of the year (§6(10)). The flat rate covers all expenses except the compulsory social and health contributions, which are deducted on top in the amount paid. The person still keeps a record of revenue and assets (§6(10), §6(11)(a),(d)).
+- **flat-rate expenses** of 60% of revenue, capped at EUR 20,000, if the person is not a VAT payer, or was one for only part of the year (§6(10)). The flat rate covers all expenses except the compulsory social and health contributions, which are deducted on top in the amount paid. The person still keeps a record of income and of inventory and receivables (§6(10), §6(11)(a),(d)).
 
 The result is the business partial base. A tax loss can be carried forward five years. A micro-taxpayer (business revenue up to EUR 60,000, §2(w)) can use it in full; others only up to 50% of the business base (§30(1)).
 
 **The 15% rate.** It turns on business revenue under §6(1) and (2), not on profit. Revenue of EUR 100,000 or less gives 15% on the whole business base. Above EUR 100,000 the whole business base goes on the bands (§15(a)(2),(3)).
 
 **Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).
-- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A pensioner whose pension is above the allowance gets no personal allowance (§11(6)).
+- The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).
 - The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).
 - Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).
 
@@ -95,8 +95,8 @@ The result is the business partial base. A tax loss can be carried forward five 
 **Capital income (§7).** Slovak interest is taxed by withholding under §43 and stays out of the return (§7(3)). Foreign interest and similar income go in a special base taxed at 19% (§15(a)(4)). Dividends from a Slovak company are taxed by withholding. Foreign dividends go in a special base at 7%, or 35% from a non-cooperating state (§51e, §15(a)(5),(6)).
 
 **Credits.** From the tax computed:
-- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business base (§33(6)). If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).
-- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). Check the conditions in the law before claiming it.
+- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).
+- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). The conditions differ for loan contracts made up to 31 December 2023 and after; check them in the law before claiming it.
 
 **Rounding.** Every calculation is to two decimal places, with 5 and above rounded up (§47).
 
@@ -216,5 +216,8 @@ expected:
 | Act No. 563/2009 Coll., version in force from 1 January 2027 (same §154-§156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20270101.html | 2026-10-23 |
 | Ministry of Labour, subsistence minimum from 1 July 2025 (EUR 284.13) | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html | 2026-10-23 |
 | Ministry of Labour, Report on the social situation 2024 (average wage 2024, EUR 1,524, Statistical Office figure) | https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf | 2026-10-23 |
+| Financial Administration, income tax for citizens: allowance EUR 5,966.73, phase-out from EUR 26,083.13, EUR 14,661.11, spouse EUR 5,455.30 / EUR 20,116.40 / EUR 43,983.32, child bonus 2026 and its taper | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/informovanie-dan-prijem | 2026-10-24 |
+| Financial Administration, employees: filing threshold EUR 2,983.37 and the 2026 allowance figures | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/zamestnanci | 2026-10-24 |
+| Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |
 
-Not yet confirmed: the Financial Administration's 2026 help pages on the allowance and the child bonus (podpora.financnasprava.sk) returned HTTP 503 on 2026-10-23, so EUR 5,966.73 and EUR 27,432 are computed from the law and the figures above, not cross-checked against those pages; whether the child bonus taper and cap use the employment base before or after allowances (this skill uses before); the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.
+Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.
