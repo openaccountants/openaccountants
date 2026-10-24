@@ -7,14 +7,19 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `can-a-foreigner-start-a-business-in-serbia.md`
-4. `how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md`
-5. `serbia-income-tax.md`
-6. `serbia-payroll.md`
-7. `serbia-social-contributions.md`
-8. `serbia-tax-optimization.md`
-9. `serbia-vat.md`
-10. `payroll-workflow-base.md`
+3. `README.md`
+4. `can-a-foreigner-start-a-business-in-serbia.md`
+5. `how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md`
+6. `rs-corporate-tax.md`
+7. `rs-cross-border.md`
+8. `rs-transfer-pricing.md`
+9. `serbia-income-tax.md`
+10. `serbia-payroll.md`
+11. `serbia-social-contributions.md`
+12. `serbia-tax-optimization.md`
+13. `serbia-vat.md`
+14. `payroll-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

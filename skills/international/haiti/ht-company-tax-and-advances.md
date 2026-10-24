@@ -2,14 +2,16 @@
 name: ht-company-tax-and-advances
 description: >
   Haiti company-tax reference under the replacement Tax Code effective 1 October 2026. Covers taxable entity classification, effective-management residence, the ordinary profit-tax rate, the savings-and-credit cooperative exception, annual financial statements, the audit threshold and provisional payments. Gives mechanical calculations using an already reconciled taxable profit and the correct historical advance-payment base. Separates company returns from individual business returns and identifies special-sector and transition cases requiring further source work. Does not establish a complete taxable-profit reconciliation, treaty treatment, operational forms or accountant attestation.
-jurisdiction: HT
-category: international
-tax_year: 2026
-tax_year_notes: New Code effective 1 October 2026; earlier-year and transition filings require separate confirmation.
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: HT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Haiti: company tax, accounts and advance payments
@@ -70,3 +72,23 @@ Do not invent a first-business-year advance where the historical base is absent.
 ## Disclaimer
 
 General research reference, not a filing-ready opinion or professional attestation. Apply the enacted scope and obtain the outstanding implementation evidence before using it for a particular return.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

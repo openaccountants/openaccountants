@@ -7,20 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `references.md`
-4. `ro-cas-cass.md`
-5. `ro-company-formation.md`
-6. `ro-corporate-income-tax.md`
-7. `ro-income-tax.md`
-8. `ro-payroll-social.md`
-9. `ro-tax-overview.md`
-10. `ro-vat-return.md`
-11. `romania-einvoice.md`
-12. `romania-vat-return.md`
-13. `eu-vat-directive.md`
-14. `einvoice-workflow-base.md`
-15. `payroll-workflow-base.md`
-16. `company-formation-workflow-base.md`
+3. `README.md`
+4. `references.md`
+5. `ro-cas-cass.md`
+6. `ro-company-formation.md`
+7. `ro-corporate-income-tax.md`
+8. `ro-cross-border.md`
+9. `ro-employee-income-tax.md`
+10. `ro-income-tax.md`
+11. `ro-payroll-social.md`
+12. `ro-tax-overview.md`
+13. `ro-transfer-pricing.md`
+14. `ro-vat-return.md`
+15. `romania-einvoice.md`
+16. `romania-vat-return.md`
+17. `eu-vat-directive.md`
+18. `einvoice-workflow-base.md`
+19. `payroll-workflow-base.md`
+20. `company-formation-workflow-base.md`
+21. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

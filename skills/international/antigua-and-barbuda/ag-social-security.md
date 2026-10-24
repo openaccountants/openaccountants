@@ -1,13 +1,16 @@
 ---
 name: ag-social-security
 description: Calculate ordinary employee and employer social-security contributions using the statutory rate schedule, earnings ceiling and monthly remittance rule.
-jurisdiction: AG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: AG
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Antigua and Barbuda social-security payroll
@@ -47,3 +50,23 @@ Regulation 9 requires the employee deductions, employer portion and monthly remi
 ## Review output
 
 Retain the calculation, source versions and factual classification. A qualified local reviewer must check current amendments and the actual case before anyone files, pays or relies on the result. No professional attestation is claimed.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

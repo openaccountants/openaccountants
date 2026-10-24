@@ -1,13 +1,17 @@
 ---
 name: xero-integration
-version: 1.1
-category: integration
 description: >
   Integration skill for Xero accounting software exports. Activate when the user uploads a Xero bank statement CSV,
   Xero invoice export, or mentions Xero, bank statement import, or Xero CSV.
+version: 1.1
 jurisdiction: GLOBAL
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: integration
 tier: 2
-last_updated: 2026-10-21
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Xero Integration Skill v1.1
@@ -20,12 +24,7 @@ Xero is a cloud-based accounting platform used primarily by small and medium bus
 
 Users interact with Xero data in two main export contexts: **bank statement CSVs** (for importing transactions into Xero or exported from Xero) and **invoice/bill CSVs** (for bulk import/export of sales invoices and purchase bills).
 
----
-
-## Section 2 — Export Formats
-
-| Format | Use Case |
-|--------|----------|
+-----|----------|
 | CSV | Bank statement import/export, invoice import/export, contact lists, chart of accounts |
 | PDF | Individual invoices, statements, financial reports |
 | Excel (XLSX) | Reports (P&L, Balance Sheet, Aged Receivables, Trial Balance) |
@@ -241,3 +240,23 @@ layout or an automated Xero approval feature. Source checked 21 October 2026.
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

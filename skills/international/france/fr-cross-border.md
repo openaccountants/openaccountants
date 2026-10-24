@@ -1,13 +1,16 @@
 ---
 name: fr-cross-border
 description: "France cross-border income tax for individuals, tax year 2026: residence tests (CGI art. 4 A, 4 B), non-residents with French income (the 20%/30% minimum rate of art. 197 A and the average-rate option), withholding on salaries (art. 182 A) and on fees and royalties (art. 182 B), the levy on property gains (art. 244 bis A), social levies for non-residents (17.2%, 18.6%, or 7.5% when covered by another EU scheme), the impatriate regime (art. 155 B), treaty credits, A1 postings and penalties. Trigger on: non-résident France, impatrié, article 155 B, prime d'impatriation, taux minimum 20 %, taux moyen, retenue à la source 182 A, 244 bis A, prélèvement de solidarité 7,5 %, crédit d'impôt conventionnel. Out of scope: leaving France and exit tax (leaving-france-exit-tax), company outbound withholding and CFC (fr-corporate-tax), the resident computation (fr-personal-income-tax)."
-jurisdiction: FR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: FR
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # France: cross-border individuals (non-residents, impatriates, treaty relief) v0.1
@@ -281,3 +284,23 @@ expected:
 | Regulation (EC) 883/2004, art. 12 (postings) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-23 |
 
 Not yet confirmed: impots.gouv.fr and BOFiP were in maintenance on 23 October 2026, so these items were not read. (1) Whether a person covered by the UK scheme after Brexit gets the CSG and CRDS relief of CSS art. L136-6, I ter (that article names only Regulation 883/2004; service-public.gouv.fr F2329 names only the EEA and Switzerland). (2) Whether the art. 155 B, I, 3 caps are compulsory with a choice between them, or apply only on option (the article's wording says "sur option"; BOFiP BOI-RSA-GEO-40-10 not read). (3) The 2026 filing dates for non-residents. (4) Whether the 2027 finance law will change the art. 197 scale for 2026 income. (5) Whether the excess of art. 182 A and 182 A bis withholding over the art. 197 A tax is refunded: unlike art. 182 B, II, those articles provide only that the withholding is set against the tax.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

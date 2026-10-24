@@ -2,13 +2,16 @@
 name: dm-income-tax-paye
 description: >
   Dominica resident individual income tax and employer PAYE reference for 2026. Covers the resident allowance, post-allowance marginal tax bands, annual calculation examples, individual filing requirements and employer monthly and annual reporting. Use for Commonwealth of Dominica income tax, resident allowance, PAYE remittance or annual employee returns. It distinguishes the pre-allowance income presentation from chargeable income after allowances to prevent double deduction. Residence, special relief eligibility, benefits in kind and the detailed monthly withholding tables require separate analysis. This source-cited draft does not cover the Dominican Republic or constitute a complete personal tax assessment.
-jurisdiction: DM
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: DM
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Dominica income tax and PAYE
@@ -54,3 +57,23 @@ Monthly PAYE returns and deductions are due by the 15th of the following month, 
 ## Controls and unresolved scope
 
 Reconcile employee declarations, taxable pay, allowances, monthly withholding and annual certificates. Keep social-security deductions separate. Residence tests, mortgage and student-loan relief conditions, nonresident rules, business deductions, special income and payroll rounding are not resolved here. Review the applicable law and taxpayer documents before filing; no accountant attestation is claimed.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

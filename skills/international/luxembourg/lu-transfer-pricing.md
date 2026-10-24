@@ -1,13 +1,16 @@
 ---
 name: lu-transfer-pricing
 description: "Luxembourg transfer pricing (prix de transfert) for tax year 2026: Luxembourg companies and Luxembourg permanent establishments that deal with associated enterprises. Covers the arm's length rule in art. 56 LIR, the OECD-based comparability rules in art. 56bis, hidden profit distributions (art. 164(3)) and the 15% withholding tax that can follow, documentation on request under § 171(3) of the Abgabenordnung, intra-group financing companies (real presence, 2% after-tax safe harbour), Amount B (circular n° 56/2 – 56bis/2 of 13 April 2026), advance decisions under § 29a AO (fee EUR 3,000 to 10,000), the EUR 750m country-by-country report and its EUR 250,000 fine, MAP, and the EU dispute law of 20 December 2019. Trigger on: prix de transfert Luxembourg, art. 56 LIR, 56bis, distribution cachée, société de financement de groupe, CbC Luxembourg, APA Luxembourg, décision anticipée. Out of scope: lu-corporate-tax (rates, base, filing), luxembourg-income-tax, luxembourg-vat-return."
-jurisdiction: LU
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: LU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Luxembourg transfer pricing (prix de transfert): tax year 2026
@@ -235,3 +238,23 @@ expected:
 | ACD, laws passed in 2025 and in 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
 
 Not yet confirmed: the consolidated text of § 29a and § 171 AO in force in 2026 (read only as inserted by the law of 19 December 2014; no later amendment was seen); a consolidated text of the CbC law (read in the 2016 original plus art. 13 of the law of 27 March 2026; amendments between 2017 and 2025, if any, were not seen) and the grand-ducal regulation of 13 March 2026; whether the ACD still applies the 2% safe harbour and the 10% return on equity at those figures (the circular says they will be reviewed; no revision was found); an official ACD text on how withholding is collected on a hidden distribution and on hidden capital contributions (the skill relies on the wording of arts. 18, 97, 146 and 164 LIR).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

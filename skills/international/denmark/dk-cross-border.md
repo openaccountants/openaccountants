@@ -1,13 +1,16 @@
 ---
 name: dk-cross-border
 description: "Danish cross-border tax for individuals and companies, income year 2026. Covers full tax liability (dwelling in Denmark, the 6-month stay rule, the 3-month and 180-day holiday rule), limited tax liability of non-residents on Danish wages, board fees, permanent establishments, property, dividends and royalties, the researcher and key-employee scheme (forskerskatteordningen: 27% plus 8% AM-bidrag for up to 84 months, minimum salary DKK 65,400 a month in 2026), cross-border commuters (grænsegængere, 75% rule), withholding on dividends (27%, 15%, 44%) and royalties (22%) and the refund claim, foreign tax credit and the ligningsloven § 33 A exemption, and exit tax on shares (fraflytningsbeskatning, DKK 100,000 threshold, deferral). Trigger on: moving to or from Denmark, Danish tax residence, begrænset skattepligt, forskerordning, grænsegænger, udbytteskat refund, fraflytningsskat, fast driftssted. Out of scope: rate tables for residents (dk-income-tax), share income in general (dk-capital-gains), company exit tax and corporate withholding detail (dk-corporate-tax), VAT (dk-vat-return)."
-jurisdiction: DK
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: DK
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Denmark: cross-border tax (residence, non-residents, withholding, exit) v0.1
@@ -206,3 +209,23 @@ expected:
 | Skattestyrelsen, SKM2025.716.SKTST, interest rates on residual tax for income year 2025 | https://info.skat.dk/data.aspx?oid=2460000 | 2026-10-23 |
 
 Not yet confirmed: the income year 2026 day-to-day interest and residual-tax surcharge rates (Skattestyrelsen publishes them in December 2026; the 2025 rates are shown); country-by-country treaty rates for dividends and royalties; any 2026 amendment to Ligningsloven §§ 33 and 33 A after the November 2025 consolidation.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
