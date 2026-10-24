@@ -7,7 +7,6 @@ covered_by:
   XB: hr-cross-border
 partial:
   IT-IND: "croatia-income-tax carries tax year 2025 figures, not yet rolled to 2026"
-  IT-CORP: "hr-corporate-income-tax carries 2025 figures from secondary sources, is not in the deep-tax shape, and still lists 15% withholding on advisory and audit services, removed by NN 114/23"
   VAT: "croatia-vat-return carries tax year 2025 figures, not yet rolled to 2026"
   SC: "croatia-social-contributions carries tax year 2025 contribution bases, not yet rolled to 2026"
   PR: "croatia-payroll carries tax year 2025 figures, not yet rolled to 2026"
@@ -22,7 +21,7 @@ Calendar tax year unless a company is allowed a different business year. Authori
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | croatia-income-tax (2025 figures; partial) | source-cited draft |
-| IT-CORP, corporate income tax | hr-corporate-income-tax (2025 figures; partial) | source-cited draft |
+| IT-CORP, corporate income tax | hr-corporate-income-tax: who pays and residence, the 10% / 18% rates at EUR 1,000,000 of revenue, add-backs (50% representation and cars), depreciation, losses (5 years), thin capitalisation, the 30% EBITDA limit, advances, the PD return (30 April, e-filed by all) and fines, for 2026 | source-cited draft |
 | VAT | croatia-vat-return (2025 figures; partial) | source-cited draft |
 | SC, social contributions | croatia-social-contributions (2025 figures; partial) | source-cited draft |
 | PR, payroll withholding | croatia-payroll (2025 figures; partial) | source-cited draft |
