@@ -1,6 +1,6 @@
 ---
 name: cyprus-vat-return
-description: "Use this skill for Cyprus VAT (Φ.Π.Α.) in tax year 2026 (law at 24 October 2026). It covers the 19% standard rate, the 9%, 5% and 3% reduced rates, the temporary 0% on basic goods (baby milk, nappies, feminine hygiene products and listed fruit and vegetables to 31 December 2026; meat and fish 6 April to 30 September 2026), household electricity rates, the EUR 15,600 registration threshold, the EUR 10,000 EU distance-sales threshold, quarterly returns and payment by the 10th of the second month, return boxes 1 to 11B, VIES by the 15th, domestic reverse charge (construction, scrap, phones and laptops, precious metals, property in loan restructuring), TFA filing, the EUR 100 late-return charge, 10% additional tax and interest. Trigger on: Cyprus VAT, Φ.Π.Α., VAT return Cyprus, TFA VAT, Cyprus reverse charge, VIES Cyprus. Out of scope: corporate tax (cy-corporate-tax), income tax (cyprus-income-tax), payroll (cyprus-payroll), cross-border income tax (cy-cross-border)."
+description: "Use this skill for Cyprus VAT (Φ.Π.Α.) in tax year 2026 (law at 24 October 2026). It covers the 19% standard rate, the 9%, 5% and 3% reduced rates, the temporary 0% on basic goods (baby milk, nappies, feminine hygiene products and listed fruit and vegetables to 31 December 2027; meat and fish 6 April 2026 to 31 May 2027; bread, milk, coffee, sugar and baby food 12 October 2026 to 31 May 2027), household electricity and home solar rates, property VAT, partial exemption, cash accounting, the EUR 15,600 registration threshold, the EUR 10,000 EU distance-sales threshold, quarterly returns and payment by the 10th of the second month, return boxes 1 to 11B, VIES by the 15th, domestic reverse charge (construction, scrap, phones and laptops, precious metals, property in loan restructuring), TFA filing, the EUR 100 late-return charge, 10% additional tax and interest. Trigger on: Cyprus VAT, Φ.Π.Α., VAT return Cyprus, TFA VAT, Cyprus reverse charge, VIES Cyprus. Out of scope: corporate tax (cy-corporate-tax), income tax (cyprus-income-tax), payroll (cyprus-payroll), cross-border income tax (cy-cross-border)."
 jurisdiction: CY
 category: international
 tax_year: 2026
@@ -19,7 +19,10 @@ This skill sets out who must charge Cyprus VAT (Φόρος Προστιθέμε�
 
 What changed for 2026:
 - Order Κ.Δ.Π. 337/2025 zero-rates baby milk, children's and adult nappies, feminine hygiene products and listed fresh fruit and vegetables from 1 January to 31 December 2026.
-- Order Κ.Δ.Π. 168/2026 zero-rated fresh and frozen meat, fish, cuttlefish, squid and octopus from 6 April to 30 September 2026 only.
+- Order Κ.Δ.Π. 362/2026 (16 October 2026) repeats that 0% from 1 January to 31 December 2027.
+- Order Κ.Δ.Π. 168/2026 zero-rated fresh and frozen meat, fish, cuttlefish, squid and octopus from 6 April to 30 September 2026. Order Κ.Δ.Π. 354/2026 (30 September 2026) continues that 0% from 1 October 2026 to 31 May 2027.
+- Order Κ.Δ.Π. 354/2026 also zero-rates bread, milk, coffee, sugar and baby food from 12 October 2026 to 31 May 2027.
+- Order Κ.Δ.Π. 363/2026 (16 October 2026) adds home solar (photovoltaic) systems for household self-consumption to the 9% rate.
 - Orders Κ.Δ.Π. 82/2026 and 167/2026 cut VAT on household electricity (tariffs 01, 02, 08 and 56): 9% for April 2026 meter readings, 5% for readings from 1 May 2026 to 31 March 2027.
 - Orders Κ.Δ.Π. 102/2026 and 103/2026 redefine "first establishment" for new buildings and renovations from 1 September 2026.
 - Law 223(I)/2025 keeps the reverse charge on property transferred in loan restructuring in force to 31 December 2026.
@@ -36,7 +39,7 @@ What changed for 2026:
 - **Voluntary registration** is open below the thresholds and to an intending trader.
 - **Citrus growers.** A person whose only taxable supplies are zero-rated citrus (lemons, oranges, mandarins, grapefruit, citron) is not required to register but may ask to (First Schedule, Part I, para. 1(1Α)).
 - **Deregistration.** A registered person may be removed from the register if it satisfies the Commissioner that its taxable supplies in the coming year will not pass **EUR 13,668.81**. It must notify the end of its taxable activity within 60 days.
-- **Out of this skill (refer):** the special schemes (SME-SS, OSS and IOSS, cash accounting under art. 42Ε, the margin schemes, investment gold, the farmers' scheme, the urban taxi scheme, the tour operators' scheme), ship management, partial exemption, and immovable property including the 5% main-residence rate.
+- **Summarised here, but refer the computation:** the special schemes (cash accounting, SME-SS, OSS and IOSS, the margin schemes, investment gold, the farmers' scheme, the urban taxi scheme, the tour operators' scheme), partial exemption, and immovable property including the 5% main-residence rate. Ship management is out of this skill.
 
 ## Rates, bands and thresholds
 
@@ -48,7 +51,10 @@ What changed for 2026:
 | Super-reduced rate (art. 18Β, Fifteenth Schedule, from Law 75(I)/2023): books, newspapers and magazines (print and e-format); talking books, wheelchairs, orthopaedic and hearing devices for disabled people; street cleaning, refuse and waste treatment (not by local authorities); sewage; admission to the first performance of theatre, music and dance works | 3% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
 | Zero rate (art. 25, Sixth Schedule): exports; sea-going ships and airline aircraft; international passenger transport to the extent carried out in Cyprus | 0% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html |
 | Temporary 0%: baby milk, children's and adult nappies, feminine hygiene products, listed fresh fruit and vegetables (Sixth Schedule paras 13 to 15, 25(α) and 25(β)) | 0% from 1 Jan to 31 Dec 2026 | 2026 | https://www.cylaw.org/KDP/data/2025_1_337.pdf (para. 4) |
-| Temporary 0%: fresh and frozen meat and offal, fish, cuttlefish, squid and octopus (Sixth Schedule paras 25(γ) and 25(δ)) | 0% from 6 Apr to 30 Sep 2026; 5% food rate before and after | 2026 | https://www.cylaw.org/KDP/data/2026_1_168.pdf (para. 4) |
+| Temporary 0%: baby milk, nappies, feminine hygiene products, listed fresh fruit and vegetables, continued | 0% from 1 Jan to 31 Dec 2027 | 2027 | https://www.cylaw.org/KDP/data/2026_1_362.pdf (para. 4) |
+| Temporary 0%: fresh and frozen meat and offal, fish, cuttlefish, squid and octopus (Sixth Schedule paras 25(γ) and 25(δ)) | 0% from 6 Apr to 30 Sep 2026, then continued from 1 Oct 2026 to 31 May 2027; 5% food rate before 6 Apr 2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_168.pdf (para. 4); https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(α)) |
+| Temporary 0%: bread, milk, coffee, sugar and baby food (Sixth Schedule para. 25(ε)) | 0% from 12 Oct 2026 to 31 May 2027; 5% food rate before | 2026 | https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(β)) |
+| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date) | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf |
 | Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
 | 5% main residence: first 130 m² of buildable area, up to this value | EUR 350,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
 | 5% main residence: lost entirely if total value passes / total buildable area passes | EUR 475,000 / 190 m² | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
@@ -68,14 +74,27 @@ What changed for 2026:
   - Taxis and intercity or tourist buses are at 9%. Urban and rural buses are at 5%.
   - Books, newspapers and magazines are at 3%, not 5%.
   - Food is at 5%, but alcohol, beer, wine and soft drinks are at 19%. Food served with support services (a restaurant) is at 9%.
-  - From 1 October 2026 meat and fish go back to the 5% food rate. Baby milk, nappies, feminine hygiene products and the listed fruit and vegetables stay at 0% until 31 December 2026. The Tax Department rates page (read 24 October 2026) still says all basic goods are at 0% only "μέχρι και 30/9/2026". Order Κ.Δ.Π. 337/2025 runs to 31 December 2026, and the law wins over the page.
+  - Meat and fish stay at 0% after 30 September 2026: Κ.Δ.Π. 354/2026 continues the 0% from 1 October 2026 to 31 May 2027. Bread, milk, coffee, sugar and baby food are at 5% up to 11 October 2026 and 0% from 12 October 2026 to 31 May 2027. Baby milk, nappies, feminine hygiene products and the listed fruit and vegetables are at 0% to 31 December 2026 (Κ.Δ.Π. 337/2025) and again for 2027 (Κ.Δ.Π. 362/2026). The Tax Department rates page (read 24 October 2026) still says all basic goods are at 0% only "μέχρι και 30/9/2026". The orders in the Gazette win over the page.
+  - Split every basic-goods sale by date: 6 April 2026 (meat and fish), 12 October 2026 (bread, milk, coffee, sugar, baby food), 31 May 2027 (both end).
   - The same rates page lists only tariff 08 electricity at 5%. Orders Κ.Δ.Π. 82/2026 and 167/2026 cover tariffs 01, 02, 08 and 56. Follow the orders.
 - **Renovation at 5%.** Renovation and repair of a private home by plumbers, electricians, carpenters, painters and builders is at 5%, except where materials are more than 50% of the value of the service (Fifth Schedule, Table Β, para. 11; energy and structural upgrades, para. 11Α). From 1 September 2026 a home counts as "old" when at least three years have passed since first establishment, and "first use" means systematic use for at least 18 months (Κ.Δ.Π. 102/2026).
 - **Main residence at 5%.** The purchase or building of a main and permanent residence is at 5% on the first 130 m² of buildable area, up to EUR 350,000. If the total value passes EUR 475,000 or the total buildable area passes 190 m², the whole amount is at 19%. A disabled person gets 190 m² whatever the total area. Families with more than three children get 15 m² more per extra child. The buyer files a declaration with the Commissioner (Fifth Schedule, Table Γ). If the home stops being the main residence within ten years, the owner must tell the Commissioner within 30 days and pay the difference; the Tax Department issues a VAT Return for Special Cases. Refer every case.
 - **Exempt supplies (Seventh Schedule).** Among others: services of Cyprus Post as a public body; medical care by recognised professionals; education by recognised schools; insurance; credit, bank account and other financial services; lotteries and betting. Card processing, clearing and authorisation, and collecting third parties' debts, are at 19% (Tax Department exemptions page). Exempt sales carry no VAT and give no right to deduct.
 - **Input VAT.** VAT on purchases used for taxable supplies is deductible under art. 21 if the business holds a tax invoice dated in the period. Mixed taxable and exempt use is apportioned under regs 64 to 65Γ of Κ.Δ.Π. 314/2001 (refer). Credit notes received reduce Box 4.
+- **Partial exemption** (regs 64 and 65 of Κ.Δ.Π. 314/2001). A business with both taxable and exempt sales deducts in full the input VAT on costs used only for taxable sales, nothing on costs used only for exempt sales (or for non-business activity), and on shared costs the proportion that taxable sales bear to all sales in the period. The ratio leaves out sales of the business's capital goods, incidental property and financial transactions, and self-supplies, and is rounded up to the next whole percentage. The Commissioner may approve or direct another method. The deduction in each return is provisional (reg. 64(1)). Refer the annual adjustment and any special method.
 - **Input VAT that must not go in Box 4** (return guide): private purchases; business entertainment of employees or company managers; second-hand goods bought under the second-hand scheme; payments to the Tax Department under an assessment. The Tax Department's 2001 General VAT Guide also blocks VAT on ordinary passenger cars (not taxis, hire cars, driving-school cars, vans, vehicles with more than ten seats or over three tonnes) and on business entertainment generally. That guide predates the current law, so this skill keeps the conservative default: block, ask, refer.
 - **Output VAT that is easy to miss** (return guide): reverse-charge services and purchases; commission on sales for third parties; sales of fixed assets; goods taken for private use; self-billed invoices; bad-debt relief later recovered; and gifts of goods costing more than EUR 17 each. Credit notes issued reduce Box 1.
+
+### Property
+
+- **Letting** of immovable property is exempt (Eighth Schedule para. 1(α)), except: hotel and similar accommodation; parking spaces; fixed equipment and machinery; safes; hire-purchase of property that is itself taxable; and the letting of property to a taxable person for its taxable business, other than as a home (para. 1(α)(vi)). That last letting is taxed at 19% for leases starting on or after the 2017 amending law (No. 3) came into force, unless the landlord tells the Commissioner it opts out of taxing it. The opt-out cannot be reversed later. Since 3 April 2026 the opt-out is made on the form set by Commissioner's notice Κ.Δ.Π. 172/2026, filed through TFA.
+- **Sales** of immovable property are exempt (para. 1(β)) except: new buildings, or parts of them with their land, transferred before first establishment (first use); and undeveloped building land meant for building, transferred in the course of an economic activity. These are at 19%, or 5% for a qualifying main residence. From 1 September 2026 the meaning of first establishment changed (Κ.Δ.Π. 102/2026 and 103/2026). Refer every property sale.
+
+### Special schemes
+
+- **Cash accounting (art. 42Ε).** Output VAT is due when the business is paid, and input VAT is deductible when it pays. Open from the start of any tax period if supplies in the previous 12 months did not pass **EUR 25,000**, all returns were filed and paid on time, all assessed tax is paid, and the business has no conviction under art. 46. Some transactions are left out of the scheme (art. 42Ε(3)); refer.
+- **EU small business scheme (SME-SS, Law 104(I)/2025, from 1 January 2025).** A business established in another member state can use the Cyprus exemption if its turnover in Cyprus does not pass **EUR 15,600** and its EU-wide annual turnover does not pass **EUR 100,000**. A Cyprus business can use another state's exemption under the same EUR 100,000 EU-wide cap. Refer.
+- **Others (refer):** OSS and IOSS, the margin schemes, investment gold, the farmers' scheme, the urban taxi scheme, the tour operators' scheme.
 
 ### Domestic reverse charge
 
@@ -208,40 +227,44 @@ expected:
 
 ### Example 2: a grocer's August to October 2026 quarter, filed and paid late
 
-A Nicosia grocer has a quarter running August to October 2026. Its sales, without VAT, are: fresh fish EUR 30,000 in August and September and EUR 10,000 in October; listed fresh fruit and vegetables EUR 20,000 across the quarter; other food EUR 50,000; soft drinks EUR 8,000. Input VAT on purchase invoices is EUR 3,000.
+A Nicosia grocer has a quarter running August to October 2026. Its sales, without VAT, are: fresh fish EUR 30,000 in August and September and EUR 10,000 in October; listed fresh fruit and vegetables EUR 20,000 across the quarter; bread and milk EUR 12,000 from 1 August to 11 October and EUR 4,000 from 12 to 31 October; other food EUR 50,000; soft drinks EUR 8,000. Input VAT on purchase invoices is EUR 3,000.
 
-Fish was zero-rated only to 30 September 2026 (Κ.Δ.Π. 168/2026), so the August and September fish is at 0% and the October fish goes back to the 5% food rate: 10,000 x 5% = EUR 500. The fruit and vegetables stay at 0% for the whole quarter (Κ.Δ.Π. 337/2025 runs to 31 December 2026). Other food is at 5%: EUR 2,500. Soft drinks are excluded from the food rate, so 19%: EUR 1,520. Output VAT is EUR 4,520 and Box 5 is 4,520 - 3,000 = EUR 1,520.
+Fish is at 0% for the whole quarter: to 30 September under Κ.Δ.Π. 168/2026 and from 1 October under Κ.Δ.Π. 354/2026. The fruit and vegetables are at 0% (Κ.Δ.Π. 337/2025 runs to 31 December 2026). Bread and milk are at the 5% food rate up to 11 October, 12,000 x 5% = EUR 600, and at 0% from 12 October (Κ.Δ.Π. 354/2026). Other food is at 5%: EUR 2,500. Soft drinks are excluded from the food rate, so 19%: EUR 1,520. Output VAT is 600 + 2,500 + 1,520 = EUR 4,620 and Box 5 is 4,620 - 3,000 = EUR 1,620.
 
-The return and payment were due on 10 December 2026. The grocer files and pays in January 2027. The late return costs EUR 100 (art. 45(2)) and the late payment adds 10% of the VAT due, EUR 152 (art. 45(3)): EUR 252 before interest at 9% a year (art. 45(4)).
+The return and payment were due on 10 December 2026. The grocer files and pays in January 2027. The late return costs EUR 100 (art. 45(2)) and the late payment adds 10% of the VAT due, EUR 162 (art. 45(3)): EUR 262 before interest at 9% a year (art. 45(4)).
 
 ```oa-check
-name: Grocer, Aug-Oct 2026, fish 0% only to 30 Sep, late return and payment
+name: Grocer, Aug-Oct 2026, basic goods split by date, late return and payment
 inputs:
   fish_aug_sep: 30000
   fish_oct: 10000
   fruit_veg: 20000
+  bread_milk_to_11_oct: 12000
+  bread_milk_from_12_oct: 4000
   other_food: 50000
   soft_drinks: 8000
   input_vat: 3000
   late_return_charge: 100
 steps:
-  - vat_fish_aug_sep: fish_aug_sep * 0 / 100
-  - vat_fish_oct: fish_oct * 5 / 100
+  - vat_fish: (fish_aug_sep + fish_oct) * 0 / 100
   - vat_fruit_veg: fruit_veg * 0 / 100
+  - vat_bread_milk_5: bread_milk_to_11_oct * 5 / 100
+  - vat_bread_milk_0: bread_milk_from_12_oct * 0 / 100
   - vat_food: other_food * 5 / 100
   - vat_drinks: soft_drinks * 19 / 100
-  - output_vat: vat_fish_aug_sep + vat_fish_oct + vat_fruit_veg + vat_food + vat_drinks
+  - output_vat: vat_fish + vat_fruit_veg + vat_bread_milk_5 + vat_bread_milk_0 + vat_food + vat_drinks
   - vat_payable: output_vat - input_vat
   - additional_tax: vat_payable * 10 / 100
   - charges_before_interest: late_return_charge + additional_tax
 expected:
-  vat_fish_oct: 500
+  vat_fish: 0
+  vat_bread_milk_5: 600
   vat_food: 2500
   vat_drinks: 1520
-  output_vat: 4520
-  vat_payable: 1520
-  additional_tax: 152
-  charges_before_interest: 252
+  output_vat: 4620
+  vat_payable: 1620
+  additional_tax: 162
+  charges_before_interest: 262
 ```
 
 ## Ask the client first
@@ -251,15 +274,20 @@ expected:
 - Do you sell to customers in other EU countries, and are they businesses with VAT numbers or consumers? (Boxes 8A and 8B, VIES, the EUR 10,000 distance-sales threshold.)
 - Which entity bills you for services and goods from abroad? (Box 1 or Box 2, and 11A or 11B.)
 - Do you buy or sell construction work, scrap metal, phones, laptops, tablets or consoles, or precious metals? (Domestic reverse charge.)
-- Did you sell meat, fish, baby milk, nappies, hygiene products or fruit and vegetables in the period, and on which dates? Have you found errors in earlier returns, and what is their net total?
+- Did you sell meat, fish, bread, milk, coffee, sugar, baby food, baby milk, nappies, hygiene products or fruit and vegetables in the period, and on which dates? Have you found errors in earlier returns, and what is their net total?
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Law 95(I)/2000, consolidated to Law 109(I)/2026 and Κ.Δ.Π. 221/2026 (CyLaw): arts 10, 11 to 11ΣΤ, 17, 18, 18Α, 18Β, 42Γ, 45, 45Α, 45Β, 61; First, Fifth, Sixth, Seventh, Twelfth and Fifteenth Schedules | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html | 2026-10-24 |
+| VAT Law 95(I)/2000, consolidated to Law 109(I)/2026 and Κ.Δ.Π. 221/2026 (CyLaw): arts 10, 11 to 11ΣΤ, 17, 18, 18Α, 18Β, 42Γ, 42Ε, 45, 45Α, 45Β, 61; First, Fifth, Sixth, Seventh, Eighth, Twelfth and Fifteenth Schedules | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html | 2026-10-24 |
 | Κ.Δ.Π. 337/2025 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2026) | https://www.cylaw.org/KDP/data/2025_1_337.pdf | 2026-10-24 |
 | Κ.Δ.Π. 168/2026 (0% on meat and fish, 6 Apr to 30 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_168.pdf | 2026-10-24 |
+| Κ.Δ.Π. 354/2026 (0% on meat and fish 1 Oct 2026 to 31 May 2027; bread, milk, coffee, sugar, baby food 12 Oct 2026 to 31 May 2027) | https://www.cylaw.org/KDP/data/2026_1_354.pdf | 2026-10-24 |
+| Κ.Δ.Π. 362/2026 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2027) | https://www.cylaw.org/KDP/data/2026_1_362.pdf | 2026-10-24 |
+| Κ.Δ.Π. 363/2026 (9% on home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-10-24 |
+| Κ.Δ.Π. 172/2026 (form to opt out of VAT on a commercial lease) | https://www.cylaw.org/KDP/data/2026_1_172.pdf | 2026-10-24 |
+| CyLaw index of 2026 regulatory acts (Κ.Δ.Π.) | https://www.cylaw.org/KDP/2026.html | 2026-10-24 |
 | Κ.Δ.Π. 82/2026 (9% household electricity from 1 Apr 2026) | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-10-24 |
 | Κ.Δ.Π. 167/2026 (5% household electricity, readings 1 May 2026 to 31 Mar 2027) | https://www.cylaw.org/KDP/data/2026_1_167.pdf | 2026-10-24 |
 | Κ.Δ.Π. 102/2026 and 103/2026 (renovation and first establishment, from 1 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_102.pdf; https://www.cylaw.org/KDP/data/2026_1_103.pdf | 2026-10-24 |
@@ -267,7 +295,7 @@ expected:
 | VAT (Amendment) (No. 2) Law 223(I)/2025 | https://www.cylaw.org/nomoi/arith/2025_1_223.pdf | 2026-10-24 |
 | VAT (Amendment) Law 104(I)/2025 (SME-SS) | https://www.cylaw.org/nomoi/arith/2025_1_104.pdf | 2026-10-24 |
 | VAT (Amendment) Law 109(I)/2026 | https://www.cylaw.org/nomoi/arith/2026_1_109.pdf | 2026-10-24 |
-| VAT (General) Regulations Κ.Δ.Π. 314/2001, reg. 17 | https://www.cylaw.org/KDP/data/2001_1_314.pdf | 2026-10-24 |
+| VAT (General) Regulations Κ.Δ.Π. 314/2001, regs 17, 24, 64 and 65 | https://www.cylaw.org/KDP/data/2001_1_314.pdf | 2026-10-24 |
 | Tax Department, VAT rates | https://www.gov.cy/mof-tax/documents/syntelestes-f-p-a/ | 2026-10-24 |
 | Tax Department, obligation and right to register | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ | 2026-10-24 |
 | Tax Department, rights and obligations | https://www.gov.cy/mof-tax/documents/dikaiomata-kai-ypochreoseis/ | 2026-10-24 |
@@ -278,4 +306,4 @@ expected:
 | Tax Department, exempt transactions | https://www.gov.cy/mof-tax/documents/exairoymenes-synallages/ | 2026-10-02 |
 | Tax Department, General VAT Guide (Information Leaflet 10, November 2001) | https://www.gov.cy/media/sites/167/2026/01/%CE%93%CE%B5%CE%BD%CE%B9%CE%BA%CF%8C%CF%82-%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82-%CE%A6.%CE%A0.%CE%91.-%CE%95%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%84%CE%B9%CE%BA%CF%8C-%CE%88%CE%BD%CF%84%CF%85%CF%80%CE%BF-10.pdf | 2026-10-02 |
 
-Not yet confirmed: whether an order after Κ.Δ.Π. 221/2026 extends the 0% on meat and fish beyond 30 September 2026 (none is in the CyLaw consolidation or on the rates page); the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
+Not yet confirmed: the VAT rate on household electricity for meter readings from 1 January to 31 March 2026 (Κ.Δ.Π. 337/2025 deleted the earlier 5% entry); whether the Tax Department charges VAT default interest at a rate other than the 9% in art. 45(4); the euro amendment that set the EUR 15,600 registration threshold (the CyLaw consolidation still prints the old Cyprus pound figure in the First Schedule); the euro amounts of the art. 45(5) to (7) charges still printed in Cyprus pounds; the input VAT block on cars and entertainment in current law (only the 2001 guide states it); the box guide, the EUR 17 gift limit and the exemptions page were read on 2 October 2026, not re-read in full today; the Cyprus VAT number format.
