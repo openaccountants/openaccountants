@@ -36,7 +36,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Rates, bands and thresholds
 
-The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflation rate) and rounded up to full euros (§ 33a Abs 4 EStG; Inflationsanpassungsverordnung 2026, § 2). The remaining third, which the government would normally hand back through a separate relief package, is suspended for 2025 to 2028 (§ 124b Z 477). The Kinderabsetzbetrag is not indexed for 2026 to 2028 (§ 124b Z 475, as amended by BGBl. I Nr. 62/2026). The EUR 1,000,000 step is never indexed.
+The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflation rate) and rounded up to full euros (§ 33a Abs 4 EStG; Inflationsanpassungsverordnung 2026, § 2). The remaining third, which the government would otherwise hand back through a separate relief package (§ 33a Abs 5 and 6), is not handed back in the inflation adjustments made in 2025 to 2028 (§ 124b Z 477). The Kinderabsetzbetrag is not indexed for 2026 to 2028, so it stays at the 2025 amount (§ 124b Z 475, as amended by BGBl. I Nr. 62/2026). The EUR 1,000,000 step is never indexed.
 
 | Item | 2026 rate or amount | Year | Source |
 |---|---|---|---|
@@ -49,7 +49,7 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 | Over EUR 1,000,000 | 55% (calendar years 2016 to 2029) | 2026 | EStG § 33 Abs 1, last sentence |
 | Familienbonus Plus, child up to the month of the 18th birthday | EUR 166.68 a month (EUR 2,000.16 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit a |
 | Familienbonus Plus, older child while family allowance is paid | EUR 58.34 a month (EUR 700.08 a year) | 2026 | EStG § 33 Abs 3a Z 1 lit b |
-| Kinderabsetzbetrag (paid with the family allowance) | EUR 70.90 a month per child | 2025 to 2028 | EStG § 33 Abs 3 and § 124b Z 475; USP, https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html |
+| Kinderabsetzbetrag (paid with the family allowance) | EUR 70.90 a month per child | 2025 to 2028 | EStG § 33 Abs 3 Z 1 (RIS note 1: EUR 70.90 for 2025 under BGBl. II Nr. 314/2024) and § 124b Z 475 (no indexation 2026 to 2028) |
 | Kindermehrbetrag | EUR 700 per child, less tariff tax | 2026 | EStG § 33 Abs 7 |
 | Alleinverdiener- or Alleinerzieherabsetzbetrag | EUR 612 (one child), EUR 828 (two), plus EUR 273 for each further child | 2026 | EStG § 33 Abs 4 Z 1 and 2 |
 | Sole earner: partner's income limit | EUR 7,411 | 2026 | EStG § 33 Abs 4 Z 1 |
@@ -57,6 +57,8 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 | Verkehrsabsetzbetrag (employees) | EUR 496 | 2026 | EStG § 33 Abs 5 Z 1 |
 | Increased Verkehrsabsetzbetrag with a Pendlerpauschale | EUR 853 up to income EUR 15,069, falling to EUR 496 at EUR 16,056 | 2026 | EStG § 33 Abs 5 Z 2 |
 | Zuschlag zum Verkehrsabsetzbetrag | EUR 804 up to income EUR 19,761, falling to nil at EUR 30,259 | 2026 | EStG § 33 Abs 5 Z 3 |
+| Pendlerpauschale, public transport reasonable (at least 20 km one way) | EUR 696 (20 to 40 km), EUR 1,356 (over 40 to 60 km), EUR 2,016 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit c |
+| Pendlerpauschale, public transport not reasonable for at least half the way | EUR 372 (2 to 20 km), EUR 1,476 (over 20 to 40 km), EUR 2,568 (over 40 to 60 km), EUR 3,672 (over 60 km) a year | 2026 | EStG § 16 Abs 1 Z 6 lit d |
 | Pendlereuro | EUR 6 a year per km of one-way commute (with a Pendlerpauschale) | from 2026 | EStG § 33 Abs 5 Z 4; § 124b Z 476 |
 | Pensionistenabsetzbetrag | EUR 1,020, falling to nil between pension income EUR 21,614 and EUR 31,494 | 2026 | EStG § 33 Abs 6 Z 3 |
 | Increased Pensionistenabsetzbetrag | EUR 1,502 up to pension income EUR 24,616, falling to nil at EUR 31,494; spouse income at most EUR 2,720 | 2026 | EStG § 33 Abs 6 Z 1 and 2 |
@@ -76,8 +78,10 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 | Selbstbehalt for extraordinary expenses | 6% (income up to EUR 7,300), 8% (to EUR 14,600), 10% (to EUR 36,400), 12% above | 2026 | EStG § 34 Abs 4 |
 | Filing duty, no wage-taxed income | Income over EUR 13,539 | 2026 | EStG § 42 Abs 1 Z 3 |
 | Filing duty, wage-taxed income plus other income over EUR 730 (and the other § 41 Abs 1 cases named in § 42) | Income over EUR 14,769 | 2026 | EStG § 41 Abs 1 Z 1; § 42 Abs 1 Z 3 |
-| Prepayment uplift | Last assessed tax plus 4% (first following year), plus 5% for each later year | 2026 | EStG § 45 Abs 1 |
+| Prepayment uplift | Last assessed tax plus 4% (first following year), plus 5% for each later year; rounded down to full euros; set at nil if the year's total would be EUR 300 or less | 2026 | EStG § 45 Abs 1 |
+| Rounding of the assessed tax | To full euros (below EUR 0.50 down, from EUR 0.50 up) | 2026 | EStG § 39 Abs 3 |
 | Anspruchszinsen | 2% a year above the base rate, from 1 October 2027 for 2026; not set below EUR 50; at most 48 months | 2026 | BAO § 205 Abs 1 and 2, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
+| Base rate (Basiszinssatz), so the Anspruchszinsen rate | 2.03% from 16 September 2026, so 4.03% a year; 1.53% from 11 June 2025 to 15 September 2026, so 3.53%. The rate in force on each day applies | as at 24 October 2026 | OeNB, Basis- und Referenzzinssätze, https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE |
 | Säumniszuschlag | 2%, then 1% and 1% | 2026 | BAO § 217 Abs 2 and 3 |
 | Verspätungszuschlag | Up to 10% of the tax assessed | 2026 | BAO § 135 |
 
@@ -102,9 +106,9 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 
 **Investitionsfreibetrag** (§ 11 EStG). An extra deduction on top of depreciation, only in the year of purchase or completion, for assets with at least four years' life in an Austrian business. Not on: assets used for the investment-based Gewinnfreibetrag; assets with special depreciation in § 8 (buildings, goodwill, cars), except zero-emission cars, heat pumps and similar; low-value assets; used assets; most intangibles outside digitalisation, ecology and health; fossil-fuel plant (§ 11 Abs 3). Not with any flat rate. For 2026 the rate is 20% (22% green) on cost falling from 1 November 2025 to 31 December 2026 (§ 124b Z 480).
 
-**Depreciation.** Straight line over the useful life, or declining balance at up to 30% of book value (§ 7 Abs 1a). An asset used for six months or less in its first year gets half a year's depreciation (§ 7 Abs 2). Buildings up to 2.5% a year, buildings let for housing up to 1.5% (§ 8 Abs 1). Goodwill of a trade or farm over 15 years (§ 8 Abs 3). New cars over at least eight years (§ 8 Abs 6). Low-value assets up to EUR 1,000 are expensed at once (§ 13). A car or estate car counts at most at EUR 40,000 of cost, so at most EUR 5,000 a year of depreciation. Other value-based costs (comprehensive insurance, financing) are cut in the same proportion. Running costs are business costs only where business trips exceed 50% of the year's kilometres ([USP, Kfz](https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html)). Keep a logbook.
+**Depreciation.** Straight line over the useful life, or declining balance at up to 30% of book value (§ 7 Abs 1a). An asset used for six months or less in its first year gets half a year's depreciation (§ 7 Abs 2). Buildings up to 2.5% a year, buildings let for housing up to 1.5% (§ 8 Abs 1). Goodwill of a trade or farm over 15 years (§ 8 Abs 3). New cars over at least eight years (§ 8 Abs 6). Low-value assets up to EUR 1,000 are expensed at once (§ 13). A car or estate car counts at most at EUR 40,000 of cost, including VAT and NoVA, so at most EUR 5,000 a year of depreciation over eight years. Other cost-based running costs (comprehensive insurance, financing) are cut in the same proportion (PKW-Angemessenheitsverordnung § 1). Running costs are business costs only where business trips exceed 50% of the year's kilometres ([USP, Kfz](https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html)). Keep a logbook.
 
-**Travel, self-employed.** Meals and lodging on purely business trips are deductible up to the § 26 Z 4 amounts without proof (§ 4 Abs 5): EUR 30 per 24 hours, one twelfth per started hour after three hours, and EUR 17 a night including breakfast where no higher cost is shown. A trip counts only where the person is at least 25 km from the centre of their activity. A private car used for business less than half the time: EUR 0.50 per km ([USP, Reisekosten](https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html)).
+**Travel, self-employed.** Meals and lodging on purely business trips are deductible up to the § 26 Z 4 amounts without proof (§ 4 Abs 5): EUR 30 per 24 hours, one twelfth per started hour after three hours, and EUR 17 a night including breakfast where no higher cost is shown. A trip counts only where the person is at least 25 km from the centre of their activity. A private car used for business less than half the time: the official kilometre rate of EUR 0.50 per km (Reisegebührenvorschrift § 10 Abs 3 Z 2; [USP, Reisekosten](https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html)).
 
 **Arbeitsplatzpauschale, 2026** (§ 4 Abs 4 Z 8 as in force on 30 June 2026). For a self-employed person with no other room for the business: EUR 1,200 if they have no other active income over EUR 13,539 with a workplace elsewhere, otherwise EUR 300 (plus up to EUR 300 for ergonomic furniture). Once per person, split by receipts across several businesses. It excludes a study (Arbeitszimmer) deduction. From 2027 only an ergonomic-furniture deduction of up to EUR 300 remains (BGBl. I Nr. 62/2026).
 
@@ -116,9 +120,9 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 
 **Extraordinary expenses** (§ 34 EStG, schedule L 1ab). Illness and similar costs count only above the Selbstbehalt in the rates table, measured on income before these expenses. The rate falls by one point where the sole-earner or single-parent credit applies (or the partner earns at most EUR 7,411), and by one point for each child. Disability costs under § 35 have no Selbstbehalt.
 
-**Losses.** Losses are set against other income of the same year, except where the law bars it (§ 2 Abs 2a, for example loss-making models). Business losses worked out under §§ 4 to 14 from proper books or a proper cash-basis account carry forward as a Sonderausgabe to the extent not used before, with no time limit in the text (§ 18 Abs 6). Letting and other surplus losses do not carry forward. A year's net loss on private real estate sales is cut to 60% and spread over that year and the next 14, against letting income only (§ 30 Abs 7). File in a loss year so the loss is on record.
+**Losses.** Losses are set against other income of the same year, except where the law bars it (§ 2 Abs 2a, for example loss-making models). Business losses worked out under §§ 4 to 14 from proper books or a proper cash-basis account carry forward as a Sonderausgabe to the extent not used before, with no time limit in the text (§ 18 Abs 6). Letting and other surplus losses do not carry forward. A year's net loss on private real estate sales is cut to 60% and spread over that year and the next 14, against letting income only; on application the cut loss is set against letting income of the loss year instead (§ 30 Abs 7). File in a loss year so the loss is on record.
 
-**Familienbonus Plus, 2026** (§ 33 Abs 3a). Only where Austrian family allowance is paid for the child and the child lives in the EU, EEA or Switzerland. Tested month by month. The family-allowance recipient or their partner takes all of it, or each takes half. A parent paying statutory support (with the Unterhaltsabsetzbetrag) shares it the same way. If the claims add up to more than the full amount, each gets half (§ 33 Abs 3a Z 3 lit c). It reduces tax to nil at most and is never paid out (§ 33 Abs 2 Z 1). The employer can apply it (form E 30), but the return must claim it again on schedule L 1k (one per child; L 1k-bF where support was not paid in full), with the child's social insurance number (§ 33 Abs 3a Z 6). From 2027 the split changes to a 75/25 option for children aged four or over (BGBl. I Nr. 62/2026).
+**Familienbonus Plus, 2026** (§ 33 Abs 3a). Only where Austrian family allowance is paid for the child and the child lives in the EU, EEA or Switzerland. Tested month by month. The family-allowance recipient or their partner takes all of it, or each takes half. A parent paying statutory support (with the Unterhaltsabsetzbetrag) shares it the same way. If the claims add up to more than the full amount, each gets half (§ 33 Abs 3a Z 3 lit c). It reduces tax to nil at most and is never paid out (§ 33 Abs 2 Z 1). The employer can apply it (form E 30), but the return must claim it again on schedule L 1k (one per child; L 1k-bF where support was not paid in full), with the child's social insurance number (§ 33 Abs 3a Z 6). From 2027 the full-amount option ends for a child aged four or over where no child under four belongs to the household: the split is then 75/25 or half each, unless only one person qualifies (§ 33 Abs 3a Z 2 and 3 as amended by BGBl. I Nr. 62/2026).
 
 **Kindermehrbetrag, 2026** (§ 33 Abs 7). For a person with taxable active income on at least 30 days in 2026 (or only childcare benefit, maternity benefit or care leave pay all year) whose tariff tax is under EUR 700. The refund is EUR 700 less that tax, plus EUR 700 for each further child. The person must get the sole-earner or single-parent credit, or have a partner whose tariff tax is also under EUR 700; in that case only the family-allowance recipient gets it. With one child, tariff tax stays under EUR 700 up to income of EUR 17,038 (20% of EUR 3,499 is EUR 699.80).
 
@@ -152,7 +156,7 @@ The 2026 tariff and credits were raised by 1.733% (two thirds of the 2.6% inflat
 
 The § 41 Abs 1 list also makes an employee assessable where the employer applied, without entitlement, the Familienbonus Plus, the sole-earner or single-parent credit, the increased Verkehrsabsetzbetrag or pensioner credit, the Pendlerpauschale, a telework allowance, a tax-free profit share, or an exemption notice (§ 41 Abs 1 Z 8 and 12).
 
-**Returns.** Form E 1 with schedules: E 1a (business income), E 1b (letting), E 1kv (capital income), L 1k or L 1k-bF (children), L 1ab (extraordinary expenses), L 1i (foreign wages without wage tax). Employees with only wage income file the L 1. The return goes in electronically through FinanzOnline (§ 42 Abs 1). Paper is allowed only where electronic filing is not reasonable for lack of the technical means, or for a self-filer whose prior-year turnover is at most EUR 55,000 ([USP, Einreichen von Steuererklärungen](https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html)).
+**Returns.** Form E 1 with schedules: E 1a (business income), E 1b (letting), E 1kv (capital income), L 1k or L 1k-bF (children), L 1ab (extraordinary expenses), L 1i (foreign wages without wage tax). Employees with only wage income file the L 1. The return goes in electronically through FinanzOnline (§ 42 Abs 1). Paper is allowed only where electronic filing is not reasonable for lack of the technical means. A person filing their own return must file electronically only if they have internet access and must file VAT pre-returns because their turnover is over the limit (FinanzOnline-Erklärungsverordnung § 2). That limit is prior-year turnover of EUR 55,000 (Verordnung über die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen, § 1). So a self-filer with prior-year turnover of at most EUR 55,000 may file on paper.
 
 **Deadlines for the 2026 return** (§ 134 Abs 1 BAO). 30 April 2027 on paper; 30 June 2027 through FinanzOnline. The tax office can extend on a reasoned request (§ 134 Abs 2), also through FinanzOnline. A client represented by a Steuerberater under the quota system can file until 31 March 2028, and the tax office can extend that to 30 June 2028 (§ 134a Abs 1 and 3 BAO). The quota deadline does not apply to returns declaring only wage-taxed employment income (§ 134a Abs 2).
 
@@ -170,7 +174,7 @@ The § 41 Abs 1 list also makes an employee assessable where the employer applie
 
 | What | Rule | Source |
 |---|---|---|
-| Anspruchszinsen | A 2026 balance (or refund) is charged (or credited) interest at 2% a year above the base rate, from 1 October 2027 until the notice; not set below EUR 50; at most 48 months. A voluntary payment (Anzahlung) before then reduces the base | BAO § 205 Abs 1 to 4 |
+| Anspruchszinsen | A 2026 balance (or refund) is charged (or credited) interest at 2% a year above the base rate (4.03% a year from 16 September 2026), from 1 October 2027 until the notice; not set below EUR 50; at most 48 months. A voluntary payment (Anzahlung) before then reduces the base | BAO § 205 Abs 1 to 4 |
 | First late-payment surcharge (Säumniszuschlag) | 2% of the tax not paid on time | BAO § 217 Abs 2 |
 | Second and third surcharges | 1% each, if still unpaid three months after enforceability, and three months after that | BAO § 217 Abs 3 |
 | No first surcharge | Delay of at most five days, and all taxes on the same account paid on time in the previous six months | BAO § 217 Abs 5 |
@@ -195,7 +199,7 @@ The § 41 Abs 1 list also makes an employee assessable where the employer applie
 
 A graphic designer (trade income, cash basis, no books, prior-year turnover under EUR 420,000) has 2026 turnover of EUR 60,000 and actual expenses of EUR 8,000. SVS contributions paid in 2026 are EUR 9,000. She has no other income and works from a rented studio, so no Arbeitsplatzpauschale. She paid prepayments of EUR 1,400 a quarter (EUR 5,600).
 
-The 15% flat rate gives EUR 9,000, more than her actual EUR 8,000, so the flat rate is better. Profit is EUR 60,000 less EUR 9,000 (flat rate) less EUR 9,000 (SVS on top) = EUR 42,000. The Grundfreibetrag is 15% of EUR 33,000 = EUR 4,950. There is no investment-based allowance and no Investitionsfreibetrag, because both are barred with a flat rate. Taxable income is EUR 37,050. Tariff tax: EUR 8,453 at 20% (EUR 1,690.60), EUR 14,466 at 30% (EUR 4,339.80) and EUR 592 at 40% (EUR 236.80) = EUR 6,267.20. She is not an employee, so no Verkehrsabsetzbetrag. After the prepayments she owes EUR 667.20, due one month after the notice. Paying that amount as an Anzahlung before 1 October 2027 keeps Anspruchszinsen off it.
+The 15% flat rate gives EUR 9,000, more than her actual EUR 8,000, so the flat rate is better. Profit is EUR 60,000 less EUR 9,000 (flat rate) less EUR 9,000 (SVS on top) = EUR 42,000. The Grundfreibetrag is 15% of EUR 33,000 = EUR 4,950. There is no investment-based allowance and no Investitionsfreibetrag, because both are barred with a flat rate. Taxable income is EUR 37,050. Tariff tax: EUR 8,453 at 20% (EUR 1,690.60), EUR 14,466 at 30% (EUR 4,339.80) and EUR 592 at 40% (EUR 236.80) = EUR 6,267.20, which the notice rounds to EUR 6,267 (§ 39 Abs 3). She is not an employee, so no Verkehrsabsetzbetrag. After the prepayments she owes EUR 667, due one month after the notice. Paying that amount as an Anzahlung before 1 October 2027 keeps Anspruchszinsen off it.
 
 ```oa-check
 name: Austria freelancer on the 15% Basispauschalierung, 2026 bands
@@ -212,14 +216,16 @@ steps:
   - band_30: (min(taxable, 36458) - 21992) * 0.30
   - band_40: (min(taxable, 70365) - 36458) * 0.40
   - tax: band_20 + band_30 + band_40
-  - balance_due: tax - prepayments
+  - assessed_tax: round(tax)
+  - balance_due: assessed_tax - prepayments
 expected:
   flat_rate: 9000
   profit: 42000
   grundfreibetrag: 4950
   taxable: 37050
   tax: 6267.20
-  balance_due: 667.20
+  assessed_tax: 6267
+  balance_due: 667
 ```
 
 ### Example 2: Employee whose Familienbonus Plus is larger than her tax, 2026
@@ -266,13 +272,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Einkommensteuergesetz 1988, RIS consolidated text as of 24.10.2026 (§§ 1, 2, 4 Abs 5, 7, 8, 10, 11, 13, 16, 17, 18, 20, 26 Z 4, 27a, 30, 30a, 33, 33a, 34, 41, 42, 45, 46, 102, 124b Z 475 to 497) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
+| Einkommensteuergesetz 1988, RIS consolidated text as of 24.10.2026 (§§ 1, 2, 4 Abs 5, 7, 8, 10, 11, 13, 16, 17, 18, 20, 26 Z 4, 27a, 30, 30a, 33, 33a, 34, 39, 41, 42, 45, 46, 102, 124b Z 475 to 497) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
 | Einkommensteuergesetz 1988, RIS text as in force on 30.06.2026 (§ 4 Abs 4 Z 8, § 16 Abs 1 Z 7a, § 17 Abs 1, § 26 Z 9 for 2026) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&FassungVom=2026-06-30 | 2026-10-24 |
 | Inflationsanpassungsverordnung 2026, BGBl. II Nr. 191/2025 | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_II_191/BGBLA_2025_II_191.html | 2026-10-24 |
 | Abgabenänderungsgesetz 2025, BGBl. I Nr. 97/2025 (2026 amounts in § 33; the 2025 amounts it replaced) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_I_97/BGBLA_2025_I_97.html | 2026-10-24 |
 | Budgetbegleitgesetz 2027-2028, BGBl. I Nr. 62/2026 (2027 changes; Kinderabsetzbetrag freeze to 2028) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_62/BGBLA_2026_I_62.html | 2026-10-24 |
 | Inflationsanpassungsverordnung 2027, BGBl. II Nr. 260/2026 | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_II_260/BGBLA_2026_II_260.html | 2026-10-24 |
 | Bundesabgabenordnung, RIS consolidated text as of 24.10.2026 (§§ 134, 134a, 135, 205, 210, 211, 217, 245) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-24 |
+| OeNB, Basis- und Referenzzinssätze (base rate 2.03% from 16.09.2026) | https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE | 2026-10-24 |
+| PKW-Angemessenheitsverordnung, BGBl. II Nr. 466/2004, RIS consolidated text (§ 1, EUR 40,000) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003797 | 2026-10-24 |
+| Reisegebührenvorschrift 1955, RIS consolidated text (§ 10 Abs 3 Z 2, EUR 0.50 per km) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008156 | 2026-10-24 |
+| FinanzOnline-Erklärungsverordnung, RIS consolidated text (§ 2, when electronic filing is required) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 | 2026-10-24 |
+| Verordnung über die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen, RIS consolidated text (§ 1, EUR 55,000) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 | 2026-10-24 |
 | USP, Tarifstufen (2026 tariff and the official EUR 40,000 example) | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html | 2026-10-24 |
 | USP, Steuerabsetzbeträge (2026 credits, Kinderabsetzbetrag) | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/steuerabsetzbetraege.html | 2026-10-24 |
 | USP, Gewinnfreibetrag | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/gewinnfreibetrag.html | 2026-10-24 |
@@ -282,10 +293,10 @@ expected:
 | USP, Einkommensteuervorauszahlungen | https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/einkommensteuervorauszahlungen.html | 2026-10-24 |
 | USP, Fristen und Fälligkeiten (surcharges, three-day grace) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/fristen-und-faelligkeiten.html | 2026-10-24 |
 | USP, Reisekosten (25 km rule, EUR 0.50 per km) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebseinnahmen-und-ausgaben/reisekosten.html | 2026-10-24 |
-| USP, Steuerrechtsreihe Teil 7, Kfz (EUR 40,000 limit, 50% rule) | https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html | 2026-10-24 |
+| USP, Steuerrechtsreihe Teil 7, Kfz (50% rule for running costs) | https://www.usp.gv.at/aktuelles/newsreihen/steuerrechtsreihe/steuerrechtsreihe-teil-7-besteuerung-von-kfz.html | 2026-10-24 |
 | BMF, Familienbonus Plus (schedules L 1k, L 1k-bF, E 30) | https://www.bmf.gv.at/themen/steuern/arbeitnehmerveranlagung/steuertarif-steuerabsetzbetraege/familienbonus-plus.html | 2026-10-24 |
 
-Not yet confirmed: the current base rate (Basiszinssatz) that sets the Anspruchszinsen rate (the OeNB page did not load); the EUR 55,000 paper-filing limit, read on USP only and not in the FinanzOnline-Erklärungsverordnung; the EUR 40,000 car cost limit and the EUR 0.50 kilometre rate, read on USP and not in their regulations; the bookkeeping-duty thresholds that decide Basispauschalierung eligibility (§ 125 BAO, § 189 UGB) for 2026; the 2026 Pendlerpauschale table; the old version's BMF example of a home computer written off over three years with a 40% private share (Steuerbuch, 2025 assessment), not re-checked and left out; the 10% limit on donations from business assets (§ 4a), not re-read.
+Not yet confirmed: the 25 km minimum distance for a business trip and the rule that car running costs are business costs only above 50% business use, both read on USP and not found in the EStG or a regulation; the bookkeeping-duty thresholds that decide Basispauschalierung eligibility (§ 125 BAO, § 189 UGB) for 2026; the old version's BMF example of a home computer written off over three years with a 40% private share (Steuerbuch, 2025 assessment), not re-checked and left out; the 10% limit on donations from business assets (§ 4a), not re-read; Liebhaberei (hobby activities produce no tax loss, Liebhabereiverordnung), covered in the old version and not re-checked.
 
 <!-- openaccountants-cta-block -->
 
