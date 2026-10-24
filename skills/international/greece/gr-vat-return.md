@@ -9,15 +9,14 @@ description: >
   fines. Trigger on "Greek VAT return", "ΦΠΑ", "do the VAT Greece", "myAADE VAT", "TAXISnet VAT".
   Load greece-vat-return instead of this file. Out of scope here: everything; see
   greece-vat-return, greece-einvoice (myDATA and e-invoicing) and gr-tax-overview.
-jurisdiction: GR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: GR
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -40,3 +39,23 @@ Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of 
 | AADE circular Ε.2113/31.12.2025 on the 30% island reduction, with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of greece-vat-return.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

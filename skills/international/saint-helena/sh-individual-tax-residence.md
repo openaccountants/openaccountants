@@ -2,13 +2,16 @@
 name: sh-individual-tax-residence
 description: >
   Saint Helena island individual income-tax residence reference checked in 2026. Explains the three alternative statutory residence tests, exact day-count boundaries, employment-contract route, arrival and departure provisions, and the Commissioner’s limited travel discretion. Separates tax residence from immigration and from the source of income. Identifies discrepancies between the published residency leaflet and the official law, including the non-resident employment allowance. Use with documented travel dates, contracts and residence evidence. Does not cover Ascension or Tristan da Cunha, treaty residence, immigration permission, or a complete later-amendment audit. Independent accountant review remains pending.
-jurisdiction: SH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SH
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint Helena island: individual tax residence
@@ -50,3 +53,23 @@ Suggested evidence: travel ledger, accommodation and normal-abode facts, signed 
 ## Verification boundary
 
 Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,13 +1,16 @@
 ---
 name: de-partners-and-part-year
 description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (de-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit-tax)."
-jurisdiction: DE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: DE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Germany: partners' profit shares and the year of moving to or from Germany, tax year 2026
@@ -253,3 +256,23 @@ expected:
 | ELSTER, help for the 2025 determination return (ESt 1 B, Anlage FB, FE-G, FE-S) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_fein_2025 | 2026-10-23 |
 
 Not yet confirmed: the 2026 forms for the determination return (the ELSTER guide read is for 2025; the 2026 one is not yet published); the rounding of the special rate rests on the official example in the 2025 handbook, not on the statute; whether foreign social security contributions paid in the months before arrival or after departure, on pay not subject to German tax, are special expenses in the year of moving (§ 10(2) sentence 1 no. 1 EStG speaks of tax-free income; no official text read applies it to the § 32b(1) no. 2 case); a GmbH general partner's liability fee would be its Sondervergütung and add to trade income, but Example 1 assumes none.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,670 +1,184 @@
 ---
 name: austria-vat-return
-description: "Use this skill whenever asked to prepare, review, or classify transactions for an Austrian VAT return (Umsatzsteuervoranmeldung / UVA) or annual declaration (Umsatzsteuererklärung / U1) for a self-employed individual or small business in Austria. Trigger on phrases like \"prepare UVA\", \"Austrian VAT return\", \"Umsatzsteuer\", \"classify transactions for Austrian VAT\", or any request involving Austria VAT filing. This skill covers Austria only, standard regime (Regelbesteuerung). Kleinunternehmerregelung, partial exemption, margin scheme (Differenzbesteuerung), and VAT groups (Organschaft) are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Austrian VAT work."
+description: "Austrian VAT (Umsatzsteuer) for tax year 2026 in the deep-tax shape: who must charge VAT, the rates under § 10 UStG 1994 (20%, 13%, 10%, the 4.9% rate on listed basic foods from 1 July 2026, 19% for Jungholz and Mittelberg), the small business exemption under § 6 Abs 1 Z 27 (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), the UVA period (monthly above EUR 100,000, quarterly, none at or below EUR 55,000), the due date on the 15th of the second following month, the annual U 1 by 30 April or 30 June, reverse charge under § 19, the recapitulative statement (ZM), the late-filing surcharge (§ 135 BAO) and late-payment surcharges (§ 217 BAO). Trigger on: Austrian VAT return, UVA, Umsatzsteuervoranmeldung, U 30, U 1, Kleinunternehmerregelung, Säumniszuschlag, Austrian reverse charge. Out of scope: the Kennzahl-by-Kennzahl bank-statement method in at-vat-return; corporate income tax in at-corporate-income-tax; non-residents and treaties in at-cross-border."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/austria-vat-return"
   jurisdiction: "AT"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
+  trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Austria VAT Return
-
-## Section 1 — Quick reference
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Austria (Republik Österreich) |
-| Standard rate | 20% |
-| Reduced rates | 13% (cultural events, live animals, plants, firewood, certain food, domestic flights), 10% (food and non-alcoholic drinks, books, passenger transport, hotels, medicines, agriculture) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods) |
-| Return form | UVA (Umsatzsteuervoranmeldung, monthly/quarterly); U1 (Umsatzsteuererklärung, annual) |
-| Filing portal | https://finanzonline.bmf.gv.at (FinanzOnline) |
-| Authority | Bundesministerium für Finanzen (BMF) / Finanzamt |
-| Currency | EUR only |
-| Filing frequencies | Monthly (turnover > €100,000 in prior year); Quarterly (turnover ≤ €100,000); Annual (U1, always) |
-| Deadline | UVA: 15th of 2nd month after period end (e.g. January due 15 March); U1: 30 April (paper) or 30 June (electronic) |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants contributors |
-| Validation date | April 2026 |
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Key UVA Kennzahlen (the field codes you will use most)**
-
-| KZ | Meaning |
-| --- | --- |
-| 000 | Total revenue (Gesamtbetrag der Bemessungsgrundlagen) |
-| 001 | Intra-EU supplies of goods (steuerfreie Lieferungen, Art. 6 Abs 1) |
-| 017 | Other tax-free revenues (with credit) |
-| 021 | Intra-EU services provided (Art. 3a Abs 2) |
-| 022 | Sales at 20% (Bemessungsgrundlage) |
-| 029 | Sales at 10% |
-| 006 | Sales at 13% |
-| 037 | Sales at 19% (for Jungholz/Mittelberg only) |
-| 057 | Reverse charge — construction subcontracting received (Bauleistungen, § 19 Abs 1a) |
-| 060 | Reverse charge — other domestic (§ 19 Abs 1) |
-| 065 | Intra-EU acquisitions (Art. 3 Abs 8) — 20% |
-| 066 | Intra-EU acquisitions — 10% |
-| 070 | Intra-EU acquisitions — new vehicles |
-| 072 | Intra-EU services received (Art. 3a Abs 2) |
-| 073 | Imports (Einfuhren) — since 2022 deferred |
-| 060/065/072 | All have corresponding output USt lines |
-| 083 | Total output VAT (Gesamtbetrag der geschuldeten USt) |
-| 060 | Input VAT deductible (Gesamtbetrag der Vorsteuer) — actually KZ 060 is dual-use; see form |
-| KZ 060 (Vorsteuer) | Total deductible input VAT |
-| KZ 070 (Vorsteuern aus ig Erwerben) | Input VAT on intra-EU acquisitions |
-| KZ 065 (USt ig Erwerb) | Output VAT on intra-EU acquisitions |
-| 095 | Net payable (Zahllast) |
-| 090 | Excess credit (Gutschrift) |
-
-- **Note on Austrian UVA form** — The Austrian UVA uses Kennzahlen (KZ) rather than sequential box numbers. The mapping is less intuitive than Malta's VAT return layout. Key principle: every reverse charge transaction has a base KZ and a corresponding output USt KZ, plus an input Vorsteuer KZ. For a fully taxable business, the net effect of reverse charge is zero.  _(unsure)_
-
-**Conservative defaults — Austria-specific**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 20% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Austria |
-| Unknown B2B vs B2C for EU customer | B2C, charge 20% |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction | €5,000 |
-| HIGH tax-delta conservative default | €400 |
-| MEDIUM counterparty concentration | >40% |
-| MEDIUM conservative-default count | >4 |
-| LOW absolute net VAT position | €10,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period. Acceptable from: Erste Bank, Raiffeisen, BAWAG, Bank Austria (UniCredit), Oberbank, Hypo banks, easybank, Revolut Business, Wise Business, N26, or any other.
-
-**Recommended** — sales invoices (especially intra-EU and reverse charge), purchase invoices above €400, the client's UID-Nummer (ATU + 8 digits).
-
-**Ideal** — complete invoice register, prior period UVA, reconciliation of credit (KZ 090).
-
-### Austria-specific refusal catalogue
-
-- **R-AT-1 — Kleinunternehmerregelung** — Kleinunternehmer are exempt from charging USt and cannot recover Vorsteuer. They do not file a UVA. This skill covers the Regelbesteuerung only. If you have opted in (Option zur Steuerpflicht), confirm. (Trigger: client under the small business exemption (turnover ≤ €35,000 net, § 6 Abs 1 Z 27 UStG).)  _(§ 6 Abs 1 Z 27 UStG)_
-- **R-AT-2 — Partial exemption (Vorsteueraufteilung)** — Mixed taxable and exempt supplies require Vorsteueraufteilung under § 12 Abs 4–6 UStG. Please use a Steuerberater. (Trigger: both taxable and exempt supplies, non-de-minimis.)  _(§ 12 Abs 4–6 UStG)_
-- **R-AT-3 — Differenzbesteuerung (margin scheme)** — Differenzbesteuerung requires per-item margin computation. Out of scope. (Trigger: second-hand goods, art, antiques.)  _(Differenzbesteuerung)_
-- **R-AT-4 — Organschaft (VAT group)** — Organschaft requires consolidation. Out of scope. (Trigger: client is part of an Organschaft.)  _(Organschaft)_
-- **R-AT-5 — Fiscal representative** — Non-resident with fiscal representative — out of scope. (Trigger: non-resident with fiscal representative.)  _(unsure)_
-- **R-AT-6 — Real estate (Grundstücksumsätze)** — Grundstücksumsätze are complex. Please use a Steuerberater. (Trigger: property transactions subject to USt option.)  _(unsure)_
-- **R-AT-7 — Jungholz/Mittelberg special rate** — The Jungholz/Mittelberg 19% rate (KZ 037) requires specific handling. Flag for Steuerberater. (Trigger: client operates in Jungholz or Mittelberg (19% special rate).)  _(unsure)_
-- **R-AT-8 — Income tax instead of USt** — This skill handles Austrian USt (Umsatzsteuer) only. (Trigger: user asks about Einkommensteuer, Körperschaftsteuer instead of USt.)  _(unsure)_
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Section 5.
-
-### 3.1 Austrian banks (fees exempt — exclude)
-
-**Austrian banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ERSTE BANK, SPARKASSE | EXCLUDE for bank charges | Financial service, exempt |
-| RAIFFEISEN, RAIFFEISENBANK | EXCLUDE for bank charges | Same |
-| BAWAG, BAWAG PSK | EXCLUDE for bank charges | Same |
-| BANK AUSTRIA, UNICREDIT AT | EXCLUDE for bank charges | Same |
-| OBERBANK, BKS BANK, BTV | EXCLUDE for bank charges | Same |
-| HYPO, HYPO TIROL, HYPO NOE | EXCLUDE for bank charges | Same |
-| EASYBANK | EXCLUDE for bank charges | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscriptions |
-| ZINSEN, HABENZINSEN, SOLLZINSEN | EXCLUDE | Interest, out of scope |
-| KREDIT, DARLEHEN | EXCLUDE | Loan principal |
-
-### 3.2 Austrian government and statutory bodies (exclude entirely)
-
-**Government and statutory bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| FINANZAMT, FA, BMF | EXCLUDE | Tax payment (USt, ESt, KöSt) |
-| FINANZONLINE | EXCLUDE | Tax portal payment |
-| SVS, SOZIALVERSICHERUNG DER SELBST | EXCLUDE | Self-employed social insurance (SVS) |
-| OEGK, OGK | EXCLUDE | Health insurance |
-| AMS | EXCLUDE | Employment service |
-| WKO, WIRTSCHAFTSKAMMER | EXCLUDE | Chamber of Commerce membership |
-| GERICHT, BEZIRKSGERICHT | EXCLUDE | Court fees |
-| GEMEINDE, MAGISTRAT | EXCLUDE | Municipal fees |
-| FIRMENBUCH, LANDESGERICHT | EXCLUDE | Company register |
-
-### 3.3 Austrian utilities
-
-**Austrian utilities table**
-
-| Pattern | Treatment | KZ | Notes |
-| --- | --- | --- | --- |
-| WIEN ENERGIE | Domestic 20% | Vorsteuer (input) | Electricity/gas — standard rate |
-| WIENER STADTWERKE | Domestic 20% | Vorsteuer | Utilities |
-| EVN | Domestic 20% | Vorsteuer | Energy |
-| ENERGIE AG, LINZ AG | Domestic 20% | Vorsteuer | Energy |
-| SALZBURG AG, KELAG, TIWAG, ILLWERKE | Domestic 20% | Vorsteuer | Regional energy |
-| A1 TELEKOM, A1, TELEKOM AUSTRIA | Domestic 20% | Vorsteuer | Telecoms — overhead |
-| MAGENTA, T-MOBILE AUSTRIA | Domestic 20% | Vorsteuer | Telecoms |
-| DREI, HUTCHISON DREI | Domestic 20% | Vorsteuer | Telecoms |
-| WIENER WASSER, WASSERWERK | Domestic 10% | Vorsteuer | Water supply at reduced rate |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| WIENER STADTISCHE, VIENNA INSURANCE | EXCLUDE | Insurance, exempt |
-| UNIQA, GENERALI AUSTRIA | EXCLUDE | Same |
-| ALLIANZ AUSTRIA, ZURICH | EXCLUDE | Same |
-| VERSICHERUNG, PRAEMIE | EXCLUDE | All insurance exempt |
-| WUSTENROT | EXCLUDE | Building society/insurance |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | KZ | Notes |
-| --- | --- | --- | --- |
-| OSTERREICHISCHE POST, POST AG (standard) | EXCLUDE for standard postage |  | Universal service exempt |
-| POST AG (parcels) | Domestic 20% | Vorsteuer | Non-universal taxable |
-| DHL EXPRESS AUSTRIA | Domestic 20% | Vorsteuer | Express courier |
-| DPD AUSTRIA, GLS AUSTRIA | Domestic 20% | Vorsteuer | Courier |
-
-### 3.6 Transport (Austria domestic)
-
-**Transport table**
-
-| Pattern | Treatment | KZ | Notes |
-| --- | --- | --- | --- |
-| OBB, OSTERREICHISCHE BUNDESBAHNEN | Domestic 10% | Vorsteuer | Rail at reduced rate |
-| WESTBAHN | Domestic 10% | Vorsteuer | Rail |
-| WIENER LINIEN | Domestic 10% | Vorsteuer | Vienna public transport |
-| LINZ AG LINIEN, GRAZER LINIEN, IVB | Domestic 10% | Vorsteuer | Regional public transport |
-| UBER AT, UBER AUSTRIA | Domestic 10% | Vorsteuer | Ride-hailing, transport rate |
-| TAXI | Domestic 10% | Vorsteuer | Local taxi |
-| AUSTRIAN AIRLINES (domestic) | Domestic 13% | Vorsteuer | Domestic flights at 13% |
-| AUSTRIAN AIRLINES, RYANAIR (international) | EXCLUDE / 0% |  | International flights exempt |
-| ASFINAG | Domestic 20% | Vorsteuer | Motorway tolls (Vignette/GO-Box) |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-**Food retail table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SPAR, INTERSPAR, EUROSPAR | Default BLOCK input VAT | Personal provisioning |
-| BILLA, BILLA PLUS, MERKUR | Default BLOCK | Same |
-| HOFER, LIDL, PENNY | Default BLOCK | Same |
-| MPreis, UNIMARKT | Default BLOCK | Same |
-| RESTAURANT, GASTHAUS, WIRTSHAUS, CAFE | Default BLOCK | Entertainment — see 5.12 |
-
-### 3.8 SaaS — EU suppliers (reverse charge, Art. 3a Abs 2 / KZ 072)
-
-**EU SaaS suppliers table**
-
-| Pattern | Billing entity | KZ | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 072 + Vorsteuer | EU service reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 072 + Vorsteuer | Same |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 072 + Vorsteuer | Same |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 072 + Vorsteuer | Same |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 072 + Vorsteuer | Same |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 072 + Vorsteuer | EU reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | 072 + Vorsteuer | Same |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 072 + Vorsteuer | Same |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 072 + Vorsteuer | EU reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 072 + Vorsteuer | Same |
-| STRIPE (subscription) | Stripe Technology Europe Ltd (IE) | 072 + Vorsteuer | Transaction fees exempt — see 3.11 |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge, § 19 Abs 1 / KZ 060)
-
-**Non-EU SaaS suppliers table**
-
-| Pattern | Billing entity | KZ | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | 072 + Vorsteuer | LU → EU reverse charge |
-| NOTION | Notion Labs Inc (US) | 060 + Vorsteuer | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 060 + Vorsteuer | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 060 + Vorsteuer | Non-EU reverse charge |
-| GITHUB | GitHub Inc (US) | 060 + Vorsteuer | Check IE entity |
-| FIGMA | Figma Inc (US) | 060 + Vorsteuer | Non-EU |
-| CANVA | Canva Pty Ltd (AU) | 060 + Vorsteuer | Non-EU |
-| HUBSPOT | HubSpot Inc (US) or IE — check | 060 or 072 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 060 + Vorsteuer | Non-EU |
-
-### 3.10 SaaS — the exception
-
-**AWS EMEA SARL exception table**
-
-| Pattern | Treatment | Why |
-| --- | --- | --- |
-| AWS EMEA SARL | EU reverse charge KZ 072 + Vorsteuer (LU entity) | Standard EU reverse charge. If invoice shows Austrian USt, treat as domestic 20%. |
-
-### 3.11 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (subscription) | EU reverse charge KZ 072 | IE entity |
-| SUMUP, SQUARE, ZETTLE | Check invoice | If Austrian: domestic 20%; if EU: reverse charge |
-
-### 3.12 Professional services (Austria)
-
-**Professional services table**
-
-| Pattern | Treatment | KZ | Notes |
-| --- | --- | --- | --- |
-| STEUERBERATER, WIRTSCHAFTSPRUFER | Domestic 20% | Vorsteuer | Always deductible |
-| RECHTSANWALT, ANWALTSKANZLEI | Domestic 20% | Vorsteuer | Business legal matters |
-| NOTAR, NOTARIAT | Domestic 20% | Vorsteuer | Business notarial fees |
-| UNTERNEHMENSBERATER, CONSULTANT | Domestic 20% | Vorsteuer | Consulting |
-| BILANZBUCHHALTER | Domestic 20% | Vorsteuer | Bookkeeper |
-
-### 3.13 Payroll and social security (exclude entirely)
-
-**Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SVS, SOZIALVERSICHERUNG | EXCLUDE | Self-employed social insurance |
-| OEGK, GESUNDHEITSKASSE | EXCLUDE | Health insurance |
-| GEHALT, LOHN, ENTGELT | EXCLUDE | Wages |
-| MITARBEITERVORSORGEKASSE, MVK | EXCLUDE | Employee provident fund |
-| BETRIEBLICHE VORSORGE | EXCLUDE | Pension |
-
-### 3.14 Property and rent
-
-**Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BÜROMIETE, GESCHÄFTSLOKAL | Domestic 20% | Commercial lease with USt option |
-| MIETE, WOHNUNGSMIETE (residential) | Domestic 10% or EXCLUDE | Residential rent at 10% if landlord is USt-pflichtig; otherwise exempt |
-| GRUNDSTEUER | EXCLUDE | Property tax |
-| GRUNDBUCH | EXCLUDE | Land register fee |
-
-### 3.15 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UMBUCHUNG, INTERN, EIGENUEBERWEISUNG | EXCLUDE | Internal movement |
-| DIVIDENDE | EXCLUDE | Out of scope |
-| KREDITRÜCKZAHLUNG, TILGUNG | EXCLUDE | Loan repayment |
-| BEHEBUNG, BARABHEBUNG | TIER 2 — ask | Default exclude |
-| PRIVATEINLAGE | EXCLUDE | Owner injection |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Austria-based self-employed IT consultant (Einzelunternehmer, Regelbesteuerung).
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
-
-**Reasoning:**
-US entity (Section 3.9). Non-EU reverse charge under § 19 Abs 1 UStG. Client self-assesses: output USt on KZ 060 area, input Vorsteuer deductible. Net zero.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ (input) | KZ (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 2.94 | 20% | Vorsteuer | 060 | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
-
-**Reasoning:**
-IE entity — EU service reverse charge (Art. 3a Abs 2 UStG). Output USt on KZ 072-related line, input Vorsteuer deductible. Net zero.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ (input) | KZ (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 170.00 | 20% | Vorsteuer | 072 | N | — | — |
-
-### Example 3 — Entertainment, Bewirtung in Austria
-
-**Input line:**
-`15.04.2026 ; GASTHAUS PURSTNER WIEN ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-**Reasoning:**
-Restaurant. In Austria, Bewirtungsspesen (business entertainment) are partially deductible. The USt (Vorsteuer) on business meals is deductible if the meal is for a clearly documented business purpose. For income tax: 50% of the net amount is deductible. For USt (Vorsteuer): 100% of the USt is deductible on the portion that relates to business (which is typically 50% or 100% of the invoice depending on the nature). Practice: Vorsteuer is fully deductible on the entire invoice if the event is for business entertainment. Default: block, flag for reviewer.
-
-**Output table**  _("Bewirtung: Vorsteuer deductible if business purpose documented. Confirm.")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | GASTHAUS PURSTNER WIEN | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Bewirtung: Vorsteuer deductible if business purpose documented. Confirm." |
-
-### Example 4 — Capital goods (Anlagevermögen)
-
-**Input line:**
-`18.04.2026 ; DELL AUSTRIA GMBH ; DEBIT ; Laptop XPS 15 ; -1,595.00 ; EUR`
-
-**Reasoning:**
-€1,595 gross. In Austria, assets with acquisition cost > €1,000 net (since 2023 GWG threshold increase) are not GWG (geringwertige Wirtschaftsgüter) and must be capitalised. €1,595 / 1.20 = €1,329.17 > €1,000. This is Anlagevermögen. Vorsteuer fully deductible. Subject to Vorsteuerberichtigung over 5 years (movable) or 20 years (immovable) if use changes.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DELL AUSTRIA GMBH | -1,595.00 | -1,329.17 | -265.83 | 20% | Vorsteuer | N | — | — |
-
-### Example 5 — EU B2B service sale
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice AT-2026-018 IT consultancy ; +3,500.00 ; EUR`
-
-**Reasoning:**
-B2B services to Germany — place of supply is customer's country. Report on KZ 021 (innergemeinschaftliche Dienstleistungen erbracht). No output USt. Verify German USt-IdNr on VIES.
-
-**Output table**  _("Verify German USt-IdNr on VIES")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 021 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6 — Motor vehicle, Vorsteuerabzug
-
-**Input line:**
-`28.04.2026 ; PORSCHE BANK LEASING ; DEBIT ; Lease payment VW Golf ; -550.00 ; EUR`
-
-**Reasoning:**
-Car lease. In Austria, Vorsteuer on passenger cars (PKW) is generally NOT deductible (§ 12 Abs 2 Z 2 lit b UStG). Exception: Fiskal-LKW (light commercial vehicles with specific characteristics — certain van models are published on the BMF list), taxis, driving school vehicles, rental vehicles. A VW Golf is a PKW, not a Fiskal-LKW. Default: blocked.
-
-**Output table**  _("PKW: Vorsteuer blocked. Is this a Fiskal-LKW (BMF list)?")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | KZ | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | PORSCHE BANK LEASING | -550.00 | -550.00 | 0 | — | — | Y | Q3 | "PKW: Vorsteuer blocked. Is this a Fiskal-LKW (BMF list)?" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 20% (§ 10 Abs 1 UStG)
-
-- **Standard rate 20%** — Default rate. Sales → KZ 022. Purchases → Vorsteuer.  _(§ 10 Abs 1 UStG)_
-
-### 5.2 Reduced rate 10% (§ 10 Abs 2 UStG, Anlage 1)
-
-- **Reduced rate 10%** — Food and non-alcoholic drinks (dine-in and takeaway), books (print and digital), medicines, passenger transport, hotels (Beherbergung), agriculture. Sales → KZ 029. Purchases → Vorsteuer.  _(§ 10 Abs 2 UStG, Anlage 1)_
-
-### 5.3 Reduced rate 13% (§ 10 Abs 3 UStG, Anlage 2)
-
-- **Reduced rate 13%** — Cultural events (museums, concerts, theatre, cinema), live animals, plants, firewood, certain foodstuffs (wine from producer), domestic flights. Sales → KZ 006.  _(§ 10 Abs 3 UStG, Anlage 2)_
-
-### 5.4 Zero rate and exempt with credit
-
-- **Zero rate and exempt with credit** — Exports → KZ 017. Intra-EU goods → KZ 001. Intra-EU B2B services → KZ 021.  _(unsure)_
-
-### 5.5 Exempt without credit (§ 6 Abs 1 UStG)
-
-- **Exempt without credit** — Medical, education, insurance, financial services, residential rent (old buildings), postal universal service. If significant → **R-AT-2 refuses**.  _(§ 6 Abs 1 UStG)_
-
-### 5.6 Local purchases
-
-- **Local purchases** — Input Vorsteuer on compliant Rechnung. → Vorsteuer KZ.  _(unsure)_
-
-### 5.7 Reverse charge — EU services (Art. 3a Abs 2 / § 19)
-
-- **Reverse charge — EU services** — EU supplier → KZ 072 (base + output USt), Vorsteuer (input). Net zero.  _(Art. 3a Abs 2 / § 19)_
-
-### 5.8 Reverse charge — EU goods (innergemeinschaftlicher Erwerb)
-
-- **Reverse charge — EU goods** — EU goods → KZ 065 (base + output USt at 20%), Vorsteuer (input). Also KZ 066 for 10% goods.  _(unsure)_
-
-### 5.9 Reverse charge — non-EU
-
-- **Reverse charge — non-EU** — Non-EU → KZ 060 (base + output USt), Vorsteuer (input).  _(unsure)_
-
-### 5.10 Reverse charge — Bauleistungen (§ 19 Abs 1a)
-
-- **Reverse charge — Bauleistungen** — Austria has a domestic reverse charge for construction services (Bauleistungen). The recipient self-assesses via KZ 057. Subcontractor invoices without USt. This is important for the Austrian construction sector.  _(§ 19 Abs 1a)_
-
-### 5.11 Capital goods
-
-- **Capital goods (GWG threshold)** — GWG threshold: €1,000 net (since 2023). Above → Anlagevermögen. Vorsteuerberichtigung: 5 years movable, 20 years immovable.  _(unsure)_
-
-### 5.12 Blocked Vorsteuer (§ 12 Abs 2 UStG)
-
-- **Blocked Vorsteuer** — - PKW (passenger cars): Vorsteuer fully blocked unless Fiskal-LKW (on BMF list), taxi, driving school, car rental. No partial deduction (unlike Italy's 40%). - Fuel for PKW: blocked (follows vehicle). - Fuel for Fiskal-LKW: deductible. - Entertainment (Bewirtung): Vorsteuer IS deductible for business entertainment in Austria (unlike Malta's hard block). Income tax: 50% deductible. USt: full Vorsteuer if business purpose. - Gifts: Vorsteuer blocked if > €40 per recipient per year. - Personal use: not deductible. - Tobacco: not deductible.  _(§ 12 Abs 2 UStG)_
-
-### 5.13 Residential rent at 10%
-
-- **Residential rent at 10%** — Residential rent in Austria can be subject to 10% USt (older buildings) or 20% (newer buildings post-2012, if landlord opts). Some residential rent is exempt. The treatment depends on building age and landlord election. Default: [T2] flag if uncertain.  _(unsure)_
-
-### 5.14 Sales — local domestic
-
-- **Sales — local domestic** — Charge 20%, 10%, or 13%. Map to KZ 022/029/006.  _(unsure)_
-
-### 5.15 Sales — cross-border B2C
-
-- **Sales — cross-border B2C** — Above €10,000 → **R-EU-5 OSS refusal**.  _(R-EU-5)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — *Pattern:* OMV, BP, SHELL, AVIA, ENI, JET. *Default:* blocked (PKW default). *Question:* "PKW or Fiskal-LKW (BMF list)?"
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** — *Pattern:* Gasthaus, Restaurant, Wirtshaus. *Default:* block (conservative). *Question:* "Bewirtung with business purpose? Vorsteuer deductible if documented."
-
-### 6.3 Ambiguous SaaS
-
-- **Ambiguous SaaS** — *Default:* non-EU reverse charge KZ 060. *Question:* "Check invoice for legal entity."
-
-### 6.4 Owner transfers
-
-- **Owner transfers** — *Default:* exclude as Privateinlage. *Question:* "Customer payment, own money, or loan?"
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — *Default:* domestic B2C 20%. *Question:* "Sale?"
-
-### 6.6 Foreign incoming
-
-- **Foreign incoming** — *Default:* domestic 20%. *Question:* "B2B with UID, B2C, goods/services, country?"
-
-### 6.7 Large purchases
-
-- **Large purchases** — *Default:* if net > €1,000 → Anlagevermögen. *Question:* "Confirm invoice total."
-
-### 6.8 Mixed-use phone, internet
-
-- **Mixed-use phone, internet** — *Default:* 0%. *Question:* "Dedicated business or mixed?"
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — *Default:* exclude. *Question:* "Contractor, wages, refund, personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — *Default:* exclude. *Question:* "What for?"
-
-### 6.11 Rent
-
-- **Rent** — *Default:* [T2] flag (10% or 20% or exempt uncertain). *Question:* "Commercial or residential? Building age? USt charged?"
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — *Default:* exclude from Vorsteuer. *Question:* "Business trip?"
-
-### 6.13 Airbnb income
-
-- **Airbnb income** — *Default:* [T2] flag. *Question:* "Duration? Beherbergung at 10%?"
-
-### 6.14 Bauleistungen reverse charge
-
-- **Bauleistungen reverse charge** — *Pattern:* Bauunternehmen, construction. *Default:* [T2] flag. *Question:* "Construction subcontractor subject to § 19 Abs 1a Bauleistungen reverse charge?"
-
-### 6.15 Platform sales
-
-- **Platform sales** — *Default:* if EU cross-border above €10,000 → R-EU-5. Otherwise domestic 20%. *Question:* "Sell outside Austria?"
-
-## Section 7 — Excel working paper template (Austria-specific)
-
-### Sheet "Transactions"
-
-Column H accepts Kennzahl codes from Section 1.
-
-### Sheet "KZ Summary"
-
-**KZ Summary formulas**
-
-| 022 | Sales 20% base | =SUMIFS(...) |
-| 029 | Sales 10% base | =SUMIFS(...) |
-| 006 | Sales 13% base | =SUMIFS(...) |
-| 001 | Intra-EU goods | =SUMIFS(...) |
-| 021 | Intra-EU services provided | =SUMIFS(...) |
-| 065 | Intra-EU acquisitions base | =SUMIFS(...) |
-| 072 | EU services received base | =SUMIFS(...) |
-| 060 | Non-EU reverse charge base | =SUMIFS(...) |
-| 083 | Total output USt | =022*0.20 + 029*0.10 + 006*0.13 + USt on RC |
-| Vorsteuer | Total deductible Vorsteuer | =SUM(input lines) |
-| 095 | Zahllast (payable) | =MAX(0, 083-Vorsteuer) |
-| 090 | Gutschrift (credit) | =MAX(0, Vorsteuer-083) |
-
-### Mandatory recalc step
-
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/austria-vat-<period>-working-paper.xlsx
+# Austria: VAT (Umsatzsteuer), the UVA and the annual return (2026)
+
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file or pay without review by a qualified professional in Austria (Steuerberater).
+
+**Which text of the law.** Umsatzsteuergesetz 1994 (UStG), consolidated text on the federal legal database (RIS) as of 23 October 2026, last amended by BGBl. I Nr. 62/2026. Bundesabgabenordnung (BAO), consolidated text as of 23 October 2026. The 4.9% food rate and Anlage 3 came in by BGBl. I Nr. 37/2026 and apply to supplies made after 30 June 2026 (§ 28 Abs 69 UStG). BGBl. I Nr. 43/2026 changed only Art. 21 Abs 2 of the internal-market annex (new vehicles); nothing in this skill turns on it.
+
+**Sibling skills.** The box-by-box method for turning a bank statement into the U 30 form, with the full Kennzahl map and supplier patterns, is in [at-vat-return](at-vat-return.md). Corporate income tax is in [at-corporate-income-tax](at-corporate-income-tax.md). Non-residents, treaties and exit rules are in [at-cross-border](at-cross-border.md). This skill does not repeat them.
+
+## Who this applies to
+
+- **Businesses (Unternehmer) making taxable supplies in Austria.** Sole traders, partnerships and companies that supply goods or services in Austria for consideration owe VAT on those supplies (§ 1 Abs 1 Z 1 UStG). The tax is owed by the supplier (§ 19 Abs 1 UStG), except where it passes to the customer (reverse charge, below).
+- **Small businesses (Kleinunternehmer).** A business run in Austria or another member state whose turnover under § 1 Abs 1 Z 1 and 2 did not exceed EUR 55,000 in the previous calendar year and has not yet exceeded it in the current year is exempt (§ 6 Abs 1 Z 27 UStG). It charges no VAT and deducts no input VAT. It can waive the exemption in writing until the assessment is final; the waiver runs from the start of a calendar year and binds for at least five calendar years (§ 6 Abs 3 UStG).
+- **Businesses established in another member state.** They can use the Austrian exemption only through the EU SME scheme: EU-wide turnover not above EUR 100,000 in the previous and current year, and an application in their home state (Art. 6a procedure). The exemption starts from the day Austria is notified of their small-business identification number (§ 6 Abs 1 Z 27 UStG).
+- **Customers who owe the tax.** A business (or a public body that is not a business) receiving services or work supplies from a supplier with no Austrian establishment owes the VAT itself (§ 19 Abs 1 second sentence UStG). Construction services passed down a chain, and some goods (mobile phones and chips from EUR 5,000 per invoice, scrap, emission allowances, gas and electricity from abroad) are also reverse-charged (§ 19 Abs 1a to 1e UStG).
+- **Out:** private individuals, and businesses making only exempt supplies without credit (for example doctors, insurers) for those supplies.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate (§ 10 Abs 1) | 20% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Basic foods listed in Anlage 3, as goods supplied or imported (not restaurant or catering services), from 1 July 2026 (§ 10 Abs 1a, § 28 Abs 69). Anlage 3 has 12 items: milk, yoghurt, butter, fresh hen eggs, fresh or chilled vegetables, frozen vegetables, apples, pears and stone fruit (CN 0808 and 0809), rice, wheat flour and semolina, uncooked pasta, bread, table salt, each only within its listed CN code | 4.9% | 2026 (from 1 July) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Reduced rate: goods in Anlage 1 (food not in Anlage 3, books), restaurant food, residential letting, hotel accommodation, passenger transport, waste collection, repairs of bicycles, shoes, clothing (§ 10 Abs 2) | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Reduced rate: goods in Anlage 2 (live animals, plants), artists, swimming pools, theatre, concerts, museums, film, circus, domestic flights, farm wine, sports event tickets (§ 10 Abs 3) | 13% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Jungholz and Mittelberg (§ 10 Abs 4) | 19% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Small business limit, previous and current year, gross (§ 6 Abs 1 Z 27) | EUR 55,000 | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Tolerance in the year the limit is crossed (§ 6 Abs 1 Z 27) | 10% (to EUR 60,500) | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| EU SME scheme: EU-wide annual turnover limit (§ 6 Abs 1 Z 27) | EUR 100,000 | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Monthly UVA if prior-year turnover exceeded (§ 21 Abs 2) | EUR 100,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| No UVA to file (internal return only) if prior-year turnover did not exceed, and the payment is made in full on time (UVA-Verordnung § 1) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 |
+| No annual return for a small business with turnover not above this and no tax to pay (§ 21 Abs 6) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Reverse charge on mobile phones and chips if invoiced consideration is at least (§ 19 Abs 1e lit b) | EUR 5,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| ZM period follows the UVA period: quarterly if prior-year turnover did not exceed this and no monthly UVA was chosen, otherwise monthly | EUR 100,000 | 2026 | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html |
+
+## The taxable base
+
+- **Base.** The consideration net of VAT for each taxable supply (§ 4 UStG), plus own use (Eigenverbrauch) of business goods and services. Down payments are taxed when received. Price changes, discounts and bad debts are corrected in the period they happen (§ 16 UStG).
+- **When the tax arises.** On the accrual basis (Soll), at the end of the month of supply, moved by at most one month if the invoice is issued later. On the cash basis (Ist), at the end of the month of payment (§ 19 Abs 2 UStG). [at-vat-return](at-vat-return.md) sets out who uses which basis.
+- **Exempt with credit.** Exports (§ 7), intra-EU supplies of goods to a business with a valid VAT number (Art. 6 Abs 1 of the annex), and cross-border transport. Input VAT on related costs stays deductible.
+- **Exempt without credit.** Banking, insurance, medical care, most education, letting of business premises unless the landlord opts to tax, and the small business exemption (§ 6 Abs 1 UStG). Input VAT on related costs is lost; a business with both kinds of supply apportions (§ 12 Abs 4 to 6 UStG).
+- **Input VAT.** Deductible on a proper invoice for supplies made to the business (§ 12 UStG). No deduction for ordinary cars and motorcycles and their running costs, and for business meals except where the advertising purpose far outweighs everything else. Zero-emission cars are an exception within the reasonableness cap. A cash-basis business deducts only once it has paid.
+- **Reverse charge.** The customer enters the tax as output VAT and, if entitled, deducts the same amount as input VAT in the same return, so a fully taxable business pays nothing net.
+- **The small business limit is counted gross.** The limit test uses the agreed consideration, not a base computed as if VAT applied (§ 6 Abs 1 Z 27 last sentence). Ancillary sales, the sale of the business, and most exempt supplies are left out.
+
+## Deadlines and filing
+
+| Obligation | Deadline | Source |
+|---|---|---|
+| UVA (form U 30), monthly or quarterly, and payment | 15th day of the second calendar month after the period (§ 21 Abs 1 UStG). Q1: 15 May; Q2: 15 August; Q3: 15 November; Q4: 15 February | RIS, UStG § 21 |
+| Weekend or holiday | Moves to the next day that is not a Saturday, Sunday, public holiday, Good Friday or 24 December (§ 108 Abs 3 BAO). 15 August 2026 is a Saturday and a holiday; 15 November 2026 is a Sunday | RIS, BAO § 108 |
+| Choice of monthly UVA by a quarterly filer | File the January UVA on time; binds for the whole year (§ 21 Abs 2 UStG) | RIS, UStG § 21 |
+| UVA at or below EUR 55,000 prior-year turnover | No UVA to file if the payment is made in full on time or there is none (UVA-Verordnung § 1); still prepare an internal return (§ 21 Abs 1 UStG). File one when there is a refund or a late or short payment, or when the tax office asks (UVA-Verordnung § 2) | RIS, UVA-Verordnung; USP, Umsatzsteuervoranmeldung |
+| Recapitulative statement (ZM, form U 13) | By the end of the calendar month after the reporting period, through FinanzOnline | USP, ZM page |
+| Annual return (U 1) | 30 April of the following year on paper, 30 June if filed electronically (§ 134 Abs 1 BAO). Electronic filing is the rule (§ 21 Abs 4 UStG). Paper is allowed only for a self-filer without internet access, or one not required to file UVAs because prior-year turnover did not exceed EUR 55,000 (FinanzOnline-Erklärungsverordnung § 2 with UVA-Verordnung § 1). 2026 return: 30 June 2027 | RIS, BAO § 134; RIS, FOnErklV § 2 |
+
+Every return is filed through FinanzOnline (https://finanzonline.bmf.gv.at). A business represented by a tax adviser usually has longer for the annual return; the tax office can extend a deadline on a reasoned request (§ 134 Abs 2 BAO).
+
+## Penalties and interest
+
+| What | Figure | Source |
+|---|---|---|
+| First late-payment surcharge (Säumniszuschlag) | 2% of the tax not paid by the due date (§ 217 Abs 2 BAO) | RIS, BAO |
+| Grace for the first surcharge | None if no more than five days late (weekends and holidays not counted) and everything due in the previous six months was paid on time (§ 217 Abs 5 BAO) | RIS, BAO |
+| Second and third surcharges | 1% each, if still unpaid three months after enforceability, then three months after that (§ 217 Abs 3 BAO) | RIS, BAO |
+| Minimum surcharge set | Surcharges below EUR 50 are not set (§ 217 Abs 10 BAO) | RIS, BAO |
+| Late-filing surcharge (Verspätungszuschlag) | Up to 10% of the tax, if the delay is not excusable; not set below EUR 50 (§ 135 BAO) | RIS, BAO |
+| Late ZM | Surcharge up to 1% of the amounts to be reported, at most EUR 2,200; coercive penalty up to EUR 5,000 | BMF, U 13a instructions |
+
+Interest on assessed differences (Anspruchszinsen, § 205 BAO) applies only to income tax and corporate income tax, not to VAT. A UVA paid too low after its due date can be a fiscal offence; a self-disclosure (§ 29 FinStrG) needs the tax paid within one month. Refer that to a Steuerberater.
+
+## Cross-border points
+
+- **Services to EU businesses (general rule).** Taxed where the customer is (§ 3a Abs 6 UStG). The Austrian supplier charges no Austrian VAT, notes the reverse charge and both VAT numbers on the invoice, leaves the amount out of the taxable boxes and reports it in the ZM.
+- **Services bought from abroad.** The Austrian business customer owes the tax (§ 19 Abs 1 UStG) and deducts it if entitled. Federal road tolls, event services under § 3a Abs 11a and letting of land are excluded: there the foreign supplier charges Austrian VAT.
+- **Goods to and from the EU.** An intra-EU supply to a business with a valid VAT number is exempt only if the ZM is filed on time or a failure is justified and corrected (USP, ZM page). An intra-EU acquisition is taxed in Austria at the Austrian rate and deducted in the same UVA.
+- **Foreign businesses with Austrian supplies.** They register and file UVAs like an Austrian business unless every Austrian supply is reverse-charged to the customer. A business that owes only reverse-charge tax with full deduction is assessed only on written request (§ 21 Abs 4 UStG). Input VAT refunds for businesses without Austrian supplies go through the refund procedure (§ 21 Abs 9 UStG).
+- **EU SME scheme.** An Austrian small business that wants the exemption in another member state notifies in advance through FinanzOnline; it must stay within that state's limit and the EUR 100,000 EU-wide limit, with no tolerance on the EU-wide limit.
+- Treaty questions, non-resident income and exit taxation: [at-cross-border](at-cross-border.md).
+
+## Worked examples
+
+### Example 1: Quarterly filer, Q3 2026, with the new food rate and a reverse charge
+
+A grocery and catering business in Graz had 2025 turnover of EUR 80,000, so it files quarterly UVAs. For July to September 2026 its net sales are: EUR 30,000 at 20% (catering services and other goods), EUR 8,000 at 4.9% (listed basic foods sold over the counter, all after 30 June 2026), and EUR 5,000 at 10% (other food). It bought online advertising for EUR 1,000 net from an Irish company, which is reverse-charged at 20%. Domestic input VAT on proper invoices is EUR 4,200.
+
+Output VAT is 6,000 + 392 + 500 = EUR 6,892. The reverse charge adds EUR 200 output and EUR 200 input. Input VAT is 4,200 + 200 = EUR 4,400. The UVA shows a payment of EUR 2,692. The due date, 15 November 2026, is a Sunday, so the UVA and payment are due Monday 16 November 2026 (§ 108 Abs 3 BAO). If the business pays three weeks late and the five-day grace does not apply, the first late-payment surcharge is 2% of EUR 2,692, EUR 53.84; it is set because it is not below EUR 50.
+
+```oa-check
+name: Austria quarterly UVA Q3 2026 with 4.9% food rate and reverse charge
+inputs:
+  sales_20: 30000
+  sales_food: 8000
+  sales_10: 5000
+  rc_service: 1000
+  domestic_input_vat: 4200
+steps:
+  - out_20: sales_20 * 0.20
+  - out_food: sales_food * 0.049
+  - out_10: sales_10 * 0.10
+  - rc_vat: rc_service * 0.20
+  - output_total: out_20 + out_food + out_10 + rc_vat
+  - input_total: domestic_input_vat + rc_vat
+  - payable: output_total - input_total
+  - first_surcharge: payable * 0.02
+expected:
+  out_food: 392
+  output_total: 7092
+  input_total: 4400
+  payable: 2692
+  first_surcharge: 53.84
 ```
 
-## Section 8 — Austrian bank statement reading guide
+### Example 2: Small business crosses the limit, inside and then outside the tolerance
 
-**CSV format conventions.** Austrian banks export CSV with semicolons and DD.MM.YYYY dates. Common columns: Buchungsdatum, Umsatztext/Verwendungszweck, Betrag, Saldo. Erste Bank uses CAMT format; Raiffeisen varies by regional bank.
+A sole trader in Vienna had 2025 turnover of EUR 48,000 and is exempt in 2026. Sales to 31 October 2026 are EUR 54,500. A EUR 4,000 job on 12 November takes the year to EUR 58,500. That is over EUR 55,000 but within the 10% tolerance (EUR 60,500), so the November job stays exempt and the exemption could run to 31 December; from 1 January 2027 the business is taxable because 2026 exceeded the limit.
 
-**German language variants.** Miete (rent), Gehalt/Lohn (salary), Zinsen (interest), Überweisung (transfer), Beiträge (contributions), Rechnung (invoice), Rückzahlung/Gutschrift (refund), Einzahlung (deposit), Behebung/Abhebung (withdrawal).
+On 14 December a further EUR 3,000 sale takes the year to EUR 61,500, above the tolerance by EUR 1,000. The exemption ends from that point (§ 6 Abs 1 Z 27 UStG), so this sale is taxable at 20%. The limit is counted gross, and the client billed EUR 3,000 with no VAT, so the VAT is inside the price: 3,000 x 20 / 120 = EUR 500. From that sale the business charges VAT. Its 2025 turnover did not exceed EUR 100,000, so its period is the quarter, and the EUR 500 is due by 15 February 2027 (a Monday). Because 2025 turnover did not exceed EUR 55,000, it files no UVA if it pays in full by then (UVA-Verordnung § 1); it files one if it pays late or short.
 
-**Internal transfers.** "Umbuchung", "Eigenüberweisung". Exclude.
+```oa-check
+name: Austria small business limit, tolerance and crossing sale (2026)
+inputs:
+  sales_to_october: 54500
+  november_job: 4000
+  december_sale: 3000
+  limit: 55000
+  tolerance_pct: 10
+steps:
+  - tolerance_ceiling: limit + pct(limit, tolerance_pct)
+  - after_november: sales_to_october + november_job
+  - november_headroom: tolerance_ceiling - after_november
+  - after_december: after_november + december_sale
+  - excess_over_ceiling: after_december - tolerance_ceiling
+  - vat_in_december_sale: december_sale * 20 / 120
+expected:
+  tolerance_ceiling: 60500
+  after_november: 58500
+  november_headroom: 2000
+  after_december: 61500
+  excess_over_ceiling: 1000
+  vat_in_december_sale: 500
+```
 
-**Finanzamt payments.** Tax payments appear as "FINANZAMT" with an Abgabenkontonummer. Always exclude.
+## Ask the client first
 
-**SVS payments.** Self-employed social insurance (SVS) appears as quarterly direct debits. Always exclude — not a VATable supply.
+1. What was your turnover in 2025, and so far in 2026? It decides the exemption, and whether you file monthly, quarterly or no UVA.
+2. Are you on the small business exemption, or did you waive it (and from which year)?
+3. Do you sell any foods listed in Anlage 3 since 1 July 2026, or restaurant and catering services? The rate differs.
+4. Who are your foreign suppliers and customers, and do you hold your EU customers' valid VAT numbers?
+5. Are you on the cash basis or the accrual basis?
+6. Does a tax adviser file for you? It changes the annual deadline.
 
-**Foreign currency.** Convert to EUR at ECB rate.
+## Sources
 
-**IBAN prefix.** AT = Austria. DE, NL, IE = EU. US, GB, CH = non-EU. Note: CH (Switzerland) is non-EU — important for Austrian businesses near the Swiss border.
+| Source | URL | Read on |
+|---|---|---|
+| Umsatzsteuergesetz 1994, RIS consolidated text as of 23.10.2026 (§ 6 Abs 1 Z 27 and Abs 3, § 10, § 19, § 21, § 28 Abs 69 and 70) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 | 2026-10-23 |
+| Bundesabgabenordnung, RIS consolidated text as of 23.10.2026 (§ 108, § 134, § 135, § 205, § 217) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-23 |
+| Budgetmaßnahmengesetz 2026, BGBl. I Nr. 43/2026 (Art. 2, UStG change) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_43/BGBLA_2026_I_43.html | 2026-10-23 |
+| Änderung des Umsatzsteuergesetzes 1994, BGBl. I Nr. 37/2026 (4.9% rate, Anlage 3) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_37/BGBLA_2026_I_37.html | 2026-10-23 |
+| Verordnung betreffend die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen (UVA-Verordnung), BGBl. II Nr. 206/1998 as amended by BGBl. II Nr. 401/2024, RIS consolidated text (§§ 1, 2) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 | 2026-10-23 |
+| FinanzOnline-Erklärungsverordnung (FOnErklV), RIS consolidated text (§ 2, when paper filing is allowed) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 | 2026-10-23 |
+| USP, Umsatzsteuervoranmeldung (UVA thresholds and the EUR 55,000 filing relief) | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html | 2026-10-23 |
+| USP, Zusammenfassende Meldung (deadline, period table, exemption condition) | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html | 2026-10-23 |
+| BMF, U 13a instructions for the ZM (late surcharge and coercive penalty) | https://formulare.bmf.gv.at/service/formulare/inter-steuern/pdfd/9999/u13a.pdf | 2026-10-23 |
 
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type
-
-- **Entity type** — *Inference:* GmbH = company; Einzelunternehmer/e.U. = sole trader; KG/OG = partnership. *Fallback:* "Einzelunternehmer, GmbH, or KG?"
-
-### 9.2 USt regime
-
-- **USt regime** — *Fallback:* "Regelbesteuerung or Kleinunternehmerregelung?"
-
-### 9.3 UID-Nummer
-
-- **UID-Nummer** — *Fallback:* "Your UID-Nummer? (ATU + 8 digits)"
-
-### 9.4 Filing period
-
-- **Filing period** — *Fallback:* "Which month or quarter?"
-
-### 9.5 Industry
-
-- **Industry** — *Fallback:* "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees** — *Inference:* Gehalt outgoing. *Fallback:* "Employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies** — *Fallback:* "Any exempt sales?" *If yes → R-AT-2.*
-
-### 9.8 Credit carried forward
-
-- **Credit carried forward** — *Always ask.* "USt credit from prior period? (KZ 090)"
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers** — *Fallback:* "Customers outside Austria? EU/non-EU? B2B/B2C?"
-
-### 9.10 Construction
-
-- **Construction** — *Conditional:* "In construction? (Bauleistungen reverse charge may apply.)"
-
-## Section 10 — Reference material
-
-### Sources
-
-- **Sources list** — 1. Umsatzsteuergesetz 1994 (UStG) — https://www.ris.bka.gv.at 2. Umsatzsteuerrichtlinien (UStR) 2000 — BMF guidance 3. BMF Fiskal-LKW list — updated periodically 4. FinanzOnline UVA form and instructions — https://finanzonline.bmf.gv.at 5. Council Directive 2006/112/EC — via eu-vat-directive companion 6. VIES — https://ec.europa.eu/taxation_customs/vies/  _(https://www.ris.bka.gv.at)_
-
-### Known gaps
-
-1. Fiskal-LKW list not reproduced — reference BMF publication.
-2. Bauleistungen reverse charge flagged T2 only.
-3. Residential rent rate (10%/20%/exempt) depends on building age — simplified.
-4. GWG threshold (€1,000 net since 2023) — verify annually.
-5. Jungholz/Mittelberg 19% rate refused entirely.
-6. Bewirtung Vorsteuer deductibility requires documentation — flagged.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure.
-- **v1.0/1.1:** Initial skill.
-
-### Self-check (v2.0)
-
-1. Quick reference: yes. 2. Supplier library (15): yes. 3. Worked examples (6): yes. 4. Tier 1 (15): yes. 5. Tier 2 (15): yes. 6. Excel template: yes. 7. Onboarding (10): yes. 8. 8 refusals: yes. 9. Reference: yes. 10. PKW block vs Fiskal-LKW: yes. 11. Bewirtung deductible (Austria vs Malta): yes. 12. Bauleistungen § 19 Abs 1a: yes. 13. KZ system: yes. 14. GWG threshold: yes. 15. Non-EU reverse charge KZ 060: yes.
-
-## End of Austria VAT Return Skill v2.0
-
-This skill is incomplete without BOTH companion files: `vat-workflow-base` v0.1+ AND `eu-vat-directive` v0.1+.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater, Wirtschaftsprüfer, or equivalent licensed practitioner) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the reasonableness cap for input VAT on zero-emission cars was not read for 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `austria-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/austria-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `austria-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/austria-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

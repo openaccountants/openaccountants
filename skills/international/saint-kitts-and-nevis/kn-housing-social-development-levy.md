@@ -2,13 +2,16 @@
 name: kn-housing-social-development-levy
 description: >
   Saint Kitts and Nevis payroll levy reference checked for 2026. Covers the Housing and Social Development Levy exemption thresholds introduced in July 2025, the monthly employee calculation, employer contribution and worked boundary examples. Use for ordinary payroll levy deductions after the applicable wage base is established. Explains why the exemption threshold is not a tax-free allowance and why social security ceilings must not cap this levy. Separates historical December bonus relief from current ordinary payroll. Legislative amendment reconciliation, special payments and independent accountant review remain outstanding; this is a source-cited draft.
-jurisdiction: KN
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: KN
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint Kitts and Nevis Housing and Social Development Levy
@@ -57,3 +60,23 @@ Maintain separate ledger lines for employee levy, employer levy, social security
 The Board's [18 December 2025 notice](https://socialsecurity.kn/press/treatment-of-bonus-paid-in-december-2/) specifically exempts December 2025 bonuses and extra salary payments from levy deductions. It does not establish December 2026 levy relief. Classify any December 2026 payment against the applicable legislation and a current notice before applying an exemption. Do not import the separate social-security bonus treatment automatically.
 
 This Guide does not settle nonstandard wage components, irregular payroll, statutory exemptions outside the stated cutoff, penalties or a December 2026 special measure. The amended levy legislation and any later instruments need reconciliation before merge. Independent accountant review is pending.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

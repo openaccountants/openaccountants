@@ -7,8 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -1041,6 +1039,8 @@ must be reviewed and signed off by a qualified professional (such as a CPA, EA, 
 equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

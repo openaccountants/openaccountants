@@ -7,13 +7,13 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/au-bas-preparation"
   jurisdiction: "AU"
   tax_year: "2026"
-  last_updated: "2026-09-20"
+  last_updated: "2026-10-21"
   review_status: "pending_review"
 ---
 
 # Australia BAS Preparation
 
-## Australia BAS Preparation v0.2
+## Australia BAS Preparation v0.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -103,6 +103,60 @@ Collect, for the exact period being reported:
 8. Records of assets bought or sold, including trade-ins.
 
 - **Evidence rule for credits** — A GST credit generally requires a valid tax invoice held at the time the claim is made. The exception applies to acquisitions of $82.50 including GST or less. The four-year credit time limit is not permission to claim before the required evidence exists.  _([GST Act ss 11-5, 29-10, 29-70, 93-5](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-10))_
+
+### 3.1 Invoice population and evidence register
+
+An invoice sample supports conclusions about the documents inspected. It does not establish that
+the purchase population is complete or that the BAS credit total is correct. Record the entity,
+period, registered GST basis, export time, report filters, row count and GST control totals. Bridge
+the purchase listing to the GST transaction report and ledger, including credit notes, journals,
+cash transactions, duplicates and excluded items. Explain timing differences rather than forcing
+the totals to agree. If only a sample was supplied, state the selection method and coverage and
+leave the population reconciliation unperformed.
+
+Keep one row per exception:
+
+| Document / transaction | Check performed and evidence | Result | Missing fact / amount affected | Owner and next action | Status |
+| --- | --- | --- | --- | --- | --- |
+| Invoice or RCTI reference | Source file, issue date, GST registration evidence and reconciliation reference | Supported / exception / not checked | Identify the affected claim without guessing its treatment | Named reviewer and requested evidence | Open / resolved with evidence |
+
+Apply these Australian invoice controls before treating an affected credit as supported:
+
+- **RCTIs:** check eligibility and all applicable requirements in the 2023 determination, not just
+  the presence of the words 'recipient created'. Both supplier and recipient must be GST registered
+  when the RCTI is issued. The eligible recipient category matters; an 'other business entity' must
+  determine the value of the supply. Check the current agreement, specified supplies, registration
+  acknowledgements and cessation notifications. A compliant agreement may be separate or embedded
+  in the RCTI under its distinct requirements. Retain dated evidence of the checks as a preparation
+  control. The ATO expects supplier registration checks before the first RCTI and periodically
+  thereafter; automated checking at issue is best practice.
+  Sources: [RCTI Determination 2023, ss 6-9](https://www.legislation.gov.au/F2023L00785)
+  and [ATO tax invoices, RCTI issuer responsibilities](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices).
+- **Current authority:** GSTR 2000/10 was withdrawn on 29 July 2026 and continues only for RCTIs
+  issued on or before 14 June 2023. Do not apply it as current authority for later documents.
+  Its proposed replacement, GSTR 2026/D2, is a draft as checked on 21 October 2026.
+  See the [withdrawal notice](https://www.ato.gov.au/law/view/document?DocID=GST/GSTR200010/NAT/ATO/00001)
+  and [draft ruling](https://www.ato.gov.au/law/view/document?DocID=DGS/GSTR2026D2/NAT/ATO/00001).
+- **eInvoices:** an invoice issued under the A-NZ specification through Peppol with the required
+  mandatory data can satisfy the intended-tax-invoice requirement without the literal words
+  'Tax Invoice'. A PDF received by email does not establish those conditions. Preserve the received
+  electronic record and provenance under the firm's retention policy; do not invent a statutory
+  requirement for a particular retained file format.
+  See [ATO tax invoices, eInvoicing](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/tax-invoices).
+- **Payment details:** compare changes with independently verified supplier instructions using a
+  trusted contact channel. Agreement between an invoice and a supplier master is insufficient if
+  both could contain the same unauthorised change. Missing verification remains an open payment
+  control exception; invoice validity alone does not clear it.
+
+**Fabricated acceptance cases:**
+
+1. Ten invoices have been checked, but no complete purchase listing or GST report was supplied.
+   Report '10 documents inspected; population tie-out not performed', list the missing exports and
+   leave the BAS purchase-credit reconciliation open. Do not report 'all purchases verified'.
+2. An RCTI for $1,100 including $100 GST has an agreement and the supplier's current registration
+   screenshot, but no evidence of either party's registration at issue. Record the missing dated
+   evidence and $100 affected credit for review. Do not infer historical registration or silently
+   claim the credit; consider any applicable invoice exception through the existing GST guide.
 
 ## Section 4 - Step 2: Reconcile before you report
 
@@ -404,4 +458,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-20. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-bas-preparation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-bas-preparation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-21. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `au-bas-preparation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/au-bas-preparation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

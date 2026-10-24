@@ -4,12 +4,11 @@ description: "Belgium capital gains tax for individuals from 1 January 2026 (inc
 version: 2.0
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
-verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -279,3 +278,23 @@ Not yet confirmed:
 - Where the line between a sale "up to" 31 December 2030 (statute) and "up to and including" (circular) matters, rely on the circular only with the risk named.
 - The rules for life insurance contracts (art. 102/1: premiums paid, value at 31 December 2025, the 8-year and 130% tests) are summarised, not worked through; read Circular 2026/C/74, nos. 177 to 189, before advising on a policy.
 - Penalties for an intermediary that misses the art. 326bis report were not checked.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

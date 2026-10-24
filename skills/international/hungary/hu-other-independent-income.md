@@ -1,13 +1,16 @@
 ---
 name: hu-other-independent-income
 description: "Hungarian tax on four kinds of private-person income that sit outside sole-trader status, tax year 2026. Covers agricultural primary producers (mezőgazdasági őstermelő): the tax-free band up to half the annual minimum wage (HUF 1,936,800), flat-rate taxation with a 90% cost ratio up to HUF 38,736,000, itemised costs or the 10% cost ratio, the HUF 100,000 producer credit, the family farm, and their TB and szocho; other independent activity such as fees under a civil-law contract (megbízási díj) with the 10% flat cost, payer withholding, 18.5% TB and 13% szocho; crypto-asset gains (Szja tv. 67/C. §) at 15% with annual netting and loss offset; and private accommodation (fizetővendéglátás) under the itemised flat tax of HUF 150,000 or HUF 38,400 per room (Szja tv. 57/A. §). Triggers: őstermelő adózás, megbízási díj adója, kriptoadó, kripto veszteség, magánszálláshely tételes átalányadó, Airbnb adó Magyarország. Out of scope: hu-income-tax, hu-capital-and-rental-income, hu-social-contributions, hu-payroll, hu-cross-border."
-jurisdiction: HU
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: HU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Hungary: primary producers, civil-law contract fees, crypto gains and holiday letting (2026)
@@ -245,3 +248,23 @@ expected:
 | Magyar Nemzeti Bank, press release on the Monetary Council meeting of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026 | 2026-10-23 |
 
 Not yet confirmed: that private accommodation is outside the Szocho tv. 5. § (2) h) exemption for income from letting real estate rests on NAV information sheet 10, section 5; the Szja tv. treats the two activities separately (17. § (3) a) ab)), but the Szocho tv. does not define letting. NAV publishes no 2026 information sheet on crypto; the crypto section rests on the act alone.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

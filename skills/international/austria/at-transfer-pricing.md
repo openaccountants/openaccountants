@@ -1,13 +1,16 @@
 ---
 name: at-transfer-pricing
 description: "Austrian transfer pricing (Verrechnungspreise) for tax year 2026: Austrian companies and permanent establishments dealing with related companies abroad. Covers the arm's length rule in § 6 Z 6 EStG and treaty Article 9, hidden distributions under § 8(2) KStG and the KESt that follows (27.5%, or 23% for a company shareholder, grossed up when the company bears it), the VPR 2021 guidelines (methods, low value-adding services at cost plus 5%, financing), the VPDG master file and local file above EUR 50m revenue in both preceding years, country-by-country reporting at EUR 750m, fines up to EUR 50,000, § 118 BAO rulings (fee EUR 1,500 to 20,000), APAs, MAP and the EU-BStbG. Trigger on: Verrechnungspreis, Fremdvergleich, Master File, Local File, VPDG, verdeckte Ausschüttung, management fee Austria. Out of scope: at-corporate-income-tax (rate, base, return), at-cross-border (residence, exit tax, outbound withholding), at-vat-return."
-jurisdiction: AT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: AT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Austrian transfer pricing (Verrechnungspreise): tax year 2026
@@ -210,3 +213,23 @@ expected:
 | BMF, VPR 2021 maintenance decree 2025, BMF-AV Nr. 33/2025 (11 March 2025) | https://findok.bmf.gv.at/findok/resources/pdf/35436263-c864-4e44-b7f1-d8b242ef00e3/83497.1.1.pdf | 2026-10-23 |
 
 Not yet confirmed: whether the ministry updated VPR 2021 after the 2025 maintenance decree (none was found on findok, but no full search was made); the KStR 2013 Rz 820 text itself (the gross-up method is taken from VPR 2021 Rz 515 and 517, which cite it); that the tax office, when it holds the company liable, applies the 23% company rate rather than 27.5% (the VPR example applied the company rate of the time, 25%, but § 93(1a) EStG leaves the choice to the payer); the BMF information of 5 May 2022 on MAP and APAs (2022-0.300.851, which VPR Rz 502, 503, 525 and 528 now cite) and whether it sets any fee for a bilateral APA; the 2011 advance ruling guidelines (BMF-010103/0035-VI/2011); the amount of a coercive penalty under § 111 BAO.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

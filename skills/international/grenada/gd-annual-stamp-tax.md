@@ -2,13 +2,16 @@
 name: gd-annual-stamp-tax
 description: >
   Grenada annual stamp tax calculation and calendar reference checked for 2026. Covers the previous-year gross-receipts base, rate selection around EC$300,000, the EC$36,000 exemption, minimum tax and numerical illustrations. Includes the ordinary return deadline, instalment description and the specific 2026 filing and payment extension. Use for Grenada business turnover stamp tax or annual stamp tax returns. This tax is distinct from property transfer duties and VAT. Eligibility, exemptions, special disaster measures, collection details and low-receipt minimum-tax interactions need statutory review. Official indexed administrative guidance is not presented as a complete legislative audit.
-jurisdiction: GD
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: GD
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Grenada annual stamp tax
@@ -46,3 +49,23 @@ A [31 March 2026 official notice](https://www.finance.gd/docs/2026/PRESS_RELEASE
 Reconcile the prior-year receipts schedule to accounts, bank receipts and identified non-trading income. Document the statutory inclusion or exclusion of each receipt; gross receipts must not be replaced with accounting profit. Confirm rate selection before deducting the exemption and keep return and payment evidence separately.
 
 Business exemptions, capital receipts, special hurricane relief and penalty computations need further legal research. This draft does not claim that every business is liable or that all tax-base rules have been verified. Independent review remains required before release or filing reliance.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

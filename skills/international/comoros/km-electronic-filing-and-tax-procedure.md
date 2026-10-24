@@ -2,13 +2,16 @@
 name: km-electronic-filing-and-tax-procedure
 description: >
   Comoros reference to electronic filing, payment evidence and selected enforcement changes enacted in the 2026 finance law. Distinguishes the statutory framework from the implementing decisions required for rollout, explains platform receipt and settlement timing, and records outage and authentication provisions. Covers the new electronic information-request deadline and fiscal-flagrance response period without replacing the full appeals regime. An earlier electronic-filing mandate and the newer phased framework require reconciliation before operational advice. Current platform designation, commencement orders, penalties guidance and independent accountant review remain outstanding in this source-cited draft.
-jurisdiction: KM
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: KM
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Comoros: electronic filing and selected tax procedures
@@ -52,3 +55,23 @@ The report is notified to the affected person and sent to the Director General, 
 ## Remaining work
 
 Checked 22 October 2026. Obtain commencement/rollout orders, reconcile the earlier mandate, confirm the official platform, and complete the full appeals and penalty analysis. No live filing, payment or private-account interaction was performed. No independent accountant review has occurred.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
