@@ -16,8 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Portugal Tax Optimization
 
-## Portugal — Optimização Fiscal — Skill v1.1
-
+## Portugal — Optimização Fiscal — Skill v1.2
 ## Rates and thresholds
 
 > Source-cited draft: not reviewed by an accountant.
