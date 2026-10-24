@@ -1,10 +1,10 @@
 ---
 name: belgium-vat-return
 description: "Belgian VAT (btw / TVA) for tax year 2026: who must charge it, the 21%, 12%, 6% and 0% rates (hotels and campsites moved from 6% to 12% on 1 March 2026), the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), monthly or quarterly returns (EUR 2,500,000 test), the 20th and 25th deadlines, the end of the summer holiday extension in 2026, refunds on request and the VAT provision account, the replacement return, mandatory structured B2B e-invoicing from 1 January 2026, late interest (8% in 2026) and the fines in Royal Decrees 41 and 44. Trigger on: Belgian VAT, btw-aangifte, déclaration TVA, Intervat, kwartaalaangifte, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Peppol Belgium, btw-boete. Out of scope: e-invoice formats and Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax), corporate tax (be-corporate-tax)."
-version: 2.1
+version: 2.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -15,13 +15,13 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.1
+# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.2
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
 **What this skill does.** It sets out the law layer of Belgian VAT for 2026: who is in, the rates, the small-business exemption, return frequency, deadlines, refunds, e-invoicing and penalties. Figures come from the VAT Code (Wetboek van de belasting over de toegevoegde waarde, "WBTW", Law of 3 July 1969) and its Royal Decrees (KB nr. 1, 20, 41 and 44), read in the official coordination on FisconetPlus, from amending laws in the Belgisch Staatsblad, and from FOD Financiën pages.
 
-**Sibling skills.** [be-vat-return](be-vat-return.md) is a pointer to this file. [belgium-einvoice](belgium-einvoice.md) covers Peppol and invoice formats. [belgium-bookkeeping](belgium-bookkeeping.md), [be-income-tax](be-income-tax.md) and [be-corporate-tax](be-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
+**Sibling skills.** [be-vat-return](be-vat-return.md) covers preparing the return: the full grid map, reverse charges, listings and their fines. [belgium-einvoice](belgium-einvoice.md) covers Peppol and invoice formats. [belgium-bookkeeping](belgium-bookkeeping.md), [be-income-tax](be-income-tax.md) and [be-corporate-tax](be-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
 
 ## Who this applies to
 
