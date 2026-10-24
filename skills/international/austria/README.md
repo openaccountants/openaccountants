@@ -17,7 +17,7 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | at-income-tax | source-cited draft |
+| IT-IND, individual income tax | at-income-tax (residents, 2026: tariff, credits, Familienbonus Plus, Gewinnfreibetrag, Basispauschalierung, filing, prepayments) | source-cited draft |
 | IT-CORP, corporate income tax | at-corporate-income-tax | source-cited draft |
 | VAT | at-vat-return, austria-vat-return | source-cited draft |
 | SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG) | source-cited draft |
@@ -29,7 +29,8 @@ Also in the pack: at-tax-overview (a map of the system) and at-company-formation
 
 ## Official sources
 
-- Einkommensteuergesetz 1988 (EStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 (read 2026-10-22)
+- Einkommensteuergesetz 1988 (EStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 (read 2026-10-24)
+- Inflationsanpassungsverordnung 2026, BGBl. II Nr. 191/2025, RIS: https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_II_191/BGBLA_2025_II_191.html (read 2026-10-24)
 - Körperschaftsteuergesetz 1988 (KStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569 (read 2026-10-22)
 - Bundesabgabenordnung (BAO), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 (read 2026-10-22)
 - Federal Ministry of Finance: https://www.bmf.gv.at (read 2026-10-22)
