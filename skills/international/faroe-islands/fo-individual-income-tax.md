@@ -2,19 +2,20 @@
 name: fo-individual-income-tax
 description: >
   Prepare ordinary 2026 resident individual national and municipal income-tax working papers. The Faroes have their own tax rules; Danish tax bands must not be imported. Capital income, shipping regimes and treaty exceptions require separate work. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
-version: 0.1
 jurisdiction: FO
+category: international
 tax_year: 2026
+tier: 2
 last_updated: 2026-10-23
+version: "0.3"
+verified_by: pending
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
-category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands individual income tax v0.1
+# Faroe Islands individual income tax v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -26,7 +27,7 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 
 ## Scope and assessment route
 
-TAKS distinguishes automatically withheld A-income from B-income, including self-employment and income from a non-Faroese employer. B-income requires a preliminary income estimate and instalments. The published limited-liability description uses a stay of at most 180 days without a permanent address; a stay beyond 180 days in twelve months brings full liability. Do not decide treaty residence or an earlier permanent-address case from that threshold alone. [TAKS taxation overview](https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands).
+TAKS distinguishes automatically withheld A-income from B-income, including self-employment and income from a non-Faroese employer. B-income requires a preliminary income estimate and instalments. For a person without a Faroese residence, Tax Act §1(1)(4) sets full domestic tax liability at **at least 180 days within a twelve-month period**, including interrupted stays. Exactly 180 days therefore meets this day-count test. Residence under §1(1)(1) is a separate route; fewer days do not establish nonresidence. Treaty residence and the commencement date require separate analysis. [Current Tax Act §1, read 23 October 2026](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt). [TAKS taxation overview](https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands).
 
 ## National tax table, 2026
 
@@ -57,6 +58,36 @@ Assume a full-year resident, non-church-member adult in Tórshavnar, no child cr
 
 This is not take-home pay: pensions and statutory contributions are separate. At national thresholds, the adjacent formulas must agree: 180,000 → 14,950; 330,000 → 37,450; 450,000 → 61,450; 600,000 → 98,950. Test these before applying the method.
 
+The following checks make the existing numerical illustrations executable. They do not validate residence or entitlement to deductions.
+
+```oa-check
+name: Faroese existing ordinary resident illustration
+inputs:
+  base: 300000
+steps:
+  national: 14950 + (base - 180000) * 0.15
+  municipal: (base - 30000) * 0.19
+  combined: national + municipal
+expected:
+  national: 32950
+  municipal: 51300
+  combined: 84250
+```
+
+```oa-check
+name: Faroese national band continuity at DKK 180000
+inputs:
+  boundary: 180000
+steps:
+  lower_band: (boundary - 65000) * 0.13
+  upper_band: 14950 + (boundary - 180000) * 0.15
+  difference: upper_band - lower_band
+expected:
+  lower_band: 14950
+  upper_band: 14950
+  difference: 0
+```
+
 ## Filing
 
 Check a pre-completed statement and correct errors. Ordinary individuals/self-employed filers use the 1 May deadline; companies use 1 July. Self-employed accounts and applicable property statements accompany the return. Record any separately granted extension. [TAKS tax-return guidance](https://www.taks.fo/en/individuals/tax/tax-return).
@@ -75,22 +106,24 @@ Check a pre-completed statement and correct errors. Ordinary individuals/self-em
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
 
+## Sources
+
+The 23 October revision corrects the statutory residence boundary and adds arithmetic checks. It does not reverify every earlier rate or exception.
+
+| Source | Read date |
+|---|---|
+| [Tax Act §1](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) | 2026-10-23 |
+| [TAKS taxation overview](https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands) | 2026-10-22, retained source record |
+| [National table](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt) | 2026-10-22, retained source record |
+| [Municipal table](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) | 2026-10-22, retained source record |
+| [Returns](https://www.taks.fo/en/individuals/tax/tax-return) | 2026-10-23 |
+
 > Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
