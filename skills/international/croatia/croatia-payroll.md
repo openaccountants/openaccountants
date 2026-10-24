@@ -59,7 +59,7 @@ Laws used: the Personal Income Tax Act (Zakon o porezu na dohodak, "ZPDoh", NN 1
 | Municipality (općina) range | lower 15% to 20%, higher 25% to 30% | 2026 | ZPDoh art. 19.a(2) |
 | Town (grad) range | lower 15% to 21%, higher 25% to 31% | 2026 | ZPDoh art. 19.a(2) |
 | Large town or county seat range | lower 15% to 22%, higher 25% to 32% | 2026 | ZPDoh art. 19.a(2) |
-| City of Zagreb range / rates decided | 15% to 23% and 25% to 33% / 23% and 33% | 2026 | ZPDoh art. 19.a(2); Zagreb decision NN 28/25, https://porezna-uprava.gov.hr/Propisi |
+| City of Zagreb range / rates decided | 15% to 23% and 25% to 33% / 23% and 33% | 2026 | ZPDoh art. 19.a(2); Zagreb decision NN 28/25, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_02_28_291.html |
 | Young-worker relief, born 2001 or later | 100% of lower-rate tax on salary, in the annual assessment | 2026 | ZPDoh art. 46(2); Rulebook art. 58(6) |
 | Young-worker relief, born 1996 to 2000 | 50% of lower-rate tax on salary, in the annual assessment | 2026 | ZPDoh art. 46(2); Rulebook art. 58(6) |
 | Minimum wage, full time | EUR 1,050.00 gross a month | 2026 | Uredba NN 132/25, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html |
@@ -98,7 +98,7 @@ The rates follow the local unit where the employee lives, not the employer's sea
 | JOPPD for pay in kind | By the 15th of the following month | Rulebook art. 79(5) |
 | JOPPD for non-taxable receipts reported in bulk | By the 15th of the following month | Rulebook art. 79(6) |
 
-JOPPD (Izvješće o primicima, porezu na dohodak te doprinosima za obvezna osiguranja) is filed through ePorezna and shows, per employee, the receipt, the contributions and the tax (Rulebook art. 77). A bank may not execute a salary payment unless the contribution payment orders come with it, except where no contribution is due (ZoD art. 248.b(3) and (4)). The employer also runs the annual income tax recalculation for its employees where the law requires it (ZPDoh art. 47).
+JOPPD (Izvješće o primicima, porezu na dohodak te doprinosima za obvezna osiguranja) is filed through ePorezna and shows, per employee, the receipt, the contributions and the tax (Rulebook art. 77). An employer that has not paid the contributions must hand the bank the contribution payment orders together with the salary payment orders; otherwise the bank refuses the salary payment, except for a contribution that is not due (ZoD art. 248.b(2) to (4)). The employer also runs the annual income tax recalculation for its employees where the law requires it (ZPDoh art. 47).
 
 ## Penalties and interest
 
@@ -108,7 +108,7 @@ JOPPD (Izvješće o primicima, porezu na dohodak te doprinosima za obvezna osigu
 | Employer (legal person) does not pay or underpays the income tax advance, or does not file JOPPD on time | EUR 1,320 to 6,630; responsible person EUR 260 to 1,320 | ZPDoh art. 91(1) points 1 and 5, 91(4) |
 | Same, by a sole trader or other self-employed employer | EUR 660 to 3,980 | ZPDoh art. 91(2) |
 
-Late payment interest runs on tax and contributions from the due date (General Tax Act art. 130(3)). For public revenue the rate is the ECB main refinancing rate plus three percentage points ([e-Justice, Croatia](https://e-justice.europa.eu/topics/taking-legal-action/where-and-how/interest-rates/hr_hr)). The Croatian National Bank published an ECB rate of 2.40% in force on 1 July 2026 (NN 68/26, https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_68_826.html), so the rate is 5.40% a year from 1 July to 31 December 2026.
+Late payment interest runs on tax and contributions from the due date (General Tax Act art. 130(3)). The General Tax Act leaves the interest rate to a special regulation (art. 130(1)). The Obligations Act sets the default interest rate in relationships other than commercial contracts at the ECB reference rate plus three percentage points, fixed each half year (Zakon o obveznim odnosima art. 29(2) and (8)). The Croatian National Bank published a reference rate of 2.40% in force on 1 July 2026 (NN 68/26, https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_68_826.html), which gives 5.40% a year from 1 July to 31 December 2026. Whether that rate is the one charged on tax and contribution debts is not yet confirmed in an official text: the Interest Act provision that brought taxes and contributions under the general default rate (Zakon o kamatama art. 1(2)) ceased to apply from 2008 (Obligations Act art. 1164(2)).
 
 ## Cross-border points
 
@@ -204,9 +204,10 @@ expected:
 | Zakon o izmjenama Zakona o doprinosima, NN 152/24 | https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2506.html | 2026-10-23 |
 | Naredba o iznosima osnovica za obračun doprinosa za 2026., NN 150/25 | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html | 2026-10-23 |
 | Uredba o visini minimalne plaće za 2026., NN 132/25 | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html | 2026-10-24 |
-| Odluka o visini poreznih stopa Grada Zagreba, NN 28/25, Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-23 |
+| Odluka o visini poreznih stopa godišnjeg poreza na dohodak Grada Zagreba, NN 28/25 (applies from 1 March 2025) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_02_28_291.html | 2026-10-24 |
 | Vlada RH, Izmjene poreznih propisa (2023): low-wage relief on the Pillar I base | https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2023/Svibanj/220%20sjednica%20VRH/Izmjene%20poreznih%20propisa.pdf | 2026-10-24 |
 | HNB, ECB main refinancing rate in force on 1 July 2026, NN 68/26 | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_68_826.html | 2026-10-24 |
-| European e-Justice Portal, interest rates, Croatia | https://e-justice.europa.eu/topics/taking-legal-action/where-and-how/interest-rates/hr_hr | 2026-10-24 |
+| Zakon o obveznim odnosima, art. 29 and 1164 (NN 35/05 as amended to NN 155/23), consolidated text on zakon.hr (secondary consolidation; art. 29(9) is cited in NN 68/26) | https://www.zakon.hr/z/75/Zakon-o-obveznim-odnosima | 2026-10-24 |
+| Zakon o kamatama, NN 94/04, Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
-Not yet confirmed: that no amendment to the Personal Income Tax Act or the Contributions Act after NN 152/24 applies in 2026 (the Tax Administration register lists none); that the City of Zagreb has not replaced its NN 28/25 decision for 2026; the three-point margin for late payment interest was read on the EU e-Justice portal, not in the Obligations Act text; who must be a Pillar II member (Mandatory Pension Funds Act) was not read.
+Not yet confirmed: that no amendment to the Personal Income Tax Act or the Contributions Act after NN 152/24 applies in 2026 (the Tax Administration register lists none); that the City of Zagreb has not replaced its NN 28/25 decision for 2026; that the Obligations Act art. 29(2) rate for non-commercial relationships (5.40% from 1 July 2026) is the rate the Tax Administration charges on late tax and contributions, since no official text found ties them together (General Tax Act art. 130(1) points to a special regulation only); who must be a Pillar II member (Mandatory Pension Funds Act) was not read.
