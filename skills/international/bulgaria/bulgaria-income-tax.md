@@ -42,7 +42,8 @@ Related skills in this pack: social contributions in [bulgaria-social-contributi
 | Statutory deduction: rent and paid use of property or rights | 10% of income | 2026 | https://lex.bg/laws/ldoc/2135538631 (art. 31(1)) |
 | Statutory deduction: gain on real estate; net gain on shares, financial assets, crypto-assets and non-euro currency | 10% of the gain | 2026 | https://lex.bg/laws/ldoc/2135538631 (art. 33(1), (3)) |
 | Child relief (art. 22v), reduction of the annual base | one child EUR 3,067.75; two EUR 6,135.50; three or more EUR 9,203.25 | 2026 | https://nra.bg/wps/portal/nra/taxes/danak-vurhu-dohodite-na-fizicheski-lica/danuchni-oblekchenia-za-deca/danuchni_oblekchenia_za-deca |
-| Disabled child relief (art. 22g), 50% or more disability | EUR 6,135.50 | 2026 | same NRA page |
+| Disabled child relief (art. 22g), 50% or more disability | EUR 6,135.50 per child | 2026 | same NRA page |
+| Child reliefs used during the year (monthly from the employer, or against Q1 to Q3 advance tax on other business income and rent) | per month: one child EUR 255.65; two EUR 511.29; three or more EUR 766.94; disabled child EUR 511.29 | 2026 | same NRA page |
 | Relief for own reduced working capacity of 50% or more | BGN 7,920 = EUR 4,049.43 | 2026 | https://lex.bg/laws/ldoc/2135538631 (art. 18(1)) |
 | Young families: mortgage interest | interest on the first BGN 100,000 = EUR 51,129.19 of principal | 2026 | https://lex.bg/laws/ldoc/2135538631 (art. 22a(2)) |
 | Voluntary pension; voluntary health insurance and life insurance | each group up to 10% of the annual bases | 2026 | https://lex.bg/laws/ldoc/2135538631 (art. 19(1)) |
@@ -65,7 +66,9 @@ Related skills in this pack: social contributions in [bulgaria-social-contributi
 
 **Reliefs.** Disability (art. 18), voluntary insurance (art. 19), art. 20 pension-service contributions, children (art. 22v) and disabled children (art. 22g) come off the general annual bases first, then off the sole-trader base (art. 21). Conditions that change the answer:
 
-- **Children (art. 22v).** The child is under 18 (the relief applies in the year of birth and in the year the child turns 18), resident in the EU or EEA at 31 December, and not in full state residential care. Only one parent claims; if both claim, each owes tax on the relief used (art. 22v(4), (9)). The claimant must have no public debts subject to enforced collection (NRA page).
+- **Children (art. 22v).** The child is under 18 (the relief applies in the year of birth and in the year the child turns 18), resident in the EU or EEA at 31 December, and not in full state residential care. Only one parent claims; the part one parent cannot use against their own bases may be claimed by the other on the annual return; if both claim in full, each owes tax on the relief used (art. 22v(4), (9)). The claimant must have no public debts subject to enforced collection (NRA page).
+- **Disabled children (art. 22g).** EUR 6,135.50 for each child with 50% or more disability under a decision in force; the child is under 18 on 1 January of the year (art. 22g(2)(2)). It can be claimed alongside the ordinary child relief (NRA page).
+- **Child reliefs during 2026.** An employee may have the monthly amounts in the rate table taken off the monthly tax base by the main employer, on a one-time written declaration. A freelancer or landlord who pays their own advance tax may take the same monthly amounts off the advance tax for the first three quarters, but not where the payer withholds the advance tax or the reliefs were already used through an employer. Sole traders and trader individuals cannot use them in advance (NRA page). The year-end calculation under art. 49 or the annual return still applies.
 - **Young families (art. 22a).** Interest paid in the year on a mortgage to buy the family's only home; married couple; at least one spouse under 35 when the loan was signed; only one spouse claims.
 - **Donations (art. 22).** 5% for donations to the health, social, educational, religious, public-benefit and other bodies listed in art. 22(1)(1); 15% for culture; 50% for the named child-treatment and assisted-reproduction funds; all donations together capped at 65% of the bases. Donations to similar EU or EEA bodies qualify (art. 22(5)).
 - **Home repairs (art. 22e).** Labour (not materials) for improving or repairing one Bulgarian home the taxpayer owns, done by an EU or EEA resident who is not a related person, with a document and proof of payment.
@@ -88,7 +91,7 @@ Related skills in this pack: social contributions in [bulgaria-social-contributi
 | Sole trader advance tax | 15%, under the Corporate Income Tax Act instalment rules | art. 43(8) |
 | Child relief through the employer | declaration to the main employer 30 November to 31 December 2026; employer recalculates and refunds by 31 January 2027 | art. 49(4) to (6); NRA child relief page |
 
-**Who must file.** Every resident with income taxed on the general base or the sole-trader base (art. 50(1)(1)), foreign dividends (art. 50(1)(3)), foreign shareholdings and property (art. 50(1)(4)), and private loans over BGN 10,000 = EUR 5,112.92 in the year or BGN 40,000 = EUR 20,451.68 of outstanding balances (art. 50(1)(5)). No return is needed for employment income only where the main employer made the year-end recalculation and withheld the full tax, or for only exempt income or Bulgarian dividends (art. 52). Reliefs not given through the employer are claimed only on the return (art. 23). Self-insured persons file electronically only (art. 53(7)). The return goes to the NRA territorial office of the permanent address (art. 54).
+**Who must file.** Every resident with income taxed on the general base or the sole-trader base (art. 50(1)(1)), income under the local patent tax or taxi tax (art. 50(1)(2)), foreign dividends (art. 50(1)(3)), foreign shareholdings and property (art. 50(1)(4)), and private loans over BGN 10,000 = EUR 5,112.92 in the year or BGN 40,000 = EUR 20,451.68 of outstanding balances (art. 50(1)(5)). No return is needed for employment income only where the main employer made the year-end recalculation and withheld the full tax, or for only exempt income or Bulgarian dividends (art. 52). Reliefs not given through the employer are claimed only on the return (art. 23). Self-insured persons file electronically only (art. 53(7)). The return goes to the NRA territorial office of the permanent address (art. 54).
 
 ## Penalties and interest
 
@@ -117,19 +120,21 @@ Euro figures are the leva amounts in the statute converted at BGN 1.95583 and ro
 
 ### Example 1: freelancer on the 25% deduction, one child
 
-Maria is resident in Bulgaria and works as an IT consultant under service contracts, outside any trade register. In 2026 she receives EUR 48,000 from foreign clients, so no Bulgarian payer withholds tax. She is self-insured, and the contributions due for her own account for 2026 are EUR 7,000. She has one child aged 6, and her husband does not claim the child relief. During the year she paid EUR 2,100 of quarterly advance tax.
+Maria is resident in Bulgaria and works as an IT consultant under service contracts, outside any trade register. In 2026 she receives EUR 48,000 from foreign clients, so no Bulgarian payer withholds tax. She is self-insured, active all year, without the optional illness and maternity cover. Her taxable income of EUR 36,000 is above the 2026 annual maximum insurable income of EUR 26,281.48, so the contributions due for her own account are 27.8% of EUR 26,281.48, which is EUR 7,306.25 (rates and limits from [bulgaria-social-contributions](bulgaria-social-contributions.md)). She has one child aged 6, and her husband does not claim the child relief. During the year she paid EUR 2,100 of quarterly advance tax.
 
-Her taxable income is EUR 48,000 less 25%, so EUR 36,000. Less contributions of EUR 7,000 gives an annual base of EUR 29,000. The child relief of EUR 3,067.75 brings it to EUR 25,932.25. Tax at 10% is EUR 2,593.23 (the check carries the unrounded EUR 2,593.225). After the EUR 2,100 of advances the balance is EUR 493.225, rounded to EUR 493 under art. 48(8). She files by 30 April 2027. If she files electronically and pays by 31 March 2027, the 5% discount under art. 53(6) also applies; that variation is not computed here.
+Her taxable income is EUR 48,000 less 25%, so EUR 36,000. Less contributions of EUR 7,306.25 gives an annual base of EUR 28,693.75. The child relief of EUR 3,067.75 brings it to EUR 25,626.00. Tax at 10% is EUR 2,562.60. After the EUR 2,100 of advances the balance is EUR 462.60, rounded to EUR 463 under art. 48(8). She files by 30 April 2027. If she files electronically and pays by 31 March 2027, the 5% discount under art. 53(6) also applies; that variation is not computed here.
 
 ```oa-check
 name: BG freelancer 25% deduction, one child, 2026
 inputs:
   gross_income: 48000
-  contributions: 7000
+  max_insurable: 26281.48
+  contribution_rate: 27.8
   child_relief: 3067.75
   advances_paid: 2100
 steps:
   - taxable_income: gross_income - gross_income * 25 / 100
+  - contributions: round(max_insurable * contribution_rate / 100, 2)
   - annual_base: taxable_income - contributions
   - base_after_relief: annual_base - child_relief
   - tax: base_after_relief * 10 / 100
@@ -137,37 +142,41 @@ steps:
   - balance_rounded: round(balance)
 expected:
   taxable_income: 36000.00
-  annual_base: 29000.00
-  base_after_relief: 25932.25
-  tax: 2593.225
-  balance_rounded: 493.00
+  contributions: 7306.25
+  annual_base: 28693.75
+  base_after_relief: 25626.00
+  tax: 2562.60
+  balance_rounded: 463.00
 ```
 
 ### Example 2: sole trader at 15%, child relief carried to the ET base, early e-filing
 
-Georgi runs a sole trader business (ET) and has no other income. His 2026 tax profit under the Corporate Income Tax Act is EUR 60,000. His self-insured contributions due for 2026 are EUR 9,000. He has one child aged 10, and his wife does not claim. He paid EUR 6,000 of 15% advance instalments. He files electronically on 20 March 2027, pays the same day, and has no debts under enforcement.
+Georgi runs a sole trader business (ET) and has no other income. His 2026 tax profit under the Corporate Income Tax Act is EUR 60,000. He is self-insured all year with the optional illness and maternity cover, and his profit is above the 2026 annual maximum insurable income of EUR 26,281.48, so his contributions due for 2026 are 31.3% of EUR 26,281.48, which is EUR 8,226.10 (from [bulgaria-social-contributions](bulgaria-social-contributions.md)). He has one child aged 10, and his wife does not claim. He paid EUR 6,000 of 15% advance instalments. He files electronically on 20 March 2027, pays the same day, and has no debts under enforcement.
 
-The edge case: Georgi has no income in the general base, so the child relief cannot be used there. Art. 28(2)(4) lets him take the unused relief off the sole-trader base. The base is EUR 60,000 less EUR 9,000 contributions, so EUR 51,000, less EUR 3,067.75, so EUR 47,932.25. Tax at 15% is EUR 7,189.84 (EUR 7,189.8375 unrounded). After EUR 6,000 of advances the balance is EUR 1,189.84. The 5% discount is EUR 59.49, below the EUR 255.65 cap. He pays EUR 1,130.35, rounded to EUR 1,130 (art. 48(8)). Had he filed between 1 April and 30 June 2027, the full EUR 1,190 would be due by 30 June.
+The edge case: Georgi has no income in the general base, so the child relief cannot be used there. Art. 28(2)(4) lets him take the unused relief off the sole-trader base. The base is EUR 60,000 less EUR 8,226.10 contributions, so EUR 51,773.90, less EUR 3,067.75, so EUR 48,706.15. Tax at 15% is EUR 7,305.92 (EUR 7,305.9225 unrounded). After EUR 6,000 of advances the balance is EUR 1,305.92. The 5% discount is EUR 65.30, below the EUR 255.65 cap. He pays EUR 1,240.62, rounded to EUR 1,241 (art. 48(8)). Had he filed between 1 April and 30 June 2027, the full EUR 1,306 would be due by 30 June.
 
 ```oa-check
 name: BG sole trader 15%, unused child relief, early e-filing discount, 2026
 inputs:
   tax_profit: 60000
-  contributions: 9000
+  max_insurable: 26281.48
+  contribution_rate: 31.3
   child_relief: 3067.75
   advances_paid: 6000
   discount_cap: 255.65
 steps:
+  - contributions: round(max_insurable * contribution_rate / 100, 2)
   - base: tax_profit - contributions - child_relief
   - tax: base * 15 / 100
   - balance: tax - advances_paid
   - discount: min(round(balance * 5 / 100, 2), discount_cap)
   - payable: round(balance - discount)
 expected:
-  base: 47932.25
-  tax: 7189.8375
-  discount: 59.49
-  payable: 1130.00
+  contributions: 8226.10
+  base: 48706.15
+  tax: 7305.9225
+  discount: 65.30
+  payable: 1241.00
 ```
 
 ## Ask the client first
@@ -184,11 +193,11 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Personal Income Taxes Act (ZDDFL), consolidated to ДВ бр. 85/2026, arts. 4, 6, 7, 10, 13, 15, 17 to 23, 24 to 36, 38, 42 to 46, 48 to 54, 65, 67, 80 to 83 | https://lex.bg/laws/ldoc/2135538631 | 2026-10-23 |
-| NRA, child and disabled child reliefs for 2026 | https://nra.bg/wps/portal/nra/taxes/danak-vurhu-dohodite-na-fizicheski-lica/danuchni-oblekchenia-za-deca/danuchni_oblekchenia_za-deca | 2026-10-23 |
+| NRA, child and disabled child reliefs for 2026, including monthly and quarterly use during the year | https://nra.bg/wps/portal/nra/taxes/danak-vurhu-dohodite-na-fizicheski-lica/danuchni-oblekchenia-za-deca/danuchni_oblekchenia_za-deca | 2026-10-24 |
 | Euro Introduction Act, consolidated, arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-24 |
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/laws/ldoc/2123675140 | 2026-10-24 |
 
-Not yet confirmed: the text of the 2026 State Budget Act provision that sets the child reliefs in euro (the amounts above come from the NRA page; the ZDDFL itself still reads BGN 200, 400 and 600 and BGN 2,000, and the gazette text was not read on dv.parliament.bg); whether that Act also gives monthly child relief through the employer during 2026; the statutory interest rate on late tax after the euro changeover; whether DOPK fines can apply alongside the ZDDFL fines; the full conditions of the art. 13(1)(1) home-sale exemption; and any rate changes the Ministry of Finance has proposed for later years.
+Not yet confirmed: the gazette text of the 2026 State Budget Act provision that sets the child reliefs and their monthly use in euro (the amounts above come from the NRA page; the ZDDFL itself still reads BGN 200, 400 and 600 and BGN 2,000; the Act was not reachable on dv.parliament.bg or lex.bg on 2026-10-24); the statutory interest rate on late tax after the euro changeover; whether DOPK fines can apply alongside the ZDDFL fines; the full conditions of the art. 13(1)(1) home-sale exemption; and any rate changes the Ministry of Finance has proposed for later years.
 
 <!-- openaccountants-cta-block -->
 
