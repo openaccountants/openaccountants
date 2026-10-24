@@ -28,7 +28,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 - **Every business (Unternehmer) making taxable supplies in Germany** charges VAT and files advance returns, unless it is a small business under § 19 UStG or the tax office has released it (see "Deadlines and filing"). A business is anyone who carries on a commercial or professional activity independently: sole traders, freelancers, partnerships, GmbHs.
 - **Small businesses (Kleinunternehmer).** A business based in Germany is exempt if its total turnover was not more than EUR 25,000 in the previous calendar year and does not exceed EUR 100,000 in the current year (§ 19(1) UStG). It charges no VAT, claims no input VAT, and the filing duties of § 18(1) to (4) UStG do not apply to it. It can waive the scheme; the waiver binds it for at least five calendar years (§ 19(3) UStG). The start-up year, the receipt that crosses the limit and the EU-wide scheme are in de-vat-annual-and-special-schemes.
 - **Businesses established abroad** that make taxable supplies in Germany must register and file here unless the customer owes the tax under the reverse charge (§ 13b UStG) or the supplies go through the one-stop shop. See "Cross-border points".
-- **Customers who owe the tax.** A German business, or a legal person, that receives a reverse-charge supply owes the VAT on it (§ 13b(5) UStG) and must file even if it makes no taxable supplies of its own (§ 18(4a) UStG).
+- **Customers who owe the tax.** A business (wherever it is established) or a legal person that receives a reverse-charge supply owes the VAT on it (§ 13b(5) UStG) and must file even if it makes no taxable supplies of its own (§ 18(4a) UStG).
 - **Out of scope here:** VAT groups (Organschaft), the margin schemes (§§ 25, 25a UStG), the flat rates for farmers and foresters (§ 24 UStG), and travel agents. Refer these.
 
 ## Rates, bands and thresholds
@@ -37,7 +37,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 |---|---|---|---|
 | Standard rate | 19% | 2026 | § 12(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Reduced rate (Annex 2 goods, books, water, hotel rooms, local transport and the other § 12(2) items) | 7% | 2026 | § 12(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
-| Restaurant and catering services, except the supply of drinks | 7% from 1 January 2026 | 2026 | § 12(2) no. 15 UStG; BMF letter of 22 December 2025, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 |
+| Restaurant and catering services, except the supply of drinks | 7% from 1 January 2026 | 2026 | § 12(2) no. 15 UStG, inserted by Art. 4 no. 2 of the Steueränderungsgesetz 2025 of 22 December 2025 (BGBl. 2025 I Nr. 363), in force 1 January 2026 (Art. 12(2)), https://www.recht.bund.de/bgbl/1/2025/363/VO.html ; BMF letter of 22 December 2025, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 |
 | Combined food and drinks price (buffet, all-inclusive): drinks share the tax office accepts | 30% of the package price | 2026 | UStAE 10.1(12), BMF letter of 22 December 2025 (same URL) |
 | Solar modules and storage for systems on or near homes | 0% | 2026 | § 12(3) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Small business: total turnover of the previous year, not exceeded | EUR 25,000 | 2026 (2025 turnover) | § 19(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__19.html |
@@ -92,10 +92,12 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 | 40 | 62 | Import VAT that has arisen |
 | 41 | 67 | Input VAT on reverse-charge supplies |
 | 44 | 64 | Input VAT correction under § 15a UStG |
-| 46 | 65 | Tax from a change of taxation method |
+| 46 | 65 | Tax from a change of taxation method, and extra tax on taxed prepayments after a rate change |
 | 47 | 69 | Tax shown wrongly on an invoice (§ 14c UStG) |
 | 49 | 39 | Special prepayment credit, normally only in the last return of the year |
 | 50 | 83 | The amount to pay, or the surplus with a minus sign. Always filled in |
+
+**Corrections and credit notes.** A later change to the price (a discount, a cancellation, a credit note) is corrected in the period in which the change happens, not in the original period, by entering the change in the same box with a minus sign where it reduces the base (§ 17(1) UStG). Only where the fee has become uncollectible (§ 17(2) no. 1 UStG) is the reduction also shown in Kz 50 (line 51), or for input VAT in Kz 37 (line 52) (2026 form USt 1 A).
 
 **Common bank-statement lines.**
 
@@ -134,7 +136,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 ## Penalties and interest
 
 - **Late advance return.** The tax office may set a late filing surcharge (§ 152(1) AO). The 0.25% formula does not apply to monthly or quarterly returns or to the special prepayment; the amount is set by judgement, looking at how late, how often and how much tax (§ 152(8) AO). The cap is EUR 25,000 (§ 152(10) AO).
-- **Late annual return.** 0.25% of the assessed tax less prepayments for each started month late, at least EUR 25 a month, rounded down to whole euros, at most EUR 25,000 (§ 152(5) and (10) AO). The surcharge is compulsory if the return is not filed within 14 months after the year ends, or 19 months in tax-adviser cases, unless the deadline was extended, the tax is nil or negative, or the tax does not exceed the prepayments (§ 152(2) and (3) AO).
+- **Late annual return.** 0.25% of the assessed tax less prepayments for each started month late, at least EUR 25 a month, rounded down to whole euros, at most EUR 25,000 (§ 152(5) and (10) AO). The surcharge is compulsory if the return is not filed within 14 months after the year ends (for 2026, by 29 February 2028, which is also the tax-adviser deadline), unless the deadline was extended, the tax is nil or negative, or the tax does not exceed the prepayments (§ 152(2) and (3) AO).
 - **Late payment (Säumniszuschlag).** 1% for each started month on the overdue tax rounded down to a multiple of EUR 50 (§ 240(1) AO). No surcharge if the payment is no more than 3 days late, except for payment in cash or by cheque (§ 240(3) AO with § 224(2) no. 1 AO). A bank transfer counts on the day the tax office's account is credited (§ 224(2) no. 2 AO). It runs on advance payments, the special prepayment and the annual balance.
 - **Interest (§ 233a AO).** Where the annual assessment differs from the prepayments, the difference carries interest of 0.15% per full month, from 15 months after the year ends (for 2026, from 1 April 2028) until the assessment takes effect (§ 233a(2) AO, § 238(1a) AO). The amount is rounded down to a multiple of EUR 50 (§ 238(2) AO). Advance payments themselves carry no § 233a interest (§ 233a(1) sentence 2 AO).
 - **Fines** for VAT not paid on time (§ 26a UStG) are covered in de-vat-annual-and-special-schemes.
@@ -144,7 +146,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 - **Services received from abroad.** A § 3a(2) service from an EU business: base Kz 46, tax Kz 47, input Kz 67; the tax arises at the end of the period in which the service was performed (§ 13b(1) UStG). Other services and works supplies from a business established abroad (including non-EU): Kz 84 and 85; the tax arises when the invoice is issued, at the latest at the end of the month after the supply (§ 13b(2) no. 1 UStG). A fully taxable business pays and deducts the same amount.
 - **Services supplied abroad.** A § 3a(2) service to a business in another EU state is not taxable in Germany: Kz 21, the recapitulative statement, and an invoice noting that the customer owes the tax. To a business outside the EU: Kz 45.
 - **Goods.** Intra-EU supplies to a customer with a valid VAT ID are tax-free with input deduction (Kz 41), with transport evidence; exports outside the EU go in Kz 43. Acquisitions from EU suppliers are self-assessed (Kz 89 or 93, input Kz 61). Import VAT is charged by customs and deducted in Kz 62.
-- **Domestic reverse charge.** Construction services (where the customer itself regularly supplies construction services), building cleaning, scrap metal, gold, and mobile phones, tablets, consoles, chips and Annex 4 metals at EUR 5,000 or more per transaction: the German business customer owes the tax (§ 13b(2) and (5) UStG). The supplier reports the sale in Kz 60.
+- **Domestic reverse charge.** Construction services (where the customer itself regularly supplies construction services), building cleaning, scrap metal, gold, mobile phones, tablets, consoles, chips and Annex 4 metals at EUR 5,000 or more per transaction, and the other categories listed in § 13b(2) UStG: the business customer owes the tax (§ 13b(2) and (5) UStG). The supplier reports the sale in Kz 60.
 - **Distance sales to EU consumers.** Up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). See de-vat-annual-and-special-schemes.
 - **Foreign businesses.** A business established abroad that makes taxable supplies in Germany not covered by the reverse charge registers and files like a German business. A foreign business with no German filing duty recovers German input VAT through the refund procedure (§ 18(9) UStG).
 
@@ -252,6 +254,7 @@ expected:
 | UStG § 13b (reverse charge) | https://www.gesetze-im-internet.de/ustg_1980/__13b.html | 2026-10-24 |
 | UStG § 14 (invoices, e-invoice duty) | https://www.gesetze-im-internet.de/ustg_1980/__14.html | 2026-10-24 |
 | UStG § 15 (input VAT) | https://www.gesetze-im-internet.de/ustg_1980/__15.html | 2026-10-24 |
+| UStG § 17 (corrections to the tax base) | https://www.gesetze-im-internet.de/ustg_1980/__17.html | 2026-10-24 |
 | UStG § 18 (advance returns, annual return, filing rhythm) | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-10-24 |
 | UStG § 18a (recapitulative statement) | https://www.gesetze-im-internet.de/ustg_1980/__18a.html | 2026-10-24 |
 | UStG § 19 (small businesses) | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-24 |
@@ -259,6 +262,7 @@ expected:
 | UStG § 3c (distance sales) | https://www.gesetze-im-internet.de/ustg_1980/__3c.html | 2026-10-24 |
 | UStG § 27(38) (e-invoice transition) | https://www.gesetze-im-internet.de/ustg_1980/__27.html | 2026-10-24 |
 | UStG, consolidated text, last amended by Art. 5 of the law of 29 June 2026 | https://www.gesetze-im-internet.de/ustg_1980/BJNR119530979.html | 2026-10-24 |
+| Steueränderungsgesetz 2025 of 22 December 2025, BGBl. 2025 I Nr. 363, Art. 4 no. 2 (§ 12(2) no. 15 UStG) and Art. 12(2) (in force 1 January 2026) | https://www.recht.bund.de/bgbl/1/2025/363/VO.html | 2026-10-24 |
 | UStDV § 33 (small-amount invoices) | https://www.gesetze-im-internet.de/ustdv_1980/__33.html | 2026-10-24 |
 | UStDV § 46 (one-month extension) | https://www.gesetze-im-internet.de/ustdv_1980/__46.html | 2026-10-24 |
 | UStDV § 47 (special prepayment) | https://www.gesetze-im-internet.de/ustdv_1980/__47.html | 2026-10-24 |
