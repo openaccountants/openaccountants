@@ -3,12 +3,12 @@ name: albania-vat
 description: "Albanian VAT (TVSH, tatimi mbi vlerën e shtuar) for tax year 2026 under Law No. 92/2014 as amended to Law No. 80/2025, Council of Ministers Decision No. 953/2014 and Law No. 87/2019 on invoices and fiscalisation. Covers the 20% standard rate, the 6% and 10% reduced rates and what each covers, 0% exports and international transport, exempt supplies, the ALL 10,000,000 registration threshold, voluntary registration above ALL 5,000,000, notaries and bailiffs at zero threshold, monthly returns due 14 days after the month, reverse charge and self-invoicing on imported services, e-invoicing and fiscalisation, refunds above ALL 400,000, and penalties under Law No. 9920/2008. Trigger on 'Albania VAT', 'TVSH', 'Albanian VAT return', 'VAT registration Albania', 'fiskalizimi', 'reverse charge Albania'. Out of scope: income tax (albania-income-tax, al-corporate-tax), payroll (albania-payroll), social contributions (albania-social-contributions), withholding and treaties (al-cross-border), planning (albania-tax-optimization)."
 version: 2.1
 jurisdiction: AL
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -261,3 +261,23 @@ expected:
 | General Directorate of Taxes, commercial companies (20% standard rate, registration mandatory above ALL 10 million, monthly e-Filing) | https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare | 2026-10-23 |
 
 Not yet confirmed: the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); which art. 113 band (ALL 5,000 or ALL 3,000) applies to a late VAT return filed by a VAT-registered natural person who pays personal income tax on business income, since the law does not define "individual taxpayer" for art. 113(c) and Instruction 24/2008 predates that band; the minimum purchase value for the traveller export rule in art. 58 (set by ministerial instruction, not read); the item-by-item contents of VKM 953/2014 Annex 4 (agricultural inputs) and Annex 1/A (agricultural machinery), not read; whether "professions such as notary, bailiff" in VKM 953/2014 art. 11(2) reaches any other profession in practice.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

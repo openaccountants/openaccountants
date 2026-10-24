@@ -3,15 +3,14 @@ name: switzerland-vat
 description: "Swiss VAT (MWST, TVA, IVA) for tax year 2026: who must register (worldwide turnover of CHF 100,000, CHF 250,000 for non-profit clubs, foreign businesses, electronic platforms since 2025), the 8.1%, 2.6% and 3.8% rates, the taxable base and input tax, the effective method and the net tax rate method (Saldosteuersatz, ten rates, CHF 5,024,000 / CHF 108,000), quarterly, semi-annual, monthly and the new annual reporting option (CHF 5,005,000), the 60-day filing and payment deadline, reverse charge on services from abroad (Bezugsteuer, CHF 10,000), import VAT and the deferral procedure, default interest of 4.0% for 2026 and penalties. Trigger on: Swiss VAT, MWST Abrechnung, Saldosteuersatz, Bezugsteuer, jährliche Abrechnung, Verzugszins MWST, ESTV, Einfuhrsteuer, decompte TVA. Out of scope: Swiss income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax), cross-border income tax (ch-cross-border), crypto (switzerland-crypto-tax)."
 version: 2.1
 jurisdiction: CH
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -170,3 +169,23 @@ expected:
 | ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

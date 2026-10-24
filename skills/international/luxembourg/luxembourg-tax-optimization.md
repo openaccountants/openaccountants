@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -231,3 +230,23 @@ expected:
 | CCSS, social parameters (2026 rates, minimum and maximum base) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 
 Not yet confirmed: the own-home interest limits come from the ACD page; the text of the amended grand-ducal regulation of 12 July 1968 on Legilux was not read; the exact provision of the Steueranpassungsgesetz that holds the anti-abuse rule; when a shareholder-manager of a SARL is insured with the CCSS as self-employed rather than as an employee (see `luxembourg-social-contributions`).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

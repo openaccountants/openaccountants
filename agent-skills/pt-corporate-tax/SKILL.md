@@ -1,13 +1,13 @@
 ---
 name: pt-corporate-tax
-description: "LER SEMPRE este skill antes de tratar fiscalidade de pessoas coletivas em Portugal. Utilizar sempre que seja pedida assistência com Imposto sobre o Rendimento das Pessoas Coletivas (IRC) para sociedades residentes em Portugal. Ativar com expressões como \"IRC Portugal\", \"Modelo 22\", \"derrama estadual\", \"derrama municipal\", \"tributação autónoma\", \"Imposto sobre o Rendimento das Pessoas Coletivas\", \"SIFIDE II\", \"RFAI\", \"Pilar Dois Portugal\", \"Madeira IBC\", \"SGPS\", \"prejuízos fiscais 12 anos\", \"pagamentos por conta\", \"pagamento especial por conta\", \"PEC\", \"CIRC\", \"AT Autoridade Tributária\", \"IES\", \"preços de transferência Portugal\", \"CFC Portugal\", \"participation exemption Portugal\". Ativar também em inglês: \"Portugal corporate tax\", \"Portugal IRC\", \"Portugal Modelo 22\", \"Portugal Pillar Two top-up\", \"Madeira IBC 5%\", \"Portugal R&D credit\", \"Portugal SGPS participation exemption\". Cobre a taxa nominal de 21% nos termos do art.º 87.º CIRC, a taxa reduzida de 17% para PMEs sobre os primeiros"
+description: "Portugal corporate income tax (IRC) for companies resident in mainland Portugal, tax year 2026. Covers the general rate (19% for tax periods starting in 2026, 18% in 2027, 17% from 2028, art. 87 CIRC), the 15% SME and Small Mid Cap rate on the first EUR 50,000, derrama estadual (3%, 5%, 9%, art. 87-A) and derrama municipal (up to 1.5%), autonomous taxation (art. 88), tax losses (no time limit, yearly cap, art. 52), payments on account (arts. 104 to 105-A), the Modelo 22 and the IES, the participation exemption, the interest limit, CFC rules, withholding by the company, and the SIFIDE II and RFAI credits. Trigger on: IRC Portugal, Modelo 22, derrama estadual, derrama municipal, tributação autónoma, pagamentos por conta, prejuízos fiscais, Portugal corporate tax, Portugal R&D credit. Out of scope: Azores, Madeira and the Madeira CINM regime; banks and insurers; investment funds; the simplified regime. Transfer pricing: pt-transfer-pricing. VAT: portugal-vat-return. Shareholders' IRS: pt-"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pt-corporate-tax"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-22"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -567,4 +567,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

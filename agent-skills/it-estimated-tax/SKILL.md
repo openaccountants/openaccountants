@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/it-estimated-tax"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-09-22"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -211,7 +211,7 @@ Forfettari pay equal halves; at or below the forfettario single-payment threshol
 
 - **Cedolare secca (rigo LC2).** The whole of last year's cedolare secca, with the IRPEF minimum, threshold, shares and dates of Section 5.1; codes 1840 and 1841. Forecast method and monthly instalments of the first instalment allowed (Fascicolo 1).
 - **IRAP** (partnerships, companies; individuals no longer pay it). See the table below and `it-irap`.
-- **INPS gestione separata** (professionals without their own fund). Two acconti of equal amount on the IRPEF acconto dates. Total: 2026 rates on the share of 2025 professional income in the table below, within the 2026 massimale. They go in the INPS section of the F24 (causale PXX or P10). Rates are in `it-inps-contributions`. Artigiani and commercianti pay acconti on income above the minimale on the same dates: see `it-inps-contributions`.
+- **INPS gestione separata** (professionals without their own fund). Two acconti of equal amount on the IRPEF acconto dates. Total: 2026 rates on the share of 2025 professional income in the table below, within the 2026 massimale. They go in the INPS section of the F24 (causale PXX or P10). Rates are in `it-inps-contributions`. Artigiani and commercianti pay acconti on income above the minimale on the same dates: see `it-inps-artigiani-commercianti`.
 
 **IRAP acconti (2026 IRAP instructions)**
 
@@ -402,6 +402,8 @@ The most up-to-date version of this Guide is maintained at openaccountants.com.
 
 > Contributed by OpenAccountants.
 
+> Contributed by Ryan Duguid.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -422,4 +424,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `it-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/it-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

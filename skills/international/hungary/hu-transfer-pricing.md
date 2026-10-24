@@ -1,13 +1,16 @@
 ---
 name: hu-transfer-pricing
 description: "Hungarian transfer pricing (szokásos piaci ár, transzferár) for tax year 2026: companies and Hungarian branches that deal with related parties. Covers who is related (more than 50% majority influence, common control, PEs, shared management), the arm's length adjustment both ways under Tao. tv. 18. §, the interquartile range and median rule, the new documentation decree 45/2025 (XII. 23.) NGM that replaced 32/2017 from tax year 2026 (local file above HUF 150 million, master file above HUF 500 million, simplified file for low-value services at 5%), the small-enterprise exemption, the ATP data sheets in the corporate tax return, the local business tax (HIPA) follow-on, penalties up to HUF 5 million per missing record, APA fees, country-by-country reporting at EUR 750 million, and MAP. Trigger phrases: transzferár, szokásos piaci ár, kapcsolt vállalkozás, transfer pricing Hungary, fődokumentum, helyi dokumentum, ATP-01. Out of scope: hu-corporate-tax (rate, base, filing), hu-income-tax, hungary-vat-return."
-jurisdiction: HU
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: HU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Hungary transfer pricing (szokásos piaci ár): 2026
@@ -306,3 +309,23 @@ expected:
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1996-81-00-00 | 2026-10-23: connection refused; the same database answered at njt.jog.gov.hu |
 
 Not yet confirmed: the layout of the 2629 return's transfer pricing sheets for tax year 2026 (not yet published by NAV); whether a 2025 taxpayer opting into 45/2025 under its 15. § (2) can also use the HUF 150 million local file exemption for 2025, or only the new content rules; the Ptk. 8:2. § text on the official site (read in the net.jogtar.hu reprint only); NAV's audit practice on choosing a point other than the median; MAP filing details now that the Minister is the competent authority (whether NAV's TPMAP form is still used, whether the request is free of fees, and which treaties set a 2-year deadline: NAV's archived 2020 guide named Canada, Indonesia, the Philippines and Portugal); whether a request is accepted where a good-faith foreign self-revision caused the double taxation (stated only in the archived NAV guide).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

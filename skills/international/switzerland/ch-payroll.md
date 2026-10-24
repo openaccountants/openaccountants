@@ -1,13 +1,16 @@
 ---
 name: ch-payroll
 description: "Swiss payroll for tax year 2026: what an employer deducts from wages and pays on top. Covers AHV/IV/EO (10.6%, split 5.3% each), unemployment insurance ALV (2.2%, split 1.1% each, on pay up to CHF 148,200; nothing above since 2023), accident insurance UVG (employer pays occupational, employee pays non-occupational, rates set by the insurer), occupational pension BVG (entry threshold CHF 22,680, coordination deduction CHF 26,460, coordinated pay CHF 3,780 to CHF 64,260, savings credits 7/10/15/18%), cantonal family allowance funds, the salary certificate (Lohnausweis), the annual AHV wage declaration due 30 January, and tax at source (Quellensteuer) for foreign employees without a C permit: tariff codes, the employer's commission and remittance. Trigger on: Swiss payroll, Lohnabrechnung, AHV Arbeitgeber, ALV Beitrag, BVG Koordinationsabzug, Quellensteuer Arbeitgeber, Lohnausweis, employer cost Switzerland. Out of scope: ch-ahv-iv (self-employed), ch-cross-border (residence, NOV, frontier workers), ch-federal-income-tax and ch-cantonal-tax (the employee's annual return)."
-jurisdiction: CH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CH
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Switzerland: payroll (social insurance deductions and tax at source)
@@ -231,3 +234,23 @@ expected:
 | Kantonales Steueramt Zürich, Quellensteuertarif A ohne Kirchensteuer, Ausgabe 2026 | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/p208840_QuellensteuerTarif_A_ohne_KS_ENT1.pdf | 2026-10-23 |
 
 Not yet confirmed: a 2026 edition of AHV/IV sheet 2.08 (the 2025 edition was read; AVIG art. 3 and UVV art. 22 as in force on 1 January 2026 give the same 2.2% and CHF 148,200); a fixed calendar deadline for the Lohnausweis (none in the DBG or the 2026 Wegleitung; any cantonal deadline is not checked); cantonal FAK rates, who bears them in each canton, and the compensation funds' administration fees; UVG premium rates (insurer-specific); the commission rate and return frequency in cantons other than Zurich.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

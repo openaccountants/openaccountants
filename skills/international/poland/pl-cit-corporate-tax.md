@@ -1,13 +1,16 @@
 ---
 name: pl-cit-corporate-tax
 description: "Polish corporate income tax (CIT, podatek dochodowy od osób prawnych) for tax year 2026: resident companies (sp. z o.o., S.A., P.S.A., limited partnerships taxed as companies) and Polish permanent establishments of foreign companies. Covers the 19% rate, the 9% rate for small taxpayers and start-ups (revenue limit PLN 8,431,000 for a 2026 calendar year), the 2026 bank rates, Estonian CIT (ryczałt od dochodów spółek, 10% or 20%), the 10% minimum tax, tax on shifted income, losses (five years, 50% a year or PLN 5m once), tax capital groups (PGK), the PLN 3m or 30% interest limit, CIT-8 filing, monthly, quarterly and simplified advances, late payment interest, outbound withholding (19%, 20%, pay-and-refund above PLN 2m), CFC and exit tax. Trigger on: CIT Poland, Polish corporate tax, CIT-8, mały podatnik, 9% CIT, estoński CIT, CIT-8E, podatek minimalny, PGK. Out of scope: individuals (pl-income-tax, pl-capital-gains), VAT (pl-vat-return), ZUS (pl-zus-contributions), e-invoicing (poland-einvoice)."
-jurisdiction: PL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: PL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Polish corporate income tax (CIT): tax year 2026
@@ -270,3 +273,23 @@ expected:
 The ISAP pages (isap.sejm.gov.pl) served a browser check to scripted requests on 2026-10-22, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
 Not yet confirmed: Ministry of Finance explanations on whether the minimum tax ratio is measured before loss relief (none found; the skill follows the wording of art. 24ca(1) and art. 7(1)); how much of the Estonian CIT ryczałt a shareholder can credit against personal income tax on a dividend (PIT Act); treaty withholding rates; whether exit tax can be paid in instalments. The late payment interest rate of 10.50% was still current on 2026-10-22 (NBP lombard rate unchanged since 5 March 2026); it moves with any later NBP change.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

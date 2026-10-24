@@ -3,13 +3,12 @@ name: poland-einvoice
 description: "Polish KSeF e-invoicing (Krajowy System e-Faktur) for tax year 2026: who must issue structured FA(3) invoices and from when (1 February 2026 for businesses with 2024 sales over PLN 200 million including VAT, 1 April 2026 for the rest), who is outside KSeF (businesses with no seat or fixed establishment in Poland, consumer invoices, OSS, IOSS and EU SME scheme invoices, tolls and single tickets), the 2026 carve-outs for PLN 10,000 a month and for cash-register invoices, receiving invoices, the offline24, unavailability and failure modes with their deadlines, QR codes, storage for 10 years, what KSeF means for input VAT, and the fines from 1 January 2027. Trigger on: KSeF, e-faktura, faktura ustrukturyzowana, FA(3), offline24, tryb awaryjny, numer KSeF, kod QR, art. 106ga, art. 145m. Out of scope: VAT rates, JPK_V7 and the VAT return (poland-vat-return), income tax (pl-income-tax, pl-cit-corporate-tax)."
 version: 1.1
 jurisdiction: PL
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -182,3 +181,23 @@ expected:
 | Ministry of Finance, FA(3) structure | https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/struktura-logiczna-fa-3 | 2026-10-23 |
 
 Not yet confirmed: the Ministry's statement on deduction (question 47) is in the local government section of the FAQ and is not a tax explanation or interpretation, so it gives no protection under art. 14k-14m of the Tax Ordinance; no court ruling on the point was found. The Ministry's key-dates page swaps the numbers of Dz.U. 2025 poz. 1740 and 1742; the Sejm register confirms poz. 1740 is the exclusions regulation and poz. 1742 amends the invoicing regulation. KSeF permission types (§ 3 of regulation 1815), the FA(3) field list, GTU codes and the KSeF number format were not re-checked and are left out.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

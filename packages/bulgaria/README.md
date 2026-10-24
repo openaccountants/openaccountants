@@ -7,17 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `bg-company-formation.md`
-4. `bg-corporate-income-tax.md`
-5. `bg-tax-overview.md`
-6. `bulgaria-income-tax.md`
-7. `bulgaria-payroll.md`
-8. `bulgaria-social-contributions.md`
-9. `bulgaria-tax-optimization.md`
-10. `bulgaria-vat-return.md`
-11. `eu-vat-directive.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+3. `README.md`
+4. `bg-company-formation.md`
+5. `bg-corporate-income-tax.md`
+6. `bg-cross-border.md`
+7. `bg-tax-overview.md`
+8. `bg-transfer-pricing.md`
+9. `bulgaria-income-tax.md`
+10. `bulgaria-payroll.md`
+11. `bulgaria-social-contributions.md`
+12. `bulgaria-tax-optimization.md`
+13. `bulgaria-vat-return.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

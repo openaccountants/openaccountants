@@ -1,630 +1,174 @@
 ---
 name: switzerland-vat
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Swiss VAT return (MWST/TVA/IVA Abrechnung) for a self-employed individual or small business in Switzerland. Trigger on phrases like \"prepare Swiss VAT return\", \"MWST Abrechnung\", \"Swiss VAT\", \"Saldosteuersatz\", \"Bezugsteuer\", or any request involving Swiss VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Switzerland only and only the effektive Abrechnungsmethode (effective method). Saldosteuersatz (flat-rate), Pauschalsteuersatz, and Gruppenbesteuerung are in the refusal catalogue. Switzerland is NOT in the EU — there are no intra-community acquisitions. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). Do NOT load eu-vat-directive — it does not apply to Switzerland. ALWAYS read this skill before touching any Swiss VAT work."
+description: "Swiss VAT (MWST, TVA, IVA) for tax year 2026: who must register (worldwide turnover of CHF 100,000, CHF 250,000 for non-profit clubs, foreign businesses, electronic platforms since 2025), the 8.1%, 2.6% and 3.8% rates, the taxable base and input tax, the effective method and the net tax rate method (Saldosteuersatz, ten rates, CHF 5,024,000 / CHF 108,000), quarterly, semi-annual, monthly and the new annual reporting option (CHF 5,005,000), the 60-day filing and payment deadline, reverse charge on services from abroad (Bezugsteuer, CHF 10,000), import VAT and the deferral procedure, default interest of 4.0% for 2026 and penalties. Trigger on: Swiss VAT, MWST Abrechnung, Saldosteuersatz, Bezugsteuer, jährliche Abrechnung, Verzugszins MWST, ESTV, Einfuhrsteuer, decompte TVA. Out of scope: Swiss income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax), cross-border income tax (ch-cross-border), crypto (switzerland-crypto-tax)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/switzerland-vat"
   jurisdiction: "CH"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Switzerland VAT
-
-## Switzerland VAT Return Skill (MWST Abrechnung) v2.0
-
-## Section 1 — Quick reference
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content. Do NOT load eu-vat-directive — Switzerland is not in the EU.**
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Switzerland (Schweizerische Eidgenossenschaft) + Liechtenstein (customs union) |
-| Standard rate | 8.1% |
-| Reduced rate | 2.6% (food, non-alcoholic beverages, books, newspapers, medicines, seeds, plants, animal feed, fertilisers) |
-| Special rate | 3.8% (accommodation/hotel services only) |
-| Zero rate | **None — Switzerland does not have a zero rate. Exports and certain supplies are EXEMPT WITH CREDIT (Art. 23 MWSTG), not zero-rated.** |
-| Return form | MWST-Abrechnung (Ziffern 200–910) |
-| Filing portal | https://www.estv.admin.ch (ESTV SuisseTax / ePortal) |
-| Authority | ESTV (Eidgenössische Steuerverwaltung) / AFC (Administration fédérale des contributions) |
-| Currency | CHF (some transactions in EUR — convert) |
-| Filing frequencies | Quarterly (standard); Half-yearly (by ESTV approval); Monthly (by election) |
-| Deadline | 60 days after quarter end (i.e. end of May, Aug, Nov, Feb) |
-| Bezugsteuer | Acquisition tax / reverse charge on services from abroad (Art. 45 MWSTG) — applies to ALL foreign services, not just EU |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (EU directive) | **NOT APPLICABLE — Switzerland is not in the EU** |
-| Contributor | Open Accountants |
-| Validated by | Pending — requires Swiss tax adviser validation |
-| Validation date | Pending |
-
-- **Switzerland is NOT in the EU** — There are NO intra-community acquisitions. ALL goods from ALL countries (including EU) are IMPORTS subject to import MWST at the border, collected by BAZG/OFDF. Bezugsteuer (acquisition tax / reverse charge) applies to services received from abroad under Art. 45 MWSTG — from any country, not just EU. Liechtenstein is in a customs union with Switzerland and treated as domestic territory. The EU VAT Directive does not apply. Do not load eu-vat-directive.  _(Art. 45 MWSTG)_
-
-**Key MWST-Abrechnung Ziffern (boxes)**
-
-| Ziffer | Meaning |
-| --- | --- |
-| 200 | Total turnover (Gesamtumsatz) |
-| 205 | Non-taxable services (Art. 21), exempt (Art. 23), notional turnover |
-| 220 | Exempt supplies with credit (exports, Art. 23) |
-| 221 | Supplies to beneficiaries under Art. 107(1)(b) |
-| 225 | Transfers under notification procedure (Art. 38) |
-| 230 | Supplies abroad (place of supply not in Switzerland) |
-| 235 | Reduction in tax base (discounts, returns, bad debts) |
-| 280 | Other deductions |
-| 289 | Net taxable turnover |
-| 299 | **Taxable turnover** (289 minus exempt items) |
-| 300 | Supplies at 8.1% — tax amount |
-| 310 | Supplies at 2.6% — tax amount |
-| 340 | Supplies at 3.8% — tax amount |
-| 380 | Total tax on supplies (300+310+340) |
-| 381 | Bezugsteuer (acquisition tax on services from abroad) |
-| 382 | Total tax due (380+381) |
-| 399 | **Total tax due** |
-| 400 | Input tax on cost of materials and services (Vorsteuer auf Materialaufwand) |
-| 405 | Input tax on investments and other operating costs (Investitionen) |
-| 410 | Dé-taxation (Einlageentsteuerung — Art. 32) |
-| 415 | Correction of input tax (mixed use, own use, Art. 33) |
-| 420 | Reduction of input tax deduction (non-business, exempt, Art. 33) |
-| 479 | **Total deductible input tax** |
-| 500 | Amount owed to ESTV (if 399 > 479) |
-| 510 | Credit balance (if 479 > 399) |
-| 900 | Subsidies, tourist taxes, disposal charges, etc. |
-| 910 | Other cash flows (securities, payments not representing consideration) |
-
-**Conservative defaults — Switzerland-specific**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 8.1% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Switzerland |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Bezugsteuer (foreign service, Ziffer 381) |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-| Unknown whether export evidence exists | Domestic taxable (no export treatment) |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | CHF 5,000 |
-| HIGH tax-delta on a single conservative default | CHF 300 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | CHF 8,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the quarter in CSV, PDF, or pasted text. Acceptable from: UBS, Credit Suisse (now UBS), ZKB (Zürcher Kantonalbank), PostFinance, Raiffeisen, BCGE, BCV, Migros Bank, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices (especially for exports and foreign services), purchase invoices for input tax claims above CHF 300, MWST-Nummer (UID), customs declarations (Veranlagungsverfügungen) for imports.
-
-**Ideal** — complete invoice register, prior period MWST-Abrechnung, customs declaration register, Bezugsteuer journal.
-
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement → hard stop. If bank statement only → reviewer brief warning.
-
-### Switzerland-specific refusal catalogue
-
-- **R-CH-1 — Saldosteuersatz (flat-rate method)** — Trigger: client uses the Saldosteuersatz (Art. 37 MWSTG) — turnover < CHF 5,005,000 and tax < CHF 103,000. Message: "Saldosteuersatz uses a simplified flat-rate calculation. This skill covers the effektive Abrechnungsmethode only. Please use a tax adviser for Saldosteuersatz."  _(Art. 37 MWSTG)_
-- **R-CH-2 — Pauschalsteuersatz** — Trigger: client uses Pauschalsteuersatz (local authorities, associations). Message: "Pauschalsteuersatz is a simplified method for specific entities. Out of scope."
-- **R-CH-3 — Gruppenbesteuerung (group taxation)** — Trigger: client is part of a MWST group under Art. 13 MWSTG. Message: "Group taxation requires consolidation. Out of scope."  _(Art. 13 MWSTG)_
-- **R-CH-4 — Partial use / mixed-use apportionment** — Trigger: client uses assets for both business and non-business purposes, or makes both taxable and exempt supplies, with non-de-minimis exempt proportion. Message: "Mixed-use apportionment under Art. 30-33 MWSTG requires annual adjustment calculations. Please use a tax adviser."  _(Art. 30-33 MWSTG)_
-- **R-CH-5 — Margenbesteuerung (margin scheme)** — Trigger: second-hand goods, art, antiques under margin scheme (Art. 24a MWSTG). Message: "Margin scheme requires transaction-level margin computation. Out of scope."  _(Art. 24a MWSTG)_
-- **R-CH-6 — Real estate option to tax (Option)** — Trigger: commercial property where the owner opted to charge MWST. Message: "Real estate option to tax has complex entry/exit rules. Please use a tax adviser."
-- **R-CH-7 — Income tax instead of MWST** — Trigger: user asks about income tax. Message: "This skill handles MWST only."
-- **R-CH-8 — Below registration threshold** — Trigger: client has turnover below CHF 100,000 and is not voluntarily registered. Message: "Businesses with turnover below CHF 100,000 are not required to register for MWST unless they voluntarily opt in. If you are not registered, no MWST return is required."
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Swiss banks (fees exempt — exclude)
-
-**3.1 Swiss banks table**  _(Art. 21 Abs. 2 Ziff. 19 MWSTG)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UBS | EXCLUDE for bank charges/fees | Financial service, exempt Art. 21 Abs. 2 Ziff. 19 MWSTG |
-| CREDIT SUISSE, CS | EXCLUDE | Same (now part of UBS) |
-| ZKB, ZÜRCHER KANTONALBANK | EXCLUDE | Same |
-| POSTFINANCE | EXCLUDE for fees | Account fees exempt. Some postal services may be taxable. |
-| RAIFFEISEN | EXCLUDE | Same |
-| KANTONALBANK (any cantonal bank) | EXCLUDE | Same |
-| MIGROS BANK | EXCLUDE | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscriptions |
-| ZINS, INTEREST | EXCLUDE | Interest, out of scope |
-| DARLEHEN, KREDIT, LOAN | EXCLUDE | Loan principal, out of scope |
-
-### 3.2 Swiss government and statutory bodies (exclude entirely)
-
-**3.2 Swiss government table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ESTV, EIDG. STEUERVERWALTUNG, AFC | EXCLUDE | Tax payment |
-| MWST (as payment to ESTV) | EXCLUDE | VAT payment |
-| BAZG, OFDF, ZOLL | EXCLUDE for duty | Customs duty. Import MWST goes to Ziffer 405 input. |
-| AHV, AVS, IV, AUSGLEICHSKASSE | EXCLUDE | Social security contributions |
-| BVG, PENSIONSKASSE | EXCLUDE | Pension fund |
-| SUVA | EXCLUDE | Accident insurance (mandatory) |
-| HANDELSREGISTER, REGIST DU COMMERCE | EXCLUDE | Registry fees |
-
-### 3.3 Swiss utilities
-
-**3.3 Swiss utilities table**
-
-| Pattern | Treatment | Ziffer | Notes |
-| --- | --- | --- | --- |
-| SWISSCOM | Domestic 8.1% | 400 (input) | Telecoms — overhead |
-| SUNRISE, SALT, YALLO | Domestic 8.1% | 400 (input) | Mobile telecoms |
-| EWZ, CKW, BKW, AEW, AXPO | Domestic 8.1% or 2.6% | 400 (input) | Electricity — check rate on invoice |
-| SIG, GAZNAT | Domestic 8.1% or 2.6% | 400 (input) | Gas — check rate |
-| WASSERVERSORGUNG, WATER | Domestic 2.6% | 400 (input) | Water supply at reduced rate |
-
-### 3.4 Insurance (exempt — exclude)
-
-**3.4 Insurance table**  _(Art. 21 Abs. 2 Ziff. 18)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MOBILIAR, ZURICH VERSICHERUNG, AXA SCHWEIZ | EXCLUDE | Insurance, exempt Art. 21 Abs. 2 Ziff. 18 |
-| HELVETIA, BASLER, BÂLOISE, ALLIANZ SUISSE | EXCLUDE | Same |
-| VERSICHERUNG, ASSURANCE, POLIZZA | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**3.5 Post and logistics table**  _(Art. 21 Abs. 2 Ziff. 1)_
-
-| Pattern | Treatment | Ziffer | Notes |
-| --- | --- | --- | --- |
-| POST CH, DIE POST, LA POSTE | EXCLUDE for standard postage (letters under 50g) |  | Universal postal service, exempt Art. 21 Abs. 2 Ziff. 1 |
-| POST CH (parcels, express) | Domestic 8.1% | 400 | Non-universal services taxable |
-| DPD CH, DHL SCHWEIZ, PLANZER | Domestic 8.1% | 400 | Courier, taxable |
-
-### 3.6 Transport (Switzerland domestic)
-
-**3.6 Transport table**  _(Art. 23 Abs. 2 Ziff. 8)_
-
-| Pattern | Treatment | Ziffer | Notes |
-| --- | --- | --- | --- |
-| SBB, CFF, FFS | Domestic 8.1% | 400 | Rail at standard rate (Swiss transport is NOT reduced like in EU) |
-| POSTAUTO | Domestic 8.1% | 400 | Bus at standard rate |
-| ZVV, BVB, TPG, TL, BERNMOBIL | Domestic 8.1% | 400 | Local transport at 8.1% |
-| TAXI | Domestic 8.1% | 400 | Taxi at 8.1% |
-| SWISS, EASYJET CH (international) | Exempt with credit | 220 | International flights — exempt with credit (Art. 23 Abs. 2 Ziff. 8) |
-
-**Note on Swiss transport:** Unlike the EU, Switzerland does NOT have a reduced rate for passenger transport. All domestic transport is at 8.1%.
-
-### 3.7 Food retail and entertainment
-
-**3.7 Food retail and entertainment table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MIGROS | Default BLOCK | Supermarket — personal provisioning. If food for resale: 2.6% input. |
-| COOP, COOP CITY | Default BLOCK | Same |
-| DENNER, ALDI CH, LIDL CH, VOLG | Default BLOCK | Same |
-| RESTAURANTS, CAFES, BARS | Default BLOCK | Business entertainment — Swiss law allows Vorsteuer deduction if genuinely business-related, but documentation required. Default: block. |
-
-**Note on Swiss entertainment:** Switzerland allows input tax deduction on business entertainment if properly documented with business purpose (Geschäftliche Bewirtung). There is no hard block. However, excessive or personal entertainment is not deductible. Default: block. [T2] flag if documented.
-
-### 3.8 SaaS — foreign suppliers (ALL are Bezugsteuer — Art. 45 MWSTG)
-
-**In Switzerland, ALL foreign services (EU and non-EU alike) trigger Bezugsteuer.** There is no EU/non-EU distinction for the Abrechnung. All go to Ziffer 381.
-
-**3.8 SaaS foreign suppliers table**  _(Art. 45 MWSTG)_
-
-| Pattern | Billing entity | Ziffer | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 381 (Bezugsteuer) / 400 (input) | Foreign service — Bezugsteuer |
-| MICROSOFT (365, Azure) | Microsoft Ireland (IE) | 381 / 400 | Bezugsteuer |
-| ADOBE | Adobe Ireland (IE) | 381 / 400 | Bezugsteuer |
-| META, FACEBOOK ADS | Meta Ireland (IE) | 381 / 400 | Bezugsteuer |
-| LINKEDIN | LinkedIn Ireland (IE) | 381 / 400 | Bezugsteuer |
-| SPOTIFY | Spotify AB (SE) | 381 / 400 | Bezugsteuer |
-| DROPBOX | Dropbox Ireland (IE) | 381 / 400 | Bezugsteuer |
-| SLACK | Slack Ireland (IE) | 381 / 400 | Bezugsteuer |
-| ATLASSIAN | Atlassian BV (NL) | 381 / 400 | Bezugsteuer |
-| ZOOM | Zoom Ireland (IE) | 381 / 400 | Bezugsteuer |
-| NOTION | Notion Labs Inc (US) | 381 / 400 | Bezugsteuer |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 381 / 400 | Bezugsteuer |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 381 / 400 | Bezugsteuer |
-| GITHUB | GitHub Inc (US) | 381 / 400 | Bezugsteuer |
-| FIGMA | Figma Inc (US) | 381 / 400 | Bezugsteuer |
-| CANVA | Canva Pty Ltd (AU) | 381 / 400 | Bezugsteuer |
-| AWS | AWS EMEA SARL (LU) | 381 / 400 | Bezugsteuer (LU is foreign to CH) |
-| STRIPE (subscription) | Stripe IE | 381 / 400 | Bezugsteuer. Transaction fees: see 3.10. |
-
-- **Bezugsteuer threshold** — CHF 10,000 per year CHF (Bezugsteuer is only due if the total value of services received from abroad exceeds this per year. Below this threshold, no Bezugsteuer obligation. Default: assume threshold is exceeded if any Bezugsteuer items are present.)  _(Art. 45 Abs. 2 MWSTG)_
-
-### 3.9 SaaS — Swiss suppliers (domestic)
-
-**3.9 SaaS Swiss suppliers table**
-
-| Pattern | Treatment | Ziffer | Notes |
-| --- | --- | --- | --- |
-| INFOMANIAK | Domestic 8.1% | 400 | Swiss hosting company |
-| CYON | Domestic 8.1% | 400 | Swiss hosting |
-| THREEMA | Domestic 8.1% | 400 | Swiss messaging |
-| PROTON, PROTONMAIL, PROTON VPN | Domestic 8.1% | 400 | Swiss — check if invoice shows MWST |
-
-### 3.10 Payment processors
-
-**3.10 Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing exempt financial service |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| TWINT (merchant fees) | Check invoice | Swiss payment system — fees may be exempt |
-| SIX PAYMENT SERVICES | Check invoice | Acquirer fees — likely exempt |
-
-### 3.11 Professional services (Switzerland)
-
-**3.11 Professional services table**
-
-| Pattern | Treatment | Ziffer | Notes |
-| --- | --- | --- | --- |
-| RECHTSANWALT, ADVOKAT, ANWALT | Domestic 8.1% | 400 | Legal — deductible if business |
-| TREUHÄNDER, TREUHAND, REVISOR | Domestic 8.1% | 400 | Accountant/trustee — always deductible |
-| NOTAR | Domestic 8.1% | 400 | Notary |
-| HANDELSREGISTERAMT | EXCLUDE | Government fee |  |
-
-### 3.12 Payroll and social security (exclude entirely)
-
-**3.12 Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AHV/IV, AVS/AI, AUSGLEICHSKASSE | EXCLUDE | Social security (1st pillar) |
-| BVG, LPP, PENSIONSKASSE | EXCLUDE | Pension (2nd pillar) |
-| SUVA, UVG | EXCLUDE | Accident insurance |
-| LOHN, SALAIRE, GEHALT (outgoing) | EXCLUDE | Wages |
-| QUELLENSTEUER | EXCLUDE | Withholding tax on foreign workers |
-
-### 3.13 Property and rent
-
-**3.13 Property and rent table**  _(Art. 22 MWSTG; Art. 21 Abs. 2 Ziff. 21)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MIETE, LOYER (commercial, with MWST) | Domestic 8.1% | Commercial lease where landlord opted for MWST (Art. 22 MWSTG) |
-| MIETE, LOYER (residential, no MWST) | EXCLUDE | Residential lease, exempt Art. 21 Abs. 2 Ziff. 21 |
-| NEBENKOSTEN, CHARGES | Check invoice | Ancillary costs — may include taxable and exempt items |
-
-### 3.14 Internal transfers and exclusions
-
-**3.14 Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ÜBERTRAG, EIGENES KONTO, INTERN | EXCLUDE | Internal movement |
-| DIVIDENDE | EXCLUDE | Dividend, out of scope |
-| DARLEHEN, RÜCKZAHLUNG | EXCLUDE | Loan repayment |
-| BARGELDBEZUG, BANCOMAT, ATM | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Swiss self-employed IT consultant.
-
-### Example 1 — Foreign SaaS, Bezugsteuer (Notion)
-
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; CHF 13.92`
-
-US entity. Foreign service → Bezugsteuer under Art. 45 MWSTG. Report 8.1% on CHF 13.92 = CHF 1.13 in Ziffer 381 (tax due). Same CHF 1.13 as input tax in Ziffer 400. Net effect zero for fully taxable business. Note: same treatment whether supplier is EU or non-EU — Switzerland does not distinguish.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer (output) | Ziffer (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -13.92 | -13.92 | 1.13 | 8.1% | 381 | 400 | N | — | — |
-
-### Example 2 — Foreign SaaS, EU entity (Google — still Bezugsteuer)
-
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April ; -850.00 ; CHF`
-
-Google Ireland is an IE entity — but Switzerland is NOT in the EU. This is a foreign service. Bezugsteuer applies exactly the same as for a US entity. CHF 850 in Ziffer 381, 8.1% = CHF 68.85. Input tax CHF 68.85 in Ziffer 400.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer (output) | Ziffer (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 68.85 | 8.1% | 381 | 400 | N | — | — |
-
-### Example 3 — Business entertainment, default block
-
-`15.04.2026 ; RESTAURANT KRONENHALLE ; DEBIT ; Client dinner ; -420.00 ; CHF`
-
-Restaurant. Swiss law allows Vorsteuer deduction on genuine business entertainment (Geschäftliche Bewirtung), unlike Malta's hard block. But documentation required (attendees, business purpose). Default: block. [T2] flag.
-
-**Output table**  _("Entertainment: blocked by default — deductible if documented business purpose")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTAURANT KRONENHALLE | -420.00 | -420.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked by default — deductible if documented business purpose" |
-
-### Example 4 — Domestic purchase at standard rate
-
-`18.04.2026 ; DIGITEC GALAXUS ; DEBIT ; Laptop Dell XPS 15 ; -1,595.00 ; CHF`
-
-Swiss electronics retailer. CHF 1,595 incl. 8.1% MWST. Net = CHF 1,595 / 1.081 = CHF 1,475.49. MWST = CHF 119.51. Input tax in Ziffer 405 (investment/other operating cost) if capital item, or Ziffer 400 if overhead. For a laptop, likely Ziffer 405.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DIGITEC GALAXUS | -1,595.00 | -1,475.49 | -119.51 | 8.1% | 405 | N | — | — |
-
-### Example 5 — Export service sale (B2B foreign client)
-
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice CH-2026-018 IT consultancy March ; +3,500.00 ; CHF`
-
-Incoming from German company. IT consulting services to a foreign client. Place of supply: recipient's domicile (Germany) under Art. 8 Abs. 1 MWSTG — service is NOT subject to Swiss MWST. Report in Ziffer 230 (Leistungen im Ausland). No output tax. The invoice must state "Leistung nicht der schweizerischen MWST unterliegend" or equivalent.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | n/a | 230 | N | — | — |
-
-### Example 6 — Import of goods (customs)
-
-`28.04.2026 ; BAZG/OFDF ; DEBIT ; Import MWST Veranlagungsverfügung 2026-1234 ; -162.00 ; CHF`
-
-Import MWST paid at customs. This is a payment to BAZG (Federal Customs). The Veranlagungsverfügung (customs assessment) shows the MWST amount. CHF 162 is the import MWST paid. This can be claimed as input tax in Ziffer 405 (if it's a business purchase). The underlying goods value is on the customs declaration.
-
-**Output table**  _("Import MWST — verify Veranlagungsverfügung")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ziffer | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | BAZG/OFDF | -162.00 | 0 | -162.00 | 8.1% | 405 | N | — | "Import MWST — verify Veranlagungsverfügung" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 8.1% (Art. 25 Abs. 1 MWSTG)
-
-- **Standard rate rule** — Default rate. Sales → Ziffer 300 (tax amount), included in Ziffer 200/299. Purchases → Ziffer 400 (materials/services) or 405 (investments/other operating costs).  _(Art. 25 Abs. 1 MWSTG)_
-
-### 5.2 Reduced rate 2.6% (Art. 25 Abs. 2 MWSTG, Art. 25 Abs. 2bis)
-
-- **Reduced rate rule** — Food and non-alcoholic beverages (NOT restaurant meals — those are 8.1%), books, newspapers, periodicals, electronic publications (from 2018), medicines, seeds, plants, animal feed, fertilisers, water supply. Sales → Ziffer 310.  _(Art. 25 Abs. 2 MWSTG, Art. 25 Abs. 2bis)_
-
-### 5.3 Special rate 3.8% (Art. 25 Abs. 4 MWSTG)
-
-- **Special rate rule** — Hotel accommodation (Beherbergungsleistungen) ONLY. Includes room + breakfast if included in room rate. Meals served separately are at 8.1%. Sales → Ziffer 340.  _(Art. 25 Abs. 4 MWSTG)_
-
-### 5.4 Exempt with credit (Art. 23 MWSTG)
-
-- **Exempt with credit rule** — Exports of goods (Art. 23 Abs. 2 Ziff. 1 — requires customs export declaration). Services to foreign recipients where place of supply is abroad (Art. 8 Abs. 1 — recipient principle for services). International transport (Art. 23 Abs. 2 Ziff. 8). → Ziffer 220 or 230. Input tax remains deductible.  _(Art. 23 MWSTG; Art. 23 Abs. 2 Ziff. 1; Art. 8 Abs. 1; Art. 23 Abs. 2 Ziff. 8)_
-
-### 5.5 Exempt without credit (Art. 21 MWSTG)
-
-- **Exempt without credit rule** — Medical/dental, social care, education, cultural/sporting events (certain), financial services, insurance, real estate (residential rent, sale), gambling, postal universal service (<50g letters). If significant → **R-CH-4 fires**.  _(Art. 21 MWSTG)_
-
-### 5.6 Bezugsteuer — services from abroad (Art. 45 MWSTG)
-
-- **Bezugsteuer rule** — ALL services received from foreign suppliers (EU and non-EU alike): compute MWST at applicable rate (usually 8.1%) on the service value. Report in Ziffer 381 (tax due). Deduct same amount in Ziffer 400 (input tax) if purchase is for taxable business activity. Net effect zero for fully taxable business. **Threshold: CHF 10,000/year aggregate — below this, no Bezugsteuer obligation.**  _(Art. 45 MWSTG)_
-
-### 5.7 Import of goods
-
-- **Import of goods rule** — ALL goods from ALL countries are imports. Import MWST is assessed by BAZG at the border. Rates: 8.1% (standard), 2.6% (reduced for food etc.). The Veranlagungsverfügung is the deduction document. Input tax → Ziffer 405.
-
-### 5.8 Blocked / restricted input tax
-
-- **Blocked input tax rules** — Private use: fully blocked (eigenverbrauch adjustment via Ziffer 415/420). Entertainment: deductible if genuinely business-related, but documentation required. No hard block. Default: block. Motor vehicles: no hard block in Switzerland. Business use proportion deductible. Private portion must be adjusted via Ziffer 415/420 (ESTV uses lump-sum private share of 0.9% of vehicle purchase price per month, or 9.6% per year). Tobacco, alcohol: no specific statutory block for input tax (unlike Malta/Germany). But if for personal consumption, blocked as private use. Gifts to staff and business partners: deductible up to CHF 500 per person per year. Real estate for residential use: blocked (exempt supply).
-
-### 5.9 Input tax split — Ziffer 400 vs 405
-
-- **Input tax split rule** — Ziffer 400: input tax on Materialaufwand und Dienstleistungen (cost of materials and services — operational expenses). Ziffer 405: input tax on Investitionen und übriger Betriebsaufwand (investments and other operating costs — capital/fixed assets, rent, utilities). The distinction matters for ESTV statistics but both are fully deductible.
-
-### 5.10 Eigenverbrauch (own use / deemed supply — Art. 31 MWSTG)
-
-- **Eigenverbrauch rule** — Withdrawal of goods or services for non-business purposes triggers deemed supply. Must be accounted at market value. Report as output tax. For motor vehicles, ESTV applies the 0.9%/month lump sum.  _(Art. 31 MWSTG)_
-
-### 5.11 Sales — domestic
-
-- **Domestic sales rule** — Charge 8.1%, 2.6%, or 3.8% as applicable. Report in Ziffer 200 (total turnover) and 300/310/340 (tax).
-
-### 5.12 Sales — foreign (services)
-
-- **Foreign sales rule** — If place of supply is abroad (recipient principle, Art. 8 Abs. 1): no Swiss MWST. Report in Ziffer 230. Input tax remains deductible.  _(Art. 8 Abs. 1)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — Pattern: Migrol, BP Schweiz, Shell CH, SOCAR, Avia. Default: 0% if vehicle use unclear. Question: "Business vehicle or personal? What business-use proportion? (ESTV lump-sum: 0.9%/month of purchase price for private share.)"
-
-### 6.2 Entertainment
-
-- **Entertainment** — Default: block. Question: "Documented business purpose with attendees?"
-
-### 6.3 Ambiguous foreign SaaS
-
-- **Ambiguous foreign SaaS** — Default: Bezugsteuer Ziffer 381/400. Question: "Confirm foreign entity. If Swiss entity, domestic 8.1%."
-
-### 6.4 Round-number owner transfers
-
-- **Round-number owner transfers** — Default: exclude. Question: "Customer payment, capital, or loan?"
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — Default: domestic 8.1%, Ziffer 200/300. Question: "Sale? What was supplied?"
-
-### 6.6 Foreign counterparty incoming
-
-- **Foreign counterparty incoming** — Default: check if service is supplied abroad (Ziffer 230) or domestic. Question: "Where is the customer located? What service was provided?"
-
-### 6.7 Large one-off purchases
-
-- **Large one-off purchases** — Default: Ziffer 405. Question: "Confirm invoice amount."
-
-### 6.8 Mixed-use phone/internet
-
-- **Mixed-use phone/internet** — Default: 0% if mixed. Question: "Dedicated business line? Business percentage?"
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — Default: exclude as drawings. Question: "Contractor, wages, refund, or personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — Default: exclude. Question: "What was cash used for?"
-
-### 6.11 Rent payments
-
-- **Rent payments** — Default: no MWST (residential). Question: "Commercial with MWST (Option nach Art. 22)?"  _(Art. 22 MWSTG)_
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — Default: exclude from input tax (foreign VAT not recoverable). Question: "Business trip?"
-
-### 6.13 Bezugsteuer threshold check
-
-- **Bezugsteuer threshold check** — Pattern: multiple small foreign services. Default: assume threshold exceeded. Question: "Total foreign services for the year — above or below CHF 10,000?"
-
-### 6.14 Import vs Bezugsteuer classification
-
-- **Import vs Bezugsteuer classification** — Pattern: foreign purchase that could be goods (import MWST via BAZG) or services (Bezugsteuer). Default: Bezugsteuer (services). Question: "Was this a physical good imported through customs, or a service?"
-
-## Section 7 — Excel working paper template (Switzerland-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Switzerland-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("Ziffer") accepts valid Ziffer codes from Section 1.
-
-### Sheet "Box Summary"
-
-- **Box Summary formulas** — ``` Turnover: | 200 | Total turnover | =SUM of all sales | | 220 | Exempt with credit (exports) | =SUMIFS(...) | | 230 | Supplies abroad | =SUMIFS(...) | | 289 | Net taxable turnover | =C[200]-C[205]-C[220]-C[225]-C[230]-C[235]-C[280] | Tax on supplies: | 300 | Tax at 8.1% | =taxable base at 8.1% * 0.081 | | 310 | Tax at 2.6% | =taxable base at 2.6% * 0.026 | | 340 | Tax at 3.8% | =taxable base at 3.8% * 0.038 | | 380 | Total tax on supplies | =C[300]+C[310]+C[340] | | 381 | Bezugsteuer | =SUM of Bezugsteuer items * 0.081 | | 399 | Total tax due | =C[380]+C[381] | Input tax: | 400 | Input tax on materials/services | =SUMIFS(...) | | 405 | Input tax on investments/operating | =SUMIFS(...) | | 479 | Total deductible input tax | =C[400]+C[405]+C[410]-C[415]-C[420] | Bottom line: | 500 | Amount owed | =IF(C[399]>C[479], C[399]-C[479], 0) | | 510 | Credit balance | =IF(C[479]>C[399], C[479]-C[399], 0) | ```
-
-### Mandatory recalc step
-
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/switzerland-vat-<period>-working-paper.xlsx
+# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.1
+
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Switzerland.
+
+**What this skill does.** It covers Swiss VAT for 2026 from the Federal VAT Act (MWSTG, SR 641.20) and Ordinance (MWSTV, SR 641.201), read on Fedlex, and the Federal Tax Administration (ESTV) pages. It replaces the older `ch-vat-return` skill, which now points here. Switzerland is not in the EU: do not load `eu-vat-directive`. Load `vat-workflow-base` for the workflow.
+
+**Sibling skills.** [ch-tax-overview](ch-tax-overview.md) for the Swiss tax system. [ch-corporate-income-tax](ch-corporate-income-tax.md) and [ch-federal-income-tax](ch-federal-income-tax.md) for income and profit taxes, where VAT-registered businesses report income net of VAT. [ch-cross-border](ch-cross-border.md) for income tax on cross-border work.
+
+## Who this applies to
+
+- **Registration.** Anyone who runs a business is liable to VAT if they supply in Switzerland, or have their seat, residence or a permanent establishment in Switzerland (MWSTG Art. 10 (1)).
+- **Small-business exemption.** A business is exempt if its worldwide turnover (Swiss and foreign) from supplies not excluded under Art. 21 (2) is under CHF 100,000 in a year (Art. 10 (2) a). The test counts agreed consideration net of VAT (Art. 10 (2bis)). A non-profit, volunteer-run sports or cultural club or charity has a limit of CHF 250,000 (Art. 10 (2) c). A Swiss business that supplies only excluded services (Art. 21) in Switzerland is also exempt, whatever its turnover (Art. 10 (2) d).
+- **Voluntary registration.** An exempt business may waive the exemption, for at least one tax period (Art. 11).
+- **Foreign businesses.** A foreign business with no Swiss seat or establishment is exempt, whatever its turnover, if in Switzerland it supplies only exempt services, services taxed at the customer's seat (where the Swiss customer pays reverse charge), or electricity, gas and district heating to registered customers. This does not apply to telecom or electronic services to non-registered customers (Art. 10 (2) b). A foreign business that registers must appoint a Swiss representative, unless the ESTV waives this (Art. 67).
+- **Mail-order sellers.** A foreign seller that ships low-value goods (exempt from import VAT because the tax is negligible) and makes at least CHF 100,000 a year from them supplies in Switzerland and must register (Art. 7 (3) b).
+- **Electronic platforms, from 1 January 2025.** A platform that brings sellers and buyers together for a supply of goods is treated as the supplier to the buyer, and as buying from the seller (Art. 20a (1)). It is not the supplier if it is not involved in the order, earns nothing from the deal, or only processes payments, lists ads, advertises or redirects (Art. 20a (2)).
+- **Registration deadline.** 30 days after liability begins (Art. 66 (1)). A person liable only for reverse charge on services from abroad registers within 60 days after the calendar year and declares the services at the same time (Art. 66 (3)).
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 8.1% | 2026 | MWSTG Art. 25 (1), https://www.fedlex.admin.ch/eli/cc/2009/615/de ; ESTV, https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz |
+| Reduced rate (water in pipes, food except alcohol, livestock, cereals, seeds and plants, medicines, books and newspapers, and other items in Art. 25 (2)) | 2.6% | 2026 | MWSTG Art. 25 (2), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Special rate for accommodation (room with breakfast), valid to 31 December 2027 | 3.8% | 2026 | MWSTG Art. 25 (4), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Registration threshold, worldwide turnover | CHF 100,000 | 2026 | MWSTG Art. 10 (2) a, https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Threshold for non-profit sports and cultural clubs and charities | CHF 250,000 | 2026 | MWSTG Art. 10 (2) c, https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Foreign mail-order of low-value goods: registration at | CHF 100,000 a year | 2026 | MWSTG Art. 7 (3) b, https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Reverse charge on services from abroad for a person not registered: above | CHF 10,000 a year | 2026 | MWSTG Art. 45 (2) b, https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Annual reporting option: taxable turnover up to | CHF 5,005,000 | 2026 | MWSTG Art. 35 (1bis) b, https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Net tax rate method: taxable turnover (incl. VAT) up to | CHF 5,024,000 | 2026 | MWSTG Art. 37 (1); ESTV, https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze |
+| Net tax rate method: tax at the net rate up to | CHF 108,000 a year | 2026 | MWSTG Art. 37 (1), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+| Net tax rates (Saldosteuersätze) | 0.1%, 0.6%, 1.3%, 2.1%, 3.0%, 3.7%, 4.5%, 5.3%, 6.2%, 6.8% | 2026 | ESTV, https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze |
+| Turnover cap at a single net rate of 3.0% / 3.7% / 4.5% / 5.3% / 6.2% / 6.8% (from the CHF 108,000 tax cap; tested in the first year of liability or the year before a switch) | CHF 3.60m / 2.92m / 2.40m / 2.04m / 1.74m / 1.59m | 2026 | ESTV, https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze |
+| Filing and payment deadline | 60 days after the end of the reporting period | 2026 | MWSTG Art. 71 (1), 86 (1); ESTV, https://www.estv.admin.ch/de/mwst-bezahlen |
+| Default interest (Verzugszins) | 4.0% a year (4.5% in 2025) | 2026 | Zinssatzverordnung EFD, SR 631.014, Annex 2, https://www.fedlex.admin.ch/eli/cc/2025/564/de |
+| Interest refund rate (Vergütungszins on refunds) | 4.0% a year | 2026 | SR 631.014, Annex 2, https://www.fedlex.admin.ch/eli/cc/2025/564/de |
+| Interest not charged or paid below | CHF 100 | 2026 | SR 631.014, Art. 3 (1), https://www.fedlex.admin.ch/eli/cc/2025/564/de |
+| Notification procedure required when tax on a transfer of assets exceeds | CHF 10,000 | 2026 | MWSTG Art. 38 (1), https://www.fedlex.admin.ch/eli/cc/2009/615/de |
+
+## The taxable base
+
+- **What is taxed.** Supplies in Switzerland for consideration (domestic tax), services bought from foreign businesses (reverse charge, Bezugsteuer) and imports of goods (import tax) (Art. 1 (2)).
+- **Place of services.** As a rule, where the customer has its seat or establishment, or lives (Art. 8 (1)). Exceptions apply, for example, to services usually given to people physically present, which are taxed where the provider is (Art. 8 (2)).
+- **Exempt without input tax (Art. 21).** For example healthcare, education, financial services, insurance, letting and sale of real estate, and some cultural and sporting services. No input tax on costs used for them (Art. 29 (1)), unless the business opts to tax under Art. 22.
+- **Exempt with input tax (Art. 23).** For example exports of goods, with customs evidence, and international transport. There is no "zero rate" as such.
+- **Input tax (effective method).** Deductible on purchases used for taxable business activity, including reverse charge on services and import tax (Art. 28). Where a cost serves both taxable and exempt or private use, the input tax is cut in proportion (Art. 30). Taking goods or services out of the business for private use or exempt use triggers a correction (own use, Art. 31).
+- **Net tax rate method.** The business multiplies all taxable receipts, including VAT, by its ESTV-approved net rate. It does not claim input tax. Invoices still show the statutory 8.1%, 2.6% or 3.8% (Art. 37 (2); ESTV page). It must be applied for: new registrants within 60 days of receiving the VAT number; others switching from the effective method within 60 days of the start of a tax period (MWSTV Art. 78 (1), 79 (1)). A new registrant that misses the 60 days must stay on the effective method for at least three full tax periods (MWSTV Art. 78 (3)). It is kept for at least one tax period, and a business that leaves it waits three years to return (Art. 37 (4)). It cannot be used by VAT groups, users of the import deferral procedure, businesses with their seat abroad, electronic platforms under Art. 20a, mail-order sellers under Art. 7 (3), or businesses making over half their turnover to related businesses on the effective method (MWSTV Art. 77 (2)).
+- **Transfers of a business.** Transfers of all or part of a business to another registered person on a restructuring, formation, liquidation or sale of the business use the notification procedure, not tax and input tax, where the tax would exceed CHF 10,000 or the buyer is closely related (Art. 38 (1)).
+
+## Deadlines and filing
+
+| Item | Rule | Source |
+|---|---|---|
+| Tax period | Calendar year | MWSTG Art. 34 (2) |
+| Standard reporting period | Quarterly | Art. 35 (1) |
+| Net tax rate method | Half-yearly | Art. 35 (1) |
+| Monthly, on request | Where input tax regularly exceeds output tax | Art. 35 (1bis) a |
+| Annual, on request (since 2025) | Taxable turnover up to CHF 5,005,000. Keep it for at least a full tax period; after leaving it, wait three tax periods to return; switches only from the start of a period. The ESTV may refuse or withdraw it for late filers or payers | Art. 35 (1bis) b, 35a |
+| Instalments under annual reporting | ESTV invoices provisional instalments. Effective method: each one quarter of the last year's tax, due 150, 240 and 330 days after the start of the period. Net tax rate method: half of the last year's tax, due 240 days after the start | Art. 86a (1), (3), (6) |
+| Filing | Within 60 days after the reporting period ends, without being asked | Art. 71 (1) |
+| Payment | Within 60 days after the reporting period ends, for every reporting period type | Art. 86 (1), (10) |
+| Refund of a credit balance | Paid out 60 days after the return reaches the ESTV. If paid later, refund interest (4.0% in 2026) runs from day 61 | Art. 88 (1), (4); SR 631.014 Annex 2; ESTV, mwst-bezahlen page |
+| Corrections found when closing the accounts | At the latest in the return for the period that contains the 180th day after the financial year-end | Art. 72 (1) |
+| Corrections of earlier years | Must be made while those years are open and not time-barred | Art. 72 (2) |
+
+For a calendar quarter, the 60th day after 31 March is 30 May, after 30 June is 29 August, after 30 September is 29 November, and after 31 December is 1 March.
+
+## Penalties and interest
+
+| Item | Rule | Source |
+|---|---|---|
+| Default interest | Due without reminder on late payment, and on late or short instalments under annual reporting. 4.0% a year in 2026. Not due on a reassessment that would have caused no loss to the Confederation if handled correctly | MWSTG Art. 87; SR 631.014 Annex 2 |
+| Small amounts | Default and refund interest below CHF 100 is not charged or paid | SR 631.014 Art. 3 (1) |
+| Tax evasion | Fine up to CHF 400,000; up to CHF 800,000 where the evaded tax was passed on in a form that allows input tax deduction | Art. 96 (1), (2) |
+| Wrong tax treatment of correctly declared facts | Fine up to CHF 200,000 if intentional; up to CHF 20,000 if negligent | Art. 96 (3) |
+| Evasion on import or false answers in an audit | Fine up to CHF 800,000 | Art. 96 (4) |
+| Intentional evasion with a large gain; aggravating circumstances | The fine can rise to twice the tax advantage where that exceeds the maximum; aggravating circumstances raise the maximum by half and can add up to two years' imprisonment | Art. 97 (1), (2) |
+| Errors in a return | Punishable as evasion only once the Art. 72 (1) correction window has passed without correction | Art. 96 (6) |
+| Procedural breaches (not registering, not filing after a reminder, poor records, showing VAT not owed) | A fine; the MWSTG gives no amount | Art. 98 |
+| Voluntary disclosure | No prosecution if the business reports before the authority knows and helps settle the tax. A correction under Art. 72 (2) counts as a disclosure | Art. 102 |
+| Non-payment | The ESTV sets a provisional amount and enforces it through debt collection after a reminder | Art. 86 (2) |
+
+## Cross-border points
+
+- **Services bought from abroad (Bezugsteuer).** A Swiss business registered for VAT pays reverse charge on services from foreign businesses not registered in Switzerland whenever the service is taxable in Switzerland, at the Swiss rate, and deducts it as input tax if used for taxable activity. A person not registered pays it only above CHF 10,000 a year (Art. 45 (1) a, (2)). Telecom and electronic services to non-registered customers are taxed on the foreign supplier, which must register.
+- **Imports of goods.** All goods from abroad, including from the EU, are imports. The Federal Office for Customs and Border Security (BAZG) collects import tax at the same rates (Art. 50 ff.). The import tax is deductible as input tax.
+- **Import deferral (Verlagerungsverfahren).** Registered importers on the effective method who regularly import and export and have regular input tax surpluses, and registered platforms under Art. 20a, may declare import tax in their VAT return instead of paying it at the border (Art. 63 (1)).
+- **Exports and foreign customers.** Exports of goods with customs evidence are exempt with input tax (Art. 23). Services to a foreign customer under the general rule are taxed abroad (Art. 8 (1)).
+- **Foreign businesses** registering in Switzerland need a Swiss representative unless the ESTV waives it (Art. 67). Their turnover test is worldwide (Art. 10 (2) a).
+
+## Worked examples
+
+**Example 1: effective method, Q1 2026.** A Zurich GmbH reports quarterly on the effective method. In January to March 2026 it sells CHF 150,000 net at 8.1% and CHF 40,000 net of food at 2.6%. It buys a CHF 12,000 software subscription from a US company not registered in Switzerland, and CHF 40,000 net of domestic costs at 8.1%. Output tax is 12,150 + 1,040 = 13,190. Reverse charge on the software is 12,000 × 8.1% = 972; as a registered business it owes this from the first franc. Input tax is 3,240 on domestic costs plus 972 on the reverse charge. Tax payable is 13,190 + 972 − 3,240 − 972 = 9,950. The return and payment are due within 60 days of 31 March, by 30 May 2026.
+
+```oa-check
+name: Zurich GmbH, effective method, Q1 2026 with reverse charge on a US subscription
+inputs:
+  sales_standard_net: 150000
+  sales_reduced_net: 40000
+  foreign_service: 12000
+  domestic_costs_net: 40000
+steps:
+  - output_standard: sales_standard_net * 0.081
+  - output_reduced: sales_reduced_net * 0.026
+  - reverse_charge: foreign_service * 0.081
+  - input_domestic: domestic_costs_net * 0.081
+  - input_reverse_charge: reverse_charge
+  - payable: output_standard + output_reduced + reverse_charge - input_domestic - input_reverse_charge
+expected:
+  output_standard: 12150
+  output_reduced: 1040
+  reverse_charge: 972
+  input_domestic: 3240
+  payable: 9950
 ```
 
-## Section 8 — Switzerland bank statement reading guide
+**Example 2: net tax rate method, late payment.** An architect reports half-yearly at an ESTV-approved net rate of 6.2%, the rate in the ESTV's own example. In January to June 2026 the firm receives CHF 400,000 including VAT. Tax due is 400,000 × 6.2% = 24,800, with no input tax calculation. The deadline is 60 days after 30 June, 29 August 2026. The firm pays 30 days late. Default interest at 4.0% is about 24,800 × 4.0% × 30 / 365 = 81.53. That is below CHF 100, so the ESTV does not charge it (SR 631.014 Art. 3 (1)). The day-count basis does not change the result: on a 360-day basis it is 82.67, still under CHF 100. The firm's turnover is well inside the CHF 1.74 million cap for the 6.2% rate.
 
-**CSV format conventions.** UBS exports use semicolons with DD.MM.YYYY dates. PostFinance uses tab-separated. ZKB uses semicolons. Common columns: Datum/Date, Buchungstext/Text, Betrag/Montant, Saldo/Solde.
+```oa-check
+name: Architect on the 6.2% net tax rate, H1 2026, paid 30 days late
+inputs:
+  receipts_incl_vat: 400000
+  days_late: 30
+steps:
+  - tax_due: receipts_incl_vat * 0.062
+  - interest: tax_due * 0.04 * days_late / 365
+  - interest_charged: floor(min(interest, 100) / 100) * interest
+expected:
+  tax_due: 24800
+  interest: 81.53
+  interest_charged: 0
+```
 
-**Multilingual descriptions.** Switzerland has four languages. Common variants: Miete/Loyer/Affitto (rent), Lohn/Salaire/Salario (salary), Zins/Intérêt/Interesse (interest), Überweisung/Virement/Bonifico (transfer). Treat as English equivalents.
+## Ask the client first
 
-**Internal transfers.** Labelled "Umbuchung", "Eigenkonto", "Intern". Always exclude.
+- What was your worldwide turnover in the last 12 months, and are you based in Switzerland? (Decides registration under the CHF 100,000 test or the foreign-business rules.)
+- Are you on the effective method or a net tax rate, and which rate did the ESTV approve? (Decides the computation and whether input tax is claimed.)
+- Do you report quarterly, half-yearly, monthly or annually, and is your taxable turnover under CHF 5,005,000? (Decides deadlines and whether the annual option is open.)
+- Do you buy services from foreign suppliers not registered in Switzerland, and how much a year? (Decides reverse charge.)
+- Do you make exempt supplies, such as letting, financial or medical services, or use costs privately? (Decides input tax cuts.)
+- Do you import goods, sell to consumers from abroad, or sell through an online platform? (Decides import tax, mail-order registration and the platform rule.)
 
-**Owner draws.** Einzelunternehmen (sole trader) transfers to personal account are Privatbezüge — exclude.
+## Sources
 
-**Refunds.** Identify by "Gutschrift", "Rückerstattung", "Stornierung". Book as negative.
+| Source | URL | Read on |
+|---|---|---|
+| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-23 |
+| MWSTV, VAT Ordinance, SR 641.201 (consolidated version of 1 January 2025) | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-23 |
+| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026) | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-23 |
+| ESTV, VAT rates in Switzerland | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-10-23 |
+| ESTV, net tax rates and flat tax rates | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-10-23 |
+| ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
 
-**Currency.** Most transactions in CHF. EUR transactions are common for international suppliers. Convert at the transaction date rate from SNB (Swiss National Bank) or the bank statement rate. For Bezugsteuer valuation, use the rate on the invoice date.
+Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts.
 
-**IBAN prefix.** CH = Switzerland. LI = Liechtenstein (domestic). DE, FR, IT, AT = EU (foreign for Swiss purposes). US, GB = non-EU.
-
-**Import MWST.** BAZG Veranlagungsverfügungen are the deduction document for import MWST. Match customs declarations to bank debits from BAZG. The MWST amount on the Veranlagungsverfügung is the deductible input tax, NOT the bank debit (which includes duties).
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-- **Entity type** — Inference rule: Einzelunternehmen vs GmbH vs AG vs Kollektivgesellschaft. Fallback: "Are you Einzelunternehmen (sole trader), GmbH, AG, or other?"
-
-### 9.2 MWST registration and method
-
-- **MWST registration and method** — Inference rule: if asking for Abrechnung, they are registered. Fallback: "Effektive Methode or Saldosteuersatz?" If Saldosteuersatz → R-CH-1 fires.
-
-### 9.3 UID (MWST-Nummer)
-
-- **UID** — Fallback: "What is your UID / MWST-Nummer? (CHE-xxx.xxx.xxx MWST)"
-
-### 9.4 Filing period
-
-- **Filing period** — Fallback: "Quarterly, half-yearly, or monthly? Which period?"
-
-### 9.5 Industry
-
-- **Industry** — Fallback: "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees** — Inference rule: AHV, Lohn outgoing. Fallback: "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies** — Fallback: "Do you make MWST-exempt sales?" If yes → R-CH-4 may fire.
-
-### 9.8 Foreign services aggregate
-
-- **Foreign services aggregate** — Fallback: "Do your total foreign service purchases exceed CHF 10,000/year? (Bezugsteuer threshold)"
-
-### 9.9 Foreign customers
-
-- **Foreign customers** — Fallback: "Do you provide services to customers abroad?"
-
-### 9.10 Vehicle
-
-- **Vehicle** — Fallback: "Business vehicle? What private-use proportion?"
-
-## Section 10 — Reference material
-
-### Validation status
-
-v2.0, rewritten April 2026. Awaiting validation by Swiss licensed tax adviser.
-
-### Sources
-
-1. MWSTG (SR 641.20) — https://www.admin.ch/opc/de/classified-compilation/20081110/
-2. MWSTV (SR 641.201) — implementing ordinance
-3. ESTV Praxisfestlegungen — https://www.estv.admin.ch
-4. ESTV MWST-Info publications (especially MWST-Info 08 — Bezugsteuer)
-5. BAZG customs/import documentation
-6. SNB exchange rates — https://www.snb.ch
-
-### Known gaps
-
-1. Saldosteuersatz is entirely excluded — covers a large number of Swiss small businesses.
-2. Bezugsteuer CHF 10,000 threshold is annual aggregate — mid-year it may not be clear whether threshold will be reached. Default: assume exceeded.
-3. Vehicle private-use lump sum (0.9%/month) may be updated by ESTV — verify annually.
-4. The distinction between Ziffer 400 and 405 is not always clear-cut — the skill provides guidance but the allocation is ultimately an accounting judgement.
-5. Import MWST via BAZG requires matching customs declarations to bank debits, which cannot always be done from bank data alone.
-6. Liechtenstein is treated as domestic but suppliers there may have different UID formats.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to three-tier OpenAccountants architecture (without eu-vat-directive, as Switzerland is not in the EU).
-- **v1.0 (April 2026):** Initial draft. Standalone document.
-
-### Self-check (v2.0)
-
-1. Quick reference with Ziffer table and conservative defaults: yes (Section 1).
-2. Supplier library with Swiss patterns (including multilingual): yes (Section 3, 14 sub-tables).
-3. Worked examples: yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 12 rules).
-5. Tier 2 catalogue: yes (Section 6, 14 items).
-6. Excel template with recalc: yes (Section 7).
-7. Onboarding as fallback: yes (Section 9, 10 items).
-8. All 8 Switzerland-specific refusals: yes (R-CH-1 through R-CH-8).
-9. Reference material at bottom: yes (Section 10).
-10. NOT-EU status emphasized: yes (Section 1, throughout).
-11. Three rates (8.1%/2.6%/3.8%) correctly mapped: yes.
-12. Bezugsteuer applies to ALL foreign services (EU and non-EU): yes (Section 3.8, Examples 1-2, Section 5.6).
-13. Bezugsteuer CHF 10,000 threshold documented: yes (Section 3.8, Section 5.6).
-14. Import MWST via BAZG documented: yes (Section 5.7, Example 6).
-15. No zero rate — exempt with credit instead: yes (Section 1).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
@@ -646,4 +190,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `switzerland-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/switzerland-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `switzerland-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/switzerland-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

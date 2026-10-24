@@ -1,13 +1,16 @@
 ---
 name: pt-irs-employees-investment
 description: "Portuguese personal income tax (IRS) for tax year 2026 for residents who earn a salary (Category A), a pension (Category H), investment income (Category E dividends and interest), rent (Category F) or capital gains on shares and property (Category G). Covers the 2026 IRS bands of CIRS art. 68 as set by the 2026 State Budget (Lei 73-A/2025), the solidarity surcharge, the specific deduction for employees and pensioners, deductions from the tax (dependants, general family expenses, health, education, rent, invoice VAT), IRS Jovem, the 28% and 25% special rates and the option to aggregate, the reduced rates for long residential leases, the 50% inclusion of property gains and main-home reinvestment, joint or separate filing, the Modelo 3 return and IRS automatico, late filing fines and interest. Trigger on: 'IRS Portugal employee', 'Modelo 3 2026', 'Anexo A', 'Anexo E', 'Anexo F', 'Anexo G', 'englobamento', 'rendas IRS 25%', 'mais-valias imoveis 50%', 'deducoes a coleta', 'IRS Jovem 2026', 'tributacao conjunta'. Out of scope: self-employed income (pt-income-tax), payroll withholding (portugal-payroll), foreign income and treaties (pt-foreign-source-treaties), NHR and IFICI (pt-nhr-ifici), crypto (portugal-crypto-tax)."
-jurisdiction: PT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: PT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Portugal: IRS for employees, pensioners and investment income (tax year 2026)
@@ -286,3 +289,23 @@ Not yet confirmed:
 - How the 2026 rent deduction cap of EUR 900 (Decreto-Lei 97/2026, art. 15(1)) interacts with the higher limits for low incomes in art. 78-E(4), which Lei 36/2024 phases in at 75% for 2026. Use EUR 900 unless taxable income is low, and check AT's simulator for a low-income tenant.
 - The loss carry-forward periods of CIRS art. 55 were not read today.
 - CIRS art. 68(2) still refers to EUR 8,059 (the 2025 first band limit) after the 2026 change to the table. AT's method in practice uses the band limits of the current table, as in the examples; this is a drafting leftover in the law, not confirmed by AT guidance.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

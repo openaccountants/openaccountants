@@ -1,13 +1,16 @@
 ---
 name: fr-corporate-tax
 description: "French corporate income tax (impôt sur les sociétés, IS) for companies resident in France and for foreign companies with an establishment in France, financial years closing in 2026. Covers the 25% standard rate and the 15% SME rate on the first EUR 42,500 (CGI art. 219), the 3.3% social contribution (art. 235 ter ZC), the exceptional contribution on large companies for the first two years closed from 31 December 2025, the taxable base, the parent-subsidiary regime, losses (EUR 1m plus 50% cap, one-year carry-back), tax consolidation at 95%, the interest cap (EUR 3m or 30%), form 2065, the four acomptes and the balance, penalties, and outbound withholding tax. Trigger on: IS France, impôt sur les sociétés, taux réduit PME, 2065, acompte IS, report en arrière, intégration fiscale, régime mère-fille, contribution exceptionnelle grandes entreprises. Out of scope: CFE and CVAE (fr-cfe), VAT (france-vat-return), transfer pricing (france-transfer-pricing), individual income tax (fr-personal-income-tax)."
-jurisdiction: FR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: FR
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # France: corporate income tax (impôt sur les sociétés, IS) v0.1
@@ -210,3 +213,23 @@ expected:
 | impots.gouv.fr, professional IS pages and form 2065 | https://www.impots.gouv.fr/professionnel/impot-sur-les-societes | Site in maintenance on 2026-10-22 (still in maintenance on a second attempt); not relied on |
 
 Not yet confirmed: the conditions of the option for IS under CGI art. 239 (not read today); the interest limitation rules for tax-consolidated groups; and the official 2027 filing calendar for years closed on 31 December 2026 (the dates given above are computed from the statute and the 15-day extension, not taken from a published calendar).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -7,16 +7,24 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `cz-company-formation.md`
-4. `cz-corporate-income-tax.md`
-5. `cz-income-tax.md`
-6. `cz-social-health.md`
-7. `cz-tax-overview.md`
-8. `cz-vat-return.md`
-9. `czech-republic-vat-return.md`
-10. `references.md`
-11. `eu-vat-directive.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `cz-company-formation.md`
+5. `cz-corporate-income-tax.md`
+6. `cz-cross-border.md`
+7. `cz-employee-contributions.md`
+8. `cz-employee-income-tax.md`
+9. `cz-income-tax.md`
+10. `cz-payroll.md`
+11. `cz-social-health.md`
+12. `cz-tax-overview.md`
+13. `cz-transfer-pricing.md`
+14. `cz-vat-return.md`
+15. `czech-republic-vat-return.md`
+16. `references.md`
+17. `eu-vat-directive.md`
+18. `payroll-workflow-base.md`
+19. `company-formation-workflow-base.md`
+20. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

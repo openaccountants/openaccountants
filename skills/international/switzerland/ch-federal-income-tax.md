@@ -1,14 +1,14 @@
 ---
 name: ch-federal-income-tax
 description: "Swiss federal income tax for individuals (direkte Bundessteuer, impot federal direct) for tax year 2026. Covers who is liable (DBG art. 3), joint taxation of married couples, the 2026 tariffs after the cold-progression adjustment (single tariff up to 13.2% marginal and 11.5% flat from CHF 794,000; married and single-parent tariff), the CHF 263 tax reduction per child, the main deductions (commuting cap CHF 3,300, flat professional expenses, Pillar 2 and 3a, insurance premiums, private interest, childcare CHF 25,800, two-earner deduction, child and support deductions CHF 6,800), tax at source for foreign employees and the ordinary assessment from CHF 120,000, filing and payment (1 March due date, 4.00% late interest) and fines. Trigger on: Bundessteuer, DBSt, direkte Bundessteuer, Swiss federal tax, Steuertarif Bund, Kinderabzug, Zweiverdienerabzug, Säule 3a Abzug. Out of scope: ch-cantonal-tax, ch-ahv-iv, ch-payroll, ch-cross-border, ch-lump-sum."
-jurisdiction: CH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 2.1
-verified_by: pending
+jurisdiction: CH
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -241,3 +241,23 @@ expected:
 | Kantonales Steueramt Zürich, ZStB 133.1, Fristen Steuererklärung | https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html | 2026-10-23 |
 
 Not yet confirmed: how the two-earner deduction applies when the lower earned income is below the CHF 8,600 minimum (the DBG text gives only the minimum; ESTV practice was not read); filing deadlines and instalment practice in cantons other than Zurich; retroactive Pillar 3a top-up contributions (not read).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
