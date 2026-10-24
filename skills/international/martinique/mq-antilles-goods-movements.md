@@ -2,13 +2,16 @@
 name: mq-antilles-goods-movements
 description: >
   Martinique goods-movement reference for businesses dispatching or receiving goods within the Guadeloupe–Martinique single fiscal territory. Explains the distinction between ordinary cleared goods and suspensive regimes, accompanying evidence, the monthly dispatch declaration and its working-day deadline. Separates sold goods, own-stock movements and temporary movements, and identifies the records needed to reconcile dispatches. This narrow Guide uses the official July 2025 customs circular rather than assuming that no new customs clearance means no reporting. Product taxation, special excise controls, Guyane trade and complete territory coverage require separate work and independent review.
-jurisdiction: MQ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: MQ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Martinique: goods movements with Guadeloupe
@@ -46,3 +49,23 @@ Reconcile imported goods subsequently dispatched separately from locally produce
 Reconcile movement month, departure office, arrival evidence, sale versus own-stock status, origin and recipient SIRET. Compute the actual deadline using the applicable working-day calendar; the tenth calendar day is not an adequate substitute. This Guide does not prescribe a particular calendar date without checking that calendar.
 
 Source-cited draft awaiting independent review. Current submission channels, any amendments after the 2025 circular, penalties, excise-specific requirements, product rates and VAT returns remain separate checks. For producer-threshold obligations, see the [Guadeloupe producer Guide](../guadeloupe/gp-producer-octroi-compliance.md). This is not comprehensive Martinique tax coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

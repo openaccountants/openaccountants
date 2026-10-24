@@ -7,19 +7,27 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `references.md`
-4. `se-capital-gains.md`
-5. `se-income-tax.md`
-6. `se-social-contributions.md`
-7. `se-vat-return.md`
-8. `sweden-bookkeeping.md`
-9. `sweden-crypto-tax.md`
-10. `sweden-payroll.md`
-11. `sweden-vat-return.md`
-12. `eu-vat-directive.md`
-13. `bookkeeping-workflow-base.md`
-14. `payroll-workflow-base.md`
-15. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `references.md`
+5. `se-benefits-and-allowances.md`
+6. `se-capital-gains.md`
+7. `se-closely-held-company-312.md`
+8. `se-corporate-tax.md`
+9. `se-cross-border.md`
+10. `se-employee-income-tax.md`
+11. `se-income-tax.md`
+12. `se-social-contributions.md`
+13. `se-transfer-pricing.md`
+14. `se-vat-return.md`
+15. `sweden-bookkeeping.md`
+16. `sweden-crypto-tax.md`
+17. `sweden-payroll.md`
+18. `sweden-vat-return.md`
+19. `eu-vat-directive.md`
+20. `bookkeeping-workflow-base.md`
+21. `payroll-workflow-base.md`
+22. `transfer-pricing-workflow-base.md`
+23. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

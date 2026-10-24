@@ -371,3 +371,23 @@ expected:
 | Fisconetplus, art. 289ter/1 WIB 92 (income 2026), fiscal work bonus | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5403364d-120e-4c43-8945-ac770f1228f6 | 2026-10-23 |
 
 Not yet confirmed: the special social security contribution scale for 2026; the work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update, except the meal voucher and eco-cheque limits.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

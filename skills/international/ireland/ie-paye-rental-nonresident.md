@@ -1,13 +1,15 @@
 ---
 name: ie-paye-rental-nonresident
 description: "Irish income tax for 2026 in three cases the Form 11 skill does not walk through. PAYE workers with side income: when Form 12 in myAccount is enough and when they must file Form 11 (taxable non-PAYE income over EUR 5,000 or gross over EUR 30,000), and the four-year rule. Case V rental income: section 97 deductions, 100% mortgage interest with the RTB condition, wear and tear at 12.5% over 8 years, pre-letting expenses, RPRIR (EUR 1,000 for 2026), losses, USC and PRSI on rent. Non-residents: what section 18 taxes, section 1032 credits and the 75% test, 20% landlord withholding (NLWT). Trigger on: Form 12, PAYE side income, rental income Ireland, Case V, RPRIR, non-resident landlord, NLWT. Out of scope: ie-income-tax-form11, ie-usc, ie-cgt, ie-cross-border, ie-foreign-tax-and-withholding."
-jurisdiction: IE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: IE
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Ireland: PAYE-only returns (Form 12), rental income (Case V) and non-residents (2026)
@@ -264,3 +266,23 @@ expected:
 | Revenue, guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-23 |
 
 Not yet confirmed: (1) whether a non-resident gets the full standard rate band or a share of it (Revenue's section 1032 examples stay within the band, so Example 2 is not affected); (2) whether the EUR 13,000 USC exemption for a non-resident is tested on Irish income only; (3) the ROS pay-and-file date for 2026 returns, announced each year; (4) changes announced in Budget 2027 on 6 October 2026 are not reflected; they are for 2027 onwards and the Finance Bill is not yet enacted; (5) which treaties cover USC.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

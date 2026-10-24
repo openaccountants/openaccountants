@@ -4,11 +4,9 @@ description: Use this skill whenever asked about Italian income tax for self-emp
 version: 2.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -684,6 +682,8 @@ ONBOARDING QUESTIONS: ITALY IRPEF, REGIME ORDINARIO
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Commercialista, Consulente del Lavoro, or equivalent licensed practitioner in Italy) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

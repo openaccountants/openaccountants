@@ -6,8 +6,8 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-payroll"
   jurisdiction: "PT"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -16,11 +16,9 @@ metadata:
 
 ## Portugal — Processamento de Salários — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+> Source-cited draft: not reviewed by an accountant.
 
 ### Folha de Pagamento
 
@@ -403,6 +401,8 @@ Esta skill e os respetivos resultados são disponibilizados apenas para fins inf
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
 
+> Contributed by Ryan Duguid.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -423,4 +423,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

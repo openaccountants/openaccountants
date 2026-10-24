@@ -2,13 +2,16 @@
 name: bl-tourist-stay-tax
 description: >
   Saint-Barthélemy tourist-stay tax reference researched in 2026 using the local Contributions Code, the 2024 amendment and the current collection portal. Covers the five-percent accommodation base, local exemptions, registration before short letting, separate digital and counter filing deadlines, foreign-currency conversion and platform collection. Includes worked examples and identifies conflicting generic poster wording that should not replace the local Code. Applies to the local taxe de séjour only. Complete amendment reconciliation, cancellation and advance-payment cases, penalty procedures, income taxation of rental profits and independent accountant review remain outstanding.
-jurisdiction: BL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: BL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint-Barthélemy: tourist-stay tax
@@ -57,3 +60,23 @@ If tax is collected in another currency, article 125 requires euro conversion us
 The base Code fetched lists amendments through August 2021; the 2024 annex contains marked changes, and the live portal provides current administrative corroboration. The annex was visually checked because extracted text omits some insertions. Complete reconciliation of subsequent instruments remains required before publication beyond draft status.
 
 The 2024 article 125 bis amendment provides an administrative procedure for failure to register; this Guide does not provide a full penalties manual. Rental-profit taxation, residence, social contributions, business contribution, property and other local taxes need separate Guides. Independent accountant review remains outstanding. Checked 22 October 2026; initial topic coverage only.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -2,13 +2,16 @@
 name: gd-social-contributions
 description: >
   Grenada National Insurance Scheme contribution reference for 2026. Covers ordinary employee and employer percentages, monthly and weekly insurable earnings ceilings, worked monthly calculations, remittance records and the distinct self-employed payment framework. Use for Grenada NIS, payroll contributions, employer insurance or self-employed NIS. It checks the 2026 rate against the published reform timetable and excludes outdated test-site examples. The scope assumes ordinary coverage has been established; retirement-age transitions, special contribution classes, benefits, irregular periods and multi-employment cases need further analysis. Official indexed text requires direct source rechecking before release.
-jurisdiction: GD
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: GD
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Grenada NIS contributions: 2026
@@ -47,3 +50,23 @@ The ceiling arithmetic is 5,200 × 12 × 13.5% = EC$8,424. Reconcile the assessm
 ## Review controls and limits
 
 Record earnings classification, contribution period, coverage decision and payment evidence. Pensionable-age changes, employment-injury-only rates, voluntary coverage, special classes, overlapping employment and benefits remain outside this Guide. Current source access and independent accountant review are required before release. No comprehensive payroll coverage or attestation is asserted.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

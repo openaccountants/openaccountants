@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cy-non-dom"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-23"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -190,7 +190,7 @@ The 8(21B) exemption is for returning former residents: condition (b) means a pe
 | Articles 8(23) and 8(23A), rate | 50% of remuneration from employment in Cyprus | "50% απαλλαγή της αμοιβής από" |
 | Minimum remuneration, 8(23) (table rows ticked for employment started 01.01.2012 to 31.12.2021 and 01.01.2022 to 25.07.2022) | More than EUR 100,000; exemption for 10 years | "Ελάχιστη αμοιβή > €100.000 > €55.000 > €55.000" |
 | Minimum remuneration, 8(23A) (employment from 1 January 2022) | More than EUR 55,000; exemption for 17 years (for the first-employment limb, or until that first employment ends if earlier) | "Περίοδος απαλλαγής 10 έτη 17 έτη" |
-| Look-back, 8(23A) | Not Cyprus tax resident for at least 10 years before the year the first employment started; at least 15 years for the limb that treats employment after 15 years' absence as first employment | "Τουλάχιστο 10 έτη πριν το έτος έναρξης της" |
+| Look-back, 8(23A) | At least 15 consecutive years not Cyprus tax resident immediately before the first employment in Cyprus, for every employment starting in 2026 (Income Tax Law, art. 8(23A), as amended by Law 51(I)/2023 with effect from 1 January 2022). The 10-year look-back in the table survives only for a person already entitled before 30 June 2023 | "Τουλάχιστο 10 έτη πριν το έτος έναρξης της" |
 | Residence after starting | Granted whether or not the person then becomes Cyprus tax resident | "Όλες οι πιο πάνω απαλλαγές παραχωρούνται ανεξάρτητα αν το άτομο μετά την έναρξη της εργοδότησής του στη Δημοκρατία γίνεται φορολογικός κάτοικος" |
 
 | Source | all figures below | https://www.gov.cy/media/sites/167/2026/01/implementation-of-sections-21-and-21A-of-article-8-24072023.pdf |
@@ -267,4 +267,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.

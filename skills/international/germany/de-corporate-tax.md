@@ -1,13 +1,16 @@
 ---
 name: de-corporate-tax
 description: "German corporate income tax (Körperschaftsteuer, KSt) for tax year 2026: GmbH, UG, AG and other companies resident in Germany, and German permanent establishments of foreign companies. Covers the 15% rate under § 23 KStG and the enacted cuts from 2028, the 5.5% solidarity surcharge, how trade tax adds to the burden, the taxable base, the § 8b participation exemption, loss carry-forward (EUR 1m plus 70% for 2024 to 2027, 60% from 2028) and carry-back, § 8c share changes, Organschaft, the interest barrier, prepayments, filing deadlines, late filing surcharges, interest, and Kapitalertragsteuer on outbound dividends. Trigger on: Körperschaftsteuer, KSt, GmbH tax Germany, German corporate tax rate, Soli on KSt, § 8b KStG, § 8c KStG, Organschaft, Zinsschranke, Verlustvortrag GmbH, Mindestbesteuerung, KSt-Vorauszahlungen, Kapitalertragsteuer Dividende. Out of scope: trade tax detail (de-trade-tax), transfer pricing (germany-transfer-pricing), individual shareholders (de-income-tax, de-capital-gains), shareholder exit tax (leaving-germany-exit-tax), VAT (germany-vat-return)."
-jurisdiction: DE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: DE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # German corporate income tax (Körperschaftsteuer): 2026
@@ -284,3 +287,23 @@ expected:
 | BZSt, exemption procedure under § 50c(2) EStG | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html | 2026-10-22 |
 
 Not yet confirmed: the ELSTER form set for tax year 2026. ELSTER's 2026 instructions page was empty on 2026-10-22, so the skill names the 2025 set (KSt 1 and annexes).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

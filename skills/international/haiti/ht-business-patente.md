@@ -2,14 +2,16 @@
 name: ht-business-patente
 description: >
   Haiti business patente reference under the replacement Tax Code effective 1 October 2026. Covers establishment-level liability, the fixed and proportional components, current commune groupings, turnover and payroll definitions, rounding, new-business treatment and filing evidence. Includes a worked calculation and distinguishes special rules for professionals, artisans and nonprofit entities. Uses the enactment rather than conflicting old webpage formulas and municipality lists. Incorporation, other business permissions, negative-base treatment, operational implementation decisions and independent accountant review are not established by this source-cited draft.
-jurisdiction: HT
-category: international
-tax_year: 2026
-tax_year_notes: New Code effective 1 October 2026; not a retrospective 2025–2026 return guide.
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: HT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Haiti: business patente and establishment compliance
@@ -55,3 +57,23 @@ Patente is due **between 1 October and 31 January** of the current fiscal year, 
 Notify creation, transfer, disposal or cessation in writing within **30 days**. Article 28 requires new commune taxpayers to declare and pay the first-year fixed charge at expiry of that period; its transfer exception must be checked for a move between communes. [2026 Code, articles 27–28, page 14](https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf#page=14).
 
 The [older DGI patente page](https://dgi.gouv.ht/dgi_sev/la-patente/) mixes 2-per-thousand and 4-per-thousand text and an older commune grouping. Use the enacted articles cited here for this new-code draft. Patente does not establish completion of incorporation, sector licensing, other taxes or all business compliance. Implementation decisions and independent review remain outstanding.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

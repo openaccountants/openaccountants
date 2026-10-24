@@ -3,11 +3,10 @@ name: portugal-payroll
 description: "Utilize esta skill sempre que for solicitado sobre processamento de salários em Portugal, cálculo de vencimentos, retenção na fonte de IRS, contribuições para a Segurança Social (TSU), cálculo do custo total para a entidade patronal, conversões de líquido para bruto ou bruto para líquido, estrutura do recibo de vencimento português, Declaração Mensal de Remunerações (DMR), ou qualquer questão relativa ao cálculo de vencimentos, descontos ou obrigações da entidade patronal em Portugal. Acione perante expressões como \"processamento de salários\", \"retenção na fonte IRS\", \"Segurança Social\", \"TSU\", \"salário líquido\", \"custo entidade patronal\", \"subsídio de férias\", \"subsídio de Natal\", \"salário mínimo\", \"DMR\", \"recibo de vencimento\", \"13.º mês\" ou \"14.º mês\". Trigger also on: \"Portuguese payroll\", \"IRS withholding\", \"retenção na fonte\", \"Segurança Social\", \"TSU\", \"salário líquido\", \"employer cost Portugal\", \"subsídio de férias\", \"subsídio de Natal\", \"13th month Portugal\", \"14th month Portugal\", \"minimum wage Portugal\", \"salário mínimo\", \"DMR filing\", \"recibo de vencimento\"."
 version: 1.0
 jurisdiction: PT
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-source_checked: 2026-10-17
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -19,11 +18,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Portugal — Processamento de Salários — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+> Source-cited draft: not reviewed by an accountant.
 
 ### Folha de Pagamento
 
@@ -405,6 +402,8 @@ Cada pagamento tem o IRS calculado independentemente utilizando a mesma taxa de 
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por profissional qualificado antes da entrega ou de qualquer atuação com base nos mesmos.
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

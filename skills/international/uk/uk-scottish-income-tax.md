@@ -1,13 +1,16 @@
 ---
 name: uk-scottish-income-tax
 description: "Scottish income tax for UK resident individuals, tax year 2026/27 (6 April 2026 to 5 April 2027), with the 2025/26 bands for returns filed now. Covers who is a Scottish taxpayer (Scotland Act 1998 ss 80D to 80F: close connection, main home, midnight days count), the six Scottish rates and band limits set by the Scottish Rate Resolution 2026-27, why savings and dividends stay on UK rates and the UK basic rate limit, the Personal Allowance taper, how the SA100 computes it, Gift Aid and relief-at-source pension extensions of the Scottish limits, and PAYE S codes (S1257L, SBR, SD0 to SD3). Trigger phrases: Scottish taxpayer, Scottish income tax, intermediate rate 21%, S tax code, live in Scotland tax return, moving to Scotland tax. Out of scope: UK-wide rules and allowances (uk-income-tax-sa100), self-employment profits (uk-self-employment-sa103), National Insurance (uk-national-insurance), payroll running (uk-payroll), residence (uk-statutory-residence-test)."
-jurisdiction: GB
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: GB
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Scottish income tax on the SA100 (2026/27, with 2025/26)
@@ -237,3 +240,23 @@ expected:
 | Finance Act 2026 s 4 (dividend ordinary and upper rates from 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-23 |
 
 Not yet confirmed: the SA100 and SA100 notes box wording for Scottish status (the form itself was not read); the rest of HMRC's Scottish Taxpayer Technical Guidance (only STTG4100, 4400 and 4500 were read); whether the Scottish Parliament has set separate Scottish property rates for 2027/28 under s 80C(2B).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
