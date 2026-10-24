@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: "latvia-income-tax still carries tax year 2025 figures; not yet refreshed for 2026"
-  IT-CORP: "lv-corporate-income-tax still carries tax year 2025 figures and secondary sources; not yet refreshed for 2026"
   VAT: "latvia-vat-return still carries tax year 2025 figures; not yet refreshed for 2026"
   SC: "latvia-social-contributions still carries tax year 2025 figures; not yet refreshed for 2026"
   PR: "latvia-payroll still carries tax year 2025 figures; not yet refreshed for 2026"
@@ -20,7 +19,7 @@ Calendar tax year for individuals; companies use their financial year as the rep
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | latvia-income-tax (2025 figures) | source-cited draft |
-| IT-CORP, corporate income tax | lv-corporate-income-tax (2025 figures) | source-cited draft |
+| IT-CORP, corporate income tax | lv-corporate-income-tax (2026: 20% with the 0.8 divisor, optional 15%/0.85 plus 6% for companies owned only by individuals, deemed distributions, dividends received, pre-2018 profit and losses, monthly return and payment, fines and late interest) | source-cited draft |
 | VAT | latvia-vat-return (2025 figures) | source-cited draft |
 | SC, social contributions | latvia-social-contributions (2025 figures) | source-cited draft |
 | PR, payroll withholding | latvia-payroll (2025 figures) | source-cited draft |
