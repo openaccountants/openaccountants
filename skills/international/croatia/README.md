@@ -6,7 +6,6 @@ covered_by:
   IT-CORP: hr-corporate-income-tax
   XB: hr-cross-border
 partial:
-  IT-IND: "croatia-income-tax carries tax year 2025 figures, not yet rolled to 2026"
   VAT: "croatia-vat-return carries tax year 2025 figures, not yet rolled to 2026"
 ---
 
@@ -18,7 +17,7 @@ Calendar tax year unless a company is allowed a different business year. Authori
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | croatia-income-tax (2025 figures; partial) | source-cited draft |
+| IT-IND, individual income tax | croatia-income-tax: residence, local rates and the EUR 60,000 band, EUR 600 allowance and dependants, employment and its reliefs, obrt on books, the paušalni obrt bands, capital, rent and property sales, filing and fines (2026) | source-cited draft |
 | IT-CORP, corporate income tax | hr-corporate-income-tax: who pays and residence, the 10% / 18% rates at EUR 1,000,000 of revenue, add-backs (50% representation and cars), depreciation, losses (5 years), thin capitalisation, the 30% EBITDA limit, advances, the PD return (30 April, e-filed by all) and fines, for 2026 | source-cited draft |
 | VAT | croatia-vat-return (2025 figures; partial) | source-cited draft |
 | SC, social contributions | croatia-social-contributions: Pillar I 15% and Pillar II 5% (20% Pillar I only), health 16.5%, the 2026 bases (minimum EUR 757.34, pension maximum EUR 11,958 a month and EUR 143,496 a year), the low-wage Pillar I relief, trainee and grandfathered first-job reliefs, fixed bases for obrt, freelancers and flat-rate taxpayers, deadlines and fines, for 2026 | source-cited draft |
