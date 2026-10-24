@@ -39,10 +39,10 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 | Earned income credit | SEK 1,500; 0.75% of taxable earned income above SEK 40,000 when it is between SEK 40,000 and 240,000 | 2026 | IL 67 kap. 46-47 §§ |
 | General pension contribution | 7% of employment and business income, at most SEK 47,100; credited back 100% | 2026 | Lag (1994:1744) 2-4 §§; IL 67 kap. 4 §; same page |
 | Egenavgifter (sole trader) | 28.97% born 1959 or later; 10.21% born 1938-1958; none born 1937 or earlier | 2026 | same page; detail in se-social-contributions |
-| Egenavgift reduction | 7.5% of the business base, at most SEK 15,000, if the business base is above SEK 40,000 and the person was not 67 at 1 January | 2026 | Lag (2023:748) 3 § (as amended by 2023:754, in force 1 January 2026) |
+| Egenavgift reduction | 7.5% of the business base, at most SEK 15,000, if the business base is above SEK 40,000, the person was not 67 at 1 January and does not pay only the old-age pension contribution (SAL 3 kap. 16 §) | 2026 | Lag (2023:748) 3 § (as amended by 2023:754, in force 1 January 2026) |
 | Schablonavdrag for egenavgifter | 25% of the surplus (born 1959 or later); 10% (born 1938-1958, or full old-age pension all year) | 2026 | IL 16 kap. 29-30 §§; same page |
 | Tax on capital income | 30% of the surplus | 2026 | IL 65 kap. 7 § |
-| Capital deficit credit | 30% of a deficit up to SEK 100,000; 21% of the rest | 2026 | IL 67 kap. 10 § |
+| Capital deficit credit | 30% of a deficit up to SEK 100,000; 21% of the rest; always 30% on the part that comes from the capital insurance and PEPP deduction or the investor deduction | 2026 | IL 67 kap. 10 § |
 | ISK standard income | Capital base × (government borrowing rate 30 November 2025 of 2.55% + 1 point) = 3.55%; floor 1.25% | 2026 | IL 42 kap. 36-37 §§; same page |
 | Capital insurance (kapitalförsäkring) yield tax | 30% of capital base × 3.55%, charged on the insurer | 2026 | Lag (1990:661) 3 d and 9 §§ |
 | Tax-free amount for ISK, capital insurance and PEPP | Standard income on the first SEK 300,000 of combined savings, ISK first | 2026 | IL 42 kap. 48 § (Lag 2024:1132, from 1 January 2026) |
@@ -59,6 +59,7 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 | Representation | Meals SEK 0; simple refreshments SEK 60 per person; theatre, golf and similar SEK 180 per person; all excluding VAT | 2026 | IL 16 kap. 2 §; same page |
 | VAT exemption for small turnover | Turnover in Sweden not above SEK 120,000 this year or either of the two before | 2026 | ML (2023:200) 18 kap. 4 § |
 | Burial fee | 0.292%; Stockholm 0.07%; Tranås 0.285% | 2026 | same page |
+| Public service fee | At most SEK 1,184 a person a year, charged with the final tax | 2026 | same page |
 | Late filing fee | SEK 1,250; again after three months; again after two more months | 2026 | SFL 48 kap. 6-7 §§ |
 | Tax surcharge | 40% of the final tax that would have been lost; 10% for a timing error | 2026 | SFL 49 kap. 11 §; same page |
 | Cost interest | Base rate 2.5% since 1 December 2024; late payment base rate + 15 points = 17.5% | 2026 | SFL 65 kap. 3-4, 13 §§; https://www.skatteverket.se/rantapaskattekontot |
@@ -84,7 +85,7 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 - Home office: either a reasonable share of rent and heating for a part of the home fitted out for the business (IL 16 kap. 34 §), or the flat SEK 2,000 or SEK 4,000 if the person worked at least 800 hours at home (IL 16 kap. 35 §). Not both.
 - Representation: deductible only if directly linked to the business; meals SEK 0 (IL 16 kap. 2 §).
 - Räntefördelning: a positive capital base allows 8.55% of it to move from business income to capital income (30%). A capital base below minus SEK 500,000 forces 3.55% the other way (IL 33 kap.).
-- Periodiseringsfond: a sole trader may set aside up to 30% of the surplus, to be reversed within six years (Skatteverket, belopp och procent 2026).
+- Periodiseringsfond: a sole trader may set aside up to 30% of the surplus; an allocation made for 2026 must be reversed by income year 2032 at the latest (Skatteverket, belopp och procent 2026).
 - Expansionsfond: an allocation is taxed at 20.6% now and the 20.6% is credited back when it is reversed; the fund must be reversed when the business stops (IL 34 kap. 16 §, 65 kap. 8 §).
 - Losses: a business deficit carries forward to the next year with no time limit, against the same business (IL 40 kap. 2 §).
 - Records: books and vouchers are kept until the end of the seventh year after the year the financial year ended (BFL 7 kap. 2 §).
@@ -100,7 +101,7 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 - Inkomstdeklaration 1 is due 2 May the year after the income year (SFL 32 kap. 1 §). 2 May 2027 is a Sunday, so the return for 2026 is on time on Monday 3 May 2027 (Lag 1930:173 2 §). For the 2025 return Skatteverket used 4 May 2026 for the same reason.
 - Filing is digital in the e-service with BankID or the codes on the paper return, or on paper. A sole trader adds the NE form.
 - An accounting firm can get an extension for its clients. In 2026 the extended date was 15 June (Skatteverket, få skatteåterbäring).
-- F-tax: a sole trader applies to be approved for F-tax (SFL 9 kap.) and pays preliminary tax in equal monthly amounts from February to January, due on the 12th, and on the 17th in January and August (SFL 62 kap. 4 §).
+- F-tax: a sole trader applies to be approved for F-tax (SFL 9 kap.) and pays preliminary tax in equal monthly amounts from February to January, due on the 12th, and on the 17th in January and August (SFL 62 kap. 4 §). A due date on a Saturday, Sunday or public holiday moves to the next weekday (Lag 1930:173 2 §), so the January 2027 instalment for 2026 is due Monday 18 January 2027.
 - Final tax (slutlig skatt): Skatteverket must send the final tax notice to individuals by 15 December of the year after the income year (SFL 56 kap. 10 §). In the 2026 round notices went out 6-10 April for returns approved digitally without changes by 31 March, 8-12 June for returns filed by 4 May, 3-7 August for extended or later returns, and 7-11 December for the rest. Refunds are paid with the notice. Skatteverket has not yet published the 2027 dates.
 - Residual tax (kvarskatt) is due on the first due date after 90 days from the final tax decision (SFL 62 kap. 8-9 §§). In 2026, a notice in June was due 14 September 2026 and one in August on 12 November 2026.
 
@@ -115,7 +116,7 @@ This skill sets out Swedish income tax for an individual for income year 2026 an
 
 - A person limited taxable for all of 2026 who did not choose resident taxation pays a flat 25% municipal tax on earned income (IL 65 kap. 4 §). One who chose to be taxed as a resident under IL 3 kap. 18 § pays the average rate, 32.38% (Skatteverket, belopp och procent 2026).
 - A non-resident who chose resident taxation under IL 3 kap. 18 § gets the basic deduction, job tax credit and earned income credit only if all or almost all earned income is Swedish (IL 63 kap. 2 §, 67 kap. 5 and 46 §§).
-- Someone resident for part of the year gets the basic deduction and credits pro rata by month, unless almost all earned income is Swedish (IL 63 kap. 4 §, 67 kap. 9 and 48 §§).
+- Someone resident for part of the year gets a basic deduction of one twelfth of 0.293 PBB for each month or part month of residence, and one twelfth of the full-year job tax credit and earned income credit for each such month, unless all or almost all earned income is Swedish, in which case the full-year rules apply (IL 63 kap. 4 §, 67 kap. 9 and 48 §§).
 - Self-employment carried on abroad counts as work income for the job tax credit if the person worked in it to a real extent (IL 67 kap. 6 §).
 - ROT and RUT can cover a home anywhere in the EEA; work for a parent needs the parent to live in Sweden; a foreign contractor with no Swedish business needs a home-country certificate equal to F-tax (IL 67 kap. 14-15 and 17 §§).
 - SINK, the expert tax relief and treaty relief are in [se-cross-border](se-cross-border.md).
@@ -133,7 +134,7 @@ Born 1985, registered in Stockholm on 1 November 2025 (30.55%). Booked net profi
 - Pension contribution 7% × 450,000 = SEK 31,500, credited back if paid on time.
 - Job tax credit: (1.813 × 59,200 + 25.1% × (450,000 − 3.24 × 59,200) − 19,000) × 30.55% = 46,782.98, given as SEK 46,782.
 - Earned income credit SEK 1,500.
-- Income tax before burial fee: 131,670.50 + 31,500 − 31,500 − 46,782 − 1,500 = SEK 83,388.50.
+- Income tax before the burial fee and public service fee: 131,670.50 + 31,500 − 31,500 − 46,782 − 1,500 = SEK 83,388.50.
 - Egenavgifter: 28.97% × 450,000 = 130,365, less the reduction of 7.5% × 450,000 capped at SEK 15,000, so SEK 115,365.
 
 ```oa-check
@@ -177,8 +178,8 @@ Born 1958, so 66 or over at 1 January 2026 and in the 1938-1958 group for egenav
 - Basic deduction: 3 § part 0.77 × 59,200 − 10% × (270,000 − 3.11 × 59,200) = 36,995.20; 3 a § special amount, band 3.24 to 5.00 PBB, 35.6% × 270,000 − 0.073 × 59,200 = 91,798.40. Total 128,793.60, rounded up to SEK 128,800.
 - Taxable earned income SEK 141,200. Municipal tax 141,200 × 32.38% = SEK 45,720.56. No state tax.
 - Pension contribution 7% × 270,000 = SEK 18,900. Its credit comes first and uses SEK 18,900 of the municipal tax.
-- Job tax credit from 66 (IL 67 kap. 8 §), work income between 1.75 and 5.24 PBB: 0.2635 × 59,200 + 7% × 270,000 = SEK 34,499. Only SEK 26,820 of municipal tax is left, so the credit is cut to SEK 26,820. The earned income credit finds no tax left.
-- Final income tax: 45,720.56 + 18,900 − 18,900 − 26,820 = SEK 18,900.56, which is in effect the pension contribution.
+- Job tax credit from 66 (IL 67 kap. 8 §), work income between 1.75 and 5.24 PBB: 0.2635 × 59,200 + 7% × 270,000 = SEK 34,499. Only SEK 26,820 of municipal tax is left, so the credit is cut to SEK 26,820. The earned income credit would be 0.75% × (141,200 − 40,000) = SEK 759 (IL 67 kap. 47 §), but no municipal tax is left, so it gives nothing.
+- Final income tax before the burial fee and public service fee: 45,720.56 + 18,900 − 18,900 − 26,820 = SEK 18,900.56, which is in effect the pension contribution.
 - Egenavgifter: only the old-age pension contribution, 10.21% × 270,000 = SEK 27,567, with no 7.5% reduction (the person was 67 or over at the start of the year, Lag 2023:748 3 §).
 
 ```oa-check
@@ -200,7 +201,8 @@ steps:
   - work_income: floor(earned_income / 100) * 100
   - job_credit_formula: floor(0.2635 * pbb + 0.07 * work_income)
   - job_credit: min(job_credit_formula, floor(municipal_tax - pension_credit))
-  - earned_income_credit: min(1500, floor(municipal_tax - pension_credit - job_credit))
+  - eic_formula: floor(min(1500, max(taxable_earned - 40000, 0) * 0.0075))
+  - earned_income_credit: min(eic_formula, floor(municipal_tax - pension_credit - job_credit))
   - final_tax: municipal_tax + pension_contribution - pension_credit - job_credit - earned_income_credit
   - egenavgifter: earned_income * 0.1021
 expected:
@@ -211,6 +213,7 @@ expected:
   pension_contribution: 18900.00
   job_credit_formula: 34499.00
   job_credit: 26820.00
+  eic_formula: 759.00
   earned_income_credit: 0.00
   final_tax: 18900.56
   egenavgifter: 27567.00
@@ -233,6 +236,7 @@ expected:
 | Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305: 32 kap. 1 §; 48 kap. 3, 6-7 §§; 49 kap. 11 §; 56 kap. 10 §; 62 kap. 4, 8-9 §§; 65 kap. 3-6, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
 | Lag (1994:1744) om allmän pensionsavgift, 2-4 §§ | https://data.riksdagen.se/dokument/sfs-1994-1744.text | 2026-10-24 |
 | Lag (2023:748) om särskilt avdrag vid beräkning av egenavgifter, 3 § (as amended by 2023:754) | https://data.riksdagen.se/dokument/sfs-2023-748.text | 2026-10-24 |
+| Socialavgiftslag (2000:980), 3 kap. 12-16 §§, and Lag (1994:1920) om allmän löneavgift, 2-3 §§ | https://data.riksdagen.se/dokument/sfs-2000-980.text ; https://data.riksdagen.se/dokument/sfs-1994-1920.text | 2026-10-24 |
 | Lag (2009:194) om förfarandet vid skattereduktion för hushållsarbete, 7 § | https://data.riksdagen.se/dokument/sfs-2009-194.text | 2026-10-24 |
 | Lag (1990:661) om avkastningsskatt på pensionsmedel, 3 d and 9 §§ | https://data.riksdagen.se/dokument/sfs-1990-661.text | 2026-10-24 |
 | Mervärdesskattelag (2023:200), 18 kap. 4 § | https://data.riksdagen.se/dokument/sfs-2023-200.text | 2026-10-24 |
@@ -245,7 +249,7 @@ expected:
 | Skatteverket, få skatteåterbäring (2026 notice and refund dates) | https://www.skatteverket.se/privat/deklaration/faskatteaterbaring.4.12815e4f14a62bc048f10101.html | 2026-10-24 |
 | Skatteverket, betala kvarskatt | https://www.skatteverket.se/privat/deklaration/betalakvarskatt.4.12815e4f14a62bc048f106ca.html | 2026-10-24 |
 
-Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; whether Skatteverket rounds the 66-plus basic deduction once on the total, as Example 2 does, or on each part; the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish.
+Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; the public service fee rate (only the 2026 maximum was read); the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish.
 
 > Contributed by Ryan Duguid.
 
