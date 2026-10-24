@@ -1,14 +1,15 @@
 ---
 name: bg-cross-border
 description: "Bulgarian cross-border tax for tax year 2026 under the Corporate Income Tax Act (ZKPO), the Personal Income Taxes Act (ZDDFL) and the Tax and Social Security Procedure Code (DOPK). Covers tax residence of individuals (permanent address, more than 183 days in 12 months, centre of vital interests) and of companies (incorporation); Bulgarian-source income of non-residents; permanent establishment and fixed base; final withholding at 5% on dividends and 10% on interest, royalties, technical services, rents, management fees and capital gains (CITA arts. 194, 195, 200; PITA arts. 37, 38, 46); the EU/EEA dividend and interest-royalty exemptions; treaty relief (DOPK arts. 135 to 142, the EUR 255,645.94 threshold); the foreign tax credit; CFC rules; and company exit tax (CITA arts. 155 to 155g). Trigger phrases: non-resident Bulgaria, Bulgarian withholding tax, SIDDO, PE Bulgaria, exit tax Bulgaria. Out of scope: rates and returns (bulgaria-income-tax, bg-corporate-income-tax), payroll (bulgaria-payroll), social contributions (bulgaria-social-contributions), VAT (bulgaria-vat-return)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria cross-border tax: residence, non-residents, withholding, treaties and exit (2026)
@@ -200,3 +201,23 @@ expected:
 | NRA, list of double tax treaties | https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/spisak-sas-spogodbi | 2026-10-23 |
 
 Not yet confirmed: treaty rates for any treaty (the NRA treaty texts are PDFs this session could not read, so no treaty rate is given); the current statutory interest rate on late tax after the euro changeover (the interest law refers to "законна лихва", whose rate is set outside that law); the withholding or advance-tax mechanics for fees a non-resident individual earns for services physically performed in Bulgaria that are not on the PITA art. 37 list; whether a split-year rule applies to an individual who arrives or leaves mid-year (PITA art. 4 states none); whether the Russia treaty is applied in practice (it is still on the NRA list); the instalment allocation formula in CITA art. 155г(4), which lex.bg shows without the formula itself.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

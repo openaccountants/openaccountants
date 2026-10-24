@@ -2,11 +2,11 @@
 name: tax-research-with-your-ai-how-to-do-it-defensibly
 description: The method for researching any tax question with the AI you already use, so the answer is citable and reviewable, not just plausible.
 jurisdiction: general
-category: cross-border
 tax_year: 2025
-last_updated: 2026-10-21
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -146,6 +146,8 @@ this to a named professional from inside your AI.
 
 - The method and its test results: https://www.openaccountants.com/blog/confidently-wrong-beautifully-formatted
 - Add Open Accountants to your AI: https://www.openaccountants.com/connect
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

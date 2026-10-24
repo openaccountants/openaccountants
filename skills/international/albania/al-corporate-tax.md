@@ -1,13 +1,16 @@
 ---
 name: al-corporate-tax
 description: "Albanian corporate income tax (tatimi mbi të ardhurat e korporatave, often called tatimi mbi fitimin) for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' as amended to Law No. 81/2025. Covers resident companies and permanent establishments of foreign companies: the 15% rate, the 8% dividend rate, the 0% rate for entities with gross income up to ALL 14 million until 2029, the 5% sector rates, the taxable base, 30% EBITDA interest limit, depreciation rates, participation exemption, five-year loss carry-forward, quarterly advance payments, the 31 March annual return, penalties under the tax procedures law, withholding at 8% and 15%, and exit tax. Trigger on 'Albania corporate tax', 'tatimi mbi fitimin', 'Albanian profit tax', 'SHPK tax Albania', '15% Albania', 'parapagime', 'withholding tax Albania dividends'. Out of scope: individuals and sole traders (albania-income-tax), VAT (albania-vat), payroll (albania-payroll), social contributions (albania-social-contributions), planning (albania-tax-optimization)."
-jurisdiction: AL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: AL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Albania corporate income tax, tax year 2026
@@ -250,3 +253,23 @@ expected:
 | Official Publications Centre, Law 29/2023 entry | https://qbz.gov.al/eli/ligj/2023/03/30/29 | 2026-10-22: page loads only a script shell and could not be read; not relied on for any figure |
 
 Not yet confirmed: the payment date for the final balance of corporate income tax for resident entities (Law 29/2023 art. 61 sets only the return date); the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); the Bank of Albania 12-month average lending rate that caps deductible interest under art. 50(1)(dh); treatment of tax losses from 2023 and earlier; Albania's position on Pillar Two beyond the absence of rules in Law 29/2023; the official name of the annual corporate return form on e-Filing.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

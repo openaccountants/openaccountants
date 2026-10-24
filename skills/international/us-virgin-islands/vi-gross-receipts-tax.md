@@ -2,13 +2,16 @@
 name: vi-gross-receipts-tax
 description: >
   US Virgin Islands gross receipts tax reference using the August 2026 monthly return and the currently linked annual return. Covers the receipts base, five-percent rate, monthly exemption calculation, filing categories, deadlines, sole-proprietor consolidation, zero returns and documented government withholding. Includes examples showing why the monthly exemption is not an annual pooled deduction. Explicitly distinguishes the annual-filing boundary from the exemption wording at exactly 225,000 dollars. Uses official BIR forms while leaving the complete statutory amendment audit outstanding. Does not establish incentives, nexus, special-sector exemptions or the right to charge customers a separate tax. Independent accountant review remains pending.
-jurisdiction: VI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: VI
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # US Virgin Islands: gross receipts tax
@@ -59,3 +62,23 @@ The current form separately deducts upfront gross receipts tax withheld by the V
 ## Open questions
 
 This draft does not establish nexus for remote sellers or contractors, special-sector exclusions, EDC or other incentive eligibility, reimbursement/pass-through treatment, authority to show tax separately on customer invoices, or the complete statute. The annual PDF is dated September 2013 despite still being linked by BIR. Its current application and the statutory amendment chain need independent review. Checked 22 October 2026; no complete-territory or accountant-attestation claim.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

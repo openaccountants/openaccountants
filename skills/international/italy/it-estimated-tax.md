@@ -7,8 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -405,6 +403,8 @@ This Guide and its outputs are provided for informational and computational purp
 The most up-to-date version of this Guide is maintained at openaccountants.com.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

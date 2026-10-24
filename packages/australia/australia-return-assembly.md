@@ -1,10 +1,10 @@
 ---
 name: au-return-assembly
 description: Final orchestrator skill that assembles the complete Australian filing package for Australian-resident sole traders. Consumes outputs from all Australian content skills (australia-gst for BAS, au-individual-return for ITR, au-super-guarantee for voluntary contributions, au-medicare-levy for levy and surcharge, au-payg-instalments for instalment schedule) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Australian content skills listed above. Australian full-year residents only. Sole traders only.
-version: 0.4
+version: 0.5
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-10-21
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -16,9 +16,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Return Assembly
 
-## Australia Return Assembly Skill v0.4
+## Australia Return Assembly Skill v0.5
 
-Australia Return Assembly Skill v0.4
+Australia Return Assembly Skill v0.5
 
 ## CRITICAL EXECUTION DIRECTIVE -- READ FIRST
 
@@ -298,6 +298,48 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 - **R-AU-5: Missing schedule** — If rental, CGT, foreign income or another required schedule is outside scope, record it and obtain a reviewer-completed schedule. Continue unaffected working papers, but withhold final taxable-income, tax, refund and payable figures until all required amounts are included.  _(Section 5 -- Refusals)_
 
 ## Section 6 -- Self-checks
+
+### Pre-lodgement check register
+
+Include a check register in the reviewer brief, separate from the issue list. Record every AU1-AU12
+check and each applicable income source or schedule identified at intake, including one that could
+not be performed. A blank cell, missing document or absent upstream output is not a passed check.
+
+| Check and scope | Coverage | Evidence / method / date | Result and amount affected | Missing input / next action / owner |
+| --- | --- | --- | --- | --- |
+| AU reference, income source or required schedule | Performed / not performed / not applicable | Exact file or upstream output, year, reconciliation or recalculation performed | Supported / exception / unresolved; use unknown where an amount is not established | Evidence needed and reviewer responsible |
+
+- **Performed** requires an identified procedure and actual evidence. State any sample boundary.
+  A tool call that failed, a supplied checklist tick or a general statement that the books reconcile
+  does not establish completion of the underlying check.
+- **Not performed** includes inaccessible reports, missing upstream outputs and checks outside the
+  available workflow. State the limitation and what would complete the check. Continue unaffected
+  working papers subject to the existing completion gate.
+- **Not applicable** requires a reason tied to the taxpayer's established facts. An unanswered
+  intake question does not establish that an income source or schedule is absent.
+- Keep coverage separate from findings and their disposition. A performed check can produce an
+  unresolved exception; a low priority issue can still affect a mandatory amount. Risk scores,
+  materiality screens and the absence of detected anomalies are review aids, never lodgement
+  clearance or evidence of income completeness.
+- Reconcile the intake inventory of income sources to the included schedules, ledger, prior-year
+  return and relevant third-party statements. Use each source only for the coverage it provides.
+  Do not assert that all taxable income is included when the necessary records were not supplied.
+- Aggregate unresolved items, unavailable checks and reviewer decisions in the final brief. Claims
+  such as 'recalculated', 'verified' or 'complete' must match the work actually performed. The
+  reviewer determines readiness; no automated rating grants authority to lodge.
+
+This register applies the existing completion gate: failed calculation checks, unsupported years,
+unexplained reconciliation differences and missing taxable items or required schedules block final
+taxable-income, tax, refund and payable figures. It does not replace a registered tax agent's review.
+
+**Fabricated acceptance cases:**
+
+1. Intake identifies a rental property, but no rental schedule was supplied. Record 'not performed',
+   request the reviewer-completed schedule and withhold final totals, even if all other checks pass
+   and the issue screen labels the case 'low risk'. Deliver the unaffected working papers as incomplete.
+2. PAYG credits have been copied from a ledger without ATO statements. Record the copied amount as
+   unverified and the reconciliation as 'not performed'. Do not say 'credits confirmed' or treat an
+   empty exception list as evidence that the return is ready to lodge.
 
 - **Check AU1 -- All upstream skills executed** — australia-gst, au-individual-return, au-super-guarantee, au-medicare-levy all produced output. au-payg-instalments produced output or was computed from ITR figures.  _(Section 6 -- Self-checks)_
 - **Check AU2** — The BAS-to-income bridge explains GST treatment, timing, capital and other adjustments; any unexplained difference blocks final totals.  _(Section 6 -- Self-checks)_

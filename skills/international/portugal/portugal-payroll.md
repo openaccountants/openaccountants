@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-source_checked: 2026-10-17
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -403,6 +402,8 @@ Cada pagamento tem o IRS calculado independentemente utilizando a mesma taxa de 
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por profissional qualificado antes da entrega ou de qualquer atuação com base nos mesmos.
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

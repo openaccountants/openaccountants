@@ -3,12 +3,12 @@ name: pl-income-tax
 description: "Polish personal income tax (PIT) for individuals and the self-employed for tax year 2026. Covers residence, the three tax forms for a sole trader (the 12% and 32% scale with the PLN 30,000 tax-free amount and PLN 120,000 threshold; the 19% flat tax with the PLN 14,100 health deduction limit; ryczałt on revenue at 2% to 17% with the 2026 eligibility limit of EUR 2 million, PLN 8,517,200), the 4% solidarity levy above PLN 1 million, IP Box at 5%, joint filing for spouses and single parents, the main reliefs (child relief, the PLN 85,528 reliefs, losses), the PIT-36, PIT-36L, PIT-28 and PIT-37 returns due 30 April 2027, and monthly or quarterly advances. Trigger on: PIT 2026, skala podatkowa, podatek liniowy, ryczałt, danina solidarnościowa, wspólne rozliczenie, zaliczki PIT, PIT-36. Out of scope: ZUS in pl-zus-contributions; employee withholding in pl-payroll; mandate contracts in pl-civil-law-contracts; non-residents and foreign income in pl-cross-border; shares, crypto and property gains in pl-capital-gains."
 version: 2.1
 jurisdiction: PL
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -169,3 +169,23 @@ expected:
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16, 16a, 48, 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
 
 Not yet confirmed: the podatki.gov.pl limits page prints the 1 October 2025 EUR rate as 4.2846 (the 2024 rate) while its PLN 851,720 figure uses 4.2586, the NBP rate; the PLN 8,517,200 ryczałt limit is computed here from the NBP rate, not published by the Ministry. PIT Act art. 24a ust. 1e (as reworded by Dz.U. 2026 poz. 779 from 1 July 2026) requires the KPiR and fixed-asset register to be kept with software and sent to the tax office by the return deadline; the first tax year it applies to was not found in the transitional provisions, so it is left out of the deadlines table. The ryczałt rate list above names the main groups only; the full lists in Ryczałt Act art. 12 decide each activity. The art. 27 ust. 8 and 9 treaty methods and art. 44 ust. 7a conditions were taken from the article headings and not worked through in an example.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

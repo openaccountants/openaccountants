@@ -1,13 +1,16 @@
 ---
 name: nl-box2-substantial-interest
 description: "Dutch box 2 (aanmerkelijk belang) for tax year 2026: income tax on a resident individual's substantial interest of 5% or more in a company. Covers who has a substantial interest (the 5% test with a fiscal partner, the family pull-in rule or meetrekregeling), regular benefits such as dividends, disposal benefits from a sale and deemed disposals (emigration, death, liquidation, falling below 5%), the acquisition price, the 2026 rates of 24.5% up to EUR 68,843 and 31% above, splitting box 2 income between fiscal partners, loss relief and the loss tax credit, the EUR 500,000 excessive borrowing rule, roll-overs and payment deferral, and the combined burden with corporate tax. Trigger on: box 2, aanmerkelijk belang, DGA dividend, verkoop aandelen bv, excessief lenen, ab-verlies. Out of scope: box 1 and box 3 (nl-income-tax), DGA salary (nl-payroll-tax), the BV's own tax (nl-corporate-tax), emigration detail (nl-cross-border)."
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands: box 2, income from a substantial interest (2026) v0.1
@@ -255,3 +258,23 @@ expected:
 | Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
 Not yet confirmed: the exact filing deadline for the 2026 income tax return (the pages read say "usually 1 May" and point to the invitation letter); how far art. 25(9) Invorderingswet deferral reaches when only part of the price is left owing. The Wet IB 2001 version read is valid from 1 January to 20 February 2026; the version in force from 21 February 2026 was compared for arts. 2.12, 4.6, 4.14a, 4.49 and 4.53 and has the same text, apart from a notice of amendments to arts. 2.12 and 4.53 that have no commencement date yet.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

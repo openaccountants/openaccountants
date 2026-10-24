@@ -3,12 +3,12 @@ name: hu-social-contributions
 description: "Hungarian social contributions for the self-employed, tax year 2026. Covers the 18.5% social security contribution (társadalombiztosítási járulék, TB), split 54% pension, 37.9% health and 8.1% labour market, and the 13% social contribution tax (szociális hozzájárulási adó, szocho) a sole trader (egyéni vállalkozó) pays on themself: the base for the real-cost regime (the draw) and for flat-rate taxation (the cumulative quarterly method), the monthly floor of the 2026 minimum wage HUF 322,800 or guaranteed minimum wage HUF 373,200, who escapes the floor (36-hour job, student, pensioner), the family contribution allowance, szocho on the business dividend base up to HUF 7,747,200, KATA, company members (társas vállalkozó), the HUF 12,300 health service contribution and the quarterly 2658 return. Trigger phrases: TB járulék egyéni vállalkozó, szocho egyéni vállalkozó, minimum járulékalap, göngyölítés, 58-as bevallás, Hungarian self-employed contributions. Out of scope: hu-payroll (employees), hu-income-tax (szja), hu-cross-border."
 version: 2.1
 jurisdiction: HU
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -208,3 +208,23 @@ expected:
 | MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
 Not yet confirmed: NAV information sheet 12 on company members (társas vállalkozó) was not read, so their part-month, multiple-company and suspension rules are left out; voluntary pension top-ups and agreements for extra insurance (megállapodás) are not covered.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

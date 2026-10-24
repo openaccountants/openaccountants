@@ -1,13 +1,16 @@
 ---
 name: dk-social-contributions
 description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, dk-vat-return. Payroll withholding of A-skat is not covered."
-jurisdiction: DK
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: DK
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Denmark: social contributions (AM-bidrag, ATP and employer contributions) v0.1
@@ -230,3 +233,23 @@ expected:
 | lifeindenmark.borger.dk, social security cover when working abroad | https://lifeindenmark.borger.dk/working/social-security-cover | 2026-10-23 |
 
 Not yet confirmed: whether an A1 from another country removes Danish AM-bidrag, rather than only giving a deduction for foreign contributions, was not settled from an official source. Whether Samlet Betaling charges exactly a quarter of the yearly AES amount each quarter on the ATP-based full-time count was not stated on the pages read, so Example 1 shows AES as a yearly figure. How AUB counts "every 50th employee" when the full-time count is a fraction was not read. The SMV payment date rests on Opkrævningsloven § 2, stk. 5 as consolidated in 2024; skat.dk does not publish the 2026 SMV table on the page read. The Samlet Betaling late interest rate from 1 July 2026 was not published on the page read. The commencement order for the 0.85-point addition under lov nr. 1694/2024, § 18, stk. 2 was not located; Den juridiske vejledning 2026-2 applies it. The monthly a-kasse admin fee charged by each a-kasse and work accident insurance premiums were not read.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
