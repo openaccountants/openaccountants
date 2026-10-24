@@ -1,6 +1,6 @@
 ---
 name: uk-vat-return
-description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates and exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000 on the rolling 12-month and 30-day tests, deregistration at GBP 88,000, Making Tax Digital, the nine boxes of the return, the deadline of one month and 7 days, the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction (CIS), penalty points, late payment penalties, interest at base rate plus 4%, and a partial exemption pointer. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (close-the-uk-vat-quarter-from-xero, xero-uk-vat-close), EU goods sellers (gb-vat-eu-goods-sellers)."
+description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates, exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000, deregistration at GBP 88,000, Making Tax Digital, the nine boxes, the deadline, blocked input tax (cars, business entertainment), mobile phones, bad debt relief, the Capital Goods Scheme (GBP 600,000 from 29 July 2026), the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction, penalty points, late payment penalties and interest. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, input tax, bad debt relief, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (close-the-uk-vat-quarter-from-xero, xero-uk-vat-close), EU goods sellers (gb-vat-eu-goods-sellers)."
 version: 2.1
 jurisdiction: GB
 category: international
@@ -46,7 +46,7 @@ This skill is the method and the figures. It links to the other UK VAT skills an
 | Reduced rate, Schedule 7A supplies (s 29A), for example home energy other than GB domestic electricity, children's car seats | 5% | in force | https://www.legislation.gov.uk/ukpga/1994/23/section/29A |
 | Zero rate (Schedule 8), for example most food, children's clothes, books, exports of goods | 0% | in force | https://www.gov.uk/vat-rates |
 | Domestic electricity in England, Wales and Scotland (new Sch 8 Group 24; at least 60% qualifying use means the whole supply qualifies; up to 1,000 kWh a month is deemed domestic) | 0% | 1 October 2026 to 31 March 2027 (SI 2026/987) | https://www.legislation.gov.uk/uksi/2026/987/made |
-| Children's meals eaten on the premises, children's and family admissions to shows, attractions and museums (temporary Sch 7A Groups 17 and 18) | 5% | 25 June 2026 to 1 September 2026 only; ended (SI 2026/576) | https://www.legislation.gov.uk/uksi/2026/576/made |
+| Children's meals eaten on the premises; child and family admissions to shows, exhibitions, theatres, concerts and cinemas; admissions to circuses, fairs, amusement and adventure parks, soft-play centres, zoos, observation and farm attractions, nature reserves and museums (temporary Sch 7A Groups 17 and 18) | 5% | 25 June 2026 to 1 September 2026 only; ended (SI 2026/576 arts 2 to 4) | https://www.legislation.gov.uk/uksi/2026/576/made |
 | Registration threshold, 12-month and 30-day tests (Sch 1 para 1) | GBP 90,000 | 1 April 2024 (SI 2024/307); unchanged since | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 |
 | Deregistration and temporary-excess limit (Sch 1 paras 1(3) and 4) | GBP 88,000 | 1 April 2024 (SI 2024/307); unchanged since | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/4 |
 | Flat Rate Scheme: join | Expected VAT taxable turnover GBP 150,000 or less (excluding VAT) in the next 12 months | in force | https://www.gov.uk/vat-flat-rate-scheme/who-can-join |
@@ -56,6 +56,14 @@ This skill is the method and the figures. It links to the other UK VAT skills an
 | Cash accounting: join / must leave | GBP 1.35 million or less expected / over GBP 1.6 million | in force | https://www.gov.uk/vat-cash-accounting-scheme/eligibility |
 | Annual accounting: join / must leave | GBP 1.35 million or less expected / over GBP 1.6 million | in force | https://www.gov.uk/vat-annual-accounting-scheme/eligibility |
 | Partial exemption de minimis | Exempt input tax not more than GBP 625 a month on average and not more than half of all input tax | in force | https://www.gov.uk/guidance/partial-exemption-vat-notice-706 |
+| Input tax on buying a car (VAT (Input Tax) Order 1992 art 7(1), (2), (2E) to (2G)) | 100% blocked, unless intended for exclusive business use with no private availability, or primarily for taxi, self-drive hire or driving instruction | in force (unchanged on 24 Oct 2026) | https://www.legislation.gov.uk/uksi/1992/3222/article/7 |
+| Input tax on leasing or hiring a car that does not meet those conditions (art 7(2H)) | 50% blocked | in force | https://www.legislation.gov.uk/uksi/1992/3222/article/7 |
+| Business entertainment (Input Tax Order art 5) | 100% blocked, except reasonable entertainment of overseas customers | in force | https://www.legislation.gov.uk/uksi/1992/3222/article/5 |
+| Bad debt relief (VATA 1994 s 36; VAT Regs 1995 regs 165A and 172(1A)) | Debt written off at least 6 months after the later of supply and due date; claim within 4 years and 6 months | in force | https://www.legislation.gov.uk/ukpga/1994/23/section/36 |
+| Customer's input tax on supplies unpaid 6 months after the later of supply and due date (VATA 1994 s 26A) | Repay to HMRC | in force | https://www.legislation.gov.uk/ukpga/1994/23/section/26A |
+| Capital Goods Scheme: land, buildings, civil engineering works (VAT Regs 1995 regs 113(4)(a), 114(3)(a)) | VAT-bearing capital expenditure of GBP 600,000 or more; adjusted over 10 intervals | 29 July 2026 (SI 2026/765); GBP 250,000 where any relevant expenditure on the item was incurred before 29 July 2026 | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 |
+| Capital Goods Scheme: aircraft, ships, boats and other vessels (regs 113(4)(b), 114(3)(b)) | GBP 50,000 or more; adjusted over 5 intervals | in force | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 |
+| Capital Goods Scheme: computers (previously GBP 50,000 or more, 5 intervals) | Removed from the scheme | 29 July 2026 (SI 2026/765 reg 2(2)(a)); items with any relevant expenditure before that date stay in | https://www.legislation.gov.uk/uksi/2026/765/made |
 | Late submission penalty (FA 2021 Sch 24) | GBP 200 at the points threshold: annual 2, quarterly 4, monthly 5 points | periods starting on or after 1 January 2023 | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late |
 | Late payment penalties (FA 2021 Sch 26 paras 5 and 8) | 3% of VAT unpaid at day 15, plus 3% of VAT unpaid at day 30, plus 10% a year from day 31 | VAT periods starting on or after 1 April 2025 (SI 2025/589); earlier periods 2%, 2%, 4% | https://www.legislation.gov.uk/ukpga/2021/26/schedule/26 |
 | Late payment interest | Bank of England base rate plus 4%: 7.75% (base rate 3.75%) | plus 4% since 6 April 2025; 7.75% since 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
@@ -68,6 +76,29 @@ Exempt supplies carry no VAT and give no right to reclaim VAT on related costs. 
 **Output VAT (box 1).** VAT on every taxable supply in the period at its rate. Also: postponed import VAT, reverse charge VAT, fuel scale charges, goods taken for private use, gifts of goods costing more than GBP 50 excluding VAT, sales of business assets. Deduct VAT on credit notes you issue ([VAT Notice 700/12, 3.2](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012)).
 
 **Input VAT (box 4).** VAT on purchases used for taxable business supplies, backed by a proper VAT invoice (or import VAT certificate). Also: reverse charge VAT, postponed import VAT, bad debt relief. Never: VAT on goods wholly for personal use, business entertainment, margin scheme purchases. A partly exempt business recovers only under the partial exemption rules ([VAT Notice 700/12, 3.5](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012)).
+
+**Blocked and restricted input tax.**
+
+| Item | Treatment |
+|---|---|
+| Goods and services not used for the business | Not input tax. Apportion mixed-use costs on a fair and reasonable basis |
+| Buying a car | Blocked ([Input Tax Order art 7(1)](https://www.legislation.gov.uk/uksi/1992/3222/article/7)) unless you intend to use it exclusively for the business, or primarily to hire out with a driver (taxi), for self-drive hire or for driving instruction (art 7(2E), (2F)). "Exclusively" fails if the car is available to anyone, including the owner or a partner, for private use (art 7(2G)). Vehicles outside the art 2 definition of "motor car" (for example a vehicle with a payload of one tonne or more, or one with 12 or more seats) follow the normal rules |
+| Leasing or hiring a car | Where the purchase block would apply, 50% of the VAT on the hire charge is blocked (art 7(2H)). If the car qualifies (exclusive business use, or primarily taxi, self-drive hire or instruction), all of it is input tax. HMRC accept the 50% block does not apply to a car hired for no more than 10 days specifically for business use where you do not have a company car; it does apply from day 1 to a car replacing an off-road company car ([VAT Notice 700/64, 4.4](https://www.gov.uk/guidance/vat-on-motoring-expenses-notice-70064)) |
+| Road fuel with private use | Four options: claim all and apply the fuel scale charge, keep detailed mileage records and claim the business share, claim all only where there is no private use, or claim nothing (VAT Notice 700/64, 9.1) |
+| Business entertainment | Blocked ([Input Tax Order art 5](https://www.legislation.gov.uk/uksi/1992/3222/article/5)), except entertainment of an overseas customer that is reasonable in scale and character. Even then a private benefit to the guest brings an output tax charge that cancels the recovery ([VAT Notice 700/65, 2.6](https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065)). Staff entertainment (parties, outings) is input tax and not blocked. Entertaining only directors or partners is not input tax at all (Notice 700/65, 3.2) |
+| Mobile phones provided to employees | VAT on buying or leasing the phone and on line rental is input tax even if private use is allowed. Call packages: all VAT if private use is banned and the ban is enforced; otherwise apportion, or charge the employee and account for output tax. A contract taken out by the employee gives the business no input tax ([VAT Notice 700, 12.3](https://www.gov.uk/guidance/vat-guide-notice-700)) |
+| Costs of exempt supplies | Not recoverable, subject to the partial exemption de minimis test |
+
+**Bad debt relief** ([VATA 1994 s 36](https://www.legislation.gov.uk/ukpga/1994/23/section/36); [VAT Regulations 1995 Part XIX](https://www.legislation.gov.uk/uksi/1995/2518/part/XIX); [VAT Notice 700/18](https://www.gov.uk/guidance/relief-from-vat-on-bad-debts-notice-70018)). A supplier can reclaim the output VAT on an unpaid debt if:
+
+- it accounted for and paid the VAT on the supply (s 36(1)(a));
+- the debt is written off in its accounts and entered in a separate refunds-for-bad-debts account, no earlier than 6 months after the payment fell due (reg 172(1A)), and at least 6 months have passed since the date of supply (s 36(1)(c));
+- the price was not more than the open market value (s 36(4)(a));
+- the debt has not been sold or factored under an absolute assignment (Notice 700/18, 3.12).
+
+Claim the VAT in box 4 of the return for the period in which the conditions are first met, or a later one (reg 166), within 4 years and 6 months of the later of the due date and the date of supply (reg 165A). If the customer later pays, put the VAT element of the payment in box 1 for that period (Notice 700/18, 3.14). The customer's side: input tax claimed on a supply still unpaid 6 months after the later of the supply date and the due date must be repaid to HMRC ([VATA 1994 s 26A](https://www.legislation.gov.uk/ukpga/1994/23/section/26A)), subject to the insolvency rule in s 26AA.
+
+**Capital Goods Scheme, summary** ([VAT Regulations 1995 Part XV](https://www.legislation.gov.uk/uksi/1995/2518/part/XV); [VAT Notice 706/2](https://www.gov.uk/guidance/capital-goods-scheme-notice-7062)). The VAT recovered on a capital item is adjusted over its period of adjustment if taxable use changes. Capital items: land, buildings and civil engineering works with VAT-bearing capital expenditure of GBP 600,000 or more (10 intervals), and aircraft and ships, boats or other vessels of GBP 50,000 or more (5 intervals) (regs 113 and 114). From 29 July 2026 computers are no longer capital items and the land and buildings limit rose from GBP 250,000 to GBP 600,000. Neither change applies to an item if the owner incurred any relevant expenditure on it before 29 July 2026, so those items stay in the scheme under the old rules ([SI 2026/765 regs 1(3) and 2](https://www.legislation.gov.uk/uksi/2026/765/made)). The adjustments interact with partial exemption: refer anyone with a capital item and changing exempt use.
 
 **The nine boxes** ([VAT Notice 700/12, section 3](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012)):
 
@@ -169,7 +200,7 @@ expected:
   box7: 21000
 ```
 
-**Example 2: paying 51 days late.** A company files its return for the quarter to 30 September 2026 on time, showing GBP 15,000 to pay by 7 November 2026. It pays nothing until 28 December 2026, day 51, and never asked for Time to Pay. The period started after 1 April 2025, so the 2025 percentages apply. First penalty: 3% of GBP 15,000 at day 15 plus 3% at day 30, GBP 900. Second penalty: 10% a year for 21 days (day 31 to day 51), GBP 86.30. Interest at 7.75% for 51 days: GBP 162.43. This assumes base rate stays at 3.75% to 28 December; if it changes on 5 November, split the interest at the change date. Total cost GBP 1,148.73 on top of the VAT. A Time to Pay request by day 15 would have stopped both penalties.
+**Example 2: paying 51 days late.** A company files its return for the quarter to 30 September 2026 on time, showing GBP 15,000 to pay by 7 November 2026. It pays nothing until 28 December 2026, day 51, and never asked for Time to Pay. The period started on or after 1 April 2025, so the 3%, 3% and 10% percentages apply. First penalty: 3% of GBP 15,000 at day 15 plus 3% at day 30, GBP 900. Second penalty: 10% a year for 21 days (day 31 to day 51), GBP 86.30. Interest at 7.75% for 51 days: GBP 162.43. This assumes base rate stays at 3.75% to 28 December; if the Bank of England changes it (next decision 5 November 2026), split the interest at the date HMRC's rate changes. Total cost GBP 1,148.73 on top of the VAT. A Time to Pay request by day 15 would have stopped both penalties.
 
 ```oa-check
 name: GBP 15,000 VAT paid 51 days late, interest at 7.75%
@@ -198,7 +229,7 @@ expected:
 1. Are you VAT registered? From what date, on which return periods, and under which schemes (Flat Rate, cash, annual)? If not: your taxable turnover month by month for the last 12 months, and any single 30 days ahead that could go over GBP 90,000.
 2. What do you sell, to whom (UK or abroad, business or consumer), and at which rates? Any exempt income (rents, insurance, financial services)? If yes, partial exemption applies.
 3. Do you buy services from suppliers outside the UK, or construction services within CIS?
-4. Do you hold VAT invoices for everything you reclaim? Any cars, fuel, entertaining or mixed-use costs?
+4. Do you hold VAT invoices for everything you reclaim? Any cars, fuel, entertaining, mobile phones or mixed-use costs? Any customer debts unpaid 6 months after they fell due? Any land or building spend of GBP 600,000 or more (or GBP 250,000 or more begun before 29 July 2026)?
 5. Which MTD software do you use, and are all links digital?
 6. Any late returns, penalty points, unpaid VAT, Time to Pay arrangement or errors in earlier returns?
 
@@ -236,6 +267,17 @@ expected:
 | HMRC, VAT Notice 741A (place of supply of services) | https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-10-24 |
 | HMRC, VAT Notice 706 (partial exemption) | https://www.gov.uk/guidance/partial-exemption-vat-notice-706 | 2026-10-24 |
 | HMRC, VAT Notice 700/45 (correcting errors) | https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045 | 2026-10-24 |
+| VATA 1994 s 26A (customer repays input tax on unpaid supplies) | https://www.legislation.gov.uk/ukpga/1994/23/section/26A | 2026-10-24 |
+| VATA 1994 s 36 (bad debt relief) | https://www.legislation.gov.uk/ukpga/1994/23/section/36 | 2026-10-24 |
+| VAT Regulations 1995 Part XIX, regs 165A, 166 and 172(1A) (bad debt relief claims) | https://www.legislation.gov.uk/uksi/1995/2518/part/XIX | 2026-10-24 |
+| VAT Regulations 1995 Part XV, regs 113 and 114 (Capital Goods Scheme, as amended from 29 July 2026) | https://www.legislation.gov.uk/uksi/1995/2518/part/XV | 2026-10-24 |
+| VAT (Amendment) Regulations 2026, SI 2026/765 (Capital Goods Scheme changes) | https://www.legislation.gov.uk/uksi/2026/765/made | 2026-10-24 |
+| VAT (Input Tax) Order 1992, SI 1992/3222, arts 2, 5 and 7 (motor car, business entertainment, cars) | https://www.legislation.gov.uk/uksi/1992/3222/article/7 | 2026-10-24 |
+| HMRC, VAT Notice 700, section 12.3 (mobile phones; updated 25 June 2026) | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-10-24 |
+| HMRC, VAT Notice 700/64 (motoring expenses), 4.4 and 9.1 | https://www.gov.uk/guidance/vat-on-motoring-expenses-notice-70064 | 2026-10-24 |
+| HMRC, VAT Notice 700/65 (business entertainment), 2.6 and 3.2 | https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065 | 2026-10-24 |
+| HMRC, VAT Notice 700/18 (bad debt relief), 3.12 and 3.14 | https://www.gov.uk/guidance/relief-from-vat-on-bad-debts-notice-70018 | 2026-10-24 |
+| HMRC, VAT Notice 706/2 (Capital Goods Scheme; updated 29 July 2026) | https://www.gov.uk/guidance/capital-goods-scheme-notice-7062 | 2026-10-24 |
 
 Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes.
 
