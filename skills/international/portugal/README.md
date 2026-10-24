@@ -17,7 +17,7 @@ Calendar tax year for individuals; companies use the calendar year unless they a
 | IT-CORP, corporate income tax | pt-corporate-tax | source-cited draft |
 | VAT | portugal-vat-return (tax year 2026: mainland, Azores and Madeira rates, art. 53 exemption EUR 15,000, monthly or quarterly returns, deadlines, refunds, penalties); pt-vat-return points to it | source-cited draft |
 | SC, social contributions | pt-social-contributions (tax year 2026: self-employed 21.4% and 25.2%, relevant income 70%/20%, quarterly declaration, EUR 20 minimum, first 12 months, 4 x IAS and 12 x IAS on the 2026 IAS of EUR 537.13, contracting entities 10%/7%, employee 11% and employer 23.75%, MOE, deadlines, fines and interest); the payroll run inside portugal-payroll (tax year 2026) | source-cited draft |
-| PR, payroll withholding | portugal-payroll (tax year 2026) | source-cited draft |
+| PR, payroll withholding | portugal-payroll (tax year 2026: mainland, Azores and Madeira withholding tables, November 2026 cut, subsidies and twelfths, meal allowance, IRS Jovem, DMR and Social Security deadlines) | source-cited draft |
 | TP, transfer pricing | pt-transfer-pricing | source-cited draft |
 | XB, cross-border | pt-cross-border (residence, non-residents, exit tax, outbound withholding, tax year 2026); pt-foreign-source-treaties (foreign income of residents, foreign tax credit, tax year 2026); pt-nhr-ifici | source-cited draft |
 
