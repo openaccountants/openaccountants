@@ -1,12 +1,12 @@
 ---
 name: latvia-income-tax
-description: "Latvian personal income tax (IIN) for tax year 2026, for resident employees, self-employed people, pensioners and people with capital income. Covers the 25.5% and 33% bands with the threshold tied to the EUR 105,300 maximum social insurance base, the 3% surcharge above EUR 200,000, the fixed EUR 570 monthly non-taxable minimum, EUR 250 monthly dependant relief, the EUR 12,000 pensioner minimum, eligible expenses, capital income at 25.5%, business income and losses, the annual return (1 March to 1 June, or 1 April to 1 July), payment dates, penalties and 0.05% a day late interest. Trigger on: Latvia income tax, gada ienākumu deklarācija, neapliekamais minimums, Latvian capital gains tax, self-employed Latvia. Out of scope: payroll withholding (latvia-payroll), social contributions (latvia-social-contributions), non-residents (lv-cross-border), company tax (lv-corporate-income-tax), microenterprise planning (latvia-tax-optimization)."
+description: "Latvian personal income tax (IIN) for tax year 2026, for resident employees, self-employed people, pensioners and people with capital income. Covers the 25.5% and 33% bands with the threshold tied to the EUR 105,300 maximum social insurance base, the 3% surcharge above EUR 200,000, the fixed EUR 550 monthly non-taxable minimum, EUR 250 monthly dependant relief, the EUR 12,000 pensioner minimum, eligible expenses, capital income at 25.5%, business income and losses, the annual return (1 March to 1 June, or 1 April to 1 July), payment dates, penalties and 0.05% a day late interest. Trigger on: Latvia income tax, gada ienākumu deklarācija, neapliekamais minimums, Latvian capital gains tax, self-employed Latvia. Out of scope: payroll withholding (latvia-payroll), social contributions (latvia-social-contributions), non-residents (lv-cross-border), company tax (lv-corporate-income-tax), microenterprise planning (latvia-tax-optimization)."
 jurisdiction: LV
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -44,7 +44,7 @@ Related skills in this pack:
 | Maximum social insurance base, which is the band threshold | EUR 105,300 a year | 2026 | https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu (s. 14(5)) |
 | Monthly wage tax withheld by employer | 25.5% | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 15(3)) |
 | Surcharge on total income above EUR 200,000 | 3% | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 15.1) |
-| Non-taxable minimum, fixed | EUR 570 a month (EUR 6,840 a year) | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 12(1)) |
+| Non-taxable minimum, fixed | EUR 550 a month (EUR 6,600 a year). Section 12(1) says EUR 570, but transitional provision 197 sets EUR 550 for 2026 (EUR 510 for 2025); EUR 570 applies from 2027 | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 12(1); transitional provision 197(2)) |
 | Pensioner non-taxable minimum | EUR 12,000 a year | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 12(5)) |
 | Relief for each dependant | EUR 250 a month (EUR 3,000 a year) | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 13(1.2)) |
 | Eligible expenses (education, medical, health insurance, donations) | Up to 50% of taxable income, max EUR 600 (EUR 600 per family member for education and medical) | 2026 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (s. 10(1.3)) |
@@ -63,7 +63,7 @@ The non-taxable minimum is a fixed amount. The old income-tested "differentiated
 
 1. **Collect the annual income** taxed at the progressive rates: salary, business profit, pensions, rental income under the general regime, royalties, lottery wins over EUR 3,000 (s. 15(24)).
 2. **Deduct social contributions** paid by the person (s. 10(1)(1)) and the solidarity tax (s. 10(1)(1.1)). In the annual return, the deductible contributions are reduced by any part of the solidarity tax moved to the PIT account (s. 10(1.10)).
-3. **Deduct the non-taxable minimum** (EUR 6,840 for a full year, s. 12(1)), dependant relief (EUR 250 a month per dependant, s. 13(1.2)), disability and repressed-person reliefs (s. 13(1)(4)), and eligible expenses within the caps (s. 10).
+3. **Deduct the non-taxable minimum** (EUR 6,600 for a full year: EUR 550 a month, s. 12(1) and transitional provision 197(2)), dependant relief (EUR 250 a month per dependant, s. 13(1.2)), disability and repressed-person reliefs (s. 13(1)(4)), and eligible expenses within the caps (s. 10).
 4. **Tax the result.** The 33% band is tested on income before deductions. If annual income at the progressive rates (exempt income left out, s. 15(21)) exceeds EUR 105,300, all the step 2 and 3 deductions come off the part up to EUR 105,300 first, and only the rest comes off the excess (s. 3(2.4)). So tax = 25.5% x (EUR 105,300 less deductions) + 33% x (income over EUR 105,300). Deductions larger than EUR 105,300 save tax at 25.5% only (s. 15(15)). Employees have already had 25.5% withheld each month; the return settles the difference. See example 3.
 5. **Capital income is taxed separately** at 25.5% (s. 15(5)). A capital gain is the sale price less the purchase cost and later improvements. Losses on one asset offset gains on another in the same year. A net loss is not carried forward and does not offset other income (s. 11.9(9), (10)).
 6. **Dividends** are exempt when the company paid Latvian corporate income tax on the distributed profit, or a foreign company paid profit tax or had tax withheld on the dividend (s. 9(1)(2.1)). Dividends paid under the reduced CIT rate in CIT Law s. 4.2 are taxed at 6% instead (s. 9(3.9), s. 15(5.1)). See [lv-corporate-income-tax](lv-corporate-income-tax.md).
@@ -128,7 +128,7 @@ For residence, treaties, withholding on payments to non-residents and exit rules
 
 ## Worked examples
 
-**Example 1: employee with one child.** A resident employee earns EUR 30,000 gross salary in 2026 and supports one child under 18 all year. No other income and no eligible expenses. Employee social contributions are 10.5% of salary, EUR 3,150. Deduct those, the EUR 6,840 non-taxable minimum and EUR 3,000 dependant relief (EUR 250 x 12). Taxable income is EUR 17,010, all below EUR 105,300, so it is all taxed at 25.5%: tax EUR 4,337.55. If the employer applied the minimum and relief through the wage tax book each month, the withholding already matches and no return is required.
+**Example 1: employee with one child.** A resident employee earns EUR 30,000 gross salary in 2026 and supports one child under 18 all year. No other income and no eligible expenses. Employee social contributions are 10.5% of salary, EUR 3,150. Deduct those, the EUR 6,600 non-taxable minimum (EUR 550 x 12) and EUR 3,000 dependant relief (EUR 250 x 12). Taxable income is EUR 17,250, all below EUR 105,300, so it is all taxed at 25.5%: tax EUR 4,398.75. If the employer applied the minimum and relief through the wage tax book each month, the withholding already matches and no return is required.
 
 ```oa-check
 name: Employee EUR 30,000 salary, one dependant (2026)
@@ -138,19 +138,19 @@ inputs:
   dependants: 1
 steps:
   - vsaoi: salary * 0.105
-  - ntm: 570 * months
+  - ntm: 550 * months
   - dependant_relief: 250 * months * dependants
   - taxable: salary - vsaoi - ntm - dependant_relief
   - tax: taxable * 0.255
 expected:
   vsaoi: 3150
-  ntm: 6840
+  ntm: 6600
   dependant_relief: 3000
-  taxable: 17010
-  tax: 4337.55
+  taxable: 17250
+  tax: 4398.75
 ```
 
-**Example 2: salary plus a large share sale (surcharge).** A resident employee earns EUR 60,000 salary and sells shares in 2026 for a gain of EUR 250,000. No dependants. Salary: EUR 60,000 less 10.5% contributions (EUR 6,300) and the EUR 6,840 minimum leaves EUR 46,860, taxed at 25.5%: EUR 11,949.30. The gain is capital income at 25.5%: EUR 63,750. Total income for the surcharge is EUR 310,000 (salary plus gain, s. 15.1(2)). The excess over EUR 200,000 is EUR 110,000, so the 3% surcharge is EUR 3,300. Total tax is EUR 78,999.30. The surcharge base is the gross figures: contributions and the minimum are not taken off (s. 15.1(2)). The gain is declared in a quarterly capital gains return and its EUR 63,750 is paid by the 23rd of the month that return is filed (s. 19(5.3), (3.2)). The person must also file the annual return (s. 20(4)(2)). Income at the progressive rates is under EUR 105,300, so the window is 1 March to 1 June 2027 and the surcharge is paid by 23 June 2027 (s. 19(5), (3), (2.6)).
+**Example 2: salary plus a large share sale (surcharge).** A resident employee earns EUR 60,000 salary and sells shares in 2026 for a gain of EUR 250,000. No dependants. Salary: EUR 60,000 less 10.5% contributions (EUR 6,300) and the EUR 6,600 minimum leaves EUR 47,100, taxed at 25.5%: EUR 12,010.50. The gain is capital income at 25.5%: EUR 63,750. Total income for the surcharge is EUR 310,000 (salary plus gain, s. 15.1(2)). The excess over EUR 200,000 is EUR 110,000, so the 3% surcharge is EUR 3,300. Total tax is EUR 79,060.50. The surcharge base is the gross figures: contributions and the minimum are not taken off (s. 15.1(2)). The gain is declared in a quarterly capital gains return and its EUR 63,750 is paid by the 23rd of the month that return is filed (s. 19(5.3), (3.2)). The person must also file the annual return (s. 20(4)(2)). Income at the progressive rates is under EUR 105,300, so the window is 1 March to 1 June 2027 and the surcharge is paid by 23 June 2027 (s. 19(5), (3), (2.6)).
 
 ```oa-check
 name: Salary EUR 60,000 plus capital gain EUR 250,000, surcharge (2026)
@@ -159,7 +159,7 @@ inputs:
   gain: 250000
 steps:
   - vsaoi: salary * 0.105
-  - ntm: 570 * 12
+  - ntm: 550 * 12
   - prog_base: salary - vsaoi - ntm
   - prog_tax: prog_base * 0.255
   - gain_tax: gain * 0.255
@@ -168,11 +168,11 @@ steps:
   - total_tax: prog_tax + gain_tax + surcharge
 expected:
   vsaoi: 6300
-  prog_base: 46860
-  prog_tax: 11949.30
+  prog_base: 47100
+  prog_tax: 12010.50
   gain_tax: 63750
   surcharge: 3300
-  total_tax: 78999.30
+  total_tax: 79060.50
 ```
 
 **Example 3: high earner with deductions (band test).** A resident's income taxed at the progressive rates in 2026 is EUR 130,000. Their deductions under steps 2 and 3 (social contributions, the minimum, reliefs, eligible expenses) total EUR 20,000. Income exceeds EUR 105,300, so the deductions come off the 25.5% band (s. 3(2.4)): EUR 85,300 at 25.5% is EUR 21,751.50, and the EUR 24,700 excess at 33% is EUR 8,151. Tax is EUR 29,902.50. Deducting first and banding the EUR 110,000 result would give EUR 28,402.50, which is EUR 1,500 too low. This person files between 1 April and 1 July 2027 and pays by 23 July 2027 (s. 19(5), (3)).
