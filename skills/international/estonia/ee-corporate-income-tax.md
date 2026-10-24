@@ -1,6 +1,6 @@
 ---
 name: ee-corporate-income-tax
-description: "Estonian corporate income tax for tax year 2026 under the Income Tax Act (tulumaksuseadus) consolidated text in force from 1 October 2026. Estonia taxes a company only when it distributes profit: 22% of the gross amount, charged as 22/78 of the net payment. Covers dividends, capital reductions, share buybacks and liquidation, deemed distributions (fringe benefits, gifts and donations, entertainment, non-business expenses, loans to shareholders), the participation exemption, the 2025 abolition of the 14/86 rate and the 7% withholding on old 14% profit, the 18% quarterly advance tax for banks, exceeding borrowing costs, the cancelled 2026 rise to 24% and security tax, the monthly TSD return, interest and fines. Trigger on 'Estonia corporate tax', 'OÜ dividend tax', '22/78', 'distributed profit tax Estonia', 'TSD dividend', 'Estonian fringe benefit tax'. Out of scope: withholding on payments to non-residents and permanent establishments (ee-cross-border), transfer pricing (ee-transfer-pricing), individuals (estonia-income-tax), social tax (estonia-social-contributions), payroll (estonia-payroll), VAT (estonia-vat-return)."
+description: "Estonian corporate income tax for tax year 2026 under the Income Tax Act (tulumaksuseadus) consolidated text in force from 1 October 2026. Estonia taxes a company only when it distributes profit: 22% of the gross amount, charged as 22/78 of the net payment. Covers dividends, capital reductions, share buybacks and liquidation, deemed distributions (fringe benefits, gifts and donations, entertainment, non-business expenses, loans to shareholders), the participation exemption, the 2025 abolition of the 14/86 rate and the 7% withholding when 14/86-taxed dividends are passed on to individuals, the 18% quarterly advance tax for banks, exceeding borrowing costs, the cancelled 2026 rise to 24% and security tax, the monthly TSD return, interest and fines. Trigger on 'Estonia corporate tax', 'OÜ dividend tax', '22/78', 'distributed profit tax Estonia', 'TSD dividend', 'Estonian fringe benefit tax'. Out of scope: withholding on payments to non-residents and permanent establishments (ee-cross-border), transfer pricing (ee-transfer-pricing), individuals (estonia-income-tax), social tax (estonia-social-contributions), payroll (estonia-payroll), VAT (estonia-vat-return)."
 jurisdiction: EE
 category: international
 tax_year: 2026
@@ -39,16 +39,16 @@ See also: `ee-cross-border` (withholding on payments to non-residents, permanent
 | Income tax rate | 22% | 2026 | TuMS § 4(1), [riigiteataja.ee/akt/TuMS](https://www.riigiteataja.ee/akt/TuMS) |
 | Gross-up for distributions and deemed distributions | Taxable amount ÷ 0.78 × 22%, so 22/78 of the net amount | 2026 | TuMS § 4(1^1); [EMTA tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
 | Reduced 14/86 rate on regular dividends | Abolished from 1 January 2025 (former § 50^1 repealed) | 2025 onward | TuMS § 4(4) and § 50^1, repealed by RT I, 30.06.2023, 107; EMTA tax rates |
-| Withholding on a dividend to an individual paid out of profit taxed at 14/86 before 2025 | 7% | 2026 | TuMS § 61(68) |
-| Planned rise to 24% for 2026 | Cancelled; the rate stays 22% for companies and individuals | 2026 | [Ministry of Finance, 23.12.2025](https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused); [Government, 2026 budget](https://valitsus.ee/en/news/government-approved-2026-state-budget) |
-| Security tax (julgeolekumaks) on company profit | Repealed before it started; from 2026 company profit is not taxed "from the first euro" | 2026 | [Ministry of Finance, 18.06.2025](https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused) |
+| Withholding when a company passes on to an individual a dividend it received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1 | 7% | 2026 | TuMS § 61(68) |
+| Planned rise to 24% (and 0.78 to 0.76) from 1 January 2026 | Cancelled before it took effect; the rate stays 22% for companies and individuals | 2026 | Enacted by § 3 of the act of 18.06.2025 (RT I, 08.07.2025, 1); deleted by § 1 of the act of 03.12.2025 (RT I, 18.12.2025, 3); [Ministry of Finance, 23.12.2025](https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused) |
+| Security tax (julgeolekumaks) on company profit | Does not apply: the Security Tax Act (RT I, 02.01.2025, 2) was repealed before it took effect | 2026 | § 2 of the act of 18.06.2025 (RT I, 08.07.2025, 1); [Ministry of Finance, 18.06.2025](https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused) |
 | Participation exemption, minimum holding | 10% of shares or votes at the time the dividend is received | 2026 | TuMS § 50(1^1) points 1 and 3 |
 | Credit institution advance tax | 18% of the previous quarter's profit, no gross-up | 2026 | TuMS § 4(5), § 47^1 |
 | Advertising gifts | Exempt up to EUR 21 per item, excluding VAT | 2026 | TuMS § 49(1) |
 | Donations to listed associations | Exempt up to 3% of the year's payments subject to social tax, or 10% of last financial year's accounting profit (one limit, chosen by the company) | 2026 | TuMS § 49(2), (3) |
 | Entertaining guests and partners | Exempt up to EUR 50 a month plus 2% of that month's payments subject to social tax | 2026 | TuMS § 49(4) |
 | Employee health expenses | Exempt up to EUR 400 per employee a year, if offered to all employees | 2026 | TuMS § 48(5^5) |
-| Employee accommodation | Exempt up to EUR 500 a month in Tallinn or Tartu, EUR 250 elsewhere, if the home is at least 50 km away | 2026 | TuMS § 48(5^6) |
+| Employee accommodation | Exempt up to EUR 500 a month in Tallinn or Tartu, EUR 250 elsewhere, if the home is at least 50 km away and the employee owns no housing closer to work | 2026 | TuMS § 48(5^6) |
 | Company car available for private use | EUR 1.96 per kW a month; EUR 1.47 per kW if the car is older than five years | 2026 | TuMS § 48(8) |
 | Exceeding borrowing costs | Taxed above EUR 3,000,000 and 30% of EBITDA | 2026 | TuMS § 54^2(1) |
 | Late payment interest | 0.06% a day | 2026 | MKS § 117(1), [riigiteataja.ee/akt/MKS](https://www.riigiteataja.ee/akt/MKS) |
@@ -64,13 +64,13 @@ See also: `ee-cross-border` (withholding on payments to non-residents, permanent
 **Liquidation and deletion** (§ 50(2^2)). A company deleted from the register pays tax on the market value of its assets, including liquidation proceeds, above the contributions not yet repaid. This does not apply where the assets continue in another Estonian company or an Estonian permanent establishment.
 
 **The participation exemption** (§ 50(1^1)). No tax is due on a dividend paid out of:
-1. a dividend received from a company resident in an EEA state or Switzerland that is liable to income tax, if the company held at least 10% of its shares or votes when it received the dividend (point 1);
+1. a dividend received from a company resident in an EEA state (including Estonia) or Switzerland that is liable to income tax, if the company held at least 10% of its shares or votes when it received the dividend (point 1);
 2. profit of the company's own permanent establishment in an EEA state or Switzerland (point 2);
 3. a dividend from a company in any other state, on the same 10% test, if tax was withheld on the dividend or the underlying profit was taxed (point 3);
 4. profit of a permanent establishment elsewhere that was taxed (point 4);
 5. a few other sources already taxed: § 50(2^1) payments, fund income, a repaid loan taxed under § 50^2, CFC profit taxed under § 54^3, and assets taxed on exit under § 54^5 (points 5 to 9).
 
-Points 1 and 3 never apply to a company in a non-cooperative jurisdiction, and apply only if the paying company could not deduct the dividend (§ 50(1^3)). The same exemption carries through capital reductions and liquidation payments funded by exempt income (§ 50(2^1)). Dividends received up to 31 December 2024 that were taxed at 14/86 can still be passed on tax-free to a corporate shareholder, on the 10% test, but passing them to an individual triggers 7% withholding (EMTA tax rates; § 61(68)).
+Points 1 and 3 never apply to a company in a non-cooperative jurisdiction, and apply only if the paying company could not deduct the dividend (§ 50(1^3)). The same exemption carries through capital reductions and liquidation payments funded by exempt income (§ 50(2^1)). Dividends received up to 31 December 2024 that the paying subsidiary taxed at 14/86 can still be passed on tax-free under point 1 or 3, on the 10% test. Passed on to a corporate shareholder they carry no further tax; passed on to an individual, resident or not, the company withholds 7% (§ 61(68); EMTA tax rates). The 7% applies only to such received dividends. A company's own profit was taxed at 14/86 only when it was distributed before 2025, so its own retained pre-2025 profit paid out in 2026 is taxed at 22/78 like any other profit (§ 4(1), § 50(1)).
 
 **Fringe benefits** (§ 48). The employer pays income tax on any benefit in money's worth given to an employee, a board or council member, a contractor under a services contract, or a person selling goods to it for over six months (§ 48(3)). The list includes housing costs, private use of company property, non-statutory insurance premiums, loans below market rate (unless the interest is at least twice the rate last published under § 94(2) of the Law of Obligations Act), transfers below or purchases above market price, waived claims, and education not related to the job (§ 48(4)). Benefits to relatives of the employee, or from a group company, count too (§ 48(6)). Share options are not a benefit if the shares are acquired at least three years after grant (§ 48(5^3)). Social tax is also due on fringe benefits; see `estonia-social-contributions`.
 
@@ -78,7 +78,7 @@ Points 1 and 3 never apply to a company in a non-cooperative jurisdiction, and a
 
 **Entertaining guests and business partners** (§ 49(4), (5)). Meals, accommodation, transport and entertainment for guests are exempt up to EUR 50 a month plus 2% of that month's payments subject to individually registered social tax. Unused monthly room can be used against later months of the same year.
 
-**Expenses not related to business** (§ 51). Taxed, unless already taxed under §§ 48 to 50. They include: fines and non-compliance levies, and interest paid under the Taxation Act (through § 34 point 3); seized property; increased-rate environmental charges and pollution damages; payments to a person taxed under the Simplified Business Income Taxation Act; bribes; membership fees of non-profits not linked to the business; payments with no valid source document; and services or obligations not related to the business (§ 51(2)). TSD annex 6 lists these under codes 6000 to 6060.
+**Expenses not related to business** (§ 51). Taxed, unless already taxed under §§ 48 to 50. They include: fines and non-compliance levies, and interest paid under the Taxation Act (through § 34 point 3); seized property; increased-rate environmental charges and pollution damages; payments to a person taxed under the Simplified Business Income Taxation Act; bribes; membership fees of non-profits not linked to the business; payments with no valid source document; and services or obligations not related to the business (§ 51(2)). TSD annex 6 lists them under codes 6010 to 6080 (6010 fines, 6020 interest, 6060 membership fees, 6070 no source document, 6080 non-business obligations, assets and services).
 
 **Other payments not related to business** (§ 52). Buying assets not related to the business, and securities, holdings, loans or advances involving a legal person in a non-cooperative jurisdiction, are taxed when paid. Banks have their own list (§ 52(3)). If the circumstances later end, the company can recalculate and claim a refund (§ 54(6)).
 
@@ -96,7 +96,7 @@ Points 1 and 3 never apply to a company in a non-cooperative jurisdiction, and a
 
 **Losses.** There is no loss carry-forward for distributions, because profit is not taxed as it is earned. The 19-quarter loss rule applies only to the bank advance tax.
 
-**Pillar Two.** The consolidated Act as read contains only information obligations for Estonian-parented groups with at least EUR 750 million of revenue (§ 54^10). No top-up tax computation is in this skill.
+**Pillar Two.** The Act's global minimum tax chapter (§§ 54^10 and 54^11) charges no top-up tax. It sets information duties for Estonian-parented groups with at least EUR 750 million of revenue in two of the four preceding years, and rules on where an entity is located. No top-up tax computation is in this skill.
 
 ## Deadlines and filing
 
@@ -117,14 +117,14 @@ A dividend paid on 15 March 2026 is declared and paid by 10 April 2026. Tax foll
 |---|---|---|
 | Late payment of tax, including advance payments | Interest of 0.06% a day from the day after the due date up to and including the payment day | MKS § 115(1), (5); § 117(1) |
 | Instalment schedule | EMTA may cut the interest rate by up to 50% | MKS § 117(2) |
-| Late return, failure to register, poor records, ignoring an EMTA order | Fine up to 300 fine units for an individual; up to EUR 3,200 for a legal person | MKS § 154(1), (2) |
-| Intentionally false or missing data that reduces tax or raises a refund | Fine up to 300 fine units for an individual; up to EUR 32,000 for a legal person | MKS § 153^1(1), (2) |
+| Late return, failure to register, poor records, ignoring an EMTA order | Fine up to 300 fine units (EUR 2,400) for an individual; up to EUR 3,200 for a legal person | MKS § 154(1), (2); fine unit EUR 8, Penal Code § 47(1) |
+| Intentionally false or missing data that reduces tax or raises a refund | Fine up to 300 fine units (EUR 2,400) for an individual; up to EUR 32,000 for a legal person | MKS § 153^1(1), (2); Penal Code § 47(1) |
 
 Interest and fines paid to EMTA are themselves expenses not related to business, so paying them also triggers 22/78 (TuMS § 51(2) point 1 with § 34 point 3; TSD annex 6 codes 6010 and 6020). Criminal tax offences are outside this skill.
 
 ## Cross-border points
 
-1. **Dividends to non-residents.** The company pays 22/78; there is no extra withholding on dividends to a non-resident, except the 7% on old 14% profit paid to an individual. Details, treaty relief and the foreign tax credit under § 54(5) are in `ee-cross-border`.
+1. **Dividends to non-residents.** The company pays 22/78; there is no extra withholding on dividends to a non-resident, except the 7% when a received dividend taxed at 14/86 before 2025 is passed on to an individual (§ 61(68)). Details, treaty relief and the foreign tax credit under § 54(5) are in `ee-cross-border`.
 2. **Foreign dividends coming in.** Use the § 50(1^1) exemption above. A dividend from outside the EEA and Switzerland qualifies only if foreign tax was withheld on it or the underlying profit was taxed.
 3. **Non-cooperative jurisdictions.** Payments, holdings and loans involving them are taxed under § 52 when made, and their dividends never qualify for the exemption.
 4. **Permanent establishments.** A foreign company's Estonian branch pays the same 22/78 when it moves profit out (§ 53); a resident company moving assets to its foreign branch pays exit tax (§ 54^5). Both are in `ee-cross-border`.
@@ -163,7 +163,7 @@ expected:
 
 ### Example 2: Holding company with an exempt subsidiary dividend and a capital reduction
 
-An Estonian holding OÜ owns 100% of a Latvian company that is liable to Latvian income tax. In March 2026 it receives a EUR 30,000 dividend from it. In April 2026 it pays a net dividend of EUR 50,000 to its corporate shareholder. In the same month it reduces share capital and pays EUR 25,000 to that shareholder; total contributions to equity were EUR 10,000 and none has been repaid before.
+An Estonian holding OÜ owns 100% of a Latvian company that is liable to Latvian income tax. In March 2026 it receives a EUR 30,000 dividend from it, which the Latvian company could not deduct. In April 2026 it pays a net dividend of EUR 50,000 to its corporate shareholder. In the same month it reduces share capital and pays EUR 25,000 to that shareholder; total contributions to equity were EUR 10,000 and none has been repaid before.
 
 Dividend: EUR 30,000 is paid out of the exempt Latvian dividend (§ 50(1^1) point 1: EEA company, at least 10% held when received). Only 50,000 − 30,000 = EUR 20,000 is taxed: 20,000 ÷ 0.78 × 22% = EUR 5,641.03.
 
@@ -196,7 +196,7 @@ expected:
 1. What will be paid out, when, and to whom (resident or not, company or individual)? The payment date sets the month.
 2. Has the company received dividends from subsidiaries, and for each: country, holding percentage at receipt, and whether foreign tax was withheld or the profit taxed?
 3. How much have shareholders contributed to equity, and how much of it has already been repaid? This decides the taxable part of a capital reduction or buyback.
-4. Does the company still hold profit taxed at 14/86 before 2025, and will any of it go to individuals?
+4. Does the company hold dividends received from subsidiaries before 2025 that the subsidiary taxed at 14/86, and will any of them be passed on to individuals?
 5. Are there loans to shareholders or group companies, and on what terms and repayment record?
 6. What benefits, gifts, entertainment and non-business costs went through the company this year, and what are the monthly payments subject to social tax?
 
@@ -207,6 +207,9 @@ expected:
 | Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026 (RT 109072026066), §§ 1 to 7, 34, 47^1 to 54^10, 61(68) to (70) | https://www.riigiteataja.ee/akt/TuMS | 2026-10-24 |
 | Income Tax Act, official English translation of the same version | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
 | Maksukorralduse seadus (Taxation Act), consolidated text in force from 17.10.2026 (RT 116102026009), §§ 115, 117, 153^1, 154 | https://www.riigiteataja.ee/akt/MKS | 2026-10-24 |
+| Karistusseadustik (Penal Code), consolidated text in force 01.10.2026 to 31.12.2026, § 47(1) (fine unit EUR 8 from 1 January 2025) | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-24 |
+| Act of 18.06.2025 repealing the Security Tax Act and amending the Income Tax Act (RT I, 08.07.2025, 1), §§ 2 to 4 | https://www.riigiteataja.ee/et/akt/108072025001 | 2026-10-24 |
+| Act of 03.12.2025 amending the act of 18.06.2025 and the Income Tax Act (RT I, 18.12.2025, 3), § 1 deletes the 24% rise | https://www.riigiteataja.ee/et/akt/118122025003 | 2026-10-24 |
 | EMTA, Tax rates (22/78, end of 14/86, 7% withholding, cash basis of the TSD) | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates | 2026-10-23 |
 | EMTA, Payment of interests | https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests | 2026-10-23 |
 | Minister of Finance regulation, TSD annex 6 (non-business expenses, codes 6000 to 6060) | https://www.riigiteataja.ee/aktilisa/1260/6202/0024/RM_m24_lisa7.pdf | 2026-10-23 |
@@ -214,4 +217,4 @@ expected:
 | Ministry of Finance, Riigikogu approves security tax changes (18.06.2025) | https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused | 2026-10-23 |
 | Government of Estonia, 2026 state budget approved | https://valitsus.ee/en/news/government-approved-2026-state-budget | 2026-10-23 |
 
-Not yet confirmed: the euro value of a fine unit (set in the Penal Code, not read); which TSD annex carries dividends and capital reductions (only annex 6 was read); how a company decides whether a 2026 dividend comes out of pre-2025 profit taxed at 14/86; the social tax base on fringe benefits (in `estonia-social-contributions`); whether Estonia applies any Pillar Two top-up tax in 2026 beyond the § 54^10 information duties.
+Not yet confirmed: which TSD annex carries dividends and capital reductions (only annex 6 was read, in the wording of Regulation No. 24 of 22.06.2020); how a company that received both 14/86-taxed and other dividends traces which of them a 2026 payment comes from; the social tax base on fringe benefits (in `estonia-social-contributions`).
