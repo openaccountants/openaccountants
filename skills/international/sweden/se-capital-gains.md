@@ -6,7 +6,6 @@ jurisdiction: SE
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
-verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
@@ -130,6 +129,8 @@ Not yet confirmed: whether an existing deferral is taxed when its owner leaves S
 > Working paper only. ISK standard income rates change every year; confirm the
 > current year rate from Skatteverket. Have a qualified Swedish tax adviser (skatterådgivare)
 > review.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

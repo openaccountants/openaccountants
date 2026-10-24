@@ -7,12 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `denmark-vat-return.md`
-4. `dk-capital-gains.md`
-5. `dk-income-tax.md`
-6. `dk-vat-return.md`
-7. `references.md`
-8. `eu-vat-directive.md`
+3. `README.md`
+4. `denmark-vat-return.md`
+5. `dk-capital-gains.md`
+6. `dk-corporate-tax.md`
+7. `dk-cross-border.md`
+8. `dk-income-tax.md`
+9. `dk-payroll.md`
+10. `dk-social-contributions.md`
+11. `dk-transfer-pricing.md`
+12. `dk-vat-return.md`
+13. `references.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

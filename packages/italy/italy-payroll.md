@@ -4,11 +4,9 @@ description: Use this skill whenever asked about Italian payroll processing for 
 version: 1.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -79,7 +77,7 @@ No statutory tax-free allowance exists. The detrazione is subtracted from gross 
 | Over EUR 50,000 | none | the formula reaches zero at the limit |
 | Extra, income over EUR 25,000 up to EUR 35,000 | EUR 65 | "aumentata di un importo pari a 65 euro" |
 
-- **Not covered here:** trattamento integrativo (D.L. 3/2020 art. 1) and family detrazioni (TUIR art. 12); amounts not read.
+- **Not covered here:** the trattamento integrativo (D.L. 3/2020 art. 1) and family detrazioni (TUIR art. 12) are in `it-irpef-employees`; apply them in payroll from there.
 - Total income for the detrazione excludes the main home and its pertinenze (art. 13(6-bis)).
 
 ### Cuneo fiscale 2026: the tax-free sum and the extra detrazione
@@ -173,11 +171,11 @@ Two tax measures, granted automatically in payroll from 2025 (L. 207/2024 art. 1
 
 ### INPS Contributions (Employer Share)
 
-- **Total employer INPS rate range.** The employer pays the rest of the pension rate (Section 3) plus, by sector and size: malattia, maternità, NASpI, CIG/CIGS/fondi di solidarietà, Fondo di garanzia TFR, CUAF; and INAIL (risk-based, separate). No allowed page prints these rates; the live Guide's percentages are removed.
+- **Total employer INPS rate range.** The employer pays the rest of the pension rate (Section 3) plus, by sector and size: malattia, maternità, NASpI, CIG/CIGS/fondi di solidarietà, Fondo di garanzia TFR, CUAF; and INAIL (risk-based, separate). The 2026 rates for industry and commerce, INAIL, TFR and the cost of an employee are in `it-employer-contributions`.
 
 ### Typical Total Employer Rates
 
-Not printed on any allowed page. Use the company's INPS classification (inquadramento) and the CCNL. For IRAP on staff costs see `it-irap`.
+See `it-employer-contributions` (industry and commerce, with two worked examples). For IRAP on staff costs see `it-irap`.
 
 ## Section 5: Minimum Wage and Overtime
 
@@ -224,8 +222,8 @@ Kept from the live Guide; D.Lgs. 66/2003 was not re-read.
 | Revaluation each 31 December, fixed part | 1.5% | "un tasso costituito dall'1,5 per cento in misura fissa e dal 75 per cento" |
 | Revaluation, share of the consumer price index rise | 75% | "dal 75 per cento dell'aumento dell'indice dei prezzi al consumo" |
 
-- **Accrual formula.** Each year's TFR equals that year's pay divided by 13.5 (art. 2120), after the Fondo di garanzia deduction the law allows.
-- **Destination.** Kept by the employer or paid to a pension fund of the employee's choice; larger employers pay retained TFR to the INPS Fondo di Tesoreria. The 2026 headcount threshold was not read on an allowed page.
+- **Accrual formula.** Each year's TFR equals that year's pay divided by 13.5 (art. 2120), less the 0.50% contribution under L. 297/1982 art. 3, so 6.91% of pay net (see it-employer-contributions).
+- **Destination.** Kept by the employer or paid to a pension fund of the employee's choice; employers with 50 or more staff in their first year, and from 2026 also firms whose average headcount reaches 60 (50 from 2028, 40 from 2032), pay retained TFR to the INPS Fondo di Tesoreria (L. 199/2025; INPS Circolare 12/2026; see it-employer-contributions).
 - **Tax treatment.** Tassazione separata at the employee's average rate (TUIR art. 19), F24 code 1012; the revaluation's substitute tax rate was not proven here.
 
 ### Ferie (Annual Leave)
@@ -330,7 +328,7 @@ INPS contributions go in the INPS section of the same F24 (causali not re-read).
 | CU to the Agenzia delle Entrate | 16 March of the following year | art. 4(6-quinquies) |
 | CU with only self-employment fees or agents' commissions | 30 April of the following year, from 2026 | art. 4(6-quinquies) |
 | Modello 770 (withholding agent return) | 31 October of the following year | art. 4(3-bis) |
-| Autoliquidazione INAIL | 16 February (payment) and 28 February (declaration) | Kept from the live Guide; not an allowed host |
+| Autoliquidazione INAIL | 16 February (payment); the pay declaration was due 2 March in 2026 | INAIL autoliquidazione guide 2025/2026; see it-employer-contributions |
 
 D.P.R. 322/1998 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art4!vig=2026-06-30
 
@@ -415,7 +413,7 @@ When a business pays a resident professional's fee, it withholds on account and 
 
 ## When to refuse or refer
 
-- Employer contribution rates, INAIL premiums, CIG/fondi di solidarietà: not printed here; refer to a consulente del lavoro.
+- Employer contribution rates, INAIL premiums, CIG and FIS: use `it-employer-contributions`; other INPS classes (construction, agriculture, credit): refer to a consulente del lavoro.
 - Dirigenti, apprentices, agricultural, domestic, entertainment and public-sector workers (special schemes).
 - Non-resident, cross-border, impatriati or seconded employees. Refer.
 - Termination packages, TFR advances and settlements, and taxation of arrears. Refer.
@@ -462,6 +460,8 @@ When a business pays a resident professional's fee, it withholds on account and 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a commercialista or consulente del lavoro in Italy) before implementation.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

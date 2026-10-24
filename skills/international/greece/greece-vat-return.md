@@ -12,15 +12,14 @@ description: >
   "Greek island VAT". Out of scope: e-invoicing and myDATA transmission (greece-einvoice), company
   set-up (gr-company-formation), income tax (gr-income-tax), the country overview (gr-tax-overview),
   cross-border income (gr-cross-border). gr-vat-return points here.
-jurisdiction: GR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 2.1
-verified_by: pending
+jurisdiction: GR
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -198,3 +197,23 @@ expected:
 | AADE press release 17.2.2026 (e-invoicing dates and fines) | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 
 Not yet confirmed: the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

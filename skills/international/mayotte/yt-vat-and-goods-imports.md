@@ -2,13 +2,16 @@
 name: yt-vat-and-goods-imports
 description: >
   Mayotte reference distinguishing the absence of local VAT from customs and octroi de mer obligations on goods. Explains EU customs-territory membership, import declarations, separate destination taxation and the need for tariff classification and exemption evidence. Uses French customs guidance and flags conflicting VAT recodification dates in retrieved tax publications rather than prescribing an unverified future invoice citation. Services, detailed valuation, product tariffs, electronic reporting and independent accountant review are outside this initial source-cited draft; no claim of comprehensive territorial coverage is made.
-jurisdiction: YT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: YT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Mayotte: VAT boundary and goods imports
@@ -36,3 +39,23 @@ Check the destination's import treatment separately. Customs' general overseas V
 The customs page cites CGI article 294(1) for Mayotte's VAT non-application. Retrieved tax-authority publications give inconsistent dates for replacing CGI references with the CIBS, and a direct current-date Légifrance fetch failed. The non-application statement is corroborated by customs, but this research has not completed the amendment chain governing the precise new reference and commencement. Do not use this Guide to prescribe a future CIBS invoice citation. [Customs](https://www.douane.gouv.fr/fiche/vos-echanges-commerciaux-avec-mayotte); [tax-authority DOM tax page](https://www.impots.gouv.fr/professionnel/questions/quels-impots-dois-je-payer-pour-mon-activite-dans-les-dom).
 
 Current product tariffs, exemptions, detailed customs valuation, service transactions and electronic reporting obligations still need separate verification. The tax-authority URL returned a maintenance page when directly opened; the research record distinguishes that from retrieved search text. Independent source review and accountant attestation remain pending.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

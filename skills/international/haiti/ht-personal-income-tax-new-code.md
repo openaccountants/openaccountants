@@ -2,14 +2,16 @@
 name: ht-personal-income-tax-new-code
 description: >
   Haiti personal income tax reference for the replacement Code commencing on 1 October 2026. Provides the enacted annual progressive bands, worked marginal-rate examples, annual return deadline, deduction evidence and credit treatment. Distinguishes the commencement period from returns for income earned before the Code took effect. Explains the prohibition on deducting the same expense twice and the restriction of category losses to income of the same category. Residency, treaty relief, detailed income categories, implementation decisions and independent professional verification remain outside this initial source-cited draft.
-jurisdiction: HT
-category: international
-tax_year: 2026
-tax_year_notes: New Code effective 1 October 2026; not a retrospective 2025–2026 return guide.
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: HT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Haiti: personal income tax under the new Code
@@ -53,3 +55,23 @@ Category losses offset only income of the same category under article 126(2). Ke
 ## Scope still to complete
 
 Residence, source rules, treaties, category-specific profit calculations, capital gains and the full effect of ministerial implementation decisions are outside this initial Guide. Gather the period, income-category schedules, withholding receipts and deduction documents before preparing a return. The enacted bands have been visually checked against page 45; this is not an accountant attestation.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

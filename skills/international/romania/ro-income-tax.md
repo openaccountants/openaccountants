@@ -3,15 +3,14 @@ name: ro-income-tax
 description: "Use this skill for Romanian income tax on self-employed individuals for tax year 2026: PFA (persoană fizică autorizată), II (întreprindere individuală), IF (întreprindere familială) and liberal professions. Covers the flat 10% tax on net income in the real system (sistem real), income norms (norma de venit) and when they are barred, gross income and deductible, capped and non-deductible expenses, the deduction of CAS and CASS from the base, the 70% five-year loss carry-forward, the Declarația unică filed and paid by 25 May 2027 on actual 2026 figures, and the interest, penalties and fines for late filing or payment. Trigger phrases: impozit pe venit PFA, sistem real, norma de venit, cheltuieli deductibile PFA, Declarația unică 2027, PFA tax Romania, freelancer tax Romania. Out of scope: ro-cas-cass (contribution rules in depth), ro-employee-income-tax (salary, rent, investments), ro-corporate-income-tax (SRL), ro-vat-return, ro-cross-border."
 version: 2.1
 jurisdiction: RO
-category: international
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
+category: international
 tier: 2
-verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -208,3 +207,23 @@ expected:
 | ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
 
 Not yet confirmed: the early-payment discount (art. 121) for amounts paid in 2027 is not set yet. The 2026 norm amounts for each county and activity were not read; use the regional directorate's published list. The norm activity list is cited as OMFP 925/2017 from the reference note in the Fiscal Code; the order itself was not read.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

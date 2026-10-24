@@ -1,13 +1,16 @@
 ---
 name: ie-transfer-pricing
 description: "Use this skill for Irish transfer pricing under Part 35A of the Taxes Consolidation Act 1997 (TCA), as substituted by Finance Act 2019 and amended since. It covers who is associated (s.835B), the arm's length rule and the 2022 OECD Guidelines (s.835C, s.835D), Pillar One Amount B (s.835DA, from 2025), the domestic non-trading exclusion (s.835E), the SME exclusion (s.835EA) and the uncommenced SME regime (s.835F), documentation, master file EUR 250m and local file EUR 50m thresholds, the 30-day request and the EUR 4,000 or EUR 25,000 penalties (s.835G), corresponding adjustments (s.835H), the EUR 25m capital asset thresholds (s.835HA, s.835HB), country-by-country reporting (s.891H, EUR 750m), APAs, MAP and the EU dispute regulations. Tax year 2026. Trigger on: transfer pricing Ireland, Part 35A, Irish local file, master file Ireland, CbCR Ireland, Revenue APA, s.835G penalty. Out of scope: corporation tax rates and the base in general (ie-corporation-tax), treaties and non-residents generally (ie-cross-border), VAT (ireland-vat-return)."
-jurisdiction: IE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: IE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Ireland transfer pricing (Part 35A TCA 1997), 2026
@@ -228,3 +231,23 @@ expected:
 | Revenue, CT payment and filing (filing date, 0.0219% daily interest) | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-22 |
 
 Not yet confirmed: the percentages of the s.1077E tax-geared penalties (not stated here); what TP questions the 2026 CT1 asks; whether the Finance (No. 2) Bill 2026 is amended at later stages to touch Part 35A or s.891H (as initiated it does not); how profit is attributed between an Irish branch and its foreign head office (not part of Part 35A, not covered here).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

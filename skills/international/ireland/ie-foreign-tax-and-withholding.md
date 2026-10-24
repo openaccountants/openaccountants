@@ -1,13 +1,16 @@
 ---
 name: ie-foreign-tax-and-withholding
 description: "Use this skill for Irish double tax relief and withholding on cross-border payments in tax year 2026. It covers the foreign tax credit under Schedule 24 TCA 1997 (credit limited to the Irish tax on the same income, the effective-rate cap and regrossing for individuals, the corporation tax cap for companies, unilateral relief for companies, and pooling of surplus credit on dividends, branch profits, interest and royalties), how treaties take effect (section 826), how a non-resident company is taxed on Irish income (section 25 and section 1034), Irish withholding on dividends (25%), interest and patent royalties (20%) and the domestic exemptions, and a treaty rate table for 12 partners. Trigger on: foreign tax credit Ireland, Schedule 24, double taxation relief, treaty rate, DWT exemption, interest withholding, non-resident company Ireland. Out of scope: ie-cross-border (residence, SARP, exit tax), ie-non-dom, ie-corporation-tax, ie-income-tax-form11, ie-transfer-pricing."
-jurisdiction: IE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: IE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Ireland: foreign tax credit, treaty withholding rates and non-resident companies (2026)
@@ -290,3 +293,23 @@ expected:
 | Ireland-India convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/synthesised-text-mli-ireland-india-dtc.pdf | 2026-10-23 |
 
 Not yet confirmed: how an individual's foreign tax on income from a country with no treaty is relieved (Revenue's unilateral relief list covers companies and CGT only, and Notes for Guidance say Revenue extends a practice to individuals without stating its terms); the Irish treaty rates for Irish-source dividends to France, Italy, Luxembourg and Japan, where the treaty names only "Irish sur-tax" and relief comes from section 172D; whether Finance (No. 2) Bill 2026 is enacted as initiated.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

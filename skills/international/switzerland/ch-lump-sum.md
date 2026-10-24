@@ -1,15 +1,14 @@
 ---
 name: ch-lump-sum
 description: "Swiss expenditure-based (lump-sum) taxation, Besteuerung nach dem Aufwand / imposition d'après la dépense / Pauschalbesteuerung, for tax year 2026. Covers who qualifies (non-Swiss, first Swiss residence or back after 10 years, no gainful activity in Switzerland, both spouses), the federal base (worldwide living costs, at least CHF 435,000, 7x rent or rental value, 3x board and lodging), the control calculation on Swiss-source and treaty-relieved income, the modified lump-sum under seven tax treaties, cantonal minimums and wealth tax (Zug, Geneva, Vaud, Ticino, Valais, Graubünden, Bern; abolished in Zurich, Basel-Stadt, Schaffhausen, Appenzell Ausserrhoden), filing, payment, fines and how the regime ends. Trigger on: lump-sum tax Switzerland, forfait fiscal, Pauschalsteuer, Aufwandbesteuerung, expenditure-based taxation, move to Switzerland without working. Out of scope: ch-federal-income-tax (ordinary tariff and deductions), ch-cantonal-tax, ch-ahv-iv, ch-cross-border."
-jurisdiction: CH
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 1.1
-verified_by: pending
+jurisdiction: CH
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -240,3 +239,23 @@ expected:
 | Kanton Zürich, press release on the abolition of lump-sum taxation, January 2011 | https://www.zh.ch/de/news-uebersicht/medienmitteilungen/2011/01/004.html | 2026-10-23 |
 
 Not yet confirmed: the Ticino minimum comes from the ESTV cantonal sheet of February 2026, not the canton's own legislation site (which did not load); Vaud indexes its CHF 415,000 under LI art. 60 (RILI art. 1 para. 4) but its law of 1 May 2026 still prints CHF 415,000, and Ticino indexes its CHF 434,700 under LT art. 13 para. 8; neither 2026 indexed figure was found; whether Geneva or Bern index their CHF 400,000 (the law texts state a fixed figure); how Graubünden capitalises living costs into a wealth base; whether the 2020 revision of the ordinance on the credit for foreign withholding taxes (SR 672.201) changed the rule in circular no. 44, section 5.2, that lump-sum taxpayers generally get no credit; the special treaty rules for France, Belgium, Germany, Italy, Norway, Canada, Austria and the USA treaty by treaty; cantonal filing deadlines.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

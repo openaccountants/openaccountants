@@ -1,13 +1,16 @@
 ---
 name: nl-dividend-withholding
 description: "Dutch dividend tax (dividendbelasting) and the conditional withholding tax (bronbelasting) on interest, royalties and dividends, for tax year 2026, plus how a non-resident company with a Dutch permanent establishment is taxed. Covers the 15% dividend tax, the domestic and EU/EEA/treaty participation exemptions with the anti-abuse test, treaty reductions at source (IB 92 Universeel) and refunds, the one-month return, the 25.8% conditional withholding tax on payments to affiliates in the 2026 low-tax list, the credit of dividend tax against it, the annual return, gross-ups and penalties. Trigger on: dividendbelasting, dividend tax Netherlands, withholding on a BV dividend, IB 92, kwalificatiebeschikking, bronbelasting, conditional withholding tax, low-tax jurisdiction, opgaaf dividendbelasting, buitenlandse belastingplichtige, Dutch permanent establishment. Out of scope: the BV's own corporate tax (nl-corporate-tax), the shareholder's box 2 tax (nl-box2-substantial-interest), residence and emigration (nl-cross-border), transfer pricing (netherlands-transfer-pricing)."
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands: dividend tax and conditional withholding tax (2026)
@@ -205,3 +208,23 @@ expected:
 | Belastingdienst, conditional withholding tax return and payment | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 
 Not yet confirmed: which states have a treaty with the Netherlands containing a dividend article, and each treaty's dividend rate (the 10% in example 1 is an assumed treaty rate, and example 2 assumes no treaty covers the Cayman parent); the time limit for each treaty-based refund (3 or 5 years, by treaty); and how a non-resident individual's box 2 charge interacts with the dividend tax (see nl-cross-border).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

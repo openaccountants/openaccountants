@@ -2,13 +2,16 @@
 name: km-registration-and-tax-clearance
 description: >
   Comoros tax registration and clearance reference based on the enacted 2026 finance law. Covers the amended registration deadline, the distinction between the quitus fiscal and tax-regularity certificate, their validity periods and the customs withholding consequence of missing certification. Separates administrative evidence from substantive tax liability and includes a conditional withholding calculation. Flags incomplete scan wording and the need for current administrative forms rather than assuming certificates are interchangeable. Company formation, tax rates, exemptions, the complete intervening amendment chain and independent accountant review remain outside this initial source-cited draft.
-jurisdiction: KM
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: KM
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Comoros: tax registration and clearance documents
@@ -49,3 +52,23 @@ If the verified customs value is **KMF 2,000,000** and the withholding condition
 ## Remaining work
 
 Checked 22 October 2026. Obtain current application forms, processing rules, a legible substitution clause and guidance on crediting the advance. Complete later-amendment and registration-document reconciliation. No independent accountant review has occurred; this is not comprehensive country or formation coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
