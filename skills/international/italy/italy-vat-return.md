@@ -1,715 +1,280 @@
 ---
 name: italy-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for an Italian VAT return (Liquidazione IVA Periodica / LIPE) for a self-employed individual or small business under the regime ordinario in Italy. Trigger on phrases like "prepare LIPE", "Italian VAT return", "Liquidazione IVA", "IVA italiana", "classify transactions for Italian VAT", or any request involving Italy VAT filing. This skill covers Italy only, regime ordinario (monthly or quarterly LIPE). Regime forfettario, regime dei minimi, split payment, margin schemes, and VAT groups are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Italian VAT work.
-version: 2.0
+description: "Italian periodic VAT (IVA) for tax year 2026 under the regime ordinario: the 22%, 10%, 5% and 4% rates and what Tabella A puts in each, monthly settlement by the 16th, the quarterly option (EUR 500,000 services and professions, EUR 800,000 other activities) with 1% interest, the LIPE quarterly communication and its VP rows, the annual return window to 30 April, reverse charge (art. 17), split payment for public bodies (extended to 30 June 2029), SdI e-invoicing (forfettari included since 2024) and the esterometro, blocked input VAT, and the penalties after D.Lgs. 87/2024 (25% late payment, ravvedimento, legal interest 1.60%). Trigger on: LIPE, liquidazione IVA, IVA trimestrale, versamento IVA F24, inversione contabile, scissione dei pagamenti, esterometro, ravvedimento IVA. Out of scope: the annual return and December acconto in depth (it-dichiarazione-iva-annuale), invoicing rules (italy-einvoice), the flat-rate regime (it-regime-forfettario), income tax (it-income-tax, it-ires-corporate-tax), payroll (italy-payroll)."
+version: 2.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
+depends_on:
+  - vat-workflow-base
+  - eu-vat-directive
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Italian VAT return: periodic settlement and LIPE (regime ordinario)
-
-How a business under the regime ordinario in Italy classifies transactions, settles IVA monthly or quarterly, pays by F24 and files the quarterly LIPE (Comunicazione delle liquidazioni periodiche IVA). Figures are for tax year 2026. Sources: the Agenzia's VAT rates page (updated 12/12/2020) and VAT payment page (updated 20/09/2024), both current on 22 September 2026; the LIPE model and instructions, the Agenzia's 2024 file, current per its model page; statutes on Normattiva in force on 30 June 2026.
-
-## Italy VAT Return Guide (LIPE / Liquidazione IVA Periodica) v2.1
-
-## Section 1: Quick reference
-
-**Read this section first. Follow the runbook in `vat-workflow-base` Section 1; this Guide gives the Italian content, `eu-vat-directive` the EU content.**
-
-| Field | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote |
-| Country | Italy (Repubblica Italiana) | |
-| Standard rate | 22% | "In Italia l’aliquota ordinaria Iva è del 22%" |
-| Reduced rates | 10% (e.g. electricity, some renovation), 5% (some foods), 4% (e.g. basic food, drinks, agricultural products) | "4% , per esempio per alimentari, bevande e prodotti agricoli" |
-| Exports, intra-EU B2B goods | Non imponibile: no IVA charged, right to deduct kept (Section 5.5) | |
-| Return forms | LIPE every quarter; annual Dichiarazione IVA | Deadlines in the next table |
-| Filing | Online only, directly or through an intermediary | |
-| Authority | Agenzia delle Entrate | |
-| Currency | EUR only | |
-| Companion Guide (Tier 1, workflow) | **vat-workflow-base v0.1+, MUST load** | |
-| Companion Guide (Tier 2, EU directive) | **eu-vat-directive v0.1+, MUST load** | |
-| Validation date | September 2026 | |
-
-**Frequency, payment and filing deadlines**
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva |
-| Default | Monthly settlement and payment by F24 online, by the 16th of the next month | "Entro il giorno 16 di ciascun mese" |
-| Quarterly option: services and self-employed | Prior calendar year volume d'affari not above EUR 500,000 | "500.000 euro, per i lavoratori autonomi e per le imprese" |
-| Quarterly option: other activities | Prior calendar year volume d'affari not above EUR 800,000 | "800.000 euro, per le imprese che esercitano altre attività" |
-| Quarterly interest | Tax due for each quarter is increased by 1% | "L’imposta dovuta va maggiorata dell’1% a titolo di interessi" |
-| Quarterly payment, Q1 to Q3 | By the 16th of the second month after the quarter | |
-| Quarterly payment, Q4 | By 16 March of the following year | "va effettuata entro il 16 marzo dell’anno successivo" |
-| December acconto | By 27 December, all VAT payers except exempt categories; no 1% interest on it | "categorie esonerate dall’adempimento" |
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-06-30 |
-| Payments due from 1 to 20 August (July monthly, Q2 quarterly) | May be made by 20 August without any surcharge | "possono essere effettuati entro il giorno 20 dello stesso mese, senza alcuna maggiorazione" |
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-06-30 |
-| LIPE, Q1 and Q3 | Last day of the second month after the quarter (31 May, 30 November) | "entro l'ultimo giorno del secondo mese successivo a ogni trimestre" |
-| LIPE, Q2 | 30 September | Art. 21-bis(1), as amended |
-| LIPE, Q4 | End of February, or inside the annual return filed by end of February | Art. 21-bis(1) D.L. 78/2010 |
-| Credit periods | LIPE is filed even when the period shows a credit | Art. 21-bis(3) |
-| Exempt from LIPE | Persons not required to file the annual return or to make periodic settlements; also no LIPE for a quarter with nothing to report in quadro VP | Art. 21-bis(3); LIPE instructions |
-| Weekend or holiday | A LIPE deadline on a Saturday or holiday moves to the next working day | LIPE instructions |
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art8!vig=2026-06-30 |
-| Annual Dichiarazione IVA | Filed online between 1 February and 30 April of the next year | Art. 8(1) D.P.R. 322/1998 |
-
-**LIPE rows (quadro VP), as the Agenzia's instructions define them**
-
-| Row | Meaning | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f |
-| VP1 | Month or quarter (quarterly filers enter "5" for the fourth quarter) | |
-| VP2 | Total sales (operazioni attive) net of IVA: taxable, non-taxable, exempt, and out-of-scope sales under arts. 7 to 7-septies that need an invoice; also the base of sales where the buyer owes the IVA | "Totale operazioni attive (al netto dell’IVA)" |
-| VP3 | Total purchases net of IVA: domestic, intra-EU and imports (customs documents), including non-deductible ones | "Totale operazioni passive (al netto dell’IVA)" |
-| VP4 | IVA esigibile (output VAT), including reverse-charge IVA the buyer owes | |
-| VP5 | IVA detratta (input VAT deducted), including reverse-charge IVA when deductible | |
-| VP6 | VP4 minus VP5: column 1 IVA due, column 2 credit | |
-| VP7 | Debt from the previous period not paid because not above EUR 100 | "Debito periodo precedente non superiore a 100 euro" |
-| VP8 | Credit from the previous settlement of the same calendar year | |
-| VP9 | Credit from the prior year's annual return used in this period | |
-| VP10 | F24 "elementi identificativi" payments for first domestic sales of cars | |
-| VP11 | Special tax credits used against the payment | |
-| VP12 | Interest due by quarterly filers, at the 1% rate; not filled for Q4 | |
-| VP13 | Acconto due, with method code (1 historical, 2 forecast, 3 actual, 4 special sectors); none if below EUR 103.29 | "inferiore a euro 103,29" |
-| VP14 | IVA to pay (column 1) or credit (column 2): (VP6 col. 1 + VP7 + VP12) minus (VP6 col. 2 + VP8 + VP9 + VP10 + VP11 + VP13 col. 2); not filled by quarterly filers for Q4 | |
-
-**Registri IVA (VAT registers)**
-
-| Register | Purpose |
-| --- | --- |
-| Registro delle fatture emesse | Sales invoices issued |
-| Registro degli acquisti | Purchase invoices received |
-| Registro dei corrispettivi | Daily receipts (retail/hospitality) |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | Standard rate |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Italy |
-| Unknown B2B vs B2C status for EU customer | B2C, charge Italian IVA |
-| Unknown business-use proportion (vehicle, phone, home office) | No recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU (art. 17(2) D.P.R. 633/1972) |
-| Unknown blocked-input status (entertainment, personal use) | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds.** Flag large transactions, large default effects, a dominant counterparty, many defaults, and a large net position. No official page sets amounts; the firm chooses.
-
-## Section 2: Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable.** A bank statement covering the full period (CSV, PDF or pasted text), from any bank.
-
-**Recommended.** The period's fatture elettroniche from the SdI, purchase invoices for material input VAT claims, and the client's Partita IVA (IT plus 11 digits).
-
-**Ideal.** Full SdI XML extract, prior LIPE, Registri IVA, and a VP8/VP9 credit reconciliation.
-
-**Refusal policy if minimum is missing: SOFT WARN.** No bank statement: hard stop. Statement without invoices: proceed, but flag that material input IVA claims and reverse-charge lines need checking against the SdI invoices before approval.
-
-### Italy-specific refusal catalogue
-
-| Refusal | Trigger | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
-| R-IT-1 | Client is under the regime forfettario. Entry needs prior-year revenue or fees, annualised, not above EUR 85,000; revenue above EUR 100,000 during the year ends the regime that same year, with IVA due from the sale that crosses it | "non superiori a 85.000 euro"; "se però si va oltre i 100.000 euro di ricavi/compensi, non è più applicabile dallo stesso anno" |
-
-- **R-IT-1**: "This Guide covers the regime ordinario only. Forfettari charge no IVA and recover none. If revenue crossed the upper limit above during the year, the regime ended: refer." _(On top of the EU-wide refusals R-EU-1 to R-EU-12 in eu-vat-directive Section 13.)_
-- **R-IT-2**: regime dei minimi. "Outside the ordinary IVA system; regime ordinario only."
-- **R-IT-3**: supplies to public bodies under split payment (art. 17-ter D.P.R. 633/1972). "The buyer pays the IVA; out of scope."
-- **R-IT-4**: taxable and exempt-without-credit supplies with a material exempt share. "Pro rata under arts. 19 and 19-bis D.P.R. 633/1972; use a commercialista."
-- **R-IT-5**: second-hand goods, art, antiques, collectables. "Margin scheme; out of scope."
-- **R-IT-6**: VAT group (arts. 70-bis to 70-duodecies D.P.R. 633/1972). "Out of scope."
-- **R-IT-7**: non-resident with a fiscal representative in Italy. "Use a commercialista."
-- **R-IT-8**: income tax (IRPEF, IRES, Modello Redditi). "This Guide handles IVA only."
-
-## Section 3: Supplier pattern library (the lookup table)
-
-Deterministic pre-classifier: match by case-insensitive substring on the counterparty name; the most specific pattern wins; else use Section 5. Patterns are OpenAccountants' own list, not an official source; treatments follow Section 5. Shorthand: domestic purchase = VP3 (net) + VP5 (deductible IVA); reverse charge = VP3 (net) + IVA in VP4, and in VP5 only if deductible, never in VP2; sale = VP2 + VP4. EXCLUDE means no IVA to claim: an exempt or non-taxable purchase with a fattura in the registro degli acquisti still counts in VP3; a bank line with no fattura (F24, wages, transfers) stays out.
-
-### 3.1 Italian banks (fees exempt: exclude)
-
-_(art. 10(1) n. 1 D.P.R. 633/1972)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UNICREDIT, INTESA SANPAOLO, BANCO BPM, MONTE DEI PASCHI (MPS), BPER BANCA, POSTE ITALIANE/BANCOPOSTA, CREDEM | EXCLUDE bank charges/fees | Financial service, exempt |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscription invoices |
-| INTERESSI; MUTUO, PRESTITO, FINANZIAMENTO | EXCLUDE | Interest; loan principal |
-
-### 3.2 Italian government, regulators, and statutory bodies (exclude entirely)
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AGENZIA ENTRATE; F24, PAGAMENTO F24; EQUITALIA, AGENZIA RISCOSSIONE | EXCLUDE | Tax payments and collection |
-| INPS, INAIL | EXCLUDE | Contributions |
-| CAMERA DI COMMERCIO, CCIAA; COMUNE DI; REGIONE, PROVINCIA | EXCLUDE | Public fees and local taxes |
-| DOGANA, AGENZIA DOGANE | EXCLUDE the payment line | The customs document (bolletta doganale) value, net of IVA, goes to VP3; its IVA, if deductible, to VP5 |
-
-### 3.3 Italian utilities
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ENEL, ENI PLENITUDE, EDISON, A2A, IREN, HERA, ACEA | Domestic, rate from the invoice | Electricity, gas, water: may be reduced rate |
-| TIM, VODAFONE ITALIA, WINDTRE, FASTWEB, ILIAD | Domestic standard | Telecoms: business share only (Section 5.12) |
-
-### 3.4 Insurance (exempt: exclude)
-
-_(art. 10(1) n. 2)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GENERALI, ALLIANZ, UNIPOLSAI, AXA ITALIA, CATTOLICA, ZURICH, ASSICURAZIONE, POLIZZA | EXCLUDE | Insurance, exempt |
-
-### 3.5 Post and logistics
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| POSTE ITALIANE (standard mail) | EXCLUDE | Universal postal service, exempt |
-| POSTE DELIVERY (parcels), SDA, BRT, DHL EXPRESS, GLS, TNT | Domestic standard | Courier services are taxable |
-
-### 3.6 Transport (Italy domestic)
-
-IVA on passenger transport is not deductible unless transport is the business's own activity (art. 19-bis.1(1)(e), Section 5.12). Net to VP3; nothing to VP5.
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRENITALIA, ITALO, ATAC, ATM MILANO, GTT, ANM, UBER, TAXI, ITA AIRWAYS (domestic) | BLOCK input IVA | Passenger transport |
-| ITA AIRWAYS, RYANAIR, EASYJET (international) | EXCLUDE | No Italian IVA to recover |
-| AUTOSTRADE, TELEPASS | Same deduction share as the vehicle | Follows the vehicle share (art. 19-bis.1(1)(d)) |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-_(art. 19-bis.1(1)(f) and (h))_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ESSELUNGA, CONAD, COOP, EUROSPIN, LIDL, CARREFOUR, PENNY, MD, PAM, DESPAR, IPER | Default BLOCK | Not deductible unless the business's own activity |
-| RISTORANTE, TRATTORIA, PIZZERIA, BAR | Default BLOCK | See Section 5.12 |
-
-### 3.8 SaaS: EU suppliers (reverse charge, Art. 17 c.2 / inversione contabile)
-
-The buyer integrates the invoice and sends a TD17 document to the SdI (see `italy-einvoice`).
-
-| Pattern | Billing entity | Treatment |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META/FACEBOOK ADS, LINKEDIN, DROPBOX, SLACK, ZOOM | Irish entities (IE) | Reverse charge, VP3 + VP4/VP5 |
-| SPOTIFY TECHNOLOGY; ATLASSIAN | Spotify AB (SE); Atlassian Network Services BV (NL) | Reverse charge |
-| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | Reverse charge; transaction fees see 3.11 |
-
-### 3.9 SaaS: non-EU suppliers (reverse charge, Art. 17 c.2)
-
-The buyer issues a self-invoice (autofattura) and sends a TD17 document to the SdI.
-
-| Pattern | Billing entity | Treatment |
-| --- | --- | --- |
-| NOTION, ANTHROPIC, OPENAI, FIGMA, TWILIO | US entities | Reverse charge, VP3 + VP4/VP5 |
-| CANVA | Canva Pty Ltd (AU) | Reverse charge |
-| GITHUB, HUBSPOT | US or IE entity, check the invoice | Reverse charge either way; follows the entity |
-| AWS | AWS EMEA SARL (LU), check | EU reverse charge |
-
-### 3.10 SaaS: the exception (NOT reverse charge)
-
-| Pattern | Treatment | Why |
-| --- | --- | --- |
-| AWS EMEA SARL | EU reverse charge (Luxembourg entity) | If the invoice shows Italian IVA, treat as a domestic purchase |
-
-### 3.11 Payment processors
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE, PAYPAL (transaction fees) | EXCLUDE (exempt) | Exempt financial service |
-| SUMUP, SQUARE, ZETTLE, NEXI, SATISPAY | Check invoice | Italian entity: domestic, fees may be exempt; EU entity: reverse charge |
-
-### 3.12 Professional services (Italy)
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| COMMERCIALISTA, AVVOCATO, NOTAIO, CONSULENTE DEL LAVORO, ARCHITETTO, INGEGNERE, GEOMETRA | Domestic standard | Deductible when for the business |
-| REGISTRO IMPRESE | EXCLUDE | Registry fee |
-
-### 3.13 Payroll and social security (exclude entirely)
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| INPS, INAIL, STIPENDIO, BUSTA PAGA, TFR, CASSA PREVIDENZA, ENPAM, CNPADC | EXCLUDE | Wages, severance and contributions are outside IVA |
-
-### 3.14 Property and rent
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AFFITTO COMMERCIALE, LOCAZIONE COMMERCIALE | Domestic standard | Where the landlord charges IVA |
-| AFFITTO, LOCAZIONE (residential) | EXCLUDE | IVA on residential buildings is not deductible (art. 19-bis.1(1)(i)) |
-| IMU, TASI | EXCLUDE | Property tax |
-| CONDOMINIO | Check | Only if IVA is invoiced |
-
-### 3.15 Internal transfers and exclusions
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GIROCONTO, BONIFICO INTERNO, TRASFERIMENTO TRA CONTI | EXCLUDE | Own-account transfer |
-| DIVIDENDO, RATA MUTUO, RIMBORSO PRESTITO, APPORTO PERSONALE, VERSAMENTO SOCIO | EXCLUDE | Dividends, loans, owner money |
-| PRELIEVO BANCOMAT, PRELIEVO CONTANTI | TIER 2, ask | Default exclude |
-
-## Section 4: Worked examples
-
-Six cases for a self-employed IT consultant. Amounts are illustrative.
-
-### Example 1: Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; 16.00 US dollars ; 14.68 euro`
-
-**Reasoning:**
-US supplier, no IVA on the invoice. The client self-assesses under art. 17(2) D.P.R. 633/1972 with an autofattura (TD17). Net in VP3; IVA in VP4 and VP5; net effect zero.
-
-**Output table** _(none)_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field (input) | Field (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.23 | 22% | VP3 + VP5 | VP4 | N | none | none |
-
-### Example 2: EU service, inversione contabile (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
-
-**Reasoning:**
-Irish supplier: EU reverse charge on a service. The client integrates the invoice (TD17). Net in VP3; IVA in VP4 and VP5.
-
-**Output table** _(none)_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field (input) | Field (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 187.00 | 22% | VP3 + VP5 | VP4 | N | none | none |
-
-### Example 3: Business dinner (spese di rappresentanza)
-
-**Input line:**
-`15.04.2026 ; RISTORANTE DA MARIO ROMA ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-**Reasoning:**
-A client dinner is entertainment (spesa di rappresentanza): IVA not deductible (art. 19-bis.1(1)(h) D.P.R. 633/1972). A business-trip meal is not entertainment: deductible with a fattura (D.L. 112/2008 removed the old restaurant ban). VP3 takes the net-of-IVA amount even when not deductible. Default: block and ask.
-
-**Output table** _("Restaurant: client entertainment or a meal on a business trip? Do you have a fattura?")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RISTORANTE DA MARIO ROMA | -220.00 | net on the fattura | IVA on the fattura | rate on the fattura | VP3 (net of IVA) only; IVA not deductible | Y | Q1 | "Client entertainment or business-trip meal? Fattura?" |
-
-### Example 4: Capital goods (bene strumentale)
-
-**Input line:**
-`18.04.2026 ; DELL ITALIA SRL ; DEBIT ; Invoice DEL2026-0041 Laptop XPS-15 ; -1,595.00 ; EUR`
-
-**Reasoning:**
-Input IVA is deductible (VP5) like any business purchase; the LIPE has no capital goods row. For income tax, a unit cost above the Section 5.11 limit for the client's income type means depreciation: flag it for the registro dei beni ammortizzabili.
-
-**Output table** _(none)_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DELL ITALIA SRL | -1,595.00 | -1,307.38 | -287.62 | 22% | VP3 + VP5 | N | none | none |
-
-### Example 5: EU B2B service sale (inbound receipt)
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice IT-2026-018 IT consultancy March ; +3,500.00 ; EUR`
-
-**Reasoning:**
-B2B service to a German business, supplied in Germany (art. 7-ter D.P.R. 633/1972): not subject to Italian IVA (non soggetta, N2.1), not "non imponibile". The invoice is still required, marked "inversione contabile" (art. 21(6-bis)), and goes in VP2. Check the VAT number on VIES.
-
-**Output table** _("Verify German USt-IdNr on VIES")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | n/a | VP2 (non soggetta) | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6: Motor vehicle, partial recovery
-
-**Input line:**
-`28.04.2026 ; LEASYS SPA ; DEBIT ; Lease payment Fiat 500X ; -450.00 ; EUR`
-
-**Reasoning:**
-Vehicles not used exclusively for the business take the Section 5.12 share (art. 19-bis.1(1)(c)); full rules apply if it is the business's own activity (taxi, driving school, rental) or for agenti e rappresentanti di commercio. IT consultant: reduced share.
-
-**Output table** _("Vehicle: partial IVA deduction. Core business vehicle, or are you a commercial agent?")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | LEASYS SPA | -450.00 | -368.85 | -81.15 (x 40% = -32.46 deductible) | 22% | VP3 + VP5 (partial) | Y | Q3 | "Vehicle: partial deduction. Core business vehicle or agent?" |
-
-## Section 5: Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 22% (art. 16 D.P.R. 633/1972)
-
-- Default for any supply not listed in Table A.
-
-### 5.2 Reduced rate 10% (Table A, Part III, D.P.R. 633/1972)
-
-- E.g. electricity supply (table below); other goods and services: read the invoice and Table A, Part III.
-
-### 5.3 Reduced rate 5% (Table A, Part II-bis)
-
-- A narrow list, e.g. some foods.
-
-### 5.4 Super-reduced rate 4% (Table A, Part II)
-
-- E.g. food, drinks and agricultural products. Sales at any rate: VP2/VP4; purchases: VP3/VP5.
-
-| Rate | Examples on the Agenzia page | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote |
-| 22% | Ordinary rate | "In Italia l’aliquota ordinaria Iva è del 22%" |
-| 10% | E.g. electricity supply | "10% , per esempio per la fornitura di energia elettrica" |
-| 5% | E.g. some foods | "5% , per esempio per alcuni alimenti" |
-| 4% | E.g. food, drinks, agricultural products | "4% , per esempio per alimentari, bevande e prodotti agricoli" |
-
-### 5.5 Zero rate and exempt with credit (non imponibile)
-
-- Exports outside the EU (art. 8 D.P.R. 633/1972, export evidence needed, nature code N3.1). Intra-EU B2B supplies of goods (art. 41 D.L. 331/1993, VIES check, N3.2). B2B services to EU businesses are not "non imponibile" but out of scope (non soggette, art. 7-ter, N2.1). All three go in VP2.
-
-### 5.6 Exempt without credit (esente art. 10)
-
-- Medical, education, insurance, financial, residential rent, universal postal service. No deduction on related costs; if significant, R-IT-4.
-
-### 5.7 Local standard purchases
-
-- IVA on a compliant fattura for taxable business use is deductible, subject to 5.12. Net to VP3, IVA to VP5.
-
-### 5.8 Inversione contabile: EU services received (Art. 17 c.2 + Art. 7-ter)
-
-- No IVA on the invoice; the client integrates it (TD17). Net to VP3; IVA to VP4 and VP5.
-
-### 5.9 Inversione contabile: EU goods received
-
-- Intra-EU acquisition; the client integrates the supplier invoice (TD18). Net to VP3; IVA to VP4 and VP5.
-
-### 5.10 Inversione contabile: non-EU services and imports
-
-- **Non-EU services**: autofattura (TD17). Net to VP3; IVA to VP4 and VP5.
-- **Imports of goods**: customs IVA on the bolletta doganale; net to VP3, deductible IVA to VP5. No general LIPE deferral was found on an official page.
-
-### 5.11 Capital goods (beni strumentali)
-
-- Ordinary IVA deduction (VP5), no LIPE row. Matters for the annual return and the rettifica della detrazione (art. 19-bis2). Income tax: unit cost up to the limit below may be expensed in the year.
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 |
-| Full deduction in the year, business income (reddito d'impresa, TUIR art. 102(5)) | Unit cost not above EUR 516.46 | "non è superiore a 516,46 euro" |
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
-| Full deduction in the year, professionals (lavoro autonomo, TUIR art. 54-quinquies(1)) | Unit cost not above EUR 516.40 | "il cui costo unitario non sia superiore a euro 516,40" |
-
-### 5.12 Blocked input IVA (art. 19-bis.1 D.P.R. 633/1972)
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art19bis.1!vig=2026-06-30 |
-| Road vehicles not used exclusively for the business (lett. c) | 40% deductible | "nella misura del 40 per cento"; covers road vehicles up to 3,500 kg with up to eight seats besides the driver |
-| Exceptions (lett. c) | Full rules apply when the vehicle is the business's own activity, or for commercial agents and representatives | |
-| Fuel, repairs, maintenance, road transit (lett. d) | Same share as the vehicle; fuel must be paid by card or other traceable means | |
-| Passenger transport (lett. e) | Not deductible, unless transport is the business's own activity | |
-| Food and drink (lett. f) | Not deductible, unless the business's own activity or canteen supply | |
-| Entertainment, spese di rappresentanza (lett. h) | Not deductible, except goods costing no more than fifty euro each | "non superiore ad euro cinquanta" |
-| Residential buildings (lett. i) | Purchase, rent, upkeep not deductible, except for builders of such buildings | |
-
-- **Telephone and internet**: no fixed share; lett. g was repealed by L. 244/2007. Deduct the business share only (art. 19).
-- **Hotels, business-trip meals**: deductible with a fattura. **Personal items**: not deductible.
-
-### 5.13 Quarterly interest surcharge
-
-- Quarterly filers add the interest in the Section 1 payment table to Q1 to Q3 tax due, in VP12; for Q4 it is paid with the annual balance. Monthly filers do not (art. 7 D.P.R. 542/1999).
-
-### 5.14 Sales: local domestic (any rate)
-
-- Charge the applicable rate from the table in 5.4. All via fattura elettronica through the SdI.
-
-### 5.15 Sales: cross-border B2C
-
-| Item | Rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-30;331~art41!vig=2026-06-30 |
-| EU-wide threshold for distance sales of goods (and B2C telecom, broadcasting and electronic services) | Above EUR 10,000 in the prior or current year, IVA of the customer's country applies | "anno solare precedente 10.000 euro" |
-
-- Above the threshold in the table, R-EU-5 (OSS) refuses. Below it, Italian IVA at the applicable rate.
-
-## Section 6: Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- ENI, Q8, IP, ESSO, SHELL: share depends on the vehicle (Section 5.12) and needs traceable payment. Default: the reduced share. Ask: "Core business vehicle, commercial agent, or a standard car?"
-
-### 6.2 Restaurants and entertainment
-
-- Client entertainment is blocked; a business-trip meal is deductible with a fattura. Default: block. Ask: "Who was at the meal and why? Fattura?"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- Default non-EU reverse charge. Ask: "Legal entity name and country on the invoice?"
-
-### 6.4 Round-number incoming transfers from owner-named counterparties
-
-- Default exclude as owner injection. Ask: "Customer payment, own money, or loan?"
-
-### 6.5 Incoming transfers from individual names (not owner)
-
-- Default domestic B2C sale at the standard rate. Ask: "Was it a sale?"
-
-### 6.6 Incoming transfers from foreign counterparties
-
-- Default domestic sale at the standard rate. Ask: "B2B or B2C, goods or services, which country?"
-
-### 6.7 Large one-off purchases (potential beni strumentali)
-
-- IVA unchanged; income tax limit in the Section 5.11 table. Ask: "Unit cost on the invoice?"
-
-### 6.8 Mixed-use phone, internet
-
-- No recovery until the business share is known (Section 5.12). Ask: "Business line or mixed? What share is business?"
-
-### 6.9 Outgoing transfers to individuals
-
-- Default exclude as drawings. Ask: "Contractor, wages, refund, or personal?"
-
-### 6.10 Cash withdrawals
-
-- Default exclude. Ask: "What was the cash used for?"
-
-### 6.11 Rent payments
-
-- Default no IVA (residential). Ask: "Commercial or residential? Does the landlord charge IVA?"
-
-### 6.12 Foreign hotel and accommodation
-
-- Exclude; foreign VAT is not Italian IVA.
-
-### 6.13 Airbnb income
-
-- [T2] flag. Ask: "Short-term tourist rental? Cedolare secca?"
-
-### 6.14 Domestic reverse charge (construction, cleaning)
-
-- Construction subcontracting, building cleaning and energy fall under art. 17(6) D.P.R. 633/1972 (TD16). [T2] flag.
-
-### 6.15 Platform sales
-
-- EU B2C sales above the Section 5.15 threshold: R-EU-5. Otherwise domestic sales; platform fees as EU reverse charge.
-
-## Section 7: Excel working paper template (Italy-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This is the Italian overlay.
-
-### Sheet "Transactions"
-
-Columns A to L per the base. Column H ("Field code") takes the VP row codes from Section 1. For reverse-charge lines, enter VP3 and VP4/VP5.
-
-### Sheet "Field Summary"
-
-**Field Summary mandatory rows**
-
-| Row | Meaning | Formula |
-| --- | --- | --- |
-| VP2 | Total sales, net | =SUMIFS(Transactions!E:E, ..., "VP2") |
-| VP3 | Total purchases, net | =SUMIFS(Transactions!E:E, ..., "VP3") |
-| VP4 | IVA esigibile | =SUM(output IVA incl. reverse charge) |
-| VP5 | IVA detratta | =SUM(deductible IVA incl. reverse charge) |
-| VP6 | IVA due or credit | =VP4-VP5 (column 1 if positive, column 2 if negative) |
-| VP7 | Unpaid small debt from previous period | (manual entry) |
-| VP8 | Credit from previous period, same year | (manual entry) |
-| VP9 | Credit from prior year's annual return used | (manual entry) |
-| VP12 | Quarterly interest (Q1 to Q3 only) | =net due x the rate in the payment table |
-| VP13 | Acconto (December or Q4) | (manual entry) |
-| VP14 | IVA to pay or credit | =(VP6c1+VP7+VP12)-(VP6c2+VP8+VP9+VP10+VP11+VP13c2) |
-
-### Sheet "Return Form"
-
-- **LIPE-ready figures formula**: VP6 column 2 if VP5 > VP4, else column 1; VP14 as above; quarterly filers leave VP12 and VP14 empty for Q4.
-
-### Mandatory recalc step
-
-~~~
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/italy-vat-PERIOD-working-paper.xlsx
-~~~
-
-## Section 8: Italian bank statement reading guide
-
-Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Italian patterns.
-
-**CSV format conventions.** DD/MM/YYYY dates; columns Data, Descrizione/Causale, Dare (debit), Avere (credit), Saldo.
-
-**Italian language variants.** Affitto (rent), stipendio (salary), interessi (interest), bonifico (transfer), contributi (contributions), rimborso (refund), versamento (deposit), prelievo (withdrawal).
-
-**ABI causale codes.** Banks show interbank causale codes on some lines (e.g. 27 for a bank transfer, 48 for a credit card, 05 for a direct debit, 26 for a cheque). Banking-association codes, not a tax source; unchecked here.
-
-**Internal transfers and exclusions.** Giroconto is an internal transfer. Always exclude.
-
-**F24 payments.** Tax payments appear as "PAGAMENTO F24" or with tax codes (6001 to 6012 for monthly IVA, 6031 to 6034 for quarterly IVA). Always exclude. The codes are unchecked; confirm them in the Agenzia's codici tributo list.
-
-**Fattura elettronica (SdI).** B2B and B2C invoices between Italian parties are electronic via the SdI since 2019 (see `italy-einvoice`). Prefer an SdI extract over the bank statement for invoice detail.
-
-**Foreign currency transactions.** Convert to EUR at the ECB rate or bank statement rate.
-
-**IBAN country prefix.** IT is Italy. IE, LU, NL, FR, DE are EU. US, GB, AU, CH are non-EU.
-
-## Section 9: Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-- SRL, SPA, SAS: company; ditta individuale: sole trader; libero professionista: freelancer. Ask if unclear.
-
-### 9.2 VAT regime
-
-- Filing LIPE implies regime ordinario. Ask: "Regime ordinario or forfettario?"
-
-### 9.3 Partita IVA
-
-- From invoices. Ask: "Your Partita IVA? (IT plus 11 digits)"
-
-### 9.4 Filing period and frequency
-
-- From the statement dates. Ask: "Which period? Monthly or quarterly?"
-
-### 9.5 Industry and sector
-
-- From the counterparty mix. Ask: "What does the business do?"
-
-### 9.6 Employees
-
-- INPS outgoing. Ask: "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- Medical, financial or educational income. If yes, R-IT-4 refuses.
-
-### 9.8 Credit carried forward
-
-- Always ask: "IVA credit from the previous period (VP8) or last year's return (VP9)?"
-
-### 9.9 Cross-border customers
-
-- Foreign IBANs. Ask: "EU or non-EU? B2B or B2C?"
-
-### 9.10 Public administration customers
-
-- PA-sounding payers. If yes, R-IT-3 (split payment) refuses.
-
-## The method, step by step
-
-1. **Check the regime and frequency.** Regime ordinario only (forfettario limits in the Section 2 table). Monthly by default; quarterly only if last year's volume d'affari met the limits on the [Agenzia's payment page](https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva).
-2. **Classify each transaction** with Sections 3, 5 and 6, applying the deduction limits of [art. 19-bis.1 D.P.R. 633/1972](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art19bis.1!vig=2026-06-30). Reverse-charge purchases need TD16 to TD19 documents at the SdI (`italy-einvoice`).
-3. **Settle the period.** Fill VP2 to VP14 as the [LIPE instructions](https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f) define them. Quarterly filers add the interest in VP12 for Q1 to Q3.
-4. **Pay by F24 online** on the dates in the Section 1 payment table (same Agenzia page as step 1).
-5. **File the LIPE** each quarter by the deadlines in [art. 21-bis D.L. 78/2010](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-06-30). Correct errors with a replacement LIPE before filing the annual return, or in the annual return after that (LIPE instructions, step 3).
-6. **File the annual Dichiarazione IVA** between 1 February and 30 April ([art. 8 D.P.R. 322/1998](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art8!vig=2026-06-30)).
-
-**Penalties**
-
-| Violation | Penalty | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 |
-| LIPE omitted, incomplete or wrong (art. 11(2-ter) D.Lgs. 471/1997) | EUR 500 to EUR 2,000; halved if sent or corrected within fifteen days of the deadline | "da euro 500 a euro 2.000" |
-
-| Violation | Penalty | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30 |
-| Periodic IVA paid late or short (art. 13(1)) | Twenty-five per cent of the unpaid amount (in words in the law); halved if paid within ninety days; smaller within fifteen days; ravvedimento operoso reduces it further | "pari al venticinque" |
-
-Invoicing penalties (art. 6 D.Lgs. 471/1997) are in `italy-einvoice`.
+# Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.1
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Italy.
+
+**What this skill does.** It takes an Italian business under the regime ordinario from its invoices and bank lines to a settled VAT period: which rate applies, which VP row each amount goes in, when the tax is paid by F24, when the LIPE is sent, and what a late or wrong payment costs. Figures come from D.P.R. 633/1972 (the VAT decree) and its Tabella A, D.P.R. 100/1998, D.P.R. 542/1999, D.L. 78/2010, D.Lgs. 127/2015, and the penalty decrees D.Lgs. 471/1997 and 472/1997 as reformed by D.Lgs. 87/2024, all read on Normattiva on 24 October 2026, plus Agenzia delle Entrate pages.
+
+**The law moves on 1 January 2027.** The Testo unico IVA (D.Lgs. 19 January 2026 n. 10) applies from 1 January 2027 (its art. 171) and from then replaces D.P.R. 633/1972. This skill covers periods up to December 2026; see the pack README.
+
+**Sibling skills.** [it-dichiarazione-iva-annuale](it-dichiarazione-iva-annuale.md) (annual return, December acconto, credits, refunds, pro rata and rettifica). [italy-einvoice](italy-einvoice.md) (SdI, TD document types, invoice penalties). [it-regime-forfettario](it-regime-forfettario.md) (flat-rate regime). [it-income-tax](it-income-tax.md) and [it-irpef-employees](it-irpef-employees.md) (IRPEF), [it-ires-corporate-tax](it-ires-corporate-tax.md) (IRES), [italy-payroll](italy-payroll.md) (payroll), [it-cross-border](it-cross-border.md), [italy-bookkeeping](italy-bookkeeping.md). Load `vat-workflow-base` and `eu-vat-directive` alongside.
+
+## Who this applies to
+
+- **In scope.** Sole traders, professionals and companies with a Partita IVA under the regime ordinario that make taxable supplies in Italy (D.P.R. 633/1972 art. 1). They settle VAT monthly by default (D.P.R. 100/1998 art. 1) or quarterly by option (D.P.R. 542/1999 art. 7), and send the LIPE every quarter (D.L. 78/2010 art. 21-bis).
+- **Forfettari: no VAT charged, but e-invoicing applies.** Individuals in the regime forfettario (prior-year revenue or fees, annualised, up to EUR 85,000; the regime ends in the same year once revenue passes EUR 100,000) charge no VAT on domestic sales and are exempt from paying VAT and from most VAT duties (L. 190/2014 art. 1 commi 54, 58, 59, 71). They still pay VAT on reverse-charge purchases, including intra-EU ones, by the 16th of the second month after each calendar quarter, with no deduction (comma 58(e-bis), in Normattiva's text from June 2025, so in force for all of 2026). They do not file a LIPE (D.L. 78/2010 art. 21-bis(3)). Use [it-regime-forfettario](it-regime-forfettario.md).
+- **Not in this skill (refer).** Regime dei minimi; pro rata for mixed taxable and exempt activity (art. 19(5), see the annual skill); margin scheme for second-hand goods, art and collectables (D.L. 41/1995 art. 36); VAT groups (arts. 70-bis to 70-duodecies); a non-resident acting through a fiscal representative; agriculture special regime (art. 34); EU B2C sales above the EUR 10,000 threshold (OSS, see `eu-vat-directive`); income tax questions.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 22% | 2026 | D.P.R. 633/1972 art. 16(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art16!vig=2026-10-24 |
+| Reduced rates | 4% (Tabella A Part II), 5% (Part II-bis), 10% (Part III) | 2026 | D.P.R. 633/1972 art. 16(2), same URL |
+| 4%: what falls in it | Fresh milk; butter and cheese; vegetables, fruit, pulses; bread, pasta, crackers; olive oil; newspapers, books and periodicals; a first home bought under the registry-tax "prima casa" conditions (not cadastral A1, A8, A9); orthopaedic and prosthetic aids, wheelchairs; canteen meals in workplaces and schools | 2026 | Tabella A Part II nn. 3-8, 13, 15, 18, 21, 30-31, 37, 41-quater, https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633:1~allA!vig=2026-10-24 |
+| 5%: what falls in it | Social-cooperative health, education and care services to listed groups; fresh basil, rosemary, sage, oregano; urban passenger transport by water; fresh truffles; winter-sport and mountaineering courses; live horses not for food sold up to the end of the year after birth; works of art, antiques and collectables (when the margin scheme is not used) | 2026 | Tabella A Part II-bis nn. 1, 1-bis, 1-ter, 1-quater, 1-septies, 1-octies, 1-novies, same URL |
+| 10%: what falls in it (main items) | Domestic electricity, and electricity and gas for manufacturing, farming and extraction businesses; medicines; hotel and other accommodation; food and drink served (restaurants, bars, vending machines); passenger transport (except Part II-bis and exempt transport); non-luxury homes outside the prima casa conditions; renovation work (ordinary and extraordinary maintenance, restoration, refurbishment) on mainly residential private buildings | 2026 | Tabella A Part III nn. 103, 114, 120, 121, 127-novies, 127-undecies, same URL; renovation: L. 488/1999 art. 7(1)(b), kept in force each year by L. 244/2007 art. 1(18) as amended by L. 191/2009, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;488~art7!vig=2026-10-24 |
+| Monthly settlement and payment | VAT due for the month paid by the 16th of the next month; December by 16 January | 2026 | D.P.R. 100/1998 art. 1(1) and (4), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-03-23;100~art1!vig=2026-10-24 |
+| Small debt carried forward | A period's VAT up to EUR 100 is paid with the next period (monthly: by 16 December at the latest; quarterly: by 16 November) | 2026 | D.P.R. 100/1998 art. 1(4); D.P.R. 542/1999 art. 7(1)(a) |
+| Quarterly option: limits | Prior calendar year volume d'affari up to EUR 500,000 (services and professions) or EUR 800,000 (other activities) | 2026 | D.P.R. 542/1999 art. 7(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-10-14;542~art7!vig=2026-10-24; limits tied to the simplified-accounts limits by L. 183/2011 art. 14(11), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;183~art14!vig=2026-10-24, set in D.P.R. 600/1973 art. 18(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art18!vig=2026-10-24 |
+| Quarterly payment dates | Q1 to Q3 by the 16th of the second month after the quarter (16 May, 16 August, 16 November); Q4 with the annual balance by 16 March, or by the income-tax balance date with 0.40% interest for each month or part month after 16 March | 2026 | D.P.R. 542/1999 art. 7(1)(a) and (b); Agenzia, "Come pagare l'Iva", https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva |
+| Quarterly interest | 1% added to each quarterly payment | 2026 | D.P.R. 542/1999 art. 7(3) |
+| August payments | Payments due 1 to 20 August may be made by 20 August with no surcharge | 2026 | D.L. 223/2006 art. 37(11-bis), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-10-24 |
+| Weekend or holiday | A payment or filing due on a Saturday or holiday is on time on the next working day | 2026 | D.L. 70/2011 art. 7(2)(l), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24 |
+| LIPE deadlines | Last day of the second month after the quarter (31 May, 30 November); Q2 by 30 September; Q4 by end of February, or inside the annual return filed by end of February | 2026 | D.L. 78/2010 art. 21-bis(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-10-24 |
+| Annual VAT return | Filed 1 February to 30 April of the next year | VAT year 2026, filed 2027 | D.P.R. 322/1998 art. 8(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art8!vig=2026-10-24 |
+| Car and motor-vehicle VAT | 40% deductible when not used only for the business | 2026 | D.P.R. 633/1972 art. 19-bis.1(1)(c), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.1!vig=2026-10-24 |
+| Entertainment gifts | VAT deductible only on goods costing up to EUR 50 each | 2026 | D.P.R. 633/1972 art. 19-bis.1(1)(h), same URL |
+| EU distance sales and B2C e-services | Italian VAT stays on them while the yearly total stays at or below EUR 10,000 | 2026 | D.L. 331/1993 art. 41(1)(b), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-30;331~art41!vig=2026-10-24 |
+| Esterometro exemption | Purchases of non-Italian-situs goods and services up to EUR 5,000 per operation are not reported | 2026 | D.Lgs. 127/2015 art. 1(3-bis), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-10-24 |
+| Late payment penalty | 25% of the unpaid tax; 12.5% if paid within 90 days; within 15 days, one fifteenth of 12.5% per day late | Violations from 1 September 2024 | D.Lgs. 471/1997 art. 13(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 |
+| Legal interest rate (ravvedimento) | 1.60% a year, from 1 January 2026 | 2026 | D.M. 10 December 2025, GU n. 289 of 13 December 2025, https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg |
+| Income tax limit for small assets (pointer) | Unit cost up to EUR 516.46 (business income) or EUR 516.40 (professionals) expensed in the year | 2026 | TUIR art. 102(5), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-24; TUIR art. 54-quinquies(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54quinquies!vig=2026-10-24 |
+
+## The taxable base
+
+**The periodic settlement.** For each month (or quarter) the business takes the VAT that became chargeable on its sales and subtracts the VAT on purchases it deducts in that period (D.P.R. 100/1998 art. 1(1)). VAT on purchase invoices received and recorded by the 15th of the next month can be deducted in the month of the operation, except for invoices for the previous year (same article). Quarterly filers may record sales invoices by the end of the month after the quarter (D.P.R. 542/1999 art. 7(3-bis)).
+
+**The LIPE rows (quadro VP).** As defined in the Agenzia's LIPE instructions (2024 edition, the current one on its model page):
+
+| Row | What goes in |
+|---|---|
+| VP1 | Month or quarter (quarterly filers enter 5 for the fourth quarter) |
+| VP2 | Sales net of VAT: taxable, non-taxable, exempt, and out-of-scope sales under arts. 7 to 7-septies that need an invoice; also sales where the buyer owes the VAT |
+| VP3 | Purchases net of VAT: domestic, intra-EU and imports, including non-deductible ones |
+| VP4 | Output VAT, including reverse-charge VAT the business owes as buyer |
+| VP5 | Input VAT deducted, including reverse-charge VAT when deductible |
+| VP6 | VP4 minus VP5: column 1 due, column 2 credit |
+| VP7 | Previous period's debt not paid because not above EUR 100 |
+| VP8 | Credit from the previous period of the same year |
+| VP9 | Credit from last year's annual return used in this period |
+| VP10 | F24 payments for first domestic sales of EU cars |
+| VP11 | Special tax credits used against the payment; not filled by quarterly filers for Q4 |
+| VP12 | Quarterly filers' 1% interest; not filled for Q4 |
+| VP13 | December acconto, with method code; not paid if under EUR 103.29 |
+| VP14 | VAT to pay (col. 1) or credit (col. 2): (VP6 col. 1 + VP7 + VP12) minus (VP6 col. 2 + VP8 + VP9 + VP10 + VP11 + VP13); not filled by quarterly filers for Q4 |
+
+**Which kind of supply.** Taxable at a rate from the table above. Non-taxable with right to deduct (non imponibile): exports (art. 8, nature code N3.1) and intra-EU B2B supplies of goods (D.L. 331/1993 art. 41, N3.2, check VIES). Out of scope (non soggette): B2B services to a business established elsewhere, since the general rule taxes B2B services where the customer is established (art. 7-ter(1)(a), N2.1); the invoice is still issued, marked "inversione contabile", by the 15th of the next month for EU customers (art. 21(4)(c) and (6-bis)). Exempt without deduction (art. 10): medical, education, insurance, financial services, residential letting, universal postal service. All three kinds go in VP2.
+
+**Reverse charge (inversione contabile, art. 17).**
+- *From foreign suppliers (art. 17(2)).* Goods and services supplied in Italy by non-residents to Italian businesses: the buyer owes the VAT. EU service invoices are integrated (TD17), EU goods (TD18); non-EU services need a self-invoice (TD17). Net to VP3, VAT to VP4 and, if deductible, VP5.
+- *Domestic (art. 17(5) and (6)).* The Italian buyer owes the VAT on: construction subcontracting to builders (6)(a); cleaning, demolition, installation and completion services on buildings (6)(a-ter); sales of buildings where the seller opts to tax (6)(a-bis); mobile phones (6)(b); game consoles, tablets, laptops and chips before installation (6)(c); emission allowances and gas and electricity certificates (6)(d-bis), (d-ter); gas and electricity sold to a reseller (6)(d-quater); gold material and semi-finished gold of 325 thousandths or more, and investment gold taxed by option (art. 17(5)); scrap metals, waste paper, rags, glass, plastic and recovered pallets (art. 74(7) and (8)). Document type TD16. Letter (6)(a-quinquies), for services under contracts of any kind to businesses in goods transport, handling and logistics, only takes effect once the EU Council authorises it (L. 207/2024 art. 1(58)); none had been found by 24 October 2026. Until then the supplier and the customer may opt, for three years, for the customer to pay the VAT in the supplier's name: the supplier issues a normal invoice, the customer pays the VAT by F24 with no offsetting by the 16th of the month after the invoice month, and the supplier stays jointly liable; the customer sends the option to the Agenzia on its form (L. 207/2024 art. 1(59) to (61), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24).
+
+**Split payment (scissione dei pagamenti, art. 17-ter).** On sales to public administrations, public economic bodies, foundations at least 70% publicly funded, and companies controlled by or at least 70% owned by public bodies, the supplier invoices the VAT but the buyer pays it straight to the Treasury. Listed (FTSE MIB) companies left the scheme on 1 July 2025 (D.L. 84/2025 art. 10). It does not apply to services whose fees bear income tax withholding, such as professionals' fees (art. 17-ter(1-sexies)). The rule applies until the EU authorisation ends (art. 17-ter(1-ter)); Council Implementing Decision (EU) 2026/1728 extended that authorisation to 30 June 2029, with effect from 1 July 2026. The supplier ends up with VAT credits; refunds of those credits are dealt with first (Decision recital 7, and see the annual skill). **In the LIPE:** the supplier records the invoice but does not count its VAT in the periodic settlement (D.M. 23 January 2015 art. 2(2)), so the net goes in VP2 and the VAT is left out of VP4. A buyer that is a business and puts split-payment VAT into its own settlement enters it in VP4 as VAT due and in VP5 as VAT deducted (LIPE instructions, VP3 note). A public administration buyer pays the VAT by the 16th of the month after it becomes chargeable, with no offsetting (D.M. 23 January 2015 art. 4(1)).
+
+**Blocked or limited input VAT (art. 19-bis.1).**
+
+| Cost | Treatment |
+|---|---|
+| Road motor vehicles not used only for the business (lett. c) | 40% of the VAT. Full deduction if the vehicle is the business's own activity (taxi, rental, driving school) or for commercial agents |
+| Leasing or hire of those vehicles, fuel, repairs, tolls (lett. d, which covers the art. 16(3) leasing and hire contracts) | Same share as the vehicle; fuel paid by card or another traceable means |
+| Passenger transport (lett. e) | Not deductible unless transport is the business's own activity |
+| Food and drink (lett. f) | Not deductible unless the business's own activity or canteen supply. A business-trip meal or hotel with an invoice is deductible |
+| Entertainment, spese di rappresentanza (lett. h) | Not deductible, except goods costing up to EUR 50 each |
+| Residential buildings (lett. i) | Purchase, rent and upkeep not deductible, except for builders of such buildings |
+| Phone and internet | No fixed share (lett. g repealed by L. 244/2007): deduct the business share only (art. 19) |
+
+**Capital goods.** Input VAT is deducted in VP5 like any purchase; there is no LIPE row for them. Later changes of use are adjusted under art. 19-bis2 (annual skill). For income tax the small-asset limits in the rates table decide whether to expense or depreciate.
+
+**Classifying bank lines (OpenAccountants' own working list, not an official source).** Shorthand: domestic purchase = VP3 + VP5; reverse charge = VP3 + VP4 (+ VP5 if deductible); sale = VP2 + VP4. "Exclude" means no VAT line; an exempt purchase with an invoice still counts in VP3.
+
+| Counterparty pattern | Default treatment |
+|---|---|
+| Bank fees, interest, loans (UniCredit, Intesa Sanpaolo, BPM, MPS, BPER, Poste/BancoPosta, Credem; Revolut, Wise, N26 fee lines) | Exclude: exempt financial services (art. 10(1) n. 1) |
+| Agenzia Entrate, F24, Agenzia Riscossione, INPS, INAIL, Camera di Commercio, Comune, Regione | Exclude: taxes, contributions, public fees |
+| Dogana / customs | Exclude the payment line; the customs bill (bolletta doganale) value goes to VP3 and its deductible VAT to VP5 |
+| Utilities (Enel, Eni Plenitude, Edison, A2A, Iren, Hera, Acea) | Domestic purchase at the rate on the invoice (may be 10%) |
+| Telecoms (TIM, Vodafone, WindTre, Fastweb, Iliad) | Domestic 22%, business share only |
+| Insurance (Generali, Allianz, UnipolSai, AXA, Zurich) | Exclude: exempt (art. 10(1) n. 2) |
+| Poste Italiane standard mail | Exclude: exempt universal service. Couriers (SDA, BRT, DHL, GLS, TNT): domestic 22% |
+| Trains, buses, taxis, Uber, domestic flights | Net to VP3, VAT blocked (lett. e); international flights excluded |
+| Autostrade, Telepass | Same share as the vehicle |
+| Supermarkets, restaurants, bars | Blocked by default; ask whether it was a business-trip meal with an invoice |
+| Google, Microsoft, Adobe, Meta, LinkedIn, Dropbox, Slack, Zoom (Irish entities); Spotify (SE); Atlassian (NL); AWS EMEA (LU); Stripe subscriptions (IE) | EU reverse charge, TD17. If the invoice shows Italian VAT, treat as domestic |
+| Notion, Anthropic, OpenAI, Figma, Twilio (US); Canva (AU); GitHub, HubSpot (check entity) | Non-EU reverse charge, self-invoice TD17 |
+| Stripe and PayPal transaction fees | Exclude: exempt financial services. SumUp, Nexi, Satispay: check the invoice |
+| Commercialista, avvocato, notaio, consulente del lavoro, architetto | Domestic 22% |
+| Wages, TFR, professional pension funds (ENPAM, CNPADC) | Exclude |
+| Commercial rent with VAT | Domestic 22%. Residential rent, IMU: exclude |
+| Own transfers (giroconto), dividends, owner money, loan repayments | Exclude |
+| Cash withdrawals | Exclude; ask what the cash paid for |
+
+**Conservative defaults when facts are missing.** Unknown sale rate: 22%. Unknown purchase status: not deductible. Unknown counterparty country: Italy. Unknown EU customer status: B2C with Italian VAT. Unknown business-use share: no recovery. Unknown SaaS billing entity: non-EU reverse charge. Unknown entertainment or personal use: blocked. Unknown scope: in scope.
+
+**Working paper.** Use the `vat-workflow-base` workbook with VP codes in the field column, a summary sheet that sums VP2 to VP5 and applies the VP14 formula above, and a recalculation step before handing it over. Large or unusual items are flagged by the firm's own limits; no official page sets them.
+
+## Deadlines and filing
+
+- **Registration and invoices.** A Partita IVA is opened before starting. Invoices between Italian parties are electronic through the SdI only, including those of forfettari and minimi since 1 January 2024 (from 1 July 2022 if their prior-year revenue exceeded EUR 25,000) (D.Lgs. 127/2015 art. 1(3); D.L. 36/2022 art. 18(2) and (3), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-10-24). An invoice is issued within 12 days of the operation; a deferred invoice for the month's deliveries by the 15th of the next month (art. 21(4)). Details in [italy-einvoice](italy-einvoice.md).
+- **Esterometro.** Sales to and purchases from parties not established in Italy are reported to the SdI in XML: sales within the invoice deadlines, purchases by the 15th of the month after receiving the document or making the operation. Not reported: operations with a customs bill, ones already invoiced through the SdI, and purchases up to EUR 5,000 each that are not Italian-situs (D.Lgs. 127/2015 art. 1(3-bis)).
+- **Monthly filers.** Settle and pay by F24 online by the 16th of the next month (D.P.R. 100/1998 art. 1). Payments due 1 to 20 August may be made by 20 August.
+- **Quarterly filers.** Settle and pay with 1% interest by 16 May (18 May 2026, as the 16th is a Saturday), 16 August (by 20 August under the August rule), 16 November; Q4 goes into the annual return and is paid by 16 March 2027, or later with the income-tax balance plus 0.40% a month (D.P.R. 542/1999 art. 7(1)(b)).
+- **LIPE.** Sent online for every quarter, also when the period ends in credit: Q1 2026 by 1 June 2026 (31 May was a Sunday), Q2 by 30 September 2026, Q3 by 30 November 2026, Q4 by 1 March 2027 or inside an annual return filed by then (D.L. 78/2010 art. 21-bis). Monthly filers send one LIPE per quarter with one module per month (LIPE instructions). No LIPE is due for a quarter with nothing to put in quadro VP, unless a credit from the previous quarter has to be carried (LIPE instructions). Errors are corrected with a replacement LIPE before the annual return, or in the annual return.
+- **December acconto.** Due 27 December (Agenzia, "Come pagare l'Iva"); 28 December 2026, as the 27th is a Sunday; computation in [it-dichiarazione-iva-annuale](it-dichiarazione-iva-annuale.md).
+- **Annual return.** 1 February to 30 April 2027 for VAT year 2026 (D.P.R. 322/1998 art. 8(1)).
+- **Registers.** Sales invoices (art. 23), purchases (art. 25), and daily receipts for retail (art. 24).
+
+## Penalties and interest
+
+The penalty figures below apply to violations from 1 September 2024 (D.Lgs. 87/2024 art. 5(1)).
+
+| Violation | Penalty | Source |
+|---|---|---|
+| VAT paid late or short (monthly, quarterly, acconto, balance) | 25% of the unpaid amount; 12.5% if paid within 90 days; within 15 days, 12.5% divided by 15 for each day late | D.Lgs. 471/1997 art. 13(1) |
+| Credit offset that was not due (non spettante) | 25% of the credit used | D.Lgs. 471/1997 art. 13(4-bis) |
+| LIPE omitted, incomplete or wrong | EUR 500 to 2,000; halved if sent or corrected within 15 days of the deadline | D.Lgs. 471/1997 art. 11(2-ter), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-10-24 |
+| Esterometro data omitted or wrong | EUR 2 per invoice, at most EUR 1,000 per quarter; halved (max EUR 500) if sent or corrected within 15 days | D.Lgs. 471/1997 art. 11(2-quater) |
+| Taxable sale not invoiced or recorded, or VAT understated | 70% of the VAT; EUR 250 to 2,000 when the tax settlement was not affected | D.Lgs. 471/1997 art. 6(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-10-24 |
+| Non-taxable, exempt or reverse-charge sale not invoiced or recorded | 5% of the amount; EUR 250 to 2,000 if it does not affect income either | D.Lgs. 471/1997 art. 6(2) |
+| VAT deducted that was not deductible | 70% of the deduction | D.Lgs. 471/1997 art. 6(6) |
+| Buyer receives no invoice or an irregular one and does not report it within 90 days | 70% of the VAT, minimum EUR 250 | D.Lgs. 471/1997 art. 6(8) |
+| Buyer omits the reverse-charge entries | EUR 500 to 10,000; 5% of the base, minimum EUR 1,000, if the operation is not in the books. If the supplier charged VAT by mistake, EUR 250 to 10,000 and the buyer keeps the deduction | D.Lgs. 471/1997 art. 6(9-bis) and (9-bis.1) |
+
+**Ravvedimento operoso (D.Lgs. 472/1997 art. 13, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24).** Before an assessment is notified, the business can pay the tax, the reduced penalty and interest together. The penalty falls to: one tenth of the minimum for a missed payment made within 30 days (lett. a); one ninth within 90 days (a-bis); one eighth by the deadline of the return for the year of the violation (b); one seventh after that (b-bis); one sixth, one fifth or one quarter after a tax audit report or a draft assessment (b-ter to b-quinquies). Interest runs at the legal rate, day by day (art. 13(2)): 1.60% for 2026.
+
+**Quarterly interest is not a penalty.** The 1% on quarterly payments is the price of the option (D.P.R. 542/1999 art. 7(3)); late quarterly payments carry both.
+
+## Cross-border points
+
+- **Services bought from abroad.** B2B services are taxed where the Italian buyer is established (art. 7-ter(1)(a)); the buyer self-assesses under art. 17(2) and reports through the SdI (TD17), which also covers the esterometro.
+- **Services sold abroad.** B2B to a business established elsewhere: not subject to Italian VAT (N2.1), invoice by the 15th of the next month for EU customers, VIES check, intra-EU listing (Intrastat) for EU services.
+- **Goods.** Intra-EU B2B sales are non-taxable (D.L. 331/1993 art. 41, N3.2) and intra-EU purchases are self-assessed (TD18). Exports are non-taxable (art. 8, N3.1). Import VAT is paid at customs and deducted from the customs bill.
+- **B2C to other EU countries.** Up to EUR 10,000 a year of distance sales and e-services, Italian VAT applies; above it, the customer's country's VAT applies, normally through OSS (D.L. 331/1993 art. 41(1)(b); `eu-vat-directive`).
+- **Non-residents.** A foreign business supplying Italian businesses usually leaves the VAT to the buyer (art. 17(2)). One that must register uses direct identification or a fiscal representative: refer.
+- **Forfettari abroad.** They apply the normal place-of-supply rules to cross-border services and pay reverse-charge VAT on purchases themselves (L. 190/2014 art. 1(58)(d) and (e-bis)).
+
+## Worked examples
+
+**Example 1: quarterly filer, Q2 2026.** A software consultancy (services) had a 2025 volume d'affari of EUR 300,000, below the EUR 500,000 limit, and opted for quarterly settlement. In April to June 2026 it invoices EUR 60,000 at 22% to Italian clients and EUR 20,000 of consulting to a German company (out of scope under art. 7-ter, N2.1, still in VP2). It buys EUR 2,000 of software from a US company (self-invoice TD17: VAT 440 in VP4 and VP5), EUR 10,000 of Italian services at 22% (VAT 2,200) and leases a car used for business and private trips for EUR 3,000 plus 22% VAT of 660, of which 40% (264) is deductible (art. 19-bis.1(1)(c) and (d)). VP2 = 80,000; VP3 = 15,000; VP4 = 13,200 + 440 = 13,640; VP5 = 440 + 2,200 + 264 = 2,904; VP6 = 10,736. The 1% interest is 107.36 (VP12), so VP14 = 10,843.36. The 16 August deadline is a Sunday inside the August window, so the F24 is due by Thursday 20 August 2026. The Q2 LIPE is due 30 September 2026.
+
+```oa-check
+name: Italy quarterly settlement Q2 2026 with reverse charge and car limit
+inputs:
+  sales_it_22: 60000
+  services_to_eu_b2b: 20000
+  software_us: 2000
+  purchases_it_22: 10000
+  car_lease: 3000
+steps:
+  - vp2: sales_it_22 + services_to_eu_b2b
+  - vp3: software_us + purchases_it_22 + car_lease
+  - reverse_charge_vat: software_us * 0.22
+  - vp4: sales_it_22 * 0.22 + reverse_charge_vat
+  - car_vat_deductible: car_lease * 0.22 * 0.40
+  - vp5: reverse_charge_vat + purchases_it_22 * 0.22 + car_vat_deductible
+  - vp6: vp4 - vp5
+  - vp12_interest: vp6 * 0.01
+  - vp14: vp6 + vp12_interest
+expected:
+  vp2: 80000
+  vp3: 15000
+  vp4: 13640
+  car_vat_deductible: 264
+  vp5: 2904
+  vp6: 10736
+  vp12_interest: 107.36
+  vp14: 10843.36
+```
+
+**Example 2: monthly filer pays September 2026 VAT ten days late.** A retailer files monthly. Its September 2026 settlement shows EUR 8,000 due by Friday 16 October 2026. It pays on Monday 26 October, ten days late, before any audit, and uses ravvedimento. The base penalty is 25%; paid within 90 days it is halved to 12.5%; paid within 15 days it is 12.5% divided by 15 for each of the 10 days (D.Lgs. 471/1997 art. 13(1)). Ravvedimento within 30 days cuts that to one tenth (D.Lgs. 472/1997 art. 13(1)(a)): 8,000 x 12.5% x 10/15 / 10 = 66.67. Interest at the legal rate of 1.60% for 10 days: 8,000 x 1.60% x 10/365 = 3.51. The F24 carries 8,070.18 in total: tax, penalty and interest, each under its own code.
+
+```oa-check
+name: Italy monthly VAT paid 10 days late with ravvedimento (2026)
+inputs:
+  vat_due: 8000
+  days_late: 10
+  legal_rate: 0.016
+steps:
+  - base_penalty: vat_due * 0.25
+  - within_90_days: base_penalty / 2
+  - within_15_days: within_90_days * days_late / 15
+  - ravvedimento_penalty: round(within_15_days / 10, 2)
+  - interest: round(vat_due * legal_rate * days_late / 365, 2)
+  - total_f24: vat_due + ravvedimento_penalty + interest
+expected:
+  base_penalty: 2000
+  within_90_days: 1000
+  ravvedimento_penalty: 66.67
+  interest: 3.51
+  total_f24: 8070.18
+```
 
 ## Ask the client first
 
-- Are you under the regime ordinario, or forfettario or minimi? (Section 2.)
-- Monthly or quarterly settlement, and what was last year's volume d'affari? (Frequency table.)
-- Do you make any exempt sales, or sell to public administration (split payment)? Either can take the file out of scope.
-- Do you sell to or buy from businesses or consumers in other EU countries or outside the EU?
-- Do you use a car for the business, is it your core activity, or are you a commercial agent?
-- Do you have IVA credit from the previous period or from last year's annual return?
-
-## When to refuse or refer
-
-- Regime forfettario, regime dei minimi, split payment, pro rata, margin schemes, VAT groups, fiscal representatives (R-IT-1 to R-IT-7).
-- EU B2C distance sales above the threshold in Section 5.15 (OSS).
-- Domestic reverse charge sectors (art. 17(6)) beyond a single flagged line.
-- Adjustments of deduction on capital goods (art. 19-bis2), VAT credit refunds and the annual return itself.
-- Penalties, ravvedimento operoso and tax notices.
-- Any question on income tax (R-IT-8).
-
-## Section 10: Reference material
-
-### Validation status
-
-v2.1, refreshed in September 2026 against the pages in Sources. No accountant has reviewed it.
-
-### Sources
-
-See Sources at the end. EU law comes via `eu-vat-directive`.
-
-### Known gaps
-
-1. The supplier library does not cover every Italian SME.
-2. Split payment and domestic reverse charge are flagged, not computed.
-3. The LIPE model and instructions are the Agenzia's 2024 edition, the one its model page links in September 2026.
-4. Restaurant IVA depends on who ate and why; the Guide flags but cannot check.
-5. F24 tax codes and ABI causale codes are not checked against an official page.
-
-### Change log
-
-- **v2.1 (September 2026):** LIPE rows, quarterly limits, Q2 deadline, transport, entertainment, telephone, toll deductions and B2B EU services corrected.
-- **v2.0 (April 2026):** Rewrite to the Malta v2.0 structure.
-- **v1.0:** Initial version.
-
-### Self-check (v2.0)
-
-All ten sections present; LIPE rows follow the Agenzia's instructions; vehicle, entertainment, interest and reverse-charge rules are in Sections 4 and 5.
-
-## End of Italy VAT Return Guide v2.1
-
-This Guide is incomplete without BOTH companion files: `vat-workflow-base` v0.1+ AND `eu-vat-directive` v0.1+.
+- Regime ordinario, forfettario or minimi? If forfettario, what were 2025 revenues and have 2026 revenues passed EUR 100,000? (Whether VAT is charged at all.)
+- Monthly or quarterly, and what was the 2025 volume d'affari, split between services and other activities? (Frequency, 1% interest.)
+- Do you sell to public bodies or publicly controlled companies, or make exempt sales? (Split payment; pro rata, refer.)
+- Who are your foreign customers and suppliers, by legal entity and country, B2B or B2C? (Reverse charge, esterometro, OSS.)
+- Do you work in construction, cleaning or installation on buildings, or sell phones, laptops or energy to resellers? (Domestic reverse charge.)
+- Do you have VAT credit from the previous period (VP8) or last year's return (VP9), any car, entertainment or phone costs, and any late payments in 2026? (Deductions, ravvedimento.)
 
 ## Sources
 
-- https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote
-- https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva
-- https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f
-- https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art8!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art19bis.1!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-30;331~art41!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30
-- https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30
+| Source | URL | Read on |
+|---|---|---|
+| D.P.R. 633/1972 art. 1 (scope) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art1!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 7-ter (B2B place of supply of services) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art7ter!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 16 (rates) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art16!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 Tabella A (Parts II, II-bis, III) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633:1~allA!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 17 (reverse charge) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art17!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 17-ter (split payment) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art17ter!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 19-bis.1 (deduction limits) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.1!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 74 (scrap reverse charge) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art74!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 633/1972 art. 21 (invoices, timing) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art21!vig=2026-10-24 | 2026-10-24 |
+| D.M. 23 January 2015 arts. 2 and 4 (split payment: supplier's settlement, buyer's payment), GU n. 27 of 3 February 2015 | https://www.gazzettaufficiale.it/eli/id/2015/02/03/15A00690/sg | 2026-10-24 |
+| L. 488/1999 art. 7 (10% on residential renovation) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;488~art7!vig=2026-10-24 | 2026-10-24 |
+| L. 207/2024 art. 1(57) to (63) (logistics reverse charge and the interim option) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 10/2026 (Testo unico IVA) art. 171 (applies from 1 January 2027) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026;10 | 2026-10-24 |
+| D.P.R. 100/1998 art. 1 (monthly settlement, EUR 100 carry) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-03-23;100~art1!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 542/1999 art. 7 (quarterly option, 1% interest) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-10-14;542~art7!vig=2026-10-24 | 2026-10-24 |
+| L. 183/2011 art. 14(11) (quarterly limits = simplified-accounts limits) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;183~art14!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 600/1973 art. 18(1) (EUR 500,000 / 800,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art18!vig=2026-10-24 | 2026-10-24 |
+| D.L. 78/2010 art. 21-bis (LIPE) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2010-05-31;78~art21bis!vig=2026-10-24 | 2026-10-24 |
+| D.L. 223/2006 art. 37(11-bis) (August payments) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2006-07-04;223~art37!vig=2026-10-24 | 2026-10-24 |
+| D.L. 70/2011 art. 7(2)(l) (weekend and holiday deadlines) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24 | 2026-10-24 |
+| D.P.R. 322/1998 art. 8 (annual return window) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art8!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 127/2015 art. 1 (SdI e-invoicing, esterometro) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-10-24 | 2026-10-24 |
+| D.L. 36/2022 art. 18 (e-invoicing for forfettari) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-10-24 | 2026-10-24 |
+| L. 190/2014 art. 1 commi 54-89 (regime forfettario, VAT effects) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 | 2026-10-24 |
+| D.L. 331/1993 art. 41 (intra-EU supplies, EUR 10,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-30;331~art41!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 471/1997 art. 6 (invoicing and reverse-charge penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 471/1997 art. 11 (LIPE and esterometro penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 471/1997 art. 13 (late payment, as amended by D.Lgs. 87/2024) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 472/1997 art. 13 (ravvedimento) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 | 2026-10-24 |
+| TUIR arts. 102(5) and 54-quinquies(1) (small-asset limits) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-24 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art54quinquies!vig=2026-10-24 | 2026-10-24 |
+| D.M. 10 December 2025, legal interest 1.60% from 1 January 2026 (GU n. 289, 13 December 2025) | https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg | 2026-10-24 |
+| Council Implementing Decision (EU) 2026/1728 (split payment to 30 June 2029); text as finalised in Council doc. 10872/26 | https://eur-lex.europa.eu/eli/dec_impl/2026/1728/oj/eng and https://data.consilium.europa.eu/doc/document/ST-10872-2026-INIT/en/pdf | 2026-10-24 |
+| Agenzia delle Entrate, "Come pagare l'Iva" | https://www.agenziaentrate.gov.it/portale/come-pagare-l-iva | 2026-10-24 |
+| Agenzia delle Entrate, LIPE instructions (2024 edition, VP rows) | https://www.agenziaentrate.gov.it/portale/documents/20143/5986193/IVA+period_2024.pdf/04990f53-edc9-048a-c953-49592ebea05f | 2026-10-24 |
 
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a commercialista, revisore legale, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date version of this Guide is maintained at openaccountants.com. Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: whether the EU Council has authorised the logistics reverse charge in art. 17(6)(a-quinquies) (none found; it is not treated as in force); the full lists of Tabella A Parts II and III beyond the items named; how comma 60 of L. 190/2014 art. 1 (forfettari pay VAT they owe by the 16th of the following month) sits with the quarterly rule in comma 58(e-bis) for reverse-charge purchases (this skill follows e-bis, the specific rule); the date from which the penalty and payment rules move into the testi unici (D.Lgs. 173/2024 and D.Lgs. 33/2025), so this skill cites D.Lgs. 471/1997 and 472/1997 as in force on 24 October 2026; the Intrastat thresholds and deadlines for services; F24 tax codes and ABI bank causale codes (not given here); whether a later LIPE model replaces the 2024 instructions; the bank-statement reading notes and supplier entities in the classification list are OpenAccountants' working list, not law.
 
 > Contributed by OpenAccountants.
 
