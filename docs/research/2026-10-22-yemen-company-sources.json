@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-company-formation-and-renewal.md",
+  "sha256": "41cff68fdb2ec2eea2776131f939d866cd51313f66e38ea96822df840f198182",
+  "sources": [
+    {
+      "url": "https://moit.gov.ye/commercial-companies-Limit",
+      "locators": [
+        "requirements1-8;documents1-9;Sanaa address"
+      ],
+      "scope": "Published service procedure, not complete Companies Law"
+    },
+    {
+      "url": "https://moit.gov.ye/node/209",
+      "locators": [
+        "renewal conditions1-4;documents1-9"
+      ]
+    },
+    {
+      "url": "https://www.yemen-nic.info/db/laws_ye/detail.php?ID=11607",
+      "locators": [
+        "Law15/1999 article1 replacing245(b)-(c)"
+      ]
+    }
+  ],
+  "failed_fetch": "https://www.yemen-nic.info/db/laws_ye/detail.php?ID=11507&print=Y timed out; no provisions inferred",
+  "checks": "Targeted schema and two arithmetic examples pass",
+  "review": "Independent full review by review_gi_minimum: no material defects within limited service-guidance scope at recorded hash; not professional attestation.",
+  "limitations": [
+    "Local draft only",
+    "Current legal capital instrument and complete amendment chain unresolved",
+    "Other administrations,foreign ownership,beneficial ownership,reporting deadlines unverified"
+  ]
+}

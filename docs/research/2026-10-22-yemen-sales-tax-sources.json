@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-general-sales-tax.md",
+  "sha256": "2c64770871ab75b6a3b4febe430faab30eb389e052a65ae6fce1a711a0572858",
+  "sources": [
+    {
+      "url": "https://www.yemen-nic.info/db/laws_ye/detail.php?ID=19343",
+      "locators": [
+        "Law42/2005 amended articles4,6,13,14; original text must not override amendment"
+      ]
+    },
+    {
+      "url": "https://www.yemen-nic.info/db/laws_ye/detail.php?ID=11733&print=Y",
+      "locators": [
+        "Law19/2001 articles13(e),14(b)-(c),15,30-31,34(b), subject to amendments"
+      ]
+    },
+    {
+      "url": "https://taxauthority-ye.tax/wp-content/uploads/2024/08/19-re.pdf",
+      "locators": [
+        "Decision1/2006 article1 PDFpage3: registration threshold definition"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/7-2020/",
+      "locators": [
+        "articles1,4; issuance3May2020 by Supreme Political Council in Sana’a"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/164-2020/",
+      "locators": [
+        "amended regulation90(b)II-IV: exclusions, eligibility, documentation"
+      ]
+    }
+  ],
+  "checks": "Two executable examples and targeted schema passed; aggregate checks recorded in review file.",
+  "review": "Independent full review and delta review by review_gi_minimum. Notification/payment timing clarified before diversion or sale. Delta passed at recorded hash. Not professional attestation.",
+  "limitations": [
+    "Local unpublished draft; no professional attestation",
+    "Current law and administration-specific territorial application unresolved",
+    "Special schedules, supply valuation/timing, refunds and detailed compliance incomplete"
+  ]
+}

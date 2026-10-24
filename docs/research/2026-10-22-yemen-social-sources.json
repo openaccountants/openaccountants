@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-social-contributions.md",
+  "sha256": "781920a7df579012da794a693b6f935bacbf60189506d738069b78b424b7cf53",
+  "sources": [
+    {
+      "url": "https://gcss.ye/law/",
+      "locators": [
+        "3 wage definition;5-10 scope;18-24 base/payment;32 funding;102 implementation;128 repeal;129 commencement"
+      ],
+      "finding": "Article32 separately lists11%employer pension,7%employee,2%employer injury. Linked official PDF page7 corroborates. Day/month of issuance blank."
+    },
+    {
+      "url": "https://gcss.ye/guides-of-sub/",
+      "locators": [
+        "Compulsory insurance rates and registration/payment; voluntary insurance eligibility/bands"
+      ],
+      "finding": "Displays18%total11%employer7%employee; no reconciliation of separate statutory injury component."
+    }
+  ],
+  "review": "Independent full source review passed the explicitly non-operational presentation at7a75a8b7ee5c3a66b1043082ae29661a8464cd2e4fb8f0292e09865aa3be064c. Writer applied optional employer/employee-total wording. Rate/commencement unresolved; no attestation.",
+  "checks": "Targeted schema and two examples pass",
+  "limitations": [
+    "Material injury-charge discrepancy unresolved; not operational payroll guidance",
+    "Current implementation, territory, minimum wage and bands unverified",
+    "Local only, no attestation"
+  ]
+}
