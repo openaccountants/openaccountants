@@ -1,377 +1,219 @@
 ---
 name: ie-cat
-description: Use this skill whenever asked about Irish Capital Acquisitions Tax (CAT) on gifts and inheritances. Trigger on phrases like "Ireland CAT", "Irish inheritance tax", "Irish gift tax", "Group A Ireland", "Group B threshold Ireland", "Group C threshold Ireland", "Dwelling House Exemption", "Section 86 CATCA", "Business Relief Ireland", "Agricultural Relief Ireland", "active farmer test", "Form IT38", "valuation date Ireland", "small gift exemption €3,000", "CAT 33%", "aggregation rule CAT", "foreign gift Ireland", or any question about computing, filing, or reporting Irish CAT for a donee or beneficiary. Scope covers CAT computation under the Capital Acquisitions Tax Consolidation Act 2003 (CATCA 2003) as amended by successive Finance Acts, the three group thresholds (A/B/C), the cumulative aggregation rule back to 5 December 1991, the principal reliefs (Dwelling House, Business, Agricultural), foreign-element situs and residence rules, valuation date mechanics, and the Form IT38 pay-and-file obligation via ROS. ALWAYS read this skill before touching Irish CAT work.
+description: "Ireland's Capital Acquisitions Tax (CAT) on gifts and inheritances for 2026. Covers the single 33% rate; the Group A, B and C thresholds in two 2026 periods (EUR 400,000 / 40,000 / 20,000 for benefits taken to 6 October 2026, and EUR 420,000 / 44,000 / 22,000 from 7 October 2026 under Finance (No. 2) Bill 2026 s.66, which Revenue already applies); aggregation since 5 December 1991; the EUR 3,000 small gift exemption; the spouse and civil partner exemption; dwelling house exemption; agricultural and business relief at 90%; valuation date; the 31 October pay-and-file date and the 80% IT38 filing trigger; late filing surcharge, under-valuation surcharge and interest; residence, domicile and foreign tax credits. Trigger on 'Irish inheritance tax', 'Irish gift tax', 'CAT threshold', 'Group A', 'IT38', 'small gift exemption', 'dwelling house exemption', 'agricultural relief', 'business relief'. Out of scope: capital gains tax (ie-cgt), residence and domicile in depth (ie-cross-border, ie-non-dom), income tax (ie-income-tax-form11)."
+version: 1.1
 jurisdiction: IE
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# IE Cat
-
-## Section 1 — Quick reference
-
-**Section 1 — Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Ireland (Republic of Ireland) |
-| Tax | Capital Acquisitions Tax (CAT) — gift tax + inheritance tax in a single charge |
-| Currency | EUR (€) |
-| Primary legislation | Capital Acquisitions Tax Consolidation Act 2003 (CATCA 2003) |
-| Amending legislation | Finance Acts (annual); most recent threshold uplift — Finance Act 2024 (Group A €335k → €400k; Group B €32,500 → €40,000; Group C €16,250 → €20,000) |
-| Headline rate | **33%** on the taxable value of gifts and inheritances above the relevant group threshold |
-| Cumulation start | 5 December 1991 (all prior benefits in the same group aggregate to determine remaining threshold) |
-| Annual small gift exemption | **€3,000** per donor per donee per calendar year (non-cumulative; ignored for aggregation) |
-| Tax authority | Office of the Revenue Commissioners |
-| Filing | Form IT38 — filed by donee/beneficiary online via ROS (or IT38S short form where applicable) |
-| Pay-and-file deadline | **31 October** following the year of the **valuation date** (valuation date between 1 Jan – 31 Aug → IT38 due 31 Oct same year; valuation date between 1 Sep – 31 Dec → IT38 due 31 Oct following year) |
-| Validated by | Pending — requires sign-off by an Irish Chartered Tax Adviser (CTA) or Chartered Accountant (Chartered Accountants Ireland / ACCA Ireland) |
-| Skill version | 1.0 |
-
-### Group thresholds (2025 — Finance Act 2024 figures)
-
-**Group thresholds (2025 — Finance Act 2024 figures)**
-
-| Group | Relationship of donee to donor | Lifetime threshold (since 5 Dec 1991) |
-| --- | --- | --- |
-| **Group A** | Child receiving from parent (incl. step-child, adopted child, certain foster children, certain minor children of a deceased child taking from grandparent) | **€400,000** |
-| **Group B** | Lineal ancestor / lineal descendant (other than Group A), brother, sister, child of a brother or sister (niece/nephew), parent receiving an inheritance from a child (gifts from child fall into Group A on parent in limited cases — see §3) | **€40,000** |
-| **Group C** | Any relationship not in Group A or Group B (including cohabitant, friend, in-law, more distant relative) | **€20,000** |
-
-### Rate at a glance
-
-**Rate at a glance**
-
-| Cumulative taxable benefit in group | Rate |
-| --- | --- |
-| Up to threshold | 0% |
-| Above threshold | **33%** flat on excess |
-
-## Section 2 — Required inputs & refusal catalogue
-
-### Required inputs
-
-Before computing any Irish CAT position, obtain:
-
-1. **Identity of the donee/beneficiary** — name, PPSN, tax residence and ordinary residence status, domicile (for foreign-element analysis).
-2. **Identity of the disponer (donor / deceased)** — name, PPSN if available, residence/ordinary-residence/domicile, and date of death (if inheritance).
-3. **Date of the gift or inheritance** — for inheritances, the date of death; for gifts, the date the donee becomes beneficially entitled in possession.
-4. **Valuation date** — for gifts, generally the date of the gift; for inheritances, the earliest of (a) the date the personal representative is entitled to retain the asset for the beneficiary, (b) the date the asset is so retained, or (c) the date the asset is delivered, paid over or transferred to the beneficiary (Section 30 CATCA).
-5. **Description and market value of each asset at the valuation date** — open-market value, ignoring any restrictions imposed by the disponer.
-6. **Liabilities, costs and expenses properly deductible** — funeral expenses, debts of the deceased, costs of administration attributable to the benefit.
-7. **Relationship between disponer and donee** — to determine the group threshold.
-8. **All prior gifts or inheritances received by the donee from any disponer within the same group since 5 December 1991** — required for cumulation.
-9. **Whether any relief is claimed** — Dwelling House Exemption (s.86), Business Relief (ss.90–102), Agricultural Relief (ss.89), Favourite Nephew/Niece relief (s.27), surviving spouse/civil partner of a predeceased relative provisions, etc.
-10. **Foreign element** — situs of each asset, residence/ordinary-residence of disponer at date of disposition and of donee at date of gift/inheritance.
-11. **Whether any double-taxation treaty applies** — Ireland has CAT treaties with the **UK** and the **USA** only; unilateral credit under s.107 CATCA is available for other jurisdictions.
-
-### Refusal catalogue — do NOT proceed; refer to a qualified Irish CTA
-
-Refuse to issue a final IT38 position (escalate to a qualified Irish Chartered Tax Adviser) where any of the following apply:
-
-- **Discretionary trust tax** (initial 6% charge + annual 1% charge under ss.15–22 CATCA) — specialised area; out of scope of v1.0.
-- **Section 86 Dwelling House Exemption claims where the donee owns or has an interest in another dwelling at the date of the gift/inheritance** — anti-avoidance restrictions tightened by FA 2016 are nuanced.
-- **Business Relief or Agricultural Relief clawback events** within the 6-year post-acquisition window.
-- **The "active farmer" test under s.89(1A) CATCA** — requires either an agricultural qualification, 50% time test on the holding, or a long-term lease to a qualifying farmer; if the facts are unclear, refuse.
-- **Foreign-domiciled donee or disponer** where the situs/residence test produces a mixed outcome (Irish-situs and foreign-situs assets in the same disposition).
-- **Disclaimers, partial disclaimers and post-death deeds of variation** (s.12 CATCA) — interpretation depends on the precise wording and timing.
-- **Limited interests, life interests, annuities, and successive interests** — actuarial valuation under Schedule 1 CATCA Tables A and B is required.
-- **Free use of property, interest-free loans, and benefits derived from a private company** (ss.40, 43 CATCA) — deemed gift mechanics are fact-sensitive.
-- **Discretionary trust appointments where the beneficiary is not yet absolutely entitled.**
-- **Anti-avoidance: Section 811 / 811C TCA 1997 general anti-avoidance challenges** referred to CAT — refer.
-- **Cross-border estates with assets in jurisdictions outside Ireland, UK and USA** where double-tax relief computation requires foreign-country probate valuation evidence.
-- **The skill MUST NOT compute Irish probate tax, stamp duty on property transfers, or income tax on estate income** — those are separate skills.
-
-If any item above is in play, state clearly: *"This matter falls outside the scope of skill ie-cat v1.0. A qualified Irish Chartered Tax Adviser must review and sign off."*
-
-## Section 3 — Tier 1: Chargeable persons, chargeable benefit, valuation, group thresholds
-
-### 3.1 Chargeable person
-
-- **Chargeable person definition** — CAT is a **beneficiary-based tax**. The **donee** (gift recipient) or **successor / beneficiary** (inheritance recipient) — referred to collectively in CATCA 2003 as the "accountable person" — bears the tax. The disponer is **not** the chargeable person (contrast with UK Inheritance Tax, which is levied on the estate). A person is a chargeable person where **either**: - the **disponer** is resident or ordinarily resident in Ireland at the date of the disposition (date of gift / date of death for inheritances); **or** - the **donee** is resident or ordinarily resident in Ireland at the date of the gift / inheritance; **or** - the **asset is situated in Ireland** (Irish-situs asset rule — applies regardless of residence of either party). If none of those conditions is satisfied, the gift/inheritance is **outside the charge to Irish CAT**. > **Special non-domiciled rule (s.6(2)(d) and s.11(2)(d) CATCA):** a person who is not domiciled in Ireland is treated as resident or ordinarily resident for CAT purposes **only if** the person has been resident in Ireland for the **5 consecutive tax years immediately preceding** the year of the gift/inheritance, and is resident or ordinarily resident in Ireland on the date of the disposition. This is the "5-year rule" and shields recent arrivals.  _(s.6(2)(d), s.11(2)(d) CATCA)_
-
-### 3.2 Chargeable benefit ("taxable value")
-
-- **Taxable value computation steps** — The taxable value of a gift or inheritance is computed in three steps (s.28 CATCA): 1. **Incumbrance-free value** of the asset = market value at the valuation date − liabilities, costs and expenses properly payable out of the benefit. 2. **Less consideration paid by the donee** (if any) — full consideration in money or money's worth reduces taxable value €-for-€; partial consideration reduces proportionately. 3. **Less reliefs and exemptions** — Dwelling House Exemption (where the whole value is removed); Business Relief / Agricultural Relief (where 90% of the value is removed, leaving 10% in charge); annual small gift exemption (€3,000 per donor per calendar year). The result is the **taxable value** carried into the aggregation computation.  _(s.28 CATCA)_
-
-### 3.3 Valuation
-
-- **Valuation rules** — - **Open-market value** at the valuation date is the standard (s.26 CATCA) — the price the asset would fetch on a sale in the open market on that date, disregarding any restriction imposed by the disponer. - **Real property** — formal valuation by a qualified valuer is best practice; Revenue will challenge under-valuations and may issue a Notice of Revised Assessment. - **Unquoted shares** — net asset valuation, dividend yield basis, earnings basis, or a blend, depending on the size of the holding and the company's circumstances; informed by Revenue's Tax and Duty Manual Part 19. - **Quoted shares** — the lower of (a) the quarter-up rule on the closing bid/offer and (b) the mean of the two bargain prices on the valuation date. - **Limited interests (life interest, interest for a period of years)** — actuarial value from Schedule 1 CATCA Table A (life interests, by age and gender) or Table B (interests for a fixed period).  _(s.26 CATCA)_
-
-### 3.4 Group thresholds and cumulation
-
-- **Cumulation rule** — The **group threshold** is the lifetime tax-free amount available to the donee from disponers within that group, **cumulated since 5 December 1991**. **Cumulation rule (s.9 CATCA):** > Taxable value of current benefit + sum of taxable values of all prior benefits in the same group received since 5 Dec 1991 = aggregate taxable value. Compare aggregate to the **threshold in force at the date of the current benefit**. Tax at 33% applies to the excess. The threshold to apply is the **current** group threshold (i.e. the threshold at the date of the latest benefit), not the historical threshold at the date of each prior benefit. This is sometimes called the "indexation by reference to current threshold" mechanism. > **Double-aggregation point:** prior gifts received from a person in Group B do **not** aggregate with current inheritances from a person in Group A — aggregation operates **within the same group only**. However, prior gifts and prior inheritances from disponers in the **same group** aggregate together.  _(s.9 CATCA)_
-
-### 3.5 Group A — special inclusions and traps
-
-- **Group A special inclusions** — - **Step-children, adopted children, and certain foster children** (with 5+ years of care before age 18) qualify for Group A. - **Surviving spouse/civil partner of a predeceased child** can inherit at Group A from the parent-in-law (s.2 CATCA definition of "child" extended). - **Parent receiving an inheritance from a child** falls in **Group A** (not Group B) **only where** the child took the asset originally from that parent and the parent now inherits it back — otherwise Group B applies to a parent-from-child receipt. - **A parent receiving a gift (not an inheritance) from a child** is in **Group B**, not Group A.  _(s.2 CATCA)_
-
-### 3.6 Spouse / civil partner exemption
-
-- **Spouse/civil partner exemption** — Gifts and inheritances between spouses or civil partners are **wholly exempt** from CAT (s.70 and s.71 CATCA). They are also ignored for aggregation purposes. **Cohabitants are not exempt** — they fall in Group C.  _(s.70, s.71 CATCA)_
-
-### 3.7 Small gift exemption
-
-- **Small gift exemption details** — The first **€3,000** received by a donee from each disponer in each calendar year is exempt (s.69 CATCA). This exemption: - Applies **per donor**, **per donee**, **per calendar year**. - Is available for **gifts only** — not inheritances. - Is **ignored for aggregation** — does not reduce the group threshold. - Allows planned annual transfers (e.g. €3,000 × 2 parents × 2 children = €12,000 per year tax-free and outside the cumulation).  _(s.69 CATCA)_
-
-## Section 4 — Tier 2: Principal reliefs and foreign element
-
-### 4.1 Dwelling House Exemption — s.86 CATCA
-
-- **Dwelling House Exemption conditions** — Where the conditions are met, the gift or inheritance of a dwelling house is **wholly exempt** from CAT — i.e. the value of the dwelling is excluded entirely. **Conditions (post-Finance Act 2016 — significantly tightened):** 1. The dwelling was the **disponer's principal private residence** at the date of death (inheritance only — gifts of dwellings are now exempt **only** to a "dependent relative" — see (1A)). 2. The donee **occupied the dwelling as his/her only or main residence for the 3 years immediately before** the date of the inheritance. 3. The donee **must not be beneficially entitled to any other dwelling** (or interest in any other dwelling) **at the date of the inheritance**. 4. The donee must **continue to occupy the dwelling as his/her only or main residence for 6 years after** the date of the inheritance (with a relaxation for donees aged 65+ at the date of the inheritance, and for donees who are required to leave for reasons of employment or ill-health). **(1A) Gifts:** Since FA 2016, a dwelling house gift qualifies only where the donee is a **"dependent relative"** of the disponer — i.e. a relative who is permanently and totally incapacitated by physical or mental infirmity from maintaining himself/herself, or who is aged 65 or over. **Clawback:** if the donee disposes of the dwelling or ceases to occupy it within the 6-year window, the exemption is clawed back (with relief for replacement dwellings on a reasonable basis).  _(s.86 CATCA)_
-
-### 4.2 Business Relief — ss.90–102 CATCA
-
-- **Business Relief details** — A **90% reduction** in the taxable value of "relevant business property" passed by gift or inheritance. **Qualifying property:** - A business or interest in a business carried on for gain. - Unquoted shares giving the donee control (>25% voting, or any holding where the disponer had >25% before transfer) of a company carrying on a qualifying business. - Land, buildings, machinery and plant used wholly or mainly for the purposes of the business. **Excluded businesses:** dealing in shares, securities, land, or buildings; making or holding investments. The "wholly or mainly" test is applied on a value-of-assets basis. **Ownership period:** the disponer must have owned the property for a **minimum continuous period before the transfer**: - **5 years** for a gift, or - **2 years** for an inheritance. **Clawback (s.101 CATCA):** if the donee disposes of the business or shares (or the company ceases trading) within **6 years** of the transfer, the relief is wholly or partly clawed back. Replacement property within 1 year preserves relief in proportion. > **Refusal point:** if a clawback event has occurred or is likely within the 6-year window, refer to a qualified Irish CTA.  _(ss.90–102 CATCA, s.101 CATCA)_
-
-### 4.3 Agricultural Relief — s.89 CATCA
-
-- **Agricultural Relief details** — A **90% reduction** in the taxable value of "agricultural property" passed to a "farmer" by gift or inheritance. **"Agricultural property"** = agricultural land in Ireland, EU, UK, or EEA, together with crops, trees, underwood, farm buildings, dwelling houses appropriate to the property, livestock, bloodstock, and farm machinery. **"Farmer" test (s.89(1) CATCA):** after taking the gift/inheritance, at least **80% of the donee's gross property value** must consist of agricultural property. Liabilities are netted against non-agricultural property first for this test (s.89(2)). **"Active farmer" test (s.89(1A) CATCA — added by FA 2014, in force from 1 Jan 2015):** in addition to the 80% farmer test, the donee must, for **at least 6 years** after the valuation date, **either**: (a) hold a relevant **agricultural qualification** (Teagasc Green Cert or equivalent — listed in Schedule 2 of s.667B TCA 1997), and farm the land on a commercial basis for at least 50% of his/her normal working time; **or** (b) farm the land on a commercial basis for at least **50% of his/her normal working time**; **or** (c) **lease** the land for a minimum of 6 years to a person who meets (a) or (b). > **Refusal point:** if any uncertainty exists as to whether the donee meets the active farmer test, refer to a qualified Irish CTA. Misapplication leads to a full clawback at 33% on the relieved value. **Clawback:** disposal of agricultural property within **6 years** of the valuation date results in clawback unless the proceeds are reinvested in qualifying agricultural property within 1 year (6 years for compulsory acquisition).  _(s.89, s.89(1), s.89(1A), s.89(2) CATCA)_
-
-### 4.4 Double aggregation — gifts taken back
-
-- **Anti-avoidance on gifts taken back** — Where the same property is gifted by Person X to Person Y, and Person Y later transfers (whether back to X, or onward) within 3 years of the original transfer, anti-avoidance provisions in CATCA may treat the property as if X had made the disposition directly to the ultimate donee. This guards against threshold-stacking via intermediate transfers.
-
-### 4.5 Foreign element — situs, residence, treaty relief
-
-#### 4.5.1 Charging conditions (recap)
-
-- **Charging conditions recap** — Irish CAT applies where **any** of the following is true at the date of the disposition: - The **disponer** is resident or ordinarily resident in Ireland. - The **donee** is resident or ordinarily resident in Ireland. - The **asset is Irish-situs** (regardless of residence of either party).
-
-#### 4.5.2 Situs rules (common assets)
-
-**Situs rules (common assets)**
-
-| Asset | Irish-situs if … |
-| --- | --- |
-| Real property | Located in Ireland |
-| Tangible movable property | Physically in Ireland at valuation date |
-| Bank account | Branch is in Ireland |
-| Registered shares | Company's share register is in Ireland |
-| Bearer instruments | Located in Ireland |
-| Debts (simple contract) | Debtor is resident in Ireland |
-| Goodwill of a business | Business is carried on in Ireland |
-| Life policy | Proper law of the contract; in practice, with Irish insurer |
-
-#### 4.5.3 Foreign-domiciled persons — the 5-year rule (recap)
-
-- **5-year rule recap** — A non-Irish-domiciled person is treated as resident/ordinarily resident for CAT only if resident for **5 consecutive tax years immediately preceding** the disposition year and resident/ordinarily resident on the disposition date.
-
-#### 4.5.4 Foreign tax on the same gift/inheritance
-
-- **Foreign tax credit / treaty rules** — - **Ireland–UK CAT Treaty** (1977): allocates primary taxing rights by domicile of the disponer, with credit relief. Important for estates with UK and Irish assets. - **Ireland–USA Estate Tax Treaty** (1949, modified 1951): covers federal estate tax; gift tax is **not** within the treaty. - **Unilateral credit (s.107 CATCA):** for any other country, where foreign tax of a similar character has been paid on the same property, a credit against Irish CAT is allowed up to the lower of (a) the foreign tax paid and (b) the Irish CAT attributable to the same property.  _(s.107 CATCA)_
-
-### 4.6 Favourite nephew / niece relief — s.27 CATCA
-
-- **Favourite nephew/niece relief** — A nephew or niece who has worked **substantially full-time** for the disponer in a business for the **5 years immediately before** the gift or inheritance may be treated as a **Group A** beneficiary in respect of business assets only. "Substantially full-time" = ≥ 24 hours per week, or ≥ 15 hours per week where the business is run by the disponer and the disponer's spouse with no other full-time employees.  _(s.27 CATCA)_
-
-## Section 5 — Worked examples
-
-### Example 5.1 — Child receives €800,000 inheritance from parent (Group A)
-
-**Facts:** Aoife inherits €800,000 in cash from her father Seán on his death in March 2025. Aoife is Irish-resident and domiciled. She has previously received one gift in the same group: €60,000 from her mother in 2018 (no relief claimed at the time; threshold remaining was reduced by €60,000 of taxable value). The valuation date is 1 June 2025 (the date the executor transfers the cash to Aoife).
-
-**Step 1 — Identify the group threshold (2025):** Group A = €400,000.
-
-**Step 2 — Compute taxable value of current benefit:**
-
-**Step 2 — Taxable value of current benefit**
-
-| Item | € |
-| --- | --- |
-| Market value at valuation date | 800,000 |
-| Less liabilities/expenses payable from the benefit | 0 |
-| Less consideration paid by donee | 0 |
-| Less applicable reliefs (none — cash) | 0 |
-| **Taxable value of current benefit** | **800,000** |
-
-**Step 3 — Cumulate prior Group A benefits since 5 Dec 1991:**
-
-**Step 3 — Cumulation table**
-
-| Date | Disponer | Group | Taxable value |
-| --- | --- | --- | --- |
-| 2018 | Mother | A | 60,000 |
-| 2025 (current) | Father | A | 800,000 |
-| **Aggregate Group A** |  |  | **860,000** |
-
-**Step 4 — Apply 2025 threshold and compute tax:**
-
-**Step 4 — Tax computation table**
-
-| Computation | € |
-| --- | --- |
-| Aggregate taxable value | 860,000 |
-| Group A threshold (2025) | (400,000) |
-| Excess subject to CAT | 460,000 |
-| CAT at 33% | **151,800** |
-
-**Step 5 — Less tax (if any) previously paid on prior benefits:** the 2018 gift was within the then-threshold, so no prior CAT was paid; no credit to offset.
-
-**CAT payable on the current inheritance: €151,800.**
-
-**Filing:** valuation date 1 June 2025 → IT38 due **31 October 2025** via ROS.
-
-### Example 5.2 — Sibling gift of €100,000 (Group B)
-
-**Facts:** Niamh gifts €100,000 cash to her brother Cillian in July 2025. Cillian has received no prior Group B benefits. Both are Irish-resident and domiciled.
-
-**Step 1 — Group threshold (2025):** Group B = €40,000.
-
-**Step 2 — Small gift exemption:** the first €3,000 is exempt (s.69).
-
-**Step 3 — Taxable value of current benefit:**
-
-**Step 3 — Taxable value of current benefit**
-
-| Item | € |
-| --- | --- |
-| Market value | 100,000 |
-| Less small gift exemption | (3,000) |
-| **Taxable value of current benefit** | **97,000** |
-
-**Step 4 — Cumulate prior Group B benefits since 5 Dec 1991:**
-
-**Step 4 — Cumulation table**
-
-| Date | Disponer | Group | Taxable value |
-| --- | --- | --- | --- |
-| 2025 (current) | Niamh | B | 97,000 |
-| **Aggregate Group B** |  |  | **97,000** |
-
-**Step 5 — Apply threshold and compute tax:**
-
-**Step 5 — Tax computation table**
-
-| Computation | € |
-| --- | --- |
-| Aggregate taxable value | 97,000 |
-| Group B threshold (2025) | (40,000) |
-| Excess subject to CAT | 57,000 |
-| CAT at 33% | **18,810** |
-
-**CAT payable: €18,810.**
-
-**Filing:** valuation date = date of gift (July 2025) → IT38 due **31 October 2025** via ROS. Cillian is the accountable person; Niamh has no Irish CAT liability (she may have foreign gift-tax implications if non-Irish — out of scope).
-
-> **Threshold trigger rule:** the obligation to file Form IT38 arises whenever the aggregate taxable value in the group exceeds **80%** of the group threshold (s.46 CATCA), even if no tax is ultimately payable. For Group B in 2025, the 80% trigger is **€32,000**.
-
-## Section 6 — Filing and payment — Form IT38
-
-### 6.1 Who files
-
-- **Who files IT38** — The **donee/beneficiary** (accountable person) files. Joint donees (e.g. siblings inheriting a property jointly) each file their own IT38 in respect of their respective interest.
-
-### 6.2 Form variants
-
-- **IT38 vs IT38S form variants** — - **Form IT38** — full form, mandatory where reliefs are claimed (Dwelling House, Business, Agricultural, Favourite Nephew, etc.), where prior benefits aggregate, or where the benefit includes non-cash assets requiring valuation. - **Form IT38S** — short form, available only where the benefit is wholly in cash, no reliefs are claimed, the donee is Irish-resident, and there are no prior benefits in the same group. Most cases require IT38, not IT38S.
-
-### 6.3 When the obligation to file arises
-
-- **Filing obligation rule** — A donee must file an IT38 where the **aggregate taxable value in the group (after the current benefit) exceeds 80% of the relevant group threshold** (s.46 CATCA). This is independent of whether tax is payable — the filing obligation is triggered by the 80% test.  _(s.46 CATCA)_
-
-**80% triggers (2025)**  _(s.46 CATCA)_
-
-| Group | 80% trigger |
-| --- | --- |
-| A | €320,000 |
-| B | €32,000 |
-| C | €16,000 |
-
-### 6.4 Valuation date and payment date
-
-- **Pay-and-file deadline rule** — The **pay-and-file deadline** is **31 October** following the year in which the valuation date falls **only if** the valuation date is between **1 January and 31 August**. Where the valuation date is between **1 September and 31 December**, the pay-and-file deadline is **31 October of the following year**.
-
-**Valuation date / IT38 due table**
-
-| Valuation date | IT38 due |
-| --- | --- |
-| 1 Jan 2025 – 31 Aug 2025 | 31 October 2025 |
-| 1 Sep 2025 – 31 Dec 2025 | 31 October 2026 |
-
-### 6.5 ROS filing mechanics
-
-- **ROS filing mechanics** — - IT38 is filed **online via ROS** (Revenue Online Service). Paper IT38 is no longer accepted for most cases. - The accountable person must have an active **PPSN** and ROS access (or file via a registered agent). - Payment is made via ROS Debit Instruction, bank transfer, or card payment. - A **statement of affairs** (assets, liabilities, prior benefits) accompanies the return.
-
-### 6.6 Interest and penalties
-
-- **Interest and penalty rates** — - **Interest on late payment**: charged daily at the statutory rate (currently 0.0219% per day ≈ 8% p.a.). - **Surcharge on late filing**: - **5% of tax** (capped at €12,695) if filed within 2 months of the deadline. - **10% of tax** (capped at €63,485) if filed more than 2 months late. - **Penalty for fraudulent or negligent return**: up to 100% of the tax under-declared, plus prosecution risk for serious cases.
-
-### 6.7 Self-assessment
-
-- **Self-assessment and Revenue review window** — CAT is a **full self-assessment** tax. Revenue may select an IT38 for compliance intervention up to 4 years after filing (or with no time limit in the case of fraud or neglect).
-
-## Section 7 — Conservative defaults
-
-When information is incomplete and a position must still be taken for planning purposes (subject to reviewer sign-off), apply these defaults:
-
-1. **Assume Group C threshold** where the relationship cannot be verified — most conservative.
-2. **Assume no reliefs apply** (no Dwelling House, no Business, no Agricultural) until the qualifying conditions are documented and the 6-year holding window is committed to in writing.
-3. **Assume valuation date = date of gift / date of death** unless the executor has formally confirmed a later valuation date.
-4. **Assume prior benefits exhaust the threshold** — i.e. start the computation as if the current benefit is the marginal excess at 33%, until the donee has signed a statutory declaration of prior benefits.
-5. **Assume no double-tax treaty applies** unless the relevant treaty (UK or USA) is explicitly invoked and the foreign tax is documented by a foreign assessment.
-6. **Assume the donee is resident/ordinarily resident in Ireland** at the date of the gift/inheritance unless evidence of non-residence is provided.
-7. **Assume the 5-year non-domiciled rule applies** — i.e. a non-domiciled donee who has been in Ireland 5+ tax years is treated as resident for CAT.
-8. **Assume Dwelling House Exemption is denied** if the donee owns or has any beneficial interest in any other dwelling at the date of the gift/inheritance.
-9. **Assume Agricultural Relief is denied** if the active farmer test (s.89(1A)) cannot be evidenced by a Teagasc Green Cert, time-test records, or a registered long-term lease.
-10. **Assume IT38 (not IT38S)** is required wherever any non-cash asset, relief claim, or prior benefit is in play.
-11. **Always recommend a formal valuation** by a qualified valuer for any real property, unquoted shares, or chattels above €5,000.
-12. **Always recommend that the donee retain documentation** of all prior gifts received since 5 Dec 1991 for the lifetime of the donee.
-13. **Always flag the 80% filing trigger** to the donee even where no tax is payable.
-
-## Section 8 — Sources
-
-### Primary legislation
-
-- **Capital Acquisitions Tax Consolidation Act 2003** (CATCA 2003) — the consolidating statute, replacing the Capital Acquisitions Tax Act 1976.
-- **Finance Act 2024** — Group A €335,000 → €400,000; Group B €32,500 → €40,000; Group C €16,250 → €20,000 (effective for gifts/inheritances on or after 2 October 2024).
-- **Finance Act 2016** — Dwelling House Exemption tightened: gifts of dwellings restricted to "dependent relatives"; donee must not own any other dwelling at the date of the inheritance.
-- **Finance Act 2014** — introduction of the "active farmer" test for Agricultural Relief (s.89(1A) CATCA, in force 1 January 2015).
-- **Finance (No. 2) Act 2008** — rate increased from 20% to 22%; subsequent Finance Acts brought the rate to 25% (2009), 30% (2011), and 33% (2012 — current).
-
-### Key sections of CATCA 2003 referenced in this skill
-
-**Key sections of CATCA 2003 table**
-
-| Section | Subject |
-| --- | --- |
-| s.6, s.11 | Charge to gift tax / inheritance tax; resident/ordinarily resident rules |
-| s.9 | Aggregation of prior benefits in the same group |
-| s.26 | Market value at valuation date |
-| s.27 | Favourite nephew / niece relief |
-| s.28 | Computation of taxable value |
-| s.30 | Valuation date for inheritances |
-| s.40, s.43 | Free use of property; benefits from a private company |
-| s.46 | Obligation to file IT38 (80% threshold trigger) |
-| s.69 | Small gift exemption (€3,000) |
-| s.70, s.71 | Spouse / civil partner exemption |
-| s.86 | Dwelling House Exemption |
-| s.89, s.89(1A) | Agricultural Relief; active farmer test |
-| ss.90–102 | Business Relief |
-| s.101 | Business Relief clawback |
-| s.107 | Unilateral credit for foreign tax |
-
-### Treaties
-
-- **Ireland / United Kingdom Convention for the Avoidance of Double Taxation in respect of Estate Duties** (signed 14 April 1977; entered into force 5 March 1978) — extended in practice to CAT.
-- **Ireland / United States Convention for the Avoidance of Double Taxation in respect of Estate Taxes** (signed 13 September 1949; modified 1951).
-
-### Revenue Commissioners published guidance
-
-- **CAT — A Guide** (Revenue Tax and Duty Manual, Part 19).
-- **Revenue eBrief** on annual threshold changes — most recently confirming the Finance Act 2024 uplifts.
-- **CAT Manual Part 11** — Agricultural Relief; the active farmer test interpretation.
-- **CAT Manual Part 12** — Business Relief; qualifying business property and clawback events.
-- **CAT Manual Part 24** — Dwelling House Exemption.
-- **Schedule 1 CATCA — Tables A and B** — actuarial factors for limited interests.
-
-### Sign-off requirement
-
-This skill output requires sign-off by a qualified Irish Chartered Tax Adviser (CTA, Irish Tax Institute) or a Chartered Accountant (Chartered Accountants Ireland, ACCA Ireland, or CPA Ireland) with CAT competence before being relied on by a taxpayer or filed with Revenue. The `verified_by` frontmatter remains **pending** until a credentialed reviewer signs off.
+# Ireland Capital Acquisitions Tax (CAT), 2026
+
+> **Source-cited draft.** Drafted from the Capital Acquisitions Tax Consolidation Act 2003 (CATCA) as amended up to Finance Act 2025, read in Revenue's Notes for Guidance (Finance Act 2025 edition); the enacted text of Finance Act 2024 ss.98 to 100 and Finance Act 2025 ss.88 and 89; Finance (No. 2) Bill 2026 s.66 as initiated on 19 October 2026; Revenue's CAT Manual (Schedule 2, Part 1, updated October 2026), eBrief 149/26 and Revenue's CAT pages, all read on 2026-10-24. No accountant has reviewed it.
+
+Authority: the Revenue Commissioners. Currency: euro. CAT is one tax charged on gifts (gift tax) and inheritances (inheritance tax). Section numbers are CATCA unless another act is named. "Disponer" is the person who gives; "beneficiary" (donee for a gift, successor for an inheritance) is the person who receives and who pays.
+
+## Who this applies to
+
+- **The beneficiary pays.** The person primarily accountable is the donee or successor (s.45(1)). The return and the payment are theirs. The disponer may be asked by Revenue for a return in some cases (s.46(13) and (14)).
+- **When a benefit is in charge (s.6 gifts, s.11 inheritances).** For dispositions made on or after 1 December 1999, the whole gift or inheritance is taxable if any one of these holds:
+  - the disponer is resident or ordinarily resident in Ireland at the date of the disposition (for a will, the date of death);
+  - the beneficiary is resident or ordinarily resident in Ireland at the date of the gift or inheritance;
+  - otherwise, only the property situated in Ireland is taxable.
+- **Foreign-domiciled people.** A person not domiciled in Ireland counts as resident or ordinarily resident for CAT only if they have been resident in Ireland for the 5 consecutive tax years before the relevant date, and are resident or ordinarily resident on that date (s.6 and s.11; Revenue Notes for Guidance, Parts 2 and 3).
+- **Date of the gift or inheritance.** The date of a gift is normally the date it is received. The date of an inheritance is usually the date of death. These dates fix the rate and the threshold that apply. A gift made within 2 years of the disponer's death becomes an inheritance (s.3).
+- **Exempt in full and ignored for aggregation:** gifts and inheritances between spouses or civil partners (s.70 gifts, s.71 inheritances). Cohabitants are not spouses; they fall in Group C unless a specific exemption applies.
+- **Parent inheriting from a child.** An inheritance taken by a parent on the death of a child is exempt where the child had taken a non-exempt gift or inheritance from either or both parents in the 5 years before the child's death (s.79). Otherwise an absolute inheritance taken by a parent from a child is in Group A (Schedule 2, Part 1, para 1).
+- **Out of scope here:** the 6% initial and 1% annual discretionary trust charges (ss.15 and 20), probate tax, stamp duty, and capital gains tax (see ie-cgt). Limited interests (life interests, interests for a period) need the Schedule 1 tables; this skill flags them but does not value them.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| CAT rate on the excess over the group threshold | 33% | Benefits taken on or after 6 Dec 2012, unchanged for 2026 | CATCA Sch. 2, Part 1, para 4; https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx |
+| Group A threshold (child of the disponer, minor child of a deceased child, parent taking an absolute inheritance from a child) | EUR 400,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99; https://www.irishstatutebook.ie/eli/2024/act/43/section/99/enacted/en/html |
+| Group B threshold (lineal ancestor, lineal descendant other than Group A, brother, sister, niece, nephew) | EUR 40,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99 (same URL) |
+| Group C threshold (anyone else) | EUR 20,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99 (same URL) |
+| Group A threshold | EUR 420,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66 (initiated 19 Oct 2026, not yet enacted), https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf ; applied by Revenue: https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx |
+| Group B threshold | EUR 44,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page (same URLs) |
+| Group C threshold | EUR 22,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page (same URLs) |
+| Aggregation start date | Prior benefits in the same group since 5 Dec 1991 | 2026 | CATCA Sch. 2, Part 1, para 3; https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-aggregation-rules.aspx |
+| Small gift exemption | First EUR 3,000 of gifts from each disponer to each donee per calendar year; not aggregated | 2026 | s.69; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part09.pdf |
+| Agricultural relief | Market value reduced by 90% | 2026 | s.89; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part10.pdf |
+| Business relief | Taxable value reduced by 90% | 2026 | s.92; Notes for Guidance Part 10 (same URL) |
+| IT38 filing trigger | Aggregate taxable value in the group over 80% of the group threshold | 2026 | s.46(4)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part06.pdf |
+| 80% trigger amounts | A 320,000 / B 32,000 / C 16,000 to 6 Oct 2026; A 336,000 / B 35,200 / C 17,600 from 7 Oct 2026 | 2026 | Computed: 80% of each threshold above |
+| Reporting of interest-free and low-interest loans from close relatives | Return required where the aggregate balance on specified loans exceeds EUR 335,000 on at least one day in the period | From 1 Jan 2025 | s.46(4A)(b) as substituted by Finance Act 2024 s.98; https://www.irishstatutebook.ie/eli/2024/act/43/section/98/enacted/en/html |
+| Late filing surcharge | 5% of tax, capped at EUR 12,695, if under 2 months late; 10%, capped at EUR 63,485, if 2 months or more late | 2026 | s.53A; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part07.pdf |
+| Under-valuation surcharge | 10%, 20% or 30% of the tax on the asset when the declared value is 50 to under 67%, 40 to under 50%, or under 40% of the ascertained value | 2026 | s.53; Notes for Guidance Part 7 (same URL) |
+| Interest on late CAT | 0.0219% per day | Since 1 Jul 2009 | s.51(2); https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf |
+
+Historic rates for older aggregation work: 30% (7 Dec 2011 to 5 Dec 2012), 25% (8 Apr 2009 to 6 Dec 2011), 22% (20 Nov 2008 to 7 Apr 2009), 20% (1 Dec 1999 to 19 Nov 2008) (Revenue CAT rates page). Prior benefits are aggregated at their taxable value; the threshold in force at the date of the current benefit is used.
+
+**Which threshold applies.** The threshold is the one in force on the date of the gift or inheritance, not the valuation date (Revenue CAT thresholds page). A death on 6 October 2026 uses EUR 400,000 even if the estate is paid out in 2027.
+
+## The taxable base
+
+1. **Market value at the valuation date** (s.26): the price the property would fetch on the open market. Revenue may challenge a low value, and a large shortfall triggers the s.53 surcharge.
+2. **Valuation date** (s.30). For a gift, the date of the gift. For most inheritances, the earliest of: the date the successor's share can lawfully be retained for them, the date it is actually retained, or the date it is paid, delivered or transferred to them. Each advance from an estate has its own valuation date (s.30(5)). A gift that becomes an inheritance because the disponer died within 2 years keeps the gift date as its valuation date (s.30(3)).
+3. **Taxable value** (s.28). Market value less liabilities, costs and expenses properly payable out of the benefit, less any consideration the beneficiary gave.
+4. **Reliefs reduce the value** (below), then the small gift exemption takes the first EUR 3,000 of gifts from each disponer in a calendar year out entirely (s.69). The exemption covers gifts only, plus a gift that becomes an inheritance because the disponer dies within 2 years.
+5. **Aggregate within the group.** Add the taxable value of all prior gifts and inheritances taken since 5 December 1991 that carry the same group threshold. The unused threshold is the current threshold less those prior benefits. Tax is 33% of the current benefit above the unused threshold (Sch. 2, Part 1, paras 3 and 4). Benefits from different groups are not aggregated. Property chargeable more than once on the same event is counted only once (s.103).
+
+**Group placement rules (Schedule 2, Part 1).**
+- A stepchild is a child; a minor child of a deceased child (or stepchild) is in Group A. An adult child of a deceased child is in Group B (CAT Manual Sch. 2 Part 1, para 2).
+- A surviving spouse or civil partner of a deceased person who was a closer relation of the disponer takes that closer relationship (para 6). A widowed daughter-in-law inheriting from her father-in-law is in Group A.
+- Favourite nephew or niece (para 7): a nephew or niece who worked substantially full-time for the disponer (or the disponer's company) for the 5 years before the disposition is treated as a child, for business assets or company shares only. "Substantially full-time" means at least 24 hours a week, or at least 15 hours where the business is run only by the disponer, the disponer's spouse and the nephew or niece.
+- Foster children (para 9): Group A from the foster parent, and Group B from specified relatives of the foster parent, on a claim. Informal fostering needs 5 years of care before age 18.
+- An adopted child is in Group A from a natural parent (para 10).
+
+**Dwelling house exemption (s.86).** An inheritance of a dwelling house is exempt when all of these hold:
+- it was the disponer's principal private residence at death (deemed met if the disponer was away because of ill health);
+- the successor occupied it as their only or main residence for the 3 years before the inheritance (or 3 of the 4 years where a replacement house is involved);
+- at the date of the inheritance (or the valuation date if later) the successor is not beneficially entitled to any other dwelling house or any interest in one;
+- the successor keeps living there for 6 years, unless aged 65 or over at the date of the inheritance.
+A gift of a house does not qualify, except to a dependent relative: a lineal ancestor or descendant, brother, sister, uncle, aunt, nephew or niece of the disponer or their spouse or civil partner, who is 65 or over or permanently and totally incapacitated. The exemption is clawed back if the house is sold or the successor stops living there within 6 years, subject to replacement-house, ill-health and employer-required absences (s.86(6) to (8)).
+
+**Agricultural relief (s.89).** Agricultural property (land, pasture and woodland in an EU Member State, with crops, appropriate farm buildings and houses, machinery, livestock, bloodstock and BISS payment entitlements) is valued at 10% of market value. The beneficiary must be a "farmer":
+- at least 80% of their property after taking the benefit is agricultural property, valued on the valuation date, with no deduction for debts except on an off-farm main residence; and
+- for at least 6 years after the valuation date they either hold an agricultural qualification (or get one within 4 years) and farm the land commercially, or spend at least 50% of their normal working time farming commercially, or lease the land to someone who meets one of those tests.
+Liabilities are only partly deductible against relieved property. The relief is clawed back on a disposal within 6 years of the gift or inheritance unless the proceeds go into other agricultural property within 1 year (6 years for a compulsory acquisition). Trees and underwood get the relief without the farmer test. A replacement section 89A (Finance Act 2024 s.100) adds a 6-year farming test for the disponer, extends the land to the United Kingdom and adds rules for solar panels; it applies only from a date set by Ministerial order (Notes for Guidance Part 10).
+
+**Business relief (ss.90 to 102).** The taxable value of relevant business property is reduced by 90% (s.92). It covers a business or an interest in one, unquoted shares meeting the holding conditions, and land, buildings and plant used by the business. It does not cover businesses that wholly or mainly deal in land, shares, securities or currencies, or make or hold investments. The disponer (or spouse) must have owned the property for 2 years before an inheritance taken on death, or 5 years in any other case (s.94). Assets not used for the business are "excepted assets" and get no relief. For gifts and inheritances taken on or after 1 January 2026, an asset is relieved only if it was used wholly or mainly for the business throughout the whole, or the last 2 years, of the ownership period, or is required for a specific business purpose within 6 years; if it is not so used, the beneficiary must file an additional return (s.100(2) as substituted by Finance Act 2025 s.89). The relief is withdrawn if, within 6 years after the valuation date, the property stops being relevant business property or is disposed of and the full proceeds are not reinvested in relevant business property within 1 year (s.101(2), as substituted for 2026 benefits by Finance Act 2025 s.89). A sale for less than full value is treated as a disposal at market value.
+
+**Other points in the base.**
+- Free use of property and interest-free or low-interest loans are gifts (s.40); see the loan reporting row in the rates table.
+- From 1 January 2026, a disposal of an interest in a life assurance policy before the policy matures or pays out on death is treated as the interest coming into possession at the disposal (s.41(1A), inserted by Finance Act 2025 s.88).
+- Capital gains tax paid on the same event is a credit against CAT, up to the CAT on that asset; the credit is clawed back if the beneficiary disposes of the asset within 2 years (s.104).
+
+## Deadlines and filing
+
+- **Pay and file date** (s.46(2A)):
+
+| Valuation date | Return and tax due |
+|---|---|
+| 1 January to 31 August 2026 | 31 October 2026 |
+| 1 September to 31 December 2026 | 31 October 2027 |
+
+- **Who must file** (s.46(4)): a beneficiary whose aggregate taxable value in the group, including the current benefit, exceeds 80% of the group threshold, even if no tax is due. A return is also required whenever agricultural relief or business relief is claimed, whatever the value (s.46(4)(aa)), and for specified loans (s.46(4)(ab)). A person must file within 30 days of a written notice from Revenue (s.46(4)(b)).
+- **Form.** Form IT38, filed online through ROS or myAccount after registering for CAT. A paper return is only allowed where no relief or exemption (other than the small gift exemption) is claimed and the interest taken is absolute with no conditions (s.46(3A)). The short Form IT38S may be used only if no relief, exemption or credit other than the small gift exemption is claimed, the benefit has no conditions, and it comes from one person and is not part of a larger benefit (Revenue, How do you file).
+- **Contents.** Details of the property, an estimate of market value at the valuation date, and every prior benefit since 5 December 1991 (s.46(2)).
+- **Non-resident beneficiaries** may file themselves or use an Irish-resident agent, such as a solicitor (Revenue IT38 overview).
+- **Enquiry window.** Revenue may make enquiries for 4 years from 31 December in the year the return is received, with no limit for fraud or neglect (Notes for Guidance Part 6, s.46).
+
+## Penalties and interest
+
+- **Interest** (s.51). Tax is due on the valuation date. If it is paid by the 31 October pay-and-file date, no interest arises. Otherwise simple interest at 0.0219% a day runs from 1 November of the year the tax fell due (1 November 2026 for a valuation date in January to August 2026; 1 November 2027 for September to December 2026) to the date of payment. Interest on instalments for agricultural or business property under s.55 is charged at 75% of the normal rate.
+- **Late filing surcharge** (s.53A). 5% of the tax (capped at EUR 12,695) if the return is less than 2 months late; 10% (capped at EUR 63,485) if later. A return that is wrong through fraud or negligence and not corrected by the deadline counts as not filed.
+- **Under-valuation surcharge** (s.53). Where the value declared for an asset is below 67% of the value finally ascertained, a surcharge of 10% (50% to under 67%), 20% (40% to under 50%) or 30% (under 40%) of the tax on that asset is added. The surcharge carries interest and can be appealed.
+- **Clawbacks.** A clawback of dwelling house, agricultural or business relief makes the original return defective; an additional return must be delivered and the extra tax paid (s.46(9); for business relief, s.100(2)(c)).
+
+## Cross-border points
+
+- **Residence and domicile.** The charge reaches worldwide property where the disponer or the beneficiary is Irish resident or ordinarily resident; otherwise only Irish-situated property is taxed (s.6, s.11). A foreign-domiciled person counts as resident only after 5 consecutive tax years of Irish residence. For residence tests see ie-cross-border and ie-non-dom.
+- **United Kingdom.** Ireland has one CAT treaty made under the CAT legislation: the Double Taxation Relief (Taxes on Estates of Deceased Persons on Inheritances and on Gifts) (United Kingdom) Order 1978, S.I. No. 279 of 1978 (s.106; Notes for Guidance Part 10).
+- **United States.** The 1951 Ireland-US estate tax treaty covers inheritance tax and US federal estate tax on death. It does not cover gifts or US state death taxes (Notes for Guidance Part 10). Revenue notes an exception where an Irish-resident beneficiary inherits US-situated property from a US-domiciled disponer (Revenue IT38 overview).
+- **Unilateral credit** (s.107). Where another country charges a tax of a similar character on the same property, a credit is given against Irish CAT, limited to the Irish CAT on that property. Claim it on the IT38.
+- **Non-resident beneficiaries** still file and pay where Irish CAT arises; an Irish agent can act for them.
+
+## Worked examples
+
+**Example 1. Daughter inherits from her father in 2026 (Group A, before 7 October).** Aoife's father dies on 15 March 2026. The executor transfers EUR 500,000 in cash to her on 10 June 2026, which is the valuation date. In 2018 she received a gift from her mother with a taxable value of EUR 60,000. Both benefits are Group A. The date of the inheritance (15 March 2026) is before 7 October 2026, so the Group A threshold is EUR 400,000. Aggregate: 60,000 + 500,000 = 560,000. Excess over the threshold: 160,000. Tax at 33%: EUR 52,800. The valuation date falls between 1 January and 31 August, so Aoife must file Form IT38 and pay by 31 October 2026.
+
+```oa-check
+name: Group A inheritance EUR 500,000, prior Group A gift EUR 60,000, date of death 15 March 2026
+inputs:
+  inheritance: 500000
+  prior_group_a: 60000
+  threshold_a: 400000
+steps:
+  - aggregate: prior_group_a + inheritance
+  - unused_threshold: max(threshold_a - prior_group_a, 0)
+  - taxable_excess: max(inheritance - unused_threshold, 0)
+  - cat: taxable_excess * 0.33
+  - filing_trigger: threshold_a * 0.8
+expected:
+  aggregate: 560000
+  unused_threshold: 340000
+  taxable_excess: 160000
+  cat: 52800
+  filing_trigger: 320000
+```
+
+**Example 2. Niece receives a cash gift from her aunt on 1 November 2026 (Group B, new threshold, deadline rolls to 2027).** Niamh receives EUR 60,000 from her aunt on 1 November 2026. She has had no other gift from her aunt in 2026, so the first EUR 3,000 is exempt under s.69 and the taxable value is EUR 57,000. In 2015 she inherited from her grandmother with a taxable value of EUR 20,000; a grandparent and an aunt are both Group B relations, so that prior benefit counts. The gift is taken on or after 7 October 2026, so the Group B threshold is EUR 44,000 (Finance (No. 2) Bill 2026 s.66, applied by Revenue). Unused threshold: 44,000 - 20,000 = 24,000. Excess: 57,000 - 24,000 = 33,000. Tax at 33%: EUR 10,890. The aggregate of 77,000 is over the 80% trigger of 35,200, so an IT38 is required. The valuation date is in September to December, so the return and payment are due by 31 October 2027. If the Bill were not enacted with this section, the EUR 40,000 threshold would give tax of EUR 12,210 (shown in the last step).
+
+```oa-check
+name: Group B gift EUR 60,000 on 1 Nov 2026, small gift exemption, prior Group B inheritance EUR 20,000
+inputs:
+  gift: 60000
+  small_gift_exemption: 3000
+  prior_group_b: 20000
+  threshold_b_new: 44000
+  threshold_b_old: 40000
+steps:
+  - taxable_value: gift - small_gift_exemption
+  - aggregate: prior_group_b + taxable_value
+  - unused_threshold: max(threshold_b_new - prior_group_b, 0)
+  - taxable_excess: max(taxable_value - unused_threshold, 0)
+  - cat: taxable_excess * 0.33
+  - filing_trigger: threshold_b_new * 0.8
+  - cat_if_old_threshold: max(aggregate - threshold_b_old, 0) * 0.33
+expected:
+  taxable_value: 57000
+  aggregate: 77000
+  unused_threshold: 24000
+  taxable_excess: 33000
+  cat: 10890
+  filing_trigger: 35200
+  cat_if_old_threshold: 12210
+```
+
+## Ask the client first
+
+1. **Your relationship to the disponer, and the date of the gift or the date of death.** This fixes the group and whether the pre- or post-7 October 2026 threshold applies.
+2. **Every gift and inheritance you have received since 5 December 1991, with dates, givers and values.** Prior benefits in the same group use up the threshold.
+3. **The valuation date:** when the executor set aside, retained or paid over your share. This sets the 31 October deadline and when interest starts.
+4. **What the benefit consists of:** cash, a house, farmland, business assets or company shares. If a house: did you live in it for the last 3 years, and do you own or have an interest in any other house? If farmland or a business: how long did the disponer own it, and will you farm it or keep the business for 6 years?
+5. **Where you and the disponer were resident, ordinarily resident and domiciled,** and where the assets are. Has any foreign gift or inheritance tax been paid on the same property?
+6. **Is the benefit absolute, or a life interest, a benefit from a trust, or a loan on non-commercial terms?** These change the value and the filing obligations.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Revenue, Notes for Guidance, CATCA 2003 as amended to Finance Act 2025: Introduction | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/introduction.pdf | 2026-10-24 |
+| Notes for Guidance Part 2 (gift tax, s.6) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part02.pdf | 2026-10-24 |
+| Notes for Guidance Part 3 (inheritance tax, s.11; discretionary trusts) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part03.pdf | 2026-10-24 |
+| Notes for Guidance Part 4 (valuation, ss.26 to 30) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part04.pdf | 2026-10-24 |
+| Notes for Guidance Part 6 (returns, s.46) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part06.pdf | 2026-10-24 |
+| Notes for Guidance Part 7 (payment, interest, surcharges, ss.51, 53, 53A) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part07.pdf | 2026-10-24 |
+| Notes for Guidance Part 9 (exemptions, ss.69 to 88A) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part09.pdf | 2026-10-24 |
+| Notes for Guidance Part 10 (reliefs, ss.89 to 107) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part10.pdf | 2026-10-24 |
+| Notes for Guidance, Schedules (Schedule 2 computation, group rules) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/schedules.pdf | 2026-10-24 |
+| Finance Act 2024 s.98 (specified loans, EUR 335,000) | https://www.irishstatutebook.ie/eli/2024/act/43/section/98/enacted/en/html | 2026-10-24 |
+| Finance Act 2024 s.99 (group thresholds EUR 400,000 / 40,000 / 20,000 from 2 Oct 2024) | https://www.irishstatutebook.ie/eli/2024/act/43/section/99/enacted/en/html | 2026-10-24 |
+| Finance Act 2024 s.100 (new s.89A, commencement by order) | https://www.irishstatutebook.ie/eli/2024/act/43/section/100/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.88 (s.41(1A) life policies, from 1 Jan 2026) | https://www.irishstatutebook.ie/eli/2025/act/18/section/88/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.89 (business relief ss.100(2) and 101(2), from 1 Jan 2026) | https://www.irishstatutebook.ie/eli/2025/act/18/section/89/enacted/en/html | 2026-10-24 |
+| Finance (No. 2) Bill 2026, as initiated, s.66 (thresholds EUR 420,000 / 44,000 / 22,000 from 7 Oct 2026) | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-24 |
+| Revenue CAT Manual, Sch. 2 Computation of Tax Part 1 (updated October 2026) | https://www.revenue.ie/en/tax-professionals/tdm/capital-acquisitions-tax/cat-manual/schedules/sch-2-computation-of-tax-part-1-preliminary.pdf | 2026-10-24 |
+| Revenue eBrief No. 149/26 (12 Oct 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1492026.aspx | 2026-10-24 |
+| Revenue, CAT group thresholds | https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx | 2026-10-24 |
+| Revenue, CAT rates | https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx | 2026-10-24 |
+| Revenue, CAT aggregation rules | https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-aggregation-rules.aspx | 2026-10-24 |
+| Revenue, Important dates for CAT | https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/important-dates-for-cat.aspx | 2026-10-24 |
+| Revenue, IT38 overview | https://www.revenue.ie/en/gains-gifts-and-inheritance/completing-gift-or-inheritance-tax-return-it38/index.aspx | 2026-10-24 |
+| Revenue, IT38 filing obligations | https://www.revenue.ie/en/gains-gifts-and-inheritance/completing-gift-or-inheritance-tax-return-it38/filing-obligations.aspx | 2026-10-24 |
+| Revenue, How do you file (IT38 and IT38S) | https://www.revenue.ie/en/gains-gifts-and-inheritance/completing-gift-or-inheritance-tax-return-it38/how-do-you-file.aspx | 2026-10-24 |
+| Revenue, Credits you can claim against CAT | https://www.revenue.ie/en/gains-gifts-and-inheritance/credits-you-can-claim-against-cat/index.aspx | 2026-10-24 |
+| Revenue TDM, Guidelines for charging interest on late payment (CAT 0.0219% a day) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
+
+Not yet confirmed: enactment of Finance (No. 2) Bill 2026 s.66 (the EUR 420,000 / 44,000 / 22,000 thresholds are in the Bill as initiated and applied by Revenue, but the Bill had only passed First Stage on 19 October 2026); whether a commencement order has been made for s.89A (Notes for Guidance, Finance Act 2025 edition, says it is still subject to a Ministerial order); Finance (No. 2) Bill 2026 s.65 (wording change to s.101(4)) and s.64 (support payments to children under s.82(4)), not yet law; rules carried from the previous version but not re-read in the law this time: valuation methods for quoted and unquoted shares, the situs rules for each asset class, the Schedule 1 Tables A and B for limited interests, s.27 valuation of shares in private companies, the s.811C TCA 1997 general anti-avoidance rule as applied to CAT, the penalty for a fraudulent or negligent CAT return, and anti-avoidance on property passed back or onward within a short period.
 
 <!-- openaccountants-cta-block -->
 
