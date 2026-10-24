@@ -56,13 +56,13 @@ This skill sets out the income tax computation and the filing rules. It points t
 | Higher rate limit (ITA 2007 s.10(5A)) | GBP 125,140 (2 x 12,570 + 100,000) | 2025-26 and 2026-27 | https://www.legislation.gov.uk/ukpga/2007/3/section/10 |
 | Main rates, England and NI: basic, higher, additional (FA 2026 s.2) | 20%, 40%, 45% | 2026-27 (same in 2025-26) | https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
 | Bands with the standard allowance, England, Wales and NI | 0% to 12,570; 20% 12,571 to 50,270; 40% 50,271 to 125,140; 45% over 125,140 | 2025-26 and 2026-27 | https://www.gov.uk/income-tax-rates |
-| Welsh rates, 2026-27 | Same bands and rates as England (20%, 40%, 45%) | 2026-27 | https://www.gov.uk/welsh-income-tax |
-| Scottish starter rate | 19% on GBP 12,571 to 16,537 (2025-26: 12,571 to 15,397) | 2026-27 | https://www.gov.uk/scottish-income-tax |
-| Scottish basic rate | 20% on GBP 16,538 to 29,526 (2025-26: 15,398 to 27,491) | 2026-27 | https://www.gov.uk/scottish-income-tax |
-| Scottish intermediate rate | 21% on GBP 29,527 to 43,662 (2025-26: 27,492 to 43,662) | 2026-27 | https://www.gov.uk/scottish-income-tax |
-| Scottish higher rate | 42% on GBP 43,663 to 75,000 (same in 2025-26) | 2026-27 | https://www.gov.uk/scottish-income-tax |
-| Scottish advanced rate | 45% on GBP 75,001 to 125,140 (same in 2025-26) | 2026-27 | https://www.gov.uk/scottish-income-tax |
-| Scottish top rate | 48% over GBP 125,140 (same in 2025-26) | 2026-27 | https://www.gov.uk/scottish-income-tax |
+| Welsh rates, 2026-27 (Government of Wales Act 2006 s.116D; Welsh rate resolution NDM9117, agreed 27 January 2026) | Welsh rate 10p in each band, so the same bands and rates as England (20%, 40%, 45%) | 2026-27 | https://record.senedd.wales/Motion/9117 |
+| Scottish starter rate (ITA 2007 s.11A; Scottish Rate Resolution S6M-20844, agreed 19 February 2026: 19% on the first GBP 3,967 above the allowance) | 19% on GBP 12,571 to 16,537 (2025-26: 12,571 to 15,397) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
+| Scottish basic rate (S6M-20844: above GBP 3,967 up to 16,956 above the allowance) | 20% on GBP 16,538 to 29,526 (2025-26: 15,398 to 27,491) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
+| Scottish intermediate rate (S6M-20844: above GBP 16,956 up to 31,092) | 21% on GBP 29,527 to 43,662 (2025-26: 27,492 to 43,662) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
+| Scottish higher rate (S6M-20844: above GBP 31,092 up to 62,430) | 42% on GBP 43,663 to 75,000 (same in 2025-26) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
+| Scottish advanced rate (S6M-20844: above GBP 62,430 up to 125,140) | 45% on GBP 75,001 to 125,140 (same in 2025-26) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
+| Scottish top rate (S6M-20844) | 48% over GBP 125,140 (same in 2025-26) | 2026-27 | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 |
 | Savings rates (FA 2026 s.3(2)) | 20%, 40%, 45% | 2026-27 (same in 2025-26) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 |
 | Savings rates enacted for 2027-28 (FA 2026 s.5) | 22%, 42%, 47%; not for 2026-27 | 2027-28 | https://www.legislation.gov.uk/ukpga/2026/11/section/5 |
 | Starting rate limit for savings (ITA 2007 s.12(3); FA 2026 s.9) | GBP 5,000 at 0%, frozen 2026-27 to 2030-31 | 2026-27 | https://www.legislation.gov.uk/ukpga/2026/11/section/9 |
@@ -74,7 +74,7 @@ This skill sets out the income tax computation and the filing rules. It points t
 | High Income Child Benefit Charge (ITEPA 2003 s.681C) | 1% of Child Benefit per GBP 200 of adjusted net income over GBP 60,000; 100% at GBP 80,000 | 2024-25 onwards | https://www.legislation.gov.uk/ukpga/2003/1/section/681C |
 | Late payment interest | Bank of England base rate plus 4%; 7.75% from 9 January 2026 | Current | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 
-The 2025-26 main bands come from the same GOV.UK page, which states the 2025-26 Personal Allowance was GBP 12,570 and the higher rate started on income over GBP 50,270 ([Income Tax rates](https://www.gov.uk/income-tax-rates)).
+The resolution limits are amounts of income above the Personal Allowance; with the standard GBP 12,570 allowance they give the bands in the table, which match HMRC's [Scottish Income Tax](https://www.gov.uk/scottish-income-tax) page. The 2025-26 main bands come from GOV.UK's previous tax years page, which states the 2025-26 Personal Allowance was GBP 12,570 and the higher rate started on income over GBP 50,270 ([Income Tax rates: previous tax years](https://www.gov.uk/income-tax-rates/previous-tax-years)).
 
 ## The taxable base
 
@@ -93,7 +93,7 @@ The 2025-26 main bands come from the same GOV.UK page, which states the 2025-26 
 - Savings next. The starting rate for savings (0% on up to GBP 5,000) applies only to savings that would otherwise fall in the basic rate band, and the GBP 5,000 shrinks by each pound of other income above the Personal Allowance (ITA 2007 s.12). Then the Personal Savings Allowance: GBP 1,000 if no income is higher rate income, GBP 500 if some is but none is additional rate income, nil if any is additional rate income (ITA 2007 s.12B). Interest counts when deciding the band. Above those, savings are taxed at 20%, 40% or 45%.
 - Dividends last. Dividends inside any unused Personal Allowance are tax-free. The next GBP 500 is taxed at the dividend nil rate. The nil rate band still uses up the basic and higher rate bands; it is not a deduction (ITA 2007 s.13A). The rest is taxed at 10.75%, 35.75% or 39.35% for 2026-27. GOV.UK's example: wages GBP 29,570 and dividends GBP 3,000 give 20% on GBP 17,000 of wages, nothing on GBP 500 of dividends and 10.75% on GBP 2,500 ([tax on dividends](https://www.gov.uk/tax-on-dividends)). Dividend planning sits in `uk-dividends`.
 
-**Step 7: tax reducers.** Marriage Allowance is a reducer for the recipient. The lower earner gives up GBP 1,260 of Personal Allowance and the partner's tax falls by up to GBP 252. Conditions: married or in a civil partnership (not just living together); the transferor's income is below the Personal Allowance; the recipient pays no tax above the basic rate. In Scotland the recipient must pay only the starter, basic or intermediate rate. Claims can be backdated to 6 April 2022 and renew each year until cancelled. It cannot be combined with Married Couple's Allowance ([Marriage Allowance](https://www.gov.uk/marriage-allowance); [ITA 2007 s.55B](https://www.legislation.gov.uk/ukpga/2007/3/section/55B)).
+**Step 7: tax reducers.** Marriage Allowance is a reducer for the recipient. The lower earner gives up GBP 1,260 of Personal Allowance and the partner's tax falls by up to GBP 252. Conditions: married or in a civil partnership (not just living together); neither partner, after the transfer, is liable above the basic rate (in Scotland, above the intermediate rate); and neither claims Married Couple's Allowance (ITA 2007 s.55B(2), s.55C(1)). The claim helps the couple only when the transferor's income is below the Personal Allowance, as GOV.UK puts it. Claims can be backdated to 6 April 2022 and renew each year until cancelled. It cannot be combined with Married Couple's Allowance ([Marriage Allowance](https://www.gov.uk/marriage-allowance); [ITA 2007 s.55B](https://www.legislation.gov.uk/ukpga/2007/3/section/55B)).
 
 **Step 8: add charges.** The High Income Child Benefit Charge applies when the person or their partner gets Child Benefit and the person's adjusted net income is over GBP 60,000. The charge is the appropriate percentage of the Child Benefit: (adjusted net income minus GBP 60,000) divided by GBP 200, capped at 100%. The percentage and the pounds both round down to whole numbers. If both partners are over GBP 60,000, the partner with the higher adjusted net income pays. "Partner" includes someone the person lives with as if married ([ITEPA 2003 s.681C](https://www.legislation.gov.uk/ukpga/2003/1/section/681C); [Child Benefit charge](https://www.gov.uk/child-benefit-tax-charge)).
 
@@ -119,7 +119,8 @@ The 2026-27 position on how the charge is paid: an employee or pensioner can pay
 Sources: [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines); [register for Self Assessment](https://www.gov.uk/register-for-self-assessment); [TMA 1970 s.7](https://www.legislation.gov.uk/ukpga/1970/9/section/7); [TMA 1970 s.8](https://www.legislation.gov.uk/ukpga/1970/9/section/8).
 
 - **Who must register by 5 October:** someone who needs to file for the previous year and has not sent a return before, or registered before but did not need to send one for 2024-25.
-- **Registering late.** If someone registers after 5 October 2026, HMRC sends a notice with a later filing date: 31 January 2027 or 3 months from the notice date, whichever is later. The tax is still due by 31 January 2027 ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)).
+- **Notice to file sent late.** If HMRC's notice to file is given after 31 October, the return (paper or online) is due 3 months from the notice date; if it is given between 1 August and 31 October, the online deadline stays 31 January and a paper return is due 3 months from the notice (TMA 1970 s.8(1F)-(1G)). HMRC confirms the date by email or letter ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)).
+- **When the tax is due after a late notice.** If the person registered by 5 October but HMRC's notice came after 31 October, the balance is due 3 months from the notice. If the person registered after 5 October, the tax is still due by 31 January 2027 ([TMA 1970 s.59B(3)-(4)](https://www.legislation.gov.uk/ukpga/1970/9/section/59B); [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
 - HMRC must receive the return and the money by the deadline. A return is still due if the full-year profit is not yet known.
 - **Payments on account** are each half of last year's Self Assessment bill, unless last year's bill was under GBP 1,000 or more than 80% of the tax was paid at source. Detail and SA303 claims: `uk-payments-on-account`.
 - Online returns are filed through HMRC online services or commercial software. Sole traders and landlords inside Making Tax Digital for Income Tax keep quarterly updates on top; see `uk-self-employment-sa103`.
@@ -136,6 +137,13 @@ Sources: [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines); 
 | Registered after 5 October and tax not paid by 31 January | Failure to notify penalty, based on the tax still unpaid | https://www.gov.uk/self-assessment-tax-returns/penalties |
 | Late payment interest | Base rate plus 4% from 6 April 2025; 7.75% from 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 | Repayment interest | Base rate minus 1%, floor 0.5%; 2.75% from 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+
+**Making Tax Digital for Income Tax.** Sole traders and landlords who must use Making Tax Digital from 6 April 2026 (qualifying income over GBP 50,000 in 2024-25) get new penalties from the 2026-27 tax year in place of the late filing and late payment penalties above; interest is unchanged. The 2025-26 return due 31 January 2027 stays on the old penalties ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax); [MTD: who and when](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)).
+
+| MTD failure, 2026-27 tax year | Penalty | Source |
+|---|---|---|
+| Late tax return | One penalty point per missed deadline; at 4 points, GBP 200, and GBP 200 for each later missed deadline. No points for late quarterly updates in 2026-27 (FA 2021 Sch 24) | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
+| Tax paid late | Nothing up to 15 days; 3% of the tax owed at day 15 and 3% at day 30, plus 10% a year from day 31 (FA 2021 Sch 26; SI 2025/589). In the first year of the new penalties, nothing applies if the tax is paid or a payment plan is set up within 30 days. Payments on account are outside this penalty. 2027-28: 4% and 4% | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax |
 
 A penalty is due within 30 days of the notice. An appeal needs a reasonable excuse. Interest moves with the Bank of England base rate, so check the HMRC page on the day you compute it.
 
@@ -249,9 +257,16 @@ expected:
 | ITEPA 2003 s.681C, High Income Child Benefit Charge | https://www.legislation.gov.uk/ukpga/2003/1/section/681C | 2026-10-24 |
 | Taxes Management Act 1970 s.7, notice of liability | https://www.legislation.gov.uk/ukpga/1970/9/section/7 | 2026-10-24 |
 | Taxes Management Act 1970 s.8, return filing dates | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-10-24 |
+| Taxes Management Act 1970 s.59B, payment dates | https://www.legislation.gov.uk/ukpga/1970/9/section/59B | 2026-10-24 |
+| Scottish Parliament, Scottish Rate Resolution 2026-27 (S6M-20844), agreed 19 February 2026, 93 for, 29 against | https://www.parliament.scot/chamber-and-committees/votes-and-motions/S6M-20844 | 2026-10-24 |
+| Senedd, Welsh rate resolution 2026-27 (NDM9117), 10p in each band | https://record.senedd.wales/Motion/9117 | 2026-10-24 |
+| Senedd Record of Proceedings, 27 January 2026, item 5: motion agreed, 26 for, 13 against, 13 abstentions | https://record.senedd.wales/Plenary/15728 | 2026-10-24 |
+| Finance Act 2021 Sch 24 and Sch 26, points-based and late payment penalties | https://www.legislation.gov.uk/ukpga/2021/26/schedule/26 | 2026-10-24 |
+| SI 2025/589, Schedule 26 penalty percentages | https://www.legislation.gov.uk/uksi/2025/589/made | 2026-10-24 |
 | Finance Act 2009 Sch 55 paras 3 to 6, late filing penalties | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
 | Finance Act 2009 Sch 56 para 3, late payment penalties | https://www.legislation.gov.uk/ukpga/2009/10/schedule/56/paragraph/3 | 2026-10-24 |
 | GOV.UK, Income Tax rates and Personal Allowances | https://www.gov.uk/income-tax-rates | 2026-10-24 |
+| GOV.UK, Income Tax rates: previous tax years (2025-26) | https://www.gov.uk/income-tax-rates/previous-tax-years | 2026-10-24 |
 | GOV.UK, Scottish Income Tax (2026-27 and 2025-26 bands) | https://www.gov.uk/scottish-income-tax | 2026-10-24 |
 | Scottish Government, Scottish Income Tax rates and bands 2026 to 2027 | https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/pages/2026-to-2027/ | 2026-10-24 |
 | GOV.UK, Welsh Income Tax (2026-27) | https://www.gov.uk/welsh-income-tax | 2026-10-24 |
@@ -263,9 +278,11 @@ expected:
 | GOV.UK, adjusted net income | https://www.gov.uk/guidance/adjusted-net-income | 2026-10-24 |
 | GOV.UK, Self Assessment: who must send a return, deadlines, penalties | https://www.gov.uk/self-assessment-tax-returns | 2026-10-24 |
 | GOV.UK, register for Self Assessment | https://www.gov.uk/register-for-self-assessment | 2026-10-24 |
+| GOV.UK, find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
+| GOV.UK, penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
 | HMRC, interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
-Not yet confirmed: the gov.scot page still labels the 2026-27 Scottish bands "proposed"; the Scottish rate resolution passed by the Scottish Parliament was not read, so the bands rest on that page and on HMRC's GOV.UK page, which shows them as the 2026-27 rates. The gov.wales statement says the Welsh rates are 10p in each band "subject to Senedd approval"; the Senedd vote was not read, so the Welsh rates rest on HMRC's GOV.UK page. The Personal Savings Allowance amounts for 2027-28 are not published. The Welsh Government's own Welsh rates page (gov.wales/welsh-rates-income-tax) still describes 2023-24 and was not used.
+Not yet confirmed: the Personal Savings Allowance amounts for 2027-28 are not published. The Welsh Government's own Welsh rates page (gov.wales/welsh-rates-income-tax) still describes 2023-24 and was not used.
 
 <!-- openaccountants-cta-block -->
 
