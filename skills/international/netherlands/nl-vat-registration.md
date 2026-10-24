@@ -13,13 +13,16 @@ description: >
   "foreign company VAT Netherlands", "fiscal representative Netherlands". Out of scope:
   filling in the return boxes (nl-vat-return, netherlands-vat-return), income tax
   (nl-income-tax), cross-border income (nl-cross-border).
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands VAT registration, KOR, OSS and non-established businesses (2026)
@@ -270,3 +273,23 @@ expected:
 | Belastingdienst: late payment penalty | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/u_betaalt_niet_te_laat_of_te_weinig | 2026-10-23 |
 
 Not yet confirmed: the exact OSS start rule for a non-EU business registering through the Netherlands (the Belastingdienst page read describes the route for Dutch businesses); the text of the Uitvoeringsbesluit omzetbelasting 1968 on when a fiscal representative is compulsory (the list above is the Belastingdienst's).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

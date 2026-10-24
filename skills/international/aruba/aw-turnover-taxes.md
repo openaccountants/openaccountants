@@ -2,13 +2,16 @@
 name: aw-turnover-taxes
 description: >
   Aruba BBO, BAVP and BAZV turnover tax reference for businesses in 2026. Covers the combined rate components, an example on established taxable turnover, the sole-proprietor small-business threshold, threshold crossing, voluntary registration and the limited import-credit context. Includes a dated monthly filing and payment calendar reference. Use for Aruba turnover tax, small entrepreneur relief, BBO registration or import tax questions. It does not establish taxable turnover, place of supply, sector exemptions, reverse charge scope, customs valuation or complete import deduction eligibility. Indexed official sources require direct rechecking before release.
-jurisdiction: AW
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: AW
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Aruba turnover taxes: BBO, BAVP and BAZV
@@ -42,3 +45,23 @@ The [October 2026 calendar](https://www.impuesto.aw/kalender-digitale-aangifte-o
 Document legal form, annual turnover, registration history, taxable-base analysis and import evidence before computing a return. Reconcile the three taxes separately. Check special sectors, exemptions, foreign services, reverse charge, customs valuation and deduction eligibility against their own rules. None is resolved by the headline 7% rate.
 
 General research reference only. Direct source verification and accountant review remain outstanding; this is not comprehensive Aruba coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,522 +1,259 @@
 ---
 name: pt-income-tax
-description: "Utilizar esta skill sempre que for solicitada ajuda com o IRS (Imposto sobre o Rendimento das Pessoas Singulares) em Portugal para trabalhadores independentes. Acionar com expressões como \"quanto IRS pago\", \"IRS Portugal\", \"Modelo 3\", \"Anexo B\", \"Categoria B\", \"regime simplificado\", \"contabilidade organizada\", \"retenção na fonte\", \"trabalhador independente\", \"recibos verdes\", \"coeficientes regime simplificado\", \"IRS Jovem\", \"adicional de solidariedade\", ou qualquer questão sobre apresentação ou cálculo de IRS para um cliente independente em Portugal. Esta skill abrange a declaração anual Modelo 3 + Anexo B, rendimentos da Categoria B, regime simplificado vs contabilidade organizada, escalões progressivos do IRS, adicional de solidariedade, deduções específicas, retenção na fonte, IRS Jovem e prazos de entrega. LER SEMPRE esta skill antes de tocar em qualquer trabalho de IRS português. Para regime RNH/IFICI ver skill pt-nhr-ifici. Trigger also on: \"how much tax do I pay in Portugal\", \"IRS Portugal\", \"Modelo 3\", \"income tax return Portugal\", \"NIF\", \"freelancer Portugal tax\"."
-version: 2.0
+description: "Portuguese personal income tax (IRS) for tax year 2026 on self-employed income (Category B, recibos verdes) of a resident individual. Covers the 2026 IRS bands of CIRS art. 68 (Lei 73-A/2025), the solidarity surcharge, the simplified regime coefficients of art. 31 (0.75, 0.35, 0.15, 0.95, 0.10, 1), the 10% social security rule and the 15% expenses rule, the first-year coefficient cut, organised accounts and the EUR 200,000 limit, client withholding (23%, 16.5%, 11.5%) and the waiver below EUR 15,000, payments on account, IRS Jovem on the 2026 IAS (EUR 537.13, cap EUR 29,542.15), the Modelo 3 with Anexo B, fines and interest. Trigger on: 'IRS trabalhador independente', 'recibos verdes', 'Anexo B', 'regime simplificado', 'coeficiente 0,75', 'IRS Jovem 2026', 'freelancer tax Portugal'. Out of scope: employees, pensions, rent and investment income (pt-irs-employees-investment), crypto (portugal-crypto-tax), social security (pt-social-contributions), NHR and IFICI (pt-nhr-ifici), non-residents (pt-cross-border)."
+version: 2.1
 jurisdiction: PT
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 source_checked: 2026-10-16
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# PT Income Tax
+# Portugal: IRS for the self-employed, Category B (tax year 2026)
 
-## Portugal — IRS (Imposto sobre o Rendimento das Pessoas Singulares) — Skill v3.1
+> Source-cited draft: not reviewed by an accountant.
 
-> **Nota de remissão:** Se o contribuinte está sob regime RNH (Residente Não Habitual) ou IFICI (Incentivo Fiscal à Investigação Científica e Inovação), **ver o skill `pt-nhr-ifici`** para o tratamento detalhado. Esta skill cobre apenas o regime geral progressivo.
+This skill computes the annual IRS of a Portuguese resident who earns business or professional income (Category B): freelancers issuing recibos verdes, sole traders and professionals. It covers the simplified regime and organised accounts, client withholding, payments on account and IRS Jovem. The return for 2026 income is the Modelo 3 with Anexo B, filed from 1 April to 30 June 2027.
 
-## Verified rates & thresholds (accountant-reviewed)
+Sibling skills, which this one links to and does not repeat:
 
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+- `pt-irs-employees-investment`: salary, pensions, rent, dividends, interest, capital gains, the deductions from the tax (dependants, health, education, general family expenses) and the minimum existence rule. A self-employed person with other income uses both skills.
+- `pt-social-contributions`: self-employed social security (21.4%, the quarterly declaration, the first-year exemption).
+- `pt-nhr-ifici`: the old non-habitual resident regime and IFICI (20% flat rate). Check this first. A person under either regime is taxed differently and cannot use IRS Jovem.
+- `pt-cross-border`: residence, non-residents with Portuguese income, arriving and leaving.
+- `portugal-crypto-tax`: crypto gains, and crypto traded or mined as a business.
 
-### IRS Independente
+The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) publishes the consolidated text, article by article, on the Portal das Finanças. Every figure below was read there, or in the Segurança Social guide, on 2026-10-23.
 
-**IRS Independente — verified rates & thresholds**  _([CIRS / Redação da Lei n.º 55-A/2025, de 22/07](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra_202512.aspx))_
+## Who this applies to
 
-- **0 – €8.059** — 0 – €8.059 ; 12,50%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€8.059 – €12.160** — 8.059 – €12.160 ; 16,00%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€12.160 – €17.233** — 12.160 – €17.233 ; 21,50%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€17.233 – €22.306** — 17.233 – €22.306 ; 24,40%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€22.306 – €28.400** — 22.306 – €28.400 ; 31,40%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€28.400 – €41.629** — 28.400 – €41.629 ; 34,90%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€41.629 – €44.987** — 41.629 – €44.987 ; 43,10%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€44.987 – €83.696** — 44.987 – €83.696 ; 44,60%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **Acima de €83.696** — Acima de €83.696 ; 48,00%  _(CIRS / Redação da Lei n.º 55-A/2025, de 22/07)_
-- **€80.000 – €250.000** — 2,5%  _(CIRS)_
-- **Acima de €250.000** — 5%  _(CIRS)_
-- **Vendas de bens** — 0,15 (15% do bruto tributável)  _(CIRS Art. 31.º)_
-- **Prestação de serviços** — 0,75 (atividades profissionais da tabela do art. 151.º) ; 0,35 (restantes prestações de serviços)  _(CIRS Art. 31.º, nº 1, b) e c))_
-- **Hotelaria/alojamento** — 0,15 (exceto alojamento local na modalidade de moradia ou apartamento)  _(CIRS Art. 31.º)_
-- **Propriedade intelectual (autor)** — Isenção de 50% até máximo de 10.000 ; o restante é sujeito a coeficiente de 0,95  _(CIRS Art. 31.º)_
-- **Outros rendimentos Cat. B** — 0,10  _(CIRS Art. 31.º)_
-- **Limiar contabilidade organizada** — > €200.000 de receitas (em dois períodos de tributação consecutivos, ou num único em montante superior a 25 %)  _(CIRS)_
-- **Trabalhador independente Cat. B** — * CIRS Art. 101.º, nº 1, a) 16,5% ; * CIRS Art. 101.º, nº 1, b) 23% ; * CIRS Art. 101.º, nº 1, c) 11,5%  _(CIRS Art. 101.º)_
-- **Ano 1** — Ano 1 - 100%  _(CIRS, artº 12º-B, nº 5, a) ; (máx. 55 x IAS ; IAS 2026 = 537,13))_
-- **Anos 2–4** — Ano 2-4 - 75%  _(CIRS, artº 12º-B, nº 5, b))_
-- **Anos 5–7** — Ano 5-7 - 50%  _(CIRS, artº 12º-B, nº 5, c))_
-- **Anos 8–10** — Ano 8-10 - 25%  _(CIRS, artº 12º-B, nº 5, d))_
-- **Entrega Modelo 3** — 1 abril – 30 junho  _(CIRS)_
-- **Pagamentos por conta** — Até dia 20 de Julho, setembro, dezembro (dispensado se prestação < €50)  _(CIRS Art. 102º, nº 1 e 3)_
+**Residents with Category B income.** Category B is income from a business or a profession carried on independently. A person is resident if, in the year, they spent more than 183 days in Portugal in any 12-month period starting or ending in the year, or had a home there that suggests they intend to keep it as their habitual residence (CIRS art. 16(1)). Residents are taxed on worldwide income. Part-year residence and non-residents are in `pt-cross-border`.
 
-## Secção 1 — Referência Rápida
+**First check: NHR or IFICI.** If the person is registered under either regime, stop and use `pt-nhr-ifici`. IFICI holders also suffer 20% withholding on Category B, not 23% (art. 101(1)(d)).
 
-### Escalões de IRS 2025 (regime geral — rendimentos de 2025)
+**Simplified regime or organised accounts.** The simplified regime applies to a person whose Category B income in the previous year did not exceed EUR 200,000 (art. 28(2)). In the first year of activity the estimate in the start-of-activity declaration decides (art. 28(10)). The person may opt for organised accounts instead, in the start-of-activity declaration or by the end of March of the year the change takes effect (art. 28(3) and (4)). The simplified regime ends only when the EUR 200,000 limit is exceeded in two consecutive years, or in one year by more than 25% (over EUR 250,000). Organised accounts then apply from the next year (art. 28(6)).
 
-**Escalões de IRS 2025 (regime geral — rendimentos de 2025)**  _(art. 68.º n.º 1 do CIRS na redação da Lei n.º 55-A/2025, de 22 de julho)_
+**Single client.** A person who provides services to one entity only may opt each year to be taxed under the Category A (employment) rules (art. 28(8)). The exception is a partner providing services to a tax-transparent company.
 
-| Rendimento Coletável (EUR) | Taxa Normal (A) | Taxa Média (B) | Imposto cumulativo no limite superior |
-| --- | --- | --- | --- |
-| Até 8 059 | 12,50% | 12,500% | 1 007,38 |
-| 8 059 – 12 160 | 16,00% | 13,680% | 1 663,54 |
-| 12 160 – 17 233 | 21,50% | 15,982% | 2 754,23 |
-| 17 233 – 22 306 | 24,40% | 17,897% | 3 992,04 |
-| 22 306 – 28 400 | 31,40% | 20,794% | 5 905,56 |
-| 28 400 – 41 629 | 34,90% | 25,277% | 10 522,48 |
-| 41 629 – 44 987 | 43,10% | 26,607% | 11 969,78 |
-| 44 987 – 83 696 | 44,60% | 34,929% | 29 233,99 |
-| Acima de 83 696 | 48,00% | — | — |
+## Rates, bands and thresholds
 
-- **Fórmula (usada nesta skill)** — Imposto = imposto cumulativo do escalão inferior + (rendimento − limite inferior do escalão) × taxa marginal.  _(art. 68.º n.º 1 do CIRS)_
-- **Convenção de arredondamento** — Acumulação marginal exata, arredondada ao cêntimo. A liquidação oficial usa o método da taxa média (art. 68.º n.º 2: parte até ao limite do escalão × coluna B + excedente × coluna A), que pode divergir por alguns cêntimos.  _(art. 68.º n.º 2 CIRS)_
-- **Atenção ao ano** — Para rendimentos de 2026 aplica-se a tabela da Lei n.º 73-A/2025 (OE2026), com limites atualizados (8 342 … 86 634) e taxas reduzidas nos 2.º–5.º escalões — não usar esta tabela para 2026.  _(Lei n.º 73-A/2025 (OE2026))_
-- **Verificação prévia obrigatória** — Antes de aplicar as tabelas progressivas, verificar se o contribuinte está abrangido por RNH ou IFICI (ver skill `pt-nhr-ifici`).
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| IRS band 1: taxable income up to EUR 8,342 | 12.50% (average 12.500%) | 2026 | CIRS art. 68(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Band 2: over 8,342 to 12,587 | 15.70% (average 13.579%) | 2026 | same |
+| Band 3: over 12,587 to 17,838 | 21.20% (average 15.823%) | 2026 | same |
+| Band 4: over 17,838 to 23,089 | 24.10% (average 17.705%) | 2026 | same |
+| Band 5: over 23,089 to 29,397 | 31.10% (average 20.579%) | 2026 | same |
+| Band 6: over 29,397 to 43,090 | 34.90% (average 25.130%) | 2026 | same |
+| Band 7: over 43,090 to 46,566 | 43.10% (average 26.472%) | 2026 | same |
+| Band 8: over 46,566 to 86,634 | 44.60% (average 34.856%) | 2026 | same |
+| Band 9: over 86,634 | 48.00% | 2026 | same |
+| Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% over 250,000 | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
+| Coefficient: sales of goods, crypto operations (not mining), restaurants, bars and hotels (not local lodging in a house or flat) | 0.15 | 2026 | CIRS art. 31(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: professional activities listed in the art. 151 table | 0.75 | 2026 | CIRS art. 31(1)(b) |
+| Coefficient: other services | 0.35 | 2026 | CIRS art. 31(1)(c) |
+| Coefficient: crypto mining, licensing of intellectual or industrial property, know-how, capital income and rent of the business, net capital gains | 0.95 | 2026 | CIRS art. 31(1)(d) |
+| Coefficient: grants not for operations | 0.30 | 2026 | CIRS art. 31(1)(e) |
+| Coefficient: operating grants and other Category B income | 0.10 | 2026 | CIRS art. 31(1)(f) |
+| Coefficient: services to a tax-transparent company of which the person is a partner, or to a company in which the person holds at least 5% (or the family at least 25%) for over 183 days | 1 | 2026 | CIRS art. 31(1)(g) |
+| Coefficient: local lodging (house or flat) in a containment area | 0.50 | 2026 | CIRS art. 31(1)(h) |
+| First-year cut of coefficients (b), (c) and (f) | 50% in the year activity starts, 25% in the next year, if no Category A or H income in that year; not if activity ceased less than 5 years before | 2026 | CIRS art. 31(10) and (11) |
+| Social security deduction in the simplified regime, coefficients (b) and (c) | Compulsory contributions only in the part above 10% of gross income | 2026 | CIRS art. 31(2) |
+| 15% expenses rule, coefficients (b) and (c) | Add back 15% of gross service income less the listed amounts (see The taxable base) | 2026 | CIRS art. 31(13) |
+| Simplified regime limit | EUR 200,000 of Category B income in the previous year | 2026 | CIRS art. 28(2) and (6): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx |
+| IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1, de 30 de dezembro, art. 2 (AT's copy of the Diário da República text): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
+| Category A specific deduction used in the 15% rule | 8.54 x IAS = EUR 4,587.09 | 2026 | CIRS art. 25(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx |
+| IRS Jovem exemption cap | 55 x IAS = EUR 29,542.15 of exempt income a year | 2026 | CIRS art. 12-B(5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
+| IRS Jovem exempt share | 100% year 1; 75% years 2 to 4; 50% years 5 to 7; 25% years 8 to 10 | 2026 | CIRS art. 12-B(5) |
+| Withholding by clients: art. 151 professional activities | 23% | 2026 | CIRS art. 101(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
+| Withholding: intellectual property income (art. 3(1)(c)) | 16.5% | 2026 | CIRS art. 101(1)(a) |
+| Withholding: other Category B services | 11.5% | 2026 | CIRS art. 101(1)(c) |
+| Withholding: IFICI holders | 20% | 2026 | CIRS art. 101(1)(d) |
+| Withholding waiver | Expected Category B income for the year below the CIVA art. 53(1) limit of EUR 15,000; not if the limit was reached the year before | 2026 | CIRS art. 101-B(1)(a) and (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx; CIVA art. 53(1) |
+| No withholding below | EUR 25 per withholding | 2026 | CIRS art. 101-B(1)(d) |
+| Payments on account | Three, by 20 July, 20 September and 20 December; total 65% of the formula amount; none if each is under EUR 50 | 2026 | CIRS art. 102(1) to (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx |
+| Self-employed social security | 21.4% (25.2% for sole traders with a business, empresários em nome individual) on 70% of service income (20% of sales of goods and of hotel and restaurant income), monthly base capped at 12 x IAS = EUR 6,445.56 | 2026 | Segurança Social, Guia Prático, Trabalhadores Independentes; detail in `pt-social-contributions` |
 
-### Adicional de Solidariedade (art. 68.º-A CIRS)
+The 2026 bands are lower than the 2025 bands. Lei 73-A/2025 (the 2026 State Budget) cut the rates of bands 2 to 5 (band 2 from 16.00% to 15.70%, band 3 from 21.50% to 21.20%, band 4 from 24.40% to 24.10%, band 5 from 31.40% to 31.10%) and raised every band limit (band 1 from EUR 8,059 to EUR 8,342; band 9 from over EUR 83,696 to over EUR 86,634). Do not use the 2025 table (Lei 55-A/2025) for 2026 income.
 
-**Adicional de Solidariedade (art. 68.º-A CIRS)**  _(art. 68.º-A CIRS)_
+## The taxable base
 
-| Rendimento Coletável (EUR) | Taxa |
-| --- | --- |
-| 80 000 – 250 000 | 2,5% sobre o excedente acima de EUR 80 000 |
-| Acima de 250 000 | 2,5% sobre EUR 170 000 + 5% sobre o excedente acima de EUR 250 000 |
+**Step 1: gross Category B income.** All fees and sales invoiced and received in the year, before withholding. Withholding is a credit, not a cost: rebuild the gross from the net received as net / (1 - rate), for example net / 0.77 at 23%. Check the rate on each receipt.
 
-- **Tributação conjunta** — Em tributação conjunta, aplica-se a metade do rendimento coletável e multiplica-se a coleta por dois.  _(art. 68.º-A n.º 3 CIRS)_
+**Step 2a: simplified regime.** Taxable income = gross income of each type x its coefficient (art. 31(1)). Pick the coefficient from the activity code registered with AT, not from how the client describes the work. Code-by-code mapping to the art. 151 table (Portaria 1011/2001) is outside this skill; ask for the AT start-of-activity proof.
 
-### Regime Simplificado — Coeficientes 2025 (art. 31.º n.º 1 CIRS)
+- **Social security (art. 31(2)).** For coefficients (b) and (c) only, deduct compulsory social security contributions paid for the activity, but only the part above 10% of gross income, and only up to the net income after the coefficient.
+- **The 15% rule (art. 31(13)).** For coefficients (b) and (c), add to taxable income the positive difference between 15% of the gross service income and the sum of: (a) EUR 4,587.09 (the Category A specific deduction) or, if higher, the contributions not deducted under art. 31(2); (b) staff costs reported to AT; (c) rent of business premises on invoices reported to AT; (d) 1.5% of the tax value (VPT) of property the person owns and uses in the business (4% for hotels and local lodging); (e) other business expenses on e-fatura invoices; (f) business imports and intra-EU purchases. Expenses used only partly for the business count at 25% (art. 31(14)). The person flags business invoices on the Portal das Finanças by the end of February of the next year (art. 31(15)(a)), or declares the amounts in the return (art. 31(16)).
+- **First year.** Coefficients (b), (c) and (f) are cut by 50% in the year activity starts and by 25% in the next year, if the person has no Category A or H income in that year (art. 31(10)). Not if activity ceased less than 5 years before (art. 31(11)).
+- **Crypto.** Crypto income under coefficients (a) and (d) counts when the crypto is sold (art. 31(17)). Stopping the activity and losing residence are treated as a sale (art. 31(18)). See `portugal-crypto-tax`.
 
-**Regime Simplificado — Coeficientes 2025 (art. 31.º n.º 1 CIRS)**  _([art. 31.º n.º 1 CIRS](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx))_
+**Step 2b: organised accounts.** Taxable profit from the accounts under IRC rules, with a certified accountant (Contabilista Certificado). Social security is a cost in full. The accounts are required when art. 28(6) is triggered, or by option.
 
-| Tipo de Rendimento | Coeficiente | Base Tributável Efetiva |
-| --- | --- | --- |
-| Vendas de mercadorias e produtos; atividades de restauração/bebidas e hotelaria (exceto alojamento local na modalidade de moradia ou apartamento) | 0,15 | 15% do bruto |
-| **Atividades profissionais da tabela do art. 151.º** (Portaria 1011/2001 — inclui, entre outros: arquitetos 1001, engenheiros 1003, consultores 1320, programadores informáticos 1332, tradutores 1334, designers 1336, e o código residual **1519 — outros prestadores de serviços**) | **0,75** | 75% do bruto |
-| Prestações de serviços **não** previstas na tabela do art. 151.º nem noutras alíneas | 0,35 | 35% do bruto |
-| Propriedade intelectual e industrial (exploração), rendimentos prediais, capitais e mais-valias imputados à atividade | 0,95 | 95% do bruto |
-| Alojamento local (moradia/apartamento) em zona de contenção | 0,50 | 50% do bruto |
-| Subsídios não destinados à exploração | 0,30 | 30% do bruto |
+**Step 3: IRS Jovem (art. 12-B).** A taxpayer aged 35 or under who is not a dependant may exempt part of their Category A and B income in the first 10 years of earning income, by opting in the return (art. 12-B(1)). Years with no Category A or B income do not count (art. 12-B(3)(b)). The exempt share is in the table above, capped at EUR 29,542.15 of exempt income in 2026 (art. 12-B(5)). The exempt income is still counted to find the rate on the rest (art. 12-B(4), art. 22(4)). This skill computes it as tax on the total income x (non-exempt income / total income). People who have had NHR or IFICI, opted for art. 12-A, or have unpaid tax cannot use it (art. 12-B(9)).
 
-- **Propriedade intelectual — benefício EBF art. 58.º** — Se o titular for o titular originário residente, apenas 50% do rendimento é englobado, com limite de EUR 10 000 de montante excluído (regime em vigor até 2026 — Lei 20/2023); o remanescente segue o coeficiente 0,95. Não existe coeficiente 0,50 para propriedade intelectual.  _(EBF art. 58.º; Lei 20/2023)_
-- **Armadilha de classificação** — A maioria das profissões liberais exercidas pessoalmente cai na tabela do art. 151.º (coeficiente 0,75) — incluindo, pela posição da AT, o código residual 1519 (mas, para retenção na fonte, a AT aplica ao código 1519 a taxa de 11,5% da alínea c) do n.º 1 do artigo 101.º). O coeficiente 0,35 só se aplica a prestações de serviços fora da tabela. Verificar o código de atividade no registo do contribuinte antes de escolher o coeficiente.  _([art. 151.º CIRS](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/rendimento/cirs/Documents/PIV_16493.pdf))_
-- **Dedução de contribuições obrigatórias (art. 31.º n.º 2)** — Nos rendimentos das alíneas b) e c), as contribuições obrigatórias para regimes de proteção social são dedutíveis apenas na parte em que excedam 10% dos rendimentos brutos (e quando não deduzidas a outro título). Não deduzir a totalidade da SS à base coeficiente.  _(art. 31.º n.º 2 CIRS)_
-- **Limiar de elegibilidade do regime simplificado** — EUR 200 000 EUR (Receitas brutas do ano anterior (ou estimadas no ano corrente para novos contribuintes) ≤ EUR 200 000)  _(CIRS)_
+**Step 4: tax by band.** Add the Category B taxable income to any other income that is aggregated (see `pt-irs-employees-investment`). AT computes the tax as the upper limit of the highest band fully used x that band's average rate (column B), plus the excess x the next band's normal rate (column A) (art. 68(2)). Add the solidarity surcharge over EUR 80,000 (art. 68-A). Joint filers halve the income, apply the table and double the result (art. 68-A(3), art. 69).
 
-### Regime de Contabilidade Organizada (Despesas Reais)
+**Step 5: deductions from the tax, then credits.** Personal deductions (dependants, general family expenses, health, education, housing) are in `pt-irs-employees-investment`. Then subtract withholding and payments on account.
 
-- **Regime de Contabilidade Organizada (Despesas Reais)** — Quando as receitas brutas > EUR 200 000 (obrigatório) ou por opção: rendimento tributável = receitas brutas − despesas dedutíveis reais (requer Contabilista Certificado / CC). Aqui as contribuições SS deduzem-se integralmente como gasto.  _(CIRS)_
+**Losses.** A Category B loss can only be set against Category B income, carried forward for 12 years (art. 55(1)(a)). Losses from before the simplified regime started can be deducted under that regime (art. 55(4)).
 
-### Retenção na Fonte (Retenção pelos Clientes) — art. 101.º n.º 1 CIRS (redação Lei 45-A/2024)
+## Deadlines and filing
 
-**Retenção na Fonte (Retenção pelos Clientes) — art. 101.º n.º 1 CIRS (redação Lei 45-A/2024)**  _(art. 101.º n.º 1 CIRS (redação Lei 45-A/2024))_
+| What | When | Source |
+|---|---|---|
+| Start of activity, or change to organised accounts | Start-of-activity declaration; a change of regime by the end of March of the year it takes effect | CIRS art. 28(4) and (5) |
+| Flag business invoices on e-fatura for the 15% rule | By end of February 2027 | CIRS art. 31(15)(a) |
+| Payments on account for 2026 | By 20 July, 20 September and 20 December 2026; the amounts come from the 2024 assessment | CIRS art. 102(1) and (2) |
+| Social security | Quarterly declaration; contributions paid monthly between the 10th and the 20th of the next month | Segurança Social, Guia Prático, Trabalhadores Independentes |
+| Modelo 3 with Anexo B, 2026 income | 1 April to 30 June 2027, online, whether or not 30 June is a working day | CIRS art. 60(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx |
+| Payment of the balance | By 31 August 2027 when AT assesses within the normal period | CIRS art. 97(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx |
 
-| Tipo de Rendimento / Beneficiário | Taxa |
-| --- | --- |
-| Atividades profissionais da tabela do art. 151.º (art. 101.º n.º 1 b)) | **23%** |
-| Propriedade intelectual e incrementos patrimoniais (art. 101.º n.º 1 a)) | 16,5% |
-| Outros rendimentos Categoria B (art. 101.º n.º 1 c)) | 11,5% |
-| Não residente — Categoria B (art. 71.º n.º 4 a), taxa liberatória) | 25% |
+**The waiver of withholding** is optional. The person writes "Sem retenção, nos termos do n.º 1 do artigo 101.º-B do Código do IRS." on the receipt (art. 101-B(2)). It stops in the month after the EUR 15,000 limit is reached (art. 101-B(3)(b)). Only clients that have or must have organised accounts withhold (art. 101(1)); private individuals do not.
 
-- **Recomposição do bruto** — Clientes empresariais que pagam a um profissional da tabela do art. 151.º com NIF retêm 23% e entregam à AT. O montante retido é creditado contra a coleta final de IRS. Recomposição do bruto: recebido ÷ 0,77.  _(art. 101.º n.º 1 b) CIRS)_
-- **Transição 2025** — A taxa da al. b) baixou de 25% para 23% com o OE2025 (Lei 45-A/2024); no início de 2025 alguns clientes ainda aplicaram 25%. Confirmar sempre a taxa efetivamente retida em cada recibo antes de recompor — não presumir.  _(Lei 45-A/2024 (OE2025))_
-- **Dispensa de retenção na fonte (art. 101.º-B n.º 1 a))** — Dispensados os titulares que prevejam auferir na categoria um montante anual inferior ao limiar do art. 53.º n.º 1 do CIVA — EUR 15 000 em 2025 (mecanismo prospetivo, não rendimento do ano anterior; vedado se no ano anterior o limite já foi atingido — n.º 3).  _(art. 101.º-B n.º 1 a) CIRS; art. 53.º n.º 1 CIVA)_
+**Payments on account** stop when withholding plus payments already made cover the tax for the year, or when Category B income stops (art. 102(4)). They can be reduced (art. 102(5)). If the reduction leaves more than 20% unpaid, compensatory interest is due (art. 102(6)).
 
-### Segurança Social (Contribuições)
+## Penalties and interest
 
-**Segurança Social (Contribuições)**  _(https://www.seg-social.pt/ptss/pssd/documento/cmdddzytm006agq2y1ci6tibc)_
+- **Late or missing return:** fine of EUR 150 to EUR 3,750 (RGIT art. 116(1)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx
+- **Omissions or errors in the return** that are not fraud: fine of EUR 375 to EUR 22,500, cut to a quarter when no tax is due (RGIT art. 119(1) and (2)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx
+- **Compensatory interest** when the taxpayer's fault delays the assessment, at the legal interest rate of Civil Code art. 559(1) (LGT art. 35(10)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx
+- **Late payment interest** from the due date, at the rate set for debts to the State (LGT art. 44(3)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx
+- **Reduced payments on account:** compensatory interest if more than 20% of the normal amount went unpaid (CIRS art. 102(6) and (7)).
 
-| Esquema | Valor | Base |
-| --- | --- | --- |
-| Trabalhador independente SS | 21,4% (25,2% para empresários em nome individual) | 70% das receitas brutas trimestrais de prestação de serviços (20% nas vendas de bens e hotelaria/restauração) ÷ 3 (base mensal) |
-| Limite máximo da base mensal | 12 × IAS = EUR 6 270,00 (2025; IAS 2025 = EUR 522,50) | Rendimento relevante mensal acima do teto não contribui |
-| Novos trabalhadores independentes | Isenção nos primeiros 12 meses de atividade (primeira inscrição) | Confirmar data de início na SS |
+The current rates for both kinds of interest are in `pt-irs-employees-investment`.
 
-- **Dedutibilidade das contribuições SS** — Contribuições SS: em contabilidade organizada deduzem-se integralmente como gasto; em regime simplificado deduzem-se apenas na parte que exceda 10% do bruto (art. 31.º n.º 2).  _(art. 31.º n.º 2 CIRS)_
+## Cross-border points
 
-### IRS Jovem (art. 12.º-B CIRS, redação Lei 45-A/2024 / OE2025)
+- **Non-residents** with Portuguese Category B income are taxed by final withholding or at flat rates. See `pt-cross-border`.
+- **Foreign clients** do not withhold Portuguese tax. The whole IRS is then paid through payments on account and the final balance. Foreign tax withheld by a client's country is credited under the treaty; see `pt-foreign-source-treaties`.
+- **NHR and IFICI** holders: see `pt-nhr-ifici`. They cannot use IRS Jovem (art. 12-B(9)).
+- **Leaving Portugal** with crypto held in the business is treated as a sale (art. 31(18)(b)). See `portugal-crypto-tax`.
+- **VAT** on the same fees is separate. The EUR 15,000 CIVA art. 53 exemption limit also drives the withholding waiver. See `pt-vat-return`.
 
-Para contribuintes até 35 anos (não dependentes), nos primeiros 10 anos de obtenção de rendimentos das categorias A e B:
+## Worked examples
 
-**Escala de isenção IRS Jovem**  _(art. 12.º-B CIRS, redação Lei 45-A/2024 / OE2025)_
+### Example 1: consultant in the simplified regime, gross EUR 52,000
 
-| Ano de rendimentos | Isenção |
-| --- | --- |
-| Ano 1 | 100% |
-| Anos 2–4 | 75% |
-| Anos 5–7 | 50% |
-| Anos 8–10 | 25% |
+Ana is resident, aged 40, and works as a consultant under an activity code in the art. 151 table. She is in the simplified regime. In 2026 she invoiced EUR 52,000. Portuguese companies with organised accounts paid EUR 40,000 of it and withheld 23%, so EUR 9,200 was withheld. She paid EUR 4,200 of social security and flagged EUR 2,000 of business expenses on e-fatura. She made no payments on account and has no other income. Deductions from the tax are left out.
 
-- **Limite anual da isenção** — 55 × IAS = EUR 28 737,50 (IAS 2025 = EUR 522,50) EUR (Todos os anos)  _(art. 12.º-B CIRS)_
-- **Englobamento para taxa** — O rendimento isento é englobado para determinação da taxa aplicável ao rendimento não isento (não se tributa o remanescente "a partir do zero" da tabela).  _(art. 12.º-B CIRS)_
-- **Confirmação de elegibilidade** — Confirmar elegibilidade e o número do ano antes de aplicar. As contribuições para a SS continuam a aplicar-se.
+1. Coefficient 0.75: 52,000 x 0.75 = EUR 39,000.
+2. Social security (art. 31(2)): 10% of gross is EUR 5,200. She paid EUR 4,200, which is less, so nothing is deducted.
+3. The 15% rule (art. 31(13)): 15% x 52,000 = EUR 7,800. Against it count the higher of EUR 4,587.09 and her non-deducted contributions (EUR 4,200), so EUR 4,587.09, plus EUR 2,000 of e-fatura expenses: EUR 6,587.09. The shortfall of EUR 1,212.91 is added.
+4. Taxable income: 39,000 + 1,212.91 = EUR 40,212.91, in band 6.
+5. Tax: 29,397 x 20.579% + (40,212.91 - 29,397) x 34.90% = 6,049.61 + 3,774.75 = EUR 9,824.36.
+6. Balance due: 9,824.36 - 9,200 = EUR 624.36, by 31 August 2027.
 
-### Defaults Conservadores
-
-**Defaults Conservadores**
-
-| Situação | Pressuposto por Defeito |
-| --- | --- |
-| Tipo de serviço ambíguo (tabela 151.º vs outros serviços) | Aplicar coeficiente **0,75** — base mais elevada; sinalizar ao cliente para confirmar o código de atividade |
-| Regime simplificado vs. contabilidade organizada | Regime simplificado (default para < EUR 200 000 receitas) |
-| Elegibilidade IRS Jovem ambígua | NÃO aplicar — sinalizar ao cliente para confirmar anos de elegibilidade |
-| Estatuto RNH/IFICI ambíguo | NÃO aplicar taxas especiais — aplicar escalões padrão; remeter para skill `pt-nhr-ifici` |
-| Contribuições SS não fornecidas | Estimar a 21,4% × 70% do bruto (com teto 12 × IAS mensal); sinalizar como estimativa |
-| Taxa de retenção efetiva desconhecida | NÃO presumir 23% nem 25% — exigir os recibos/declarações de retenção |
-| Despesa em contabilidade organizada sem fatura/recibo | Rejeitar — não dedutível sem documento de suporte |
-
-### Limiares de Alerta (Red Flags)
-
-**Limiares de Alerta (Red Flags)**
-
-| Alerta | Limiar |
-| --- | --- |
-| Receitas brutas > EUR 200 000 | Contabilidade organizada obrigatória — parar se ainda em simplificado |
-| Cliente único > 80% das receitas | Risco de requalificação como relação laboral (falso recibo verde) |
-| Sem retenções recebidas mas clientes são empresas | Verificar — para profissões da tabela 151.º a retenção legal é 23% (salvo dispensa do art. 101.º-B) |
-| Contribuições SS aparentemente ausentes ou muito baixas | Verificar cálculo da base SS (e isenção de 1.º ano, se aplicável) |
-| IRS Jovem reclamado após o 10.º ano de rendimentos | Inelegível — sinalizar imediatamente |
-| Coeficiente 0,35 usado por profissional da tabela 151.º | Errado na maioria dos casos — verificar código de atividade (0,75) |
-
-## Secção 2 — Inputs Obrigatórios + Catálogo de Recusas
-
-### Inputs Obrigatórios
-
-Antes de calcular o IRS português, recolher:
-
-1. **Total das receitas brutas** (recibos verdes emitidos e recebidos) — Categoria B integral
-2. **Código de atividade no registo da AT** (tabela art. 151.º vs CAE) — determina o coeficiente (0,75 vs 0,35) e a taxa de retenção
-3. **Discriminação por cliente** — para identificar tipo de serviço e retenções
-4. **Declarações de retenção na fonte** — de cada cliente, com a taxa efetivamente aplicada
-5. **Pagamentos de contribuições para a SS** — recibos trimestrais/mensais
-6. **Regime aplicável** — simplificado ou contabilidade organizada (se eleito)
-7. **Estatuto IRS Jovem** — idade + número do ano de obtenção de rendimentos
-8. **Extratos bancários** — 12 meses do ano fiscal
-9. **Estatuto RNH ou IFICI** — se aplicável (caso em que se remete para skill `pt-nhr-ifici`)
-10. **Outras categorias de rendimentos** — Categoria A, F, G
-11. **Estado civil e dependentes** — para quociente conjugal e deduções por dependentes
-
-### Catálogo de Recusas
-
-- **R-PT-1** — Receitas brutas > EUR 200 000 mas cliente insiste no regime simplificado (Parar — contabilidade organizada obrigatória; necessário Contabilista Certificado (CC))
-- **R-PT-2** — Estatuto RNH/IFICI alegado (Remeter para skill `pt-nhr-ifici` — não aplicar regras especiais nesta skill)
-- **R-PT-3** — Sem declarações de retenção mas pagamentos efetuados por empresas portuguesas (Sinalizar — para profissões da tabela 151.º a retenção legal é de 23% (art. 101.º n.º 1 b)); recolher declarações antes de finalizar)
-- **R-PT-4** — Risco de falso recibo verde (cliente único > 80% das receitas, regularidade laboral) (Sinalizar — a AT pode requalificar como Categoria A; aconselhar revisão jurídica)
-- **R-PT-5** — Contabilidade organizada sem CC (Parar — exige legalmente a assinatura de CC; não prosseguir sem este)
-- **R-PT-6** — Código de atividade não confirmado e o coeficiente muda o resultado (0,75 vs 0,35) (Parar — pedir o comprovativo de início/alteração de atividade da AT antes de finalizar)
-
-## Secção 3 — Biblioteca de Padrões Transacionais
-
-[Secção inalterada, exceto I-07 e E-17:]
-
-**Padrões de descritivo I-07 / E-17**
-
-| # | Padrão de Descritivo | Linha Fiscal | Notas |
-| --- | --- | --- | --- |
-| I-07 | `RETENÇÃO NA FONTE` (linha separada ou anotação) | Crédito de retenção | Recomposição: recebido = líquido após retenção → bruto = recebido ÷ (1 − taxa). Profissões da tabela 151.º: ÷ 0,77 (23%); confirmar taxa efetiva no recibo (transição 2025 pode mostrar 25% → ÷ 0,75) |
-| E-17 | `DESCONTO RECIBO VERDE` / `RETENÇÃO CLIENTE` | Retenção pelo cliente (23% — tabela 151.º) | Não é despesa — crédito contra IRS; verificar com declaração |
-
-## Secção 4 — Exemplos Práticos
-
-### Exemplo 1 — Millennium BCP (Lisboa, Consultora — Regime Simplificado)
-
-**Cliente:** Ana Ferreira, consultora de gestão (código 1320 da tabela do art. 151.º), Lisboa, regime simplificado.
-
-[Extrato inalterado.]
-
-**Nota:** Os clientes retiveram **23%** à fonte (art. 101.º n.º 1 b); taxa confirmada nos recibos). Montantes brutos antes de retenção (÷ 0,77):
-- EMPRESA ALPHA: EUR 3 750,00 ÷ 0,77 = **EUR 4 870,13**
-- STARTUP BETA: EUR 2 500,00 ÷ 0,77 = **EUR 3 246,75**
-- GAMMA CONSULTING: EUR 4 200,00 ÷ 0,77 = **EUR 5 454,55**
-- DELTA SA: EUR 3 100,00 ÷ 0,77 = **EUR 4 025,97**
-
-Stripe: EUR 1 920 líquido (sem retenção — pagador estrangeiro). Recompor para ~EUR 1 978 (bruto faturado antes de comissões).
-
-**Passo 1 — Total de Receitas Brutas**
-
-```
-Recompostas de clientes com retenção:  4 870,13 + 3 246,75 + 5 454,55 + 4 025,97 = EUR 17 597,40
-Stripe bruto (sem retenção):           EUR  1 978,00
-Restantes meses (extrapolados):        admitir ano completo = EUR 52 000 bruto (exemplo)
-Total bruto Categoria B:               EUR 52 000
-Total efetivamente retido:             17 597,40 − 13 550,00 = EUR 4 047,40
+```oa-check
+name: PT Category B consultant, simplified regime, gross EUR 52,000 (2026)
+inputs:
+  gross: 52000
+  coefficient: 0.75
+  ss_paid: 4200
+  efatura_expenses: 2000
+  ias: 537.13
+  withheld: 9200
+steps:
+  - base: gross * coefficient
+  - ss_deduction: max(0, ss_paid - gross * 0.10)
+  - specific: round(8.54 * ias, 2)
+  - ss_not_deducted: ss_paid - ss_deduction
+  - shortfall: max(0, gross * 0.15 - (max(specific, ss_not_deducted) + efatura_expenses))
+  - taxable: base - ss_deduction + shortfall
+  - tax: round(29397 * 0.20579 + (taxable - 29397) * 0.349, 2)
+  - balance: tax - withheld
+expected:
+  base: 39000
+  ss_deduction: 0
+  specific: 4587.09
+  shortfall: 1212.91
+  taxable: 40212.91
+  tax: 9824.36
+  balance: 624.36
 ```
 
-**Passo 2 — Coeficiente do Regime Simplificado**
+### Example 2: young programmer, IRS Jovem year 3, cap applies
 
-```
-Consultora (código 1320 — tabela art. 151.º) → coeficiente 0,75
-Base tributável: EUR 52 000 × 0,75 = EUR 39 000
-Dedução SS (art. 31.º n.º 2): SS paga EUR 4 200; 10% do bruto = EUR 5 200
-  → excesso = max(0; 4 200 − 5 200) = EUR 0 → sem dedução
-Rendimento tributável para IRS: EUR 39 000
-```
+Pedro is 29, resident, and in his third year of earning income, so IRS Jovem exempts 75%. He programs under an art. 151 activity code, simplified regime. In 2026 he invoiced EUR 70,000, paid EUR 7,500 of social security and flagged EUR 4,000 of business expenses on e-fatura. He has no other income.
 
-**Passo 3 — Cálculo do IRS (tabela Lei 55-A/2025)**
+1. Coefficient 0.75: 70,000 x 0.75 = EUR 52,500.
+2. Social security above 10% of gross: 7,500 - 7,000 = EUR 500 deducted. Net EUR 52,000. The EUR 7,000 not deducted stays available for the 15% rule.
+3. The 15% rule: 15% x 70,000 = EUR 10,500. Against it: the higher of EUR 4,587.09 and EUR 7,000, so EUR 7,000, plus EUR 4,000 of expenses: EUR 11,000. No shortfall. Taxable income EUR 52,000.
+4. IRS Jovem: 75% x 52,000 = EUR 39,000, above the 2026 cap. Exempt income is EUR 29,542.15. Non-exempt income is 52,000 - 29,542.15 = EUR 22,457.85.
+5. Tax on the full EUR 52,000 (band 8): 46,566 x 26.472% + (52,000 - 46,566) x 44.60% = 12,326.95 + 2,423.56 = EUR 14,750.52 (EUR 14,750.5155 before rounding).
+6. Tax due on the non-exempt part: 14,750.52 x 22,457.85 / 52,000 = EUR 6,370.48. Applying the bands to EUR 22,457.85 alone would give too little tax, because the exempt income counts for the rate (art. 22(4)).
 
-```
-Até 28 400:                              EUR 5 905,56 (cumulativo)
-(39 000 − 28 400) × 34,90% = 10 600 × 0,349 = EUR 3 699,40
-IRS bruto: 5 905,56 + 3 699,40 =         EUR 9 604,96
-Menos retenções na fonte (23% efetivo):  EUR 4 047,40
-Saldo IRS:                               EUR 9 604,96 − 4 047,40 = **EUR 5 557,56 a pagar**
-(mais pagamentos por conta já efetuados, se existirem)
-```
-
-Nota didática: na versão anterior desta skill (coeficiente 0,35 + dedução integral da SS + taxas antigas) este caso aparecia como reembolso — estava errado em três pontos distintos.
-
-### Exemplo 2 — Caixa Geral de Depósitos (Porto, Programador)
-
-**Cliente:** Pedro Costa, programador informático (código 1332 — tabela art. 151.º), Porto, IRS Jovem ano 2 (75% isento).
-
-```
-Receitas brutas: EUR 45 000 → coeficiente 0,75 (tabela 151.º)
-Base tributável: 45 000 × 0,75 = EUR 33 750
-SS paga: 45 000 × 70% × 21,4% = EUR 6 741,00
-Dedução SS (art. 31.º n.º 2): 6 741 − 10% × 45 000 = 6 741 − 4 500 = EUR 2 241
-Rendimento tributável: 33 750 − 2 241 = EUR 31 509
-
-IRS Jovem ano 2 → 75% isento; isenção = 31 509 × 75% = EUR 23 631,75
-  (abaixo do limite anual de 55 × IAS = EUR 28 737,50 — OK)
-Rendimento não isento: 31 509 × 25% = EUR 7 877,25
-
-Englobamento para taxa (art. 12.º-B): imposto sobre a totalidade (31 509):
-  5 905,56 + (31 509 − 28 400) × 34,90% = 5 905,56 + 3 109 × 0,349
-  = 5 905,56 + 1 085,04 = EUR 6 990,60
-Imposto devido = proporção não isenta: 6 990,60 × 25% = **EUR 1 747,65**
+```oa-check
+name: PT Category B programmer, IRS Jovem year 3 with the 2026 cap, gross EUR 70,000
+inputs:
+  gross: 70000
+  coefficient: 0.75
+  ss_paid: 7500
+  efatura_expenses: 4000
+  ias: 537.13
+  exempt_share: 0.75
+steps:
+  - ss_deduction: max(0, ss_paid - gross * 0.10)
+  - ss_not_deducted: ss_paid - ss_deduction
+  - shortfall: max(0, gross * 0.15 - (max(round(8.54 * ias, 2), ss_not_deducted) + efatura_expenses))
+  - taxable: gross * coefficient - ss_deduction + shortfall
+  - cap: 55 * ias
+  - exempt: min(taxable * exempt_share, cap)
+  - non_exempt: taxable - exempt
+  - tax_on_all: round(46566 * 0.26472 + (taxable - 46566) * 0.446, 2)
+  - tax_due: round(tax_on_all * non_exempt / taxable, 2)
+expected:
+  ss_deduction: 500
+  shortfall: 0
+  taxable: 52000
+  cap: 29542.15
+  exempt: 29542.15
+  non_exempt: 22457.85
+  tax_on_all: 14750.52
+  tax_due: 6370.48
 ```
 
-Alerta: o IRS Jovem requer confirmação do número do ano (opção exercida na Modelo 3). NÃO calcular o imposto aplicando o escalão mais baixo diretamente à parte não isenta — o rendimento isento conta para a taxa.
+## Ask the client first
 
-### Exemplo 3 — BPI (Algarve, Arquiteta — Contabilidade Organizada)
+1. Have you ever been registered under NHR or IFICI? (Changes the rates and rules IRS Jovem out.)
+2. What activity code is on your AT start-of-activity record, and when did the activity start? (Coefficient 0.75, 0.35 or another; the first-year cut.)
+3. What was your Category B income in 2024 and 2025, and do you keep organised accounts? (Simplified regime or accounts under art. 28.)
+4. Your age, and how many years have you earned employment or self-employed income? (IRS Jovem year and share.)
+5. Which clients withheld tax, at what rate, and which business invoices did you flag on e-fatura? (Credits and the 15% rule.)
+6. Do you also have salary, rent, investment income or crypto, or are you married filing jointly? (Aggregation and the sibling skills.)
 
-**Cliente:** Sofia Pinto, arquiteta, receitas brutas EUR 220 000 (contab. organizada obrigatória apenas se o limite tiver sido ultrapassado em dois períodos de tributação consecutivos ou em montante superior a 25 % num único exercício; caso contrário, por opção; CC exigido).
+## Sources
 
-```
-Receitas brutas: EUR 220 000
-Despesas dedutíveis (reais):
-- Renda do escritório:        EUR 12 000,00
-- Utilidades:                 EUR  2 400,00
-- Telefone/internet:          EUR  1 200,00
-- Software:                   EUR  2 400,00
-- Honorários CC:              EUR  4 800,00
-- Seguro profissional:        EUR  1 500,00
-- Deslocações:                EUR  3 000,00
-- Contribuições SS:           EUR 16 101,36
-Total de despesas:            EUR 43 401,36
+| Source | URL | Read on |
+|---|---|---|
+| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68, 2025 bands (wording of Lei 55-A/2025, until December 2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra_202512.aspx | 2026-10-23 |
+| CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-23 |
+| CIRS art. 12-B, IRS Jovem | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-10-23 |
+| CIRS art. 16, residence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx | 2026-10-23 |
+| CIRS art. 22, aggregation and exempt income for the rate | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-23 |
+| CIRS art. 25, specific deduction 8.54 x IAS | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-23 |
+| CIRS art. 28, simplified regime and EUR 200,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx | 2026-10-23 |
+| CIRS art. 31, coefficients, 10% and 15% rules, first year | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-23 |
+| CIRS art. 55, losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx | 2026-10-23 |
+| CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
+| CIRS art. 97, payment | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx | 2026-10-23 |
+| CIRS art. 101, withholding rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx | 2026-10-23 |
+| CIRS art. 101-B, withholding waiver | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx | 2026-10-23 |
+| CIRS art. 102, payments on account | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-10-23 |
+| CIRS art. 151, activity classification | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs151.aspx | 2026-10-23 |
+| CIVA art. 53(1), EUR 15,000 limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-23 |
+| RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx | 2026-10-23 |
+| LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-23 |
+| Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (AT's copy of the Diário da República text) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
+| Segurança Social, Guia Prático, Novo Regime dos Trabalhadores Independentes (IAS 2026 EUR 537.13, 21.4%, 25.2%, 70%/20%, ceiling EUR 6,445.56, payment 10th to 20th) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-23 |
 
-SS — cálculo com teto: rendimento relevante mensal = 70% × 220 000 ÷ 12 = EUR 12 833,33
-  > teto de 12 × IAS = EUR 6 270,00/mês → base mensal limitada a 6 270,00
-  SS anual = 6 270,00 × 21,4% × 12 = 1 341,78 × 12 = EUR 16 101,36
-  (sem teto seria 220 000 × 70% × 21,4% = 32 956,00 — não aplicável)
+Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
-Resultado líquido: 220 000 − 43 401,36 = EUR 176 598,64
-
-IRS (tabela Lei 55-A/2025), escalão acima de 83 696:
-  29 233,99 + (176 598,64 − 83 696) × 48%
-  = 29 233,99 + 92 902,64 × 0,48
-  = 29 233,99 + 44 593,27 = EUR 73 827,26
-
-Adicional de solidariedade (art. 68.º-A; rendimento coletável > 80 000):
-  (176 598,64 − 80 000) × 2,5% = 96 598,64 × 0,025 = EUR 2 414,97
-
-Total IRS: 73 827,26 + 2 414,97 = **EUR 76 242,23**
-```
-
-Alerta: bruto > EUR 200 000 — CC obrigatório; adicional de solidariedade aplica-se; confirmar a base SS efetivamente fixada antes de fechar (em contabilidade organizada, o rendimento relevante corresponde ao lucro tributável do ano anterior, com o máximo de 12 vezes o IAS).
-
-### Exemplo 4 — Santander Portugal (Lisboa, Designer, muitos MB Way)
-
-**Cliente:** Margarida Santos, designer gráfica (código 1336 — tabela art. 151.º), Lisboa.
-
-[Tratamento MB Way inalterado: pagadores particulares não retêm; empresas com NIF retêm — para profissões da tabela 151.º, a 23%.]
-
-```
-Receitas brutas MB Way (particulares, sem retenção): EUR 18 000
-TRANSF de empresas (brutos; retenção 23% confirmada): EUR 24 000
-Total bruto: EUR 42 000
-
-Coeficiente 0,75 (tabela 151.º): 42 000 × 0,75 = EUR 31 500
-SS paga: 42 000 × 70% × 21,4% = EUR 6 291,60
-Dedução SS: 6 291,60 − 10% × 42 000 = 6 291,60 − 4 200 = EUR 2 091,60
-Tributável: 31 500 − 2 091,60 = EUR 29 408,40
-
-IRS: 5 905,56 + (29 408,40 − 28 400) × 34,90%
-   = 5 905,56 + 1 008,40 × 0,349 = 5 905,56 + 351,93 = EUR 6 257,49
-Menos retenções: 24 000 × 23% = EUR 5 520,00
-Saldo IRS: 6 257,49 − 5 520,00 = **EUR 737,49 a pagar**
-```
-
-### Exemplo 5 — Cliente sob RNH / IFICI
-
-**Cliente alegando RNH ou IFICI:** STOP nesta skill.
-
-Aplicar a recusa **R-PT-2** e remeter o trabalho para a skill `pt-nhr-ifici`, que trata em detalhe:
-- Taxa fixa de 20% sobre AEVA (Atividades de Elevado Valor Acrescentado)
-- Isenções de rendimentos de fonte estrangeira
-- Processo de candidatura à AT
-- Lista de profissões qualificadas
-
-Não aplicar taxas progressivas nem 20% flat **sem confirmação documental** do estatuto. A presente skill assume regime geral.
-
-### Exemplo 6 — ActivoBank / Moey (Coimbra, Tradutora)
-
-**Cliente:** Rita Alves, tradutora (código 1334 — tabela art. 151.º), Coimbra, primeiro ano como trabalhadora independente.
-
-Considerações para o primeiro ano:
-- Coeficientes das alíneas b), c) e f) reduzidos em 50 % no período de início de atividade e em 25 % no seguinte, se não auferir rendimentos das categorias A ou H (art. 31.º n.º 10)
-- Regime simplificado aplica-se (novo contribuinte, rendimento estimado < EUR 200 000)
-- Dispensa de retenção (art. 101.º-B): só se **previr auferir** menos de EUR 15 000 anuais (limiar do art. 53.º CIVA em 2025). Com EUR 22 000 estimados, **não** há dispensa — os clientes empresariais retêm 23%.
-- IRS Jovem: se a Rita tiver até 35 anos, ano 1 → isenção 100% (limite 55 × IAS = EUR 28 737,50)
-- SS: isenção nos primeiros 12 meses de atividade (primeira inscrição) — confirmar data de registo
-
-```
-Receitas brutas (ano completo): EUR 22 000
-Coeficiente (tradutora — código 1334, tabela 151.º): 0,75
-Base tributável: 22 000 × 0,75 = EUR 16 500
-Dedução SS: EUR 0 pagos no ano 1 (isenção) → sem dedução
-Rendimento tributável: EUR 16 500
-
-IRS Jovem ano 1 (100% isento; 16 500 ≤ 28 737,50): isenção total
-**IRS: EUR 0** (retenções de 23% eventualmente sofridas são reembolsadas na liquidação)
-```
-
-Nota: o rendimento isento é declarado na Modelo 3 (a opção IRS Jovem exerce-se na declaração).
-
-## Secção 5 — Regras de Tier 1 (Aplicar Diretamente)
-
-- **T1-PT-1 — Regime simplificado: coeficiente, não despesas reais** — Em regime simplificado, rendimento tributável = receitas brutas × coeficiente. Despesas individuais NÃO são dedutíveis (estão implicitamente cobertas pelo coeficiente), mas nas alíneas b) e c) acresce ao rendimento tributável a diferença positiva entre 15 % dos rendimentos brutos e as despesas e encargos comunicados (art. 31.º n.º 13). Apenas as contribuições para a SS pagas são deduzidas separadamente da base tributável. Aplicar mecanicamente — não somar despesas em regime simplificado. — e o coeficiente das profissões da tabela do art. 151.º é 0,75 (art. 31.º n.º 1 b)); 0,35 apenas para serviços fora da tabela.  _([art. 31.º n.º 1 b) CIRS](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx))_
-- **T1-PT-2 — Retenção na fonte é um adiantamento, não uma redução de rendimento** — A retenção pelos clientes (23% para profissões da tabela 151.º; 16,5% propriedade intelectual; 11,5% outros B) é um adiantamento creditado contra a coleta final. Não reduz as receitas brutas. Recompor sempre: bruto = líquido ÷ (1 − taxa efetiva) — ÷ 0,77 no caso típico de 23%. Confirmar a taxa em cada recibo (transição 25% → 23% em 2025).
-- **T1-PT-3 — Contribuições SS: dedução limitada em regime simplificado** — Contabilidade organizada: dedutíveis integralmente como gasto. Regime simplificado (alíneas b) e c) do art. 31.º n.º 1): dedutíveis apenas na parte em que excedam 10% dos rendimentos brutos e quando não deduzidas a outro título (art. 31.º n.º 2). Nunca deduzir a totalidade por defeito.  _(art. 31.º n.º 2 CIRS)_
-- **T1-PT-4 — IRS Jovem: confirmar número do ano antes de aplicar** — Nunca presumir. Contribuinte até 35 anos, primeiros 10 anos de obtenção de rendimentos; escala 100% (ano 1), 75% (anos 2–4), 50% (anos 5–7), 25% (anos 8–10); limite anual 55 × IAS; rendimento isento englobado para efeitos de taxa. Pedir sempre confirmação.
-- **T1-PT-5 — Contabilidade organizada obrigatória a partir de EUR 200 000** — Receitas brutas acima de EUR 200 000 obrigam à contabilidade organizada a partir do período seguinte apenas quando o limite seja ultrapassado em dois períodos de tributação consecutivos ou, num único exercício, em montante superior a 25 % (art. 28.º n.º 6). Aplicar regime simplificado apenas quando confirmado bruto ≤ EUR 200 000 no ano anterior (ou ano corrente para novos contribuintes).  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx)_
-- **T1-PT-6 — Pagamentos de IRS e IVA não são despesas de IRS** — Pagamentos à AT (pagamento por conta, saldo de IRS) e entregas de IVA são pagamentos de imposto, não despesas de Categoria B. Excluir todos os descritivos de pagamentos à AT do cálculo do rendimento.
-- **T1-PT-7 — RNH / IFICI: encaminhar para skill dedicada** — Se houver qualquer indício de estatuto RNH ou IFICI (datas de registo, ano de início, indicação do cliente), parar e remeter para a skill `pt-nhr-ifici`. Não tentar aplicar a taxa de 20% AEVA, nem isenções de rendimento estrangeiro, nesta skill.
-- **T1-PT-8 — Verificar o código de atividade antes do coeficiente** — O coeficiente depende do enquadramento do art. 151.º, não da descrição informal da atividade. Pedir o comprovativo de atividade da AT; na dúvida aplicar 0,75 e sinalizar (default conservador).  _(art. 151.º CIRS)_
-
-## Secção 6 — Catálogo Tier 2
-
-**Catálogo Tier 2**
-
-| Código | Situação | Motivo de Escalonamento | Tratamento Sugerido |
-| --- | --- | --- | --- |
-| T2-PT-1 | Regime RNH / IFICI | Isenções de rendimento estrangeiro e taxa de 20% — complexidade | Remeter para skill `pt-nhr-ifici` |
-| T2-PT-2 | Múltiplas categorias (A + B, ou B + F) | Regras de englobamento vs. tributação autónoma para certas categorias | Sinalizar — contribuinte pode optar pelo englobamento ou não |
-| T2-PT-3 | Casais — tributação conjunta | Tributação conjunta vs. separada produz resultados distintos (quociente conjugal) | Apresentar ambas as opções; não escolher por defeito |
-| T2-PT-4 | Falso recibo verde (cliente único > 80%) | A AT pode requalificar como Categoria A; tratamento diferente | Sinalizar para revisão jurídica; não requalificar unilateralmente |
-| T2-PT-5 | Deduções à coleta para saúde, educação, habitação (Anexo H) | Deduções pessoais fora da Categoria B — sujeitas a matching com e-fatura | Confirmar que as faturas na e-fatura estão atribuídas ao NIF; sinalizar deduções não reclamadas |
-| T2-PT-6 | Residência parcial ou não residente | Taxas e regras de convenções diferentes para não residentes | Sinalizar — não aplicar taxas de residente a não residentes |
-
-## Secção 7 — Modelo 3 e Anexos: Mapeamento
-
-[Tabela de anexos inalterada.]
-
-**Prazo de entrega (art. 60.º n.º 1 CIRS):** de 1 de abril a 30 de junho do ano seguinte, independentemente de o dia 30 de junho ser útil ou não útil (ex.: IRS 2025 a entregar de 1 de abril a 30 de junho de 2026). Não usar "último dia útil de junho".
-
-## Secção 8 — Folha de Trabalho (Excel)
-
-```
-PAPEL DE TRABALHO IRS PORTUGAL (CATEGORIA B — REGIME SIMPLIFICADO)
-Contribuinte: _______________  NIF: _______________  Ano: 2025
-
-SECÇÃO A — RECEITAS BRUTAS (Categoria B)
-                                        EUR
-Total faturado (recibos verdes bruto)   ___________
-Recomposição de montantes retidos (÷ 0,77 a 23%) ___________
-Plataformas online (recompostas)        ___________
-Outras receitas Categoria B             ___________
-TOTAL RECEITAS BRUTAS                   ___________
-
-SECÇÃO B — COEFICIENTE REGIME SIMPLIFICADO
-Código de atividade (tabela 151.º?):    _______________
-Coeficiente aplicado (0,75 / 0,35 / 0,15 / 0,95): ___________
-Base tributável (bruto × coeficiente)   ___________
-Dedução SS = max(0; SS paga − 10% × receitas brutas)  (___________)
-RENDIMENTO TRIBUTÁVEL IRS               ___________
-
-SECÇÃO C — CÁLCULO DO IRS (TABELA LEI 55-A/2025)
-Imposto pelos escalões                  ___________
-Isenção IRS Jovem (englobar isento p/ taxa; limite 55 × IAS) (___________)
-IRS antes de créditos                   ___________
-Menos: retenções na fonte (taxa efetiva por recibo) (___________)
-Menos: pagamentos por conta IRS (20 jul/set/dez)    (___________)
-SALDO IRS A PAGAR / (REEMBOLSAR)        ___________
-
-SECÇÃO D — ADICIONAL DE SOLIDARIEDADE (art. 68.º-A)
-(Apenas se rendimento coletável > EUR 80 000) ___________
-
-SECÇÃO E — SEGURANÇA SOCIAL
-Base mensal: 70% × bruto trimestral ÷ 3 (teto 12 × IAS = 6 270,00) ___________
-SS anual devida: base mensal × 21,4% × 12  ___________
-Menos: SS já paga                          (___________)
-Saldo SS a pagar                           ___________
-
-SECÇÃO F — ALERTAS DO REVISOR
-[ ] Regime simplificado confirmado (bruto ≤ EUR 200 000 ano anterior)?
-[ ] Código de atividade confirmado (tabela 151.º → 0,75)?
-[ ] Taxa de retenção efetiva confirmada em cada recibo (23% vs 25%)?
-[ ] Dedução SS limitada ao excesso sobre 10% do bruto?
-[ ] Pagamentos SS conferidos contra recibos (e teto 12 × IAS)
-[ ] IRS Jovem — número do ano confirmado? Isento englobado para taxa?
-[ ] Estatuto RNH/IFICI verificado (se aplicável, ver skill pt-nhr-ifici)?
-[ ] Risco de falso recibo verde avaliado (cliente único > 80%)?
-[ ] Deduções pessoais e-fatura verificadas (Anexo H)?
-```
-
-## Secção 9 — Guia de Leitura de Extratos Bancários
-
-[Inalterada.]
-
-## Secção 10 — Onboarding e Recolha de Informação em Falta
-
-> "Para calcular o IRS com rigor, preciso das declarações de retenção na fonte de cada cliente, com a taxa efetivamente aplicada (em regra 23% para profissões da tabela do art. 151.º desde 2025; alguns clientes podem ter aplicado 25% na transição). Pode pedi-las aos clientes em janeiro/fevereiro — as empresas têm obrigação legal de emiti-las. Em alternativa, consulte o Portal das Finanças → 'Consultar' → 'Retenções na Fonte'."
-
-**Tipo de serviço ambíguo:**
-> "Para aplicar o coeficiente correto do regime simplificado, preciso do seu código de atividade na AT. Se a atividade consta da tabela do artigo 151.º do CIRS (consultores, programadores, tradutores, designers, arquitetos, engenheiros, etc., incluindo o código residual 1519), o coeficiente é 0,75. Vendas de mercadorias e hotelaria/restauração: 0,15. Outras prestações de serviços fora da tabela: 0,35. Confirme o código que consta do seu comprovativo de início de atividade."
-
-**IRS Jovem:**
-> "Com base na sua idade, poderá ter direito ao IRS Jovem. Este isenta 100% no 1.º ano, 75% nos anos 2–4, 50% nos anos 5–7 e 25% nos anos 8–10 de obtenção de rendimentos, com o limite anual de 55 × IAS (EUR 28 737,50 em 2025). Para o aplicar, preciso de confirmar: (1) que tem 35 anos ou menos, e (2) o número do ano da sua carreira de obtenção de rendimentos em Portugal."
-
-**RNH / IFICI:**
-> "Se está abrangido pelo regime de Residente Não Habitual (RNH) ou pelo IFICI, o tratamento de IRS é diferente — taxa fixa de 20% sobre Atividades de Elevado Valor Acrescentado, com possíveis isenções de rendimentos de fonte estrangeira. Confirma o seu estatuto e, em caso afirmativo, o trabalho será encaminhado para a skill especializada (`pt-nhr-ifici`)?"
-
-**Contribuições SS desconhecidas:**
-> "As contribuições para a Segurança Social podem reduzir o IRS, mas em regime simplificado só a parte que exceda 10% das suas receitas brutas é dedutível. Tem os recibos de pagamento à SS? Caso não, posso estimar: base contributiva = 70% das receitas brutas trimestrais ÷ 3 (com teto mensal de 12 × IAS), à taxa de 21,4%."
-
-## Secção 11 — Remissão para RNH / IFICI
-
-[Inalterada.]
-
-## Secção 12 — Referências
-
-### Legislação-Chave
-
-- **Legislação-Chave** — - **CIRS (Código do IRS)** — Decreto-Lei n.º 442-A/88, de 30 de novembro, com as alterações em vigor; art. 28.º (Categoria B), art. 31.º (coeficientes; n.º 2 dedução SS), art. 60.º (prazo de entrega), art. 68.º (taxas), art. 68.º-A (adicional de solidariedade), art. 71.º (não residentes), art. 101.º/101.º-B (retenção e dispensa), art. 102.º (pagamentos por conta), art. 12.º-B (IRS Jovem) - **Lei n.º 55-A/2025, de 22 de julho** — tabela de taxas do art. 68.º aplicável aos rendimentos de 2025 - **Lei n.º 45-A/2024, de 31 de dezembro (OE2025)** — IRS Jovem atual (art. 12.º-B) e retenção 23% (art. 101.º n.º 1 b)) - **Portaria n.º 1011/2001, de 21 de agosto** — tabela de atividades do art. 151.º do CIRS (determina coeficiente 0,75 e retenção 23%). *Nota: não confundir com a lista de atividades de elevado valor acrescentado do RNH/IFICI (Portaria n.º 230/2019 e sucessoras) — instrumento distinto, ver skill `pt-nhr-ifici`.* - **Portaria n.º 6-B/2025/1** — IAS 2025 = EUR 522,50 - **EBF art. 58.º** — propriedade intelectual: englobamento de 50%, exclusão máxima EUR 10 000 (vigente até 2026) - **Decreto Regulamentar n.º 25/2009** — depreciações e amortizações (contabilidade organizada)  _(CIRS; Lei n.º 55-A/2025; Lei n.º 45-A/2024; Portaria n.º 1011/2001; Portaria n.º 6-B/2025/1; EBF art. 58.º; Decreto Regulamentar n.º 25/2009)_
-
-### Prazos (rendimentos de 2025, com referência cruzada 2024)
-
-**Prazos (rendimentos de 2025, com referência cruzada 2024)**  _(art. 60.º n.º 1 CIRS; art. 102.º n.º 1 e 3 CIRS)_
-
-| Prazo | Evento |
-| --- | --- |
-| 1 abr – 30 jun 2025 | Entrega da Modelo 3 de IRS 2024 (prazo fixo — art. 60.º n.º 1) |
-| até 20 de julho de 2025 | Pagamento por conta 2025 — 1.ª prestação (art. 102.º n.º 1) |
-| até 20 de setembro de 2025 | Pagamento por conta 2025 — 2.ª prestação |
-| até 20 de dezembro de 2025 | Pagamento por conta 2025 — 3.ª prestação (cessam se < EUR 50 — art. 102.º n.º 3) |
-| 1 abr – 30 jun 2026 | Entrega da Modelo 3 de IRS 2025 (prazo fixo) |
-
-### Referências Úteis
-
-[Inalterada.]
-
-## Disclaimer
-
-Esta skill e os seus outputs são fornecidos exclusivamente para fins informativos e de cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os outputs devem ser revistos e validados por um profissional qualificado (Contabilista Certificado, advogado fiscalista ou equivalente licenciado na jurisdição aplicável) antes de qualquer entrega ou actuação.
-
-A versão mais actualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para aceder à versão mais recente, solicitar revisão profissional por um contabilista licenciado e acompanhar actualizações à medida que a lei fiscal evolui.
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -5,7 +5,8 @@ version: 1.0
 jurisdiction: PT
 tax_year: 2025
 last_updated: 2026-10-23
-source_checked: 2026-10-17
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - company-formation-workflow-base
 category: formation
@@ -223,6 +224,8 @@ A Empresa na Hora é um dos processos de constituição de empresas mais rápido
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento jurídico, fiscal ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de qualquer actuação.
 
 A versão mais actualizada e verificada desta skill encontra-se em [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

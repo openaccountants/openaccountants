@@ -395,7 +395,7 @@ The 2025/26 tax year ran from 6 April 2025 to 5 April 2026 ([2025/26 rates](http
 | SMP and SPP flat rate | £187.18 or 90% of AWE if lower |
 | SSP weekly rate | £118.75 (with 3 waiting days and the LEL test) |
 | Small Employers' Relief recovery | 108.5% (92% otherwise) |
-| Student loan thresholds, Plans 1, 2 and 4 | £26,065; £28,470; £32,745 (postgraduate £21,000) |
+| Student loan thresholds for 2025/26 only, Plans 1, 2 and 4 (for 2026/27 use £26,900; £29,385; £33,795 from the table above) | £26,065; £28,470; £32,745 (postgraduate £21,000) |
 
 - **Minimum wage.** From 1 April 2025 to 31 March 2026 the rates were £12.21 (21 and over), £10 (18 to 20) and £7.55 (under 18 and apprentices) ([NMW rates](https://www.gov.uk/national-minimum-wage-rates)).
 

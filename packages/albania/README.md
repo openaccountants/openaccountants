@@ -7,12 +7,17 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `albania-income-tax.md`
-4. `albania-payroll.md`
-5. `albania-social-contributions.md`
-6. `albania-tax-optimization.md`
-7. `albania-vat.md`
-8. `payroll-workflow-base.md`
+3. `README.md`
+4. `al-corporate-tax.md`
+5. `al-cross-border.md`
+6. `al-transfer-pricing.md`
+7. `albania-income-tax.md`
+8. `albania-payroll.md`
+9. `albania-social-contributions.md`
+10. `albania-tax-optimization.md`
+11. `albania-vat.md`
+12. `payroll-workflow-base.md`
+13. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -2,13 +2,16 @@
 name: sj-svalbard-tax-residence
 description: >
   Svalbard individual tax residence and temporary-work reference checked against the consolidated Svalbard Tax Act in 2026. Explains permanent residence, the twelve-month retrospective rule, the thirty-day continuous-stay test, departure and the limited-liability regime for qualifying newcomers. Identifies the statutory exception to that newcomer restriction and distinguishes foreign employment from property outside Svalbard. Includes practical boundary cases and evidence to retain. This Guide concerns Svalbard only; the SJ catalogue code does not establish coverage of Jan Mayen. Mainland residence interactions, treaty treatment, special benefits and independent accountant review remain outstanding.
-jurisdiction: SJ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SJ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Svalbard: individual tax residence and temporary work
@@ -50,3 +53,23 @@ Section 2-1 excludes pay for work outside Svalbard and business income earned ou
 Record residence history for the preceding ten years, exact arrival/departure dates, travel-day treatment, work locations, property locations and evidence of foreign/mainland tax liability. Keep the newcomer exception assessment distinct from the ordinary residence decision.
 
 Mainland Norwegian residence and departure, treaty scope, medical-absence exceptions, special benefits, offshore work and appeals require additional review. This Guide does not determine immigration permission or social-insurance membership. Independent accountant review remains outstanding.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

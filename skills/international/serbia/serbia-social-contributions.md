@@ -1,13 +1,15 @@
 ---
 name: serbia-social-contributions
 description: "Serbian mandatory social insurance contributions for tax year 2026. Covers who pays pension and disability (PIO), health and unemployment contributions; the rates (24%, 10.3% and 0.75%, split 14% and 10% for pension and 5.15% each for health when an employer pays); the 2026 minimum monthly base of RSD 51,297, maximum monthly base of RSD 732,820 and maximum annual base of RSD 8,793,840; the base for employees, company founders, entrepreneurs on actual profit, flat-rate (paušal) entrepreneurs and contract income; the new-hire contribution refunds in force for 2026; when contributions are due; and penalties. Trigger on: doprinosi za obavezno socijalno osiguranje, PIO, zdravstveno osiguranje, najniža osnovica, najviša osnovica, doprinosi paušalac, doprinosi preduzetnik, osnivač doprinosi. Out of scope: salary tax and the employer's monthly gross-to-net (serbia-payroll), income tax (serbia-income-tax), non-residents and treaties (rs-cross-border)."
-jurisdiction: RS
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: RS
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Serbia: social contributions (2026)
@@ -224,3 +226,23 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
 Not yet confirmed: whether health contribution is due on contract fees where the payer withholds (set by the Health Insurance Act, not read); whether the CROSO Law has been amended since 2019; how the monthly floor and ceiling apply to an entrepreneur whose base is annual taxable profit; the list of Serbia's social security agreements; the current NBS reference rate for late payment interest.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

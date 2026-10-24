@@ -1,11 +1,10 @@
 ---
 name: gr-tax-overview
 description: "Source-cited draft: map of the Greek tax system for tax year 2026, with each headline figure tied to the law. Covers the tax year, who is taxed on worldwide income, the 2026 personal income tax scale (9% to 44%), the 22% corporate rate, the 24% standard VAT rate, the return windows for individuals and companies, AADE as the tax authority and e-EFKA for social insurance. Points to the pack's detailed skills: gr-income-tax, gr-corporate-income-tax, gr-cross-border, gr-efka, gr-employee-contributions, gr-vat-return, gr-capital-gains and gr-payroll. Trigger phrases: Greek tax system, taxes in Greece overview, Greece tax rates 2026, how Greece taxes income. Out of scope: any computation, which lives in the sibling skills named above."
+version: 0.1
 jurisdiction: GR
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.1
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -43,6 +42,8 @@ A map of the main Greek taxes for tax year 2026. It computes nothing; each line 
 | e-EFKA home page | https://www.efka.gov.gr | 2026-10-23 |
 
 Not yet confirmed: any amendment to the VAT Code rates made after 31 December 2024 (the AADE codification read runs to that date); any amendment to the Income Tax Code during 2026 after ν. 5264/2025.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

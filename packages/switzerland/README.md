@@ -7,19 +7,25 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ch-ahv-iv.md`
-4. `ch-cantonal-tax.md`
-5. `ch-company-formation.md`
-6. `ch-corporate-income-tax.md`
-7. `ch-federal-income-tax.md`
-8. `ch-lump-sum.md`
-9. `ch-tax-overview.md`
-10. `ch-taxation-employee-stock-options-and-employee.md`
-11. `ch-vat-return.md`
-12. `switzerland-crypto-tax.md`
-13. `switzerland-vat.md`
-14. `company-formation-workflow-base.md`
-15. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `ch-ahv-iv.md`
+5. `ch-cantonal-tax.md`
+6. `ch-company-formation.md`
+7. `ch-corporate-income-tax.md`
+8. `ch-cross-border.md`
+9. `ch-federal-income-tax.md`
+10. `ch-lump-sum.md`
+11. `ch-payroll.md`
+12. `ch-tax-overview.md`
+13. `ch-taxation-employee-stock-options-and-employee.md`
+14. `ch-transfer-pricing.md`
+15. `ch-vat-return.md`
+16. `switzerland-crypto-tax.md`
+17. `switzerland-vat.md`
+18. `payroll-workflow-base.md`
+19. `company-formation-workflow-base.md`
+20. `transfer-pricing-workflow-base.md`
+21. `crypto-tax-workflow-base.md`
 
 ## Also known as
 
