@@ -2,13 +2,14 @@
 name: mc-corporate-income-tax
 description: "Monaco business profits tax working paper for 2026, covering industrial and commercial enterprises, the inclusive foreign turnover boundary, separate rights income scope, ordinary rate, losses, conditional new activity relief, advances, filing deadlines and statutory sanctions. Use for Monaco corporate income tax, ISB, foreign turnover, loss carryforward and tax instalment questions. Distinguishes scope from foreign operation profit exclusions and preserves limits on deduction, participation and large group research. Includes reproducible ordinary calculations and explicit unresolved filing procedures. Source cited draft awaiting a named Monaco professional review."
 jurisdiction: MC
+category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
 # Monaco business profits tax (ISB)
@@ -105,8 +106,6 @@ expected:
 - What losses, relief conditions, foreign taxes and prior advances are documented?
 - What is the group's size and structure for the unresolved large-group rules?
 
-**Not yet confirmed:** live forms, executive scale, detailed interest/participation/reorganisation rules and large-group obligations. Ordinary examples do not settle those gaps.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -114,3 +113,23 @@ expected:
 | Ordinance 3.152, arts. 1–15, 21–23, 29, 31–37 | https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152 | 2026-10-24 |
 | Ordinance 10.324, arts. 1–3 | https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324 | 2026-10-24 |
 | Project 1.129, project status and explanatory introduction only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
+
+**Not yet confirmed:** live forms, executive scale, detailed interest/participation/reorganisation rules and large-group obligations. Ordinary examples do not settle those gaps.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -6,8 +6,7 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 1.0
-verified_by: pending
+version: 1.1
 ---
 
 # Monaco transfer pricing and normal foreign conditions
@@ -97,11 +96,11 @@ expected:
 - What group size, reporting entities and other-country filings are involved?
 - What periods, losses, credits or existing adjustments affect the tax result?
 
-**Not yet confirmed:** formal documentation, CbCR, disclosures, retention periods, safe harbours, agreements and separate penalties. No threshold exemption is inferred.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
 | Ordinance 3.152, arts. 7, 9, 12–14, 21–23, 34–37 | https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152 | 2026-10-24 |
 | Project 1.129, project status only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
+
+**Not yet confirmed:** formal documentation, CbCR, disclosures, retention periods, safe harbours, agreements and separate penalties. No threshold exemption is inferred.

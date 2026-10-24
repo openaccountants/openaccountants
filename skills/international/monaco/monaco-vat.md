@@ -1,8 +1,9 @@
 ---
 name: monaco-vat
 description: "Monaco VAT working paper for 2026 using the Monaco turnover tax code and the France Monaco convention. Covers standard rate calculations, ordinary franchise thresholds, start date and threshold crossing tests, input deduction, business service reverse charge, monthly or permitted quarterly filing, Monaco DSF procedures and statutory penalties. Use for Monaco TVA, VAT returns, small business exemption and foreign service questions. Requires transaction evidence and the assigned filing calendar. Includes reproducible examples, records unresolved special regimes and live forms, and awaits a named Monaco professional review."
-version: 2.1
+version: 2.2
 jurisdiction: MC
+category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
@@ -11,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Monaco VAT v2.1
+# Monaco VAT v2.2
 
 > **Source-cited draft; partial scope.** Checked 24 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
 
@@ -101,11 +102,29 @@ expected:
 - What invoice, taxable-use and deduction evidence supports each input?
 - What prior credits, imports, foreign supplies, special schemes or cessation dates exist?
 
-**Not yet confirmed:** live forms/portal, reduced-rate scope, special schemes, imports/intra-community reporting, mixed exemption and staged invoicing changes. This is a partial VAT working paper. Version 2.1 replaces the earlier unsourced Nice filing route and generic bank-pattern defaults.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
 | Code, arts. 11, 42, 51, 62, 66, 68, 70–71, 87–91, 110–112; annex A-139, A-144–A-145 | https://legimonaco.mc/code/code-taxes-chiffre-affaires | 2026-10-24 |
 | France–Monaco convention, art. 15 | https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/ | 2026-10-24 |
+
+**Not yet confirmed:** live forms/portal, reduced-rate scope, special schemes, imports/intra-community reporting, mixed exemption and staged invoicing changes. This is a partial VAT working paper. Version 2.2 replaces the earlier unsourced Nice filing route and generic bank-pattern defaults.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

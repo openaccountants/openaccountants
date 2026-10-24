@@ -2,13 +2,14 @@
 name: mc-tax-overview
 description: "Monaco tax overview for 2026 routing individual, business profits, VAT, payroll, social contribution, transfer pricing, cross border and formation questions to the detailed country Guides. Highlights the inclusive foreign turnover boundary, separate rights income scope, French national residence rules, dated October contribution changes and company reform transition limits. Use as the country entry point before preparing a working paper. Preserves explicit legal, operational and professional review gaps and avoids a general zero tax promise. Partial source cited draft with no named Monaco professional sign off."
 jurisdiction: MC
+category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
 # Monaco tax overview and routing
@@ -40,8 +41,6 @@ The new-activity exemption is conditional and period-specific; there is no gener
 
 Law, government guidance and retrieval are distinct evidence. The ISB statute says at least 25%, despite the government summary's stricter wording. The employer PDF URL says October 2025, while the actual document is October 2026. The minimum-tax page is a project record; proposed dates do not establish operative law. The public [research report](../../../docs/research/2026-10-24-monaco-research.md) and [retrieval register](../../../docs/research/2026-10-24-monaco-sources.json) preserve those distinctions. [Art. 1](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152); [Actual employer letter](https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [Project 1.129](https://legimonaco.mc/projet/1.129).
 
-**Not yet confirmed:** complete filing operations and special regimes; earlier 2026 payroll periods; full treaty, large-group and reporting duties; accounts/audit implementation; and professional sign-off. The README keeps all seven tax domains partial. Arithmetic checks establish arithmetic only.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -58,3 +57,23 @@ Law, government guidance and retrieval are distinct evidence. The ISB statute sa
 | Project 1.129, project status only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
 
 The government personal-tax page was read from the successful 15:18 UTC retrieval on this date. Its later recheck returned HTTP 403. That failure is recorded in the [source register](../../../docs/research/2026-10-24-monaco-sources.json); it is not a fresh successful retrieval.
+
+**Not yet confirmed:** complete filing operations and special regimes; earlier 2026 payroll periods; full treaty, large-group and reporting duties; accounts/audit implementation; and professional sign-off. The README keeps all seven tax domains partial. Arithmetic checks establish arithmetic only.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -2,13 +2,14 @@
 name: mc-company-formation
 description: "Monaco company formation reference checked in October 2026. Covers SARL and sole member SURL capital rules, the natural person exception, cash and in kind payment gates, and SAM subscription, minimum paid capital and approval requirements. Use for Monaco incorporation, entity choice and capital planning questions. Separates nationality and activity permissions from registry filings and records the 2025 and October 2026 reform transition limits. Includes two reproducible capital illustrations. Complete forms, beneficial ownership, fees, audit and accounts procedures await a named Monaco professional review."
 jurisdiction: MC
+category: formation
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
 # Monaco company formation and capital
@@ -89,8 +90,6 @@ expected:
 - What constitution/registration dates and existing permissions apply?
 - What premises, beneficial ownership, audit and accounts requirements arise?
 
-**Not yet confirmed:** complete registry/beneficial-owner procedures, fees, sanctions, account/audit thresholds and deferred October implementation. Obtain Monaco professional review before incorporation or filing.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -99,3 +98,23 @@ expected:
 | Law 1.573, arts. 11–18 and art. 101(7) | https://legimonaco.mc/tnc/loi/2025/04-08-1.573 | 2026-10-24 |
 | Law 1.144, arts. 1–8 | https://legimonaco.mc/tnc/loi/1991/07-26-1.144/ | 2026-10-24 |
 | Law 1.596, arts. 93–103 | https://legimonaco.mc/tnc/loi/2026/10-09-1.596/ | 2026-10-24 |
+
+**Not yet confirmed:** complete registry/beneficial-owner procedures, fees, sanctions, account/audit thresholds and deferred October implementation. Obtain Monaco professional review before incorporation or filing.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

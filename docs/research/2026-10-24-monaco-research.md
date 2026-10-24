@@ -49,3 +49,10 @@ Repository schema and strict metadata checks must inspect all nine country Markd
 ## Remaining country work
 
 Keep every `partial:` note in [the country README](../../skills/international/monaco/README.md). The practical priorities are actual filing forms/portal onboarding, earlier 2026 payroll rates and complete bases/rounding, directors/independent schemes and bilateral affiliation, individual treaty applications, VAT special regimes and reporting, executive/interest/participation/reorganisation rules, formal TP/CbCR obligations, treaty inventory/exit relief, minimum-tax enactment and implementation, October accounts/audit transitions, and named professional review. None is closed by the new file count or arithmetic.
+
+
+## Current-main standard reconciliation
+
+After the original draft checkpoint `96fe5f2a`, main advanced to `b1f4afab` (PR #794), adding the single writing standard and AGENTS.md entry point. That commit was merged without changing Monaco source files. Required categories were added to the six inherited Guides; the two new Guides no longer add the retired `verified_by: pending` key. Gap notes were moved to the end of each Sources section. All six platform-stamped footer blocks were restored byte-for-byte from current main, as the new standard requires. The platform owns their wording; this reconciliation does not assert a professional review of this country.
+
+Versions advance for those source edits, with VAT frontmatter and H1 aligned at 2.2. All fourteen original calculation blocks are byte-identical to the original review candidate. No legal claim or source-read date is renewed by the mechanical reconciliation. The fresh reviewer will recheck the final corrected source separately from the original exact-snapshot review.

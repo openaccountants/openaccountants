@@ -2,13 +2,14 @@
 name: mc-payroll-social
 description: "Monaco ordinary professional employer social contribution reference from October 2026. Covers CCSS, OMT, CGCS, CAR, unemployment and CMRC rates and separate ceilings, employer and employee splits, monthly declaration and payment, and official late payment guidance. Use for Monaco payroll, social security, pension and contribution questions. Includes two reproducible selected component examples and a limited CAMTI reference for the 2026 to 2027 exercise. Earlier months, special workers, cross border coverage and complete payslip procedures remain unresolved. Partial source cited draft awaiting a named Monaco professional review."
 jurisdiction: MC
+category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
 # Monaco payroll and social contributions
@@ -116,8 +117,6 @@ expected:
 - Are there derogatory pension rates, construction costs, foreign duties or secondments?
 - What affiliation, registration, prior declarations and payment records exist?
 
-**Not yet confirmed:** January–September 2026 rates, complete pay bases/rounding, directors, independent CARTI classes, bilateral coverage, foreign withholding and all payroll compliance costs. Both PR and SC remain partial.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -129,3 +128,23 @@ expected:
 | Government personal tax scope; preserved successful read, later 403 | https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco | 2026-10-24 |
 
 The government personal-tax page was read from the successful 15:18 UTC retrieval on this date. Its later recheck returned HTTP 403. That failure is recorded in the [source register](../../../docs/research/2026-10-24-monaco-sources.json); it is not a fresh successful retrieval.
+
+**Not yet confirmed:** January–September 2026 rates, complete pay bases/rounding, directors, independent CARTI classes, bilateral coverage, foreign withholding and all payroll compliance costs. Both PR and SC remain partial.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

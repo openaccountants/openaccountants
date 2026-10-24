@@ -6,8 +6,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 1.0
-verified_by: pending
+version: 1.1
 ---
 
 # Monaco cross-border tax, residence and foreign credits
@@ -102,8 +101,6 @@ expected:
 - What relocation, merger, cessation or seat/establishment transfer and dates are proposed?
 - What treaty, certificates, group size and foreign reporting obligations are involved?
 
-**Not yet confirmed:** treaty inventory/rates, detailed exit treatment, foreign claims, full participation relief, large-group rules, reporting and social-security agreements. The two ordinary credit illustrations do not close these gaps.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -113,3 +110,5 @@ expected:
 | BOI-INT-CVB-MCO-10, residence scope and exceptions | https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602 | 2026-10-24 |
 | Ordinance 8.566, arts. 1–4 | https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/ | 2026-10-24 |
 | Project 1.129, record and explanatory text only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
+
+**Not yet confirmed:** treaty inventory/rates, detailed exit treatment, foreign claims, full participation relief, large-group rules, reporting and social-security agreements. The two ordinary credit illustrations do not close these gaps.

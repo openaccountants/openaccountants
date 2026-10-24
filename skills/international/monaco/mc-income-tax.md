@@ -2,13 +2,14 @@
 name: mc-income-tax
 description: "Monaco individual income tax and residence reference for 2026. Covers the official absence of resident personal income tax within its stated scope, French national treaty screening, fiscal residence certificate evidence and the alternative principal stay test. Use for Monaco resident tax, French citizens in Monaco, residence certificates and relocation questions. Separates personal receipts from business profits, VAT, social contributions and foreign taxation. Includes two arithmetic controls with stated factual assumptions and identifies unverified foreign procedures. Source cited partial draft awaiting review by a named Monaco professional."
 jurisdiction: MC
+category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 ---
 
 # Monaco individual income tax and residence
@@ -95,8 +96,6 @@ expected:
 - Is any French historic, birth, service, marriage or dual-national exception supported?
 - What other countries claim residence or tax, and which certificates are held?
 
-**Not yet confirmed:** individual foreign returns, full treaty-exception applications, residence declaration sanctions and estate/transaction-tax computations. The alternative day-count example does not close those gaps.
-
 ## Sources
 
 | Official source and provisions read | URL | Read on |
@@ -108,3 +107,23 @@ expected:
 | Ordinance 8.566, arts. 1–4 | https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/ | 2026-10-24 |
 
 The government personal-tax page was read from the successful 15:18 UTC retrieval on this date. Its later recheck returned HTTP 403. That failure is recorded in the [source register](../../../docs/research/2026-10-24-monaco-sources.json); it is not a fresh successful retrieval.
+
+**Not yet confirmed:** individual foreign returns, full treaty-exception applications, residence declaration sanctions and estate/transaction-tax computations. The alternative day-count example does not close those gaps.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
