@@ -1,558 +1,234 @@
 ---
 name: estonia-payroll
-description: Use this skill whenever asked about Estonia payroll processing for employed persons. Trigger on phrases like "Estonia payroll", "Estonian payroll", "palgaarvestus", "sotsiaalmaks", "social tax Estonia", "income tax withholding Estonia", "tulumaks kinnipidamine", "töötuskindlustusmakse", "unemployment insurance premium Estonia", "II pillar", "II sammas", "kohustuslik kogumispension", "funded pension Estonia", "Form TSD", "TSD declaration", "net salary Estonia", "gross to net Estonia", "palk", "netopalk", "EMTA payroll", "Maksu- ja Tolliamet payroll", "basic exemption Estonia", "maksuvaba tulu", "minimum wage Estonia", "employer cost Estonia", "what does an Estonian employee cost", or any question about computing employee pay, withholding income tax, social tax, unemployment premiums, or funded-pension contributions for Estonia-based employees. This skill covers flat 22% income tax withholding (after basic exemption), 33% employer social tax (uncapped, with a monthly minimum base), employee/employer unemployment insurance premiums, mandatory funded (II pillar) pension contributions, the basic exemption, minimum wage, employment-register registration, bank statement classification patterns, and monthly Form TSD filing. ALWAYS read this skill before processing any Estonia payroll.
-version: 0.1
+description: "Estonian payroll for tax year 2026: running a monthly payroll for employees and board members of an Estonian employer. Covers the 22% withholding income tax, the flat 2026 basic exemption (EUR 700 a month, EUR 776 at pensionable age, no income taper), the 1.6% employee and 0.8% employer unemployment insurance premiums, the 2%, 4% or 6% funded pension (II pillar) contribution, the 33% employer social tax on the EUR 886 monthly minimum base, the order of deductions, fringe benefits at 22/78, the employment register, form TSD and payment by the 10th, interest at 0.06% a day and coercive fines. Trigger on: Estonia payroll, gross to net Estonia, palgaarvestus, netopalk, maksuvaba tulu 2026, TSD lisa 1, kinnipeetav tulumaks, II sammas, töötuskindlustusmakse. Out of scope: estonia-social-contributions (social tax in depth, self-employed FIE), estonia-income-tax (annual return), ee-corporate-income-tax, ee-cross-border (non-resident employees in depth)."
+version: 0.2
 jurisdiction: EE
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - payroll-workflow-base
-category: payroll
+verified_by: pending
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Estonia Payroll
+# Estonia payroll, tax year 2026
 
-## Section 1 -- Quick Reference
+> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team from the Income Tax Act (Tulumaksuseadus, TuMS), the Social Tax Act (Sotsiaalmaksuseadus, SMS), the Unemployment Insurance Act (Töötuskindlustuse seadus, TKindlS), the Funded Pensions Act (Kogumispensionide seadus, KoPS) and the Taxation Act (Maksukorralduse seadus, MKS), with Estonian Tax and Customs Board (EMTA) and Ministry of Finance pages, read on 2026-10-24. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Estonian professional.
 
-**Quick Reference table**
+Tax year: the calendar year. Currency: euro. Estonian payroll is cash based: the rates of the month the pay is actually paid out apply, and the payment is declared in the TSD for that month. One body collects everything: EMTA, through the monthly form TSD.
 
-| Field | Value |
-| --- | --- |
-| Country | Estonia (Republic of Estonia) |
-| Currency | EUR only |
-| Standard pay frequency | Monthly |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Tax basis | Cash basis -- tax and contributions follow amounts actually PAID in the calendar month |
-| Tax withholding system | Flat-rate income tax withheld monthly at source by the employer (withholding agent) |
-| Tax authority | Estonian Tax and Customs Board (Maksu- ja Tolliamet, EMTA), portal e-MTA at emta.ee |
-| Social insurance administration | EMTA (collection); Social Insurance Board (Sotsiaalkindlustusamet); Unemployment Insurance Fund (Töötukassa); II pillar register run by Pensionikeskus |
-| Key legislation | Income Tax Act (Tulumaksuseadus, TuMS); Social Tax Act (Sotsiaalmaksuseadus, SMS); Unemployment Insurance Act (Töötuskindlustuse seadus); Funded Pensions Act (Kogumispensionide seadus); Taxation Act (Maksukorralduse seadus, MKS) |
-| Combined payroll return | Form TSD (single monthly declaration), filed via e-MTA |
-| Filing/payment deadline | By the 10th day of the month following the month of payment |
-| Income tax (flat) 2025 and 2026 | 22% withheld at source (after basic exemption) |
-| Social tax 2025 and 2026 | 33% of gross (employer-paid, uncapped) -- 20% public pension + 13% public health |
-| Validated by | Pending -- requires sign-off by an Estonian tax professional |
-| Skill version | 0.1 |
+Five charges come off or on top of each gross wage:
 
-**Read this whole section before computing or classifying anything.**
+| Charge | Who bears it | 2026 rate |
+|---|---|---|
+| Income tax (tulumaks) | Employee, withheld | 22% after deductions |
+| Unemployment insurance premium (töötuskindlustusmakse) | Employee, withheld | 1.6% |
+| Funded pension contribution (kogumispensioni makse, II pillar) | Employee, withheld | 2%, 4% or 6% |
+| Social tax (sotsiaalmaks) | Employer, on top | 33%, minimum base EUR 886 a month |
+| Unemployment insurance premium | Employer, on top | 0.8% |
 
-### Charge overview (standard resident employee)
+Related skills: `estonia-social-contributions` (social tax, the II pillar split and self-employed FIE in depth), `estonia-income-tax` (the annual return and the year-end basic exemption), `ee-corporate-income-tax` (fringe benefits sit in the same TSD), `ee-cross-border` (residence and treaties), `ee-tax-overview`.
 
-**Charge overview table**
+## Who this applies to
 
-| Charge | Who pays | Rate | Capped? |
-| --- | --- | --- | --- |
-| Income tax (withholding) | Employee (withheld) | 22% flat (after basic exemption) | n/a |
-| Social tax (sotsiaalmaks) | Employer | 33% (20% pension + 13% health) | No -- uncapped, but monthly **minimum base** applies |
-| Unemployment premium -- employee (töötuskindlustusmakse) | Employee (withheld) | 1.6% of gross wages | No |
-| Unemployment premium -- employer | Employer | 0.8% of payroll base | No |
-| Mandatory funded pension (II pillar) -- employee | Employee (withheld) | 2% / 4% / 6% (default 2%) | No |
-| Funded pension (II pillar) -- state addition | State (from the employer's 33% social tax; NOT an extra employer cost) | 4% of gross (member's account) | No |
+- **Employers.** A resident company, a state or local authority, a sole proprietor (FIE) who employs people, and a non-resident with a permanent establishment in Estonia or acting as an employer in Estonia (TuMS § 48(2); TKindlS § 4(2); SMS § 4). The employer withholds and pays.
+- **Employees and officials.** Pay under an employment contract or public service is "palgatulu" (TuMS § 13(1)). It carries all five charges.
+- **Board members** (juhatuse liige) of a legal person. Fees are taxed like pay (TuMS § 13(2)) and carry social tax (SMS § 2(1) point 4) and the II pillar (KoPS § 7(1)). A board member not covered by the Employment Contracts Act is not insured for unemployment, so no unemployment premium is due (TKindlS § 3(2) point 3).
+- **Service contracts** (töövõtu-, käsundusleping). Income tax is withheld (TuMS § 41 point 3). Social tax and the II pillar are due unless the payee is a registered FIE and the fee is business income (SMS § 9(1) point 2; KoPS § 11(1) point 2).
+- **Out of scope:** the self-employed person's own social tax (see `estonia-social-contributions`) and the annual personal return (see `estonia-income-tax`).
 
-- **Employer-side cost on top of gross** — 33% social tax + 0.8% unemployment = ~33.8%.  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax); [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums))_
-- **Employee-side withholdings from gross** — 22% income tax (after basic exemption) + 1.6% unemployment + 2/4/6% II pillar.  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
+## Rates, bands and thresholds
 
-> The state's 4% II pillar addition is drawn FROM the 20-point pension share of the employer's social tax and transferred by EMTA to the member's account -- it does not increase the employer's cash outlay. Source: [EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension). [RESEARCH GAP -- some secondary summaries (e.g. PwC) still cite 2%, the pre-2024 figure; reviewer to confirm the current addition against the Funded Pensions Act text.]
-
-## Section 2 -- Conservative Defaults
-
-Apply these when an input is ambiguous and the gap does not require a hard refusal (Section 3). Each default is the cautious choice; record any default applied in the working paper.
-
-**Conservative defaults table**
-
-| Ambiguity | Default | Basis |
-| --- | --- | --- |
-| Unknown II pillar employee rate | Withhold **2%** (statutory default) unless the employee has elected 4% or 6% via Pensionikeskus -- verify the election rather than assume; the same rate applies across all employers | [EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension); [Pensionikeskus](https://www.pensionikeskus.ee/en/ii-pillar/mandatory-funded-pension/) |
-| Basic exemption application status unknown | Apply **0** monthly basic exemption unless the employee has filed a written application electing it with this employer; only one payer may apply it | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Gross pay below the monthly minimum base | Charge social tax on at least the monthly minimum base (EUR 820 in 2025 / EUR 886 in 2026) for any employee with active employment, unless a documented exemption applies (e.g. part-month, parental leave) | [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax) |
-| Unknown income tax rate | 22% flat (2025 and 2026) | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Unknown unemployment premium rates | Employee 1.6% / employer 0.8% (fixed 1 Jan 2025 through end 2028) | [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums) |
-| Unknown birth year for II pillar obligation | STOP -- ask. II pillar is mandatory only for residents born after 31 Dec 1982 (R-EE-PAY-2) | [EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension); [Pensionikeskus](https://www.pensionikeskus.ee/en/ii-pillar/mandatory-funded-pension/) |
-| Unknown whether worker is of pensionable age | Ask -- the employee 1.6% premium is NOT withheld from persons of pensionable age (the 0.8% employer premium still applies) | [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums) |
-| Unknown tax period (2025 vs 2026) | Ask -- minimum social tax base and basic exemption differ between years (R-EE-PAY-1) | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-
-## Section 3 -- Required Inputs and Refusal Catalogue
-
-### Required inputs
-
-**Minimum viable** -- gross monthly remuneration and the tax period (which calendar year). Without the period, STOP: the minimum social tax base (EUR 820 vs EUR 886) and the basic exemption rules differ between 2025 and 2026.
-
-**Recommended** -- employee birth year (drives II pillar obligation: mandatory for residents born after 31 December 1982), the employee's elected II pillar rate (2/4/6%), whether the worker is of pensionable age (affects the employee unemployment premium), residency status, and whether the employee has filed a written basic-exemption application with this employer.
-
-**Ideal** -- the prior month's Form TSD, bank statements showing EMTA payroll debits, the employment-register (töötamise register / TÖR) entry, and the employee's basic-exemption application.
-
-### Refusal catalogue
-
-- **R-EE-PAY-1** — Tax period unknown. Trigger: the calendar year of the payment is not provided. Message: "The tax period is mandatory. The minimum social tax base (EUR 820 in 2025 vs EUR 886 in 2026), the minimum social tax (EUR 270.60 vs EUR 292.38), and the basic exemption rules (income taper in 2025 vs flat EUR 700/month in 2026) all differ by year. Cannot proceed without confirming the period."  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-- **R-EE-PAY-2** — II pillar obligation / birth year unknown. Trigger: II pillar must be computed but the employee's birth year or membership/election status is not provided. Message: "Mandatory funded pension (II pillar) is compulsory only for Estonian residents born after 31 December 1982; the elected employee rate may be 2%, 4% or 6% (default 2%) and applies across all employers. Cannot determine the II pillar withholding without the birth year and membership/rate status. Confirm via Pensionikeskus or e-MTA before computing."  _([EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension))_
-- **R-EE-PAY-3** — Non-standard worker (non-resident, e-resident/non-resident employer, posted worker, board member, FIE). Trigger: the worker is a non-resident, an e-resident running a foreign company, a posted/seconded worker, a board member receiving board fees, or a self-employed person (FIE). Message: "Special regimes (non-residents, e-residents/non-resident employers, posted workers, board-member fees, self-employed FIE) have material nuances not fully expanded in this skill -- including which state's social security applies and Annex 2 (non-resident) reporting on Form TSD. Escalate to an Estonian tax professional."
-- **R-EE-PAY-4** — Social tax base reductions and arrears. Trigger: the worker started or ended mid-month, works part-time below the minimum base, claims a reduction from the minimum social tax obligation (e.g. parental leave, incapacity, reduced work capacity), or has unpaid payroll-tax arrears. Message: "Reductions to the minimum monthly social tax base (mid-month start/end, statutory part-time exceptions, periods of incapacity, parental leave, reduced-work-capacity employees) and arrears with accruing 0.06%/day interest require case-specific confirmation. Do not estimate arrears without an e-MTA statement. Escalate to an Estonian tax professional."  _([EMTA -- payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests))_
-
-## Section 4 -- Transaction / Payment Pattern Library
-
-This is the deterministic pre-classifier for bank statement transactions related to Estonian payroll. When a transaction matches a pattern below, apply the treatment directly. Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Payroll-tax payments to EMTA always EXCLUDE from any VAT return classification -- they are payroll/statutory obligations, not VATable supplies. The single monthly EMTA debit normally bundles income tax + social tax + both unemployment premium shares + II pillar; it is **not** separable from the bank line alone (use Form TSD for the breakdown).
-
-### 4.1 EMTA payroll-tax payments (income tax, social tax, unemployment, II pillar)
-
-**EMTA payroll-tax payments table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MAKSU- JA TOLLIAMET, EMTA | EXCLUDE -- payroll tax to EMTA | Bundled monthly TSD payment |
-| MAKSUAMET, TOLLIAMET, RIIGIMAKSUD | EXCLUDE -- payroll tax to EMTA | Same |
-| SOTSIAALMAKS, SOCIAL TAX | EXCLUDE -- social tax (employer) | 33% employer charge |
-| TÖÖTUSKINDLUSTUSMAKSE, UNEMPLOYMENT INSURANCE | EXCLUDE -- unemployment premium | Employer 0.8% + employee 1.6% |
-| KOGUMISPENSION, II SAMMAS, FUNDED PENSION | EXCLUDE -- II pillar contribution | Employee 2/4/6% withheld |
-| TULUMAKS, INCOME TAX, KINNIPEETUD TULUMAKS | EXCLUDE -- withholding income tax | 22% flat |
-| TSD, MAKSEKORRALDUSE VIITENUMBER | EXCLUDE -- TSD payroll-tax payment | EMTA reference-number payment |
-
-### 4.2 EMTA debits appearing on specific Estonian banks
-
-**EMTA debits by bank table**
-
-| Bank | Typical debit description | Treatment |
-| --- | --- | --- |
-| Swedbank | "MAKSU- JA TOLLIAMET" / "EMTA" / "RIIGIMAKSUD" | EXCLUDE -- payroll tax |
-| SEB Pank | "MAKSU- JA TOLLIAMET" / "EMTA TSD" | EXCLUDE -- payroll tax |
-| LHV Pank | "EMTA" / "MAKSUAMET" / "SOTSIAALMAKS" | EXCLUDE -- payroll tax |
-| Luminor | "MAKSU- JA TOLLIAMET" / "RIIGIMAKS" | EXCLUDE -- payroll tax |
-| Coop Pank | "EMTA" / "MAKSUAMET" | EXCLUDE -- payroll tax |
-| Wise / Revolut | Rare -- EMTA payments typically come from local Estonian accounts | If present, EXCLUDE |
-
-### 4.3 Wages and net-pay transfers (NOT a tax payment -- do not confuse)
-
-**Wages and net-pay transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PALK, TÖÖTASU, SALARY, NETOPALK (outgoing) | EXCLUDE -- payroll wage expense | Net pay to employee, not a tax payment |
-| PALK, NETOPALK (incoming) | EXCLUDE -- employment income received | Not a tax payment |
-| DIVIDEND, DIVIDENDID (outgoing) | EXCLUDE -- dividend, not payroll | Separate distribution-tax regime (22/78); not payroll |
-
-### 4.4 Pension and benefit credits (received -- not a contribution)
-
-**Pension and benefit credits table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PENSION, RIIKLIK PENSION | EXCLUDE -- state pension income received | Not a contribution paid |
-| TÖÖTUKASSA (incoming) | EXCLUDE -- unemployment benefit received | Not a premium paid |
-| HAIGUSHÜVITIS, SICK PAY (incoming) | EXCLUDE -- benefit received | Not a contribution |
-
-## Section 5 -- Worked Examples
-
-Six worked examples for a hypothetical Tallinn-based company paying resident employees. All figures are illustrative; bank-statement amounts use the local format (comma decimal separator, space thousands separator, EUR).
-
-### Example 1 -- Standard monthly EMTA payroll-tax debit (Swedbank)
-
-**Input line:**
-`10.02.2025 ; MAKSU- JA TOLLIAMET ; DEBIT ; TSD JAANUAR 2025 ; -1 234,56 ; EUR`
-
-**Reasoning:**
-Matches "MAKSU- JA TOLLIAMET" (pattern 4.1 / 4.2 Swedbank). This is the bundled monthly Form TSD payment for January 2025 wages, due by 10 February 2025. It bundles withheld income tax (22%), employer social tax (33%), unemployment premiums (employee 1.6% + employer 0.8%) and II pillar (employee's 2/4/6%). The single bank line cannot be decomposed -- use the filed TSD for the split. Source: [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax).
-
-**Classification:** EXCLUDE -- payroll tax to EMTA. Not a VATable supply.
-
-### Example 2 -- Gross-to-net on a EUR 2,000 gross salary (2025)
-
-**Input:** Gross monthly salary EUR 2,000, resident employee born 1990 (II pillar mandatory, default 2%), basic-exemption application on file. 2025.
-
-**Reasoning (computation):**
-- Social tax (employer): EUR 2,000 x 33% = **EUR 660.00** (above the EUR 820 minimum base, so actual gross applies; uncapped). Source: [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax).
-- Unemployment premium, employer: EUR 2,000 x 0.8% = **EUR 16.00**.
-- **Total employer cost on top of gross = EUR 676.00; total cost to employer = EUR 2,676.00.**
-- Withheld from employee: unemployment 1.6% = EUR 32.00; II pillar 2% = EUR 40.00.
-- Basic exemption (2025, income taper): annual income = EUR 2,000 x 12 = EUR 24,000, which is between EUR 14,400 and EUR 25,200, so the exemption is tapered. Annual exemption = 7,848 - (7,848 / 10,800) x (24,000 - 14,400) = 7,848 - 0.72667 x 9,600 = 7,848 - 6,976.00 = **EUR 872.00/year (EUR 72.67/month)**. Source: [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates).
-- Income tax base = gross - unemployment 1.6% - II pillar 2% - monthly basic exemption = 2,000 - 32.00 - 40.00 - 72.67 = **EUR 1,855.33**. Income tax 22% = **EUR 408.17**.
-- Net pay to employee = 2,000 - 32.00 - 40.00 - 408.17 = **EUR 1,519.83**.
-
-**Classification:** Payroll computation. Employer-side cost EUR 2,676.00; the EMTA debit is EXCLUDED from VAT.
-
-> Note on the II pillar state addition: EMTA's current guidance describes the state adding 4% of gross wage (drawn from the 20-point pension share of the employer's 33% social tax) to the II pillar member's account, on top of the employee's own 2/4/6% withholding -- this is NOT an extra cash cost to the employer. Source: [EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension). [RESEARCH GAP -- PwC's summary still states 2% (pre-2024 figure); reviewer to confirm the current addition against the Funded Pensions Act.]
-
-### Example 3 -- Below-minimum part-time pay triggers the minimum social tax base (2025)
-
-**Input:** Part-time resident employee, gross monthly pay EUR 500 in 2025, active employment all month.
-
-**Reasoning:**
-Gross EUR 500 is below the 2025 monthly minimum social tax base of EUR 820. Absent a documented reduction circumstance (mid-month start/end, statutory part-time exceptions, incapacity, parental leave -- see R-EE-PAY-4), the employer owes social tax on at least EUR 820: EUR 820 x 33% = **EUR 270.60 minimum monthly social tax**, NOT EUR 500 x 33% = EUR 165.00. Source: [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax).
-
-**Classification:** Social tax computed on the EUR 820 minimum base = EUR 270.60. Flag for reviewer whether a base reduction applies. EXCLUDE the EMTA debit from VAT.
-
-### Example 4 -- Worker of pensionable age (employee unemployment premium not withheld)
-
-**Input:** Resident employee aged 67, gross EUR 1,500, 2025.
-
-**Reasoning:**
-The employee's 1.6% unemployment premium is NOT withheld from persons of pensionable age (nor from those granted early-retirement / flexible old-age pension). The employer's 0.8% premium IS still due even for pensionable-age employees. Social tax (33% = EUR 495.00) and income tax (22%) apply normally; the employer unemployment premium = EUR 1,500 x 0.8% = EUR 12.00. Source: [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums).
-
-**Classification:** Social tax EUR 495.00 + income tax apply; employer unemployment premium EUR 12.00 applies; employee 1.6% premium does NOT apply. Flag for reviewer on borderline pension-age timing.
-
-### Example 5 -- Net wage transfer to employee (NOT a tax payment)
-
-**Input line:**
-`31.01.2025 ; JAAN TAMM PALK JAAN 2025 ; DEBIT ; NETOPALK ; -1 519,83 ; EUR`
-
-**Reasoning:**
-Matches "PALK" / "NETOPALK" (pattern 4.3). This is the net wage paid to the employee, not a payroll-tax payment to EMTA. Do not classify as social tax. The associated taxes are settled separately via the monthly TSD payment to EMTA (see Example 1).
-
-**Classification:** EXCLUDE -- payroll wage expense. NOT a tax payment to EMTA.
-
-### Example 6 -- Late TSD payment with interest (arrears)
-
-**Input line:**
-`25.03.2025 ; MAKSU- JA TOLLIAMET ; DEBIT ; INTRESS / VIIVIS ; -45,80 ; EUR`
-
-**Reasoning:**
-Matches "MAKSU- JA TOLLIAMET" (pattern 4.1) but the reference indicates "intress / viivis" (interest). Late-payment interest on tax arrears runs at 0.06% per day (approx. 21.9% per annum) on unpaid tax from the day after the due date until payment. No interest is claimed if the amount is under EUR 10. The interest portion cannot be split from principal without an e-MTA statement. Source: [EMTA -- payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests).
-
-**Classification:** EXCLUDE from VAT. Flag for reviewer -- request the e-MTA statement to split tax principal from late-payment interest (0.06%/day).
-
-## Section 6 -- Tier 1 Rules
-
-These rules apply when bank statement data is clear and all required inputs are available. Apply exactly as written.
-
-### Rule 1 -- Income tax withholding (flat 22%)
-
-- **Income tax withholding formula** — income_tax = (gross - employee_unemployment_1.6% - II_pillar - monthly_basic_exemption) x 22%  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-- **Flat income tax rate 2025/2026** — 22% (raised from 20% on 1 January 2025; withheld at source after deducting basic exemption, employee unemployment premium, II pillar contribution)  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-
-### Rule 2 -- Basic exemption, 2025 (income taper -- the "tax hump")
-
-**Basic exemption 2025 table**
-
-| Item | 2025 |
-| --- | --- |
-| Maximum monthly basic exemption | EUR 654/month (EUR 7,848/year) |
-| Full exemption | Monthly income up to EUR 1,200 (annual income up to EUR 14,400) |
-| Taper formula | `7,848 - 7,848/10,800 x (annual_income - 14,400)` |
-| Reaches EUR 0 | At annual income EUR 25,200 (nil above) |
-| Pensionable-age basic exemption | EUR 776/month (EUR 9,312/year), applied automatically |
-
-- **Application condition** — The monthly basic exemption is applied only if the employee has filed a written application, and by only one payer. [RESEARCH GAP -- the precise monthly withholding-agent taper formula should be cross-checked against the EMTA basic-exemption calculation page for edge cases; the pensionable-age exemption (EUR 776/month) should be re-confirmed on that page. Reviewer to confirm.]  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-
-### Rule 3 -- Basic exemption, 2026 (CONFIRMED change -- flat, no taper)
-
-- **2026 basic exemption change** — From 1 January 2026 the working-age basic exemption is a flat EUR 8,400/year (EUR 700/month) that does NOT decrease with income -- the income-based taper ("tax hump") is abolished. The pensionable-age exemption remains EUR 776/month (EUR 9,312/year).  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates); [EY -- significant tax changes in Estonia in 2025-2026](https://www.ey.com/en_ee/insights/tax/significant-tax-changes-in-estonia-in-2025-2026))_
-
-### Rule 4 -- Social tax formula
-
-- **Social tax formula** — social_tax = max(gross_remuneration, minimum_base) x 33%  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax))_
-- **Social tax components and cap** — 33% = 20% public pension insurance + 13% public health insurance. Minimum monthly base = EUR 820/month in 2025 (minimum social tax EUR 270.60) and EUR 886/month in 2026 (minimum social tax EUR 292.38). Social tax is uncapped -- there is no upper ceiling for regular employees.  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax))_
-
-### Rule 5 -- Social tax is employer-paid, never withheld
-
-- **Employer-paid social tax** — The full 33% social tax is paid by the EMPLOYER on top of gross pay (it also applies to directors' fees, service fees, and fringe benefits). The employee share is 0% -- it is NOT deducted from the employee's wage.  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax))_
-
-### Rule 6 -- Minimum monthly social tax always applies
-
-- **Minimum monthly social tax** — Even where gross pay is below the minimum base, the employer owes social tax on at least the minimum base: EUR 270.60/month in 2025 (820 x 33%) and EUR 292.38/month in 2026 (886 x 33%), unless a documented exemption applies (mid-month start/end, certain part-time exceptions, incapacity, reduced work capacity, parental leave, sometimes secondary employers -- see Tier 2).  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax))_
-
-### Rule 7 -- Unemployment insurance premiums (rates fixed 1 Jan 2025 -- end 2028)
-
-**Unemployment insurance premiums table**
-
-| Share | Who pays | Rate | Base |
-| --- | --- | --- | --- |
-| Employee | Employee (withheld) | 1.6% | Gross wages/remuneration subject to the premium |
-| Employer | Employer | 0.8% | Total gross wages of all employees (including those of pensionable age) |
-
-- **No floor/ceiling; fixed rates** — No stated floor or ceiling. Rates are fixed at 1.6% / 0.8% for 2025-2028.  _([EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums))_
-
-### Rule 8 -- Employee unemployment premium ceases at pensionable age
-
-- **Pensionable-age exemption from employee premium** — The employee's 1.6% premium is NOT withheld from persons of pensionable age, or from those granted early-retirement / flexible old-age pension. The employer's 0.8% premium is still due even for pensionable-age employees.  _([EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums))_
-
-### Rule 9 -- Mandatory funded pension (II pillar)
-
-- **II pillar mandatory contribution rules** — The employee contributes 2%, 4% or 6% of gross salary (employee's election; statutory default 2%), withheld by the employer. Compulsory for residents born after 31 December 1982 (i.e. born 1983 or later); the obligation begins on 1 January of the year after the person turns 18. From 1 January 2025 the employee may elect 4% or 6% (application by 30 November, effective the following 1 January); the same elected rate applies across all employers. The employer checks the applicable rate via Pensionikeskus (1 Jan / 1 May / 1 Sep query points).  _([EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension); [Pensionikeskus](https://www.pensionikeskus.ee/en/ii-pillar/mandatory-funded-pension/))_
-
-### Rule 10 -- II pillar state addition (4%, NOT an extra employer cost)
-
-- **State II pillar addition** — For a II pillar member, the state transfers 4% of gross wage to the member's pension account, drawn from the 20-point pension-insurance share of the employer's 33% social tax. EMTA calculates and transfers it; it is not an additional cash cost to the employer. [RESEARCH GAP -- PwC still cites 2% (pre-2024 figure); reviewer to confirm the current addition against the Funded Pensions Act.]  _([EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension))_
-
-### Rule 11 -- Employer total on-cost
-
-- **Employer total on-cost summary** — Employer-side cost on top of gross = 33% social tax + 0.8% unemployment = ~33.8%. Employee-side withholdings from gross = 22% income tax (after basic exemption) + 1.6% unemployment + 2/4/6% II pillar.  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax); [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums))_
-
-### Rule 12 -- Minimum wage (reference -- not a tax base)
-
-**Minimum wage table**  _([Palgakalkulaator -- minimum wage in Estonia](https://www.palgakalkulaator.ee/en/teadmiseks/miinimumpalk))_
-
-| Period | Monthly | Hourly | Effective |
-| --- | --- | --- | --- |
-| 2025 | EUR 886 | EUR 5.31 | 1 January 2025 |
-| 2026 (Jan-Mar) | EUR 886 | EUR 5.31 | continues |
-| 2026 (from 1 Apr) | EUR 946 | EUR 5.67 | 1 April 2026 |
-
-- **Distinction from minimum social tax base** — The minimum wage is distinct from the minimum social tax base (they coincide at EUR 886 in 2025 and Jan-Mar 2026). [RESEARCH GAP -- the April 2026 increase to EUR 946 follows a recent government regulation; reviewer to re-verify close to the period.]  _([Palgakalkulaator -- minimum wage in Estonia](https://www.palgakalkulaator.ee/en/teadmiseks/miinimumpalk))_
-
-### Rule 13 -- Form TSD: monthly declaration and payment
-
-- **Form TSD rule** — Form TSD (tulu- ja sotsiaalmaksu deklaratsioon) is the single combined monthly return reporting withheld income tax, social tax, both unemployment premium shares, and mandatory funded pension contributions. Annex 1 covers payments to resident natural persons; Annex 2 covers non-residents. Filed and paid via e-MTA by the 10th day of the month following the month of payment; the tax/contributions are also payable by the 10th.  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax))_
-
-### Rule 14 -- Employment register before work commences
-
-- **Employment register requirement** — The employer must enter each employment relationship in the Employment Register (töötamise register / TÖR via e-MTA) before the employee begins work (on or before the first day), recording the contract type, workplace address, job title, working-time rate and start date.  _([EMTA -- employment register](https://www.emta.ee/en/business-client/registration-business/employment-register))_
-
-### Rule 15 -- Corporate-tax context (distributions only)
-
-- **Distribution tax context** — Estonia taxes distributed profits, not retained earnings (the well-known deferral model). Dividends are NOT payroll and fall under a separate distribution-tax regime. This is context only for the dividend/payroll boundary.  _([PwC Worldwide Tax Summaries -- Estonia](https://taxsummaries.pwc.com/estonia/individual/other-taxes))_
-
-## Section 7 -- Tier 2 Catalogue (Reviewer Judgement)
-
-When data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation rather than computing automatically.
-
-### T2-1 -- Minimum social tax base reductions
-
-- **T2-1** — Trigger: Employee starts or ends employment mid-month, works part-time below the minimum base, is a reduced-work-capacity employee or pensioner, or had periods of temporary incapacity / parental leave. Issue: The minimum monthly social tax base (EUR 820 in 2025 / EUR 886 in 2026) can be reduced or disapplied in specified circumstances; the mechanics are fact-specific. Action: Flag for reviewer. Do not apply a reduced minimum base without confirmation (R-EE-PAY-4).
-
-### T2-2 -- Pensionable-age worker (premium treatment)
-
-- **T2-2** — Trigger: Worker is at or near the statutory pension age during the pay period. Issue: The employee 1.6% premium is not withheld from pensionable-age workers, but the employer 0.8% premium still applies; exact cut-off timing for a worker crossing the threshold mid-period needs confirmation. Action: Flag for reviewer.
-
-### T2-3 -- II pillar rate change, opt-in, or state addition mechanics
-
-- **T2-3** — Trigger: Employee elected (or wishes to elect) 4% or 6%, voluntarily joined the scheme, or the state's 4% addition must be quantified. Issue: Using the wrong elected rate misstates the withholding; the state's 4% addition is drawn from the employer's social tax, and some secondary sources still cite 2%. Action: Flag for reviewer. Confirm the elected rate and effective date via Pensionikeskus / e-MTA. [RESEARCH GAP -- state-addition figure.]
-
-### T2-4 -- Payroll-tax arrears and interest
-
-- **T2-4** — Trigger: Client has unpaid TSD liabilities from prior months. Issue: Late-payment interest accrues at 0.06% per day (~21.9% p.a.) on unpaid tax from the day after the due date; no interest is claimed below EUR 10. Action: Do not quantify arrears without an e-MTA statement. Escalate (R-EE-PAY-4).
-
-### T2-5 -- Board-member fees and director remuneration
-
-- **T2-5** — Trigger: Payment is a board member's (juhatuse liige) fee rather than employment salary. Issue: Board-member fees are subject to social tax and income tax, but unemployment-premium and II-pillar treatment can differ from ordinary employment. Action: Flag for reviewer. See R-EE-PAY-3.
-
-### T2-6 -- Non-resident, e-resident, or posted-worker payroll
-
-- **T2-6** — Trigger: Employee is a non-resident, employer is a non-resident/e-resident foreign company, or the worker is posted/seconded (A1 certificate, totalisation). Issue: Which state's social security applies, registration obligations, Annex 2 reporting on Form TSD, and whether Estonian social tax is due at all depend on EU coordination rules and treaties. Action: Flag for reviewer. Escalate per R-EE-PAY-3.
-
-### T2-7 -- Annual basic-exemption reconciliation
-
-- **T2-7** — Trigger: The 2025 income-dependent exemption was over- or under-applied during the year (common where total annual income crossed EUR 14,400 / EUR 25,200). Issue: The employee may owe additional tax or be due a refund on the annual individual return. Action: Flag for reviewer; the individual return (tuludeklaratsioon) is generally due by 30 April following the tax year.  _([EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-
-## Section 8 -- Excel Working Paper Template
-
-When producing an Estonian payroll computation, structure the working paper as follows:
-
-```
-ESTONIA PAYROLL COMPUTATION -- WORKING PAPER
-Client: [name]
-Tax Period (month/year): [____]   (2025 or 2026 -- REQUIRED)
-Prepared: [date]
-
-INPUT DATA
-  Gross monthly remuneration:       EUR [____]
-  Employee birth year:              [____]
-  II pillar member (born 1983+?):   [YES/NO]
-  II pillar elected rate:           [2% / 4% / 6%]   (default 2%)
-  Of pensionable age?:              [YES/NO]
-  Basic-exemption application on file?: [YES/NO]
-  Resident standard employee?:      [YES/NO]   (NO -> escalate, R-EE-PAY-3)
-
-CONSTANTS (select by year)
-  Minimum social tax base:          EUR [820 (2025) / 886 (2026)]
-  Minimum monthly social tax:       EUR [270.60 (2025) / 292.38 (2026)]
-  Social tax rate:                  33%   (20% pension + 13% health)
-  Unemployment -- employer:          0.8%
-  Unemployment -- employee:          1.6%   (0% if pensionable age)
-  Income tax rate:                  22%
-  Basic exemption (monthly):        EUR [2025 taper up to 654 / 2026 flat 700; 776 pensionable]
-
-EMPLOYER-SIDE COST
-  Social tax (max(gross, min base) x 33%):  EUR [____]
-  Unemployment employer (gross x 0.8%):     EUR [____]
-  Total employer cost on top of gross:      EUR [____]
-  Total cost to employer (gross + above):   EUR [____]
-
-EMPLOYEE-SIDE WITHHOLDINGS
-  Unemployment employee (gross x 1.6%):     EUR [____]
-  II pillar (gross x 2/4/6%):               EUR [____]
-  Monthly basic exemption applied:          EUR [____]
-  Taxable base (gross - 1.6% - II pillar - basic exemption): EUR [____]
-  Income tax (taxable base x 22%):          EUR [____]
-  Net pay to employee:                      EUR [____]
-
-FORM TSD (monthly, due by 10th of following month)
-  Withheld income tax:              EUR [____]
-  Social tax:                       EUR [____]
-  Unemployment (employer+employee): EUR [____]
-  II pillar (employee):             EUR [____]
-  Total TSD payment to EMTA:        EUR [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their tax impact]
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Income tax rate | 22% | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS § 4(1)) |
+| Basic exemption, annual (maksuvaba tulu) | EUR 8,400 | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS § 23(1)) |
+| Basic exemption the employer may give each month, on written application | up to 1/12 of EUR 8,400 = EUR 700 | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS § 42(1)) |
+| Basic exemption from the year a person reaches pensionable age | EUR 9,312 a year (EUR 776 a month) | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS § 23⁵(1)) |
+| Income taper on the basic exemption | Abolished from 1 January 2026; the exemption no longer falls as income rises | 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused |
+| Employee unemployment insurance premium | 1.6% | 2026 to 2029 | https://www.riigiteataja.ee/akt/130092025003 (Government Regulation No. 78 of 25.09.2025, § 1(1)) |
+| Employer unemployment insurance premium | 0.8% | 2026 to 2029 | https://www.riigiteataja.ee/akt/130092025003 (§ 1(2)) |
+| Funded pension (II pillar) contribution | 2% default; 4% or 6% if chosen | 2026 | https://www.riigiteataja.ee/akt/103122024016 (KoPS § 9) |
+| Social tax rate | 33% | 2026 | https://www.riigiteataja.ee/akt/121052026019 (SMS § 7(1)) |
+| Social tax monthly minimum base (kuumäär) | EUR 886 (minimum social tax EUR 292.38) | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
+| Minimum monthly wage, full time | EUR 886 to 31 March 2026; EUR 946 from 1 April 2026 (EUR 5.67 an hour) | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates (Government Regulation No. 36 of 23.03.2026) |
+| Fringe benefit income tax | 22/78 of the benefit | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS §§ 4(1¹), 48) |
+| Tax-free birth allowance from employer | Up to 5 × EUR 700 = EUR 3,500 per child (still subject to social tax, unemployment premium and II pillar) | 2026 | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption |
+| Employee health promotion costs exempt from fringe benefit tax | EUR 400 per employee a year | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
+| Interest on late payment | 0.06% a day | 2026 | https://www.riigiteataja.ee/akt/116102026009 (MKS § 117(1)) |
+
+The planned rise of the income tax rate to 24% from 2026 was cancelled; the rate stays 22% (Ministry of Finance, 2026 law changes).
+
+## The taxable base
+
+**Income tax, step by step.** The employer computes withholding each month in this order (TuMS § 42):
+
+1. Start with gross pay for the month (TuMS § 13).
+2. Deduct the employee's unemployment premium (1.6%) withheld from it (§ 42(5)).
+3. Deduct the II pillar contribution withheld from it, for a resident (§ 42(6)).
+4. Deduct the basic exemption, up to EUR 700, if the employee has given this employer a written application (§ 42(1)). Only one payer may apply it, except that a person who also gets a state pension may split it between the two, within the monthly limit (§ 42(2) and (2³)).
+5. Withhold 22% of what is left (§ 43(1) point 1).
+
+The 2026 basic exemption is flat. Up to 2025 it fell from EUR 654 a month to zero as income rose. That taper is repealed (TuMS § 23(2) to (5), repealed from 1 January 2026). A payroll still applying the 2025 taper gives too little exemption to anyone above the old taper start and over-withholds.
+
+The monthly limit is a cap, not a carry-forward. If pay after deductions is below EUR 700, the employer does not give the unused part in a later month. The employee gets it back through the annual return, where the full EUR 8,400 applies (TuMS § 23(1)).
+
+**Pensionable age.** From the year a person reaches pensionable age the basic exemption is EUR 9,312 a year, and the Social Insurance Board applies it to the state pension first. Any part the pension does not use can be applied by the employer on a written application (TuMS § 42(1³)). The employee unemployment premium stops at the end of the month the person reaches pensionable age or is granted an early or flexible old-age pension; the employer's 0.8% continues (TKindlS § 42(1) point 1, § 40(1) point 2).
+
+**Social tax base.** Social tax is charged on the gross pay, with no ceiling. For an employee or official it is charged on at least EUR 886 a month even if pay is lower (SMS § 2(2)), so the minimum is EUR 292.38. If the person has several employers, the minimum applies only through the employer that gives the basic exemption (SMS § 2(2¹)). It does not apply, and social tax is paid on actual pay, for among others: a state pensioner or a person with partial or no work capacity; a parent raising a child under 3 or three or more children under 19; a person with shortened working time under the Employment Contracts Act § 43(4) or (6); and for up to 12 months after hiring someone who was registered unemployed for at least six months (SMS § 2(4)). For a month where the employee refused work under the Employment Contracts Act § 19, the minimum is pro-rated by time worked (SMS § 2(3)). See `estonia-social-contributions` for the full list.
+
+**What is outside the base.** Business travel expense reimbursements and foreign per diems within the limits (EUR 75 a day for the first 15 days in a month, EUR 40 a day after that) are not income (TuMS § 13(3) point 1) and carry no social tax (SMS § 3 point 1). Statutory severance pay carries income tax and social tax but no unemployment premium (TKindlS § 40(2) point 1).
+
+**Fringe benefits (erisoodustus).** Any benefit given because of employment or board membership, such as private use of a company car, paid housing costs or non-statutory insurance, is taxed on the employer, not withheld from the employee (TuMS § 48(1) and (4)). Income tax is 22/78 of the benefit's value. Social tax at 33% is then due on the benefit plus that income tax, and it is not attributed to the person (SMS § 2(1) point 7, § 9(1) point 3). Both go in the TSD.
+
+## Deadlines and filing
+
+| What | When | Where |
+|---|---|---|
+| Register the start of work in the employment register (töötamise register) | No later than the moment the person starts work (MKS § 25²(3)) | e-MTA |
+| Register a suspension or end of work | Within 10 days (MKS § 25²(4)) | e-MTA |
+| Form TSD (income tax, social tax, unemployment premiums, II pillar, fringe benefits) | 10th day of the month after the month of payment (TuMS § 54(1) and (2); SMS § 9(1) point 4; TKindlS § 42(1) point 3) | e-MTA |
+| Payment of everything on the TSD | Same day, the 10th (TuMS § 54(4); SMS § 9(1) point 4; TKindlS § 42(1) point 3) | EMTA prepayment account |
+| Employee's choice of II pillar rate (4% or 6%, or back to 2%) | Application to the pension registrar by 30 November; the new rate applies from 1 January of the next year (KoPS § 17²(8)) | Pension registrar or account manager |
+
+The employer must check with the pension register whether each payee owes the II pillar contribution, and at what rate (KoPS § 11(1) point 1). EMTA says the obligation can change on 1 January, 1 May and 1 September, and recommends checking in December, April and August.
+
+A deadline falling on a weekend moves to the next working day; EMTA's own example is the September 2026 TSD, due Monday 12 October 2026.
+
+**Data-based TSD.** From 1 October 2026 EMTA accepts salary data sent straight from payroll software and builds the TSD from it. Annexes 1 and 2 are replaced by one view of salary payments. October 2026 payments, due 10 November 2026, are the first that can go through the new system. The old CSV upload stays available until the end of 2027.
+
+## Penalties and interest
+
+| Failure | Consequence | Source |
+|---|---|---|
+| Tax or premium not paid by the 10th | Interest at 0.06% a day from the day after the due date to the day of payment, inclusive | MKS §§ 115(1), 117(1) |
+| TSD not filed | EMTA sets a new deadline with a warning; coercive fine up to EUR 1,300 the first time, EUR 2,000 the second, EUR 3,300 in total for the same return | MKS § 91 |
+| Work not registered in the employment register | Coercive fine up to EUR 1,300 the first time, EUR 2,000 the second, EUR 3,300 in total | MKS § 25⁸ |
+| Intentionally false or missing data that reduces a tax or withholding liability | Fine up to 300 fine units (EUR 8 each, so EUR 2,400) for a person; up to EUR 32,000 for a legal person | MKS § 153¹; Penal Code (KarS) § 47(1) |
+
+The unemployment premium is treated as a tax for collection, interest and sanctions (TKindlS § 42(4) and (5)).
+
+## Cross-border points
+
+- **Non-resident employees** paid for work in Estonia: the employer withholds 22%. Only the unemployment premium is deducted first; the employer does not give the basic exemption (TuMS § 41 point 2, § 42(5)). A non-resident does not pay into the II pillar, because KoPS § 6 covers residents only. Treaty relief and the 183-day test are in `ee-cross-border`.
+- **Social security coordination.** Inside the EU, EEA and Switzerland, Regulation (EC) No 883/2004 decides which country's social security applies. A worker posted to Estonia with an A1 certificate from another state stays in that state's system; one posted out of Estonia with an Estonian A1 stays on Estonian social tax. Check the A1 before the first payroll.
+- **Foreign employer with staff in Estonia.** A non-resident acting as an employer in Estonia must withhold and pay the unemployment premium and declare it in the TSD (TKindlS § 4(2) point 4), and is liable for fringe benefit tax (TuMS § 48(2)).
+- **Seafarers** on qualifying ships have a special social tax base and rate (SMS § 2(4) point 8, § 7(2¹)). Out of scope here.
+
+## Worked examples
+
+### Example 1: resident employee, EUR 2,500 gross, II pillar 2%, basic exemption claimed (2026)
+
+Maria works full time for Alpha OÜ in Tallinn for EUR 2,500 a month, paid on the last day of the month. She is under pensionable age, a II pillar member at the default 2%, and has given Alpha OÜ her basic exemption application.
+
+The unemployment premium is 1.6% of 2,500, so EUR 40.00. The II pillar contribution is 2%, so EUR 50.00. Taxable pay is 2,500 minus 40, minus 50, minus the EUR 700 basic exemption, so EUR 1,710.00. Income tax at 22% is EUR 376.20. Maria's net pay is EUR 2,033.80.
+
+On top, Alpha OÜ pays social tax of 33% on EUR 2,500, so EUR 825.00, and the employer premium of 0.8%, so EUR 20.00. Her total cost to Alpha is EUR 3,345.00. The TSD for an October payment, due 10 November, shows EUR 1,311.20 to pay.
+
+```oa-check
+name: Estonia 2026, resident employee EUR 2,500 gross, II pillar 2%, basic exemption claimed
+inputs:
+  gross: 2500
+  ui_employee_pct: 1.6
+  pillar_pct: 2
+  basic_exemption_month: 700
+  income_tax_pct: 22
+  social_tax_pct: 33
+  ui_employer_pct: 0.8
+steps:
+  - ui_employee: pct(gross, ui_employee_pct)
+  - pillar: pct(gross, pillar_pct)
+  - taxable: max(0, gross - ui_employee - pillar - basic_exemption_month)
+  - income_tax: pct(taxable, income_tax_pct)
+  - net_pay: gross - ui_employee - pillar - income_tax
+  - social_tax: pct(gross, social_tax_pct)
+  - ui_employer: pct(gross, ui_employer_pct)
+  - employer_cost: gross + social_tax + ui_employer
+  - paid_to_emta: income_tax + ui_employee + pillar + social_tax + ui_employer
+expected:
+  ui_employee: 40.00
+  pillar: 50.00
+  taxable: 1710.00
+  income_tax: 376.20
+  net_pay: 2033.80
+  social_tax: 825.00
+  ui_employer: 20.00
+  employer_cost: 3345.00
+  paid_to_emta: 1311.20
 ```
 
-## Section 9 -- Bank Statement / Terminology Reading Guide
+### Example 2: part-time employee at EUR 600, II pillar 4%, minimum social tax base bites (2026)
 
-### How payroll-tax debits appear on Estonian bank statements
+Jaan works part time for Beta OÜ for EUR 600 a month. This is his only job, Beta OÜ applies his basic exemption, and none of the SMS § 2(4) exceptions apply: he is not a pensioner, has no child under 3 and was not recently unemployed. He chose a 4% II pillar rate.
 
-**Swedbank:** "MAKSU- JA TOLLIAMET" / "EMTA" / "RIIGIMAKSUD" -- around the 10th of the month (TSD payment for the prior month's wages); bundled monthly figure (income tax + social tax + unemployment + II pillar).
-**SEB Pank:** "MAKSU- JA TOLLIAMET" / "EMTA TSD" -- same monthly cycle (by the 10th).
-**LHV Pank:** "EMTA" / "MAKSUAMET" / "SOTSIAALMAKS" -- same monthly cycle.
-**Luminor / Coop Pank:** "MAKSU- JA TOLLIAMET" / "RIIGIMAKS" / "EMTA" -- same monthly cycle.
+The unemployment premium is EUR 9.60 and the II pillar EUR 24.00. Pay after those is EUR 566.40, below the EUR 700 monthly exemption, so the exemption used is EUR 566.40 and no income tax is withheld. The unused EUR 133.60 is not carried to the next month by the employer; Jaan can only use it in his annual return. Net pay is EUR 566.40.
 
-**Key identification tips:**
-1. EMTA payroll-tax debits are outgoing (DEBIT) and recur monthly around the 10th.
-2. A single EMTA debit usually bundles ALL payroll taxes for the month -- you cannot split income tax / social tax / unemployment / II pillar from the bank line alone; use the filed Form TSD.
-3. Do not confuse the EMTA tax debit with the separate net-wage transfer ("PALK" / "NETOPALK") to the employee.
-4. Inbound credits from "TÖÖTUKASSA" or "PENSION" are benefits received, not premiums/contributions paid.
-5. Irregular EMTA debits referencing "intress" / "viivis" are late-payment interest (0.06%/day) -- flag for reviewer.
-6. Amounts use a comma decimal separator and space thousands separator (e.g. `1 234,56`).
+Social tax is the edge. Beta OÜ pays 33% on the higher of actual pay and the EUR 886 minimum base, so on EUR 886: EUR 292.38, not EUR 198.00. The employer premium is on actual pay only: EUR 4.80. Beta's cost is EUR 897.18.
 
-### Estonian payroll terminology (glossary)
+```oa-check
+name: Estonia 2026, part-time EUR 600, II pillar 4%, minimum social tax base EUR 886
+inputs:
+  gross: 600
+  ui_employee_pct: 1.6
+  pillar_pct: 4
+  basic_exemption_month: 700
+  income_tax_pct: 22
+  social_tax_pct: 33
+  social_tax_min_base: 886
+  ui_employer_pct: 0.8
+steps:
+  - ui_employee: pct(gross, ui_employee_pct)
+  - pillar: pct(gross, pillar_pct)
+  - before_exemption: gross - ui_employee - pillar
+  - exemption_used: min(before_exemption, basic_exemption_month)
+  - unused_exemption: basic_exemption_month - exemption_used
+  - income_tax: pct(before_exemption - exemption_used, income_tax_pct)
+  - net_pay: gross - ui_employee - pillar - income_tax
+  - social_tax_base: max(gross, social_tax_min_base)
+  - social_tax: pct(social_tax_base, social_tax_pct)
+  - ui_employer: pct(gross, ui_employer_pct)
+  - employer_cost: gross + social_tax + ui_employer
+expected:
+  ui_employee: 9.60
+  pillar: 24.00
+  before_exemption: 566.40
+  exemption_used: 566.40
+  unused_exemption: 133.60
+  income_tax: 0.00
+  net_pay: 566.40
+  social_tax_base: 886.00
+  social_tax: 292.38
+  ui_employer: 4.80
+  employer_cost: 897.18
+```
 
-**Glossary table**
+## Ask the client first
 
-| Estonian | English |
-| --- | --- |
-| Palgaarvestus | Payroll / wage computation |
-| Tulumaks / kinnipeetud tulumaks | Income tax / withheld income tax |
-| Sotsiaalmaks | Social tax (33%) |
-| Töötuskindlustusmakse | Unemployment insurance premium |
-| Kohustuslik kogumispension / II sammas | Mandatory funded pension / II pillar |
-| Maksuvaba tulu | Basic exemption (tax-free allowance) |
-| Palk / töötasu / netopalk | Wage / remuneration / net pay |
-| Töötamise register (TÖR) | Employment register |
-| Maksu- ja Tolliamet (EMTA) | Tax and Customs Board |
-| Sotsiaalkindlustusamet | Social Insurance Board |
-| Töötukassa | Unemployment Insurance Fund |
-| Pensionikeskus | Funded-pension register administrator |
-| Viivis / intress | Late-payment interest |
-| Juhatuse liige | Board member |
-| FIE (füüsilisest isikust ettevõtja) | Self-employed natural person |
-| Vorm TSD | Form TSD (combined monthly payroll return) |
+1. **When is pay actually paid out?** The month of payment, not the month worked, fixes the rates and the TSD (cash basis). December 2025 pay paid in January 2026 uses 2026 rules.
+2. **Has the employee given you a basic exemption application, and do they work for anyone else or get a state pension?** Only one payer gives it (two if one is the Social Insurance Board), and the social tax minimum follows the employer that gives it.
+3. **Is the person a resident, and do they have an A1 from another country?** This decides the basic exemption, the II pillar and whether Estonian social tax applies at all.
+4. **Does an SMS § 2(4) exception apply** (pensioner, partial work capacity, child under 3 or three children under 19, recent unemployment, shortened hours)? If so, social tax is on actual pay, not EUR 886.
+5. **What is the II pillar status and rate in the pension register this month?** None, 2%, 4% or 6%.
+6. **Board member, employee or contractor?** Board fees carry no unemployment premium; a registered FIE's business invoice carries no social tax from the payer.
 
-## Section 10 -- Onboarding Fallback
+## Sources
 
-If the client provides only a bank statement and no other information:
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 41, 42, 43, 48, 54 | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
+| Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9 | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
+| Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42 | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
+| Government Regulation No. 78 of 25.09.2025, unemployment insurance premium rates 2026 to 2029 | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
+| Funded Pensions Act (Kogumispensionide seadus), consolidated, §§ 6, 7, 9, 11, 17² | https://www.riigiteataja.ee/akt/103122024016 | 2026-10-24 |
+| Taxation Act (Maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 25², 25⁸, 91, 115, 117, 153¹ | https://www.riigiteataja.ee/akt/116102026009 | 2026-10-24 |
+| Penal Code (Karistusseadustik), § 47 (fine unit EUR 8) | https://www.riigiteataja.ee/akt/109072026028 | 2026-10-24 |
+| EMTA, Tax rates (2024 to 2026, minimum wage table) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-24 |
+| EMTA, Social tax (2026 minimum base) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax | 2026-10-24 |
+| EMTA, Income tax and basic exemption (birth allowance 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption | 2026-10-24 |
+| EMTA, Contributions to mandatory funded pension | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension | 2026-10-24 |
+| EMTA, Submission of declaration form TSD (data-based TSD from 1 October 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/submission-declaration-form-tsd | 2026-10-24 |
+| Ministry of Finance, Law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
 
-1. **Scan for EMTA debits** -- identify all outgoing payments matching Section 4 patterns (MAKSU- JA TOLLIAMET / EMTA / SOTSIAALMAKS / TSD).
-2. **Identify the monthly cycle** -- TSD payments recur around the 10th of each month; confirm one per pay month.
-3. **Do NOT decompose the bundled figure from the bank line** -- the single EMTA debit mixes income tax, social tax, unemployment premiums and II pillar. Request the filed Form TSD for the authoritative split.
-4. **Separate net-wage transfers** -- "PALK" / "NETOPALK" debits are wages to employees, not tax payments.
-5. **Flag inbound benefit credits** -- "PENSION" / "TÖÖTUKASSA" / "HAIGUSHÜVITIS" are benefits received, not contributions.
-6. **Flag for reviewer:** "Payroll classification derived from bank statement amounts only. Tax period, employee birth year, II pillar rate, basic-exemption status and pension-age status have not been independently verified. Reviewer must confirm against the filed Form TSD before relying on figures."
-
-## Section 11 -- Reference Material
-
-### Quick computation examples (standard resident employee, born 1990, II pillar 2%)
-
-**Quick computation examples table**  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax); [EMTA -- unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums))_
-
-| Period | Gross / month | Social tax (employer 33%) | Unemp. employer 0.8% | Total employer cost on top | Unemp. employee 1.6% | II pillar 2% |
-| --- | --- | --- | --- | --- | --- | --- |
-| 2025 | EUR 500 (below min base) | EUR 270.60 (on EUR 820 min) | EUR 4.00 | EUR 274.60 | EUR 8.00 | EUR 10.00 |
-| 2025 | EUR 820 (= min base) | EUR 270.60 | EUR 6.56 | EUR 277.16 | EUR 13.12 | EUR 16.40 |
-| 2025 | EUR 2,000 | EUR 660.00 | EUR 16.00 | EUR 676.00 | EUR 32.00 | EUR 40.00 |
-| 2026 | EUR 886 (= min base) | EUR 292.38 | EUR 7.09 | EUR 299.47 | EUR 14.18 | EUR 17.72 |
-| 2026 | EUR 3,000 | EUR 990.00 | EUR 24.00 | EUR 1,014.00 | EUR 48.00 | EUR 60.00 |
-
-Note: income tax (22%) is computed on (gross - 1.6% unemployment - II pillar - applicable basic exemption); it is omitted from the employer-cost columns because it is an employee withholding. All rows verified to the cent.
-
-### Forms
-
-**Forms table**  _([EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax); [EMTA -- employment register](https://www.emta.ee/en/business-client/registration-business/employment-register); [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates))_
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Form TSD (tulu- ja sotsiaalmaksu deklaratsioon) | Combined monthly declaration of withheld income tax, social tax, unemployment premiums (employer + employee), and mandatory funded pension contributions; Annex 1 = residents, Annex 2 = non-residents; filed via e-MTA | By the 10th of the month following the month of payment; tax/contributions also payable by the 10th |
-| Employment register entry (töötamise register, TÖR) | Register each employment relationship (contract type, workplace, job title, working-time rate, start date) | Before the employee begins work (on or before the first day) |
-| Individual annual income tax return (tuludeklaratsioon) | Resident individual annual reconciliation of income and basic exemption | Generally by 30 April following the tax year |
-
-### Thresholds
-
-**Thresholds table**
-
-| Threshold | Value | Source |
-| --- | --- | --- |
-| Social tax minimum monthly base (2025) | EUR 820/month -> minimum social tax EUR 270.60/month | [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax) |
-| Social tax minimum monthly base (2026) | EUR 886/month -> minimum social tax EUR 292.38/month | [EMTA -- social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax) |
-| Basic exemption, working age (2025) | Up to EUR 654/month (EUR 7,848/year); full up to EUR 1,200/month income; tapers to EUR 0 between annual income EUR 14,400 and EUR 25,200 | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Basic exemption, working age (2026) | Flat EUR 700/month (EUR 8,400/year), no taper | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Basic exemption, pensionable age (2025 and 2026) | EUR 776/month (EUR 9,312/year), applied automatically | [EMTA -- tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| II pillar obligation | Mandatory for residents born 1983 or later | [EMTA -- contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension) |
-| Minimum wage (2025) | EUR 886/month; EUR 5.31/hour | [Palgakalkulaator](https://www.palgakalkulaator.ee/en/teadmiseks/miinimumpalk) |
-| Minimum wage (2026) | EUR 886/month Jan-Mar; EUR 946/month (EUR 5.67/hour) from 1 April | [Palgakalkulaator](https://www.palgakalkulaator.ee/en/teadmiseks/miinimumpalk) |
-
-### Penalties
-
-**Penalties table**
-
-| Penalty | Detail | Source |
-| --- | --- | --- |
-| Late-payment interest on tax arrears | 0.06% per day (~21.9% p.a.) on unpaid tax/contributions from the day after the due date until paid. No interest claimed if the amount is under EUR 10. | [EMTA -- payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests) |
-| Failure to register employment / late TSD | Misdemeanour fines under the Taxation Act (MKS); EMTA may issue assessment notices and apply enforcement. | [EMTA / Taxation Act (MKS)](https://www.emta.ee/en/business-client/registration-business/employment-register) -- [RESEARCH GAP -- exact monetary fine schedule not captured from a primary authoritative source; reviewer to confirm.] |
-
-### Test Suite
-
-All amounts independently recomputed and reconciled to the cent.
-
-**Test 1:** 2025, gross EUR 2,000, resident born 1990, II pillar 2%. -> Social tax = EUR 660.00; unemployment employer = EUR 16.00; employer cost on top = EUR 676.00; total cost to employer = EUR 2,676.00; unemployment employee = EUR 32.00; II pillar employee = EUR 40.00; tapered monthly basic exemption EUR 72.67; income tax base EUR 1,855.33; income tax EUR 408.17; net pay EUR 1,519.83.
-
-**Test 2:** 2025, gross EUR 500 part-time, no reduction circumstance. -> Social tax on the EUR 820 minimum base = EUR 270.60 (NOT EUR 165.00). Flag whether a base reduction applies.
-
-**Test 3:** 2026, gross EUR 886 (= minimum base), born 1990, II pillar 2%. -> Social tax = EUR 292.38; unemployment employer = EUR 7.09; unemployment employee = EUR 14.18; II pillar = EUR 17.72.
-
-**Test 4:** Worker of pensionable age, gross EUR 1,500, 2025. -> Social tax = EUR 495.00 and income tax (22%) apply; employer unemployment premium EUR 12.00 (0.8%) applies; employee 1.6% premium does NOT apply.
-
-**Test 5:** Resident born 1980, no opt-in. -> II pillar is NOT mandatory (born before 1 Jan 1983); apply only if the employee voluntarily joined. Confirm membership before withholding.
-
-**Test 6:** Employee elected 6% II pillar, gross EUR 2,500, 2025. -> II pillar withheld = EUR 150.00 (6%); social tax = EUR 825.00; unemployment employer = EUR 20.00; unemployment employee = EUR 40.00.
-
-**Test 7:** Period not stated, gross EUR 700. -> STOP (R-EE-PAY-1). Cannot determine minimum base / basic exemption without the calendar year.
-
-**Test 8:** 2026, gross EUR 3,000, born 1995, II pillar 2%, basic-exemption applied. -> Social tax = EUR 990.00; unemployment employer = EUR 24.00; employer cost on top = EUR 1,014.00; unemployment employee = EUR 48.00; II pillar = EUR 60.00; flat basic exemption EUR 700/month (no taper in 2026).
-
-### Sources
-
-- [EMTA -- Social tax](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax) (Estonian Tax and Customs Board)
-- [EMTA -- Unemployment insurance premiums](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/unemployment-insurance-premiums)
-- [EMTA -- Tax rates (private client)](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates)
-- [EMTA -- Contributions to mandatory funded pension](https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension)
-- [EMTA -- Employment register](https://www.emta.ee/en/business-client/registration-business/employment-register)
-- [EMTA -- Payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests)
-- [PwC Worldwide Tax Summaries -- Estonia (Individual, Other taxes)](https://taxsummaries.pwc.com/estonia/individual/other-taxes)
-- [EY Estonia -- Significant tax changes in Estonia in 2025-2026](https://www.ey.com/en_ee/insights/tax/significant-tax-changes-in-estonia-in-2025-2026)
-- [Palgakalkulaator -- Minimum wage in Estonia](https://www.palgakalkulaator.ee/en/teadmiseks/miinimumpalk)
-- [Pensionikeskus -- Mandatory funded pension](https://www.pensionikeskus.ee/en/ii-pillar/mandatory-funded-pension/)
-
-### Caveats
-
-Figures are 2025 unless noted. CONFIRMED 2026 items (per EMTA / government): income tax stays 22% (a previously legislated rise to 24% and a 2% "security tax" surcharge were repealed); the working-age basic exemption becomes a flat EUR 8,400/year (EUR 700/month) with no taper; the social tax monthly minimum base rises to EUR 886 (minimum EUR 292.38/month); minimum wage EUR 886 Jan-Mar then EUR 946 (EUR 5.67/hour) from 1 April 2026. Points to verify before relying: (1) the II pillar state addition -- EMTA's current guidance describes the state adding 4% of gross wage (from the employer's social tax), while PwC still cites 2% (pre-2024 figure); 4% is used here per the authority but should be confirmed against the Funded Pensions Act; (2) the April 2026 minimum-wage regulation is recent -- re-verify close to the period; (3) the exact monetary fine schedule for late TSD / failure to register employment was not captured from a primary source (only the 0.06%/day interest is confirmed); (4) the precise 2025 monthly basic-exemption withholding formula for edge cases should be cross-checked against the EMTA calculation page. No personal income tax ceiling and no social tax ceiling exist for ordinary employees. Research confidence: high.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - NEVER withhold social tax from the employee -- the full 33% is an employer charge, never deducted from the worker. - NEVER apply an upper ceiling to social tax -- it is uncapped for regular employees. - NEVER skip the minimum social tax base -- gross below EUR 820 (2025) / EUR 886 (2026) still owes social tax on the minimum base unless a documented exemption applies. - NEVER use 20% income tax for 2025 or 2026 -- the flat rate is 22% from 1 January 2025. - NEVER apply the monthly basic exemption without a written employee application on file, and never via more than one payer. - NEVER mix the 2025 and 2026 constants (minimum base EUR 820 vs EUR 886; basic exemption income taper vs flat EUR 700). - NEVER compute II pillar without confirming membership (mandatory only for residents born 1983 or later) and the elected rate (default 2%). - NEVER add the state's 4% II pillar addition to the employer's cash cost -- it is drawn from the employer's existing social tax, not an extra outlay. - NEVER withhold the employee unemployment premium (1.6%) from a person of pensionable age -- but DO still charge the employer 0.8%. - NEVER treat the minimum wage (EUR 886 in 2025 / EUR 946 from 1 Apr 2026) as the minimum social tax base -- they are different figures. - NEVER decompose a bundled EMTA bank debit into individual taxes from the bank line alone -- use the filed Form TSD. - NEVER miss the Form TSD deadline (the 10th of the month following payment) -- late payment accrues interest at 0.06%/day. - NEVER advise on arrears or late-payment interest without an e-MTA statement -- do not estimate. - NEVER apply standard rules to non-residents, e-residents, posted workers, board members or FIE without escalating to an Estonian tax professional. - NEVER present payroll computations as definitive -- always label as estimated and direct the client to e-MTA / their filed Form TSD and a qualified Estonian professional.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an Estonian tax professional or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 social tax monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); the pensionable age in 2026 (not stated here); the weekend roll-forward rule in the Taxation Act (taken from EMTA's example, not the Act).

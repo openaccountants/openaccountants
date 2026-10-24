@@ -6,8 +6,6 @@ covered_by:
 not_applicable: {}
 partial:
   IT-CORP: "ee-corporate-income-tax still carries tax year 2025 figures, cites secondary sources and is not in the deep-tax shape"
-  SC: "estonia-social-contributions still carries tax year 2025 figures"
-  PR: "estonia-payroll still carries tax year 2025 figures"
 ---
 
 # Estonia: tax pack
@@ -21,8 +19,8 @@ Calendar tax year. Authority: the Estonian Tax and Customs Board (Maksu- ja Toll
 | IT-IND, individual income tax | estonia-income-tax | source-cited draft |
 | IT-CORP, corporate income tax | ee-corporate-income-tax | source-cited draft (partial, see above) |
 | VAT | estonia-vat-return | source-cited draft |
-| SC, social contributions | estonia-social-contributions | source-cited draft (partial, see above) |
-| PR, payroll withholding | estonia-payroll | source-cited draft (partial, see above) |
+| SC, social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | source-cited draft |
+| PR, payroll withholding | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | source-cited draft |
 | TP, transfer pricing | ee-transfer-pricing | source-cited draft |
 | XB, cross-border | ee-cross-border (residence, non-residents, withholding, dividends, permanent establishments, treaty relief, foreign tax credit, company exit tax, 2026) | source-cited draft |
 
@@ -42,3 +40,7 @@ Also in the pack: ee-tax-overview (a map of the system), ee-company-formation (e
 - ETCB, taxation of non-residents' Estonian income: https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian (read 2026-10-23)
 - Ministry of Finance, 2026 law changes: https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused (read 2026-10-23)
 - Ministry of Finance, double taxation agreements: https://www.fin.ee/en/double-taxation-agreements (read 2026-10-23)
+- Sotsiaalmaksuseadus (Social Tax Act), consolidated: https://www.riigiteataja.ee/akt/121052026019 (read 2026-10-24)
+- Töötuskindlustuse seadus (Unemployment Insurance Act), consolidated: https://www.riigiteataja.ee/akt/130062026040 (read 2026-10-24)
+- Government Regulation No. 78 of 25.09.2025, unemployment insurance premium rates 2026 to 2029: https://www.riigiteataja.ee/akt/130092025003 (read 2026-10-24)
+- Kogumispensionide seadus (Funded Pensions Act), consolidated: https://www.riigiteataja.ee/akt/103122024016 (read 2026-10-24)
