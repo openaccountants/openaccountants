@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: "latvia-income-tax still carries tax year 2025 figures; not yet refreshed for 2026"
-  VAT: "latvia-vat-return still carries tax year 2025 figures; not yet refreshed for 2026"
   SC: "latvia-social-contributions still carries tax year 2025 figures; not yet refreshed for 2026"
   PR: "latvia-payroll still carries tax year 2025 figures; not yet refreshed for 2026"
 ---
@@ -20,7 +19,7 @@ Calendar tax year for individuals; companies use their financial year as the rep
 |---|---|---|
 | IT-IND, individual income tax | latvia-income-tax (2025 figures) | source-cited draft |
 | IT-CORP, corporate income tax | lv-corporate-income-tax (2026: 20% with the 0.8 divisor, optional 15%/0.85 plus 6% for companies owned only by individuals, deemed distributions, dividends received, pre-2018 profit and losses, monthly return and payment, fines and late interest) | source-cited draft |
-| VAT | latvia-vat-return (2025 figures) | source-cited draft |
+| VAT | latvia-vat-return (2026: EUR 50,000 threshold with EUR 5,000 tolerance, EU small-enterprise scheme, 21%/12%/5% rates including bread, milk, poultry and eggs at 12% from 1 July 2026, car and entertainment input limits, domestic reverse charges, monthly or quarterly returns by the 20th and payment by the 23rd, EU sales list, B2B e-invoices from 2028, fines and late interest) | source-cited draft |
 | SC, social contributions | latvia-social-contributions (2025 figures) | source-cited draft |
 | PR, payroll withholding | latvia-payroll (2025 figures) | source-cited draft |
 | TP, transfer pricing | lv-transfer-pricing (2026: related persons, deemed distribution, controlled transactions report, local and master file, penalties, country-by-country report, APAs) | source-cited draft |
@@ -32,5 +31,7 @@ Calendar tax year for individuals; companies use their financial year as the rep
 - Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), consolidated: https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums (read 2026-10-23, Internet Archive copy of 4 October 2026)
 - Cabinet Regulation No. 677 of 14 November 2017 (CIT Law application rules): https://likumi.lv/ta/id/295416 (read 2026-10-23)
 - Cabinet Regulation No. 397 of 4 July 2017 (country-by-country report): https://likumi.lv/ta/id/292196-noteikumi-par-starptautiskas-uznemumu-grupas-parskatu-par-katru-valsti (read 2026-10-23)
+- VAT Law (Pievienotās vērtības nodokļa likums), consolidated: https://likumi.lv/ta/id/253451-pievienotas-vertibas-nodokla-likums (read 2026-10-24, Internet Archive copy of 16 October 2026)
+- Accounting Law (Grāmatvedības likums), consolidated: https://likumi.lv/ta/id/324249-gramatvedibas-likums (read 2026-10-24, Internet Archive copy of 16 October 2026)
 - State Revenue Service: https://www.vid.gov.lv (not reachable on 2026-10-23)
 - Law On Personal Income Tax: https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (read 2026-10-23)
