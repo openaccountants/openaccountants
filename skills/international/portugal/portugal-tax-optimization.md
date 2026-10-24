@@ -1,7 +1,7 @@
 ---
 name: portugal-tax-optimization
 description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses — particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, estratégias de dedução, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social e linhas vermelhas. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on: \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
-version: 1.1
+version: 1.2
 jurisdiction: PT
 tax_year: 2025
 last_updated: 2026-10-24
@@ -158,7 +158,7 @@ peça sempre NIF em todas as compras profissionais. A diferença entre €4.587,
 
 ### IRC (Sociedades)
 
-- **IRC (Sociedades) — Prejuízos** — Os prejuízos fiscais reportam-se por 12 anos. Podem compensar até 65% do lucro tributável em cada ano subsequente. Sujeito à manutenção de >50% de continuidade na titularidade.  _(Art 52.º CIRC)_
+- **IRC (Sociedades) — Prejuízos** — Os prejuízos fiscais deduzem-se aos lucros tributáveis de um ou mais períodos posteriores, sem limite de tempo, nas deduções feitas em períodos iniciados a partir de 1 de janeiro de 2023, incluindo prejuízos anteriores cujo prazo ainda corria nessa data. A dedução de cada ano não pode exceder 65% do lucro tributável desse ano; a parte não deduzida passa para os anos seguintes. O limite sobe 10 pontos (75%) quando a diferença resulta de prejuízos de 2020 e 2021. Prejuízos anteriores a 2023 de períodos abrangidos pelo REAID (art. 6.º, n.º 1, da Lei 61/2014) mantêm o prazo em vigor em 31 de dezembro de 2022. Os prejuízos perdem-se se mudar a titularidade de mais de 50% do capital ou a maioria dos direitos de voto, salvo as exceções do n.º 9 ou razões económicas válidas. Ver a skill pt-corporate-tax.  _(Art 52.º, n.os 1, 2, 8 e 9, CIRC; art. 228.º da Lei 24-D/2022; art. 11.º, n.º 2, da Lei 27-A/2020)_
 
 ### Menos-Valias (Categoria G)
 
