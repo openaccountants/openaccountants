@@ -43,6 +43,7 @@ This skill does not repeat the profit computation. The owner's profit comes from
 - **Liability follows the activity, not the registration.** Opening a commercial business is notified to the municipality, which tells the tax office; a free profession is notified to the tax office. The tax registration questionnaire goes to the tax office electronically, within one month of the event ([§ 138(1), (1b), (4) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)).
 - **Temporary breaks** caused by the nature of the business do not end liability ([§ 2(4) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)).
 - **IT consultants and software developers** are not named in § 18 EStG. The facts decide; selling software or hardware points to a commercial business. Flag it.
+- **Refer these cases:** a group with a profit-transfer agreement (Organschaft: the subsidiary counts as a permanent establishment of the parent, [§ 2(2) sentence 2 GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)); shipping, banks and insurers; and reclassification after an audit (a free profession treated as commercial for open years: the base amount and trade tax follow, and the § 35 credit follows those notices).
 - **Abfärbung is a partnership rule.** § 15(3) no. 1 EStG names partnerships only. A sole trader with a free profession and a separate commercial side line has two activities, and only the commercial one pays trade tax.
 
 ## Rates, bands and thresholds
