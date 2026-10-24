@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 |---|---|---|
 | IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | source-cited draft |
 | IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
-| VAT | se-vat-return, sweden-vat-return | source-cited draft |
+| VAT | sweden-vat-return (2026 deep-tax), se-vat-return (older duplicate, to be merged) | source-cited draft |
 | SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
 | PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | source-cited draft |
 | TP, transfer pricing | se-transfer-pricing | source-cited draft |
@@ -34,4 +34,5 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 - Lag (1994:1920) om allmän löneavgift: https://data.riksdagen.se/dokument/sfs-1994-1920.text (read 2026-10-24)
 - Lag (2026:100) om särskild beräkning av arbetsgivaravgifter för unga: https://data.riksdagen.se/dokument/sfs-2026-100.text (read 2026-10-24)
 - Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag: https://data.riksdagen.se/dokument/sfs-2025-1334.text (read 2026-10-24)
+- Mervärdesskattelag (2023:200), as amended to SFS 2026:1025 (incl. Lag 2026:118, 2026:119, 2026:841): https://data.riksdagen.se/dokument/sfs-2023-200.text (read 2026-10-24)
 - Skatteverket: https://www.skatteverket.se (read 2026-10-22)

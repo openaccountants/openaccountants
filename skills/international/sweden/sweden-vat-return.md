@@ -1,142 +1,269 @@
 ---
 name: sweden-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Swedish VAT return (momsdeklaration) for a self-employed individual or small business in Sweden. Trigger on phrases like "prepare VAT return", "do the Swedish VAT", "momsdeklaration", "moms", "skattedeklaration", or any request involving Swedish VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Sweden only and only standard-registered businesses. VAT groups, fiscal representatives, and flat-rate schemes are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Swedish VAT work.
-version: 2.0
+description: "Swedish VAT (moms) and the VAT return (momsdeklaration) for 2026, for a business registered or registering for VAT in Sweden. Covers the 25%, 12% and 6% rates and their 2026 scope, including the temporary 6% food rate from 1 April 2026 to 31 December 2027 and 6% on dance events from 1 July 2026; the SEK 120,000 small-business exemption and the EU SME scheme (EUR 100,000); monthly, quarterly and annual periods by turnover with their deadlines; input VAT limits (cars, representation, mixed use); domestic reverse charge (construction, scrap, gold, phones and laptops); every return field; the EC Sales List (periodisk sammanställning); and förseningsavgift, skattetillägg and kostnadsränta. Trigger phrases: moms, momsdeklaration, momssats, omvänd betalningsskyldighet, periodisk sammanställning, momsbefrielse, Swedish VAT return. Out of scope: income tax (se-income-tax, se-corporate-tax), payroll (sweden-payroll), cross-border income tax (se-cross-border), bookkeeping (sweden-bookkeeping); OSS/IOSS returns, margin schemes, VAT groups and property VAT are referred."
+version: 2.1
 jurisdiction: SE
+category: international
 tax_year: 2026
-last_updated: 2026-10-16
+tier: 2
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Sweden VAT return (`momsdeklaration`) — 2026 editorial draft
+# Sweden: VAT (moms) and the VAT return (2026)
 
-**Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file or pay without review by a qualified professional in Sweden.
 
-Figures are for tax year 2026. This skill is an operational method for an ordinary business registered for Swedish VAT. It prepares a supported VAT return; it does not decide a transaction-specific exemption, place of supply, partial-deduction calculation, VAT group, margin scheme, property option, IOSS/OSS election or deemed-supplier analysis.
+**Which text of the law.** Mervärdesskattelagen (2023:200), "ML", as amended up to SFS 2026:1025, read on riksdagen.se on 24 October 2026. The 2026 changes that matter here are Lag (2026:118) (food at 6% from 1 April 2026), Lag (2026:119) (food back to 12% from 1 January 2028) and Lag (2026:841) (dance events at 6% from 1 July 2026). In each case the old rate still applies to a transaction whose taxable event (beskattningsgrundande händelse) happened before the change. Periods, deadlines, the EC Sales List, fees, surcharges and interest are in Skatteförfarandelagen (2011:1244), "SFL", as amended up to SFS 2026:1305, read the same day. Practice points (representation amounts, cars, return fields) come from skatteverket.se, read the same day.
 
-## Key figures and return fields
+## Who this applies to
 
-| Item | Current value or route | Official source |
-| --- | --- | --- |
-| Swedish small-business turnover limit | SEK 120,000 per calendar year (VAT-exclusive base, fixed-asset sales excluded) under the stated Swedish-seat, current-year and prior-two-year conditions. The exemption ends from the sale that takes the year above SEK 120,000. A business seated in another EU state also needs an identification decision there and EU turnover not above EUR 100,000 | [Skatteverket: low-turnover exemption](https://www.skatteverket.se/foretag/moms/momsregistrering/momsbefrielseforarsomsattningpahogst80000kronor.4.3152d9ac158968eb8fd1efe.html) |
-| EU-goods acquisition registration screen | Registration is required when goods (other than new means of transport or excise goods) bought from other EU countries exceed SEK 90,000 in a year | [Skatteverket: VAT registration](https://www.skatteverket.se/foretag/moms/momsregistrering/registreradigformoms.4.deeebd105a602bfe38000256.html) |
-| Reporting period | Taxable base for the year at most SEK 1 million: the tax year (may choose month or quarter). At most SEK 40 million: calendar quarter (may choose month). Above SEK 40 million: calendar month only. After choosing a more frequent period, a change back is possible only after 24 months | [Skatteverket: when to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html) |
-| Filing and payment deadline | Quarterly: 12th of the second month after the quarter (17th in August). Monthly with base at most SEK 40 million: 12th of the second month after the month (17th in January and August). Monthly with base above SEK 40 million: 26th of the month after the month (27th in December). Annual: see step 8. VAT must be both paid and on the tax account by the filing day | [Skatteverket: when to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html) |
-| Late-filing fee | SEK 625 | [Skatteverket: when to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html) |
-| Accounting method | Cash method (`bokslutsmetoden`) only for annual turnover of at most SEK 3 million; otherwise the invoice method | [Skatteverket: when to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html) |
-| Swedish VAT rates | 25%, 12% and 6%; classify the supply before choosing a rate. Examples: hotel room letting 12%; domestic passenger transport by train, air, bus and taxi 6%; books and newspapers 6%; admission to theatre, opera, ballet and similar performances and to sporting events 6%; admission to dance events 6% from 1 July 2026 (25% up to 30 June 2026) | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Temporary food rate | 6% for food (`livsmedel`, including takeaway food) from 1 April 2026 to 31 December 2027; 12% before 1 April 2026. Food and drink consumed on the premises of a restaurant or café stays at 12%; spirits, wine and strong beer in a restaurant service are 25% | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) and [Skatteverket news: food VAT lowered](https://www.skatteverket.se/omoss/pressochmedia/nyheter/2026/nyheter/livsmedelsmomsensankstill6procent.5.70685bee19c85dd5dd0a3f.html) |
-| Ordinary sales base | Field 05; fields 06, 07 and 08 are withdrawals, margin-scheme base and voluntarily taxed rent | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
-| Output VAT on sales/purchases | Fields 10, 11, 12 and 30, 31, 32 by the applicable rate | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
-| Buyer-accounted purchase bases | Fields 20, 21, 22, 23 and 24 for the distinct EU-goods, EU-service, non-EU-service and domestic reverse-charge routes | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
-| Imports and deductible input VAT | Import base 50, import VAT 60, 61 or 62, qualifying input VAT 48 | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
-| EU consumer-sales threshold | EUR 10,000, stated as SEK 99,680 by the authority, counting only cross-border EU consumer sales of goods and of telecom, broadcasting and electronic services. From the sale that takes you over the threshold, the buyer country's VAT applies | [Skatteverket: EU consumer-sales threshold](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/handelmedandralander/troskelvardevidforsaljningtillickebeskattningsbarapersoneriandraeulander.4.18e1b10334ebe8bc80005545.html) |
-| Representation: meals and drinks | Input VAT only on a base of at most SEK 300 excluding VAT per person and occasion. Where the cost is only food and non-alcoholic drink at 12%, the deduction is at most SEK 36 per person | [Skatteverket: representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html) |
-| Representation: other limits | Base of at most SEK 180 per person and occasion for staff-party peripheral costs and for theatre, green fees and similar; base of at most SEK 300 per person for representation gifts. Flat-rate option for a meal with food and alcohol costing more than SEK 300: SEK 46 per person (food at 12%) or SEK 33 per person (food at 6%), if at least that much VAT was charged | [Skatteverket: representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html) |
-| Passenger cars | Purchase: normally no deduction, except cars used for resale, rental business, taxi, driving school or transport of the deceased. Hire: 50% of the VAT, only if taxable use exceeds 100 Swedish miles, 1,000 km, a year; for a hire shorter than a year, pro-rate the distance to the hire period (for example 50 Swedish miles for six months); short-term hire on a business trip also 50%. Running costs: full deduction where the car is a business asset or hired for taxable activity. Car benefit: output VAT of 20% of the benefit value when purchase VAT or the full hire VAT was deducted | [Skatteverket: cars and VAT](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html) and [Skatteverket: business purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkoptillforetaget.4.7459477810df5bccdd480005156.html) |
-| Mixed taxable/exempt use | Full deduction if the purchase is used more than 95% in taxable activity, or if the business is more than 95% taxable and the input VAT on the purchase does not exceed SEK 1,000; otherwise apportion | [Skatteverket: business purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkoptillforetaget.4.7459477810df5bccdd480005156.html) |
-| Hypothetical Case A values | SEK 100,000 and SEK 25,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Hypothetical Case B values | SEK 100,000, SEK 12,000 and SEK 6,000 are assumptions or derived results, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Hypothetical Case C values | SEK 20,000 and SEK 5,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Hypothetical Case D values | SEK 40,000 and SEK 10,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Hypothetical Case E values | SEK 10,000 and SEK 2,500 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
-| Case F values | Skatteverket's own published representation example | [Skatteverket: representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html) |
-| Hypothetical Case G values | SEK 5,500, SEK 1,375 and SEK 687.50 are an assumption and derived results, not authority figures | [Skatteverket: cars and VAT](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html) |
+- **Taxable persons.** Anyone who carries on an economic activity independently, whatever the result, and makes taxable supplies in Sweden (ML 4 kap.). This includes sole traders (enskild näringsidkare), companies, partnerships and foreign businesses with Swedish supplies.
+- **Who registers.** A business must register with Skatteverket before it starts or takes over the activity (SFL 7 kap. 2 §). Registration is needed when it makes taxable supplies above the small-business limit, and also, whatever its turnover, when it (Skatteverket, registration page):
+  - buys goods from other EU countries (other than new means of transport or excise goods) for more than SEK 90,000 in the current or previous calendar year, if it is otherwise not entitled to deduct (ML 3 kap. 6-7 §§);
+  - buys services from a foreign business and is liable for the Swedish VAT;
+  - sells services to other EU countries that must go on the EC Sales List;
+  - buys construction services under the reverse charge (an exempt small business may still have to register).
+- **Small businesses (out, unless they opt in).** A business established in Sweden whose domestic turnover is at most SEK 120,000 in the current calendar year, and was not above SEK 120,000 in either of the two previous years, makes VAT-exempt supplies (ML 18 kap. 4 §). It needs no application if it is not registered (18 kap. 8 §). See the base section for what counts and the rates section for the EU SME version.
+- **Non-EU businesses** cannot use the small-business exemption (ML 18 kap. 6 § 1). A business with no Swedish establishment that supplies goods or services tied to Swedish property to a VAT-registered buyer is covered by the buyer's reverse charge instead (ML 16 kap. 6 §).
+- **Out of scope here.** OSS and IOSS returns, the margin schemes (ML 19-20 kap.), investment gold (21 kap.), voluntary tax on letting of property (12 kap.), VAT groups, and businesses represented by a fiscal representative. Refer these.
 
-Amounts in the worked cases are labelled assumptions unless the case says it is Skatteverket's own example. They demonstrate arithmetic and return workflow; they are not published statutory figures.
+## Rates, bands and thresholds
 
-## The method, step by step
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 25% of the taxable base | 2026 | ML 9 kap. 2 §, https://data.riksdagen.se/dokument/sfs-2023-200.text |
+| Hotel rooms and camping pitches | 12% | 2026 | ML 9 kap. 4 §, same URL |
+| Restaurant and catering services (food and drink, including eaten on the premises) | 12%; spirits, wine and strong beer within the service 25% | 2026 | ML 9 kap. 5 §, same URL |
+| Repairs of bicycles, shoes, leather goods, clothes and household linen | 12% | 2026 | ML 9 kap. 7 §, same URL |
+| Food (livsmedel), including takeaway and bottled water | 12% to 31 March 2026; 6% from 1 April 2026 to 31 December 2027; 12% again from 1 January 2028. Spirits, wine, strong beer and tap water are excluded (25%) | 2026 | ML 9 kap. 19 § as inserted by Lag (2026:118) and its transitional rule; 9 kap. 3 § by Lag (2026:119), same URL; https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html |
+| Domestic passenger transport (train, air, bus, taxi) | 6% | 2026 | ML 9 kap. 8 §, same ML URL |
+| Books, newspapers, magazines, sheet music, maps, and their e-versions | 6% (not mainly advertising) | 2026 | ML 9 kap. 9 § and 13 §, same ML URL |
+| Admission to concerts, theatre, opera, ballet, circus, zoos | 6% | 2026 | ML 9 kap. 14 §, same ML URL |
+| Admission to dance events | 25% to 30 June 2026; 6% from 1 July 2026 | 2026 | ML 9 kap. 14 § 2 by Lag (2026:841); Skatteverket rates page above |
+| Sports services, library and museum services, copyright licences | 6% | 2026 | ML 9 kap. 15-18 §§, same ML URL |
+| Small-business exemption (domestic turnover) | At most SEK 120,000 in the current year and not above SEK 120,000 in either of the two previous years | 2026 | ML 18 kap. 4 §, same ML URL |
+| EU SME scheme (business established in another EU state using the Swedish exemption) | EU turnover at most EUR 100,000 this year and last year, plus the SEK 120,000 Swedish limit | 2026 | ML 18 kap. 5 §, same ML URL |
+| EU acquisitions threshold for a business without deduction rights | SEK 90,000 in the current or previous calendar year | 2026 | ML 3 kap. 7 §, same ML URL |
+| Cross-border distance sales and e-services to EU consumers | SEK 99,680 (EUR 10,000) in the current and previous year; above it, the buyer country's VAT from the sale that crosses it | 2026 | ML 6 kap. 62-63 §§, same ML URL |
+| Cash method (bokslutsmetoden) | Allowed if annual turnover is normally at most SEK 3 million | 2026 | ML 7 kap. 16 §, same ML URL |
+| Return period | Annual if the taxable base (excluding EU acquisitions and imports) is at most SEK 1 million; quarterly if at most SEK 40 million; monthly above SEK 40 million or on request | 2026 | SFL 26 kap. 10-13 §§, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Mixed use: full deduction | Purchase used more than 95% for taxable supplies, or input VAT on it at most SEK 1,000 and taxable supplies more than 95% of turnover | 2026 | ML 13 kap. 30 §, same ML URL |
+| Representation meals | Input VAT only on a base of at most SEK 300 per person and occasion | 2026 | ML 13 kap. 25 §, same ML URL |
+| Representation: Skatteverket practice amounts | Flat SEK 46 per person (food at 12%) or SEK 33 (food at 6%); SEK 180 per person for staff-party extras, theatre, green fees; SEK 300 per person for gifts | 2026 | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html |
+| Hired passenger car | 50% of the hire VAT if used more than marginally (Skatteverket: more than 100 Swedish miles, 1,000 km, a year) in taxable activity | 2026 | ML 13 kap. 22 §; https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html |
+| Domestic reverse charge on phones, chips, consoles, tablets, laptops | When the invoice base for these goods exceeds SEK 100,000 | 2026 | ML 16 kap. 16 §, same ML URL |
+| EC Sales List quarterly for goods (on request) | Goods supplies at most SEK 500,000 a quarter in the current and previous four quarters | 2026 | SFL 35 kap. 4 §, SFL URL |
+| Late-filing fee (förseningsavgift), VAT return | SEK 625; SEK 1,250 if filed after an order (föreläggande) | 2026 | SFL 48 kap. 6 §, SFL URL |
+| Late-filing fee, EC Sales List | SEK 1,250 | 2026 | SFL 48 kap. 6 §, SFL URL |
+| Tax surcharge (skattetillägg) on VAT | 20% of the VAT that would have been lost; 2% or 5% for timing errors | 2026 | SFL 49 kap. 11 § and 13 §, SFL URL |
+| Base rate (basränta) | 2.5% from 1 December 2024 (floor 1.25%) | 2026 | SFL 65 kap. 3 §; https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html |
+| Interest on late payment (kostnadsränta) | Base rate plus 15 points: 17.5% a year | 2026 | SFL 65 kap. 13 §; Skatteverket interest page |
 
-1. **Confirm registration, period and reporting method.** Obtain the Swedish VAT number, registration decision (`registerutdrag`, which states the reporting period and accounting method), prior filed return and turnover for the year. Do not create an ordinary return before resolving whether registration applies. A business with its seat in Sweden can use the automatic low-turnover exemption only when all three conditions hold: turnover of at most SEK 120,000 in the current calendar year, not above SEK 120,000 in either of the two previous calendar years, and seat in Sweden. Count the VAT-exclusive base; leave out sales of fixed assets. The exemption ends from the sale that takes the year above SEK 120,000; VAT is charged from that sale and the business must register. While exempt, the business charges no VAT and, as the main rule, has no input-VAT deduction (Skatteverket notes limited special cases, such as an occasional delivery of a new means of transport to another EU country). A business seated in another EU state needs an identification decision from its own tax authority, Swedish turnover of at most SEK 120,000 and EU turnover of at most EUR 100,000; a non-EU-seat business cannot use that Swedish exemption. Registration is also required, whatever the turnover, when the business sells services to other EU countries that must go on an EC Sales List, buys goods (other than new means of transport or excise goods) from other EU countries for more than SEK 90,000 in a year, or buys services from a foreign business where it is liable for the Swedish VAT; an exempt business buying reverse-charge construction services may also need to register. The cash method (`bokslutsmetoden`) is available only with annual turnover of at most SEK 3 million; otherwise use the invoice method. Under the cash method, the last return of the tax year must also include unpaid invoices. Under either method, output VAT on an advance is reported when the payment is received, and input VAT on an advance invoice is deductible only once it is paid. [Low-turnover exemption](https://www.skatteverket.se/foretag/moms/momsregistrering/momsbefrielseforarsomsattningpahogst80000kronor.4.3152d9ac158968eb8fd1efe.html), [registration](https://www.skatteverket.se/foretag/moms/momsregistrering/registreradigformoms.4.deeebd105a602bfe38000256.html) and [when to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html)
-2. **Build a transaction record before putting an amount in a field.** For every sale, purchase, import, withdrawal, rent or adjustment retain the invoice or equivalent evidence; legal supplier/customer identity; VAT number where relevant; goods or services description; origin/destination; supply date; accounting date; taxable base; rate; VAT shown; business purpose; customs/transport evidence; and document identifier. A bank payment confirms payment, not tax treatment or a deduction. Reconcile the record to sales ledger, purchase ledger, bank, customs information and prior corrections.
-3. **Classify each sale before calculating VAT.** Establish the Swedish place of taxation and whether the item is taxable, exempt, outside scope or subject to a special scheme. For ordinary taxable domestic sales, report the base in field 05 and output VAT in 10, 11 or 12 at the actual rate. Do not use fields 06 to 08 as alternative ordinary-sales rates. Use a special field only after the specific rule and evidence are established. A car benefit is a withdrawal: when purchase VAT or the full hire VAT on a passenger car was deducted, report output VAT of 20% of the benefit value (the benefit value includes VAT); a business that files more than once a year reports the year's car-benefit VAT in the year's last return. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) and [cars](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html)
-4. **Apply the food transition to supported ordinary deliveries, then preserve corrections.** Qualifying food delivered before 1 April 2026 uses the former 12% rate; qualifying food delivered from that date to 31 December 2027 uses 6%. Food includes non-alcoholic drinks and ready-made or takeaway food sold without support services such as table setting, serving and washing up. Food and drink consumed on the premises of a restaurant or café is a restaurant service and stays at 12%; in a restaurant or catering service, spirits, wine and strong beer are split out at 25%. A credit or return needs an amendment invoice that identifies the original invoice and is reported under the taxpayer’s accounting method. Preserve the original invoice, amendment invoice, delivery evidence and rate calculation. This packet does not decide food-rate timing for an advance payment, EU acquisition or a disputed credit: retain those facts for a current legal-guidance review. [Food rate guidance](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html), [rate end date](https://www.skatteverket.se/omoss/pressochmedia/nyheter/2026/nyheter/livsmedelsmomsensankstill6procent.5.70685bee19c85dd5dd0a3f.html) and [amendment invoices](https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/fakturering.4.58d555751259e4d66168000403.html)
-5. **Test input VAT independently.** Put only deductible Swedish input VAT in field 48. Confirm taxable-business use, purchaser/seller and invoice evidence, then apply these limits:
-   - **Private or exempt use.** No deduction for private use or for purchases belonging to an exempt activity. For a purchase used in both taxable and exempt activity, deduct only the taxable share, apportioned on a documented reasonable basis (turnover, time or floor area). Deduct in full if the purchase is used more than 95% in taxable activity, or if the business is more than 95% taxable and the input VAT on that purchase does not exceed SEK 1,000. Any other partial-exemption calculation is a referral.
-   - **Passenger cars.** Purchase VAT on a passenger car (including factory-fitted options, and financial leasing treated as a purchase) is normally not deductible, even if the car is used in the business; the exceptions are cars used for resale in car dealing, rental business, taxi traffic, driving schools or transport of the deceased. For a hired passenger car, deduct 50% of the VAT, and only if the car is used in taxable activity for more than 100 Swedish miles (1,000 km) a year; for a hire shorter than a year, pro-rate the distance to the hire period (for example 50 Swedish miles for a six-month hire); short-term hire, for example on a business trip, also gives 50%. Rental, taxi, driving-school and transport-of-the-deceased businesses deduct the full hire VAT; car dealers hiring a car deduct 50%. VAT on running costs (fuel, service, repairs) is fully deductible when the car is a business asset or is hired for taxable activity; otherwise only costs for driving in the taxable activity. Separately purchased equipment such as winter tyres or a tow bar follows the ordinary rules.
-   - **Representation.** A deduction needs a taxable business and an immediate connection to it (starting or keeping business relationships, jubilees, staff welfare), and the records must note who took part and the purpose. For food and drink, the VAT base is at most SEK 300 excluding VAT per person and occasion, alcohol included. With only food and non-alcoholic drink at 12% (for example a restaurant meal) the deduction is at most SEK 36 per person; at the 6% food rate (for example takeaway food bought after 31 March 2026) it is at most SEK 18 per person. If a meal of food and alcohol costs more than SEK 300 per person, split the SEK 300 base in proportion to the actual food and alcohol costs (12% or 6% on the food share, 25% on the alcohol share), or use the flat SEK 46 per person where food is at 12%, or SEK 33 per person where food is at 6%, provided at least that much VAT was charged per person. Staff-party peripheral costs (hire of furniture, music) and theatre, green fees and similar have a base of at most SEK 180 per person and occasion; representation gifts have a base of at most SEK 300 per person.
-   - **Foreign VAT and property.** Do not place foreign VAT in field 48. Property adjustments require their own evidence screen.
-   [Business purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkoptillforetaget.4.7459477810df5bccdd480005156.html), [invoicing](https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/fakturering.4.58d555751259e4d66168000403.html), [cars](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html), and [representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html)
-6. **Route buyer-accounted purchases and imports separately.** Use 20 for EU goods, 21 for qualifying general-rule EU business services, 22 for qualifying general-rule non-EU services, 23 for covered domestic reverse-charge goods and 24 for covered domestic reverse-charge services. The general rule for fields 21 and 22 does not cover property services, passenger transport, admission to cultural, sporting and similar events, restaurant and catering services or short-term hire of means of transport; certain property services bought from a foreign trader go in 24. Goods bought as the middleman in a triangular EU trade go in 37, not 20. Field 23 covers, among others, gold material, certain metal scrap, and mobile phones, integrated circuits, games consoles, tablets and laptops only when the invoice's taxable base for those goods exceeds SEK 100,000. Calculate buyer-accounted VAT in 30, 31 or 32 at the rate that actually applies, then assess field-48 deduction separately. For imports, use customs evidence for 50: the base is the customs value in SEK plus duty and other state charges and ancillary costs such as commission, packing, transport and insurance up to the destination on the international transport document; calculate import VAT in 60, 61 or 62. A construction invoice belongs in 41 for the seller and 24 for the buyer only after the listed service, buyer condition (a taxable person that sells such construction services more than occasionally, or a middleman) and the route-specific place test are documented; the seller's invoice must show the buyer's VAT number and the words `omvänd betalningsskyldighet`. [EU service purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkopfranandraeulander/kopatjansterfranandraeulander.4.361dc8c15312eff6fd1d011.html), [construction reverse charge](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/byggverksamhet/omvandbetalningsskyldighetinombyggsektorn), and [return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
-7. **Route sales outside ordinary domestic treatment.** A qualifying EU goods sale belongs in 35, export goods in 36, a middleman's triangular sale in 38, qualifying general-rule EU business services in 39, other foreign services in 40, domestic buyer-accounted sales in 41 and specified exempt/non-consideration items in 42. Confirm customer VAT status, transport, place of supply and any EC Sales List obligation. Consumer EU distance/digital sales require the threshold/OSS test before they are included as Swedish domestic VAT; sales reported in OSS stay out of the ordinary return. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html), [EC Sales List](https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallningforvarorochtjanster.4.58d555751259e4d661680001093.html), [EU consumer-sales threshold](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/handelmedandralander/troskelvardevidforsaljningtillickebeskattningsbarapersoneriandraeulander.4.18e1b10334ebe8bc80005545.html), and [OSS](https://www.skatteverket.se/foretag/moms/deklareramoms/ossredovisningavmomsenligtdesarskildaordningarna.4.5b35a6251761e691420b58e.html)
-8. **Reconcile, file, pay and correct.** Recalculate field 49 as fields 10, 11, 12, 30, 31, 32, 60, 61 and 62 less supported field-48 input VAT. Reconcile every field to schedules and the tax-control account. File each assigned period by its deadline, and make sure the VAT is paid and on the tax account by the same day:
-   - **Quarterly:** the 12th of the second month after the quarter (17th in August). January–March 2026 is due 12 May 2026; April–June 2026 is due 17 August 2026.
-   - **Monthly, taxable base at most SEK 40 million:** the 12th of the second month after the month (17th in January and August), unless the business asked for and got an earlier date. **Monthly, taxable base above SEK 40 million (excluding intra-EU acquisitions and imports):** the 26th of the month after the month (27th in December).
-   - **Whole tax year, sole traders and estates with no EU trade that file an income tax return:** 12 May of the year after the tax year (26 June with an agent extension, but interest on VAT due runs from the day after 12 May). **With EU trade:** 26 February of the year after the tax year.
-   - **Whole tax year, companies and economic associations with no EU trade that file an income tax return:** tied to the financial-year end and paper or digital filing, as in Skatteverket's table; for a year ending September to December, 12 July on paper or 17 August digitally. **With EU trade, or not filing an income tax return:** the 26th of the second month after the period (27th in December). **Partnerships, limited partnerships and VAT groups:** the 26th of the second month after the period.
+## The taxable base
 
-   Use the dates in the e-service or Skatteverket's key-dates list for the actual period. A late return can bring a late-filing fee of SEK 625. When there is no VAT to report, use the e-service zero-return route or field 49 = 0 on paper, without inventing values elsewhere; a zero return is not allowed when there are amounts to report. Apply for a filing extension instead: it needs special reasons, must reach Skatteverket by the filing day, and does not extend payment. Correct a filed return by filing a complete new return for the affected period (in the e-service, the accounting software or on paper) or by a letter to Skatteverket stating which figures change; this skill prepares the complete replacement return. Retain the original return, reason, changed records and calculation. [When to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html), [return fields](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html), and [corrections](https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html)
+**What is taxed.** Supplies of goods and services for consideration in Sweden, intra-EU acquisitions and imports (ML 3 kap.). Private use of business assets is a taxable withdrawal (uttag, ML 5 kap.).
+
+**The base.** The consideration excluding VAT. On import it is the customs value set by Tullverket plus duty and other state charges, plus commission, packing, transport and insurance to the first destination in Sweden on the transport document (ML 8 kap. 24-27 §§). A freight invoice alone is not the import base.
+
+**Car benefit.** Private use of a business passenger car is a withdrawal if the purchase VAT was deducted, or if the full hire VAT was deducted (ML 5 kap. 31 §). The base is the car-benefit value under the social-contributions rules (ML 8 kap. 7 §). Skatteverket says to report output VAT of 20% of the benefit value, because that value includes VAT, and that a business filing more than once a year reports the year's car-benefit VAT in the year's last return.
+
+**When output VAT is reported.** In the period when the supply is, or should have been, booked under good accounting practice, and for advance payments when the payment is received (ML 7 kap. 14 §). Under the cash method, VAT is reported when payment is received, but all unpaid invoices at the year end go in the period that includes the year end (ML 7 kap. 16 §). A credit note must refer to the original invoice (ML 17 kap.).
+
+**Small-business turnover.** Count the VAT-exclusive value of supplies in Sweden that would be taxable without the exemption (ML 18 kap. 2 § and 19 §). Also count exports, intra-EU supplies and some exempt property, insurance and financial income unless only incidental (18 kap. 20-22 §§). Leave out sales of fixed assets (18 kap. 23 §). The exemption ends from the supply that takes the year above SEK 120,000 (18 kap. 11 §). While exempt, the business has no input VAT deduction (18 kap. 14 §). A registered business that falls under the limit must apply to use the exemption; it applies from the decision at the earliest (18 kap. 9 §). An unregistered business may instead apply to be taxed (18 kap. 15 §). A Swedish business that wants to use another EU state's SME exemption files an advance notice (förhandsanmälan) electronically with Skatteverket (18 kap. 24-25 §§).
+
+**Input VAT.** Deduct VAT on purchases for taxable supplies, backed by an invoice (ML 13 kap.). Limits:
+
+- **Mixed use.** Apportion on what the purchase is used for, or on a reasonable basis (ML 13 kap. 29 §). Full deduction under the 95% rules in 13 kap. 30 §. Any other partial-exemption calculation is a referral.
+- **Passenger cars.** No deduction on buying a passenger car or motorcycle, except for resale, rental, taxi, transport of the deceased or taxable driving schools (ML 13 kap. 20 §). Hire VAT: 50% if the car is used more than marginally in taxable activity (13 kap. 22 §); full deduction for rental, taxi, transport of the deceased and driving schools (13 kap. 21 §). Running costs (fuel, service, repairs) are fully deductible if the car is a business asset or hired for the business, even with part private use (13 kap. 23 §).
+- **Representation.** No deduction where the cost is not deductible for income tax (ML 13 kap. 24 §). For meals, the deduction is capped at the VAT on SEK 300 per person and occasion (13 kap. 25 §): at most SEK 36 per person for food at 12% (300 x 12%) and SEK 18 at 6% (300 x 6%). Where a meal with alcohol costs more than SEK 300 per person, split the SEK 300 base between food and alcohol in proportion to the actual costs, or use Skatteverket's flat amount (SEK 46 or SEK 33 per person) if at least that much VAT was charged. Record who took part and the purpose.
+- **Permanent housing.** No deduction (ML 13 kap. 26 §).
+- **Foreign VAT** never goes in field 48; it is reclaimed from the other state.
+
+**The return fields** (Skatteverket, "Fyll i momsdeklarationen"):
+
+| Field | What goes in it |
+|---|---|
+| 05 | Taxable sales not in 06, 07 or 08 |
+| 06 / 07 / 08 | Taxable withdrawals / margin-scheme base / rent under voluntary taxation |
+| 10 / 11 / 12 | Output VAT on sales at 25% / 12% / 6% |
+| 20 | Goods bought from another EU country |
+| 21 | Services bought from another EU country under the general rule |
+| 22 | Services bought from outside the EU |
+| 23 | Goods bought in Sweden where the buyer pays the VAT (gold, scrap, phones and laptops above SEK 100,000 an invoice, gas and electricity from foreign suppliers) |
+| 24 | Other services bought in Sweden where the buyer pays the VAT (construction) |
+| 30 / 31 / 32 | Output VAT on the purchases in 20-24 at 25% / 12% / 6% |
+| 35 / 36 | Goods sold to another EU country / outside the EU |
+| 37 / 38 | Middleman's purchase / sale in triangular trade |
+| 39 | Services sold to a business in another EU country under the general rule |
+| 40 | Other services supplied abroad |
+| 41 | Sales where the buyer pays the VAT in Sweden (construction, scrap, phones) |
+| 42 | Other sales (exempt and similar) |
+| 48 | Deductible input VAT |
+| 49 | VAT to pay or reclaim: 10 + 11 + 12 + 30 + 31 + 32 + 60 + 61 + 62 less 48 |
+| 50 | Import base (only where the business reports import VAT itself) |
+| 60 / 61 / 62 | Output VAT on imports at 25% / 12% / 6% |
+
+**Domestic reverse charge (omvänd betalningsskyldighet).** The buyer, not the seller, accounts for the VAT on:
+
+- construction services on property (groundwork, building and civil works, installations, finishing, hire of construction machinery with operator, construction cleaning, and staff for these), when the buyer is a taxable person that supplies such services more than occasionally, or buys them for such a person (ML 16 kap. 13 §);
+- scrap and waste of iron, steel, copper, nickel, aluminium, lead, zinc, tin and other base metals, remelting ingots, and battery scrap, between registered taxable persons (16 kap. 14 §);
+- gold material of at least 325 thousandths, and investment gold where the seller opted to tax (16 kap. 11-12 §§);
+- emission allowances (16 kap. 15 §);
+- mobile phones, integrated circuits, game consoles, tablets and laptops when the invoice base for them exceeds SEK 100,000 (16 kap. 16 §);
+- property-related supplies and gas or electricity from a business not established in Sweden to a registered buyer (16 kap. 6 § and 8 §).
+
+The seller's invoice must say "omvänd betalningsskyldighet" (ML 17 kap. 24 § 14). The seller reports the sale in field 41; the buyer reports the base in 23 or 24, the VAT in 30-32, and deducts it in 48 if the purchase is for taxable supplies.
+
+## Deadlines and filing
+
+**Periods** (SFL 26 kap. 10-16 §§). The taxable base for the year, excluding EU acquisitions and imports:
+
+- at most SEK 1 million: the tax year (annual), unless the business asks for quarterly or monthly;
+- at most SEK 40 million: calendar quarter, or monthly on request;
+- above SEK 40 million: calendar month.
+
+A move to a shorter period at the business's request lasts at least 24 months (SFL 26 kap. 13 §). The registration decision states the period.
+
+**Deadlines** (SFL 26 kap. 26-33 b §§). The return and the payment are both due by the same day: the VAT must be on the tax account (skattekonto) by the filing day (SFL 62 kap. 3 §).
+
+| Who | Period | Due |
+|---|---|---|
+| Quarterly | Jan-Mar / Apr-Jun / Jul-Sep / Oct-Dec | 12 May / 17 August / 12 November / 12 February |
+| Monthly, base at most SEK 40 million | Each month | 12th of the second month after the month; November due 17 January, June due 17 August |
+| Monthly, base above SEK 40 million | Each month | 26th of the month after; November due 27 December |
+| Annual, sole trader or estate filing an income tax return, no EU trade | Calendar year | 12 May of the next year (SFL 26 kap. 33 a §); 26 June with a filing agent's extension (SFL 36 kap. 6 §) |
+| Annual, sole trader with EU goods trade or EU reverse-charge services | Calendar year | 26 February of the next year (SFL 26 kap. 33 §) |
+| Annual, company filing an income tax return, no EU trade | Financial year | Year ending 31 December: 12 July, or 17 August if filed electronically; 30 April: 12 November (12 December electronically); 30 June: 27 December (17 January electronically); 31 August: 12 March (12 April electronically) (SFL 26 kap. 33 b §) |
+| Annual, partnerships, companies with EU trade, others | Financial year | 26th of the second month after the year end; 27th in December (SFL 26 kap. 33 §) |
+
+For an annual filer the VAT return is a separate return. For a company it is tied to the income tax return timing, but it is not filed inside the income tax return. Use Skatteverket's e-service or accounting software. A filing extension needs special reasons and must be asked for by the filing day (SFL 36 kap. 5 §).
+
+**EC Sales List (periodisk sammanställning)** (SFL 35 kap.). Needed for goods sent to other EU countries, and for services where the EU buyer accounts for the VAT. Goods: every calendar month; quarterly on request if goods are at most SEK 500,000 a quarter. Services only: every quarter. Goods and services together: monthly. Due by the 25th of the month after the period if filed electronically, the 20th on paper.
+
+**Corrections.** File a complete new return for the period in the e-service, or send Skatteverket a letter stating which figures change. Never file a return showing only the difference. Correcting on your own initiative, before Skatteverket announces a check, avoids the tax surcharge (SFL 49 kap. 10 §).
+
+## Penalties and interest
+
+- **Late return:** förseningsavgift SEK 625; SEK 1,250 if the return is filed only after an order. Only one fee where several returns due the same day are late (SFL 48 kap. 5-6 §§).
+- **Late EC Sales List:** SEK 1,250 (SFL 48 kap. 6 §).
+- **Incorrect return (oriktig uppgift):** skattetillägg of 20% of the VAT that would have been lost or wrongly refunded (SFL 49 kap. 4-5 §§ and 11 §). Where the error is only timing, 2% if the period is at most three months and the amount was put within four months of the right period, otherwise 5% (49 kap. 13 §). A discretionary assessment (skönsbeskattning) because no return was filed carries 20% (49 kap. 15 §). No surcharge if you correct on your own initiative, or if the amount is small (49 kap. 10 §).
+- **Interest (kostnadsränta):** on VAT not paid by the due date, from the next day, at the base rate plus 15 points, so 17.5% a year at a base rate of 2.5% (SFL 65 kap. 3 § and 13 §). The same high rate applies to VAT set by a discretionary assessment for an unfiled return (65 kap. 11 §). VAT owed after a reassessment carries interest from the day after the original due date (65 kap. 8 §). Interest is calculated daily on the tax account and is not deductible for income tax (Skatteverket interest page).
+
+## Cross-border points
+
+- **Goods to another EU country:** VAT-exempt intra-EU supply to a VAT-registered buyer with transport out of Sweden. Field 35 and the EC Sales List.
+- **Services to an EU business under the general rule:** taxed where the buyer is; field 39 and the EC Sales List. Property services, passenger transport, admissions, restaurant services and short-term hire of vehicles follow their own place-of-supply rules.
+- **Buying from abroad:** EU goods in field 20; EU services in 21; non-EU services in 22; VAT in 30-32, deducted in 48 if for taxable supplies.
+- **Imports:** import VAT is reported by the business itself in fields 50 and 60-62 where it is registered (ML 16 kap. 18-22 §§); otherwise it is paid to Tullverket.
+- **Distance sales and e-services to EU consumers:** Swedish VAT applies up to SEK 99,680 a year across the EU; above it, the buyer country's VAT from the crossing sale (ML 6 kap. 62-63 §§). Sales reported through OSS stay out of the Swedish return.
+- **Foreign business with no Swedish establishment:** a registered Swedish buyer accounts for the VAT on property-related supplies, and on gas, electricity, heating and cooling (ML 16 kap. 6 § and 8 §). Otherwise the foreign business registers in Sweden.
+- **EU SME scheme:** an EU business with EU turnover at most EUR 100,000 can use the Swedish SEK 120,000 exemption through its home authority (ML 18 kap. 5 §, 10 §, 16 §). A Swedish business uses another state's exemption by an advance notice to Skatteverket (18 kap. 24 §), and must tell Skatteverket within 15 working days if its EU turnover passes EUR 100,000 (18 kap. 37 §).
+
+## Worked examples
+
+### Example 1: Consultancy on quarterly returns, Q3 2026
+
+An aktiebolag consultancy with a taxable base of about SEK 1.6 million a year files quarterly (SFL 26 kap. 11 §). In July to September 2026 it invoices Swedish clients SEK 400,000 excluding VAT at 25%. Swedish purchase invoices for its taxable work carry SEK 22,000 of VAT. It buys a software service from an Irish business for SEK 30,000 without VAT. It takes three clients to lunch with one staff member: food and soft drinks SEK 2,000 excluding VAT, VAT SEK 240 at 12%, with attendees and purpose recorded.
+
+- Output VAT: 25% of 400,000 = SEK 100,000 (field 05: 400,000; field 10: 100,000).
+- Irish service: field 21: 30,000; VAT 25% = SEK 7,500 in field 30, deductible in field 48.
+- Lunch: the capped base is SEK 300 x 4 = 1,200, so the deduction is 12% of 1,200 = SEK 144, not the SEK 240 charged (ML 13 kap. 25 §).
+- Field 48: 22,000 + 7,500 + 144 = SEK 29,644.
+- Field 49: 100,000 + 7,500 - 29,644 = SEK 77,856, filed and on the tax account by 12 November 2026.
+
+```oa-check
+name: Sweden Q3 2026 quarterly return, consultancy with an EU service and a capped representation lunch
+inputs:
+  sales: 400000
+  domestic_input_vat: 22000
+  eu_service: 30000
+  lunch_cost: 2000
+  attendees: 4
+steps:
+  - output_vat: sales * 0.25
+  - eu_service_vat: eu_service * 0.25
+  - lunch_base: min(lunch_cost, 300 * attendees)
+  - lunch_ded: lunch_base * 0.12
+  - field_48: domestic_input_vat + eu_service_vat + lunch_ded
+  - field_49: output_vat + eu_service_vat - field_48
+expected:
+  output_vat: 100000
+  eu_service_vat: 7500
+  lunch_base: 1200
+  lunch_ded: 144
+  field_48: 29644
+  field_49: 77856
+```
+
+### Example 2: Café with takeaway, Q2 2026, filed and paid late
+
+A café run as a company files quarterly. In April to June 2026, after the food rate fell, it sells:
+
+- takeaway food and soft drinks, SEK 200,000 excluding VAT: food at 6% (ML 9 kap. 19 §) = SEK 12,000;
+- meals eaten in the café, SEK 300,000: restaurant service at 12% (ML 9 kap. 5 §) = SEK 36,000;
+- wine served with meals, SEK 50,000: excluded from the 12% rate, so 25% = SEK 12,500.
+
+Output VAT is SEK 60,500. It buys food from wholesalers for SEK 150,000 at 6% (input VAT SEK 9,000) and other supplies with SEK 10,000 of VAT. It hires a passenger car used well over 100 Swedish miles a year in the business; the quarter's hire VAT is SEK 3,000, of which 50% (SEK 1,500) is deductible (ML 13 kap. 22 §). Field 48 is SEK 20,500 and field 49 is SEK 40,000.
+
+The return and payment were due on 17 August 2026. The café files and pays 10 days late, on 27 August. It owes the SEK 625 förseningsavgift (SFL 48 kap. 6 §). Interest runs from 18 August at the base rate plus 15 points, 17.5% a year (SFL 65 kap. 13 §). The check below uses simple daily interest on a 365-day year as an estimate; the tax account shows the exact figure.
+
+```oa-check
+name: Sweden Q2 2026 café, 6% food, 12% restaurant, 25% wine, car hire, late return and interest
+inputs:
+  takeaway: 200000
+  dine_in: 300000
+  wine: 50000
+  food_purchases: 150000
+  other_input_vat: 10000
+  car_hire_vat: 3000
+  late_fee: 625
+  days_late: 10
+  base_rate_pct: 2.5
+steps:
+  - output_vat: takeaway * 0.06 + dine_in * 0.12 + wine * 0.25
+  - field_48: food_purchases * 0.06 + other_input_vat + car_hire_vat * 0.5
+  - field_49: output_vat - field_48
+  - interest: round(field_49 * (base_rate_pct + 15) / 100 * days_late / 365, 2)
+  - total_due: field_49 + late_fee + interest
+expected:
+  output_vat: 60500
+  field_48: 20500
+  field_49: 40000
+  interest: 191.78
+  total_due: 40816.78
+```
 
 ## Ask the client first
 
-- What does the registration decision say about Swedish VAT registration, accounting method and this return period? What was the taxable base for the year, and does the business trade with other EU countries?
-- For each cross-border item, what was supplied, where did goods move or service occur, and what proves the counterparty’s legal/VAT status?
-- What documents establish the supply date, delivery/acquisition/import date, advance receipt and any credit/return?
-- Which purchases support taxable activity, which have invoices, and which have private, exempt, car, representation or property restrictions?
-- For each car: is it a passenger car, is it owned, financially leased or hired, what is it used for, how far is it driven in the taxable activity each year, and is there a car benefit?
-- For each representation cost: who took part, how many people, what was the business purpose, and how much was food, non-alcoholic drink and alcohol?
-- Are there imports, construction services, margin transactions, voluntarily taxed rent, VAT groups, OSS/IOSS transactions or EU consumer sales?
-- Has an earlier return been filed, and is the task a complete correction rather than an original return?
+1. What does the registration decision (registerutdrag) say about the period and the accounting method, and what is the taxable base for the year? (Decides the period, the deadline and the cash method.)
+2. What was domestic turnover this year and in each of the last two years, and is the business established in Sweden? (Decides the SEK 120,000 exemption.)
+3. Does the business buy from or sell to other EU countries or outside the EU, and does it hold the customers' VAT numbers and transport evidence? (Decides fields 20-22 and 35-39, the EC Sales List and the annual deadline.)
+4. Does it sell food, restaurant meals, alcohol, admissions or other reduced-rate items, and on what dates were they delivered? (Decides 25%, 12% or 6%, and which side of 1 April or 1 July 2026.)
+5. Which costs are cars (bought or hired, distance in the business, private use), representation (who attended, food and alcohol split) or shared with exempt activity? (These carry the ML 13 kap. limits.)
+6. Is any return late, assessed or being corrected, and is there a debit on the tax account? (Fees, surcharge and interest.)
 
-## Worked preparation cases
+## Sources
 
-### Case A — ordinary domestic sale
+| Source | URL | Read on |
+|---|---|---|
+| Mervärdesskattelag (2023:200), as amended to SFS 2026:1025 (3, 5-9, 13, 16-18 kap.; transitional rules for Lag 2026:118, 2026:119, 2026:841) | https://data.riksdagen.se/dokument/sfs-2023-200.text | 2026-10-24 |
+| Mervärdesskattelag (2023:200), riksdagen.se page | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/mervardesskattelag-2023200_sfs-2023-200/ | 2026-10-24 |
+| Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305 (7, 26, 35, 36, 48, 49, 62, 65 kap.) | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
+| Skatteverket, Momssats på varor och tjänster | https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html | 2026-10-24 |
+| Skatteverket, När ska jag deklarera moms | https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html | 2026-10-24 |
+| Skatteverket, Fyll i momsdeklarationen | https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html | 2026-10-24 |
+| Skatteverket, Registrera dig för moms | https://www.skatteverket.se/foretag/moms/momsregistrering/registreradigformoms.4.deeebd105a602bfe38000256.html | 2026-10-24 |
+| Skatteverket, Tröskelvärde vid försäljning till icke beskattningsbara personer i andra EU-länder | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/handelmedandralander/troskelvardevidforsaljningtillickebeskattningsbarapersoneriandraeulander.4.18e1b10334ebe8bc80005545.html | 2026-10-24 |
+| Skatteverket, Representation | https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html | 2026-10-24 |
+| Skatteverket, Bilar och moms | https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html | 2026-10-24 |
+| Skatteverket, Rätta en momsdeklaration | https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html | 2026-10-24 |
+| Skatteverket, Ränta på skattekontot (basränta 2.5%, kostnadsränta 17.5%) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-10-24 |
 
-**Assumptions.** A VAT-registered seller makes a supported ordinary 25% domestic sale with a SEK 100,000 VAT-exclusive base.
-
-**Calculation and route.** SEK 100,000 × 25 ÷ 100 = SEK 25,000 output VAT. Report 100,000 in 05 and 25,000 in 10, subject to the stated classification assumptions. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
-
-### Case B — food transition at ordinary delivery
-
-**Assumptions.** A supported eligible-food delivery of SEK 100,000 occurs on 31 March 2026. A separate supported eligible-food delivery of SEK 100,000 occurs on 1 April. The facts establish food rather than a restaurant/café service.
-
-**Calculation and route.** The March delivery VAT is 100,000 × 12 ÷ 100 = 12,000. The April delivery VAT is 100,000 × 6 ÷ 100 = 6,000. Record the deliveries separately. If the same April meals had been eaten on the seller's restaurant premises, they would be a restaurant service at 12%, not food at 6%. Hold an advance, EU acquisition or disputed cross-transition credit for the evidence review identified in step 4. [Food rate guidance](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html)
-
-### Case C — EU goods purchase with supported deduction
-
-**Assumptions.** A registered Swedish buyer acquires qualifying EU goods for SEK 20,000. The transaction is taxable at 25% and wholly for supported taxable activity.
-
-**Calculation and route.** Report 20,000 in 20. Buyer-accounted VAT is 20,000 × 25 ÷ 100 = 5,000 in 30. Report the same 5,000 in 48 only if the deduction screen is satisfied, giving zero net effect from this one item. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
-
-### Case D — import
-
-**Assumptions.** Customs evidence establishes a SEK 40,000 import base, already including customs value, duty and transport and insurance to the destination; goods are 25%; full taxable-business use and deduction evidence are established.
-
-**Calculation and route.** Report 40,000 in 50 and 40,000 × 25 ÷ 100 = 10,000 in 60. Field 48 is 10,000 only if the ordinary deduction test is met. A freight invoice on its own is not the import base; its transport cost to the destination is one component of it. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
-
-### Case E — ordinary correction
-
-**Assumptions.** A previously filed return omitted a supported SEK 10,000 ordinary standard-rated sale.
-
-**Calculation and route.** Omitted VAT is 10,000 × 25 ÷ 100 = 2,500. Rebuild the complete return for that period and submit the replacement return (or send Skatteverket a letter stating the changed figures); do not file a new return containing only the 2,500 difference. [Skatteverket correction instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html)
-
-### Case F — representation dinner with food and alcohol (Skatteverket's example)
-
-**Facts.** A company in taxable business holds a business-negotiation dinner for three people costing SEK 1,758 in total: food SEK 900 and strong beer SEK 600, both excluding VAT, plus VAT of SEK 258 (12% on the food, 25% on the beer). Attendees and purpose are recorded. [Representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html)
-
-**Calculation and route.** The capped base is SEK 300 × 3 = SEK 900. Food is 60% of the actual cost and beer 40%, so SEK 540 of the capped base is food and SEK 360 is beer. Deductible VAT is 12% of SEK 540 plus 25% of SEK 360 = SEK 154.80, reported in field 48. The flat alternative gives SEK 46 × 3 = SEK 138. The rest of the SEK 258 is not deductible. [Representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html)
-
-### Case G — hired versus purchased passenger car
-
-**Assumptions.** A business hires a passenger car for a full year at SEK 5,500 a month excluding VAT and drives it more than 100 Swedish miles over the year in its taxable activity. It is not a rental, taxi, driving-school or transport-of-the-deceased business. [Cars and VAT](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html)
-
-**Calculation and route.** Hire VAT is 5,500 × 25 ÷ 100 = SEK 1,375. Deduct 50%: 1,375 × 50 ÷ 100 = SEK 687.50 in field 48. If, over this full-year hire, the car is used only 50 Swedish miles in the taxable activity, no hire VAT is deductible; for a six-month hire, the distance test is pro-rated to 50 Swedish miles instead of 100. If the business had bought the car instead, the purchase VAT would not be deductible at all, whatever the business use; fuel and repair VAT would still be deductible in full. [Cars and VAT](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html)
-
-## When to refuse or refer
-
-- The evidence cannot establish the tax point, place of supply, buyer/seller status, goods movement, rate classification or deductible business use.
-- The return needs a partial-exemption allocation beyond the 95% rules in step 5, VAT-group analysis, property adjustment, margin scheme, voluntary-tax rent calculation, triangulation, IOSS/OSS election or platform/deemed-supplier conclusion.
-- A construction reverse-charge condition, car exception, financial-leasing classification, car-benefit value, representation calculation, food exclusion, voucher or amendment-invoice timing is disputed or incomplete.
-- The taxpayer has no registration decision/assigned period, Customs documentation or complete correction records.
-- The taxpayer is a non-resident business registered through a fiscal representative in Sweden.
-
-## Official sources
-
-The captured source text and claim-level locators are retained in this packet's `sources.json` and `quality-evidence.json`. Retrieval date: 25 September 2026.
+Not yet confirmed: Skatteverket's pro-rating of the 100-Swedish-mile car test for a hire shorter than a year (in the previous version; the current cars page no longer states it); the zero-return route in the e-service; whether Skatteverket computes daily interest on a 365-day year; food-rate timing for advance payments and credit notes that straddle 1 April 2026 (the law ties the rate to the taxable event; refer disputed cases).
 
 <!-- openaccountants-cta-block -->
 
