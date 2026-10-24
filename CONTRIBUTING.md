@@ -33,14 +33,10 @@ gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "C
 
 ## How to contribute a skill
 
-### Option 1: Via the website
+### Via GitHub PR
 
-1. Go to [openaccountants.com](https://www.openaccountants.com)
-2. Sign up for an account
-3. Use the submission form to upload your skill
-4. It goes live immediately as a **source-cited draft**
+Skills are added and changed only through pull requests to this repository.
 
-### Option 2: Via GitHub PR
 
 1. Fork this repo
 2. Create your skill in the appropriate **source** directory (`skills/federal/`, `skills/us-states/[code]/`, `skills/international/[country]/`, etc.)
@@ -75,7 +71,7 @@ All domain skills for a country live in the same directory (e.g., `skills/intern
 
 ## Quality standards
 
-- Every amount, percentage, and threshold must have a primary source citation (statute, tax authority guidance, or official rate schedule)
+- Follow the ten rules in [docs/skill-template.md](docs/skill-template.md): every amount, percentage, threshold and deadline cited to the law or the tax authority, with the article and a read date; never Big Four firms or blogs; nothing unconfirmed in the skill; one independent review before merge
 - Computation rules must be mechanical — the AI should be able to follow them step by step
 - Scope must be explicit — what's covered and what's deferred to other skills
 - **US skills** load on top of `us-tax-workflow-base` (in `skills/foundation/`)
