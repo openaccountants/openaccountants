@@ -44,15 +44,15 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Quarterly returns allowed up to annual turnover (whole activity, excluding VAT) | EUR 2,500,000 | 2026 | KB nr. 1 art. 17 § 2, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c69c7ee9-8e6d-48da-b9f7-c23cb025a777 |
 | Quarterly intra-EU listing allowed while intra-EU supplies of goods in the quarter and each of the four before stay at or below | EUR 50,000 | 2026 | KB nr. 50 art. 5 § 1 and art. 11 § 1, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/90c85f66-9e8b-48bc-9032-ce1f7db88872 |
 | Annual client listing: customers supplied for a total of more than | EUR 250 a year, excluding VAT | 2026 | FOD Financiën, annual client listing, https://financien.belgium.be/nl/ondernemingen/btw/aangifte/jaarlijkse_klantenlisting |
-| Replacement return when no return is filed: highest grid 71 of the previous 12 months, at least | EUR 2,100 | 2026 | WBTW art. 53 § 1ter; FOD Financiën periodic return page, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/773cb22d-053e-4d4d-ae1f-7ddadab87d78 |
+| Replacement return when no return is filed: highest grid 71 of the previous 12 months, at least | EUR 2,100 | 2026 | WBTW art. 53 § 1ter, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/773cb22d-053e-4d4d-ae1f-7ddadab87d78 |
 | Input VAT on road vehicles and their costs, maximum deduction | 50% | 2026 | WBTW art. 45 § 2, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/58a466d6-c626-4369-854f-add149c06034 |
 | Late payment interest: fiscal rate (4% for 2026) plus 4 points | 8% a year | 2026 | WBTW art. 91 § 1; FOD Financiën payment page, https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling |
 
 ## The taxable base
 
 - **What goes on the return.** Supplies of goods and services in Belgium, intra-EU acquisitions, imports and services received from abroad where the Belgian customer owes the VAT. The base is the price excluding VAT.
-- **Domestic reverse charge for construction (medecontractant).** The customer pays the VAT on all work on immovable property (werk in onroerende staat, art. 19 § 2), on supply-and-fix of central heating, air conditioning, sanitary and electrical installations (not lighting), alarm and intercom systems, fitted kitchen and bathroom units, external shutters, wall and floor coverings, the repair and cleaning of those items, and staff hired out for such work. It applies when the supplier is established in Belgium and the customer itself files periodic returns (KB nr. 1 art. 20 §§ 1-2). The invoice shows no rate and no VAT and carries the wording "Verlegging van heffing", with the one-month dispute clause where the customer did not confirm its status (art. 20 § 3). The customer reports it in the return for the period the VAT falls due (art. 20 § 4).
-- **Other customer-pays cases.** Services from a non-established supplier taxed in Belgium under art. 21 § 2; goods supplied in Belgium by a non-established supplier to a Belgian-established customer who files returns (art. 51 § 2, 1° and 5°); gold (KB nr. 1 art. 20bis); greenhouse gas emission allowances (KB nr. 1 art. 20ter).
+- **Domestic reverse charge for construction (medecontractant).** The customer pays the VAT on all work on immovable property (werk in onroerende staat, art. 19 § 2), on supply-and-fix of central heating, air conditioning, sanitary and electrical installations (not lighting), alarm and intercom systems, fitted kitchen and bathroom units, external shutters, wall and floor coverings, the repair and cleaning of those items, and staff hired out for such work. It applies when the supplier is established in Belgium and the customer itself files periodic returns (KB nr. 1 art. 20 §§ 1-2). The invoice shows no rate and no VAT and states the facts that justify the reverse charge. Unless the customer has told the supplier that it does not file periodic returns, the invoice carries the set wording that starts "Verlegging van heffing" and gives the customer one month to dispute it in writing (art. 20 §§ 1 and 3). The customer reports it in the return for the period the VAT falls due (art. 20 § 4).
+- **Other customer-pays cases.** Services from a non-established supplier taxed in Belgium under art. 21 § 2 (art. 51 § 2, 1°); other goods and services supplied in Belgium by a non-established supplier to a Belgian-established customer who files returns (art. 51 § 2, 5°); gold (KB nr. 1 art. 20bis); greenhouse gas emission allowances (KB nr. 1 art. 20ter).
 - **Grid map** (KB nr. 1 annex II).
 
 | Transaction | Base grid | VAT grid | Notes |
@@ -82,12 +82,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Deadlines and filing
 
-- **Monthly return** by the 20th of the following month; **quarterly return** by the 25th of the month after the quarter (KB nr. 1 art. 17 §§ 1-2). The VAT is paid by the same date (art. 53 § 1, 3°; FOD Financiën, btw-kalender). Quarterly filers pay no monthly advances.
+- **Monthly return** by the 20th of the following month; **quarterly return** by the 25th of the month after the quarter (KB nr. 1 art. 17 §§ 1-2). The VAT is paid by the same date (art. 53 § 1, 3°; FOD Financiën, btw-kalender). Quarterly filers pay no quarterly advances any more (FOD Financiën, btw-kalender).
 - **2026 calendar (FOD Financiën).** Quarterly: Q4 2025 by 26 January 2026, Q1 by 27 April, Q2 by 25 July, Q3 by 25 October, Q4 2026 by 25 January 2027. Monthly: the 20th, except May (22 June 2026), August (21 September 2026) and November (21 December 2026); December 2026 by 20 January 2027.
 - **No summer extension from 2026.** A return after the legal date is late. As a 2026 transition, no late-filing fine is charged if the June or Q2 2026 return is filed by 10 August 2026, or the July 2026 return by 10 September 2026. Late filing still extends the limitation period by a year, delays the credit to the provision account, and blocks refund requests through the return for the next 6 months (FOD Financiën, periodic return page).
 - **Switching.** A quarterly filer that fails the test moves to monthly at the end of that quarter and notifies it by the 10th of the next month (KB nr. 1 art. 17 § 3).
 - **Corrections.** A material error found before the deadline: file a new return for the same period, which replaces the first. After the deadline: correct in the next return (art. 17 § 4).
-- **Intervat.** Returns and listings are filed electronically through Intervat (KB nr. 1 art. 18; KB nr. 23 art. 2; FOD Financiën). Paper form 625 only with a written exemption from the competent office.
+- **Intervat.** Returns and listings are filed electronically through Intervat (KB nr. 1 art. 18; KB nr. 23 art. 2; FOD Financiën). Paper form 625 only if the business or its agent cannot file electronically, with a signed written statement of the reasons to the competent office (KB nr. 1 art. 18 § 2; FOD Financiën, periodic return page).
 - **Replacement return.** No return within 3 months after the period: the administration proposes a replacement return for the highest grid 71 of the previous 12 months, or EUR 2,100 if that is higher or there is none. Filing the real return within one month ends it; otherwise it becomes final and payable (art. 53 § 1ter). An objection can be filed within 6 months through Intervat (KB nr. 1 art. 17bis).
 - **Annual client listing.** Before 31 March, listing each Belgian VAT-registered customer supplied in the previous year (more than EUR 250 excluding VAT per customer, FOD Financiën), with the total excluding VAT and the VAT charged (WBTW art. 53quinquies; KB nr. 23 art. 1 § 1). Customers making only art. 44 exempt supplies and non-taxable legal persons are left out. If there is nothing to list, tick the "nihil" box in the last return of the year (KB nr. 1 annex II, Kader VIII). On ceasing activity, file within 3 months (KB nr. 23 art. 1 § 3). The 2026 listing is due before 31 March 2027.
 - **Intra-EU listing (intracommunautaire opgave).** Part 1 lists, per EU VAT number, exempt intra-EU supplies of goods, ABC sales and services under the general B2B rule; part 2 covers call-off stock (WBTW art. 53sexies; KB nr. 50 art. 1 and 9). Monthly by the 20th; quarterly by the 25th while intra-EU supplies of goods stay at or below EUR 50,000 in the quarter and each of the four before. Once exceeded, monthly listings start, with the months already elapsed in the quarter due by the 25th of the next month (KB nr. 50 art. 5 and 11).
@@ -113,6 +113,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Intra-EU listing up to 2 months late | Part 1 EUR 25, part 2 EUR 15 per person listed; minimum 75, maximum 1,500 | KB nr. 44 annex, section 1, IV.2.B |
 | Invoice not issued on time | Per invoice EUR 50 (max 500), then 125 (max 1,250), then 250 (max 5,000) | KB nr. 44 annex, section 2, I.A (from 1 January 2026) |
 | No technical means to issue and receive structured e-invoices | EUR 1,500, then 3,000, then 5,000; a later offence counts only if found at least 3 months after the previous fine | KB nr. 44 annex, section 2, I.C |
+| Rounding of fines | The total fine is rounded down to the euro below EUR 250 and to the ten euros above | KB nr. 41 art. 4 § 1 |
 | Spontaneous correction | Full remission of proportional fines if corrected before any intervention by a tax administration | KB nr. 41 art. 3 |
 
 ## Cross-border points
@@ -151,7 +152,7 @@ expected:
   grid_71: 420
 ```
 
-**Example 2: quarterly return Q3 2026 with EU services, paid late, and a late client listing.** A consultancy files quarterly. In Q3 2026 it invoices EUR 20,000 at 21% to Belgian clients (grid 03, VAT 4,200 in 54) and EUR 30,000 of services to EU businesses (grid 44 and the intra-EU listing). It buys EUR 2,000 of advertising from an Irish entity (grid 88, VAT 420 in 55), EUR 1,000 of software from a US entity (grid 87, VAT 210 in 56) and EUR 5,000 of Belgian services at 21% (VAT 1,050). VAT due is 4,830; deductible VAT is 1,680; grid 71 is 3,150. The return is filed on time by 25 October 2026 but paid on 20 December 2026. Interest runs from 26 October: two started months, so 3,150 × 8% × 2/12 = EUR 42. The fine for late payment with a timely return is 5%, EUR 157.50. Separately, its 2026 client listing of 12 customers, due before 31 March 2027, is filed two months late: 12 × EUR 25 = EUR 300, inside the EUR 75 to EUR 1,500 range.
+**Example 2: quarterly return Q3 2026 with EU services, paid late, and a late client listing.** A consultancy files quarterly. In Q3 2026 it invoices EUR 20,000 at 21% to Belgian clients (grid 03, VAT 4,200 in 54) and EUR 30,000 of services to EU businesses (grid 44 and the intra-EU listing). It buys EUR 2,000 of advertising from an Irish entity (grid 88, VAT 420 in 55), EUR 1,000 of software from a US entity (grid 87, VAT 210 in 56) and EUR 5,000 of Belgian services at 21% (VAT 1,050). VAT due is 4,830; deductible VAT is 1,680; grid 71 is 3,150. The return is filed on time by 25 October 2026 but paid on 20 December 2026. Interest runs from 26 October: two started months, so 3,150 × 8% × 2/12 = EUR 42. The fine for late payment with a timely return is 5%, EUR 157.50, rounded down to EUR 157 (KB nr. 41 art. 4). Separately, its 2026 client listing of 12 customers, due before 31 March 2027, is filed two months late: 12 × EUR 25 = EUR 300, inside the EUR 75 to EUR 1,500 range.
 
 ```oa-check
 name: Belgium quarterly return Q3 2026, late payment and late client listing
@@ -171,14 +172,14 @@ steps:
   - grid_59: purchases_be_21 * 0.21 + grid_55 + grid_56
   - grid_71: vat_due - grid_59
   - interest: floor(grid_71 / 10) * 10 * 0.08 * months_late / 12
-  - late_payment_fine: grid_71 * 0.05
+  - late_payment_fine: floor(grid_71 * 0.05)
   - listing_fine: clamp(listed_customers * 25, 75, 1500)
 expected:
   vat_due: 4830
   grid_59: 1680
   grid_71: 3150
   interest: 42
-  late_payment_fine: 157.50
+  late_payment_fine: 157
   listing_fine: 300
 ```
 
@@ -206,8 +207,8 @@ expected:
 | KB nr. 1 (art. 17 frequency and deadlines from 10.01.2026; art. 18 electronic filing; art. 20 to 20ter reverse charge) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c69c7ee9-8e6d-48da-b9f7-c23cb025a777 | 2026-10-24 |
 | KB nr. 1 annex II (description of the return grids) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/0ac584ed-a3ad-4734-9537-160f30357de5 | 2026-10-24 |
 | KB nr. 20 (rates, Tables A, B and C) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 | 2026-10-24 |
-| KB nr. 23 (annual client listing) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/0e6d7db6-7de7-480e-89ab-5d0763e32251 | 2026-10-24 |
-| KB nr. 41 (proportional fines), coordination to 10.01.2026 | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d48c176f-6bdd-41fb-b0a1-725841887613 | 2026-10-24 |
+| KB nr. 23 (annual client listing) and its annex (model form 725) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/0e6d7db6-7de7-480e-89ab-5d0763e32251 | 2026-10-24 |
+| KB nr. 41 (proportional fines, art. 3 and 4, Table G), coordination to 10.01.2026 | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d48c176f-6bdd-41fb-b0a1-725841887613 | 2026-10-24 |
 | KB nr. 44 (non-proportional fines), coordination to 10.01.2026 | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1d5dbc36-f527-4d36-8673-b1267367e2ac | 2026-10-24 |
 | KB nr. 50 (intra-EU listing) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/90c85f66-9e8b-48bc-9032-ce1f7db88872 | 2026-10-24 |
 | FOD Financiën, periodieke btw-aangifte (frequency, Intervat, replacement return, no holiday scheme in 2026) | https://financien.belgium.be/nl/ondernemingen/btw/aangifte/periodieke-aangifte | 2026-10-24 |
@@ -215,7 +216,7 @@ expected:
 | FOD Financiën, jaarlijkse klantenlisting (EUR 250, 31 March, exemption turnover report) | https://financien.belgium.be/nl/ondernemingen/btw/aangifte/jaarlijkse_klantenlisting | 2026-10-24 |
 | FOD Financiën, betaling (8% late interest for 2026) | https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling | 2026-10-24 |
 
-Not yet confirmed: the EUR 250 per-customer floor of the client listing was found on the FOD Financiën page but not in the text of KB nr. 23 read; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; whether the 2026 transition that waives the late-filing fine for June, Q2 and July returns also lowers the late-payment fine from 10% to 5% is not stated in the sources read; any administrative tolerance for e-invoicing fines in the first months of 2026 was not found; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is left to belgium-vat-return.
+Not yet confirmed: the EUR 250 per-customer floor of the client listing is on the FOD Financiën page but not in KB nr. 23 (neither its articles nor its annex, model form 725, state an amount), so its legal basis was not found; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; the FOD Financiën page waives only the fine for late filing (KB nr. 44) for June, Q2 and July 2026 returns filed by 10 August or 10 September 2026; whether the late-payment fine on such a return is 5% or 10% (KB nr. 41 Table G, I.1 or I.2) is not stated in the sources read; any administrative tolerance for e-invoicing fines in the first months of 2026 was not found; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is left to belgium-vat-return.
 
 > Contributed by Michael Cutajar.
 
