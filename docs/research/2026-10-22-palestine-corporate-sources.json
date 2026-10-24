@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-22",
+  "source": "https://mjr.ogb.gov.ps/MergedLegislations/ViewText/111/قرار-بقانون-رقم-8-لسنة-2011م-بشأن-ضريبة-الدخل-فلسطين",
+  "authority": "Palestinian Official Gazette Bureau",
+  "text": "Consolidated Decree-Law8/2011; listed amendments4/2014,5/2015,14/2016",
+  "claim_locators": {
+    "entity_status": "article1",
+    "period": "article4",
+    "registration": "article2",
+    "deductions": "articles8–9",
+    "losses": "article10 incl mandatory accounts paragraph4",
+    "rates": "article16(2)–(3)",
+    "filing": "articles18–20",
+    "records": "article23",
+    "payment": "article30",
+    "penalties": "article36"
+  },
+  "limits": [
+    "Later amendments/emergency measures not fully reconciled.",
+    "Territorial administration not established.",
+    "No current filing portal or transaction exercised.",
+    "Initial review corrected loss article number and missing accounts condition."
+  ]
+}
