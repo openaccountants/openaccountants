@@ -64,7 +64,13 @@ See also, not repeated here:
 | Monthly fixed contribution for part years | EUR 376.78 artigiani; EUR 384.31 commercianti | 2026 | Circolare 14/2026, para. 2 |
 | Artigiani and commercianti massimale, insured before 1996 / first insured from 1996 | EUR 93,707 / EUR 122,295 | 2026 | Circolare 14/2026, para. 4 |
 | Artigiani and commercianti in the forfettario INPS regime | contributions cut by 35%; maternity EUR 7.44 still due in full | 2026 | L. 190/2014 art. 1(77); Circolare 14/2026, para. 8; Circolare 35/2016 |
-| Over-65s already drawing an INPS pension (artigiani, commercianti) | 50% cut | 2026 | Circolare 14/2026, para. 1 (L. 449/1997 art. 59(15)) |
+| Over-65s already drawing an INPS pension (artigiani, commercianti) | 50% cut; not available inside the forfettario INPS regime | 2026 | Circolare 14/2026, para. 1 (L. 449/1997 art. 59(15)); L. 190/2014 art. 1(80) |
+| Artigiani and commercianti first enrolled in 2025 | 50% cut of the IVS rate for 36 months from the start of activity; maternity (and the commercianti 0.48%) in full; not with the forfettario INPS regime or the over-65 cut; detail in `it-inps-artigiani-commercianti` | 2026 | L. 207/2024 art. 1(186); Circolare 14/2026, para. 1; INPS news page of 28 April 2025 on Circolare 83/2025 |
+| ISCRO (income support for gestione separata professionals): income limit for a 2026 claim, on income declared for the prior year | EUR 12,749.18 | 2026 | Circolare 4/2026, para. 10 (L. 213/2023 art. 1(144)(d)): https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15147/Allegati/16539_Circolare-numero-4-del-28-01-2026.pdf |
+| ISCRO monthly amount, paid for six months | 25% of the average professional income of the two years before the prior year, on a half-year basis; EUR 255.53 minimum, EUR 817.69 maximum | 2026 | Circolare 4/2026, para. 10; L. 213/2023 art. 1(147) and (148), as set out in Circolare 84/2024, para. 4 |
+| Reference rate for sanzioni civili (ECB main refinancing rate), from 16 September 2026 | 2.65% | 2026 | Circolare 98/2026, para. 1 and 3 |
+
+ISCRO is open to a gestione separata professional who is not a pensioner and has no other compulsory cover, does not receive the Assegno di inclusione, whose prior-year professional income fell below 70% of the average of the two years before, is up to date with contributions and has held the VAT number for the activity for at least three years (L. 213/2023 art. 1(144), quoted in Circolare 84/2024, para. 3). The 0.35% in the 26.07% rate funds it (Circolare 8/2026, para. 2). ISCRO months do not credit contributions (Circolare 84/2024, para. 4).
 
 The 35% cut is only for artigiani and commercianti. L. 190/2014 art. 1(76) limits the INPS forfettario regime to people running a business, so a gestione separata professional in the regime forfettario pays the full gestione separata rate.
 
@@ -98,15 +104,15 @@ Points that change the figure:
 | Redditi PF with Quadro RR, online | 31 October 2026 for 2025 income | D.P.R. 322/1998 art. 2(1) |
 
 - **Acconti.** For the gestione separata, the two equal acconti for 2026 total the 2026 rate on 80% of the 2025 professional income, within the 2026 massimale (Redditi PF 2026 instructions, Appendice). For artigiani and commercianti, the two equal acconti apply the 2026 rates to the 2025 business income above the 2026 minimale (same Appendice). The acconti paid are subtracted in Quadro RR to give the saldo.
-- **First year.** A new professional tells INPS the type of activity from its start date (L. 335/1995 art. 2(27)) and enrols through the Cassetto previdenziale per liberi professionisti (Circolare 62/2026). With no professional income in the prior year, the 80% rule gives a zero acconto, so the first year is paid as saldo the next June. This is our reading of the acconto rule; the circular does not state it in those words.
+- **First year.** A new professional tells INPS the type of activity from its start date (L. 335/1995 art. 2(27)) and enrols through the Cassetto previdenziale per liberi professionisti (Circolare 62/2026). With no professional income in the prior year, 80% of nil is nil, so no acconto is due and the first year is paid as saldo the next June (Redditi PF 2026 instructions, Appendice).
 - **Instalments.** The saldo and the first acconto can be paid in monthly instalments. The first falls on the saldo date, the rest on the 16th of each month, all by 16 December 2026 (D.Lgs. 241/1997 art. 20(1), as replaced by D.Lgs. 33/2025; Circolare 62/2026, para. 4). The second acconto cannot be split. For artigiani and commercianti only the part above the minimale can be split, never the fixed contributions.
 - **F24 causali** (Circolare 62/2026, para. 3 and 4): PXX (no other cover) or P10 (pensioner or otherwise insured), with R for instalments (PXXR, P10R). Interest and the 0.40% surcharge go on a separate line: DPPI for the gestione separata, API for artigiani, CPI for commercianti. Artigiani and commercianti use AP/APR and CP/CPR with the INPS codeline shown in the Cassetto previdenziale.
-- **Bank statements.** An F24 debit ("DELEGA F24", "AGENZIA DELLE ENTRATE") usually mixes IRPEF, VAT, local surcharges and INPS on one line. Do not book it as INPS without the F24 receipt. A "RIVALSA" credit from a client is income, not a contribution. A DPPI line is interest, not a contribution.
+- **Bank statements.** An F24 debit ("DELEGA F24", "AGENZIA DELLE ENTRATE") can mix IRPEF, VAT, local surcharges and INPS on one line. Do not book it as INPS without the F24 receipt. A "RIVALSA" credit from a client is income, not a contribution. A DPPI line is interest, not a contribution.
 - **Overpayments.** An acconto paid in excess is set against the next year's payments, or refunded on request by the saldo date of the year it relates to (L. 335/1995 art. 2(30)).
 
 ## Penalties and interest
 
-Late or missing gestione separata contributions bear the same sanzioni civili as commercianti (L. 335/1995 art. 2(30)), which are those of L. 388/2000 art. 116(8):
+Late or missing gestione separata contributions bear the same sanzioni civili as commercianti (L. 335/1995 art. 2(30)), which are those of L. 388/2000 art. 116(8) (lettera b-bis for the 50% case):
 
 | Case | Sanzione civile, per year | Cap |
 |---|---|---|
@@ -115,6 +121,9 @@ Late or missing gestione separata contributions bear the same sanzioni civili as
 | Evasion: return not filed or untrue, with intent not to pay | 30% | 60% |
 | Evasion self-reported within 12 months, before any INPS request, paid within 30 days | Official reference rate + 5.5 points | 40% |
 | Same, paid within 90 days | Official reference rate + 7.5 points | 40% |
+| Debt found by INPS itself or at an inspection, paid in one go within 30 days of the notice | Half the omissione or evasion sanction above | as above |
+
+With the reference rate at 2.65% from 16 September 2026, the omissione sanction is 8.15% a year, 2.65% if paid within 120 days, and the self-reported evasion rates are 8.15% (30 days) and 10.15% (90 days) (Circolare 98/2026, para. 3). The reference rate is the ECB main refinancing rate and moves with it (Circolare 98/2026, note 1). An INPS instalment plan (rateazione) for contribution debts requested from 16 September 2026 bears 4.65% a year (Circolare 98/2026, para. 2).
 
 Once the cap is reached and the debt is still unpaid, interest runs at the late-payment rate of D.P.R. 602/1973 art. 30 (L. 388/2000 art. 116(9)). Where the delay came from genuinely conflicting case law or rulings on whether contributions were due, only legal interest is due if paid by the deadline INPS sets (art. 116(10)). Paying the saldo and first acconto between 30 June and 30 July is not late if the 0.40% surcharge is added (Circolare 62/2026, para. 3).
 
@@ -200,13 +209,17 @@ expected:
 | L. 233/1990 art. 1 (artigiani and commercianti: minimale, massimale, 49%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-02;233~art1!vig=2026-10-24 | 2026-10-24 |
 | L. 190/2014 art. 1 (c. 64 deduction, c. 76 to 84 forfettari INPS regime) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1 | 2026-10-24 |
 | L. 662/1996 art. 1 c. 212 (rivalsa 4%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;662~art1!vig=2026-10-24 | 2026-10-24 |
+| INPS Circolare n. 98 of 11 September 2026, reference rate, sanzioni civili and rateazione interest from 16 September 2026 | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-10-24 |
+| INPS Circolare n. 4 of 28 January 2026, ISCRO income limit and amounts 2026 | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/01/Circolare_15147/Allegati/16539_Circolare-numero-4-del-28-01-2026.pdf | 2026-10-24 |
+| INPS Circolare n. 84 of 23 July 2024, ISCRO conditions and calculation (L. 213/2023 art. 1 c. 142 to 155) | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2024/07/Circolare_14640/Allegati/15257_Circolare-numero-84-del-23-07-2024.pdf | 2026-10-24 |
+| INPS news page, 28 April 2025, 50% cut for artigiani and commercianti first enrolled in 2025 (Circolare 83/2025) | https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.04.artigiani-e-commercianti-riduzione-contributiva-ai-nuovi-iscritti.html | 2026-10-24 |
 | L. 388/2000 art. 116 c. 8 to 10 (sanzioni civili) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388~art116!vig=2026-10-24 | 2026-10-24 |
 | L. 199/2025 art. 1 c. 82 to 86 (definizione agevolata 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 | 2026-10-24 |
 | TUIR art. 10 (deduction of compulsory contributions) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art10 | 2026-10-24 |
 | D.P.R. 322/1998 art. 2 (return deadline) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2 | 2026-10-24 |
 | Agenzia delle Entrate, Redditi PF 2026 instructions, Fascicolo 2 (Quadro RR, INPS acconti) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf2_istruzioni_2026_agg-13-05-2026 | 2026-10-24 |
 
-Not yet confirmed: the current value of the official reference rate used for sanzioni civili (INPS Circolare 98/2026 did not render outside a browser); whether any provision of L. 199/2025 after comma 100 changes self-employed INPS contributions (the February 2026 INPS circulars report none); the ISCRO benefit conditions; the rules for amateur sports workers (Quadro RR section III); Reg. (EC) 883/2004 arts. 11 and 13 on which country insures a person working in several states (EUR-Lex blocked scripts); the historic F24 code DPP from the earlier version; the professional fund rates (see `it-inps-artigiani-commercianti`); refunds of excess contributions beyond L. 335/1995 art. 2(30); suspension of contributions for illness or injury; the Quadro RP line number for the deduction in the 2027 form.
+Not yet confirmed: how INPS splits a sanzione civile across the 2026 periods before 16 September 2026, when the reference rate was lower (the ECB rate was 2.15% to 16 June and 2.40% from 17 June 2026); the text of L. 207/2024 art. 1(186) and L. 213/2023 art. 1(142) to (155) on Normattiva (both read through INPS documents only, as the article page did not load past its first commi); whether any provision of L. 199/2025 after comma 100 changes self-employed INPS contributions (the February 2026 INPS circulars report none); the rules for amateur sports workers (Quadro RR section III); Reg. (EC) 883/2004 arts. 11 and 13 on which country insures a person working in several states (EUR-Lex blocked scripts); the historic F24 code DPP from the earlier version; the professional fund rates (see `it-inps-artigiani-commercianti`); refunds of excess contributions beyond L. 335/1995 art. 2(30); suspension of contributions for illness or injury; the Quadro RP line number for the deduction in the 2027 form.
 
 > Contributed by OpenAccountants.
 
