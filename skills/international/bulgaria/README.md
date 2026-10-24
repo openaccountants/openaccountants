@@ -7,8 +7,6 @@ covered_by:
 partial:
   IT-IND: "bulgaria-income-tax still carries 2025 figures; rewrite for 2026 and the euro pending"
   VAT: "bulgaria-vat-return still carries 2025 figures; rewrite for 2026 and the euro pending"
-  SC: "bulgaria-social-contributions still carries 2025 figures; rewrite for 2026 pending"
-  PR: "bulgaria-payroll still carries 2025 figures; rewrite for 2026 pending"
 ---
 
 # Bulgaria: tax pack
@@ -22,8 +20,8 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 | IT-IND, individual income tax | bulgaria-income-tax | source-cited draft (2025 figures) |
 | IT-CORP, corporate income tax | bg-corporate-income-tax | source-cited draft |
 | VAT | bulgaria-vat-return | source-cited draft (2025 figures) |
-| SC, social contributions | bulgaria-social-contributions | source-cited draft (2025 figures) |
-| PR, payroll withholding | bulgaria-payroll | source-cited draft (2025 figures) |
+| SC, social contributions | bulgaria-social-contributions | source-cited draft |
+| PR, payroll withholding | bulgaria-payroll | source-cited draft |
 | TP, transfer pricing | bg-transfer-pricing | source-cited draft |
 | XB, cross-border | bg-cross-border | source-cited draft |
 
@@ -37,3 +35,8 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 - Personal Income Taxes Act (ZDDFL), consolidated: https://lex.bg/laws/ldoc/2135538631 (read 2026-10-23)
 - NRA, application of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/prilagane-na-SIDDO (read 2026-10-23)
 - NRA, list of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/spisak-sas-spogodbi (read 2026-10-23)
+- Social Insurance Code (KSO), consolidated: https://lex.bg/laws/ldoc/1597824512 (read 2026-10-24)
+- Health Insurance Act (ZZO), consolidated: https://lex.bg/laws/ldoc/2134412800 (read 2026-10-24)
+- State Social Insurance Budget Act for 2026, State Gazette 68/2026: https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 (read 2026-10-24)
+- National Health Insurance Fund Budget Act for 2026, State Gazette 68/2026: https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981 (read 2026-10-24)
+- Council of Ministers Decree 243/2025 on the 2026 minimum wage, State Gazette 98/2025: https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961 (read 2026-10-24)
