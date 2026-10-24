@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-10-22",
+  "verified_source": {
+    "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf",
+    "edition": "17 March 2025",
+    "locators": [
+      "question2",
+      "questions5\u201312",
+      "questions16\u201317"
+    ]
+  },
+  "access_failures": [
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?documentid=80761",
+      "result": "web tool inaccessible"
+    },
+    {
+      "url": "https://www.gov.gg/taxationstatementsofpractice",
+      "result": "web403; curl500; non-www curl500"
+    },
+    {
+      "url": "https://www.gov.gg/CHttpHandler.ashx?id=178595&p=0",
+      "result": "curl500"
+    }
+  ],
+  "limits": [
+    "No current domestic connected-party regime verified.",
+    "No new not-applicable finding.",
+    "Profile administrative statements are dated, not proof of unchanged2026 intake."
+  ]
+}
