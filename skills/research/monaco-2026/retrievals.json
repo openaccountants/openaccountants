@@ -1,0 +1,868 @@
+{
+  "notice": "Retrieval receipts are not assertions that every byte was read or that HTTP 200 returned the intended document. Read scopes and browser-only reads are in completion-research.md. Failed and superseded responses are preserved.",
+  "retrievals": [
+    {
+      "receipt_file": "archive-list-retrievals.json",
+      "id": "social-2025-preserved",
+      "url": "https://web.archive.org/web/20260810063035id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "attempted_at_utc": "2026-10-25T08:29:16.258395+00:00",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "receipt_file": "archive-list-retrievals.json",
+      "id": "carti-class-prior",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21@1977.02.11",
+      "attempted_at_utc": "2026-10-25T08:29:16.259772+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "receipt_file": "archive-list-retrievals.json",
+      "id": "ccss-before-amend",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688@2025.06.13",
+      "attempted_at_utc": "2026-10-25T08:29:16.260045+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "receipt_file": "cbcr-list-retrievals.json",
+      "id": "cbcr-channel",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/01-14-2019-37/",
+      "attempted_at_utc": "2026-10-25T08:44:24.259020+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/01-14-2019-37/",
+      "bytes": 32431,
+      "sha256": "e7c5b4fd84243ed2b80b367407b71ef92c746264e2f7141d2c4393f3db8ccfc8"
+    },
+    {
+      "receipt_file": "cross-social-list-retrievals.json",
+      "id": "france-social-convention",
+      "url": "https://www.cleiss.fr/pdf/conv_monaco.pdf",
+      "attempted_at_utc": "2026-10-25T08:36:18.783479+00:00",
+      "status": 200,
+      "final_url": "https://www.cleiss.fr/pdf/conv_monaco.pdf",
+      "bytes": 853406,
+      "sha256": "58d4679346f271c11aab5ceaa68e51dd47597da3ea47b56807c96fd61971849f"
+    },
+    {
+      "receipt_file": "cross-social-list-retrievals.json",
+      "id": "france-foreign-salary-current",
+      "url": "https://bofip.impots.gouv.fr/bofip/11242-PGP.html/identifiant=BOI-IR-PAS-10-10-20-20230706",
+      "attempted_at_utc": "2026-10-25T08:36:18.783931+00:00",
+      "status": 200,
+      "final_url": "https://bofip.impots.gouv.fr/bofip/11242-PGP.html/identifiant=BOI-IR-PAS-10-10-20-20230706",
+      "bytes": 80922,
+      "sha256": "389fb2c1c4ae1d96edf40b20f6ef81b07ffbc6e8e2d8059e86305c6c5f629a29"
+    },
+    {
+      "receipt_file": "cross-social-list-retrievals.json",
+      "id": "france-monaco-salary-reply",
+      "url": "https://questions.assemblee-nationale.fr/q15/15-9837QE.htm",
+      "attempted_at_utc": "2026-10-25T08:36:18.784059+00:00",
+      "status": 200,
+      "final_url": "https://questions.assemblee-nationale.fr/q15/15-9837QE.htm",
+      "bytes": 77173,
+      "sha256": "10946f0af8db250576fb02fc4c500ceeebae05324350565bc1a2cac23eccf4e8"
+    },
+    {
+      "receipt_file": "dated-social-list-retrievals.json",
+      "id": "car-2025-base",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/",
+      "attempted_at_utc": "2026-10-25T08:20:54.335671+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/",
+      "bytes": 23437,
+      "sha256": "6b484700cda953baa8e82d03408c2f8b7573f052174aa79c5a1181c1cf9953e2"
+    },
+    {
+      "receipt_file": "dated-social-list-retrievals.json",
+      "id": "cmrc-2025",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/",
+      "attempted_at_utc": "2026-10-25T08:20:54.336214+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/",
+      "bytes": 20736,
+      "sha256": "9849a426afe0b429fc75f9146c4375ae9f69a7607b372c17cbdf1eeb65d4627e"
+    },
+    {
+      "receipt_file": "dated-social-list-retrievals.json",
+      "id": "carti-2025-surcharge",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/",
+      "attempted_at_utc": "2026-10-25T08:20:54.336347+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/",
+      "bytes": 20939,
+      "sha256": "f119e55d2776443150b3fa095ede53c78d504982c74b9800ba49ce60001393f0"
+    },
+    {
+      "receipt_file": "dated-social-list-retrievals.json",
+      "id": "car-law",
+      "url": "https://legimonaco.mc/tnc/loi/1947/06-27-455/",
+      "attempted_at_utc": "2026-10-25T08:20:54.336433+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1947/06-27-455/",
+      "bytes": 135885,
+      "sha256": "956a1348d32c055a8fc0424564c23c231d63dcc029a67322124f3adaba18fae3"
+    },
+    {
+      "receipt_file": "dated-social-list-retrievals.json",
+      "id": "cleiss",
+      "url": "https://cleiss.fr/docs/cotisations/monaco.html",
+      "attempted_at_utc": "2026-10-25T08:20:54.336514+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cleiss.fr'. (_ssl.c:1082)>"
+    },
+    {
+      "receipt_file": "ecb-list-retrievals.json",
+      "id": "ecb-rates",
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+      "attempted_at_utc": "2026-10-25T08:52:59.342669+00:00",
+      "status": 200,
+      "final_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+      "bytes": 131224,
+      "sha256": "30e8494ac6245af48c70a5840568bd777ff74c79baae37dac3f2eb4bc260bc03"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "cbcr",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2017/12-14-6.713/",
+      "attempted_at_utc": "2026-10-25T08:04:49.058308+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/2017/12-14-6.713/",
+      "bytes": 50548,
+      "sha256": "3556bb4571ce4e84e539b1dcd00b5134a749621afacb803fb00e23b6ee87b862"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "social-2025",
+      "url": "https://www.en.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2024_MAJ_mai_2025.pdf",
+      "attempted_at_utc": "2026-10-25T08:04:49.058829+00:00",
+      "status": 200,
+      "final_url": "https://www.en.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2024_MAJ_mai_2025.pdf",
+      "bytes": 914791,
+      "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "ccss-rules",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688/",
+      "attempted_at_utc": "2026-10-25T08:04:49.058979+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688/",
+      "bytes": 138245,
+      "sha256": "cb183751a0dcf82e3e4ce5fe8f494987378a7257c6f46b311cf9841eb6d12625"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "dsm",
+      "url": "https://www.caisses-sociales.mc/content/download/2726/file/DSM_notice_explicative_detaillee.pdf",
+      "attempted_at_utc": "2026-10-25T08:04:49.059069+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/content/download/2726/file/DSM_notice_explicative_detaillee.pdf",
+      "bytes": 275101,
+      "sha256": "0b67e52087c5a2e2e07a6b6844c6cac6edb17db5a3bbfc93394a3aa8a3e4e34b"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "unemployment-details",
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-de-l-assurance-chomage",
+      "attempted_at_utc": "2026-10-25T08:04:49.059152+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-de-l-assurance-chomage",
+      "bytes": 19248,
+      "sha256": "80d207b2de45d1a7b9bc4605c0ebe98cdee04d18a214dc7cfa41388826f06830"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "cmrc-details",
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-cmrc",
+      "attempted_at_utc": "2026-10-25T08:04:49.298537+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/specificites-cmrc",
+      "bytes": 20959,
+      "sha256": "3ef3c130ebb69b0dc40ab5c9bfe04185664db3162cf4e18fcd8cc680776b8485"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "carti-classes",
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/montant-des-cotisations-et-choix-de-la-classe",
+      "attempted_at_utc": "2026-10-25T08:04:49.411533+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/montant-des-cotisations-et-choix-de-la-classe",
+      "bytes": 14418,
+      "sha256": "549bdd20cc3aeeeb42bf4b24a160d314d1512a564effb39dd636bb921b8e3836"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "independent-letter",
+      "url": "https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf",
+      "attempted_at_utc": "2026-10-25T08:04:49.454745+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf",
+      "bytes": 944001,
+      "sha256": "765aded39155dd365ce5bf0520fc687c68e15e92a223aa37344fa7a2171f13ad"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "isb-form",
+      "url": "https://monentreprise.gouv.mc/content/download/14111/file/d%C3%A9claration%20ISB%20120919.pdf?inLanguage=fre-FR&version=2",
+      "attempted_at_utc": "2026-10-25T08:04:49.628355+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "extra-list-retrievals.json",
+      "id": "vat-register",
+      "url": "https://monentreprise.gouv.mc/en/thematiques/obligations-legales-et-fiscalite/fiscalite/declarations-relatives-a-la-tva/how-to-register-for-e-vat",
+      "attempted_at_utc": "2026-10-25T08:04:49.770315+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "fr-calendar-list-retrievals.json",
+      "id": "fr-calendar",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "attempted_at_utc": "2026-10-25T08:59:19.247430+00:00",
+      "status": 200,
+      "final_url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "bytes": 213987,
+      "sha256": "9775d328f4e6f5368700e069c83b842badf2c85b146bff3cc6d0721a25508652"
+    },
+    {
+      "receipt_file": "history-list-retrievals.json",
+      "id": "social-publications",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/formulaires-et-documents/publications/autres-publications",
+      "attempted_at_utc": "2026-10-25T08:27:54.393271+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/formulaires-et-documents/publications/autres-publications",
+      "bytes": 69041,
+      "sha256": "af4f53a8f443228d88d49a4e78ce4feb2191641e07a96f9b95a0d222874b15ef"
+    },
+    {
+      "receipt_file": "history-list-retrievals.json",
+      "id": "carti-class-history",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21@2026.01.01",
+      "attempted_at_utc": "2026-10-25T08:27:54.393828+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "receipt_file": "history-list-retrievals.json",
+      "id": "ccss-history",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688@2026.01.01",
+      "attempted_at_utc": "2026-10-25T08:27:54.394071+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "receipt_file": "history-list-retrievals.json",
+      "id": "isb-form-en",
+      "url": "https://monentreprise.gouv.mc/en/content/download/14111/file/d%C3%A9claration%20ISB%20120919.pdf?inLanguage=fre-FR&version=2",
+      "attempted_at_utc": "2026-10-25T08:27:54.394190+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "last-law-list-retrievals.json",
+      "id": "crs-penal",
+      "url": "https://legimonaco.mc/tnc/loi/2016/12-19-1.445/",
+      "attempted_at_utc": "2026-10-25T08:51:40.873941+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/2016/12-19-1.445/",
+      "bytes": 24285,
+      "sha256": "e96894a9972f4b4f561d25ae250d03eb3baa9da4e4c2382a299805a116d261b9"
+    },
+    {
+      "receipt_file": "last-law-list-retrievals.json",
+      "id": "france-reporting-current",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546668/2026-10-25",
+      "attempted_at_utc": "2026-10-25T08:51:40.874486+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "executive-scale",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2006/01-26-373/",
+      "attempted_at_utc": "2026-10-25T08:14:48.461288+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/2006/01-26-373/",
+      "bytes": 25977,
+      "sha256": "ac29721275aa2530d94154a98b0101c3b3a69a4466f43bd210445e21546d54f1"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "camti-2025",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-580/",
+      "attempted_at_utc": "2026-10-25T08:14:48.462128+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-580/",
+      "bytes": 21534,
+      "sha256": "2280c143d94f59897e25aa5c433e7584c77aead8f948a44efdfc12ad337ba4d5"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "car-2025-variable",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/",
+      "attempted_at_utc": "2026-10-25T08:14:48.462340+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/",
+      "bytes": 22138,
+      "sha256": "26e2a8f734b80edb973bd9dfc7b4d5956dd700ff27eaef64e9002da853c2539e"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "car-2025-adjustment",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/",
+      "attempted_at_utc": "2026-10-25T08:14:48.462537+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/",
+      "bytes": 21984,
+      "sha256": "a42ed06b05f5eccfa0adae33772f1d65ba5f03108b3b50bd0ad58ee202c090cb"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "penal-code",
+      "url": "https://legimonaco.mc/code/code-penal/",
+      "attempted_at_utc": "2026-10-25T08:14:48.462677+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/code/code-penal/",
+      "bytes": 1240215,
+      "sha256": "95473c86c4307a25b7b47503927503f864096327dd19e85996e34e0f8b0d397e"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "journal-2025",
+      "url": "https://journaldemonaco.gouv.mc/en/Journaux/2025/Journal-8772",
+      "attempted_at_utc": "2026-10-25T08:14:48.699909+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "carti-law",
+      "url": "https://legimonaco.mc/tnc/loi/1958/01-17-644/",
+      "attempted_at_utc": "2026-10-25T08:14:48.711031+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1958/01-17-644/",
+      "bytes": 63244,
+      "sha256": "dbbc47fb702df2eb71d7398fda875ca56ff7749ff0f42f700dc8745cdb42c5df"
+    },
+    {
+      "receipt_file": "law-list-retrievals.json",
+      "id": "carti-2025-news",
+      "url": "https://legimonaco.mc/news/2025-11-12_1",
+      "attempted_at_utc": "2026-10-25T08:14:48.711278+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/news/2025-11-12_1/",
+      "bytes": 28654,
+      "sha256": "d1fe285d570cfd64b4f2a9e815e49005183eede5952e147d927b04b95df822f3"
+    },
+    {
+      "receipt_file": "payroll-detail-list-retrievals.json",
+      "id": "car-regulations-pdf",
+      "url": "https://www.caisses-sociales.mc/content/download/2232/12460?version=17",
+      "attempted_at_utc": "2026-10-25T08:37:04.899952+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/content/download/2232/12460?version=17",
+      "bytes": 122385,
+      "sha256": "e925d438127146fd298056de3468398847d99dbb6016b98b5249823810c4b449"
+    },
+    {
+      "receipt_file": "payroll-detail-list-retrievals.json",
+      "id": "director-declaration",
+      "url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/comment-declarer-les-administrateurs-salaries",
+      "attempted_at_utc": "2026-10-25T08:37:04.900461+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/media/multimedia/lightbox/comment-declarer-les-administrateurs-salaries",
+      "bytes": 14802,
+      "sha256": "07e3d91089c1f889199d626137b0a0901d796156f396c30da96f415f84987587"
+    },
+    {
+      "receipt_file": "payroll-final-list-retrievals.json",
+      "id": "payslip-law",
+      "url": "https://legimonaco.mc/tnc/loi/1958/01-11-638/",
+      "attempted_at_utc": "2026-10-25T08:37:42.837971+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1958/01-11-638/",
+      "bytes": 42010,
+      "sha256": "dc5f617947b6f92f2724a6f71c05fc1d3fc44b19cd7b80409ff653b17a13dc02"
+    },
+    {
+      "receipt_file": "payroll-final-list-retrievals.json",
+      "id": "payslip-mentions",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1958/04-24-58-150/",
+      "attempted_at_utc": "2026-10-25T08:37:42.838505+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/1958/04-24-58-150/",
+      "bytes": 27211,
+      "sha256": "98b826a36586ed0290a24aa332022af1aab7c0e5c40b3861f1351fa860700c17"
+    },
+    {
+      "receipt_file": "payroll-final-list-retrievals.json",
+      "id": "payslip-electronic",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/12-20-2019-1088/",
+      "attempted_at_utc": "2026-10-25T08:37:42.838644+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2019/12-20-2019-1088/",
+      "bytes": 27601,
+      "sha256": "b5bf28b660097790a46a3cf17f9c1d3f3483801ae89368184fd35ca14f308ba1"
+    },
+    {
+      "receipt_file": "payroll-final-list-retrievals.json",
+      "id": "domestic-contributions",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-de-gens-de-maison/cotisations",
+      "attempted_at_utc": "2026-10-25T08:37:42.838731+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-de-gens-de-maison/cotisations",
+      "bytes": 73348,
+      "sha256": "613cee3d806c46d18dd91375b0d2d95adf3d2636bb4ebbed369fc92cc1a125a8"
+    },
+    {
+      "receipt_file": "payroll-final-list-retrievals.json",
+      "id": "domestic-payslip",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-de-gens-de-maison/calcul-du-bulletin-de-salaire",
+      "attempted_at_utc": "2026-10-25T08:37:42.838814+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur",
+      "bytes": 71363,
+      "sha256": "dc728d2223522ee4f6a9a219a48ea200978796ab36031a1cac0afa86edff5fd2"
+    },
+    {
+      "receipt_file": "reference-rate-list-retrievals.json",
+      "id": "bdf-advances",
+      "url": "https://webstat.banque-france.fr/fr/catalogue/fm/FM.D.FR.EUR.FR2.TR.IFRTXCLT.YLD",
+      "attempted_at_utc": "2026-10-25T08:52:48.243117+00:00",
+      "status": 200,
+      "final_url": "https://webstat.banque-france.fr/fr/catalogue/fm/FM.D.FR.EUR.FR2.TR.IFRTXCLT.YLD",
+      "bytes": 480021,
+      "sha256": "6d034a2a678ddf690d8194b8d3012652164e32ba33504954b4463ceaf3b73bbc"
+    },
+    {
+      "receipt_file": "reference-rate-list-retrievals.json",
+      "id": "bdf-decision",
+      "url": "https://www.banque-france.fr/system/files/2023-10/Banque%20de%20France%20-%20D%C3%A9cision%20du%20Gouverneur%20du%208%20juillet%202005.pdf",
+      "attempted_at_utc": "2026-10-25T08:52:48.243661+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "reference-rate-list-retrievals.json",
+      "id": "bdf-rate-method",
+      "url": "https://www.banque-france.fr/fr/statistiques/themes-statistiques-et-series-webstat-associees/taux-et-cours",
+      "attempted_at_utc": "2026-10-25T08:52:48.243795+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "reporting-list-retrievals.json",
+      "id": "crs",
+      "url": "https://legimonaco.mc/tnc/ordonnance/2016/12-20-6.208/",
+      "attempted_at_utc": "2026-10-25T08:43:58.273469+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/2016/12-20-6.208/",
+      "bytes": 234033,
+      "sha256": "3a23f592431cbb61259af98332f0f4bc7a51b0f9cee805993bdfe9ad62111f1f"
+    },
+    {
+      "receipt_file": "social-boundary-list-retrievals.json",
+      "id": "ccss-early-2026",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688@2025.06.14",
+      "attempted_at_utc": "2026-10-25T08:40:01.855411+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688@2025.06.14/",
+      "bytes": 136240,
+      "sha256": "175034ca353824248ebeb03ba3a27160fbecd90473eef69fa9bc9871caa7821d"
+    },
+    {
+      "receipt_file": "social-boundary-list-retrievals.json",
+      "id": "domestic-law",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2023/12-07-2023-727/",
+      "attempted_at_utc": "2026-10-25T08:40:01.855892+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2023/12-07-2023-727/",
+      "bytes": 41387,
+      "sha256": "954ca8e64eb25b5154f889a648c8c9b72f2a264d6da063f5b00455f78ff1c312"
+    },
+    {
+      "receipt_file": "social-final-list-retrievals.json",
+      "id": "benefits-4739",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1971/06-22-4.739/",
+      "attempted_at_utc": "2026-10-25T08:24:59.009987+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1971/06-22-4.739/",
+      "bytes": 222224,
+      "sha256": "5fb10c472f804eb8b41f369b2084bd399f980da6a726a355a7e75382aa5789f4"
+    },
+    {
+      "receipt_file": "social-final-list-retrievals.json",
+      "id": "carti-class-old",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21/",
+      "attempted_at_utc": "2026-10-25T08:24:59.010509+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21/",
+      "bytes": 16802,
+      "sha256": "3ac5ca217a115dad79359aeb89d2b7b0eb386fa58b7a3a0a0e15b25c041c31fb"
+    },
+    {
+      "receipt_file": "social-final-list-retrievals.json",
+      "id": "carti-app",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1958/05-30-1.812/",
+      "attempted_at_utc": "2026-10-25T08:24:59.010642+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1958/05-30-1.812/",
+      "bytes": 63110,
+      "sha256": "a1cef3e3ff6ff99ff78886041f4a7e31a4f0b2665761a766329395c443e77592"
+    },
+    {
+      "receipt_file": "social-final-list-retrievals.json",
+      "id": "ccss-amend-2026",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2026/04-22-2026-201/",
+      "attempted_at_utc": "2026-10-25T08:24:59.010728+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2026/04-22-2026-201/",
+      "bytes": 23114,
+      "sha256": "03e30e5969e200b6db8829561497f55b764a79b38a88a2801a90e9bfa7870c81"
+    },
+    {
+      "receipt_file": "social-final-list-retrievals.json",
+      "id": "cmrc-parameters",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2023/12-11-2023-699/",
+      "attempted_at_utc": "2026-10-25T08:24:59.010809+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2023/12-11-2023-699/",
+      "bytes": 30852,
+      "sha256": "1253c9b76823d7496303aaed35fc56e1d09cfe03b236548985c37706b551030f"
+    },
+    {
+      "receipt_file": "social-route-list-retrievals.json",
+      "id": "independent-2025-capture",
+      "url": "https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf",
+      "attempted_at_utc": "2026-10-25T08:35:20.199918+00:00",
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf",
+      "bytes": 2256628,
+      "sha256": "83a38905c9576ede75bddd38138b26e7c083221a93675338cd7833781153cefd"
+    },
+    {
+      "receipt_file": "social-route-list-retrievals.json",
+      "id": "social-posting",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/detachement-a-l-etranger",
+      "attempted_at_utc": "2026-10-25T08:35:20.200435+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/detachement-a-l-etranger",
+      "bytes": 72119,
+      "sha256": "12f5b08a6ae3952dced6af3b42a4cf1f393a637a4937405d962215382b37a02e"
+    },
+    {
+      "receipt_file": "social-route-list-retrievals.json",
+      "id": "camti-regs",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1982/10-01-7.488/",
+      "attempted_at_utc": "2026-10-25T08:35:20.200570+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1982/10-01-7.488/",
+      "bytes": 34276,
+      "sha256": "e6fe1281ab28eccd46dc6b7fbb2f529bab4ced755c6e169de589554248cfdc11"
+    },
+    {
+      "receipt_file": "social-route-list-retrievals.json",
+      "id": "tax-france-salary",
+      "url": "https://bofip.impots.gouv.fr/bofip/11254-PGP.html",
+      "attempted_at_utc": "2026-10-25T08:35:20.200655+00:00",
+      "status": 200,
+      "final_url": "https://bofip.impots.gouv.fr/page-introuvable",
+      "bytes": 29870,
+      "sha256": "a065b7c15389270a994864df96ca93acf42a114be3b24db1c9d508f93230e595"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "company-modernisation",
+      "url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573",
+      "attempted_at_utc": "2026-10-25T08:03:47.556251+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/2025/04-08-1.573/",
+      "bytes": 202104,
+      "sha256": "1f86732630f4cffb02906b80e514c8aa41182a5924160e1eb5c7e0dd480420ba"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "business-licensing",
+      "url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+      "attempted_at_utc": "2026-10-25T08:03:47.556748+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1991/07-26-1.144/",
+      "bytes": 73366,
+      "sha256": "31fd932ab42cf6df4ace6843640d507a9ddae912e614878aa9807c8212044748"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "social-filing",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+      "attempted_at_utc": "2026-10-25T08:03:47.556908+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/modalites-declaratives",
+      "bytes": 74987,
+      "sha256": "8cf61b9876b7a31f8a69927483d44e3afcd018124df695fb433aa774bd55925c"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "commerce-code",
+      "url": "https://legimonaco.mc/code/code-commerce/",
+      "attempted_at_utc": "2026-10-25T08:03:47.557022+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/code/code-commerce/",
+      "bytes": 1054641,
+      "sha256": "70bb1b99bee3d3ad0479034807c5189dbaba22622552156fa6a5e980e95b3746"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "vat-code",
+      "url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires",
+      "attempted_at_utc": "2026-10-25T08:03:47.557122+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/code/code-taxes-chiffre-affaires/",
+      "bytes": 1946822,
+      "sha256": "afe4ba982e1877bc7e2bfc8039d18551ce8868cec7839179004bd6fb628525ca"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "personal-government",
+      "url": "https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco",
+      "attempted_at_utc": "2026-10-25T08:03:47.982353+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "france-personal-doctrine",
+      "url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+      "attempted_at_utc": "2026-10-25T08:03:48.211631+00:00",
+      "status": 200,
+      "final_url": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602",
+      "bytes": 109181,
+      "sha256": "fa26f2bf5e915784cdebeee1ffc9db473e9ca9b72af074292a7c272590c612b5"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "social-october-2026.pdf",
+      "url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "attempted_at_utc": "2026-10-25T08:03:48.298628+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "bytes": 914791,
+      "sha256": "deb6d290c5abeb4065e42bf5b0520800c49559e01ac3f15c7fd45cfff867a2f9"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "self-employed",
+      "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+      "attempted_at_utc": "2026-10-25T08:03:48.520432+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/cotisations",
+      "bytes": 90962,
+      "sha256": "075230fd6987444613056c686ccd11f534705a718ca8fb92131b8c79937ec640"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "residence",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+      "attempted_at_utc": "2026-10-25T08:03:48.682004+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/",
+      "bytes": 26639,
+      "sha256": "1b9f987f3ec800e565a84d3585b8fb05fd5193ac60166ae22b37c500b683fc4b"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "company-audit-reform",
+      "url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+      "attempted_at_utc": "2026-10-25T08:03:48.720150+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/2026/10-09-1.596/",
+      "bytes": 149445,
+      "sha256": "a3e255e9445fd4c8d8968f5ed5c6a640a208d07a84fc4c0ed5a71d87fff74750"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "isb-government",
+      "url": "https://monentreprise.gouv.mc/en/themes/accounting-obligations-and-tax/tax/other-taxes-and-duties/corporate-income-tax",
+      "attempted_at_utc": "2026-10-25T08:03:48.720943+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "treaty-france",
+      "url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+      "attempted_at_utc": "2026-10-25T08:03:48.862911+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/",
+      "bytes": 75130,
+      "sha256": "524447b13a97fe7c9c1390984da90de0b5b69e177dd133d4c26ed362c826c05b"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "minimum-tax-project",
+      "url": "https://legimonaco.mc/projet/1.129",
+      "attempted_at_utc": "2026-10-25T08:03:48.893326+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/projet/1.129/",
+      "bytes": 409540,
+      "sha256": "8417b725fc5232d49e7fba47681b29dc99b49aac853b6aa1d2ce2f187a249ff7"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "new-enterprises",
+      "url": "https://journaldemonaco.gouv.mc/fr/Journaux/1991/Journal-6996/Ordonnances-Souveraines-n-10.324-et-n-10.325-du-17-octobre-1991-relatives-a-l-impot-sur-les-benefices",
+      "attempted_at_utc": "2026-10-25T08:03:48.908575+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "personal-government-fr",
+      "url": "https://monservicepublic.gouv.mc/thematiques/fiscalite/informations-sur-la-fiscalite/informations-generales/la-fiscalite-monegasque",
+      "attempted_at_utc": "2026-10-25T08:03:49.051778+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "new-enterprises-law",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324",
+      "attempted_at_utc": "2026-10-25T08:03:49.178517+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1991/10-17-10.324/",
+      "bytes": 21997,
+      "sha256": "2fe3ee66bab1a207f92333aac69d30807f5817ffe3f3dc26ff023935d35a046b"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "isb-ord-3152",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152",
+      "attempted_at_utc": "2026-10-25T08:03:49.257423+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152/",
+      "bytes": 159183,
+      "sha256": "06968583babc46268c54df62256b941c3e76afc317dbd747192daf9273e06981"
+    },
+    {
+      "receipt_file": "source-list-retrievals.json",
+      "id": "social-current",
+      "url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+      "attempted_at_utc": "2026-10-25T08:03:49.275915+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations",
+      "bytes": 77247,
+      "sha256": "b1a0f899a08d3ae8faaf691bd3866e7be5d4cd6e1dcf7cb319a54b841a63218f"
+    },
+    {
+      "receipt_file": "supplement-list-retrievals.json",
+      "id": "carti-class-threshold",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2026/07-02-2026-366/",
+      "attempted_at_utc": "2026-10-25T08:22:53.688717+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2026/07-02-2026-366/",
+      "bytes": 21727,
+      "sha256": "db7ee74d6d2e01b1b82812c5c92dc5a5bb44fa8acd94296d6366de676a64f823"
+    },
+    {
+      "receipt_file": "supplement-list-retrievals.json",
+      "id": "invalidity-2025",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/11-21-2025-650/",
+      "attempted_at_utc": "2026-10-25T08:22:53.689359+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2025/11-21-2025-650/",
+      "bytes": 24681,
+      "sha256": "bd1d26e93710a82b270766514e092879c69403741a037a69b82e5382466a2625"
+    },
+    {
+      "receipt_file": "supplement-list-retrievals.json",
+      "id": "invalidity-rules",
+      "url": "https://legimonaco.mc/tnc/ordonnance/1987/03-06-8.811/",
+      "attempted_at_utc": "2026-10-25T08:22:53.689741+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "receipt_file": "supplement-list-retrievals.json",
+      "id": "commerce",
+      "url": "https://legimonaco.mc/code/code-commerce/",
+      "attempted_at_utc": "2026-10-25T08:22:53.689998+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/code/code-commerce/",
+      "bytes": 1054641,
+      "sha256": "fdaaec50fcc09741450098badc8bc43bd3efab36c051976d879af4a8e812b20d"
+    },
+    {
+      "receipt_file": "supplement-list-retrievals.json",
+      "id": "cleiss-www",
+      "url": "https://www.cleiss.fr/docs/cotisations/monaco.html",
+      "attempted_at_utc": "2026-10-25T08:22:53.690209+00:00",
+      "status": 200,
+      "final_url": "https://www.cleiss.fr/docs/cotisations/monaco.html",
+      "bytes": 13512,
+      "sha256": "96ecaa822fcefdb9d552c354d06f2f043825c63ea8de804b182589df5854158f"
+    },
+    {
+      "receipt_file": "verified-history-list-retrievals.json",
+      "id": "carti-class-1977",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21@1977.02.12",
+      "attempted_at_utc": "2026-10-25T08:33:14.857158+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/1977/01-21-77-21@1977.02.12/",
+      "bytes": 21729,
+      "sha256": "9689351120576979632286925658f31e6332dc7d59bfb1ea91800d49121dc92f"
+    },
+    {
+      "receipt_file": "verified-history-list-retrievals.json",
+      "id": "car-base-2024",
+      "url": "https://legimonaco.mc/tnc/arrete-ministeriel/2024/10-24-2024-579/",
+      "attempted_at_utc": "2026-10-25T08:33:14.857647+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/arrete-ministeriel/2024/10-24-2024-579/",
+      "bytes": 16695,
+      "sha256": "dcd543e74296fcd137342e9a29e4f2336fe6f7b648779d473f249b62c3a485ed"
+    },
+    {
+      "receipt_file": "verified-history-list-retrievals.json",
+      "id": "social-2025-dec-capture",
+      "url": "https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "attempted_at_utc": "2026-10-25T08:33:14.857775+00:00",
+      "status": 200,
+      "final_url": "https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf",
+      "bytes": 1468694,
+      "sha256": "68c460fc4636e341ff3bcdc49b3d6d5c4498e1be6fca9f0266e7bad6bd7085ea"
+    },
+    {
+      "receipt_file": "verified-history-list-retrievals.json",
+      "id": "french-reporting-current",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546668/2026-10-25",
+      "attempted_at_utc": "2026-10-25T08:33:14.857857+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt_file": "wage-list-retrievals.json",
+      "id": "wage-law",
+      "url": "https://legimonaco.mc/tnc/loi/1963/03-16-739/",
+      "attempted_at_utc": "2026-10-25T08:36:36.844271+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1963/03-16-739/",
+      "bytes": 53647,
+      "sha256": "3efeb19f0ba4a54136645fb4ecfdce215436b18d8ce3238fb1bc5048590a86d5"
+    },
+    {
+      "receipt_file": "wage-list-retrievals.json",
+      "id": "wage-january",
+      "url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2025/12-19-2025u13@2026.01.01",
+      "attempted_at_utc": "2026-10-25T08:36:36.844762+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2025/12-19-2025u13@2026.01.01/",
+      "bytes": 21395,
+      "sha256": "23b9480db5d21aa6775de087e72d70bbc7d7eebe7901ff386a5a4d3c8f4bc30a"
+    },
+    {
+      "receipt_file": "wage-list-retrievals.json",
+      "id": "wage-june",
+      "url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2026/05-26-2026-8/",
+      "attempted_at_utc": "2026-10-25T08:36:36.844903+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/autre-texte-reglementaire/2026/05-26-2026-8/",
+      "bytes": 19756,
+      "sha256": "43dd057972aca5169c5e803afbd937d8ddfd4d268f435f7690152f9cb4b19e82"
+    },
+    {
+      "receipt_file": "wage-list-retrievals.json",
+      "id": "hire-law",
+      "url": "https://legimonaco.mc/tnc/loi/1957/07-17-629/",
+      "attempted_at_utc": "2026-10-25T08:36:36.845014+00:00",
+      "status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/1957/07-17-629/",
+      "bytes": 41582,
+      "sha256": "2291897e7e54e0ec8aa2de676ef9b629bf6e933570b875e2aeb3ce4f8d768611"
+    }
+  ]
+}

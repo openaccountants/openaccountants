@@ -1,26 +1,39 @@
 ---
 name: mc-income-tax
-description: "Monaco individual income tax and residence reference for 2026. Covers the official absence of resident personal income tax within its stated scope, French national treaty screening, fiscal residence certificate evidence and the alternative principal stay test. Use for Monaco resident tax, French citizens in Monaco, residence certificates and relocation questions. Separates personal receipts from business profits, VAT, social contributions and foreign taxation. Includes two arithmetic controls with stated factual assumptions and identifies unverified foreign procedures. Source cited partial draft awaiting review by a named Monaco professional."
+description: "Monaco individual income tax and residence reference for 2026. Covers the official absence of resident personal income tax within its stated scope, French national treaty screening, fiscal residence certificate evidence and the alternative principal stay test. Use for Monaco resident tax, French citizens in Monaco, residence certificates and relocation questions. Separates personal receipts from business profits, VAT, social contributions and foreign taxation. Includes two arithmetic controls with stated factual assumptions and routes foreign computations to the relevant country Guide. Source cited draft awaiting review by a named Monaco professional."
 jurisdiction: MC
 category: international
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-25
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.2
+version: 1.3
 ---
 
 # Monaco individual income tax and residence
 
-> **Source-cited draft; partial scope.** Checked 24 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
+> **Source-cited draft.** Checked 25 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
 
 ## Who this applies to
 
 Tax year 2026. The official Monaco government describes absence of personal income tax for Monegasque nationals and residents genuinely established in Monaco, subject to the France–Monaco convention. It expressly preserves other states' taxation. This is not a rule exempting every receipt earned by any person with a residence card. An individual carrying on an industrial or commercial business must separately test ISB: article 4 expressly provides for assessment in the proprietor's name. [Government, Tax in Monaco](https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco); [Ordinance 3.152, arts. 1, 4](https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152).
 
-French nationals require a separate treaty analysis. Article 7's historic test is five years of habitual Monaco residence at 13 October 1962, not merely arrival before that date. French official doctrine also addresses continuous residence since birth, sovereign/public service, marriage, children and historic dual-national cases. Do not treat all French nationals as identical or a modern residence certificate as treaty exemption evidence. [Convention, art. 7](https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/); [BOI-INT-CVB-MCO-10, I-A](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602).
+Resolve nationality and residence in this order. French–Monegasque dual nationals count as Monegasque for the convention. For other French nationals, article 7 ordinarily gives France worldwide-income taxation as if resident in France. Test the following exceptions on the facts, using the cited French tax administration doctrine rather than treating every French passport holder alike. [Convention, art. 7](https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/); [BOI-INT-CVB-MCO-10, I-A §§10–210](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602).
+
+| Facts established | Article 7 result/control | Doctrine paragraph |
+|---|---|---|
+| Habitual residence established before 13 October 1957 and maintained permanently | The five-year test at 13 October 1962 is met; establish the historic evidence | 30–40 |
+| Born in Monaco and continuously resident there since birth | Outside article 7(1), whatever the birth date. A French maternity stay exclusively for birth followed by immediate return to the parents' Monaco home is included | 30 |
+| Member of or attached to the sovereign household | Express treaty exception, regardless of arrival date | 50 |
+| Monaco public official/agent/employee who established habitual residence after 13 October 1957 but before 13 October 1962 | Exception survives retirement; loss of the public-service status otherwise removes it | 60 |
+| Married to a Monegasque or a French person themselves outside article 7(1) | Maintain habitual Monaco residence from marriage and avoid the separate-taxation cases in CGI art. 6(4). Divorce ends this derivative exception; death does not | 80–90 |
+| Married to another foreign national, other than Monegasque | Derivative exception only for marriage before 1 January 1986, continuous Monaco residence since marriage and no art. 6(4) separate taxation | 100 |
+| French minor with a Monegasque parent or French certificate-of-domicile parent, living continuously in the Monaco parental home from birth | Apply the custody/continuous-residence conditions. Majority does not remove the birth-and-continuity exception | 110 |
+| French/other foreign dual national relying on the historic concession | Require move before 29 December 1995, both nationalities at the move, retention of the foreign nationality, continuous Monaco residence, no French domestic-residence criterion, and evidence lodged by 31 December 1996. For moves 8 July 1978–12 July 1991 require departure from a country other than France; for 13 July 1991–29 December 1995 also require foreign nationality acquired before French nationality | 120–190 |
+
+For historic and birth cases, a treaty **certificate of domicile** is normally valid three years and renewable; alternative evidence can prove the facts where it cannot be produced. An interruption of habitual residence removes the historic status on return. Even with habitual Monaco residence, French main professional activity or economic interests can suspend the certificate's effects under the domestic French test. A Monaco residence card or one-year fiscal certificate does not by itself establish any article 7 exception. Disputes go through the administrative remedies before the mixed consultative commission. [Doctrine §§30–40, 180–210](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602).
 
 ## Rates, bands and thresholds
 
@@ -39,15 +52,15 @@ A fiscal certificate applicant of foreign nationality needs a current residence 
 
 ## Deadlines and filing
 
-The government-described absence of Monaco personal income tax does not create a resident personal-income-tax return computation here. Establish and track any French or other foreign return separately; this Guide has not verified its deadlines or forms. For a Monaco fiscal residence certificate, apply to the Direction de la Sûreté Publique with article 3 evidence and renew against the one-year validity. The administrative certificate under articles 1–2 is different and expires after six months. A French treaty certificate of domicile is also a distinct document. [Arts. 1–4](https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/); [I-A-1-b, residence evidence](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602).
+The government-described absence of Monaco personal income tax does not create a resident personal-income-tax return computation here. A French national within article 7(1) files the French worldwide-income declaration with SIP Menton under BOFiP §10. A French person outside it with French-source taxable income files with the French non-resident tax directorate under §370. Use the [France personal-income-tax Guide](../france/fr-personal-income-tax.md) for the French base, rates, forms and year-specific calendar; this Guide determines the Monaco residence/treaty branch and does not substitute a zero calculation for French tax. For a Monaco fiscal residence certificate, apply to the Direction de la Sûreté Publique with article 3 evidence and renew against the one-year validity. The administrative certificate under articles 1–2 is different and expires after six months. A French treaty certificate of domicile is also a distinct document. [Arts. 1–4](https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/); [I-A-1-b, residence evidence](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602).
 
 ## Penalties and interest
 
-Do not invent a Monaco personal-income-tax late-return penalty where this Guide has no such return. Article 3 residence declarations are made under the penalties referenced to Penal Code article 98; the current penalty amounts and foreign personal-tax sanctions have not been verified here. Business ISB, VAT and social defaults have separate sourced rules in the companion Guides. [Art. 3](https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/).
+Do not invent a Monaco personal-income-tax late-return penalty where this Guide has no such return. False statements or documents used to obtain, or attempt to obtain, the residence document fall under Penal Code article 98: three months to one year imprisonment and the article 26(2) fine of EUR 2,250–9,000, or either penalty alone. The same provision covers use or attempted use of the document. This is a document offence, not an automatic penalty for falling short of 183 days. French tax-return sanctions follow the French regime separately. Business ISB, VAT and social defaults have separate sourced rules in the companion Guides. [Art. 3](https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/); [Penal Code, arts. 26(2), 98](https://legimonaco.mc/code/code-penal/).
 
 ## Cross-border points
 
-Resolve nationality, actual residence, French article 7 exceptions, foreign-source income and any foreign residence claim before a conclusion. The French doctrine treats residence interruptions and foreign economic/professional connections as material even for historic cases. Do not infer treaty benefits from no Monaco personal income tax. French and other-country tax, social-security affiliation and treaty entitlement remain separate working papers. [I-A-1 and I-A-2](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602); [Government fiscal scope](https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco).
+Resolve nationality, actual residence, French article 7 exceptions, foreign-source income and any foreign residence claim before a conclusion. The French doctrine treats residence interruptions and foreign economic/professional connections as material even for historic cases. Do not infer treaty benefits from no Monaco personal income tax. French and other-country tax, social-security affiliation and treaty entitlement remain separate working papers. BOFiP §§220–230 distinguishes article 7 income-tax residence from the separate French social-levy tests. French-source real-property income/gains remain taxable under the French rules even for residents outside article 7 (§360). For pensions, §340 distinguishes where all or most of the underlying work occurred and requires the residence and paying-body evidence before exemption from French withholding. Do not extend the convention to every foreign treaty: §260 states that French nationals taxed only through article 7 are not French residents for France’s third-country treaties, while providing its stated investment-income credit concession. [I-A-1 and I-A-2](https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602); [Government fiscal scope](https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco).
 
 ## Two worked examples that recompute
 
@@ -100,15 +113,14 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| Government, personal tax fiscal paragraphs; successful preserved retrieval, later 403 | https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco | 2026-10-24 |
-| Ordinance 3.152, arts. 1 and 4 | https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152 | 2026-10-24 |
-| France–Monaco convention, arts. 7 and 22 | https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/ | 2026-10-24 |
-| BOI-INT-CVB-MCO-10, I-A-1 and I-A-2 | https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602 | 2026-10-24 |
-| Ordinance 8.566, arts. 1–4 | https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/ | 2026-10-24 |
+| Government, individual taxation, freshly read in normal browser after script 403 | https://monservicepublic.gouv.mc/en/themes/tax/information/general-information/tax-in-monaco | 2026-10-25 |
+| Ordinance 3.152, arts. 1 and 4 | https://legimonaco.mc/tnc/ordonnance/1964/03-19-3.152 | 2026-10-25 |
+| France–Monaco convention, arts. 7 and 22 | https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/ | 2026-10-25 |
+| BOI-INT-CVB-MCO-10, I-A-1 and I-A-2 | https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant=BOI-INT-CVB-MCO-10-20210602 | 2026-10-25 |
+| Ordinance 8.566, arts. 1–4 | https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/ | 2026-10-25 |
+| Penal Code, arts. 26(2) and 98 | https://legimonaco.mc/code/code-penal/ | 2026-10-25 |
 
-The government personal-tax page was read from the successful 15:18 UTC retrieval on this date. Its later recheck returned HTTP 403. That failure is recorded in the [source register](../../../docs/research/2026-10-24-monaco-sources.json); it is not a fresh successful retrieval.
-
-**Not yet confirmed:** individual foreign returns, full treaty-exception applications, residence declaration sanctions and estate/transaction-tax computations. The alternative day-count example does not close those gaps.
+**Scope boundary:** France and other states compute their own taxes on the relevant income; estate, gift and transaction duties require separate Guides. Those taxes are not erased by the Monaco personal-income-tax result or a residence certificate. The government page was freshly read in the normal browser on 25 October after the scripted request returned 403.
 
 <!-- openaccountants-cta-block -->
 

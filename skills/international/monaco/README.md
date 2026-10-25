@@ -10,33 +10,28 @@ covered_by:
   PR: mc-payroll-social
   TP: mc-transfer-pricing
   XB: mc-cross-border
-partial:
-  IT-IND: "French/foreign tax applications, full residence exception procedures and sanctions remain incomplete."
-  IT-CORP: "Live forms, executive scale, interest/participation/reorganisation rules and large-group obligations remain incomplete."
-  VAT: "Live filing onboarding, reduced/special regimes, imports/intra-community reporting and staged invoicing changes remain incomplete."
-  SC: "January–September 2026 parameters, full bases, director/independent schemes and bilateral affiliation remain incomplete."
-  PR: "Foreign withholding, special workers, full payroll compliance and operational pay-slip checks remain incomplete."
-  TP: "Formal documentation, CbCR, disclosures, retention, agreements and separate penalties remain unverified."
-  XB: "Treaty inventory/rates, exit relief, foreign procedures, reporting and minimum-tax implementation remain incomplete."
+partial: {}
 ---
 
 # Monaco tax pack
 
-2026 source-cited drafts checked 24 October 2026. All seven tax domains remain applicable and partial. No domain is declared inapplicable: individual and payroll Guides must screen personal-tax absence, French exceptions, business activity and foreign duties. Payroll and social contributions share one Guide. Presence, source retrieval, arithmetic, independent review and CI do not establish completed coverage or named professional review.
+2026 source-cited drafts checked 25 October 2026. The seven applicable tax domains are covered for ordinary taxpayers and computations on the stated facts. Payroll and social contributions share one Guide. All eight Guides remain tier 2: no named Monaco professional has signed off. Source coverage, independent AI review and arithmetic validation are distinct from professional attestation and from a maintainer merging this PR.
 
-| Domain | Guide | Quality | Scope |
-|---|---|---|---|
-| IT-IND | [Individual tax](mc-income-tax.md) | source-cited draft | Partial |
-| IT-CORP | [Business profits tax](mc-corporate-income-tax.md) | source-cited draft | Partial |
-| VAT | [VAT](monaco-vat.md) | source-cited draft | Partial |
-| SC, PR | [Payroll/social](mc-payroll-social.md) | source-cited draft | Partial; ordinary October 2026 schedule |
-| TP | [Transfer pricing](mc-transfer-pricing.md) | source-cited draft | Partial |
-| XB | [Cross-border](mc-cross-border.md) | source-cited draft | Partial |
+| Domain | Guide | Ordinary coverage |
+|---|---|---|
+| IT-IND | [Individual tax](mc-income-tax.md) | Genuine residence, full French-exception screen, certificates, foreign filing destination and sanctions; French calculations route to the France Guide |
+| IT-CORP | [Business profits tax](mc-corporate-income-tax.md) | Scope, base, deductions, executive scale, dated shareholder interest, losses/carryback, participation, disposals, cessation, advances and DSF filing |
+| VAT | [VAT](monaco-vat.md) | Rates/franchise, tax points, input coefficients/capital adjustments, refunds, imports/EU trade, DSF onboarding/returns and invoicing |
+| SC, PR | [Payroll/social](mc-payroll-social.md) | Both 2026 rate periods, bases/caps/rounding, directors, domestic and self-employed schemes, hiring/payslips, France collection and bilateral affiliation |
+| TP | [Transfer pricing](mc-transfer-pricing.md) | Normal foreign conditions, evidence, related deduction tests, disclosures/retention, CbCR population/notification/EAI filing and sanctions |
+| XB | [Cross-border](mc-cross-border.md) | Residence/source/PE decisions, foreign credits and participation, cessation, employment/social routing, CRS account-holder classification and CbCR routing |
 
-[Overview](mc-tax-overview.md) routes questions; [formation](mc-company-formation.md) retains and corrects the existing Accounting packs topic. The six inherited paths and their platform attribution fields are preserved. The [research report](../../../docs/research/2026-10-24-monaco-research.md) maps corrections, evidence and outstanding work. The [source register](../../../docs/research/2026-10-24-monaco-sources.json) records actual retrieval timestamps and hashes, including failed rechecks. Each Guide ends with its own official-source table and read date.
+[Overview](mc-tax-overview.md) is the entry point. [Formation](mc-company-formation.md) preserves the existing Accounting packs topic with current capital/permission corrections; its exhaustive registry, beneficial-owner, accounts/audit and October-reform implementation remain partial. Formation is not one of the seven tax domains and does not add a completed domain.
 
-The official ISB statute uses at least 25% foreign turnover; the government summary says more than 25%. October contribution tables must not be backdated. The official letter's URL says October 2025 but the document says October 2026. October company reform has specific deferred provisions. Minimum-tax project text does not establish current enacted obligations. See the linked primary sources and research report before relying on those boundaries.
+Niche regimes remain outside this ordinary pack: banking/insurance and specialised tax credits; special VAT margin/travel/online schemes and development property; sector-specific flat social bases and derogatory CMRC contracts; formal advance/corresponding pricing agreements; a worldwide treaty-rate/refund atlas; financial-institution industry implementation; and multinational minimum-tax computations. The Guides identify those boundaries without asserting that a tax, treaty, reporting duty or relief is absent. These boundaries follow the repository’s distinction between an ordinary missing taxpayer/computation and a specialist regime.
 
-The [fresh independent whole-pack source review and correction record](../../../docs/research/2026-10-24-monaco-pack-review.md) covers original source `96fe5f2a` and Guide corrections at `b978b73e`, with the final exact-source provenance recheck recorded there. The reviewer found no material tax-law or calculation errors within the stated scope, independently recomputed all 14 controls, and freshly retrieved the 19 registered sources plus three corroborating instruments. The original platform-footer, category, legacy-key and gap-placement findings were corrected and rechecked. The report distinguishes actual passages read from retrieval success and records the remaining coverage limits.
+The statute uses **at least 25%** foreign turnover, despite the government summary’s stricter wording. The payroll Guide separates January–September and October–December and the June minimum-wage change. Earlier CSM letters were recovered from dated archive captures after the live download IDs were replaced with October 2026 documents; the receipts identify each original URL and capture. Domestic-staff relief includes exactly **254 hours** under the native law, despite the authority summary’s “below” wording. The shareholder-interest reference is derived through the Banque de France decision and ECB effective-date history, with later dates requiring rechecking. Project 1.129 is not enacted-law evidence. Every Guide links the operative provisions.
 
-All eight Guides remain tier 2, all seven domains remain partial and no named Monaco professional has signed off. Issue #410 remains open. Local schema, strict metadata and arithmetic checks pass; 129 repository tests and 40 MCP tests also pass on the corrected Guide source. One Monaco country batch and one PR follow the independent-review gate. Published-head CI and platform ingestion are separate from source review and are recorded on the PR/issue after publication.
+The six inherited Guide paths, categories, attribution fields and platform footers are preserved; the two added tax slugs are retained. The prior [research](../../../docs/research/2026-10-24-monaco-research.md), [receipts](../../../docs/research/2026-10-24-monaco-sources.json) and [partial-scope review](../../../docs/research/2026-10-24-monaco-pack-review.md) remain unchanged as history. They do not review the expanded pack. The current [research and source-reading record](../../research/monaco-2026/completion-research.md), [retrieval receipts](../../research/monaco-2026/retrievals.json) and [fresh independent whole-pack review](../../research/monaco-2026/independent-review.md) record this continuation. Each computational Guide has exactly two recomputing examples, fourteen across the pack; additional boundary controls live with the research.
+
+Country issue: [#410](https://github.com/openaccountants/openaccountants/issues/410). A maintainer merge and named professional review remain separate gates. Do not infer a merged/closed issue, live ingestion or a filed taxpayer return from these source documents.
