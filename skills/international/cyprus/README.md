@@ -14,13 +14,13 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | source-cited draft |
-| IT-CORP, corporate income tax | cy-corporate-tax | source-cited draft |
-| VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | source-cited draft |
-| SC, social contributions | cyprus-social-contributions | source-cited draft |
-| PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | source-cited draft |
-| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | source-cited draft |
+| IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | checked against the law |
+| IT-CORP, corporate income tax | cy-corporate-tax | checked against the law |
+| VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | checked against the law |
+| SC, social contributions | cyprus-social-contributions | sourced from the law |
+| PR, payroll withholding | cyprus-payroll | sourced from the law |
+| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | checked against the law |
+| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | sourced from the law |
 
 ## Official sources
 
