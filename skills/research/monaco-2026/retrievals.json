@@ -255,6 +255,16 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "receipt_file": "independent-enrolment-list-retrievals.json",
+      "id": "independent-enrolment",
+      "url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/adhesion",
+      "attempted_at_utc": "2026-10-25T09:08:58.262783+00:00",
+      "status": 200,
+      "final_url": "https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/adhesion",
+      "bytes": 94256,
+      "sha256": "0881616c8e9826287c76dc165b7adfbac61ac3733f98e75c9870e8d8d863f7f8"
+    },
+    {
       "receipt_file": "last-law-list-retrievals.json",
       "id": "crs-penal",
       "url": "https://legimonaco.mc/tnc/loi/2016/12-19-1.445/",

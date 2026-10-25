@@ -120,7 +120,7 @@ expected:
 | Ordinance 8.566, arts. 1–4 | https://legimonaco.mc/tnc/ordonnance/1986/03-28-8.566/ | 2026-10-25 |
 | Penal Code, arts. 26(2) and 98 | https://legimonaco.mc/code/code-penal/ | 2026-10-25 |
 
-**Scope boundary:** France and other states compute their own taxes on the relevant income; estate, gift and transaction duties require separate Guides. Those taxes are not erased by the Monaco personal-income-tax result or a residence certificate. The government page was freshly read in the normal browser on 25 October after the scripted request returned 403.
+**Not yet confirmed:** estate, gift and transaction-duty computations and other-country tax applications beyond the cited French screening/routing. France and other states compute their own taxes on the relevant income; those duties require separate Guides. Those taxes are not erased by the Monaco personal-income-tax result or a residence certificate. The government page was freshly read in the normal browser on 25 October after the scripted request returned 403.
 
 <!-- openaccountants-cta-block -->
 

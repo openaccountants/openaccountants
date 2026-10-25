@@ -18,28 +18,28 @@
     {
       "path": "skills/international/monaco/mc-corporate-income-tax.md",
       "before_sha256": "b6a4cbb710206ce6d614512afbca0aa812c719e051569d00856138a0706505a3",
-      "after_sha256": "95675ef5829a3a12cd792323174c278f189236ad4c7eaab25bb0c5d63e743f0b",
+      "after_sha256": "e7d84e50c7d041e6dc36ece5880a436353a84dd57c49f2afa574d1b7964d25ff",
       "platform_fields_preserved": true,
       "cta_preserved": true
     },
     {
       "path": "skills/international/monaco/mc-cross-border.md",
       "before_sha256": "affbbfcb548bf9fd923313bb11f26fef9ea62a29df2195d8e17dfacf6d04c9ba",
-      "after_sha256": "6c62e4877f5fd1941bb7579bf46e2476ed0431f14a8cca72c3133723f6fddb19",
+      "after_sha256": "a9f5317f7a4ae5290c514a2b79266d9b34fc4189af8769168d7ea4430451f65d",
       "platform_fields_preserved": true,
       "cta_preserved": true
     },
     {
       "path": "skills/international/monaco/mc-income-tax.md",
       "before_sha256": "1dde89eb393b9c6ae1d34d18931cd1adb087af678ec61d83c5a104e5c0fbe9c1",
-      "after_sha256": "cd1bf2264f592e9fc8f9df718cf0f1f715b81fdb697323a2eede6308c6fdefcf",
+      "after_sha256": "7efdebd34dedc8151863aa6f68695ffc569684a67f0b151cabe7ab5fe711d6f1",
       "platform_fields_preserved": true,
       "cta_preserved": true
     },
     {
       "path": "skills/international/monaco/mc-payroll-social.md",
       "before_sha256": "5af631deea9c825bc7ff046664e7f35a312c9e721824544a3ff1fe3053ce2883",
-      "after_sha256": "a69d237708b3b62cb95e60d25e28943c647e52bc7278f93668dde79c46a11e0f",
+      "after_sha256": "07a9f38df320c8367b935b1156dc2efda1e2af4b6cd9deef66ab80cbd0743932",
       "platform_fields_preserved": true,
       "cta_preserved": true
     },
@@ -60,7 +60,7 @@
     {
       "path": "skills/international/monaco/monaco-vat.md",
       "before_sha256": "b703c06daced33f93f4863be531a5a44af19526ddef45aa5ec8c829097f9c1d0",
-      "after_sha256": "c9d0d1bd2036162f206c7f67c5febfe91844e48b2776952cca72d280e2115c74",
+      "after_sha256": "58ec5a283df93d9f051cca0a893af7142cb5ab54a0ebd17979b5474ccad9ef80",
       "platform_fields_preserved": true,
       "cta_preserved": true
     }

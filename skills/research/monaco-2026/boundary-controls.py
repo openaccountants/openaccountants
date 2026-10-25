@@ -49,6 +49,13 @@ check('additional statistical equality 460000 not exceedance',D(460000)>D(460000
 check('CbCR 750 million not excluded',D(750000000)<D(750000000),False)
 check('active NFE ordinary test equality 50 percent fails',D('.5')<D('.5') and D('.2')<D('.5'),False)
 check('VAT coefficient upward rounding',D('.501').quantize(D('.01'),rounding=ROUND_CEILING),D('.51'))
+check('ordinary excluded-car diesel admission',D(100)*D('.8'),D(80))
+check('ordinary excluded-car LPG admission',D(100)*D('.5'),D(50))
+check('small acquisition exact 10000 remains within threshold',D(10000)<=D(10000),True)
+check('small acquisition 10000.01 loses threshold',D('10000.01')<=D(10000),False)
+check('2026 acquisition election expiry year',2026+2,2028)
+check('new company corporate holding exact50 not above limit',D(50)>D(50),False)
+check('new company deemed family participation exact25 included',D(25)>=D(25),True)
 if __name__=='__main__':
     target=Path(__file__).with_name('boundary-controls-results.json')
     target.write_text(json.dumps({'controls':results,'passed':len(results),'failed':0},indent=2)+'\n')

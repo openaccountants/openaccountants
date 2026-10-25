@@ -227,8 +227,50 @@
       "actual": "0.51",
       "expected": "0.51",
       "pass": true
+    },
+    {
+      "name": "ordinary excluded-car diesel admission",
+      "actual": "80.0",
+      "expected": "80",
+      "pass": true
+    },
+    {
+      "name": "ordinary excluded-car LPG admission",
+      "actual": "50.0",
+      "expected": "50",
+      "pass": true
+    },
+    {
+      "name": "small acquisition exact 10000 remains within threshold",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "small acquisition 10000.01 loses threshold",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "2026 acquisition election expiry year",
+      "actual": "2028",
+      "expected": "2028",
+      "pass": true
+    },
+    {
+      "name": "new company corporate holding exact50 not above limit",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "new company deemed family participation exact25 included",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
     }
   ],
-  "passed": 38,
+  "passed": 45,
   "failed": 0
 }
