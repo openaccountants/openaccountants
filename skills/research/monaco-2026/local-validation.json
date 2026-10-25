@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-25T09:13:31.532723+00:00",
+  "checked_at_utc": "2026-10-25T09:16:30.902854+00:00",
   "original_candidate": "970e4d40",
   "checks_after_review_corrections": {
     "guide_schema_count": 8,
@@ -24,7 +24,7 @@
     "skills/international/monaco/mc-corporate-income-tax.md": "e7d84e50c7d041e6dc36ece5880a436353a84dd57c49f2afa574d1b7964d25ff",
     "skills/international/monaco/mc-cross-border.md": "a9f5317f7a4ae5290c514a2b79266d9b34fc4189af8769168d7ea4430451f65d",
     "skills/international/monaco/mc-income-tax.md": "7efdebd34dedc8151863aa6f68695ffc569684a67f0b151cabe7ab5fe711d6f1",
-    "skills/international/monaco/mc-payroll-social.md": "07a9f38df320c8367b935b1156dc2efda1e2af4b6cd9deef66ab80cbd0743932",
+    "skills/international/monaco/mc-payroll-social.md": "9f707f7d2befb444482e3d4205ff0fe0ad4183f12aea80002bb5a4d3c9fe6d25",
     "skills/international/monaco/mc-tax-overview.md": "0fd27d84917cb026389a99ef094b3012fc3b42f3a43d3e85a947ffef47c5492d",
     "skills/international/monaco/mc-transfer-pricing.md": "dc9d1df01dab42440c612824197064ecb626febea0b00f3a90dfd7b5b81f66c0",
     "skills/international/monaco/monaco-vat.md": "58ec5a283df93d9f051cca0a893af7142cb5ab54a0ebd17979b5474ccad9ef80"
