@@ -14,7 +14,7 @@ Copyright (c) 2026 Glimpse Ltd. All rights reserved.
 
 - **Individuals:** preparing your own taxes, including through the AI you use.
 - **Accountants and tax professionals:** using the skills as a reference for client work.
-- **Small businesses:** using the skills inside your own business (your own AI assistant, agents, Slack or Teams, internal knowledge base), if you and your affiliates have fewer than **[10]** people working for you.
+- **Small businesses:** using the skills inside your own business (your own AI assistant, agents, Slack or Teams, internal knowledge base), if you and your affiliates have **5 or fewer** people working for you.
 - **Education and research:** teaching, study, journalism and non-commercial academic research.
 - **Contributors:** improving the skills under the [CLA](CLA.md).
 - **Open source:** projects that follow AGPL-3.0-only (software) and the Skills License (content).
@@ -23,7 +23,7 @@ Copyright (c) 2026 Glimpse Ltd. All rights reserved.
 
 | Licence | Who it is for | What it covers | Price |
 |---|---|---|---|
-| **Team** | Businesses and firms with **[10]** or more people using the skills inside their own business | Internal use by your staff through any AI assistant, agent, chatbot, workflow or retrieval system; the live, updated skill feed; change alerts | **[EUR X] per organisation per year**, or by headcount band. Buy online at openaccountants.com/pricing |
+| **Team** | Businesses and firms with **6 or more** people using the skills inside their own business | Internal use by your staff through any AI assistant, agent, chatbot, workflow or retrieval system; the live, updated skill feed; change alerts | Per organisation per year, by size (founding prices, locked for the first year): **6-49 people EUR 1,200**; **50-249 people EUR 4,800**; **250+ from EUR 12,000** by quote. Buy online at openaccountants.com/pricing |
 | **Embed** | Software, fintech, payroll, accounting and AI products that show our content to *their* customers | Building the skills into your product, commercial RAG, API access, attribution terms, service levels | Annual, by usage. Contact us |
 | **Data** | AI labs and dataset buyers | Training, fine-tuning, alignment and evaluation of models; benchmark and test-set access; the corpus as a dataset; yearly refreshes | One-off or annual, by scope. Contact us |
 
@@ -37,7 +37,7 @@ You also need a commercial licence to bulk-extract or redistribute the skill col
 
 ## Earlier versions
 
-Skill versions released before **[EFFECTIVE DATE]** stay under the licence they were released under (OA Guide License v1.0) for copies already distributed. Everything released from that date is under v2.0.
+Skill versions released before **1 December 2026** stay under the licence they were released under (OA Guide License v1.0) for copies already distributed. Everything released from that date is under v2.0.
 
 Contact **info@openaccountants.com** for Embed and Data licences, or for a Team licence by invoice.
 

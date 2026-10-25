@@ -36,8 +36,7 @@ copyleft license and is not relicensed by this document.
   common control with You.
 
   "Small Business" means an organisation that, together with its Affiliates,
-  has fewer than [10] employees and contractors working for it at the time of
-  use.
+  has 5 or fewer employees and contractors working for it at the time of use.
 
   "Internal Business Use" means use of the Skills by or for an organisation for
   its own operations, including making them available to its own staff through
@@ -163,7 +162,7 @@ copyleft license and is not relicensed by this document.
 9. VERSIONING AND PRIOR RELEASES
 
   Glimpse Ltd may publish revised versions of this license. This version
-  applies to Skill versions released on or after [EFFECTIVE DATE]. Skill
+  applies to Skill versions released on or after 1 December 2026. Skill
   versions released earlier remain available under the license they were
   released under, for the copies so distributed; this license does not purport
   to revoke rights already lawfully granted.
