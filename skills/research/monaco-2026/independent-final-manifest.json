@@ -1,0 +1,59 @@
+{
+  "commit": "c9f5925bfbb0f3470d0a61ac520efd51f03ba67a",
+  "files": [
+    {
+      "file": "skills/international/monaco/README.md",
+      "blob": "357f577f06f4c0e6c22aac4ab2bcb760fc497080",
+      "sha256": "986efb8fcdb65af42e1c5748d0d1aab08ea3b63e9ba81e8498e5a2e7943e83c5",
+      "unchanged_from_initial": true
+    },
+    {
+      "file": "skills/international/monaco/mc-company-formation.md",
+      "blob": "4b43e69df8cc875bb49e4eb991b6df0fa036d3c2",
+      "sha256": "85a9ce174d1b73c06b31c11c93229d9e78d2e719f301c2e8ca8eba3a36010d49",
+      "unchanged_from_initial": true
+    },
+    {
+      "file": "skills/international/monaco/mc-corporate-income-tax.md",
+      "blob": "2378d0d8cb091ee87a560be8c3944ea35c6228ba",
+      "sha256": "e7d84e50c7d041e6dc36ece5880a436353a84dd57c49f2afa574d1b7964d25ff",
+      "unchanged_from_initial": false
+    },
+    {
+      "file": "skills/international/monaco/mc-cross-border.md",
+      "blob": "4f744d3812131ef0a71e4b77f6bf85f8c20797d0",
+      "sha256": "a9f5317f7a4ae5290c514a2b79266d9b34fc4189af8769168d7ea4430451f65d",
+      "unchanged_from_initial": false
+    },
+    {
+      "file": "skills/international/monaco/mc-income-tax.md",
+      "blob": "ebcea6c4ea3d3a5856f0a281c35a3edfb6e13b2f",
+      "sha256": "7efdebd34dedc8151863aa6f68695ffc569684a67f0b151cabe7ab5fe711d6f1",
+      "unchanged_from_initial": false
+    },
+    {
+      "file": "skills/international/monaco/mc-payroll-social.md",
+      "blob": "93a2954a8da7948fcc62278d63d2b0353e3b9829",
+      "sha256": "9f707f7d2befb444482e3d4205ff0fe0ad4183f12aea80002bb5a4d3c9fe6d25",
+      "unchanged_from_initial": false
+    },
+    {
+      "file": "skills/international/monaco/mc-tax-overview.md",
+      "blob": "14ca48214613a6a03faf8185570158f89a7ad537",
+      "sha256": "0fd27d84917cb026389a99ef094b3012fc3b42f3a43d3e85a947ffef47c5492d",
+      "unchanged_from_initial": true
+    },
+    {
+      "file": "skills/international/monaco/mc-transfer-pricing.md",
+      "blob": "cbaf0b06c17f8e830248a9f0c259b7e0e64d2c01",
+      "sha256": "dc9d1df01dab42440c612824197064ecb626febea0b00f3a90dfd7b5b81f66c0",
+      "unchanged_from_initial": true
+    },
+    {
+      "file": "skills/international/monaco/monaco-vat.md",
+      "blob": "699781b1c289d9fa0ef77fac06848632d4226c50",
+      "sha256": "58ec5a283df93d9f051cca0a893af7142cb5ab54a0ebd17979b5474ccad9ef80",
+      "unchanged_from_initial": false
+    }
+  ]
+}

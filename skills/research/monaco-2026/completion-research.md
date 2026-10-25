@@ -78,3 +78,7 @@ The new candidate receives a fresh independent whole-pack review with no writer 
 ## Independent review corrections
 
 Eight findings on candidate 970e4d40 were corrected at 11fcc9b3: carryback population, fuel VAT admission, CRS pinpoint, small acquisitions, non-established representation, independent enrolment, startup ownership and less-than-five-year cessation wording. Final-source review of the added membership procedure also identified the ordinary CAMTI retiree affiliation screen; it was added with the published exception and without inventing a separate rate. Sources boundary labels and the explicit employer-letter deadline citation were clarified too. The reviewer rechecks the exact corrected source separately; no writer self-approval is asserted.
+
+## Exact-source approval
+
+The independent reviewer approved final source `c9f5925bfbb0f3470d0a61ac520efd51f03ba67a` after closing all nine findings, including final CAMTI retiree screening. [The full report](independent-review.md), [final source manifest](independent-final-manifest.json), [independent retrieval hashes](independent-retrievals.json) and independent recomputation script/results are retained with this record. All nine country source blobs were compared against the independent manifest before the evidence-only publication commit; they match. The coverage report shows eight Guides, all seven domains present, no ordinary partial/missing domain, and zero named professional attestations. Publication-head CI and maintainer merge are separate statuses recorded on PR #796.
