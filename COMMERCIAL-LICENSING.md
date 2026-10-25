@@ -1,88 +1,48 @@
-# Commercial Licensing — Open Accountants
+# Commercial Licensing: Open Accountants
 
 Copyright (c) 2026 Glimpse Ltd. All rights reserved.
 
 > This document describes when and how to obtain a commercial licence. It is
-> **not itself a licence.** The applicable licences are: **AGPL-3.0-only** for
-> software ([LICENSE](LICENSE)) and the **OA Guide License** for the Guides
-> ([LICENSES/LicenseRef-OA-Guide-License-1.0.txt](LICENSES/LicenseRef-OA-Guide-License-1.0.txt)).
+> **not itself a licence.** The applicable licences are **AGPL-3.0-only** for
+> software ([LICENSE](LICENSE)) and the **Open Accountants Skills License v2.0**
+> for the skills ([LICENSES/LicenseRef-OA-Guide-License-2.0.txt](LICENSES/LicenseRef-OA-Guide-License-2.0.txt)).
 > See [LICENSING.md](LICENSING.md) for which applies to what.
 
 ---
 
-## The two tracks
+## Free: no licence needed
 
-OpenAccountants is a **mixed-licence** project:
+- **Individuals:** preparing your own taxes, including through the AI you use.
+- **Accountants and tax professionals:** using the skills as a reference for client work.
+- **Small businesses:** using the skills inside your own business (your own AI assistant, agents, Slack or Teams, internal knowledge base), if you and your affiliates have fewer than **[10]** people working for you.
+- **Education and research:** teaching, study, journalism and non-commercial academic research.
+- **Contributors:** improving the skills under the [CLA](CLA.md).
+- **Open source:** projects that follow AGPL-3.0-only (software) and the Skills License (content).
 
-- **Software** (`mcp/`, `scripts/`, `tools/`, `plugins/`, …) is **AGPL-3.0-only**.
-  Use, modify, and self-host it freely; if you run a modified version as a
-  network service, AGPL requires you to offer users its source.
-- **Guides** (`skills/`, `packages/`, `workflows/`, `index.json`, `llms.txt`,
-  `llms-full.txt`) are under the **OA Guide License** — source-available, free
-  for personal, professional-reference, educational, and non-commercial use, but
-  **commercial reuse of the content requires a commercial licence.**
+## Paid: the three licences
 
-A commercial licence from Glimpse Ltd covers the use you need across both tracks.
+| Licence | Who it is for | What it covers | Price |
+|---|---|---|---|
+| **Team** | Businesses and firms with **[10]** or more people using the skills inside their own business | Internal use by your staff through any AI assistant, agent, chatbot, workflow or retrieval system; the live, updated skill feed; change alerts | **[EUR X] per organisation per year**, or by headcount band. Buy online at openaccountants.com/pricing |
+| **Embed** | Software, fintech, payroll, accounting and AI products that show our content to *their* customers | Building the skills into your product, commercial RAG, API access, attribution terms, service levels | Annual, by usage. Contact us |
+| **Data** | AI labs and dataset buyers | Training, fine-tuning, alignment and evaluation of models; benchmark and test-set access; the corpus as a dataset; yearly refreshes | One-off or annual, by scope. Contact us |
 
----
+You also need a commercial licence to bulk-extract or redistribute the skill collection, run a hosted service that competes with ours, sell the skills, or use the **software** in a proprietary product without meeting AGPL-3.0-only.
 
-## When you DO NOT need a commercial licence
+## What every paid licence includes
 
-- An individual preparing your own tax return with the Guides in any AI tool.
-- An accountant or tax professional using the Guides as a reference for client
-  work (your accounting software and workpapers are not, by that use alone, a
-  derivative of the Guides).
-- A contributor submitting improvements back under the [CLA](CLA.md).
-- A university, school, or educator teaching from the Guides.
-- A journalist, researcher, or blogger quoting or reviewing the Guides.
-- Self-hosting the **software** in compliance with AGPL-3.0-only.
-- Building an open-source project that complies with AGPL-3.0-only (software) and
-  the OA Guide License (content).
+- Clear, contracted rights for your use case.
+- Use without the AGPL or Skills License obligations, within the licence's scope.
+- The current skills as they change, not just the public snapshot.
 
----
+## Earlier versions
 
-## When you DO need a commercial licence
+Skill versions released before **[EFFECTIVE DATE]** stay under the licence they were released under (OA Guide License v1.0) for copies already distributed. Everything released from that date is under v2.0.
 
-You need a commercial licence if you are doing any of the following with the
-**Guides** (or modified versions):
-
-- Embedding them into a commercial product, service, API, chatbot, or AI agent
-  offered to third parties.
-- Indexing them for retrieval-augmented generation (RAG) in a commercial service.
-- Training, fine-tuning, distilling, or evaluating a model on them commercially.
-- Bulk-extracting them, or redistributing the Guide collection as a dataset.
-- Operating a hosted service or API that redistributes or competes with the
-  OpenAccountants Guide service.
-- Selling the Guides or modified versions.
-
-You also need a commercial licence if you want to use the **software** in a
-proprietary product without meeting AGPL-3.0-only's source-availability
-obligations.
-
----
-
-## What the commercial licence gives you
-
-- Permission to use, modify, and distribute OpenAccountants Guides and software
-  in proprietary products without the AGPL / Guide License obligations.
-- No requirement to open-source your own code.
-- Priority support and access to pre-release updates (by tier).
-- Clear, contracted rights for your specific use case.
-
----
-
-## Pricing
-
-Commercial licences are negotiated by use case and scale, aiming to be fair and
-proportional:
-
-- **Startups and small teams** — affordable flat fee.
-- **Enterprise and large-scale SaaS** — usage-based or annual licence.
-
-Contact **info@openaccountants.com** to discuss your use case.
+Contact **info@openaccountants.com** for Embed and Data licences, or for a Team licence by invoice.
 
 ---
 
 *The applicable open-source licence for the software is AGPL-3.0-only
-([LICENSE](LICENSE)). The applicable licence for the Guides is the OA Guide
-License ([LICENSES/LicenseRef-OA-Guide-License-1.0.txt](LICENSES/LicenseRef-OA-Guide-License-1.0.txt)).*
+([LICENSE](LICENSE)). The applicable licence for the skills is the Open
+Accountants Skills License v2.0 ([LICENSES/LicenseRef-OA-Guide-License-2.0.txt](LICENSES/LicenseRef-OA-Guide-License-2.0.txt)).*

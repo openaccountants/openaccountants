@@ -13,7 +13,7 @@ depending on whether a file is *software* or an *AI skill* (tax rules your AI fo
 | Files | Licence | Text |
 |-------|---------|------|
 | Software, tooling, docs, and project metadata: `mcp/`, `scripts/`, `tools/`, `tests/`, `plugins/` (except the skill content below), `.claude-plugin/`, `docs/`, `.github/`, `Dockerfile`, `calculators/**/*.mjs`, `agent-skills/install.sh`, and root config/meta files | **AGPL-3.0-only** | [`LICENSE`](LICENSE) / [`LICENSES/AGPL-3.0-only.txt`](LICENSES/AGPL-3.0-only.txt) |
-| Skills and their machine-readable exports: `skills/`, `packages/`, `workflows/`, `agent-skills/**/SKILL.md`, `agent-skills/index.json`, `plugins/openaccountants/skills/`, `calculators/**/rules.json`, `index.json`, `llms.txt`, `llms-full.txt` | **OA Guide License** (source-available) | [`LICENSES/LicenseRef-OA-Guide-License-1.0.txt`](LICENSES/LicenseRef-OA-Guide-License-1.0.txt) |
+| Skills and their machine-readable exports: `skills/`, `packages/`, `workflows/`, `agent-skills/**/SKILL.md`, `agent-skills/index.json`, `plugins/openaccountants/skills/`, `calculators/**/rules.json`, `index.json`, `llms.txt`, `llms-full.txt` | **Open Accountants Skills License v2.0** (source-available) | [`LICENSES/LicenseRef-OA-Guide-License-2.0.txt`](LICENSES/LicenseRef-OA-Guide-License-2.0.txt) (v2.0; earlier releases: [v1.0](LICENSES/LicenseRef-OA-Guide-License-1.0.txt)) |
 
 The machine-readable exports (`index.json`, `llms.txt`, `llms-full.txt`)
 reproduce the Guides, so they carry the **Guide License** — otherwise the Guide
@@ -29,12 +29,7 @@ and tooling. If you run a modified version as a network service, AGPL requires
 you to offer users its source. Commercial use is allowed; a separate commercial
 licence is available if AGPL does not fit ([COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)).
 
-**Guides (OA Guide License).** Free to read, use for your own taxes, use as a
-professional reference for client work, quote, teach from, and contribute back.
-A **separate commercial licence is required** to embed the Guides in a
-commercial AI product, index them for commercial RAG, train models on them,
-bulk-extract or redistribute the collection, or run a competing hosted Guide
-service. Contact **info@openaccountants.com**.
+**Skills (Open Accountants Skills License v2.0).** Free to read and use for your own taxes, as a professional reference for client work, inside a small business (fewer than [10] people), for education and research, and to contribute back. A **paid licence** is needed for internal use by larger organisations (**Team**), for building the skills into a product or commercial RAG (**Embed**), and for training, fine-tuning or evaluating models, building test sets, or redistributing the collection as a dataset (**Data**). See [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md); contact **info@openaccountants.com**.
 
 ## Why the repo is no longer "purely" open source
 

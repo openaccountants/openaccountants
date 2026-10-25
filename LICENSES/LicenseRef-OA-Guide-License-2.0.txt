@@ -1,0 +1,179 @@
+Open Accountants Skills License
+Version 2.0
+SPDX-License-Identifier: LicenseRef-OA-Guide-License-2.0
+
+Copyright (c) 2026 Glimpse Ltd and the Open Accountants contributors.
+
+This license governs the tax skills and their machine-readable exports (the
+"Skills"): the files under skills/, packages/, and workflows/, together with
+index.json, llms.txt, and llms-full.txt, and any later file that reproduces them.
+It does NOT govern the software in this repository, which is licensed separately
+under AGPL-3.0-only (see LICENSE and LICENSES/AGPL-3.0-only.txt). Where a single
+file combines Skill content and software, the more restrictive terms apply to
+that file.
+
+This version replaces version 1.0 (the "Open Accountants Guide License") for
+Skill versions released on or after its effective date. "Guides" in version 1.0
+means the same files this version calls "Skills".
+
+Note on third-party material: some Skills incorporate third-party material made
+available under a copyleft license (such as AGPL-3.0 or GPL-3.0). Any Skill that
+contains, or is a derivative work of, such material remains subject to that
+copyleft license and is not relicensed by this document.
+
+
+1. DEFINITIONS
+
+  "Skills" means the tax reference content described above, in whole or in part,
+  in original or modified form, including any dataset, embedding, index, model
+  weights trained on it, or other representation that reproduces the substance
+  of that content.
+
+  "You" means the individual or entity exercising rights under this license,
+  together with its Affiliates.
+
+  "Affiliate" means any entity that controls, is controlled by, or is under
+  common control with You.
+
+  "Small Business" means an organisation that, together with its Affiliates,
+  has fewer than [10] employees and contractors working for it at the time of
+  use.
+
+  "Internal Business Use" means use of the Skills by or for an organisation for
+  its own operations, including making them available to its own staff through
+  an AI assistant, agent, chatbot, workflow, knowledge base, or retrieval system,
+  where the Skills are not offered to third parties.
+
+  "Commercial Use" means use that is primarily intended for or directed toward
+  commercial advantage or monetary compensation, including offering a paid or
+  ad-supported product, service, or API to third parties.
+
+  "Permitted Use" means the uses expressly allowed in Section 2.
+
+
+2. PERMITTED USE (no separate license required)
+
+  Subject to Sections 3 and 4, You may read, use, copy, and modify the Skills,
+  and share verbatim or modified copies, for any of the following:
+
+  (a) Personal use: preparing your own tax return or affairs, including by
+      supplying a Skill to an AI assistant you personally use.
+
+  (b) Professional reference: a licensed accountant, tax professional, or
+      adviser using the Skills as a reference to assist client work. Your
+      professional software and workpapers are not, by that use alone, a
+      derivative of the Skills.
+
+  (c) Small Business internal use: Internal Business Use by a Small Business.
+
+  (d) Education and research: teaching, study, journalism, commentary, review,
+      or non-commercial academic research, including quoting and excerpting the
+      Skills.
+
+  (e) Contribution: submitting improvements back to the Open Accountants
+      project under the Contributor License Agreement (CLA.md).
+
+  (f) Non-commercial redistribution: sharing copies or modified versions,
+      provided the use is not a Commercial Use and Section 3 is satisfied.
+
+
+3. CONDITIONS
+
+  For any use under Section 2, You must:
+
+  (a) Retain all copyright notices, this license, and the SPDX identifier
+      "LicenseRef-OA-Guide-License-2.0" with any copy or modified version;
+
+  (b) Not misrepresent a Skill as reviewed by, endorsed by, or attributed to
+      any named accountant unless that review actually occurred and is
+      accurately represented; and
+
+  (c) Not remove or alter reviewer names, credentials, trust labels, or
+      provenance in a way that misstates who stands behind a Skill or how it
+      was checked.
+
+
+4. USES THAT REQUIRE A SEPARATE COMMERCIAL LICENSE
+
+  The following require a separate written license from Glimpse Ltd (see
+  COMMERCIAL-LICENSING.md; contact info@openaccountants.com). They are NOT
+  granted by this license:
+
+  (a) Internal Business Use by an organisation that is not a Small Business
+      (the "Team" license);
+
+  (b) Incorporating the Skills into a commercial product, service, application,
+      chatbot, or AI agent offered to third parties (the "Embed" license);
+
+  (c) Indexing the Skills for retrieval-augmented generation (RAG) or similar
+      retrieval in a Commercial Use;
+
+  (d) Using the Skills to train, fine-tune, distil, align, or evaluate a
+      machine-learning model, or to build a benchmark or test set, for a
+      Commercial Use, including any model offered to third parties (the "Data"
+      license);
+
+  (e) Bulk extraction of the Skills, or redistribution of the Skill collection
+      (or a substantial part of it) as a dataset or corpus;
+
+  (f) Operating a hosted service or API that redistributes or competes with the
+      Open Accountants skill service; and
+
+  (g) Selling the Skills or modified versions of them.
+
+  Nothing in this Section 4 restricts uses that applicable law reserves to You
+  (for example, quotation, fair use / fair dealing, text and data mining
+  exceptions that cannot be excluded by contract, or rights that cannot be
+  waived by contract).
+
+
+5. CONTRIBUTIONS
+
+  Contributions to the Skills are governed by the Contributor License Agreement
+  (CLA.md). By contributing, You grant Glimpse Ltd the rights described there,
+  including the right to distribute Your contribution under this license and
+  under a commercial license.
+
+
+6. NO WARRANTY; NOT ADVICE
+
+  THE SKILLS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. The Skills
+  are general reference material, are NOT tax, legal, accounting, or financial
+  advice, and must be reviewed by a qualified professional before any filing,
+  payment, or action. Use of a Skill does not create a client relationship.
+  Glimpse Ltd is not responsible for the output of any AI system, model, or
+  product that uses the Skills.
+
+
+7. LIMITATION OF LIABILITY
+
+  TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL GLIMPSE LTD OR ANY
+  CONTRIBUTOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM
+  OR IN CONNECTION WITH THE SKILLS OR THEIR USE.
+
+
+8. TERMINATION
+
+  Your rights under this license terminate automatically if You breach it. They
+  may be reinstated by Glimpse Ltd in writing.
+
+
+9. VERSIONING AND PRIOR RELEASES
+
+  Glimpse Ltd may publish revised versions of this license. This version
+  applies to Skill versions released on or after [EFFECTIVE DATE]. Skill
+  versions released earlier remain available under the license they were
+  released under, for the copies so distributed; this license does not purport
+  to revoke rights already lawfully granted.
+
+
+10. GOVERNING LAW
+
+  This license is governed by the laws of Malta, and the courts of Malta have
+  exclusive jurisdiction over any dispute arising from or in connection with it.
+
+===============================================================================
+  END OF LICENSE
+===============================================================================
