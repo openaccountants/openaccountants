@@ -34,7 +34,7 @@ A non-resident pays no SDC on dividends or interest at all. Stop there.
 **Test 2: domicile (SDC Law art. 2(3)).** A person is domiciled in Cyprus if they have a Cypriot domicile of origin under the Wills and Succession Law, except:
 
 - (i) a person who has acquired and keeps a domicile of choice outside Cyprus, provided they were not Cyprus resident for any period of at least 20 consecutive years before the tax year; or
-- (ii) a person who was not Cyprus resident for at least 20 consecutive years immediately before the law's amendment came into force (the Tax Department page dates this 16 July 2015, the commencement of Law 106(I)/2017).
+- (ii) a person who was not Cyprus resident for at least 20 consecutive years immediately before "the commencement of this Law" (art. 2(3)(ii); the domicile rules were added by Law 119(I)/2015, and the Tax Department page dates the test to 16 July 2015).
 
 **Deemed domicile, the 17-year limit (art. 2(3), proviso (i)).** Whatever the domicile of origin, a person who was Cyprus tax resident for at least 17 of the last 20 years before the tax year is deemed domiciled. The years need not be consecutive. The tested year itself is not counted. In practice, a foreigner can be a non-dom resident for 17 years; from the 18th resident year SDC applies unless Article 3D is elected.
 
@@ -113,7 +113,7 @@ The fixed sum does not cover GHS or income tax.
 - **Arrivals.** A foreigner arriving in Cyprus is non-dom from day one and stays so until the 17-of-20 test bites. Check the residence rule each year. The 60-day rule now works even if the person is also resident elsewhere, so treaty tie-breakers matter more; this skill applies Cyprus domestic rules only.
 - **Returning Cypriots.** A person with a Cypriot domicile of origin is non-dom only under exception (i) or (ii). Both need 20 consecutive non-resident years. Article 3D is not open to them.
 - **Leavers.** A non-resident pays no SDC on dividends or interest whatever the domicile. A deemed-domiciled person who leaves and comes back inside 20 non-resident years is domiciled again on return.
-- **Non-residents and dividends.** A non-resident who receives a dividend from profits that bore deemed distribution SDC may claim back the SDC on shares held at 31 December 2025 (art. 3C, proviso). See `cy-cross-border` for withholding on payments abroad.
+- **Non-residents and dividends.** A non-resident who receives a dividend from profits that bore deemed distribution SDC may claim back that SDC for the shares held at 31 December 2025, where the deemed distribution was under the old art. 3(3) in force before 2026 (art. 3C(7), proviso). See `cy-cross-border` for withholding on payments abroad.
 - **Foreign-source income.** For a domiciled resident, SDC on foreign dividends and interest is self-assessed, with credit for foreign tax (art. 4(4)). Under Article 3D, no foreign tax credit (art. 3D(8)).
 
 ## Worked examples
