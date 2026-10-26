@@ -84,7 +84,7 @@ Sources: TMA 1970 ss. 59A(2) and 59B(4); [payments on account](https://www.gov.u
 
 ## Penalties and interest
 
-- **Interest on payments on account.** A late payment on account carries interest from its due date until paid (s. 86(1)(a), (2)). The rate is set under Finance Act 1989 s. 178: base rate plus 4% from 6 April 2025, 7.75% from 9 January 2026. It is simple interest, worked daily.
+- **Interest on payments on account.** A late payment on account carries interest from its due date until paid (s. 86(1)(a), (2)). The rate is set under Finance Act 1989 s. 178: base rate plus 4% from 6 April 2025, 7.75% from 9 January 2026. It is simple interest, worked daily. The same rules apply inside Making Tax Digital for Income Tax: HMRC's MTD penalties page says "There are no changes to how late payment interest works" ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
 - **Interest after a claim to reduce.** See SA303 above (s. 86(4)-(6)). When the year ends in a repayment, interest on a payment on account is remitted except to the extent the payment due was more than half the final figure (s. 86(7)-(8)).
 - **No penalty on a late payment on account.** Late payment penalties under FA 2009 Sch. 56 attach to the balancing payment under s. 59B(3) or (4) (Sch. 56 table, item 1), not to payments under s. 59A. HMRC's MTD penalty guidance says the same for the new regime: "Late payment penalties do not apply to any payments on account."
 - **Late balancing payment, not in MTD.** 5% of the tax unpaid at 30 days, again at 6 months and again at 12 months, plus interest ([SA penalties](https://www.gov.uk/self-assessment-tax-returns/penalties)).
@@ -190,7 +190,7 @@ expected:
 | GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-26 |
 | GOV.UK, Find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
 
-Not yet confirmed: whether late payment interest for taxpayers inside Making Tax Digital for Income Tax moves from TMA 1970 s. 86 to the Finance Act 2021 Sch. 29 interest rules from 2026-27 (HMRC's MTD page says late payment interest is charged from the first day, but the commencement order was not read); the Bank Rate after the 5 November 2026 decision; the online payment plan limit for Self Assessment debts; and the treatment of foreign tax credit relief in the s. 59A assessed amount (stated from the structure of s. 59A(1), not from an HMRC page). Carried from v3.2: the bank statement pattern library (now the 31 January note under Deadlines) and the refusal list (now the out of scope lines under Who this applies to).
+Not yet confirmed: the Bank Rate after the 5 November 2026 decision; the online payment plan limit for Self Assessment debts (not stated here); and the treatment of foreign tax credit relief in the s. 59A assessed amount (stated from the structure of s. 59A(1), not from an HMRC page). Carried from v3.2: the bank statement pattern library (now the 31 January note under Deadlines) and the refusal list (now the out of scope lines under Who this applies to).
 
 ## Talk to a verified accountant
 
