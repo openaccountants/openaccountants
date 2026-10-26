@@ -7,10 +7,10 @@ category: property
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
-version: 0.4
+version: 0.5
 ---
 
-# Finland property transfer tax v0.4
+# Finland property transfer tax v0.5
 
 ## Who this applies to
 
@@ -75,9 +75,9 @@ Late title registration can add the separate §8 surcharge even if the transfer 
 
 ## Cross-border points
 
-Residence abroad does not remove tax on Finnish real estate or domestic property-company shares. The ordinary securities exemption where neither party is Finnish resident does **not** extend to the property-company categories in §18(1). For foreign-issued shares, §18(2) brings within scope a company whose activity consists mainly of direct/indirect ownership or management of Finnish real estate where at least one party is resident in Finland or the buyer is the stated Finnish branch. Establish the issuer's activities and property chain, both parties' residence and the branch condition; do not assume every foreign holding-company share is taxed. [Act §§16,18][law].
+Residence abroad does not remove tax on Finnish real estate or domestic property-company shares. The ordinary securities exemption where neither party is Finnish resident or a qualifying §16(1) branch does **not** extend to the property-company categories specified in §16(3). For foreign-issued securities, §18(2) requires **both** (1) the issuer's actual activity mainly comprises direct/indirect ownership or management of real estate and (2) more than 50% of its total assets consist of directly/indirectly held Finnish immovable property. At least one transfer party must also be Finnish resident or a **qualifying branch listed in §16(1)**. Either party can satisfy that residence/branch test; an arbitrary Finnish business branch is not sufficient. Establish the issuer's activity, asset values/property chain and both parties' status before taxing foreign shares. [Act §§16,18][law].
 
-A foreign seller of taxable securities can leave the Finnish buyer with the withholding/payment liability under §23. Foreign buyers obtain the required Finnish identifier/reference and file/pay under Vero's nonresident process. The income tax of a property sale is separate from the purchaser's transfer tax. [Act §23][law]; [Vero corporate-stock guidance][stock]; [individual cross-border](fi-individual-cross-border-residence.md).
+The buyer has the ordinary filing/payment duty. Section 23 adds responsibility for the party required to collect tax, an intermediary real-estate agent and the specified company; it does not create a buyer withholding rule merely because the seller is foreign. In the ordinary securities case governed by §16(2), the **seller** must collect from the specified nonresident buyer unless the buyer has paid voluntarily. Read that rule together with the property-share exception in §16(3), rather than applying it indiscriminately to housing shares. Foreign buyers obtain the Finnish identifier/reference and file/pay under Vero's process. The seller's income tax on the disposal is separate. [Act §§16,21,23,30][law]; [Vero corporate-stock guidance][stock]; [individual cross-border](fi-individual-cross-border-residence.md).
 
 ## Two worked examples that recompute
 

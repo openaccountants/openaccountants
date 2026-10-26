@@ -12,7 +12,7 @@ description: >
   or deductible input VAT. Use with vat-workflow-base and eu-vat-directive;
   special margin, travel, marketplace and other sector schemes need separately
   verified treatment.
-version: 2.6
+version: 2.7
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -23,7 +23,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland VAT return v2.6
+# Finland VAT return v2.7
 
 ## Who this applies to
 
@@ -82,7 +82,7 @@ Reconcile the return to the accounts, invoices, credit notes, import documents a
 | Service bought from a business established outside the EU | **Only for a taxable service supplied in Finland for which the purchaser is liable**, calculate Finnish VAT and enter the VAT amount in “Tax on domestic sales by tax rate”; the purchase base is not entered on the return. This field route covers qualifying general- and special-rule services from business operators of any size. If deductible, also enter qualifying input VAT. Foreign establishment alone establishes neither Finnish supply nor purchaser liability: for example, accommodation at a hotel abroad is outside the Finnish place-of-supply rule. [VAT Act, sections 9, 65 and 67](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero return instructions in Finnish](https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/ilmoitus-ja-maksuohjeet/) |
 | Goods imported into Finland | Enter the customs-supported base in “Imports of goods from outside the EU”, VAT in “Tax on imports of goods from outside the EU”, and qualifying input VAT in “Tax deductible for the tax period”. Report it in the return for the tax period in which the customs clearance decision was issued (the date printed on the decision), and put the deduction in the same month. If the customs decision later changes, correct the return. For a tax-exempt import, retain the import-base entry and leave the import-tax/deduction entries blank. Goods moving across the Åland tax border are imports/exports; apply the ordinary Åland import procedure below. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
 | Export/other zero-rate sale or exempt sale | Use the named treatment only after preserving conditions and evidence. Sales of goods to VAT-liable buyers in other EU countries (goods transported out of Finland) go in “Sales of goods to other EU Member States”; B2B services taxed in the buyer's EU country under the general rule go in “Sales of services to other EU Member States”; exports outside the EU and other zero-rate sales go in “Turnover taxable at zero VAT rate”. EU goods and service sales must also be reported on the VAT recapitulative statement. Sales to consumers in other EU countries are not zero-rated EU sales; whether Finnish VAT or the other country's VAT applies depends on distance-selling and OSS rules, which this skill refers. Exempt sales with no deduction right (health, social services) are not reported as zero-rate turnover. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
-| Special scheme | Keep OSS/IOSS and margin-scheme tax separate from ordinary VAT; establish the scheme and use its own return. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
+| Special schemes | OSS/IOSS sales use the relevant separate scheme return. Second-hand-goods margin-scheme VAT belongs in the **ordinary VAT return**, domestic-sales tax at the applicable rate, after a separate eligible-margin computation. Do not group its reporting with OSS/IOSS. [Vero return instructions][return]; [Vero used-goods guidance §5.2][margin] |
 
 **Foreign-service gate:** establish the receiving establishment and applicable general/special place-of-supply rule, then determine who owes Finnish VAT. A participating Finnish fixed establishment or the foreign seller's voluntary Finnish VAT registration prevents the ordinary foreign-seller reverse charge; statutory transaction exceptions also apply. If the seller owes VAT, obtain its correctly issued invoice and test any input deduction. If the service is supplied outside Finland, do not create Finnish reverse-charge VAT merely from the supplier's country. [VAT Act, sections 9, 65 and 67](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero cross-border services, sections 6–6.1](https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/)
 
@@ -205,6 +205,7 @@ expected:
 | [Vero periods][period], [small-business guidance][small] | Period elections and turnover scope | 2026-10-26 |
 | [Vero construction reverse charge][construction] | Buyer/seller fields | 2026-10-26 |
 | [Vero Åland import procedure][aland], [OSS][oss] | Tax-border period and special-scheme boundary | 2026-10-26 |
+| [Vero used-goods guidance][margin] | §5.2: ordinary return reporting of margin VAT; full special scheme not computed here | 2026-10-26 |
 | [Vero purchase deductions][deduct], [vehicles][vehicles] | Preserved purchase/vehicle controls | 2026-10-23 |
 | [Vero interest guidance][interest] | 2026 overdue interest | 2026-10-26 |
 
@@ -240,3 +241,5 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
+[margin]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48682/kaytettyjen-tavaroiden-arvonlisaverotus3/

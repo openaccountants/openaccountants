@@ -12,7 +12,7 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border Guide; Åland municipal differences require
   the separate regional schedule.
-version: 1.5
+version: 1.6
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -25,7 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.5
+# Finland individual income tax v1.6
 
 **Tax year:** 2026. Source-cited ordinary individual computation; local draft awaiting fresh independent pack review. The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
@@ -57,7 +57,7 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 | Pension deduction | Full maximum EUR 11,080 from annual national pension × 1.173 rounded up to next EUR 10, capped at pension; taper below | [Income Tax Act, section 100][law]; [Kela 2026 full pension EUR 787.07/month][kela] |
 | Pension supplement tax | 5.85% of pension after pension deduction above EUR 60,000 | [Income Tax Act, section 124(4)][law] |
 | Health care | 1.10% wage/work base; 1.49% pension/benefit/other qualifying base | [Health Insurance Act, chapter 18 sections 14–20][health-law]; [2026 tax bases][tax-bases] |
-| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; ordinary age range 16–67; entrepreneur supplement uses separate YEL rules | [Health Insurance Act, chapter 18 sections 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
+| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; entrepreneur supplement uses separate YEL rules | [Health Insurance Act, chapter 18 sections 5, 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
 | Broadcasting tax | Covered mainland residents reaching 18 in the year: 2.5% above EUR 15,150 of the larger of net earned+capital income or confirmed YEL+MYEL income, capped at EUR 160 | [Broadcasting Tax Act, sections 1–2][yle-law] |
 | Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f][law] |
 | Oil-heating replacement | 60% qualifying contractor labour, or 30% wages plus listed employer contributions; combined household-credit ceiling EUR 3,500/person, of which other work at most EUR 2,100 | [Income Tax Act, section 127f][law] |
