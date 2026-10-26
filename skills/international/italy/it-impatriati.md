@@ -29,7 +29,7 @@ The statutes were read on Normattiva as in force on 30 June 2026. Normattiva's c
 | Flat tax on foreign income | Anyone who moves residence to Italy and was not Italian resident in at least nine of the ten prior years. No work test | TUIR art. 24-bis comma 1 |
 | Pensioners' option | People with foreign pensions who move to a small town in the South or certain earthquake areas | TUIR art. 24-ter |
 
-The flat tax cannot be combined with the old impatriati regime or with the researchers' regime of D.L. 78/2010 art. 44 (L. 232/2016 art. 1 comma 154, in the notes to art. 24-bis). The Agenzia says the new impatriati regime can be combined with other inbound regimes in the same year if each one's conditions are met.
+The flat tax cannot be combined with the old impatriati regime or with the researchers' regime of D.L. 78/2010 art. 44 (L. 232/2016 art. 1 comma 154, in the notes to art. 24-bis).
 
 **New regime conditions (art. 5 comma 1).** All must be met:
 
@@ -201,7 +201,7 @@ expected:
 | Agenzia delle Entrate, when and how to file the 730/2026 | https://www.agenziaentrate.gov.it/portale/quando-e-come-presentare-il-730-2026 | 2026-10-24 |
 | Agenzia delle Entrate, how IRPEF is paid | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef | 2026-10-24 |
 
-Not yet confirmed: the interest rate on recapture under art. 5 comma 3, and whether the 70% unfaithful-return penalty also applies when the benefit is lost for leaving early (the law names only interest); how payroll applies the EUR 600,000 cap to an employee (the law and the fascicolo 3 instructions were read, the payroll rules were not); Circolare 33/E of 28 December 2020 (old regime) was not read directly, only as cited by the return instructions; no Agenzia circular on the new regime was found (its practice page lists only Circolare 20/E of 4 November 2024, on residence), and no "Circolare 25/E of 2024" on impatriati was found on the Agenzia site; the fascicolo 3 instructions say a five-year commitment where the law says four years (this skill follows the law); the exact boundary day between the EUR 100,000 and EUR 200,000 flat tax amounts (the law ties it to the entry into force of D.L. 113/2024); the Agenzia provvedimento of 3 March 2021 on paying for the old regime extension.
+Not yet confirmed: whether the new impatriati regime can be combined with other inbound regimes in the same year (no Agenzia text found saying so); the interest rate on recapture under art. 5 comma 3, and whether the 70% unfaithful-return penalty also applies when the benefit is lost for leaving early (the law names only interest); how payroll applies the EUR 600,000 cap to an employee (the law and the fascicolo 3 instructions were read, the payroll rules were not); Circolare 33/E of 28 December 2020 (old regime) was not read directly, only as cited by the return instructions; no Agenzia circular on the new regime was found (its practice page lists only Circolare 20/E of 4 November 2024, on residence), and no "Circolare 25/E of 2024" on impatriati was found on the Agenzia site; the fascicolo 3 instructions say a five-year commitment where the law says four years (this skill follows the law); the exact boundary day between the EUR 100,000 and EUR 200,000 flat tax amounts (the law ties it to the entry into force of D.L. 113/2024); the Agenzia provvedimento of 3 March 2021 on paying for the old regime extension.
 
 > Contributed by OpenAccountants.
 
