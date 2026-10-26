@@ -85,7 +85,7 @@ The return filed in 2026 covers income received and disposals made in 2025. Inco
 
 **Employee savings and PER.** Employer payments into an employee savings plan (PEE, PERCO, company PER) are exempt from income tax; their income bears social levies. Match caps follow the annual social security ceiling and are not printed here. Order of use: PEE with match, then PERCO or company PER with match, then individual PER. A PER exit depends on the plan type, annuity or lump sum, timing, and whether payments were deducted: get the provider's split and model it with `fr-personal-income-tax`.
 
-**Property gains.** Gain = sale price minus purchase price, the purchase price raised by actual costs or a flat 7.5%, and by actual works or a flat 15% if held over 5 years (F10864). The income tax allowance and the social levy allowance run on different scales (table). Income tax 19% on the gain after the income tax allowance; social levies 17.2% on the gain after the social levy allowance. The surtax applies to the income tax base above EUR 50,000, not to exempt sales or building land. Exemptions: the main home at the time of sale (occupied most of the year), a sale price up to EUR 15,000, and others in F10864 (for example a first sale of another dwelling with the price reinvested in a main home). An EU or EEA national formerly resident gets an exemption on a French dwelling up to EUR 150,000 of gain. The notary computes, files form 2048-IMM-SD and pays the tax out of the sale price; the seller reports the gain the notary declared on the 2042 C.
+**Property gains.** Gain = sale price minus purchase price, the purchase price raised by actual costs or a flat 7.5%, and by actual works or a flat 15% if held over 5 years (F10864). The income tax allowance and the social levy allowance run on different scales (table). Income tax 19% on the gain after the income tax allowance; social levies 17.2% on the gain after the social levy allowance. The surtax applies to the income tax base above EUR 50,000, not to exempt sales or building land. Exemptions: the main home at the time of sale (occupied most of the year), a sale price up to EUR 15,000, and others in F10864 (for example a first sale of another dwelling with the price reinvested in a main home). A non-resident EU or EEA national who was tax resident in France for at least two continuous years gets an exemption on one French dwelling up to EUR 150,000 of net gain, if sold by 31 December of the tenth year after leaving, or at any time if the seller has had free use of it since 1 January of the year before the sale (CGI art. 150 U, II, 2°). The notary computes, files form 2048-IMM-SD and pays the tax out of the sale price; the seller reports the gain the notary declared on the 2042 C.
 
 ## Deadlines and filing
 
@@ -95,7 +95,7 @@ The return filed in 2026 covers income received and disposals made in 2025. Inco
 | Paper return | 19 May 2026 | same |
 | Option for the scale (box 2OP) | On the return, within the filing deadline | F2613 |
 | Advance payment excuse on dividends and interest | Request to the bank by 30 November of the year before payment | F2613 |
-| Property gain | Form 2048-IMM-SD filed and tax paid by the notary at the sale; gain then reported on the 2042 C | F10864 |
+| Property gain | Form 2048-IMM-SD filed by the notary with the deed when it is registered or published, and the tax paid at that filing (CGI art. 150 VG, I, 1°; 150 VF); in other cases, within one month of the sale (150 VG, I, 4°). Gain then reported on the 2042 C | CGI art. 150 VG |
 | Balance of income tax and levies | Debited from September 2026 (one debit up to EUR 300, else four) | `fr-personal-income-tax` |
 
 Income and disposals of 2026 are declared in spring 2027 on the same forms.
@@ -110,7 +110,7 @@ Income and disposals of 2026 are declared in spring 2027 on the same forms.
 
 ## Cross-border points
 
-- **Non-residents.** Gains on French property follow special rules, and a fiscal representative is needed where the gain is taxable (F10864: "Des règles particulières s'appliquent pour les non-résidents"); gains on substantial holdings in French companies and treaty relief also differ. Use `fr-cross-border`.
+- **Non-residents.** A gain on French property by a non-resident individual is taxed at 19% (CGI art. 244 bis A, I and 200 B), paid when the deed is registered or within one month of the sale, under the responsibility of a representative in France accredited by the tax office (244 bis A, IV). The surtax applies to non-residents too (CGI art. 1609 nonies G, I). Gains on substantial holdings in French companies, social levies and treaty relief: use `fr-cross-border`.
 - **Resident insured in another EEA state or Switzerland:** social levies on capital income are the 7.5% solidarity levy only (F2329; CSS L. 136-6 I ter).
 - **Foreign dividends and interest:** taxable in France; the foreign tax credit depends on the treaty. Refer with the treaty text.
 - **Employee shares and mobility:** an employee who moved into or out of France during vesting has the gain split by period of French activity. Refer.
@@ -195,9 +195,16 @@ Key law: CGI art. 200 A (PFU), 158 (dividend allowance), 150-0 A to 150-0 D ter 
 | Légifrance, CGI art. 1728 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028312309/2026-10-24 | 2026-10-24 |
 | Légifrance, CGI art. 1727 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029355562/2026-10-24 | 2026-10-24 |
 | Légifrance, CGI art. 1729 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-24 | 2026-10-24 |
-| Légifrance, loi n° 2025-1403 (LFSS 2026), art. 12 | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053226384/ | 2026-10-24 |
+| Légifrance, loi n° 2025-1403 (LFSS 2026), art. 12 (CSG 10.6%, IV list at 9.2%, start dates) | https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384 | 2026-10-26 |
+| Légifrance, CGI art. 200 A (PFU 12.8%, global option) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896 | 2026-10-26 |
+| Légifrance, CGI art. 200 B (19%) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030061684 | 2026-10-26 |
+| Légifrance, CGI art. 150 U (exemptions) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544910 | 2026-10-26 |
+| Légifrance, CGI art. 150 VC (duration allowance, income tax) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047970756 | 2026-10-26 |
+| Légifrance, CGI art. 150 VG (2048-IMM filing) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027978330 | 2026-10-26 |
+| Légifrance, CGI art. 1609 nonies G (surtax brackets) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806252 | 2026-10-26 |
+| Légifrance, CGI art. 244 bis A (non-residents) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806274 | 2026-10-26 |
 
-Not yet confirmed: the CGI article texts of 150-0 D, 150 U, 150 VB, 150 VC, 200 A, 200 B and 1609 nonies G read directly on Légifrance today (Légifrance showed a bot check; figures come from service-public, impots.gouv.fr and BOFiP); the exact time limit for the notary's 2048-IMM-SD; the non-resident property gain rules; employee savings match caps; PER exit computation; the free-share regime for plans of 8 August 2015 to 31 December 2017; the conditions of the retiring director's allowance.
+Not yet confirmed: the CGI text of art. 150-0 D (holding allowances, ten-year loss carry-forward) and the social levy duration allowance scale read on Légifrance (figures from impots.gouv.fr and F10864); the EUR 15,000 sale price exemption in the code text; the social levies on non-residents' property gains; employee savings match caps; PER exit computation; the free-share regime for plans of 8 August 2015 to 31 December 2017; the conditions of the retiring director's allowance.
 <!-- openaccountants-cta-block -->
 
 ---
