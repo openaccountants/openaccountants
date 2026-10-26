@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-26
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 source_checked: 2026-10-26
 depends_on:
   - uk-income-tax-sa100
@@ -59,7 +58,12 @@ Finance Act 2026 s.4 substituted 10.75% for 8.75% and 35.75% for 33.75% in ITA 2
 
 **Personal Allowance taper.** Dividends count towards adjusted net income. Above GBP 100,000 the allowance falls by GBP 1 for every GBP 2 and is gone at GBP 125,140 (see `uk-income-tax-sa100`). Dividends also count for the High Income Child Benefit Charge and student loan repayments.
 
-**What counts as a dividend.** Cash dividends from UK companies, interim or final; keep the voucher. Accumulation units, scrip dividends, dividends in specie, REIT property income distributions and corporate bond returns: see Not yet confirmed.
+**What counts as a dividend.** Dividend income for the dividend rates is defined in ITA 2007 s.19(2): dividends from UK and non-UK companies, stock (scrip) dividends, and a released or written-off loan to a participator in a close company.
+- Cash dividends from UK companies, interim or final; keep the voucher.
+- Authorised unit trusts: amounts the distribution accounts show as available for distribution as dividends are treated as dividends paid to unit holders in proportion to their rights (ITTOIA 2005 s.389). This applies to accumulation units too: the test is the amount available for distribution, not cash paid out.
+- Scrip (stock) dividends from a UK company: taxed on the cash equivalent, which is the cash dividend alternative; if that differs from the market value of the shares by 15% or more of that value, the market value is used (ITTOIA 2005 ss.410-412). Report on the SA101 Additional information pages, not in SA100 box 4.
+- UK REIT property income distributions out of exempt profits are profits of a UK property business for an individual (CTA 2010 s.548(6)), so they are taxed as non-savings property income (20%/40%/45% outside Scotland), not at the dividend rates, and the dividend allowance does not cover them. Other REIT dividends are ordinary dividends.
+- Dividends in specie and corporate bond returns: see Not yet confirmed.
 
 **Lawful dividends.** A company may make a distribution only out of profits available for the purpose: its accumulated, realised profits not already distributed or capitalised, less its accumulated, realised losses not written off (Companies Act 2006 s.830(1)-(2)). A loss-making company with no reserves cannot pay a dividend. A shareholder who knows, or has reasonable grounds to believe, that a distribution breaks these rules must repay it (s.847). An owner-director normally knows. Check the reserves in the latest accounts, or in interim accounts, before each dividend.
 
@@ -84,9 +88,11 @@ Finance Act 2026 s.4 substituted 10.75% for 8.75% and 35.75% for 33.75% in ITA 2
   At 25% corporation tax, a higher or additional rate director pays more by dividend than by salary on the marginal pound. Re-run the comparison each year for each client.
 - Salary must be paid under a proper employment arrangement through PAYE. Detail on NIC: `uk-national-insurance`; on marginal relief and associated companies: `uk-corporation-tax`.
 
-**Loans to participators (s.455).** If a close company lends to a participator, such as a director-shareholder, the company owes a charge equal to the dividend upper rate for the tax year the loan is made: 35.75% for loans made in 2026-27 (CTA 2010 s.455(2)). Relief is given when the loan is repaid, released or written off, on a claim within 4 years from the end of the financial year of the repayment or write-off (CTA 2010 s.458). How a written-off loan is taxed on the individual: see Not yet confirmed.
+**Loans to participators (s.455).** If a close company lends to a participator, such as a director-shareholder, the company owes a charge equal to the dividend upper rate for the tax year the loan is made: 35.75% for loans made in 2026-27 (CTA 2010 s.455(2)). The charge is due 9 months and 1 day after the end of the accounting period in which the loan is made (s.455(3)), so a loan repaid before that date never costs s.455 tax. Relief is given when the loan is repaid, released or written off, on a claim within 4 years from the end of the financial year of the repayment or write-off (s.458(2)-(3)). If the repayment or write-off comes on or after the due date, relief cannot be given until 9 months after the end of the accounting period in which it happens (s.458(4)-(5)).
 
-**Dividend waivers.** A shareholder can waive a dividend. HMRC can challenge waivers that move income to a spouse or family member. Ask before relying on one; the rules are not set out here (see Not yet confirmed).
+**Written-off director loans.** If the company releases or writes off a loan that was chargeable under s.455, the participator is charged to income tax on the amount released or written off in that tax year (ITTOIA 2005 ss.415-416). It is dividend income (ITA 2007 s.19(2)(d)), so the dividend allowance and the 10.75%/35.75%/39.35% rates apply. The company's s.455 relief follows s.458 above.
+
+**Dividend waivers.** A waiver is an arrangement, and so a settlement for income tax (ITTOIA 2005 s.620(1)). If the waiver lets more dividend reach the waiving shareholder's spouse or civil partner, the waiving shareholder keeps an interest in that income (s.625(1)), and the extra dividend is taxed as the waiving shareholder's income (s.624(1)). The exception for outright gifts between spouses does not apply, because a waiver gives no property, only a right to income (s.626). If the waiver benefits a minor child of the waiving shareholder, ask before relying on it. How to make a waiver valid in company law: see Not yet confirmed.
 
 ## Deadlines and filing
 
@@ -97,7 +103,7 @@ Finance Act 2026 s.4 substituted 10.75% for 8.75% and 35.75% for 33.75% in ITA 2
 | Dividends over GBP 10,000 | File an SA100. If you do not usually send one, register by 5 October after the tax year | https://www.gov.uk/tax-on-dividends/how-to-report-tax-on-dividends |
 | Already in Self Assessment | Report on the SA100 | https://www.gov.uk/tax-on-dividends/how-to-report-tax-on-dividends |
 
-- **SA100 boxes.** UK dividends in box 4, other dividends (such as from unit trusts) in box 5. Foreign dividends of GBP 500 or less in box 6, with any foreign tax in box 7; otherwise use the SA106 Foreign pages (SA100 2026 form).
+- **SA100 boxes.** UK dividends in box 4, other dividends (such as from unit trusts) in box 5. Foreign dividends of GBP 500 or less in box 6, the amount after foreign tax, with the foreign tax in box 7; otherwise use the SA106 Foreign pages. Stock dividends go on the Additional information pages (SA100 2026 form).
 - **Dates for 2026-27.** Paper return 31 October 2027; online return and balancing payment 31 January 2028; first payment on account for 2027-28 also 31 January 2028; second 31 July 2028. For the 2025-26 return the dates are one year earlier. See `uk-income-tax-sa100`.
 - **Payments on account.** Dividend tax collected through Self Assessment feeds the payments on account for the next year: each is half of last year's bill, unless that bill was under GBP 1,000 or more than 80% of the tax was paid at source. A director whose dividends rise in 2026-27 faces a larger balancing payment and larger payments on account in January 2028. See `uk-payments-on-account`.
 
@@ -115,7 +121,7 @@ Taxpayers inside Making Tax Digital for Income Tax move to points-based and new 
 
 ## Cross-border points
 
-- **Foreign dividends.** Report the gross amount before foreign tax,. Use SA100 box 6 and box 7 if they total GBP 500 or less; otherwise SA106.
+- **Foreign dividends.** Foreign dividends of GBP 500 or less go in SA100 box 6 as the sterling amount after foreign tax was taken off, with the foreign tax in box 7. Larger amounts go on the SA106 Foreign pages.
 - **Credit relief.** Foreign tax is credited against UK tax on the same income, up to the lower of the foreign tax and the UK tax on that income. Unilateral relief applies even without a treaty (TIOPA 2010 s.9). Credit is capped at the treaty rate; reclaim any excess from the foreign tax authority, not HMRC. No credit is due on dividends inside the GBP 500 allowance, because no UK tax is paid on them. Example: a higher rate taxpayer with GBP 3,950 of US dividends and GBP 593 of US tax pays UK tax of (3,950 - 500) x 35.75% = GBP 1,233.38, less a credit of GBP 593: GBP 640.38.
 - **Treaty rates** (including the US rate and Form W-8BEN): `uk-foreign-tax-and-withholding`.
 - **Non-residents.** Their UK tax position sits in `uk-non-resident-sa109`.
@@ -210,13 +216,20 @@ expected:
 | GOV.UK, Rates and thresholds for employers 2026 to 2027 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-10-24 |
 | GOV.UK, Employment Allowance eligibility | https://www.gov.uk/claim-employment-allowance/eligibility | 2026-10-23 |
 | GOV.UK, Corporation Tax rates | https://www.gov.uk/corporation-tax-rates | 2026-10-26 |
-| CTA 2010 s.455 and s.458, loans to participators | https://www.legislation.gov.uk/ukpga/2010/4/section/455 | 2026-10-26 |
+| CTA 2010 s.455, charge on loans to participators | https://www.legislation.gov.uk/ukpga/2010/4/section/455 | 2026-10-26 |
+| CTA 2010 s.458, relief on repayment or release | https://www.legislation.gov.uk/ukpga/2010/4/section/458 | 2026-10-26 |
+| ITA 2007 s.19, meaning of dividend income | https://www.legislation.gov.uk/ukpga/2007/3/section/19 | 2026-10-26 |
+| ITTOIA 2005 ss.415-416, release of loan to participator | https://www.legislation.gov.uk/ukpga/2005/5/section/415 | 2026-10-26 |
+| ITTOIA 2005 s.389, authorised unit trust dividend distributions | https://www.legislation.gov.uk/ukpga/2005/5/section/389 | 2026-10-26 |
+| ITTOIA 2005 ss.410-412, stock dividends | https://www.legislation.gov.uk/ukpga/2005/5/section/412 | 2026-10-26 |
+| ITTOIA 2005 ss.620, 624-626, settlements | https://www.legislation.gov.uk/ukpga/2005/5/section/624 | 2026-10-26 |
+| CTA 2010 s.548, REIT distributions | https://www.legislation.gov.uk/ukpga/2010/4/section/548 | 2026-10-26 |
 | TIOPA 2010 s.9, unilateral relief | https://www.legislation.gov.uk/ukpga/2010/8/section/9 | 2026-10-23 |
-| SA100 2026 form, dividend boxes | https://assets.publishing.service.gov.uk/media/69c14d07cfa346b9d4704a8d/SA100-2026.pdf | 2026-10-23 |
+| SA100 2026 form, dividend boxes | https://assets.publishing.service.gov.uk/media/69c14d07cfa346b9d4704a8d/SA100-2026.pdf | 2026-10-26 |
 | Finance Act 2009 Sch 55 and Sch 56, penalties | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
 | HMRC, interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
-Not yet confirmed: when s.455 tax falls due and the timing for relief interest (CTA 2010 s.455(3), s.458(4)-(5)); income tax on the individual when a participator loan is written off (carried from v1.2: taxed as a dividend; ITTOIA 2005 s.415 not read); dividend waivers (v1.2 said: deed before the dividend is declared, unconditional, settlements rules under ITTOIA 2005 s.624; not re-read); UK withholding on dividends paid to non-residents; v1.2 treatments not re-read: notional distributions on accumulation units are taxable; scrip dividends taxed at the cash equivalent; dividends in specie at market value; returns of capital are not income; corporate bond returns are savings interest; UK REIT property income distributions are property income at 20%/40%/45% with no dividend allowance; GBP conversion at the payment-date rate; foreign withholding rates other than the US (see `uk-foreign-tax-and-withholding`).
+Not yet confirmed: company-law formalities for a valid dividend waiver (v1.2 said a deed before the dividend is declared); settlements treatment of a waiver in favour of a minor child or other relative; UK withholding on dividends paid to non-residents; dividends in specie (v1.2: market value); returns of capital not being income; corporate bond returns as savings interest; tax deducted from REIT property income distributions; GBP conversion at the payment-date rate; foreign withholding rates other than the US (see `uk-foreign-tax-and-withholding`).
 
 <!-- openaccountants-cta-block -->
 
