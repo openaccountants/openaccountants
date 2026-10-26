@@ -1,7 +1,7 @@
 ---
 jurisdiction: FI
-version: 0.9
-last_updated: 2026-10-23
+version: 1.2
+last_updated: 2026-10-26
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -13,37 +13,43 @@ covered_by:
   SC: fi-yel-social
   TP: fi-transfer-pricing
 partial:
-  IT-IND: "2026 state/capital scales, ordinary business split, YEL deduction routes and filing sanctions prepared; complete legal chain, deductions/credits, local taxes, income categories and named Finnish accountant review open."
-  IT-CORP: "2026 rate, book-to-tax bridge, losses, filing and outbound-payment screening prepared; statutes, exemptions, finance, groups, specialist international cases and named Finnish accountant review open."
-  VAT: "Existing return Guide now has executable rate/mixed-use/sanction controls; full statutory, specialist scope and named Finnish accountant review open."
-  SC: "YEL contribution/reduction/review controls and selected legal exceptions checked; wider employee/social coverage, annual decrees and named Finnish accountant review open."
-  PR: "Reporting/health contribution, tax-card and statutory cash-cap preparation; insurance/benefit exceptions, remaining law and named Finnish accountant review open."
-  TP: "Documentation/control/method-selection principles and selected penalty provisions checked; benchmark/transaction application, specialist scope and named Finnish accountant review open."
-  XB: "Individual residence core checked to selected statutes; income categories, treaties, companies, PE and named Finnish accountant review open."
+  IT-IND: "Ordinary computation rebuilt; fresh whole-pack source review pending."
+  IT-CORP: "Ordinary computation rebuilt; fresh whole-pack source review pending."
+  VAT: "Ordinary computation and return routes rebuilt; fresh whole-pack source review pending."
+  SC: "YEL and employee contributions covered together; fresh whole-pack source review pending."
+  PR: "Ordinary withholding, benefits and insurance rebuilt; fresh whole-pack source review pending."
+  TP: "Ordinary pricing/documentation method rebuilt; fresh whole-pack source review pending."
+  XB: "Individual and corporate ordinary routes rebuilt; fresh whole-pack source review pending."
 ---
 
 # Finland tax pack
 
-Accountable owner: Michael. Active writer: ChatGPT support chat under [OWNERS.md](../../../OWNERS.md), [issue #392](https://github.com/openaccountants/openaccountants/issues/392), local branch `codex/finland-country-completion`, consolidated draft [PR #514](https://github.com/openaccountants/openaccountants/pull/514). Michael directed the move from Iceland on 23 October 2026. Existing Guides and research are preserved; all domains remain partial.
+Tax year **2026**, currency EUR, tax authority [Vero](https://www.vero.fi/en/). Michael / ChatGPT owns this pack under [OWNERS.md](../../../OWNERS.md). Work remains on [issue #392](https://github.com/openaccountants/openaccountants/issues/392) and the existing Finland [PR #777](https://github.com/openaccountants/openaccountants/pull/777). Historical consolidated PR #514 is not the current publication destination.
 
-The [individual-tax Guide](fi-income-tax.md) now separates the 2026 state scale from total tax, records ordinary sole-trader allocation and removes the contradictory personal-only YEL deduction prohibition. The [corporate Guide](fi-corporate-income-tax.md) now distinguishes the current rate/loss rules from future proposals, with a book-to-tax bridge and loss/payment controls. Existing source work is retained in the topic research records and Git history.
+## Domains
 
-The [transfer-pricing documentation Guide](fi-transfer-pricing.md) addresses a scoped documentation gap. Prepayments, VAT, YEL, payroll, cross-border and property retain the specialist and legal gaps recorded below; full-pack source reading does not settle all legal scope. The formation draft now uses current PRH setup routes/fees, statutory board and registration rules and the precise two-period audit-omission test. Its wider entity, accounting and specialist-law scope remains open. Guide presence and passing checks do not establish comprehensive coverage or professional review.
+All revised tax Guides are **sourced from the law**, pending fresh independent whole-pack review. None has professional attestation. Passing arithmetic or having a Guide does not establish complete coverage.
 
-The [country-by-country reporting draft](fi-country-by-country-reporting.md) distinguishes notification and full-report preparation. The selected statutory notification/report deadlines, secondary/surrogate conditions and penalty provisions are now source-checked; current exchange conditions, case-specific eligibility and named Finnish accountant review remain open.
+| Domain | Ordinary computation / procedure |
+|---|---|
+| IT-IND | [Income tax](fi-income-tax.md): wages, pensions, investment, rent/gains, sole-trade allocation, deductions/credits, mainland and Åland components; [prepayments](fi-prepayments.md) |
+| IT-CORP | [Corporate income tax](fi-corporate-income-tax.md): book-to-tax base, depreciation, dividends/gains, interest, groups, losses and broadcasting tax |
+| VAT | [VAT return](finland-vat-return.md): taxable base, rates, exemptions, input deduction, EU/import routes, Åland, construction reverse charge and property adjustments |
+| SC / PR | [YEL](fi-yel-social.md) and [payroll](fi-employer-payroll.md): entrepreneur/employee eligibility, insurance bases, health contributions, benefits, withholding and reporting |
+| TP | [Transfer pricing](fi-transfer-pricing.md): ordinary method execution, documentation and requests; [CbCR](fi-country-by-country-reporting.md): role, country rows, notification and filing |
+| XB | [Individual residence/income/relief](fi-individual-cross-border-residence.md); [corporate residence/PE/withholding/credit/exit](fi-corporate-cross-border-tax.md) |
+| Property | [Transfer tax](fi-property-transfer-tax.md) and [annual real-estate tax](fi-annual-real-estate-tax.md); rent/gains in income-tax Guides |
 
-The [employer-payroll draft](fi-employer-payroll.md) adds reporting and employer health-contribution preparation. It does not complete employee withholding or employer insurance coverage.
+Formation and accounting are a separate milestone. The existing [company-formation Guide](fi-company-formation.md) is preserved unchanged by the 26 October tax rebuild; this batch makes no accounting-pack completion claim.
 
-The [individual residence draft](fi-individual-cross-border-residence.md) adds arrival/departure and treaty-screening work. It does not establish comprehensive cross-border coverage.
+## Scope boundaries
 
-The [property-transfer tax draft](fi-property-transfer-tax.md) adds acquisition-tax preparation for real estate and housing-company shares. Annual property taxation, rental income, gains and full statutory/exception review remain open.
+Ordinary taxpayers and calculations above are the current tax milestone. Country-specific treaty rates/MLI outcomes, actual municipal valuation inputs, benchmark studies and taxpayer elections require case evidence. Those inputs are not invented national constants. Specialist agriculture/forestry/MYEL benefits, estate/gift taxes, fund/hybrid/CFC/minimum-tax/reorganisation cases, special VAT margin/travel/group/marketplace schemes, power plants and unusual professional/service regimes are not completed by this ordinary pack. They require separately scoped Guides; the worldwide goal is broader than this bounded ordinary-tax milestone.
+
+Confirmed future parameters are separated from current law. The October 2026 income-tax amendments with whole-2026 effect are identified in the individual Guide. 2027 interest rates and the exact December 2026 additional-prepayment opening day are not asserted. Annual property tax uses **2025 values**; future 2027 wording in consolidated statutes is not silently applied to 2026.
 
 ## Evidence and next action
 
-The 23 October country batch has 33 passing executable controls across eleven source Guides. The [independent full-pack review](../../../docs/research/2026-10-23-finland-pack-review.md) records all twelve Guides plus README at frozen source checkpoint `b7b4a75f`, selected official-source verification, independent recomputation of all 33 controls and six corrections. YEL health-care/age/disability wording, foreign-service VAT gates, small-employer unemployment withholding and VAT penalty scope were corrected locally at `a357563c`; `1b02f2f2` removes a further overbroad VAT event example. The record identifies final closure and source identity separately. This review does not establish complete legal coverage or Finnish accountant approval.
+The earlier [23 October independent review](../../../docs/research/2026-10-23-finland-pack-review.md), [source reachability record](../../../docs/research/2026-10-23-finland-source-reachability.json) and [direct statutory retrieval](../../../docs/research/2026-10-23-finland-direct-statute-retrieval.json) are preserved as historical evidence. They do **not** approve the rebuilt 26 October blobs. HTTP availability is not legal verification.
 
-All 101 current unique non-CTA source URLs have HTTP 200 evidence without redirects. The source-reachability record retains original check timestamps and separately records three review-fix URLs; HTTP reachability is not legal verification. The source batch passed 129 repository unit tests before review corrections; final publication checks and exact pushed-head CI are recorded on [issue #392](https://github.com/openaccountants/openaccountants/issues/392) and [PR #514](https://github.com/openaccountants/openaccountants/pull/514). Evidence: `docs/research/2026-10-23-finland-source-reachability.json`.
-
-Publication requires independent correction closure and final repository checks before the single country content push. All seven domains remain partial. Continue the stated legal/specialist gaps and obtain a named Finnish accountant review separately. Keep issue #392 open and consolidated PR #514 draft while those wider gates remain open.
-
-Selected provisions of ten tax, pension, company and audit statutes have been read directly from official Finlex content, including the YEL review-consent and disability exceptions and the 2026 contingent-consideration transition. This is scoped legal reconciliation, not an audit of every statute or exception. Retrieval scope/hashes are in `docs/research/2026-10-23-finland-direct-statute-retrieval.json`.
+The 26 October pack contains twelve ordinary tax Guides, a router and the unchanged formation Guide. Each ordinary tax Guide has the nine-section standard and exactly two executable controls. Fresh independent review must re-read the primary sources, test scope and calculations, identify the exact file hashes and close findings. Until then the domain entries above remain partial and issue #392 stays open. Local commits save drafts; publication and merging remain separate gates. No new PR is required for this country.

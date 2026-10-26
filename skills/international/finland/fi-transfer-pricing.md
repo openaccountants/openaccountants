@@ -9,24 +9,24 @@ description: >
   documentation requests and sanctions. Use for Finnish intercompany sales,
   services, financing, intangibles, restructuring, transfer-pricing adjustments,
   tax returns and evidence preparation. Distinguishes pricing, documentation
-  and separate country-by-country reporting obligations. Includes two
-  recomputable examples; transaction-specific specialist and Finnish accountant
-  review remain open.
+  and separate country-by-country reporting obligations. Includes ordinary transaction calculations and two
+  recomputable examples. Specialist arrangements require a separately scoped
+  transaction analysis; no professional attestation is claimed.
 jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
-version: 0.6
+version: 0.7
 ---
 
-# Finland transfer-pricing documentation v0.6
+# Finland transfer-pricing documentation v0.7
 
 ## Who this applies to
 
 The Finnish Tax Administration's guidance addresses foreign related-party transactions of Finnish taxpayers and dealings between a foreign enterprise and its Finnish PE. The pricing principle also applies to small enterprises outside the full documentation obligation. [Obligation guidance][obligation]
 
-This draft uses official administrative guidance read on 23 October 2026. The obligation page says it will be updated and displays a 2022 update date. Consolidated Finnish sections 14a–14c, 31, 32 and 32a have now been read directly from the official Finlex page's embedded statutory text; the earlier indexed and 2016-amendment work is preserved. Full specialist scope, procedural interaction and named Finnish accountant review remain open.
+Apply the current Assessment Procedure Act §§14a–14c and 31–32a. The older Vero documentation page is flagged for updating; use the current statute where wording differs. This Guide supplies the ordinary documentation and pricing method, not a benchmark rate for an unidentified business. [Current Act][law].
 
 ### Related parties and the actual transaction
 
@@ -58,6 +58,26 @@ The simplification can remove the Master File requirement when no counterparty e
 Select the most reliable method for the delineated transaction and available comparables. Vero distinguishes CUP (price), resale price/cost plus (gross margin), TNMM (net indicator) and profit split. If equally reliable, traditional transaction methods take preference over profit methods, and CUP over other methods. Record the tested party, base, adjustments and calculation; avoid a universal markup. [Detailed guidance, sections 6.6–6.7][detailed]
 
 Gross cost plus and a net-cost TNMM are different analyses. Do not import every overhead into a gross cost base or transfer a net margin to gross costs without supporting comparability. [Detailed guidance, section 6.7.2][detailed]
+
+### Execute the selected method
+
+Prepare a separate transaction segment, reconcile revenue/costs/assets to the ledger, explain consistent accounting classifications and apply only comparables matching functions, assets, controlled risks and economic circumstances. Document the reason for each comparability adjustment and why rejected methods are less reliable. A tax adjustment under §31 requires the arm's-length conditions and the resulting understated income/overstated loss; the result is carried into the [corporate computation](fi-corporate-income-tax.md), with interest deductibility tested separately. [Act §§14b,31][law].
+
+The following are calculation identities for the **supported selected method**, not statutory safe-harbour margins:
+
+| Method | Execution once comparability is established |
+|---|---|
+| CUP | Comparable unit price, adjusted for supported differences, × controlled quantity; reconcile with booked consideration. |
+| Resale price | Independent resale revenue × (1 − comparable **gross** resale margin) gives supported purchase price, after consistent functional/accounting adjustments. |
+| Cost plus | Comparable qualifying gross cost base × (1 + supported gross markup). Reconcile cost inclusions consistently with comparables. |
+| TNMM | Select the less complex tested party and reliable net indicator. Net-cost route: qualifying operating costs × supported net markup = target operating profit; required revenue = those costs + target profit. Sales route: target profit = comparable net margin × sales, and derive the controlled price from the segment reconciliation. |
+| Profit split | Establish combined relevant profit and supported allocation of contributions; where residual analysis is selected, compensate routine functions first, then allocate the residual on evidenced contributions. The allocation key is not automatically ownership or country revenue. |
+
+Method selection and the gross/net distinction follow [Vero detailed guidance §§6.6–6.7][detailed]. The algebra above is a workpaper implementation; it does not establish the comparable margin or authorise selection of a convenient point in a range. Keep internal/external searches, acceptance/rejection criteria, comparability adjustments and the actual calculation with the file.
+
+For routine intragroup services, establish a concrete recipient benefit and exclude shareholder-only activities. Identify direct/indirect service costs and support allocation keys reflecting use, then apply a supported method/markup; do not charge all central costs by revenue merely because it is available. CUP is useful where comparable independent services exist; a net-cost TNMM must use a consistent operating-cost base. A higher-value activity involving unique intangibles is not automatically routine support. [Vero services guidance][services].
+
+For an ordinary loan, delineate debt, actual borrower capacity and terms first. Price the borrower/instrument at the origination date using internal/external comparable lending adjusted for currency, maturity, security, subordination, repayment, fixed/floating rate and creditworthiness. A parent's external borrowing rate is not automatically its subsidiary's rate. Compute interest from principal outstanding by period × supported annual rate × contractual day fraction; separate fees and retain the interest-limit calculation. Guarantees, cash pools and intangibles/restructuring require their own economic analysis; do not reuse the routine-loan spread blindly. [Vero loan guidance][loans]; [Act §31][law].
 
 ### Documentation contents
 
@@ -116,22 +136,30 @@ expected:
   assumed_adjustment: 30000
 ```
 
-### 2. Counterparty aggregation
+### 2. Routine service net-cost TNMM
 
-Assume EUR 350,000 services and EUR 180,000 interest with one associated enterprise, both at established arm's-length values. EUR 530,000 exceeds the simplification threshold by EUR 30,000. The example assumes no disputed classification or double counting.
+Assume a delineated routine service, EUR 90,000 direct and EUR 10,000 attributable indirect operating costs, EUR 5,000 excluded shareholder costs, a supported comparable net-cost markup of **6%** and booked charge EUR 102,000. Qualifying cost is EUR 100,000, target profit EUR 6,000 and supported charge EUR 106,000; the assumed revenue adjustment is EUR 4,000. The 6% and allocation are hypothetical supported inputs, not Finnish safe harbours.
 
 ```oa-check
-name: Finland documentation counterparty aggregation
+name: Finland routine service net cost transaction calculation
 inputs:
-  service_value: 350000
-  interest_value: 180000
-  simplification_limit: 500000
+  direct_costs: 90000
+  indirect_costs: 10000
+  shareholder_costs: 5000
+  supported_net_markup: 0.06
+  booked_charge: 102000
 steps:
-  counterparty_total: service_value + interest_value
-  excess_over_limit: counterparty_total - simplification_limit
+  total_booked_cost: direct_costs + indirect_costs + shareholder_costs
+  qualifying_cost: total_booked_cost - shareholder_costs
+  target_operating_profit: qualifying_cost * supported_net_markup
+  supported_charge: qualifying_cost + target_operating_profit
+  revenue_adjustment: supported_charge - booked_charge
 expected:
-  counterparty_total: 530000
-  excess_over_limit: 30000
+  total_booked_cost: 105000
+  qualifying_cost: 100000
+  target_operating_profit: 6000
+  supported_charge: 106000
+  revenue_adjustment: 4000
 ```
 
 ## Ask the client first
@@ -155,9 +183,12 @@ The 23 October source work and independent review remain preserved in the countr
 | Vero, 2026 Form 78 | https://vero.fi/en/About-us/contact-us/forms/descriptions/78_explanation_of_transfer_prices_3054/ | 2026-10-26 |
 | Vero, documentation FAQ (retained source for the recorded threshold-wording discrepancy) | https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/supporting-high-growth-companies-with-international-tax-questions/faq---transfer-pricing/faq/when-does-a-company-need-to-maintain-and-submit-transfer-pricing-documentation-in-finland/ | 2026-10-23 |
 | Finlex, 2016 amending Act (historical source retained; current Act governs) | https://www.finlex.fi/api/media/statute/699004/mainPdf/main.pdf?timestamp=2016-12-28T22%3A00%3A00.000Z | 2026-10-23 |
+| Vero, routine services | https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-of-sale-of-services/ | 2026-10-26 |
+| Vero, intragroup loans | https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/ | 2026-10-26 |
 | Vero, 2026 late-payment interest and interest with relief | https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/ | 2026-10-26 |
 
-Not yet confirmed: remaining amendment/procedural scope, detailed application of master/local content and simplification eligibility, benchmark searches and transaction-specific method application, financing/intangibles/restructuring cases, dispute/APA procedures and live filing. Named Finnish accountant review remains outstanding. The earlier independent review covers the 23 October source blobs; the 26 October revision requires a fresh independent review before publication. TP and the country pack remain partial.
+Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustments, APA/MAP case outcomes and special financing/intangible/restructuring terms. These are transaction inputs or specialist procedures; no universal margin, treaty outcome or professional sign-off is asserted. Fresh whole-pack independent review is required for this revision.
+
 
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/
@@ -168,3 +199,6 @@ Not yet confirmed: remaining amendment/procedural scope, detailed application of
 [amendment]: https://www.finlex.fi/api/media/statute/699004/mainPdf/main.pdf?timestamp=2016-12-28T22%3A00%3A00.000Z
 
 [interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
+
+[services]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-of-sale-of-services/
+[loans]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/
