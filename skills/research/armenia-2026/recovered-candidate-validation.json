@@ -246,7 +246,7 @@
   "current_example_blocks": 88,
   "canonical_core_shapes": 7,
   "remaining_partial": [],
-  "fresh_independent_review": "pending",
+  "fresh_independent_review": "PASS; exact Guide content ed50628b03665c700b2ca62e0311cb04638c09a0; see independent-review-recovered/focused-followup/FINAL-RESULT.json",
   "ordinary_domain_coverage_complete": true,
   "professional_attestation": false
 }

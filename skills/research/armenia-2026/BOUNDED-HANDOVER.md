@@ -1,3 +1,9 @@
+# Armenia final ordinary pack review passed
+
+The independent whole-pack review passed exact Guide content **ed50628b03665c700b2ca62e0311cb04638c09a0**. The [final report](independent-review-recovered/focused-followup/FINAL-WHOLE-PACK-REVIEW.md) and result JSON retain the evidence. All seven ordinary domains,88controls,10Guide schema/strict checks,51original control bytes,18original file hashes and8protected metadata/CTA sets pass. Named professional attestation remains absent. The following publication/history notes retain earlier incomplete checkpoints as history; they do not describe the final ordinary coverage. Final public head/checks are recorded in the country PR rather than a claim of maintainer merge.
+
+---
+
 # Current Armenia publication candidate
 
 The two ordinary-method gaps in the historical checkpoint below have been resolved for final independent review. Payroll derives the PIT-inclusive benefit minimum from the current statutory exclusion and uses the Unified Social Service assessment/payment notice. Cross-border maps the current SRC trilingual refund specimen and Code304 approval service, with no invented agent-credit assignment or guaranteed cash clock. The independent focused finding accepts both methods; final exact-head review follows the final commit. All seven ordinary domains are supplied, with88passing controls and no accountant attestation. Current evidence is in two-methods-current-source-delta.md, final-ordinary-coverage-armenia.json and independent-review-recovered/focused-followup/.
