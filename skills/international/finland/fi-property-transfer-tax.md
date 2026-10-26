@@ -59,7 +59,7 @@ File a transfer-tax return by the tax-payment deadline under §30, including an 
 | Building with no title/leasehold registration | Buyer files and pays within 6 months of contract. |
 | Existing housing shares, private sale | Buyer files and pays within 2 months of signing. |
 | Existing housing shares with real-estate agent | Pay at signing; agent supplies the return under its reporting duty. Confirm the certificate. |
-| New construction within §21(3) | Buyer files and pays within 2 months after ownership transfer; agent involvement does not remove the buyer's duty. |
+| New construction within §21(2) | Buyer files and pays within 2 months after ownership transfer; agent involvement does not remove the buyer's duty. |
 
 [Act §§7,21,30–31][law]; [Vero deadline table][deadlines]. For digital deeds signed on different dates, use the final required signature as the contract date. Apply next-business-day rules for a statutory holiday/weekend; calendar the registration application separately. [Vero filing instructions][filing]; [deadline table][deadlines].
 

@@ -17,7 +17,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
-version: 0.8
+version: 0.9
 ---
 
 # Finland employer payroll reporting v0.8
@@ -43,7 +43,7 @@ Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance 
 | Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
 | Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
 | Unemployment small payroll | Fund-payment threshold EUR 1,500/year; employee deduction still required below threshold | [Act 555/1998, sections 12a, 21][fund-law]; [Employment Fund liability][fund-scope] |
-| Accident / group life | Employer-only actual policy premiums; accident policy required above the indexed annual wage threshold; no universal flat rate | [Accident Act 459/2015, sections 3, 166, 268][accident-law]; [Vero 2026 contributions][insurance] |
+| Accident / group life | Employer-only actual policy premiums; accident policy required when the employer’s total calendar-year paid or agreed wages exceed EUR 1,500 in 2026; no universal flat rate | [Accident Act 459/2015, sections 3, 166, 268][accident-law]; [Vero 2026 contributions][insurance] |
 
 Separate part-owner wages from the ordinary employer unemployment band. State enterprises' upper rate is 0.72% and universities' 0.79%, not the ordinary 1.23%. A TyEL average (24.40% total / 17.10% employer in 2026) is an estimate, not a substitute for the actual insurer rate, expenses, bonuses and large-employer risk component. [Unemployment Financing Act, section 18][fund-law]; [Ilmarinen contribution calculation][tyel-calculation].
 
@@ -88,7 +88,7 @@ Unemployment begins the month after turning 18. For those born before 1965 it en
 
 Deduct liable employee unemployment even where total employer annual wages do not exceed EUR 1,500; the employer then retains the deduction, and still reports liability. Above threshold the Fund invoices both shares using actual reported earnings. For covered ordinary annual payroll compute `min(payroll,2509500) × 0.0031 + max(0,payroll−2509500) × 0.0123`; calculate part-owner employer wages at 0.31% separately. [Unemployment Financing Act, sections 12a, 18, 21][fund-law].
 
-Employer health requires Finnish health-insured employee and its age/entrepreneur exceptions; a working YEL owner salary requires the statutory obligation screen, not automatic TyEL. Multiply the established wage base by 1.91%, round the period total to cents. Employee health is already in resident/progressive withholding. Accident cover is arranged before work when the indexed annual wage agreement/payment threshold is exceeded; the employer alone pays the risk/policy rate. Group life is required where the applicable collective agreement requires it, using the actual policy rate; it is not an employee deduction. No single employer all-in percentage can replace these schedules. [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025][health-rates]; [Accident Act, sections 3, 166, 268][accident-law]; [Vero insurance][insurance].
+Employer health requires Finnish health-insured employee and its age/entrepreneur exceptions; a working YEL owner salary requires the statutory obligation screen, not automatic TyEL. Multiply the established wage base by 1.91%, round the period total to cents. Employee health is already in resident/progressive withholding. Accident cover must be effective when covered work begins if the employer’s total paid or agreed calendar-year wages exceed EUR 1,500 in 2026; this threshold is per employer across employees, not per employee; the employer alone pays the risk/policy rate. Group life is required where the applicable collective agreement requires it, using the actual policy rate; it is not an employee deduction. No single employer all-in percentage can replace these schedules. [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025][health-rates]; [Accident Act, sections 3, 166, 268][accident-law]; [Vero insurance][insurance].
 
 Net cash is cash wages + genuine cash reimbursements − collectible withholding − employee pension/unemployment and other legally authorised cash deductions. Benefits are tax/insurance bases, not extra cash. Check cash insufficiency and deduction/recovery rules before finalising a low/no-cash payslip; retain employee amounts still recoverable and insurer obligations separately. Employer cost is gross contractual wage/benefit cost plus **employer** shares; adding the full TyEL invoice after already counting employee deductions overstates employer cost. [Prepayment Act, section 11][prepayment-law]; [TyEL Act, section 152][tyel-law]; [Act 555/1998, section 21][fund-law].
 

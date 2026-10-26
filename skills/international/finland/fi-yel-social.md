@@ -12,7 +12,7 @@ description: >
   to the payroll Guide. Includes statutory source dates, filing/payment and neglect
   procedures and two recomputable examples. Individual benefit awards and MYEL
   agricultural/grant schemes require their own entitlement decisions.
-version: 1.5
+version: 1.6
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -26,7 +26,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland YEL and self-employed social insurance v1.5
+# Finland YEL and self-employed social insurance v1.6
 
 **Tax year:** 2026. Ordinary entrepreneur contributions, read together with [employee payroll/social insurance](fi-employer-payroll.md). Local source-cited draft awaiting independent whole-pack review.
 
@@ -85,7 +85,7 @@ Flexibility changes that year's contributions, not permanently confirmed income.
 
 ### Health: substitute once, distinguish the bases
 
-Health Insurance Act chapter 18 section 14 substitutes confirmed YEL/MYEL income for the specified business earned portion, own-company owner salary/work compensation and other listed entrepreneurial income. Unrelated employment and income not replaced remain under their own rules. For health care, compute the relevant municipal-tax-like deductions on the substituted income, **without deducting YEL/MYEL pension premiums**. Thus care contribution is not invariably gross YEL × 1.10%, and it is never care on both confirmed income and the entrepreneurial income it replaces. Mixed pensions/benefits have the separate 1.49% component and chapter 18 section 20's allocation. [Health Insurance Act, chapter 18 sections 14–20][health]; [Decree 1026/2025, section 1][health-rates].
+Health Insurance Act chapter 18 section 14 substitutes confirmed YEL/MYEL income for the specified business earned portion, own-company owner salary/work compensation and other listed entrepreneurial income. Unrelated employment and income not replaced remain under their own rules. For health care, compute the relevant municipal-tax-like deductions on the substituted income, **without deducting YEL/MYEL pension premiums**. Thus care contribution is not invariably gross YEL × 1.10%, and it is never care on both confirmed income and the entrepreneurial income it replaces. For mixed wages/pensions/benefits, compute basic care at `1.10% × established care base C` plus `0.39% × max(0, C − statutory daily-allowance base D)` for the surcharge-eligible income. The §14(2) entrepreneurial receipts are excluded from the 0.39% surcharge: retain their classification rather than treating all care-base excess as pension. A below-threshold daily-allowance payment of zero does not itself make D zero. For an ordinary wage/pension mix with C EUR 35,000, D EUR 30,000 and no excluded entrepreneur receipts, the total is EUR 404.50; compute the substituted entrepreneur route separately under the same statutory exclusion. See the [individual computation](fi-income-tax.md) for the mixed-income sequence. [Health Insurance Act, chapter 18 sections 14–20][health]; [Decree 1026/2025, section 1][health-rates].
 
 For daily allowance, aggregate covered wage income from outside employment and confirmed YEL/MYEL work income under section 15, omitting own-company salary replaced by YEL. If that aggregate is at least EUR 17,255, charge 0.88% on the **whole** qualifying aggregate, not only the excess. Add 0.23% on YEL confirmed income. If the aggregate is below EUR 17,255, the 0.88% component is zero but the YEL 0.23% supplement remains where applicable. This produces 1.11% for a solely YEL base over the threshold, not 1.11% on unrelated wages as well. Apply the actual age/coverage and posting rules. [Health Insurance Act, chapter 18 sections 15–18, 24][health]; [Decree 1026/2025, section 2][health-rates].
 

@@ -19,11 +19,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.3
+version: 1.4
 category: international
 ---
 
-# Finland corporate income tax v1.3
+# Finland corporate income tax v1.4
 
 **Tax year:** 2026. Ordinary company computations; source-cited local draft awaiting fresh independent pack review. Tier 2 is not a licensed accountant's attestation.
 
@@ -59,7 +59,7 @@ Start with the accounts **before income tax**. Reconcile revenue, services, rent
 
 Deduct costs incurred to acquire/preserve taxable business income under section 7: evidenced business wages and employer contributions, rent, ordinary advertising, supplies and other business costs. Recoverable VAT is not part of deductible acquisition cost. Separate capital improvements from repairs, private consumption from business costs and marketing from representation. Add back income taxes, fines, penalty charges, bribes and non-deductible support/losses on nontrade receivables from companies held at least 10% under section 16(7). Ordinary trade-receivable losses have their own treatment. From 1 January 2026 the section 16(12)–(15) restriction covers specified labour-market-organisation membership fees, indirect memberships and unidentified replacement service fees; do not carry the repealed section 8(1)(9) deduction forward. [Business Income Tax Act, sections 7–8, 16–18][business-law]; [Form 6B, non-deductible costs][form6b].
 
-Inventory cost is recognised on sale/consumption/loss. At year end compare cost with the statutory replacement/realisation measures and substantiate any lower value; a generic book provision is insufficient. Keep tax depreciation apart from book depreciation. For the movable pool: opening residual + qualifying additions brought into use + capital improvements − sale proceeds/compensation = pool before depreciation. An excess of disposal proceeds over the pool is taxable; do not depreciate a negative balance. Separate land (not depreciable) from buildings. Limited-life and separately transferable intangible rights use section 37's equal annual write-off over ten years or a demonstrated shorter useful life; other qualifying long-term costs use section 24's useful period, capped at ten years. Section 54 requires the corresponding accounting deductions and limits tax depreciation to cumulative book deductions. [Business Income Tax Act, sections 24, 28, 30, 33–37, 54][business-law].
+Inventory cost is recognised on sale/consumption/loss. At year end compare cost with the statutory replacement/realisation measures and substantiate any lower value; a generic book provision is insufficient. Keep tax depreciation apart from book depreciation. For the movable pool: opening residual + qualifying additions brought into use + capital improvements − sale proceeds/compensation = pool before depreciation. An excess of disposal proceeds over the pool is taxable; do not depreciate a negative balance. Separate land (not depreciable) from buildings. Separately transferable intangible rights, both limited-life and indefinite-life rights, use section 37's equal annual write-off over ten years or a demonstrated shorter useful life; other qualifying long-term costs use section 24's useful period, capped at ten years. Section 54 requires the corresponding accounting deductions and limits tax depreciation to cumulative book deductions. [Business Income Tax Act, sections 24, 28, 30, 33–37, 54][business-law].
 
 ### Corporate dividends and share disposals
 

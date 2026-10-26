@@ -7,10 +7,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
-version: 0.5
+version: 0.6
 ---
 
-# Finland country-by-country reporting v0.5
+# Finland country-by-country reporting v0.6
 
 ## Who this applies to
 
@@ -28,6 +28,8 @@ Apply Assessment Procedure Act 1558/1995 §14d to Finnish ultimate-parent groups
 ## The base
 
 ### Establish the reporting perimeter and role
+
+The ultimate parent is the entity required to consolidate under the applicable accounting law, or that would be required to consolidate if its equity were listed in its tax-residence jurisdiction, and that has no higher directly/indirectly controlling entity with that consolidation duty. Constituent entities include business units in the consolidated financial statements (or included under the hypothetical listing test), **entities excluded solely for size or materiality**, and their PEs where separate accounts are prepared for financial/regulatory/tax reporting or internal management. Obtain the full legal/consolidation perimeter, not only a list of material subsidiaries. Apply the threshold to the statutory preceding-period consolidated net sales separately from this entity-inclusion test. [Act §14d(2)–(4)][law]; [Vero detailed guidance §2][detail].
 
 The Finnish ultimate parent generally files the full report. A foreign parent's report can reach Finland through exchange, but the Finnish entity must establish the parent's obligation and applicable exchange arrangements. If that route fails, examine surrogate and exceptional Finnish local-filing requirements; foreign ownership alone does not settle the issue. [CbCR overview][overview]
 

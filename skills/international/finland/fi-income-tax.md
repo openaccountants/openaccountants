@@ -12,7 +12,7 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border Guide; Åland municipal differences require
   the separate regional schedule.
-version: 1.6
+version: 1.7
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -25,7 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.6
+# Finland individual income tax v1.7
 
 **Tax year:** 2026. Source-cited ordinary individual computation; local draft awaiting fresh independent pack review. The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
@@ -56,7 +56,7 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 | Credit cap supplements | EUR 1,200 if aged 65 before year start; EUR 105 per minor child in custody at year end, doubled for the statutory sole-custodian/no-spouse case | [Income Tax Act, section 125(3)–(4)][law] |
 | Pension deduction | Full maximum EUR 11,080 from annual national pension × 1.173 rounded up to next EUR 10, capped at pension; taper below | [Income Tax Act, section 100][law]; [Kela 2026 full pension EUR 787.07/month][kela] |
 | Pension supplement tax | 5.85% of pension after pension deduction above EUR 60,000 | [Income Tax Act, section 124(4)][law] |
-| Health care | 1.10% wage/work base; 1.49% pension/benefit/other qualifying base | [Health Insurance Act, chapter 18 sections 14–20][health-law]; [2026 tax bases][tax-bases] |
+| Health care | 1.10% of established health-care base plus 0.39% of the eligible positive care-base/daily-base difference; pure pension/benefit base can therefore bear 1.49%; apply the mixed-base and §14(2) exclusion rules below | [Health Insurance Act, chapter 18 sections 14–20][health-law]; [2026 tax bases][tax-bases] |
 | Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; entrepreneur supplement uses separate YEL rules | [Health Insurance Act, chapter 18 sections 5, 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
 | Broadcasting tax | Covered mainland residents reaching 18 in the year: 2.5% above EUR 15,150 of the larger of net earned+capital income or confirmed YEL+MYEL income, capped at EUR 160 | [Broadcasting Tax Act, sections 1–2][yle-law] |
 | Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f][law] |
@@ -74,7 +74,9 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 4. For pensions, start with maximum EUR 11,080, subtract 51% of net earned income above that maximum up to EUR 22,500, then 19.6% above EUR 22,500; floor at zero and cap at the pension amount. Pension receipts do not earn the work-income credit merely because they are earned income. Then compute basic deduction from income after the preceding applicable deductions: `min(remaining_income, max(0, 4265 − 0.18 × max(0, remaining_income − 4265)))`. Apply confirmed earned-category losses under section 118. [Income Tax Act, sections 100, 106, 118, 125][law].
 5. Apply the state scale and actual municipal/parish rates to their established bases. Mainland bases share the ordinary deduction rules; Åland municipal law differs. Compute work-income credit using **qualifying work income** for the 18% amount and **net earned income** for the taper. Its cap includes qualifying age/child additions. Apply first against state earned tax, with any unused amount proportionately against municipal/church/health-care tax, before the later tax credits. Do not subtract it from the daily-allowance contribution. [Income Tax Act, sections 106, 124–125][law].
 
-For health care use the insured person's municipal taxable earned base subject to Health Insurance Act chapter 18 substitutions, including YEL/MYEL bases for specified entrepreneur receipts; the health base does not simply equal business profit. Compute daily allowance on its separate wage/work base and age/coverage conditions. Employee health amounts are inside ordinary tax-card withholding and must not be deducted a second time as separate payroll insurance. Pensions/benefits have their different health component. [Health Insurance Act, chapter 18 sections 14–20][health-law]; [Vero social insurance][insurance].
+For health care, establish the municipal-tax-like base **C** under Health Insurance Act chapter 18 §§14,16–19, substituting YEL/MYEL confirmed income for the specified entrepreneurial receipts once and without deducting those pension premiums from the care base. Calculate basic care contribution as `C × 1.10%`. For an ordinary mix of wages and pension/benefits, add `max(0, C − D) × 0.39%`, where **D** is the statutory daily-allowance income base, not the contribution actually paid. Do **not** set D to zero just because wage/work income is below EUR 17,255: the base still offsets the care supplement even when the 0.88% payment is zero. The supplement is not charged on the receipts specified in §14(2); retain their separate classification and exclude them from the surcharge calculation. Age/coverage and death-year exclusions in §5 also apply. [Health Insurance Act, chapter 18 §§5,14–20][health-law].
+
+For an ordinary wage/pension mix with already-established C = EUR 35,000 and D = EUR 30,000 and no §14(2) receipts, care contribution is EUR 385 + EUR 19.50 = **EUR 404.50**, rather than 1.49% of gross pension added to 1.10% of gross wages. The municipal deductions have already entered C. Pure pension/benefit income with D = 0 bears 1.49% of its established care base. Compute daily allowance separately on its own wage/work base. Employee health is inside tax-card withholding and is not deducted again as a separate payroll insurance item. [Health Insurance Act, chapter 18 §§14–20][health-law]; [Vero 2026 insured-contribution guidance §§2.2.2–2.3][health-detail].
 
 ### Capital receipts, gains and losses
 
@@ -221,6 +223,7 @@ expected:
 | [Kela 2026 benefits][kela] | Full national pension used for section 100 formula | 2026-10-26 |
 | [Vero Form 5][form5]; [YEL deduction][yel]; [home office][office]; [rental deductions][rent] | Operational classifications and claim evidence | 2026-10-26 |
 | [Vero personal return][personal-return]; [timeline][timeline]; [interest][interest] | Filing/assessment and payment procedures | 2026-10-26 |
+| [Vero 2026 insured-contribution guidance][health-detail] | §§2.2.2–2.3: mixed health-care and daily-allowance bases | 2026-10-26 |
 | [Vero household summary][household]; [automatic deductions][automatic] | Stale passages identified above; statute prevails | 2026-10-26 |
 | [Åland Municipal Tax Act 2011:119][ax-law] | Sections 1–2, 9–28, 2026:10 commencement; current official browser text | 2026-10-26 |
 | [Åland Media Fee Act 2019:103][ax-media-law]; [Vero 2026 media fee][ax-media] | Sections 2, 4 and indexed EUR 128 amount | 2026-10-26 |
@@ -271,3 +274,5 @@ version (and the professional behind it) is at
 [ax-law]: https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119
 [ax-media-law]: https://www.regeringen.ax/alandsk-lagstiftning/alex/2019103
 [ax-media]: https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/89754/medieavgift-i-landskapet-%C3%A5land4/
+
+[health-detail]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/338472/vakuutetun-sairausvakuutusmaksu2/
