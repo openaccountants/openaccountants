@@ -217,6 +217,6 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [reporting]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/
 [ceiling]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/
-[corrections]: https://www.vero.fi/en/incomes-register/companies-and-organisations/reporting-data-to-the-incomes-register/correcting-data/
+[corrections]: https://www.vero.fi/en/incomes-register/companies-and-organisations/correcting-data/replacement-report/
 [self-act]: https://www.finlex.fi/fi/lainsaadanto/2016/768
 [interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
