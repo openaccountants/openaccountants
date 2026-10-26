@@ -37,7 +37,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pension insurance, FSVG | 20% of the base | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal |
 | Health insurance (paid by the insured; the Bund adds 0.85%) | 6.8% of the base | 2026 | GSVG § 27 Abs 1a, RIS link above |
 | Accident insurance, fixed per month | EUR 12.95 | 2026 | ASVG § 74 Abs 1 Z 1 with BGBl. II Nr. 263/2025, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 |
-| Selbständigenvorsorge, share of the provisional health base | 1.53% | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal |
+| Selbständigenvorsorge, share of the provisional health base | 1.53% | 2026 | BMSVG § 52 Abs 1, https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html |
 | Minimum base per month (Mindestbeitragsgrundlage, GSVG § 25 Abs 4 links it to ASVG § 5 Abs 2) | EUR 551.10 | 2026 | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
 | Maximum base per month (GSVG § 25 Abs 5) | EUR 8,085.00 | 2026 | same SVS contribution sheet |
 | Maximum base per year | EUR 97,020.00 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal |
@@ -45,7 +45,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pension at the minimum and maximum base, GSVG | EUR 101.95 / EUR 1,495.73 a month | 2026 | SVS contribution sheet |
 | Pension at the minimum and maximum base, FSVG | EUR 110.22 / EUR 1,617.00 a month | 2026 | SVS contribution sheet |
 | Health at the minimum and maximum base | EUR 37.48 / EUR 549.79 a month | 2026 | SVS contribution sheet |
-| Revaluation factor for 2023 income used for 2026 provisional bases | 1.181 | 2026 | GSVG § 25a Abs 1 Z 2; https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal |
+| Revaluation factor for 2023 income used for 2026 provisional bases (Aufwertungszahlen 2024 1.035 x 2025 1.063 x 2026 1.073) | 1.181 | 2026 | GSVG § 25a Abs 1 Z 2; ASVG § 108a with BGBl. II Nr. 263/2025; https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal |
 | Versicherungsgrenze, Neue Selbständige, per year | EUR 6,613.20 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
 | Small business exemption: income limit per year (twelve times the minimum base) | EUR 6,613.20 | 2026 | GSVG § 4 Abs 1 Z 7; https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal |
 | Small business exemption: turnover limit from all business (UStG § 6 Abs 1 Z 27 limit) | EUR 55,000.00 | 2026 | same |
@@ -72,7 +72,7 @@ Accident insurance: the law and the SVS contribution sheet both give EUR 12.95. 
 
 **Monthly charge.** pension = base x rate; health = base x 6.8%; accident = EUR 12.95; Selbständigenvorsorge = provisional health base x 1.53%. The full month is due for the month insurance starts (GSVG § 27 Abs 3).
 
-**Selbständigenvorsorge.** Compulsory for everyone in compulsory GSVG health insurance, including Neue Selbständige. Not compulsory for opted-in health insurance or for freelancers insured under GSVG §§ 14a and 14b. Voluntary for freelancers insured only in pension insurance; they pay 1.53% of the provisional pension base. It stops once the client draws an own pension (https://www.svs.at/selbstaendigenvorsorge).
+**Selbständigenvorsorge.** Compulsory for everyone in compulsory GSVG health insurance, including Neue Selbständige. Not compulsory for opted-in health insurance or for freelancers insured under GSVG §§ 14a and 14b. Voluntary for freelancers insured only in pension insurance; they pay 1.53% of the provisional pension base. It stops the day before the client draws an own pension, unless the client agrees in writing within one month of the SVS notice to keep paying (BMSVG § 52 Abs 1a).
 
 **Health contribution credit (GSVG § 27f, in force until 31 December 2027).** A person in GSVG health insurance on 31 May whose monthly health base on that day is EUR 2,900 or less gets a flat credit, tiered by base (EUR 90 for a base up to EUR 500, EUR 110 up to EUR 600, EUR 130 up to EUR 700, and so on in § 27f Abs 2). The last final base counts; without one, the provisional base. The SVS checks on 1 June and books the credit on the third quarter charge.
 
@@ -97,7 +97,7 @@ The quarterly charge is due at the end of the second month of the quarter (GSVG 
 
 ## Penalties and interest
 
-- **Late payment interest (GSVG § 35)**: the base rate (Basiszinssatz) on 31 October of the prior year plus four percentage points, for the following calendar year.
+- **Late payment interest (GSVG § 35)**: due when contributions are not paid within 15 days of the due date (a payment within three days after that has no consequence). The rate is the base rate (Basiszinssatz) on 31 October of the prior year plus four percentage points. The base rate on 31 October 2025 was 1.53%, so the 2026 rate is 5.53% (OeNB, as in [at-income-tax](at-income-tax.md)).
 - **9.3% surcharge (GSVG § 35)**: on pension and health contributions where insurance is found only after the tax assessment, unless the client declared or reported in time.
 - **Enforcement (GSVG § 37)**: the SVS can collect arrears by administrative enforcement. It can also agree a payment plan or a deferral on request.
 
@@ -177,7 +177,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | GSVG (§§ 2, 4, 25, 25a, 27, 27f, 35, 35a, 37), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422 | 2026-10-26 |
-| ASVG (§ 5 Abs 2, § 74 Abs 1 accident amount 2026), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 | 2026-10-26 |
+| ASVG (§ 5 Abs 2, § 74 Abs 1 accident amount 2026, § 108a Aufwertungszahlen), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 | 2026-10-26 |
 | BSVG (farmers, out of scope), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008431 | 2026-10-26 |
 | EStG 1988 (§ 4 Abs 4 Z 1 lit a, § 19 Abs 2), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
 | SVS, contribution sheet 2026 (VS-016) | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 | 2026-10-26 |
@@ -191,10 +191,12 @@ expected:
 | SVS, Zusatzversicherung | https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal | 2026-10-26 |
 | SVS, Krankengeld | https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal | 2026-10-26 |
 | SVS, Unterstützungsleistung | https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal | 2026-10-26 |
+| BMSVG § 52 (Selbständigenvorsorge rate, base, end on own pension), RIS | https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html | 2026-10-26 |
 | SVS, Selbständigenvorsorge | https://www.svs.at/selbstaendigenvorsorge | 2026-09-22 |
+| OeNB, base rate (Basiszinssatz) | https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE | 2026-10-24 |
 | USP, Basispauschalierung (SVS deductible on top) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html | 2026-10-24 |
 
-Not yet confirmed: the 1.53% Selbständigenvorsorge rate and its scope were read on SVS pages only (BMSVG §§ 52 and 52a not read; the RIS page did not load); the SVS worked example on contentid 10007.816634 prints 32,000 x 1.181 = 34,784, which is arithmetically wrong (it is 37,792), so this skill does not use it; the 1.181 factor was read on SVS and matches the ratio of the law's indexed amounts, but the three Aufwertungszahlen were not read one by one; the full tier table of the § 27f health credit above EUR 900 and whether the credit was booked in Q3 2026; the late payment interest rate in figures for 2026; the old version's Krankengeld terms (day 4, 26 weeks, six-month wait, start before 60) and the Unterstützungsleistung from day 43, kept out of the rates table and not re-read; the retirement rule (GSVG pension contributions continue alongside a pension); the registration deadline and the right to pay by monthly direct debit (in the old version, not re-read).
+Not yet confirmed: the Selbständigenvorsorge scope for opted-in and pension-only freelancers (BMSVG § 52a not read); the SVS worked example on contentid 10007.816634 prints 32,000 x 1.181 = 34,784, which is arithmetically wrong (it is 37,792), so this skill does not use it; whether the § 27f credit was booked in Q3 2026; the old version's Krankengeld terms (day 4, 26 weeks, six-month wait, start before 60) and the Unterstützungsleistung from day 43, kept out of the rates table and not re-read; the retirement rule (GSVG pension contributions continue alongside a pension); the registration deadline and the right to pay by monthly direct debit (in the old version, not re-read).
 
 <!-- openaccountants-cta-block -->
 
