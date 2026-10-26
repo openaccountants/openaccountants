@@ -2,7 +2,8 @@
 
 The rules come from GOAL.md and docs/COVERAGE.md: never "every country"; the one
 rounded claim is "190+ jurisdictions"; exactly two quality states, named
-"Accountant-reviewed" and "Source-cited draft"; and the retired role and state
+"Accountant-reviewed" (tier 1) and "Checked against the law" / "Sourced from the law"
+(tier 2; "Source-cited draft" is retired); and the retired role and state
 words ("Partner", "attest", "verified accountant", "accountant-verified",
 "Accountant-authored") do not come back.
 

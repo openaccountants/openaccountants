@@ -299,6 +299,8 @@ Esta skill e os respetivos resultados são disponibilizados apenas para fins inf
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

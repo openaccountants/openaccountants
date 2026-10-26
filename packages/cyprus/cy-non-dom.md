@@ -4,7 +4,7 @@ description: "Use this skill for any question about Cyprus non-domicile status. 
 version: 1.0
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

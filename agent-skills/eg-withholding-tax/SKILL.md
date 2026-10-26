@@ -32,6 +32,18 @@ The AI must reply in the user's language (English or Arabic / Egyptian Arabic) a
 > **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م) unless otherwise stated.
 > **YMYL — verify before relying.** Egyptian WHT rates and treaty benefits changed in 2024-2025. Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
 
+---
+
+## What this file is
+
+**This file is a content skill that loads on top of a workflow base** (here: `income-tax-workflow-base`). It provides Egypt-specific WHT rates, treaty reduction mechanics, compliance steps, and filing mechanics.
+
+**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+
+**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+
+---
+
 ## Section 1 — Scope statement
 
 This skill covers:

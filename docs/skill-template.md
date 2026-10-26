@@ -14,14 +14,14 @@ The repository is treated as tax law. Every figure must be traceable to the law 
 6. **Nothing unconfirmed goes in.** If you cannot confirm a figure or rule from an official source, leave it out of the skill and list it on the "Not yet confirmed:" line at the end of `## Sources`.
 7. **Tax skills use the deep-tax shape** (below): nine sections in order, a rates table, and exactly two worked examples whose `oa-check` blocks recompute in CI.
 8. **Current tax year.** `tax_year` is the year the figures apply to. A skill with an old `tax_year` makes its pack partial. When a law changes mid-year, give both periods with their dates.
-9. **Independent review before merge.** Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment: figures checked, fixes made with sources, items still not confirmed. Only then does the PR merge, as a source-cited draft (`tier: 2`).
+9. **Independent review before merge.** Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment: figures checked, fixes made with sources, items still not confirmed. Only then does the PR merge, as **Checked against the law** (`tier: 2`).
 10. **Accountant sign-off is the only route to tier 1.** A licensed accountant reviews the whole skill and sets `tier: 1`, `reviewed_by` and `reviewed_on`. No one else sets these keys.
 
 ## Updating an existing skill
 
 - Rewrite in place; keep the slug.
 - `version` and `last_updated` only go up. Set `version` one step above main's, and keep any version in the body heading the same (CI `compare` fails otherwise).
-- Keep a team byline or `trust_label` as it is. Remove a named outside reviewer only when the content they reviewed has changed (a changed skill loses its review and returns to source-cited draft).
+- Keep a team byline or `trust_label` as it is. Remove a named outside reviewer only when the content they reviewed has changed (a changed skill loses its review and returns to `tier: 2`).
 - Fix contradictions you find in sibling skills in their own PR, not as a bonus edit.
 
 ## Pack README
@@ -51,7 +51,7 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
 | `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in the body text, never here. CI errors on anything that is not an integer 2015-2035 |
-| `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **source-cited draft** (drafted from primary sources, awaiting review). These are the only two quality states |
+| `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **Checked against the law** (built to this standard and independently reviewed before merge) or **Sourced from the law** (older skill not yet rebuilt to this standard); no accountant has signed it off yet. These are the only two tiers |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
 ## Optional keys
@@ -130,7 +130,7 @@ jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, et
 category: international   # see the category vocabulary above
 tax_year: 2026             # bare integer = the year the figures apply to
 tax_year_notes: "2025-26"  # optional; the export drops it, so repeat the label in the body
-tier: 2                    # 1 = accountant-reviewed | 2 = source-cited draft
+tier: 2                    # 1 = accountant-reviewed | 2 = checked against the law / sourced from the law
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
 depends_on:

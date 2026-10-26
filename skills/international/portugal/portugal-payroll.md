@@ -3,14 +3,14 @@ name: portugal-payroll
 description: "Portuguese payroll for employees, tax year 2026: monthly IRS withholding under CIRS arts. 98 to 101 and the 2026 tables for the mainland (Despacho 233-A/2026), the Azores (Despacho 1179/2026) and Madeira (Despacho 19/2026), including the 50% cut for November 2026 pay; holiday and Christmas subsidies and twelfths; employee 11% and employer 23.75% Social Security; the 2026 meal allowance limits (EUR 6.15 cash, 70% more on a card); IRS Jovem in withholding; the DMR by the 10th, IRS paid by the 20th, Social Security from the 1st to the 25th; minimum wage; overtime; fines and interest. Trigger on: Portugal payroll, processamento de salários, retenção na fonte, tabelas de retenção 2026, TSU, subsídio de férias, subsídio de Natal, duodécimos, subsídio de refeição, DMR, salário líquido. Out of scope: the self-employed and contributions in depth (pt-social-contributions), the annual IRS return (pt-irs-employees-investment), non-residents (pt-cross-border), NHR and IFICI (pt-nhr-ifici)."
 version: 1.1
 jurisdiction: PT
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -280,3 +280,23 @@ expected:
 | LGT arts. 35 and 44 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx | 2026-10-24 |
 
 Not yet confirmed: whether Madeira adopted a November 2026 withholding cut (none found in JORAM or on the AT sites; the mainland and Azores despachos exclude Madeira); the decree-law under Lei 64-B/2026 that will set the new band rates, and whether it applies to 2026 income (Despacho 12523-A/2026 says the cut takes effect from 1 January 2026, but the law itself names no year); the Social Security declaration deadline during 2026 for employers still on the old reporting model (the old art. 40 text was not read); the rounding of the card limit to EUR 10.46 that the old version used; the remaining rows of each table and Tables IV to XI; the FCT and FGCT work compensation funds (the old version said contributions are suspended under Lei 13/2023); the 50% employer contribution cuts for first jobs and long-term unemployed hires; parental leave, sick pay (paid by Social Security from the 4th day at 55% to 75%), bereavement leave, 15 days marriage leave and compulsory work-accident insurance from the old version; record keeping periods (5 years labour, 10 years tax); the Relatório Único deadline (15 April); the annual return of income paid to others under CIRS art. 119(1)(c)(ii) by the end of February, wording of Decreto-Lei 49/2025.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

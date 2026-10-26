@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,236 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,250 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -140,7 +140,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2236 skills, 274 jurisdictions, 33 accountant-reviewed)
+## Skill inventory (2250 skills, 274 jurisdictions, 33 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -732,6 +732,7 @@ https://www.openaccountants.com
 - croatia-vat-return | HR | tier 2 | reviewed_by -
 - hr-company-formation | HR | tier 2 | reviewed_by -
 - hr-corporate-income-tax | HR | tier 2 | reviewed_by -
+- hr-cross-border | HR | tier 2 | reviewed_by -
 - hr-tax-overview | HR | tier 2 | reviewed_by -
 - hr-transfer-pricing | HR | tier 2 | reviewed_by -
 - cu-company-formation | CU | tier 2 | reviewed_by -
@@ -858,7 +859,9 @@ https://www.openaccountants.com
 - er-vat-gst | ER | tier 2 | reviewed_by -
 - ee-company-formation | EE | tier 2 | reviewed_by -
 - ee-corporate-income-tax | EE | tier 2 | reviewed_by -
+- ee-cross-border | EE | tier 2 | reviewed_by -
 - ee-tax-overview | EE | tier 2 | reviewed_by -
+- ee-transfer-pricing | EE | tier 2 | reviewed_by -
 - estonia-income-tax | EE | tier 2 | reviewed_by -
 - estonia-payroll | EE | tier 2 | reviewed_by -
 - estonia-social-contributions | EE | tier 2 | reviewed_by -
@@ -949,8 +952,10 @@ https://www.openaccountants.com
 - de-income-tax | DE | tier 2 | reviewed_by -
 - de-non-resident-tax | DE | tier 2 | reviewed_by -
 - de-partners-and-part-year | DE | tier 2 | reviewed_by -
+- de-payroll-benefits | DE | tier 2 | reviewed_by -
 - de-payroll | DE | tier 2 | reviewed_by -
 - de-rental-income | DE | tier 2 | reviewed_by -
+- de-self-employed-income-tax | DE | tier 2 | reviewed_by -
 - de-social-contributions | DE | tier 2 | reviewed_by -
 - de-trade-tax | DE | tier 2 | reviewed_by -
 - de-treaty-withholding-rates | DE | tier 2 | reviewed_by -
@@ -1259,7 +1264,9 @@ https://www.openaccountants.com
 - latvia-vat-return | LV | tier 2 | reviewed_by -
 - lv-company-formation | LV | tier 2 | reviewed_by -
 - lv-corporate-income-tax | LV | tier 2 | reviewed_by -
+- lv-cross-border | LV | tier 2 | reviewed_by -
 - lv-tax-overview | LV | tier 2 | reviewed_by -
+- lv-transfer-pricing | LV | tier 2 | reviewed_by -
 - lb-company-formation | LB | tier 2 | reviewed_by -
 - lb-corporate-income-tax | LB | tier 2 | reviewed_by -
 - lb-income-tax | LB | tier 2 | reviewed_by -
@@ -1294,8 +1301,10 @@ https://www.openaccountants.com
 - lithuania-vat-return | LT | tier 2 | reviewed_by -
 - lt-company-formation | LT | tier 2 | reviewed_by -
 - lt-corporate-income-tax | LT | tier 2 | reviewed_by -
+- lt-cross-border | LT | tier 2 | reviewed_by -
 - lt-payroll-social | LT | tier 2 | reviewed_by -
 - lt-tax-overview | LT | tier 2 | reviewed_by -
+- lt-transfer-pricing | LT | tier 2 | reviewed_by -
 - references | LT | tier 2 | reviewed_by -
 - lu-corporate-tax | LU | tier 2 | reviewed_by -
 - lu-cross-border | LU | tier 2 | reviewed_by -
@@ -1350,7 +1359,7 @@ https://www.openaccountants.com
 - malta-income-tax | MT | tier 2 | reviewed_by -
 - malta-payroll | MT | tier 2 | reviewed_by -
 - malta-ssc | MT | tier 2 | reviewed_by -
-- malta-tax-optimization | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
+- malta-tax-optimization | MT | tier 2 | reviewed_by -
 - malta-transfer-pricing | MT | tier 2 | reviewed_by -
 - malta-vat-return | MT | tier 2 | reviewed_by -
 - moving-to-malta-tax-residence | MT | tier 2 | reviewed_by -
@@ -1361,9 +1370,12 @@ https://www.openaccountants.com
 - mt-estimated-tax | MT | tier 2 | reviewed_by -
 - mt-family-office-setup | MT | tier 2 | reviewed_by -
 - mt-foundations-and-trusts | MT | tier 2 | reviewed_by -
+- mt-global-residence-programme | MT | tier 2 | reviewed_by -
 - mt-holding-company-participation-exemption | MT | tier 2 | reviewed_by -
 - mt-inheritance-and-succession | MT | tier 2 | reviewed_by -
+- mt-nomad-residence-permit | MT | tier 2 | reviewed_by -
 - mt-non-dom | MT | tier 2 | reviewed_by -
+- mt-permanent-residence-programme | MT | tier 2 | reviewed_by -
 - mt-property-transfer-tax-the-sale-immovable | MT | tier 2 | reviewed_by -
 - mt-rental-income | MT | tier 2 | reviewed_by -
 - mt-residence-programmes-for-wealthy-families | MT | tier 2 | reviewed_by -
@@ -1784,7 +1796,9 @@ https://www.openaccountants.com
 - slovakia-vat-return | SK | tier 2 | reviewed_by -
 - si-company-formation | SI | tier 2 | reviewed_by -
 - si-corporate-income-tax | SI | tier 2 | reviewed_by -
+- si-cross-border | SI | tier 2 | reviewed_by -
 - si-tax-overview | SI | tier 2 | reviewed_by -
+- si-transfer-pricing | SI | tier 2 | reviewed_by -
 - slovenia-income-tax | SI | tier 2 | reviewed_by -
 - slovenia-payroll | SI | tier 2 | reviewed_by -
 - slovenia-social-contributions | SI | tier 2 | reviewed_by -

@@ -1,16 +1,15 @@
 ---
 name: ie-corporation-tax
 description: "Irish corporation tax for tax year 2026 (accounting periods ending in 2026) for an Irish-resident company. Covers the 12.5% trading rate (section 21 TCA 1997), the 25% rate on passive income and excepted trades (section 21A), company gains grossed up at the 31% CGT rate for disposals from 7 October 2026 (33% before that date and on development land), the Pillar Two 15% minimum tax (Part 4A, scope only), close-company surcharges, preliminary tax, losses and group relief, start-up relief, the R&D credit (30%, or 35% for periods ending 31 December 2026 or later), the Knowledge Development Box (10% effective rate), interest limitation, and CT1 filing on ROS. Trigger on: Ireland corporation tax, CT1, 12.5% rate, preliminary CT, R&D credit Ireland, KDB, close company surcharge, Pillar Two Ireland. Out of scope: non-resident companies and Irish branches under section 25 (ie-foreign-tax-and-withholding), company exit tax (ie-cross-border), transfer pricing (ie-transfer-pricing), individuals (ie-income-tax-form11), VAT (ireland-vat-return)."
-jurisdiction: IE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 1.2
-verified_by: pending
+jurisdiction: IE
+tax_year: 2026
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -277,3 +276,21 @@ expected:
 | Taxes Consolidation Act 1997 | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-10-23 |
 
 Not yet confirmed: whether the Finance (No. 2) Bill 2026 enacts the 31% CGT rate as in Financial Resolution No. 3 (if it does not, gains on disposals from 7 October 2026 go back to 33%); the other Bill proposals listed under "Deadlines and filing"; the preliminary tax due date for a large company with a period of less than seven months (Revenue's page gives none; see TDM Part 41A-07-02); the current car cost limit for capital allowances (TDM Part 11-00-01 not re-read).
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

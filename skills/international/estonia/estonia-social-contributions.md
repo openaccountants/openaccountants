@@ -3,12 +3,11 @@ name: estonia-social-contributions
 description: "Estonian social contributions for tax year 2026: social tax (sotsiaalmaks), unemployment insurance premiums (töötuskindlustusmakse) and the mandatory funded pension (II pillar, kogumispension), for employers, employees, board members and self-employed persons (FIE). Covers the 33% social tax and how it splits between pension, health and the II pillar, the EUR 886 monthly minimum base and its exceptions, unemployment premiums of 1.6% and 0.8% for 2026 to 2029, II pillar rates of 2%, 4% or 6% and the 30 November switch, the FIE social tax (profit divided by 1.33, annual minimum EUR 3,508.56, maximum EUR 36,867.60), quarterly FIE advances of EUR 877.14, the 1 October balance, form TSD by the 10th, interest at 0.06% a day and fines. Trigger on: sotsiaalmaks 2026, FIE sotsiaalmaks, avansiline makse, minimum social tax Estonia, II sammas 6%, employer on-cost Estonia, A1 Estonia. Out of scope: estonia-payroll (gross to net, withholding income tax), estonia-income-tax, ee-cross-border, ee-corporate-income-tax."
 version: 0.2
 jurisdiction: EE
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -231,3 +230,23 @@ expected:
 | Ministry of Finance, Law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
 
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); whether the FIE II pillar contribution is computed on the profit before or after the 1.33 division (KoPS § 11(2¹) refers to the SMS § 2(1) point 5 income; EMTA's calculation not checked); the EMTA page with the 2026 FIE advance due dates (the page read still shows 2025 dates, so the EUR 877.14 figure is computed from SMS § 9(3) and the EUR 886 rate).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

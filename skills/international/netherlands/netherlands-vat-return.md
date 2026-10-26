@@ -3,13 +3,13 @@ name: netherlands-vat-return
 description: "Dutch VAT (btw, omzetbelasting) and the VAT return (btw-aangifte) for tax year 2026, for a business established in the Netherlands. Covers the rates (21%, 9%, 0%) and the 2026 change that moved short-stay accommodation (logies) from 9% to 21% while culture, sport and camping stay at 9%; the small business scheme (KOR, EUR 20,000) and the EU SME scheme (EUR 100,000); periods and deadlines; the boxes 1a to 5b; reverse charge (verleggingsregeling); private use of a business car with its cap; the revision of investment goods (herziening); the ICP listing; corrections (suppletie) and the EUR 1,000 threshold; penalties and tax interest (belastingrente, 5% in 2026). Trigger on: Dutch VAT return, btw-aangifte, aangifte omzetbelasting, KOR, suppletie, opgaaf ICP, btw verlegd, Dutch VAT rate 2026. Out of scope: VAT registration (nl-vat-registration), fiscal unity, margin and travel schemes, OSS returns, real estate, and the Caribbean Netherlands."
 version: 2.1
 jurisdiction: NL
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -237,3 +237,21 @@ If the shortfall had been more than EUR 1,000, the B&B would have filed a supple
 | Belastingdienst, privégebruik auto van de zaak | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/btw_en_de_auto/privegebruik_auto_van_de_zaak | 2026-10-24 |
 
 Not yet confirmed: whether belastingrente is charged on an error of EUR 1,000 or less that is corrected in a return filed more than 3 months after the year; the regulation that sets the 5% interest rate (only the Belastingdienst overview was read); the statutory source of the EUR 1,883 and EUR 10,000 annual-return conditions, of the EUR 50 minimum payment penalty, and of the car private-use percentages (2.7%, 1.5%) and their cap (Belastingdienst pages only). The Belastingdienst page on leaving the KOR says a voluntary exit starts on the first day of a return period; the law (art. 25a(7)) says the first day of the next calendar quarter, and this skill follows the law.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

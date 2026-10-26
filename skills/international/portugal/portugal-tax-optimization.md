@@ -328,6 +328,8 @@ A versão mais actualizada e verificada desta skill é mantida em [openaccountan
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

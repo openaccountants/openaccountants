@@ -14,13 +14,13 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | source-cited draft |
-| IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
-| VAT | se-vat-return, sweden-vat-return | source-cited draft |
-| SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
-| PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | source-cited draft |
-| TP, transfer pricing | se-transfer-pricing | source-cited draft |
-| XB, cross-border | se-cross-border | source-cited draft |
+| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | sourced from the law |
+| IT-CORP, corporate income tax | se-corporate-tax | checked against the law |
+| VAT | se-vat-return, sweden-vat-return | sourced from the law |
+| SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | checked against the law |
+| PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | checked against the law |
+| TP, transfer pricing | se-transfer-pricing | checked against the law |
+| XB, cross-border | se-cross-border | checked against the law |
 
 ## Official sources
 
@@ -30,4 +30,8 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 - Kupongskattelag (1970:624): https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kupongskattelag-1970624_sfs-1970-624/ (read 2026-10-22)
 - Skatteförfarandeförordning (2011:1261): https://data.riksdagen.se/dokument/sfs-2011-1261.text (read 2026-10-23)
 - Lag (2009:1289) and Förordning (2009:1295) om prissättningsbesked: https://data.riksdagen.se/dokument/sfs-2009-1289.text (read 2026-10-23)
+- Socialavgiftslag (2000:980): https://data.riksdagen.se/dokument/sfs-2000-980.text (read 2026-10-24)
+- Lag (1994:1920) om allmän löneavgift: https://data.riksdagen.se/dokument/sfs-1994-1920.text (read 2026-10-24)
+- Lag (2026:100) om särskild beräkning av arbetsgivaravgifter för unga: https://data.riksdagen.se/dokument/sfs-2026-100.text (read 2026-10-24)
+- Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag: https://data.riksdagen.se/dokument/sfs-2025-1334.text (read 2026-10-24)
 - Skatteverket: https://www.skatteverket.se (read 2026-10-22)
