@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-corporation-tax"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-24"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -277,6 +277,24 @@ expected:
 
 Not yet confirmed: whether the Finance (No. 2) Bill 2026 enacts the 31% CGT rate as in Financial Resolution No. 3 (if it does not, gains on disposals from 7 October 2026 go back to 33%); the other Bill proposals listed under "Deadlines and filing"; the preliminary tax due date for a large company with a period of less than seven months (Revenue's page gives none; see TDM Part 41A-07-02); the current car cost limit for capital allowances (TDM Part 11-00-01 not re-read).
 
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-corporation-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-corporation-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-corporation-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-corporation-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

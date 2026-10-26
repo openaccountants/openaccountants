@@ -1,14 +1,15 @@
 ---
 name: bulgaria-income-tax
 description: "Bulgarian personal income tax (данък върху доходите на физическите лица) for tax year 2026 under the Personal Income Taxes Act (ZDDFL), in euro after the 1 January 2026 changeover. Covers residence (art. 4), the income categories (art. 10), the flat 10% rate on the general annual base (art. 48(1)), the statutory expense deductions for freelancers and other business income (25%, 40%, 60%; art. 29), rent (10%), gains, the 15% tax on sole traders (ET) taxed on their corporate-tax profit (arts. 26, 28, 48(2)), the 5% final tax on dividends (arts. 38, 46(3)), quarterly advance tax, the reliefs (children, disabled children, young families, donations, voluntary insurance, home repairs, cashless payments), the art. 50 annual return due 30 April (30 June for sole traders), the 5% early e-filing discount and the ZDDFL fines. Trigger on: Bulgaria income tax, ДДФЛ, ГДД, годишна данъчна декларация, чл. 50, freelancer Bulgaria 25%, ЕТ 15%, данъчно облекчение за деца. Out of scope: social contributions (bulgaria-social-contributions), employer payroll (bulgaria-payroll), non-residents and treaties (bg-cross-border), companies (bg-corporate-income-tax)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria: personal income tax (ДДФЛ), tax year 2026
@@ -198,6 +199,8 @@ expected:
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/laws/ldoc/2123675140 | 2026-10-24 |
 
 Not yet confirmed: the gazette text of the 2026 State Budget Act provision that sets the child reliefs and their monthly use in euro (the amounts above come from the NRA page; the ZDDFL itself still reads BGN 200, 400 and 600 and BGN 2,000; the Act was not reachable on dv.parliament.bg or lex.bg on 2026-10-24); the statutory interest rate on late tax after the euro changeover; whether DOPK fines can apply alongside the ZDDFL fines; the full conditions of the art. 13(1)(1) home-sale exemption; and any rate changes the Ministry of Finance has proposed for later years.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

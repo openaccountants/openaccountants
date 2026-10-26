@@ -1,13 +1,15 @@
 ---
 name: ee-transfer-pricing
 description: "Estonian transfer pricing (siirdehinnad) for tax year 2026: Estonian companies, permanent establishments of foreign companies and sole proprietors (FIE) dealing with associated persons. Covers who is associated under Income Tax Act § 8, the arm's length rule in § 50(4) (companies), § 14(7) (FIE) and § 53(4⁶) (permanent establishments), how an adjustment is taxed at 22/78 in the monthly TSD like a profit distribution, Minister of Finance Regulation No. 53 (methods, 5% low value-adding services mark-up, master file and local file), who must keep full files (250 staff, EUR 50m turnover or EUR 43m balance sheet with associated persons; banks, insurers, listed companies), the 60-day production deadline, fines, interest at 0.06% a day, country-by-country reporting at EUR 750m, MAP and why there is no domestic APA or binding ruling. Trigger on: siirdehind, turuväärtus, seotud isikud, master file Estonia, management fee Estonia. Out of scope: ee-corporate-income-tax (rates, distributions), estonia-income-tax, estonia-payroll (fringe benefits), estonia-vat-return."
-jurisdiction: EE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: EE
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Estonian transfer pricing (siirdehinnad): tax year 2026
@@ -231,3 +233,23 @@ expected:
 | EMTA, transfer pricing hallmarks for cross-border arrangements (updated 8 January 2025) | https://emta.ee/node/382/chapter/23768/pdf | 2026-10-23 |
 
 Not yet confirmed: that the TSD annex 6 layout and code 6000 as worded by regulation nr 24 of 22 June 2020 are unchanged for 2026 periods; whether EMTA accepts or runs bilateral APAs through the treaty mutual agreement procedure (no emta.ee page on APAs was found, and no statute sets one up); which point inside the interquartile range EMTA adjusts to (Regulation No. 53 § 11(8) says only that the result must fall inside the range); whether a 2026 English EMTA page on transfer pricing replaces the 2011 guide.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

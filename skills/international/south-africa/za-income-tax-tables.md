@@ -75,7 +75,17 @@ Not covered here: company, trust (other than special trusts) and turnover tax
 rates; capital gains tax (see `za-capital-gains-tables`); travel allowance and
 logbook tables (see `za-travel-allowance-tables`); any computation rule.
 
- | --- | --- |
+---
+
+## Section 2 — Progressive tax brackets
+
+Each band states the **base amount** payable at the bottom of the band plus the
+**marginal rate** on the excess above the band floor. Amounts are rand.
+
+### Year of assessment 2023 (2022/23)
+
+| Taxable income | Base amount | Rate on excess |
+| --- | --- | --- |
 | 1 – 226,000 | — | 18% |
 | 226,001 – 353,100 | R40,680 | 26% above R226,000 |
 | 353,101 – 488,700 | R73,726 | 31% above R353,100 |

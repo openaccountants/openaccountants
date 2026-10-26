@@ -1,13 +1,15 @@
 ---
 name: si-transfer-pricing
 description: "Slovenian transfer pricing (transferne cene) for tax year 2026: companies and Slovenian branches that deal with related parties. Covers who is related (25% in capital, management, control or votes, or control by contract; foreign and domestic tests in ZDDPO-2 arts. 16 and 17), the arm's length adjustment and the five methods, the interquartile range and median rule in the Rules on transfer prices, the recognised interest rate for related-party loans (monthly variable part plus maturity and credit-rating spreads), the master file and local file duty in ZDavP-2 art. 382, the return attachments 15 to 17 above EUR 50,000, fines, audit interest, CbCR at EUR 750 million, APAs (EUR 15,000 fee) and MAP. Trigger phrases: transferne cene, priznana obrestna mera, povezane osebe, Slovenia transfer pricing, related-party loan interest Slovenia. Out of scope: si-corporate-income-tax (rate, base, return), slovenia-income-tax (sole traders), slovenia-vat-return."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia transfer pricing (transferne cene): 2026
@@ -271,3 +273,23 @@ expected:
 | FURS, explanation 0920-18321/2025-1 (28 November 2025), attachments 15, 16 and 17 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2025/0920-18321_2025-1_Metodologija_izpolnjevanja_prilog_15_16_in_17_k_obracunu_DDPO-2.docx | 2026-10-23 |
 
 Not yet confirmed: the November and December 2026 variable parts are not yet published; the Slovenia-Germany treaty rate on the withholding in example 1 was not worked through; whether a loan principal counts towards the EUR 50,000 turnover test for attachment 16 is not stated in FURS 0920-18321/2025-1.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

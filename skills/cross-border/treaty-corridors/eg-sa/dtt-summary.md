@@ -37,7 +37,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Last Verified | July 2026 |
 | Key Note | Dividends 5%/10%, interest 10% (govt exempt), royalties 10% (govt exempt). MLI PPT replaces original main-purpose test. Saudi domestic WHT matches treaty rates for most items. |
 
-----------|------------|----------------|----------------------|---------------------|-------|
+---
+
+## Withholding Tax Rate Summary
+
+| Income Type | Treaty Rate | Treaty Article | Domestic Rate (Egypt) | Domestic Rate (KSA) | Notes |
+|-------------|------------|----------------|----------------------|---------------------|-------|
 | Dividends — portfolio | 10% | Art 10(2)(b) | 10% (unlisted) / 5% (listed) | 5% | Standard rate for non-substantial holdings |
 | Dividends — substantial (≥20% capital) | 5% | Art 10(2)(a) | 10% (unlisted) / 5% (listed) | 5% | Beneficial owner must hold directly ≥20% of capital |
 | Interest | 10% | Art 11(2) | 20% | 5% | Government of other state exempt (Art 11(3)) |

@@ -1,13 +1,13 @@
 ---
 name: ie-income-tax-form11
-description: "Use this skill whenever asked about Irish income tax for self-employed individuals filing Form 11. Trigger on phrases like \"Form 11\", \"self-assessment Ireland\", \"Case I profits\", \"Case II profits\", \"USC\", \"PRSI Class S\", \"preliminary tax Ireland\", \"earned income credit\", \"trading profits\", \"self-employed tax Ireland\", \"ROS filing\", or any question about computing or filing income tax for a self-employed person in Ireland. This skill covers income tax rates (20%/40%), USC bands, PRSI Class S, personal tax credits, allowable deductions, capital allowances, preliminary tax, and Form 11 structure. ALWAYS read this skill before touching any Irish income tax work."
+description: "Irish income tax self-assessment on Form 11 for tax year 2026 (and the 2025 return due now). Covers who is a chargeable person (self-employed, proprietary directors over 15%, non-PAYE income over EUR 5,000 net or EUR 30,000 gross), the 20% and 40% bands (EUR 44,000 single, EUR 53,000 married) and the main credits including the EUR 2,000 Earned Income Credit, Case I and II trading profit, add-backs, capital allowances at 12.5% over 8 years and the car CO2 limits, losses, pension relief, Case V rental income, where USC and PRSI Class S fit, pay and file on 31 October (18 November 2026 on ROS), preliminary tax, the 5% and 10% surcharges and 0.0219% daily interest. Trigger on: Form 11, self-assessment Ireland, sole trader tax Ireland, Case I, ROS pay and file, earned income credit, proprietary director return. Out of scope: ie-payroll, ie-usc, ie-prsi-class-s, ie-preliminary-tax, ie-paye-rental-nonresident, ie-cgt, ie-corporation-tax, ie-cross-border."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ie-income-tax-form11"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-24"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -15,275 +15,222 @@ metadata:
 
 # Ireland Form 11 (2026): self-assessment for self-employed and other chargeable persons
 
-## Scope
+> **Source-cited draft.** Drafted from the Taxes Consolidation Act 1997 (TCA) as amended by Finance Act 2024 s.3 (bands and credits from 2025 on) and Finance Act 2025 ss.2, 26, 32, 100 and 102, Revenue's Notes for Guidance on Part 41A (Finance Act 2025 edition), Revenue's Guide to Completing 2025 Pay and File Self-Assessment Returns and Revenue's self-assessment pages, all read on 2026-10-24. No accountant has reviewed it.
 
-This skill is for a self-employed individual in the Republic of Ireland (sole trader, profession, or partner reporting a share of partnership profit), or an adviser preparing their Income Tax Return and self-assessment on Form 11. It covers who must file, adjusted Case I / Case II profit, capital allowances, income tax bands and credits, Universal Social Charge (USC), PRSI Class S, preliminary tax (the 90% / 100% / 105% tests, see [Revenue: preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)), the Pay and File deadline and the Revenue Online Service (ROS) extension, the late filing surcharge and interest.
+Authority: the Revenue Commissioners. The tax year is the calendar year. Currency: euro. Section numbers are TCA 1997 unless another act is named. The Law Reform Commission's Revised Acts do not include the TCA, so the law is cited through the Finance Act section that set each figure.
 
-Year labels: figures are for tax year 2026 (the calendar year 1 January to 31 December 2026) unless marked 2025. A dated section near the end covers the **2025 Form 11 being filed now**, due by 31 October 2026, or 18 November 2026 if paid and filed on ROS ([Revenue: filing your tax return](https://www.revenue.ie/en/self-assessment-and-self-employment/filing-your-tax-return/index.aspx)).
+Two years are live in October 2026. The **2025 Form 11** is due now (31 October 2026, or 18 November 2026 on ROS), with **2026 preliminary tax**. The **2026 Form 11** is due by 31 October 2027. The bands and credits are the same for both years; USC and PRSI differ (see the rates table).
 
-Related Skills:
-- Forming the business, registering for tax (TR1, eRegistration) and choosing sole trader or company: **ie-formation**.
-- Companies (CT1, Corporation Tax rates, company preliminary tax, close company surcharges): **ie-corporation-tax**.
-- VAT registration thresholds, rates and VAT returns: **ireland-vat-return**.
+See also: `ie-payroll` (PAYE under the RPN, Class A PRSI), `ie-usc` (USC in depth), `ie-prsi-class-s` (Class S in depth), `ie-preliminary-tax` (preliminary tax in depth), `ie-paye-rental-nonresident` (Form 12, Case V rental income in depth, non-residents), `ie-cgt` (the CGT panel), `ie-corporation-tax` (companies), `ie-formation` (registering), `ie-vat-return` (VAT), `ie-cross-border` and `ie-foreign-tax-and-withholding` (residence, treaties).
 
-Out of scope items are listed under When to refuse or refer.
+## Who this applies to
+
+- **A chargeable person files Form 11** (s.959A, s.959I). You are a chargeable person if any of these apply for the year ([Revenue, Guide to Completing 2025 Returns, "Who is this guide for?"](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)):
+  - you have trading income from a business, trade, profession or vocation (Case I or Case II);
+  - you are a **proprietary director**: you own, or can control directly or indirectly, more than 15% of the company's ordinary share capital;
+  - you have PAYE income and non-PAYE income over EUR 5,000 net (after capital allowances, expenses and losses carried forward), or over EUR 30,000 gross (before capital allowances and losses);
+  - your income is only rental, foreign or other non-PAYE income;
+  - you are resident in Ireland and opened a foreign bank account in the year (s.895; not if it is reported under DAC2/CRS or FATCA, is not in a listed territory under s.835YA, and you are not otherwise chargeable).
+- **The EUR 5,000 and EUR 30,000 tests.** Section 959B takes out of self-assessment a PAYE worker whose net non-PAYE income does not exceed EUR 5,000 (and gross does not exceed EUR 30,000), where it is coded against their credits or fully taxed at source. This exclusion does not apply to company directors or their jointly assessed spouses, unless the company is dormant ([Revenue, Notes for Guidance Part 41A, s.959B](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf)). Below the limits, the person uses Form 12 in myAccount ([Revenue, who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)).
+- **Out:** companies (they file CT1, see `ie-corporation-tax`; a proprietary director still files their own Form 11); the partnership itself (the precedent partner files Form 1 (Firms), s.959M; each partner then puts their share on their own Form 11); a PAYE-only employee (Form 12, see `ie-paye-rental-nonresident`).
+- **Residence** decides what is taxed: see `ie-cross-border`. A non-resident files Form 11 for Irish-source income above the limits.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate band, single or widowed, no qualifying children (s.15, Table Part 1) | first EUR 44,000 at 20%, balance at 40% | 2025 and 2026 | https://www.irishstatutebook.ie/eli/2024/act/43/section/3/enacted/en/html |
+| Band, single person qualifying for the Single Person Child Carer Credit (s.15, Part 2) | first EUR 48,000 at 20%, balance at 40% | 2025 and 2026 | same |
+| Band, married or civil partners (s.15, Part 3) | first EUR 53,000 at 20%, balance at 40% | 2025 and 2026 | same |
+| Increase for a second income (s.15(3)(i)) | lower of EUR 35,000 or the lower earner's income; not transferable | 2025 and 2026 | same |
+| Single Person Tax Credit / Married or Civil Partner Tax Credit (s.461) | EUR 2,000 / EUR 4,000 | 2025 and 2026 | same |
+| Single Person Child Carer Credit (s.462B) | EUR 1,900 | 2025 and 2026 | same |
+| Home Carer Tax Credit, maximum (s.466A) | EUR 1,950 | 2025 and 2026 | same |
+| Employee (PAYE) Tax Credit (s.472) | EUR 2,000 | 2025 and 2026 | same |
+| Earned Income Tax Credit (s.472AB) | lower of EUR 2,000 or 20% of qualifying earned income; with the Employee credit, the two together cannot exceed EUR 2,000 | 2025 and 2026 | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx |
+| Age Tax Credit, single / married | EUR 245 / EUR 490 | 2025 and 2026 | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx |
+| USC (detail in `ie-usc`) | 0.5% on first EUR 12,012; 2% on next EUR 16,688; 3% on next EUR 41,344; 8% on the balance; none if income is EUR 13,000 or less; 3% surcharge on non-PAYE income over EUR 100,000 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html |
+| USC for the 2025 return due now | 0.5% on first EUR 12,012; 2% from EUR 12,012 to EUR 27,382; 3% to EUR 70,044; 8% on the balance | 2025 | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf |
+| PRSI Class S on self-assessed income (detail in `ie-prsi-class-s`) | 4.2375% blended (4.2% to 30 September, 4.35% from 1 October), minimum EUR 650; nil if income under EUR 5,000 | 2026 | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
+| PRSI Class S on 2025 income | 4.125% blended, minimum EUR 650 | 2025 | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf |
+| Wear and tear on plant, machinery and cars bought on or after 4 December 2002 (s.284) | 12.5% a year over 8 years | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf |
+| Car cost limit, cars bought on or after 1 January 2025: CO2 0-120 g/km (VRT A) / 121-155 (B, C) / 156 and over (D, E, F) | EUR 24,000 / 50% of EUR 24,000, or 50% of the retail price new if lower / nil | 2026 | same |
+| Accelerated allowances for energy-efficient equipment (s.285A) | scheme extended to 31 December 2030 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/26/enacted/en/html |
+| Losses of a trade carried on in a non-active capacity, set against other income | up to EUR 31,750 a year | 2025 | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf |
+| Pension relief (RAC, PRSA), % of net relevant earnings by age | under 30: 15%; 30-39: 20%; 40-49: 25%; 50-54: 30%; 55-59: 35%; 60+: 40% | 2026 | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx |
+| Pension relief earnings limit | EUR 115,000 a year | 2026 | same |
+| High Income Earner Restriction: applies if income is EUR 125,000 or more, specified reliefs are over EUR 80,000 and over 20% of adjusted income | Form RR1 | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx |
+| Pay and file date (s.959A specified return date; s.959AO) | 31 October after the tax year; preliminary tax for the current year on the same date | 2026 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf |
+| ROS extension for the 2025 return and 2026 preliminary tax, if both filed and paid on ROS | 18 November 2026 | 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
+| Preliminary tax safe harbours (s.959AO) | lowest of 90% of current year, 100% of previous year, 105% of pre-preceding year (direct debit only, not if that year was nil) | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
+| Late filing surcharge (s.1084) | 5% of tax due, max EUR 12,695, within 2 months; 10%, max EUR 63,485, after 2 months | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx |
+| Interest on late income tax (s.1080) | 0.0219% a day or part of a day | 2026 | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf |
+| Revenue estimate for a missing return (s.959AX, from 1 January 2026) | greater of the average tax due on the last 2 returns or EUR 1,000 | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/32/enacted/en/html |
+
+Budget 2027 (6 October 2026) announced changes for 2027. They are not law until the Finance Act 2026 is passed and are not in this skill.
+
+## The taxable base
+
+**Step 1: trading profit (Case I trade, Case II profession).** Start from the accounts. Turnover excludes VAT if the trader is VAT registered (see `ie-vat-return`). Separate non-trading receipts: salary, rent, interest, dividends, refunds and transfers between the client's own accounts. Accounts are kept, not sent: complete the "Extract from Accounts" panels and keep the records for six years ([Guide, "Attachments to Returns"](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+
+**Step 2: deductions and add-backs.** A cost is deductible if it is revenue (not capital) and incurred wholly and exclusively for the trade. Add back on Form 11: the private part of motor, light, heat and phone; donations and non-staff entertainment; depreciation; a loss on sale of fixed assets (deduct a profit on sale) ([Guide, Panel B](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)). Never deductible: income tax, USC, PRSI and preliminary tax; drawings; loan principal.
+
+**Step 3: capital allowances instead of depreciation.** Plant, machinery and business cars: 12.5% a year over 8 years on net cost (after grants and reclaimable VAT). A car's cost is capped by its CO2 band (rates table) and the allowance is cut to the business-use share. A sale gives a balancing allowance or charge. Taxis and cars for short-term hire use 40% reducing balance ([Guide, capital allowances](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+
+**Step 4: losses.** A trading loss can be set against other income of the same year (s.381), or carried forward against later profits of the same trade only (s.382). A trade carried on in a non-active capacity can set only EUR 31,750 a year against other income; the excess carries forward ([Guide, Lines 117-118](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+
+**Step 5: other income.** Add Case V rental profit, PAYE income (Panels D and E), foreign income (Panel F), and other Irish income such as interest and dividends (Panel G). **Rental income in outline:** compute each letting separately: gross rent less the outgoings s.97(2) allows. 100% of interest on borrowing for a residential letting is deductible where the tenancy is registered with the Residential Tenancies Board. Rental losses carry forward against rental income ([Guide, Panel C](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)). Use `ie-paye-rental-nonresident` for Case V in depth.
+
+**Step 6: total income and deductions.** Deduct pension contributions (Panel I) within the age percentage of net relevant earnings and the EUR 115,000 earnings limit. Rental income is not relevant earnings.
+
+**Step 7: income tax.** Apply the band for the person's status at 20% and the rest at 40%. Then subtract credits; credits reduce tax, not income ([FA 2024 s.3](https://www.irishstatutebook.ie/eli/2024/act/43/section/3/enacted/en/html)). The Earned Income Credit is for self-employed earned income and a proprietary director's pay, not rent or interest. It cannot pass to a spouse. With the Employee credit, the two together cannot exceed EUR 2,000 ([Revenue, EIC](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx)).
+
+**Step 8: USC and PRSI.** Both are self-assessed on Form 11 and paid with income tax.
+- USC: on total income after capital allowances (active traders) but **before** pension contributions; the surcharge tests non-PAYE income only. Use `ie-usc`.
+- PRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650 ([Revenue, PRSI](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). Pension contributions get income tax relief only, not PRSI or USC relief ([Revenue, pension relief](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx)). Use `ie-prsi-class-s`. Department of Social Protection pensions and benefits are exempt from PRSI ([Guide, PRSI for the self-employed](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+
+**Step 9: self-assessment.** Total income tax, USC and PRSI, less tax deducted at source and preliminary tax paid, gives the balance due or overpaid (Panel P).
+
+**Where items go on the 2025 Form 11** ([Guide, contents](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)): A personal details; B self-employed income; C Irish rental income; D and E PAYE, BIK, pensions; F foreign income; G Irish other income; H exempt income; I charges and deductions; J personal tax credits; K restriction of reliefs (HIER); L capital gains; M, N, O chargeable assets, capital acquisitions, property incentives; P self-assessment. A shorter Form 11S exists for simpler cases.
+
+## Deadlines and filing
+
+- **Register** through eRegistration on ROS or Form TR1 parts A and B ([Revenue, who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)).
+- **Pay and file, 31 October each year** (s.959I, s.959AO). By 31 October 2026: file the 2025 return, make the 2025 self-assessment, pay the 2025 balance, and pay 2026 preliminary tax ([Guide, "Pay and File"](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+- **ROS extension:** 18 November 2026, but only if the 2025 return is filed **and** the 2025 balance and 2026 preliminary tax are paid through ROS. If only one is done on ROS, the date stays 31 October 2026 ([eBrief 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)).
+- **The 2026 return** is due by 31 October 2027, with 2027 preliminary tax. Revenue has not yet announced the 2027 ROS date.
+- **Preliminary tax:** pay at least the lowest of the three safe harbours (rates table). If too little is paid, or it is paid late, all the year's tax is treated as due on 31 October of the tax year and interest runs from then (s.959AO). In the first year in self-assessment the previous year's liability is nil, so preliminary tax is usually nil ([Revenue, preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)). Detail in `ie-preliminary-tax`.
+- **Direct debit:** Finance Act 2025 s.100 deleted s.959AP(2) to (4), removing the fixed payment dates and the minimum number of instalments. The Collector-General now sets the conditions; if all scheduled payments are made, preliminary tax is treated as paid on 31 October. Revenue's Tax and Duty Manual 41-00-28 still prints the old 3 and 8 instalment rule; the statute governs ([FA 2025 s.100](https://www.irishstatutebook.ie/eli/2025/act/18/section/100/enacted/en/html); [Notes for Guidance, s.959AP](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf)).
+- **Paper returns:** file by 31 August 2026 and Revenue calculates the tax; Revenue extended this to 30 September 2026. A paper return after that must include the self-assessment; leaving that panel blank can cost a EUR 250 penalty ([Guide](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+- **How to pay:** on ROS by debit instruction or Visa or Mastercard card; on myAccount; or by direct debit for preliminary tax ([Revenue, preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
+- **Amend** a ROS return on ROS; for a paper return, contact Revenue ([Revenue, pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)).
+- **Late claims:** from Finance Act 2025, a return filed late can still claim allowances, deductions and reliefs, unless another provision sets its own deadline (s.959I(6), [FA 2025 s.102](https://www.irishstatutebook.ie/eli/2025/act/18/section/102/enacted/en/html)).
+- **Repayment claims** have a four-year limit (s.865): 2022 claims must reach Revenue by 31 December 2026 ([Guide](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+
+## Penalties and interest
+
+- **Late filing surcharge (s.1084):** a percentage of the **total** tax for the year, not just the unpaid balance. For the 2025 return: 5% (max EUR 12,695) if filed after 31 October 2026 and by 31 December 2026; 10% (max EUR 63,485) after 31 December 2026 ([Guide, "Surcharge for Late Returns"](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)). Missing the ROS conditions means the 31 October date applies.
+- **LPT surcharge:** if the Local Property Tax return or payment (or an agreed arrangement) is outstanding when Form 11 is filed, the self-assessment is increased by 10%, even if Form 11 is on time. Once LPT is brought up to date, this surcharge is capped at the LPT owed (same source).
+- **Interest (s.1080):** 0.0219% a day, or part of a day, on late income tax ([TDM, interest guidelines](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf)). A preliminary tax shortfall moves the due date of the whole liability back to 31 October of the tax year.
+- **Revenue estimate (s.959AX, from 2026):** if a return is not filed, Revenue may serve an estimate of the greater of the average tax due on the last two returns or EUR 1,000, recoverable as if self-assessed. It falls away if, within 30 days, the person files and pays (with interest and surcharge) or shows they are not chargeable ([FA 2025 s.32](https://www.irishstatutebook.ie/eli/2025/act/18/section/32/enacted/en/html)).
+- **Audit:** self-assessed returns are open to Revenue audit; refer audit and disclosure cases to a practitioner.
+
+## Cross-border points
+
+- **Residence and domicile** decide the scope: residents are taxed on worldwide income; non-domiciled residents use the remittance basis on foreign income (see `ie-cross-border`, `ie-non-dom`).
+- **Foreign income** goes in Panel F. Relief for foreign tax is by treaty credit or Schedule 24: see `ie-foreign-tax-and-withholding`.
+- **A foreign bank account** opened in the year can make a resident a chargeable person (see "Who this applies to").
+- **Non-residents** with Irish rent or trading income file Form 11; personal credits and the 75% test under s.1032 are in `ie-paye-rental-nonresident`. A non-resident whose self-assessed income is only unearned income (such as rent or deposit interest) pays no PRSI ([Guide, PRSI for the self-employed](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+- **Social insurance across borders** (A1 certificates, postings): see `ie-prsi-cross-border`.
+
+## Worked examples
+
+### Example 1: single sole trader, profit EUR 60,000 (2026 estimate)
+
+Siobhan, single, aged 38, a designer, has adjusted trading profit of EUR 60,000 for 2026 after capital allowances. No other income, no pension contributions.
+
+Income tax: EUR 44,000 at 20% = 8,800; EUR 16,000 at 40% = 6,400; gross 15,200. Less the Single Person credit 2,000 and the Earned Income Credit 2,000 (20% of 60,000 is more than 2,000): EUR 11,200. USC: 60.06 + 333.76 + 3% of (60,000 less 28,700) = 939.00, total EUR 1,332.82; no surcharge. PRSI Class S: 60,000 x 4.2375% = EUR 2,542.50, above the EUR 650 minimum. Total 2026 liability: EUR 15,075.32. This also sets her 2027 preliminary tax under the 100% test.
+
+```oa-check
+name: Single sole trader, profit EUR 60,000 (2026)
+inputs:
+  profit: 60000
+steps:
+  - it_gross: min(profit, 44000) * 0.20 + max(profit - 44000, 0) * 0.40
+  - eic: min(2000, profit * 0.20)
+  - income_tax: it_gross - 2000 - eic
+  - usc: 12012 * 0.005 + 16688 * 0.02 + (min(profit, 70044) - 28700) * 0.03 + max(profit - 70044, 0) * 0.08
+  - prsi: max(profit * 0.042375, 650)
+  - total: income_tax + usc + prsi
+expected:
+  income_tax: 11200.00
+  usc: 1332.82
+  prsi: 2542.50
+  total: 15075.32
+```
+
+### Example 2: trader with a car, rental income, a pension and the USC surcharge (2026)
+
+Ciaran, single, aged 42, an active sole trader, has trading profit of EUR 95,000 before capital allowances. In 2026 he buys a new car for EUR 40,000 with CO2 of 130 g/km (VRT category B), used 80% for business, and a laptop for EUR 2,400. He has Case V rental profit of EUR 12,000 and pays EUR 8,000 into a PRSA.
+
+Capital allowances: the car is category B, so the cost that qualifies is the lower of 50% of 24,000 and 50% of its retail price new (40,000), which is 12,000. 12.5% of that is 1,500; at 80% business use, 1,200. Laptop: 2,400 x 12.5% = 300. Total 1,500. Trading profit 93,500. Total income with rent: 105,500.
+
+Pension: his limit is 25% of net relevant earnings of 93,500 (under the 115,000 cap) = 23,375, so all 8,000 is relieved. Taxable income 97,500. Income tax: 8,800 + 40% of 53,500 (21,400) = 30,200, less credits 4,000 = EUR 26,200.
+
+USC is on 105,500 (after capital allowances, before the pension): 60.06 + 333.76 + 1,240.32 + 8% of 35,456 (2,836.48) = 4,470.62. All his income is non-PAYE and it is over EUR 100,000, so the 3% surcharge applies to 5,500: 165.00. USC EUR 4,635.62. PRSI Class S: 105,500 x 4.2375% = EUR 4,470.56 (rent counts; the pension does not reduce it). Total EUR 35,306.18.
+
+```oa-check
+name: Trader with car, rental income, PRSA and USC surcharge (2026)
+inputs:
+  trading_before_ca: 95000
+  car_cost: 40000
+  business_use: 80
+  laptop: 2400
+  rent_profit: 12000
+  pension_paid: 8000
+steps:
+  - car_qualifying: min(24000 * 0.5, car_cost * 0.5)
+  - car_ca: car_qualifying * 0.125 * business_use / 100
+  - ca: car_ca + laptop * 0.125
+  - trading: trading_before_ca - ca
+  - total_income: trading + rent_profit
+  - pension_relief: min(pension_paid, min(trading, 115000) * 0.25)
+  - taxable: total_income - pension_relief
+  - income_tax: 44000 * 0.20 + (taxable - 44000) * 0.40 - 2000 - min(2000, trading * 0.20)
+  - usc_standard: 12012 * 0.005 + 16688 * 0.02 + 41344 * 0.03 + (total_income - 70044) * 0.08
+  - usc_surcharge: max(total_income - 100000, 0) * 0.03
+  - usc: usc_standard + usc_surcharge
+  - prsi: round(max(total_income * 0.042375, 650), 2)
+  - total: income_tax + usc + prsi
+expected:
+  ca: 1500.00
+  total_income: 105500.00
+  taxable: 97500.00
+  income_tax: 26200.00
+  usc: 4635.62
+  prsi: 4470.56
+  total: 35306.18
+```
 
 ## Ask the client first
 
-- **Which year?** The return being filed now is for 2025; preliminary tax being paid now is for 2026. Get both years' figures.
-- **Why are you a chargeable person?** You must register for self-assessment if taxable non-PAYE income exceeds €5,000 or gross non-PAYE income exceeds €30,000 ([Revenue: who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)). Self-employed people and proprietary directors (control of more than 15% of the ordinary share capital) file Form 11. Below those amounts a PAYE worker declares non-PAYE income on Form 12 through myAccount instead.
-- **Personal status for the year:** single, married or in a civil partnership (jointly assessed, one or two incomes), widowed, or a single person with a qualifying child (Single Person Child Carer Credit). Age and date of birth (age tax credit, USC reduced rates, pension limits, PRSI age limits). Full medical card holder?
-- **The business:** trade, start date, year end, VAT status, accounts or bank statements and invoices, asset register, car details (cost, date bought, CO2 emissions in g/km, business use %), home working arrangements.
-- **Other income:** employment (PAYE), rent, deposit interest, dividends, foreign income, share options.
-- **Payments already made:** preliminary tax paid for 2025 and the date; any direct debit for 2026 preliminary tax; tax, USC or PRSI deducted at source; RCT or PSWT credits.
-- **Prior years:** the 2024 and 2025 final liabilities (needed for the 100% and 105% preliminary tax tests, [Revenue: preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)), losses and unused capital allowances carried forward.
-- **Compliance flags:** Local Property Tax up to date? Any late returns? Any Revenue contact, audit notification or unfiled years?
-- **Pension contributions:** amounts paid to a Retirement Annuity Contract or PRSA and the date paid.
-- **Large reliefs or high income?** If income is €125,000 or more and reliefs are large, the High Income Earner Restriction may apply ([Revenue: HIER](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx); see When to refuse or refer).
+1. Which year, and why are you in self-assessment: trading, proprietary director (over 15%), rent, foreign income, or side income over EUR 5,000 net / EUR 30,000 gross? (Form 11 or Form 12.)
+2. Single, married or civil partner (one or two incomes), or a single parent; your age and any full medical card? (Band, credits, USC reduced rates, pension limit.)
+3. Accounts or records for the year, assets bought or sold, and for any car: cost, date, CO2 g/km and business-use share? (Capital allowances and add-backs.)
+4. Other income: PAYE pay, rent, interest, dividends, foreign income, social welfare? (Credits, USC surcharge, PRSI.)
+5. Preliminary tax paid and how (direct debit?), and the final liabilities for the two previous years? (Balance due and the 90/100/105% tests.)
+6. Losses or capital allowances carried forward, pension contributions paid, and is your LPT up to date? (Base, relief, the 10% LPT surcharge.)
 
-If the client cannot answer the business-use questions, claim no business use for mixed items until they give a reasonable basis, and say so on the working paper.
+Refer to a practitioner: partnerships' own accounts (Form 1 (Firms)), the High Income Earner Restriction, property-based incentive reliefs and Section 23 relief, farming reliefs, residence changes and split years, foreign tax credits, share schemes, Revenue audits or unfiled years, and any year other than 2025 or 2026.
 
-## The method, step by step
+## Sources
 
-1. **Confirm the year and the return.** A chargeable person files Form 11 through ROS; most individuals must file online ([Revenue: a guide to self-assessment](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/index.aspx)).
-2. **Build the trading account from the records.** Turnover is what the business earned in its accounting period, excluding VAT charged if the trader is VAT registered (VAT goes to the VAT return, see ireland-vat-return). Match platform payouts to invoices: turnover is the gross sale and the platform fee is a cost. Separate out non-trading receipts: salary (PAYE income), rent (rental income), deposit interest and dividends (other income), tax refunds and transfers between the client's own accounts (not income).
-3. **Deduct allowable revenue costs.** A cost is deductible only if it is incurred wholly and exclusively for the trade and is revenue, not capital. Typical allowable costs: premises rent, business insurance, accountancy and legal fees, software, advertising, bank and card fees, training for the current trade, professional subscriptions, business travel, interest on business borrowings, and specific bad debts written off. Keep receipts and records for six years ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-4. **Add back what the trade cannot deduct.** Revenue's Form 11 adjustments list: the private element of motor expenses; political and charitable donations and non-staff entertainment; the private element of light, heat and phone; a loss on sale of fixed assets (and deduct a profit on sale) ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)). Also never deductible: income tax, USC and PRSI (including preliminary tax paid, which is a payment on account), fines, drawings, the capital part of loan repayments, depreciation, and general bad debt provisions.
-   Practical points: VAT paid over to Revenue on a VAT return is not a business expense (**check** against the VAT treatment in ireland-vat-return); Department of Social Protection payments are generally taxable unless specifically exempt, and are subject to income tax but not USC or PRSI ([Revenue: taxation of DSP payments](https://www.revenue.ie/en/jobs-and-pensions/taxation-of-social-welfare-payments/index.aspx)); a home office is claimed as the floor-area share of a room used for the business, applied to heat, light and similar costs (**check**); where it is unclear whether a cost is capital or revenue, treat it as capital and claim capital allowances until the position is confirmed (**check**).
-5. **Claim capital allowances instead of depreciation.** Plant and machinery (computers, furniture, equipment) and business cars get wear and tear at 12.5% a year over 8 years on the net cost after grants and reclaimable VAT; the asset must be in use at the end of the accounting year; a sale gives a balancing allowance or charge. Cars are limited by CO2 emissions (table below) and by the business-use share ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)). Accelerated allowances for energy-efficient equipment exist only in limited cases: **check** eligibility before claiming.
-6. **Apply losses.** A current-year trading loss (which capital allowances can increase) may be set against other income of the same year (section 381). Unused losses carry forward against later profits of the same trade only (section 382). A trade carried on in a non-active capacity can set losses against other income only up to €31,750 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-7. **Total income.** Adjusted trading profit, plus other income, less pension relief (Retirement Annuity Contract or PRSA premiums within the age-related limit and earnings cap) and other deductions.
-8. **Income tax.** Apply the standard rate band at 20% and the balance at 40% for the person's status, then subtract tax credits. Credits reduce tax; they are not deductions from income ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)).
-9. **USC.** Charged on total income after capital allowances but before pension contributions. If total income is €13,000 or less there is no USC; above that, all income is chargeable ([Revenue: USC overview](https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx)). Apply the bands, then the 3% surcharge if non-PAYE income exceeds €100,000.
-10. **PRSI Class S.** On gross income after capital allowances, if income is €5,000 or more a year and the person is within the PRSI ages ([Revenue: do you need to pay PRSI?](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). The minimum contribution applies once liable.
-11. **Self-assess and settle.** Total liability less tax, USC and PRSI deducted at source and less preliminary tax paid gives the balance due or overpaid.
-12. **Pay preliminary tax for the current year** by the same date (see Preliminary tax below).
+| Source | URL | Read on |
+|---|---|---|
+| Finance Act 2024 (No. 43 of 2024) s.3: s.15 bands, s.461, 462B, 466A, 472, 472AB credits, from 2025 on | https://www.irishstatutebook.ie/eli/2024/act/43/section/3/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 (No. 18 of 2025), arrangement of sections (no change to s.15 or the personal credits) | https://www.irishstatutebook.ie/eli/2025/act/18/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.2: s.531AN USC 2026 bands | https://www.irishstatutebook.ie/eli/2025/act/18/section/2/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.26: s.285A accelerated allowances to 31 December 2030 | https://www.irishstatutebook.ie/eli/2025/act/18/section/26/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.32: new s.959AX Revenue estimate | https://www.irishstatutebook.ie/eli/2025/act/18/section/32/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.100: s.959AP direct debit | https://www.irishstatutebook.ie/eli/2025/act/18/section/100/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.102: s.959I(6) late claims | https://www.irishstatutebook.ie/eli/2025/act/18/section/102/enacted/en/html | 2026-10-24 |
+| Finance Act 2025 s.107: Part 1 in operation 1 January 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/107/enacted/en/html | 2026-10-24 |
+| Revenue, Notes for Guidance TCA 1997 Part 41A, Finance Act 2025 edition (s.959B, 959I, 959AN to 959AP) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf | 2026-10-24 |
+| Revenue, Guide to Completing 2025 Pay and File Self-Assessment Returns | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-24 |
+| Revenue, Tax rates, bands and reliefs | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-24 |
+| Revenue, Earned Income Credit | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-24 |
+| Revenue, Who should register for Income Tax self-assessment | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
+| Revenue, What is preliminary tax | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
+| Revenue, Pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
+| Revenue, eBrief 034/26, ROS extension to 18 November 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, Do you need to pay PRSI | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
+| Revenue, High Income Earner Restriction | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx | 2026-10-24 |
+| Revenue, Tax relief limits on pension contributions | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx | 2026-10-24 |
+| Revenue, Tax relief for pension contributions (income tax relief only; no USC or PRSI relief) | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx | 2026-10-24 |
+| Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
+| Department of Social Protection, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
-### Where each item goes on the 2025 Form 11
-
-The panels of the 2025 return are ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)):
-
-| Panel | Content |
-| --- | --- |
-| A | Personal Details (status, proprietary director, medical card) |
-| B | Self-Employed Income (trading account extract, adjustments, capital allowances, losses) |
-| C | Irish Rental Income |
-| D and E | PAYE / BIK / Pensions |
-| F | Foreign Income |
-| G | Irish Other Income (for example deposit interest, dividends) |
-| H | Exempt Income |
-| I | Charges and Deductions (Retirement Annuity Contract and PRSA premiums) |
-| J | Personal Tax Credits |
-| K | Restriction of Reliefs (High Income Earner Restriction) |
-| L | Capital Gains |
-| M, N, O | Chargeable Assets, Capital Acquisitions, Property Based Incentives |
-| P | Self-Assessment |
-
-Do not attach accounts or schedules: complete the extract from accounts panels and keep the working papers.
-
-## Figures for 2026 (and 2025 where different)
-
-### Income tax bands ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx))
-
-| Personal circumstances | 2026 | 2025 |
-| --- | --- | --- |
-| Single, widowed or surviving civil partner, without qualifying children | €44,000 @ 20%, balance @ 40% | same |
-| Single, qualifying for Single Person Child Carer Credit | €48,000 @ 20%, balance @ 40% | same |
-| Married or civil partners, one income | €53,000 @ 20%, balance @ 40% | same |
-| Married or civil partners, both with income | €53,000 @ 20%, increased by up to €35,000, balance @ 40% | same |
-
-The two-income increase is the lower of €35,000 or the income of the lower earner, and it cannot be transferred between spouses or civil partners ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)).
-
-### Main tax credits ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx))
-
-| Credit | 2026 | 2025 |
-| --- | --- | --- |
-| Single Person | €2,000 | €2,000 |
-| Married Person or Civil Partner | €4,000 | €4,000 |
-| Single Person Child Carer Credit | €1,900 | €1,900 |
-| Employee (PAYE) Tax Credit | €2,000 | €2,000 |
-| Earned Income Tax Credit (maximum) | €2,000 | €2,000 |
-| Home Carer's Tax Credit (maximum) | €1,950 | €1,950 |
-| Age Tax Credit, single / married | €245 / €490 | €245 / €490 |
-
-The Earned Income Credit is for self-employed earned income and pay of proprietary directors. It is the lower of €2,000 or 20% of qualifying earned income; it does not apply to rental or deposit interest income; where a person has both PAYE income and earned income, the Employee and Earned Income credits together cannot exceed the Employee Tax Credit maximum; and it cannot be transferred to a spouse ([Revenue: Earned Income Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx)).
-
-### USC ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx))
-
-| Band | 2026 | 2025 |
-| --- | --- | --- |
-| First €12,012 | 0.5% | 0.5% |
-| Next band at 2% | next €16,688 (up to €28,700) | next €15,370 (up to €27,382) |
-| Next band at 3% | next €41,344 (up to €70,044) | next €42,662 (up to €70,044) |
-| Balance | 8% | 8% |
-
-- **Exemption:** total income of €13,000 or less pays no USC; above that, all income is chargeable ([Revenue: USC overview](https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx)).
-- **Reduced rates:** aged 70 or over, or holding a full medical card, with income of €60,000 or less: 0.5% on the first €12,012 and 2% on the balance, in 2026 and 2025 ([Revenue: reduced rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx)).
-- **Surcharge:** 3% extra if non-PAYE income is more than €100,000 a year ([Revenue: other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx)), so the top rate on that income is 11%. Revenue's examples apply the 3% to all income above €100,000, including PAYE income, once non-PAYE income is over €100,000 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-
-### PRSI Class S
-
-- **Who:** self-employed people aged 16 or over with income of €5,000 or more a year. The upper age limit moved from 66 to 70 from 1 January 2024, except for people already receiving the State Pension (Contributory) or aged 66 by 1 January 2024 ([Revenue: do you need to pay PRSI?](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). Revenue's 2025 return guide still lists "over 66" as exempt: **check** the age position with the Department of Social Protection for anyone aged 66 to 69.
-- **2025 rate:** 4.2% from 1 October 2025, and a blended 4.125% on 2025 annual income, with a minimum of €650 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-- **2026 rate:** 4.2% until 30 September 2026 and 4.35% from 1 October 2026, minimum €650 a year. For self-assessed 2026 annual income the Department of Social Protection gives a blended rate of 4.2375% (the same method as the 2025 blended 4.125%) ([DSP: PRSI contribution rates SW 14, January 2026](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)). Confirm Revenue's own 2026 figure when it publishes the 2026 return guide.
-- **Not payable** where total income before capital allowances and pension contributions is less than €5,000, or where a non-resident's self-assessed income is only unearned income such as deposit interest or rent ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-
-### Capital allowances ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf))
-
-| Asset | Allowance |
-| --- | --- |
-| Plant and machinery bought on or after 4 December 2002 | 12.5% a year over 8 years |
-| Private cars bought on or after 4 December 2002 | 12.5% a year over 8 years, on the limited cost below, times the business-use share |
-| Industrial buildings | 4% a year |
-
-Cars bought on or after 1 January 2025, by CO2 emissions:
-
-| CO2 (g/km) | Cost that qualifies |
-| --- | --- |
-| 0 to 120 (category A) | up to €24,000 |
-| 121 to 155 (categories B and C) | 50% of €24,000, or 50% of the retail price when new if lower |
-| 156 and above (categories D, E and F) | nil |
-
-### Pension relief ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf))
-
-Relief for Retirement Annuity Contract and PRSA premiums is limited to a percentage of net relevant earnings by age: under 30, 15%; 30 to 39, 20%; 40 to 49, 25%; 50 to 54, 30%; 55 to 59, 35%; 60 and over, 40%. Earnings taken into account are capped at €115,000 for 2025 across all pension products. Unrelieved premiums carry forward. Confirm the 2026 cap before using it (**check**).
-
-### Preliminary tax ([Revenue: what is preliminary tax?](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx))
-
-Preliminary tax is the estimate of income tax, USC and PRSI for the current year, due by 31 October of that year (for 2026: 31 October 2026, or 18 November 2026 if paid with the 2025 return on ROS). To avoid interest it must be at least the lowest of:
-
-- 90% of the tax due for the current year;
-- 100% of the tax due for the immediately previous year; or
-- 105% of the tax due for the pre-preceding year. This option applies only if preliminary tax is paid by direct debit, and not where the pre-preceding year's tax was nil.
-
-Direct debit: payments are collected on the ninth day of the month (or the next working day) and can be set up on ROS ([Revenue: preliminary Income Tax direct debit](https://www.revenue.ie/en/starting-a-business/paying-your-tax/monthly-direct-debit/preliminary-income-tax.aspx)); you can join during the year as long as you make at least 3 equal monthly payments in that year ([Revenue: Tax and Duty Manual Part 41-00-28](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)). In the second and subsequent years there must be 8 or more monthly direct debit payments ([Revenue: Tax and Duty Manual Part 41-00-28](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)). If the arrangement lapses or falls short, the 105% test is lost for that year and interest can arise on any shortfall.
-
-First year in self-assessment: because the previous year's self-assessed liability is normally nil, the 100% test usually means no preliminary tax is needed in the first year; the client may still pay 90% of the current year to reduce the bill the following year. The first year's balance is still due on 31 October of the following year, together with preliminary tax for the second year.
-
-If preliminary tax is late or too low, the full liability is treated as due on the preliminary tax date (31 October of the tax year) and interest runs from then ([Revenue: Tax and Duty Manual Part 41-00-28](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)).
-
-### Surcharge and interest
-
-| Item | Rule |
-| --- | --- |
-| Return filed late, within 2 months of the filing date (for the 2025 return: after 31 October 2026 and on or before 31 December 2026) | Surcharge of 5% of the tax due, capped at €12,695 ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)) |
-| Return filed more than 2 months late (after 31 December 2026 for the 2025 return) | Surcharge of 10% of the tax due, capped at €63,485 ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)) |
-| Local Property Tax return or payment outstanding when Form 11 is filed | A 10% surcharge may apply to the final liability even if Form 11 is on time ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)) |
-| Late payment of income tax | Interest of 0.0219% a day, for each day or part of a day ([Revenue](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf)) |
-
-Sources: [Revenue: pay and file system](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx); [Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf); [Revenue: guidelines for charging interest on late payment](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf).
-
-The surcharge is a percentage of the total tax payable for the year of the late return, not just the balance still unpaid. The ROS extension is conditional: if the client files on ROS but pays another way (or pays on ROS but files on paper), the deadline stays 31 October ([Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)).
-
-## Boundary and exception table
-
-| Situation | Treatment |
-| --- | --- |
-| PAYE worker with small side income | Chargeable person only if taxable non-PAYE income exceeds €5,000 or gross non-PAYE income exceeds €30,000; otherwise Form 12 ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)) |
-| Director owning or controlling more than 15% | Proprietary director: chargeable person, files Form 11 even if all pay is under PAYE; gets the Earned Income Credit, not the Employee credit, on that pay ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)) |
-| Total income exactly €13,000 | No USC (exempt if €13,000 or less) ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx)) |
-| Aged 70+ or full medical card, income €60,000 or less | USC reduced rates; above €60,000, standard rates ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx)) |
-| Non-PAYE income exactly €100,000 | No USC surcharge (it applies only if more than €100,000) ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx)) |
-| Self-employed income under €5,000 | No Class S PRSI ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)) |
-| Earned income below €10,000 (2026) | Earned Income Credit is 20% of that income, not €2,000 ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx)) |
-| Spouse with lower income of €20,000 | Band increase is €20,000, not €35,000; the unused part cannot pass to the other spouse ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)) |
-| Car with CO2 above 155 g/km bought in 2025 or 2026 | No capital allowances ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)) |
-| Client entertainment | Add back; the Form 11 add-back is for non-staff entertainment |
-| Paper return filed early | If filed by 31 August 2026, Revenue calculates the tax. Revenue has extended this to 30 September by concession each year since 2015 and announces it yearly, so do not rely on it until announced; later paper filers must self-assess ([Revenue](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)) |
-| New trader | May file the first and second year returns by the second year's return date; payment dates do not move ([Revenue](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)) |
-| Pre-preceding year's tax was nil | The 105% direct debit test cannot be used ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)) |
-| Deposit interest | Not trading income; taxed with DIRT (33% maximum liability) and exempt from USC ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx); [Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)) |
-
-## Worked cases
-
-All cases are illustrations with assumed facts; recompute with the client's own figures.
-
-### Case 1: Siobhán, single sole trader, 2026 estimate ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx))
-
-Siobhán, single with no children, aged 38, is a graphic designer. For 2026 she expects turnover of €90,000, allowable costs of €27,250 after add-backs, and capital allowances of €2,750 (Case 4), so adjusted profit of €60,000. No other income.
-
-- Income tax: €44,000 at 20% = €8,800; €16,000 at 40% = €6,400; gross €15,200; less Single Person credit €2,000 and Earned Income Credit €2,000 = **€11,200**.
-- USC 2026 ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx)): €12,012 at 0.5% = €60.06; €16,688 at 2% = €333.76; €31,300 at 3% (€60,000 less €28,700) = €939; total **€1,332.82**. No surcharge (non-PAYE income not over €100,000).
-- PRSI Class S at the 2026 blended rate: €60,000 x 4.2375% = **€2,542.50** ([DSP: SW 14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); confirm Revenue's figure).
-- Estimated 2026 liability: **€15,075.32**.
-
-### Case 2: married couple, two incomes, 2026 ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx))
-
-Aidan (sole trader, adjusted profit €72,000) and Niamh (employee, salary €20,000) are jointly assessed.
-
-- Standard rate band: €53,000 plus the lower of €35,000 or Niamh's €20,000, so €73,000; the increase can be used only against Niamh's income, which it fully covers.
-- Tax: €73,000 at 20% = €14,600; the balance of €19,000 (all Aidan's) at 40% = €7,600; gross €22,200.
-- Credits: Married Person €4,000, Employee credit €2,000 (Niamh), Earned Income Credit €2,000 (Aidan) = €8,000. Income tax **€14,200**, less PAYE deducted from Niamh's salary.
-- USC is computed for each spouse separately. Aidan 2026: €60.06 + €333.76 + €1,240.32 (€41,344 at 3%) + €156.48 (€1,956 at 8%) = **€1,790.62** ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx)).
-- Aidan's Class S at the 2026 blended 4.2375%: €72,000 x 4.2375% = €3,051 ([DSP: SW 14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)).
-
-### Case 3: USC surcharge, 2026 ([Revenue: other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx))
-
-A consultant has trading profit of €130,000 and no PAYE income. USC: €60.06 + €333.76 + €1,240.32 + €4,796.48 (€59,956 at 8%) = €6,430.62, plus the 3% surcharge on €30,000 above €100,000 = €900; total **€7,330.62**.
-
-### Case 4: a business car bought in 2026 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf))
-
-Siobhán buys a car for €40,000 in March 2026 and uses it 75% for business (mileage log kept). The finance repayments are not the cost; the purchase price is.
-
-- CO2 110 g/km (category A): qualifying cost €24,000; allowance €24,000 x 12.5% = €3,000 a year; business share 75% = **€2,250**. With €500 on a laptop and desk (€4,000 x 12.5%), her 2026 capital allowances are €2,750.
-- If the car emitted 150 g/km (category C): qualifying cost is 50% of €24,000 = €12,000 (lower than 50% of a €40,000 retail price, €20,000); allowance €1,500; business share **€1,125**.
-- If it emitted 170 g/km (category D): **nil**.
-- Running costs (fuel, insurance, repairs) are deductible at the business share only; add back the private 25%.
-
-### Case 5: the 2025 return and 2026 preliminary tax, due 18 November 2026 on ROS ([Revenue: what is preliminary tax?](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx))
-
-Siobhán's 2025 adjusted profit was €52,000, and she paid €10,000 preliminary tax for 2025.
-
-- 2025 income tax: €44,000 at 20% = €8,800; €8,000 at 40% = €3,200; gross €12,000 less credits €4,000 = **€8,000** ([Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)).
-- 2025 USC: €60.06 + €307.40 (€15,370 at 2%) + €738.54 (€24,618 at 3%) = **€1,106.00** ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx)).
-- 2025 PRSI: €52,000 x 4.125% = **€2,145** ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-- 2025 total €11,251; less €10,000 paid = balance **€1,251**.
-- 2026 preliminary tax: 100% of 2025 = €11,251; 90% of the 2026 estimate (Case 1) = €13,567.79; she has no direct debit, so the 105% test is not available. Pay the lower, **€11,251**.
-- Paying and filing on ROS by 18 November 2026: €1,251 + €11,251 = **€12,502**. If she had joined the direct debit scheme early in 2026 and her 2024 liability had been €8,000, 105% of that, €8,400, would have been enough.
-
-### Case 6: filing late ([Revenue: pay and file system](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx))
-
-Same facts, but Siobhán files the 2025 return on 10 December 2026 (the ROS extension to 18 November 2026 needs both filing and paying on ROS by that date, so it does not help her). The return is late but within 2 months of 31 October, so the surcharge is 5% of €11,251 = **€562.55** (under the €12,695 cap). Filed on 15 January 2027 it would be 10% = **€1,125.10**. If the €1,251 balance was also paid 30 days after 31 October, interest is €1,251 x 0.0219% x 30 = about **€8.22** ([Revenue: interest on late payment](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf)).
-
-## When to refuse or refer
-
-- **A company** (LTD, DAC, PLC): the company files a CT1, not Form 11. Use ie-corporation-tax. A proprietary director still files their own Form 11 for their salary and other income.
-- **Partnership accounts:** the partnership computes profits on Form 1 (Firms); each partner then reports their share on Form 11. This skill covers only the partner's own return.
-- **Non-resident, newly arrived or departing individuals, split-year or dual residence, foreign income with foreign tax credits:** refer.
-- **Capital Gains Tax** computations for the CGT panel, share options and employee share schemes: refer or use a CGT Guide. CGT has different payment dates.
-- **High Income Earner Restriction:** may apply where income is €125,000 or more (less with ring-fenced income), specified reliefs exceed €80,000 and exceed 20% of adjusted income; it needs Form RR1 through ROS ([Revenue: HIER](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx)). Refer.
-- **Property-based incentive reliefs, farming reliefs, Section 23 relief** (with its 5% USC property relief surcharge where gross income is €100,000 or more ([Revenue: other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx))): refer.
-- **Revenue audit, aspect query, unfiled earlier years or a disclosure:** refer to a practitioner before filing anything.
-
-## Filing and payment
-
-- **Pay and File:** by 31 October each year you pay preliminary tax for that year, file the previous year's return with a self-assessment and pay the balance for the previous year; paying and filing on ROS extends 31 October to 18 November ([Revenue: pay and file system](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)). Check each year's ROS date in Revenue's announcement.
-- **How to file:** ROS Form 11 (or, if everything fits, Form 11S). Tick at least one reason for filing in the Personal Details panel. Complete the IT Self-Assessment panel and the Statement of Net Liabilities ([Revenue: filing your tax return](https://www.revenue.ie/en/self-assessment-and-self-employment/filing-your-tax-return/index.aspx)).
-- **How to pay:** on ROS by ROS Debit Instruction or debit or credit card (Visa and Mastercard only); on myAccount by Single Debit Instruction or card; or by monthly direct debit for preliminary tax ([Revenue: what is preliminary tax?](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
-- **Amending:** correct a ROS return through ROS; for a paper return, write to Revenue ([Revenue: pay and file system](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx)).
-- **Records:** keep supporting documents for six years; do not send them with the return unless asked.
-
-### Dated: the 2025 Form 11 being filed now
-
-- The Pay and File deadline for the 2025 Form 11 is Saturday 31 October 2026. Filing and paying through ROS (the 2025 balance and 2026 preliminary tax) extends it to Wednesday 18 November 2026; if only one of the two is done through ROS, the deadline stays 31 October 2026 ([Revenue eBrief No. 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)).
-- 2025 figures: bands and credits the same as 2026; USC first €12,012 at 0.5%, next €15,370 at 2%, next €42,662 at 3%, balance at 8% ([Revenue: USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx)); Class S blended 4.125% with a €650 minimum; pension earnings cap €115,000 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-- Late 2025 returns: 5% surcharge (cap €12,695) if filed after 31 October 2026 and on or before 31 December 2026; 10% (cap €63,485) after 31 December 2026 ([Revenue: Guide to completing 2025 returns](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-- The early paper-filer date (Revenue calculates the tax) was 31 August 2026; Revenue's yearly concession extended it to 30 September 2026, so it has passed ([Revenue: Tax and Duty Manual Part 41-00-28](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-41/41-00-28.pdf)).
-
-## Completion checklist
-
-- [ ] Year confirmed: 2025 return and 2026 preliminary tax; the client's reason for being a chargeable person recorded.
-- [ ] Status, age, medical card and joint or single assessment confirmed; band and credits match the status.
-- [ ] Turnover excludes VAT (if registered) and non-trading receipts; platform payouts matched to invoices.
-- [ ] Add-backs made: private motor, light, heat and phone; donations; non-staff entertainment; depreciation; tax payments; drawings; loan principal.
-- [ ] Capital allowances on net cost at 12.5% over 8 years; car cost limited by CO2 category and business share; disposals give a balancing allowance or charge ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
-- [ ] Losses: current year (s.381) or carried forward (s.382) applied to the right income.
-- [ ] Pension relief within the age percentage and earnings cap.
-- [ ] Income tax, USC (with surcharge if non-PAYE income over €100,000) and Class S PRSI computed for the right year's rates: 2025 blended 4.125%, 2026 blended 4.2375% (4.2% to 30 September, 4.35% from 1 October 2026), minimum €650 ([DSP: SW 14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)).
-- [ ] Credits for tax, USC and PRSI deducted at source and preliminary tax paid.
-- [ ] 2026 preliminary tax at least the lowest of 90% / 100% / 105% (direct debit only), with the working kept ([Revenue](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx)).
-- [ ] Filed and paid on ROS by 18 November 2026, or both by 31 October 2026 otherwise; LPT up to date.
-- [ ] Records kept for six years; refer-out items listed for the client.
+Not yet confirmed: (1) the consolidated TCA text: the Law Reform Commission's Revised Acts do not include the TCA, so sections are cited through the amending Finance Act and Revenue's Notes for Guidance; amendments before Finance Act 2024 were not read in their enacting acts; (2) the 2027 ROS extension date for the 2026 Form 11; (3) the conditions the Collector-General now sets for preliminary tax direct debits after FA 2025 s.100 (the old version's rules of 8 or more payments, or at least 3 for a mid-year start, were in the deleted subsections); (4) the rule letting a new trader file the first two years' returns by the second year's return date (old version, Tax and Duty Manual 41-00-28, not re-read); (5) the DIRT rate on deposit interest (the old version said 33%; the USC exemption for DIRT-paid interest is in `ie-usc`); (6) the statutory section behind the EUR 250 penalty for an incomplete self-assessment panel; (7) whether the PRSI exemption above age 66 in Revenue's 2025 guide still applies after the age limit moved to 70 from 1 January 2024 (see `ie-prsi-class-s`); (8) whether the s.1084 surcharge base includes USC and PRSI; (9) the home office apportionment and the "treat unclear items as capital" practice points from the old version; (10) Budget 2027 changes, not yet law.
 
 <!-- openaccountants-cta-block -->
 
@@ -305,4 +252,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-income-tax-form11` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-income-tax-form11. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-income-tax-form11` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-income-tax-form11. If neither is available, confirm every figure against the official source pages cited above before relying on it.

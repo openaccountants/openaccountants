@@ -1,14 +1,15 @@
 ---
 name: si-cross-border
 description: "Hub skill for crossing the Slovenian border in tax year 2026. Covers tax residence of individuals (registered permanent residence, habitual abode or centre of interests, more than 183 days; ZDoh-2 arts. 6 and 7) and companies (seat or place of effective management; ZDDPO-2 art. 5); permanent establishment (art. 6 and 7); non-residents taxed on Slovenian-source income; 15% withholding on dividends, interest, royalties, Slovenian rent, artists' fees and listed services paid to listed jurisdictions (ZDDPO-2 art. 70); EU directive exemptions (arts. 71 and 72); treaty relief on the KIDO forms; the foreign tax credit; corporate exit tax with five-year instalments (arts. 54.a and 54.b); the 7% relief for new residents. Corporate rate 22% for 2024 to 2028. Trigger on: moving to Slovenia, leaving Slovenia, non-resident, davčni odtegljaj, KIDO, izstopna obdavčitev. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, slovenia-social-contributions, slovenia-vat-return."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia: cross-border tax for people and companies (2026) v0.1
@@ -305,3 +306,23 @@ expected:
 | FURS, Uveljavljanje odbitka oziroma vračila tujega davka (foreign tax credit and refund), September 2021 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Uveljavljanje_odbitka_oziroma_vracila_tujega_davka_pravnih_oseb_in_fizicnih_oseb_ki_opravljajo_dejavnost.docx | 2026-10-23 |
 
 Not yet confirmed: the late payment interest rate for 2026 (ZDavP-2 art. 96 points to the statutory default interest law, not read); the EC reference rate that may lift exit-tax deferral interest above 2%; whether the art. 8.a order of 28 February 2022 has been amended since (FURS still publishes it as the current list); the average annual salary figure behind the 7% new-resident relief and the 2026 indexed income tax bands; the ministerial lists of company forms and taxes for arts. 71 and 72; individual treaty rates and tie-breakers; the detail of REK withholding for non-resident individuals, which belongs to the payroll and income tax skills.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
