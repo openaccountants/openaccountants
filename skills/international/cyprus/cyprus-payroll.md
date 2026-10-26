@@ -89,7 +89,6 @@ The Social Insurance Law 59(I)/2010 art. 5(1)(στ) prints 8.9% employee, 8.9% e
 | Monthly PAYE return (income tax and contributions withheld), through TFA, every employee listed with TIN | End of the month after the month of withholding | Tax Department deadlines, https://www.gov.cy/mof-tax/prothesmies/ |
 | Payment of PAYE | Within one month from the end of the month of withholding; the return must be filed first because it creates the debt | PAYE FAQ |
 | Annual PAYE return (T.D.7) for 2026 | 31 March 2027 | Tax Department deadlines |
-| Annual PAYE return for 2025 | Extended to 30 November 2026 (notice of 16 September 2026) | Tax Department deadlines |
 | GHS withheld on employee benefits and employer GHS on them, paid to the Tax Department | End of the following month | Tax Department deadlines |
 | Social Insurance, GHS on pay and the employer funds, to Social Insurance Services | End of the calendar month after the month they are for | Social Insurance Services, deadlines page |
 | T.D.63 certificate of earnings | Each year, to current and past employees | https://www.gov.cy/mof-tax/en/documents/certificate-of-earnings-t-d-63/ |
@@ -211,7 +210,7 @@ expected:
 | Public Default Interest Rate for 2026 Order, K.D.P. 376/2025 | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-24 |
 | Ministry of Labour, minimum wage statement (27 December 2025) | https://www.gov.cy/ergasia-kai-koinonikes-asfaliseis/dilosi-tou-ypourgou-ergasias-kai-koinonikon-asfaliseon-gia-tin-afxisi-tou-ethnikou-katotatou-misthou/ | 2026-10-26 |
 
-Not yet confirmed: the instrument that sets 8.8% / 8.8% / 5.2% in place of the 8.9% / 8.9% / 5.3% printed in Social Insurance Law art. 5(1)(στ) (the actuarial-study proviso; the Order was not found on CyLaw); the Minimum Wage (Amending) Order of 2025 itself (only the ministry statement was read); whether the employer may apply the 25% art. 8(21B) exemption through PAYE; the 13 divisor reading for a thirteenth salary (the form says only "accordingly"); how the monthly ceiling applies in a month in which a thirteenth salary is paid; the Central Holiday Fund rate above 40 days of leave ("increased accordingly"); the bank-statement pattern library, payslip glossary, Excel working-paper template and onboarding checklist from v0.1 (practice notes, not law, not carried).
+Not yet confirmed: the extended deadline for the 2025 annual PAYE return (T.D.7; reported as 30 November 2026 by secondary sources, not shown on the Tax Department deadlines calendar read); the instrument that sets 8.8% / 8.8% / 5.2% in place of the 8.9% / 8.9% / 5.3% printed in Social Insurance Law art. 5(1)(στ) (the actuarial-study proviso; the Order was not found on CyLaw); the Minimum Wage (Amending) Order of 2025 itself (only the ministry statement was read); whether the employer may apply the 25% art. 8(21B) exemption through PAYE; the 13 divisor reading for a thirteenth salary (the form says only "accordingly"); how the monthly ceiling applies in a month in which a thirteenth salary is paid; the Central Holiday Fund rate above 40 days of leave ("increased accordingly"); the bank-statement pattern library, payslip glossary, Excel working-paper template and onboarding checklist from v0.1 (practice notes, not law, not carried).
 
 <!-- openaccountants-cta-block -->
 
