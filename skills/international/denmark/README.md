@@ -14,7 +14,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | dk-income-tax, dk-capital-gains | sourced from the law |
+| IT-IND, individual income tax | dk-income-tax (2026 deep-tax), dk-capital-gains | sourced from the law |
 | IT-CORP, corporate income tax | dk-corporate-tax | checked against the law |
 | VAT | denmark-vat-return (2026 deep-tax), dk-vat-return (older duplicate, to be merged) | sourced from the law |
 | SC, social contributions | dk-social-contributions | checked against the law |
@@ -44,4 +44,6 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Momsbekendtgørelsen (BEK nr. 1435 of 29 November 2023, as amended by BEK nr. 518 and 850 of 2025): https://www.retsinformation.dk/eli/lta/2023/1435 (read 2026-10-24)
 - Lov nr. 16 of 14 January 2025 (Opkrævningsloven § 4, stk. 2 provisional-assessment fee DKK 1,400): https://www.retsinformation.dk/eli/lta/2025/16 (read 2026-10-24)
 - Bogføringsloven (lov nr. 700 of 24 May 2022) and BEK nr. 297 of 20 March 2025 (digital bookkeeping from 2026): https://www.retsinformation.dk/eli/lta/2022/700 (read 2026-10-24)
+- Skatte- og Vækstministeriet, Personskatteloven rates 2026-2027: https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven (read 2026-10-26)
+- L 138 (2023-24) as adopted, personal tax reform (mellemskat, topskat, toptopskat from 2026): https://folketingstidende.dk/samling/20231/lovforslag/L138/20231_L138_som_vedtaget.pdf (read 2026-10-26)
 - Skattestyrelsen: https://skat.dk

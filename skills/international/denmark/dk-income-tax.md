@@ -1,10 +1,10 @@
 ---
 name: dk-income-tax
-description: Use this skill whenever asked about Danish income tax for self-employed individuals (selvstaendig erhvervsdrivende). Trigger on phrases like "Danish tax", "AM-bidrag", "bundskat", "topskat", "kommuneskat", "virksomhedsordningen", "kapitalafkastordningen", "personfradrag", "Arsopgorelse", "Oplysningsskema", "self-employed tax Denmark", or any question about filing or computing income tax for a Danish self-employed client. Covers AM-bidrag (8%), bundskat, topskat, kommuneskat, kirkeskat, virksomhedsordningen, kapitalafkastordningen, deductible expenses, filing deadlines, and penalties. ALWAYS read this skill before touching any Danish income tax work.
-version: 2.0
+description: "Danish personal income tax for income year 2026, for residents who are employees or self-employed (selvstændig erhvervsdrivende). Covers AM-bidrag at 8% and the under-18 rule, bundskat 12.01%, kommuneskat and kirkeskat (2026 averages), the new 2026 bands from the personal tax reform: mellemskat 7.5% over DKK 641,200, topskat 7.5% over DKK 777,900 and toptopskat 5% over DKK 2,592,700, personfradrag DKK 54,100, beskæftigelsesfradrag, jobfradrag, senior and single-parent allowances, skatteloft 44.57% and 42%, share income at 27% and 42% over DKK 79,400, business deductions, depreciation, private car, virksomhedsordningen and kapitalafkastordningen, B-skat, årsopgørelse, the 1 July deadline, restskat and skattetillæg. Trigger on: Danish income tax, topskat 2026, mellemskat, toptopskat, AM-bidrag, personfradrag, beskæftigelsesfradrag, B-skat, årsopgørelse, restskat, self-employed tax Denmark. Out of scope: companies (dk-corporate-tax), share and property gains in depth (dk-capital-gains), non-residents and treaties (dk-cross-border), payroll withholding (dk-payroll), ATP and other contributions (dk-social-contributions), VAT (denmark-vat-return)."
+version: 2.1
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-09-25
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,433 +15,231 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Denmark self-employed income tax for 2026
+# Denmark: personal income tax, income year 2026
 
-This guide covers the ordinary income-tax workflow for a personally owned Danish business. Figures are for tax year 2026. It includes AM-bidrag, state-tax screens, municipal and church tax inputs, personal and work allowances, ordinary expenses, assets, private-car records, the two business schemes, preliminary assessment and final reporting. It does not compute a company return, VAT, payroll, share income, foreign-credit/treaty results or a taxpayer-specific final settlement.
+Tax year: the calendar year (indkomståret 2026). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statutes: Personskatteloven (PSL), Ligningsloven (LL), Kildeskatteloven (KSL), Arbejdsmarkedsbidragsloven and Skattekontrolloven, on retsinformation.dk.
 
-## Required inputs before calculating or filing
+2026 is the first year of the personal tax reform (lov following L 138 of 2023-24, adopted 16 May 2024). The old topskat is renamed mellemskat, and two new layers start: a new topskat and a toptopskat. Read every pre-2026 source with that in mind.
 
-Obtain and date the following. Do not substitute a generic national rate for any of them.
+## Who this applies to
 
-1. **Tax status and age:** CPR/tax year, date of birth, Danish address and municipality, Folkekirken membership, arrival/departure dates, residence elsewhere, treaty position and the source/location of each income item. Obtain state-pension-age timing and whether the taxpayer is entitled to and receives the statutory additional child allowance. Danish residence or a consecutive six-month stay is the cited starting screen for full tax liability; income without residence can instead be limited liability. [SKAT tax liability](https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability)[SKAT B-income](https://skat.dk/en-us/individuals/b-income)[SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)
-2. **Activity classification:** contracts, who controls the work, who bears risk, client count, invoices and actual working arrangements. Invoicing alone does not make an activity a business, and separate activities may have different classifications. [SKAT classification](https://skat.dk/erhverv/egen-virksomhed/afklar-virksomhedens-skatteforhold)
-3. **Business records:** opening/closing position, income, invoices/credit notes, purchases, assets, debt and interest, payroll, VAT records, private withdrawals, business/private usage evidence, prior losses, and the accounting period.
-4. **Other tax inputs:** wages/A-income, B-income, capital income and interest, pensions, property and share income, deductions, withholding, B-tax paid, the personal allowance shown in the current assessment and the current preliminary assessment. These alter the result even when the business accounts are correct.
-5. **Scheme facts:** whether the taxpayer has used the business-tax or return-on-capital scheme, separate business finances, retained profit, withdrawals and scheme calculations. Do not elect a scheme from a rate alone.
+- **Full tax liability.** A person who lives in Denmark, or stays in Denmark for 6 consecutive months (a short trip abroad does not break the stay), is fully liable on worldwide income. Buying a house alone does not make a person fully liable.
+- **Limited liability.** A person without Danish residence who has Danish-source income is taxed on that income only. The state charges a 25% rate in place of kommuneskat (PSL § 8 c). Limited liability, cross-border workers and treaties are in dk-cross-border.
+- **Employees and the self-employed.** Both pay AM-bidrag, state tax and kommuneskat. The self-employed also report business profit, may use virksomhedsordningen (VSO) or kapitalafkastordningen (KAO), and pay B-skat during the year.
+- **Business or employment.** Actual conditions decide. Issuing an invoice does not make someone self-employed if they work under the client's instructions, at the client's risk and inside the client's organisation. Separate activities can be classified differently. If classification is unclear, stop and get a binding answer or a Danish adviser's view.
+- **Companies are out.** An ApS or A/S is taxed under dk-corporate-tax; its owner pays tax here only on salary and on dividends as share income.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| AM-bidrag (labour market contribution) on salary, B-income and business profit | 8% | 2026 | https://skat.dk/en-us/individuals/b-income |
+| AM-bidrag age rule | none until the calendar year the person turns 18 | 2026 | https://skat.dk/en-us/individuals/b-income |
+| Bundskat (PSL § 6) | 12.01% | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Bundskat on Christiansø | 4.01% | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Personfradrag (PSL § 10), age 18 and over | DKK 54,100 (2025: DKK 51,600) | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Mellemskat (PSL § 7), rate | 7.5% | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Mellemskat threshold (personal income after AM-bidrag, plus capital income over the amount below) | DKK 641,200 | 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat |
+| Positive net capital income that stays outside mellemskat, single / married | DKK 55,000 / DKK 110,000 | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Topskat (PSL § 7 a), rate and threshold (personal income after AM-bidrag) | 7.5% over DKK 777,900 | 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat |
+| Toptopskat (PSL § 8), rate and threshold (personal income after AM-bidrag) | 5% over DKK 2,592,700 | 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat |
+| Kommuneskat, national average | 25.049% (rounded 25.0%) | 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 |
+| Kirkeskat, average for Folkekirken members | 0.867% | 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 |
+| Skatteloft I, personal income (PSL § 19, stk. 1) | 44.57% | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Skatteloft II, positive net capital income (PSL § 19, stk. 2) | 42.0% | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Municipal rate above which skatteloft I cuts mellemskat (44.57 − 12.01 − 7.5) | 25.06% | 2026 | https://info.skat.dk/data.aspx?oid=1948928 |
+| Share income (aktieindkomst, PSL § 8 a) | 27% up to DKK 79,400, 42% above (2025: DKK 67,500) | 2026 | https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities |
+| Share income threshold, married couple living together at year end | DKK 158,800 | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Compensation for reduced tax value of negative net capital income (PSL § 11) | 8% on up to DKK 50,000 | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven |
+| Beskæftigelsesfradrag (LL § 9 J) | 12.75%, max DKK 63,300 (full at DKK 496,471) | 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag |
+| Jobfradrag | 4.5% of income over DKK 235,200, max DKK 3,100 (full at DKK 304,089) | 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag |
+| Senior beskæftigelsesfradrag (1 or 2 years before state pension age) | 1.4%, max DKK 6,100 | 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag |
+| Single-parent beskæftigelsesfradrag (receives ekstra børnetilskud) | 11.5%, max DKK 50,600 | 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag |
+| Virksomhedsskat on profit kept in VSO | 22% (provisional) | 2026 | https://skat.dk/en-us/businesses/own-business/tax-on-own-business |
+| Working spouse allocation (KSL § 25 A, stk. 3) | up to 50% of profit, max DKK 295,900 | 2026 | https://info.skat.dk/data.aspx?oid=1976883 |
+| Minor assets, immediate deduction | under DKK 36,000 (2025: DKK 34,400) | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Plant and equipment pool, diminishing balance | up to 25% a year | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Write-off of a small mixed-use asset balance | below DKK 16,900 | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Green asset uplift (new, no private use, bought 1 Jan 2025 to 31 Dec 2026) | 108% depreciation base | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Buildings bought from 1 Jan 2023 / earlier | up to 3% / up to 4% a year | 2026 | https://info.skat.dk/data.aspx?oid=2083987 |
+| Purchased goodwill | up to 1/7 a year | 2026 | https://info.skat.dk/data.aspx?chk=220619&oid=2083994 |
+| Private car used for business, rate method | DKK 3.94/km to 20,000 km, DKK 2.28/km above | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Business phone available for private use | DKK 3,500 added to profit | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Entertainment (repræsentation) | 25% deductible | 2026 | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses |
+| Return filing deadline, self-employed | 1 July of the following year | 2026 | https://info.skat.dk/data.aspx?oid=2284485 |
+| B-skat instalments | 10, none in June and December | 2026 | https://skat.dk/en-us/individuals/b-income |
+| Skattetillæg for late return (Skattekontrolloven § 73) | DKK 400 a day, max DKK 10,000; DKK 200 a day, max DKK 5,000 if taxable income is not above the mellemskat threshold | 2026 | https://info.skat.dk/data.aspx?oid=2284578 |
+| Restskat surcharge (KSL § 61, stk. 2) | Opkrævningsloven § 7, stk. 2 rate plus 1.5 points | 2026 | https://info.skat.dk/data.aspx?oid=2169090 |
+
+All PSL thresholds are 2010-level base amounts indexed under PSL § 20. The 2027 figures are already published: mellemskat DKK 659,900, topskat DKK 800,500, toptopskat DKK 2,668,200, personfradrag DKK 55,700, share income DKK 89,600.
+
+## The taxable base
+
+Danish income tax runs on four income types. Keep them apart before any rate is applied.
+
+1. **Personal income (personlig indkomst).** Salary, B-income and business profit, after AM-bidrag. AM-bidrag is 8% of the gross amount and is deducted before state tax.
+2. **Net capital income (kapitalindkomst).** Interest received less interest paid, and some other capital items. Positive net capital income joins the bundskat base, and the part above DKK 55,000 (single) joins the mellemskat base. It never joins the topskat or toptopskat base. If spouses live together at year end, an unused part of the DKK 55,000 passes to the other spouse.
+3. **Share income (aktieindkomst).** Dividends and gains on shares. Taxed on its own scale, 27% then 42%. It does not count toward any band above.
+4. **Taxable income (skattepligtig indkomst).** Personal income plus net capital income, less ligningsmæssige fradrag (beskæftigelsesfradrag, jobfradrag, senior and single-parent allowances, travel, union fees and others). Kommuneskat and kirkeskat are charged on this.
+
+**The computation.**
+
+- AM-bidrag = 8% of salary, B-income and profit (0 until the year the person turns 18).
+- Bundskat = 12.01% of (personal income + positive net capital income − personfradrag).
+- Mellemskat = 7.5% of (personal income + net capital income over DKK 55,000 − DKK 641,200).
+- Topskat = 7.5% of (personal income − DKK 777,900).
+- Toptopskat = 5% of (personal income − DKK 2,592,700).
+- Kommuneskat (+ kirkeskat) = municipal rate × (taxable income − personfradrag).
+- Share income tax on its own scale.
+- Skatteloft: if 12.01% + 7.5% + the municipal rate is above 44.57%, the mellemskat rate on personal income is cut by the excess. With 12.01% and 7.5% this happens when the municipal rate is above 25.06%. Church tax is not counted. For positive net capital income the ceiling is 42.0%. Topskat and toptopskat are not cut. Profit kept in VSO enters the ceiling only when it is moved to personal income.
+
+The personfradrag works as a tax credit at each rate. If its value cannot be used against bundskat, it is used against mellemskat, topskat, toptopskat and then share income tax, in that order (PSL § 9, as amended for 2026).
+
+**Work allowances.** Everyone with AM-bidrag-liable salary or business profit gets beskæftigelsesfradrag and jobfradrag automatically. For the self-employed the base is the AM-bidrag base of the business income; a negative result gives DKK 0. The senior allowance applies in each of the 1 or 2 years before state pension age, not in the year that age is reached. A proposal to widen it to 5 years and raise the rates was not enacted when the page was read. The single-parent allowance needs entitlement to and receipt of ekstra børnetilskud. These allowances reduce taxable income only. They do not reduce AM-bidrag or the personal-income band tests.
+
+**Business profit.** Deduct costs that earn, secure and maintain the business income, to the documented business share. Points that come up most:
+
+- Entertainment of business contacts, including restaurant meals and gifts: 25% deductible, add back 75%. Advertising is fully deductible.
+- One-off costs of setting up the business are not deductible. Running costs such as rent, phone or wages paid within the 6 months before start-up can be, item by item.
+- Home office: no deduction for a room unless it is arranged so that private use is not possible. Furniture can be split by business use.
+- Business phone available for private use: deduct the cost and add DKK 3,500 to the business result. Internet: no value if the home connection gives near-work access to the business network; otherwise add DKK 3,500. Spouses who both have taxable free phones are each taxed on DKK 2,625, provided the joint value is at least DKK 4,600.
+- Assets: under DKK 36,000 (VAT-exclusive if VAT-registered, VAT-inclusive if not; items meant to be used together are tested together), or with a life of 3 years or less, are deducted at once. Others go into a pool at up to 25% a year. A mixed-use asset has its own schedule; its balance can be written off once under DKK 16,900, business share only. Green assets get a 108% base. Buildings: up to 3% a year (acquired from 1 January 2023) or 4% (earlier). Purchased goodwill and listed intangibles: up to 1/7 a year; self-built goodwill is not depreciated.
+- Private car: either the actual business share of all costs, or DKK 3.94/km to 20,000 km and DKK 2.28/km above, with a mileage log. Do not claim fuel or insurance on top of the rate. A self-employed person cannot pay themselves tax-free mileage. A car inside VSO that is also available privately triggers company-car tax.
+- Private costs, fines, income tax and drawings are never deductible. Keep VAT out of the income-tax profit.
+
+**VSO and KAO.** Under VSO the business and private finances must be separate. Profit can be kept in the business at a provisional 22%; when it is later withdrawn it is taxed as personal income with the 22% credited. Business interest can be treated as personal income instead of capital income. Under KAO a calculated return on the business capital is capital income, capped at the higher of business profit or total negative capital income excluding that return. Indicate either scheme in field 184 of the forskudsopgørelse; the final choice is made in the return (box 147 for VSO, box 141 for KAO). A working spouse can be allocated up to 50% of the profit, max DKK 295,900. Refer a first election, a change, an exit from VSO or a large withdrawal.
+
+**Losses.** How a business loss is carried against other income, a spouse or later years follows PSL § 13. That order was not re-read for this version: check it before using a loss.
+
+## Deadlines and filing
+
+- **Forskudsopgørelse (preliminary assessment).** Enter expected profit in field 221 or loss in field 435, recalculate and accept. That sets the tax card withholding rate and any B-skat. Update it whenever the forecast changes.
+- **B-skat.** Paid in 10 monthly instalments, none in June and December. Fixed B-income goes in field 210. On a one-off B-income amount, pay 8% AM-bidrag and then tax at the withholding rate on the rest.
+- **Årsopgørelse (tax assessment notice).** For income year 2026 it opens in TastSelv Borger in March 2027 (the 2025 one opened from 23 March 2026 for business owners). Employees with no changes need do nothing.
+- **Return deadline.** The self-employed must report final profit or loss and the business information by **1 July 2027** for income year 2026. An extended deadline can be applied for from mid-March to 1 July.
+- **Restskat.** Tax still owed after the year is restskat, plus a surcharge (the Opkrævningsloven § 7, stk. 2 rate plus 1.5 points, rounded to one decimal). A small restskat (base DKK 18,300 at 2010 level, indexed) is added to the next year's preliminary tax when the årsopgørelse is ready in time. The rest falls due in three instalments on 1 August, 1 September and 1 October of the year after the income year, with the last payment day on the 20th of each month.
+
+## Penalties and interest
+
+- **Late return (skattetillæg, Skattekontrolloven § 73).** DKK 400 for each day late, at most DKK 10,000. If the person's taxable income for the year is not above the mellemskat threshold (DKK 641,200 for 2026), DKK 200 a day, at most DKK 5,000. Skattestyrelsen can waive it in full or in part in special cases.
+- **Late return and restskat.** If the duty to report was not met on time, interest is added to the restskat and surcharge: the Opkrævningsloven § 7, stk. 2 rate plus 0.4 percentage points for each started month from 1 September of the year after the income year until the årsopgørelse is issued.
+- **Restskat surcharge.** Charged on all restskat, whether or not anything was late (see above).
+- **Wrong returns.** Fines for deliberate or grossly negligent under-reporting were not re-read for this version. Refer any such case.
+
+## Cross-border points
+
+- A person who moves in or out mid-year is fully liable only for the part of the year with residence; personfradrag and bands then need the actual liability period. Use dk-cross-border.
+- Limited liability: Danish-source salary and business income through a Danish permanent establishment are taxed here, with a 25% rate in place of kommuneskat (PSL § 8 c).
+- Foreign income of a fully liable person is taxed here with relief under the treaty or the credit method. The treaty and credit computations are in dk-cross-border.
+- Share income: exit tax on shares when a person leaves is in dk-capital-gains.
+- Researchers and key employees under the researcher scheme (KSL § 48 E) are outside the ordinary computation; see dk-payroll and dk-cross-border.
+
+## Worked examples
+
+### Example 1: sole trader, average municipality
+
+Mette runs a personally owned design business outside VSO. Her 2026 profit is DKK 500,000. She has no other income, no capital income, is not a church member and lives in a municipality at the 2026 average rate of 25.049%.
+
+AM-bidrag is 8% of DKK 500,000, so DKK 40,000. Personal income is DKK 460,000. Beskæftigelsesfradrag is 12.75% of 500,000 = 63,750, capped at DKK 63,300. Jobfradrag is 4.5% of (500,000 − 235,200) = 11,916, capped at DKK 3,100. Taxable income is 460,000 − 63,300 − 3,100 = DKK 393,600.
+
+Kommuneskat is 25.049% of (393,600 − 54,100), which is DKK 85,041.36. Bundskat is 12.01% of (460,000 − 54,100), which is DKK 48,748.59. Personal income is under DKK 641,200, so no mellemskat, topskat or toptopskat. Total tax including AM-bidrag is about DKK 173,789.95.
+
+```oa-check
+name: Example 1, sole trader, profit DKK 500,000, average kommuneskat (2026)
+inputs:
+  profit: 500000
+  kommune_rate_pct: 25.049
+steps:
+  - am_bidrag: profit * 0.08
+  - personal_income: profit - am_bidrag
+  - employment_allowance: min(profit * 0.1275, 63300)
+  - job_allowance: clamp((profit - 235200) * 0.045, 0, 3100)
+  - taxable_income: personal_income - employment_allowance - job_allowance
+  - kommuneskat: (taxable_income - 54100) * kommune_rate_pct / 100
+  - bundskat: (personal_income - 54100) * 0.1201
+  - mellemskat: max(personal_income - 641200, 0) * 0.075
+  - total_tax: am_bidrag + kommuneskat + bundskat + mellemskat
+expected:
+  am_bidrag: 40000
+  taxable_income: 393600
+  kommuneskat: 85041.355
+  bundskat: 48748.59
+  total_tax: 173789.945
+```
+
+### Example 2: high earner, skatteloft and share income
+
+Lars is self-employed outside VSO with a 2026 profit of DKK 1,000,000. He lives in a municipality at 26.30% (the highest 2026 rate), is not a church member, has no net capital income, and receives DKK 100,000 of dividends.
+
+AM-bidrag is DKK 80,000, so personal income is DKK 920,000. Both allowances are at their caps (DKK 63,300 and DKK 3,100), so taxable income is DKK 853,600.
+
+Skatteloft: 12.01 + 7.5 + 26.30 = 45.81%, which is 1.24 points above 44.57%. Mellemskat is therefore charged at 6.26% instead of 7.5%: 6.26% of (920,000 − 641,200) = DKK 17,452.88. Topskat is 7.5% of (920,000 − 777,900) = DKK 10,657.50 and is not cut. Toptopskat does not apply. Bundskat is 12.01% of (920,000 − 54,100) = DKK 103,994.59. Kommuneskat is 26.30% of (853,600 − 54,100) = DKK 210,268.50.
+
+The dividends are share income: 27% of DKK 79,400 plus 42% of DKK 20,600 = DKK 30,090. Dividend tax already withheld by the company is credited against this in the årsopgørelse.
+
+```oa-check
+name: Example 2, profit DKK 1,000,000 at 26.30% kommuneskat with skatteloft, plus DKK 100,000 dividends (2026)
+inputs:
+  profit: 1000000
+  kommune_rate_pct: 26.30
+  dividends: 100000
+steps:
+  - am_bidrag: profit * 0.08
+  - personal_income: profit - am_bidrag
+  - employment_allowance: min(profit * 0.1275, 63300)
+  - job_allowance: clamp((profit - 235200) * 0.045, 0, 3100)
+  - taxable_income: personal_income - employment_allowance - job_allowance
+  - ceiling_excess_pct: max(12.01 + 7.5 + kommune_rate_pct - 44.57, 0)
+  - mellemskat_rate_pct: 7.5 - ceiling_excess_pct
+  - mellemskat: max(personal_income - 641200, 0) * mellemskat_rate_pct / 100
+  - topskat: max(personal_income - 777900, 0) * 0.075
+  - toptopskat: max(personal_income - 2592700, 0) * 0.05
+  - bundskat: (personal_income - 54100) * 0.1201
+  - kommuneskat: (taxable_income - 54100) * kommune_rate_pct / 100
+  - share_tax: min(dividends, 79400) * 0.27 + max(dividends - 79400, 0) * 0.42
+  - total_tax: am_bidrag + bundskat + mellemskat + topskat + toptopskat + kommuneskat + share_tax
+expected:
+  taxable_income: 853600
+  mellemskat_rate_pct: 6.26
+  mellemskat: 17452.88
+  topskat: 10657.50
+  bundskat: 103994.59
+  kommuneskat: 210268.50
+  share_tax: 30090
+  total_tax: 452463.47
+```
 
 ## Ask the client first
 
-- Is the activity actually self-employment: who controls the work, bears the costs and risk, and supplies the client-facing contract?
-- Is the person fully or only limitedly liable in Denmark, and are there foreign residence, income or treaty facts?
-- What municipality, Folkekirken membership, age, pension-age timing, child-allowance status and current tax-card allowance apply?
-- What income belongs in personal, capital and share categories, and what AM-liable amount is supported by reconciled accounts?
-- Has the taxpayer used either business-tax scheme, retained profit, withdrawals, capital-return calculation or spouse allocation?
-- For each asset/car/expense, what invoice, business-use record, VAT treatment and payment evidence supports the claimed treatment?
-
-## Rates, thresholds and deadlines
-
-The table records published figures and the labelled inputs or outputs used in worked examples. Worked-example amounts are hypothetical arithmetic, not official taxpayer amounts; their calculation and case binding are in the packet evidence.
-
-| Figure | Value | Source |
-| --- | --- | --- |
-| entertainment rate | 25% | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| private phone | DKK 3,500 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| am rate | 8% | [official source](https://skat.dk/en-us/individuals/b-income) |
-| bottom rate | 12.01% | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| middle rate | 7.5% | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| middle threshold | DKK 641,200 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| capital threshold | DKK 55,000 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| top threshold | DKK 777,900 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| additional rate | 5% | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| additional threshold | DKK 2,592,700 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| employment rate | 12.75% | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| employment cap | DKK 63,300 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| employment full | DKK 496,471 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| job rate | 4.5% | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| job threshold | DKK 235,200 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| job cap | DKK 3,100 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| job full | DKK 304,089 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| senior rate | 1.4% | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| senior cap | DKK 6,100 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| single rate | 11.5% | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| single cap | DKK 50,600 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| single full | DKK 440,000 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| vso rate | 22% | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| field 184 | 184 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| box 147 | 147 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| box 141 | 141 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| field 221 | 221 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| field 435 | 435 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| filing open | 23 March | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| filing deadline (2025 return) | 1 July 2026 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| filing deadline (2026 return) | 1 July 2027 | [official source](https://info.skat.dk/data.aspx?oid=2284485) |
-| late penalty per day | DKK 400 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| late penalty cap | DKK 10,000 | [official source](https://info.skat.dk/data.aspx?oid=2284578) |
-| reduced late penalty per day (taxable income not above the middle-bracket threshold) | DKK 200 | [official source](https://info.skat.dk/data.aspx?oid=2284578) |
-| reduced late penalty cap | DKK 5,000 | [official source](https://info.skat.dk/data.aspx?oid=2284578) |
-| tax ceiling (skatteloft I), personal income | 44.57% | [official source](https://info.skat.dk/data.aspx?oid=1948928) |
-| tax ceiling (skatteloft II), capital income | 42% | [official source](https://info.skat.dk/data.aspx?oid=1948928) |
-| municipal rate above which skatteloft I cuts middle-bracket tax | 25.06% | [official source](https://info.skat.dk/data.aspx?oid=1948928) |
-| senior allowance full at | DKK 435,715 | [official source](https://info.skat.dk/data.aspx?oid=2273718) |
-| mixed-use asset balance write-off limit | DKK 16,900 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| spouse-discount phone/internet value | DKK 2,625 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| spouse-discount minimum joint value | DKK 4,600 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| working-spouse transfer cap | DKK 295,900 | [official source](https://info.skat.dk/data.aspx?oid=1976883) |
-| restskat carried into next year: base amount at 2010 level, indexed | DKK 18,300 | [official source](https://info.skat.dk/data.aspx?oid=2169090) |
-| personal allowance | DKK 54,100 | [official source](https://skat.dk/en-us/individuals/tax-card) |
-| personal allowance 2025 | DKK 51,600 | [official source](https://skat.dk/en-us/individuals/tax-card) |
-| immediate assets | DKK 36,000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| asset life | 3 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| pool rate | 25% | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| green uplift | 108% | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| green window start | 1 January 2025 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| green window end | 31 December 2026 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| car low rate | DKK 3.94 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| car break | 20,000 km | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| car high rate | DKK 2.28 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| building date | 1 January 2023 | [official source](https://info.skat.dk/data.aspx?oid=2083987) |
-| building new rate | 3% | [official source](https://info.skat.dk/data.aspx?oid=2083987) |
-| building old rate | 4% | [official source](https://info.skat.dk/data.aspx?oid=2083987) |
-| goodwill rate | one-seventh | [official source](https://info.skat.dk/data.aspx?chk=220619&oid=2083994) |
-| btax months | ten | [official source](https://skat.dk/en-us/individuals/b-income) |
-| btax excluded months | June and December | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — ordinary profit | 400000 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — ordinary am | 32000 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — ordinary post am | 368000 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — ordinary employment | 51000 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — ordinary job precap | 7416 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — boundary profit | 697000 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — boundary am | 55760 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — boundary post am | 641240 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| worked example — boundary excess | 40 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| worked example — boundary middle component | 3 | [official source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| worked example — under18 profit | 100000 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — under18 am | 0 | [official source](https://skat.dk/en-us/individuals/b-income) |
-| worked example — allowance base | 440000 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — allowance employment | 56100 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — allowance job precap | 9216 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — allowance senior precap | 6160 | [official source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| worked example — asset minor case | 25000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — asset major case | 100000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — asset major deduction | 25000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — asset major balance | 75000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — vehicle km | 9000 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — vehicle deduction | 35460 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| worked example — forecast revised | 600000 | [official source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-| worked example — obsolete asset amount | 15400 | [official source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | DKK 400,000 | [AM-bidrag source](https://skat.dk/en-us/individuals/b-income) |
-| Worked-example amount in body | DKK 32,000 | [AM-bidrag source](https://skat.dk/en-us/individuals/b-income) |
-| Worked-example amount in body | DKK 368,000 | [AM-bidrag source](https://skat.dk/en-us/individuals/b-income) |
-| Worked-example amount in body | DKK 51,000 | [allowance source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| Worked-example amount in body | DKK 7,416 | [allowance source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| Worked-example amount in body | DKK 697,000 | [state-tax source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Worked-example amount in body | DKK 55,760 | [AM-bidrag source](https://skat.dk/en-us/individuals/b-income) |
-| Worked-example amount in body | DKK 641,240 | [state-tax source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Worked-example amount in body | DKK 40 | [state-tax source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Worked-example amount in body | DKK 3 | [state-tax source](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Worked-example amount in body | DKK 100,000 | [business-expense source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | 0 | [AM-bidrag source](https://skat.dk/en-us/individuals/b-income) |
-| Worked-example amount in body | DKK 56,100 | [allowance source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| Worked-example amount in body | DKK 9,216 | [allowance source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| Worked-example amount in body | DKK 6,160 | [allowance source](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag) |
-| Worked-example amount in body | DKK 25,000 | [business-expense source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | DKK 75,000 | [business-expense source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | 9,000 km | [private-car source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | DKK 35,460 | [private-car source](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Worked-example amount in body | DKK 600,000 | [own-business source](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) |
-
-## The method, step by step
-
-1. Classify the person and each activity from the actual contracts, control and risk; screen full or limited Danish liability before calculating.
-2. Reconcile accounts and identify supported business income, allowable costs, assets, private use, VAT handling and other income categories.
-3. Determine the AM-bidrag base and age rule, then screen the stated state-tax layers using the required personal and capital-income inputs.
-4. Calculate the personal and work-allowance inputs on their own bases, then obtain the municipality/church and tax-card facts needed for the individual calculation.
-5. Decide whether business-tax or return-on-capital scheme records and elections apply; use a specialist method when they do.
-6. Update the preliminary assessment during the year, reconcile B-tax/withholding, and file the completed business return with the final evidence.
-
-
-### 1. Classify the taxpayer and activity
-
-Decide whether each activity is employment, fee income, commercial self-employment or non-commercial activity from the real facts. This affects whether expenses and losses are deductible and whether AM-bidrag applies. If classification is unclear, pause the computation and obtain a SKAT clarification or Danish professional review. [SKAT classification](https://skat.dk/erhverv/egen-virksomhed/afklar-virksomhedens-skatteforhold)
-
-For an individual, then distinguish full from limited Danish tax liability. Full liability generally covers worldwide earned and capital income; limited liability can apply to specified Danish income. A nonresident may have special personal-allowance/cross-border-worker options, so do not assume the full-liability result. [SKAT tax liability](https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability)
-
-### 2. Prepare tax accounts and the business result
-
-Start with reconciled income and expenditure for the completed period. VAT is not income-tax profit: keep VAT-return data and income-tax accounts separately, then reconcile them to the ledger. Only deduct expenditure incurred to secure, acquire and maintain the ongoing business. Retain invoices, payment evidence and the business reason. Private cost is not deductible; split a mixed item to the documented business share. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-The following are supported examples, not an exhaustive deduction list:
-
-| Item | Treatment in this method |
-| --- | --- |
-| Goods for resale, tools/equipment, professional fees, business premises, insurance and business telephone/internet | Consider only to the documented business extent in the tax accounts. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Advertising | The cited guidance permits full deduction in the accounts, subject to records and business purpose. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Entertainment of business contacts | Only 25% is deductible. SKAT's list of entertainment includes food, **meals in restaurants**, beverages, **gifts** and anniversary, birthday, travel and outing costs spent to make or keep business relations. Add back the other 75%. Keep the voucher and note the reason. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Start-up costs | One-off costs of **setting up** the business (for example an accountant or lawyer for the start-up, or market research) are **not** deductible. Running costs such as rent, phone or wages paid **within the last 6 months before start-up** may be deductible; test each item, and the closer to the start date, the more likely. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Home office | Do not deduct room costs merely because the room is used for work. The room must not be arranged so that private use is possible; it is not enough that you do not use it privately, and a room set up as an office can almost always be used privately. Furniture can be apportioned by business use. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-| Business phone/internet available privately | Deduct the cost. **Phone:** where the phone can also be used privately, add the 2026 value of DKK 3,500 to the business result and enter it in field 462. **Internet:** no value is taxed if you can reach the business network from home with almost the same functions as at work; otherwise add the DKK 3,500. If both phone and internet are taxable, the value is still DKK 3,500 once, not twice. A married or registered couple living together at year end who are both taxed on these values get a 25% discount (DKK 2,625 each for 2026) only if their joint taxable value for the year is at least DKK 4,600. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses) |
-
-Adjust book profit for every non-deductible/private component and every income-tax-only adjustment before using it as the taxable business result. Do not claim an employment expense again where it already reduced the business result.
-
-### 3. Keep income streams separate
-
-Put business/personal income, net capital income and share income into their separate statutory categories before applying rates. This draft only provides the 2026 state-tax treatment needed for the self-employed income workflow. It does not calculate a share-income result, property result, capital loss, foreign-tax credit or investment-fund classification.
-
-### 4. Apply AM-bidrag and the 2026 state-tax layers
-
-AM-bidrag is 8% for a person who is liable to it. From income year 2026, B-income, business profit and salary do **not** bear AM-bidrag until the calendar year in which the person turns 18. Record the birth year before calculating the contribution. SKAT says regular B-income in the preliminary assessment is included in B-tax instalments; use the actual preliminary assessment rather than inventing an instalment schedule. [SKAT B-income](https://skat.dk/en-us/individuals/b-income)
-
-For 2026, use the following as a state-tax **screen** after validating the income basis. The middle/top/additional thresholds below are stated by SKAT as after AM-bidrag. The bottom-bracket calculation also depends on personal allowance and positive net capital income; this draft does not derive a universal taxable base.
-
-| Layer | Published 2026 treatment |
-| --- | --- |
-| Bottom-bracket tax (bundskat) | 12.01% of personal income plus positive net capital income above the personal allowance. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Middle-bracket tax (mellemskat) | 7.5% of the part of the base above DKK 641,200. The base is personal income after AM-bidrag **plus positive net capital income above DKK 55,000**. The former topskat is renamed middle-bracket tax in 2026. Spouses: an unused part of the DKK 55,000 capital-income amount is transferred automatically to the other spouse **only if they live together at the end of the year**. The couple's combined positive net capital income is calculated together **only if they have been married and living together for the whole year**. [SKAT marriage and tax](https://skat.dk/borger/forskudsopgoerelse/aegteskab-skilsmisse-og-skat) [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) [SKAT legal guide: spouses' tax calculation](https://info.skat.dk/data.aspx?oid=1976883) |
-| Top-bracket tax (topskat) | 7.5% of personal income over DKK 777,900 after AM-bidrag. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-| Additional top-bracket tax (toptopskat) | 5% of personal income over DKK 2,592,700 after AM-bidrag. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) |
-
-**Capital income is not part of the top-bracket or additional top-bracket base.** Those two layers are charged on personal income after AM-bidrag only; positive net capital income is taxed by the middle-bracket layer (above DKK 55,000), not by them. So the highest state-tax layer that reaches capital income is the middle-bracket tax, subject to the 42% capital-income ceiling below. SKAT's spouse page still speaks of a joint "topskat af kapitalindkomst"; that is the old name for what is now the middle-bracket tax on capital income. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-
-**Tax ceiling (skatteloft) for 2026.** If the bottom-bracket rate plus the middle-bracket rate plus the municipal rate adds up to more than **44.57%**, the middle-bracket tax on personal income is cut by the difference (skatteloft I). With 12.01% and 7.5%, this happens only when the municipal rate is above **25.06%** (44.57% − 12.01% − 7.5%). Church tax is not part of this sum. A separate ceiling applies to capital income (skatteloft II): if the bottom-bracket rate plus the middle-bracket rate plus the municipal rate adds up to more than **42%**, the middle-bracket tax on capital income is cut by the difference. With 12.01% and 7.5%, that sum passes 42% whenever the municipal rate is above 22.49%. The ceiling cuts only the middle-bracket tax; the source does not apply it to the top-bracket or additional top-bracket tax. Under the business-tax scheme, profit counts for the ceiling only when it is moved out of the scheme for final taxation. [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-
-Add the municipality’s income-tax rate and, only where applicable, church tax for Folkekirken members. The rate is not national: obtain the taxpayer’s municipality and current rate. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat)
-
-### 5. Calculate automatic work allowances on their own base
-
-SKAT states that salary subject to AM-bidrag and business profit receive the ordinary employment and job allowances automatically. For a self-employed person the employment-allowance base is the AM-bidrag base for business income; if the calculation gives a negative figure, the allowance is DKK 0. [SKAT legal guide: employment allowances](https://info.skat.dk/data.aspx?oid=2273718) For 2026, calculate the ordinary employment allowance as **the lesser of 12.75% of the applicable allowance base and DKK 63,300**; the published full-allowance income is DKK 496,471. Calculate job allowance as **the lesser of 4.5% of applicable income above DKK 235,200 and DKK 3,100**; the published full-allowance income is DKK 304,089. Obtain the current assessment where age or a special income category makes the allowance base uncertain; an AM-bidrag exemption is not by itself proof that every allowance is absent. [SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)[SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)
-
-For ordinary eligible cases, also test the two existing 2026 extra allowances:
-
-| Allowance | 2026 ordinary test and calculation | Input/evidence |
-| --- | --- | --- |
-| Senior employment allowance | In each of the two income years before the year the person reaches state-pension age, calculate the lesser of **1.4%** of the same allowance base and **DKK 6,100** (reached at DKK 435,715). It is **not** given in the income year pension age is reached. Because the rule starts in 2026, a person who reaches pension age in 2027 gets it for 2026 only. | Date of birth/state-pension-age timing and ordinary allowance eligibility. [SKAT legal guide: employment allowances](https://info.skat.dk/data.aspx?oid=2273718) |
-| Qualifying single-parent employment allowance | Where the person is entitled to **and receives** the additional child allowance under the Child Allowance Act, calculate the lesser of **11.5%** of the same allowance base and **DKK 50,600**. It is reached at DKK 440,000. | Entitlement and receipt status, not marital status or a bank narration alone. |
-
-These allowances reduce taxable income; they are not cash payments, do not reduce the AM-bidrag calculation and do not replace the statutory personal-income threshold screens. The SKAT page separately mentions an **unpassed** proposal to expand the senior regime from two to five years and increase later rates. That proposal is not used here; the enacted two-year 2026 rule above is. [SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)[SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)
-
-### 6. Choose a tax scheme only after its records are complete
-
-Under the business-tax scheme, business and personal finances must be separate. SKAT describes two consequences: business interest may be treated as personal, rather than capital, income; and profit can be retained against provisional 22% tax, with later withdrawal taxed as personal income and the earlier tax credited. The preliminary-assessment indication is field 184, but the final choice is made on the return in box 147. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)
-
-The return-on-capital scheme is presented by SKAT as a simpler alternative. Its calculated return is capital income and cannot exceed the greater of business profit or total negative capital income excluding the calculated return. The preliminary indication is field 184; the final return selection is box 141 under business information. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)
-
-If a private car is placed inside the business-tax scheme, all car costs are deducted in the business accounts, but the owner is taxed on a company car if the car is also available for private use. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-A spouse who works in the business can be allocated up to 50% of the business profit, capped at DKK 295,900 for 2026; other spouse allocations (a wage agreement, or freer allocation where both spouses are liable for the business on the same terms for the whole year) have their own conditions. [SKAT legal guide: spouses' tax calculation](https://info.skat.dk/data.aspx?oid=1976883)
-
-These are elections with record-keeping and withdrawal consequences. This draft does not calculate either scheme, recommend one, or treat the provisional 22% as a final owner tax. Refer a first election, change, large retained profit, mixed finances, spouse allocation or interest-allocation case.
-
-### 7. Pay during the year and file the completed period
-
-Enter forecast business profit in preliminary-assessment field 221 or forecast loss in field 435, calculate, inspect the new tax-card page, and accept the change. Where it creates B-tax, pay the stated instalments; where no B-tax appears, SKAT says tax may be withheld from other income. Update the forecast whenever profit/loss changes. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)
-
-For a personally owned business, report the completed year’s final profit/loss and required income/deduction information in E-tax for Individuals (TastSelv Borger). The current SKAT page says access starts 23 March and **1 July 2026 is the deadline for the 2025 return**. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)
-
-The legal rule is that a self-employed person's deadline is **1 July in the year after the income year**, so the return for income year 2026 is due by **1 July 2027**. Changes after the deadline go through the ordinary reopening rules. [SKAT legal guide: 1 July deadline](https://info.skat.dk/data.aspx?oid=2284485)
-
-**Late-filing penalty (skattetillæg).** It is DKK 400 for each day the deadline is missed, capped at **DKK 10,000** in total. For an individual whose taxable income for that year is **not above** the middle-bracket threshold (DKK 641,200 for 2026), it is DKK 200 per day, capped at **DKK 5,000**. SKAT can waive it fully or partly on application in special cases. [SKAT legal guide: late-filing penalty](https://info.skat.dk/data.aspx?oid=2284578)
-
-**Outstanding tax (restskat).** If final tax is higher than the preliminary tax paid, a percentage surcharge is added. Outstanding tax up to an indexed base amount (DKK 18,300 at 2010 level), plus its surcharge, is moved into the next year's preliminary tax **only if the tax assessment notice is issued by the September cut-off date** in the year after the income year that SKAT's systems support. Any remainder is due in three instalments on 1 August, 1 September and 1 October of the year after the income year, with the 20th of each month as the last on-time payment day; each instalment is at least DKK 500 until the whole amount is paid. If the return was filed late, interest is also charged **on both the outstanding tax and the surcharge** at the collection-law rate (opkrævningsloven § 7, stk. 2) **plus** 0.4 percentage points, per started month, from 1 September of the year after the income year until the tax assessment notice is issued. Get the current rate from SKAT. To limit outstanding tax, keep the preliminary assessment up to date. [SKAT legal guide: paying restskat](https://info.skat.dk/data.aspx?oid=2169090)
-
-## Operational working method
-
-### Evidence first, then classify
-
-Build one working table from the bank export, invoices, receipts and the prior-year assessment. A bank narration is a lead, not evidence of its tax treatment. For every line, record date, counterparty, amount including/excluding VAT, supporting document, business purpose, tax category, business-use proportion, VAT treatment, and whether it is a cash movement or affects taxable profit.
-
-| Transaction type | Operational treatment |
-| --- | --- |
-| Client invoice/payment or platform payout | Match the payment to the invoice, contract/deliverable and VAT status. Record the income net of recoverable VAT for income-tax accounts; investigate short fees, refunds and multi-invoice payouts rather than treating the bank net as revenue automatically. |
-| Transfer between taxpayer’s own accounts | Exclude from income and expense. Preserve both bank lines as reconciliation evidence. |
-| Loan proceeds or loan-principal repayment | Exclude from operating profit. Identify the agreement and separately assess interest. |
-| B-tax payment or tax refund | Do not treat as business expense or revenue. Reconcile the payment/refund to TastSelv and final assessment. |
-| Purchase or recurring expense | Obtain receipt and business reason; apply the ordinary-expense test, then private-use, VAT and asset checks. |
-| Asset, equipment, vehicle or intangible right | Do not expense from merchant text alone. Test the 2026 minor-asset threshold, useful-life, VAT status, mixed use and depreciation category. |
-| Capital, rental, employment or share transaction | Keep out of the sole-trader profit calculation until it is classified under its own tax rules. |
-
-### Personal allowance and calculation sequence
-
-For a fully liable taxpayer, the general 2026 personal allowance is **DKK 54,100**; DKK 51,600 is the 2025 amount. Check TastSelv and liability status before using it: limited liability, a part-year situation and a cross-border-worker election can differ. The allowance reduces the bottom-bracket and local-tax computation; it is not a deduction from AM-bidrag or a licence to ignore other income. From 2026 the general amount is the same for people under 18. If spouses live together and one cannot use all of their personal allowance, SKAT transfers the unused part to the other spouse automatically; this requires the spouse with the unused allowance to have filled in their preliminary assessment correctly with only their expected income and deductions. [SKAT young people and tax-exemption card](https://skat.dk/borger/unge-og-studerende/job/fritidsjob-og-frikort) [SKAT marriage and tax](https://skat.dk/borger/forskudsopgoerelse/aegteskab-skilsmisse-og-skat) [SKAT tax liability](https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability)[SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat)[SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat)[SKAT tax card](https://skat.dk/en-us/individuals/tax-card)
-
-Use this sequence for an ordinary no-scheme working paper:
-
-1. Reconcile business income and allowed business costs; document every adjustment from book profit to taxable business result.
-2. Identify the AM-bidrag base and birth-year gate. Calculate 8% only where the 2026 age rule makes the taxpayer liable. Keep the calculation separate from state and local income tax. [SKAT B-income](https://skat.dk/en-us/individuals/b-income)
-3. Combine the taxpayer’s required personal-income and positive-net-capital-income facts before applying bottom-bracket tax and personal allowance. Do not treat share income as personal income merely because it appears in the same bank account. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat)
-4. Screen personal income after AM-bidrag against the three 2026 thresholds, adding positive net capital income above DKK 55,000 for the middle-bracket layer. Apply each layer only to its stated excess. Then test the 44.57% tax ceiling against the taxpayer's municipal rate and cut the middle-bracket tax if the ceiling is exceeded. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat) [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-5. Calculate the ordinary employment and job allowances and, where their facts are present, the senior and qualifying-single-parent allowances. Carry them to the taxable-income stage used for local/church-tax computation; do not subtract them from AM-bidrag or use them to change the personal-income threshold screen. Compare the current assessment/TastSelv result. [SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)[SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)
-6. Apply the current municipality rate to the resulting local taxable-income base and church tax only after Folkekirken membership is confirmed. [SKAT 2026 state-tax rates](https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat)
-7. Credit actual withholding and B-tax paid only after matching payment evidence to the preliminary/final assessment. The difference is a provisional settlement, not proof of final tax.
-
-### Ordinary deductions and exclusions
-
-The business-expense test is applied item by item. It supports ordinary operating costs, not a merchant-name shortcut. Require a document, purpose and business-use basis for every line. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-| Category | Handle directly when the evidence is clear | Stop and obtain more facts |
-| --- | --- | --- |
-| Goods for resale; rent of dedicated business premises; business insurance; accountant/lawyer fees; office supplies; software; payment-provider/bank fees | Include to the documented business extent. | Mixed personal/business use, personal benefit or unclear connection to ongoing operations. |
-| Advertising | Include documented advertising/marketing cost. | Gifts, hospitality or sponsorship with a private/representation element. |
-| Entertainment/representation | Include 25% of documented qualifying expenditure, including restaurant meals and gifts to business contacts, and add back 75%. | Personal meal, unclear guests/purpose, or a payment that may be advertising rather than entertainment. |
-| Telephone/internet | Record the actual cost, then apply the cited 2026 private-use value rule when its conditions apply. | Shared plans, household bundle or uncertain network/private-use facts. |
-| Home workroom | Claim room cost only where it is not arranged so private use is possible; otherwise do not deduct the room cost. | Any arguable dual-use room. Do not claim a flat home-office amount; the cited SKAT page gives none, so check current SKAT guidance before using any standard amount. |
-| Private living, penalties/fines, income tax and private drawings; one-off start-up costs | Exclude from business costs. | A payment that may include both a penalty and an otherwise deductible charge. |
-
-### Assets, depreciation and private vehicles
-
-For qualifying plant and equipment acquired in 2026, a same-year minor asset up to **DKK 36,000** may be deducted immediately. Use the price excluding VAT for a VAT-registered business and including VAT where it is not registered. Related components intended for use together are tested as one item. Qualifying assets with a maximum three-year life may also be immediately deducted. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-For qualifying major plant and equipment above the threshold, maintain a depreciation schedule. SKAT’s current guidance permits up to **25%** annual diminishing-balance depreciation; it can be lower. Add qualifying assets above the threshold to the pool, calculate the year’s claimed percentage, carry the remaining balance forward, and deduct the remaining balance if it later falls below the minor-asset threshold. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-Use a separate schedule for mixed plant/equipment. Record acquisition price, asset identity, total and business use, and support the split. The mixed-use asset is not pooled with wholly business assets; only business-use depreciation is deducted. For a mixed-use asset, the remaining balance can be written off only once it is below **DKK 16,900** (2026), not DKK 36,000, and only the business share of that balance is deducted. Do not use the 108% green-asset uplift unless the asset is brand-new electric or battery-powered equipment, acquired in the 1 January 2025–31 December 2026 window, never used privately and not depreciated immediately. The uplift is **not** available for passenger cars, ships, software, or vans, trucks and machinery that are or can be powered by fossil fuels, and not for mixed-use assets. An uplifted asset needs its own depreciation account, and its remaining balance may **not** be written off at once when it falls below the minor-asset limit. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-For a private car used in the business, use **one** current supported method and a mileage log: actual business share of operating cost/depreciation, or SKAT’s 2026 own-car rates of DKK 3.94/km through 20,000 km and DKK 2.28/km above it. Do not use 2025 rates for 2026 driving. A self-employed person cannot simply pay themself tax-free mileage allowance; the result is an income-tax deduction supported by actual expense or the rate method. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-Buildings/installations and purchased goodwill are not ordinary “computer purchase” cases. For qualifying buildings/installations acquired from 1 January 2023, the legal guide’s ordinary maximum is 3% annually; pre-2023 assets retain a distinct 4% rule. Qualifying purchased goodwill and listed intangible rights can be depreciated by up to 1/7 yearly, while internally generated goodwill is not assumed eligible. Use the relevant acquisition/asset evidence and separate schedules. [SKAT legal guide: building depreciation](https://info.skat.dk/data.aspx?oid=2083987) [SKAT legal guide: goodwill and intangibles](https://info.skat.dk/data.aspx?chk=220619&oid=2083994)
-
-### B-tax and return operations
-
-When business income is forecast, enter expected profit in field 221 or expected loss in field 435 in the preliminary income assessment. Recalculate and inspect whether TastSelv has produced B-tax. A B-tax payer normally pays ten instalments, with no ordinary instalment in June or December. Do not copy historic payment dates or a bank-statement amount: use the current TastSelv decision and payment identifier. Outstanding tax after the final assessment carries a surcharge and is collected as described in step 7 above. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) [SKAT B-income](https://skat.dk/en-us/individuals/b-income)
-
-At year end, prepare tax accounts, reconcile them to evidence and file the final business result in TastSelv Borger. The current SKAT page gives 23 March opening and **1 July 2026** as the deadline for the **2025** self-employed return. For 2026 income the deadline is **1 July 2027** (1 July in the year after the income year). Late filing costs DKK 400 per day up to DKK 10,000, or DKK 200 per day up to DKK 5,000 where taxable income is not above the middle-bracket threshold; SKAT can waive it in special cases. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business) [SKAT legal guide: 1 July deadline](https://info.skat.dk/data.aspx?oid=2284485) [SKAT legal guide: late-filing penalty](https://info.skat.dk/data.aspx?oid=2284578)
-
-## When to refuse or refer
-
-- Obtain missing evidence before continuing ordinary expense, representation, asset, private-car, B-tax reconciliation or domestic classification work.
-- Use a separate company method for an ApS, A/S or other company result.
-- Refer dual residence, foreign income/property, treaty credit, transfer pricing, uncertain limited liability or an unresolved activity classification.
-- Refer a first or changed business-tax/return-on-capital election, a VSO exit, material retained-profit withdrawal, spouse allocation or tax-ceiling computation.
-- Refer a business sale, purchased-goodwill valuation, building classification or asset with uncertain ownership/private use.
-
-
-## Worked cases — mechanical checks, not final tax advice
-
-Each case states its assumptions. A calculation of a rate component is not a final assessment: municipality, church membership, other income, personal allowance and all applicable allowance facts still control the individual settlement.
-
-### Ordinary case: DKK 400,000 profit
-
-* AM-bidrag: DKK 400,000 × 8% = **DKK 32,000**.
-* Simplified amount after AM-bidrag: DKK 400,000 − DKK 32,000 = **DKK 368,000**. It is below the DKK 641,200 middle-bracket threshold, so this simplified case has no middle/top/additional-top tax from business profit alone.
-* Ordinary employment allowance: DKK 400,000 × 12.75% = **DKK 51,000**, below its DKK 63,300 cap.
-* Job allowance: (DKK 400,000 − DKK 235,200) × 4.5% = DKK 7,416, so it is capped at **DKK 3,100**.
-* For the local/church taxable-income stage, record the general 2026 personal allowance of **DKK 54,100** and the ordinary work allowances above (DKK 51,000 + DKK 3,100 = DKK 54,100; the equal total is a coincidence) as separate deduction inputs. Do not subtract either from the AM-bidrag base or from the DKK 641,200 threshold screen.
-
-The result is not a final tax bill: the authority's tax-card/return treatment of the personal and work-allowance inputs, positive net capital income, municipal/church rates and other deductions remains to be applied to the taxpayer's facts.
-
-### Boundary case: middle-bracket threshold
-
-Assume a DKK 697,000 profit where all of it is a simple AM-bidrag base.
-
-* AM-bidrag: DKK 697,000 × 8% = **DKK 55,760**.
-* Simplified post-AM amount: DKK 697,000 − DKK 55,760 = **DKK 641,240**.
-* Middle-bracket excess: DKK 641,240 − DKK 641,200 = **DKK 40**; at 7.5%, the mechanical middle-bracket component is **DKK 3**.
-* Ordinary employment allowance reaches its published cap of **DKK 63,300**; job allowance is likewise capped at **DKK 3,100**.
-
-The 7.5% component assumes no positive net capital income above DKK 55,000 and a municipal rate of 25.06% or less; above that rate the tax ceiling cuts the middle-bracket tax (see the tax-ceiling case). This boundary test does not establish the exact statutory basis for a real taxpayer with capital income, pension items, scheme allocations or non-AM income.
-
-### Age-gate case: person who does not turn 18 in 2026
-
-Assume a sole trader who turns 18 in 2027 and has DKK 100,000 of otherwise ordinary 2026 business profit.
-
-* AM-bidrag is **0** for 2026 because the person does not turn 18 during that income year.
-* Record the profit, date of birth and the current assessment. Do not infer the ordinary, senior or single-parent employment-allowance result solely from the missing AM-bidrag; test their separate eligibility/base and use the current assessment where required.
-* The general 2026 personal allowance is still DKK 54,100 as a starting amount, subject to the taxpayer's liability facts. [SKAT B-income](https://skat.dk/en-us/individuals/b-income)[SKAT tax card](https://skat.dk/en-us/individuals/tax-card)
-
-### Allowance boundary case: senior and qualifying single parent
-
-Assume an adult sole trader has DKK 440,000 of applicable allowance-base income, is in one of the two income years before state-pension age, and is entitled to and receives the statutory additional child allowance.
-
-* Ordinary employment allowance: DKK 440,000 × 12.75% = DKK 56,100, below the DKK 63,300 cap.
-* Job allowance: (DKK 440,000 − DKK 235,200) × 4.5% = DKK 9,216, therefore **DKK 3,100** after its cap.
-* Senior allowance: DKK 440,000 × 1.4% = DKK 6,160, therefore **DKK 6,100** after its cap.
-* Qualifying-single-parent allowance: DKK 440,000 × 11.5% = **DKK 50,600**.
-
-Carry the four allowance amounts to the taxable-income stage. This case does not establish the pension-age or child-benefit facts; it shows the stated calculation only. [SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)[SKAT 2026 work allowances](https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag)
-
-### Tax-ceiling case: high municipal rate
-
-Assume the same kind of personal income above DKK 641,200 as the boundary case, a hypothetical municipal rate of 26% and no capital income. [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-
-* Rate sum: 12.01% + 7.5% + 26% = **45.51%**, which is above the 2026 ceiling of 44.57%. [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-* Excess: 45.51% − 44.57% = 0.94 percentage points, so the middle-bracket tax on personal income is cut to **6.56%** (7.5% − 0.94 percentage points). [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-* Church tax is left out of the ceiling sum. The top-bracket and additional top-bracket rates are not cut by this rule. [SKAT legal guide: tax ceiling](https://info.skat.dk/data.aspx?oid=1948928)
-
-### Entertainment case: restaurant meal and gift for a client
-
-A sole trader pays DKK 4,000 in 2026 for a restaurant meal with a client and a gift to the same client, and keeps the receipt with the guest and the reason. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-* Both are entertainment: deduct 25%, which is **DKK 1,000**. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-* Add back the other **DKK 3,000**. Do not treat the gift as fully deductible advertising. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-### Late-filing case: penalty size depends on income
-
-The 2026 return is due by 1 July 2027. [SKAT legal guide: 1 July deadline](https://info.skat.dk/data.aspx?oid=2284485)
-
-* Taxpayer A has 2026 taxable income of DKK 400,000, not above DKK 641,200, and files 10 days late: 10 × DKK 200 = **DKK 2,000**, below the DKK 5,000 cap. [SKAT legal guide: late-filing penalty](https://info.skat.dk/data.aspx?oid=2284578)
-* Taxpayer B has 2026 taxable income of DKK 900,000 and files 40 days late: 40 × DKK 400 = DKK 16,000, so the penalty is capped at **DKK 10,000**. [SKAT legal guide: late-filing penalty](https://info.skat.dk/data.aspx?oid=2284578)
-* Either may apply for a full or partial waiver in special cases. [SKAT legal guide: late-filing penalty](https://info.skat.dk/data.aspx?oid=2284578)
-
-### Mixed-use asset case: small remaining balance
-
-A mixed-use machine used 60% for the business has a remaining balance of DKK 14,000 at the start of 2026. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-* DKK 14,000 is below the DKK 16,900 limit for mixed-use assets, so the balance can be written off. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-* Deduct only the business share: DKK 14,000 × 60% = **DKK 8,400**. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-### Exclusion case: invoice issued under an employment arrangement
-
-An individual issues an invoice but works under a client’s instructions, at the client’s expense and risk, as part of that client’s contractual organisation. SKAT says actual conditions control and an employee is not self-employed simply because they issue an invoice. Stop the sole-trader method, retain the contract/work facts and assess employee or fee-earner treatment. Do not claim business deductions, losses or a business-tax scheme until classification is resolved. [SKAT classification](https://skat.dk/erhverv/egen-virksomhed/afklar-virksomhedens-skatteforhold)
-
-### Asset case: current minor-asset threshold
-
-A VAT-registered business buys a stand-alone laptop for DKK 25,000 excluding VAT in 2026, uses it wholly in the business, and holds evidence that it is not part of a larger combined asset.
-
-* DKK 25,000 is below the 2026 DKK 36,000 minor-asset threshold.
-* Expected income-tax treatment: **DKK 25,000 immediate deduction**, subject to the ordinary business-expense and VAT tests. It is not a 25% pool case merely because it cost more than the obsolete DKK 15,400 threshold.
-* If the laptop and printer are intended to be used together, test their combined price instead. If the business is not VAT registered, test the VAT-inclusive acquisition cost. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-### Major-asset case: diminishing-balance pool
-
-A VAT-registered business buys qualifying wholly business equipment for DKK 100,000 excluding VAT in 2026, with no green-asset uplift claim.
-
-* It exceeds DKK 36,000 and enters the qualifying asset pool.
-* Maximum first-year deduction: DKK 100,000 × 25% = **DKK 25,000**.
-* Remaining pool balance: DKK 100,000 − DKK 25,000 = **DKK 75,000**.
-
-The 25% is a maximum, not a compulsory rate. A mixed-use asset uses its own business-use schedule instead of this wholly-business pool calculation. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-### Vehicle case: rate method
-
-A sole trader has a contemporaneous mileage log showing 9,000 business kilometres in their private car during 2026 and chooses the rate method.
-
-* Expected deduction: 9,000 km × DKK 3.94 = **DKK 35,460**.
-* The kilometres are below the 20,000 km rate break. Keep the log, route/purpose and annual total.
-* Do not add petrol, insurance, depreciation or financing costs a second time under the rate method. [SKAT business-expense deductions](https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses)
-
-### Filing case: forecast differs from final profit
-
-In April 2026, a taxpayer has forecast DKK 400,000 profit in field 221, but revised accounts show expected DKK 600,000. The expected outcome is to update the preliminary assessment and use the recalculated TastSelv B-tax/withholding result. The taxpayer does not invent a new instalment amount from a generic percentage. For the completed 2025 return, final accounts and the business result must be filed by the cited 1 July 2026 deadline unless SKAT has granted applicable relief; the 2026 accounts are due by 1 July 2027. [SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)[SKAT tax on own business](https://skat.dk/en-us/businesses/own-business/tax-on-own-business)
-
-
-## Completion checklist and explicit omissions
-
-Before filing, reconcile tax accounts to the ledger/VAT data; check every receipt and private-use adjustment; confirm municipality/church status and current preliminary assessment; classify other income; select and document any scheme; compare forecast B-tax with paid instalments; review completed TastSelv fields; save the receipt and final assessment.
-
-This is **not complete source coverage for a final Danish tax computation**. The claim ledger provides current ordinary handling for personal allowance screening, automatic work allowances, business deductions, depreciation, private-car records, B-tax and filing. It explicitly excludes the taxpayer's local/church rates, pension and other personal deductions, property and share income, investment funds, losses, foreign credits/treaties, detailed spouse-transfer/allocation computations, detailed scheme computations and the exact interest and surcharge rates on outstanding tax. Those require current primary sources and taxpayer facts. Refer cross-border residence, limited liability, uncertainty over classification, a first/changed business-tax or return-on-capital scheme election, or a spouse-transfer/tax-ceiling computation that cannot be resolved with the specific source and facts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+1. Where do you live, since when, and which municipality? Are you a member of Folkekirken? (Sets liability, the municipal rate and church tax.)
+2. Is the work done as an employee, as a business, or through your own company? (Decides AM-bidrag base, deductions and which skill applies.)
+3. Do you use virksomhedsordningen or kapitalafkastordningen, and does a spouse work in the business? (Changes the personal and capital income split.)
+4. What interest do you pay and receive, and what dividends or share gains do you have? (Capital income moves the mellemskat base; share income has its own scale.)
+5. Your date of birth, and do you receive ekstra børnetilskud? (Under-18 AM-bidrag rule, senior and single-parent allowances.)
+6. Your current forskudsopgørelse and B-skat paid so far. (Shows whether restskat is building up.)
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Skatte- og Vækstministeriet, Personskatteloven rates and thresholds 2026 and 2027 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven | 2026-10-26 |
+| Skatte- og Vækstministeriet, amounts indexed under PSL § 20, 2025-2026 | https://svmn.dk/tal-og-metode/satser/regulering-af-beloebsgraenser/beloebsgraenser-i-skattelovgivningen-der-reguleres-efter-personskattelovens-20-2025-2026 | 2026-10-26 |
+| Skatte- og Vækstministeriet, average municipal and church tax 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 | 2026-10-26 |
+| Folketinget, L 138 (2023-24) as adopted: reform of personal tax (PSL §§ 5, 7, 7 a, 8, 9, 19; LL § 9 J) | https://folketingstidende.dk/samling/20231/lovforslag/L138/20231_L138_som_vedtaget.pdf | 2026-10-26 |
+| Skattestyrelsen, bundskat, mellemskat, topskat and toptopskat 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat | 2026-10-26 |
+| Skattestyrelsen, beskæftigelses- og jobfradrag 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag | 2026-10-26 |
+| Skattestyrelsen, tax card and personal allowance | https://skat.dk/en-us/individuals/tax-card | 2026-10-26 |
+| Skattestyrelsen, B-income, AM-bidrag and B-skat instalments | https://skat.dk/en-us/individuals/b-income | 2026-10-26 |
+| Skattestyrelsen, tax on own business (fields, VSO, KAO, 1 July) | https://skat.dk/en-us/businesses/own-business/tax-on-own-business | 2026-10-26 |
+| Skattestyrelsen, deduction for business expenses | https://skat.dk/en-us/businesses/own-business/deduction-for-business-expenses | 2026-10-26 |
+| Skattestyrelsen, share income rates 2026 | https://skat.dk/en-us/individuals/shares-and-securities/buying-and-selling-shares-and-securities | 2026-10-26 |
+| Skattestyrelsen, tax liability | https://skat.dk/en-us/individuals/taxation-in-denmark/tax-liability | 2026-10-26 |
+| Den juridiske vejledning, skatteloft (PSL § 19) | https://info.skat.dk/data.aspx?oid=1948928 | 2026-10-26 |
+| Den juridiske vejledning, skattetillæg under Skattekontrolloven § 73 | https://info.skat.dk/data.aspx?oid=2284578 | 2026-10-26 |
+| Den juridiske vejledning, 1 July deadline for individuals | https://info.skat.dk/data.aspx?oid=2284485 | 2026-10-26 |
+| Den juridiske vejledning, payment of restskat (KSL § 61) | https://info.skat.dk/data.aspx?oid=2169090 | 2026-10-26 |
+| Den juridiske vejledning, spouses' tax calculation (KSL § 25 A) | https://info.skat.dk/data.aspx?oid=1976883 | 2026-10-26 |
+| Den juridiske vejledning, depreciation of buildings | https://info.skat.dk/data.aspx?oid=2083987 | 2026-10-26 |
+| Den juridiske vejledning, depreciation of goodwill | https://info.skat.dk/data.aspx?chk=220619&oid=2083994 | 2026-10-26 |
+
+Not yet confirmed: the current consolidated text of Personskatteloven and the law number of the adopted L 138 (figures here are from the adopted bill and the ministry's 2026 table); the 2026 Opkrævningsloven § 7, stk. 2 rate and so the restskat surcharge in percent; the 2026 indexed restskat carry-over amount (DKK 18,300 at 2010 level); the date in 2027 the 2026 årsopgørelse opens; the PSL § 13 loss order; fine levels for under-reporting; AM-bidrag for limited-liability persons; the voluntary-payment (frivillig indbetaling) rules for restskat.
