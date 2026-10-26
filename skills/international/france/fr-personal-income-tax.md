@@ -88,6 +88,7 @@ Self-employed results in depth are in `fr-income-tax`; social contributions in `
 | Micro allowance, classified tourist lets and chambres d'hôtes / unclassified tourist lets | 50% / 30% | Income of 2025 | same |
 | Micro turnover limits, sales / services | EUR 188,700 / EUR 77,700 (income of 2025); EUR 203,100 / EUR 83,600 (income of 2026) | 2025 and 2026 | same |
 | Micro limit, unclassified tourist lets | EUR 15,000 | 2025 and 2026 | same |
+| Micro limit, long-term furnished lets and classified tourist lets or chambres d'hôtes (services limit) | EUR 77,700 (income of 2025); EUR 83,600 (income of 2026) | 2025 and 2026 | same |
 | Micro flat payment option, household reference income of year N-2 below | EUR 29,579 single; EUR 59,158 couple; EUR 73,947.5 couple with 1 child; EUR 88,737 couple with 2 children | Option for 2026 | same |
 | Micro flat payment rates | 1% sales, catering, lodging; 1.7% other BIC; 2.2% BNC | 2026 | same |
 | Micro-foncier (CGI art. 32) | Gross rent up to EUR 15,000; 30% allowance | Income of 2025 | https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
@@ -295,7 +296,7 @@ expected:
 | Service-public F8: childcare credit (checked 15 April 2026) | https://www.service-public.gouv.fr/particuliers/vosdroits/F8 | 2026-10-24 |
 | Entreprendre service-public F23267: micro regime (checked 13 May 2026) | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 | 2026-10-24 |
 
-Not yet confirmed: the scale for the income of 2026 (no 2027 finance law enacted on 24 October 2026); the end date of the CDHR (CGI art. 224 as read prints none, and whether loi n° 2025-127 art. 10 or loi n° 2026-103 art. 2 limit it in time was not read); the CDHR advance rule for the income of 2026; the micro-BIC allowance and limit for long-term furnished lets other than tourist lets (lines 5NI to 5PI), because impots.gouv.fr/particulier/location-meublee was in maintenance and no archived copy was readable (see `fr-rental-income`); the rounding rules for the tax and the share count (CGI art. 193, not re-read); the PUMa contribution and the IFI, which this skill does not cover.
+Not yet confirmed: the scale for the income of 2026 (no 2027 finance law enacted on 24 October 2026); the end date of the CDHR (CGI art. 224 as read prints none, and whether loi n° 2025-127 art. 10 or loi n° 2026-103 art. 2 limit it in time was not read); the CDHR advance rule for the income of 2026; the micro-BIC allowance for long-term furnished lets other than tourist lets (lines 5NI to 5PI; their turnover limit is the services limit, F23267), because impots.gouv.fr/particulier/location-meublee was in maintenance and no archived copy was readable (see `fr-rental-income`); the rounding rules for the tax and the share count (CGI art. 193, not re-read); the PUMa contribution and the IFI, which this skill does not cover.
 
 <!-- openaccountants-cta-block -->
 
