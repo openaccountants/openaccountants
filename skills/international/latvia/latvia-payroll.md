@@ -1,16 +1,16 @@
 ---
 name: latvia-payroll
 description: "Latvian payroll for tax year 2026: how an employer computes and withholds wage tax (algas nodoklis) and state social insurance contributions (VSAOI) each month. Covers the flat 25.5% monthly withholding, the EUR 550 monthly non-taxable minimum and EUR 250 dependant relief through the wage tax book, employee 10.5% and employer 23.59% contributions, the EUR 105,300 maximum base and solidarity tax, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base, the employer's monthly report by the 17th and payment by the 23rd, the 33% band settled in the annual return, and late-payment interest of 0.05% a day. Trigger on: Latvia payroll, gross to net Latvia, darba devēja ziņojums, algas nodokļa grāmatiņa, Latvian wage tax. Out of scope: contribution rules in depth and self-employed contributions (latvia-social-contributions), the annual return (latvia-income-tax), non-residents (lv-cross-border)."
-jurisdiction: LV
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: LV
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -182,3 +182,23 @@ expected:
 likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 October 2026. All texts were read from Internet Archive (web.archive.org) copies made in 2026: the PIT Law captured 1 September 2026, the SI Law 3 October 2026, the Solidarity Tax Law 18 February 2026 (m.likumi.lv), the LTF 18 September 2026, the Administrative Liability Law 10 August 2026, the VID contributions page 13 September 2026, the VID rate table 10 August 2026, the VID self-employed page 19 May 2026 and the VID business risk fee page 16 March 2026.
 
 Not yet confirmed: the 2026 amount of the business risk state fee (the Cabinet regulation for 2026 was not read); Cabinet Regulation No. 656 on the minimum wage itself (EUR 780 is taken from VID pages); the Cabinet regulation that splits the reduced rates for pensioners and other groups between employer and employee (taken from the VID table, not the regulation); Cabinet Regulation No. 827 on the employer's report and the exact deadline for registering a new employee; whether the s. 17(5) wage tax deadline moves to the following month when pay is paid out after the 23rd; whether VID treats the employer's report as a tax return under LTF s. 141 or an informative declaration under s. 142; SI Law and PIT Law amendments adopted after the capture dates.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

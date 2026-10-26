@@ -1,14 +1,15 @@
 ---
 name: bg-corporate-income-tax
 description: "Bulgarian corporate income tax (корпоративен данък) for tax year 2026 under the Corporate Income Tax Act (ZKPO). Covers who pays; the 10% rate; the tax result built from the accounting result with permanent and temporary differences; non-deductible expenses and hidden profit distribution; tax depreciation categories I to VII and their maximum rates; tax losses carried forward for five years; the 3:1 thin capitalisation rule (art. 43) and the 30% EBITDA interest limitation above EUR 3,000,000 (art. 43a); monthly and quarterly advance payments and their euro thresholds; the annual return (1 March to 30 June) and payment; penalties; and pointers to the expenses tax, alternative taxes, CFC rules and Pillar Two. All lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria corporate tax, ZKPO, ЗКПО, Bulgarian CIT return, авансови вноски, данъчна загуба Bulgaria. Out of scope: withholding tax, treaties and exit tax (bg-cross-border), transfer pricing (bg-transfer-pricing), individuals (bulgaria-income-tax), VAT (bulgaria-vat-return)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria corporate income tax (2026)
@@ -228,3 +229,23 @@ expected:
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-23 |
 
 Not yet confirmed: the NRA's own 2026 guidance on the annual return form and on advance payments (nra.bg served a human check to this session, so only the statute was read); the current statutory late-payment interest rate after the euro changeover (set outside the interest law); the gambling tax rates after the ДВ 30/2026 amendment (this skill gives no gambling rate); whether the NRA rounds the converted lev thresholds in arts. 83(2) and 84 differently from the Euro Introduction Act rule used here.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

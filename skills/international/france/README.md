@@ -14,6 +14,7 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 
 | Domain | Skill | Status |
 |---|---|---|
+<<<<<<< HEAD
 | IT-IND, individual income tax | fr-personal-income-tax, fr-income-tax, fr-capital-gains, fr-rental-income, fr-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | fr-corporate-tax (local business taxes in fr-cfe) | source-cited draft |
 | VAT | france-vat-return (franchise en base, rates, régime réel normal and régime simplifié, CA3 and CA12, self-assessment, EU statements, e-invoicing dates, penalties; e-invoicing formats in france-einvoice; out of scope: overseas departments, Corsican rate rules, margin scheme, property VAT, VAT groups, OSS) | source-cited draft |
@@ -21,6 +22,15 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 | PR, payroll withholding | france-payroll | source-cited draft |
 | TP, transfer pricing | france-transfer-pricing | source-cited draft |
 | XB, cross-border | fr-cross-border (residence, non-residents with French income, withholding, social levies, the impatriate regime, treaty credits), leaving-france-exit-tax (individuals leaving France), fr-corporate-tax (withholding on payments abroad, CFC rules) | source-cited draft |
+=======
+| IT-IND, individual income tax | fr-personal-income-tax, fr-income-tax, fr-capital-gains, fr-rental-income, fr-crypto-tax | sourced from the law |
+| IT-CORP, corporate income tax | fr-corporate-tax (local business taxes in fr-cfe) | sourced from the law |
+| VAT | france-vat-return (franchise en base, rates, régime réel normal and régime simplifié, CA3 and CA12, self-assessment, EU statements, e-invoicing dates, penalties; e-invoicing formats in france-einvoice; out of scope: overseas departments, Corsican rate rules, margin scheme, property VAT, VAT groups, OSS) | sourced from the law |
+| SC, social contributions | fr-social-contributions (self-employed), france-payroll (employee and employer contributions) | sourced from the law |
+| PR, payroll withholding | france-payroll | sourced from the law |
+| TP, transfer pricing | france-transfer-pricing | sourced from the law |
+| XB, cross-border | fr-cross-border (residence, non-residents with French income, withholding, social levies, the impatriate regime, treaty credits), leaving-france-exit-tax (individuals leaving France), fr-corporate-tax (withholding on payments abroad, CFC rules) | checked against the law |
+>>>>>>> origin/main
 
 ## Official sources
 

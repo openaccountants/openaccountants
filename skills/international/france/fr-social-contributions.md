@@ -8,7 +8,7 @@ description: >
   professions (Cipav and non-Cipav), minimum and maximum contributions, provisional
   calls and regularisation, the first two years, Acre (now a quarter exemption from
   2026), micro-entrepreneur rates on turnover (12.3%, 21.2%, 25.6%, 23.2%), CSG and
-  CRDS on activity income and on capital income (10.6% CSG on most 2026 capital income),
+  CRDS on activity income and on capital income (10.6% CSG on most capital income: 2025 income assessed with income tax, and income taxed at source from 1 January 2026),
   payment dates and late surcharges, and a summary of salaried rates. Trigger on
   "cotisations URSSAF", "charges sociales indépendant", "micro-entrepreneur taux",
   "Acre", "CSG CRDS", "prélèvements sociaux", "Cipav", "régularisation URSSAF". Out of
@@ -35,7 +35,7 @@ This skill covers the social contributions a French travailleur indépendant pay
 
 **Two documents can be live at once in 2026.** The base and the scales were rewritten by loi n° 2023-1250 of 26 December 2023, art. 18 (CSS L. 131-6, L. 136-3) and décret n° 2024-688 of 5 July 2024 (CSS D. 621-1 to D. 621-3). They apply to contributions for periods from 1 January 2025, so URSSAF first used them when it regularised the 2025 year after the income declaration of spring 2026. Provisional calls made early in 2026 can still sit on the old base. Always ask which echeancier a figure comes from.
 
-**Three changes for 2026 itself.** Acre for business creations from 1 January 2026 is an exemption of a quarter of the covered contributions, not a full exemption (CSS L. 131-6-4 as amended by loi n° 2025-1403 of 30 December 2025, LFSS 2026, art. 23; D. 131-6-1). Micro-entrepreneur rates were reset from 1 January 2026 (CSS D. 613-4, décret n° 2025-943). The CSG on most capital income is 10.6%, so the total social levy on it is 18.6% (CSS L. 136-8 I 2°).
+**Three changes for 2026 itself.** Acre for business creations from 1 January 2026 is an exemption of a quarter of the covered contributions, not a full exemption (CSS L. 131-6-4 as amended by loi n° 2025-1403 of 30 December 2025, LFSS 2026, art. 23; D. 131-6-1). Micro-entrepreneur rates were reset from 1 January 2026 (CSS D. 613-4, décret n° 2025-943). The CSG on most capital income is 10.6%, so the total social levy on it is 18.6% (CSS L. 136-8 I 2°, as amended by LFSS 2026 art. 12). It applies to income assessed with income tax from the 2025 income year, and to income taxed at source (dividends, interest) from 1 January 2026.
 
 ## Who this applies to
 
@@ -55,6 +55,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | PASS, previous year | EUR 47,100 | 2025 | same page |
 | PASS, Mayotte | EUR 36,264 (month 3,022) | 2026 | same page |
 | Single base: allowance on gross income (CSS L. 136-3 III) | 26% | from 2025 income | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html |
+| Allowance floor and ceiling (CSS D. 136-5) | floor 1.76% PASS (EUR 846); ceiling 130% PASS (EUR 62,478) | 2026 | https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049888566 |
 | Micro-fiscal business that is not an auto-entrepreneur: allowance replacing the 26% | 71% sales, 50% BIC services, 34% BNC | from 2025 income | same page |
 | Maladie-maternité 1, full rate (CSS D. 621-1) | 8.5% up to 3 PASS; 6.5% on the part above | 2026 | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
 | Maladie 1, reduced rate below 3 PASS (CSS D. 621-2) | 0% below 20% PASS (EUR 9,612); rises linearly 0 to 1.5% (20-40%), 1.5 to 4% (40-60%), 4 to 6.5% (60-110%), 6.5 to 7.7% (110-200%), 7.7 to 8.5% (200-300%) | 2026 | same page |
@@ -83,7 +84,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Micro-entrepreneur Acre rate, start from 1 July 2026 | 9.3%; 15.9%; 19.2%; Cipav 17.4%; tourist lettings 4.5% | 2026 | same page |
 | Micro-entrepreneur training levy | artisan 0.3%; commerçant 0.1%; liberal 0.2% of turnover | 2026 | same page |
 | Micro-entrepreneur turnover ceilings | EUR 188,700 sales; EUR 77,700 services | 2026 | same page |
-| CSG on capital income (CSS L. 136-8 I 2°) | 10.6% (total with CRDS 0.5% and solidarity levy 7.5%: 18.6%) | 2026 income | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
+| CSG on capital income (CSS L. 136-8 I 2°) | 10.6% (total with CRDS 0.5% and solidarity levy 7.5%: 18.6%) | income assessed with income tax from 2025 income; income taxed at source from 1 Jan 2026 | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 | CSG on property income, property gains, life insurance, PEL, CEL (L. 136-8 IV) | 9.2% (total 17.2%) | 2026 | same page |
 | Deductible part of capital-income CSG (progressive scale only) | 6.8% | 2026 | same page |
 | Capital income of a resident insured in another EEA state or Switzerland | 7.5% solidarity levy only | 2026 | same page; CSS L. 136-6 I ter |
@@ -97,7 +98,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 
 1. **Gross income, business taxed to income tax:** BIC profit (produits less charges, excluding long-term gains and losses) or BNC receipts less expenses, without deducting the social contributions or the deductible CSG. The special CGI deductions listed in CSS R. 136-1 (for example art. 39 AB, 39 decies) are added back. Tax exemptions are not deducted socially: the 2026 URSSAF declaration notice says so in terms.
 2. **Gross income, business taxed to corporation tax:** the manager's pay and benefits in kind or cash, plus the part of dividends and associate current account interest received by the manager, spouse or PACS partner and minor children that exceeds 10% of their capital, share premiums and current account balances. For an entreprise individuelle taxed to IS the reference is 10% of net profit, or the affected assets if higher.
-3. **Apply the allowance:** 26% of gross income (L. 136-3 III). The law sets a floor and a ceiling for the allowance by decree, the ceiling at no less than one PASS. A micro-fiscal business that is not an auto-entrepreneur uses its tax allowance (71%, 50% or 34%) instead.
+3. **Apply the allowance:** 26% of gross income (L. 136-3 III), never less than 1.76% PASS (EUR 846 in 2026) and never more than 130% PASS (EUR 62,478 in 2026) (CSS D. 136-5). The ceiling bites from gross income of EUR 240,300. A micro-fiscal business that is not an auto-entrepreneur uses its tax allowance (71%, 50% or 34%) instead.
 4. **The same base serves every contribution and the CSG and CRDS.** Before the reform the CSG base added back the contributions; it no longer does. URSSAF says the overall levy is unchanged: CSG and CRDS fall, pension rises. The URSSAF page "Quelles sont vos cotisations", updated 5 October 2026, still describes the old CSG base. The statute (L. 136-3) wins.
 
 **Applying the rates.**
@@ -116,7 +117,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 
 **Micro-entrepreneurs (CSS L. 613-7, D. 613-4).** Contribution = turnover collected in the month or quarter x the global rate, plus the training levy. No turnover means nothing to pay. The amounts are final and never regularised. The Acre rate runs to the end of the third calendar quarter after the quarter of registration, and the column is chosen by the start date (before or from 1 July 2026). For Cipav micro-entrepreneurs the Acre rate is raised to the floor of CSG-CRDS plus supplementary pension (L. 613-7). A micro-entrepreneur can opt to pay the minimum contributions; the request is due by 31 December of the prior year, or by the end of the third month after creation. From 2026 URSSAF splits a BNC payment as 2.60% maladie, 1.50% daily benefits, 3.30% invalidité-décès, 46.40% retraite de base, 21.00% supplementary pension and 25.20% CSG-CRDS.
 
-**CSG and CRDS on capital income.** Residents pay on property income, investment income and gains (CSS L. 136-6, L. 136-7) at 18.6% in total for most 2026 income, and 17.2% for property income, property gains, life insurance, PEL and CEL (L. 136-8 IV). Livret A, LDD, LEP and livret jeune interest are exempt. Investment income suffers the levy at source; property income and gains are assessed with income tax. 6.8% of the CSG is deductible only when the taxpayer opts for the progressive scale.
+**CSG and CRDS on capital income.** Residents pay on property income, investment income and gains (CSS L. 136-6, L. 136-7) at 18.6% in total for most income (from the 2025 income year where assessed with income tax; from 1 January 2026 where taxed at source), and 17.2% for property income, property gains, life insurance, PEL and CEL (L. 136-8 IV). Livret A, LDD, LEP and livret jeune interest are exempt. Investment income suffers the levy at source; property income and gains are assessed with income tax. 6.8% of the CSG is deductible only when the taxpayer opts for the progressive scale.
 
 **Deductibility for income tax.** Compulsory contributions paid are deductible from professional income (CGI art. 154 bis) in the year paid. The deductible part of the self-employed CSG comes from the attestation de versement URSSAF sends each year; the CRDS is not deductible. Deduct what was actually paid, after Acre.
 
@@ -157,7 +158,7 @@ A regulated liberal profession can ask, within 30 days of affiliation and before
 
 ## Worked examples
 
-**Example 1. Commerçant on the real base, 2026 income EUR 60,000 before contributions.** A sole trader taxed to income tax, mainland, in the fourth year of trading, no Acre, no conjoint collaborateur. The single base is 60,000 x 0.74 = 44,400. That is between 60% PASS (28,836) and 110% PASS (52,866), so maladie 1 is one rate on the whole base: 4% + 2.5% x (44,400 - 28,836) / 24,030 = 5.6192%, giving EUR 2,494.94. Daily benefits 0.5% = 222.00. The base is below one PASS, so retraite de base is 17.87% = 7,934.28 with nothing in the uncapped band, supplementary pension 8.10% = 3,596.40 and invalidité-décès 1.30% = 577.20. Family allowances are nil below 110% PASS. CSG-CRDS 9.70% = 4,306.80. The commerçant training levy is 0.25% of one PASS, 120.15 (URSSAF rounds to EUR 120). Definitive 2026 contributions: EUR 19,251.77. They are regularised in 2027 against the provisional calls made in 2026 on the 2024 base.
+**Example 1. Commerçant on the real base, 2026 income EUR 60,000 before contributions.** A sole trader taxed to income tax, mainland, in the fourth year of trading, no Acre, no conjoint collaborateur. The allowance is 15,600, inside the floor and ceiling, so the single base is 60,000 x 0.74 = 44,400. That is between 60% PASS (28,836) and 110% PASS (52,866), so maladie 1 is one rate on the whole base: 4% + 2.5% x (44,400 - 28,836) / 24,030 = 5.6192%, giving EUR 2,494.94. Daily benefits 0.5% = 222.00. The base is below one PASS, so retraite de base is 17.87% = 7,934.28 with nothing in the uncapped band, supplementary pension 8.10% = 3,596.40 and invalidité-décès 1.30% = 577.20. Family allowances are nil below 110% PASS. CSG-CRDS 9.70% = 4,306.80. The commerçant training levy is 0.25% of one PASS, 120.15 (URSSAF rounds to EUR 120). Definitive 2026 contributions: EUR 19,251.77. They are regularised in 2027 against the provisional calls made in 2026 on the 2024 base.
 
 ```oa-check
 name: Commerçant 2026, gross income EUR 60,000, single base and 2026 rates
@@ -219,7 +220,9 @@ expected:
 |---|---|---|
 | Code de la sécurité sociale, L. 131-6, L. 131-6-2, L. 131-6-4, L. 136-3, L. 136-6, L. 136-8, L. 613-7 (Légifrance, versions in force 24 Oct 2026) | https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189 | 2026-10-24 |
 | Code de la sécurité sociale, D. 131-6-1, D. 613-1, D. 613-4, D. 621-1, D. 621-2, D. 621-3, R. 136-1, R. 243-16 (Légifrance) | https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189 | 2026-10-24 |
-| Loi n° 2025-1403 of 30 December 2025 (LFSS 2026), art. 23 (Acre) | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053226384/ | 2026-10-24 |
+| Décret n° 2024-688 of 5 July 2024 (CSS D. 136-5, D. 621-1 to D. 621-3) | https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049888566 | 2026-10-26 |
+| CSS L. 136-8, version in force 31 Dec 2025 to 27 Jun 2026, with the application note of LFSS 2026 art. 12 II | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053278668/2026-05-26 | 2026-10-26 |
+| Loi n° 2025-1403 of 30 December 2025 (LFSS 2026), art. 12 (capital-income CSG) and art. 23 (Acre) | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053226384/ | 2026-10-24 |
 | URSSAF, plafonds de la Sécurité sociale (updated 1 Jan 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html | 2026-10-24 |
 | URSSAF, taux artisan, commerçant, profession libérale non réglementée (updated 27 Feb 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html | 2026-10-24 |
 | URSSAF, taux profession libérale réglementée Cipav (updated 27 Feb 2026) | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-plr-cipav.html | 2026-10-24 |
@@ -233,7 +236,7 @@ expected:
 | URSSAF auto-entrepreneur, l'essentiel du statut | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html | 2026-10-24 |
 | Service-public, prélèvements sociaux sur les revenus du patrimoine et de placements (checked 30 June 2026) | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 | 2026-10-24 |
 
-Not yet confirmed: the euro floor and ceiling of the 26% allowance set by decree under CSS L. 136-3 III; whether the 10.6% CSG applies to 2025 patrimoine income such as furnished lettings and securities gains (service-public shows 18.6% for patrimoine income without a year split, while the note to L. 136-8 says 2026 income onward); the decree article fixing the micro-entrepreneur Acre rates and the 1 July 2026 change (rates taken from the URSSAF auto-entrepreneur page only); the Cipav and non-Cipav overseas rates; the supplementary pension and invalidité-décès rates of the CnavPL sections other than Cipav; the 2027 PASS for second-year flat bases; the Mayotte scales.
+Not yet confirmed: the decree article fixing the micro-entrepreneur Acre rates and the 1 July 2026 change (rates taken from the URSSAF auto-entrepreneur page only); the Cipav and non-Cipav overseas rates; the supplementary pension and invalidité-décès rates of the CnavPL sections other than Cipav; the 2027 PASS for second-year flat bases; the Mayotte scales.
 
 <!-- openaccountants-cta-block -->
 

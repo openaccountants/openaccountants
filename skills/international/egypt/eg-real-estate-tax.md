@@ -26,6 +26,18 @@ This skill covers Egyptian real estate tax (ضريبة العقارات المب
 > **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
 > **YMYL — verify before relying.** Egyptian property tax thresholds and exemptions were amended in 2014 and again in 2026 (Law 3/2026). Where this skill says "verify current value," re-confirm against the Real Estate Taxation Authority (RETA), the Egyptian Tax Authority (eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
 
+---
+
+## What this file is
+
+**This file is a content skill that loads on top of the universal workflow base** (`workflow-base`). It provides Egypt-specific real estate tax rates, exemptions, valuation mechanics, filing procedures, and the critical CIT non-deductibility rule.
+
+**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date, and reflects the March 2026 amendments (Law 3/2026) where noted.
+
+**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs any filing. The skill produces working papers and a brief, not a filing.
+
+---
+
 ## Section 1 — Scope statement
 
 This skill covers:

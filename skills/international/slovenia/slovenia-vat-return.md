@@ -1,14 +1,15 @@
 ---
 name: slovenia-vat-return
 description: "Slovenian VAT (davek na dodano vrednost, DDV) for tax year 2026 under ZDDV-1. Covers the 22%, 9.5% and 5% rates and what falls in each, the EUR 60,000 small business exemption with its EUR 66,000 in-year ceiling, the EU SME cross-border exemption (EUR 100,000), monthly and quarterly periods (EUR 210,000 test), the DDV-O return by the last working day of the next month (the 20th for recapitulative statement filers, who still pay by the last working day), the VAT ledgers and prefilled return, domestic reverse charge, the RP-O recapitulative statement, VAT groups from 2026, fiscal cash registers, B2G e-invoices and B2B e-invoicing from 2028, fines and interest. Trigger phrases: DDV-O, Slovenian VAT, obračun DDV, evidenca obračunanega DDV, RP-O, PD-O, davčna blagajna. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, si-cross-border."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 1.1
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia VAT (DDV): 2026
@@ -226,3 +227,23 @@ expected:
 | Minister of Finance, Višina predpisane obrestne mere zamudnih obresti, Uradni list RS 1124/2026 (from 1 July 2026) | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
 
 Not yet confirmed: the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

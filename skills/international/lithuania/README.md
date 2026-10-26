@@ -18,13 +18,13 @@ Calendar tax year for most taxpayers. Authority: the State Tax Inspectorate (Val
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | lithuania-pit (2026: 20/25/32% bands, 15% capital rate, NPD formula, individual activity at 20% with the sliding credit, exemptions, annual return by 1 May, fines and interest) | source-cited draft |
-| IT-CORP, corporate income tax | lt-corporate-income-tax (2026: 17% rate, 0%/7% small entity rates and the related-entity test, taxable profit, non-deductible items, depreciation and immediate write-off, losses and the 70% cap, 30% EBITDA interest limit, the 4:1 controlled debt rule, passenger car caps, investment project relief, advance payments, return by 15 June, fines and late interest) | source-cited draft |
-| VAT | lithuania-vat-return (2026: 21% standard rate, 12% and 5% reduced rates and the end of the 9% rate, EUR 45,000 small business scheme and EU scheme, EUR 14,000 acquisitions threshold, tax periods, FR0600 and payment by the 25th, i.SAF by the 20th, FR0564 EU sales list, reverse charge, blocked input VAT, fines and late interest) | source-cited draft |
-| SC, social contributions | lt-payroll-social (2026: employee 19.5% and the 3% second pillar, employer 1.77% and its parts, 60 VDU ceiling now also on the employer's part, minimum base on the EUR 1,153 MMA, individual activity on 90% of taxable income with the 43 VDU cap, the first-year relief and the PSD floor, SAM by the 15th, late interest and fines) | source-cited draft |
-| PR, payroll withholding | lt-payroll-social (2026: GPM withholding at 20/25/32% with the monthly NPD, payment by the 15th or month end, GPM313 by the 15th, fines) | source-cited draft |
-| TP, transfer pricing | lt-transfer-pricing (2026: associated persons, arm's length, Order 1K-123, master and local files, EUR 90,000 exemption, FR0528, APAs, CbCR, fines and interest) | source-cited draft |
-| XB, cross-border | lt-cross-border (2026: residence, tax at source on payments abroad, DAS-1, foreign tax credits, exit tax) | source-cited draft |
+| IT-IND, individual income tax | lithuania-pit (2026: 20/25/32% bands, 15% capital rate, NPD formula, individual activity at 20% with the sliding credit, exemptions, annual return by 1 May, fines and interest) | checked against the law |
+| IT-CORP, corporate income tax | lt-corporate-income-tax (2026: 17% rate, 0%/7% small entity rates and the related-entity test, taxable profit, non-deductible items, depreciation and immediate write-off, losses and the 70% cap, 30% EBITDA interest limit, the 4:1 controlled debt rule, passenger car caps, investment project relief, advance payments, return by 15 June, fines and late interest) | checked against the law |
+| VAT | lithuania-vat-return (2026: 21% standard rate, 12% and 5% reduced rates and the end of the 9% rate, EUR 45,000 small business scheme and EU scheme, EUR 14,000 acquisitions threshold, tax periods, FR0600 and payment by the 25th, i.SAF by the 20th, FR0564 EU sales list, reverse charge, blocked input VAT, fines and late interest) | checked against the law |
+| SC, social contributions | lt-payroll-social (2026: employee 19.5% and the 3% second pillar, employer 1.77% and its parts, 60 VDU ceiling now also on the employer's part, minimum base on the EUR 1,153 MMA, individual activity on 90% of taxable income with the 43 VDU cap, the first-year relief and the PSD floor, SAM by the 15th, late interest and fines) | checked against the law |
+| PR, payroll withholding | lt-payroll-social (2026: GPM withholding at 20/25/32% with the monthly NPD, payment by the 15th or month end, GPM313 by the 15th, fines) | checked against the law |
+| TP, transfer pricing | lt-transfer-pricing (2026: associated persons, arm's length, Order 1K-123, master and local files, EUR 90,000 exemption, FR0528, APAs, CbCR, fines and interest) | checked against the law |
+| XB, cross-border | lt-cross-border (2026: residence, tax at source on payments abroad, DAS-1, foreign tax credits, exit tax) | checked against the law |
 
 Also in the pack: lt-tax-overview, lt-company-formation, references.md.
 

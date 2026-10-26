@@ -10,7 +10,7 @@ Every jurisdiction in the catalogue has a **complete, verified, reviewed pack**,
 2. **Verified.** Every figure is tied to an official source that resolves, the two worked examples in every skill recompute, and the pack passes `scripts/validate-guides.py` and CI. A guide being present is not coverage. Source preparation is not coverage.
 3. **Reviewed.** A named accountant has reviewed the pack (`tier: 1` with `reviewed_by` and `reviewed_on`). This is the last step and the slowest: we build and verify first, then bring accountants in per jurisdiction.
 
-There are exactly two quality states: **Accountant-reviewed** (`tier: 1`) and **Source-cited draft** (`tier: 2`). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
+There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `tier: 2`, named **Checked against the law** (built to the standard in docs/skill-template.md) or **Sourced from the law** (older skills not yet rebuilt). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
 
 ## Where we are
 

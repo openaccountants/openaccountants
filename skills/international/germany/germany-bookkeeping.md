@@ -7,8 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -678,6 +676,8 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

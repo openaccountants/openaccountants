@@ -1,14 +1,15 @@
 ---
 name: bulgaria-social-contributions
 description: "Bulgarian social and health insurance contributions for tax year 2026, in euro. Covers the state social insurance funds (pension, general illness and maternity, unemployment, work accident), the universal pension fund (second pillar) and health insurance; the employer and employee split by fund and by year of birth; the minimum and maximum insurable income for 2026 (two periods, to 31 July and from 1 August); and the self-insured (freelancers, sole traders, working owners): monthly advance contributions, the optional illness and maternity cover, and the annual reconciliation with Declaration 6 by 30 April. Also covers payment dates (25th), Declarations 1 and 6 and penalties. Lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria social security, осигуровки, самоосигуряващо се лице, МОД, максимален осигурителен доход, Декларация образец 6, УПФ. Out of scope: monthly gross-to-net and wage tax (bulgaria-payroll), income tax (bulgaria-income-tax), A1 certificates and treaties (bg-cross-border)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.2
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria social and health insurance contributions (2026)
@@ -194,3 +195,23 @@ expected:
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-24 |
 
 Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minimum and maximum across the two 2026 periods (this skill adds the monthly limits for each month of activity, which follows KSO art. 6(9) but the 2026 form was not read; nra.bg served a human check); the treatment of advances paid on more than the final income; the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (a secondary consolidation to ДВ бр. 90/2026 was used); the self-insured ordinance after its latest amendments; the statutory late-payment interest rate after the euro changeover.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

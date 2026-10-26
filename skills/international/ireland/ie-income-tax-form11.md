@@ -3,7 +3,6 @@ name: ie-income-tax-form11
 description: "Irish income tax self-assessment on Form 11 for tax year 2026 (and the 2025 return due now). Covers who is a chargeable person (self-employed, proprietary directors over 15%, non-PAYE income over EUR 5,000 net or EUR 30,000 gross), the 20% and 40% bands (EUR 44,000 single, EUR 53,000 married) and the main credits including the EUR 2,000 Earned Income Credit, Case I and II trading profit, add-backs, capital allowances at 12.5% over 8 years and the car CO2 limits, losses, pension relief, Case V rental income, where USC and PRSI Class S fit, pay and file on 31 October (18 November 2026 on ROS), preliminary tax, the 5% and 10% surcharges and 0.0219% daily interest. Trigger on: Form 11, self-assessment Ireland, sole trader tax Ireland, Case I, ROS pay and file, earned income credit, proprietary director return. Out of scope: ie-payroll, ie-usc, ie-prsi-class-s, ie-preliminary-tax, ie-paye-rental-nonresident, ie-cgt, ie-corporation-tax, ie-cross-border."
 version: 2.1
 jurisdiction: IE
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
@@ -11,6 +10,7 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

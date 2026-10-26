@@ -1,223 +1,230 @@
 ---
 name: sweden-payroll
-description: Use this skill whenever asked about Swedish payroll processing, employee salary calculations, preliminärskatt (preliminary income tax / PAYE), arbetsgivaravgifter (employer social contributions), employer cost calculations, net-to-gross or gross-to-net conversions, Swedish payslip structure, arbetsgivardeklaration filings, or any question about computing wages, deductions, or employer obligations in Sweden. Trigger on phrases like "Swedish payroll", "preliminärskatt", "arbetsgivaravgifter", "employer contributions Sweden", "PAYE Sweden", "net salary Sweden", "lönespecifikation", "kommunalskatt", "municipal tax Sweden", "statlig inkomstskatt", "Skatteverket filing", "kollektivavtal", "ITP pension", or "semesterersättning".
-version: 1.0
+description: "Use for running Swedish payroll in 2026: preliminary tax withheld from pay (preliminärskatt) under the 2026 tax tables (skattetabeller), the 30% rate, jämkning and SINK decisions; employer contributions (arbetsgivaravgifter) of 31.42%, 10.21% from age 67, the youth reduction for those born 2003-2007 from 1 April 2026 (20.81% up to SEK 25,000 a month) and the växa refund for a first or second employee; taxable benefits (förmåner) in the base; the monthly employer return (arbetsgivardeklaration, AGI) and payment by the 12th (17th in January and August; 26th filing for large VAT payers); late-filing fees, tax surcharges and cost interest. Trigger on: Swedish payroll, preliminärskatt, skattetabell, arbetsgivaravgifter, AGI, arbetsgivardeklaration, net salary Sweden, växa-stöd, semesterlön, sjuklön. Out of scope: se-employee-income-tax (the employee's annual return), se-social-contributions (egenavgifter), se-income-tax (sole traders), se-benefits-and-allowances (benefit valuation), se-cross-border (residence, SINK and expert relief)."
+version: 1.1
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
-category: payroll
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Sweden payroll and PAYE
 
-Applies to tax year 2026. Check the payment date, current tax decision and employer-specific filing deadline before calculating or filing.
+This skill runs one month of Swedish payroll for 2026: what to withhold from the employee, what the employer pays on top, and how both are reported and paid. The employee's own annual return, the job tax credit formula and the state tax computation are in [se-employee-income-tax](se-employee-income-tax.md). Self-employed contributions are in [se-social-contributions](se-social-contributions.md) and sole-trader income tax in [se-income-tax](se-income-tax.md). How to value a car, meal or housing benefit is in [se-benefits-and-allowances](se-benefits-and-allowances.md). Residence, SINK status and the expert relief are in [se-cross-border](se-cross-border.md).
 
-## 1. Scope
+## Who this applies to
 
-Use this method for an employer that pays remuneration for work and must operate Swedish PAYE. It covers the monthly route from payroll inputs through the individual PAYE return, tax-account payment and corrections. It identifies the ordinary foreign-employer and social-security branches. It does not calculate a flat employee tax rate: withholding depends on the payee's main/supplementary-income status and the Tax Agency tax-table or decision. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
+- Anyone who pays cash pay for work (ersättning för arbete) must withhold preliminary tax from it (SFL 10 kap. 3 §) and pay employer contributions on it (SAL 2 kap. 1 and 4 §§). This covers Swedish companies, sole traders with staff, and foreign employers paying for work done in Sweden.
+- Pay for work includes salary, fees, holiday pay, sick pay paid by the employer, and taxable benefits. Pensions are also pay for withholding purposes (SFL 10 kap. 3 § andra stycket 1).
+- An employer registers before the first payment and then files a return for every month while registered. If a month has nothing to report, file a zero return in the e-service.
+- No withholding and no employer contributions when the payer expects to pay the person less than SEK 1,000 in the calendar year (SFL 10 kap. 4 § 2; SAL 2 kap. 14 §). No withholding on a single payment under SEK 100 (SFL 10 kap. 4 § 1).
+- A private individual who pays for work that is not a business expense does not withhold if the year's total to that person is expected to be under SEK 10,000 and the other conditions in SFL 10 kap. 4 § 3 are met. Treat the employer-contribution side as a separate question.
+- Payments to a person approved for F-tax (F-skatt) carry no withholding and no employer contributions; the payee pays their own (SFL 10 kap. 11 §; SAL 2 kap. 5 §). That is in [se-social-contributions](se-social-contributions.md).
+- Out of scope here: collective-agreement pay rules, pension plan design, share options, and the employee's final tax.
 
-Before using an ordinary Swedish contribution calculation, establish where work is done, the employer's Swedish permanent-establishment status, the employee's social-security coverage, and whether an A1/Certificate of Coverage or social-security agreement applies. An A1 or convention fact can change contributions while Swedish withholding/reporting remains relevant. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/nonswedishbusinesseswithoperationsinsweden/registerabusiness.4.676f4884175c97df41917fa.html)
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Employer contributions, full rate (born 1959 or later) | 31.42% of pay and benefits: 18.80% social contributions (SAL 2 kap. 26 §) plus 12.62% general payroll fee (allmän löneavgift, Lag 1994:1920 3 §) | 2026 | https://data.riksdagen.se/dokument/sfs-2000-980.text ; https://data.riksdagen.se/dokument/sfs-1994-1920.text |
+| Parts of the 18.80% | Health 3.55%, parental 2.00%, old-age pension 10.21%, survivor's pension 0.30%, labour market 2.64%, work injury 0.10% | 2026 | SAL 2 kap. 26 § (Lag 2025:1362) |
+| Age 67 or over at 1 January 2026 (born 1938-1958) | 10.21% (old-age pension contribution only; no general payroll fee) | 2026 | SAL 2 kap. 27 § (Lag 2022:889, in force 1 January 2026); Lag 1994:1920 1 § |
+| Born 1937 or earlier | 0% | 2026 | SAL transitional rules to Lag 2000:980, point 5; https://www.skatteverket.se/arbetsgivaravgifter |
+| Youth reduction, aged 18 but not 23 at 1 January 2026 (born 2003-2007), pay from 1 April 2026 to 30 September 2027 | 20.81% on pay up to SEK 25,000 per calendar month (full old-age pension contribution plus half of the rest, truncated to two decimals); 31.42% on the excess | 2026 | Lag (2026:100) 2 § and transitional rules; https://data.riksdagen.se/dokument/sfs-2026-100.text |
+| Employer with no permanent establishment in Sweden | 18.80% (born 1959 or later); 10.21% (born 1938-1958); 14.50% (born 2003-2007, from 1 April 2026). No general payroll fee: it is a tax, and a foreign employer without a PE does not pay it (Skatteverket legal guidance, citing prop. 1994/95:122 p. 18) | 2026 | https://www.skatteverket.se/arbetsgivaravgifter ; https://www4.skatteverket.se/rattsligvagledning/1333.html |
+| Växa refund (first and second employee of a sole trader in active business, an aktiebolag, or a handelsbolag with at most two partners) | Refund of the contributions and general payroll fee paid, except the 10.21% old-age pension part, on pay up to SEK 35,000 a month, for the first 24 months of the employment; employment of at least three months and at least 20 hours a week; SEK 25,000 cap for someone hired before 1 May 2024 under the old växa rules; within EU de minimis limits; apply per month within one year | 2026 | Lag (2025:1334) 7-8, 13 §§ and transitional rule 3; https://data.riksdagen.se/dokument/sfs-2025-1334.text |
+| Annual threshold for contributions and withholding | Pay under SEK 1,000 to one person in the year | 2026 | SAL 2 kap. 14 §; SFL 10 kap. 4 § 2 |
+| Withholding on main income | Tax table number on the A-tax decision, column by age and income type | 2026 | SFL 11 kap. 16-17 §§; SKVFS 2025:20 tables |
+| 30% withholding | Pay that is not main income; work meant to last less than a week; pay from a foreign employer with no PE in Sweden | 2026 | SFL 11 kap. 20 § |
+| Withholding with no A-tax or SINK decision shown | Table for the employer's municipality plus 10% of the table amount | 2026 | SFL 11 kap. 21 § |
+| One-off payments, column 1 | Estimated annual pay (leaving out the one-off amount) up to SEK 25,041: 0%; 25,042-82,800: 10%; 82,801-192,000: 21%; 192,001-477,600: 26%; 477,601-660,000: 34%; over 660,000: 54% | 2026 | SFL 12 kap. 6 §; https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html ; https://www4.skatteverket.se/rattsligvagledning/325047.html |
+| State tax threshold (skiktgräns) | 20% on taxable earned income above SEK 643,000 | 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Breakpoint (brytpunkt), before basic deduction | SEK 660,400 a year if under 66 at 1 January; SEK 760,500 if 66 or over | 2026 | same page |
+| Price base amount (prisbasbelopp) | SEK 59,200 (higher amount SEK 60,500) | 2026 | same page |
+| Income base amount (inkomstbasbelopp) | SEK 83,400 | 2026 | same page |
+| Student certificate (SKV 434) limit | Expected 2026 pay under SEK 25,042 and living in Sweden all year | 2026 | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html |
+| SINK withholding (non-resident under a SINK decision) | 22.5% (20% from 1 January 2027) | 2026 | Lag (1991:586) 7 §; https://data.riksdagen.se/dokument/sfs-1991-586.text |
+| Special payroll tax on pension costs | 24.26% | 2026 | Lag (1991:687) 1 §; https://data.riksdagen.se/dokument/sfs-1991-687.text |
+| Late-filing fee, employer return | SEK 625; SEK 1,250 if filed after an order | 2026 | SFL 48 kap. 6 § |
+| Tax surcharge (skattetillägg) | 20% of tax that would have been lost; 5% of tax not withheld; 2% or 5% for a timing error | 2026 | SFL 49 kap. 11, 13, 18 §§ |
+| Cost interest (kostnadsränta) | Base rate 2.5% (since 1 December 2024); late payment: base rate plus 15 points = 17.5% | 2026 | SFL 65 kap. 3-4, 13 §§; https://www.skatteverket.se/rantapaskattekontot |
+
+## The taxable base
+
+**Contribution base.** Cash gross pay plus the value of taxable benefits. Value benefits under IL 61 kap. 2-17 §§ (SFL 11 kap. 9 §); the methods are in [se-benefits-and-allowances](se-benefits-and-allowances.md). Reduce a benefit by what the employee paid for it out of net pay. A fuel benefit is the exception in the return: report the full marked-up value in box 018 and the employee's payment in box 098.
+
+**The SEK 1,000 gate.** Track each A-tax payee's pay for the whole year. If the year's total is expected to stay under SEK 1,000, report the pay in box 131 and enter 0 in box 001. If a later payment takes the year to SEK 1,000 or more, contributions are due on the whole year's pay. Report the full amount in box 011 in the month you find this and enter the amount earlier reported as not contribution-liable in box 010. Do not reopen the earlier month. Withhold tax on the later payment under the normal rules. Example: SEK 500 in May, SEK 1,000 in November, born 1990: contributions are 1,500 × 31.42% = SEK 471.30, all in November.
+
+**Withholding base.** Cash pay plus taxable benefits (SFL 11 kap. 4 §). If no cash is paid, no tax can be withheld from a benefit; flag it before closing the month.
+
+**Choosing the withholding method.**
+
+1. Main income: use the table number on the employee's A-tax decision (A-skattsedel). In January you may still use last year's table (SFL 11 kap. 16 §). The table number is the employee's total rate (municipal tax, regional tax and burial fee, plus the Church of Sweden fee for members) rounded to a whole number: 32.50 gives table 32, 32.51 gives table 33.
+2. Column 1 is for pay to someone under 66 at 1 January 2026 whose pay earns the job tax credit (jobbskatteavdrag). Column 3 is for pay to someone 66 or over (born 1959 or earlier). Columns 2, 4, 5 and 6 cover pensions, sickness compensation and other benefits. The tables already build in municipal and regional tax, state tax, the burial fee and any registered faith community fee, the public service fee, the basic deduction, the pension contribution and its credit, the job tax credit and the earned income credit (SFL 12 kap. 3 §). The job tax credit formula (IL 67 kap. 7 §) is in [se-employee-income-tax](se-employee-income-tax.md).
+3. 30% instead of the table (SFL 11 kap. 16 and 20 §§) when the pay is not main income (a second job), when the work is meant to last less than a week, and when the employer is foreign with no PE in Sweden.
+4. A jämkning decision or a SINK decision overrides the table. Follow a new decision no later than two weeks after receiving it (SFL 11 kap. 27 §). Report SINK tax in box 274, not box 001.
+5. Main income, no decision shown after you asked for one, and you have not got the information from Skatteverket (for example through its API): table for the municipality of your office plus 10% of the table amount (SFL 11 kap. 21 §). When the decision arrives, use it from then on. Do not correct earlier months.
+6. The employee may ask you to withhold more. Start no later than the first pay day two weeks after the request (SFL 11 kap. 22 §).
+
+**One-off payments.** A bonus, back pay, holiday compensation, severance or commission that is not regular pay uses the one-off table (engångstabell) for the column, by the employee's estimated annual pay from you. Leave the one-off amount out of that estimate (Skatteverket legal guidance, Skattetabeller). If paid with regular pay, withhold on each part separately. With no regular time-based pay, withhold 30% on the one-off amount. On termination, final regular pay and one-off amounts paid that month, plus a final settlement paid by the next month, count as main income; use the ordinary table for the last regular pay and the one-off table for the rest.
+
+**Advances.** Withhold the same share of the tax as the advance is of the total pay. If the total is not known, treat the advance as the whole pay for the period (SFL 11 kap. 23 §).
+
+**Students.** A school or university student who will earn under SEK 25,042 in 2026 and lives in Sweden all year can give you form SKV 434. You then withhold nothing and enter 0 in box 001. Employer contributions are still due.
+
+**Over- or under-withholding.** If you find before filing that you withheld too much, repay the employee. If you withheld too little, you can be made to pay the shortfall.
+
+**Holiday pay (Semesterlag 1977:480).** Check the collective agreement first; it can replace the statutory method. Each employee is entitled to 25 holiday days a year (4 §); how many are paid depends on days earned. Same-pay rule (16 a §): keep paying monthly or weekly salary and add 0.43% of monthly pay (1.82% of weekly pay) per paid day, after adding fixed supplements. Variable pay gives 12% of the variable pay due in the holiday year. Percentage rule (16 b §): 12% of the earning-year pay. Unused paid days are paid out on termination, normally within one month.
+
+**Sick pay (Lag 1991:1047).** The employer pays for the first day of illness and the next 13 calendar days (6-7 §§): 80% of lost pay and benefits, less a qualifying deduction of 20% of an average week's sick pay. No new deduction after ten in 12 months, or when a new sick period starts within five days of the last one. From the seventh calendar day after the sick report, the employer need only pay if the employee gives a doctor's or dentist's certificate (8 §). For a contract shorter than one month, the right starts after 14 days in a row of employment (3 §).
+
+**Pension costs.** Employer pension costs carry special payroll tax of 24.26%. It is declared in the employer's income tax return, not in the monthly return.
+
+**Reconcile.** Bank pay = cash gross + cash expense refunds − tax withheld − agreed net deductions. Benefits raise the bases but are not paid in cash. Tie each person's figures to the payroll ledger, the return and the tax account.
+
+## Deadlines and filing
+
+- **Return.** One employer return (arbetsgivardeklaration, AGI) per calendar month, with a statement for each payee (SFL 26 kap. 3 §). File in the e-service or as a checked file.
+- **Due dates, most employers (VAT base up to SEK 40 million, or no VAT):** the 12th of the next month; the July return is due 17 August and the December return 17 January (SFL 26 kap. 26 and 32 §§).
+- **Large VAT payers (VAT base over SEK 40 million):** return due the 26th of the next month; the November return 27 December, the December return 26 January (SFL 26 kap. 30 §). Payment of withheld tax and employer contributions is still due on the 12th of the next month, 17th in January (SFL 62 kap. 3 §). Use the VAT test, not the size of the payroll.
+- **Payment.** Withheld tax and contributions must be on the tax account by the due date. A payment counts when it is booked to the account (SFL 62 kap. 2-3 §§).
+- **Payee statement.** Use a unique, non-zero specification number for each payee and keep it; a correction must reuse it. Cash salary in box 011, benefits in their own boxes (012 other benefits, 013 car, 018 fuel), tax in exactly one tax box (001, or 274 for SINK). Tick box 302 if the employer has no permanent establishment in Sweden.
+- **Absence details.** Since the January 2025 period, report absence that may qualify for parental benefit (boxes 821-827) with the same return and tell the employee. These details cannot be added or corrected later.
+- **Tell the employee** what you reported, for example on the payslip, by the filing date.
+- **Corrections.** File a new return for the affected month, reusing the specification number. You can correct up to six years back (2020 onward in 2026). Contributions can go up or down; withheld tax can be increased but normally not reduced.
+- **Växa refund.** File the return with the contributions due, then apply for the refund month by month, electronically, within one year after the month ends (Lag 2025:1334 13-14 §§).
+- **Växa and the youth reduction together.** Both apply to the same pay. The växa law bars only employers that used the old växa rules (Lag 2016:1053) or Lag 2021:423 elsewhere (10 §), and it refunds the fees actually reported other than the old-age pension part (8 §). On pay up to SEK 25,000 to an employee born 2003-2007 you report 20.81% and get back 10.60%, so the net cost is 10.21%, the same as with växa alone.
+
+## Penalties and interest
+
+- **Late return:** SEK 625 per filing date, even if several returns are late at once; SEK 1,250 if filed after an order (SFL 48 kap. 5-6 §§).
+- **Wrong information:** 20% of the tax that would have been lost (SFL 49 kap. 11 §). If the error only puts an amount in the wrong month: 2% when the period is at most three months and the amount sits within four months of the right period, otherwise 5% (49 kap. 13 §).
+- **Tax not withheld:** surcharge of 5% of the tax that should have been withheld (49 kap. 18 §), and the employer can be made liable for the tax.
+- **No surcharge** if you correct on your own initiative. A correction does not count as your own initiative if Skatteverket announced a general check, the correction is linked to it, and you make it two months or more after the end of the month of the announcement (49 kap. 10 §).
+- **Cost interest:** charged daily on a deficit on the tax account at the base rate (2.5% since 1 December 2024, floor 1.25%). On tax not paid by the due date the rate is base rate plus 15 points, now 17.5%, until the debt goes to the Enforcement Authority (SFL 65 kap. 3-4, 13 §§). It is not deductible.
+
+## Cross-border points
+
+- **Foreign employer, work in Sweden.** Withhold only for work done in Sweden if the employer has no permanent establishment here (SFL 10 kap. 6 §), at 30% unless the employee shows a jämkning or SINK decision (SFL 11 kap. 20 § 4). Without a Swedish PE, use the no-PE rates in the table and tick box 302; no general payroll fee is due.
+- **A1 or certificate of coverage.** If a valid certificate names the employee and covers the pay month, no Swedish contributions are due on that pay. Report it in box 131. Check the person, the issuing body and the dates. Withholding is a separate question.
+- **Social security agreement (socialavgiftsavtal).** A foreign employer with no PE can agree that the employee pays the contributions. The employer still registers, withholds 30% on pay for work in Sweden (unless the employee has another decision) and files monthly.
+- **Postings to and from treaty countries** (USA, Canada, India, Japan, South Korea, Québec, the Philippines) have their own codes and reduced rates on Skatteverket's rate table.
+- **Third-country nationals.** Notify Skatteverket by the end of the third month after the month the employment started.
+- **Non-residents on SINK** pay 22.5% in 2026; residence tests and the expert relief are in [se-cross-border](se-cross-border.md).
+
+## Worked examples
+
+### Example 1: ordinary monthly salary
+
+Lina is born 1990 and lives in a municipality whose A-tax decision gives table 32. She earns SEK 40,000 a month, paid in May 2026, with no benefits. The employer is a small company that files VAT quarterly.
+
+- Withholding: table 32, column 1, row 39,801-40,000 = SEK 8,151.
+- Net pay: 40,000 − 8,151 = SEK 31,849.
+- Employer contributions: 40,000 × 31.42% = SEK 12,568.
+- Due to Skatteverket by 12 June 2026: 8,151 + 12,568 = SEK 20,719. The May return is due the same day.
+
+```oa-check
+name: Monthly salary SEK 40,000, table 32 column 1, May 2026
+inputs:
+  salary: 40000
+  table_tax: 8151
+  contribution_rate: 0.3142
+steps:
+  - contributions: salary * contribution_rate
+  - net_pay: salary - table_tax
+  - employer_cost: salary + contributions
+  - due_to_skatteverket: table_tax + contributions
+expected:
+  contributions: 12568.00
+  net_pay: 31849.00
+  employer_cost: 52568.00
+  due_to_skatteverket: 20719.00
+```
+
+### Example 2: young employee with a bonus, after 1 April 2026
+
+Emil is born in 2005, so at 1 January 2026 he is over 18 and under 23 and inside the youth reduction. His A-tax decision gives table 32. In June 2026 he is paid his regular SEK 28,000 salary plus a one-off bonus of SEK 10,000. His estimated annual pay from this employer, leaving out the bonus, is SEK 336,000, which falls in the 26% one-off band.
+
+- Withholding on salary: table 32, column 1, row 27,801-28,000 = SEK 5,215.
+- Withholding on the bonus: one-off table, column 1, 26% × 10,000 = SEK 2,600.
+- Net pay: 38,000 − 5,215 − 2,600 = SEK 30,185.
+- Contribution base for the month: SEK 38,000. The youth rate covers the first SEK 25,000: 25,000 × 20.81% = SEK 5,202.50. The rest at the full rate: 13,000 × 31.42% = SEK 4,084.60. Total SEK 9,287.10.
+- Due by 12 July 2026: 5,215 + 2,600 + 9,287.10 = SEK 17,102.10.
+
+```oa-check
+name: Youth employee, salary SEK 28,000 plus SEK 10,000 bonus, June 2026
+inputs:
+  salary: 28000
+  bonus: 10000
+  table_tax: 5215
+  youth_cap: 25000
+  youth_rate: 0.2081
+  full_rate: 0.3142
+  one_off_rate: 0.26
+steps:
+  - bonus_tax: bonus * one_off_rate
+  - total_tax: table_tax + bonus_tax
+  - gross: salary + bonus
+  - net_pay: gross - total_tax
+  - youth_part: min(gross, youth_cap) * youth_rate
+  - full_part: max(gross - youth_cap, 0) * full_rate
+  - contributions: youth_part + full_part
+  - due_to_skatteverket: total_tax + contributions
+expected:
+  bonus_tax: 2600.00
+  net_pay: 30185.00
+  youth_part: 5202.50
+  full_part: 4084.60
+  contributions: 9287.10
+  due_to_skatteverket: 17102.10
+```
 
 ## Ask the client first
 
-- What are the pay date, cash/benefit components, tax-table decision, birth year and coverage facts? Obtain the evidence below.
-
-### Gather and lock the payroll record
-
-For each payee and pay date retain: contract/engagement and work-location facts; correct personal or coordination number (or the prescribed alternative identity and foreign address); the current A-tax certificate's **tax table number** (the certificate names the table; the payer picks the column from the payee's age and income type, for example column 1 for salary paid to a person who was under 66 at the start of the year), pay frequency, any adjustment decision or SINK decision, and whether income is main or supplementary; birth year and age at 1 January 2026; gross cash pay; separately itemised taxable benefits and employee net payments; expenses, holiday/final-pay character and pension/equity/severance facts; the A1/coverage/posting/agreement document, issuing authority and effective coverage dates; evidence that the employer's Swedish registration and tax-account route has been confirmed; prior PAYE reports and the employer deadline. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/individualsandemployees/declaringtaxesforindividuals/ataxcertificateandtaxtables.4.2fb39afe18dabf1e4d25053.html) [Skatteverket](https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html)
-
-Do not use a payslip or payroll-system default as evidence of a tax table, social-security jurisdiction, benefit value or employment-law entitlement. The correct identity is material because individual PAYE data pre-fill the payee's tax return. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-## The method, step by step
-
-1. Confirm employer registration, work location, coverage and employee tax decision.
-2. Classify cash pay and non-cash benefits, establish contribution bases and apply the correct payment-year rules.
-3. Determine withholding, reconcile the bank transfer, submit PAYE and reconcile the tax-account payment.
-4. Correct filed errors using the affected period and original specification number.
-
-### Registration and routing
-
-### Ordinary route
-
-Register as an employer before the first salary payment if not already registered. Ordinary employers with employees in Sweden register, deduct tax from salaries/benefits, declare and pay employer contributions. Foreign businesses use the Tax Agency foreign-business registration route when its conditions apply. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/nonswedishbusinesseswithoperationsinsweden/registerabusiness.4.676f4884175c97df41917fa.html)
-
-While employer registration remains live, submit a PAYE return for every reporting period. Where there is nothing to report, select the e-service zero-return option. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-### Boundary routes
-
-| Facts | Route |
-| --- | --- |
-| Foreign employer / work in Sweden | Confirm Swedish registration, A-tax or SINK decision, withholding and PAYE obligations. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) |
-| A1, Certificate of Coverage or convention | Record the issuing authority and exact coverage period; then confirm the Swedish registration/tax-account route before selecting a contribution code or rate. A valid certificate that names this employee and covers the pay period means no Swedish social security contributions are due on that pay: report the cash pay in box 131 (not included in the basis for contributions). A certificate label alone is not enough; check the employee, the issuer and the dates. Swedish withholding is decided separately. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/nonswedishbusinesseswithoperationsinsweden/registerabusiness.4.676f4884175c97df41917fa.html) |
-| No Swedish permanent establishment | Use the no-permanent-establishment rates, not the ordinary table: for 2026, 18.80% for employees born 1959 or later, 10.21% for those born 1938–1958, and 14.50% for those born 2003–2007 on pay from 1 April 2026 (check the Tax Agency instructions for code 7003 on how the SEK 25,000 monthly limit applies before using it). Tick box 302 on the individual statement. Such an employer does not pay general payroll tax. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) |
-| Social-security agreement | Available to an employer based outside Sweden with no permanent establishment here. The employee declares and pays the employer contributions, but the Tax Agency can still ask the employer to pay if the employee does not. The employer must still register, deduct preliminary tax at 30% on pay for work in Sweden (unless the Tax Agency has notified the employee of another decision) and file a monthly PAYE return. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/socialsecurityagreementforyouasanemployer.4.2fb39afe18dabf1e4d21c41.html) |
-| Third-country national | Check right to work; Tax Agency notification has its own end-of-third-month-after-start-month deadline. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) |
-| Private individual paying for work that is not a business expense | No preliminary tax is deducted if the payer expects to pay that payee less than SEK 10,000 in the calendar year and every other condition in Tax Procedure Act chapter 10 section 4 point 3 is met. Refer the employer-contribution treatment. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text) |
-
-## 4. Calculate the pay period
-
-### 4.1 Establish the contribution base
-
-Start with cash gross remuneration for work and add taxable non-cash benefits included in the contribution base. Enter cash gross salary in **box 011**; benefits belong in their appropriate fields, not 011. A taxable benefit is ordinarily reported for the period the employee could use it. Reduce a benefit value by the employee's documented **net** payment for it. Exception: a fuel benefit is still reported at its full marked-up value in box 018 even if the employee paid for it through net salary deductions; the payment goes in box 098. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-Classify cash reimbursement, pension, option/equity award, termination payment, holiday payment and expense allowance under their specific rule before treating it as ordinary salary. Before applying the rate table, track remuneration for work paid to each **A-tax** payee across the calendar year. Employer contributions are due when that remuneration totals **SEK 1,000 or more** for the year. If a later payment takes the year's total to SEK 1,000 or more, contributions are due on the whole year's amount. Report the whole amount in box 011 in the period in which you find the liability, and enter the amount you earlier reported as not contribution-liable (box 131) in box 010; do not reopen the earlier period (see Case 7). Do not treat a single payment below SEK 1,000 as an enduring exclusion. The same expected annual total also decides whether you withhold tax (see 4.3). [Skatteverket](https://www.skatteverket.se/arbetsgivaravgifter) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-
-### 4.2 Apply 2026 employer contributions
-
-The full ordinary 2026 rate is **31.42% of gross salary and benefits**. Apply it only after the A-tax/SEK 1,000 annual gate and the route screen above. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) [Skatteverket](https://www.skatteverket.se/arbetsgivaravgifter)
-
-| Employee category / payment period | Rate and calculation |
-| --- | --- |
-| Born 1959 or later, ordinary work-in-Sweden case | 31.42%; `base × 0.3142`  [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) |
-| Born 1938–1958 | 10.21% pension-only rate  [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) |
-| Born 1937 or earlier | 0%  [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) |
-| Born 2003–2007, pay from 1 April to 31 December 2026 | 20.81% on first SEK 25,000 per calendar month; 31.42% on excess  [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) |
-
-The temporary measure runs until 30 September 2027, but the birth-year cohort shown here is the 2026 cohort; obtain the applicable 2027 cohort before processing 2027 pay. For the youth band calculate `min(monthly base, 25,000) × 20.81% + max(monthly base − 25,000, 0) × 31.42%`. Do not apply a special payroll-system code, regional support, R&D deduction, growth support, shipping adjustment or posting rate without the applicable eligibility, basis, cap and minimum-contribution evidence. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-### 4.3 Deduct preliminary tax
-
-Use the Tax Agency route that applies:
-
-1. **Main income:** use the current A-tax certificate's table number and the correct column for the payee and pay frequency.
-2. **Supplementary income:** 30%. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-3. **Specific decision:** the amount or rate in an adjustment (jämkning) decision; or, where the payee has a SINK decision, deduct special income tax for non-residents at the statutory 22.5% and report it in box 274, not box 001. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) [Official source](https://data.riksdagen.se/dokument/sfs-1991-586.text)
-
-Before calculating net pay, lock the current table number, applicable column, pay frequency and any adjustment or SINK decision in the payroll record. Without an A-tax/SINK decision, deduct the municipal table amount for the employer's business area plus 10% (110% of the table amount). Once the decision arrives, use it prospectively and do not correct earlier reports merely because it arrived. If no cash remuneration is paid, no tax can be withheld from a taxable benefit; route the resulting issue before sign-off. For salary advances, withhold in the same proportion as the advance bears to total compensation; if the total is unknown, treat the advance as the total. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/individualsandemployees/declaringtaxesforindividuals/ataxcertificateandtaxtables.4.2fb39afe18dabf1e4d25053.html)
-
-**When no preliminary tax is deducted.** Do not deduct preliminary tax from pay for work if (a) the payment is below SEK 100, or (b) you expect the total you pay that payee in the calendar year to be below SEK 1,000. In case (b), report the pay in box 131 and enter 0 in box 001. If a later payment means the year's total will reach SEK 1,000 or more, deduct tax on that payment under the ordinary rules above (see Case 7). A school or higher-education student who will earn less than SEK 25,042 in 2026 and lives in Sweden all year can give you form SKV 434; with it you do not deduct preliminary tax and you enter 0 in box 001. The SKV 434 certificate does not remove employer contributions. If you find, before filing, that you deducted more than you had to, repay the excess to the employee. If you deduct too little, you may have to pay the shortfall. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Skatteverket](https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html)
-
-### Ordinary holiday-pay inputs
-
-Check the collective agreement first: permitted variations can replace the statutory calculation. Establish earned paid days and qualifying absence from the leave record. An employee is entitled to 25 holiday days each holiday year; how many of them are paid depends on the days earned. Under the statutory same-pay rule, keep paying current weekly/monthly salary and add a holiday supplement for each paid day of 0.43% of monthly pay, or 1.82% of weekly pay. Add any fixed pay supplements to the monthly or weekly pay before applying the percentage. Variable pay components give 12% of the variable pay that fell due during the holiday year. The percentage rule instead gives 12% of the statutory earning-year base: exclude holiday pay and specified absence/shutdown payments; replace qualifying absence with normal assumed earnings. Use it for non-weekly/monthly pay, regular variable pay of at least 10%, changed working fraction, or disqualifying absence, subject to the statutory exception. It may also be elected otherwise. On termination, value unused earned leave under the same statutory rules; payment is ordinarily due within one month. Preserve any valid contractual variation and its calculation. [Official source](https://data.riksdagen.se/dokument/sfs-1977-480.html)
-
-### Statutory sick pay inputs
-
-The employer pays sick pay for the sick-pay period: the first day the employee's working capacity is reduced by illness and the following 13 calendar days. Sick pay is 80% of the pay and benefits lost. Deduct a qualifying deduction (karensavdrag) of 20% of the sick pay for an average working week. Do not make the deduction if the employee has already had it ten times in the past 12 months. A new sick period that starts within five days of the last one continues the same 14-day sick-pay period and gets no new deduction. From the seventh calendar day after the sickness was reported, the employer need only pay if the employee gives a doctor's or dentist's certificate. The right starts from the first day of employment; for a contract shorter than one month, it starts only after 14 consecutive calendar days of employment. A collective agreement may set the detailed calculation. Record the sick days, the deduction count and the certificate. [Official source](https://data.riksdagen.se/dokument/sfs-1991-1047.text)
-
-### One-off and final-pay withholding
-
-Regular pay follows the ordinary table. A bonus, retroactive pay or holiday compensation classified as a one-off payment uses the payment-year one-off table and matching column; obtain the annual-pay basis under its instructions. If paid together, calculate regular and one-off deductions separately. Without regular time-based pay, the ordinary one-off deduction is 30%. A specific adjustment or SINK decision controls instead. [Official source](https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html)
-
-For termination, use the ordinary table for final regular salary; use the one-off table for one-off amounts paid that month and final settlement paid by the following month. The Tax Agency treats only these as main income. For a payment made later than that, confirm its status before withholding; pay that is not main income is withheld at 30%. Classify holiday salary versus holiday compensation before choosing the table. [Official source](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-
-### 4.4 Reconcile
-
-For each payee reconcile the bank transfer as gross cash salary + separately payable cash expense reimbursements − withheld tax − authorised cash deductions. Non-cash benefits increase the relevant taxable/contribution bases but are not cash paid into the employee’s bank account. If an employee net payment for a benefit is deducted from salary, deduct it once from the cash transfer and reduce the benefit value separately; do not double-deduct it. Reconcile contribution bases and contributions to individual records, the payroll ledger, employer total and tax-account funding. The e-service calculation does not replace this reconciliation. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-## 5. File, pay and communicate
-
-File per payee and employer through the PAYE e-service, or an error-checked payroll XML file. Most employers file by the 12th of the following month, except that the July return is due on 17 August and the December return on 17 January. Employers whose VAT taxable base for the year is expected to exceed SEK 40 million file by the 26th of the following month (27 December for the November return). Confirm the employer's deadline in the e-service. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn.4.2cf1b5cd163796a5c8b107cd.html) [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
-
-### Individual-statement checklist
-
-1. Add the payee with correct identity and any prescribed foreign/alternative identity details.
-2. Assign a unique non-zero specification number. Preserve it because a correction needs the same number. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-3. Enter cash gross salary in **011** and benefits in their specific fields.
-4. Complete exactly one preliminary-tax-block field: for example **001** preliminary tax, **274** SINK, or an applicable no-deduction reason. Enter 0 in **001** where no tax was deducted because the payee's annual pay is below SEK 1,000, or under an SKV 434 student certificate. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-5. Complete workplace, foreign-employer and no-permanent-establishment fields only when their conditions apply, including **302** where applicable.
-6. If pay reported for the period was affected by absence that may qualify the employee for parental benefit or temporary parental benefit, submit the absence details (boxes 821–827) with the same return and tell the employee what you reported. This has applied since the January 2025 reporting period. Absence details cannot be corrected or added after the return is filed. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn.4.2cf1b5cd163796a5c8b107cd.html)
-7. Review payee facts, benefit period, contribution route/code and tax field. Sign, submit and retain the receipt.
-
-The e-service calculates employer totals. On a paper return, calculate the totals from individual statements and use main-statement **487** and **497**. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-Employer contributions and deducted tax must reach the tax account by the PAYE deadline. A business whose VAT taxable base for the year is expected to exceed SEK 40 million has a different payment date: pay by the 12th of the month after the reporting period (17th in January), even though its return is due on the 26th. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text) Do not apply that exception based on payroll size. Tell the employee the reported information by the PAYE deadline, such as through a payslip. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/payingtaxesbusinesses/howtopayemployercontributionsandtaxes.4.676f4884175c97df4191150.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-
-## 6. Correct a filed period
-
-File a **new PAYE return for the affected period**. The Tax Agency says corrections can reach six years back (in 2026, 2020 onward). [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-
-1. Rebuild the affected payee/employer figures from source evidence, identifying identity, compensation, benefit, base/rate, withholding or employer-data error.
-2. Open the filed period, choose correction, amend the correct data, and use the **same specification number** so a payee correction replaces earlier data rather than adding data. Review, sign, submit and retain the receipt.
-3. Contributions can be amended and deducted tax increased, but deducted tax normally cannot be reduced. For an overpayment, distinguish future-pay offsetting from a repayment demand. A repayment-demand correction reduces original compensation while leaving deducted tax unchanged.
-4. Inform the payee and reconcile the revised Tax Agency decision/tax account when issued. Absence details (boxes 821–827) cannot be corrected or added through this route. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-
-### Penalties
-
-- A late PAYE return costs a late-filing fee of SEK 625, or SEK 1,250 if it is filed after a Tax Agency order. Only one fee is charged if several returns due on the same date are late. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
-- A tax surcharge applies to incorrect information: 20% of the tax that would have been lost, or 2% or 5% where the error only put an amount in the wrong period (2% if the reporting period is at most three months and the amount was placed within four months of the right period; otherwise 5%). [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
-- Failing to deduct tax that should have been deducted gives a surcharge of 5% of the tax that should have been deducted, and the employer can be made to pay the tax. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-- No surcharge is charged if the employer corrects the error on its own initiative, subject to the rule on corrections made after the Tax Agency announces a general check. [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
-
-## 7. Worked checks and boundaries
-
-Examples use assumed pay amounts and once-at-the-end decimal rounding to illustrate the calculation. The filed amount follows the current PAYE field and rounding instructions.
-
-### Case 1 — ordinary monthly Swedish payroll
-
-**Facts:** Employee born 1988 receives SEK 40,000 cash salary in May 2026, no taxable benefits, reliefs or foreign facts. A-tax says main income but table amount is not supplied. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-**Method:** Contribution base is SEK 40,000 in box 011. Employer contribution is `40,000 × 31.42% = SEK 12,568.00`. Before calculating net pay, obtain the employee's actual current table number, correct table column and pay frequency from the A-tax certificate or an adjustment decision; they are not supplied in these facts. Withhold under that input, not at the 31.42% employer rate. File May PAYE and fund withheld tax plus SEK 12,568 by the applicable June deadline. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/inenglishengelska/individualsandemployees/declaringtaxesforindividuals/ataxcertificateandtaxtables.4.2fb39afe18dabf1e4d25053.html)
-
-### Case 2 — youth threshold
-
-**Facts:** Employee born 2005 receives SEK 32,000 in May 2026, no benefits or special coverage facts. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-**Method:** `25,000 × 20.81% = SEK 5,202.50`; `7,000 × 31.42% = SEK 2,199.40`; total employer contribution **SEK 7,401.90**. Report/withhold tax independently using the decision. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-### Case 3 — official illustrative example before a tax decision
-
-**Facts:** Gross SEK 28,000. No A-tax/SINK decision. Relevant table deduction is SEK 5,604. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-
-**Method:** Deduct `5,604 × 110% = SEK 6,164.40`; the official example presents SEK 6,164 after its table rounding. Use the decision prospectively when it arrives, without correcting this payment merely because it arrives. This reproduces the authority’s illustrative figures; do not use that example table amount as the employee’s current deduction. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html)
-
-### Case 4 — cross-border exclusion
-
-**Facts:** A foreign employer pays a person working in Sweden who presents an A1/Certificate of Coverage for foreign social-security coverage.
-
-**Method:** Record the certificate's issuing authority and exact coverage period, check that it names this employee, and confirm the employer's Swedish registration and tax-account route. If the certificate is valid for the pay period, no Swedish social security contributions are due on that pay: report it in box 131, not box 011, and do not apply 31.42% or the no-permanent-establishment rates. If it does not cover the period or the employee, stop and resolve coverage before choosing a rate. Determine Swedish withholding separately under 4.3. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/nonswedishbusinesseswithoperationsinsweden/registerabusiness.4.676f4884175c97df41917fa.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html)
-
-### Case 5 — correction
-
-**Facts:** May return reported SEK 20,000 contribution-liable salary; evidence shows SEK 18,000. Original specification number 17. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-**Method:** File a new May return, correct the payee with specification 17, recompute contributions, assess tax under the no-reduction restriction, notify payee and reconcile revised decision/tax account. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-
-### Case 6 — annual amount stays below SEK 1,000
-
-**Facts:** An A-tax payee is paid SEK 500 for work in May 2026 and receives no further remuneration for work during 2026. Ordinary Swedish coverage applies. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-**Method:** The calendar-year remuneration is expected to stay below SEK 1,000, so no employer contributions are due and no preliminary tax is deducted: the same annual SEK 1,000 threshold applies to withholding. Report the SEK 500 on the individual statement in box 131 (cash compensation not included in the basis for contributions) and enter 0 in box 001. Keep the cumulative payee record; if later payments take the year to SEK 1,000 or more, follow Case 7. [Skatteverket](https://www.skatteverket.se/arbetsgivaravgifter) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
-
-### Case 7 — later payment crosses the annual contribution threshold
-
-**Facts:** The same A-tax payee received SEK 500 in May, expected to remain below the threshold, then receives SEK 1,000 in November 2026. The payee is born in 1990 and ordinary Swedish coverage applies. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-**Method:** The annual remuneration is SEK 1,500, so employer contributions become due on the full remuneration. For the ordinary rate, `1,500 × 31.42% = SEK 471.30`. Rebuild the year-to-date record. The Tax Agency correction example directs the November individual statement to show SEK 1,500 in box 011 and SEK 500 in box 010 where the earlier payment had been reported as below the contribution threshold; use the actual filed-record facts and e-service validation before filing. Because the year's total now reaches SEK 1,000, deduct preliminary tax on the November payment under 4.3. [Skatteverket](https://www.skatteverket.se/arbetsgivaravgifter) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html)
-
-### Case 8 — taxable benefit is not bank pay
-
-Illustrative assumptions: cash salary SEK 40,000, correctly valued non-cash benefit SEK 4,000, no reimbursements or other cash deductions, ordinary contributions and an independently established withholding amount of SEK 10,000. Contribution base is SEK 44,000; employer contributions are SEK 13,824.80. The cash transfer is SEK 30,000. The withholding amount is a hypothetical supplied result, not a tax-table calculation. [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html) [Skatteverket](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html)
-
-### Case 9 — complete ordinary monthly bank pay
-
-Assumptions: employee born 1988, monthly main salary SEK 40,000 in 2026, no benefits or deductions, A-tax decision specifies table 38 and no adjustment. Column 1 applies to ordinary salary for a person below 66 at the start of the year. The official monthly table row 39801–40000 gives withholding SEK 9,655. Cash paid is SEK 30,345. Employer contribution remains SEK 12,568.00, funded separately from employee net pay. [Official source](https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html) [Official source](https://skatteverket.se/download/18.1522bf3f19aea8075ba625/1765290530129/allmanna-tabeller-manad-tabell-38.pdf)
-
-### Case 10 — statutory paid holiday supplement
-
-Assumptions: unchanged monthly pay SEK 30,000, no fixed/variable supplements, five earned paid days, same-pay rule applies and no collective variation. The extra holiday supplement is SEK 645; current monthly salary continues. Choose the correct withholding treatment for the actual payment type. [Official source](https://data.riksdagen.se/dokument/sfs-1977-480.html)
-
-### Case 11 — one-off payment alongside regular salary
-
-Assumptions: regular monthly employee, column 1, independently established annual-pay basis SEK 500,000, one-off bonus SEK 10,000, no special decision. The 2026 band 477601–660000 uses 34%, so bonus withholding is SEK 3,400 and bonus cash is SEK 6,600. Regular salary withholding is calculated separately. [Official source](https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html)
-
-## When to refuse or refer
-
-- Stop a calculation when the applicable decision, benefit valuation, social-security coverage or contractual pay entitlement is missing.
-- Refer pensions, employment-law and specialist cross-border questions for the evidence described below.
-
-### Completion record
-
-Retain the signed payroll calculation, tax-table/decision evidence, benefit valuations, coverage certificates, payee statements, bank-payment control, submitted PAYE receipt and tax-account reconciliation. Close the payroll only when the cash, tax and contribution records agree.
-
-A payroll input involving collective-agreement wages, disputed holiday entitlement, a pension plan, equity/options, severance, a work permit, specialised contribution relief or a country-specific social-security convention needs the applicable contract, decision and official specialist method before computation. Record the missing input and responsible reviewer. This skill supplies the ordinary PAYE workflow; it does not supply a universal pension premium, benefit valuation or employment entitlement. Employer pension costs also carry special payroll tax on pension costs at 24.26% of the cost; it is declared in the employer's income tax return, not in the PAYE return. [Official source](https://data.riksdagen.se/dokument/sfs-1991-687.text) [Official source](https://data.riksdagen.se/dokument/sfs-2011-1244.text)
+1. Each employee's year of birth, and the table number, column and any jämkning or SINK decision on their A-tax decision.
+2. Is this pay their main income from you, or a second job?
+3. Does the company have a permanent establishment in Sweden, and does anyone hold an A1 or certificate of coverage?
+4. Is the company's VAT base expected to exceed SEK 40 million this year?
+5. Is this the first or second person the business has employed since 1 January 2024 (växa refund)?
+6. Any benefits, bonuses, back pay or termination payments this month, and does a collective agreement set holiday or sick pay?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Socialavgiftslag (2000:980), as amended to SFS 2026:493: 2 kap. 1, 4, 14, 26-27 §§; transitional rules 2000:981 point 5, 2022:889 | https://data.riksdagen.se/dokument/sfs-2000-980.text | 2026-10-24 |
+| Lag (1994:1920) om allmän löneavgift, 1 and 3 §§ (as amended by 2025:1360) | https://data.riksdagen.se/dokument/sfs-1994-1920.text | 2026-10-24 |
+| Lag (2026:100) om särskild beräkning av arbetsgivaravgifter och allmän löneavgift för personer som vid årets ingång fyllt 18 men inte 23 år | https://data.riksdagen.se/dokument/sfs-2026-100.text | 2026-10-24 |
+| Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag, 1-14 §§ and transitional rules | https://data.riksdagen.se/dokument/sfs-2025-1334.text | 2026-10-24 |
+| Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305: 10 kap. 3-6 §§; 11 kap. 2-4, 9, 16-23, 27 §§; 12 kap. 3, 6 §§; 26 kap. 3, 26, 30-32 §§; 48 kap. 5-6 §§; 49 kap. 10-11, 13, 18 §§; 62 kap. 2-3 §§; 65 kap. 3-4, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
+| Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, 7 § | https://data.riksdagen.se/dokument/sfs-1991-586.text | 2026-10-24 |
+| Lag (1991:687) om särskild löneskatt på pensionskostnader, 1 § | https://data.riksdagen.se/dokument/sfs-1991-687.text | 2026-10-24 |
+| Semesterlag (1977:480), 4, 16 a, 16 b §§ | https://data.riksdagen.se/dokument/sfs-1977-480.text | 2026-10-24 |
+| Lag (1991:1047) om sjuklön, 3, 6-8 §§ | https://data.riksdagen.se/dokument/sfs-1991-1047.text | 2026-10-24 |
+| Skatteverket, arbetsgivaravgifter (rates and codes 2026) | https://www.skatteverket.se/arbetsgivaravgifter | 2026-10-24 |
+| Skatteverket, employer contributions (English) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/employercontributions.4.2fb39afe18dabf1e4d24a3d.html | 2026-10-24 |
+| Skatteverket, skattetabeller 2026 and monthly table 32 (SKVFS 2025:20) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skattetabeller.4.96cca41179bad4b1aa8a46.html | 2026-10-24 |
+| Skatteverket, så läser du skattetabellen (columns 2026) | https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/salaserdutabellen.4.319dc1451507f2f99e875f.html | 2026-10-24 |
+| Skatteverket, engångsbelopp (one-off tables 2026) | https://www.skatteverket.se/foretag/arbetsgivare/arbetsgivaravgifterochskatteavdrag/skatteavdrag/engangsbelopp.4.361dc8c15312eff6fd3225e.html | 2026-10-24 |
+| Skatteverket, belopp och procent inkomstår 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-24 |
+| Skatteverket, deducted tax | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/deductedtax.4.2fb39afe18dabf1e4d255d0.html | 2026-10-24 |
+| Skatteverket, PAYE return box by box | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html | 2026-10-24 |
+| Skatteverket, filing a PAYE return (absence details) | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn.4.2cf1b5cd163796a5c8b107cd.html | 2026-10-24 |
+| Skatteverket, correcting a PAYE return | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/correctingapayereturn.4.13948c0e18e810bfa0c2e34.html | 2026-10-24 |
+| Skatteverket, hiring workers from abroad | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/hiringworkersfromabroad.4.6532ae7518aff8c118f984.html | 2026-10-24 |
+| Skatteverket, social security agreement for employers | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/socialsecurityagreementforyouasanemployer.4.2fb39afe18dabf1e4d21c41.html | 2026-10-24 |
+| Skatteverket, ränta på skattekontot | https://www.skatteverket.se/rantapaskattekontot | 2026-10-24 |
+| Skatteverket, rättslig vägledning: Arbetsgivaravgifternas storlek (2026) | https://www4.skatteverket.se/rattsligvagledning/1333.html | 2026-10-24 |
+| Skatteverket, rättslig vägledning: Skattetabeller (one-off amounts) | https://www4.skatteverket.se/rattsligvagledning/325047.html | 2026-10-24 |
+
+Not yet confirmed: nothing open. Settled on review: the no-PE rate basis (Skatteverket legal guidance 1333), the one-off annual-pay rule (legal guidance 325047), the table-number rounding (Skatteverket, skattetabeller) and how växa and the youth reduction combine (Lag 2025:1334 8 and 10 §§).
 
 <!-- openaccountants-cta-block -->
 

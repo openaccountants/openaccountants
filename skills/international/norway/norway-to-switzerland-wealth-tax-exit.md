@@ -29,6 +29,24 @@ and their advisers on both ends. The exit-tax parameters moved repeatedly throug
 the architecture below is stable but **verify the final enacted figures** before relying on
 any threshold.
 
+---
+
+## Part 1 — Why people leave (the honest arithmetic)
+
+- **Wealth tax (formuesskatt):** roughly **1.0%** above ~NOK 1.76m of net wealth (double for
+  couples), rising to about **1.1%** above ~NOK 20m. Listed and unlisted shares enter at a
+  discounted basis (around 80% of value); the primary home is heavily discounted, secondary
+  property barely.
+- **The funding loop:** an owner of a NOK 500m company owes ~NOK 5m+ in wealth tax annually,
+  regardless of profits. Funding it requires a dividend; the dividend is taxed at **37.84%**
+  (22% × the 1.72 upward adjustment). To net NOK 5m, the company distributes ~NOK 8m. In a
+  loss year the tax is still due.
+- Switzerland also levies a wealth tax — this is not a zero-tax corridor — but cantonal rates
+  (very roughly 0.15–0.6%) on negotiated or formula valuations, without Norway's dividend
+  funding loop at 37.84%, change the arithmetic by multiples rather than percent.
+
+---
+
 ## Part 2 — The 3-year tail: leaving takes three years
 
 Norwegian tax residency does not end when the plane leaves. For anyone resident in Norway

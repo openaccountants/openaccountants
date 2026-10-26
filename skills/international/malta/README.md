@@ -14,13 +14,13 @@ Calendar tax year (basis year), assessed the following year. Authority: Malta Ta
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | malta-income-tax, mt-capital-gains, mt-non-dom, mt-rental-income | source-cited draft |
-| IT-CORP, corporate income tax | mt-corporate-tax, mt-holding-company-participation-exemption | source-cited draft |
-| VAT | malta-vat-return, mt-vat3-quarterly-return-malta, reverse-charge skills | source-cited draft |
-| SC, social contributions | malta-ssc | source-cited draft |
-| PR, payroll withholding | malta-payroll | source-cited draft |
-| TP, transfer pricing | malta-transfer-pricing | source-cited draft |
-| XB, cross-border | moving-to-malta-tax-residence, mt-company-residence-and-substance, mt-residence-programmes-for-wealthy-families | source-cited draft |
+| IT-IND, individual income tax | malta-income-tax, mt-capital-gains, mt-non-dom, mt-rental-income | sourced from the law |
+| IT-CORP, corporate income tax | mt-corporate-tax, mt-holding-company-participation-exemption | sourced from the law |
+| VAT | malta-vat-return, mt-vat3-quarterly-return-malta, reverse-charge skills | sourced from the law |
+| SC, social contributions | malta-ssc | sourced from the law |
+| PR, payroll withholding | malta-payroll | sourced from the law |
+| TP, transfer pricing | malta-transfer-pricing | sourced from the law |
+| XB, cross-border | moving-to-malta-tax-residence, mt-company-residence-and-substance, mt-residence-programmes-for-wealthy-families | sourced from the law |
 
 ## Official sources
 

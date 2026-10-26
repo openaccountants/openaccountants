@@ -24,6 +24,18 @@ This skill covers Egyptian corporate income tax (ضريبة الدخل على ا
 > **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
 > **YMYL — verify before relying.** Egyptian CIT rates, brackets, and deductions were amended in 2024 and 2025 (Laws 5, 6, 7 of 2025). Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt), or a Big-4 alert before filing.
 
+---
+
+## What this file is
+
+**This file is a content skill that loads on top of a workflow base** (here: `income-tax-workflow-base`). It provides Egypt-specific CIT rates, deductions, loss rules, thin-cap rules, and filing mechanics.
+
+**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+
+**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+
+---
+
 ## Section 1 — Scope statement
 
 This skill covers:
