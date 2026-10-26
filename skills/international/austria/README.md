@@ -20,7 +20,7 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 | IT-IND, individual income tax | at-income-tax (residents, 2026: tariff, credits, Familienbonus Plus, Gewinnfreibetrag, Basispauschalierung, filing, prepayments) | checked against the law |
 | IT-CORP, corporate income tax | at-corporate-income-tax | checked against the law |
 | VAT | at-vat-return, austria-vat-return | sourced from the law |
-| SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG) | sourced from the law |
+| SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG, 2026: rates, minimum and maximum bases, provisional base, Nachbemessung, Versicherungsgrenze, small business exemption) | checked against the law |
 | PR, payroll withholding | at-payroll-and-social-insurance | checked against the law |
 | TP, transfer pricing | at-transfer-pricing | checked against the law |
 | XB, cross-border | at-cross-border | checked against the law |

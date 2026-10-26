@@ -1,420 +1,202 @@
 ---
 name: at-svs-contributions
-description: Use this skill whenever asked about Austrian SVS (Sozialversicherungsanstalt der Selbständigen) social insurance contributions for self-employed individuals. Trigger on phrases like "SVS contributions", "Austrian social insurance", "GSVG", "self-employed Austria contributions", "Pensionsversicherung self-employed", "SVS Vorschreibung", or any question about social insurance obligations for a self-employed client in Austria. Covers pension (18.5%), health (6.8%), accident (flat monthly), and Selbständigenvorsorge. ALWAYS read this skill before touching any Austria social contributions work.
-version: 2.0
+description: "Austrian social insurance for the self-employed, tax year 2026, collected by the SVS: pension (18.5% GSVG, 20% FSVG), health (6.8%), accident insurance (EUR 12.95 a month) and the Selbständigenvorsorge (1.53%), for trade licence holders (Gewerbetreibende), Neue Selbständige and FSVG freelancers. Covers the 2026 minimum base (EUR 551.10 a month) and maximum base (EUR 8,085 a month, EUR 97,020 a year), the provisional base for new businesses and from year four (factor 1.181), the Nachbemessung, quarterly due dates, the Versicherungsgrenze and the small business exemption (EUR 6,613.20 income, EUR 55,000 turnover), the health contribution credit, ASVG overlap and deductibility. Trigger on: SVS, GSVG, FSVG, Beitragsvorschreibung, Nachbemessung, Neue Selbständige, Kleinunternehmer SVS, Selbständigenvorsorge. Out of scope: employees and employers (at-payroll-and-social-insurance), income tax (at-income-tax), farmers under the BSVG, A1 cases (at-cross-border)."
+version: 2.1
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-26
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# SVS social insurance contributions for the self-employed in Austria
+# SVS social insurance for the self-employed in Austria (GSVG and FSVG, 2026)
 
-How the SVS (Sozialversicherungsanstalt der Selbständigen) charges pension, health and accident insurance and the Selbständigenvorsorge to trade licence holders (Gewerbetreibende) and Neue Selbständige under the GSVG, and pension insurance to FSVG freelancers. Figures are for tax year 2026, from SVS pages and the 2026 contribution sheet; the deduction rule is from the USP. Farmers (BSVG) and employees (ASVG) are out of scope.
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to file or pay without review by a Steuerberater or another licensed adviser in Austria.
 
-## Section 1: Quick reference
+**Sibling skills.** Income tax, including how SVS contributions reduce profit, is in [at-income-tax](at-income-tax.md). Employee and employer contributions (ASVG) are in [at-payroll-and-social-insurance](at-payroll-and-social-insurance.md). Work in more than one country is in [at-cross-border](at-cross-border.md). The VAT small business exemption is in [at-vat-return](at-vat-return.md).
 
-**Quick reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Austria (Republic of Austria) |
-| Authority | SVS (Sozialversicherungsanstalt der Selbständigen) |
-| Primary legislation | GSVG (Gewerbliches Sozialversicherungsgesetz) |
-| Supporting legislation | ASVG; FSVG (Freiberuflich); BSVG (Farmers); BMSVG (Selbständigenvorsorge); EStG |
-| Pension rate | See the Section 4 rates table |
-| Health rate | See the Section 4 rates table |
-| Accident insurance | Fixed monthly amount, not a percentage. See Section 4 |
-| Selbständigenvorsorge | Share of the provisional health insurance base. Compulsory for everyone in compulsory GSVG health insurance, including Neue Selbständige. Not compulsory for health insurance by opting in, or for freelancers health insured under GSVG Sections 14a and 14b. Voluntary for freelancers insured only in pension insurance because their profession opted out of GSVG health insurance, such as doctors. See Section 4 |
-| Minimum and maximum monthly base | See the Section 4 thresholds table |
-| Payment frequency | Charged quarterly (Beitragsvorschreibung); monthly direct debit possible |
-| Due dates | 28 February (29 in a leap year), 31 May, 31 August, 30 November |
-| Currency | EUR only |
-| Contributor | Open Accountants |
-| Validated by | Pending: needs an Austrian Steuerberater or Wirtschaftsprüfer |
-| Validation date | Pending |
+- **Gewerbetreibende**: holders of a trade licence and the managing partners of trading companies (GSVG § 2 Abs 1 Z 1 to 3). Insurance starts with the licence.
+- **Neue Selbständige**: self-employed people with business income under EStG § 22 Z 1 to 3 and 5 or § 23 and no trade licence, for example consultants, writers and IT contractors (GSVG § 2 Abs 1 Z 4). They are insured only when their yearly income from all GSVG activities is above the Versicherungsgrenze (EUR 6,613.20 in 2026). The test is the same whether or not they also have a job or a pension.
+- **FSVG freelancers**: doctors, pharmacists, patent attorneys and civil engineers pay SVS pension insurance at 20% under the FSVG.
+- **Not covered here**: farmers (BSVG, their own rates and the Einheitswert base), employees (ASVG), and people in more than one EU/EEA state or Switzerland (Regulation 883/2004; one state's law applies).
+- **Stop rule**: if you do not know which group the client is in, stop. The group decides the rates, the start of insurance and the exemptions.
 
-**Monthly contributions at the minimum and maximum base, as SVS prints them**
+## Rates, bands and thresholds
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
-| Minimum monthly base, pension and health (GSVG) | EUR 551.10 | "Mindest 551,10 101,95 1 Gewerbetreibende/-gesellschafter" |
-| Pension contribution at the minimum base (GSVG) | EUR 101.95 | "Mindest 551,10 101,95" |
-| Health contribution at the minimum base (GSVG) | EUR 37.48 | "Mindest1) 551,10 37,48 1 Aktive Freiberufler" |
-| Maximum monthly base, pension and health | EUR 8,085.00 | "Höchst 8.085,00 1.495,73" |
-| Pension contribution at the maximum base (GSVG) | EUR 1,495.73 | "Höchst 8.085,00 1.495,73" |
-| Health contribution at the maximum base (GSVG) | EUR 549.79 | "Höchst 8.085,00 549,79" |
-| Accident insurance per month, as this sheet prints it | EUR 12.95 | "Monatsbeitrag zur Unfallversicherung: 12,95 Euro" |
-| Maximum base per year | EUR 97,020 | "8.085,00 Euro monatlich (97.020 Euro pro Jahr)" |
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Pension insurance, GSVG (paid by the insured; the Bund adds 4.3%) | 18.5% of the base | 2026 | GSVG § 27 Abs 2, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422 |
+| Pension insurance, FSVG | 20% of the base | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal |
+| Health insurance (paid by the insured; the Bund adds 0.85%) | 6.8% of the base | 2026 | GSVG § 27 Abs 1a, RIS link above |
+| Accident insurance, fixed per month | EUR 12.95 | 2026 | ASVG § 74 Abs 1 Z 1 with BGBl. II Nr. 263/2025, https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 |
+| Selbständigenvorsorge, share of the provisional health base | 1.53% | 2026 | BMSVG § 52 Abs 1, https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html |
+| Minimum base per month (Mindestbeitragsgrundlage, GSVG § 25 Abs 4 links it to ASVG § 5 Abs 2) | EUR 551.10 | 2026 | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 |
+| Maximum base per month (GSVG § 25 Abs 5) | EUR 8,085.00 | 2026 | same SVS contribution sheet |
+| Maximum base per year | EUR 97,020.00 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal |
+| Minimum base per year of full insurance | EUR 6,613.20 | 2026 | same SVS page |
+| Pension at the minimum and maximum base, GSVG | EUR 101.95 / EUR 1,495.73 a month | 2026 | SVS contribution sheet |
+| Pension at the minimum and maximum base, FSVG | EUR 110.22 / EUR 1,617.00 a month | 2026 | SVS contribution sheet |
+| Health at the minimum and maximum base | EUR 37.48 / EUR 549.79 a month | 2026 | SVS contribution sheet |
+| Revaluation factor for 2023 income used for 2026 provisional bases (Aufwertungszahlen 2024 1.035 x 2025 1.063 x 2026 1.073) | 1.181 | 2026 | GSVG § 25a Abs 1 Z 2; ASVG § 108a with BGBl. II Nr. 263/2025; https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal |
+| Versicherungsgrenze, Neue Selbständige, per year | EUR 6,613.20 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
+| Small business exemption: income limit per year (twelve times the minimum base) | EUR 6,613.20 | 2026 | GSVG § 4 Abs 1 Z 7; https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal |
+| Small business exemption: turnover limit from all business (UStG § 6 Abs 1 Z 27 limit) | EUR 55,000.00 | 2026 | same |
+| Surcharge when insurance is found later from the tax assessment | 9.3% of pension and health contributions | 2026 | GSVG § 35; https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
+| Health contribution credit (Gutschrift): monthly health base on 31 May at most | EUR 2,900.00 | 2026 | GSVG § 27f |
+| Zusatzversicherung (Krankengeld), share of the provisional health base | 2.5%, at least EUR 30.77, at most EUR 202.13 a month | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal |
+| Krankengeld from the Zusatzversicherung | 60% of the daily base, at least EUR 11.02 a day | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal |
+| Unterstützungsleistung (no opt-in needed), per day | EUR 40.04 | 2026 | https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal |
 
-SVS web pages print a different accident figure (Section 11). No SVS page prints a monthly total, so this Guide states none.
+Accident insurance: the law and the SVS contribution sheet both give EUR 12.95. One SVS web page (contentid 10007.816638) prints EUR 12.96. Use EUR 12.95.
 
-## Section 2: Required inputs and refusal catalogue
+## The taxable base
 
-### Required inputs
+**What the base is (GSVG § 25 Abs 1 and 2).** The monthly average of the year's income under the EStG from one or more activities insured under the GSVG, plus the pension, health and unemployment contributions the SVS charged (vorgeschrieben) for that year, as far as they are business expenses under EStG § 4 Abs 4 Z 1 lit a. Sale gains and restructuring gains (Sanierungsgewinne) are taken out. Several insured activities go into one base. Income as a managing director or as a shareholder-managing director of a GmbH counts as income from an insured activity. The base is clamped between the minimum and maximum base for each month.
 
-- **Required inputs before computing**:
-  1. Registration status: Gewerbetreibender, Neuer Selbständiger, or FSVG freelancer (doctor, pharmacist, patent attorney, civil engineer)?
-  2. Income type: gewerbliche or freiberufliche Einkünfte?
-  3. Income: the provisional base comes from the third prior year's income (2023 for 2026); the final base comes from the income tax assessment (Einkommensteuerbescheid) of the contribution year itself.
-  4. Start year: in the first three years the provisional base is the minimum base; each year's final base follows its own income tax assessment.
-  5. Any concurrent employment or pension? ASVG employment can push the GSVG base below the minimum and triggers the Differenzbeitragsvorschreibung at the maximum.
-  6. Is the client in compulsory GSVG health insurance? Then the Selbständigenvorsorge is compulsory. Health insurance by opting in, or under GSVG Sections 14a and 14b, does not make it compulsory; pension only insurance makes it voluntary.
-- **Unknown registration type stop rule**: If registration type is unknown, STOP; do not compute, since it determines which provisions apply.
+**Provisional base (GSVG § 25a Abs 1).** The SVS charges each quarter on a provisional base until the income tax assessment for the year exists.
+- No GSVG insurance in the third prior year (2023 for 2026): the minimum base, EUR 551.10 a month.
+- Otherwise: the bases found for the third prior year, divided by that year's insured months, times the product of three years' Aufwertungszahlen (1.181 for 2026), rounded to the cent.
+- The client may apply to lower or raise it (GSVG § 25a). A raised base avoids a large back-payment later; too high a guess creates a credit.
 
-### Refusal catalogue
+**New business health base (GSVG § 25a Abs 4).** For a Gewerbetreibender, the minimum base is the provisional and the final health base for the first two calendar years, if there was no GSVG insurance in the 120 months before. It is not re-assessed. Calendar years count, so a July start keeps the fixed health base for 18 months. Neue Selbständige do not get this; their health base is re-assessed.
 
-- **R-AT-SVS-1: BSVG farmer regime**. Trigger: activity falls under BSVG (farmers, agriculture). Message: "BSVG farmer social insurance is outside this Guide's scope. Refer to a qualified Steuerberater with agricultural expertise."
-- **R-AT-SVS-2: Disability pension interaction**. Trigger: receiving or applying for disability pension while self-employed. Message: "Disability pension interaction with GSVG contributions requires specialist review. Escalate to qualified Steuerberater."
-- **R-AT-SVS-3: Cross-border determination**. Trigger: working in multiple EU/EEA states or Switzerland. Message: "Cross-border social insurance determination requires A1 certificate analysis under EU Regulation 883/2004. Escalate to qualified adviser."
+**Final base and Nachbemessung (GSVG § 25 Abs 6, § 35 Abs 3).** Once the income tax assessment is in, the final base replaces the provisional one and the SVS recomputes pension and health. A back-payment is paid in the following year in four equal parts, each at the end of the second month of a quarter. For the first year of insurance and the next two, the client can apply (by 31 March) for twelve parts over three years. Accident insurance and the Selbständigenvorsorge follow the provisional base and are not re-assessed.
 
-### Prohibitions
+**Monthly charge.** pension = base x rate; health = base x 6.8%; accident = EUR 12.95; Selbständigenvorsorge = provisional health base x 1.53%. The full month is due for the month insurance starts (GSVG § 27 Abs 3).
 
-- **Prohibitions list**:
-  - NEVER compute SVS contributions without knowing the registration type.
-  - NEVER ignore the minimum and maximum contribution base; clamp to these bounds, except the GSVG base may fall below the minimum with ASVG insurance (Section 7).
-  - NEVER tell a new entrant that provisional pension contributions are final; Nachbemessung will occur, except a Gewerbetreibender's health base in the first two calendar years, which is fixed and not re-assessed.
-  - NEVER forget that accident insurance is a flat monthly amount, NOT percentage-based.
-  - NEVER state SVS contributions are NOT tax-deductible; compulsory GSVG contributions are deductible (Section 6).
-  - NEVER confuse the Versicherungsgrenze (Neue Selbständige), the SVS small business income limit (sole traders and FSVG doctors, on application) and the yearly minimum contribution base, even though all three are the same number in 2026 (Section 7).
-  - NEVER apply GSVG rules to farmers (BSVG) or to employed persons (ASVG).
-  - NEVER present SVS figures as final until the Einkommensteuerbescheid for that year is issued.
+**Selbständigenvorsorge.** Compulsory for everyone in compulsory GSVG health insurance, including Neue Selbständige. Not compulsory for opted-in health insurance or for freelancers insured under GSVG §§ 14a and 14b. Voluntary for freelancers insured only in pension insurance; they pay 1.53% of the provisional pension base. It stops the day before the client draws an own pension, unless the client agrees in writing within one month of the SVS notice to keep paying (BMSVG § 52 Abs 1a).
 
-## Section 3: Contribution base
+**Health contribution credit (GSVG § 27f, in force until 31 December 2027).** A person in GSVG health insurance on 31 May whose monthly health base on that day is EUR 2,900 or less gets a flat credit, tiered by base (EUR 90 for a base up to EUR 500, EUR 110 up to EUR 600, EUR 130 up to EUR 700, and so on in § 27f Abs 2). The last final base counts; without one, the provisional base. The SVS checks on 1 June and books the credit on the third quarter charge.
 
-Legislation: GSVG Section 25
+**ASVG job at the same time (GSVG § 35a).** Each base is set on its own, but all bases together cannot exceed the maximum base times the insured months. ASVG ranks first. The SVS cuts the GSVG pension and health base with a Differenzbeitragsvorschreibung and refunds any excess once all bases are final. Accident insurance stays a flat amount.
 
-### Provisional vs final base
+**Small business exemption (GSVG § 4 Abs 1 Z 7).** On application, a sole trader with a trade licence, or an FSVG doctor, is exempt from GSVG pension and health insurance (FSVG pension insurance for doctors) if yearly income from the activity is at most EUR 6,613.20 and turnover from all business is at most EUR 55,000. The applicant must also have been insured under the GSVG or FSVG for at most 12 of the last 60 months, or have reached the standard pension age, or be 57 or over and have met the limits in each of the last five years. Accident insurance stays. If the year's figures go over the limits, the SVS ends the exemption afterwards. The VAT small business exemption does not by itself change SVS obligations; only this application does.
 
-- **Provisional/final system**: Until the income tax assessment of a year exists, SVS charges on a provisional base. From year four, it is the third prior year's insurable income plus that year's pension and health contributions, revalued by the factor below and divided by months insured. New entrants (years 1 to 3): the provisional base is the minimum base.
+**Versicherungsgrenze (Neue Selbständige).** Not an exemption. Income at or under EUR 6,613.20 means no insurance, with no application, no turnover test and no age test. Until an assessment exists, insurance starts only if the client declares that income will exceed the limit. If the tax office later shows the limit was passed, the client pays the contributions and a 9.3% surcharge on pension and health. Reporting the excess within eight weeks of the income tax assessment avoids the surcharge. A client below the limit has no pension or health cover; they can opt in.
 
-**Provisional base from the fourth year: the SVS worked example**
+**Tax deduction.** Compulsory contributions to statutory health, accident and pension insurance are business expenses (EStG § 4 Abs 4 Z 1 lit a), deductible on top of the Basispauschalierung. With cash-basis accounts they are deducted in the year paid (EStG § 19 Abs 2), so a Nachbemessung payment is deducted in the year it is paid. Zusatzversicherung contributions are deductible too. Krankengeld and the Unterstützungsleistung are taxable business income.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal |
-| Insurable income 2023, incl. contributions charged, 10 insured months | EUR 32,000 | "32.000 ab versicherungspflichtigen Einkünften" |
-| Revalued total for 2026 (factor 1.181) | EUR 34,784 | "32.000 x 1,181" |
-| Provisional monthly base 2026 | EUR 3,478.40 | "(34.784 ÷ 10)" |
-| Revaluation factor 2026, applied to 2023 income | 1.181 | "Faktor 2026 : 1,181" |
+## Deadlines and filing
 
-### Contribution base formula
-
-- **Contribution base formula**: contribution_base = insurable income per the income tax assessment + pension and health contributions charged (vorgeschrieben) for the year + any voluntary unemployment insurance, additional insurance or co-insured-relative supplement, divided by months of compulsory insurance.
-- **Hinzurechnung, not a circular calculation**: The contributions added back are those SVS charged for that year (Sources list).
-
-### Gewerbetreibende vs Neue Selbständige
-
-**Gewerbetreibende vs Neue Selbständige**
-
-| Feature | Gewerbetreibende | Neue Selbständige |
-| --- | --- | --- |
-| Registration | Gewerbeberechtigung (trade licence) | No trade licence; freelancers, IT contractors, etc. |
-| Insurance obligation | Automatic on registration (small-business exemption on application, Section 7) | Only if yearly income exceeds the Versicherungsgrenze below, regardless of other work or a pension |
-| Health base, first two calendar years | Fixed at the minimum base, not re-assessed | Re-assessed like later years |
-| Selbständigenvorsorge | Due (share of the health base) | Due (share of the health base) |
-| Accident insurance | Mandatory | Mandatory once insurance obligation triggered |
-
-**Versicherungsgrenze for Neue Selbständige**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal |
-| Versicherungsgrenze 2026, per year, the same whether or not the client also has a job or a pension | EUR 6,613.20 | "6.613,20 jährlich" |
-| Surcharge on pension and health contributions if the tax office reveals the excess | 9.3% | "Beitragszuschlag in Höhe von 9,3 Prozent" |
-
-A client who ends up over the limit pays the insurance and Selbständigenvorsorge contributions later; the surcharge is avoided by reporting the excess within eight weeks of the income tax assessment.
-
-## Section 4: Rates and thresholds (2026)
-
-Legislation: GSVG Sections 25-27; SVS contribution values, 2026
-
-**Rates table**
-
-| Component | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816638 |
-| Pension insurance (Pensionsversicherung), GSVG | 18.5% | "beträgt der Beitragssatz in der Pensionsversicherung 18,50 Prozent" |
-| Health insurance (Krankenversicherung), GSVG | 6.8% | "in der Krankenversicherung 6,8 Prozent" |
-| Pension insurance, FSVG | 20% | "beträgt der Beitragssatz in der Pensionsversicherung 20 Prozent" |
-| Accident insurance (Unfallversicherung), fixed per month | EUR 12.96 | "12,96 monatlich" |
-| Selbständigenvorsorge, share of the provisional health base | 1.53% | "Selbständigenvorsorge beträgt 1,53 Prozent" |
-| Minimum monthly base, first three years (pension and health) | EUR 551.10 | "551,10 monatlich in der Pensionsversicherung" |
-
-An FSVG-only freelancer who chooses the Selbständigenvorsorge pays the same share of the provisional pension base instead.
-
-**Thresholds table**
-
-| Threshold | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal |
-| Maximum contribution base, per year | EUR 97,020.00 | "97.020,00" |
-| Minimum contribution base, per year of full insurance (twelve times the monthly minimum; for fewer insured months the monthly minimum applies per month) | EUR 6,613.20 | "6.613,20 begrenzt" |
-| Fixed health base, Gewerbetreibende, first two calendar years, per month | EUR 551.10 | "Wert 2026" |
-
-The monthly minimum and maximum are in the Section 1 table.
-
-### Voluntary higher health coverage (Krankengeld opt-in)
-
-Legislation: GSVG Zusatzversicherung (section number not confirmed on an allowed page)
-
-**Krankengeld opt-in table**
-
-| Option | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal |
-| Zusatzversicherung, share of the provisional health base | 2.5% | "Zusatzversicherung beträgt 2,5 Prozent" |
-| Minimum monthly contribution | EUR 30.77 | "Mindestbeitrag" |
-| Maximum monthly contribution | EUR 202.13 | "202,13 monatlich" |
-
-**Krankengeld and Unterstützungsleistung amounts**
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal |
-| Krankengeld, share of daily contribution base | 60% | "Ihrer täglichen Beitragsgrundlage" |
-| Krankengeld, daily minimum | EUR 11.02 | "11,02" |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal |
-| Unterstützungsleistung per day, not income-related | EUR 40.04 | "40,04 (Wert 2026 )" |
-
-- **Krankengeld opt-in details**: Zusatzversicherung Krankengeld runs from day 4 of incapacity for at most 26 weeks, after a six-month wait (waived after a post-application work accident). It must start before age 60, begins the month after application (or with compulsory insurance if applied within four weeks of the notice), and is not re-assessed. Separately, with no opt-in, the Unterstützungsleistung pays from day 4 once incapacity exceeds 42 days, for at most 20 weeks, to owners with fewer than 25 staff whose business depends on their own work. Both benefits are taxable business income.
-
-## Section 5: Computation steps
-
-Legislation: GSVG Sections 25-27
-
-### Step 5.1: Determine provisional monthly contribution base
-
-- **Provisional base formula**: IF new_entrant (years 1 to 3): provisional_base = minimum_contribution_base (Section 1). ELSE: provisional_base = (income_of_third_prior_year + contributions_charged_that_year) x revaluation factor / months_insured_that_year (Section 3). provisional_base = clamp(provisional_base, minimum_base, maximum_base). The client may apply to lower or raise it (EC3).
-
-### Step 5.2: Compute monthly contributions
-
-- **Monthly contributions formula**: pension_monthly = provisional_base x pension rate; health_monthly = provisional_base x health rate; accident_monthly = fixed accident amount; vorsorge_monthly = provisional health base x Selbständigenvorsorge rate; total_monthly = sum of the four (rates and the accident amount are in the Section 4 rates table). The full monthly contribution is due even if the activity starts mid-month (Sources list).
-
-### Step 5.3: Compute quarterly payment
-
-- **Quarterly payment formula**: quarterly_payment = total_monthly x 3
-
-### Step 5.4: Final reconciliation (Nachbemessung)
-
-- **Final reconciliation formula**: final_base_monthly = (insurable income per the assessment + pension and health contributions charged for the year) / months insured, clamped to the minimum and maximum base; recompute pension and health at the same rates. adjustment = final minus provisional contributions. IF positive: Nachbelastung, in four instalments from next year's first quarter if still insured (twelve quarters on application in the first three years). IF negative: Gutschrift. Accident insurance, Selbständigenvorsorge, and a Gewerbetreibender's first-two-calendar-year health base are NOT re-assessed (Sources list).
-
-## Section 6: Payment schedule and tax deductibility
-
-Legislation: GSVG Section 35; EStG Section 4(4)
-
-### Payment schedule
-
-**Payment schedule table**
-
-| Quarter | Covers | Due date |
-| --- | --- | --- |
+| Quarter | Covers | Due |
+|---|---|---|
 | Q1 | January to March | 28 February (29 in a leap year) |
 | Q2 | April to June | 31 May |
 | Q3 | July to September | 31 August |
 | Q4 | October to December | 30 November |
 
-Source for the due dates: https://www.svs.at/cdscontent/?contentid=10007.816647&portal=svsportal
+The quarterly charge is due at the end of the second month of the quarter (GSVG § 35 Abs 2; SVS https://www.svs.at/cdscontent/?contentid=10007.816647&portal=svsportal). Contributions charged after the tax office reports income fall due at the end of the second month of the quarter in which they are charged. There is no return to file: the SVS takes income from the tax office's assessment. A Neuer Selbständiger who expects to pass the Versicherungsgrenze declares it to the SVS (GSVG § 2 Abs 1 Z 4).
 
-- **Late payment and Vorschreibung notes**: If unpaid within 18 days of the due date, SVS sends a reminder and charges late interest (Verzugszinsen) from the 16th day after the due date; no allowed page prints the rate. SVS can offer a lower provisional base, a payment plan or deferral (Sources list).
+## Penalties and interest
 
-### Tax deductibility
+- **Late payment interest (GSVG § 35)**: due when contributions are not paid within 15 days of the due date (a payment within three days after that has no consequence). The rate is the base rate (Basiszinssatz) on 31 October of the prior year plus four percentage points. The base rate on 31 October 2025 was 1.53%, so the 2026 rate is 5.53% (OeNB, as in [at-income-tax](at-income-tax.md)).
+- **9.3% surcharge (GSVG § 35)**: on pension and health contributions where insurance is found only after the tax assessment, unless the client declared or reported in time.
+- **Enforcement (GSVG § 37)**: the SVS can collect arrears by administrative enforcement. It can also agree a payment plan or a deferral on request.
 
-**Tax deductibility table**
+## Cross-border points
 
-| Question | Answer |
-| --- | --- |
-| Are SVS contributions deductible from taxable income? | YES; GSVG contributions are deductible separately, even under the flat-rate expense method (USP Basispauschalierung page, Sources) |
-| Which contributions are deductible? | Compulsory GSVG and Selbständigenvorsorge contributions (same page). Zusatzversicherung contributions too (SVS) |
-| When are they deductible? | Legacy text: in the year paid; not confirmed on an allowed page (Section 11) |
-| Does the Nachbemessung payment also get deducted? | Legacy text: yes, in the year paid; not confirmed on an allowed page (Section 11) |
+- Under Regulation (EC) 883/2004 only one state's social security law applies at a time. A person employed in another state and self-employed in Austria is insured in the state of employment; Austria is free. A person employed in Austria and self-employed abroad is insured in Austria, and the SVS asks for the foreign tax assessment.
+- Work in two or more states needs an A1 determination. Refer to [at-cross-border](at-cross-border.md).
+- Foreign pensions comparable to Austrian ones have their own health contribution rule (GSVG § 29a); not covered here.
 
-## Section 7: Special regimes and concurrent activity
+## Worked examples
 
-### Kleinstunternehmerregelung (small business exemption)
+**Example 1. New trade licence holder, first year, minimum base.** A sole trader starts a trade in January 2026 with no GSVG insurance in the last 120 months. She has no 2023 base, so the provisional base is the minimum, EUR 551.10. The health base is fixed for 2026 and 2027. Each month she pays pension at 18.5%, health at 6.8%, accident EUR 12.95 and the Selbständigenvorsorge at 1.53%. The quarter is three months. Pension will be re-assessed when her 2026 assessment arrives; health will not.
 
-- **Kleinstunternehmerregelung rule**: The VAT small business exemption (see the Austrian VAT Guide) does not itself change SVS obligations. SVS has its own exemption from GSVG pension and health insurance (or FSVG pension insurance) for sole traders and FSVG doctors, on application. Both limits in the table below must be met: income from the self employed activity AND turnover from all business activities. Age conditions: under 57, the client may not have been compulsorily insured under the GSVG or FSVG for more than twelve months in the last 60 calendar months; from 57 until the women's standard pension age, the limits must have been met in the last five calendar years; from that age, the limits apply to the current year. Not available to Neue Selbständige (they use the Versicherungsgrenze) or to partners. Accident insurance stays. It starts at the earliest on 1 January of the application year, never retroactively; SVS checks it later against the tax assessments.
+```oa-check
+name: Austria new Gewerbetreibender on the 2026 minimum base, monthly and quarterly SVS charge
+inputs:
+  min_base: 551.10
+  accident: 12.95
+steps:
+  - pension: min_base * 0.185
+  - health: min_base * 0.068
+  - vorsorge: min_base * 0.0153
+  - monthly_total: pension + health + accident + vorsorge
+  - quarterly: monthly_total * 3
+expected:
+  pension: 101.95
+  health: 37.47
+  vorsorge: 8.43
+  monthly_total: 160.81
+  quarterly: 482.43
+```
 
-**SVS small business exemption limits**
+**Example 2. Established consultant, provisional base and Nachbemessung.** A Neuer Selbständiger was insured all of 2023 with bases (income plus contributions charged) of EUR 40,000. His 2026 provisional base is 40,000 x 1.181 / 12 = EUR 3,936.67 a month, under the maximum. His 2026 assessment shows profit of EUR 50,000. The final base adds the pension and health contributions charged in 2026, giving a monthly base under the maximum. The extra pension and health is paid in 2027 in four quarterly parts.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal |
-| Yearly income limit 2026 | EUR 6,613.20 | "Einkommensgrenze" |
-| Yearly turnover limit 2026 | EUR 55,000.00 | "Umsatzgrenze" |
-
-The same yearly number serves three separate rules in 2026. (a) Versicherungsgrenze: a Neuer Selbständiger with yearly income at or below it is not insured at all; no application is needed, and there is no turnover test and no age test. (b) SVS small business exemption: a sole trader or FSVG doctor at or below it, and at or below the turnover limit, who meets the age and prior insurance conditions, may apply to leave pension and health insurance; accident insurance stays. (c) Minimum contribution base: an insured person whose income is lower still pays on this base. Never apply one rule's consequence to another rule's group.
-
-Conditions: https://www.svs.at/cdscontent/?contentid=10007.846813&portal=svsportal
-
-### Concurrent ASVG employment (Differenzvorschreibung)
-
-- **Concurrent ASVG employment rule**: Client is employed (ASVG) and self-employed (GSVG); each base is computed separately, but the combined bases for the year are capped at the monthly maximum base times total months of compulsory insurance, for pension AND health. If the cap is (expected to be) exceeded, SVS automatically issues a Differenzbeitragsvorschreibung: ASVG ranks first, so the GSVG base is set low enough to keep the total under the cap. Checked again once all bases are final, which can mean back-payments or refunds. The GSVG base may also fall below the GSVG minimum: if the ASVG base already reaches it, a client with a loss or no assessment pays no GSVG pension or health contributions. For health benefits the client picks which insurer to claim from. The Selbständigenvorsorge is then computed on the reduced (Differenz) base (Sources list).
-
-### Retirement while self-employed
-
-- **Retirement while self-employed rule**: Client drawing a pension but continuing self-employment: legacy text says GSVG pension contributions continue and add to entitlements, and health insurance depends on the coverage choice. Not confirmed on an allowed page. Confirm with SVS before advising. The compulsory Selbständigenvorsorge stops automatically once the client draws an own pension (https://www.svs.at/selbstaendigenvorsorge).
-
-## Section 8: Edge case registry
-
-### EC1: New entrant in first 3 years
-
-Situation: Client started self-employment 18 months ago, no prior tax assessment available.
-Resolution: Provisional base = minimum contribution base (Section 1), plus the Selbständigenvorsorge share. Warn the client: pension will be re-assessed, and high income means a large back-payment. For a Gewerbetreibender the health base of the first two calendar years stays fixed; a July start keeps it fixed for 18 months, because the rule counts calendar years.
-
-### EC2: Income below insurance threshold (Neue Selbständige)
-
-Situation: Freelancer expects income below the Versicherungsgrenze and has no other employment.
-Resolution: Below the Versicherungsgrenze (Section 3), there is no GSVG compulsory insurance, whether or not the client has other work or a pension. A client can declare at registration that they will stay below it, and may opt into health and accident cover; SVS checks actual income later. A client outside insurance has NO health or pension coverage: flag this.
-
-### EC3: Opting to increase provisional base
-
-Situation: Client knows current-year income will be much higher than in the third prior year.
-Resolution: The client can apply to raise the provisional base (Hinaufsetzung) up to the maximum, stating the expected final base; this avoids a large Nachbemessung later. SVS warns: an over-estimate creates a large credit, and a raised base can become final for the pension if a pension starts first. A founder can also apply, at the latest with the pension application, to raise the first three calendar years' pension base to the maximum (Hinaufsetzung pages, Sources list).
-
-### EC4: Multiple activities
-
-Situation: Client has a Gewerbeberechtigung AND freelance (Neue Selbständige) income.
-Resolution: Legacy text: all self-employed income combines into one GSVG contribution base, with no double insurance obligation; not confirmed on an allowed page for this refresh (Section 11). Flag if activities fall under different regimes (GSVG vs FSVG).
-
-### EC5: Cross-border EEA worker
-
-Situation: Client lives in Austria but performs work in Germany.
-Resolution: Under EU Regulation 883/2004, social insurance is generally due in only one member state. Self-employed in Austria and employed abroad: the country of employment's law applies and Austria is insurance-free. Employed in Austria and self-employed abroad: Austrian law applies and SVS asks for the foreign tax assessment (Sources list). Other combinations need an A1 certificate determination; escalate to reviewer.
-
-## Section 9: Reviewer escalation protocol
-
-When a situation requires reviewer judgement:
-
-~~~
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified Steuerberater must confirm before advising client.
-~~~
-
-When a situation is outside Guide scope:
-
-~~~
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside Guide scope]
-Action Required: Do not advise. Refer to qualified Steuerberater. Document gap.
-~~~
-
-## Section 10: Test suite
-
-### Test 1: New entrant, minimum base
-
-Input: Gewerbetreibender, year 1, no prior income data.
-Expected output: Minimum base. Pension and health as printed in Section 1; accident from the Section 4 rates table (see Section 11 on the two printed accident values); plus Selbständigenvorsorge. Health is final for the first two calendar years; pension is re-assessed.
-
-### Test 2: Established self-employed, mid-range income
-
-Input: Gewerbetreibender, fourth year or later, the SVS example in Section 3.
-Expected output: Provisional base as in that table; apply the Section 4 rates, accident amount and Selbständigenvorsorge. Quarterly charge = three months.
-
-### Test 3: High income, maximum base applies
-
-Input: Gewerbetreibender with income well above the maximum base.
-Expected output: Base capped at the maximum. Pension and health as printed in Section 1; accident from the Section 4 rates table (see Section 11 on the two printed accident values); plus Selbständigenvorsorge.
-
-### Test 4: Neue Selbständige below threshold
-
-Input: Freelance income below the Versicherungsgrenze, no other employment.
-Expected output: No GSVG obligation. Flag: no social insurance cover unless the client opts in. Same answer if also employed.
-
-### Test 5: Concurrent employment
-
-Input: Employed (ASVG) and self-employed (GSVG), combined bases over the yearly cap.
-Expected output: Differenzbeitragsvorschreibung. ASVG ranks first; the GSVG pension AND health base is cut to keep the total within the cap. Reviewed once all bases are final. Accident insurance is a flat amount.
-
-### Test 6: Nachbemessung scenario
-
-Input: Gewerbetreibender on the minimum base in year 1; the assessment shows income far above it.
-Expected output: Pension re-assessed; back-payment in four quarterly instalments from next year's first quarter, or twelve quarters on application. Health, accident and Selbständigenvorsorge NOT re-assessed.
-
-### Test 7: Krankengeld opt-in
-
-Input: GSVG self-employed, under 60, opts into the Zusatzversicherung.
-Expected output: Extra contribution at the Section 4 rate, within its minimum and maximum. Krankengeld from day 4 after a six-month wait. "Day 43" belongs to the separate Unterstützungsleistung.
-
-## The method, step by step
-
-1. Establish which law covers the client: Gewerbetreibender (automatic, trade licence), Neuer Selbständiger (only above the Versicherungsgrenze) or FSVG freelancer; check the small business exemption and Versicherungsgrenze first (Sections 3 and 7).
-2. Fix the provisional base: the minimum base in the first three years (Section 4); from year four, third-prior-year income plus contributions, revalued, divided by months insured (Section 3).
-3. Apply the rates and fixed accident amount, add Selbständigenvorsorge, and cap at the maximum base; allow for the Differenzbeitragsvorschreibung with ASVG employment (Section 7).
-4. Pay the quarterly Beitragsvorschreibung by the Section 6 due dates; consider applying to raise or lower the provisional base if income differs a lot.
-5. On the year's income tax assessment, SVS finalises the base and re-assesses pension and health (Nachbemessung), with the Section 5.4 exceptions.
-6. Deduct the compulsory contributions as business expenses (Section 6).
+```oa-check
+name: Austria Neuer Selbstaendiger, 2026 provisional base from 2023 and Nachbemessung
+inputs:
+  base_2023: 40000
+  months_2023: 12
+  profit_2026: 50000
+  accident: 12.95
+steps:
+  - prov_base: round(base_2023 * 1.181 / months_2023, 2)
+  - pension: prov_base * 0.185
+  - health: prov_base * 0.068
+  - vorsorge: prov_base * 0.0153
+  - monthly_total: pension + health + accident + vorsorge
+  - quarterly: monthly_total * 3
+  - charged_ph_year: (pension + health) * 12
+  - final_base_year: min(profit_2026 + charged_ph_year, 97020)
+  - final_ph_year: final_base_year * 0.253
+  - back_payment: final_ph_year - charged_ph_year
+  - instalment_2027: back_payment / 4
+expected:
+  prov_base: 3936.67
+  monthly_total: 1069.16
+  quarterly: 3207.48
+  charged_ph_year: 11951.73
+  final_base_year: 61951.73
+  back_payment: 3722.06
+  instalment_2027: 930.51
+```
 
 ## Ask the client first
 
-- Do you hold a trade licence (Gewerbeberechtigung), or are you a freelancer, or a doctor, pharmacist, patent attorney or civil engineer?
-- In which year did your compulsory SVS insurance start (the first two calendar years fix the health base for trade licence holders; the first three set the provisional base)?
-- What was your income in 2023, and what income do you expect this year?
+- Do you hold a trade licence, are you a freelancer without one, or are you a doctor, pharmacist, patent attorney or civil engineer?
+- When did your SVS insurance start, and were you insured under the GSVG in the 120 months before?
+- What were your SVS bases in 2023, and what profit do you expect for 2026?
 - Are you also employed, or do you draw a pension?
-- If you have no trade licence: will your yearly income stay under the Versicherungsgrenze? (Neue Selbständige only; there is no turnover test.)
-- If you are a sole trader with a trade licence or a doctor under the FSVG: will your yearly income and your turnover stay under both SVS small business limits, and do you meet the age and prior insurance conditions? (Only on application.)
-- Do you work in another EU/EEA country or Switzerland?
-
-## When to refuse or refer
-
-- Farmers and agricultural side activities (BSVG): out of scope.
-- FSVG freelancers beyond the pension rate in Section 4.
-- Disability pension, or any pension drawn alongside self-employment.
-- Work in more than one EU/EEA state or Switzerland (A1 determination).
-- Sale or restructuring gains that SVS may deduct from the base on application.
-- Arrears, enforcement or deferral requests.
-
-## Section 11: For the accountant who adopts this Guide
-
-- Accident insurance: SVS web pages print EUR 12.96 a month for 2026; the contribution sheet prints EUR 12.95 (both tables above). Confirm which SVS charges.
-- Legislation references (GSVG Sections 25-27, 27a, 28a, 35, ASVG Section 74, BMSVG Sections 52-53) are legacy and could not be checked; RIS is not an allowed host.
-- Timing of the tax deduction (year of payment), the treatment of Nachbemessung payments, combining several self-employed activities into one base (EC4), and the retirement rule (Section 7) are legacy statements not confirmed on an allowed page.
+- If you have no trade licence: will your 2026 income stay at or under EUR 6,613.20?
+- If you are a sole trader or an FSVG doctor: will income stay at or under EUR 6,613.20 and turnover from all business at or under EUR 55,000, and do you meet the prior insurance or age condition?
+- Do you work in another EU/EEA state or Switzerland?
+- Do you want Krankengeld cover (Zusatzversicherung)?
 
 ## Sources
 
-- https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252
-- https://www.svs.at/cdscontent/?contentid=10007.816638
-- https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816610&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816715&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.846813&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816647&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816712&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816650&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816651&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816720&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.849620&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816694&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal
-- https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal
-- https://www.svs.at/selbstaendigenvorsorge
-- https://www.usp.gv.at/themen/mitarbeiter-und-gesundheit/beendigung-des-arbeitsverhaeltnisses/weitere-informationen-beendigung/pflichtmodell-fuer-gewerbetreibende-und-neue-selbststaendige.html
-- https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html
+| Source | URL | Read on |
+|---|---|---|
+| GSVG (§§ 2, 4, 25, 25a, 27, 27f, 35, 35a, 37), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008422 | 2026-10-26 |
+| ASVG (§ 5 Abs 2, § 74 Abs 1 accident amount 2026, § 108a Aufwertungszahlen), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 | 2026-10-26 |
+| BSVG (farmers, out of scope), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008431 | 2026-10-26 |
+| EStG 1988 (§ 4 Abs 4 Z 1 lit a, § 19 Abs 2), RIS | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
+| SVS, contribution sheet 2026 (VS-016) | https://www.svs.at/cdscontent/load?contentid=10008.763406&version=1672393252 | 2026-10-26 |
+| SVS, provisional calculation in the first three years (rates) | https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal | 2026-10-26 |
+| SVS, provisional calculation from year four (factor 1.181) | https://www.svs.at/cdscontent/?contentid=10007.816634&portal=svsportal | 2026-10-26 |
+| SVS, final calculation (minimum and maximum per year) | https://www.svs.at/cdscontent/?contentid=10007.816635&portal=svsportal | 2026-10-26 |
+| SVS, Versicherungsgrenze and 9.3% surcharge | https://www.svs.at/cdscontent/?contentid=10007.816855&portal=svsportal | 2026-10-26 |
+| SVS, 2026 values and limits | https://www.svs.at/cdscontent/?contentid=10007.816718&portal=svsportal | 2026-10-26 |
+| SVS, small business exemption conditions | https://www.svs.at/cdscontent/?contentid=10007.846813&portal=svsportal | 2026-10-26 |
+| SVS, due dates | https://www.svs.at/cdscontent/?contentid=10007.816647&portal=svsportal | 2026-10-26 |
+| SVS, Zusatzversicherung | https://www.svs.at/cdscontent/?contentid=10007.816678&portal=svsportal | 2026-10-26 |
+| SVS, Krankengeld | https://www.svs.at/cdscontent/?contentid=10007.816735&portal=svsportal | 2026-10-26 |
+| SVS, Unterstützungsleistung | https://www.svs.at/cdscontent/?contentid=10007.816734&portal=svsportal | 2026-10-26 |
+| BMSVG § 52 (Selbständigenvorsorge rate, base, end on own pension), RIS | https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40210216/NOR40210216.html | 2026-10-26 |
+| SVS, Selbständigenvorsorge | https://www.svs.at/selbstaendigenvorsorge | 2026-09-22 |
+| OeNB, base rate (Basiszinssatz) | https://www.oenb.at/isawebstat/stabfrage/createReport?report=2.1&lang=DE | 2026-10-24 |
+| USP, Basispauschalierung (SVS deductible on top) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html | 2026-10-24 |
 
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-> Contributed by OpenAccountants.
+Not yet confirmed: the Selbständigenvorsorge scope for opted-in and pension-only freelancers (BMSVG § 52a not read); the SVS worked example on contentid 10007.816634 prints 32,000 x 1.181 = 34,784, which is arithmetically wrong (it is 37,792), so this skill does not use it; whether the § 27f credit was booked in Q3 2026; the old version's Krankengeld terms (day 4, 26 weeks, six-month wait, start before 60) and the Unterstützungsleistung from day 43, kept out of the rates table and not re-read; the retirement rule (GSVG pension contributions continue alongside a pension); the registration deadline and the right to pay by monthly direct debit (in the old version, not re-read).
 
 <!-- openaccountants-cta-block -->
 
