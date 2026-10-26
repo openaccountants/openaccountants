@@ -42,15 +42,20 @@ This skill turns a business's bank statement and invoices into the Austrian VAT 
 | No UVA to file if prior-year turnover did not exceed, and the payment is made in full on time or there is none (UVA regulation) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 |
 | Cash basis (Ist) for other businesses if total turnover in one of the two prior years was not above (§ 17 Abs 2 Z 2) | EUR 110,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Cash-basis business deducts input VAT only once paid, unless prior-year turnover exceeded (§ 12 Abs 1 Z 1) | EUR 2,000,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| EU-wide distance sales and e-services below which the place of supply stays in the supplier's member state (Art. 3 Abs 5 Binnenmarkt) | EUR 10,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004929 |
+| Annual return on paper allowed for a self-filer whose prior-year turnover did not exceed (no UVA duty; § 2 FinanzOnline-Erklärungsverordnung) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 |
+| Car reasonableness limit, gross purchase cost incl. VAT and NoVA (§ 1 PKW-Angemessenheitsverordnung) | EUR 40,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003797 |
+| Business meals with a documented advertising purpose: deductible for income tax (§ 20 Abs 1 Z 3 EStG) | 50% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 |
 | Minimum business use for a purchase to count as made for the business (§ 12 Abs 2) | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Simplified invoice allowed up to this gross total (§ 11 Abs 6) | EUR 400 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Domestic invoice must also show the customer's UID if the gross total exceeds (§ 11 Abs 1) | EUR 10,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Car input VAT allowed if used at least this much for commercial passenger transport or rental (§ 12 Abs 2 Z 2 lit b) | 80% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Reverse charge on mobile phones, chips, tablets and laptops if the invoiced consideration is at least (§ 19 Abs 1e) | EUR 5,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
-| First late-payment surcharge (§ 217 Abs 2 BAO) | 2% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
+| First late-payment surcharge (§ 217 Abs 2 BAO); none below EUR 50 (§ 217 Abs 10) | 2% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
 | Second and third late-payment surcharge, each (§ 217 Abs 3 BAO) | 1% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
 | Late-filing surcharge, up to (§ 135 BAO); none below EUR 50 | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
 | VAT interest (Umsatzsteuerzinsen, § 205c BAO), per year above the base rate; none below EUR 50 | 2% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 |
+| OeNB base rate (Basiszinssatz) from 16 September 2026, so VAT interest is 4.03% a year | 2.03% | 2026 | https://www.oenb.at/isawebstat/stabfrage/createReport?lang=DE&report=2.1 |
 | Late ZM: surcharge up to 1% of reportable amounts, capped at (Art. 21 Abs 10 Binnenmarkt) | EUR 2,200 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004929 |
 
 The rates in § 10 apply in a strict order: 4.9% first, then 10%, then 13%. The 4.9% rate applies only where the goods fall wholly under a combined-nomenclature heading listed in Anlage 3. It never applies to services, so restaurant sales and catering stay at 10% ([BMF food rate page](https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html)). For any item not named here, take the rate from § 10 and its annexes, not from memory.
@@ -85,8 +90,8 @@ Worked tolerance check (2026): sales January to October EUR 54,500, a November o
 ### Input VAT (§ 12 UStG)
 
 - Deductible on a proper invoice for a supply to the business, used at least 10% for business. Cash-basis businesses under EUR 2,000,000 deduct only once they have paid.
-- **Cars, estate cars and motorcycles:** no input VAT on purchase, lease or running costs, even at full business use (§ 12 Abs 2 Z 2 lit b). Exceptions: driving school cars, demonstration cars, cars held for resale, cars used at least 80% for commercial passenger transport or rental, vans on the BMF list, and zero-emission cars within the reasonableness cap.
-- **Business meals:** default block. Deduct only if the client documents an advertising purpose that far outweighs everything else.
+- **Cars, estate cars and motorcycles:** no input VAT on purchase, lease or running costs, even at full business use (§ 12 Abs 2 Z 2 lit b). Exceptions: driving school cars, demonstration cars, cars held for resale, cars used at least 80% for commercial passenger transport or rental, vans on the BMF list, and zero-emission cars (§ 12 Abs 2 Z 2a), within the EUR 40,000 reasonableness limit.
+- **Business meals:** default block. If the client proves the meal serves advertising and the business purpose far outweighs everything else, half is deductible for income tax (§ 20 Abs 1 Z 3 EStG). The cost is then not mainly non-deductible, so § 12 Abs 2 Z 2 lit a does not block the input VAT, and it is deducted in full.
 - **Travel services bought in for resale** to travellers: no input VAT.
 - **Change of use of a capital asset** is corrected under § 12 Abs 10 and 11 in KZ 063. For land the period is the 19 years after the year of first use, one twentieth a year.
 - Unknown VAT status or business share: no deduction until the client answers.
@@ -162,7 +167,7 @@ Conservative defaults when the client cannot answer: unknown counterparty countr
 - **UVA and payment:** by the 15th of the second month after the period (§ 21 Abs 1). Quarterly: 15 May, 15 August, 15 November, 15 February. A due date on a Saturday, Sunday, public holiday, Good Friday or 24 December moves to the next working day ([BMF deadlines page](https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html)).
 - **Period:** monthly if prior-year turnover exceeded EUR 100,000, otherwise quarterly. A quarterly filer can choose monthly for the whole year by filing the January UVA on time (§ 21 Abs 2).
 - **No UVA filing** if prior-year turnover did not exceed EUR 55,000 and the payment is made in full on time, or there is none. The business still prepares a statement of the bases on the official form and keeps it with its records, unless the period shows neither a payment nor a refund (§ 21 Abs 1 and the UVA regulation). A refund is claimed only by filing.
-- **Filing route:** electronically through FinanzOnline; paper only where electronic filing is unreasonable for lack of technical means. Keep a copy of every UVA.
+- **Filing route:** electronically through FinanzOnline. Paper only where the filer has no internet access, or, for a self-filed annual return, where prior-year turnover did not exceed EUR 55,000 (§ 2 FinanzOnline-Erklärungsverordnung). Keep a copy of every UVA.
 - **Correcting a UVA:** a corrected UVA filed by the due date counts as the UVA itself (§ 21 Abs 1). Later, correct in the annual return or with a self-disclosure.
 - **ZM:** by the end of the month after each calendar month, or after each quarter for quarterly UVA filers (Art. 21 Abs 3 Binnenmarkt). It covers intra-EU supplies of goods, transfers under call-off stock, and general-rule B2B services where the customer owes the tax. A wrong ZM must be corrected within one month of discovery.
 - **Annual U 1:** 30 April of the next year on paper, 30 June through FinanzOnline ([USP filing page](https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html)). A business represented by a tax adviser files later under the quota system (§ 134a BAO). A small business with turnover up to EUR 55,000 and no tax to pay files no annual return (§ 21 Abs 6). An additional amount from the assessment does not get a new due date (§ 21 Abs 5).
@@ -170,9 +175,9 @@ Conservative defaults when the client cannot answer: unknown counterparty countr
 
 ## Penalties and interest
 
-- **Late payment (§ 217 BAO):** 2% of the unpaid amount. A further 1% if still unpaid three months after it became enforceable, and another 1% three months later. No first surcharge if the delay is at most five days and everything was paid on time in the previous six months.
+- **Late payment (§ 217 BAO):** 2% of the unpaid amount. A surcharge below EUR 50 is not set (§ 217 Abs 10). A further 1% if still unpaid three months after it became enforceable, and another 1% three months later. No first surcharge if the delay is at most five days and everything was paid on time in the previous six months.
 - **Late filing (§ 135 BAO):** up to 10% of the self-computed tax, if the delay is not excusable. Not set below EUR 50.
-- **VAT interest (§ 205c BAO):** 2% a year above the base rate, on refunds from the 91st day after the UVA arrives, and on additional tax from the 91st day after the UVA due date (from 1 October of the next year where the additional tax comes from the annual return). Not set below EUR 50.
+- **VAT interest (§ 205c BAO):** 2% a year above the base rate (2.03% from 16 September 2026, so 4.03%), on refunds from the 91st day after the UVA arrives, and on additional tax from the 91st day after the UVA due date (from 1 October of the next year where the additional tax comes from the annual return). Not set below EUR 50.
 - **Late ZM:** surcharge up to 1% of the reportable amounts, at most EUR 2,200 (Art. 21 Abs 10 Binnenmarkt).
 - **Self-disclosure (§ 29 FinStrG):** protects only if made before investigations start, with the bases fully disclosed and the tax paid within a month. Made after an audit is announced, it also needs an extra charge of 5% of the additional tax, 15% above EUR 33,000, 20% above EUR 100,000 and 30% above EUR 250,000 (§ 29 Abs 6).
 - **Shortfall surcharge (§ 30a FinStrG):** in an audit, the tax office can impose 10% of the additional tax (15% above EUR 50,000) instead of a criminal case, if the additional tax is at most EUR 33,000 a year and EUR 100,000 in total. The taxpayer agrees within 14 days, waives an appeal and pays within one month.
@@ -196,7 +201,7 @@ An IT consultancy in Vienna on normal taxation, monthly filer (2025 turnover EUR
 - KZ 057: 1,000 x 20% = 200; the same 200 in KZ 066.
 - KZ 060: 2,400.
 - KZ 095: 6,000 + 200 - 200 - 2,400 = 3,600, due 15 November 2026. 15 November is a Sunday, so it moves to Monday 16 November.
-- ZM for September: 12,000 to the German UID, due 31 October 2026.
+- ZM for September: 12,000 to the German UID. Due 31 October 2026, a Saturday, and 1 November is a Sunday and a holiday, so it moves to Monday 2 November 2026 (§ 108 Abs 3 BAO).
 
 ```oa-check
 name: Vienna IT consultancy, September 2026 UVA with reverse charge and ZM
@@ -221,19 +226,19 @@ expected:
 
 ### Example 2: grocer, Q3 2026 with the new 4.9% rate, paid late
 
-A grocer in Graz, quarterly filer. Q3 2026 (July to September), the first quarter of the new rate: Anlage 3 basic foods EUR 20,000 net at 4.9%; other food EUR 10,000 at 10%; household goods EUR 5,000 at 20%; input VAT EUR 1,500. The payment due 16 November 2026 (15 November is a Sunday) is made on 10 December 2026, more than five days late, so the first 2% surcharge applies.
+A grocer in Graz, quarterly filer. Q3 2026 (July to September), the first quarter of the new rate: Anlage 3 basic foods EUR 60,000 net at 4.9%; other food EUR 30,000 at 10%; household goods EUR 15,000 at 20%; input VAT EUR 4,500. The payment due 16 November 2026 (15 November is a Sunday) is made on 10 December 2026, more than five days late, so the first 2% surcharge applies.
 
-- KZ 124: 20,000 x 4.9% = 980. KZ 029: 10,000 x 10% = 1,000. KZ 022: 5,000 x 20% = 1,000.
-- Output VAT 2,980, less input VAT 1,500: KZ 095 is 1,480.
-- Surcharge: 1,480 x 2% = 29.60.
+- KZ 124: 60,000 x 4.9% = 2,940. KZ 029: 30,000 x 10% = 3,000. KZ 022: 15,000 x 20% = 3,000.
+- Output VAT 8,940, less input VAT 4,500: KZ 095 is 4,440.
+- Surcharge: 4,440 x 2% = 88.80. It is at least EUR 50, so it is set (§ 217 Abs 10 BAO).
 
 ```oa-check
 name: Graz grocer, Q3 2026 UVA at 4.9%, 10% and 20%, paid late
 inputs:
-  food_anlage3: 20000
-  food_other: 10000
-  standard_goods: 5000
-  input_vat: 1500
+  food_anlage3: 60000
+  food_other: 30000
+  standard_goods: 15000
+  input_vat: 4500
 steps:
   - vat_49: food_anlage3 * 49 / 1000
   - vat_10: food_other * 10 / 100
@@ -242,12 +247,12 @@ steps:
   - kz095: output_vat - input_vat
   - surcharge: round(kz095 * 2 / 100, 2)
 expected:
-  vat_49: 980
-  vat_10: 1000
-  vat_20: 1000
-  output_vat: 2980
-  kz095: 1480
-  surcharge: 29.60
+  vat_49: 2940
+  vat_10: 3000
+  vat_20: 3000
+  output_vat: 8940
+  kz095: 4440
+  surcharge: 88.80
 ```
 
 ## Ask the client first
@@ -265,15 +270,19 @@ expected:
 |---|---|---|
 | Umsatzsteuergesetz 1994, §§ 1, 3a, 6, 10, 11, 12, 16, 17, 19, 20, 21, 27, 28 (version of 26.10.2026) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 | 2026-10-26 |
 | UStG 1994, Anhang (Binnenmarkt), Art. 6, 6a, 21 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004929 | 2026-10-26 |
-| Bundesabgabenordnung, §§ 134, 134a, 135, 205c, 217 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-24 |
+| Bundesabgabenordnung, §§ 108, 134, 134a, 135, 205c, 217 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-24 |
 | Finanzstrafgesetz, §§ 29, 30a | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003898 | 2026-10-26 |
 | Verordnung über die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 | 2026-10-24 |
+| Einkommensteuergesetz 1988, § 20 Abs 1 Z 3 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 | 2026-10-24 |
+| FinanzOnline-Erklärungsverordnung, § 2 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 | 2026-10-24 |
+| PKW-Angemessenheitsverordnung, § 1 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20003797 | 2026-10-24 |
+| OeNB, base and reference rates | https://www.oenb.at/isawebstat/stabfrage/createReport?lang=DE&report=2.1 | 2026-10-24 |
 | BMF, U 30 form 2026 | https://formulare.bmf.gv.at/service/formulare/inter-Steuern/pdfs/2026/U30.pdf?open=download | 2026-10-26 |
 | BMF, deadlines and due dates | https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html | 2026-10-26 |
 | BMF, VAT cut on selected foods | https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html | 2026-10-26 |
 | USP, filing tax returns | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html | 2026-10-24 |
 
-Not yet confirmed: the current base rate (Basiszinssatz) behind the 2% VAT interest; the BMF reasonableness cap for zero-emission cars and the BMF van list; the EUR 40 gift threshold for own use and the EUR 10,000 EU-wide distance-sales threshold carried in the earlier version (not re-read today, so left out of the table); the paper-filing turnover limit (the USP and BMF pages differed when last read); the 2026 U 30a filling instructions, which predate the 4.9% boxes; the business-meal advertising test, which is BMF practice, not statute text read today.
+Not yet confirmed: the BMF van list (Kleinbus and Kleinlastkraftwagen regulation) and any upper cap above EUR 40,000 for zero-emission cars, which are BMF guidance not read today; the EUR 40 gift threshold for own use, which is in the VAT guidelines, not the statute; the 2026 U 30a filling instructions (the BMF form server did not return the file).
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
 
