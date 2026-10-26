@@ -22,7 +22,7 @@ version: 0.9
 
 # Finland employer payroll reporting v0.9
 
-**Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Local source-cited draft awaiting fresh independent whole-pack review.
+**Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Independent source-review evidence is in the [pack README](README.md).
 
 ## Who this applies to
 
@@ -194,7 +194,7 @@ expected:
 | [Incomes Register Act 53/2018][ir-law]; [deadlines][deadlines]; [reporting][reporting]; [corrections][corrections] | Sections 6, 12, 22–23; reports, recovery and late fees | 2026-10-26 |
 | [Self-assessed Tax Procedure Act 768/2016][self-act]; [Vero interest][interest] | Tax collection/understatement penalties and 2026 late interest | 2026-10-26 |
 
-Not yet confirmed: separately scoped public/seafarer/athlete schemes, share incentives, unusual termination and foreign coverage cases. Their own laws apply; the ordinary payroll route above awaits independent pack review. No professional attestation is claimed.
+Not yet confirmed: separately scoped public/seafarer/athlete schemes, share incentives, unusual termination and foreign coverage cases. Their own laws apply; the ordinary payroll route’s independent review is recorded in the pack README. No professional attestation is claimed.
 
 [prepayment-law]: https://www.finlex.fi/fi/lainsaadanto/1996/1118
 [decree]: https://www.finlex.fi/fi/lainsaadanto/1996/1124

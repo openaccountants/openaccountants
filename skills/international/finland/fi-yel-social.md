@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Finland YEL and self-employed social insurance v1.6
 
-**Tax year:** 2026. Ordinary entrepreneur contributions, read together with [employee payroll/social insurance](fi-employer-payroll.md). Local source-cited draft awaiting independent whole-pack review.
+**Tax year:** 2026. Ordinary entrepreneur contributions, read together with [employee payroll/social insurance](fi-employer-payroll.md). Independent source-review evidence is in the [pack README](README.md).
 
 ## Who this applies to
 
@@ -174,7 +174,7 @@ expected:
 | [Income Tax Act][ita]; [Business Income Tax Act][business]; [Vero YEL deduction][deduction] | Deduct paid premiums once and choose return route | 2026-10-26 |
 | [ETK applicable-act decisions][applicable] | Applicable-law determination and disputed worker status | 2026-10-26 |
 
-Not yet confirmed: separately scoped MYEL/agriculture/grant cases, multi-country applicable-law disputes and individual social-benefit awards. Current contribution drafts await independent whole-pack review; no professional attestation is claimed.
+Not yet confirmed: separately scoped MYEL/agriculture/grant cases, multi-country applicable-law disputes and individual social-benefit awards. Current contribution source-review evidence is recorded in the pack README; no professional attestation is claimed.
 
 [yel]: https://www.finlex.fi/fi/lainsaadanto/2006/1272
 [etk]: https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/

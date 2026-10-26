@@ -21,7 +21,7 @@ tier: 2
 
 # Finland Corporate Cross-Border Tax v0.1
 
-**Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. This local draft awaits independent whole-pack review and does not establish country completion.
+**Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. Independent source-review evidence and remaining publication gates are recorded in the [pack README](README.md); this Guide does not establish worldwide-goal completion.
 
 ## Who this applies to
 
@@ -185,7 +185,7 @@ expected:
 | [Vero, interest][interest] | 2026 ordinary and relief rates | 2026-10-26 |
 | [Vero, treaty-rate index][rates]; [France notice][france] | 2026 rate-table availability; new France treaty starts 2027 | 2026-10-26 |
 
-Not yet confirmed: transaction-specific treaty/MLI entitlement and nonordinary fund, CFC, hybrid, restructuring and minimum-tax conclusions. Those specialist cases require a separately scoped analysis. The ordinary procedures above await fresh independent whole-pack review; no professional attestation is claimed.
+Not yet confirmed: transaction-specific treaty/MLI entitlement and nonordinary fund, CFC, hybrid, restructuring and minimum-tax conclusions. Those specialist cases require a separately scoped analysis. Independent review of the ordinary procedures is recorded in the pack README; no professional attestation is claimed.
 
 [ita]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [source-act]: https://finlex.fi/fi/lainsaadanto/1978/627

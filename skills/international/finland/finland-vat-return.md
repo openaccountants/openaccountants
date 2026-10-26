@@ -209,7 +209,7 @@ expected:
 | [Vero purchase deductions][deduct], [vehicles][vehicles] | Preserved purchase/vehicle controls | 2026-10-23 |
 | [Vero interest guidance][interest] | 2026 overdue interest | 2026-10-26 |
 
-Not yet confirmed: transaction-specific special margin/travel/group/marketplace schemes and exceptional sector exemptions; these require their separately scoped law. Ordinary VAT is not automatically extended to those cases. The complete revised pack awaits independent review.
+Not yet confirmed: transaction-specific special margin/travel/group/marketplace schemes and exceptional sector exemptions; these require their separately scoped law. Ordinary VAT is not automatically extended to those cases. Independent review and remaining publication gates are recorded in the pack README.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1993/1501
 [procedure]: https://www.finlex.fi/fi/lainsaadanto/2016/768

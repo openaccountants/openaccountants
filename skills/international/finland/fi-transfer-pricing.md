@@ -187,7 +187,7 @@ The 23 October source work and independent review remain preserved in the countr
 | Vero, intragroup loans | https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/ | 2026-10-26 |
 | Vero, 2026 late-payment interest and interest with relief | https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/ | 2026-10-26 |
 
-Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustments, APA/MAP case outcomes and special financing/intangible/restructuring terms. These are transaction inputs or specialist procedures; no universal margin, treaty outcome or professional sign-off is asserted. Fresh whole-pack independent review is required for this revision.
+Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustments, APA/MAP case outcomes and special financing/intangible/restructuring terms. These are transaction inputs or specialist procedures; no universal margin, treaty outcome or professional sign-off is asserted. Independent review of this revision is recorded in the pack README.
 
 
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/

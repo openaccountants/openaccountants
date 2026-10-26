@@ -9,7 +9,7 @@ description: >
   calculation, when checking which workpaper applies, or when reconciling the
   country pack's partial coverage. This overview supplies no standalone tax
   calculation or current formation fee, and the country remains a source-cited
-  draft pending independent whole-pack review; professional attestation is separate.
+  draft with source-review evidence in the pack README; professional attestation is separate.
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -25,7 +25,7 @@ category: international
 
 ## Start with the question and the taxpayer
 
-Use the existing topic Guide and its source/read-date record before applying a figure. Distinguish tax residence, legal entity, income or transaction category and the relevant year. The [pack README](README.md) records coverage and remaining gaps; the revised ordinary pack awaits fresh independent review.
+Use the existing topic Guide and its source/read-date record before applying a figure. Distinguish tax residence, legal entity, income or transaction category and the relevant year. The [pack README](README.md) records coverage and remaining gaps; the revised ordinary pack’s review evidence is recorded there.
 
 | Question | Existing preparation Guide | Remaining boundary |
 |---|---|---|

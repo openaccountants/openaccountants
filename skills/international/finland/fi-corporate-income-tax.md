@@ -25,7 +25,7 @@ category: international
 
 # Finland corporate income tax v1.4
 
-**Tax year:** 2026. Ordinary company computations; source-cited local draft awaiting fresh independent pack review. Tier 2 is not a licensed accountant's attestation.
+**Tax year:** 2026. Ordinary company computations; independent source-review evidence is in the [pack README](README.md). Tier 2 is not a licensed accountant's attestation.
 
 ## Who this applies to
 
