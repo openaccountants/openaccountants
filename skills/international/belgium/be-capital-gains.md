@@ -1,10 +1,10 @@
 ---
 name: be-capital-gains
 description: "Belgium capital gains tax for individuals from 1 January 2026 (income year 2026, assessment year 2027), under the law of 6 April 2026 and Circular 2026/C/74: the 10% tax on gains on shares, bonds, funds, ETFs, derivatives, crypto, investment gold and life insurance; the EUR 10,000 exemption and its carry-forward; the 31 December 2025 value step-up and the cost option to 2030; the 20% substantial interest scale (1.25% to 10%); internal gains (33%); speculation (33%); bank withholding and opt-out; losses; real estate gains. Trigger on: Belgium capital gains tax, meerwaardebelasting, plus-values Belgique, solidariteitsbijdrage, aanmerkelijk belang, Belgian shares gain, fotomoment."
-version: 2.0
+version: 2.1
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-26
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -27,11 +27,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - Ordinary personal income tax, the scale and municipal surcharges: `be-income-tax`.
 - Gains inside a company: corporate income tax, `be-corporate-tax`. The new tax does not change corporate tax (Circular 2026/C/74, no. 4).
 
-## 1. Who this applies to
+## Who this applies to
 
 **Residents only.** The tax applies in the personal income tax of Belgian residents (art. 2, §1, 1° WIB 92). It also applies to non-profit legal entities taxed under the legal entities tax (art. 222/1 WIB 92); those are out of scope here. It does not apply in the non-resident tax (BNI): art. 228 and 232 WIB 92 were changed so that non-residents are not taxed on these gains, including gains on Belgian shares from speculation (Circular 2026/C/74, no. 5).
 
-**Private wealth only.** The gain must be realised outside a professional activity and in the normal management of private wealth (art. 90, first paragraph, 9° WIB 92). Gains on assets used in a business stay professional income. Gains from speculation or abnormal management are taxed at 33% under art. 90, first paragraph, 1° instead (section 3).
+**Private wealth only.** The gain must be realised outside a professional activity and in the normal management of private wealth (art. 90, first paragraph, 9° WIB 92). Gains on assets used in a business stay professional income. Gains from speculation or abnormal management are taxed at 33% under art. 90, first paragraph, 1° instead (see The taxable base).
 
 **Who is the taxpayer.** The owner, or the bare owner where the asset is split. A usufructuary is never taxed on these gains, and selling only the usufruct triggers no gain for the bare owner (art. 92, §3, a) WIB 92; Circular 2026/C/74, no. 12). For life insurance, the beneficiary is taxed (no. 14). For married people, common property is reported half by each spouse (art. 127 WIB 92; no. 15). A minor is taxed in their own name and has their own exemption (no. 16).
 
@@ -54,7 +54,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Out of scope: money on a payment account (so no tax on everyday currency gains), jewellery, art, wine, collectables (no. 81).
 
-## 2. Rates, bands and thresholds
+## Rates, bands and thresholds
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
@@ -75,7 +75,7 @@ Out of scope: money on a payment account (so no tax on everyday currency gains),
 
 **The 16.5% non-EEA rule.** The old rule (art. 90, first paragraph, 9°, second dash, to income year 2025) taxed at 16.5% a sale of shares in a Belgian company to a non-EEA legal person where the seller's family held more than 25% in the previous five years. It was repealed together with its anti-abuse rule in art. 94 (Circular 2026/C/74, nos. 39 to 41). A narrower 16.5% rule replaces it inside type B: it applies only to a seller who personally holds at least 20%, after the EUR 1,000,000 exemption (no. 55).
 
-## 3. The base
+## The taxable base
 
 ### Type C (general regime): the default for investors
 
@@ -91,7 +91,7 @@ Out of scope: money on a payment account (so no tax on everyday currency gains),
 
 **The historical cost option to 2030 (art. 102, §4, fourth paragraph).** For sales up to 31 December 2030 of assets acquired before 2026, the taxpayer may ask that the gain be computed on the real acquisition value instead of the snapshot. It only helps when the real cost is higher than the snapshot. The cost is the average purchase price of the identical assets held before 31 December 2025 (not FIFO), and the taxpayer must prove it. A higher real cost can reduce the gain to zero but never creates a loss (nos. 167 and 168). The statute says sales "up to" (tot) 31 December 2030; the circular reads it as up to and including that date.
 
-**Exemption.** Each taxpayer has one EUR 10,000 basic exemption for assessment year 2027, across all type C gains, own accounts and any accounts managed for an association without legal personality (no. 102). It is reduced by months when the taxable period is not a full calendar year (arrival, departure; not death), counting each month whose 15th day falls in the period, rounded to a multiple of EUR 10 (art. 129/1 WIB 92). Unused basic exemption builds the supplementary exemption from 2027 (see section 2). Supplementary exemptions are used before the basic exemption (no. 98). Choosing when to sell to use the exemptions is not abuse (no. 101).
+**Exemption.** Each taxpayer has one EUR 10,000 basic exemption for assessment year 2027, across all type C gains, own accounts and any accounts managed for an association without legal personality (no. 102). It is reduced by months when the taxable period is not a full calendar year (arrival, departure; not death), counting each month whose 15th day falls in the period, rounded to a multiple of EUR 10 (art. 129/1 WIB 92). Unused basic exemption builds the supplementary exemption from 2027 (see the rates table). Supplementary exemptions are used before the basic exemption (no. 98). Choosing when to sell to use the exemptions is not abuse (no. 101).
 
 **Losses (art. 102, §5 WIB 92).** A loss reduces gains only if it is realised (1) in the same taxable period, (2) by the same taxpayer and (3) in the same type (A, B or C). There is no carry-forward or carry-back. Within type C, all asset classes mix: a loss on crypto or on an insurance product offsets a gain on listed shares in the same year (no. 174). For assets acquired before 2026, the loss is measured from the 31 December 2025 value, not from cost (art. 102, §5, third paragraph). Within type B, a loss may be set against the gain taxed at the highest rate, such as a non-EEA sale at 16.5% (no. 175).
 
@@ -120,7 +120,7 @@ A gain the taxpayer reports under the 10% regime is presumed correct; the admini
 - **Own home exempt (art. 93bis, 1°):** no tax if the property was the taxpayer's own home for an uninterrupted period of at least 12 months before the month of sale. Up to 6 months of non-use may separate that period from the month of sale.
 - Real estate gains carry municipal surcharges (art. 466 excludes only 9°). Foreign real estate is not caught by art. 90, 8° or 10°.
 
-## 4. Deadlines and filing
+## Deadlines and filing
 
 | Event | What to do | When | Source |
 |---|---|---|---|
@@ -134,22 +134,22 @@ A gain the taxpayer reports under the 10% regime is presumed correct; the admini
 | Types A and B sales | Every Belgian-linked intermediary that designs, offers or manages the sale must report it to the administration once carried out | When the transaction is carried out | Art. 326bis WIB 92; Circular 2026/C/74, nos. 211 to 215 |
 | Unlisted assets: valuation at 31 December 2025 by auditor or certified accountant | Have it done by someone who is not the usual practitioner | By 31 December 2027 | Art. 102, §4, third paragraph WIB 92 |
 
-## 5. Penalties and interest
+## Penalties and interest
 
 - **Tax increase (art. 444 WIB 92).** Not filing, filing late or under-declaring adds 10% to 200% of the tax on the missing income, on a royal decree scale. No increase for a first offence in good faith. Only if the undeclared income reaches EUR 2,500. ([Art. 444 WIB 92, income 2026](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0))
 - **Administrative fine (art. 445, §1 WIB 92).** EUR 50 to EUR 1,250 per breach. ([Art. 445 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f))
 - **Late payment interest (art. 414 WIB 92).** 4% a year for calendar year 2026, charged per calendar month. ([Law of 5 May 1865, art. 2, §2/1, rates](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca))
 - **Reclassification.** If the administration proves speculation, the gain moves from 10% to 33% plus municipal surcharge, and the exemption is lost for that gain.
 
-## 6. Cross-border points
+## Cross-border points
 
 - **Arrival.** Assets are stepped up to their value on the first day of residence (art. 102, §3). The basic exemption is cut pro rata by months: arrival on 12 December 2026 gives EUR 830; arrival on 6 October 2026 gives EUR 2,500 (Circular 2026/C/74, no. 100, examples 5 and 6). A person who left and returns within 24 months keeps the original cost, increased by a foreign exit tax base actually taxed (art. 102, §3, second and third paragraphs; nos. 151 and 152).
 - **Departure.** Leaving Belgium is a deemed sale (exit tax). See `be-cross-border`. Taxpayers whose residence ended before 1 May 2026 are outside the new rules (no. 235).
 - **Non-residents.** Not taxed on these gains, and no withholding applies to them (art. 228 and 232 WIB 92; Circular 2026/C/94).
 - **Foreign accounts and foreign assets.** Residents are taxed on gains on foreign accounts, foreign shares and foreign insurance contracts the same way. No Belgian withholding applies, so the gain must be reported. Read the applicable treaty's capital gains article before computing: some treaties give the source state the right to tax gains on shares of companies rich in real estate.
-- **Belgian company shares sold to a non-EEA buyer.** Type B sellers pay 16.5% instead of the scale (section 2).
+- **Belgian company shares sold to a non-EEA buyer.** Type B sellers pay 16.5% instead of the scale (see the rates table).
 
-## 7. Worked examples
+## Worked examples
 
 ### Example 1: an investor with a step-up, a loss and the exemption
 
@@ -234,7 +234,7 @@ expected:
 
 Edge cases: had he sold to a US corporation (a legal person established outside the EEA), the rate would be a flat 16.5%, EUR 495,000. Had he sold to his own holding company that he controls, the whole EUR 4,000,000 gain would be an internal gain at 33% with no exemption. Had the shares been common property of a married couple, the couple would need 40% together for type B. A valuation by an independent auditor or certified accountant, done by 31 December 2027, can replace the EBITDA value if it is higher.
 
-## 8. Ask the client first
+## Ask the client first
 
 1. Were you a Belgian resident for the whole of 2026? If you arrived or left, on what date?
 2. What did you sell or swap in 2026 (shares, funds, ETFs, bonds, derivatives, crypto, gold, life insurance payouts), on which dates, and through which accounts (Belgian or foreign)? Did you opt out of withholding on any Belgian account?
@@ -245,10 +245,11 @@ Edge cases: had he sold to a US corporation (a legal person established outside 
 
 ## Sources
 
-All read on 2026-10-22.
+Read on 2026-10-22; the law itself re-read on ejustice on 2026-10-26.
 
 | Source | URL | Read on |
 |---|---|---|
+| Belgian Official Gazette, law of 6 April 2026 introducing a tax on capital gains on financial assets (Numac 2026002780, published 21 April 2026): art. 90, 9° a) to c), art. 96/2, art. 102, §4, art. 171, art. 34 and 35 | https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=nl&caller=summary&pub_date=2026-04-21&numac=2026002780 | 2026-10-26 |
 | FPS Finance, Circular 2026/C/74 on the tax on capital gains on financial assets in the personal income tax (22 July 2026), with the law of 6 April 2026 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4 | 2026-10-22 |
 | Art. 307, §1/1, fourth paragraph WIB 92 as inserted by art. 28 of the law of 6 April 2026 (credit and refund of withholding), reproduced in the annex to Circular 2026/C/74 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4 | 2026-10-22 |
 | FPS Finance, Circular 2026/C/94 on withholding tax on capital gains on financial assets (20 October 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55 | 2026-10-22 |
