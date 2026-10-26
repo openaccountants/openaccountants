@@ -56,14 +56,14 @@ The TRF rates are set by FA 2025 Sch 10 para 1(8): "12% of the amount of that ca
 
 **How the claim works (s845A).** It must be made in a return, source by source, and quantified. The relief is deducted at Step 2 of ITA 2007 s23, and only from qualifying foreign income (s845A(3A), added by Finance Act 2026). A smaller claim relieves only the amount claimed. A wrongly quantified claim is still valid; an unquantified one is not (RFIG42100). There is no cap and no automatic relief. Relieved amounts can be brought to the UK at any time without further UK tax. Each year needs its own claim.
 
-**What a claim costs.** A foreign income claim, a foreign gain claim or an OWR election for a year removes, for that year (ITTOIA ss845C to 845G; TCGA s1K; RFIG43000; GOV.UK "Allowances you'll lose"):
+**What a claim costs.** A foreign income claim, a foreign gain claim or an OWR election for a year removes, for that year (ITTOIA ss845C to 845G, s845E for the allowances; TCGA s1K; RFIG43000; GOV.UK "Allowances you'll lose"):
 - the personal allowance, blind person's allowance, married couple's allowance, marriage allowance and life insurance relief;
 - the CGT annual exempt amount;
 - foreign losses of that year, which stop being allowable;
 - relief for losses of a trade or property business carried on wholly outside the UK, in that year or any other (s845C);
 - the overseas property finance cost reduction under s274A, and its carry forward becomes nil (s845D).
 
-The cost applies even when the claim covers one small source. Brought-forward overseas losses are used against that business before the relief. Adjusted net income for the child benefit charge and tax-free childcare still counts all foreign income. A claim can also restrict pension relief on relevant UK earnings (s845F). UK losses are unaffected.
+The cost applies even when the claim covers one small source. Brought-forward overseas losses are used against that business before the relief. Adjusted net income for the child benefit charge and tax-free childcare still counts all foreign income. A foreign income claim also cuts the maximum pension contribution relief by the relieved foreign income that counts as relevant UK earnings, but never below the £3,600 basic amount (s845F(2); FA 2004 s190(4)). UK losses are unaffected.
 
 **Overseas Workday Relief (ITEPA 2003 Part 2 Chapter 5C).** A qualifying new resident employee can elect and claim relief on the part of employment income for duties performed outside the UK. No FIG claim is needed and the money no longer has to stay offshore. The limit for each qualifying year is the lower of 30% of the qualifying employment income or £300,000, counted across all years in which that year's earnings are taxed, such as a later bonus (EIM43600). Earnings taxed before the employment year cannot use it. Transitional rules (EIM43605): an arrival in 2023/24 or 2024/25 who used OWR on the remittance basis gets OWR without the limit for years ending before 6 April 2028; a 2022/23 arrival who used OWR gets none for 2025/26. Earnings for remittance basis years keep the old OWR rules.
 
@@ -175,6 +175,9 @@ expected:
 | ITTOIA 2005 s845A (foreign income claim) | https://www.legislation.gov.uk/ukpga/2005/5/section/845A | 2026-10-26 |
 | ITTOIA 2005 s845B (qualifying new resident) | https://www.legislation.gov.uk/ukpga/2005/5/section/845B | 2026-10-26 |
 | ITTOIA 2005 s845C (losses) | https://www.legislation.gov.uk/ukpga/2005/5/section/845C | 2026-10-26 |
+| ITTOIA 2005 s845E (allowances lost) | https://www.legislation.gov.uk/ukpga/2005/5/section/845E | 2026-10-26 |
+| ITTOIA 2005 s845F (pension relief) | https://www.legislation.gov.uk/ukpga/2005/5/section/845F | 2026-10-26 |
+| Finance Act 2004 s190 (basic amount £3,600) | https://www.legislation.gov.uk/ukpga/2004/12/section/190 | 2026-10-26 |
 | Finance Act 2025, contents (s37 and Sch 9 end of remittance basis) | https://www.legislation.gov.uk/ukpga/2025/8/contents | 2026-10-26 |
 | Finance Act 2025 Sch 10 (temporary repatriation facility) | https://www.legislation.gov.uk/ukpga/2025/8/schedule/10 | 2026-10-26 |
 | Finance Act 2025 Sch 11 (rebasing) | https://www.legislation.gov.uk/ukpga/2025/8/schedule/11 | 2026-10-26 |
@@ -193,7 +196,7 @@ expected:
 | GOV.UK, Self Assessment penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
-Not yet confirmed: the 2026/27 SA109 box numbers for the TRF and FIG claims; the 2026/27 Self Assessment dates as printed by GOV.UK (pattern applied); the £3,600 floor on the pension relief restriction (s845F), the OWR transitional table (EIM43605), the RFIG42100 quantification rule and the business investment relief end date, carried from version 1.0 but not re-read today; the remittance basis charge figures (RDRM32210) and deemed domicile Conditions A and B (ITA s835BA), kept as history only; the OWR claim time limit; the commencement of the age-10 test for 2025/26.
+Not yet confirmed: the 2026/27 SA109 box numbers for the TRF and FIG claims; the 2026/27 Self Assessment dates as printed by GOV.UK (pattern applied); the OWR transitional table (EIM43605), the RFIG42100 quantification rule and the business investment relief end date, carried from version 1.0 but not re-read today; the remittance basis charge figures (RDRM32210) and deemed domicile Conditions A and B (ITA s835BA), kept as history only; the OWR claim time limit; the commencement of the age-10 test for 2025/26.
 
 <!-- openaccountants-cta-block -->
 
