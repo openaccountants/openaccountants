@@ -20,7 +20,7 @@ last_updated: 2026-10-26
 version: 0.9
 ---
 
-# Finland employer payroll reporting v0.8
+# Finland employer payroll reporting v0.9
 
 **Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Local source-cited draft awaiting fresh independent whole-pack review.
 
