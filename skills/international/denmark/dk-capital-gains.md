@@ -23,7 +23,7 @@ This skill is for an individual fully liable to Danish tax who sells or holds sh
 
 Danish gains do not share one rate. Sort each item first:
 
-- **Share income (aktieindkomst):** gains and dividends on shares, share-based funds and share-based investment companies. Taxed at 27% and 42% (Personskatteloven § 8 a).
+- **Share income (aktieindkomst):** gains and dividends on shares, share-based funds and share-based investment companies. Taxed at 27% and 42% (Personskatteloven § 8 a, as amended by lov nr. 1691 of 30 December 2024).
 - **Capital income (kapitalindkomst):** taxable property gains, bond and currency gains, bond-based funds and bond-based investment companies. Taxed with the taxpayer's other income under the ordinary rates in dk-income-tax.
 - **Personal income:** private crypto gains (SKAT practice).
 - **Separate 17% tax:** returns inside an aktiesparekonto, outside both share income and the annual return.
@@ -37,7 +37,7 @@ Out of scope: companies (dk-corporate-tax), business assets and depreciated prop
 | Share income up to the band | 27% on the first DKK 79,400 | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
 | Share income above the band | 42% | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
 | Band for spouses married and living together at year end | DKK 158,800 combined | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
-| Statutory base of the band (indexed each year) | DKK 48,300 at 2010 level | 2026 | https://www.retsinformation.dk/eli/lta/2021/1284 (PSL § 8 a) |
+| Statutory base of the band (indexed each year) | DKK 57,800 at 2010 level for 2026 (DKK 51,500 for 2025; DKK 63,400 from 2027) | 2026 | https://www.retsinformation.dk/eli/lta/2024/1691 (§ 4, amending PSL § 8 a) |
 | Aktiesparekonto tax on the return | 17% | 2026 | https://www.retsinformation.dk/eli/lta/2025/281 (§ 14) |
 | Aktiesparekonto deposit ceiling (net deposits) | DKK 174,200 | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto |
 | Charge on deposits over the ceiling | 3% a year | 2026 | https://www.retsinformation.dk/eli/lta/2025/281 |
@@ -95,7 +95,7 @@ SKAT treats privately held crypto as bought for speculation. Gains are personal 
 
 The gain is taxable where the home was bought to resell at a profit, nobody in the household ever lived there (such as a pure rental), or it is business property. A property with more than two independent dwellings cannot be sold exempt as a whole. After a two-family house is split into flats, only the flat lived in after the split qualifies. Only the land-register parcel carrying the home qualifies; a vacant building plot does not. A small farm valued as a one-family house can qualify.
 
-Home with a business in it (such as a clinic or salon): a sale on or after 1 July 2025 is normally exempt if the property is valued as an owner-occupied home at the sale date and the residence and area tests are met. For a sale before 1 July 2025, the older test applies: it must look like a one-family house, and the home part must be at least 50% of value and 50% of area.
+Home with a business in it (such as a clinic or salon): a sale on or after 1 July 2025 is normally exempt if the property is valued as an owner-occupied home at the sale date and the residence and area tests are met. This follows lov nr. 562 of 27 May 2025 § 6, in force 1 July 2025, which made the property valuation category at the sale date decide whether EBL § 9 applies; an owner whose property was under the old § 9 and is now valued as an owner-occupied home can ask SKAT to keep § 9 treatment (EBL § 9, stk. 8). For a sale before 1 July 2025, the older test applies: it must look like a one-family house, and the home part must be at least 50% of value and 50% of area.
 
 Holiday homes are exempt if used privately and under 1,400 m2 (same subdivision exceptions); purely let-out holiday homes are taxable. A cooperative flat (andelsbolig) is taxed under the share-gains act as share income in field 67, but the gain is exempt if the owner lived there and the land belonging to the flat is under 1,400 m2.
 
@@ -190,9 +190,11 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Aktieavancebeskatningsloven, LBK nr. 849 of 21 September 2026 (§§ 13 A, 19, 23, 26, 38) | https://www.retsinformation.dk/eli/lta/2026/849 | 2026-10-26 |
-| Personskatteloven, LBK nr. 1284 of 14 June 2021 (§ 8 a) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-26 |
+| Personskatteloven, LBK nr. 1284 of 14 June 2021 (latest consolidation, status valid) (§ 8 a) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-26 |
+| Lov nr. 1691 of 30 December 2024 (Iværksætterpakken), § 4: PSL § 8 a base DKK 51,500 / 57,800 / 63,400 (2010 level) for 2025 / 2026 / 2027+ | https://www.retsinformation.dk/eli/lta/2024/1691 | 2026-10-26 |
 | Kursgevinstloven, LBK nr. 1176 of 19 September 2025 (§§ 14, 23) | https://www.retsinformation.dk/eli/lta/2025/1176 | 2026-10-26 |
-| Ejendomsavancebeskatningsloven, LBK nr. 132 of 25 January 2019 (§§ 5, 6, 8) | https://www.retsinformation.dk/eli/lta/2019/132 | 2026-10-26 |
+| Ejendomsavancebeskatningsloven, LBK nr. 132 of 25 January 2019 (latest consolidation, status valid) (§§ 5, 6, 8) | https://www.retsinformation.dk/eli/lta/2019/132 | 2026-10-26 |
+| Lov nr. 562 of 27 May 2025, § 6 (EBL § 9, stk. 1 and new stk. 8; in force 1 July 2025, § 17) | https://www.retsinformation.dk/eli/lta/2025/562 | 2026-10-26 |
 | Aktiesparekontoloven, LBK nr. 281 of 13 March 2025 (§§ 14, 22) | https://www.retsinformation.dk/eli/lta/2025/281 | 2026-10-26 |
 | SKAT, tax on shares (2026 bands, loss rules, fields) | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier | 2026-10-26 |
 | SKAT, aktiesparekonto (2026 ceiling) | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto | 2026-10-26 |
@@ -206,7 +208,7 @@ expected:
 | SKAT, foreign home sale | https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-bolig-i-udlandet | 2026-09-25 |
 | SKAT, correcting old returns | https://skat.dk/borger/aarsopgoerelse/se-og-ret-dine-gamle-aarsopgoerelser | 2026-09-25 |
 
-Not yet confirmed: the latest consolidations of Personskatteloven (2021) and Ejendomsavancebeskatningsloven (2019) predate later amendments, so the 2026 band and the 1 July 2025 mixed-use home rule come from skat.dk, not the consolidated text; the 1 May 2026 filing date for non-business taxpayers, the correction cut-off dates, the fund and property field numbers (30, 434, 345, 375, 38, 422, 425, 495K) and the holiday-home, cooperative-flat and transitional purchase-reporting rules were carried from the September 2026 reading of skat.dk and not re-read today; the 2026 interest and surcharge rates on restskat are not stated here.
+Not yet confirmed: the correction cut-off dates (1 May 2029 for 2025, 1 May 2028 for 2024), the foreign property gain field 425, and the holiday-home, cooperative-flat and transitional purchase-reporting rules were carried from the September 2026 reading of skat.dk and not re-read today; the pre-1 July 2025 mixed-use test (50% of value and area) is from skat.dk, not the law text; the 2026 interest and surcharge rates on restskat are not stated here.
 
 <!-- openaccountants-cta-block -->
 

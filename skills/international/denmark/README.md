@@ -45,6 +45,8 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Lov nr. 16 of 14 January 2025 (Opkrævningsloven § 4, stk. 2 provisional-assessment fee DKK 1,400): https://www.retsinformation.dk/eli/lta/2025/16 (read 2026-10-24)
 - Bogføringsloven (lov nr. 700 of 24 May 2022) and BEK nr. 297 of 20 March 2025 (digital bookkeeping from 2026): https://www.retsinformation.dk/eli/lta/2022/700 (read 2026-10-24)
 - Personskatteloven (LBK nr. 1284 of 14 June 2021), § 8 a share income: https://www.retsinformation.dk/eli/lta/2021/1284 (read 2026-10-26)
+- Lov nr. 1691 of 30 December 2024, § 4 (PSL § 8 a band base for 2025 to 2027): https://www.retsinformation.dk/eli/lta/2024/1691 (read 2026-10-26)
+- Lov nr. 562 of 27 May 2025, § 6 (EBL § 9 mixed-use homes from 1 July 2025): https://www.retsinformation.dk/eli/lta/2025/562 (read 2026-10-26)
 - Kursgevinstloven (LBK nr. 1176 of 19 September 2025): https://www.retsinformation.dk/eli/lta/2025/1176 (read 2026-10-26)
 - Ejendomsavancebeskatningsloven (LBK nr. 132 of 25 January 2019): https://www.retsinformation.dk/eli/lta/2019/132 (read 2026-10-26)
 - Aktiesparekontoloven (LBK nr. 281 of 13 March 2025): https://www.retsinformation.dk/eli/lta/2025/281 (read 2026-10-26)
