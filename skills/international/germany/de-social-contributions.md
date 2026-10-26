@@ -140,7 +140,7 @@ Used now for the final health assessment of 2025 when the 2025 tax notice arrive
 | Average additional health rate for 2025 (2.9% less the 0.4-point rise) | 2.5% | [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) |
 
 - The care base rate of 3.6% applied throughout 2025 as well ([§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html)).
-- The levy rate for 2025 fees was set by the Künstlersozialabgabe-Verordnung 2024, which expired at the end of 2025 ([§ 2 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html)). That text could not be fetched from an allowed page for this skill (the KSAbg2024V pages on gesetze-im-internet.de returned "not found" on 27 September 2026): take the 2025 rate from the KSK's notice (check).
+- The levy rate for 2025 fees: the Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) sets the rate only "im Jahr 2024" (5.0%), and it expired at the end of 2025 ([§ 2 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html)). The ordinance that sets the 2025 rate was not found on an official page for this skill: take the 2025 rate from the KSK's notice.
 
 **Already enacted for 2027.** The health and care ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). The 2027 amounts come in the next ordinance, expected in late 2026 (check).
 
@@ -184,7 +184,7 @@ Used now for the final health assessment of 2025 when the 2025 tax notice arrive
 6. Home-based traders.
 7. Coastal skippers and fishers who are part of the crew (or fish without a vessel) and regularly employ no more than four employees subject to insurance.
 8. Craftspeople in the Handwerksrolle who themselves meet the conditions for entry.
-9. People who regularly employ no employee subject to insurance and work permanently and essentially for one client. For partners, the partnership's clients count.
+9. People who regularly employ no employee subject to insurance and work permanently and essentially for one client. For partners, the partnership's clients count, and the partnership's employees count as their employees.
 
 For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.
 
@@ -435,6 +435,7 @@ expected:
 | SGB XI (§§ 20, 55, 57-59) | https://www.gesetze-im-internet.de/sgb_11/ | 2026-10-24 |
 | SGB III (§§ 25, 28a, 341, 345b, 346, 349a) | https://www.gesetze-im-internet.de/sgb_3/ | 2026-10-24 |
 | Künstlersozialversicherungsgesetz (§§ 1, 3, 11, 12, 15, 16, 16a, 24, 25, 27) | https://www.gesetze-im-internet.de/ksvg/ | 2026-10-26 |
+| Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) | https://www.recht.bund.de/bgbl/1/2023/240/regelungstext.pdf | 2026-10-26 |
 | Künstlersozialabgabe-Verordnung 2026 | https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html | 2026-10-26 |
 | Sozialversicherungs-Rechengrößenverordnung 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
 | Beitragssatzbekanntmachung Rentenversicherung 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
@@ -443,4 +444,4 @@ expected:
 | Mindestlohnverordnung (MiLoV5) | https://www.gesetze-im-internet.de/milov5/__1.html | 2026-10-24 |
 | VVG § 193; EStG § 10 | https://www.gesetze-im-internet.de/vvg_2008/__193.html | 2026-10-24 |
 
-Not yet confirmed: the 2025 artists' levy rate (KSAbg2024V page not reachable; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); the due date of unemployment insurance on application (agency notice); whether a lower proven income can be used in the pension start phase; whether the owner's own accident contribution is a business expense; the 2027 ceilings (next ordinance, expected late 2026); accident insurance rates (set by each insurer); each fund's own additional rate.
+Not yet confirmed: the 2025 artists' levy rate (the ordinance setting it was not found; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); the due date of unemployment insurance on application (agency notice); whether a lower proven income can be used in the pension start phase; whether the owner's own accident contribution is a business expense; the 2027 ceilings (next ordinance, expected late 2026); accident insurance rates (set by each insurer); each fund's own additional rate.
