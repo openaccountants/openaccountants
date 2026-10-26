@@ -1,10 +1,10 @@
 ---
 name: dk-capital-gains
-description: "Denmark capital gains tax: 27%/42% on share gains, progression threshold, inventory taxation for certain shares, real property gains. Trigger on: \"Denmark CGT\", \"capital gains Denmark\", \"Denmark aktieindkomst\", \"sell shares Denmark\", \"Denmark 27% 42% capital gains\", \"Denmark aktieavance\", \"Danish share gains tax\"."
-version: 1.0
+description: "Danish capital gains for individuals, income year 2026. Covers share gains and dividends as share income (27% up to DKK 79,400, 42% above; DKK 158,800 for married couples living together), the average-cost method, listed and unlisted share losses and the 1 July purchase-reporting condition, investment funds and ETFs (mark-to-market lagerbeskatning for investment companies, realisation for minimum-tax funds), the aktiesparekonto at 17% with the DKK 174,200 deposit ceiling, bonds and currency gains with the DKK 2,000 threshold, property gains and the parcelhusreglen (1,400 m2), property losses, holiday homes, cooperative flats, crypto routing, exit tax on shares and return fields. Trigger on: Denmark capital gains, aktieindkomst, aktieavance, sell shares Denmark, ETF Denmark lager, aktiesparekonto, parcelhusreglen, sell house Denmark tax, Danish crypto tax. Out of scope: companies (dk-corporate-tax), self-employed business income (dk-income-tax), moving in or out of Denmark in depth (dk-cross-border)."
+version: 1.1
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -13,135 +13,200 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Denmark capital gains — individual investors and home sales, 2026
+# Denmark capital gains: individual investors and home sales, 2026
 
-Tax year: 2026.
+Tax year: 2026 (calendar income year).
 
-## Scope and outcome
+## Who this applies to
 
-Use this method for a Danish-resident individual’s ordinary shares held outside special savings or pension arrangements, and ordinary owner-occupied or privately held property. Produce an asset-by-asset calculation, loss schedule and filing instructions. Identify the income category before applying a rate: share income and capital income are different categories. Do not use the share rate on a property gain.
+This skill is for an individual fully liable to Danish tax who sells or holds shares, funds, ETFs, bonds, crypto or property privately, outside a pension scheme. It works out the gain or loss for each asset, puts it in the right income category, applies the loss rules and names the return field.
+
+Danish gains do not share one rate. Sort each item first:
+
+- **Share income (aktieindkomst):** gains and dividends on shares, share-based funds and share-based investment companies. Taxed at 27% and 42% (Personskatteloven § 8 a).
+- **Capital income (kapitalindkomst):** taxable property gains, bond and currency gains, bond-based funds and bond-based investment companies. Taxed with the taxpayer's other income under the ordinary rates in dk-income-tax.
+- **Personal income:** private crypto gains (SKAT practice).
+- **Separate 17% tax:** returns inside an aktiesparekonto, outside both share income and the annual return.
+
+Out of scope: companies (dk-corporate-tax), business assets and depreciated property, trading as a business, employee shares and options, derivatives, pension wrappers, gifts and inheritance, reorganisations, and the detailed rules for arrival and departure (dk-cross-border). Refer these.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Share income up to the band | 27% on the first DKK 79,400 | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
+| Share income above the band | 42% | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
+| Band for spouses married and living together at year end | DKK 158,800 combined | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier |
+| Statutory base of the band (indexed each year) | DKK 48,300 at 2010 level | 2026 | https://www.retsinformation.dk/eli/lta/2021/1284 (PSL § 8 a) |
+| Aktiesparekonto tax on the return | 17% | 2026 | https://www.retsinformation.dk/eli/lta/2025/281 (§ 14) |
+| Aktiesparekonto deposit ceiling (net deposits) | DKK 174,200 | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto |
+| Charge on deposits over the ceiling | 3% a year | 2026 | https://www.retsinformation.dk/eli/lta/2025/281 |
+| Bond, debt and currency gains: threshold for individuals | Taxed only if the net yearly total exceeds DKK 2,000 | 2026 | https://www.retsinformation.dk/eli/lta/2025/1176 (KGL §§ 14, 23) |
+| Home exemption land-area test | Under 1,400 m2 | 2026 | https://www.retsinformation.dk/eli/lta/2019/132 (EBL § 8) |
+| Property cost: annual addition | DKK 10,000 a year owned (not the sale year, unless bought and sold in the same year) | 2026 | https://www.retsinformation.dk/eli/lta/2019/132 (EBL § 5) |
+| Property improvements added to cost | Amount above DKK 10,000 per calendar year | 2026 | https://www.retsinformation.dk/eli/lta/2019/132 (EBL § 5, stk. 2) |
+| Exit tax on shares: holding threshold | Share holding worth DKK 100,000 or more | 2026 | https://www.retsinformation.dk/eli/lta/2026/849 (ABL § 38) |
+| Private crypto | Personal income, up to 53% on gains; loss deduction worth 26% | 2026 | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek/beregn-og-oplys-gevinst-og-tab-paa-krypto |
+
+The 2025 band was DKK 67,500 (DKK 135,000 for couples). The 2025 aktiesparekonto ceiling was DKK 166,200.
+
+## The taxable base
+
+### Shares
+
+Ordinary shares are taxed when sold (realisation principle, Aktieavancebeskatningsloven § 23). Gain is sale proceeds less the average cost of the shares sold (§ 26). Pool every share in the same company across all Danish and foreign accounts. Adjust for splits and other corporate actions. Do not use a broker's first-in cost. Remove tax-exempt legacy holdings from the pool before calculating; mixed pre-reform holdings need the transitional rules.
+
+"Admitted to trading" means a regulated market or a multilateral trading facility. The trading-facility part applies from 1 January 2024. Check the share's actual status for each year of ownership, not the broker's label. A share that was admitted at any time while owned keeps the admitted-share loss rules.
+
+Dividends and gains are added together as share income. For couples married and living together at year end the band doubles. Unmarried partners and spouses living apart each use their own DKK 79,400.
+
+### Share losses
+
+- **Admitted (listed) shares** (ABL § 13 A): a loss reduces only dividends and gains on admitted shares and gains on share-based investment companies. Any excess goes to a spouse married to and living with the taxpayer, after the spouse's own losses, and then forward to later years. Never against salary.
+- **Purchase reporting condition:** a listed-share loss is deductible only if SKAT had the purchase details by 1 July of the year after the purchase (next working day at 09:00 if 1 July is a weekend). Danish banks report this. Foreign brokers usually do not, so the taxpayer reports via TastSelv (ISIN, quantity, date, cost with charges). A foreign broker can agree to report by 20 January after the purchase year. Other deadlines: gifts, 1 July after the transfer; shares from an estate, 1 July after distribution; shares held on becoming Danish taxable, before 1 July of the year after liability starts. Purchases before 1 July 2012 follow SKAT's transitional table. There is no dispensation for a missed deadline, and reopening a year does not cure it.
+- **Unlisted shares:** the loss reduces other share income. Negative share income gives a tax value (27% or 42% of the negative amount) set against the taxpayer's other taxes, then the spouse's, then carried forward. Keep this tax-value balance separate from a restricted listed-share loss balance.
+- The same ring-fence as listed shares applies to share-based minimum-tax fund units and accumulating funds that are not investment companies. A loss on a share-based investment company admitted to trading is deducted in share income without that restriction.
+
+### Funds and ETFs (lagerbeskatning)
+
+Get the fund's Danish classification for the year before calculating:
+
+- **Investment company (investeringsselskab, ABL § 19):** taxed every year on the change in value, sold or not (lagerprincippet). Gain = closing value less opening value; use cost for units bought in the year and proceeds for units sold in the year. It is share income only if the company is on SKAT's list of share-based investment companies for that year. If not on the list, treat it as bond-based: capital income. Most foreign ETFs fall here; never assume.
+- **Minimum-tax investment institution (udloddende):** taxed on sale with the average method. Share-based: share income. Bond-based: capital income, inside the DKK 2,000 test below.
+- **Accumulating Danish association that is not an investment company:** taxed on sale, share income.
+
+Listed or centrally registered units use the taxpayer's income year. An unlisted, unregistered investment-company share uses the company's income year.
+
+### Aktiesparekonto
+
+Only a person fully liable to Danish tax may open one. One account per person, never joint. The bank computes the yearly change in value (mark-to-market) and pays 17% tax (Aktiesparekontoloven § 14). The return is left out of share income and the annual return (§ 22). For 2026 a person can deposit up to DKK 174,200 less the account's market value on 31 December 2025; the ceiling is on net deposits, so a withdrawal can be re-deposited within the year. A spouse cannot use the other's unused room. Over-deposits must be withdrawn when found, and 3% a year is charged on the excess. A loss becomes a negative tax carried forward only on the same account and is lost if the account closes. Allowed assets: shares admitted to a regulated market or trading facility, minimum-tax fund units with at least 50% in shares, and listed share-based investment companies. An ineligible asset is treated as never in the account. A foreign "savings account" is an ordinary account under Danish rules.
+
+### Bonds, debt and currency (Kursgevinstloven)
+
+Gains and losses on bonds and other debt claims (KGL § 14) and on foreign-currency debt (§ 23) are capital income. For an individual they count only if the year's net total, together with bond-based minimum-tax fund units, exceeds DKK 2,000 in magnitude. Exactly DKK 2,000 is out; above it the whole amount counts. This is a threshold, not an allowance. Bond-based investment companies sit outside this test and are taxed in full on the mark-to-market basis.
+
+### Crypto
+
+SKAT treats privately held crypto as bought for speculation. Gains are personal income; losses give a deduction worth 26%. Use FIFO across all wallets and exchanges as one holding. Swapping one crypto-asset for another is a disposal. Report total gains in field 20 and total losses in field 58 separately. The Tax Law Council's October 2024 proposals for a new regime have not been enacted; check before filing. Staking, mining, stablecoins and NFTs: refer.
+
+### Property (Ejendomsavancebeskatningsloven)
+
+**Parcelhusreglen (EBL § 8).** A gain on a one- or two-family house or an owner-occupied flat is exempt if the owner or household lived there as a real home at some point while owning it, and the total land is under 1,400 m2. With 1,400 m2 or more it is still exempt if the municipality confirms the land cannot be subdivided for separate building, or a Vurderingsstyrelsen statement shows subdivision would cut the value of the rest by more than 20%. A loss on an exempt sale is not deductible. The same Danish conditions apply to a home abroad.
+
+The gain is taxable where the home was bought to resell at a profit, nobody in the household ever lived there (such as a pure rental), or it is business property. A property with more than two independent dwellings cannot be sold exempt as a whole. After a two-family house is split into flats, only the flat lived in after the split qualifies. Only the land-register parcel carrying the home qualifies; a vacant building plot does not. A small farm valued as a one-family house can qualify.
+
+Home with a business in it (such as a clinic or salon): a sale on or after 1 July 2025 is normally exempt if the property is valued as an owner-occupied home at the sale date and the residence and area tests are met. For a sale before 1 July 2025, the older test applies: it must look like a one-family house, and the home part must be at least 50% of value and 50% of area.
+
+Holiday homes are exempt if used privately and under 1,400 m2 (same subdivision exceptions); purely let-out holiday homes are taxable. A cooperative flat (andelsbolig) is taxed under the share-gains act as share income in field 67, but the gain is exempt if the owner lived there and the land belonging to the flat is under 1,400 m2.
+
+**Taxable property gain.** Use the year of the binding sale agreement. Proceeds less sale costs, minus adjusted cost: purchase price plus purchase costs, plus DKK 10,000 for the purchase year and each later calendar year owned except the sale year (one addition if bought and sold in the same year; pro rata for part-owners), plus maintenance and improvement spend above DKK 10,000 in each calendar year (EBL § 5). Never add spend already deducted. The gain is capital income. A property loss can only be set against property gains, the same year or later, and against a cohabiting spouse's property gains (EBL § 6).
+
+## Deadlines and filing
+
+- **Annual return:** employees and investors check and complete the annual assessment (årsopgørelse) in TastSelv by 1 May of the year after the income year (1 May 2027 for 2026). Taxpayers with business income use 1 July (see dk-income-tax). Confirm the date shown in TastSelv for the person.
+- **Share fields:** listed shares in Danish custody and Danish listed shares abroad: field 66 (often prefilled). Foreign listed shares abroad: 454, own calculation. Danish unlisted shares: 67. Foreign unlisted shares: 451. Foreign custody also needs the year-end value in DKK.
+- **Fund fields:** share-based minimum-tax fund: 66 (foreign 454). Bond-based minimum-tax fund: 30 (foreign 434). Share-based investment company: 345 (foreign 375). Bond-based investment company: 38 (foreign 422).
+- **Property:** Danish taxable gain field 39; loss field 84; foreign property gain 425 with eligible foreign tax in 495K. Update the preliminary assessment after a sale.
+- **Crypto:** gains 20, losses 58.
+- **Purchase reporting for loss relief:** 1 July of the year after purchase (see above).
+- **Aktiesparekonto:** nothing to file; the bank pays the 17% tax.
+- **Corrections:** the 2025 return can be changed until 1 May 2029 and the 2024 return until 1 May 2028. Later changes need special circumstances, asked for within 6 months.
+
+## Penalties and interest
+
+- Missing the 1 July purchase-reporting date loses the listed-share loss permanently. This is the costliest mistake in this area.
+- Unpaid tax after the annual assessment (restskat) carries a surcharge and, above an indexed amount, is collected in three instalments in August to October. The figures and the late-filing rules sit in dk-income-tax; use those.
+- Aktiesparekonto over-deposits: 3% a year on the excess until withdrawn.
+- Deliberate or grossly negligent under-reporting can lead to fines under Skattekontrolloven. Refer.
+
+## Cross-border points
+
+- **Exit tax on shares (ABL § 38):** when Danish tax liability ends, other than by death, gains on shares are treated as realised if the person's share holding is worth DKK 100,000 or more. Payment can be deferred (henstand). See dk-cross-border for the method.
+- **Arrival:** shares held on becoming Danish taxable must be reported before 1 July of the year after liability starts to keep listed-share loss relief.
+- **Foreign brokers and dividends:** foreign custody is the taxpayer's own calculation. Reconcile gross dividends and foreign tax separately; credit for foreign tax is not automatically everything the broker withheld.
+- **Foreign homes:** Danish parcelhus conditions decide the Danish exemption, whatever the other country does.
+
+## Worked examples
+
+**Example 1: single investor with DKK 100,000 share income.** A single person sells listed shares in Danish custody for a gain of DKK 85,000 and receives DKK 15,000 of dividends. Share income is DKK 100,000. The first DKK 79,400 is taxed at 27% (DKK 21,438). The remaining DKK 20,600 is taxed at 42% (DKK 8,652). Share-income tax is DKK 30,090, before credit for dividend tax withheld. If the person were married and living with a spouse with no share income at year end, the couple's band would be DKK 158,800 and all DKK 100,000 would be taxed at 27% (DKK 27,000).
+
+```oa-check
+name: Single investor, share income DKK 100,000 (2026 band)
+inputs:
+  gains: 85000
+  dividends: 15000
+  band: 79400
+  couple_band: 158800
+steps:
+  - share_income: gains + dividends
+  - low: min(share_income, band) * 0.27
+  - high: max(share_income - band, 0) * 0.42
+  - tax_single: low + high
+  - tax_couple: min(share_income, couple_band) * 0.27 + max(share_income - couple_band, 0) * 0.42
+expected:
+  share_income: 100000
+  low: 21438.00
+  high: 8652.00
+  tax_single: 30090.00
+  tax_couple: 27000.00
+```
+
+**Example 2: rental flat sold in the year (sale-year addition excluded).** A person bought a flat in January 2024 for DKK 1,500,000 plus DKK 50,000 purchase costs and let it out; nobody in the household lived there, so the parcelhusreglen does not apply. In 2025 they spent DKK 30,000 on improvements. They sell in 2026 for DKK 2,000,000 with DKK 100,000 sale costs. The annual addition is given for 2024 and 2025 but not 2026, the sale year: DKK 20,000. Only the 2025 spend above DKK 10,000 counts: DKK 20,000. Adjusted cost is DKK 1,590,000. Net proceeds are DKK 1,900,000. The taxable gain is DKK 310,000, capital income for field 39. It is taxed with the person's other income, not at the share rates.
+
+```oa-check
+name: Rental flat, bought 2024, sold 2026 (EBL section 5)
+inputs:
+  price: 2000000
+  sale_costs: 100000
+  purchase: 1500000
+  purchase_costs: 50000
+  years_with_addition: 2
+  improvements_2025: 30000
+steps:
+  - net_proceeds: price - sale_costs
+  - additions: years_with_addition * 10000
+  - improvements_counted: max(improvements_2025 - 10000, 0)
+  - adjusted_cost: purchase + purchase_costs + additions + improvements_counted
+  - gain: net_proceeds - adjusted_cost
+expected:
+  net_proceeds: 1900000
+  additions: 20000
+  improvements_counted: 20000
+  adjusted_cost: 1590000
+  gain: 310000
+```
 
 ## Ask the client first
 
-- Obtain tax residence and arrival/departure dates, marital/cohabitation status at year end, asset identity and legal type, trading-market status throughout ownership, account wrapper, all acquisition/disposal dates, costs and corporate actions. Obtain holdings across every broker, dividend and foreign-tax statements, prior losses and proof of acquisition reporting. For property obtain the deed, binding contract, ownership share, actual occupancy, parcel area, use/classification, subdivision decisions, acquisition/sale costs and improvements by year. Missing cost, classification or residence evidence means a provisional result with the missing inputs named, not an invented basis.
-
-## Current figures
-
-| Rule | 2026 amount | Authority |
-|---|---|---|
-| Individual share-income lower band | DKK 79,400 at 27% | [SKAT share rates](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Share income above that band | 42% | [SKAT share rates](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Married spouses living together at the end of the income year: combined lower band | DKK 158,800 | [SKAT share rates](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Ordinary home land-area screen | Below 1,400 square metres; 1,400 square metres or more needs an exception | [SKAT property conditions](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig) |
-| Property basis annual addition | DKK 10,000 per eligible ownership year | [SKAT adjusted basis](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig) |
-
-## The method, step by step
-
-1. Route the asset and confirm the applicable tax year before calculation.
-2. Reconcile all holdings, transaction evidence and cost pools; calculate each disposal or annual taxable movement using its own regime.
-3. Apply the correct loss restrictions, combine relevant income and compute a provisional tax result where this skill supplies the applicable rates.
-4. Reconcile the return with SKAT’s records, enter missing figures in the correct fields and retain the approved calculation and submission receipt.
-
-## Classify shares and funds
-
-For this skill, “admitted to trading” includes regulated markets and multilateral trading facilities. The multilateral-trading-facility part applies from 1 January 2024; before that date, shares traded only on a multilateral trading facility were not treated as admitted, so check the rule for the year in which a historic gain or loss arose. Check the instrument’s actual status, rather than the broker’s informal “listed” label. A holding not admitted now may still have been admitted earlier during ownership, affecting loss treatment. [Trading status](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktier-optaget-til-handel)
-
-Ordinary share disposals use realization treatment. Funds need a separate classification: an investment company uses annual mark-to-market treatment, including unrealized movements; an investment institution with minimum taxation, and an accumulating investment association that is not an investment company, are taxed on disposal (average method), with share-based units in field 66 as share income. Establish share-based versus bond-based status and the income-year classification from the issuer/custodian. Investment-company gains can be share income or capital income; distributing versus accumulating alone is insufficient. An investment company is share-based only if it has notified SKAT and appears on SKAT’s published list of share-based investment companies for that year; if it is not share-based it is treated as bond-based, so its annual gain or loss is capital income (field 38 Danish, 422 foreign), not share income. Check the list for the actual year before choosing field 345 or 375. [Share-based investment companies](https://info.skat.dk/data.aspx?oid=2292808); [SKAT list page](https://skat.dk/erhverv/ekapital/vaerdipapirer/beviser-og-aktier-i-investeringsforeninger-og-selskaber-ifpa). Use SKAT’s fund-specific fields and guidance rather than the ordinary-share table below. With an unclassified ETF, stop the calculation and obtain its Danish classification. [Fund rules](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber)
-
-For a straightforward investment-company holding unchanged throughout the year, the unrealized movement is closing value minus opening value. For units purchased during the relevant year substitute acquisition price for opening value; for units sold substitute disposal proceeds for closing value. Calculate held and disposed quantities separately and sum their movements, avoiding duplicate proceeds or costs. Listed/centrally registered shares and fund units use the taxpayer’s income year; an investment-company share neither admitted on a regulated market nor centrally registered uses the investment company’s income year. Status changes need separate review. Hypothetical unchanged holding: opening DKK 100,000, closing DKK 110,000, no distributions or trades; annual gain DKK 10,000 even without a sale. The verified fund classification determines the income category. [Annual valuation](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber)
-
-For a hypothetical ordinary investment-company lot bought during the year for DKK 40,000 and sold during that year for net DKK 50,000, with no distributions or other movements, the annual taxable gain is DKK 10,000. A purchase retained at year-end uses closing value instead of sale proceeds. [Fund method](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber)
-
-| Core fund gain/loss route | Danish field | Foreign field | Source |
-|---|---|---|---|
-| Share-based minimum-tax institution: disposal gain/loss, share income | 66 | 454 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber) |
-| Bond-based minimum-tax institution: disposal gain/loss, capital income | 30 | 434 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber) |
-| Accumulating investment association that is not an investment company: disposal gain/loss, share income | 66 | Not listed separately; confirm with SKAT | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber) |
-| Share-based investment company: annual gain/loss, share income | 345 | 375 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber) |
-| Bond-based investment company: annual gain/loss, capital income | 38 | 422 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber) |
-
-For bond-based minimum-tax units, combine the relevant annual net gain/loss with qualifying debt-claim and foreign-currency debt gains/losses. The per-spouse aggregate must exceed DKK 2,000 in magnitude: exactly DKK 2,000 is outside taxation/deduction; DKK 2,001 is included in full. This is a threshold, not a deduction from the included gain. Do not apply it to every fund category. Preserve purchase-notification evidence for loss relief. [Fund threshold](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber)
-
-## Calculate ordinary share gains
-
-Pool the acquisition cost of taxable shares in the same company across Danish and foreign custody accounts. Use the average cost attributable to shares sold, taking account of splits and other corporate actions. Remove qualifying tax-exempt legacy holdings from the taxable pool; mixed pre-reform holdings need the transitional rules and disposal-order analysis before this calculation. Reconcile fees to the transaction documentation and acquisition-cost record. [Average method](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/gevinst-og-tab-opgoeres-efter-gennemsnitsmetoden)
-
-Hypothetical simple pool, all costs already included: buy 100 shares for DKK 20,000 and another 100 for DKK 40,000. The pool is DKK 60,000 for 200 shares; average cost DKK 300 each. Sell 50 for net DKK 20,000: allocated basis DKK 15,000; gain DKK 5,000. Remaining basis DKK 45,000 for 150 shares. Do not use a broker’s first-purchase cost as the gain calculation merely because those shares are deemed disposed of first. [Average method](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/gevinst-og-tab-opgoeres-efter-gennemsnitsmetoden)
-
-Combine taxable dividends and realized gains after relevant loss adjustments. For a single taxpayer with hypothetical positive net share income DKK 100,000 and no credits, the lower-band charge is DKK 21,438 and excess-band charge DKK 8,652, total DKK 30,090. Exactly at DKK 79,400, the charge is DKK 21,438. The doubled DKK 158,800 band applies only to spouses who are married and living together at the end of the income year; unmarried cohabiting partners, and spouses separated at year end, each use their own DKK 79,400 band. For qualifying spouses with combined positive income DKK 100,000 and no other share income/losses, the combined charge is DKK 27,000. Hypothetical unmarried cohabitants where one partner has DKK 100,000 share income and the other has none: the DKK 100,000 is taxed alone at DKK 30,090, not DKK 27,000. These are arithmetic illustrations before withholding/credits, not balances payable. [Rates](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-
-## Apply share losses correctly
-
-Admitted-to-trading losses are ring-fenced: SKAT offsets them only against share dividends, gains on other admitted shares and mark-to-market gains on share-based investment companies. Do not set them against gains on shares not admitted to trading. Excess passes to the corresponding income of a spouse the taxpayer is married to and living with, after that spouse’s own losses, then forward to later years (the taxpayer’s first, then the spouse’s). The same ring-fence applies to losses on share-based minimum-tax institution units and on accumulating investment associations that are not investment companies. By contrast, a loss on a share-based investment company whose units are admitted to trading is deducted in share income without that restriction. Never deduct this loss directly from salary. Report the loss by the taxpayer’s information deadline to preserve carryforward. Unlisted-share losses instead reduce other share income; negative share income produces a tax value against other taxes, subject to spouse ordering and carryforward of unused tax value. Shares formerly admitted during ownership retain the admitted-share loss rules. [Loss categories](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-
-Before allowing an admitted-share loss, verify acquisition notification. For current ordinary purchases the taxpayer must notify SKAT by 1 July following the purchase year, with weekend extension to the next working day under SKAT’s published deadline. Supply identity/ISIN, quantity, purchase date, cost including transaction charges and price through TastSelv Contact → Write to us → Income and deductions → Annual assessment → Questions and changes → Shares and securities. Keep proof. A reporting-obliged institution can correct its reporting later; do not confuse that exception with permission for a taxpayer to report an unreported foreign purchase late. Other deadlines: shares received as a gift, 1 July the year after the transfer; shares distributed from an estate, 1 July the year after distribution (later if the estate statement is filed after 1 July); shares acquired before becoming liable to Danish tax, before 1 July of the year after the year in which liability starts. A foreign broker can agree to report for the taxpayer by 20 January the year after purchase. Older purchases (before 1 July 2012) follow SKAT’s transitional table. There is no dispensation for a missed deadline. [Acquisition reporting and exceptions](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/betingelser-for-fradrag-for-tab-paa-aktier-og-investeringsbeviser)
-
-Hypothetical unlisted-loss example: never-admitted shares produce a DKK 50,000 loss; the taxpayer has DKK 10,000 other positive share income, leaving negative DKK 40,000. A spouse the taxpayer is married to and living with at year end has DKK 20,000 positive share income: offset that first, leaving negative DKK 20,000. The negative balance is within the lower share-income band, so its tax value is DKK 5,400 at 27%. Apply against the taxpayer’s other taxes first; assuming DKK 3,000 available there, DKK 2,400 remains for the spouse’s other taxes. With DKK 1,000 available there, unused tax value DKK 1,400 carries forward to the taxpayer’s and then the spouse’s taxes in later years. Record tax-value carryforward separately from a restricted listed-share loss balance. Larger negative balances use the applicable share-income bands; reconcile the assessment’s calculation and spouse allocation. [Unlisted losses and tax-value ordering](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-
-## File ordinary shares
-
-In TastSelv, inspect Skatteoplysninger → Aktieoplysninger and the Securities System; repair missing transaction data and reconcile the resulting assessment. Use the field for the actual combination of issuer country, market status and custody. The following are gain/loss fields, not dividend fields. [SKAT filing instructions](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-
-| Ordinary share route | Annual assessment field | Source |
-|---|---|---|
-| Admitted shares in Danish custody; Danish admitted shares in foreign custody | 66 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Foreign admitted shares in foreign custody | 454 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Danish shares not admitted | 67 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-| Foreign shares not admitted | 451 | [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier) |
-
-Unlisted shares need the taxpayer’s own calculation. Foreign custody also requires the year-end portfolio value in Danish kroner. Reconcile gross dividends and foreign tax separately; foreign tax credit cannot automatically equal everything the broker withheld. Check SKAT’s country/treaty-specific dividend instructions before entering relief. [SKAT](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-
-## Decide whether a home sale is exempt
-
-SKAT treats the sale of a home as normally exempt only when all three conditions hold: (1) the property is a one-family or two-family house, an owner-occupied condominium or a house on leased land; (2) the owner or the owner’s spouse/partner lived there as their genuine home at some point during ownership (a temporary stay does not count, and they need not live there at the sale date); and (3) the total land area is under 1,400 square metres. With 1,400 square metres or more the sale is exempt only if the land cannot be subdivided for separate building, backed by a declaration from the municipality, or subdivision would reduce the value of the remaining land or the existing building by more than 20% (a Vurderingsstyrelsen declaration, obtainable only after the municipality confirms subdivision is possible). Losses on a sale that meets the exemption are not deductible. Danish conditions also govern a foreign home; foreign exemption alone is insufficient. [Home conditions](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig); [foreign-home conditions](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-bolig-i-udlandet)
-
-SKAT treats the gain as taxable where the home was bought solely to resell at a profit (speculation), the owner or household never lived there (for example a pure rental property), or it is purely business property. A property with more than two independent dwellings (each with its own kitchen and toilet as actually fitted out) cannot be sold exempt as a whole, even if the owner lived in one of them. When a two-family house is split into two condominiums, only the unit the owner or household lived in after the split can be sold exempt. Where a property has several land-register parcels that may be sold separately (not jointly registered), only the parcel carrying the home can qualify; a vacant building plot cannot be sold exempt. A small farm with an agricultural obligation can still qualify if it is valued as a one-family house (01/residential) and the other conditions are met. [Property categories](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig)
-
-Home combined with a business (for example a dental clinic or hair salon in the same building): for a sale agreed on or after 1 July 2025 it can normally be exempt if the property is correctly valued as an owner-occupied home property at the sale date and the residence and area conditions are met. For a sale before 1 July 2025 the older test applies: it must look like a one-family house, the home’s value must be at least 50% of the total property value, and at least 50% of the area must be used as the home. Inherited/gifted property, trading or depreciation history need their own computation before asserting exemption. [Mixed use](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig)
-
-Holiday homes and cooperative flats sit outside the ordinary home rule but have their own exemption. A holiday home is exempt if the owner used it privately and the plot is under 1,400 square metres (larger plots need the same subdivision exception); if it was only let out commercially, the gain is taxable. A cooperative-flat share (andelsbolig) is taxed under the share-gains act as share income in field 67, but the gain is exempt if the owner lived there and the land belonging to the flat is under 1,400 square metres. [Holiday home](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-sommerhus); [cooperative flat](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-andelsbolig)
-
-## Compute a taxable ordinary property disposal
-
-Use the binding agreement year. Adjust cash-equivalent sale proceeds for permitted sale expenses. Adjust purchase price for acquisition expenses, the annual addition for ownership years excluding the sale year (same-year purchase/sale gets one addition), and documented eligible maintenance/improvements exceeding DKK 10,000 in each year. Avoid adding previously deducted expenditure; obtain specialist adjustment where business use or depreciation occurred. Taxable gain is capital income, not a universal flat tax. [SKAT computation](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig)
-
-Hypothetical ordinary property bought at the start of the previous year, sold this year, no deductible-business expenditure: proceeds DKK 2,000,000 less sale costs DKK 100,000 give DKK 1,900,000. Purchase DKK 1,500,000 plus buying costs DKK 50,000, one annual addition DKK 10,000 and eligible sale-year improvements DKK 30,000 less annual threshold DKK 10,000 give adjusted basis DKK 1,580,000. Gain DKK 320,000. This is taxable income, not the tax bill. [Basis method](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig)
-
-Domestic taxable gain goes to annual field 39; a qualifying property loss goes to field 84 and can offset other taxable property gains, including later years, rather than salary/share income. Foreign property gain uses field 425 and eligible foreign capital-income tax field 495K; foreign property loss also uses field 84. Update the property sale and preliminary assessment so ongoing property taxes and borrowing deductions are correct. [Domestic filing](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig); [foreign filing](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-bolig-i-udlandet)
-
-## Corrections, evidence and delivery
-
-Select the affected year in TastSelv and correct the transaction or return entry, preserving old and new workings and the reason. For prior years use SKAT’s published reopening deadlines: the 2025 return can be corrected until 1 May 2029 and the 2024 return until 1 May 2028. After that, correction needs special circumstances outside the taxpayer’s and adviser’s control (a forgotten deduction or misunderstood rule does not qualify), requested within 6 months of learning of them; if an online field cannot be edited, contact SKAT with the calculation. Ordinary reopening does not cure a missed acquisition-reporting condition for loss relief. The ordinary information deadline for an individual’s annual return is 1 May of the following year; confirm the deadline shown for the actual taxpayer in TastSelv, and do not reuse a prior year’s exceptional deadline. [Information deadline](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek/beregn-og-oplys-gevinst-og-tab-paa-krypto); [Corrections](https://skat.dk/borger/aarsopgoerelse/se-og-ret-dine-gamle-aarsopgoerelser); [loss notification](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/betingelser-for-fradrag-for-tab-paa-aktier-og-investeringsbeviser)
-
-Deliver the classification decision, ownership/cost reconciliation, realized or annual movement calculation, loss utilisation/carryforward, fields, withheld-tax reconciliation and filing receipt. Label unconfirmed evidence and unresolved credit questions. Retain source retrieval dates with the workpaper.
-
-## Share savings account and crypto: route, do not compute here
-
-Share savings account (aktiesparekonto): only a person fully liable to Danish tax can open one, each person may own only one, and it cannot be held jointly, even with a spouse. The return is taxed at 17% on the mark-to-market basis at year end, calculated and paid by the bank, and it does not go on the annual return or into share income. The 2026 deposit ceiling is DKK 174,200 of net deposits, measured against the account’s market value on 31 December 2025, and it is personal: a spouse cannot use the other spouse’s unused room. Over-deposits must be withdrawn as soon as the error is found, and a 3% charge applies each year to the excess. A loss gives a negative tax that carries forward only against later tax on the same account and is lost if the account is closed. Only shares admitted to a regulated market or multilateral trading facility, units in minimum-tax institutions with at least 50% in shares, and share-based investment companies on SKAT’s list (if their shares are admitted to trading or their units are negotiable) may be held; an ineligible asset is treated as never having been in the account and goes on the ordinary return. A foreign “savings account” wrapper is an ordinary custody account under Danish rules. [Aktiesparekonto](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto)
-
-Crypto held privately is normally treated as bought for speculation. Gains are personal income (not share income), which SKAT says can mean tax of up to 53%; losses give a deduction worth 26%. Use FIFO across all wallets and exchanges as one holding, and report total gains in field 20 and total losses in field 58 separately; a loss on one trade generally cannot be netted against a gain on another. Paying for one crypto-asset with another is a disposal. SKAT says its pages describe practice under current rules and that the Tax Law Council’s October 2024 recommendations for new legislation have not been dealt with by Parliament, so check for a change before filing. [Crypto](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek/beregn-og-oplys-gevinst-og-tab-paa-krypto); [crypto practice note](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek)
-
-## When to refuse or refer
-
-- Refer corporate investors, pension wrappers, share savings account disputes, derivatives, crypto staking/mining/stablecoins/NFTs or a crypto question beyond the routing above, bonds/currency debt, employee-option charging, departure/arrival and exit tax, tax-exempt legacy holdings, reorganisations, gifts/inheritance, non-arm’s-length valuations, uncertain fund status, business property/depreciation and treaty-credit disputes. These need their own governing method. Do not silently broaden this ordinary individual-investor method to cover them.
+1. Were you fully liable to Danish tax all year, and are you married and living with your spouse on 31 December?
+2. For each holding: what is it (share, fund, ETF, bond, crypto), is it admitted to trading, where is it held, and is it in an aktiesparekonto?
+3. For any fund or ETF: is it on SKAT's list of share-based investment companies for 2026?
+4. For loss-making listed shares bought through a foreign broker: did SKAT receive the purchase details by 1 July of the following year? Do you have proof?
+5. For a property: did you or your household ever live there, what is the land area, what did it cost with costs and improvements by year, and when was the sale agreement signed?
+6. Are you planning to leave Denmark, and is your share holding worth DKK 100,000 or more?
 
 ## Sources
 
-Official SKAT guidance retrieved 24–25 September 2026. Recheck rates, fund classification and filing fields for the actual income year.
-- [shares](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier)
-- [average](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/gevinst-og-tab-opgoeres-efter-gennemsnitsmetoden)
-- [loss](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/betingelser-for-fradrag-for-tab-paa-aktier-og-investeringsbeviser)
-- [market](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktier-optaget-til-handel)
-- [fund](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber)
-- [home](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig)
-- [foreign](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-bolig-i-udlandet)
-- [correction](https://skat.dk/borger/aarsopgoerelse/se-og-ret-dine-gamle-aarsopgoerelser)
-- [share-based investment companies](https://info.skat.dk/data.aspx?oid=2292808)
-- [share-based list](https://skat.dk/erhverv/ekapital/vaerdipapirer/beviser-og-aktier-i-investeringsforeninger-og-selskaber-ifpa)
-- [holiday home](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-sommerhus)
-- [cooperative flat](https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-andelsbolig)
-- [share savings account](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto)
-- [crypto](https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek/beregn-og-oplys-gevinst-og-tab-paa-krypto)
+| Source | URL | Read on |
+|---|---|---|
+| Aktieavancebeskatningsloven, LBK nr. 849 of 21 September 2026 (§§ 13 A, 19, 23, 26, 38) | https://www.retsinformation.dk/eli/lta/2026/849 | 2026-10-26 |
+| Personskatteloven, LBK nr. 1284 of 14 June 2021 (§ 8 a) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-26 |
+| Kursgevinstloven, LBK nr. 1176 of 19 September 2025 (§§ 14, 23) | https://www.retsinformation.dk/eli/lta/2025/1176 | 2026-10-26 |
+| Ejendomsavancebeskatningsloven, LBK nr. 132 of 25 January 2019 (§§ 5, 6, 8) | https://www.retsinformation.dk/eli/lta/2019/132 | 2026-10-26 |
+| Aktiesparekontoloven, LBK nr. 281 of 13 March 2025 (§§ 14, 22) | https://www.retsinformation.dk/eli/lta/2025/281 | 2026-10-26 |
+| SKAT, tax on shares (2026 bands, loss rules, fields) | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier | 2026-10-26 |
+| SKAT, aktiesparekonto (2026 ceiling) | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/aktiesparekonto | 2026-10-26 |
+| SKAT, investment funds (lagerprincippet, fields) | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-investeringsbeviser-udstedt-af-investeringsforeninger-og-investeringsselskaber | 2026-10-26 |
+| SKAT, selling an owner-occupied home | https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-ejerbolig | 2026-10-26 |
+| SKAT, crypto gains and losses | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-paa-krypto-kend-reglerne-saa-du-undgaar-et-skattesmaek/beregn-og-oplys-gevinst-og-tab-paa-krypto | 2026-10-26 |
+| SKAT, purchase reporting for loss relief | https://skat.dk/borger/aktier-og-andre-vaerdipapirer/skat-af-aktier/betingelser-for-fradrag-for-tab-paa-aktier-og-investeringsbeviser | 2026-09-25 |
+| SKAT, share-based investment companies list | https://skat.dk/erhverv/ekapital/vaerdipapirer/beviser-og-aktier-i-investeringsforeninger-og-selskaber-ifpa | 2026-09-25 |
+| SKAT, holiday home sale | https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-sommerhus | 2026-09-25 |
+| SKAT, cooperative flat sale | https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-andelsbolig | 2026-09-25 |
+| SKAT, foreign home sale | https://skat.dk/borger/bolig-og-ejendomme/salg-af-bolig/salg-af-bolig-i-udlandet | 2026-09-25 |
+| SKAT, correcting old returns | https://skat.dk/borger/aarsopgoerelse/se-og-ret-dine-gamle-aarsopgoerelser | 2026-09-25 |
+
+Not yet confirmed: the latest consolidations of Personskatteloven (2021) and Ejendomsavancebeskatningsloven (2019) predate later amendments, so the 2026 band and the 1 July 2025 mixed-use home rule come from skat.dk, not the consolidated text; the 1 May 2026 filing date for non-business taxpayers, the correction cut-off dates, the fund and property field numbers (30, 434, 345, 375, 38, 422, 425, 495K) and the holiday-home, cooperative-flat and transitional purchase-reporting rules were carried from the September 2026 reading of skat.dk and not re-read today; the 2026 interest and surcharge rates on restskat are not stated here.
 
 <!-- openaccountants-cta-block -->
 
