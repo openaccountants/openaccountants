@@ -1,267 +1,222 @@
 ---
 name: fi-employer-payroll
 description: >
-  Prepare Finnish employer payroll reporting for 2026: distinguish earnings
-  payment reports, the employer's separate report and tax payment; calculate
-  the employer health-insurance contribution for eligible wages. Pension,
-  unemployment, accident coverage and full withholding review remain open.
+  Prepare ordinary Finnish employer payroll for tax year 2026, including wage
+  classification, tax-card ceilings, fringe-benefit valuation, employee deductions,
+  employer contributions, Incomes Register reporting and corrections. Covers
+  private-sector employees, working owners and insurance eligibility screens;
+  separates TyEL pensions, unemployment, health, accident and group-life cover.
+  Use for Finnish payslips, cash plus benefits, payroll taxes, salary reporting,
+  employer's separate report, contribution bases and missing tax cards. Includes
+  current statutory and annual-decision sources, payment deadlines, late-reporting
+  consequences and two executable examples. Pension contributions for entrepreneurs
+  are computed in the linked YEL Guide; international coverage requires the
+  actual A1 or applicable-law decision.
 jurisdiction: FI
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.7
+last_updated: 2026-10-26
+version: 0.8
 ---
 
-# Finland employer payroll reporting v0.7
+# Finland employer payroll reporting v0.8
+
+**Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Local source-cited draft awaiting fresh independent whole-pack review.
 
 ## Who this applies to
 
-This draft addresses the ordinary business-employer electronic reporting cycle. Household, paper-filing, non-cash-only, international and other exceptional cases require separate rules. It does not replace the worker-status, tax-card, wage-base or insurance assessment before payroll.
+Start with the actual employment/fee relationship, payer, residence and applicable insurance law. Prepayment Act section 13 treats employment compensation, fringe benefits and specified personal fees as wages; some board/management fees are tax wages even without an employment contract. That does not automatically put them in every insurance base. Business trade income follows section 25's prepayment-register/withholding route. Resolve working-owner YEL versus TyEL separately. [Prepayment Act 1118/1996, sections 9, 13, 25][prepayment-law]; [Employees Pensions Act 395/2006, sections 4, 7, 70][tyel-law].
 
-Reporting deadlines are linked to when the worker can use the payment, rather than when the work was performed. A different employer tax period does not extend the earnings-report deadline. [Incomes Register deadlines][deadlines]
+Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance wages and payment dates in separate columns. Wage withholding, employee pension/unemployment deductions and **employer** contributions are different liabilities. State/public pensions, seafarers, athletes and some foreign assignments use their own statutory coverage; do not force them into ordinary TyEL. [Employees Pensions Act, sections 3–4][tyel-law]; [Unemployment Financing Act, sections 12–15][fund-law].
 
 ## Rates, bands and thresholds
 
-Vero publishes a **1.91% employer health-insurance contribution for 2026**, compared with 1.87% for 2025. Its guidance covers employees aged 16–67 who are insured in Finland under the relevant health-insurance rules. Determine the applicable wage base and coverage before multiplying. [Social insurance contributions][insurance]
+| Item | 2026 rule | Primary source |
+|---|---|---|
+| Wage withholding | Valid tax-card basic/additional rates and income ceiling; ordinary missing-data rate 60% where no other prescribed rate applies | [Prepayment Decree 1124/1996, sections 2–4][decree] |
+| Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025, section 3][health-rates] |
+| Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2][health-rates]; [Health Insurance Act chapter 18][health-law] |
+| Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153][tyel-law]; [Vero 2026 contributions][insurance] |
+| TyEL monthly minimum | EUR 71.72 per employee/employer; indexed statutory threshold | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions annual statutory-amount table][tyel-index] |
+| TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4][tyel-law] |
+| Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
+| Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
+| Unemployment small payroll | Fund-payment threshold EUR 1,500/year; employee deduction still required below threshold | [Act 555/1998, sections 12a, 21][fund-law]; [Employment Fund liability][fund-scope] |
+| Accident / group life | Employer-only actual policy premiums; accident policy required above the indexed annual wage threshold; no universal flat rate | [Accident Act 459/2015, sections 3, 166, 268][accident-law]; [Vero 2026 contributions][insurance] |
 
-The employer contribution can apply even when withholding is zero or remuneration consists of benefits. The employee's insured-person health contribution is included in the withholding rate; do not deduct it again as a separate item. Vero distinguishes trade income from wages for this contribution. [Social insurance contributions][insurance]
+Separate part-owner wages from the ordinary employer unemployment band. State enterprises' upper rate is 0.72% and universities' 0.79%, not the ordinary 1.23%. A TyEL average (24.40% total / 17.10% employer in 2026) is an estimate, not a substitute for the actual insurer rate, expenses, bonuses and large-employer risk component. [Unemployment Financing Act, section 18][fund-law]; [Ilmarinen contribution calculation][tyel-calculation].
 
-The same official page lists pension, unemployment, occupational accident/disease and group life contributions separately. Their inclusion depends on the applicable coverage and other conditions. This Guide supplies no universal all-in employer percentage. [Social insurance contributions][insurance]
+| Ordinary fringe benefit | 2026 valuation | Official annual decision provision |
+|---|---|---|
+| Mobile/fixed telephone private-use benefit | EUR 20/month | [Benefit Decision, section 26][benefits] |
+| Ordinary employer meal | EUR 8.80 if direct cost including VAT EUR 8.80–14.00; otherwise actual direct cost | [Sections 10–11][benefits] |
+| Qualifying restricted meal voucher | 75% nominal value, minimum EUR 8.80, nominal value at most EUR 14; otherwise nominal; working-day/use restrictions apply | [Sections 13–14][benefits] |
+| Unlimited / limited company car, first used 2024–2026 | Basic 1.5% adjusted replacement price + EUR 285 / 105 monthly, or 19 / 7 cents private km | [Sections 17–24][benefits] |
+| First used 2021–2023 | 1.2% + EUR 300 / 120 monthly, or 20 / 8 cents private km | [Sections 17–24][benefits] |
+| First used before 2021 | 0.9% + EUR 315 / 135 monthly, or 21 / 9 cents private km | [Sections 17–24][benefits] |
+| Workplace charging, own/limited-benefit car | EUR 30/month pure electric; EUR 20/month plug-in hybrid | [Section 25][benefits] |
+| Central-heated housing, Helsinki 1 / 2 | EUR 299 + 13.20/m² / EUR 298 + 12.10/m² per month | [Sections 2–8, postal-code map][benefits] |
+| Helsinki 3/Espoo/Kauniainen; Helsinki 4/Vantaa | EUR 266 + 11.20/m²; EUR 214 + 11.20/m² monthly | [Sections 2–8][benefits] |
+| Listed regional cities / other metropolitan municipalities; elsewhere | EUR 206 + 9.70/m²; EUR 178 + 8.70/m² monthly | [Sections 2–8, full location list][benefits] |
 
-## Employee pension insurance: TyEL eligibility and shares
+These are valuation rules after eligibility/classification, not automatic benefits every worker has. Obtain the full annual decision for housing heating/electricity/garage exceptions and car details. [Benefit Decision][benefits].
 
-Ilmarinen's Finnish eligibility page specifies employment, monthly wages of at least **EUR 71.72 in 2026**, and the age conditions. Insurance begins from the month after turning 17 and ends at the end of the month of reaching the upper age: 68 for birth years through 1957, 69 for 1958–1961, and 70 for 1962 onwards. Its English eligibility page contains an inconsistent final birth-year phrase; the Finnish text and contribution page agree on 1962 onwards. [Finnish TyEL eligibility][tyel-eligibility]; [Contribution page][tyel-contributions]
+## The base
 
-Confirm the actual scheme, employment, insured earnings, birthday month, international coverage and any owner/entrepreneur classification. The existence of a YEL Guide does not settle employee TyEL status.
+### Build the taxable and insured bases
 
-For covered employees in 2026, the published employee share is **7.30%**. Deduct that share from pay and remit the full insurer contribution as employer. The published average total of 24.40% and average employer share of 17.10% are not every employer's invoice rate: administration, employer characteristics and bonuses can affect the actual charge. Obtain the current insurer-specific rate and reconcile it separately. [Ilmarinen contribution calculation][tyel-calculation]
+For every pay item record contractual gross cash, benefit value, employee reimbursement, taxable value, each insurance flag and income type. Ordinary salary, bonuses, holiday pay and compensation for unused leave are wages; a true termination damages payment can be taxable without being pension/unemployment earnings. Board fees, stock options, staff benefits and profit-sharing require their specific base exclusions. The insurance bases follow TyEL section 70, Unemployment Financing Act section 19, Accident Act section 81 and employer-health Act section 5, not merely the tax-wage total. [Prepayment Act, section 13][prepayment-law]; [TyEL Act, section 70][tyel-law]; [Act 555/1998, section 19][fund-law]; [Accident Act, section 81][accident-law]; [Act 771/2016, section 5][employer-health].
 
-## Unemployment insurance: classify before calculating
+For taxable benefits, deduct the employee's after-tax reimbursement from the benefit value without reducing contractual cash salary twice. Car replacement-price base is the recommended new retail price less EUR 3,400 plus taxable accessories above EUR 1,200; round the percentage basic component down to EUR 10. Unlimited means employer pays all costs; limited means employee pays at least fuel/energy. Commuting is private driving. Use a driving log for actual-km valuation and the decision's adjustments, including business driving over 30,000 km, pure-electric/qualifying hybrid operating reductions, and Income Tax Act section 64a's EUR 170/month zero-emission car-benefit reduction where eligible. Do not continue the expired workplace-charging exemption in 2026. [Benefit Decision, sections 17–25][benefits]; [Income Tax Act, sections 64–64a][income-law].
 
-The Employment Fund's liability guidance identifies employees aged 18 to under 65 and employer annual wages exceeding EUR 1,500, subject to exclusions. It excludes the specified self-employed/agricultural categories and flags ownership, entity type and international circumstances for assessment. The EUR 1,500 threshold concerns payment to the Fund, not whether to deduct a liable employee's contribution. Deduct the employee share even if annual payroll does not exceed EUR 1,500; in that case the employer keeps the deducted amount. Report the wages and deduction to the Incomes Register. [Employment Fund payment guidance][unemployment-payment] Birthday-month transitions and international coverage still need detailed checks. [Employment Fund liability][unemployment-liability]
+Housing value uses correct postal district, full private floor area, heating/electricity and statutory reductions; ordinary rent charged to the employee reduces the taxable benefit. For meals record actual workdays, direct cost, restricted-payment terms, free meals elsewhere and employee payments. A cash meal allowance is not automatically valued at the voucher discount. Section 69's staff-benefit exemption needs collective, ordinary/reasonable arrangements and the particular condition; the October amendment increases the eligible annual personal sports/culture benefit to EUR 540 for tax year 2026, not just benefits provided after 13 October. [Benefit Decision, sections 2–14][benefits]; [Income Tax Act, section 69 and Act 873/2026 commencement][income-law].
 
-Its 2026 payment guidance states:
+Tax-free travel reimbursements require an actual qualifying temporary business trip, travel claim and decision limits. Normal commuting to the regular workplace does not qualify. For 2026 own-car business mileage the basic maximum is EUR 0.55/km (qualifying additions separately); domestic partial per diem EUR 25 for **over six** hours, full EUR 54 for **over ten** hours, with both distance tests (over 15km from departure and over 5km from both home/regular workplace) and free-meal reductions. Foreign per diems require the decision's country/day rules. The 2027 schedule is a different year even if it is now the “latest version.” [Income Tax Act, sections 71–73][income-law]; [2026 Travel Decision, sections 3–14][travel]; [Prepayment Decree, section 17][decree].
 
-| Contribution | 2026 rate |
-|---|---|
-| Ordinary employer: eligible annual payroll up to EUR 2,509,500 | 0.31% |
-| Ordinary employer: excess over that band | 1.23% |
-| Ordinary employee | 0.89% |
-| Part-owner employee | 0.39% |
-| Employer on part-owner wages | 0.31% |
+### Withhold using the card and available cash
 
-Part-owner wages are excluded from the ordinary employer band calculation. The employee share is deducted from pay; the employer remits both shares on the Fund's invoices. Universities and state enterprises have separate upper rates. [Employment Fund payment guidance][unemployment-payment]
+Keep valid electronic/card instruction, effective dates, ceiling and this payer's cumulative covered payments during validity. Allocate the current taxable wage base to remaining basic-rate capacity, then additional-rate excess. A revised card starts its own effective instruction; requesting a higher rate alone does not change its ceiling. Prepayment Decree section 4 includes covered payments made using the prior-year carryover instruction where applicable. A missing paper card is irrelevant if valid electronic data is available; absent applicable data use the statutory default, normally 60% for wages. [Prepayment Decree, sections 2–4][decree]; [Vero tax-card ceiling][ceiling].
 
-Reconcile eligible wages and ownership status before calculating. This draft does not determine whether a shareholder meets the statutory part-owner definition. Keep the insurer/Fund decisions and payroll reports consistent; tax withholding and the employer health contribution are separate amounts.
+Withholding on cash plus benefits is calculated on the taxable total but cannot exceed available gross cash under Prepayment Act section 11. For example, EUR 500 cash + EUR 1,500 benefits at an assumed 40% gives EUR 800 theoretical withholding but only EUR 500 collectible cash. Record the shortfall; do not invent a negative bank payment or silently remove benefits. Noncash benefits ordinarily join each cash-pay period; an occasional benefit can use the decree's same-year allocation, including the at-most-EUR 400 small occasional route. Benefits-only months still require reporting and employer-health/insurance checks. [Prepayment Act, section 11][prepayment-law]; [Prepayment Decree, section 9][decree].
 
-## Withholding instructions and income ceilings
+### Insurance eligibility and net pay
 
-For ordinary wage withholding, obtain the current tax-card data electronically or from the employee. The card gives a basic rate, additional rate and income ceiling. Apply the additional rate to the part exceeding the applicable ceiling unless a valid revised card changes the instruction. Vero's wage-card guidance states **60% withholding when no wage tax card is available**; distinguish missing paper from valid data already received electronically. [Wage tax-card guidance][card]
+Resolve Finnish applicable law/A1 first, then each scheme independently. TyEL starts/ends by the birthday-month rules and monthly minimum in the table; it covers qualifying remuneration even for a pensioner working below the upper age. A working manager with more than 30% personally or more than 50% with family ownership/control is screened for YEL instead; indirect control and family definitions matter. Do not apply both schemes to the same entrepreneurial work. [TyEL Act, sections 4, 7][tyel-law]; [YEL Act, section 3][yel-law].
 
-Each employer monitors the wages it has paid against the annual ceiling; employees with multiple employers must monitor their overall position and obtain revised cards where needed. Asking for a higher withholding rate does not increase the ceiling. A lower rate requires a revised card based on updated income/deduction information. [Rate and ceiling guidance][ceiling]
+Unemployment begins the month after turning 18. For those born before 1965 it ends after the month of turning 65; later cohorts use their statutory minimum pension age under section 12a. In 2026 the older-cohort age rule is the relevant upper transition. YEL/MYEL entrepreneurs, specified athletes, seasonal workers and foreign-law cases are excluded. Working part-owners who are not YEL entrepreneurs use reduced employee contribution: leading role with personal ownership at least 15% or personal+family at least 30%, or nonleading ownership/control at least 50%, applying the statutory family/indirect-control rules on payday. Keep the classification evidence. [Unemployment Financing Act, sections 12a, 15, 18–19][fund-law]; [Employment Fund part-owner guidance][fund-scope].
 
-Retain the card's effective dates, source, rates, ceiling and the employer's cumulative payroll values. Confirm how a revised card applies to its validity period before changing the payroll calculation. These records are a preparation control; this draft does not prescribe every revised-card or cumulative-withholding algorithm. Cross-border tax-at-source cards and special remuneration require separate classification.
+Deduct liable employee unemployment even where total employer annual wages do not exceed EUR 1,500; the employer then retains the deduction, and still reports liability. Above threshold the Fund invoices both shares using actual reported earnings. For covered ordinary annual payroll compute `min(payroll,2509500) × 0.0031 + max(0,payroll−2509500) × 0.0123`; calculate part-owner employer wages at 0.31% separately. [Unemployment Financing Act, sections 12a, 18, 21][fund-law].
 
-## Statutory wage classification and cash limit
+Employer health requires Finnish health-insured employee and its age/entrepreneur exceptions; a working YEL owner salary requires the statutory obligation screen, not automatic TyEL. Multiply the established wage base by 1.91%, round the period total to cents. Employee health is already in resident/progressive withholding. Accident cover is arranged before work when the indexed annual wage agreement/payment threshold is exceeded; the employer alone pays the risk/policy rate. Group life is required where the applicable collective agreement requires it, using the actual policy rate; it is not an employee deduction. No single employer all-in percentage can replace these schedules. [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025][health-rates]; [Accident Act, sections 3, 166, 268][accident-law]; [Vero insurance][insurance].
 
-Prepayment Act section 13 includes employment remuneration, fringe benefits and specified personal fees in wages. Section 9 sets the payer's withholding obligation subject to exceptions; section 11 ties withholding to payment/crediting and limits it to the amount paid in cash. Benefits therefore affect the established base without automatically providing cash from which to withhold. Benefit-only withholding has separate decree rules. Resolve classification and available cash before completing the payslip; do not infer that missing cash removes reporting or employer-health obligations. [Prepayment Act, sections 9, 11 and 13][prepayment-law]
+Net cash is cash wages + genuine cash reimbursements − collectible withholding − employee pension/unemployment and other legally authorised cash deductions. Benefits are tax/insurance bases, not extra cash. Check cash insufficiency and deduction/recovery rules before finalising a low/no-cash payslip; retain employee amounts still recoverable and insurer obligations separately. Employer cost is gross contractual wage/benefit cost plus **employer** shares; adding the full TyEL invoice after already counting employee deductions overstates employer cost. [Prepayment Act, section 11][prepayment-law]; [TyEL Act, section 152][tyel-law]; [Act 555/1998, section 21][fund-law].
 
-## Reports and deadlines
+## Deadlines and filing
 
-| Obligation | Ordinary electronic-reporting rule |
-|---|---|
-| Earnings payment report | Within five calendar days following payment availability |
-| Employer's separate report | By the fifth of the following calendar month |
-| Registered regular employer with no wages | Monthly separate report with the appropriate no-wages information |
-| Casual business employer | Separate report for the relevant wage-payment months |
+| Obligation | Ordinary deadline / route | Source |
+|---|---|---|
+| Worker earnings payment report | Five calendar days after pay is available; weekend/holiday fifth day moves to next business day | [Incomes Register Act 53/2018, section 12][ir-law]; [official deadlines][deadlines] |
+| Benefits-only month | By fifth of following month; special following-month cash-pay allocation follows section 12(4) | [Incomes Register Act, section 12][ir-law] |
+| Employer separate report | Fifth of following month; regular employer no-wages data required; casual employer relevant payment months | [Incomes Register Act, sections 6, 12][ir-law]; [reporting instructions][reporting] |
+| Withholding / employer health payment | Monthly period: next month's 12th, next business day when relevant; approved longer tax periods use their own payment calendar | [Vero reporting/payment][reporting] |
+| TyEL | Insurer invoice/contract; earnings reporting uses statutory Incomes Register timing | [TyEL Act, sections 142–144, 152][tyel-law] |
+| Unemployment | Fund decision/invoice; quarterly invoices in April, July, October, January | [Act 555/1998, section 21][fund-law]; [Fund payment page][fund-payment] |
 
-[Incomes Register deadlines][deadlines]. Weekends and holidays count within the five-day period; when the final reporting day falls on a weekend or holiday, the guidance permits the following business day. Verify the particular calendar and exception before fixing the due date.
+Regular employers register and report monthly; a casual employer's limited reporting does not remove each earnings-payment report. Preserve accepted report IDs, tax-period liabilities, actual due dates and payment references; reporting does not make a payment. On errors, replace the original report with complete corrected information using its identifier; cancellation/replacement is required for the particular identifying facts that cannot be replaced. Correct the separate report if employer-health totals change. Overpayments require an unjust-enrichment report and separate recovery details; do not merely net an old error against an unrelated later salary. Under section 12, unjust benefit data are due without undue delay and within one month of discovery; recovery details within five days after receipt of the required repayment information. [Incomes Register Act, sections 6, 12][ir-law]; [Incomes Register correction guidance][corrections].
 
-The separate report carries the employer health contribution and relevant adjustments; it does not replace each worker's earnings details. Preserve both submission confirmations and reconcile their periods to payroll. [Employer reporting guidance][reporting]
+## Penalties and interest
 
-## Payment is a separate step
+The five-day filing duty and late-fee trigger are separate. Incomes Register Act sections 22–23 generally start the monthly late-fee clock **after the following month's eighth day**: EUR 3/day, maximum EUR 135; after 45 calendar days add 1% of late taxable remuneration or the larger pension-insured earnings. The amount-based component is capped at EUR 15,000/month. Corrections within 45 days of that eighth-day trigger avoid the fee; later positive corrections use the 1% route. Valid-reason/independent-cause and specified personal-payer exceptions apply. Do not use the self-assessed dividend/VAT return's 2% formula on an earnings report. [Incomes Register Act, sections 22–23][ir-law].
 
-For an ordinary monthly tax period, Vero's instructions direct payment of withholding and employer health contributions to the Tax Administration by the twelfth of the following month. Longer authorised tax periods affect payment timing; determine the employer's actual period rather than assuming one. Filing the earnings report is not itself evidence of payment. [Reporting/payment guidance][reporting]
+Failure to withhold/pay tax and omitted employer-health liabilities can cause assessed tax and tax increases under Self-assessed Tax Procedure Act sections 37–38: ordinary 10% of tax imposed; 15–50% repeated/manifest disregard; 25% estimated tax; 3% specified unclear/unreasonable cases; up to EUR 200 when no tax imposed, with statutory waiver conditions. Ordinary late tax payment interest is 9.5% annually for 2026, actual days after due date through payment/365. Pension, Fund and accident neglect/default charges follow their own laws/invoices, not the tax-interest rate by assumption. [Act 768/2016, sections 37–38][self-act]; [Vero interest][interest].
 
-Confirm the applicable business-day treatment, tax references and MyTax balance before delivery. Other insurers' contribution invoices have separate payment routes. This draft has not tested a live payroll submission, account or bank payment.
+## Cross-border points
 
-## Preparation workpaper
+Tax residence, PE, wage source, treaty exemption and social coverage are distinct tests. Use the [individual cross-border Guide](fi-individual-cross-border-residence.md) before choosing source-tax/progressive cards or the foreign-employment six-month exemption. An A1 determines applicable social law within its scope, not income tax. When Finnish insurance continues on a qualifying foreign posting, statutory **insurance salary** can replace actual foreign wages for pension/health/unemployment bases. The foreign-work wage exemption does not by itself remove minimum health withholding. [TyEL Act, section 72][tyel-law]; [Health Insurance Act, chapter 18 sections 17–18][health-law]; [Act 771/2016, section 5][employer-health]; [Act 555/1998, section 13][fund-law].
 
-Use this practical checklist alongside the verified payroll rules for the actual employee:
+## Two worked examples that recompute
 
-1. Establish worker classification, residence, insurance status and payment date.
-2. Reconcile cash wages, benefits, expenses and the bases used for each deduction/contribution.
-3. Apply the valid withholding instruction and separately supported employee deductions.
-4. Prepare each worker's earnings report and the employer's monthly separate report.
-5. Reconcile submissions, payslips, net cash, tax liabilities and insurer invoices.
-6. Retain acceptance confirmations, payment evidence and correction records.
-
-This checklist is preparation practice, not a complete statutory payroll specification. Wage and benefit valuation, tax cards, pensions, unemployment coverage, collective agreements and termination payments still need substantive checks.
-
-## Worked example
-
-Assume EUR 20,000 is the correctly established eligible employer-health contribution base for 2026, with no adjustments. At 1.91%, the contribution is EUR 382. The example excludes other employer costs and does not determine whether a worker is insured.
-
-```oa-check
-name: Finland 2026 employer health contribution
-inputs:
-  eligible_contribution_base: 20000
-  employer_health_rate: 0.0191
-steps:
-  employer_health_contribution: eligible_contribution_base * employer_health_rate
-expected:
-  employer_health_contribution: 382
-```
-
-### 2. A payment crosses the applicable ceiling
-
-Assume ordinary wage withholding, a valid card with a EUR 30,000 ceiling, EUR 28,000 previously paid by this employer within the relevant card calculation, a EUR 4,000 current payment, and card rates of 20% basic and 40% additional. EUR 2,000 remains at the basic rate and EUR 2,000 falls above the ceiling: withholding totals EUR 1,200. Rates are invented card assumptions. Employee insurance deductions and the final cash payment require separate calculations.
+**1. Ordinary employee and separate employer health.** Assume EUR 3,000 cash wages, valid assumed 20% tax-card rate without a ceiling issue, all wages eligible for employee TyEL 7.30%, unemployment 0.89% and employer health 1.91%, no benefits/other deductions. Net cash is EUR 2,154.30; EUR 57.30 employer health is additional employer liability. The employee's health is already in the assumed tax-card rate. Actual total employer cost also requires the insurer/Fund/policy charges.
 
 ```oa-check
-name: Finland assumed tax card ceiling crossing
-inputs:
-  card_ceiling: 30000
-  previous_employer_payments: 28000
-  current_wages: 4000
-  assumed_basic_rate: 0.20
-  assumed_additional_rate: 0.40
-steps:
-  remaining_ceiling: card_ceiling - previous_employer_payments
-  basic_rate_wages: min(current_wages, max(0, remaining_ceiling))
-  additional_rate_wages: current_wages - basic_rate_wages
-  withheld_tax: basic_rate_wages * assumed_basic_rate + additional_rate_wages * assumed_additional_rate
-expected:
-  remaining_ceiling: 2000
-  basic_rate_wages: 2000
-  additional_rate_wages: 2000
-  withheld_tax: 1200
-```
-
-### 3. No available wage-card instruction
-
-Assume an ordinary EUR 2,000 wage payment to which Vero's missing-card rule applies and no valid electronic withholding data. Withholding at 60% is EUR 1,200. The EUR 800 remainder is before separate employee insurance and other valid deductions, not a final payslip net amount.
-
-```oa-check
-name: Finland assumed missing wage card withholding
-inputs:
-  ordinary_wages: 2000
-  missing_card_rate: 0.60
-steps:
-  withheld_tax: ordinary_wages * missing_card_rate
-  remainder_before_other_deductions: ordinary_wages - withheld_tax
-expected:
-  withheld_tax: 1200
-  remainder_before_other_deductions: 800
-```
-
-### 4. Ordinary employer unemployment bands
-
-Assume EUR 3,000,000 of fully eligible ordinary annual payroll, excluding part-owner wages and special employer categories. Applying the published bands gives EUR 7,779.45 plus EUR 6,033.15, totalling EUR 13,812.60. This estimates the employer share only; reconcile actual invoicing and rounding separately.
-
-```oa-check
-name: Finland 2026 ordinary employer unemployment bands
-inputs:
-  eligible_ordinary_payroll: 3000000
-  lower_band_limit: 2509500
-  lower_rate: 0.0031
-  upper_rate: 0.0123
-steps:
-  lower_band_wages: min(eligible_ordinary_payroll, lower_band_limit)
-  upper_band_wages: max(0, eligible_ordinary_payroll - lower_band_limit)
-  lower_contribution: round(lower_band_wages * lower_rate, 2)
-  upper_contribution: round(upper_band_wages * upper_rate, 2)
-  employer_total: lower_contribution + upper_contribution
-expected:
-  lower_band_wages: 2509500
-  upper_band_wages: 490500
-  lower_contribution: 7779.45
-  upper_contribution: 6033.15
-  employer_total: 13812.60
-```
-
-### 5. Employee deductions versus employer contribution
-
-Assume ordinary cash wages of EUR 3,000, valid assumed tax-card withholding of 20%, full TyEL eligibility at 7.30%, ordinary employee unemployment eligibility at 0.89%, and no other deductions. Cash pay is EUR 2,154.30 after EUR 600 tax, EUR 219 pension and EUR 26.70 unemployment. If the same EUR 3,000 is the employer-health base, its EUR 57.30 contribution is an additional employer liability, not another employee deduction. The example does not establish eligibility or total employer cost.
-
-```oa-check
-name: Finland assumed employee payroll deduction reconciliation
+name: Finland 2026 employee net cash and separate employer health
 inputs:
   cash_wages: 3000
   assumed_card_rate: 0.20
-  employee_pension_rate: 0.073
-  employee_unemployment_rate: 0.0089
-  employer_health_rate: 0.0191
 steps:
   tax_withheld: cash_wages * assumed_card_rate
-  employee_pension: cash_wages * employee_pension_rate
-  employee_unemployment: cash_wages * employee_unemployment_rate
-  employee_cash: cash_wages - tax_withheld - employee_pension - employee_unemployment
-  employer_health_separately: cash_wages * employer_health_rate
+  employee_pension: cash_wages * 0.073
+  employee_unemployment: cash_wages * 0.0089
+  net_cash: cash_wages - tax_withheld - employee_pension - employee_unemployment
+  employer_health: cash_wages * 0.0191
 expected:
   tax_withheld: 600
   employee_pension: 219
-  employee_unemployment: 26.7
-  employee_cash: 2154.3
-  employer_health_separately: 57.3
+  employee_unemployment: 26.70
+  net_cash: 2154.30
+  employer_health: 57.30
 ```
 
-### 6. Withholding cannot exceed cash pay
-
-Assume EUR 500 gross cash wages, EUR 1,500 properly valued taxable benefits, and a valid invented 40% ordinary withholding instruction with no ceiling issue. The uncapped calculation is EUR 800, but statutory withholding is limited to the EUR 500 cash amount. The EUR 300 difference is a reconciliation flag, not a conclusion about a separate tax debt or recovery right. Insurance deductions, later payments, benefits-only rules and the final payslip require separate checks.
+**2. Benefit crosses the card ceiling.** Assume EUR 4,000 cash plus eligible EUR 20 phone benefit, all subject to these employee insurance bases. This payer previously paid EUR 28,000 covered income under a valid EUR 30,000 ceiling; assumed card rates 20%/40%. Current EUR 4,020 base splits EUR 2,000 basic / EUR 2,020 additional: tax EUR 1,208 within available cash. Employee pension EUR 293.46, unemployment EUR 35.78 after cent rounding; net cash EUR 2,462.76. Employer health EUR 76.78 is separate. Coverage/card facts are explicit assumptions.
 
 ```oa-check
-name: Finland assumed cash limit on wage withholding
+name: Finland phone benefit ceiling crossing and payslip
 inputs:
-  gross_cash_wages: 500
-  established_taxable_benefits: 1500
-  assumed_card_rate: 0.40
+  cash_wages: 4000
+  taxable_phone_benefit: 20
+  card_ceiling: 30000
+  prior_payments: 28000
+  basic_rate: 0.20
+  additional_rate: 0.40
 steps:
-  taxable_wage_base: gross_cash_wages + established_taxable_benefits
-  uncapped_withholding: taxable_wage_base * assumed_card_rate
-  cash_limited_withholding: min(uncapped_withholding, gross_cash_wages)
-  difference_from_uncapped_amount: uncapped_withholding - cash_limited_withholding
+  taxable_base: cash_wages + taxable_phone_benefit
+  basic_base: min(taxable_base, max(0, card_ceiling - prior_payments))
+  additional_base: taxable_base - basic_base
+  calculated_withholding: basic_base * basic_rate + additional_base * additional_rate
+  collectible_withholding: min(cash_wages, calculated_withholding)
+  employee_pension: round(taxable_base * 0.073, 2)
+  employee_unemployment: round(taxable_base * 0.0089, 2)
+  net_cash: cash_wages - collectible_withholding - employee_pension - employee_unemployment
+  employer_health: round(taxable_base * 0.0191, 2)
 expected:
-  taxable_wage_base: 2000
-  uncapped_withholding: 800
-  cash_limited_withholding: 500
-  difference_from_uncapped_amount: 300
+  taxable_base: 4020
+  basic_base: 2000
+  additional_base: 2020
+  calculated_withholding: 1208
+  collectible_withholding: 1208
+  employee_pension: 293.46
+  employee_unemployment: 35.78
+  net_cash: 2462.76
+  employer_health: 76.78
 ```
 
 ## Ask the client first
 
-- Who is paid, for what work, where, and on which payment dates?
-- What are the worker's insurance status and valid withholding instructions?
-- Which amounts are wages, benefits, expenses or trade income?
-- Is the employer registered as regular, and what is its payment tax period?
-- Which reports, corrections, insurer invoices and payments already exist?
+1. Who is paid, what legal relationship/ownership role applies, where is work done and when is pay available?
+2. Which Finnish/A1/other insurance decisions, birth dates and scheme identifiers apply?
+3. What cash, benefits, reimbursements and nonordinary payments need classification and valuation?
+4. What valid tax-card dates/rates/ceiling and this payer's cumulative earnings apply?
+5. Which insurer/policy rates, annual payroll bands and regular-employer/tax-period registrations apply?
+6. Which reports, errors, repayments, invoices and paid amounts need correction/reconciliation?
 
-## Sources and review limits
+## Sources
 
-Official text retrieved through the search index on 23 October 2026:
+| Primary source | Provisions / purpose | Read on |
+|---|---|---|
+| [Prepayment Act 1118/1996][prepayment-law]; [Decree 1124/1996][decree] | Act sections 9–13, 25; decree sections 2–4, 9, 17; wage/card/cash rules | 2026-10-26 |
+| [Income Tax Act 1535/1992][income-law]; [2026 Benefit Decision][benefits]; [2026 Travel Decision][travel] | Sections 64–69, 71–73, Act 873/2026 commencement; annual valuation/reimbursement rules | 2026-10-26 |
+| [TyEL Act 395/2006][tyel-law]; [indexed statutory amounts][tyel-index]; [Vero insurance][insurance]; [Ilmarinen contribution calculation][tyel-calculation] | Sections 4, 7, 70, 72, 142–144, 152–153; current threshold/share | 2026-10-26 |
+| [YEL Act 1272/2006][yel-law] | Section 3 owner/entrepreneur test | 2026-10-26 |
+| [Unemployment Financing Act 555/1998][fund-law]; [Fund liability][fund-scope]; [Fund payment][fund-payment] | Sections 12–15, 18–21; 2026 rates and reporting/invoices | 2026-10-26 |
+| [Employer Health Act 771/2016][employer-health]; [Health Insurance Act 1224/2004][health-law]; [Decree 1026/2025][health-rates] | Coverage, wages, insurance salary and 2026 annual rates | 2026-10-26 |
+| [Accident Act 459/2015][accident-law] | Sections 3, 8–9, 81, 166, 268; scope, wage and actual rate | 2026-10-26 |
+| [Incomes Register Act 53/2018][ir-law]; [deadlines][deadlines]; [reporting][reporting]; [corrections][corrections] | Sections 6, 12, 22–23; reports, recovery and late fees | 2026-10-26 |
+| [Self-assessed Tax Procedure Act 768/2016][self-act]; [Vero interest][interest] | Tax collection/understatement penalties and 2026 late interest | 2026-10-26 |
 
-- [Prepayment Act][prepayment-law], sections 9, 11 and 13, read directly from the official page's embedded Finnish statutory text on 23 October 2026. Full decree, contribution-law and exceptional-case reconciliation remains open.
+Not yet confirmed: separately scoped public/seafarer/athlete schemes, share incentives, unusual termination and foreign coverage cases. Their own laws apply; the ordinary payroll route above awaits independent pack review. No professional attestation is claimed.
 
-- [Vero social insurance contributions][insurance], 2026 table and scope.
-- [TyEL eligibility in Finnish][tyel-eligibility], [contribution page][tyel-contributions] and [contribution calculation][tyel-calculation], retrieved in indexed insurer text on 23 October 2026.
-- [Employment Fund liability][unemployment-liability] and [payment/rate guidance][unemployment-payment], retrieved as indexed official text on 23 October 2026.
-- [Incomes Register deadlines][deadlines].
-- [Vero wage reporting and employer contributions][reporting].
-- [Wage tax-card guidance][card], updated 14 April 2026; [rate and ceiling guidance][ceiling], updated 1 January 2026, retrieved as indexed official text.
-
-Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, full pension statutory/coverage review, accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action); named Finnish accountant review remains outstanding. Payroll and social-contribution coverage remain partial.
-
-[insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [prepayment-law]: https://www.finlex.fi/fi/lainsaadanto/1996/1118
+[decree]: https://www.finlex.fi/fi/lainsaadanto/1996/1124
+[income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
+[benefits]: https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/
+[travel]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
+[insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
+[tyel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/395
+[tyel-index]: https://www.telp.fi/indeksit/tyoelakelaeissa_saadetyt_rahamaarat_vuodesta-2/tyel_2026/
+[tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/
+[yel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/1272
+[fund-law]: https://www.finlex.fi/fi/lainsaadanto/1998/555
+[fund-scope]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/
+[fund-payment]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/
+[employer-health]: https://www.finlex.fi/fi/lainsaadanto/2016/771
+[health-law]: https://www.finlex.fi/fi/lainsaadanto/2004/1224
+[health-rates]: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026
+[accident-law]: https://www.finlex.fi/fi/lainsaadanto/2015/459
+[ir-law]: https://www.finlex.fi/fi/lainsaadanto/2018/53
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [reporting]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/
-
-[card]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/wage-earners/
 [ceiling]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/
-
-[unemployment-liability]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/
-[unemployment-payment]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/
-
-[tyel-eligibility]: https://www.ilmarinen.fi/tyonantaja/tyel-vakuutus/
-[tyel-contributions]: https://www.ilmarinen.fi/en/employer/tyel-contributions/
-[tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/
+[corrections]: https://www.vero.fi/en/incomes-register/companies-and-organisations/reporting-data-to-the-incomes-register/correcting-data/
+[self-act]: https://www.finlex.fi/fi/lainsaadanto/2016/768
+[interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
