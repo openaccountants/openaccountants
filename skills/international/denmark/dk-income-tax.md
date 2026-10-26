@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Tax year: the calendar year (indkomståret 2026). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statutes: Personskatteloven (PSL), Ligningsloven (LL), Kildeskatteloven (KSL), Arbejdsmarkedsbidragsloven and Skattekontrolloven, on retsinformation.dk.
 
-2026 is the first year of the personal tax reform (lov following L 138 of 2023-24, adopted 16 May 2024). The old topskat is renamed mellemskat, and two new layers start: a new topskat and a toptopskat. Read every pre-2026 source with that in mind.
+2026 is the first year of the personal tax reform (lov nr. 482 af 22. maj 2024, from bill L 138 of 2023-24). The consolidated Personskatteloven is still LBK nr. 1284 af 14. juni 2021, as amended; read it with lov nr. 482. The old topskat is renamed mellemskat, and two new layers start: a new topskat and a toptopskat. Read every pre-2026 source with that in mind.
 
 ## Who this applies to
 
@@ -69,7 +69,7 @@ Tax year: the calendar year (indkomståret 2026). Currency: Danish kroner (DKK).
 | Return filing deadline, self-employed | 1 July of the following year | 2026 | https://info.skat.dk/data.aspx?oid=2284485 |
 | B-skat instalments | 10, none in June and December | 2026 | https://skat.dk/en-us/individuals/b-income |
 | Skattetillæg for late return (Skattekontrolloven § 73) | DKK 400 a day, max DKK 10,000; DKK 200 a day, max DKK 5,000 if taxable income is not above the mellemskat threshold | 2026 | https://info.skat.dk/data.aspx?oid=2284578 |
-| Restskat surcharge (KSL § 61, stk. 2) | Opkrævningsloven § 7, stk. 2 rate plus 1.5 points | 2026 | https://info.skat.dk/data.aspx?oid=2169090 |
+| Restskat surcharge (KSL § 61, stk. 2) | Opkrævningsloven § 7, stk. 2 rate plus 1.5 points; 5.7% on income year 2025 restskat; the 2026 rate is set by 15 December 2026 | 2026 | https://skat.dk/restskat |
 
 All PSL thresholds are 2010-level base amounts indexed under PSL § 20. The 2027 figures are already published: mellemskat DKK 659,900, topskat DKK 800,500, toptopskat DKK 2,668,200, personfradrag DKK 55,700, share income DKK 89,600.
 
@@ -117,7 +117,7 @@ The personfradrag works as a tax credit at each rate. If its value cannot be use
 - **B-skat.** Paid in 10 monthly instalments, none in June and December. Fixed B-income goes in field 210. On a one-off B-income amount, pay 8% AM-bidrag and then tax at the withholding rate on the rest.
 - **Årsopgørelse (tax assessment notice).** For income year 2026 it opens in TastSelv Borger in March 2027 (the 2025 one opened from 23 March 2026 for business owners). Employees with no changes need do nothing.
 - **Return deadline.** The self-employed must report final profit or loss and the business information by **1 July 2027** for income year 2026. An extended deadline can be applied for from mid-March to 1 July.
-- **Restskat.** Tax still owed after the year is restskat, plus a surcharge (the Opkrævningsloven § 7, stk. 2 rate plus 1.5 points, rounded to one decimal). A small restskat (base DKK 18,300 at 2010 level, indexed) is added to the next year's preliminary tax when the årsopgørelse is ready in time. The rest falls due in three instalments on 1 August, 1 September and 1 October of the year after the income year, with the last payment day on the 20th of each month.
+- **Restskat.** Tax still owed after the year is restskat, plus a surcharge (the Opkrævningsloven § 7, stk. 2 rate plus 1.5 points, rounded to one decimal). A small restskat (base DKK 18,300 at 2010 level, indexed; DKK 25,368 for income year 2025 per skat.dk) is added to the next year's preliminary tax when the årsopgørelse is ready in time. The rest falls due in three instalments on 1 August, 1 September and 1 October of the year after the income year, with the last payment day on the 20th of each month.
 
 ## Penalties and interest
 
@@ -169,7 +169,7 @@ expected:
 
 ### Example 2: high earner, skatteloft and share income
 
-Lars is self-employed outside VSO with a 2026 profit of DKK 1,000,000. He lives in a municipality at 26.30% (the highest 2026 rate), is not a church member, has no net capital income, and receives DKK 100,000 of dividends.
+Lars is self-employed outside VSO with a 2026 profit of DKK 1,000,000. He lives in a municipality at 26.30%, is not a church member, has no net capital income, and receives DKK 100,000 of dividends.
 
 AM-bidrag is DKK 80,000, so personal income is DKK 920,000. Both allowances are at their caps (DKK 63,300 and DKK 3,100), so taxable income is DKK 853,600.
 
@@ -225,6 +225,9 @@ expected:
 | Skatte- og Vækstministeriet, Personskatteloven rates and thresholds 2026 and 2027 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/personskatteloven | 2026-10-26 |
 | Skatte- og Vækstministeriet, amounts indexed under PSL § 20, 2025-2026 | https://svmn.dk/tal-og-metode/satser/regulering-af-beloebsgraenser/beloebsgraenser-i-skattelovgivningen-der-reguleres-efter-personskattelovens-20-2025-2026 | 2026-10-26 |
 | Skatte- og Vækstministeriet, average municipal and church tax 2026 | https://svmn.dk/tal-og-metode/satser/statistik-i-kommunerne/kommuneskatter-gennemsnitsprocenten-i-2026 | 2026-10-26 |
+| Lov nr. 482 af 22. maj 2024 | https://www.retsinformation.dk/eli/lta/2024/482 | 2026-10-26 |
+| Personskatteloven, LBK nr. 1284 af 14. juni 2021 (current consolidation) | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-26 |
+| Skattestyrelsen, restskat for 2025 (5.7%, DKK 25,368) | https://skat.dk/restskat | 2026-10-26 |
 | Folketinget, L 138 (2023-24) as adopted: reform of personal tax (PSL §§ 5, 7, 7 a, 8, 9, 19; LL § 9 J) | https://folketingstidende.dk/samling/20231/lovforslag/L138/20231_L138_som_vedtaget.pdf | 2026-10-26 |
 | Skattestyrelsen, bundskat, mellemskat, topskat and toptopskat 2026 | https://skat.dk/hjaelp/bundskat-mellemskat-topskat-og-toptopskat | 2026-10-26 |
 | Skattestyrelsen, beskæftigelses- og jobfradrag 2026 | https://skat.dk/borger/fradrag/arbejdsrelaterede-fradrag/beskaeftigelses-og-jobfradrag | 2026-10-26 |
@@ -242,4 +245,4 @@ expected:
 | Den juridiske vejledning, depreciation of buildings | https://info.skat.dk/data.aspx?oid=2083987 | 2026-10-26 |
 | Den juridiske vejledning, depreciation of goodwill | https://info.skat.dk/data.aspx?chk=220619&oid=2083994 | 2026-10-26 |
 
-Not yet confirmed: the current consolidated text of Personskatteloven and the law number of the adopted L 138 (figures here are from the adopted bill and the ministry's 2026 table); the 2026 Opkrævningsloven § 7, stk. 2 rate and so the restskat surcharge in percent; the 2026 indexed restskat carry-over amount (DKK 18,300 at 2010 level); the date in 2027 the 2026 årsopgørelse opens; the PSL § 13 loss order; fine levels for under-reporting; AM-bidrag for limited-liability persons; the voluntary-payment (frivillig indbetaling) rules for restskat.
+Not yet confirmed: the restskat surcharge percent for income year 2026 (published by 15 December 2026); the indexed restskat carry-over amount for income year 2026; the date in 2027 the 2026 årsopgørelse opens; the PSL § 13 loss order; fine levels for under-reporting; AM-bidrag for limited-liability persons; the voluntary-payment (frivillig indbetaling) rules for restskat.
