@@ -18,7 +18,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 |---|---|---|
 | IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | checked against the law |
 | IT-CORP, corporate income tax | ch-corporate-income-tax | checked against the law |
-| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return points to it | sourced from the law |
+| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return (2026 return: effective, net tax rate and flat tax rate methods, annual settlement instalments, reverse charge in the return, corrections, interest) | sourced from the law |
 | SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | checked against the law |
 | PR, payroll withholding | ch-payroll | checked against the law |
 | TP, transfer pricing | ch-transfer-pricing | checked against the law |
