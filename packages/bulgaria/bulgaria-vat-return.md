@@ -1,666 +1,195 @@
 ---
 name: bulgaria-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Bulgarian VAT return (Spravka-deklaratsiya po DDS) for any client. Trigger on phrases like "prepare VAT return", "do the DDS", "fill in DDS return", "create the return", "Bulgarian VAT", or any request involving Bulgaria VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Bulgaria only and standard DDS registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Bulgarian VAT work.
-version: 2.0
+description: "Bulgarian VAT (ДДС) for tax year 2026 under the Value Added Tax Act (ZDDS) as amended from 1 January 2026, in euro. Covers who must register; the 20%, 9% and 0% rates and what is at 9% in 2026; the new EUR 51,130 calendar-year registration threshold, the 7-day application and the registration date; the domestic and EU small enterprise schemes; input VAT and blocked credit; the monthly return (справка-декларация), ledgers and VIES declaration by the 14th; payment and refunds; distance sales and OSS; reverse charge; invoicing deadlines; the SAF-T timetable; deregistration; and penalties. Lev amounts in the law are shown in euro at BGN 1.95583. Trigger phrases: Bulgarian VAT, ДДС, ЗДДС, VAT return Bulgaria, регистрация по ЗДДС, VIES декларация, Bulgaria OSS. Out of scope: corporate tax (bg-corporate-income-tax), individuals' income tax (bulgaria-income-tax), payroll (bulgaria-payroll), treaties and withholding (bg-cross-border)."
+version: 2.1
 jurisdiction: BG
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bulgaria VAT (ДДС) Return
-
-## Section 1 — Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Bulgaria (Republic of Bulgaria) |
-| Standard rate | 20% |
-| Reduced rates | 9% (accommodation/hotel services, printed/electronic books, baby food/hygiene products) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods, international transport) |
-| Return form | Spravka-deklaratsiya po DDS (monthly summary return with purchase/sales ledgers) |
-| Filing portal | https://portal.nra.bg (NRA e-services portal) |
-| Authority | Natsionalna agentsiya za prihodite (NRA / NAP — National Revenue Agency) |
-| Currency | BGN (Bulgarian Lev); EUR from 2026 target date — verify |
-| Filing frequencies | Monthly only (no quarterly/annual option for VAT returns in Bulgaria) |
-| Deadline | 14th of the month following the tax period |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Validated by | Deep research verification, April 2026 |
-| Validation date | April 2026 |
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Key return structure — Bulgaria uses purchase/sales ledgers submitted with the return:**
-
-The return (Spravka-deklaratsiya) summarizes ledger totals. Key rows:
-
-**Return row table**
-
-| Row | Meaning |
-| --- | --- |
-| 01 | Total output DDS (danak za nachislyavane) |
-| 11 | Output DDS on domestic supplies at 20% |
-| 12 | Output DDS on domestic supplies at 9% |
-| 13 | Output DDS on intra-EU acquisitions |
-| 14 | Output DDS on services received from abroad (reverse charge) |
-| 15 | Output DDS on import (deferred payment scheme if applicable) |
-| 20 | Zero-rated supplies (exports) |
-| 21 | Intra-EU supplies of goods |
-| 22 | Services to EU (B2B, place of supply = customer) |
-| 30 | Exempt supplies without credit |
-| 31 | Total input DDS (danak za prispacane / tax credit) |
-| 40 | Input DDS on domestic purchases |
-| 41 | Input DDS on intra-EU acquisitions (reverse charge input side) |
-| 42 | Input DDS on imports |
-| 43 | Input DDS on services from abroad (reverse charge input side) |
-| 50 | Net DDS position (Row 01 minus Row 31) |
-| 60 | Excess credit (nadvishan danak za prispacane) — 3-period offset rule |
-| 70 | DDS payable to budget |
-| 80 | DDS refundable (after 3-period offset) |
-
-**Conservative defaults — Bulgaria-specific values for the universal categories in `vat-workflow-base` Section 2:**
-
-**Conservative defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 20% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Bulgaria |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 20% |
-| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU |
-| Unknown blocked-input status (entertainment, personal use) | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
-
-**Red flag thresholds table**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | BGN 5,000 |
-| HIGH tax-delta on a single conservative default | BGN 400 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net DDS position | BGN 10,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-- **Required inputs — Minimum viable** — bank statement for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Bulgarian or international business bank: UniCredit Bulbank, DSK Bank, Fibank (First Investment Bank), Postbank (Eurobank Bulgaria), UBB (United Bulgarian Bank), Raiffeisenbank Bulgaria, Revolut Business, Wise Business, or any other.
-- **Required inputs — Recommended** — sales invoices for the period (especially for intra-EU B2B services and zero-rated supplies), purchase invoices for any input DDS claim above BGN 400, the client's DDS number in writing (BG + 9/10 digits).
-- **Required inputs — Ideal** — complete purchase/sales ledgers (dnevnik za pokupkite / dnevnik za prodazhbite), prior period return, reconciliation of excess credit brought forward.
-- **Refusal policy if minimum is missing** — SOFT WARN. If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This return was produced from bank statement alone. The reviewer must verify, before approval, that input DDS claims above BGN 400 are supported by compliant tax invoices and that all reverse-charge classifications match the supplier's invoice."
-
-These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation.
-
-- **R-BG-1 — Non-registered entity attempting to file a DDS return** — Trigger: client is not registered for DDS and turnover is below the mandatory threshold (EUR 51,130 / BGN 100,000 from 2026). Message: "Non-registered entities do not file DDS returns. If you wish to register voluntarily, contact NRA first."
-- **R-BG-2 — Partial exemption (mixed taxable and exempt supplies)** — Trigger: client makes both taxable and exempt-without-credit supplies and the exempt proportion is not de minimis. Message: "You make both taxable and exempt supplies. Your input DDS must be apportioned using the partial credit coefficient (koefitsient) under ZDDS Art. 73. This requires an annual calculation. Please use a qualified accountant to determine the coefficient before input DDS is claimed."  _(ZDDS Art. 73)_
-- **R-BG-3 — VAT group structure** — Trigger: client is part of a DDS group registration. Message: "DDS group registrations require consolidation across the group. Out of scope."
-- **R-BG-4 — Special schemes (margin, travel agent, investment gold)** — Trigger: client deals in second-hand goods, travel packages, or investment gold under special schemes. Message: "Special DDS schemes require transaction-level margin or package computation. Out of scope for this skill."
-- **R-BG-5 — SAF-T filing complexity** — Trigger: client is a large enterprise required to file SAF-T alongside the DDS return with complex multi-branch reporting. Message: "SAF-T filing for large enterprises with multi-branch structures requires specialist IT and accounting setup. Out of scope."
-- **R-BG-6 — Fiscal representative** — Trigger: non-resident supplier with fiscal representative in Bulgaria. Message: "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a qualified accountant."
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. Do not consult Tier 1 rules — the table is authoritative for patterns it covers.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Bulgarian banks (fees exempt — exclude)
-
-**Bulgarian banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| UNICREDIT BULBANK, BULBANK | EXCLUDE for bank charges/fees | Financial service, exempt |
-| DSK BANK, DSK | EXCLUDE for bank charges/fees | Same |
-| FIBANK, FIRST INVESTMENT BANK | EXCLUDE for bank charges/fees | Same |
-| POSTBANK, EUROBANK BULGARIA | EXCLUDE for bank charges/fees | Same |
-| UBB, UNITED BULGARIAN BANK | EXCLUDE for bank charges/fees | Same |
-| RAIFFEISENBANK BG, RAIFFEISEN | EXCLUDE for bank charges/fees | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
-| ЛИХВА, ЛИХВИ, INTEREST | EXCLUDE | Interest income/expense, out of scope |
-| КРЕДИТ, ЗАЕМ, LOAN | EXCLUDE | Loan principal movement, out of scope |
-
-### 3.2 Bulgarian government, regulators, and statutory bodies (exclude entirely)
-
-**Government/regulator table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| НАП, NRA, NAP, NATIONAL REVENUE | EXCLUDE | Tax payment, not a supply |
-| ДДС ПЛАЩАНЕ, VAT PAYMENT | EXCLUDE | DDS payment |
-| МИТНИЦА, CUSTOMS | EXCLUDE | Customs duty (but check for import VAT on customs declaration) |
-| НОИ, NSSI, SOCIAL INSURANCE | EXCLUDE | Social security payment |
-| ОБЩИНА, MUNICIPALITY | EXCLUDE | Municipal fees, sovereign acts |
-| АГЕНЦИЯ ПО ВПИСВАНИЯТА, REGISTRY AGENCY | EXCLUDE | Company registration fees |
-| ПАТЕНТНО ВЕДОМСТВО | EXCLUDE | Patent office fees |
-
-### 3.3 Bulgarian utilities
-
-**Utilities table**
-
-| Pattern | Treatment | Row | Notes |
-| --- | --- | --- | --- |
-| ЧЕЗ, CEZ RAZPREDELENIE, CEZ ELECTRO | Domestic 20% | 40 (input) | Electricity — overhead |
-| ЕЛЕКТРОХОЛД, ELECTROHOLD | Domestic 20% | 40 (input) | Electricity distributor |
-| EVN BULGARIA, EVN | Domestic 20% | 40 (input) | Electricity — overhead |
-| ENERGO-PRO, ЕНЕРГО-ПРО | Domestic 20% | 40 (input) | Electricity — overhead |
-| СОФИЙСКА ВОДА, SOFIYSKA VODA | Domestic 20% | 40 (input) | Water — overhead |
-| VIVACOM, ВИВАКОМ | Domestic 20% | 40 (input) | Telecoms/broadband |
-| A1 BULGARIA, А1 | Domestic 20% | 40 (input) | Telecoms |
-| YETTEL, ТЕЛЕНОР | Domestic 20% | 40 (input) | Telecoms |
-| БУЛГАРГАЗ, OVERGAS | Domestic 20% | 40 (input) | Gas supply |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DZI, ДЗИ | EXCLUDE | Insurance, exempt |
-| BULSTRAD, БУЛСТРАД | EXCLUDE | Same |
-| ALLIANZ BULGARIA, АЛИАНЦ | EXCLUDE | Same |
-| GENERALI BULGARIA | EXCLUDE | Same |
-| EUROINS, ЕВРОИНС | EXCLUDE | Same |
-| UNIQA BULGARIA | EXCLUDE | Same |
-| ЗАСТРАХОВКА, INSURANCE, ПРЕМИЯ | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | Row | Notes |
-| --- | --- | --- | --- |
-| БЪЛГАРСКИ ПОЩИ, BULGARIAN POSTS | EXCLUDE for standard postal services |  | Universal postal service, exempt |
-| БЪЛГАРСКИ ПОЩИ (parcel/courier) | Domestic 20% | 40 | Non-universal services are taxable |
-| SPEEDY, СПИДИ | Domestic 20% | 40 | Domestic courier |
-| ECONT, ЕКОНТ | Domestic 20% | 40 | Domestic courier |
-| DHL EXPRESS BG | Domestic 20% | 40 | Express courier |
-| DHL INTERNATIONAL | EU reverse charge (DE/IE entity) | 41/43 | Check invoice — European billing entity |
-
-### 3.6 Transport
-
-**Transport table**
-
-| Pattern | Treatment | Row | Notes |
-| --- | --- | --- | --- |
-| БДЖ, BDZ, BULGARIAN RAILWAYS | Domestic 20% | 40 | Domestic rail |
-| SOFIA METRO, МЕТРОПОЛИТЕН | EXCLUDE / 20% |  | Public transport |
-| TAXI, ТАКСИМЕТРОВ | Domestic 20% | 40 | Local taxi |
-| RYANAIR, WIZZ AIR (international) | EXCLUDE / 0% |  | International flights zero rated |
-| BULGARIA AIR (domestic) | Domestic 20% | 40 | Domestic flight |
-| BULGARIA AIR (international) | EXCLUDE / 0% |  | International flight zero rated |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-**Food retail table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KAUFLAND, LIDL, BILLA, FANTASTICO | Default BLOCK input DDS | Personal provisioning. Deductible only if hospitality/catering business. |
-| CBA, METRO CASH & CARRY | Default BLOCK unless resale | If buying for resale, deductible |
-| РЕСТОРАНТ, RESTAURANT, КАФЕ, CAFE | Default BLOCK | Entertainment/representation — see Section 5.12 |
-
-### 3.8 SaaS — EU suppliers (reverse charge)
-
-These are billed from EU entities and trigger reverse charge under ZDDS Art. 82(2).
-
-**SaaS EU suppliers table**  _(ZDDS Art. 82(2))_
-
-| Pattern | Billing entity | Row | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 14/43 | Reverse charge services |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 14/43 | Reverse charge |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 14/43 | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 14/43 | Reverse charge |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 14/43 | Reverse charge |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 14/43 | EU, reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | 14/43 | Reverse charge |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 14/43 | Reverse charge |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 14/43 | EU, reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 14/43 | Reverse charge |
-| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | 14/43 | Transaction fees may be exempt — see 3.11 |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge)
-
-**SaaS non-EU suppliers table**
-
-| Pattern | Billing entity | Row | Notes |
-| --- | --- | --- | --- |
-| AWS EMEA SARL | AWS EMEA SARL (LU) | 14/43 | LU entity = EU reverse charge |
-| NOTION | Notion Labs Inc (US) | 14/43 | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 14/43 | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 14/43 | Non-EU reverse charge |
-| GITHUB (standard plans) | GitHub Inc (US) | 14/43 | Check if billed by IE entity |
-| FIGMA | Figma Inc (US) | 14/43 | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | 14/43 | Non-EU reverse charge |
-| HUBSPOT | HubSpot Inc (US) or IE — check | 14/43 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 14/43 | Non-EU reverse charge |
-
-### 3.10 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (monthly subscription) | EU reverse charge | Stripe IE entity — separate from transaction fees |
-| SUMUP, SQUARE, ZETTLE | Check invoice | If BG entity: domestic 20%; if IE/EU entity: reverse charge |
-
-### 3.11 Professional services (Bulgaria)
-
-**Professional services table**
-
-| Pattern | Treatment | Row | Notes |
-| --- | --- | --- | --- |
-| НОТАРИУС, NOTARY | Domestic 20% | 40 | Deductible if business purpose |
-| СЧЕТОВОДИТЕЛ, ACCOUNTANT, ОДИТОР, AUDITOR | Domestic 20% | 40 | Always deductible |
-| АДВОКАТ, LAWYER, ATTORNEY | Domestic 20% | 40 | Deductible if business legal matter |
-| ТЪРГОВСКИ РЕГИСТЪР, COMMERCIAL REGISTER | EXCLUDE | Government fee, not a supply |  |
-
-### 3.12 Payroll and social security (exclude entirely)
-
-**Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ДОО, DOO, СОЦИАЛНО ОСИГУРЯВАНЕ | EXCLUDE | Social security contribution |
-| ДЗПО, DZPO | EXCLUDE | Supplementary pension |
-| ЗО, ЗДРАВНО ОСИГУРЯВАНЕ | EXCLUDE | Health insurance contribution |
-| ЗАПЛАТА, SALARY, WAGES | EXCLUDE | Wages — outside DDS scope |
-| ДАНЪК ВЪРХУ ДОХОДИТЕ | EXCLUDE | Income tax |
-
-### 3.13 Property and rent
-
-**Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| НАЕМ, RENT (commercial, with DDS invoice) | Domestic 20% | Commercial lease where landlord charges DDS |
-| НАЕМ, RENT (residential, no DDS) | EXCLUDE | Residential lease exempt (first letting) |
-| ПРОМИШЛЕН ПАРК, INDUSTRIAL PARK | Domestic 20% | Industrial/commercial let |
-
-### 3.14 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ВЪТРЕШЕН ПРЕВОД, OWN TRANSFER, INTERNAL | EXCLUDE | Internal movement |
-| ДИВИДЕНТ, DIVIDEND | EXCLUDE | Dividend payment, out of scope |
-| ПОГАСЯВАНЕ НА КРЕДИТ, LOAN REPAYMENT | EXCLUDE | Loan principal, out of scope |
-| ТЕГЛЕНЕ, CASH WITHDRAWAL, ATM | Ask | Default exclude; ask what cash was spent on |
-
-## Section 4 — Worked examples
-
-These are six fully worked classifications drawn from a hypothetical bank statement of a Bulgaria-based self-employed IT consultant. They illustrate the trickiest cases.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; BGN 28.70`
-
-**Reasoning:**
-Notion Labs Inc is a US entity (Section 3.9). No VAT on the invoice. Service received from non-EU supplier. Under ZDDS Art. 82(2), the Bulgarian recipient self-assesses output DDS at 20% and simultaneously claims input DDS. Both sides must appear: output in Row 14, input in Row 43. Net effect zero for fully taxable client.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row (input) | Row (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -28.70 | -28.70 | 5.74 | 20% | 43 | 14 | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -1,660.00 ; BGN`
-
-**Reasoning:**
-Google Ireland Limited is an IE entity — standard EU reverse charge. Google Ads is a service. Output DDS self-assessed at 20% in Row 14, input DDS in Row 43. Both sides on the return. Net zero for fully taxable client.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row (input) | Row (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -1,660.00 | -1,660.00 | 332.00 | 20% | 43 | 14 | N | — | — |
-
-### Example 3 — Entertainment/representation, limited deduction
-
-**Input line:**
-`15.04.2026 ; РЕСТОРАНТ ЩАСТЛИВЕЦА ; DEBIT ; Business dinner ; -430.00 ; BGN`
-
-**Reasoning:**
-Restaurant transaction. In Bulgaria, entertainment/representation expenses have deductible input DDS but the expense itself is subject to a 10% expense tax under the Corporate Income Tax Act (ZKPO Art. 204–207). The input DDS on the invoice IS deductible (unlike Malta where entertainment is hard-blocked). However, for a sole trader (ET), representation expenses may be challenged. Default: claim input DDS but flag for reviewer. Note the 10% expense tax obligation separately.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | РЕСТОРАНТ ЩАСТЛИВЕЦА | -430.00 | -358.33 | -71.67 | 20% | 40 | Y | Q1 | "Representation: confirm business purpose; 10% expense tax applies" |
-
-### Example 4 — Capital goods (no statutory threshold)
-
-**Input line:**
-`18.04.2026 ; ТЕХНОПОЛИС ; DEBIT ; Laptop Lenovo ThinkPad ; -3,118.00 ; BGN`
-
-**Reasoning:**
-Bulgaria does not have a specific DDS monetary threshold for capital goods like Malta's EUR 1,160. However, assets used for business with a useful life > 1 year are subject to capital goods adjustment rules: 5-year for movables (ZDDS Art. 79(3)), 20-year for immovables (ZDDS Art. 79(7)). This laptop qualifies as a capital asset. Input DDS is deductible. Flag for capital goods tracking.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | ТЕХНОПОЛИС | -3,118.00 | -2,598.33 | -519.67 | 20% | 40 | N | — | "Capital goods — 5yr adjustment tracking" |
-
-### Example 5 — EU B2B service sale (inbound receipt)
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice BG-2026-018 IT consultancy March ; +6,850.00 ; BGN`
-
-**Reasoning:**
-Incoming from a German company. The client provides IT consulting services. B2B place of supply is the customer's country (Germany). The Bulgarian client invoices at 0%. Report in Row 22 (services to EU). Confirm: (a) customer has valid USt-IdNr; (b) invoice shows no Bulgarian DDS.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +6,850.00 | +6,850.00 | 0 | 0% | 22 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6 — Motor vehicle, partial restriction
-
-**Input line:**
-`28.04.2026 ; OMV БЪЛГАРИЯ ; DEBIT ; Fuel ; -150.00 ; BGN`
-
-**Reasoning:**
-Fuel purchase. In Bulgaria, input DDS on passenger vehicles and their fuel/maintenance is deductible only if the vehicle is used exclusively for business, for taxi/rent-a-car, or if the vehicle has 6+1 seats. For a standard passenger car used partly for personal purposes, input DDS is restricted. Default: 0% recovery unless the client can demonstrate 100% business use or the vehicle qualifies under the exceptions (ZDDS Art. 70(1)(4-5)).
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | DDS | Rate | Row | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | OMV БЪЛГАРИЯ | -150.00 | -150.00 | 0 | — | — | Y | Q3 | "Vehicle: confirm 100% business use or excluded vehicle type" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-Each rule states the legal source and the row mapping. Apply silently if the data is unambiguous.
-
-### 5.1 Standard rate 20% (ZDDS Art. 66(1)(1))
-
-- **Unknown rate on a sale** — 20%
-
-### 5.2 Reduced rate 9% (ZDDS Art. 66(2))
-
-- **Reduced rate** — 9% (Applies to: accommodation/hotel services (tourist sector), printed and electronic books and publications, specific baby food and hygiene products. Sales: Row 12 (output base/DDS). Purchases: Row 40 at 9%.)  _(ZDDS Art. 66(2))_
-- **Restaurant/catering 9% rate expiry** — The temporary 9% rate on restaurant/catering and sports facilities expired 31 December 2024. From 1 January 2025 these are at 20%.
-
-### 5.3 Zero rate and exempt with credit
-
-- **Zero rate and exempt with credit categories** — Exports outside EU (ZDDS Art. 28): Row 20. Intra-EU B2B supplies of goods (ZDDS Art. 7): Row 21 (zero-rated, requires VIES-verified VAT number, transport proof). Intra-EU B2B services (ZDDS Art. 21(2)): Row 22 (place of supply is customer's country). International transport (ZDDS Art. 30-32): Row 20.  _(ZDDS Art. 28, Art. 7, Art. 21(2), Art. 30-32)_
-
-### 5.4 Exempt without credit
-
-- **Exempt without credit categories** — Financial services (Art. 46), insurance (Art. 47), healthcare (Art. 39), education (Art. 41), residential rental first letting (Art. 45), gambling (Art. 48), postal universal service (Art. 49). These are excluded from the return — no output DDS, no input deduction on related costs.  _(ZDDS Art. 46, 47, 39, 41, 45, 48, 49)_
-
-### 5.5 Local standard purchases
-
-- **Local standard purchases** — Input DDS on a compliant tax invoice (данъчна фактура) from a BG supplier is deductible for purchases used in taxable business activity. Subject to blocked-input rules (5.12). Map to Row 40.
-
-### 5.6 Reverse charge — EU services received (ZDDS Art. 82(2))
-
-- **Reverse charge EU services received** — Service from EU supplier invoiced at 0% with reverse-charge note: output DDS self-assessed at 20% in Row 14, input DDS in Row 43. Net zero for fully taxable client. If the EU supplier charged their local VAT, that is NOT reverse charge — treat as overhead with irrecoverable foreign VAT.  _(ZDDS Art. 82(2))_
-
-### 5.7 Reverse charge — EU goods received (ZDDS Art. 84)
-
-- **Reverse charge EU goods received** — Physical goods from EU supplier: output DDS self-assessed in Row 13, input DDS in Row 41.  _(ZDDS Art. 84)_
-
-### 5.8 Reverse charge — non-EU services received (ZDDS Art. 82(2))
-
-- **Reverse charge non-EU services received** — Services from outside EU with no VAT charged: same treatment as EU reverse charge. Output in Row 14, input in Row 43.  _(ZDDS Art. 82(2))_
-
-### 5.9 Imports (ZDDS Art. 56)
-
-- **Imports** — Physical goods imported from non-EU: import DDS assessed by customs on the customs declaration. Input DDS on import in Row 42 if goods are for taxable business use.  _(ZDDS Art. 56)_
-
-### 5.10 Capital goods adjustments (ZDDS Art. 79)
-
-- **Capital goods adjustments** — Movable capital goods: 5-year adjustment period. Immovable property: 20-year adjustment period. No specific monetary threshold — asset classification based on accounting standards (useful life > 1 year). If client disposes of or changes use, adjustment may be required.  _(ZDDS Art. 79)_
-
-### 5.11 3-period excess credit offset (ZDDS Art. 92)
-
-- **3-period excess credit offset** — Bulgaria has a unique rule: if input DDS exceeds output DDS, the excess is NOT immediately refundable. It must be offset against output DDS due in the next 3 consecutive periods. Only if excess remains after 3 periods is it refundable. Exception: accelerated refund for businesses with >30% zero-rated supplies.  _(ZDDS Art. 92)_
-
-### 5.12 Blocked input DDS (ZDDS Art. 70)
-
-- **Blocked input DDS categories** — The following have restricted or zero recovery: - Passenger vehicles (up to 8+1 seats) and their fuel/maintenance — blocked unless used exclusively for taxable business, taxi/rent-a-car, 6+1 seat exception (Art. 70(1)(4-5)) - Goods/services for entertainment/representation — input DDS IS deductible, but subject to 10% expense tax under ZKPO - Goods for personal use of staff/owners (Art. 70(1)(2)) - Goods/services not used for taxable supplies (Art. 70(1)(1))  _(ZDDS Art. 70)_
-
-### 5.13 Sales — local domestic (any rate)
-
-- **Sales local domestic** — Charge 20% or 9% as applicable. Report in sales ledger and Rows 11/12.
-
-### 5.14 Sales — cross-border B2C
-
-- **Sales cross-border B2C** — Services to EU consumers above EUR 10,000 threshold: R-EU-5 (OSS refusal) from eu-vat-directive fires. Below threshold: Bulgarian DDS at applicable rate.
-
-### 5.15 Purchase/sales ledgers (ZDDS Art. 124-126)
-
-- **Purchase/sales ledgers** — Both the purchase ledger (dnevnik za pokupkite) and sales ledger (dnevnik za prodazhbite) MUST be submitted with the return. Each invoice must be individually recorded.  _(ZDDS Art. 124-126)_
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — Pattern: OMV, Shell, Лукойл, Petrol, EKO, fuel receipts. Why insufficient: vehicle type and business-use unknown. Passenger car fuel blocked unless 100% business or qualifying vehicle. Default: 0% recovery. Question: "Is this a passenger car (restricted) or a commercial vehicle/qualifying vehicle used 100% for business?"
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** — Pattern: any restaurant, café, bar, catering name. Why insufficient: representation expenses deductible for DDS but trigger 10% expense tax. Business vs personal unknown. Default: block input DDS. Question: "Was this a business representation expense? (Note: if yes, input DDS deductible but 10% expense tax applies under ZKPO.)"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities** — Pattern: Google, Microsoft, Adobe, Meta, Slack, Zoom, etc. Why insufficient: same brand bills from IE, US, or local entity. Default: non-EU reverse charge. Question: "Check the invoice for the legal entity name and billing country."
-
-### 6.4 Round-number incoming transfers from owner-named counterparties
-
-- **Round-number incoming transfers from owner-named counterparties** — Pattern: large round credit matching client's name. Default: exclude as owner injection. Question: "Is this a customer payment, your own money, or a loan?"
-
-### 6.5 Incoming transfers from individual names
-
-- **Incoming transfers from individual names** — Pattern: incoming from private-looking counterparties. Default: domestic B2C sale at 20%. Question: "Was this a sale? Business or consumer? Country?"
-
-### 6.6 Incoming transfers from foreign counterparties
-
-- **Incoming transfers from foreign counterparties** — Pattern: foreign IBAN or foreign currency. Default: domestic 20%. Question: "B2B with VAT number, B2C, goods or services, which country?"
-
-### 6.7 Large one-off purchases (capital goods tracking)
-
-- **Large one-off purchases (capital goods tracking)** — Pattern: equipment, laptop, machinery. Why insufficient: no statutory DDS threshold but accounting classification determines adjustment period. Default: deductible; flag for capital goods register. Question: "Confirm useful life > 1 year for capital goods tracking."
-
-### 6.8 Mixed-use phone, internet, home office
-
-- **Mixed-use phone, internet, home office** — Pattern: Vivacom, A1, Yettel personal lines; home electricity. Default: 0% if mixed without declared %. Question: "Dedicated business line or mixed-use? Business percentage?"
-
-### 6.9 Outgoing transfers to individuals
-
-- **Outgoing transfers to individuals** — Pattern: outgoing to private-looking names. Default: exclude as drawings. Question: "Contractor with invoice, wages, refund, or personal transfer?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — Pattern: ATM, теглене, cash withdrawal. Default: exclude as owner drawing. Question: "What was the cash used for?"
-
-### 6.11 Rent payments
-
-- **Rent payments** — Pattern: наем, rent, lease. Default: no DDS (residential default). Question: "Commercial or residential? Does landlord charge DDS?"
-
-### 6.12 Foreign hotel and accommodation
-
-- **Foreign hotel and accommodation** — Pattern: hotel charged abroad. Default: exclude from input DDS. Question: "Was this a business trip?"
-
-### 6.13 Credit brought forward and 3-period offset
-
-- **Credit brought forward and 3-period offset** — Pattern: excess credit from prior periods. Why insufficient: must track the 3-period offset chain. Default: flag for reviewer. Question: "Which period did the excess credit originate? Has it been offset for 3 consecutive periods?"
-
-## Section 7 — Excel working paper template (Bulgaria-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Bulgaria-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("Row code") accepts only valid Bulgaria DDS row codes from Section 1 of this skill. Use blank for excluded transactions.
-
-### Sheet "Row Summary"
-
-**Row Summary formulas**
-
-```
-Output DDS:
-| 11 | Output DDS domestic 20% | =SUMIFS(Transactions!F:F, Transactions!H:H, "11") |
-| 12 | Output DDS domestic 9% | =SUMIFS(Transactions!F:F, Transactions!H:H, "12") |
-| 13 | Output DDS intra-EU goods | =SUMIFS(Transactions!F:F, Transactions!H:H, "13") |
-| 14 | Output DDS reverse charge services | =SUMIFS(Transactions!F:F, Transactions!H:H, "14") |
-| 20 | Zero-rated exports | =SUMIFS(Transactions!E:E, Transactions!H:H, "20") |
-| 21 | Intra-EU supplies goods | =SUMIFS(Transactions!E:E, Transactions!H:H, "21") |
-| 22 | Intra-EU services | =SUMIFS(Transactions!E:E, Transactions!H:H, "22") |
-| 01 | Total output DDS | =SUM(Row11..Row15) |
-
-Input DDS:
-| 40 | Input DDS domestic | =SUMIFS(Transactions!F:F, Transactions!H:H, "40") |
-| 41 | Input DDS EU goods | =SUMIFS(Transactions!F:F, Transactions!H:H, "41") |
-| 42 | Input DDS imports | =SUMIFS(Transactions!F:F, Transactions!H:H, "42") |
-| 43 | Input DDS reverse charge services | =SUMIFS(Transactions!F:F, Transactions!H:H, "43") |
-| 31 | Total input DDS | =SUM(Row40..Row43) |
-
-Settlement:
-| 50 | Net DDS (Row 01 - Row 31) | =Row01-Row31 |
-| 70 | DDS payable (if 50 > 0) | =MAX(0, Row50) |
-| 60 | Excess credit (if 50 < 0) | =ABS(MIN(0, Row50)) |
+# Bulgaria VAT (2026)
+
+> **Source-cited draft.** Drafted from the consolidated Value Added Tax Act (Закон за данък върху добавената стойност, ZDDS, last amended ДВ бр. 69/2026), the Tax-Insurance Procedure Code (DOPK), the Euro Introduction Act and the Law on Interest on Taxes, Fees and Other Similar State Receivables, all on lex.bg, read on 2026-10-23 and 2026-10-24. No accountant has reviewed it. Do not file from it without review by a qualified Bulgarian professional.
+
+Authority: the National Revenue Agency (NRA, НАП, nra.bg). Currency: the euro from 1 January 2026. The ZDDS registration rules were rewritten with effect from 1 January 2026 (ДВ бр. 115/2025) and now state their thresholds in euro. The penalty chapter still prints amounts in leva. Under the Euro Introduction Act those are read as euro, converted at BGN 1.95583 per euro and rounded to the cent (arts. 11(2), 12, 13). Fines and penalty payments are expressly brought under these conversion rules by § 5(1) of the Act's transitional provisions. Each converted figure below shows the lev amount next to it.
+
+## Who this applies to
+
+- **Taxable persons established in Bulgaria** (seat, permanent address or habitual residence) must register when their **annual turnover in Bulgaria for the calendar year** exceeds the national threshold of **EUR 51,130** (ZDDS art. 96(1)). Turnover is defined in art. 168в: taxable supplies including intra-EU supplies, zero-rated and exempt-with-credit supplies, financial and insurance services and exempt property supplies, plus advances received. Sales of the business's own fixed assets and incidental financial, insurance and property supplies are left out.
+- **2025 carry-in.** A Bulgarian-established person not registered on 1 January 2026 whose 2025 turnover exceeded EUR 51,130 had to register, with 1 January 2026 as the registration date (ZDDS transitional § 63(1), ДВ бр. 115/2025).
+- **Below the threshold.** A Bulgarian business under EUR 51,130 in both the current and the previous year is in the domestic small enterprise scheme by default and does not charge VAT (arts. 168д(1) to (4)). It may register voluntarily (art. 100(1)). The EU small enterprise scheme (art. 168е) lets it stay exempt in other member states too, while its EU-wide turnover stays under EUR 100,000.
+- **Businesses established in another EU state** must register when they make taxable supplies in Bulgaria and do not use the EU small enterprise scheme here (art. 96(3)). Those that do use it must register once Bulgarian turnover exceeds EUR 51,130 or EU turnover exceeds EUR 100,000 (art. 96(2)).
+- **Businesses established outside the EU** must register before VAT on their first taxable supply in Bulgaria becomes chargeable (art. 96(4)).
+- **Other registration grounds:** intra-EU acquisitions above EUR 10,000 a year by persons not otherwise registered (art. 99(1), (2)); receiving services from abroad on which the Bulgarian recipient owes the VAT, or supplying B2B services to other EU states (art. 97а).
+- **Not covered here:** VAT on imports at customs, the special schemes for travel agents, second-hand goods and investment gold, and the farmers' scheme.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 20% | 2026 | ZDDS art. 66(1), https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: hotel and similar accommodation, holiday lets, camping and caravan pitches | 9% | 2026 | ZDDS art. 66а, item 1, https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: books (print or electronic) and newspapers and magazines, except mainly advertising, video or music content | 9% | 2026 | ZDDS art. 66а, item 2, https://lex.bg/laws/ldoc/2135533201 |
+| Reduced rate: food for babies and young children, baby nappies and similar baby hygiene items (Annex 4) | 9% | 2026 | ZDDS art. 66а, item 3, https://lex.bg/laws/ldoc/2135533201 |
+| Zero rate: exports of goods outside the EU | 0% | 2026 | ZDDS art. 28, https://lex.bg/laws/ldoc/2135533201 |
+| Zero rate: intra-EU supplies of goods, with the documents held by the end of the following month | 0% | 2026 | ZDDS art. 53, https://lex.bg/laws/ldoc/2135533201 |
+| National registration threshold (calendar-year turnover in Bulgaria) | EUR 51,130 | 2026 | ZDDS arts. 96(1), 168д(2), https://lex.bg/laws/ldoc/2135533201 |
+| EU small enterprise scheme threshold (EU-wide turnover) | EUR 100,000 | 2026 | ZDDS art. 96(2)(2), https://lex.bg/laws/ldoc/2135533201 |
+| Registration application deadline after the threshold is exceeded | 7 days | 2026 | ZDDS art. 96(6)(1), https://lex.bg/laws/ldoc/2135533201 |
+| Intra-EU acquisitions threshold (non-registered persons) | EUR 10,000 per calendar year | 2026 | ZDDS art. 99(2), https://lex.bg/laws/ldoc/2135533201 |
+| EU-wide threshold for distance sales of goods and B2C telecom, broadcasting and e-services | EUR 10,000 per calendar year | 2026 | ZDDS art. 20б(1)(3), https://lex.bg/laws/ldoc/2135533201 |
+| Cash accounting scheme ceiling (turnover in current and previous year) | EUR 500,000 | 2026 | ZDDS art. 151а(1)(1), https://lex.bg/laws/ldoc/2135533201 |
+| Simplified invoice (without the recipient's details and the tax base and VAT per line) allowed up to | EUR 100 (tax base plus VAT), not for supplies placed in another EU state, intra-EU supplies or distance sales | 2026 | ZDDS art. 114(7)(2), https://lex.bg/laws/ldoc/2135533201 |
+| Conversion rate for lev amounts | BGN 1.95583 = EUR 1, rounded to the cent | 2026 | Euro Introduction Act arts. 11(2), 12, 13 and transitional § 5(1), https://lex.bg/bg/laws/ldoc/2137244903 |
+
+The EUR 51,130 threshold is the figure written in the statute. It is not the converted old BGN 100,000 (which would be EUR 51,129.19), and the old rolling 12-month test is gone: turnover is now counted per calendar year. There is no other 9% item in the ZDDS for 2026 (art. 66а has only the three items above). Restaurant and catering services are at 20%. Further zero-rated supplies are listed in Chapter Three (arts. 28 to 36), for example international passenger transport (art. 29), transport of goods to or from a non-EU country (art. 30).
+
+## The taxable base
+
+- **Output VAT.** VAT is charged on taxable supplies with their place of supply in Bulgaria. The registered supplier owes it (art. 82(1)), except where the recipient owes it under the reverse charge (see Cross-border points).
+- **Monthly result.** For each month the result is output VAT less the input VAT deducted in that month (art. 88). A positive figure is VAT to pay; a negative figure is VAT to recover.
+- **Input VAT.** Deductible on goods and services used for taxable supplies. It may be claimed in the month the right arises or in any of the next 12 monthly periods (art. 72(1)).
+- **Blocked input VAT** (art. 70(1)): goods and services used for exempt supplies or for non-business purposes; representation and entertainment; purchase or import of cars and motorcycles; and their repair, upkeep and running costs. The car and motorcycle block does not apply (art. 70(2)) where the vehicle is used only for transport or security services, taxi services, renting out, courier services or driver training, or is bought only for resale; or where such an activity is the business's main activity, even with other use.
+- **Refunds.** VAT to recover is first set off against other NRA debts. Any balance is carried against VAT payable in the next two monthly periods. What is left after that is set off against other NRA debts or refunded within 30 days of the last of those returns (art. 92(1)(4)). Businesses with more than 30% zero-rated supplies in the last 12 months get a refund within 30 days of the return without the two-month wait (art. 92(3)(1)).
+- **Cash accounting.** Registered businesses with turnover up to EUR 500,000 in both the current and the previous year, and no unpaid tax or recent audit liability, may opt to account for VAT when paid (art. 151а).
+- **Invoices.** Issue an invoice no later than 5 days after the tax point, or 5 days after an advance is received (art. 113(4)). For intra-EU supplies of goods, by the 15th of the month after the tax point (art. 113(5)). Amounts may be in any currency, but the tax base and VAT must be shown in euro (art. 114(5)).
+
+## Deadlines and filing
+
+| Obligation | Deadline | Source |
+|---|---|---|
+| Registration application, threshold exceeded (art. 96(1), (2)) | Within 7 days of exceeding the threshold | ZDDS art. 96(6)(1) |
+| Registration date in that case | The day after the threshold is exceeded | ZDDS art. 103, item 1 |
+| Registration application, EU or non-EU business with no threshold (art. 96(3), (4)) | At least 7 days before VAT on the first taxable supply becomes chargeable | ZDDS art. 96(6)(2) |
+| Tax period | The calendar month; the first period runs from the registration date to month end | ZDDS art. 87(2), (3) |
+| VAT return (справка-декларация), purchase and sales ledgers, and VIES declaration | By the 14th of the month after the period, electronically. A return is due even with no transactions | ZDDS art. 125(1) to (5), (7) |
+| Payment of VAT due | By the same 14th | ZDDS art. 89(1) |
+| Payment for the last period before deregistration | By the end of the month after the month the return was due | ZDDS art. 89(2) |
+| OSS (Union scheme) return and payment | By the end of the month after each calendar quarter | ZDDS art. 159(1), (4), (11) |
+| Correcting a filed return | Before the 14th: refile. After: correct in the period the error is found, or notify the NRA | ZDDS art. 126(2), (3) |
+| SAF-T (стандартен одитен файл) | Monthly, by the end of the following month, once a business is in scope (timetable below) | DOPK art. 71к(1) |
+
+**SAF-T timetable.** All enterprises under the Accountancy Act are in scope, except micro-enterprises not registered for VAT (DOPK art. 71з). The first filing month depends on size (DOPK transitional § 17(1), State Budget Act 2025):
+
+- **1 January 2026:** large enterprises at 31 December 2023 with 2023 net sales above BGN 300,000,000 (EUR 153,387,564.36) or 2023 net payments to the NRA above BGN 3,500,000 (EUR 1,789,521.58).
+- **1 January 2027:** large, medium or small enterprises at 31 December 2024 meeting the same two tests on 2024 figures.
+- **1 January 2028:** large, medium or small enterprises at 31 December 2025 with 2025 net sales above BGN 15,000,000 (EUR 7,669,378.22) or net NRA payments above BGN 1,500,000 (EUR 766,937.82).
+- **1 January 2029:** all large, medium and small enterprises at 31 December 2026.
+- **1 January 2030:** everyone else in scope.
+
+On these phased start dates the general six-month grace period for a first SAF-T obligation (DOPK art. 71к(5)) does not apply: files are due from the first month, and files may be corrected by refiling for 12 months from the start date (§ 17(2)).
+
+**Deregistration.**
+- A business registered because it crossed the threshold may deregister when the ground falls away (art. 108(1)(1)). If it exceeded the threshold in the previous year, it cannot deregister before the end of the current year (art. 108(5)).
+- A voluntary registrant cannot deregister for 12 months from the start of the year after it registered (art. 108(2)), nor before the end of the current year if it exceeded the threshold in the previous year (art. 108(7)).
+- Deregistration is compulsory on death, liquidation and the other events in art. 107. Where the event is the striking-off of a sole trader, a liquidation or the dissolution of a foreign-established person, the application is due within 14 days of the event (art. 109(1)).
+- On deregistration the business is treated as supplying all goods and services it still holds on which it deducted input VAT. That VAT goes in the last return (art. 111(1), (3)).
+
+## Penalties and interest
+
+| Failure | Penalty | Source |
+|---|---|---|
+| No registration or deregistration application on time | BGN 500 to 5,000 (EUR 255.65 to 2,556.46) | ZDDS art. 178(1) |
+| Return or VIES declaration not filed, or filed late | BGN 500 to 10,000 (EUR 255.65 to 5,112.92) | ZDDS art. 179(1) |
+| VAT not charged on time (including because the business did not register) | The VAT not charged, minimum BGN 500 (EUR 255.65); repeat: double, minimum BGN 1,000 (EUR 511.29) | ZDDS art. 180(1), (2) |
+| Same, but charged late within 6 months of the end of the month it was due | 5% of the VAT, minimum BGN 200 (EUR 102.26); repeat minimum BGN 400 (EUR 204.52) | ZDDS art. 180(3) |
+| Same, charged after 6 and within 18 months | 10% of the VAT, minimum BGN 400 (EUR 204.52); repeat minimum BGN 800 (EUR 409.03) | ZDDS art. 180(4) |
+| Reverse-charge VAT not self-assessed on time where full credit is due | 5% of the VAT, minimum BGN 50 (EUR 25.56); charged in the next period: up to 2%, minimum BGN 25 (EUR 12.78); NRA notified within two months: BGN 100 to 300 (EUR 51.13 to 153.39); repeat: 20%, minimum BGN 500 (EUR 255.65), or BGN 200 to 600 (EUR 102.26 to 306.78) where the NRA was notified | ZDDS art. 180а(1), (3) to (5) |
+| Ledger data not filed, or different from the ledgers | BGN 500 to 10,000 (EUR 255.65 to 5,112.92); repeat BGN 1,000 to 20,000 (EUR 511.29 to 10,225.84) | ZDDS art. 181 |
+| Invoice not issued, or a document left out of the ledgers, so VAT due is understated | The VAT involved, minimum BGN 1,000 (EUR 511.29); fixed in the next period: 25%, minimum BGN 250 (EUR 127.82) | ZDDS art. 182(1), (2) |
+| SAF-T not filed or filed late | Individuals BGN 500 to 2,000 (EUR 255.65 to 1,022.58); companies and sole traders BGN 5,000 to 15,000 (EUR 2,556.46 to 7,669.38); repeat doubles | DOPK art. 277а |
+| Late payment of VAT | Statutory interest (законна лихва) from the due date. Late registration also bears interest from the date VAT would have been due (art. 102(11)) | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1; ZDDS art. 102(11) |
+
+When the NRA registers a business that failed to apply, VAT is owed on its supplies from the date it should have been registered (art. 102(3)).
+
+## Cross-border points
+
+- **Reverse charge on supplies from foreign suppliers.** When a supplier not established in Bulgaria makes a taxable supply placed in Bulgaria, the recipient owes the VAT if it is a taxable person receiving services (unless the supplier uses the EU small enterprise scheme in Bulgaria), or a registered person receiving gas, electricity or heating or cooling through a network (art. 82(2)). A Bulgarian business that is not VAT-registered but receives such services must register under art. 97а at least 7 days before the VAT on them becomes chargeable (art. 97а(4)).
+- **Domestic reverse charge.** Supplies of waste and scrap (Annex 2, part one) are reverse charged to a registered recipient (art. 163а(2)). Annex 2, part two (cereals and industrial crops) applies until 31 December 2026.
+- **Intra-EU supplies of goods** are zero-rated if the supplier holds the transport documents by the end of the following month (art. 53). Report them in the VIES declaration with the monthly return (art. 125(2)).
+- **Intra-EU acquisitions.** A registered business self-assesses VAT. An unregistered business or non-taxable legal person must apply to register at least 7 days before the acquisition that takes the year's total above EUR 10,000 (art. 99(2), (3)).
+- **Distance sales of goods and B2C e-services to other EU states.** Below EUR 10,000 a year EU-wide (current and previous year), VAT is Bulgarian. Above it, VAT is due in the customer's state (art. 20б). The Bulgarian business can account for it through the Union OSS scheme filed with the NRA (art. 156; return and payment quarterly, art. 159). Sales under OSS do not count toward the Bulgarian threshold (art. 168в(7)).
+- **Foreign businesses selling into Bulgaria.** EU businesses register from their first taxable supply unless they use the EU small enterprise scheme (art. 96(2), (3)). Non-EU businesses register before their first taxable supply (art. 96(4)).
+- **Triangulation.** The final customer in a simplified triangular deal owes the VAT (art. 82(3)).
+
+## Worked examples
+
+### Example 1: hotel company, monthly return for March 2026
+
+Rila Stay EOOD runs a hotel in Bansko and is VAT-registered. In March 2026 it bills EUR 30,000 net for rooms and EUR 10,000 net for its restaurant. It buys goods and services with EUR 4,500 of deductible input VAT. It also buys a car for the manager, with EUR 3,000 of VAT on the invoice.
+
+Rooms are at 9% (art. 66а(1)): output VAT EUR 2,700. Restaurant meals are at 20%: EUR 2,000. Output VAT is EUR 4,700. The car VAT is blocked (art. 70(1)(4)), so input VAT stays at EUR 4,500 and the EUR 3,000 is a cost. The March result is EUR 200 to pay. The return, ledgers and payment are due by 14 April 2026.
+
+```oa-check
+name: Bulgarian hotel, March 2026 VAT return with blocked car VAT
+inputs:
+  rooms_net: 30000
+  restaurant_net: 10000
+  input_vat_deductible: 4500
+steps:
+  - vat_rooms: rooms_net * 0.09
+  - vat_restaurant: restaurant_net * 0.20
+  - output_vat: vat_rooms + vat_restaurant
+  - vat_payable: output_vat - input_vat_deductible
+expected:
+  vat_rooms: 2700.00
+  vat_restaurant: 2000.00
+  output_vat: 4700.00
+  vat_payable: 200.00
 ```
 
-### Sheet "Return Form"
+### Example 2: freelancer crossing the 2026 threshold in October
 
-Final return-ready figures. Bottom-line: Row 70 (payable) or Row 60/80 (excess credit / refundable after 3-period offset).
+Petar is a self-employed designer in Plovdiv, not VAT-registered, with no 2025 registration duty. His 2026 turnover to 19 October is EUR 49,800. On 20 October he invoices EUR 2,000, taking his calendar-year turnover to EUR 51,800. That is EUR 670 over the EUR 51,130 threshold.
 
-### Color and formatting conventions
+He crossed the threshold on 20 October. His registration date is 21 October (art. 103, item 1). He must apply by 27 October (7 days, art. 96(6)(1)). His first tax period runs from 21 to 31 October (art. 87(3)). In that period he bills EUR 3,000 net at 20% and has EUR 150 of deductible input VAT. He owes EUR 450, with the return due by 14 November 2026. Invoices for supplies from 21 October issued before the NRA serves his registration act must be issued or corrected with VAT within 5 days of service (arts. 113(4), 116(8)). If he misses the application, the NRA still charges VAT from 21 October (art. 102(3)), with interest and the art. 178 and art. 180 penalties.
 
-Per the xlsx skill: blue for hardcoded values, black for formulas, green for cross-sheet references, yellow background for any Default? = "Y" row.
+```oa-check
+name: Bulgarian freelancer, 2026 threshold crossed and first VAT period
+inputs:
+  turnover_before: 49800
+  crossing_invoice: 2000
+  threshold: 51130
+  first_period_sales_net: 3000
+  first_period_input_vat: 150
+steps:
+  - turnover_year: turnover_before + crossing_invoice
+  - excess: turnover_year - threshold
+  - output_vat: first_period_sales_net * 0.20
+  - vat_payable: output_vat - first_period_input_vat
+expected:
+  turnover_year: 51800.00
+  excess: 670.00
+  output_vat: 600.00
+  vat_payable: 450.00
+```
 
-## Section 8 — Bulgaria bank statement reading guide
+## Ask the client first
 
-Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Bulgaria-specific patterns.
+1. Where is the business established (seat, permanent address or habitual residence)? Bulgaria, another EU state or outside the EU changes the registration rule.
+2. What is its turnover in Bulgaria for 2025 and so far in 2026, built the art. 168в way (including advances, excluding sales of its own fixed assets)?
+3. What does it sell, and to whom? Accommodation, books, baby food and nappies are at 9%; exports and intra-EU supplies at 0%; B2C sales to other EU states may go through OSS.
+4. Does it buy services or goods from foreign suppliers, or trade in waste or scrap? The reverse charge may apply.
+5. Does it buy or run cars, or spend on entertainment? That input VAT is blocked.
+6. Is it a large, medium or small enterprise under the Accountancy Act, and what were its net sales? That sets its SAF-T start date.
 
-**CSV format conventions.** UniCredit Bulbank and DSK exports typically use semicolon delimiters with DD.MM.YYYY dates. Revolut Business exports use ISO dates. Common columns: Date, Description, Debit, Credit, Balance. Fibank may use Cyrillic headers.
+## Sources
 
-**Bulgarian/Cyrillic variants.** Descriptions may be in Bulgarian Cyrillic: наем (rent), заплата (salary), лихва (interest), превод (transfer), теглене (withdrawal). Treat as English equivalent.
+| Source | URL | Read on |
+|---|---|---|
+| Value Added Tax Act (ZDDS), consolidated to ДВ бр. 69/2026: arts. 20, 20б, 28 to 36, 53, 66, 66а, 70, 72, 82, 87 to 89, 92, 96, 97а, 99 to 103, 107 to 111, 113, 114, 116, 125, 126, 151а, 156, 159, 163а, 168в to 168е, 178 to 182; transitional § 63 (ДВ бр. 115/2025); Annex 2 | https://lex.bg/laws/ldoc/2135533201 | 2026-10-24 |
+| Tax-Insurance Procedure Code (DOPK), consolidated: arts. 71з, 71и, 71к, 277а; § 17 of the transitional provisions of the State Budget Act 2025 | https://lex.bg/laws/ldoc/2135514513 | 2026-10-24 |
+| Euro Introduction Act (Закон за въвеждане на еврото в Република България): arts. 11, 12, 13; transitional § 5(1) | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-23 |
+| Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-23 |
 
-**Internal transfers.** Own-account transfers between client's banks. Labelled "вътрешен превод", "own transfer". Always exclude.
+Not yet confirmed: the ZDDS Implementing Regulations (ППЗДДС) and the NRA's 2026 return and VIES form layouts were not read, so this skill gives no box numbers; the statutory late-payment interest rate after the euro changeover (set outside the interest law).
 
-**Sole trader draws.** A self-employed person (ET — едноличен търговец) cannot pay themselves wages — transfers to personal account are drawings. Exclude.
-
-**Refunds and reversals.** Identify by "възстановяване", "refund", "сторно", "reversal". Book as negative in same row as original.
-
-**Foreign currency.** Convert to BGN at the BNB (Bulgarian National Bank) fixing rate for the transaction date. Note the rate in the Notes column.
-
-**IBAN prefix.** BG = Bulgaria. IE, LU, NL, FR, DE = EU. US, GB, AU, CH = non-EU.
-
-### 9.1 Entity type and trading name
-
-- **Entity type and trading name** — Inference rule: ET = sole trader; OOD/EOOD = limited company. Fallback: "Are you a sole trader (ET), limited company (OOD/EOOD), or other?"
-
-### 9.2 DDS registration status
-
-- **DDS registration status** — Inference rule: if filing a DDS return, they are registered. Fallback: "Are you DDS-registered (mandatory or voluntary)?"
-
-### 9.3 DDS number
-
-- **DDS number** — Inference rule: BG-format numbers may appear in EU customer payment descriptions. Fallback: "What is your DDS number? (BG + 9/10 digits)"
-
-### 9.4 Filing period
-
-- **Filing period** — Inference rule: first and last transaction dates. Bulgaria is always monthly. Fallback: "Which month does this cover?"
-
-### 9.5 Industry and sector
-
-- **Industry and sector** — Inference rule: counterparty mix. Fallback: "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees** — Inference rule: DOO/ZO outgoing payments. Fallback: "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies** — Inference rule: medical/financial/educational income patterns. Fallback: "Do you make exempt supplies?" If yes and non-de-minimis: R-BG-2 refuses.
-
-### 9.8 3-period excess credit status
-
-- **3-period excess credit status** — Inference rule: not inferable from single period. Fallback: "Do you have excess DDS credit carried forward? From which period?"
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers** — Inference rule: foreign IBANs on incoming. Fallback: "Do you have customers outside Bulgaria? EU or non-EU? B2B or B2C?"
-
-### 9.10 Vehicle ownership
-
-- **Vehicle ownership** — Inference rule: fuel/vehicle-related debits. Fallback: "Do you own/lease a vehicle for business? Type (passenger car vs commercial)?"
-
-### Sources
-
-**Primary legislation:**
-1. Zakon za danak varhu dobavenata stoynost (ZDDS — VAT Act) — Articles 2-12, 28-50, 56, 66, 70, 73, 79, 82, 84, 92, 124-126
-2. Pravilnik za prilagane na ZDDS (PPZDDS — Implementing Regulations)
-
-**NRA guidance:**
-3. NRA DDS return form and instructions — https://portal.nra.bg
-4. NRA guidance on reverse charge
-5. NRA SAF-T implementation guidance
-
-**EU directive (loaded via companion skill):**
-6. Council Directive 2006/112/EC — via eu-vat-directive companion skill
-7. Council Implementing Regulation 282/2011
-
-**Other:**
-8. VIES validation — https://ec.europa.eu/taxation_customs/vies/
-9. BNB exchange rates — https://www.bnb.bg
-
-### Known gaps
-
-1. The supplier pattern library covers common Bulgarian counterparties but not every local SME.
-2. The 3-period offset rule for excess credits requires period-by-period tracking beyond this skill's single-period scope.
-3. SAF-T filing requirements (phased from 2026) are not fully detailed.
-4. The 9% reduced rate scope should be verified annually.
-5. BGN-to-EUR transition (target date) may affect currency handling.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure. 10-section layout. Supplier pattern library with Bulgarian banks (UniCredit Bulbank, DSK, Fibank). No inline tier tags. Companion skill references added.
-- **v1.0 (April 2026):** Initial skill with inline tier tags.
-
-### Self-check (v2.0)
-
-1. Quick reference at top with row table and conservative defaults: yes.
-2. Supplier library as literal lookup tables: yes (14 sub-tables).
-3. Worked examples (6): yes.
-4. Tier 1 rules compressed without inline tags: yes (15 rules).
-5. Tier 2 catalogue compressed: yes (13 items).
-6. Excel template specification: yes.
-7. Onboarding as fallback only: yes (10 items).
-8. All Bulgaria-specific refusals present: yes (R-BG-1 through R-BG-6).
-9. Reference material at bottom: yes.
-10. No inline [T1]/[T2]/[T3] tags in body text: yes.
-
-## End of Bulgaria VAT Return Skill v2.0
-
-This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later AND `eu-vat-directive` v0.1 or later.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

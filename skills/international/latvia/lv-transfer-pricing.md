@@ -1,13 +1,15 @@
 ---
 name: lv-transfer-pricing
 description: "Latvian transfer pricing for tax year 2026 under the distribution-based Corporate Income Tax Law: who counts as a related person (Law on Taxes and Fees, article 1(18)), the arm's length price difference taxed as a deemed profit distribution (CIT Law, article 4(2)(2)(e), base divided by 0.8 and taxed at 20%), the methods and 5% mark-up for low value-adding services (Cabinet Regulation No. 677), and the documentation rules in article 15.2 as amended from 1 January 2026: a controlled transactions report filed above EUR 250,000, a local file above EUR 250,000, a master file above EUR 20,000,000, production deadlines, the penalty of up to 1% capped at EUR 100,000, the EUR 750m country-by-country report, and advance pricing agreements above EUR 1,430,000. Trigger on: Latvia transfer pricing, transfertcenas, kontrolēto darījumu pārskats, Latvian local file, VID transfer pricing penalty. Out of scope: the general CIT computation (lv-corporate-income-tax), individuals (latvia-income-tax), planning (latvia-tax-optimization)."
-jurisdiction: LV
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: LV
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Latvian transfer pricing (tax year 2026)
@@ -215,3 +217,23 @@ expected:
 | Cabinet Regulation No. 397 of 4 July 2017 on the country-by-country report, version from 7 February 2020: paras. 2.3, 9, 16, 17 | https://likumi.lv/ta/id/292196-noteikumi-par-starptautiskas-uznemumu-grupas-parskatu-par-katru-valsti | 2026-10-23 (Internet Archive copy of 12 August 2024) |
 
 Not yet confirmed: the current Cabinet regulation on the APA procedure and its fee (the 2013 Regulation No. 16 fee of EUR 7,114 ended in 2018 and its successor was not read); the Cabinet regulation setting the detailed content of the master and local files and the simplified documentation; whether Regulation No. 397 was amended after August 2024; the Cabinet list of low-tax and no-tax territories for 2026; VID guidance on how loans and cash pools are measured for the EUR 250,000 threshold; and VID's practice on adjustments in purely domestic related-party transactions. vid.gov.lv and fm.gov.lv refused connections on 2026-10-23, so no VID guidance was read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

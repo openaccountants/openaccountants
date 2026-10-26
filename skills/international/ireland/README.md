@@ -15,13 +15,13 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc (2026 USC bands, exemption, reduced rates, surcharges, payroll and self-assessment collection), ie-cgt, ie-non-dom, ie-preliminary-tax (2026 preliminary tax: 90% / 100% / 105% direct debit tests, first-year nil, 31 October and the ROS date, direct debit after Finance Act 2025 s.100, backdating and 0.0219% daily interest) | source-cited draft |
-| IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
-| VAT | ie-vat-return (rates incl. the 9% hospitality rate from 1 July 2026, thresholds, VAT3, RTD, cash basis, reverse charge, RCT, VIES, penalties); ireland-vat-return (older duplicate of the same content, to be merged) | source-cited draft |
-| SC, social contributions | ie-prsi-class-s (self-employed and proprietary directors, Class S: 4.2% then 4.35% from 1 October 2026, 4.2375% blended for 2026 income, EUR 5,000 floor, EUR 650 minimum), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
-| PR, payroll withholding | ie-payroll (PAYE under the RPN, USC, PRSI Class A for both 2026 periods, BIK, minimum wage, auto-enrolment from 1 January 2026, submissions, 14th/23rd payment, penalties) | source-cited draft |
-| TP, transfer pricing | ie-transfer-pricing | source-cited draft |
-| XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | source-cited draft |
+| IT-IND, individual income tax | ie-income-tax-form11 (2026 Form 11: chargeable persons, EUR 44,000 / 53,000 bands, credits, trading profit, capital allowances and car CO2 limits, losses, pension relief, pay and file 31 October / 18 November 2026 on ROS, surcharges, interest), ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc (2026 USC bands, exemption, reduced rates, surcharges, payroll and self-assessment collection), ie-cgt, ie-cat (capital acquisitions tax on gifts and inheritances: 33% rate, 2026 Group A/B/C thresholds in both periods, reliefs, IT38, surcharges), ie-non-dom, ie-preliminary-tax (2026 preliminary tax: 90% / 100% / 105% direct debit tests, first-year nil, 31 October and the ROS date, direct debit after Finance Act 2025 s.100, backdating and 0.0219% daily interest) | sourced from the law |
+| IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | checked against the law |
+| VAT | ie-vat-return (rates incl. the 9% hospitality rate from 1 July 2026, thresholds, VAT3, RTD, cash basis, reverse charge, RCT, VIES, penalties); ireland-vat-return (older duplicate of the same content, to be merged) | sourced from the law |
+| SC, social contributions | ie-prsi-class-s (self-employed and proprietary directors, Class S: 4.2% then 4.35% from 1 October 2026, 4.2375% blended for 2026 income, EUR 5,000 floor, EUR 650 minimum), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | checked against the law |
+| PR, payroll withholding | ie-payroll (PAYE under the RPN, USC, PRSI Class A for both 2026 periods, BIK, minimum wage, auto-enrolment from 1 January 2026, submissions, 14th/23rd payment, penalties) | checked against the law |
+| TP, transfer pricing | ie-transfer-pricing | checked against the law |
+| XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | sourced from the law |
 
 ## Official sources
 

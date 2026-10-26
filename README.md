@@ -2,7 +2,7 @@
 
 **Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
 
-This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
+This library includes accountant-reviewed skills and skills no accountant has signed off yet (checked against the law, or sourced from the law). Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 ## Need someone to do the accounting?
 
@@ -17,9 +17,9 @@ The skills and AI connection remain free.
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**2,091 AI skills** across **247 jurisdictions** · **33 accountant-reviewed** · **38 named accountants** · **21,502 questions answered** through connected AIs
+**2,105 AI skills** across **250 jurisdictions** · **33 accountant-reviewed** · **39 named accountants** · **21,732 questions answered** through connected AIs
 
-<sub>Live from openaccountants.com — updated 2026-10-24 by the nightly sync.</sub>
+<sub>Live from openaccountants.com — updated 2026-10-25 by the nightly sync.</sub>
 <!-- oa-stats:end -->
 
 ---
@@ -68,7 +68,8 @@ Every skill is in exactly one state — and the repo greps honestly:
 | State | Meaning |
 |---|---|
 | **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from official sources, every figure cited to its source; not yet professionally reviewed |
+| **Checked against the law** | Built to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet |
+| **Sourced from the law** | Older skill not yet rebuilt to the standard: every figure cited to an official source; no accountant has signed it off yet |
 
 The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
 

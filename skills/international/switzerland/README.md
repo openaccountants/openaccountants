@@ -16,13 +16,13 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft |
-| IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft |
-| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return points to it | source-cited draft |
-| SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | source-cited draft |
-| PR, payroll withholding | ch-payroll | source-cited draft |
-| TP, transfer pricing | ch-transfer-pricing | source-cited draft |
-| XB, cross-border | ch-cross-border, germany-to-switzerland-cross-border-tax (Germany pack) | source-cited draft |
+| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | checked against the law |
+| IT-CORP, corporate income tax | ch-corporate-income-tax | checked against the law |
+| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return points to it | sourced from the law |
+| SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | checked against the law |
+| PR, payroll withholding | ch-payroll | checked against the law |
+| TP, transfer pricing | ch-transfer-pricing | checked against the law |
+| XB, cross-border | ch-cross-border, germany-to-switzerland-cross-border-tax (Germany pack) | checked against the law |
 
 ## Official sources
 

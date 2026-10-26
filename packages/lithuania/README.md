@@ -7,16 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `lithuania-pit.md`
-4. `lithuania-vat-return.md`
-5. `lt-company-formation.md`
-6. `lt-corporate-income-tax.md`
-7. `lt-payroll-social.md`
-8. `lt-tax-overview.md`
-9. `references.md`
-10. `eu-vat-directive.md`
-11. `payroll-workflow-base.md`
-12. `company-formation-workflow-base.md`
+3. `README.md`
+4. `lithuania-pit.md`
+5. `lithuania-vat-return.md`
+6. `lt-company-formation.md`
+7. `lt-corporate-income-tax.md`
+8. `lt-cross-border.md`
+9. `lt-payroll-social.md`
+10. `lt-tax-overview.md`
+11. `lt-transfer-pricing.md`
+12. `references.md`
+13. `eu-vat-directive.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

@@ -1,15 +1,14 @@
 ---
 name: lv-corporate-income-tax
 description: "Latvian corporate income tax for tax year 2026 under the Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums) in force from 1 January 2026. Latvia taxes a company only when it distributes profit: 20% of the amount divided by 0.8. Covers who pays, the optional 15% rate with a 0.85 divisor for dividends of companies owned only by individuals (plus 6% personal income tax), deemed distributions (non-business expenses, bad debts, excess interest, loans to related persons, transfer pricing adjustments), dividends received, the 36-month share disposal relief, pre-2018 profits and losses, the monthly return by the 20th and payment by the 23rd, the EUR 50 minimum, fines and 0.05% a day late interest. Trigger on: Latvia corporate tax, SIA dividend tax, 20/80, UIN deklarācija, uzņēmumu ienākuma nodoklis. Out of scope: payments to non-residents (lv-cross-border), transfer pricing documentation (lv-transfer-pricing), individuals (latvia-income-tax), micro-enterprise tax and planning (latvia-tax-optimization)."
-jurisdiction: LV
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
+jurisdiction: LV
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -206,3 +205,23 @@ expected:
 | State Revenue Service (VID) | https://www.vid.gov.lv | 2026-10-24 (refused the connection; not read) |
 
 Not yet confirmed: the CIT return form and its annexes (the return regulation was not read); the art. 8(5) fuel limits and the art. 12 donation relief; any CIT Law amendment after the 4 October 2026 archive copy.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

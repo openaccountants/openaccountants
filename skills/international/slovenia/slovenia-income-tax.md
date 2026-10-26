@@ -1,14 +1,15 @@
 ---
 name: slovenia-income-tax
 description: "Slovenian personal income tax (dohodnina) for tax year 2026 under ZDoh-2 as amended to ZINR (Uradni list RS 40/25). Covers residents and non-residents, the five-band scale (16%, 26%, 33%, 39%, 50%) with the 2026 indexed bands, the general allowance of EUR 5,551.93 and its taper for total income up to EUR 17,766.18, dependants and other allowances, capital income at 25% with 20% and 15% after 5 and 10 years and exemption after 15, rent at 25% with 10% standard costs, sole proprietors (s.p.) on normed expenses at 20% (pointer), the informative calculation (informativni izračun) and its 15-day objection, advance tax and fines. Trigger on: dohodnina, informativni izračun, ugovor, splošna olajšava, Doh-KDVP, Doh-Div, rent tax Slovenia. Out of scope: si-cross-border (7% new-resident relief, non-residents), slovenia-payroll, slovenia-social-contributions, si-corporate-income-tax, slovenia-tax-optimization."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.3
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia: personal income tax (dohodnina) 2026 v0.3
@@ -263,3 +264,23 @@ expected:
 | Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 
 Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
