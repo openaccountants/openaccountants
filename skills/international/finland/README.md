@@ -1,6 +1,6 @@
 ---
 jurisdiction: FI
-version: 1.2
+version: 1.3
 last_updated: 2026-10-26
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -12,14 +12,7 @@ covered_by:
   VAT: finland-vat-return
   SC: fi-yel-social
   TP: fi-transfer-pricing
-partial:
-  IT-IND: "Ordinary computation rebuilt; fresh whole-pack source review pending."
-  IT-CORP: "Ordinary computation rebuilt; fresh whole-pack source review pending."
-  VAT: "Ordinary computation and return routes rebuilt; fresh whole-pack source review pending."
-  SC: "YEL and employee contributions covered together; fresh whole-pack source review pending."
-  PR: "Ordinary withholding, benefits and insurance rebuilt; fresh whole-pack source review pending."
-  TP: "Ordinary pricing/documentation method rebuilt; fresh whole-pack source review pending."
-  XB: "Individual and corporate ordinary routes rebuilt; fresh whole-pack source review pending."
+partial: {}
 ---
 
 # Finland tax pack
@@ -28,7 +21,7 @@ Tax year **2026**, currency EUR, tax authority [Vero](https://www.vero.fi/en/). 
 
 ## Domains
 
-All revised tax Guides are **sourced from the law**, pending fresh independent whole-pack review. None has professional attestation. Passing arithmetic or having a Guide does not establish complete coverage.
+The twelve ordinary tax Guides passed independent source review on 26 October 2026 after the recorded corrections. No unresolved ordinary content error was identified within the scope below. This is the bounded ordinary-tax milestone; none has professional attestation. Passing arithmetic or having a Guide does not establish comprehensive country coverage.
 
 | Domain | Ordinary computation / procedure |
 |---|---|
@@ -52,4 +45,8 @@ Confirmed future parameters are separated from current law. The October 2026 inc
 
 The earlier [23 October independent review](../../../docs/research/2026-10-23-finland-pack-review.md), [source reachability record](../../../docs/research/2026-10-23-finland-source-reachability.json) and [direct statutory retrieval](../../../docs/research/2026-10-23-finland-direct-statute-retrieval.json) are preserved as historical evidence. They do **not** approve the rebuilt 26 October blobs. HTTP availability is not legal verification.
 
-The 26 October pack contains twelve ordinary tax Guides, a router and the unchanged formation Guide. Each ordinary tax Guide has the nine-section standard and exactly two executable controls. Fresh independent review must re-read the primary sources, test scope and calculations, identify the exact file hashes and close findings. Until then the domain entries above remain partial and issue #392 stays open. Local commits save drafts; publication and merging remain separate gates. No new PR is required for this country.
+The 26 October pack contains twelve ordinary tax Guides, a router and the unchanged formation Guide. Each ordinary tax Guide has the nine-section standard and exactly two executable controls. A fresh reviewer independently re-read the sources, closed the findings after corrections, checked the file hashes and recomputed all 26 examples, including the unchanged formation examples, with 113 matching results. The reviewed source commit is `255ab46c83b1b65d6f6a982f04121372a3be9e6a`; this README-only closure changes no reviewed tax Guide. The local review record comprises `independent-review.md` and `reviewed-hashes.json`, prepared for the existing PR's review comment. Those records have not yet been published to the PR.
+
+The review records a direct EUR-Lex consolidated Directive/Annex access limit; domestic implementation and official Vero guidance support the ordinary conditions stated. It does not claim a direct reading of that Annex by the reviewer. Specialist coverage and taxpayer-specific evidence remain outside the completed ordinary milestone.
+
+Local source review is complete. Publication still requires the finished country batch on PR #777, its review comment with figures checked, source-backed fixes, evidence limits and exact hashes, and the required checks and reviews on the pushed head. This local record is not the public PR review comment and does not authorise a merge. Issue #392 stays open pending assessment against its full milestone; formation/accounting and wider specialist coverage are not established here. No new PR is required for this country.
