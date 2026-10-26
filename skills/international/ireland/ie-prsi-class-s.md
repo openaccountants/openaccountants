@@ -3,12 +3,12 @@ name: ie-prsi-class-s
 description: "Irish PRSI Class S for the self-employed, tax year 2026, under the Social Welfare Consolidation Act 2005 as revised to 1 October 2026. Covers who pays (sole traders, partners, proprietary directors with 50% or more, people living on rent or investment income, councillors), the 4.2% rate to 30 September 2026 and 4.35% from 1 October 2026, the blended 4.2375% rate for 2026 self-assessed income and 4.125% for 2025 income, the EUR 5,000 income floor, the EUR 650 minimum, the EUR 310 no-return flat rate, payment through Form 11 and preliminary tax, directors under PAYE, the benefits Class S covers, voluntary contributions, and the late filing surcharge and 0.0219% daily interest. Trigger on 'Class S', 'PRSI self-employed', 'PRSI on rental income', 'director PRSI', 'how much PRSI do I pay'. Out of scope: employee PRSI (ie-payroll), USC (ie-usc), Class K and cross-border cases (ie-prsi-cross-border), income tax on the Form 11 (ie-income-tax-form11)."
 version: 2.1
 jurisdiction: IE
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

@@ -1,15 +1,14 @@
 ---
 name: croatia-vat-return
 description: "Croatian value added tax (porez na dodanu vrijednost, PDV) for 2026 under the Zakon o porezu na dodanu vrijednost as amended to NN 48/2026. Covers who must register (the EUR 60,000 small-business threshold in Article 90 and the EU SME scheme), the 25%, 13% and 5% rates and what each covers, the temporary 5% rate for gas and heating to 31 March 2027, input VAT and the blocked items (entertainment, 50% on passenger cars), monthly and quarterly periods, the PDV return, PDV-S and ZP all due by the last day of the following month from 2026, payment, refunds, domestic and cross-border reverse charge, Fiskalizacija 2.0 e-invoicing and e-reporting from 1 January 2026, and fines. Trigger on: Croatia VAT, PDV Hrvatska, PDV obrazac, PDV-S, Zbirna prijava, eRačun, fiskalizacija 2.0, Croatian reverse charge. Out of scope: income tax (croatia-income-tax), profit tax (hr-corporate-income-tax), payroll (croatia-payroll), contributions (croatia-social-contributions)."
-jurisdiction: HR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 3.0
-verified_by: pending
+jurisdiction: HR
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -209,3 +208,23 @@ expected:
 | Opći porezni zakon, consolidated text to NN 151/25 (interest, Art. 130; limitation, Art. 108), Tax Administration register, Porezni postupak | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx | 2026-10-24 |
 
 Not yet confirmed: the rate of late-payment interest on tax debts for 2026 (OPZ Art. 130(1) points to a special regulation; the register still lists the Interest Act NN 94/04 and the 15% decree NN 153/04, which predate the Obligations Act Art. 29 formula, and no official text read ties a 2026 rate to tax debts); whether receiving EU services alone counts as an "intra-EU transaction" that rules out quarterly filing under Article 84(3); the exact treatment of the single supply that takes a small business over EUR 60,000 (Article 90.f(2) says the exemption stops "from the moment" the threshold is passed); the Rulebook amendments in NN 11/26 beyond the PDV form lines, which were not read in full.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -574,6 +574,8 @@ Utilize a skill pt-social-contributions para detalhes
 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de apoio ao cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus colaboradores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (Contabilista Certificado membro da OCC) antes da submissão ou de qualquer actuação com base nos mesmos.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

@@ -3,11 +3,11 @@ name: germany-vat-return
 description: "German VAT for tax year 2026, centred on the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. Covers the 19% and 7% rates, including the 7% rate on restaurant and catering services (drinks excluded) from 1 January 2026; the small business limits of § 19 UStG (EUR 25,000 and EUR 100,000); monthly or quarterly filing (EUR 9,000 and EUR 2,000), the 10th-day deadline, the one-month extension and the 1/11 special prepayment; the annual return deadline; reverse charge under § 13b; the recapitulative statement; e-invoices (receiving since 2025, issuing by 2027 or 2028); late filing and late payment surcharges and interest; and the 2026 box numbers. Trigger on: Umsatzsteuer-Voranmeldung, UStVA, Vorsteuer, Kennzahl, Dauerfristverlängerung, Zusammenfassende Meldung, E-Rechnung, Säumniszuschlag, German VAT return. Out of scope: the annual return in detail, § 19, § 20 cash basis, partial exemption and OSS (de-vat-annual-and-special-schemes), e-invoice formats (germany-einvoice), income tax (de-income-tax)."
 version: 2.1
 jurisdiction: DE
-category: international
 tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -283,6 +283,8 @@ expected:
 Not yet confirmed: which tax office handles a foreign business, by country (the Umsatzsteuerzuständigkeitsverordnung was not read for this version); the rounding rule for whole-euro tax bases on the advance return (the 2026 instructions say whole euros but not whether to round or cut off the cents).
 
 > Contributed by OpenAccountants.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

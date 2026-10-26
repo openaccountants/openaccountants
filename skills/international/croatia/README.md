@@ -16,13 +16,13 @@ Calendar tax year unless a company is allowed a different business year. Authori
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | croatia-income-tax: residence, local rates and the EUR 60,000 band, EUR 600 allowance and dependants, employment and its reliefs, obrt on books, the paušalni obrt bands, capital, rent and property sales, filing and fines (2026) | source-cited draft |
-| IT-CORP, corporate income tax | hr-corporate-income-tax: who pays and residence, the 10% / 18% rates at EUR 1,000,000 of revenue, add-backs (50% representation and cars), depreciation, losses (5 years), thin capitalisation, the 30% EBITDA limit, advances, the PD return (30 April, e-filed by all) and fines, for 2026 | source-cited draft |
-| VAT | croatia-vat-return (2025 figures; partial) | source-cited draft |
-| SC, social contributions | croatia-social-contributions: Pillar I 15% and Pillar II 5% (20% Pillar I only), health 16.5%, the 2026 bases (minimum EUR 757.34, pension maximum EUR 11,958 a month and EUR 143,496 a year), the low-wage Pillar I relief, trainee and grandfathered first-job reliefs, fixed bases for obrt, freelancers and flat-rate taxpayers, deadlines and fines, for 2026 | source-cited draft |
-| PR, payroll withholding | croatia-payroll: monthly income tax advance with the EUR 600 allowance and dependants, local rates within the legal ranges (default 20% / 30%, EUR 5,000 monthly band), contributions with each salary, young-worker relief, the EUR 1,050 minimum wage, JOPPD deadlines and fines, for 2026 | source-cited draft |
-| TP, transfer pricing | hr-transfer-pricing: related persons, domestic cases (privileged status or losses), methods, documentation and compensating adjustment, PD-IPO with the 2026 e-invoice carve-out, the 2.65% related-party loan rate for 2026, thin capitalisation, APAs and CbCR | source-cited draft |
-| XB, cross-border | hr-cross-border: residence, PE, non-residents, article 31 withholding, treaty forms, foreign tax credit, exit tax | source-cited draft |
+| IT-IND, individual income tax | croatia-income-tax: residence, local rates and the EUR 60,000 band, EUR 600 allowance and dependants, employment and its reliefs, obrt on books, the paušalni obrt bands, capital, rent and property sales, filing and fines (2026) | checked against the law |
+| IT-CORP, corporate income tax | hr-corporate-income-tax: who pays and residence, the 10% / 18% rates at EUR 1,000,000 of revenue, add-backs (50% representation and cars), depreciation, losses (5 years), thin capitalisation, the 30% EBITDA limit, advances, the PD return (30 April, e-filed by all) and fines, for 2026 | checked against the law |
+| VAT | croatia-vat-return (2025 figures; partial) | checked against the law |
+| SC, social contributions | croatia-social-contributions: Pillar I 15% and Pillar II 5% (20% Pillar I only), health 16.5%, the 2026 bases (minimum EUR 757.34, pension maximum EUR 11,958 a month and EUR 143,496 a year), the low-wage Pillar I relief, trainee and grandfathered first-job reliefs, fixed bases for obrt, freelancers and flat-rate taxpayers, deadlines and fines, for 2026 | checked against the law |
+| PR, payroll withholding | croatia-payroll: monthly income tax advance with the EUR 600 allowance and dependants, local rates within the legal ranges (default 20% / 30%, EUR 5,000 monthly band), contributions with each salary, young-worker relief, the EUR 1,050 minimum wage, JOPPD deadlines and fines, for 2026 | checked against the law |
+| TP, transfer pricing | hr-transfer-pricing: related persons, domestic cases (privileged status or losses), methods, documentation and compensating adjustment, PD-IPO with the 2026 e-invoice carve-out, the 2.65% related-party loan rate for 2026, thin capitalisation, APAs and CbCR | checked against the law |
+| XB, cross-border | hr-cross-border: residence, PE, non-residents, article 31 withholding, treaty forms, foreign tax credit, exit tax | checked against the law |
 
 ## Official sources
 

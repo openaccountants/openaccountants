@@ -14,12 +14,13 @@
 7. `croatia-vat-return.md`
 8. `hr-company-formation.md`
 9. `hr-corporate-income-tax.md`
-10. `hr-tax-overview.md`
-11. `hr-transfer-pricing.md`
-12. `eu-vat-directive.md`
-13. `payroll-workflow-base.md`
-14. `company-formation-workflow-base.md`
-15. `transfer-pricing-workflow-base.md`
+10. `hr-cross-border.md`
+11. `hr-tax-overview.md`
+12. `hr-transfer-pricing.md`
+13. `eu-vat-directive.md`
+14. `payroll-workflow-base.md`
+15. `company-formation-workflow-base.md`
+16. `transfer-pricing-workflow-base.md`
 
 ## How to use
 
