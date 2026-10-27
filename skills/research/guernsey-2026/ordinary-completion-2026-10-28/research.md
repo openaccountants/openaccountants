@@ -34,3 +34,10 @@ Read SocialInsuranceLaw16E–16G,17A–17H,74AB,74H,104(1A). Transfer-to-Directo
 Actual standardchargeleadcheck: official2025 and2026 SIcatalogueincome-taxtitles viewed, no implementing standardchargevariation located. Existing budget2026 intent andpublishedrates alone remain insufficient. No standardchargeamountgapclosed.
 
 Mixeddistributionlead: re-read61,62A(2),81B and174 plusC35,C37,C44. Currentmy.gov.gg/revenue links officialdistributionreporterzip1.0.12.0, downloadednormally. It contains onlysetup.exe andSetupWin7Application.msi; neither was executed orinstalled. No plain userdocumentation or binding allocationexample obtained. Do not claim that installer inspection proves a taxcalculation, and do not repeat the download as research progress. Mixed-rate distribution base/ordering computation remains open for a targeted primary method.
+
+
+## Current VAT/GST applicability proposal
+
+Fetched/read current taxpackageFAQ (oldgstplusfaqs301redirect), Imports/Exports index and complete substantive pages customs territory,duties,whyduty,claimingVAT,importexport. All HTTP200 receipts copied here; no failed access treated as substantive evidence. TaxpackageFAQ targetsQ12029GST and saysregistration/return designworkunderway, withSarkoutsidefiscalunion/reformscope. Customs distinguishes2duties, specifiescustomsunionstatusconditions/originversusdispatch andexcisealcohol/tobacco/somefuels; UKVAT mustberesolvedwithUKsupplier/HMRC, notrefundedlocally.
+
+FreshHMRCwebread VATNotice700p4.7.3 explicitlystates noVATinChannelIslands; VATPOSG2300's complete territorial explanationagrees. They are primaryauthorityforVATterritorialscope. TogetherwithcurrentGuernseyfutureGSTscope/adoptedsafeguards thissupportsproposed2026VAT/GSTNA. No generalnotax/importdutyexemptioninference. GOAL.md definesVATdomainasVAT/GST/salestax, notallcustomsexcise. Do notextenddraftpartialsolelybecausecompletecommoditytariffisnotincluded. READMEapplicable/VATpartialremainunchangedpendingindependentreviewoffinding; transitionGuide/slugs/old2controls/allpriorworkpreserved.

@@ -1,13 +1,13 @@
 ---
 name: gg-gst-transition
 description: >
-  Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft does not establish a current GST liability, a complete consumption-tax regime, customs treatment or a reviewed not-applicable determination. Enacted rules remain outstanding; the source-review record states the scope reviewed.
+  Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft separates the current absence of domestic VAT/GST from existing customs and excise duties, and preserves the future-GST planning work. The added current-scope analysis awaits independent review. Future charging and operational legislation remains outstanding; no current GST liability is inferred from the approved plan.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://gov.gg/taxreform"
@@ -26,6 +26,19 @@ sources:
 ## Who this applies to
 
 This is a planning Guide for the Guernsey and Alderney reform package, checked on 22 October 2026. It does not determine territorial application to other Bailiwick islands or liability for a particular supply. The States approved the amended package in October 2026. Proposition 15 separately directs preparation of implementing legislation: approval of policy is not itself evidence of every charging provision or its commencement. [Proposition 1](https://statesvoting-records.gov.gg/Propositions/Details/2682); [Proposition 15](https://statesvoting-records.gov.gg/Propositions/Details/2787).
+
+### Current 2026 scope: distinguish VAT/GST from duties
+
+The current primary-source record supports a **2026 domestic VAT/GST not-applicable finding for Guernsey**, proposed here for independent review. HMRC's [VAT Notice 700, paragraph 4.7.3](https://www.gov.uk/guidance/vat-guide-notice-700#the-uk-isle-of-man-and-the-channel-islands) states that the Channel Islands have no VAT and treats goods passing to/from the UK or Isle of Man as imports/exports for VAT. Guernsey's current [tax-package FAQ](https://gov.gg/taxpackagefaqs) gives **Q1 2029** as the GST target and describes the registration/return system as work in progress. Read with the adopted commencement safeguards above, this distinguishes the new future GST programme from the current 2026 position. It does not establish that every foreign transaction is free of another jurisdiction's tax.
+
+For an ordinary 2026 working paper:
+
+1. **Locate the supply, customer and goods movement.** Do not add the future 3% Guernsey GST to a current domestic invoice or book a proposed future input-tax credit. A business's foreign sales/purchases need the destination/place-of-supply jurisdiction's separate analysis; Guernsey residence alone does not settle foreign VAT.
+2. **Route imported goods to customs/excise.** The official [duty explanation](https://gov.gg/article/153088/Why-do-I-have-to-pay-Duty) identifies import duty and excise duty. Direct goods from the UK/Jersey/Isle of Man use the stated customs-union relief only where wholly obtained there or the prior import-duty liability has been discharged. Dispatch from the EU does not establish EU origin: use the commodity code, origin evidence, customs declaration and applicable tariff/relief. Excise concerns alcohol, tobacco and specified fuels under the stated local rules. A no-VAT/GST finding does not cancel those duties or their declarations.
+3. **Keep UK VAT claims with the UK supplier/authority.** Guernsey Customs says it cannot refund UK VAT or process its reclaim forms. Its [exported-goods guidance](https://gov.gg/article/120182/Claiming-back-VAT) requires the UK supplier's qualifying export evidence before zero-rating; an address or a customs-union status alone does not prove entitlement. Do not create a Guernsey VAT refund to offset a supplier's UK VAT.
+4. **Keep future-GST readiness separate.** Preserve the adopted policy, implementation assurance and later charging/commencement evidence. Proposed registration thresholds, exclusions, input recovery and return fields are not operative 2026 instructions. Current import/excise rates and every commodity-specific relief remain outside this transition Guide's calculation scope; obtain the official current tariff and declaration instructions for the actual goods. [Current Customs territory](https://gov.gg/article/152732/Constitution-position-and-customs-territory); [tax-package FAQ](https://gov.gg/taxpackagefaqs).
+
+The existing future-price examples below remain unchanged and explicitly hypothetical. The absence of a general domestic VAT/GST does not mean that imported or excisable goods carry no other charge. This added current-scope analysis awaits independent review.
 
 ## Rates, bands and thresholds
 
@@ -103,7 +116,13 @@ expected:
 
 ## Sources
 
-All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. Current domestic tax scope, customs/excise, enacted implementation, operational rules and current-law reconciliation remain open. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. No current-liability/zero-tax inference is made from a future timetable alone. The source gap remains current tax-scope reconciliation, rather than inaccessibility of the government page. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
+All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. The earlier review left current domestic tax scope open. The new current-scope evidence above now proposes a 2026 VAT/GST not-applicable finding, pending independent review; complete customs/excise methods and future GST legislation/operations are separate limits. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. The new scope finding uses the additional current primary sources below, rather than a future timetable alone. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; the new current-scope method awaits independent review and professional attestation remains pending.
+
+| Additional official source | Read scope | Read on |
+|---|---|---|
+| [HMRC VAT Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700) and [VATPOSG2300](https://www.gov.uk/hmrc-internal-manuals/vat-place-of-supply-goods/vatposg2300) | Notice paragraph 4.7.3 and the manual's complete territorial explanation; no VAT in the Channel Islands, separate UK import/export treatment | 2026-10-28 |
+| [Guernsey tax-package FAQ](https://gov.gg/taxpackagefaqs) | Implementation dates, GST/business registration/returns sections and stated territorial boundary; remaining FAQ context read | 2026-10-28 |
+| [Customs territory](https://gov.gg/article/152732/Constitution-position-and-customs-territory), [duties](https://gov.gg/article/180597/Duties-and-Duty-Free), [why duty applies](https://gov.gg/article/153088/Why-do-I-have-to-pay-Duty), [claiming UK VAT](https://gov.gg/article/120182/Claiming-back-VAT) and [import/export controls](https://gov.gg/importexport) | Complete substantive page bodies; current customs union, two-duty distinction, conditional relief/origin, supplier export evidence and separate control declarations | 2026-10-28 |
 
 ## Disclaimer
 

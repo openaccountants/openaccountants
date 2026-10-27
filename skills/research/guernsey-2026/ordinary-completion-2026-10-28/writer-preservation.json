@@ -29,6 +29,15 @@
       "protected_metadata_exact": true,
       "CTA_exact": true,
       "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "old_bytes": 9223,
+      "new_bytes": 13765,
+      "sha256": "26f645852afb2db4c02b172d467d5d05216e9d6c0c4f32a7dfe5222074979bb5",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
     }
   ]
 }
