@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/palestine/ps-vat.md",
+  "sha256": "13921a4e7b38ddd00954415b31a0b7316f0a984efac48eec2e792e2287b1194c",
+  "source_documents": [
+    {
+      "law": "26/2024",
+      "gazette": "Special issue 30, 31 December 2024, printed pages 29–69",
+      "pdf_id": "e6078fbb-948a-4721-a2cd-48550faba4e0.pdf",
+      "locators": [
+        "Article 2: standard 16% rate and Cabinet authority",
+        "Article 7(5): tax-inclusive price",
+        "Article 8(1): import base",
+        "Article 22: electronic transactions",
+        "Article 36: input-credit conditions",
+        "Article 38: pre-registration inputs",
+        "Articles 61–62: registration categories and certificate",
+        "Article 68: resident agent",
+        "Articles 75–79: reporting and records"
+      ]
+    },
+    {
+      "law": "11/2026",
+      "gazette": "Issue 239, 25 June 2026, printed pages 5–8",
+      "pdf_id": "5ff774ba-26dd-41c9-a5d6-3d5d7dffbb21.pdf",
+      "locators": [
+        "Article 6: replaces article 69, Director General registration power",
+        "Article 7: replaces article 84, objections",
+        "Article 12: effective from issue on 13 June 2026"
+      ]
+    }
+  ],
+  "review": "Independent review found one omitted condition in article38(2): input tax paid before registration. Corrected against retrieved primary text; other included claims and calculations passed. Final correction not separately re-reviewed.",
+  "checks": "Targeted schema passed without warnings; two executable examples passed",
+  "limitations": [
+    "No full implementing-instruction reconciliation",
+    "Territorial administration unresolved",
+    "No comprehensive rate/exemption schedule",
+    "No professional attestation",
+    "Local draft;issue creation remains pending approval"
+  ]
+}
