@@ -13,7 +13,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | nl-income-tax (2026 deep-tax: boxes 1-3, credits, filing, penalties), nl-income-tax-special-groups, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | checked against the law |
+| IT-IND, individual income tax | nl-income-tax (2026 deep-tax: boxes 1-3, credits, filing, penalties), nl-income-tax-special-groups, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest, nl-tax-objection (2026 deep-tax: objection, appeal, payment postponement, procedure for all national taxes) | checked against the law |
 | IT-CORP, corporate income tax | nl-corporate-tax, nl-dividend-withholding | checked against the law |
 | VAT | netherlands-vat-return (2026 deep-tax), nl-vat-return (older duplicate, to be merged), nl-vat-registration | sourced from the law |
 | SC, social contributions | nl-social-contributions | checked against the law |
