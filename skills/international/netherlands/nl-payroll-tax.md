@@ -59,14 +59,14 @@ Work through each allowance, benefit or facility in six steps (handbook para. 10
 6. **Free space and levy.** Free space is 2.00% of the employer's total fiscal wage (column 14 of the wage ledger) up to EUR 400,000 and 1.18% above. Leave out fees of artists and professional athletes. If former-employment wage is more than 10% of the total, leave it out of the base. A new employer does not annualise. Compare designated wage (excluding targeted exemptions and nil valuations) with the free space. The excess bears 80% final levy. Unused space does not carry over.
 7. **Group election.** Employers linked by at least a 95% interest may pool their fiscal wage and designated items. The free space is computed once on the combined wage (no separate first band per entity), and the group member with the highest fiscal wage pays the levy. The choice is made each year, at the latest with the second-period return of the next year.
 8. **Items in kind** are valued at market value (own products: the price to a third party, or market value). A total of employee contributions for the same item may be netted against the total value, but not below nil.
-9. **Mileage top-up.** EUR 0.25 applies from 1 January 2026 (Secretary of State decision of 17 May 2026). How to correct earlier 2026 payments at EUR 0.23 is in netherlands-payroll.
+9. **Mileage top-up.** EUR 0.25 applies from 1 January 2026 (policy decision of the State Secretary for Finance, announced by the Belastingdienst on 25 June 2026). How to correct earlier 2026 payments at EUR 0.23 is in netherlands-payroll.
 
 ## Deadlines and filing
 
 - **Designation:** at the latest when the item is paid or provided. No notice to the Belastingdienst is needed; the payroll records show it.
 - **WKR final levy for 2026:** report and pay with the return for the second period of 2027 (February 2027 for monthly filers). An employer may settle earlier, or pay on account during the year and square up by that same return. If withholding ends during the year, settle in the return for the period in which it ends. No levy is reported if designated wage stays within the free space.
 - **Group election for 2026:** decide by the return for the second period of 2027.
-- **Gifts to non-employees:** report the final levy in the return for the period in which the recipient receives the gift. Tell the recipient that final levy is applied (general terms may do this) and record who received it.
+- **Gifts to non-employees:** the 45% / 75% final levy is available for gifts to business contacts given at the same time and for the same occasion to your own employees, and for gifts to agency workers and freelancers (para. 25.4). Report the final levy in the return for the period in which the recipient receives the gift. Tell the recipient that final levy is applied (general terms may do this) and record who received it.
 - **Return dates, corrections and payment rules** for the loonaangifte: netherlands-payroll.
 
 ## Penalties and interest
