@@ -41,3 +41,6 @@ Taxreform current consumption detailhttps://gov.gg/taxpackage retrieved/read27Oc
 
 
 Fresh-review pinpoint correction: shareholder-advance repayment is s62AA(1)(b), with commercial-loan/trading-company definitions at (1)(b)(i)–(ii), not nonexistent (1)(c) or subsection(2). Subsection(2) is the amendment power. The underlying described rule and1January2026commencement remain unchanged.
+
+
+Targeted SC operational addition for review: Form366/CF30(2020) and current01/26CF130a/b, all8pages read, confirm estimate-to-final Income Tax assessment workflow, source/equity-rental information requested and contribution assessment payment notices. Old Form366June/December tax dates explicitly rejected under current s81. No unsupported complete Class2/3 inclusion/exclusion or mixed-period formula is asserted; exact SCpartial remains.
