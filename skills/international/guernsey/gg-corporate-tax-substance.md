@@ -6,7 +6,7 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 version: "1.0"
 verified_by: pending
 sources:
@@ -73,7 +73,7 @@ The published tax-reform programme describes changes from 2027, including prescr
 
 The intermediate list expressly includes banking, domestic insurance, fiduciary business, insurance intermediaries/managers, controlled-investment administration, custody, individual-client investment management, investment-exchange operation, compliance-related activities and aviation-registry income. Match the actual activity and statutory category; do not place all financial income at 10%. [Company guidance, rates](https://gov.gg/RevenueService/Companies).
 
-The retail wording is **taxable profit more than £500,000**, not turnover of £500,000. The guidance alone does not resolve aggregation or the precise charging base at the threshold, so this draft does not invent an excess-only calculation or an exemption at the boundary. Property development, land exploitation and rent also need their own classification. [Company guidance, rates](https://gov.gg/RevenueService/Companies).
+The section 209 definition of **large retail business** tests taxable profits **exceeding £500,000**, reduced proportionately for a business carried on for part of the year. It excludes a retail business with more than 95% of customers outside Guernsey, excludes services to that extent and wholesale trade, and includes online retail. Aggregate the profits of associated Guernsey retail companies: control of one by the other or common control, construed under section 122(1). The resulting liability is apportioned by their respective profits even if one company individually falls below the threshold. Section 7BA and the Fifth Schedule put the qualifying retail-business income in the 20% class; this is not a 20% charge only on the excess over the threshold. At exactly £500,000 a full-year unassociated business does not meet this definition, although another higher-rate category can still apply. Keep customer-location, association, period and income-class evidence. [Sections 7BA, 209 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ## The base and computation
 
@@ -115,6 +115,10 @@ An unrelieved business loss can be claimed forward under section 139 against pro
 For example, an established £30,000 same-business, same-rate carried loss against current tax-adjusted profit £50,000 leaves £20,000 chargeable profit and no surviving loss, assuming no other restriction. At 10% that is £2,000 company tax; at 0% the tax remains nil but the loss ledger still changes. The example assumes the class and entitlement rather than proving them from the arithmetic.
 
 Section 142’s cessation carryback is narrower than a general terminal-loss election: permanent discontinuance and a **balancing allowance causing the unrelieved loss** are required. It reaches the business’s two preceding years, later year first, subject to the same-rate condition. Group surrender under section 142A has its own group/Guernsey incorporation-or-PE and overlapping-period conditions, consent and two-year claim deadline; test those separately instead of offsetting another company’s losses through the ordinary ledger. [Sections 142–144](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+### Ordering relief without losing the loss ledger
+
+Revenue Service practice M24 applies current-year trading losses through sections 133–135, subject to section 133A’s same-rate restriction. Its normal section 135 allocation is proportional across eligible classes, but a taxpayer can request the most advantageous allocation, including to preserve double-tax relief. The practice permits specified charges on income to be used before current-year trading losses, leaving the unused loss for carryforward. **Brought-forward section 139 losses go against that business’s income before charges on income.** Reconcile the claim, ordering election, foreign-tax credit limitation and surviving loss separately; do not treat a discretionary allocation as automatic. [M24, reviewed 30 December 2024](https://gov.gg/CHttpHandler.ashx?id=185346&p=0).
 
 ## Deadlines, registration and filing
 
@@ -271,13 +275,35 @@ Regulation 30 replaced section 4(1)(a) with a test covering control in Guernsey 
 
 A distribution from income taxed below 20% to a Guernsey-resident beneficial member requires a separate tax/reporting calculation. Keep evidence of non-residence before treating a payment to a non-resident member as outside the stated distribution charge. Loans are not automatically exempt alternatives. [Company distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
 
-### Distribution and loan reporting
+### Distributions: identify the income pool and beneficial recipient
 
-The company guidance requires the company to deduct/pay the distribution tax and make a quarterly distribution-reporter return identifying recipient, date, amount and tax. Non-resident beneficial-member treatment requires evidence of non-residence before payment without deduction. Qualifying loans use the same reporter; repayment within **six years** permits a claim for the tax attributable to the repaid part. This is not an automatic accounting reversal. Exact distribution/loan tax computations, statutory scope and payment deadlines still need verification. [Company guidance, distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
+Sections 57–61, 62AA–62D and 81B require a separate distribution ledger. Trace the actual and beneficial recipient through intervening companies, trusts and arrangements; retain any section 62AB request for treatment at the receiving-company level. Section 81B(17) treats a distribution as coming from **undistributed income first**, then other income and capital only to the extent that pool is insufficient. Keep profits by source, tax rate, year, previous distributions and credits. A label such as capital repayment does not override that ordering. Tax-cap cases also require the underlying-income year allocation under section 39D, explained in [practice C44](https://gov.gg/CHttpHandler.ashx?id=191282&p=0). [Income Tax Law, ss57–62D and 81B](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+For an individual recipient, section 81B(3)(a) specifies deduction at the **difference between the company rate on the underlying income and the individual standard rate**; the section 58 gross income and section 61 credit include company tax plus the distribution deduction as directed there. For a company recipient the statutory deduction rate is the company standard rate, subject to beneficial-recipient tracing. Use the underlying pool and actual certificate; do not simply tax the same net cash a second time at 20%. A distribution from an established 0%-taxed pool with £10,000 gross income gives £2,000 deduction and £8,000 cash to a resident individual before that person’s final assessment and credits. Mixed-rate, capped and exempt-company pools require their separate statutory adjustments. Sections 59 and 81B(9) impose a net-payment gross-up where required deduction was omitted; an agreement to pay without deduction is void under 81B(11). [Sections 58–61 and 81B(3)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Evidence establishing a non-resident individual’s disregarded distribution income is required under sections 47B–47E; this is not a universal exemption for every recipient or all Guernsey income. Practice C37 distinguishes resident-member withholding, non-resident disregarded income and property-company tax credits. Section 61 restricts refunds until the recipient’s current and earlier liabilities are determined; do not promise immediate repayment of a credit from an interim assessment. [Sections 47B–47E and 61](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [C37, updated 1 September 2025](https://gov.gg/CHttpHandler.ashx?id=193346&p=0).
+
+Give the recipient the section 60 certificate showing gross amount, tax rate/amount and net cash. The quarterly return identifies recipient name/address, distribution date/amount and tax date/amount. Return and payment are due **within 15 days after 31 March, 30 June, 30 September or 31 December**, including reportable distributions on which no tax was deducted. Keep the deduction record, certificate and payment reconciliation. The 2008 regulations allow a Director’s written variation/no-deduction direction and particular collection arrangements; obtain that direction rather than making a unilateral variation. [Sections 60, 81B(12)–(13), 209](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [Tax Deductions from Company Distributions Regulations 2008, rr1–6](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267621).
+
+### Qualifying loans: separate charge, exemptions and repayment claim
+
+Section 66A covers a company with income taxed below the higher of the company higher rate and individual standard rate lending to a participator, officer, connected person or a third party for their benefit. Its connected-person and attribution rules can move the charge to the underlying person; an unrelated name on the loan agreement does not settle the test. A loan can become qualifying when the borrower’s status later changes. It is not deductible in computing company profits. [Section 66A(1)–(8)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Check the statutory exceptions separately: a licensed money-lender’s normal-commercial-rate loan; ordinary-course goods/services credit unless it exceeds six months or the normal customer credit period; and qualifying officer/employee loans unless the borrower and connected persons control more than 5% of the relevant issued share capital. Regulation 2 of the 2008 No.3 exemptions also excludes a loan where aggregate outstanding loans by the company/connected lenders to the borrower/connected persons **do not exceed £2,500**. Aggregate first; this is not a £2,500 deduction from a larger loan. **The old general commercial-interest exemption was repealed from 1 January 2014**: charging Bank Rate plus 2% alone does not exempt an ordinary shareholder loan in 2026. Tax actually paid under section 66C and tax actually deducted under section 81B are excluded from a further qualifying-loan charge under regulations 3–4, with the stated deemed-deduction exception. [Section 66A(4)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [2008 No.3 rr2–4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761), [2012 amendment r1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266936), [2013 amendment rr1,3](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266902).
+
+Section 66C treats the qualifying advance as **net of tax** in the quarter it becomes qualifying. The applicable rate is the individual standard rate for an individual borrower or company higher rate for a company borrower, both 20% for 2026: gross income = net advance / 0.80 and tax = gross income × 20%. Report borrower/address, advance, tax, repayments and quarter-end outstanding balance. Return and company payment are due within 15 days after the relevant calendar-quarter end. [Section 66C and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+If repaid within six years, section 66B permits **the person who paid the tax** to claim the tax attributable to the repaid portion, **within 15 days after the reporting date for that repayment quarter**. Apply repayments to earlier qualifying loans, including the specified pre-2008 loans, first. A write-off or balance not repaid within six years produces the section 66B deemed-income/credit treatment; it does not create a second charge or a second section 81B deduction where section 66C tax was already paid. Keep loan-by-loan dates, net/gross amounts, tax payer and timely claim evidence. [Section 66B](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ### Loan direction matters for 2026 repayments
 
-The 2026 changes page states that repayments of loans **to shareholders** are treated as dividends, excluding repayment of commercial loans by trading companies. This concerns a company repaying its borrowing from a shareholder; it is distinct from the preceding qualifying-loan case where the company lent money and receives a repayment. Do not apply the six-year tax-repayment claim to both directions. Record lender, borrower, original advance, repayment recipient, trading status and evidence supporting any commercial-loan exclusion. The guidance does not establish the complete amended statutory definition, connected-person scope or transition rules; obtain those before calculating a charge or accepting an exclusion. [Revenue Service, 2026 changes, definition of a distribution](https://gov.gg/RStax-rates-and-allowances).
+From **1 January 2026**, section 62AA(1)(c) includes a company’s repayment of sums advanced by a member or a person connected to a member in the distribution definition. Section 62AA(2) excludes repayment of a **commercial loan made to a trading company**: terms must be those that would apply between independent parties, interest must be at a commercial rate, and the company’s income must be business income within the definition. Record original lender, member connection, advance and repayment, business status, agreement and comparable terms. This direction is the company repaying shareholder borrowing; it is distinct from a company receiving repayment of its qualifying loan. Do not transfer the section 66B six-year repayment claim to it. [Section 62AA, including Budget Ordinance 2025 s6 commencement note](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+### Migration and continuing source income
+
+Revenue Service practice C52, updated **23 July 2026**, explains that accepted section 4(2) non-residence applies for the whole year, while Guernsey-source income remains subject to sections 47G–47H. Use Form 707, foreign tax-residence evidence and the Director’s acceptance. If section 4(2) is not established, section 5(4) governs overseas income on cessation: distinguish a source held throughout the year, a source ceased before departure and a new source acquired before departure; do not impose one blanket daily fraction on all income. Section 6’s accounting-period basis still applies to business income. [C52, company residence and arrivals/departures](https://gov.gg/CHttpHandler.ashx?id=202425&p=0); [sections 4–6](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+A company migrating its registration submits **Form 708** for a Revenue Service letter to the Registrar. C52 requires review of outstanding tax and reporting obligations, including CRS, CbCR and substance. A non-calendar accounting year can require the last accounting period ending in the year plus the appropriate proportion of the next period up to migration; reconcile this with each source’s statutory treatment. Preserve the letter and continuing obligations. This ordinary income and administrative method is not a statement that unrealised gains or an actual disposal always have a nil exit charge. [C52, migration](https://gov.gg/CHttpHandler.ashx?id=202425&p=0).
 
 ### Reporting and exit are separate screens
 
@@ -285,41 +311,54 @@ Form 707 asks about CbCR, Pillar Two, FATCA, CRS and CARF. These questions do no
 
 ## Two worked examples that recompute
 
-**Established mixed income.** Assume review has established separate ordinary taxable income £100,000, intermediate-category income £30,000 and Guernsey rental taxable income £20,000, with no overriding wider-base or minimum-tax rule. At 0%, 10% and 20%, ordinary company tax is **£7,000**. The example does not establish deductions, stream classification, loss offsets or Pillar Two treatment. [Company rates](https://gov.gg/RevenueService/Companies).
+**Business base, allowance and carried loss.** A full-year company’s independently established intermediate-rate business has accounting profit £200,000 after £10,000 capital expenditure charged as a current expense. There are no other adjustments. Its qualifying general-plant tax balance is £40,000, with no disposal/private use and a full 20% reducing-balance allowance. A valid unused £30,000 same-business, same-rate loss is brought forward. Add back £10,000, deduct £8,000 allowance and £30,000 loss: taxable profit **£172,000**, tax **£17,200**. Rates/classification and qualifying ownership/use are facts requiring evidence; this example does not establish them by arithmetic. [Sections 7, 84–86, 139 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [allowance table A(3)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0).
 
 ```oa-check
-name: Guernsey established corporate income streams
+name: Guernsey ordinary corporate base allowance and loss
 inputs:
-  standard_income: 100000
-  intermediate_income: 30000
-  rental_income: 20000
+  accounting_profit: 200000
+  capital_expensed: 10000
+  qualifying_plant_balance: 40000
+  carried_same_business_loss: 30000
 steps:
-  - standard_tax: standard_income * 0
-  - intermediate_tax: intermediate_income * 0.10
-  - rental_tax: rental_income * 0.20
-  - total_tax: standard_tax + intermediate_tax + rental_tax
+  - capital_allowance: qualifying_plant_balance * 0.20
+  - profit_before_loss: accounting_profit + capital_expensed - capital_allowance
+  - loss_used: min(carried_same_business_loss, profit_before_loss)
+  - taxable_profit: max(0, profit_before_loss - loss_used)
+  - company_tax: taxable_profit * 0.10
+  - loss_remaining: carried_same_business_loss - loss_used
 expected:
-  standard_tax: 0
-  intermediate_tax: 3000
-  rental_tax: 4000
-  total_tax: 7000
+  capital_allowance: 8000
+  profit_before_loss: 202000
+  loss_used: 30000
+  taxable_profit: 172000
+  company_tax: 17200
+  loss_remaining: 0
 ```
 
-**Daily-penalty catch-up.** Assume no successful appeal/reduction and a corporate return submitted after the 30-day concession period, with **35 chargeable days established from the Order and submission dates**. The guidance calculation is £300 + 35 × £50 = **£2,050**, not merely five daily penalties. A return qualifying for the within-30-day concession would retain the £300 initial penalty without daily penalties. This example does not decide inclusive date counting or the Order's validity. [Penalty FAQ](https://gov.gg/taxpenalties).
+**Qualifying loan and timely partial repayment.** A 0%-income company advances £8,000 cash to its resident individual participator. There are no earlier/connected loans, the £2,500 aggregate exemption is exceeded, and no other exception applies. The £8,000 is net: gross income **£10,000**, section 66C tax **£2,000**. A £3,000 repayment within six years, allocated to this loan, supports a **£750** tax repayment to the original tax payer if claimed within 15 days after that repayment quarter end. £5,000 net principal remains; no second loan-tax charge is created by the £2,000 tax payment. [Sections 66A–66C](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [2008 exemptions rr2–3](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761).
 
 ```oa-check
-name: Guernsey corporate daily penalty after concession period
+name: Guernsey qualifying loan net gross-up and partial repayment
 inputs:
-  initial_penalty: 300
-  daily_rate: 50
-  established_chargeable_days: 35
+  net_advance: 8000
+  tax_rate: 0.20
+  timely_principal_repayment: 3000
 steps:
-  - daily_penalty: daily_rate * established_chargeable_days
-  - total_penalty: initial_penalty + daily_penalty
+  - gross_income: net_advance / (1 - tax_rate)
+  - loan_tax: gross_income * tax_rate
+  - refundable_tax: loan_tax * timely_principal_repayment / net_advance
+  - principal_remaining: net_advance - timely_principal_repayment
+  - tax_remaining: loan_tax - refundable_tax
 expected:
-  daily_penalty: 1750
-  total_penalty: 2050
+  gross_income: 10000
+  loan_tax: 2000
+  refundable_tax: 750
+  principal_remaining: 5000
+  tax_remaining: 1250
 ```
+
+The original mixed-income £7,000 and corporate daily-penalty £2,050 controls and their full explanatory conditions remain in [supplementary research](../../research/guernsey-2026/corporate-original-controls.md). The penalty method above continues to apply; replacing its main control does not remove that topic.
 
 ## Ask the client first
 
@@ -348,8 +387,17 @@ This is not a company-incorporation checklist, document-duty calculation, treaty
 |---|---|---|
 | Income Tax Law v.0113: s2, s4–7, s36, s57–59, s62AA, s67, s81, s84–86, s133–135, s139, s141–144, s147 and Fifth Schedule rate table; only cited provisions read, not the full 757-page law | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
 | Currently linked Annual Allowances table, both pages, underlying s85 rate power | https://gov.gg/CHttpHandler.ashx?id=2086&p=0 | 2026-10-27 |
+| Income Tax Law: ss57–62D, 66A–66C, 81B and s209 retail/reporting definitions; limited cited provisions | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
+| Distribution deduction regulations 2008, rr1–9 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267621 | 2026-10-27 |
+| Loan exemptions No.3 regulations 2008, rr1–8, read with both amendments below | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761 | 2026-10-27 |
+| Loan exemption amendment 2012, rr1–3 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266936 | 2026-10-27 |
+| Loan exemption amendment 2013, rr1–3, effective 2014 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266902 | 2026-10-27 |
+| C52 company residence, arrivals, departures and migration; updated 23 July 2026 | https://gov.gg/CHttpHandler.ashx?id=202425&p=0 | 2026-10-27 |
+| M24 loss ordering; reviewed 30 December 2024 | https://gov.gg/CHttpHandler.ashx?id=185346&p=0 | 2026-10-27 |
+| C37 disregarded non-resident distributions and credits, all pages | https://gov.gg/CHttpHandler.ashx?id=193346&p=0 | 2026-10-27 |
+| C44 cap and distribution-pool timing, entire practice | https://gov.gg/CHttpHandler.ashx?id=191282&p=0 | 2026-10-27 |
 
-Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The full independent pack review and publication checks remain pending. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Not yet confirmed: the remaining detailed distribution/qualifying-loan computation, complete minimum-tax and regulated-sector scope, and the source-specific limits stated above.
+Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The full independent pack review and publication checks remain pending. Distribution/loan provisions and their implementing regulations, current company residence/migration practice C52, loss-ordering practice M24 and distribution practice C37/C44 were additionally read on 27 October 2026. The 2013 repeal of the general commercial-interest loan exemption is expressly applied above. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Not yet confirmed: mixed-rate distribution-credit mechanics beyond the cited statutory rule, complete minimum-tax and regulated-sector scope, and the source-specific limits stated above.
 
 ## Disclaimer
 

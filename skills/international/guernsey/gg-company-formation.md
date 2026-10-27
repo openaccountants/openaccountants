@@ -6,8 +6,8 @@ jurisdiction: GG
 category: formation
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-28
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://www.guernseyregistry.com/companyformation"
@@ -28,11 +28,11 @@ sources:
 
 ## Scope
 
-This Guide covers the incorporation process for an ordinary local trading company limited by shares. The Registry's directors handbook addresses Guernsey residents setting up such businesses. Cell companies, regulated activities, overseas migrations, guarantees and complex ownership require additional analysis. The current consolidated Companies Law could not be retrieved during this research; the requirements below are sourced to the Registry's own guidance, not presented as an independently reconciled statutory opinion. [Directors handbook, introduction](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
+This Guide covers the incorporation process for an ordinary local trading company limited by shares. The Registry's directors handbook addresses Guernsey residents setting up such businesses. Cell companies, regulated activities, overseas migrations, guarantees and complex ownership require additional analysis. The current Companies Law v.0108 was recovered on 27 October 2026; section 17’s application requirements now supplement the Registry guidance below. The consolidation is non-authoritative and authentic enactments control. [Companies Law s17](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998). [Directors handbook, introduction](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
 ## Who applies and what must be in place
 
-Only a corporate service provider (CSP) holding a **full fiduciary licence from the Guernsey Financial Services Commission (GFSC)** can apply to the Registrar to incorporate a company. A founder's portal account does not replace that applicant requirement. The Registry requires at least one founder member, at least one director and a registered office in Guernsey. A resident agent must be a Guernsey-resident director or a CSP, unless an exemption applies. This Guide does not establish any resident-agent exemption. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
+For the ordinary Registry route, the published guidance requires a corporate service provider (CSP) holding a **full fiduciary licence from the Guernsey Financial Services Commission (GFSC)** as applicant. Statutory section 17(9) also reserves a route for a person/body/officer or class prescribed by the Committee; this Guide has not verified a prescribed exception applicable to an ordinary founder. [Companies Law s17(9)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998). A founder's portal account does not replace that applicant requirement. The Registry requires at least one founder member, at least one director and a registered office in Guernsey. A resident agent must be a Guernsey-resident director or a CSP, unless an exemption applies. This Guide does not establish any resident-agent exemption. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
 The incorporation page requires written GFSC permission for a cell company. An ordinary company's formation checklist must not be reused as a complete cell-company application. A company cannot be incorporated for an unlawful purpose. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
@@ -76,4 +76,50 @@ Use the separate [corporate tax Guide](gg-corporate-tax-substance.md) and [payro
 
 Before using the application, reconcile the constitution, founder, director, ownership and capital information; confirm the applicant's current licence; record the fee schedule checked; and retain the submission and registration evidence. These are preparation controls, not additional statutory certifications invented by this Guide.
 
-Still to verify: current consolidated statutory provisions and amendments, name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. Independent source review and professional attestation are pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+Section 17 now confirms the memorandum, first-director consents/particulars, registered office, resident-agent information/beneficial-owner compliance statement, founder details, initial share capital or guarantee, required consents/resolutions and compliance declaration. Distinguish cash from non-cash consideration in the initial-capital statement. The application may propose an incorporation date no later than **three months after application**; French constitutional text requires an English translation. The Registrar rejects a non-compliant application. These controls supplement the original application checklist rather than replacing it. [Companies Law s17(1)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
+
+Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. Independent source review and professional attestation are pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+
+
+## Two recomputing fee examples
+
+The amounts are Registry fees effective 1 December 2025 and currently published on 27 October 2026. They exclude CSP/professional charges and assume one chosen service. [Registry fee schedule](https://www.guernseyregistry.com/companyfees).
+
+```oa-check
+name: Guernsey standard incorporation with optional name reservation
+inputs:
+  standard_incorporation: 100
+  reservation: 25
+steps:
+  - with_reservation: standard_incorporation + reservation
+  - without_reservation: standard_incorporation
+expected:
+  with_reservation: 125
+  without_reservation: 100
+```
+
+For the same single reservation, the alternative rapid service total is £525 and special service total £1,025. These are alternatives to standard incorporation, not additions to it; the Registry’s special-service restrictions still apply.
+
+```oa-check
+name: Guernsey alternative incorporation service fees
+inputs:
+  rapid_service: 500
+  special_service: 1000
+  one_reservation: 25
+steps:
+  - rapid_total: rapid_service + one_reservation
+  - special_total: special_service + one_reservation
+expected:
+  rapid_total: 525
+  special_total: 1025
+```
+
+## Sources
+
+| Source | Read scope | Read on |
+|---|---|---|
+| [Companies Law v.0108](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998) | s17, application requirements and reserved applicant route | 2026-10-27 |
+| [Registry fee schedule](https://www.guernseyregistry.com/companyfees) | Current incorporation/reservation fees, effective 1 December 2025 | 2026-10-27 |
+| All original Registry sources in frontmatter | Original scope, ownership and handover guidance and prior review retained | 2026-10-22 |
+
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. Fresh whole-pack review remains pending; no professional attestation is claimed.

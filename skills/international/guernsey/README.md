@@ -4,29 +4,41 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: gg-uk-treaty-employment-and-relief
+partial:
+  IT-IND: "2026 standard-charge implementing amount unresolved between current authority table and consolidated s5B; fractional-period allowance/withdrawal and current surcharge-rate regulations remain unreconciled"
+  IT-CORP: "mixed-rate distribution-credit calculation beyond cited statutory rule remains unreconciled; ordinary residence, business base, loss, qualifying-loan and migration methods are supplied"
+  VAT: "GST Guide establishes the adopted future programme only; current domestic consumption-tax scope and customs/excise remain unreconciled, with no reviewed not-applicable finding"
+  SC: "ordinary Class 1 method supplied; complete Class 2/Class 3 assessable-income, mixed-class/partial-period and contribution repayment rules remain unreconciled"
+  PR: "ordinary ETI process and benefit/notice methods supplied; partial-period and multi-employer benefits, current surcharge rates and contribution enforcement remain unreconciled"
+  TP: "UK treaty adjustment and specific domestic anti-avoidance/connected-asset controls supplied; complete domestic TP/documentation scope remains unreconciled"
+  XB: "UK corridor and domestic residence/non-resident-company/migration screens supplied; domestic relief claims, PE attribution/return implementation and source-specific exit/disposal methods remain unreconciled"
 ---
 
-# Guernsey tax pack: source-cited drafts
+# Guernsey 2026: source-cited country draft
 
-Owner Michael, confirmed in [issue #397](https://github.com/openaccountants/openaccountants/issues/397). Work is consolidated in [PR #514](https://github.com/openaccountants/openaccountants/pull/514). This is a gap register, not a completeness or attestation claim. Territory and year must be checked in each Guide; the UK treaty's geographical definition does not cover every Bailiwick island.
+Nine existing Guides, preserved in place, in [PR #780](https://github.com/openaccountants/openaccountants/pull/780). Michael owns [issue #397](https://github.com/openaccountants/openaccountants/issues/397). This is a reviewed-draft workstream, with the exact unfinished core methods recorded in `partial` above. Keep the issue open; no accountant attestation or complete-country claim is made. The income-tax jurisdiction, social-insurance islands, pension scope and Guernsey-only property duty have different territorial definitions.
 
-| Domain | Draft | Remaining work |
+| Domain | Guides and established scope | Exact acceptance boundary |
 |---|---|---|
-| IT-IND | [Individual tax](gg-individual-income-tax.md) | Residence day-count law, allowance withdrawal, selected reliefs and conditional 2026 cap comparisons drafted; cap figures confirmed in July 2026 official table, with former Alderney cap cessation distinguished. Departure filing routes and individual penalty/appeal-form steps now drafted. Full statutory base/cap eligibility, special-cap transitions, part-year computations, payment/interest and complete Tribunal procedure remain open |
-| IT-CORP | [Corporate tax/substance](gg-corporate-tax-substance.md) | Registration/residence evidence, activity rates and filing/penalty guidance expanded; statutory substance scope, governance, CIGA map and high-risk IP evidence/return rules and substance penalty/appeal and inspection-response procedures added; full residence/base, losses, distributions, remaining enforcement cross-references, licensing cross-references and minimum-tax depth remain open |
-| VAT / consumption | [GST transition](gg-gst-transition.md), policy scope only | October 2026 adopted conditions and published 2029 timetable verified; current tax scope, enacted commencement, customs/excise, registration, returns and penalties remain open |
-| SC, PR | [Payroll/social insurance](gg-payroll-social-insurance.md), [secondary pensions](gg-secondary-pensions.md) | Classification, dividend timing, ordinary benefits, vehicle/housing rules and employer procedures expanded; statutory penalty reconciliation, special periods/benefit categories, specialist pension cases and international coverage still open |
-| TP | [UK treaty adjustment rules](gg-uk-treaty-employment-and-relief.md#associated-enterprises-and-corresponding-adjustments), limited corridor coverage | Dated OECD profile treatment of MAP access and bilateral APAs now drafted. Domestic connected-party rules and documentation remain unverified; official legal library and practice-page access failed. Treaty material does not establish a complete domestic regime |
-| Capital / property | [Property document duty](gg-property-document-duty.md) | Graduated rates, surcharge repeal, conditional downsizing calculations and Court/registration procedure; full charging law, exemptions, anti-avoidance scope, payment/claims/penalties and other property taxes remain open |
-| XB | [UK treaty employment and relief](gg-uk-treaty-employment-and-relief.md) | Pension/government-service and student allocation conditions now drafted; claim operations, domestic ordinary-residence and pension lump-sum treatment, domestic PE implementation; capital-gains/offshore allocation now drafted, with domestic valuation/disposal filing open; published arbitration procedure and conflicting effective-status evidence now recorded; other corridors and exit/non-resident rules |
+| IT-IND | [Individual income tax](gg-individual-income-tax.md): residence/source decision, employment/business/rental base, 2026 current-plus-historic repair transition, allowance withdrawal, ordinary cap screen, part-year practice, assessment payments and appeal routes | Standard-charge amount instrument, fractional-period allocation and current surcharge rates remain unreconciled |
+| IT-CORP | [Corporate tax and substance](gg-corporate-tax-substance.md): current residence/exclusion, ordinary business base/capital allowances, loss ordering, retail aggregation, distributions and qualifying loans, registration/payment, current migration practice and preserved substance depth | Mixed-rate distribution-credit mechanics remain unreconciled; special licensed/minimum-tax regimes are excluded |
+| VAT / consumption | [GST transition](gg-gst-transition.md): adopted October 2026 safeguards and published 2029 programme, with two explicitly hypothetical price illustrations | No current VAT/GST charge or not-applicable finding is inferred; current scope/customs/excise remain to reconcile |
+| SC / PR | [Payroll and social insurance](gg-payroll-social-insurance.md), [secondary pensions](gg-secondary-pensions.md): ordinary Class 1, benefit valuation, ETI notices/reporting, pension base/enrolment/opt-out, new seven-day scheme choice and 2026 fixed/escalating penalty amounts | Class 2/3 and mixed/partial periods, remaining benefit conventions and current surcharge/contribution-enforcement machinery remain unreconciled |
+| TP | [UK treaty and domestic controls](gg-uk-treaty-employment-and-relief.md#domestic-connected-party-controls-keep-their-scope-distinct) | Specific anti-avoidance and plant-sale rules do not establish a complete domestic TP/documentation regime |
+| Property | [Document duty](gg-property-document-duty.md): graduated direct-realty calculation, surcharge repeal/transition, conditional downsizing and Court workflow | Full charge/valuation/exemptions, indirect transfer base/liability and claims/payment/penalties remain unreconciled |
+| XB | [UK treaty](gg-uk-treaty-employment-and-relief.md) plus domestic residence/source and company-migration methods in the income Guides | Domestic relief operations, remaining PE/exit methods and stated arbitration-status conflict remain unresolved; other corridors excluded |
+| Supporting company administration | [Formation](gg-company-formation.md), [accounts/reporting](gg-company-accounts-and-reporting.md): current application requirements, accounting records, approval/signature/delivery, statutory validation timing, audit-waiver eligibility/voting and current Registry fees | Complex ownership, historic dormant/asset-holding definitions, specialist entities and exact civil-penalty boundary rules excluded |
 
-The VAT entry is an unresolved programme consumption-tax scope, not an assertion of a current Guernsey VAT. No reviewed not-applicable finding has been made. Nine Guides are present. All nine have received independent AI source/editorial review within their stated scopes; none is professionally attested in this work. The review records preserve unresolved substantive and operational gaps. A domain mapping establishes draft presence only.
+The legal library is now accessible through its normal browser printable links. The current Income Tax Law v.0113, Companies Law v.0108, consolidated audit-exemption rules and targeted implementing instruments have been recovered. Their consolidations expressly lack authoritative legal effect; authentic enactments control. Earlier HTTP 403 receipts remain historical evidence, not current blanket access blockers.
 
-Accounting milestone drafts: [formation](gg-company-formation.md) and [accounts/reporting](gg-company-accounts-and-reporting.md). The audit-exemption primary-source gap remains in the accounts Guide.
+Each computational Guide has **exactly two main oa-check blocks**, 18 in total. All **32 original published controls remain byte-exact** in [supplementary research](../../research/guernsey-2026/original-controls.md), alongside full original bodies and the [cut/move inventory](../../research/guernsey-2026/no-loss-inventory.md). No old substantive topic is silently removed. Sources/read scopes, hashes and exact remaining questions are in the Guides and [research record](../../research/guernsey-2026/research.md). The earlier 50 research/review files in docs/research are preserved unchanged.
 
-Sources and access dates are recorded in the new Guides and [research](../../../docs/research/); all nine Guides now have structured source metadata, which does not establish complete source verification. Remaining review, resolution of source gaps, required checks, merge and verified platform ingestion remain necessary before acceptance. Keep issue #397 open while these gaps remain.
+## Fresh whole-pack review
 
-## Independent source-review records
+Candidate preparation complete; fresh independent whole-pack/no-loss review and final checks are pending. This status is not approval, professional attestation or authority to file/pay. Publication will be one country batch after findings are fixed; no per-Guide pushes, merge or new CLA consent.
+
+## Historical independent source-review records
+
 
 These records identify versions, evidence used, findings corrected and limitations. Several official sites blocked fresh reviewer access, so those checks used saved primary-source copies. Review does not establish complete current legislation or professional attestation.
 

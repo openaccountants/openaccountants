@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: "0.8"
+last_updated: 2026-10-28
+version: "0.9"
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=122165&p=0"
@@ -52,7 +52,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey individual income tax and residence v0.8
+# Guernsey individual income tax and residence v0.9
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -89,6 +89,24 @@ These are deductions/allowances, not equivalent cash tax refunds. Do not infer e
 
 ## The base and computation
 
+### Determine the income before applying allowances
+
+Section 5 brings the worldwide income of a solely/principally resident individual into charge, subject to its arrival/departure rules and specific exemptions. Keep each section 2 class and source separate: business, employment, land/buildings and other income. Income-tax residence, treaty residence and immigration status require their own decisions. For business income, use the accounting period ending in the year under section 6, then ordinary commercial profits adjusted under section 7. Add back capital/private/non-business expenditure and book depreciation where appropriate, deduct only qualifying current costs and statutory capital allowances, and maintain the current/carried loss ledger. The [corporate Guide’s ordinary business-base and loss method](gg-corporate-tax-substance.md#ordinary-business-profit-bridge) supplies the common sections 6–7, 84–86 and 133–144 mechanics; the **individual rate is 20%**, rather than company 0/10/20 classifications. [Income Tax Law, ss2, 5–7 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Employment income is the full emoluments arising/accruing in the year less authorised deductions. Section 8(3) requires employment expenses to be **wholly, exclusively and necessarily incurred in performing the duties**; a useful personal expense or ordinary private travel does not become deductible merely because the employee paid it. Approved pension contributions, subscriptions and capital relief have their own statutory conditions. Include taxable benefits using the [payroll Guide’s benefit valuation](gg-payroll-social-insurance.md#benefits-classification-and-valuation-before-payroll), then reconcile ETI deducted as a credit rather than an expense reducing gross employment income. Separate offices and employments are separate sources under section 8(4); overseas duties/director source rules and the applicable treaty require a distinct source analysis. [Section 8(1)–(7)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+### Ordinary rental income, including the 2026 repair transition
+
+For land/buildings within sections 9–16, establish the section 10 annual rental value: reasonable annual letting value on the stated landlord-repair/rates/insurance terms, or higher actual rent/consideration. Separate goods/services included in a lease. Owner occupation and the specified partnership/controlling-company cases are excluded from this ordinary annual-value route; property development follows business-computation rules under section 9(4). [Sections 9–10](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Section 12’s standard repair deduction is **2.5% for bare land other than a quarry, 15% for a furnished dwelling and 10% for a glasshouse/other building**. If the landlord does not bear all the stated repair/rates/insurance obligations, the Director determines a just and reasonable proportion. Section 13 excludes capital improvements and costs deducted elsewhere. From 2026 its ordinary additional-repair deduction uses the **current year’s** eligible maintenance, repairs, insurance and management cost exceeding the section 12 deduction, subject to the cap at rental value less that deduction. [Sections 11–13](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+**For 2026 specifically**, regulation 2 of the transition instrument requires the Director to calculate both the new current-year additional deduction and the old additional deduction using the **2021–2025 average**, then add both, still subject to section 13(1)’s cap. Do not discard the historic cost records, use the five-year average alone, or deduct the standard amount twice. For 2027–2030 the current-year method applies, with discretionary historic-cost adjustments on application under regulation 3; those are not automatic deductions. The instrument commenced **17 March 2026** and applies its stated year-of-charge transition. [Deductions for Repairs Transitional Regulations 2026, rr1–7](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327585).
+
+Section 14’s borrowing-interest deduction for acquisition/construction/reconstruction/repair is expressly subject to the section 39A interest-relief limitations. For **2026 domestic let property**, Revenue Service confirms relief remains **50% of interest paid**, not the full payment. Check loan purpose, use, allocation and the applicable interest-relief rules; repayments of principal are not interest and the same interest cannot be deducted twice. [Section 39A and s14(4)–(5)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [2026 rates page, mortgage interest relief](https://gov.gg/RStax-rates-and-allowances). Section 15 gives proportionate vacancy relief, including the appropriate part where a building is let in parts. Section 16’s irrecoverable-rent relief requires the specified insolvency/absconding/fraud facts and a written claim within **three years after the relevant year end**. Keep rent schedules, market-value support, landlord obligations, invoices, five historic years’ eligible costs, loan-purpose/interest evidence, vacancy dates and rent-loss claim evidence. Do not automatically treat every rent arrear as irrecoverable. [Sections 14–16](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+### Ordinary allowance calculation
+
 For a case where the reviewer has established the relevant income base, full personal-allowance entitlement, no transferred allowance, no additional relief and no special regime:
 
 1. Set income `I` to the reviewed base, not automatically to gross cash receipts.
@@ -110,7 +128,7 @@ At the allowance-only exhaustion boundary, £85,000 + 5 × £15,200 = £161,000.
 
 For a full-year case, establish the relevant income for withdrawal **before subtracting the allowances being withdrawn**. Calculate the withdrawal amount, then apply it in this published order: personal allowance; dependent relative; charge of children; infirm person; housekeeper; mortgage interest; pension contributions above the protected £2,500. At each step remove no more than that category's eligible amount and carry unused withdrawal into the next category. The protected pension amount is not a new allowance for someone who has no eligible contribution. [Withdrawal FAQ, categories and order](https://gov.gg/wopa).
 
-The withdrawal page says arrivals/departures require a proportionately reduced income threshold. Its historical worked examples use older thresholds and allowances; do not copy them into 2026. The precise part-year apportionment and the full statutory income definition remain to be verified before automating those cases. [Withdrawal FAQ](https://gov.gg/wopa).
+The withdrawal page says arrivals/departures require a proportionately reduced income threshold. Its historical worked examples use older thresholds and allowances; do not copy them into 2026. Use the statutory source computation above and the arrival/departure method below. Reconcile any fractional-period or competing relief allocation with the actual assessment rather than inventing a rounding convention. [Withdrawal FAQ](https://gov.gg/wopa).
 
 ### Transfers and specific relief conditions
 
@@ -120,6 +138,16 @@ The charge-of-child route covers qualifying lone parents who are not cohabiting,
 
 For rent-a-room relief, the rates page permits up to **two furnished rooms** in the principal private residence, let to a **non-family member over 18**, with up to **£10,000 per room**. A self-contained unit, guesthouse or B&B business does not fit that stated route. Gross rent above the per-room allowance remains taxable under the page's rule; it is not an exemption for all receipts once the letting qualifies. Other rental deductions, allocation and interaction require separate review. [Rates page, rent a room](https://gov.gg/RStax-rates-and-allowances).
 
+### Arrival, departure and limited-residence allowance method
+
+For a solely/principally resident arrival or permanent departure, practice R15 implements the 29 October 2015 Resolution by pro-rating personal/other allowances for the applicable residence period. Record actual permanent arrival/departure separately from earlier job-interview/house-hunting visits and later family visits. Midnight presence still counts for residence; visits do not change the actual permanent move date. A temporary holiday or overseas study with a retained permanent home is not automatically permanent departure. R15’s examples use qualifying weeks over 52; a confirmed 26/52 entitlement gives **£7,600** of the 2026 £15,200 personal allowance, before withdrawal/other adjustments. This example does not create a general rounding rule for incomplete weeks. [R15, all three pages](https://gov.gg/CHttpHandler.ashx?id=110271&p=0); [2026 allowance](https://gov.gg/RStax-rates-and-allowances).
+
+Apply section 5(3)–(4) source by source to foreign income on arrival/departure: a source held throughout the year, one ended before the move, and one acquired during the year have different rules. Guernsey-source income remains a separate whole-year screen. Overseas business profit follows Guernsey business-computation rules for the relevant residence proportion under practice R10. Pension income with ETI can support additional pension-only allowances for each seven days received under sections 51/51A, capped with other allowances at the full-year amount. A non-resident employee’s section 51(4) route uses weeks or part-weeks employed and excludes the specified company-director cases; do not give every non-resident landlord a personal allowance. [Sections 5, 51 and 51A](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [R10](https://gov.gg/CHttpHandler.ashx?id=181119&p=0); [R15](https://gov.gg/CHttpHandler.ashx?id=110271&p=0).
+
+For someone resident but **neither solely nor principally resident**, sections 5A–5I provide a distinct decision. Without a standard-charge election the starting rule is worldwide income with eligible limited-residence relief. The narrower section 5F(2) employment/remittance route requires the Director to be satisfied with **all** its income, ETI, main-purpose-of-presence and return conditions; foreign remittances are presumed income unless proved otherwise. A standard-charge election is due within **two years after the year end** and requires the section 5D declaration. It satisfies overseas-income tax, is credited against tax on relevant Guernsey income, excludes Guernsey bank-deposit interest as specified, and denies personal allowances/reliefs except the preserved business-profit deductions and loss relief. [Sections 5A–5I, 51A](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+The current authority’s 2026 monetary table publishes a **£50,000** standard charge; the v.0113 consolidated section 5B still prints £40,000 plus its regulation-varying power and lists the 2020 amendment. **The implementing instrument for the 2026 increase has not yet been reconciled.** Record this exact source/version difference before a filing election; the standard-charge amount is not silently replaced with the older figure or treated as an unconditional 2026 calculation here. [2026 table, p5](https://gov.gg/CHttpHandler.ashx?id=185595&p=0); [section 5B](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
 ## Tax-cap screening before using the ordinary calculation
 
 Revenue Service says spouses elect separately from 2023; the former joint cap is not a general current couple entitlement. Special Alderney/Open Market grandfathering needs separate review. Cap users receive no personal allowances; arrival/departure years require apportionment. Qualifying income generally includes foreign income and Guernsey bank interest; other Guernsey income needs separate treatment. A cap election can use the appropriate cap form instead of a full income-detail return. Self-employed, non-employed and pension-age electors face maximum weekly social contributions. Confirm their contribution category and current maximum before comparing elections. [Revenue Service, introductory rules, qualifying income and social contributions](https://gov.gg/taxcap).
@@ -128,7 +156,7 @@ The linked monetary table, page 5, excludes Guernsey/Alderney property income, G
 
 **2026 amounts now corroborated:** the rates page links a different document, **Monetary Values 2026, V2 dated 16 July 2026**. Page 5 confirms £160,000 for qualifying non-Guernsey income and £320,000 for worldwide income, subject to exclusions. These cap **tax liability**, not taxable income. The same page lists £60,000 for the Open Market and new Alderney property regimes, subject to Sixth Schedule eligibility; it marks the former Alderney resident cap unavailable from 31 December 2025. Do not carry that former £65,000 cap into 2026. The Alderney property regime began in 2025 and covers arrival plus three following years on an individual basis. This table does not establish a particular person's eligibility or grandfathered amount. [2026 table, page 5](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
 
-The old cap-page download still ends at 2024. Use the newer table for 2026 figures, while retaining the guidance for its stated mechanics and exceptions. The linked consolidated law returned HTTP 403. Full statutory eligibility, election deadlines, apportionment and special-cap transitions remain open; these examples do not resolve them.
+The old cap-page download still ends at 2024. Use the newer table for 2026 figures, while retaining the guidance for its stated mechanics and exceptions. The current consolidation was recovered on 27 October 2026. Sixth Schedule paragraph 1 confirms the £160,000 qualifying-income limit, qualifying foreign sources, the specified exempt-body income and Guernsey bank-interest categories, and a **six-year post-year-end election period** for the £320,000 combined route. Section 39B(2) first tests the relevant income net of eligible allowances/reliefs/deductions, allocated first to qualifying income; section 39B(3) permits part-year pro-rating. Ordinary cap comparisons below remain conditional on that analysis. Special Open Market/Alderney property-cap conditions and transitions remain excluded until their full provisions are reconciled. [Section 39B and Sixth Schedule paragraph 1](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 For a cap elector in the applicable category, the 2026 table lists maximum weekly contributions of £468.72 (Class 2 self-employed), £420.80 (Class 3 non-employed under pension age), or £135.51 (Class 3 non-employed over pension age). Assess these separately from income tax, using the applicable contribution weeks. [2026 table, page 6](https://gov.gg/CHttpHandler.ashx?id=185595&p=0); [cap-election consequence](https://gov.gg/taxcap).
 
@@ -138,39 +166,11 @@ Assume one individual, full-year qualifying residence, valid elections and indep
 
 **Qualifying-income route:** £1 million qualifying income, £100,000 other included Guernsey income and £20,000 taxable Guernsey rent. Ordinary tax is £224,000. The qualifying route gives £160,000 + £20,000 + £4,000 = **£184,000**. The combined route gives £220,000 + £4,000 = £224,000, so it offers no reduction on these facts. A cap is not a compulsory charge above ordinary liability.
 
-```oa-check
-name: Guernsey 2026 qualifying cap comparison
-inputs:
-  qualifying: 1000000
-  other_included: 100000
-  property: 20000
-steps:
-  - ordinary: (qualifying + other_included + property) * 0.20
-  - qualifying_route: min(qualifying * 0.20, 160000) + (other_included + property) * 0.20
-  - combined_route: min((qualifying + other_included) * 0.20, 320000) + property * 0.20
-expected:
-  ordinary: 224000
-  qualifying_route: 184000
-  combined_route: 224000
-```
+[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
 
 **Combined route with excluded rent:** change the other included income to £1 million. Ordinary tax is £404,000; the qualifying route gives £364,000. The combined route gives £320,000 plus £4,000 property tax, or **£324,000**. Reporting £320,000 as total tax would omit the property exclusion. Social contributions remain additional in both examples.
 
-```oa-check
-name: Guernsey 2026 combined cap leaves property tax outside
-inputs:
-  qualifying: 1000000
-  other_included: 1000000
-  property: 20000
-steps:
-  - ordinary: (qualifying + other_included + property) * 0.20
-  - qualifying_route: min(qualifying * 0.20, 160000) + (other_included + property) * 0.20
-  - combined_route: min((qualifying + other_included) * 0.20, 320000) + property * 0.20
-expected:
-  ordinary: 404000
-  qualifying_route: 364000
-  combined_route: 324000
-```
+[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
 
 **Screening example:** a married couple cannot simply combine their income under the former general joint cap. Review each person's election and income categories. If either receives a pension triviality payment or Guernsey rental income, isolate it for separate tax analysis before comparing a cap with ordinary taxation. This is a classification check, not a computed cap liability. [Cap guidance](https://gov.gg/taxcap); [exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
@@ -181,6 +181,12 @@ The Revenue Service states **30 November 2026 for the 2025 personal return**. Do
 Collect employment and investment statements, foreign income/tax records, residence-day evidence, pension records and each allowance's supporting documents. An unused allowance transfer must be supported by both parties' positions and consent; do not assume it remains available when the transferor's income changes. [Allowances guidance](https://gov.gg/RStax-rates-and-allowances).
 
 People living in, working in or receiving income from Guernsey must file unless the Director has given written dispensation. Changed circumstances require reassessment of that dispensation. A business owner must submit accounts with the personal return. Online and paper routes exist; keep the submission confirmation or receipt. [Personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns).
+
+### Assessment payments and late-payment surcharge
+
+Section 81(1A) makes 2023-and-later assessed income tax payable in four equal instalments on **15 April, 15 July, 15 October and 15 January following the year**. Where the assessment was not made before the corresponding 17 March, 16 June, 16 September or 17 December cut-off, that instalment is due within thirty days of assessment issue. Reconcile ETI and other credits with the actual notices; filing the annual return is not the event that universally starts all payment obligations. [Section 81](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Section 199 imposes a surcharge on amounts unpaid by their settlement date, and further surcharges at each **six-month** interval on the amount then outstanding, including earlier surcharges. Its subsection (6) can backdate exposure for specified late/incomplete returns or omissions; subsection (12) requires all supporting material for a fully completed return. Surcharges become payable on the thirtieth day after settlement date and are additional to penalties. The current regulation fixing rates, the minimum-amount exclusion and applicable practice exceptions remain to reconcile, so this Guide does not invent a daily-interest rate or give a complete monetary surcharge demand. [Section 199(1)–(13)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ### Non-resident income and agency
 
@@ -202,19 +208,7 @@ Revenue Service currently describes an individual late-return penalty of £200 p
 
 **Conditional arithmetic:** if the notice and receipt establish 40 chargeable days, the unreduced individual penalty is £200 + 40 × £10 = £600. If filing satisfies the 30-day grace condition, only £200 remains. Confirm the day count against the notice; this example does not decide inclusive-date counting. [Penalty guidance](https://gov.gg/taxpenalties).
 
-```oa-check
-name: Guernsey individual late return outside daily penalty grace
-inputs:
-  initial_penalty: 200
-  daily_rate: 10
-  confirmed_chargeable_days: 40
-steps:
-  - daily_penalty: confirmed_chargeable_days * daily_rate
-  - unreduced_total: initial_penalty + daily_penalty
-expected:
-  daily_penalty: 400
-  unreduced_total: 600
-```
+[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
 
 For income below the personal allowance, the guidance limits the late-filing penalty to £50 **after the return is received and assessment issued**. Low income does not dispense with filing. An appeal alone does not stop daily accrual: file and retain submission evidence. [Penalty FAQ](https://gov.gg/taxpenalties).
 
@@ -224,7 +218,7 @@ The linked Form 690(b), dated 12/21, gives a 30-day appeal period from the penal
 
 Collection is suspended only if the Director confirms it in writing; otherwise pay by the due date or arrange payment. This is distinct from stopping further daily penalties by filing. Page 2 expects filing within 14 days after the impediment ends and leaves disputed reasonable grounds to the Tribunal. The £50 no-liability restriction does not apply to companies. [Form, pages 1–2](https://gov.gg/CHttpHandler.ashx?id=101085&p=0).
 
-The form remains the authority's linked operational document but is dated 2021. Current statutory text, full late-appeal/Tribunal procedure, late-payment surcharges and interest remain unverified here. Do not extend the penalty-appeal clock to assessment appeals.
+The form remains the authority's linked operational document but is dated 2021. Current section 76 now confirms the written grounds and 30-day issue-date route for the specified assessments/orders, with separate surcharge-notification triggers and reasonable-cause late admission. Interim assessments use section 76A’s separate route; do not treat every interim figure as an ordinary section 76 appeal. [Sections 76 and 76A](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819). Detailed Tribunal/court rules and current surcharge-rate regulations remain unreconciled. Do not extend the penalty-appeal clock to assessment appeals.
 
 ### Tribunal preparation and further appeal
 
@@ -232,7 +226,7 @@ The Tribunal's currently linked guidance states that it reflects February 2022 l
 
 For a hearing, follow the Clerk's case-management directions for evidence, arguments, agreed facts and bundles. Do not treat the usual preparation periods as fixed deadlines. Check the proposed agreed facts before consenting. A late appeal needs an explanation and can be dismissed; new grounds have a separate discretion where omission was not wilful or unreasonable. [Pages 13–15](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
 
-Further appeal to the Royal Court is on law, not a rehearing of facts. The guidance requires notice to the Tribunal President within 21 days from issue of the full written decision, identifying legal grounds to the Clerk, followed by a case-stated process. This is not the original 30-day appeal clock. Verify the current court rules with an advocate before filing. [Page 19](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
+Further appeal to the Royal Court is on law, not a rehearing of facts. Section 80(2) requires the written case-stated requirement to the Tribunal President within **21 days after determination of the appeal**. The older guidance describes issue of the full written decision; preserve both dates and do not assume that receipt or a later explanation restarts the statutory period. Section 80(5) then requires transmission to HM Greffier within **21 days after receipt of the stated/signed case**, with a copy and notification to the other party. This second clock is distinct from the original requirement. [Section 80](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819). This is not the original 30-day appeal clock. Verify the current court rules with an advocate before filing. [Page 19](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
 
 ## Cross-border residence evidence
 
@@ -260,33 +254,38 @@ expected:
 
 **Protected pension edge case.** Assume £200,000 full-year reviewed income, eligible personal allowance £15,200, eligible mortgage relief £3,500 and **independently established deductible** pension contributions £5,000, with no other allowances. Withdrawal is £23,000. It removes £15,200 personal allowance, £3,500 mortgage relief, then the £2,500 withdrawable pension portion. The remaining £1,800 withdrawal does not remove the protected £2,500. Tax before credits is (£200,000 − £2,500) × 20% = **£39,500**. This does not establish pension-scheme eligibility or the ordinary contribution deduction limit. [Withdrawal order and protection](https://gov.gg/wopa).
 
+[Supplementary regression control preserved](../../research/guernsey-2026/individual-original-controls.md).
+
+### Rental base with the 2026 transition
+
+A full-year solely resident individual has only a furnished let with established annual rental value £30,000. The landlord bears all standard obligations. Eligible 2026 repair/management/insurance costs are £9,000 and the eligible 2021–2025 average is £7,000, with no capital or duplicate costs. Eligible borrowing interest paid on this domestic let is £2,000, with the 2026 50% limitation giving £1,000 relief; there is no vacancy or other relief. Standard deduction is £4,500. The two additional deductions are £4,500 and £2,500, total £7,000, below the £25,500 cap. Rental income is £17,500; the full eligible £15,200 personal allowance leaves £2,300 taxable and **£460 tax** before credits. The example assumes full allowance entitlement and no other withdrawal income. [Sections 9–14](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [2026 transition r2](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327585); [2026 allowance](https://gov.gg/RStax-rates-and-allowances).
+
 ```oa-check
-name: Guernsey 2026 ordered relief withdrawal protects eligible pension portion
+name: Guernsey furnished rent 2026 current and historic repair transition
 inputs:
-  income: 200000
-  threshold: 85000
+  rental_value: 30000
+  current_eligible_costs: 9000
+  historic_average_costs: 7000
+  interest_paid: 2000
   personal_allowance: 15200
-  eligible_mortgage: 3500
-  eligible_pension: 5000
-  protected_pension_limit: 2500
 steps:
-  - withdrawal: max(0, (income - threshold) / 5)
-  - personal_removed: min(personal_allowance, withdrawal)
-  - remaining_withdrawal: withdrawal - personal_removed
-  - mortgage_removed: min(eligible_mortgage, remaining_withdrawal)
-  - pension_withdrawable: max(0, eligible_pension - protected_pension_limit)
-  - pension_removed: min(pension_withdrawable, remaining_withdrawal - mortgage_removed)
-  - retained_pension: eligible_pension - pension_removed
-  - unused_withdrawal: remaining_withdrawal - mortgage_removed - pension_removed
-  - tax: (income - retained_pension) * 0.20
+  - standard_repair_deduction: rental_value * 0.15
+  - current_additional: max(0, current_eligible_costs - standard_repair_deduction)
+  - historic_additional: max(0, historic_average_costs - standard_repair_deduction)
+  - additional_allowed: min(rental_value - standard_repair_deduction, current_additional + historic_additional)
+  - allowed_interest: interest_paid * 0.50
+  - rental_income: rental_value - standard_repair_deduction - additional_allowed - allowed_interest
+  - taxable_income: max(0, rental_income - personal_allowance)
+  - tax_before_credits: taxable_income * 0.20
 expected:
-  withdrawal: 23000
-  personal_removed: 15200
-  mortgage_removed: 3500
-  pension_removed: 2500
-  retained_pension: 2500
-  unused_withdrawal: 1800
-  tax: 39500
+  standard_repair_deduction: 4500
+  current_additional: 4500
+  historic_additional: 2500
+  additional_allowed: 7000
+  allowed_interest: 1000
+  rental_income: 17500
+  taxable_income: 2300
+  tax_before_credits: 460
 ```
 
 ## Ask the client first
@@ -313,7 +312,17 @@ The tax-reform page describes personal-tax and GST changes for 2029 and corporat
 
 ## Sources
 
-Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [section 3 extract](https://gov.gg/CHttpHandler.ashx?id=167965&p=0), [2026 rates and reliefs](https://gov.gg/RStax-rates-and-allowances), [withdrawal guidance](https://gov.gg/wopa) and [personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns). The [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Full statutory base/relief verification, part-year rules, resident-only elections, full cap eligibility and special-regime transitions, pension limits, complete penalties and independent review remain open.
+Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [section 3 extract](https://gov.gg/CHttpHandler.ashx?id=167965&p=0), [2026 rates and reliefs](https://gov.gg/RStax-rates-and-allowances), [withdrawal guidance](https://gov.gg/wopa) and [personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns). The [reform timetable](https://gov.gg/taxreform) remains a future-change reference.
+
+| Additional primary source and read scope | URL | Read on |
+|---|---|---|
+| Current Income Tax Law v.0113, cited ss2, 5–16, 36, 39B–39C, 51–51A, 76, 80–81, 193A–193B, 199; Sixth Schedule paragraph 1 and Fifth Schedule rate table; not the full law | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
+| Rental repairs transition 2026, complete rr1–7 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327585 | 2026-10-27 |
+| R15 arrival/departure allowance practice, complete three pages | https://gov.gg/CHttpHandler.ashx?id=110271&p=0 | 2026-10-27 |
+| R10 overseas business on arrival/departure, complete practice | https://gov.gg/CHttpHandler.ashx?id=181119&p=0 | 2026-10-27 |
+| 2026 monetary table, p5 standard charge and caps, p6 contributions | https://gov.gg/CHttpHandler.ashx?id=185595&p=0 | 2026-10-27 |
+
+The legal-library consolidation is expressly non-authoritative; authentic enactments and their effective dates control. Not yet confirmed: the implementing instrument reconciling the published 2026 £50,000 standard charge with consolidated s5B’s £40,000; special Open Market/Alderney cap eligibility and transitions; full pension deduction/encashment limits; fractional-period allowance/withdrawal allocation outside the cited practice; current surcharge-rate/minimum regulations; complete Tribunal/court rules and case-specific credit/claim operations. These exact limits do not cancel the ordinary source/base, rental-transition, payment or residence methods now supplied. Fresh independent whole-pack review and publication remain pending.
 
 ## Disclaimer
 

@@ -6,8 +6,8 @@ jurisdiction: GG
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-28
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://gov.gg/secondary-pensions-employer-guidance"
@@ -70,6 +70,10 @@ Designated enrolment can be deferred for at most **three months**, with the requ
 
 Pay contributions to the **pension provider** according to its payment arrangements. Do not use the Revenue Service return deadline as authority to delay pension remittance. Every employer must electronically report quarterly to Revenue Service within **15 days of quarter-end**: 15 April, 15 July, 15 October and 15 January. The report includes scheme status and employer/employee contributions. [Contribution guidance](https://gov.gg/article/196678/How-much-do-we-need-to-pay); [secondary pensions overview](https://gov.gg/Secondary-Pensions).
 
+### Scheme choice from 12 May 2026
+
+Regulation 1 of the 2026 Penalties and Miscellaneous Provisions Regulations requires an employer not using the Guernsey and Alderney Pension Trust as its approbated scheme, **before enrolment under sections 2, 4(3)(b) or 5(1)(b)**, to offer the employee the choice of the employer’s approbated scheme or the Trust and provide a key-features comparison. Give **at least seven days** to elect; absent an election the employer can choose the scheme. Keep the comparison, dated election opportunity, response/default and enrolment evidence. This statutory scheme-choice step is separate from a right to opt out of contractually compulsory membership. Do not replace the seven-day choice period with silence-as-opt-out or an invented waiver. [2026 Regulations rr1,8, effective 12 May 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675).
+
 ### Opt-out, refund and re-enrolment
 
 If membership is contractually compulsory, the guidance says the employee cannot opt out. Otherwise obtain a written opt-out; verbal instructions are insufficient. Keep the notice for **seven years**, separately from other payroll retention requirements. Employers must not offer incentives to opt out or dismiss an employee for remaining enrolled. [Opt-out guidance](https://gov.gg/article/196679/Opting-in-and-out).
@@ -80,7 +84,7 @@ For a designated employee who opts out, track the opt-out date and the **three-y
 
 ## Penalties and interest
 
-The official guidance identifies penalties for employer non-compliance, including fines or imprisonment, and late-return penalties. This Guide has not verified the current statutory amounts, offence elements, notice/appeal procedures or interest rules. Do not import income-tax or social-insurance penalty amounts into this separate regime. [Employer guidance](https://gov.gg/secondary-pensions-employer-guidance); [secondary pensions overview](https://gov.gg/Secondary-Pensions).
+From **12 May 2026**, regulations 2–4 set a **£150 fixed penalty**, an escalating penalty of **£50 per day for the first 30 chargeable days and £100 per day thereafter**, and a review-application period of **30 days from issue of the penalty or notice**. These amounts operate through the Law’s specified fixed/escalating notice provisions; a payroll error does not itself prove all statutory notice prerequisites. Keep compliance notices, issue/service dates, chargeable periods, remedy evidence and any review decision. This Guide has not fully reconciled the Law’s notice prerequisites, criminal offence elements, further appeal or interest, so these are not an automatic total-exposure calculator. [2026 Regulations rr2–4,8](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675). Do not import income-tax or social-insurance penalties into this separate regime. [Employer guidance](https://gov.gg/secondary-pensions-employer-guidance); [secondary pensions overview](https://gov.gg/Secondary-Pensions).
 
 ## Cross-border points
 
@@ -138,9 +142,15 @@ expected:
 - What notices, opt-outs and enrolment dates are documented?
 - Which earnings, benefits, distributions and absence periods enter the calculation?
 
-## Sources and remaining work
+## Sources
 
-All frontmatter sources were read on 22 October 2026. Exact page titles, URLs and hashes are in the accompanying research record. The guide is based on authority guidance, with direct statutory reconciliation still outstanding. Detailed notice timing, new-employer commencement, age boundaries, absence/status changes, specialist schemes, enforcement and independent review remain open. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
+All frontmatter sources were read on 22 October 2026. Exact page titles, URLs and hashes are in the accompanying research record. The guide is based on authority guidance, with direct statutory reconciliation still outstanding. The full 2026 Penalties and Miscellaneous Provisions Regulations were additionally read on 27 October 2026. Regulation 5 also changes the permitted pension commutation/transfer conditions: age-50 tax-law commutation rules, the specified two-calendar-year non-residence/request window, UK Public Sector Transfer Club transfer, and the qualified-medical-practitioner life-expectancy condition require scheme/underlying-Law review before payment. None is an automatic payroll refund.
+
+| Additional primary source | Read scope | Read on |
+|---|---|---|
+| [Secondary Pensions Penalties and Miscellaneous Provisions Regulations 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675) | Full rr1–8: scheme election, fixed/escalating penalty, review period, schedule amendments and 12 May commencement | 2026-10-27 |
+
+Not yet confirmed: full underlying-Law notice prerequisites, new-employer commencement, precise age boundaries and absence/status changes, specialist/foreign schemes, full enforcement/appeal/interest and commutation/transfer eligibility. Fresh whole-pack review remains pending. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
 
 ## Disclaimer
 

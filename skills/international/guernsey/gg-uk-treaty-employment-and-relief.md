@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.9
+last_updated: 2026-10-28
+version: 1.0
 verified_by: pending
 sources:
   - url: "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf"
@@ -82,35 +82,11 @@ Other articles continue to govern separately covered income/gains under Article 
 
 **Ownership boundary example:** assume 100 equal beneficial interests with no special rights or indirect interests. Holding 50 is 50%; holding 51 is 51%. Only the latter necessarily meets the more-than-50% numerical limb. Both still require the paragraph 5 business facts, and the first can be closely related through factual control. The arithmetic does not decide a PE.
 
-```oa-check
-name: PE anti-fragmentation ownership boundary
-inputs:
-  total_equal_interests: 100
-  at_boundary: 50
-  above_boundary: 51
-steps:
-  - boundary_percentage: at_boundary / total_equal_interests * 100
-  - above_percentage: above_boundary / total_equal_interests * 100
-expected:
-  boundary_percentage: 50
-  above_percentage: 51
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 **Attribution working-paper illustration:** assume a separately supported Article 7 analysis attributes £200,000 revenue and £130,000 allowable costs to a PE. Attributed profit is **£70,000**. If review of an internal dealing establishes an additional £10,000 attributable profit adjustment, the revised base is **£80,000**. These are hypothetical evidence inputs, not a treaty-prescribed margin, cost deduction or tax rate. Apply domestic tax law and corresponding-adjustment procedures separately.
 
-```oa-check
-name: Supported PE profit bridge before domestic tax
-inputs:
-  attributed_revenue: 200000
-  established_allowable_costs: 130000
-  supported_profit_adjustment: 10000
-steps:
-  - initial_profit: attributed_revenue - established_allowable_costs
-  - revised_profit: initial_profit + supported_profit_adjustment
-expected:
-  initial_profit: 70000
-  revised_profit: 80000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 Unresolved: detailed project aggregation/timing, remote-worker premises analysis, agency interpretation, domestic PE registration/returns, branch deductions and current competent-authority procedures. The examples do not settle these points.
 
@@ -150,22 +126,7 @@ If the holding is effectively connected with the beneficial owner's permanent es
 
 **Ceiling example:** for an established qualifying property-income dividend of £10,000, the treaty ceiling is **£1,500**. If independently verified domestic source tax would be £2,000, the treaty-limited amount is £1,500, subject to claim procedures. If domestic tax instead is £1,000, the treaty does not raise it to £1,500. No domestic rate is asserted by these assumed figures.
 
-```oa-check
-name: Property-income dividend treaty ceiling is not a minimum tax
-inputs:
-  gross_dividend: 10000
-  ceiling_rate: 0.15
-  higher_domestic_tax: 2000
-  lower_domestic_tax: 1000
-steps:
-  - ceiling: gross_dividend * ceiling_rate
-  - higher_case_tax: min(higher_domestic_tax, ceiling)
-  - lower_case_tax: min(lower_domestic_tax, ceiling)
-expected:
-  ceiling: 1500
-  higher_case_tax: 1500
-  lower_case_tax: 1000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 ### Interest and royalties: qualifying owners differ
 
@@ -175,19 +136,7 @@ Interest has additional express routes, including a pension scheme, bank/buildin
 
 For the ownership route, a company with 24% non-resident ownership passes the numeric limb; exactly 25% does not. Count direct and indirect shares or other rights using supported ownership records. Failure of this route does not rule out another paragraph 3 route. For example, 24 of 100 equal shares represent 24%, while 25 represent 25%; no alternative rights or indirect holdings are assumed in this illustration.
 
-```oa-check
-name: Non-resident ownership strict less-than boundary
-inputs:
-  total_equal_shares: 100
-  below_boundary_shares: 24
-  boundary_shares: 25
-steps:
-  - below_percentage: below_boundary_shares / total_equal_shares * 100
-  - boundary_percentage: boundary_shares / total_equal_shares * 100
-expected:
-  below_percentage: 24
-  boundary_percentage: 25
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 Interest and royalty source is generally the payer's residence, subject to the relevant permanent-establishment liability/cost-bearing provisions in paragraph 7. Effectively connected debt claims or IP rights require the paragraph 6/Article 7 analysis. Article 12(6)'s published wording refers specifically to paragraph 1; its interaction with paragraph 2 needs case-specific review rather than silently rewriting the treaty. The excessive related-party amount restrictions in paragraph 8 are addressed below. Classification, beneficial ownership, permanent-establishment connection and claim clearance are not established by a payment description alone. [Articles 11(5)–(8), 12(5)–(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -197,26 +146,19 @@ Article 9(1) applies where one territory's enterprise participates directly or i
 
 Article 9(2) addresses resulting double taxation: where one territory includes and taxes profits already taxed in the other, and those profits satisfy the independent-enterprise condition, the other territory must make an appropriate adjustment to its tax on those profits, considering the Agreement. Authorities consult if necessary. This is not a right to copy a foreign adjustment into a return without establishing its basis, nor a promise that both territories' tax changes will be numerically equal. The domestic claim procedure, evidence standard and deadlines remain to be verified; preserve the Article 25 dispute deadline separately. [Article 9(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
-**Recommended evidence:** identify the transaction and both enterprises, ownership/control links, contracts and actual conduct, the pricing method and comparables, each territory's original profit and tax computations, the assessment adjustment and the amount of overlapping profit. These are working-paper controls, not a verified Guernsey statutory master-file/local-file requirement. Domestic anti-avoidance and deduction rules still need primary-source verification before this constitutes a Guernsey transfer-pricing Guide.
+**Recommended evidence:** identify the transaction and both enterprises, ownership/control links, contracts and actual conduct, the pricing method and comparables, each territory's original profit and tax computations, the assessment adjustment and the amount of overlapping profit. These are working-paper controls, not a verified Guernsey statutory master-file/local-file requirement. The current domestic deduction/anti-avoidance and specific connected-asset rules are now mapped below. Full domestic transfer-pricing/documentation scope remains unreconciled; this corridor Guide does not claim a standalone complete domestic TP regime.
 
 Articles 11(8) and 12(8) separately limit their interest/royalty provisions to the amount that would have been agreed without the stated special relationship. The excess remains subject to domestic law with regard to the Agreement's other provisions. Do not apply an otherwise available treaty exemption to the entire related-party payment without testing the amount. No blanket withholding rate is established by this section. [Articles 11(8) and 12(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 **Adjustment illustration:** assume an accepted pricing analysis establishes independent-enterprise remuneration of £120,000 for a service priced at £90,000 and that the Article 9 conditions are met. The profit adjustment under review is **£30,000**. If the same profit was already included in the counterparty's tax base, identify that overlap for the corresponding-adjustment request; do not treat £30,000 as the tax refund. Likewise, if a £50,000 related-party interest payment has an established independent amount of £40,000, separate the **£10,000 excess** before testing the relevant treaty article. The benchmark figures are assumed evidence, not published safe-harbour prices or rates.
 
-```oa-check
-name: Associated-enterprise profit adjustment and excess interest
-inputs:
-  supported_service_price: 120000
-  actual_service_price: 90000
-  actual_interest: 50000
-  supported_independent_interest: 40000
-steps:
-  - profit_adjustment: supported_service_price - actual_service_price
-  - excess_interest: actual_interest - supported_independent_interest
-expected:
-  profit_adjustment: 30000
-  excess_interest: 10000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
+
+### Domestic connected-party controls: keep their scope distinct
+
+Current Income Tax Law section 7 denies non-business/private/capital expenses as specified; section 67 gives the Director a broad power to counteract tax avoidance, reduction or deferral, with subsection (5)’s limit for the specified non-resident liability cases. Section 108 separately substitutes open-market pricing for the stated connected/avoidance sales of machinery or plant, subject to its recharge limit and written-election rules. Neither section 67 nor section 108 supplies a general ownership-percentage safe harbour, a universal royalty rate or a verified master-file/local-file requirement. Preserve actual contracts, conduct, pricing evidence, asset cost/unallowed expenditure and commercial purpose; determine the applicable provision before adjusting the return. [Income Tax Law ss7, 67, 108](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+For a non-resident company, section 47G starts with its listed Guernsey-source income, section 47H limits liability to A (tax deducted/deemed paid/credits on disregarded income) plus B (tax on other income), and section 47I identifies disregarded distributions, interest, royalties and other listed categories. **Guernsey land/building income is not the similar-nature disregard**, and income included in the taxable profits of a Guernsey PE is not disregarded under section 47I(3). Broker/partnership categories require their separate statutory conditions. Combine this domestic analysis with the applicable treaty restriction, rather than using absence of a treaty PE as proof that every rent or distribution is tax-free. Foreign-company registration uses Form 706 and the [corporate Guide’s evidence route](gg-corporate-tax-substance.md#registration-and-first-return). [Sections 47G–47I](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ## Pensions and government service
 
@@ -246,19 +188,7 @@ The exception concerns shares with **substantial and regular trading on a recogn
 
 **Value boundary:** assume supported valuations, ordinary untraded shares, no offshore activity and no other applicable allocation rule. With total value of £1m and £500,000 derived from relevant property, the ratio is exactly 50% and does not exceed the threshold. At £510,000 of relevant property value, the ratio is 51%, so this value condition is met. Neither result establishes the domestic gain or tax payable.
 
-```oa-check
-name: Guernsey UK property-rich interest value boundary
-inputs:
-  total_value: 1000000
-  boundary_property_value: 500000
-  higher_property_value: 510000
-steps:
-  - boundary_percent: boundary_property_value / total_value * 100
-  - higher_percent: higher_property_value / total_value * 100
-expected:
-  boundary_percent: 50
-  higher_percent: 51
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 Movable business property of a PE, including disposal of the PE itself, can be taxed in the PE territory. Gains of an enterprise operating ships or aircraft in international traffic from those vessels/aircraft and associated operating movables are allocated exclusively to its territory. Other gains fall to the alienator's residence territory under Article 13(5), subject to the agreement's other applicable provisions. [Article 13(3)–(5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -270,19 +200,7 @@ The paragraph 4 exception applies where relevant activity totals **no more than 
 
 **Aggregation boundary:** assume one enterprise has 22 days and an associated enterprise has 14 substantially similar days, with six overlapping days, in a tested twelve-month window. The total is **22 + 14 − 6 = 30** days. One additional non-overlapping day gives 31 and defeats this particular exception. Check every relevant window and the actual activity facts before reaching a PE conclusion.
 
-```oa-check
-name: Guernsey UK offshore associated activity overlap
-inputs:
-  enterprise_days: 22
-  associated_days: 14
-  simultaneous_days: 6
-steps:
-  - aggregated_days: enterprise_days + associated_days - simultaneous_days
-  - additional_nonoverlapping_day: aggregated_days + 1
-expected:
-  aggregated_days: 30
-  additional_nonoverlapping_day: 31
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 Paragraph 5 instead allocates specified supply/personnel transport and towing/anchor-handling profits exclusively to the resident's territory. Paragraph 6 allows the activity territory to tax the specified exploration/exploitation-rights income and disposal gains, relevant property gains, and shares whose value or greater part of value derives from those rights/property. The paragraph 4 enterprise-duration exception is not a blanket exemption from paragraph 6. [Article 21(5)–(6)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
@@ -390,9 +308,11 @@ expected:
 4. What income and tax do the assessments/payment records cover, and has either authority made an adjustment or refund?
 5. When was any disputed taxation first notified, and which domestic appeal/claim deadlines remain open?
 
-## Sources and remaining work
+## Sources
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Pension, government-service and student allocation conditions are now drafted; domestic definitions, pension lump sums and operational relief remain open. Capital-gains and offshore allocation are now drafted; domestic charging, valuation and disposal filing remain open. Other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Pension, government-service and student allocation conditions are now drafted; domestic definitions, pension lump sums and operational relief remain open. Capital-gains and offshore allocation are now drafted; domestic charging, valuation and disposal filing remain open. Other treaty corridors and exit issues are not comprehensively covered. The cited current domestic sections 7, 47G–47I, 67 and 108 were additionally read on 27 October 2026 from [Income Tax Law v.0113](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); the consolidation is non-authoritative and authentic enactments control.
+
+Not yet confirmed: full domestic transfer-pricing/documentation scope, domestic PE attribution/return implementation beyond the supplied source and registration screens, relief forms/deadlines and later foreign-refund handling, domestic pension/ordinary-residence/lump-sum classification, current MAP intake and the stated arbitration-status discrepancy, and source-specific exit/disposal tax. Other treaty corridors are excluded. Fresh whole-pack review and professional attestation remain pending.
 
 ## Disclaimer
 

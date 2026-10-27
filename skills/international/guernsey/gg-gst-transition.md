@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.2
+last_updated: 2026-10-28
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://gov.gg/taxreform"
@@ -101,9 +101,9 @@ expected:
 - What facts support any claimed supplier category or international-services treatment?
 - Which transactions are imports, exports or domestic supplies?
 
-## Sources and acceptance gaps
+## Sources
 
-All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. Current domestic tax scope, customs/excise, enacted implementation, operational rules and current-law reconciliation remain open. Independent source review is recorded in the pack README.
+All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. Current domestic tax scope, customs/excise, enacted implementation, operational rules and current-law reconciliation remain open. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. No current-liability/zero-tax inference is made from a future timetable alone. The source gap remains current tax-scope reconciliation, rather than inaccessibility of the government page. Fresh whole-pack review remains pending.
 
 ## Disclaimer
 

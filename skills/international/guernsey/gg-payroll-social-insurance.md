@@ -6,8 +6,8 @@ jurisdiction: GG
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: "0.7"
+last_updated: 2026-10-28
+version: "0.8"
 verified_by: pending
 sources:
   - url: "https://gov.gg/non-employedcontributions"
@@ -40,7 +40,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey payroll and social contributions v0.7
+# Guernsey payroll and social contributions v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -102,22 +102,7 @@ The exemption test uses income **before** the non-employed allowance. Only after
 
 **Boundary working paper:** assuming accepted income-related assessment, under-pension-age Class 3 status and verified assessable income, £24,959 is below the £24,960 exemption threshold. At £24,960 the below-limit exemption is not established: the calculation base after £11,122 allowance is £13,838. Multiplying by 11.8% gives £1,632.884 as annual-rate arithmetic, not a payment demand. The official weekly minimum is £31.40; reconcile the assessed weeks and rounding to Revenue Service's notice rather than paying a self-generated annual figure. [Exemption and allowance](https://gov.gg/non-employedcontributions); [2026 table](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
 
-```oa-check
-name: Guernsey Class 3 allowance applies after exemption test
-inputs:
-  established_income: 24960
-  lower_limit: 24960
-  non_employed_allowance: 11122
-  rate: 0.118
-steps:
-  - margin_above_lower: established_income - lower_limit
-  - assessment_base: established_income - non_employed_allowance
-  - annual_rate_arithmetic: assessment_base * rate
-expected:
-  margin_above_lower: 0
-  assessment_base: 13838
-  annual_rate_arithmetic: 1632.884
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 ### Dividends and qualifying loans
 
@@ -206,11 +191,15 @@ A refund through payroll requires a Direction Notice. The Employer Guide limits 
 
 If there is no or insufficient cash pay to deduct the required tax, submit the separate benefit-in-kind return. For **2026 benefits the deadline is 15 February 2027**. A supporting spreadsheet does not replace the return or its certificate. Employees must also declare benefits not already included in ETI on their own return; do not double-count a benefit already returned through payroll. [Sections 2 and 9; SoP E38](https://gov.gg/CHttpHandler.ashx?id=202739&p=0). This exception does not establish cancellation of contribution or secondary-pension obligations: reconcile those separately.
 
+### Statutory employment-benefit and record boundary
+
+Section 8(1)–(3) of the current Income Tax Law confirms employment emoluments less authorised deductions and the benefit market-value/use/service/cost categories, reduced by the employee’s qualifying contribution. Section 8(2A)(a) excludes a controlling employee’s benefit **only if and to the extent** that the providing company has no relevant business deduction or Part IX/X/XIV relief for its provision or asset. Reconcile the company’s actual tax treatment before applying this exclusion; control alone is not sufficient. The detailed current benefit scales and concessions above continue to use the 2026 authority Guide. [Income Tax Law s8](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
 ## Penalties and interest
 
 The Employer Guide currently linked by the Revenue Service is labelled **2025**. Its p18 states an initial late-payment surcharge of **5% for tax deductions** and **2.5% for contribution deductions**, with no surcharge where its amount is below **£50**. Part-payment leaves the unpaid balance exposed; a correction increasing liability runs from the original due date. It also states a **£300** automatic late-return penalty and possible **£50 per day** until submission. Additional surcharges apply at intervals to outstanding amounts, including earlier charges, but this Guide has not verified the intervals or a complete statutory calculation. [Employer Guide, p18](https://gov.gg/CHttpHandler.ashx?id=175677&p=0).
 
-The same guidance describes a written surcharge appeal to the Director within **30 days**, limited to legal liability or calculation, not an employer's error or oversight. Check the assessment notice and statutory appeal provisions for the exact time trigger and procedure. The underlying current penalty legislation remains an explicit source gap; these figures are attributed guidance, not a complete verified penalty opinion.
+The same guidance describes a written surcharge appeal to the Director within **30 days**, limited to legal liability or calculation, not an employer's error or oversight. Check the assessment notice and statutory appeal provisions for the exact time trigger and procedure. Current section 193A now confirms statutory **ceilings of £300 plus £50 per continuing day after the original penalty is imposed** for the stated ETI return/record/document failures. For a materially incorrect/incomplete form, section 193A(2A) first requires a written correction notice allowing at least **21 days**; do not apply that trigger to every late return or call the ceiling an automatic assessment. Section 76 provides the issue-date written-grounds appeal route, and section 199 supplies income-tax surcharge mechanics with further charges every six months; the current rate/minimum regulations and social-insurance penalty machinery remain unreconciled. The older employer manual’s tax/contribution surcharge percentages are attributed guidance, not a complete current statutory penalty opinion. [Income Tax Law ss76, 193A, 199](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ## Secondary pensions
 
@@ -269,94 +258,25 @@ Both examples use the [2026 leaflet, p19](https://gov.gg/CHttpHandler.ashx?id=10
 
 **Ongoing eligible benefit.** Assume individual medical cover costs £100 monthly, no specific exemption/concession applies, and the full £900 general exemption is available for the year. Following section 9's example, allocate £75 exemption monthly, leaving a £25 monthly taxable benefit. Annual taxable benefit is £300. Add £25 to the applicable monthly payroll base; do not deduct £900 every month. [Section 9, example 3](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-```oa-check
-name: Guernsey eligible recurring benefit with annual exemption
-inputs:
-  monthly_cost: 100
-  annual_exemption: 900
-  months: 12
-steps:
-  - monthly_exemption: annual_exemption / months
-  - monthly_taxable_benefit: max(0, monthly_cost - monthly_exemption)
-  - annual_taxable_benefit: monthly_taxable_benefit * months
-expected:
-  monthly_exemption: 75
-  monthly_taxable_benefit: 25
-  annual_taxable_benefit: 300
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 **Employer bears income tax.** For an established £5,000 taxable benefit, with 20% applying throughout and no remaining exemption/allowance affecting the incremental charge, grossed-up income is £6,250. The £1,250 tax reimbursement is itself taxable and total income tax is £1,250, leaving £5,000 after tax. This reproduces the E4 mechanism; contributions and pension costs are additional analyses. [SoP E4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-```oa-check
-name: Guernsey employer-paid income tax on benefit
-inputs:
-  taxable_benefit: 5000
-  tax_rate: 0.20
-steps:
-  - grossed_income: taxable_benefit / (1 - tax_rate)
-  - tax_reimbursement: grossed_income - taxable_benefit
-  - total_tax: grossed_income * tax_rate
-  - after_tax_value: grossed_income - total_tax
-expected:
-  grossed_income: 6250
-  tax_reimbursement: 1250
-  total_tax: 1250
-  after_tax_value: 5000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 ### Vehicle and housing boundary examples
 
 **Gross car cost.** A car costs £30,000 before a £5,000 trade-in, plus £3,000 extras. The employee contributes £2,000 to the extras. Following Fact Sheet 1's example, the benefit cost basis is £31,000. If no exemption or limited category applies, the annual benefit is **£6,200**. The cash paid after trade-in is not the benefit cost basis. [Fact Sheet 1, sections 2.2 and 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-```oa-check
-name: Guernsey ordinary car benefit cost includes trade-in value
-inputs:
-  gross_car_cost: 30000
-  extras: 3000
-  employee_extras_payment: 2000
-  benefit_rate: 0.20
-steps:
-  - benefit_cost: gross_car_cost + extras - employee_extras_payment
-  - annual_benefit: benefit_cost * benefit_rate
-expected:
-  benefit_cost: 31000
-  annual_benefit: 6200
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 **Strict business-use boundary.** Assume a £30,000 employer car, 10,000 total miles, no exemption, no qualifying pool arrangement, and private use beyond commuting. At 7,500 business miles the fraction is exactly 75%, which fails the **more-than-75%** test; the ordinary annual value is £6,000. At 7,510 miles it is 75.1%, satisfying that limb and giving the £1,565 limited value. Mileage evidence and the other assumptions decide classification; arithmetic alone does not. [Fact Sheet 1, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-```oa-check
-name: Guernsey car business-use strict percentage boundary
-inputs:
-  total_miles: 10000
-  boundary_business_miles: 7500
-  above_business_miles: 7510
-  gross_cost: 30000
-steps:
-  - boundary_percent: boundary_business_miles / total_miles * 100
-  - above_percent: above_business_miles / total_miles * 100
-  - ordinary_benefit: gross_cost * 0.20
-expected:
-  boundary_percent: 75
-  above_percent: 75.1
-  ordinary_benefit: 6000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 **Furnished housing election.** Assume a full-year ordinary non-proprietary employee with an independently established £40,000 assessable-emoluments base, no contributions and a supported £6,000 annual open-market rental value. The percentage benefit is £7,000. With a valid timely election, the rental-value cap gives £6,000; without it, this calculation does not establish entitlement to the lower amount. Utilities remain separate. [Fact Sheet 2, section 2; SoP E24](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-```oa-check
-name: Guernsey furnished accommodation with valid rental-value election
-inputs:
-  established_emoluments: 40000
-  furnished_rate: 0.175
-  verified_rental_value: 6000
-steps:
-  - percentage_benefit: established_emoluments * furnished_rate
-  - benefit_with_valid_election: min(percentage_benefit, verified_rental_value)
-expected:
-  percentage_benefit: 7000
-  benefit_with_valid_election: 6000
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 ## Ask the client first
 
@@ -377,7 +297,13 @@ expected:
 
 ## Sources
 
-All read on 22 October 2026: [Benefits in Kind Guide 2026](https://gov.gg/CHttpHandler.ashx?id=202739&p=0), [employer webpage](https://gov.gg/employers), [contribution classification guidance](https://gov.gg/SScontributions), [2026 rates leaflet pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0), [Employer Guide 2025 pp9–10 and 16–19](https://gov.gg/CHttpHandler.ashx?id=175677&p=0), and [SIC1](https://gov.gg/CHttpHandler.ashx?id=196680&p=0). The dated 2026 leaflet controls current contribution amounts; the 2025 manual is used only for the cited procedural guidance. Independent review and direct statutory reconciliation remain outstanding.
+All read on 22 October 2026: [Benefits in Kind Guide 2026](https://gov.gg/CHttpHandler.ashx?id=202739&p=0), [employer webpage](https://gov.gg/employers), [contribution classification guidance](https://gov.gg/SScontributions), [2026 rates leaflet pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0), [Employer Guide 2025 pp9–10 and 16–19](https://gov.gg/CHttpHandler.ashx?id=175677&p=0), and [SIC1](https://gov.gg/CHttpHandler.ashx?id=196680&p=0). The dated 2026 leaflet controls current contribution amounts; the 2025 manual is used only for the cited procedural guidance. Current income-tax benefit and ETI-penalty provisions were additionally read on 27 October 2026; direct reconciliation of all social-insurance regulations remains outstanding.
+
+| Additional source | Read scope | Read on |
+|---|---|---|
+| [Income Tax Law v.0113](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819) | s8 benefit/base rules; ss76, 193A, 199 ETI penalty/appeal/surcharge rules | 2026-10-27 |
+
+Not yet confirmed: complete Class 2/Class 3 assessable-income and mixed-class/partial-period rules; contribution-allocation and repayment statutory machinery; current surcharge-rate/minimum regulations and social-insurance penalty regime; all partial-period benefit conventions; share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. Fresh whole-pack review remains pending.
 
 ## Disclaimer
 

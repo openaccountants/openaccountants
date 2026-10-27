@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.3
+last_updated: 2026-10-28
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds"
@@ -33,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey property document duty v0.3
+# Guernsey property document duty v0.4
 
 > **Source-cited draft.** Independent source review is recorded in the pack README; professional attestation remains pending. This is a working-paper calculation, not authority to complete a conveyance or make payment.
 
@@ -41,7 +41,7 @@ sources:
 
 This Guide covers ordinary realty conveyance calculations in the **island of Guernsey** using the current-rate table in the official response dated **21 May 2026**. The 2025 amendment ordinances expressly have effect in Guernsey; do not transplant these calculations to Alderney, Sark or another territory. [2025 amendment ordinances, section 3 of each](https://parliament.gg/parliamentary-business/assets/propositions/P2025-121).
 
-The Royal Court describes duty on prescribed documents presented to it, with transaction-dependent rates, fixed amounts and exemptions. That overview alone is insufficient to classify every instrument. The linked legal-library index returned HTTP 403 during research, so the full current charging law, valuation rules and exemptions remain to be reconciled. [Court overview](https://www.guernseyroyalcourt.gg/article/1921/Document-Duty).
+The Royal Court describes duty on prescribed documents presented to it, with transaction-dependent rates, fixed amounts and exemptions. That overview alone is insufficient to classify every instrument. The earlier research received HTTP 403 from the linked legal-library index. Normal-browser access to the library has since been recovered for other laws; the current document-duty charging law, valuation rules and exemptions have not yet been reconciled in this Guide. This is an unfinished legal check, not a finding that those sources are unavailable. [Court overview](https://www.guernseyroyalcourt.gg/article/1921/Document-Duty).
 
 ## Rates and calculation
 
@@ -127,19 +127,7 @@ expected:
 
 Without relief, £500,000 chargeable realty produces £13,750. An additional £100 is charged at 4%, adding £4; it does not reprice the earlier slices. These examples use whole-pound results and do not determine statutory fractional-pound rounding. [Official rate table](https://parliament.gg/parliamentary-business/assets/questions/2026-16).
 
-```oa-check
-name: Guernsey document duty 500000 boundary
-inputs:
-  additional_value: 100
-steps:
-  - boundary_duty: 300000 * 0.0225 + 200000 * 0.035
-  - additional_duty: additional_value * 0.04
-  - above_boundary_duty: boundary_duty + additional_duty
-expected:
-  boundary_duty: 13750
-  additional_duty: 4
-  above_boundary_duty: 13754
-```
+[Supplementary regression control retained byte-exact](../../research/guernsey-2026/original-controls.md).
 
 ## Direct conveyance: authority and completion evidence
 
@@ -178,6 +166,17 @@ A property-company share transaction requires the separate anti-avoidance regime
 Obtain the island/address, legal owners and buyer, instrument and transaction dates, consideration/valuations, realty/personalty evidence, connected-party relationships, residence use and any earlier relief claims. For downsizing, obtain both TRP records and principal-residence history.
 
 Deliver the band calculation, relief assessment, source copies, unresolved legal questions and completion/payment reconciliation. Record the exact revision independently reviewed. Do not mark the property topic or country complete from this draft alone.
+
+## Sources
+
+| Primary source | Read date of original source review |
+|---|---|
+| [Royal Court conveyances, duty assessment and collection](https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds), [conveyance preparation](https://www.guernseyroyalcourt.gg/article/1919/Conveyances), [Contracts Court](https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court), [document duty overview](https://www.guernseyroyalcourt.gg/article/1921/Document-Duty) | 2026-10-22 |
+| [Official 21 May 2026 response, question 11, Tables 1–3](https://parliament.gg/parliamentary-business/assets/questions/2026-16) | 2026-10-22 |
+| [2026 Budget and 2025 duty-amendment ordinances](https://parliament.gg/parliamentary-business/assets/propositions/P2025-121) | 2026-10-22 |
+| [5 November 2025 Hansard, pp63–65](https://parliament.gg/parliamentary-business/hansard/hansard-14-33) | 2026-10-22 |
+
+Original source receipts and scoped independent review are preserved. Not yet confirmed: complete current charging/valuation law, exemptions, anti-avoidance share-transfer definition/base/person liable, detailed payment/submission/claim deadlines and penalty/appeal rules, downsizing operative eligibility and other property-tax methods. The ordinary graduated calculation and repeal/transition material above remain within their cited scope; fresh whole-pack review is pending.
 
 ## Disclaimer
 
