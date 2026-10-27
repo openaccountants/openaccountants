@@ -89,13 +89,16 @@ So a one-off bonus carries 2.80% sickness, not 3.05%, and no MDE.
 - In the first year, the CCSS bills provisionally on the SSM, unless the person gives a better estimate. For a side activity next to a job, the provisional base is one third of the SSM.
 - The final base is the income on the ACD tax assessment. The CCSS then recalculates. In later years it bills on the last known income.
 - The floor (SSM) and ceiling (5 x SSM) apply to sickness, pension and accident. Dependency has no floor and no ceiling.
+- No dependency abatement for the self-employed. The quarter-SSM abatement covers only the groups listed in art. 377(4) CSS (employees, apprentices, seafarers and others); self-employed people under art. 1(4) CSS are not on that list, so dependency is 1.40% of the full professional income.
+- If the self-employed person is entitled to cash sick pay, sickness carries the 0.50% surcharge on top of 5.60% (art. 29(2) CSS), and the self-employed person bears all of it (art. 32 CSS).
+- Accident: the bonus-malus factor applies to every contributor, including the self-employed, who form risk class 15 (règlement grand-ducal of 8 February 2016, arts. 2 and 3).
 - Someone above the ceiling because of several activities can ask for a refund of the excess.
 
 ## Deadlines and filing
 
 | Obligation | Deadline | How |
 |---|---|---|
-| Employer registration (déclaration d'exploitation) | When the business starts to employ staff (no day limit confirmed) | CCSS form (déclaration d'exploitation) |
+| Employer registration (déclaration d'exploitation) | Within 8 days after the first employee starts (Guichet.lu) | CCSS form (déclaration d'exploitation) |
 | Entry declaration (déclaration d'entrée) | Within 8 days of hiring | SECUline (DECAFF), MyGuichet.lu or paper form |
 | Exit declaration (déclaration de sortie) | Within 8 days of the end of the contract | SECUline (DECAFF), MyGuichet.lu or paper form |
 | Monthly wage declaration (DECSAL) | Each month for the previous month. The pre-printed wage list for month N is sent early in month N+1 and must be returned within 10 days | SECUline, MyGuichet.lu or paper list |
@@ -108,8 +111,8 @@ The account statement runs two months behind. March contributions appear on the 
 - **Late payment interest.** Contributions not paid by the due date carry interest of 0.6% for each full calendar month, starting on the 1st day of the 1st month after the due date. Part months are ignored.
 - **Enforced collection.** For employers, the CCSS starts enforced collection after 4 unpaid monthly statements. For the self-employed, the CCSS sends a warning at 3 months of arrears and a formal notice by registered letter at 4 months (pay within 15 days or follow the payment plan).
 - **Payment plans.** A self-employed person can ask for a payment plan. Each month's instalment plus current contributions is due by the 25th. No plan is granted once enforced collection has started.
-- **Late entry declaration.** After a 30-day tolerance, EUR 50 for each month late, up to EUR 2,500 (Guichet.lu). A late exit declaration can also bring a fine.
-- **Missing wage declaration.** A fine for each undeclared salary, set every quarter. The CCSS estimates the salary, normally from the last one declared.
+- **Late entry declaration.** After a 30-day tolerance, EUR 50 for each month late, up to EUR 2,500 (Guichet.lu).
+- **Other employer failures.** An employer who files late or wrongly (exit declaration, wage declaration, any other information) or pays contributions late can be fined up to EUR 2,500 (amende d'ordre, art. 445 CSS). For a missing wage declaration the CCSS also estimates the salary, normally from the last one declared.
 
 ## Cross-border points
 
@@ -184,11 +187,10 @@ expected:
 | CCSS, self-employed: contribution base and recalculation | https://ccss.public.lu/fr/independants/cotisations-sociales/assiette-cotisation-adaptation.html | 2026-10-27 |
 | CCSS, self-employed: billing and payment | https://ccss.public.lu/fr/independants/cotisations-sociales/facturation.html | 2026-10-27 |
 | CCSS, self-employed: payment plans | https://ccss.public.lu/fr/independants/cotisations-sociales/demander-delai-paiement.html | 2026-10-27 |
+| Code de la sécurité sociale, consolidated at 1 January 2026 (arts. 1, 29, 32, 377, 445; RGD of 8 February 2016 on bonus-malus) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
 | Guichet.lu, entry declaration and late fine | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-27 |
 
-Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); whether the dependency abatement applies to self-employed income; whether a self-employed person pays the 0.25% cash surcharge in every case and whether the accident bonus-malus applies to them; the amount of the late exit and missing wage declaration fines (art. 445 CSS not read); a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the dependency base for residents' portfolio income and capital gains; bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
-
-> Contributed by Ryan Duguid.
+Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); the amount the CCSS actually charges for a late exit or missing wage declaration within the art. 445 CSS cap of EUR 2,500; a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the dependency base for residents' portfolio income and capital gains; bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
 
 <!-- openaccountants-cta-block -->
 
