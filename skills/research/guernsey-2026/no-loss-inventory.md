@@ -54,3 +54,6 @@ No original substantive topic is intentionally deleted. Extra executable blocks 
 - Treaty: all treaty allocation, status-conflict, MAP/arbitration, collection, pension, students, property and offshore subjects retained; seven extra blocks moved; current domestic anti-avoidance/connected-asset/non-resident-company screens added. Domestic TP scope remains partial.
 - GST: original adopted safeguards, policy status, hypothetical calculations and exclusions retained; current official consumption page corroborates only the programme. No current non-applicability is invented.
 - README: old substantive gap groups are carried into the current map or explicitly closed by supplied primary methods. Historical review records preserved verbatim. PR514 reference replaced by the existing country PR780, and machine-readable partials now match the actual gaps.
+
+
+Reviewer preservation correction: both original corporate explanatory paragraphs (mixed-income £7,000 and daily-penalty catch-up £2,050 with all conditions) are now restored byte-exact in the main rate and penalty sections. Their archived blocks remain supplementary. Main two blocks remain unchanged.

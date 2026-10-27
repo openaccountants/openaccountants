@@ -85,6 +85,8 @@ The section 209 definition of **large retail business** tests taxable profits **
 
 **Rate illustration:** established ordinary taxable income £100,000 at 0% produces £0 corporate income tax; separately established Guernsey rental taxable income £20,000 at 20% produces £4,000. This does not waive returns, distribution tax, substance obligations or minimum-tax review. Do not use this split if a rule requires the company's wider profit base to be taxed at another rate.
 
+**Established mixed income.** Assume review has established separate ordinary taxable income £100,000, intermediate-category income £30,000 and Guernsey rental taxable income £20,000, with no overriding wider-base or minimum-tax rule. At 0%, 10% and 20%, ordinary company tax is **£7,000**. The example does not establish deductions, stream classification, loss offsets or Pillar Two treatment. [Company rates](https://gov.gg/RevenueService/Companies).
+
 ### Ordinary business-profit bridge
 
 Start with profits computed on ordinary commercial principles for the relevant business accounting period. For a business, section 6 normally uses the accounting period ending in the year of charge; the first-period rules permit at most eighteen months, subject to the Director’s determination and the stated investment-company exception. A period split uses months or fractions of months unless that does not fairly represent the profits and the Director directs another allocation. Record commencement, accounting dates and any statutory rate-change split separately. [Sections 6–7](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
@@ -145,6 +147,8 @@ Select certificate 1, 2 or 3 from the actual return and facts. Certificate 1 is 
 The Revenue Service penalty page states an initial corporate late-return penalty of **£300**, then **£50 per day**. It says no daily penalties are charged if the return is submitted within **30 days of the initial penalty being imposed**; if later, daily penalties run from the initial penalty date. This is not a 30-day extension of the filing deadline. The page's introductory deadline relates to 2023 returns and is stale for current filing dates; use the company page's **30 November 2026** deadline for the **2025** return. [Penalty FAQ, calculation](https://gov.gg/taxpenalties); [company page](https://gov.gg/RevenueService/Companies).
 
 An appeal must be submitted within **30 days of the Order imposing the penalty**. The FAQ says appeal does not suspend penalties: submit the return or evidence of prior submission to stop further daily charges. Retain the final online submission number and confirmation. Late filing, non-filing and inaccurate-return matters require their own analysis; payment surcharges and a complete statutory penalty opinion remain unverified. The personal-allowance £50 restriction on the same webpage is not a corporate exemption. [Penalty FAQ, evidence, appeal and suspension](https://gov.gg/taxpenalties).
+
+**Daily-penalty catch-up.** Assume no successful appeal/reduction and a corporate return submitted after the 30-day concession period, with **35 chargeable days established from the Order and submission dates**. The guidance calculation is £300 + 35 × £50 = **£2,050**, not merely five daily penalties. A return qualifying for the within-30-day concession would retain the £300 initial penalty without daily penalties. This example does not decide inclusive date counting or the Order's validity. [Penalty FAQ](https://gov.gg/taxpenalties).
 
 ## Substance and cross-border distributions
 
@@ -358,7 +362,7 @@ expected:
   tax_remaining: 1250
 ```
 
-The original mixed-income £7,000 and corporate daily-penalty £2,050 controls and their full explanatory conditions remain in [supplementary research](../../research/guernsey-2026/corporate-original-controls.md). The penalty method above continues to apply; replacing its main control does not remove that topic.
+The original mixed-income £7,000 and corporate daily-penalty £2,050 explanations remain in their main rate/penalty sections, and the original executable controls remain in [supplementary research](../../research/guernsey-2026/corporate-original-controls.md). The penalty method above continues to apply; replacing its main control does not remove that topic.
 
 ## Ask the client first
 

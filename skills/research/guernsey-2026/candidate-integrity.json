@@ -35,11 +35,11 @@
     {
       "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
       "old_bytes": 43283,
-      "new_bytes": 65831,
-      "byte_change_percent": 52.09,
+      "new_bytes": 66883,
+      "byte_change_percent": 54.52,
       "old_lines": 320,
-      "new_lines": 414,
-      "new_sha256": "39b3a1775c4a923d0d6ec2b4c6264b7ccd3cfb9f387dda1d2e36c16a5b97fe23"
+      "new_lines": 418,
+      "new_sha256": "926fa0e72e862a5241d1c9440853d4dca271bcb48809e0bb74b038eec50f9b2b"
     },
     {
       "path": "skills/international/guernsey/gg-gst-transition.md",
@@ -95,5 +95,7 @@
       "new_lines": 319,
       "new_sha256": "d309b3b73d67d63ff5ae7d852c0c6756051296dde62cf176b65013b430fbd04e"
     }
-  ]
+  ],
+  "original_candidate": "21fe2436e7ee3333a6347a8b50eed0881bece759",
+  "repair": "Restored both original corporate explanatory paragraphs to main Guide; independent review closure pending"
 }
