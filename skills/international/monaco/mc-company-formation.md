@@ -99,7 +99,7 @@ expected:
 | Law 1.144, arts. 1–8 | https://legimonaco.mc/tnc/loi/1991/07-26-1.144/ | 2026-10-24 |
 | Law 1.596, arts. 93–103 | https://legimonaco.mc/tnc/loi/2026/10-09-1.596/ | 2026-10-24 |
 
-**Not yet confirmed:** complete registry/beneficial-owner procedures, fees, sanctions, account/audit thresholds and deferred October implementation. Obtain Monaco professional review before incorporation or filing.
+**Not yet confirmed:** SNC and SCS partnership rules, SAM board size and statutory-auditor duty (carried in the earlier version without a cited provision), complete registry/beneficial-owner procedures, fees, sanctions, account/audit thresholds and deferred October implementation. Obtain Monaco professional review before incorporation or filing.
 
 <!-- openaccountants-cta-block -->
 
