@@ -275,7 +275,7 @@ expected:
 - Is your reference income near EUR 250,000 (single) or EUR 500,000 (couple)? The CEHR and the CDHR then apply.
 - Did you receive a one-off sum (severance pay, arrears, an exceptional bonus)? The quotient system applies only if you ask for it on the return.
 
-Defaults while waiting for answers: single, 1 share; no children; investment income under the flat tax, no option for the scale; no credit applied where eligibility is unclear; the household withholding rate on the last avis d'impôt; unemployment benefit or salary unclear, apply the 10% salary deduction either way and use the line the payer's statement names.
+Defaults while waiting for answers (OpenAccountants working practice): single, 1 share; no children; investment income under the flat tax, no option for the scale; no credit applied where eligibility is unclear; the household withholding rate on the last avis d'impôt; unemployment benefit or salary unclear, apply the 10% salary deduction either way and use the line the payer's statement names.
 
 ## Sources
 

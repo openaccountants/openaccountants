@@ -134,7 +134,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Income declaration for social and tax purposes (déclaration des revenus des indépendants) | between April and June each year, with the income tax return | impots.gouv.fr |
 | Monthly payment | 12 debits January to December, on the 5th or the 20th | URSSAF online account |
 | Quarterly payment | 5 February, 5 May, 5 August, 5 November | URSSAF online account |
-| Training levy (real base) | called once, with the November instalment; calculated finally, not regularised | URSSAF |
+| Training levy (real base) | called once, with the November instalment; a fixed amount, not regularised on real income (ac-plnr page: "Le montant de la contribution à la formation professionnelle est forfaitaire"; "CFP due au titre de 2026 payable en novembre 2026") | URSSAF |
 | First payments of a new business | no sooner than 90 days after the start | URSSAF |
 | Cessation | balance within 30 days of the avis d'appel; deferred or spread amounts within 60 days | URSSAF |
 | Change between monthly and quarterly | any time, once per calendar year | online account |
@@ -219,10 +219,10 @@ expected:
 - **For a company taxed to IS: capital, share premiums, current account balances and dividends paid to the manager's household.** They set the dividend share added to the base.
 - **Is the client on the RSA or the prime d'activité, or also employed or retired?** The first switches off the minimum contributions; the second does not.
 - **Which document a figure comes from (provisional echeancier, regularised echeancier, avis) and for which year.** In 2026 the old and the reformed base can both appear.
-- **Did the client's profession leave Cipav under the 2018 reform, or did the client exercise an option?** The pension rates then depend on the registration date and the option: escalate.
-- **For co-managers near half the shares, or holdings that changed during the year:** get the share register with dates. Crossing 50% moves the manager between this skill and payroll.
+- **Did the client's profession leave Cipav under the 2018 reform, or did the client exercise an option to stay?** This skill does not cover those cases: escalate.
+- **For co-managers near half the shares, or holdings that changed during the year:** get the share register with dates. A SARL manager (or college of managers) holding more than 50% of the shares is self-employed; at 50% or less the manager is treated as an employee (urssaf.fr, forme juridique: "détention de plus de 50 % des parts entre les gérants"; "détention d'au plus 50 % des parts"), so crossing 50% moves the manager between this skill and payroll.
 
-Defaults while waiting: activity type or caisse unknown, do not compute; income unknown, apply the minimum bases; Acre unconfirmed in writing, no Acre; mainland or overseas unknown, ask; client both employed and self-employed, both sets of contributions apply and flag how the capped pension bands interact.
+Defaults while waiting (OpenAccountants working practice, not a legal rule): activity type or caisse unknown, do not compute; income unknown, apply the minimum bases; Acre unconfirmed in writing, no Acre; mainland or overseas unknown, ask; client both employed and self-employed, compute both sets and flag the case for review.
 
 ## Sources
 
