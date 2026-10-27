@@ -55,6 +55,9 @@ Out of scope: allowances (toeslagen), local taxes such as WOZ and municipal taxe
 | Ex officio reduction window, inheritance / gift tax | 5 years after the death / the gift | 2026 | same page |
 | Decision on a reduction request | Within 8 weeks of receipt | 2026 | same page |
 | Court appeal period | 6 weeks from the day after the date on the objection decision | 2026 | https://wetten.overheid.nl/BWBR0002320/ (AWR art. 26c); Awb art. 6:7 |
+| Court fee (griffierecht), first-instance tax appeal by an individual | EUR 54 (EUR 200 if the decision is on dividend tax, VAT, bpm, excise, consumption tax on soft drinks or environmental taxes) | 2026 | https://wetten.overheid.nl/BWBR0005537/ (Awb art. 8:41(2)(a)-(b) and Bijlage 3, Regeling verlaagd griffierecht, art. 2) |
+| Court fee (griffierecht), appeal by a company or other non-individual | EUR 397 | 2026 | https://wetten.overheid.nl/BWBR0005537/ (Awb art. 8:41(2)(c)) |
+| Time to pay the court fee | 4 weeks after the registry's notice; unpaid means the appeal is inadmissible | 2026 | https://wetten.overheid.nl/BWBR0005537/ (Awb art. 8:41(5)-(6)) |
 
 ## The taxable base
 
@@ -115,7 +118,7 @@ Late decision. When the period has passed, send a written default notice (ingebr
 
 Ex officio reduction (ambtshalve vermindering). After the objection period, ask the inspector to reduce an assessment that is too high. For income tax and corporate tax, the request must be received within 5 years after the tax year (income tax 2021: by 31 December 2026). Inheritance tax: 5 years after the death. Gift tax: 5 years after the gift. Other decisions: 5 years after the year the decision covers. After 5 years the Belastingdienst only looks at it if there is a good reason for the delay, and a clearly excessive assessment can go to the collector (ontvanger) for marginal review. For income tax, a refusal of a reduction request is a decision open to objection (Wet IB 2001 art. 9.6(5)). The Belastingdienst decides within 8 weeks. A provisional assessment cannot be reduced this way; change it instead.
 
-Court appeal. 6 weeks, starting the day after the date on the objection decision, unless that date is before it was made known (AWR art. 26c; Awb art. 6:7). The same postal rule applies. File online at rechtspraak.nl ("In (hoger) beroep tegen een beslissing van de overheid", with DigiD) or by letter to the court named in the decision. A taxpayer living abroad files with Rechtbank Midden-Nederland in Utrecht unless the decision names another court. An appeal against the amount of an assessment covers all decisions on it (belastingrente, revisierente, fine). A court fee (griffierecht) is charged. A lawyer is not required. After the court, follow the remedy clause in the judgment: a simplified decision may need verzet, a full judgment can go to the court of appeal.
+Court appeal. 6 weeks, starting the day after the date on the objection decision, unless that date is before it was made known (AWR art. 26c; Awb art. 6:7). The same postal rule applies. File online at rechtspraak.nl ("In (hoger) beroep tegen een beslissing van de overheid", with DigiD) or by letter to the court named in the decision. A taxpayer living abroad files with Rechtbank Midden-Nederland in Utrecht unless the decision names another court. An appeal against the amount of an assessment covers all decisions on it (belastingrente, revisierente, fine). A court fee (griffierecht) is charged once per appeal: EUR 54 for an individual, EUR 200 for an individual where the decision is on dividend tax, VAT, bpm, excise, consumption tax on soft drinks or environmental taxes, and EUR 397 for a company or other non-individual (Awb art. 8:41(2) and Bijlage 3). Pay it within 4 weeks of the registry's notice or the appeal is inadmissible (Awb art. 8:41(5)-(6)). If the inspector concedes in whole or part and the appeal is withdrawn, the inspector refunds it (Awb art. 8:41(7)). A lawyer is not required. After the court, follow the remedy clause in the judgment: a simplified decision may need verzet, a full judgment can go to the court of appeal.
 
 ## Penalties and interest
 
@@ -129,7 +132,7 @@ For an ex officio reduction request or a court appeal, postponement is not autom
 
 Fines. A fine on the same notice is objected to with the assessment. An objection to a fine also covers its publication when both are in one document, unless the letter says otherwise (AWR art. 24a(3)).
 
-Penalty payment owed by the Belastingdienst. EUR 23 a day for the first 14 days, EUR 35 for the next 14, EUR 45 for the rest, for at most 42 days (Awb art. 4:17). The maximum is EUR 1,442. The inspector sets it by decision within 2 weeks after the last day it was due (Awb art. 4:18). The Belastingdienst says there are cases where no penalty payment is due and it will say so within 6 weeks.
+Penalty payment owed by the Belastingdienst. EUR 23 a day for the first 14 days, EUR 35 for the next 14, EUR 45 for the rest, for at most 42 days (Awb art. 4:17). The maximum is EUR 1,442. The inspector sets it by decision within 2 weeks after the last day it was due (Awb art. 4:18). No penalty payment is due if the default notice came unreasonably late, the person is not an interested party, or the objection is clearly inadmissible or clearly unfounded (Awb art. 4:17(5)).
 
 ## Cross-border points
 
@@ -198,7 +201,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Algemene wet bestuursrecht, art. 4:17, 4:18, 6:5, 6:6, 6:7, 6:8, 6:9, 6:11, 7:2, 7:3, 7:10, 7:14, 7:15 (in force from 15 August 2026) | https://wetten.overheid.nl/BWBR0005537/ | 2026-10-27 |
+| Algemene wet bestuursrecht, art. 4:17, 4:18, 8:41 and Bijlage 3 (Regeling verlaagd griffierecht), 6:5, 6:6, 6:7, 6:8, 6:9, 6:11, 7:2, 7:3, 7:10, 7:14, 7:15 (in force from 15 August 2026) | https://wetten.overheid.nl/BWBR0005537/ | 2026-10-27 |
 | Algemene wet inzake rijksbelastingen, art. 22j, 24a, 25, 25b, 25c-25f, 26, 26a, 26c (in force from 1 October 2026) | https://wetten.overheid.nl/BWBR0002320/ | 2026-10-24 |
 | Wet inkomstenbelasting 2001, art. 9.6 | https://wetten.overheid.nl/BWBR0011353/ | 2026-10-24 |
 | Invorderingswet 1990, art. 25 | https://wetten.overheid.nl/BWBR0004770/ | 2026-10-24 |
@@ -212,7 +215,7 @@ expected:
 | Belastingdienst, appeal against the objection decision | https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/in-beroep-tegen-uitspraak-op-bezwaar | 2026-10-27 |
 | Belastingdienst, invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-27 |
 
-Not yet confirmed: (1) the 2026 court fee (griffierecht) amounts for a tax appeal; the rechtspraak.nl page could not be read, so no figure is given; (2) the exact current routes for VAT objections that must be made by letter (VAT paid on a return, cash-accounting refusal) and the business-portal list beyond VAT and corporate tax, carried from the old version and taken from the Belastingdienst overview page, not re-read in full; (3) the intermediary (commercial software) authorisation rule, carried from the old version, not re-read today; (4) the cases where the Belastingdienst owes no penalty payment for a tax objection; (5) court filing for professionals through Mijn Rechtspraak, carried from the old version, not re-read; (6) the Awb and AWR amendments without a commencement date flagged on wetten.overheid.nl, not reviewed.
+Not yet confirmed: (1) the exact current routes for VAT objections that must be made by letter (VAT paid on a return, cash-accounting refusal) and the business-portal list beyond VAT and corporate tax, carried from the old version and taken from the Belastingdienst overview page, not re-read in full; (2) the intermediary (commercial software) authorisation rule, carried from the old version, not re-read today; (3) court filing for professionals through Mijn Rechtspraak, carried from the old version, not re-read; (4) the Awb and AWR amendments without a commencement date flagged on wetten.overheid.nl, not reviewed.
 
 <!-- openaccountants-cta-block -->
 
