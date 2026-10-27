@@ -1,7 +1,7 @@
 ---
 name: south-korea-crypto-tax
 description: Use this skill whenever asked about South Korea cryptocurrency or virtual asset taxation. Trigger on phrases like "crypto tax Korea", "Bitcoin Korea tax", "가상자산 과세", "virtual asset tax Korea", "cryptocurrency gains Korea", "crypto income Korea", "Upbit tax", "Bithumb tax", "staking Korea", "mining income Korea", "NFT tax Korea", "NTS crypto", "종합소득세 crypto", "Korean crypto regulation", "virtual asset users protection act", or any question about the income tax treatment of cryptocurrency, tokens, or digital assets for Korean tax residents. Covers the Income Tax Act provisions on virtual asset income, NTS reporting requirements, exchange obligations, cost basis rules, and CARF implementation. ALWAYS read this skill before touching any South Korea crypto work.
-version: "1.1"
+version: 1.0
 jurisdiction: KR
 tax_year: 2025
 last_updated: 2026-07-13
@@ -55,7 +55,7 @@ As of May 2026, the Ministry of Economy and Finance has officially confirmed tha
 | Ambiguity | Default |
 | --- | --- |
 | Whether tax is in effect for a given year | Check implementation date — NOT in effect before 1 January 2027 |
-| Cost basis method | Residents: total-average method per person, across all exchanges and wallets (Enforcement Decree Art. 88(1)) |
+| Unknown cost basis method | Use moving average for exchange transactions, FIFO for all others |
 | Unknown whether gains exceed ₩2.5M threshold | Compute precisely — do not estimate |
 | Pre-2027 holdings cost basis | Use higher of market price on 31 December 2026 or actual acquisition cost |
 | Unknown residency status | STOP — Korean tax obligations depend on residency |
@@ -148,14 +148,14 @@ As of May 2026, the Ministry of Economy and Finance has officially confirmed tha
 
 ### 4.1 Acquisition Cost Rules
 
-**Acquisition Cost Rules**  _(Enforcement Decree Art. 88(1); Income Tax Act Art. 37(5))_
+**Acquisition Cost Rules**  _(Enforcement Decree Art. 89)_
 
 | Transaction Type | Valuation Method | Authority |
 | --- | --- | --- |
-| Residents: all holdings of the same asset, on every exchange and wallet | **Total-average method** (총평균법), one average per person | Income Tax Act Enforcement Decree Art. 88(1) |
-| Assets held before 1 January 2027 | The greater of actual cost and the market value on 31 December 2026 | Income Tax Act Art. 37(5) |
+| Exchange transactions (via registered exchange) | **Moving average method** (이동평균법) | Enforcement Decree Art. 89 |
+| All other transactions (P2P, DeFi, OTC) | **FIFO (First In, First Out)** (선입선출법) | Enforcement Decree Art. 89 |
 
-- **One average per person** — All holdings of the same asset form one average cost, whichever exchange or wallet holds them.  _(Enforcement Decree Art. 88(1))_
+- **Consistency requirement** — Once a method is applied by transaction type, it must be consistently maintained.  _(Enforcement Decree Art. 89)_
 
 ### 4.2 Deemed Acquisition Cost (Transitional Rule)
 
@@ -407,7 +407,7 @@ Before finalising any South Korea crypto tax computation, verify:
 - [ ] Is the income year 2027 or later? If before 2027, virtual asset income tax does NOT apply (but gift tax and foreign reporting do)
 - [ ] Has the taxpayer confirmed Korean tax residency?
 - [ ] Are all transaction values converted to KRW at the transaction date?
-- [ ] Has the correct cost basis method been applied (total-average method per person, across all exchanges and wallets)?
+- [ ] Has the correct cost basis method been applied (moving average for exchange, FIFO for other)?
 - [ ] For pre-2027 holdings, has the deemed acquisition cost been computed using MAX(31 Dec 2026 price, actual cost)?
 - [ ] Has the ₩2,500,000 basic deduction been applied (once per year, not per transaction)?
 - [ ] Have any crypto gifts been checked for gift tax liability?
@@ -424,7 +424,7 @@ Before finalising any South Korea crypto tax computation, verify:
 - NEVER assume progressive rates apply to virtual asset income — it is a flat 22% separate tax
 - NEVER forget the deemed acquisition cost rule for pre-2027 holdings
 - NEVER ignore overseas exchange holdings for the ₩500M foreign account reporting threshold
-- NEVER compute gain without verified cost basis and correct method (total-average method per person)
+- NEVER compute gain without verified cost basis and correct method (moving average vs FIFO)
 - NEVER treat wallet-to-wallet transfers as taxable disposals
 - NEVER present crypto tax positions as definitive — NTS guidance is still evolving; always flag for professional review
 - NEVER advise on VAUPA regulatory compliance — this skill covers tax only

@@ -4,7 +4,7 @@ description: "Use for running Swedish payroll in 2026: preliminary tax withheld 
 version: 1.1
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

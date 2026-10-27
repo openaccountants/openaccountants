@@ -14,7 +14,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | dk-income-tax, dk-capital-gains (2026 deep-tax) | sourced from the law |
+| IT-IND, individual income tax | dk-income-tax (2026 deep-tax), dk-capital-gains | sourced from the law |
 | IT-CORP, corporate income tax | dk-corporate-tax | checked against the law |
 | VAT | denmark-vat-return (2026 deep-tax), dk-vat-return (older duplicate, to be merged) | sourced from the law |
 | SC, social contributions | dk-social-contributions | checked against the law |

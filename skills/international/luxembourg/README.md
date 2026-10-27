@@ -17,7 +17,7 @@ Calendar tax year. Direct taxes (income tax, corporate income tax, municipal bus
 | IT-IND, individual income tax | luxembourg-income-tax | checked against the law |
 | IT-CORP, corporate income tax | lu-corporate-tax | checked against the law |
 | VAT | luxembourg-vat-return | checked against the law |
-| SC, social contributions | luxembourg-social-contributions | sourced from the law |
+| SC, social contributions | luxembourg-social-contributions | checked against the law |
 | PR, payroll withholding | luxembourg-payroll | checked against the law |
 | TP, transfer pricing | lu-transfer-pricing | checked against the law |
 | XB, cross-border | lu-cross-border | checked against the law |

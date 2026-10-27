@@ -3,11 +3,11 @@ name: ie-cat
 description: "Ireland's Capital Acquisitions Tax (CAT) on gifts and inheritances for 2026. Covers the single 33% rate; the Group A, B and C thresholds in two 2026 periods (EUR 400,000 / 40,000 / 20,000 for benefits taken to 6 October 2026, and EUR 420,000 / 44,000 / 22,000 from 7 October 2026 under Finance (No. 2) Bill 2026 s.66, which Revenue already applies); aggregation since 5 December 1991; the EUR 3,000 small gift exemption; the spouse and civil partner exemption; dwelling house exemption; agricultural and business relief at 90%; valuation date; the 31 October pay-and-file date and the 80% IT38 filing trigger; late filing surcharge, under-valuation surcharge and interest; residence, domicile and foreign tax credits. Trigger on 'Irish inheritance tax', 'Irish gift tax', 'CAT threshold', 'Group A', 'IT38', 'small gift exemption', 'dwelling house exemption', 'agricultural relief', 'business relief'. Out of scope: capital gains tax (ie-cgt), residence and domicile in depth (ie-cross-border, ie-non-dom), income tax (ie-income-tax-form11)."
 version: 1.1
 jurisdiction: IE
-category: international
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -215,6 +215,8 @@ expected:
 | Revenue TDM, Guidelines for charging interest on late payment (CAT 0.0219% a day) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: enactment of Finance (No. 2) Bill 2026 s.66 (the EUR 420,000 / 44,000 / 22,000 thresholds are in the Bill as initiated and applied by Revenue, but the Bill is at First Stage in the Dáil, initiated 19 October 2026, per the Oireachtas bill record checked on 26 October 2026); whether a commencement order has been made for s.89A (Notes for Guidance, Finance Act 2025 edition, says it is still subject to a Ministerial order); Finance (No. 2) Bill 2026 s.65 (wording change to s.101(4)) and s.64 (support payments to children under s.82(4)), not yet law; rules carried from the previous version but not re-read in the law this time: valuation methods for quoted and unquoted shares, the situs rules for each asset class, the Schedule 1 Tables A and B for limited interests, s.27 valuation of shares in private companies, the s.811C TCA 1997 general anti-avoidance rule as applied to CAT, the penalty for a fraudulent or negligent CAT return, and anti-avoidance on property passed back or onward within a short period.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
