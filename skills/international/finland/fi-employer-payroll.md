@@ -16,15 +16,15 @@ jurisdiction: FI
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-26
-version: 0.10
+last_updated: 2026-10-27
+version: 0.11
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland employer payroll reporting v0.10
+# Finland employer payroll reporting v0.11
 **Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Independent source-review evidence is in the [pack README](README.md).
 
 ## Who this applies to
@@ -41,8 +41,8 @@ Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance 
 | Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025, section 3][health-rates] |
 | Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2][health-rates]; [Health Insurance Act chapter 18][health-law] |
 | Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153][tyel-law]; [Vero 2026 contributions][insurance] |
-| TyEL monthly minimum | EUR 71.72 per employee/employer in 2026: the Act's EUR 41.89 (section 4(3)(1)) × 2026 wage coefficient 1.712 (section 96). Below that in a calendar month, TyEL does not apply to that employee | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions: 2026 coefficient 1.712][etk-2026]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
-| TyEL temporary employer | No continuous employee and fixed-term wages under EUR 10,272 per six months in 2026 (EUR 6,000 × 1.712); may insure without a contract | [Employees Pensions Act, sections 96, 147][tyel-law]; [Finnish Centre for Pensions: 2026 coefficient][etk-2026] |
+| TyEL monthly minimum | EUR 71.72 per employee/employer in 2026: the Act's EUR 41.89 (section 4(3)(1)) × 2026 wage coefficient 1.712 (section 96). Below that in a calendar month, TyEL does not apply to that employee | [Employees Pensions Act, sections 4, 96][tyel-law]; [STM Decree 952/2025, section 1: 2026 coefficient 1.712][coef-2026]; [Finnish Centre for Pensions][etk-2026]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
+| TyEL temporary employer | No continuous employee and fixed-term wages under EUR 10,272 per six months in 2026 (EUR 6,000 × 1.712); may insure without a contract | [Employees Pensions Act, sections 96, 147][tyel-law]; [STM Decree 952/2025][coef-2026]; [Finnish Centre for Pensions][etk-2026] |
 | TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4][tyel-law] |
 | Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
 | Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
@@ -191,7 +191,7 @@ expected:
 | [Prepayment Act 1118/1996][prepayment-law]; [Decree 1124/1996][decree] | Act sections 9–13, 25; decree sections 2–4, 9, 17; wage/card/cash rules | 2026-10-26 |
 | [Income Tax Act 1535/1992][income-law]; [2026 Benefit Decision][benefits]; [2026 Travel Decision][travel] | Sections 64–69, 71–73, Act 873/2026 commencement; annual valuation/reimbursement rules | 2026-10-26 |
 | [TyEL Act 395/2006][tyel-law]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] (pension insurer, used because telp.fi blocked automated reads); [Vero insurance][insurance]; [Ilmarinen contribution calculation][tyel-calculation] | Sections 4, 7, 70, 72, 142–144, 152–153; current threshold/share | 2026-10-26 |
-| [Unemployment Security Act 1290/2002][tt-law]; [Finnish Centre for Pensions 2026 indices][etk-2026] | Ch. 1 §6 part-owner definition; 2026 wage coefficient 1.712 (TyEL §§4, 96, 147 amounts) | 2026-10-27 |
+| [Unemployment Security Act 1290/2002][tt-law]; [Finnish Centre for Pensions 2026 indices][etk-2026]; [STM Decree 952/2025 on the 2026 wage coefficient][coef-2026] | Ch. 1 §6 part-owner definition; 2026 wage coefficient 1.712 (Decree 952/2025 §1, issued under TyEL §100, in force 1.1.2026; TyEL §§4, 96, 147 amounts) | 2026-10-27 |
 | [YEL Act 1272/2006][yel-law] | Section 3 owner/entrepreneur test | 2026-10-26 |
 | [Unemployment Financing Act 555/1998][fund-law]; [Fund liability][fund-scope]; [Fund payment][fund-payment] | Sections 12–15, 18–21; 2026 rates (s18 part-owner 0.39% / employer 0.31% re-read) and reporting/invoices | 2026-10-27 |
 | [Employer Health Act 771/2016][employer-health]; [Health Insurance Act 1224/2004][health-law]; [Decree 1026/2025][health-rates] | Coverage, wages, insurance salary and 2026 annual rates | 2026-10-26 |
@@ -210,6 +210,7 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 [tyel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/395
 [tt-law]: https://www.finlex.fi/fi/lainsaadanto/2002/1290
 [etk-2026]: https://www.etk.fi/ajankohtaista/tyoelakkeisiin-tulossa-lahes-yhden-prosentin-korotus/
+[coef-2026]: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/952
 [tyel-elo]: https://www.elo.fi/en/employer/tyel-insurance/
 [tyel-index]: https://www.telp.fi/indeksit/tyoelakelaeissa_saadetyt_rahamaarat_vuodesta-2/tyel_2026/
 [tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/

@@ -12,7 +12,7 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border skill; Åland municipal differences require
   the separate regional schedule.
-version: 1.8
+version: 1.9
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-27
@@ -25,7 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.8
+# Finland individual income tax v1.9
 **Tax year:** 2026. Source-cited ordinary individual computation; independent source-review evidence is in the [pack README](README.md). The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
 ## Who this applies to
@@ -95,7 +95,7 @@ Use business recognition, deductions, inventory and depreciation rules under the
 
 Depreciation for 2026: machinery, equipment and vehicles at most 25% of the pooled undepreciated balance (reducing balance); a pool balance of EUR 1,200 or less can be written off at once. Buildings are depreciated per building on the undepreciated cost: at most 7% for shops, warehouses, factories, workshops and similar; 4% for residential, office and similar; 20% for light wooden structures, metal tanks and similar, and buildings used only for business research. [Business Income Tax Act, sections 30, 34][business-law].
 
-Own business trips (2026). A sole trader deducts the actual travel costs booked for a temporary trip outside the normal area of operation. On top of that, Business Income Tax Act section 55 gives an additional deduction: the difference between Vero's tax-free per diem maximum and the actual increased living costs, and the difference between the tax-free kilometre allowance and the actual costs of a business trip in the trader's private car. Use the 2026 Vero decision VH/6575/00.01.00/2025: domestic per diem EUR 25 for a trip over 6 hours, EUR 54 for over 10 hours (halved where the day includes free meals); the place must be over 15 km from home or workplace and over 5 km from both; private car EUR 0.55/km plus the listed additions; foreign per diems by the decision's country table. Where the accounting period is not the calendar year, apply the maximums fixed for the calendar year in which the period ends to the whole period. Home-to-workplace travel is not a business trip; if booked, add it back on Form 5. [2026 travel decision, sections 3, 9, 11–13][travel-2026]; [Vero guidance VH/721/00.01.00/2025][travel-trader]; [Business Income Tax Act, section 55][business-law].
+Own business trips (2026). A sole trader deducts the actual travel costs booked for a temporary trip outside the normal area of operation. On top of that, and in addition to the section 7 deduction, Business Income Tax Act section 55 gives a private trader (yksityinen liikkeen- ja ammatinharjoittaja) an additional deduction: the difference between Vero's tax-free per diem maximum and the actual increased living costs, and the difference between the tax-free kilometre allowance and the actual costs of a business trip in the trader's private car. Use the 2026 Vero decision VH/6575/00.01.00/2025: domestic per diem EUR 25 for a trip over 6 hours, EUR 54 for over 10 hours (halved where the day includes free meals); the place must be over 15 km from home or workplace and over 5 km from both; private car EUR 0.55/km plus the listed additions; foreign per diems by the decision's country table. Where the accounting period is not the calendar year, apply the maximums fixed for the calendar year in which the period ends to the whole period. Home-to-workplace travel is not a business trip; if booked, add it back on Form 5. [2026 travel decision, sections 3, 9, 11–13][travel-2026]; [Vero guidance VH/721/00.01.00/2025][travel-trader]; [Business Income Tax Act, section 55][business-law].
 
 A cash donation of EUR 850 to EUR 500,000 to an EEA publicly funded university or college (or its university fund) for science or art is deductible from net earned income. [Income Tax Act, section 98a][law].
 
@@ -235,6 +235,7 @@ expected:
 | [Åland Media Fee Act 2019:103][ax-media-law]; [Vero 2026 media fee][ax-media] | Sections 2, 4 and indexed EUR 128 amount | 2026-10-26 |
 | [Vero Åland deductions][aland] | Claim routes; its older national commuting figures are superseded by Act 873/2026 | 2026-10-26 |
 | [Vero 2026 travel decision VH/6575/00.01.00/2025][travel-2026]; [Vero sole-trader travel guidance VH/721/00.01.00/2025][travel-trader] | §§3, 9, 11–13 amounts and distance tests; EVL 55 additional deduction; fiscal-year rule | 2026-10-27 |
+| [Business Income Tax Act 360/1968, section 55 (consolidated, Finlex)][business-law] | §55(1) points 1–2: private trader deducts, beyond §7, per diem maximum less actual increased living costs, and tax-free km allowance less actual private-car costs of a business trip | 2026-10-27 |
 
 Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remuneration and exceptional investment regimes. The ordinary mainland/Åland source-review evidence is recorded in the pack README; no professional attestation is claimed.
 
