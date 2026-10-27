@@ -45,7 +45,7 @@ Ordinary corporate profit tax returns and payment are generally due by 20 April 
 
 ## Coverage limits
 
-The headline rates above are signposts, not a computation. This map does not settle the taxpayer's residence, source, classification, VAT status, special regime, treaty protection, deductions or filing obligation. It does not catalogue every tax, duty, municipal charge, customs rule, exemption, refund, licence or sector-specific obligation. The domain Guides state their remaining gaps and must be read with their source dates. All seven ordinary-domain methods are supplied. All remain source-cited drafts, with independent source review recorded in the country research and named professional attestation pending. Exceptional late-export/health-error recovery and specialist populations retain the explicit boundaries in the detailed Guides.
+The headline rates above are signposts, not a computation. This map does not settle the taxpayer's residence, source, classification, VAT status, special regime, treaty protection, deductions or filing obligation. It does not catalogue every tax, duty, municipal charge, customs rule, exemption, refund, licence or sector-specific obligation. The domain Guides state their remaining gaps and must be read with their source dates. All seven ordinary-domain methods are supplied. All are checked against the law, with independent source review recorded in the country research and named professional attestation pending. Exceptional late-export/health-error recovery and specialist populations retain the explicit boundaries in the detailed Guides.
 
 
 ## Sources
@@ -66,7 +66,7 @@ The read dates above are retained from the preserved draft and its initial sourc
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network of accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

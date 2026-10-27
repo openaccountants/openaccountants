@@ -1,6 +1,6 @@
 ---
 name: armenia-income-tax
-description: "Prepare Armenia 2026 individual income-tax workpapers for salary, interest, royalty, rent, dividends, ordinary property and foreign-income credit, with ordinary refund and personal cross-border methods. Distinguishes personal income from entrepreneur business regimes, taxable versus reportable receipts, accrual/payment events, tax-agent withholding and annual prefill. Explains the separate 2025 declaration filed in 2026 and general 2026 filing dates. Includes two reproducible examples and preserved supplementary research controls and targeted published-form mapping. Use for Armenian PIT and annual declarations. Payroll levies are in the companion Guides. Specialist exemptions/refunds, actual portal acceptance, taxpayer-specific treaty entitlement and named accountant attestation remain separate boundaries. Source-cited draft."
+description: "Prepare Armenia 2026 individual income-tax workpapers for salary, interest, royalty, rent, dividends, ordinary property and foreign-income credit, with ordinary refund and personal cross-border methods. Distinguishes personal income from entrepreneur business regimes, taxable versus reportable receipts, accrual/payment events, tax-agent withholding and annual prefill. Explains the separate 2025 declaration filed in 2026 and general 2026 filing dates. Includes two reproducible examples and preserved supplementary research controls and targeted published-form mapping. Use for Armenian PIT and annual declarations. Payroll levies are in the companion Guides. Specialist exemptions/refunds, actual portal acceptance, taxpayer-specific treaty entitlement and named accountant attestation remain separate boundaries. Checked against the law."
 version: 0.4
 jurisdiction: AM
 tax_year: 2026
@@ -319,7 +319,7 @@ Read on **24 October 2026**: targeted current Armenian Articles 20, 25, 140–15
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network of accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

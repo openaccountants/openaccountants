@@ -1,6 +1,6 @@
 ---
 name: armenia-tax-optimization
-description: "Use for 2026 Armenian business-regime comparisons and lawful tax planning for a company or individual entrepreneur. Separates ordinary company profit tax, turnover-tax eligibility and activity rates, entrepreneur profit tax and micro-business conditions. Test the legal form, activity classification, exclusions, turnover and election dates before comparing amounts. Trigger on Armenia tax regime, microenterprise, turnover tax, individual entrepreneur, LLC comparison or business tax planning. Includes preserved calculation and threshold controls with explicit eligibility assumptions. Read alongside the detailed personal, corporate, VAT and payroll Guides. Includes ordinary aggregation, entry and exit dates, documented cost-reduction carries, asset transitions and published filing forms. Source-cited draft; independent source review is recorded in the country research; named professional attestation remains pending."
+description: "Use for 2026 Armenian business-regime comparisons and lawful tax planning for a company or individual entrepreneur. Separates ordinary company profit tax, turnover-tax eligibility and activity rates, entrepreneur profit tax and micro-business conditions. Test the legal form, activity classification, exclusions, turnover and election dates before comparing amounts. Trigger on Armenia tax regime, microenterprise, turnover tax, individual entrepreneur, LLC comparison or business tax planning. Includes preserved calculation and threshold controls with explicit eligibility assumptions. Read alongside the detailed personal, corporate, VAT and payroll Guides. Includes ordinary aggregation, entry and exit dates, documented cost-reduction carries, asset transitions and published filing forms. Checked against the law; independent source review is recorded in the country research; named professional attestation remains pending."
 version: 0.4
 jurisdiction: AM
 tax_year: 2026
@@ -184,7 +184,7 @@ Turnover-tax returns and payment are quarterly and due by the 20th day of the fo
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network of accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

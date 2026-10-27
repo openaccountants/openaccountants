@@ -1,6 +1,6 @@
 ---
 name: am-company-formation
-description: "Use for ordinary Armenian limited liability company formation in 2026, founder and foreign-document requirements, charter capital, contributions, registration periods and first compliance steps. Covers natural and legal founders, a sole founder, paper and information-system routes, tax-regime statements and beneficial-owner filing dates. Trigger on Armenia LLC, company registration, share capital, founder documents, beneficial ownership or incorporation timing. Distinguishes a statutory processing period from an accepted application and company registration from permission for a regulated activity. Source-cited draft; state duties, complete electronic identification, AML classification, accounts and sector-specific implementation remain to be confirmed. No named Armenian professional has attested this Guide."
+description: "Use for ordinary Armenian limited liability company formation in 2026, founder and foreign-document requirements, charter capital, contributions, registration periods and first compliance steps. Covers natural and legal founders, a sole founder, paper and information-system routes, tax-regime statements and beneficial-owner filing dates. Trigger on Armenia LLC, company registration, share capital, founder documents, beneficial ownership or incorporation timing. Distinguishes a statutory processing period from an accepted application and company registration from permission for a regulated activity. Checked against the law; state duties, complete electronic identification, AML classification, accounts and sector-specific implementation remain to be confirmed. No named Armenian professional has attested this Guide."
 version: 0.2
 jurisdiction: AM
 category: formation
@@ -75,7 +75,7 @@ The read dates above are retained from the preserved draft and its initial sourc
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network of accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
