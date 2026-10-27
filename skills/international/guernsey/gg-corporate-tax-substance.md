@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: "0.9"
+last_updated: 2026-10-27
+version: "1.0"
 verified_by: pending
 sources:
   - url: "https://gov.gg/RStax-rates-and-allowances"
@@ -37,7 +37,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey corporate tax, distributions and substance v0.9
+# Guernsey corporate tax, distributions and substance v1.0
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -57,7 +57,13 @@ A club's member receipts are treated differently from non-member income, with **
 
 The current non-tax-resident request form is **Form 707 (02/26)**. It asks for central management/control location, directors' residence, board-meeting location and a foreign residence certificate or authority confirmation. If that evidence is delayed, it asks for the notification/application sent to the foreign authority. It also asks about the foreign highest company rate, the rate applicable to this company, and any treaty tie-break position. A low tax bill or foreign incorporation alone is not the complete evidence requested. [Form 707, sections 1–3](https://gov.gg/CHttpHandler.ashx?id=118096&p=0).
 
-The form says acceptance produces a letter detailing future responsibilities. It separately screens Guernsey-source income, a Guernsey PE, local staff, resident beneficial members, participator loans and international reporting. It expressly retains ETI returns where staff exercise functions in Guernsey. Keep that acceptance letter and each continuing-obligation assessment. **The domestic statutory residence/exclusion test is not fully established by this form; obtain it before deciding residence.** For the UK corridor, also consult the [treaty Guide](gg-uk-treaty-employment-and-relief.md). [Form 707, introduction and sections 4–5](https://gov.gg/CHttpHandler.ashx?id=118096&p=0).
+The form says acceptance produces a letter detailing future responsibilities. It separately screens Guernsey-source income, a Guernsey PE, local staff, resident beneficial members, participator loans and international reporting. It expressly retains ETI returns where staff exercise functions in Guernsey. Keep that acceptance letter and each continuing-obligation assessment. **Apply the current statutory residence/exclusion decision below as well as the form’s evidence requirements.** For the UK corridor, also consult the [treaty Guide](gg-uk-treaty-employment-and-relief.md). [Form 707, introduction and sections 4–5](https://gov.gg/CHttpHandler.ashx?id=118096&p=0).
+
+### Current statutory residence decision
+
+Section 4(1) treats a company as resident for a year if it is controlled in Guernsey, centrally managed and controlled there, or registered there without the specified section 40A exemption. The section 4(2) exclusion requires proof satisfactory to the Director of **all** the following: tax residence under another territory’s domestic law; central management and control in that territory; either the applicable approved treaty/international-agreement tie-break route **or** that territory’s highest company-tax rate being at least 10%; and no tax-avoidance, reduction or deferral motivation within the statutory condition. The 10% limb concerns the territory’s **highest company rate**, not proof that this company actually paid 10%. Record the foreign law, residence certificate, real decision-making evidence, treaty route where used and commercial reasons. Section 4(3) preserves other obligations even where the exclusion applies. Form 707 is the application/evidence route, not a substitute for these conditions. [Income Tax Law, s4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+A resident company is within the worldwide-income rule in section 5(1)(c); a non-resident company uses Part IV Chapter IV, including the specific disregarded-income provisions. Registration, corporate-tax residence, a treaty tie-break and substance status are distinct workpapers. A migration no-objection letter does not by itself settle the tax treatment of an actual disposal, distribution or retained Guernsey activity. [Sections 4–5](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ## Rates, bands and thresholds
 
@@ -79,9 +85,44 @@ The retail wording is **taxable profit more than £500,000**, not turnover of £
 
 **Rate illustration:** established ordinary taxable income £100,000 at 0% produces £0 corporate income tax; separately established Guernsey rental taxable income £20,000 at 20% produces £4,000. This does not waive returns, distribution tax, substance obligations or minimum-tax review. Do not use this split if a rule requires the company's wider profit base to be taxed at another rate.
 
+### Ordinary business-profit bridge
+
+Start with profits computed on ordinary commercial principles for the relevant business accounting period. For a business, section 6 normally uses the accounting period ending in the year of charge; the first-period rules permit at most eighteen months, subject to the Director’s determination and the stated investment-company exception. A period split uses months or fractions of months unless that does not fairly represent the profits and the Director directs another allocation. Record commencement, accounting dates and any statutory rate-change split separately. [Sections 6–7](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+For each item charged in the starting result, retain invoice, purpose, accrual and business/private allocation evidence. Section 7(2) denies capital expenditure, expenditure outside the wholly-and-exclusively business test, appropriations to reserves, the owner’s/family’s maintenance and private expenditure, liabilities under the Income Tax Law, amounts recoverable under insurance/indemnity, the specified exempt-body payments and unlawful payments. Do not add an expense back twice if it was never deducted in the starting accounts. A payment label or bank transfer is not evidence that its purpose qualifies. [Section 7(1)–(2)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+Section 7(3) permits qualifying replacement of implements, current machinery/plant/furniture repairs, specified insurance, business borrowing interest, evidenced bad/doubtful debts within the amount written off, business-premises rent and qualifying retirement-benefit contributions under Part XIII. A partial-premises rental deduction follows the business portion; capital improvements do not become current repairs. A later recovery of a previously relieved bad debt enters business receipts under the statutory rule. Ownership-of-land/buildings income uses sections 9–16 rather than automatically importing the trading-profit method. [Section 7(3)–(6)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+### Capital-allowance working paper
+
+Separate capital asset expenditure from current costs and reconcile book depreciation to the statutory allowance. Section 84 requires qualifying ownership and business use at the basis-period end, with its patent-rights extension. Sections 85–86 provide the published rates and a proportionate reduction where the business operates for only part of the year. Keep acquisition/disposal dates, cost, previous allowances, private use, unallowed expenditure and any balancing allowance/charge; a sale or cessation is not permission to leave the old asset pool unchanged. Special hotel, glasshouse and ship/aircraft incentives require their own provisions. [Sections 84–86 and Part IX](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+| Ordinary asset class | Published method/rate | Source |
+|---|---|---|
+| General machinery and plant where no special rate applies | 20%, reducing balance | [Annual Allowances, A(3)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
+| Motor cars, buses, lorries and motorcycles | 25%, reducing balance | [A(4)(k)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
+| Computer hardware | 20%, straight line | [B(vi)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
+| Substantial stone/brick/concrete buildings | 1.25%, reducing balance | [A(1)(i)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
+
+These are the rates in the Revenue Service’s currently linked table, read on 27 October 2026; the PDF carries Form 651 (12/01), so its historic form date is not represented as a 2026 enactment date. Match the actual asset class and statutory entitlement before applying a rate. For an established full-year qualifying general-plant tax balance of £40,000, 20% gives £8,000 allowance and £32,000 remaining before other movements. Computer hardware’s 20% applies on its straight-line basis, not to the diminishing balance. No private-use or disposal outcome is inferred from these arithmetic illustrations.
+
+### Losses: current use, carryforward and cessation
+
+Compute a tax loss using the same rules as profits, not merely the accounting loss. Section 133 allows eligible losses between distinct businesses, section 134 between sources of the same class, and section 135 supplies the further current-year set-off order. **Section 133A permits cross-class set-off only where the loss and income bear the same rate.** Track each business, class, rate, accounting period, amount claimed and prior utilisation. An ordinary 0%-class loss is not automatically deductible against 20% rental income. [Sections 133–135 and 147](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+An unrelieved business loss can be claimed forward under section 139 against profits of the **same business**, from year to year. The provision’s rate-change transition exceptions require the specified historic class/year and continuing-business facts; do not assume that a rate change generally frees all old losses. Sections 141 and 143 prohibit relief beyond the actual loss and double use. Unless another provision sets a different period, section 144 requires the loss-relief claim within six years following the relevant year of charge. Record a valid claim and the surviving balance; do not mistake that claim deadline for a six-year automatic expiry of an already valid same-business carryforward. [Sections 139, 141, 143–144](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+For example, an established £30,000 same-business, same-rate carried loss against current tax-adjusted profit £50,000 leaves £20,000 chargeable profit and no surviving loss, assuming no other restriction. At 10% that is £2,000 company tax; at 0% the tax remains nil but the loss ledger still changes. The example assumes the class and entitlement rather than proving them from the arithmetic.
+
+Section 142’s cessation carryback is narrower than a general terminal-loss election: permanent discontinuance and a **balancing allowance causing the unrelieved loss** are required. It reaches the business’s two preceding years, later year first, subject to the same-rate condition. Group surrender under section 142A has its own group/Guernsey incorporation-or-PE and overlapping-period conditions, consent and two-year claim deadline; test those separately instead of offsetting another company’s losses through the ordinary ledger. [Sections 142–144](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
 ## Deadlines, registration and filing
 
 The **2025 company return is due 30 November 2026**. Annual online filing and accountant-certified accounts are required; audit exemption does not itself remove tax certification. Use the correct return certificate and retain the qualification/authority of the certifying accountant. [Company guidance](https://gov.gg/RevenueService/Companies).
+
+### Statutory assessment payment dates
+
+Subject to the separate withholding/distribution/qualifying-loan routes, section 81(1A) makes tax for 2023 and later years payable in four equal instalments on **15 April, 15 July, 15 October and 15 January of the following year**. For 2026 these are April/July/October 2026 and January 2027. If the relevant assessment is not made before the corresponding **17 March, 16 June, 16 September or 17 December** statutory cut-off, that instalment is due within thirty days of issue of the assessment notice. Reconcile the actual assessments and withholding credits; the annual-return deadline is not an instruction to postpone all payments until filing. Section 81(2) separately makes a penalty payable within thirty days of the communicating order, subject to the Director’s permitted further time. [Section 81](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
 ### Registration and first return
 
@@ -226,7 +267,7 @@ Regulation 9 distinguishes reporting commencement for companies from partnership
 
 ### A verified residence amendment, with the remaining gap explicit
 
-Regulation 30 replaced section 4(1)(a) with a test covering control in Guernsey **or** central management and control in Guernsey in the year of charge, and changed 'incorporated' to 'registered' in section 4(1)(b). This is direct evidence of that amendment, not the complete current section 4 or its non-residence exclusions. Reconcile the full provision and later amendments before giving a residence conclusion. [Regulation 30](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+Regulation 30 replaced section 4(1)(a) with a test covering control in Guernsey **or** central management and control in Guernsey in the year of charge, and changed 'incorporated' to 'registered' in section 4(1)(b). This is direct evidence of that amendment, not the complete current section 4 or its non-residence exclusions. The complete current section 4 decision is now supplied above; retain this regulation as its amendment history rather than a competing test. [Regulation 30](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 A distribution from income taxed below 20% to a Guernsey-resident beneficial member requires a separate tax/reporting calculation. Keep evidence of non-residence before treating a payment to a non-resident member as outside the stated distribution charge. Loans are not automatically exempt alternatives. [Company distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
 
@@ -303,7 +344,12 @@ This is not a company-incorporation checklist, document-duty calculation, treaty
 
 ## Sources
 
-Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. Independent source review, domestic residence law, detailed deductions/losses, distribution computation, minimum tax and publication checks remain open.
+| New source and scope | URL | Read on |
+|---|---|---|
+| Income Tax Law v.0113: s2, s4–7, s36, s57–59, s62AA, s67, s81, s84–86, s133–135, s139, s141–144, s147 and Fifth Schedule rate table; only cited provisions read, not the full 757-page law | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
+| Currently linked Annual Allowances table, both pages, underlying s85 rate power | https://gov.gg/CHttpHandler.ashx?id=2086&p=0 | 2026-10-27 |
+
+Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The full independent pack review and publication checks remain pending. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Not yet confirmed: the remaining detailed distribution/qualifying-loan computation, complete minimum-tax and regulated-sector scope, and the source-specific limits stated above.
 
 ## Disclaimer
 
