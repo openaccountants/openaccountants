@@ -100,7 +100,7 @@ The two official pages word the acompte boundary differently: the fiche says "su
 
 - The CFE turns on an activity carried on in France, whatever the nationality. A foreign business with premises or an activity in France is within it on the same rules. Source: https://entreprendre.service-public.gouv.fr/vosdroits/F23547.
 - A non-resident letting bare premises in France is within the CFE once receipts reach EUR 100,000 (housing excluded). Source: https://entreprendre.service-public.gouv.fr/vosdroits/F23547.
-- Non-resident taxpayers are the one group allowed to pay by bank transfer (from a State on a list set by arrêté); everyone else pays electronically. Sources: https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/pro_fiche_cet-ifer_2026.pdf, https://entreprendre.service-public.gouv.fr/vosdroits/F23547.
+- Non-resident taxpayers (for example non-resident letters of bare premises) may pay by bank transfer, from a State on a list set by arrêté; the only other exception is some companies managed by the Direction des grandes entreprises. Everyone else pays electronically. Sources: https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/pro_fiche_cet-ifer_2026.pdf, https://entreprendre.service-public.gouv.fr/vosdroits/F23547.
 - For residence, non-resident income tax and treaty questions, use fr-cross-border.
 
 ## Worked examples
@@ -167,7 +167,7 @@ expected:
 | BOI-BIC-CHG-40-30, taxes as business expenses (CGI art. 39, 1-4°) | https://bofip.impots.gouv.fr/bofip/2102-PGP.html | 2026-10-27 |
 | Service-public, Régime fiscal de la micro-entreprise | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 | 2026-10-24 |
 
-Not yet confirmed: the late-payment surcharge rate for the CFE (CGI art. 1730; Légifrance returned 403); how the cessation relief (dégrèvement pour cessation d'activité) is claimed; the TCMA rate; the split of the real base across communes for several establishments; the seasonal reduction figure; penalties for a late 1447-C-SD, 1447-M-SD or 1330-CVAE. Two conflicts to flag: the service-public cap page applies 1.531% to value added of 2025 while BOFiP and the fiche give 1.438% for the CET due for 2025 (we follow BOFiP); BOFiP's group-consolidation paragraph (§ 212) still prints a CVAE relief of EUR 63 for 2026, while the rule paragraph gives EUR 188 for 2026 and 2027 (we follow the rule paragraph).
+Not yet confirmed: the late-payment surcharge rate for the CFE (CGI art. 1730; Légifrance returned 403); how the cessation relief (dégrèvement pour cessation d'activité) is claimed; the TCMA rate; the split of the real base across communes for several establishments; the seasonal reduction figure; penalties for a late 1447-C-SD, 1447-M-SD or 1330-CVAE. Two source conflicts, settled: (1) the service-public cap page (vérifié le 01 janvier 2026) applies 1.531% to the CET for 2025; that page is out of date. Loi n° 2025-127 de finances pour 2025, art. 62, kept the cap at 1.531% for the CET due for 2026 and 2027 only, and left 1.438% for 2025 (BOFiP 2594-PGP § 1 and the impots.gouv.fr fiche agree). (2) BOFiP 839-PGP's group-consolidation paragraph still prints the pre-2025 trajectory (EUR 188 for 2024, EUR 125 for 2025, EUR 63 for 2026); the rule paragraph, written after the same art. 62, gives EUR 188 for 2026 and 2027, which is the figure to use.
 
 <!-- openaccountants-cta-block -->
 
