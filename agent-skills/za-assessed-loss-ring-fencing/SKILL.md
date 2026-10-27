@@ -20,6 +20,19 @@ metadata:
 > high-income edge case and becomes the **default** for a geared residential rental held
 > by a reasonably paid employee.
 
+---
+
+## Section 1 — Scope
+
+This file covers **s 20A ring-fencing for natural persons**, and enough of **s 20** to
+place it.
+
+Not covered: assessed losses of trusts; the s 20(1)(a) company rules beyond the summary in
+Section 6; capital losses, which are an Eighth Schedule matter and not assessed losses at
+all.
+
+---
+
 ## Section 2 — The two-stage test
 
 Ring-fencing under s 20A applies only where **both** stages are met.

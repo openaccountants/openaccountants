@@ -3,7 +3,9 @@ name: au-rental-property-2
 description: Australian residential rental income, deductions, capital expenditure, ownership allocations and CGT, with dated reform notes.
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

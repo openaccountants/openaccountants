@@ -5,8 +5,6 @@ version: 1.2
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-24
-verified_by: pending
-authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -249,6 +247,8 @@ Not yet confirmed:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
 The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

@@ -3,7 +3,7 @@ name: de-einkommensteuer-freelancer
 description: Computes Einkommensteuer for Freiberufler including Betriebsausgaben, Sonderausgaben, and progressive tax brackets.
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-22
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

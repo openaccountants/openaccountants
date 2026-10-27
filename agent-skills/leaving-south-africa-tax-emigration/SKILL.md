@@ -30,6 +30,29 @@ the real one.
 **Who it's for.** SA tax residents planning to leave, South Africans already abroad who never
 formalised anything, and their accountants. Figures for the 2025/26 year of assessment.
 
+---
+
+## Part 1 — Two different journeys: exemption vs emigration
+
+**Path A — stay resident, use the exemption.** A South African working abroad who remains
+ordinarily resident stays taxable on **worldwide income**, with section 10(1)(o)(ii)
+exempting the first **R1.25 million** of *foreign employment* income (183 days abroad in 12
+months incl. one 60-day continuous stretch). Everything above R1.25m — and all non-employment
+income — is taxed in SA with foreign tax credits. This path suits secondments and maybe-
+returns. It is **not** an exit, and no bank form makes it one.
+
+**Path B — cease residency (tax emigration).** Break ordinary residence, declare the
+cessation date to SARS, pay the exit charge, and SA taxation narrows to SA-source items.
+Everything below is Path B.
+
+**The silent third group.** Left in 2016, told nobody, stopped filing: SARS's default view is
+that you are *still resident* (Path A without the paperwork), with worldwide income
+undeclared for years. CRS data gives SARS the offshore accounts. Regularising — choosing a
+defensible historical cessation date or a current one, and filing accordingly — is urgent,
+and doing it voluntarily beats doing it after the letter arrives.
+
+---
+
 ## Part 2 — Ceasing residency: the tests and the declaration
 
 South Africa's residency has two legs:

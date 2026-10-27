@@ -38,7 +38,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Last Verified | July 2026 |
 | Key Note | New treaty fundamentally changes dividend treatment (0% → 5%/10%), capital gains (residence → source state), and adds PPT. Interest remains 10%. UAE has 0% domestic WHT — treaty rates bind Egypt as source state only. |
 
-----------|---------------------|-----------------------|----------------------|---------------------|----------------|-------|
+---
+
+## Withholding Tax Rate Summary
+
+| Income Type | Treaty Rate (New TT) | Treaty Rate (Old TT) | Domestic Rate (Egypt) | Domestic Rate (UAE) | Treaty Article | Notes |
+|-------------|---------------------|-----------------------|----------------------|---------------------|----------------|-------|
 | Dividends — portfolio | 10% | 0% (no WHT) | 10% (unlisted) / 5% (listed) | 0% | Art 10 | Source state may tax for the first time under new TT |
 | Dividends — substantial (≥10% voting stock, 365-day holding) | 5% | 0% (no WHT) | 10% (unlisted) / 5% (listed) | 0% | Art 10 | 365-day holding period requirement (ending on dividend distribution date); branch profit tax ≤5% |
 | Interest | 10% | 10% | 20% | 0% | Art 11 | Same rate under old and new treaty; government exemption removed from new TT |
