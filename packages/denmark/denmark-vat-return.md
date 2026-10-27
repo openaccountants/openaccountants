@@ -3,13 +3,13 @@ name: denmark-vat-return
 description: "Danish VAT (moms) and the VAT return (momsangivelse) for 2026, for a business registered or registering in Denmark. Covers the single 25% rate and the zero-rated supplies (exports, intra-EU goods, newspapers, passenger air transport), the DKK 50,000 registration threshold and the EU SME scheme (EUR 100,000 EU turnover, EX number), half-yearly, quarterly and monthly periods by turnover with the 2026 deadlines, input VAT and its limits (cars, restaurants 25%, hotels, gifts, entertainment, partial deduction), domestic reverse charge, the boxes A, B and C, the EU sales list, invoices, digital bookkeeping from 2026, corrections, and the DKK 1,400 fee and interest for late returns. Trigger phrases: moms, momsangivelse, Danish VAT return, momsfrister, EU-salg uden moms, momsfradrag, TastSelv Erhverv. Out of scope: income tax (dk-income-tax), company tax (dk-corporate-tax), payroll and lønsumsafgift (dk-payroll), cross-border income tax (dk-cross-border); OSS returns, margin schemes and property VAT are referred."
 version: 2.1
 jurisdiction: DK
-category: international
 tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
