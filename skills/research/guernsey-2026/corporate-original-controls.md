@@ -39,4 +39,3 @@ expected:
   daily_penalty: 1750
   total_penalty: 2050
 ```
-
