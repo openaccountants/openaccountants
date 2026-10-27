@@ -6,7 +6,7 @@ jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 version: 0.5
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

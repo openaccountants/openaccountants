@@ -12,7 +12,7 @@ description: >
   sectors and named Finnish accountant review remain open.
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2

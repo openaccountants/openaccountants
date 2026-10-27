@@ -3,7 +3,7 @@ name: am-corporate-income-tax
 description: "Prepare Armenia 2026 ordinary corporate and registered-PE profit-tax workpapers: reconcile accounts to the tax base, test documented deductions and capped costs, replace book depreciation, age prior losses, compute the lower-of quarterly advance and reconcile annual credits. Includes two reproducible examples and preserved supplementary research controls covering the tax bridge, representation, depreciation, losses, instalments, interest and donations. Use for Armenian CIT, business expenses, asset amortisation and annual profit-tax returns. Maps ordinary turnover and micro eligibility, computation and transitions, and the published profit-tax return with sign and special-row limits. Specialist incentives/assets, actual portal discrepancies and professional attestation remain separate. Checked against the law."
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2

@@ -15,7 +15,7 @@ description: >
 version: 2.7
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

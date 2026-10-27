@@ -4,7 +4,7 @@ description: "Use for Armenian ordinary 2026 salary payroll, distinct accrued sa
 version: 0.3
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

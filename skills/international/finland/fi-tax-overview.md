@@ -12,7 +12,7 @@ description: >
   draft with source-review evidence in the pack README; professional attestation is separate.
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
