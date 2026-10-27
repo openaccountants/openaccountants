@@ -1,7 +1,7 @@
 ---
 name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
-version: 0.4
+version: 0.5
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -118,11 +118,20 @@ Social insurance has no annual reconciliation for employees: each month is final
 | Social insurance reporting duties (registrations, monthly report, notices) | Fine up to EUR 16,596.96; none if the duty is met within 7 days of the deadline | Act 461/2003 §239 |
 | Health advance paid late | Interest of 4 x the ECB main rate on the due date, at least 15% a year, per day | Act 580/2004 §18(1) |
 | Health payer duties under §24 not met | ÚDZS fine up to EUR 3,319 per breach, doubled for a repeat within two years | Act 580/2004 §26(1)(c), (3) |
-| Wage tax advance paid late | Interest of 4 x the ECB main rate, at least 15% a year, per day, for at most four years | Act 563/2009 §156(1)(d), (2) |
-| Monthly Prehľad not filed within 5 days after its deadline, in a month with advances to pay or a bonus claimed | The tax office applies the Tax Procedure Code fines and late-payment interest | Act 595/2003 §39(11); Act 563/2009 §§ 155, 156 |
+| Wage tax advance paid late or short | Interest of 4 x the ECB main rate, at least 15% a year, with the wage-advance payment/annual-reconciliation and annual-return-deadline cutoff described below | Act 563/2009 §156(1)(d), (2), (5), (6)(b) |
+| Required monthly Prehľad filed outside the five-calendar-day tolerance, with the statutory advance-remittance duty or specified payout request for that month | Fine EUR 100 to 10,000 under the non-monetary-duty category; the range fine is not imposed on the first relevant breach. Payment interest needs a separate payment failure | Act 595/2003 §39(11); Act 563/2009 §154(1)(j), §155(1)(e), (4), §156 |
 | Employer does not do a tax reconciliation that an employee validly asked for | Fine of at least EUR 15 per employee, at most EUR 30,000 in total for the year | Act 595/2003 §38(9) |
 | Hlásenie filed late (it counts as a tax return) | Fine EUR 100 to 30,000; a range fine is not imposed on a first breach | Act 595/2003 §39(11); Act 563/2009 §154(1)(a), §155(1)(a), (4) |
 | Tax understated in a return or Hlásenie, found by the tax office | 3 x the ECB main rate a year, at least 10%, on the extra tax | Act 563/2009 §155(1)(f), (5) |
+
+
+**Monthly Prehľad: test the filing duty and sanction separately.** A payer that paid employment income files the monthly summary under ITA §39(9)(a)/§49(2), even if no wage advance is payable; §39(12) supplies the no-employment-income-paid exception. The ordinary filing deadline is the end of the following month. The special §39(11) sanction route applies only if the required summary was not filed within **five calendar days after that deadline** and that month carried either an obligation to remit wage-tax advances or a request for the specified child bonus, interest-paid bonus or employment premium. If the fifth day is a weekend or non-working day, move to the next working day. This tolerance affects the filing sanction, not the wage-advance payment date ([ITA §§39/49](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-39); [FS monthly guidance and FAQ13](https://podpora.financnasprava.sk/879943-Pod%C3%A1vanie-mesa%C4%8Dn%C3%BDch-preh%C4%BEadov)).
+
+Classify this monthly failure under TC §154(1)(j)/§155(1)(e), rather than treating the monthly summary as the annual Hlásenie tax return. The **EUR100–10,000 is a range**, not an automatic EUR100 charge. Check the offence history: §155(4) suppresses the range fine for the first relevant breach, with the tax and customs offices assessing the individual offence categories separately. A new month or different form does not itself create another first chance. The office considers gravity, duration, consequences and the tax-reliability index; under §155(16), it can repeat an equal fine if the fine did not remedy continuing non-compliance. The [FS first-breach explanation](https://podpora.financnasprava.sk/989535-Druh%C3%A1-%C5%A1anca) supports that category treatment. A [published Bratislava tax-office decision dated28October2025](https://evo.isepvo.sk/evoportal/sk-sk/Public/DocumentSearch/GetAttachment?attId=1000515050&docId=1000295789) expressly applies the j/e classification to a late monthly Prehľad. It is an individual administrative application, with finality unverified; its historical EUR30–3,000 range is superseded by the current 2026 statute, not a current tariff.
+
+For July2026, the ordinary filing deadline is31August. The fifth day,5September, is Saturday, so filing by **7September2026** is within the sanction-free tolerance. Filing on8September is outside it: if the financial/request gateway is met, a first relevant breach still has no range fine; a later relevant breach is assessed within EUR100–10,000. If the financial/request gateway is absent, do not assert that this special trigger is met or erase a separate filing duty. These are filing-fine outcomes, not extensions of payment time.
+
+**Wage-advance interest.** Establish the remittance due date separately under ITA §35(6), ordinarily five days after paying, remitting or crediting taxable wages unless the office granted a different date. TC §156(2) uses four times the ECB rate on the day after the advance should have been remitted, with a15% annual floor. Count from the next day after due date through payment inclusive, splitting calendar years where necessary. Section156(5) ends the wage-advance calculation at payment or, if still unpaid, the annual reconciliation day, and in any event no later than the applicable annual-return deadline; retain the general four-year maximum as well. Round down to ten eurocents under §161; §156(6)(b) excludes interest of EUR5 or less per relevant case. A late form with advances remitted on time creates no payment interest merely from filing late. Conversely, filing within the tolerance or first-breach fine relief does not waive interest on an actual late/short remittance ([TC §§156/161](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-156)).
 
 ## Cross-border points
 
@@ -256,8 +265,9 @@ expected:
 | Financial Directorate, 31/DZPaU/2025/I, amounts for individuals' tax for 2026 | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf | 2026-10-23 |
 | Sociálna poisťovňa, current employee posting A1 application, nine pages including instructions and issuer | https://socpoist.sk/api/idsp/download/cc10770f-2166-45b6-a4c4-60423faec92a | 2026-10-27 |
 | Regulation (EC) No 883/2004, original publication, Arts.11–13 and 16, read for the posting/multistate distinction | https://eur-lex.europa.eu/eli/reg/2004/883/oj/eng | 2026-10-27 |
-
-Not yet confirmed: which fine band in Act 563/2009 §155 the tax office uses for a late monthly Prehľad (Act 595/2003 §39(11) points to §§155 and 156 without naming a band).
+| Financial Administration, monthly Prehľad guidance and FAQ13: filing duty, five-calendar-day tolerance and weekend rollover | https://podpora.financnasprava.sk/879943-Pod%C3%A1vanie-mesa%C4%8Dn%C3%BDch-preh%C4%BEadov | 2026-10-27 |
+| Financial Administration, first-breach category treatment under TC §155(4) | https://podpora.financnasprava.sk/989535-Druh%C3%A1-%C5%A1anca | 2026-10-27 |
+| Bratislava tax-office decision104440104/2025,28October2025: historical primary application of §154(1)(j)/§155(1)(e), not a current monetary range or established final precedent | https://evo.isepvo.sk/evoportal/sk-sk/Public/DocumentSearch/GetAttachment?attId=1000515050&docId=1000295789 | 2026-10-27 |
 
 > Contributed by Michael Cutajar.
 

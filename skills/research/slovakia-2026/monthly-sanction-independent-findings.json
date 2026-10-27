@@ -1,0 +1,10 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "Monthly Prehľad sanction delta only",
+  "verdict": "PASS",
+  "actionable_findings": [],
+  "guide_sha256": "8e4902cd4f0b56f2f1ee603ed1c037a7ac5b6b7e20e768a6debee5bada8a263d",
+  "guide_bytes": 41249,
+  "whole_country": "PARTIAL; VAT and current PIT/CIT forms remain open",
+  "attestation": false
+}

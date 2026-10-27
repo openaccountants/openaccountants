@@ -9,7 +9,6 @@ covered_by:
 partial:
   IT-IND: "Ordinary child/mortgage credits, micro status and government-bond methods are supplied and independently reviewed. The current 2026 DPFO form versions remain to be read and reconciled."
   IT-CORP: "Ordinary interest-limit scope, statutory bases, carry and asset classifications are supplied and independently reviewed, including zero/negative EBITDA. Current 2026 DPPO form identification and filing mapping remain to be reconciled."
-  PR: "Foreign-employer wage-tax payer status, calendar-year social limits and conditional posting/multistate routes are supplied and independently reviewed. The exact Tax Procedure Code fine band for a late monthly Prehľad remains unconfirmed."
   VAT: "The annual §50 common-input method where actual included-supplies turnover is zero, the exact fixed-gross crossing-supply circularity and control-statement first-breach sanction remain unconfirmed. The positive-denominator coefficient, ordinary registration computations and period-valid DPHv25/KVDPHv25/REGDPv24 form mappings are supplied and independently reviewed."
 ---
 

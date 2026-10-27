@@ -1,0 +1,65 @@
+{
+  "scope": "Independent monthly Prehlad sanction delta only",
+  "files": [
+    {
+      "file": "boundary-controls.json",
+      "bytes": 5991,
+      "sha256": "620b1c3b4f79034455fba5b78c4c181228dcd662ed8389fa620d0064d3e2fc74"
+    },
+    {
+      "file": "findings.json",
+      "bytes": 342,
+      "sha256": "1ddc544fa86e13c0c5485d2f45b652589de40a975e38232b75c772bc7a6f11b6"
+    },
+    {
+      "file": "fresh-decision-open.json",
+      "bytes": 5048,
+      "sha256": "f1dd368ac08ef0907b1896d3e3330ce75cfa6ed0c5a83b9f7a3db5a6755b070e"
+    },
+    {
+      "file": "fresh-web-opens.json",
+      "bytes": 18972,
+      "sha256": "583c64289886b105b317ac4518f0eafe8efb79abb29d14e15e8cfcd361e618ee"
+    },
+    {
+      "file": "frozen-before.md",
+      "bytes": 36653,
+      "sha256": "8268d19f9e76db76470ed913bb6c06b3766fed5e83319cf8595481d4e638da58"
+    },
+    {
+      "file": "frozen-guide.md",
+      "bytes": 41249,
+      "sha256": "8e4902cd4f0b56f2f1ee603ed1c037a7ac5b6b7e20e768a6debee5bada8a263d"
+    },
+    {
+      "file": "guide.diff",
+      "bytes": 10070,
+      "sha256": "b2c317b2d98b2887a7389b32ff38dad348b63be8b35b63bfbe7981d9a33d57b7"
+    },
+    {
+      "file": "independent-controls.py",
+      "bytes": 11114,
+      "sha256": "9af097dd16f2473a9aafa4e6bf121168033f12812956e7c77d6e228bb1baba4b"
+    },
+    {
+      "file": "preservation-controls.json",
+      "bytes": 1599,
+      "sha256": "b2780b428371c4a71d0eeedf963514b58d1208595d2bcb0d060e1e54503008cc"
+    },
+    {
+      "file": "repo-checks.json",
+      "bytes": 574,
+      "sha256": "73fdbf025b0cd166f6261dd93d25dcb6c772707eb2ea959c8ad9f403e55624d6"
+    },
+    {
+      "file": "report.md",
+      "bytes": 7875,
+      "sha256": "c9dd0e53eda37871bb39a13d79ee15c614ecf567a1c0d03c1ba0255e83324a61"
+    },
+    {
+      "file": "source-hashes.json",
+      "bytes": 5665,
+      "sha256": "048ab3088ccbd9b915d8c8e9a41e9708a861d1de81d757d9f9ffe136af12c73a"
+    }
+  ]
+}

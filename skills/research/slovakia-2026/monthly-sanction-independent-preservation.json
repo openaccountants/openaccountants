@@ -1,0 +1,52 @@
+{
+  "head": "1cbc9afd9e2e8d0a5a43d66637d2384ced589e69",
+  "baseline_sha256": "8268d19f9e76db76470ed913bb6c06b3766fed5e83319cf8595481d4e638da58",
+  "baseline_bytes": 36653,
+  "current_sha256": "8e4902cd4f0b56f2f1ee603ed1c037a7ac5b6b7e20e768a6debee5bada8a263d",
+  "current_bytes": 41249,
+  "only_metadata_change": "version 0.4 to 0.5",
+  "unchanged_sections": [
+    "preamble",
+    "## Who this applies to",
+    "## Rates, bands and thresholds",
+    "## The taxable base",
+    "## Deadlines and filing",
+    "## Cross-border points",
+    "## Worked examples",
+    "## Ask the client first",
+    "## Talk to a verified accountant"
+  ],
+  "changed_sections": [
+    "## Penalties and interest",
+    "## Sources"
+  ],
+  "original_oa_blocks_preserved": 2,
+  "intake_questions_preserved": 6,
+  "all_original_urls_preserved": true,
+  "original_url_count": 22,
+  "new_url_count": 27,
+  "byline_preserved": true,
+  "cta_byte_identical": true,
+  "deleted_units": [
+    {
+      "unit": "version",
+      "disposition": "0.5"
+    },
+    {
+      "unit": "wage interest table row",
+      "disposition": "expanded with late/short, special cutoff; original four-year maximum retained in paragraph"
+    },
+    {
+      "unit": "monthly sanction table row",
+      "disposition": "replaced with precise current category/range and separate interest test"
+    },
+    {
+      "unit": "blank line",
+      "disposition": "formatting only"
+    },
+    {
+      "unit": "Not yet confirmed fine-band line",
+      "disposition": "resolved by current statute and historical primary classification, independently reviewed"
+    }
+  ]
+}
