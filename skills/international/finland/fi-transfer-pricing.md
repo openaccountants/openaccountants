@@ -26,7 +26,7 @@ version: 0.7
 
 The Finnish Tax Administration's guidance addresses foreign related-party transactions of Finnish taxpayers and dealings between a foreign enterprise and its Finnish PE. The pricing principle also applies to small enterprises outside the full documentation obligation. [Obligation guidance][obligation]
 
-Apply the current Assessment Procedure Act §§14a–14c and 31–32a. The older Vero documentation page is flagged for updating; use the current statute where wording differs. This Guide supplies the ordinary documentation and pricing method, not a benchmark rate for an unidentified business. [Current Act][law].
+Apply the current Assessment Procedure Act §§14a–14c and 31–32a. The older Vero documentation page is flagged for updating; use the current statute where wording differs. This skill supplies the ordinary documentation and pricing method, not a benchmark rate for an unidentified business. [Current Act][law].
 
 ### Related parties and the actual transaction
 
@@ -114,7 +114,7 @@ For income tax paid after its due date, the 2026 ordinary late-payment interest 
 
 ## Cross-border points
 
-Reconcile a proposed adjustment with the foreign counterparty, accounts and returns. Corresponding adjustment, treaty dispute relief and APA routes need a separate verified procedure; this draft establishes neither automatic foreign relief nor an agreed pricing result. The [CbCR Guide](fi-country-by-country-reporting.md) addresses a separate reporting obligation.
+Reconcile a proposed adjustment with the foreign counterparty, accounts and returns. Corresponding adjustment, treaty dispute relief and APA routes need a separate procedure; this draft establishes neither automatic foreign relief nor an agreed pricing result. The [CbCR skill](fi-country-by-country-reporting.md) addresses a separate reporting obligation.
 
 ## Two worked examples that recompute
 

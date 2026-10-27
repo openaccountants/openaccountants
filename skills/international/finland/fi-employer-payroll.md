@@ -10,7 +10,7 @@ description: >
   employer's separate report, contribution bases and missing tax cards. Includes
   current statutory and annual-decision sources, payment deadlines, late-reporting
   consequences and two executable examples. Pension contributions for entrepreneurs
-  are computed in the linked YEL Guide; international coverage requires the
+  are computed in the linked YEL skill; international coverage requires the
   actual A1 or applicable-law decision.
 jurisdiction: FI
 category: payroll
@@ -18,6 +18,10 @@ tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
 version: 0.9
+authored_by: Michael Cutajar and the OpenAccountants team
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland employer payroll reporting v0.9
@@ -38,7 +42,7 @@ Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance 
 | Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025, section 3][health-rates] |
 | Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2][health-rates]; [Health Insurance Act chapter 18][health-law] |
 | Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153][tyel-law]; [Vero 2026 contributions][insurance] |
-| TyEL monthly minimum | EUR 71.72 per employee/employer; indexed statutory threshold | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions annual statutory-amount table][tyel-index] |
+| TyEL monthly minimum | EUR 71.72 per employee/employer; indexed statutory threshold | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions annual statutory-amount table][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
 | TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4][tyel-law] |
 | Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
 | Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
@@ -113,7 +117,7 @@ Failure to withhold/pay tax and omitted employer-health liabilities can cause as
 
 ## Cross-border points
 
-Tax residence, PE, wage source, treaty exemption and social coverage are distinct tests. Use the [individual cross-border Guide](fi-individual-cross-border-residence.md) before choosing source-tax/progressive cards or the foreign-employment six-month exemption. An A1 determines applicable social law within its scope, not income tax. When Finnish insurance continues on a qualifying foreign posting, statutory **insurance salary** can replace actual foreign wages for pension/health/unemployment bases. The foreign-work wage exemption does not by itself remove minimum health withholding. [TyEL Act, section 72][tyel-law]; [Health Insurance Act, chapter 18 sections 17–18][health-law]; [Act 771/2016, section 5][employer-health]; [Act 555/1998, section 13][fund-law].
+Tax residence, PE, wage source, treaty exemption and social coverage are distinct tests. Use the [individual cross-border skill](fi-individual-cross-border-residence.md) before choosing source-tax/progressive cards or the foreign-employment six-month exemption. An A1 determines applicable social law within its scope, not income tax. When Finnish insurance continues on a qualifying foreign posting, statutory **insurance salary** can replace actual foreign wages for pension/health/unemployment bases. The foreign-work wage exemption does not by itself remove minimum health withholding. [TyEL Act, section 72][tyel-law]; [Health Insurance Act, chapter 18 sections 17–18][health-law]; [Act 771/2016, section 5][employer-health]; [Act 555/1998, section 13][fund-law].
 
 ## Two worked examples that recompute
 
@@ -186,7 +190,7 @@ expected:
 |---|---|---|
 | [Prepayment Act 1118/1996][prepayment-law]; [Decree 1124/1996][decree] | Act sections 9–13, 25; decree sections 2–4, 9, 17; wage/card/cash rules | 2026-10-26 |
 | [Income Tax Act 1535/1992][income-law]; [2026 Benefit Decision][benefits]; [2026 Travel Decision][travel] | Sections 64–69, 71–73, Act 873/2026 commencement; annual valuation/reimbursement rules | 2026-10-26 |
-| [TyEL Act 395/2006][tyel-law]; [indexed statutory amounts][tyel-index]; [Vero insurance][insurance]; [Ilmarinen contribution calculation][tyel-calculation] | Sections 4, 7, 70, 72, 142–144, 152–153; current threshold/share | 2026-10-26 |
+| [TyEL Act 395/2006][tyel-law]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] (pension insurer, used because telp.fi blocked automated reads); [Vero insurance][insurance]; [Ilmarinen contribution calculation][tyel-calculation] | Sections 4, 7, 70, 72, 142–144, 152–153; current threshold/share | 2026-10-26 |
 | [YEL Act 1272/2006][yel-law] | Section 3 owner/entrepreneur test | 2026-10-26 |
 | [Unemployment Financing Act 555/1998][fund-law]; [Fund liability][fund-scope]; [Fund payment][fund-payment] | Sections 12–15, 18–21; 2026 rates and reporting/invoices | 2026-10-26 |
 | [Employer Health Act 771/2016][employer-health]; [Health Insurance Act 1224/2004][health-law]; [Decree 1026/2025][health-rates] | Coverage, wages, insurance salary and 2026 annual rates | 2026-10-26 |
@@ -203,6 +207,7 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 [travel]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [tyel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/395
+[tyel-elo]: https://www.elo.fi/en/employer/tyel-insurance/
 [tyel-index]: https://www.telp.fi/indeksit/tyoelakelaeissa_saadetyt_rahamaarat_vuodesta-2/tyel_2026/
 [tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/
 [yel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/1272

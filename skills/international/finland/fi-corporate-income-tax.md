@@ -11,7 +11,7 @@ description: >
   tax. Includes statutory references, filing and penalty procedures and two
   recomputable examples. Corporate residence, permanent establishments, outbound
   withholding, foreign credits and exit taxation are addressed in the linked
-  corporate cross-border Guide.
+  corporate cross-border skill.
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -29,7 +29,7 @@ category: international
 
 ## Who this applies to
 
-Use for ordinary Finnish limited companies and cooperatives taxed separately from their owners. Resident corporations are taxable on worldwide income; a nonresident's Finnish income/PE and treaty position need the [corporate cross-border Guide](fi-corporate-cross-border-tax.md). Resolve residence and source first. Ordinary companies have business and, if relevant, agricultural income sources; the personal source was removed for entities within Business Income Tax Act section 1(2). This does not make every organisation a commercial company. [Income Tax Act, sections 9, 124][income-law]; [Business Income Tax Act, sections 1–3][business-law].
+Use for ordinary Finnish limited companies and cooperatives taxed separately from their owners. Resident corporations are taxable on worldwide income; a nonresident's Finnish income/PE and treaty position need the [corporate cross-border skill](fi-corporate-cross-border-tax.md). Resolve residence and source first. Ordinary companies have business and, if relevant, agricultural income sources; the personal source was removed for entities within Business Income Tax Act section 1(2). This does not make every organisation a commercial company. [Income Tax Act, sections 9, 124][income-law]; [Business Income Tax Act, sections 1–3][business-law].
 
 Treat each accounting period ending in 2026 as part of tax year 2026, but file its own return. Combining the tax-year result does not combine those filing deadlines. Corporate tax does not settle an owner's salary, dividend or private-benefit tax. [Assessment Procedure Act, section 3][assessment]; [Vero corporate income tax][income].
 
@@ -95,13 +95,13 @@ Prepayments follow the authority decision, ordinarily due on the 23rd of the ins
 
 ## Penalties and interest
 
-Assessment Procedure Act sections 32–32b distinguish tax increases from section 33's EUR 100 corporate late fee for relevant reporting before assessment closes. The ordinary increase is 2% of added income, aggravated repeated/manifest disregard 3–10%, estimated-assessment income 5%, specified unclear/unreasonable cases 1%, qualifying voluntary correction after assessment 0.5%. Section 32b uses added-tax bases where the income basis cannot be used. A corporation's minimum is EUR 150, subject to statutory nonimposition exceptions; these are not optional interchangeable rates. [Assessment Procedure Act, sections 32–33][assessment].
+Assessment Procedure Act sections 32–32b distinguish tax increases from section 33's EUR 100 corporate late fee for relevant reporting before assessment closes. The ordinary increase is 2% of added income, aggravated repeated/manifest disregard 3–10%, estimated-assessment income 5%, specified unclear/unreasonable cases 1%, 1% on added foreign income where Finland must relieve double taxation under a treaty or the Double Taxation Relief Act (outside the aggravated route), qualifying voluntary correction after assessment 0.5%. The increase for the transfer-pricing documentation, CbCR and unjustified foreign-tax-credit failures in section 32(1)(2)–(4) is at most EUR 25,000. Section 32b uses added-tax bases where the income basis cannot be used. A corporation's minimum is EUR 150, subject to statutory nonimposition exceptions; these are not optional interchangeable rates. [Assessment Procedure Act, sections 32–33][assessment].
 
 Ordinary late-paid tax in 2026 bears 9.5% annual interest, calculated for actual days after the due date through payment, using 365 days. Relief interest for additional prepayments/back tax is distinct, 4.5% for 2026; the assessment determines its period. Tax interest/penalties are not ordinary financing costs. [Vero interest][interest-guide]; [Form 6B, non-deductible costs][form6b].
 
 ## Cross-border points
 
-Use the [corporate cross-border Guide](fi-corporate-cross-border-tax.md) for residence, PE, source tax, EU/treaty relief, foreign-tax credits and exit transfers. A dividend receipt's participation exemption is different from an outbound dividend's source-tax exemption. Use [transfer pricing](fi-transfer-pricing.md) for related-party pricing and [CbCR](fi-country-by-country-reporting.md) for the separate reporting test. Preserve gross foreign income/taxes and exempt-income cost allocations. Domestic group contributions do not automatically export losses abroad. CFC, hybrids, restructurings, final foreign subsidiary losses, minimum tax and incentive-specific claims require separate scoped work. [Business Income Tax Act, sections 6a, 18a, 51e][business-law]; [Group Contribution Act][group-law].
+Use the [corporate cross-border skill](fi-corporate-cross-border-tax.md) for residence, PE, source tax, EU/treaty relief, foreign-tax credits and exit transfers. A dividend receipt's participation exemption is different from an outbound dividend's source-tax exemption. Use [transfer pricing](fi-transfer-pricing.md) for related-party pricing and [CbCR](fi-country-by-country-reporting.md) for the separate reporting test. Preserve gross foreign income/taxes and exempt-income cost allocations. Domestic group contributions do not automatically export losses abroad. CFC, hybrids, restructurings, final foreign subsidiary losses, minimum tax and incentive-specific claims require separate scoped work. [Business Income Tax Act, sections 6a, 18a, 51e][business-law]; [Group Contribution Act][group-law].
 
 ## Two worked examples that recompute
 
@@ -198,7 +198,7 @@ Not yet confirmed: separately scoped specialist incentives, reorganisations, fin
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

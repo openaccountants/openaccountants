@@ -1,13 +1,16 @@
 ---
 name: fi-individual-cross-border-residence
 description: >
-  Determine Finnish individual residence, Finnish-source income and ordinary international double-tax relief for 2026. Covers arrival, departure, the Finnish-citizen three-year presumption, treaty residence, nonresident wage and investment taxation, progressive assessment, pensions, property income, foreign employment and the six-month exemption. Establish the actual source and treaty treatment before calculating withholding or relief. Includes net-income foreign-tax-credit limits, oldest-first five-year carryovers, progression exemption, source-tax refunds and filing routes. Trigger on moving to Finland, leaving Finland, tax residence, foreign wages, foreign pension, Finnish rent, source-tax card, nonresident dividends or foreign-tax credit. Social insurance and corporate permanent establishments use separate Guides.
+  Determine Finnish individual residence, Finnish-source income and ordinary international double-tax relief for 2026. Covers arrival, departure, the Finnish-citizen three-year presumption, treaty residence, nonresident wage and investment taxation, progressive assessment, pensions, property income, foreign employment and the six-month exemption. Establish the actual source and treaty treatment before calculating withholding or relief. Includes net-income foreign-tax-credit limits, oldest-first five-year carryovers, progression exemption, source-tax refunds and filing routes. Trigger on moving to Finland, leaving Finland, tax residence, foreign wages, foreign pension, Finnish rent, source-tax card, nonresident dividends or foreign-tax credit. Social insurance and corporate permanent establishments use separate skills.
 jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
 version: 0.5
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland individual cross-border residence v0.5
@@ -16,7 +19,7 @@ version: 0.5
 
 Use for an individual arriving in Finland, departing, living in several countries or receiving foreign/Finnish-source income across a border in 2026. First decide **domestic residence by period**, then treaty residence and each income article, then the tax calculation and collection route. Domestic residents are liable on worldwide income; nonresidents on Finnish-source income, subject to treaty restrictions. Domestic resident and treaty resident are distinct conclusions. [Income Tax Act 1535/1992 §§9–13][law].
 
-The [individual income-tax Guide](fi-income-tax.md) computes ordinary earned/capital income, pensions, rent, gains, sole-trade allocations, deductions and credits. This Guide selects which income enters that computation and how foreign tax is relieved. Diplomatic/international-organisation service, seafarers, artists, sportspeople, foreign-key-employee elections and special fund arrangements need their separate statutory conditions. Do not use ordinary wage rules to decide those regimes. [Income Tax Act §§9–13,77][law]; [Nonresident Tax Act 627/1978 §§3–7,13][source-law].
+The [individual income-tax skill](fi-income-tax.md) computes ordinary earned/capital income, pensions, rent, gains, sole-trade allocations, deductions and credits. This skill selects which income enters that computation and how foreign tax is relieved. Diplomatic/international-organisation service, seafarers, artists, sportspeople, foreign-key-employee elections and special fund arrangements need their separate statutory conditions. Do not use ordinary wage rules to decide those regimes. [Income Tax Act §§9–13,77][law]; [Nonresident Tax Act 627/1978 §§3–7,13][source-law].
 
 ## Rates, bands and thresholds
 
@@ -50,11 +53,11 @@ For ordinary wages within source taxation, include cash and taxable benefits, ex
 
 For ordinary dividends, taxable interest or royalties received by an individual, apply the gross 30% domestic rate, subject to a proven treaty ceiling/card. Qualifying interest on deposits, bonds and other ordinary loans not equivalent to capital investment is exempt for nonresidents under ITA §9(2); a domestic-source label does not override that exemption. A nominee-listed dividend without recipient information bears 35% at payer level. For an EEA resident's dividend, §13(1)(3) permits assessment on request when the information-exchange conditions and inability to credit the Finnish source tax in the residence state are established by its authority's certificate. This is a conditional relief route, not an automatic dividend exemption. [ITA §9(2)][law]; [Nonresident Act §§3,7,13][source-law].
 
-Pensions, Finnish net rent, property gains and other §13 assessed income follow annual assessment rather than a blanket 35% wage source tax. Deduct the applicable income-production costs and losses, then apply earned/capital computation in the [individual Guide](fi-income-tax.md). Domestic property-rich share gains under ITA §10(10a) include a more-than-50% direct/indirect Finnish property test on disposal or within the preceding 365 days, excluding the specified publicly listed interests; treaty scope still needs its own article. [ITA §10][law]; [Nonresident Act §§13–15][source-law].
+Pensions, Finnish net rent, property gains and other §13 assessed income follow annual assessment rather than a blanket 35% wage source tax. Deduct the applicable income-production costs and losses, then apply earned/capital computation in the [individual skill](fi-income-tax.md). Domestic property-rich share gains under ITA §10(10a) include a more-than-50% direct/indirect Finnish property test on disposal or within the preceding 365 days, excluding the specified publicly listed interests; treaty scope still needs its own article. [ITA §10][law]; [Nonresident Act §§13–15][source-law].
 
 ### Progressive wage option
 
-An individual resident in the EEA or a jurisdiction with the required administrative-assistance/information-exchange agreement, or holding the specified researcher permit, can request §13(1)(6) assessment of qualifying earned income instead of source tax. Obtain the nonresident progressive tax card or advance decision; an election applies to all that year's qualifying §13(1)(6) income, not only the most favourable payment. Include foreign wages, pensions and social benefits within §14 in the rate calculation, after statutory net-income deductions, and tax only the Finnish-taxable share through the statutory progression deduction. If the EEA/researcher and **75% Finnish net-earned-income** test is met with residence-state income certification, the specified foreign income is left out of that rate calculation. Compute state tax, the 7.60% municipal rate and applicable church/health components with the income-tax and payroll Guides; do not apply a withholding percentage as final assessment. [Nonresident Act §§13–16][source-law]; [Vero nonresident guidance §10][nonresident].
+An individual resident in the EEA or a jurisdiction with the required administrative-assistance/information-exchange agreement, or holding the specified researcher permit, can request §13(1)(6) assessment of qualifying earned income instead of source tax. Obtain the nonresident progressive tax card or advance decision; an election applies to all that year's qualifying §13(1)(6) income, not only the most favourable payment. Include foreign wages, pensions and social benefits within §14 in the rate calculation, after statutory net-income deductions, and tax only the Finnish-taxable share through the statutory progression deduction. If the EEA/researcher and **75% Finnish net-earned-income** test is met with residence-state income certification, the specified foreign income is left out of that rate calculation. Compute state tax, the 7.60% municipal rate and applicable church/health components with the income-tax and payroll skills; do not apply a withholding percentage as final assessment. [Nonresident Act §§13–16][source-law]; [Vero nonresident guidance §10][nonresident].
 
 ### Resident foreign wages: six-month exemption
 
@@ -72,7 +75,7 @@ Where the treaty uses exemption with progression for an individual, include the 
 
 ## Deadlines and filing
 
-Report worldwide income for resident periods and Finnish-taxable income for nonresident periods on the relevant pre-completed return or business return, correcting omissions by the date on that taxpayer's return. Declare foreign tax and the credit/exemption claim even if the tax card or advances anticipated relief. Use the [prepayment Guide](fi-prepayments.md) where wages/income have no sufficient Finnish withholding. [Relief Act §8][relief-law]; [Nonresident Act §16][source-law].
+Report worldwide income for resident periods and Finnish-taxable income for nonresident periods on the relevant pre-completed return or business return, correcting omissions by the date on that taxpayer's return. Declare foreign tax and the credit/exemption claim even if the tax card or advances anticipated relief. Use the [prepayment skill](fi-prepayments.md) where wages/income have no sufficient Finnish withholding. [Relief Act §8][relief-law]; [Nonresident Act §16][source-law].
 
 A nonresident leased worker under §16a whose payer does not withhold and whose treaty permits Finnish taxation must request advances by the end of the month following work commencement. The 2026 amendment also addresses the specified leased-worker wage on a Finnish vessel. Do not apply a generic six-month exemption from this collection duty. [Nonresident Act §16a][source-law].
 
@@ -80,7 +83,7 @@ Give the payer the source/progressive card and recipient/residence evidence befo
 
 ## Penalties and interest
 
-A late leased-worker advance request can bring a tax increase up to **EUR 2,000** under §16a, considering seriousness/repetition. The recipient's annual assessment and deficient reporting follow Assessment Procedure Act §§32–33: use the sanctions and annual interest calculation in the [individual income-tax Guide](fi-income-tax.md). A payer's missing source withholding or reporting is a separate liability under Nonresident Act §§8–10, not an automatic penalty of the recipient. Ordinary overdue-tax interest accruing in 2026 is 9.5%; relief interest accruing in 2026 is 4.5%; do not assume 2027 rates. [Nonresident Act §§8–11,16a][source-law]; [prepayments](fi-prepayments.md).
+A late leased-worker advance request can bring a tax increase up to **EUR 2,000** under §16a, considering seriousness/repetition. The recipient's annual assessment and deficient reporting follow Assessment Procedure Act §§32–33: use the sanctions and annual interest calculation in the [individual income-tax skill](fi-income-tax.md). A payer's missing source withholding or reporting is a separate liability under Nonresident Act §§8–10, not an automatic penalty of the recipient. Ordinary overdue-tax interest accruing in 2026 is 9.5%; relief interest accruing in 2026 is 4.5%; do not assume 2027 rates. [Nonresident Act §§8–11,16a][source-law]; [prepayments](fi-prepayments.md).
 
 ## Cross-border points
 
@@ -166,3 +169,21 @@ Not yet confirmed: country-specific treaty rates and unusual special-service/ele
 [residence]: https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/
 [nonresident]: https://www.vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/
 [municipal]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This skill is maintained by the OpenAccountants network, accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

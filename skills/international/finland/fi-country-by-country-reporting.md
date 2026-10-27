@@ -63,7 +63,7 @@ The MyTax guidance distinguishes an unfinished saved notification from a submitt
 
 The notification is due at the reported period's end; the report and refusal notice are due within twelve months afterwards. For a calendar 2026 period, the unadjusted statutory dates are 31 December 2026 and 31 December 2027. Calendar the actual period and any statutory holiday rule rather than assuming notification and report share a deadline. [Act §14d(11)][law].
 
-Use MyTax for notification and full report or Ilmoitin.fi using the appropriate year-specific notification/XML specification. Agents need the applicable Suomi.fi authorisation. Reconcile identifiers, roles and constituent entities, preserve the submission acknowledgement and resolve validation failures. Correct the submitted report through its correction route with a complete reconciled replacement; a saved template or CSV upload is not proof of filing. No taxpayer account upload is performed by this Guide. [Vero overview][overview]; [report instructions][report].
+Use MyTax for notification and full report or Ilmoitin.fi using the appropriate year-specific notification/XML specification. Agents need the applicable Suomi.fi authorisation. Reconcile identifiers, roles and constituent entities, preserve the submission acknowledgement and resolve validation failures. Correct the submitted report through its correction route with a complete reconciled replacement; a saved template or CSV upload is not proof of filing. No taxpayer account upload is performed by this skill. [Vero overview][overview]; [report instructions][report].
 
 ## Penalties and interest
 

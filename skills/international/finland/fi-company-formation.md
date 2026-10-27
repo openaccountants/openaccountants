@@ -25,9 +25,9 @@ category: formation
 
 ## Who this applies to
 
-Use this source-cited draft to prepare an ordinary private limited company (Oy). The company becomes a separate legal person on registration. A public limited company (Oyj) has a EUR 80,000 minimum share-capital rule. Private-trader, partnership and cooperative routes need their own registration/liability analysis before comparing tax outcomes. [Companies Act, chapter 1 sections 2–3][companies-law]
+Use this source-cited draft to prepare an ordinary private limited company (Oy). The company becomes a separate legal person on registration. A public limited company (Oyj) has a EUR 80,000 minimum share-capital rule. A private Oy has no minimum share capital; PRH records zero share capital as EUR 0. Private-trader, partnership and cooperative routes need their own registration/liability analysis before comparing tax outcomes. A sole trader (toiminimi) has no separate legal personality and the owner is personally liable without limit; a general partnership (Ay) and a limited partnership (Ky) are governed by the Partnerships Act 389/1988, where general partners are personally liable. [Companies Act, chapter 1 sections 2–3][companies-law]; [PRH startup instructions][startup]; [Partnerships Act 389/1988][partnerships-law]
 
-Connect entity choice to the [individual](fi-income-tax.md), [corporate](fi-corporate-income-tax.md), [YEL](fi-yel-social.md) and [payroll](fi-employer-payroll.md) Guides. A registration route does not decide the tax residence, worker status or optimal entity for particular facts.
+Connect entity choice to the [individual](fi-income-tax.md), [corporate](fi-corporate-income-tax.md), [YEL](fi-yel-social.md) and [payroll](fi-employer-payroll.md) skills. A registration route does not decide the tax residence, worker status or optimal entity for particular facts.
 
 ## Current PRH setup routes and fees
 
@@ -64,9 +64,9 @@ Equality does not exceed a threshold. Startup entities without both periods have
 
 ## Annual filing and consequences
 
-Hold the ordinary general meeting within six months of period end. Company-law registration of the financial statements/annual report is due within two months after adoption. [Companies Act, chapter 5 section 3 and chapter 8 section 10][companies-law]
+An Oy keeps double-entry books and prepares annual financial statements under the Accounting Act. [Accounting Act 1336/1997, chapter 1 sections 1–2 and chapter 3][accounting-law] Hold the ordinary general meeting within six months of period end; it adopts the accounts and decides on the use of profit. Company-law registration of the financial statements/annual report is due within two months after adoption. [Companies Act, chapter 5 section 3 and chapter 8 section 10][companies-law]
 
-PRH's general outer timetable is eight months after period end; filing within that period is free. Earlier adoption still starts the statutory two-month clock. Tax-return timing is separate: use the [corporate Guide](fi-corporate-income-tax.md) rather than waiting for the meeting/PRH filing. [PRH financial statements][statements]
+PRH's general outer timetable is eight months after period end; filing within that period is free. Earlier adoption still starts the statutory two-month clock. Tax-return timing is separate: the corporate income tax return is due four months after the end of the calendar month in which the period ends (see the [corporate skill](fi-corporate-income-tax.md)); do not wait for the meeting/PRH filing. VAT and payroll reports run on their own periods ([VAT](finland-vat-return.md), [payroll](fi-employer-payroll.md)). [PRH financial statements][statements]
 
 PRH's 2026 notice describes a late-submission fee from EUR 150, rising to EUR 600 for more than four months' delay, with doubling for two or more consecutive periods. Actual period, delay and statutory notice/decision conditions must be checked; this draft does not compute every fee. Inactive companies still have a filing duty. [PRH 2026 late-filing notice][late]
 
@@ -125,6 +125,28 @@ expected:
 - What do both financial periods, articles and group/holding-company facts show for audit?
 - Which registrations, permits, meeting decisions and filing receipts already exist?
 
+## Sources and review limits
+
+Read 23 October 2026. PRH's startup page was directly opened. Permit, general filing, financial-statement and late-filing instructions were read as indexed official text. The listed company/auditing provisions were read directly from official Finlex HTML statutory content; retrieval hashes are in the country research record.
+
+- [PRH startup routes][startup]; [foreign-person permits][permits]; [filing instructions][filing].
+- [Companies Act 624/2006][companies-law], chapter 1 sections 2–3, chapter 2 sections 8–9, chapter 5 section 3, chapter 6 sections 8, 10 and 19, chapter 8 section 10.
+- [Auditing Act 1141/2015][audit-law], chapter 2 section 2. The statutory positive omission test is used rather than ambiguous English summaries of the two-period condition.
+- [PRH financial statements][statements]; [2026 late-filing notice][late].
+- [Partnerships Act 389/1988][partnerships-law]; [Accounting Act 1336/1997][accounting-law], chapter 1 sections 1–2, chapter 3 (read 27 October 2026).
+
+Not yet confirmed: complete company/accounting/Trade Register and fee-law chains; entity comparisons, share rights and non-cash subscriptions, all foreign-person exemptions, beneficial-owner specifics, group/sector audit and sustainability rules, actual late-fee cases and live filing. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). This secondary formation topic does not establish any core tax domain as complete.
+
+[startup]: https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html
+[permits]: https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html
+[filing]: https://www.prh.fi/en/companiesandorganisations/muutokset_rekisteritietoihin/yleisohje.html
+[companies-law]: https://www.finlex.fi/fi/lainsaadanto/2006/624
+[audit-law]: https://www.finlex.fi/fi/lainsaadanto/2015/1141
+[statements]: https://www.prh.fi/en/companiesandorganisations/financial_statements/limited_liability_companies_co-operatives_and_other_companies/digital.html
+[late]: https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/financial-statements-submitted-late-27.5.2026.html
+[partnerships-law]: https://www.finlex.fi/fi/lainsaadanto/1988/389
+[accounting-law]: https://www.finlex.fi/fi/lainsaadanto/1997/1336
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -142,22 +164,3 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
-
-## Sources and review limits
-
-Read 23 October 2026. PRH's startup page was directly opened. Permit, general filing, financial-statement and late-filing instructions were read as indexed official text. The listed company/auditing provisions were read directly from official Finlex HTML statutory content; retrieval hashes are in the country research record.
-
-- [PRH startup routes][startup]; [foreign-person permits][permits]; [filing instructions][filing].
-- [Companies Act 624/2006][companies-law], chapter 1 sections 2–3, chapter 2 sections 8–9, chapter 5 section 3, chapter 6 sections 8, 10 and 19, chapter 8 section 10.
-- [Auditing Act 1141/2015][audit-law], chapter 2 section 2. The statutory positive omission test is used rather than ambiguous English summaries of the two-period condition.
-- [PRH financial statements][statements]; [2026 late-filing notice][late].
-
-Not yet confirmed: complete company/accounting/Trade Register and fee-law chains; entity comparisons, share rights and non-cash subscriptions, all foreign-person exemptions, beneficial-owner specifics, group/sector audit and sustainability rules, actual late-fee cases and live filing. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). This secondary formation topic does not establish any core tax domain as complete.
-
-[startup]: https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html
-[permits]: https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html
-[filing]: https://www.prh.fi/en/companiesandorganisations/muutokset_rekisteritietoihin/yleisohje.html
-[companies-law]: https://www.finlex.fi/fi/lainsaadanto/2006/624
-[audit-law]: https://www.finlex.fi/fi/lainsaadanto/2015/1141
-[statements]: https://www.prh.fi/en/companiesandorganisations/financial_statements/limited_liability_companies_co-operatives_and_other_companies/digital.html
-[late]: https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/financial-statements-submitted-late-27.5.2026.html

@@ -10,7 +10,7 @@ description: >
   deductions, dividend splits, capital losses and personal assessment. Includes
   two executable examples, current statutory references and explicit distinctions
   between final liability and withholding. Cross-border residence and relief use
-  the linked individual cross-border Guide; Åland municipal differences require
+  the linked individual cross-border skill; Åland municipal differences require
   the separate regional schedule.
 version: 1.7
 jurisdiction: FI
@@ -31,7 +31,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Who this applies to
 
-A Finnish-resident individual is taxable on worldwide income, with treaty relief where applicable; nonresidents have income-specific Finnish-source rules. Establish status/periods using the [individual cross-border Guide](fi-individual-cross-border-residence.md). This Guide computes ordinary mainland tax and identifies the separate Åland municipal route. A freelance label does not itself decide employment, business or other income-producing activity. [Income Tax Act 1535/1992, sections 9–11, 29–30][law].
+A Finnish-resident individual is taxable on worldwide income, with treaty relief where applicable; nonresidents have income-specific Finnish-source rules. Establish status/periods using the [individual cross-border skill](fi-individual-cross-border-residence.md). This skill computes ordinary mainland tax and identifies the separate Åland municipal route. A freelance label does not itself decide employment, business or other income-producing activity. [Income Tax Act 1535/1992, sections 9–11, 29–30][law].
 
 Keep earned and capital categories separately. Wages, taxable benefits, pensions and ordinary social-security benefits enter earned income unless a specific exemption applies. Rent, taxable interest, dividends' capital portion and investment gains enter capital income. A sole trader divides a reconciled business result; an incorporated company is a different taxpayer. Preserve income/expense evidence, residence, municipality, parish membership and family/age inputs. [Income Tax Act, sections 29–33b, 38, 61, 64, 92][law].
 
@@ -48,7 +48,7 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 | Item | Applicable 2026 amount / formula | Primary source |
 |---|---|---|
 | Capital tax | 30% through EUR 30,000 annual taxable capital income; 34% above | [Income Tax Act, section 124][law] |
-| Municipal/parish | Select the actual municipality/parish from the annual decision; Helsinki municipal 5.30%, Lutheran 1.00%, Orthodox 1.80% | [Vero annual decision under Assessment Procedure Act section 91a(3)][local-rates] |
+| Municipal/parish | Select the actual municipality/parish from the annual decision. Mainland 2026 municipal range 4.70% (Kauniainen) to 10.90% (Pomarkku); Lutheran parish 1.00% to 2.00%; Orthodox 1.75% to 2.25%. Helsinki: municipal 5.30%, Lutheran 1.00%, Orthodox 1.80% | [Vero annual decision under Assessment Procedure Act section 91a(3)][local-rates] |
 | Wage expense deduction | EUR 750, capped at wage income; qualifying actual ordinary expenses replace it if greater | [Income Tax Act, section 95][law] |
 | Commuting | Actual cheapest qualifying mode, deduction after EUR 800 own liability capped at EUR 7,000; specified benefit months reduce own liability by EUR 75 each, minimum EUR 150 | [Income Tax Act, section 93, Act 873/2026 commencement][law] |
 | Basic deduction | Up to EUR 4,265, reduced by 18% of income above EUR 4,265 after prior qualifying deductions; never above remaining income | [Income Tax Act, section 106][law] |
@@ -57,9 +57,9 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 | Pension deduction | Full maximum EUR 11,080 from annual national pension × 1.173 rounded up to next EUR 10, capped at pension; taper below | [Income Tax Act, section 100][law]; [Kela 2026 full pension EUR 787.07/month][kela] |
 | Pension supplement tax | 5.85% of pension after pension deduction above EUR 60,000 | [Income Tax Act, section 124(4)][law] |
 | Health care | 1.10% of established health-care base plus 0.39% of the eligible positive care-base/daily-base difference; pure pension/benefit base can therefore bear 1.49%; apply the mixed-base and §14(2) exclusion rules below | [Health Insurance Act, chapter 18 sections 14–20][health-law]; [2026 tax bases][tax-bases] |
-| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; entrepreneur supplement uses separate YEL rules | [Health Insurance Act, chapter 18 sections 5, 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
+| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; self-employed add a 0.23% supplement on YEL confirmed income, so a sole YEL base at or above EUR 17,255 bears 1.11%, and below it 0.23% only; see the [YEL skill](fi-yel-social.md) | [Health Insurance Act, chapter 18 sections 5, 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
 | Broadcasting tax | Covered mainland residents reaching 18 in the year: 2.5% above EUR 15,150 of the larger of net earned+capital income or confirmed YEL+MYEL income, capped at EUR 160 | [Broadcasting Tax Act, sections 1–2][yle-law] |
-| Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f][law] |
+| Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; 40% also for ordinary household, care and nursing work bought from a section 22 non-profit; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f][law] |
 | Oil-heating replacement | 60% qualifying contractor labour, or 30% wages plus listed employer contributions; combined household-credit ceiling EUR 3,500/person, of which other work at most EUR 2,100 | [Income Tax Act, section 127f][law] |
 
 **Currency corrections.** Act 873/2026 commenced on 13 October but expressly applies the amended commuting rule to tax year 2026 and section 127f to eligible payments from 1 January 2026. Do not divide the annual commuting/credit calculation at 13 October. The Vero household-credit summary still displaying EUR 1,600/35% and the English automatic-deductions page retaining a 3.44% upper work-credit taper conflict with the current statute; use the enacted rules above. [Income Tax Act, sections 93, 125, 127f and amendment commencement][law]; [older household summary][household]; [automatic deductions summary][automatic].
@@ -68,7 +68,7 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 
 ### Earned income and deductions, in order
 
-1. Sum taxable wages including cash and valued fringe benefits, pensions, taxable benefits, other earned receipts, business earned portions and earned dividends. Use the [payroll Guide](fi-employer-payroll.md) for benefit valuation; classify exempt allowances and benefits under their actual statutory conditions rather than excluding anything labelled reimbursement. [Income Tax Act, sections 61–69, 71–73, 92][law].
+1. Sum taxable wages including cash and valued fringe benefits, pensions, taxable benefits, other earned receipts, business earned portions and earned dividends. Use the [payroll skill](fi-employer-payroll.md) for benefit valuation; classify exempt allowances and benefits under their actual statutory conditions rather than excluding anything labelled reimbursement. [Income Tax Act, sections 61–69, 71–73, 92][law].
 2. From wage income deduct the greater of the EUR 750 standard expense deduction (limited to wages) or actual qualifying ordinary employment costs. Unemployment-fund fees and allowed commuting are separate deductions, not absorbed into EUR 750. Commuting uses real working days and the cheapest available mode; private-car use needs its qualifying facts and annual authority cost basis. From 2026 labour-market membership fees and home/vacation-home costs incurred to earn **wages**, whether flat-rate or actual, are not deductible. Eligible nonwage home-office use instead follows the authority's capped schedule: EUR 980 full-time/more than half workdays, EUR 490 regular part-time, EUR 245 occasional repeated use. Avoid double deductions across income categories. [Income Tax Act, sections 31, 93, 95][law]; [Vero home office][office].
 3. From net earned income deduct statutory employee pension, unemployment and health daily-allowance contributions and eligible mandatory pension payments. YEL is deductible once in business, personally or through the spouse route; add back business-booked YEL if claimed personally. It is not both an expense and a personal deduction. [Income Tax Act, section 96][law]; [YEL deduction instructions][yel].
 4. For pensions, start with maximum EUR 11,080, subtract 51% of net earned income above that maximum up to EUR 22,500, then 19.6% above EUR 22,500; floor at zero and cap at the pension amount. Pension receipts do not earn the work-income credit merely because they are earned income. Then compute basic deduction from income after the preceding applicable deductions: `min(remaining_income, max(0, 4265 − 0.18 × max(0, remaining_income − 4265)))`. Apply confirmed earned-category losses under section 118. [Income Tax Act, sections 100, 106, 118, 125][law].
@@ -86,13 +86,17 @@ For a taxable disposal calculate proceeds minus undepreciated actual acquisition
 
 Deduct eligible disposal losses against gains, then eligible other capital income; unused losses carry for the following five years. Losses on exempt own homes, personal-use property and the specified small disposals are disallowed. A disposal loss does **not** generate a capital-deficit tax credit. An equity-savings-account loss is recognised only when the account is closed and follows its separate ordering. [Income Tax Act, sections 50, 53b][law].
 
-Rental income is gross rent and tenant-paid owner expenses less attributable income-producing costs: maintenance charges and **expensed** housing-company finance charges, insurance, qualifying repairs, management and permitted property depreciation. Capitalised housing-company charges and capital improvements enter acquisition cost or the proper depreciation schedule; purchase price of housing-company shares is not annually depreciated. Allocate mixed/private use and below-market/non-income-producing arrangements correctly. Debt interest is a separate income-producing-debt deduction; principal repayments, own-home and consumer interest are not deductible. Keep rental periods, invoices and the housing company's expensing/capitalisation confirmation. [Income Tax Act, sections 29, 31, 54, 58][law]; [Vero rental deductions][rent]; [property transfer Guide](fi-property-transfer-tax.md).
+Rental income is gross rent and tenant-paid owner expenses less attributable income-producing costs: maintenance charges and **expensed** housing-company finance charges, insurance, qualifying repairs, management and permitted property depreciation. Capitalised housing-company charges and capital improvements enter acquisition cost or the proper depreciation schedule; purchase price of housing-company shares is not annually depreciated. Allocate mixed/private use and below-market/non-income-producing arrangements correctly. Debt interest is a separate income-producing-debt deduction; principal repayments, own-home and consumer interest are not deductible. Keep rental periods, invoices and the housing company's expensing/capitalisation confirmation. [Income Tax Act, sections 29, 31, 54, 58][law]; [Vero rental deductions][rent]; [property transfer skill](fi-property-transfer-tax.md).
 
 Net eligible capital expenses/interest/current-business-loss election can create a capital deficit under section 60. Ordinary deficit credit is 30%, maximum EUR 1,400 plus EUR 400 for one dependent minor child or EUR 800 for two or more, subject to spouse transfer/unused-ceiling rules. Residual capital-category loss carries ten years; distinguish it from five-year disposal losses. Apply the statutory credit ordering and spouse rules rather than both carrying and crediting the same amount. [Income Tax Act, sections 58–60, 118, 131–134][law].
 
 ### Sole trader: reconcile before splitting
 
-Use business recognition, deductions, inventory and depreciation rules under the Business Income Tax Act; the [corporate Guide's ordinary asset/cost schedules](fi-corporate-income-tax.md) identify shared base rules, but corporate participation/group/interest restrictions do not automatically apply to a sole trader. Private drawings are not wages/expenses. Own/spouse remuneration and specified young-child pay are excluded; mixed-use assets/cars and negative-equity borrowing require their statutory allocation. [Business Income Tax Act, sections 7–8, 16, 18, 30, 33–34][business-law].
+Use business recognition, deductions, inventory and depreciation rules under the Business Income Tax Act; the [corporate skill's ordinary asset/cost schedules](fi-corporate-income-tax.md) identify shared base rules, but corporate participation/group/interest restrictions do not automatically apply to a sole trader. Private drawings are not wages/expenses. Own/spouse remuneration and pay to a child or family member under 14 before the tax year are excluded; fines, penalty charges and bribes are not deductible; only 50% of entertainment (representation) costs is deductible; mixed-use assets/cars and negative-equity borrowing require their statutory allocation. [Business Income Tax Act, sections 7–8, 16, 18, 30, 33–34][business-law].
+
+Depreciation for 2026: machinery, equipment and vehicles at most 25% of the pooled undepreciated balance (reducing balance); a pool balance of EUR 1,200 or less can be written off at once. Buildings are depreciated per building on the undepreciated cost: at most 7% for shops, warehouses, factories, workshops and similar; 4% for residential, office and similar; 20% for light wooden structures, metal tanks and similar, and buildings used only for business research. [Business Income Tax Act, sections 30, 34][business-law].
+
+A cash donation of EUR 850 to EUR 500,000 to an EEA publicly funded university or college (or its university fund) for science or art is deductible from net earned income. [Income Tax Act, section 98a][law].
 
 Deduct usable same-source prior losses, then 5% entrepreneur deduction from the positive remaining distributable business income; it cannot create a loss. Compute capital allocation on prior-year business assets less eligible liabilities valued under Valuation Act sections 15–17, plus 30% of qualifying wages paid in the preceding twelve months. Qualifying fixed assets use tax residual/required comparison values, not arbitrary market value. Statutorily excluded bank deposits/debt securities do not enter the sole trader's net assets. For a start-up use the year's closing net assets. [Income Tax Act, sections 30a, 38, 41][law]; [Valuation Act, sections 3, 8, 15–17][value-law].
 
@@ -123,17 +127,17 @@ Additional ordinary mainland deductions are fact-specific, not automatic: sectio
 
 ## Deadlines and filing
 
-Review the pre-completed personal return and correct missing/wrong income, deductions, foreign items and assets in MyTax by its allocated date; preserve acknowledgement and assessment. Form 5 is required for business including inactive years, with the allocated filing deadline. A date in spring 2026 for **2025** income is not the deadline for **2026** income. The 2026 reporting timeline puts personal returns in March 2027; the issued 2027 deadline/assessment controls. Update tax cards/prepayments during the year and track separate assessment-end dates for elections, corrections and confirmed losses. [Assessment Procedure Act, sections 7–8][assessment]; [Vero personal return][personal-return]; [Form 5 instructions][form5]; [2026 reporting timeline][timeline].
+Review the pre-completed personal return and correct missing/wrong income, deductions, foreign items and assets in MyTax by its allocated date; preserve acknowledgement and assessment. Form 5 is required for business including inactive years, with the allocated filing deadline. A date in spring 2026 for **2025** income is not the deadline for **2026** income. The 2026 reporting timeline puts personal returns in March 2027; the issued 2027 deadline/assessment controls. Keep the business ledgers, accounts and lists of books for at least 10 years after the accounting period ends, and vouchers and business correspondence for at least 6 years after the end of the year in which the period ended. [Accounting Act 1336/1997, chapter 2 section 10][kpl]. Update tax cards/prepayments during the year and track separate assessment-end dates for elections, corrections and confirmed losses. [Assessment Procedure Act, sections 7–8][assessment]; [Vero personal return][personal-return]; [Form 5 instructions][form5]; [2026 reporting timeline][timeline].
 
 ## Penalties and interest
 
-Assessment Procedure Act section 33 sets EUR 50 individual late fee for the relevant reporting before assessment closes. Sections 32–32b ordinarily charge 2% of added income, with distinct 3–10% repeated/manifest-disregard, 5% estimated, 1% specified unclear/unreasonable and 0.5% qualifying post-assessment voluntary-correction routes. Added-tax routes apply where the income base cannot be used. Individual minimum EUR 75 is subject to statutory nonimposition exceptions; an authority decision, date and conduct determine the route. [Assessment Procedure Act, sections 32–33][assessment].
+Assessment Procedure Act section 33 sets EUR 50 individual late fee for the relevant reporting before assessment closes. Sections 32–32b ordinarily charge 2% of added income, with distinct 3–10% repeated/manifest-disregard, 5% estimated, 1% specified unclear/unreasonable and 0.5% qualifying post-assessment voluntary-correction routes. A 1% rate also applies to added foreign-source income where Finland must remove double taxation under a treaty or credits the foreign tax under Act 1552/1995. Added-tax routes apply where the income base cannot be used. Individual minimum EUR 75 is subject to statutory nonimposition exceptions; an authority decision, date and conduct determine the route. [Assessment Procedure Act, sections 32–33][assessment].
 
 Ordinary late-paid 2026 tax bears 9.5% annual interest from the day after due date through payment using actual days/365. Relief interest on back tax/additional prepayment is a distinct 4.5% route for 2026, with the statutory EUR 20 back-tax interest deduction where applicable. Follow the decision and period; do not treat all assessment interest as late-payment interest. [Vero interest guidance][interest].
 
 ## Cross-border points
 
-Use the [individual cross-border Guide](fi-individual-cross-border-residence.md) for residence, foreign employment, nonresident classifications and credit/exemption. Treaty residence does not remove domestic reporting automatically. Åland state scale percentages are reduced by 12.64 percentage points under section 124; municipal bases/deductions follow Åland's own law and must be computed separately, while residents pay the regional media fee instead of mainland broadcasting tax. Use the parallel regional schedule in The base; the mainland worked example does not apply there. [Income Tax Act, section 124][law]; [Vero Åland deductions][aland].
+Use the [individual cross-border skill](fi-individual-cross-border-residence.md) for residence, foreign employment, nonresident classifications and credit/exemption. Treaty residence does not remove domestic reporting automatically. Åland state scale percentages are reduced by 12.64 percentage points under section 124; municipal bases/deductions follow Åland's own law and must be computed separately, while residents pay the regional media fee instead of mainland broadcasting tax. Use the parallel regional schedule in The base; the mainland worked example does not apply there. [Income Tax Act, section 124][law]; [Vero Åland deductions][aland].
 
 ## Two worked examples that recompute
 
@@ -212,9 +216,10 @@ expected:
 
 | Primary source | Scope / provisions read | Read on |
 |---|---|---|
-| [Income Tax Act 1535/1992][law] | Sections 9–14, 29–33c, 38–41, 45–60, 61–69, 93–100, 106, 118–125, 127–127f, 131–134; Act 873/2026 commencement | 2026-10-26 |
+| [Income Tax Act 1535/1992][law] | Sections 9–14, 29–33c, 38–41, 45–60, 61–69, 93–100, 98a, 106, 118–125, 127–127f, 131–134; Act 873/2026 commencement | 2026-10-26 |
 | [2026 state-scale Act 1140/2025][scale] | Sections 1–2 | 2026-10-26 |
-| [Business Income Tax Act 360/1968][business-law] | Ordinary business costs, assets, interest and depreciation | 2026-10-26 |
+| [Business Income Tax Act 360/1968][business-law] | Sections 8, 16, 30, 34: business costs, non-deductibles and depreciation | 2026-10-27 |
+| [Accounting Act 1336/1997][kpl] | Chapter 2 section 10: record retention | 2026-10-27 |
 | [Valuation Act 1142/2005][value-law] | Sections 2–10, 15–17; dividend and sole-trader assets | 2026-10-26 |
 | [Health Insurance Act 1224/2004][health-law] | Chapter 18 sections 14–24; bases and annual-rate mechanism | 2026-10-26 |
 | [Broadcasting Tax Act 484/2012][yle-law] | Sections 1–2 | 2026-10-26 |
@@ -229,11 +234,12 @@ expected:
 | [Åland Media Fee Act 2019:103][ax-media-law]; [Vero 2026 media fee][ax-media] | Sections 2, 4 and indexed EUR 128 amount | 2026-10-26 |
 | [Vero Åland deductions][aland] | Claim routes; its older national commuting figures are superseded by Act 873/2026 | 2026-10-26 |
 
-Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remuneration and exceptional investment regimes. The ordinary mainland/Åland source-review evidence is recorded in the pack README; no professional attestation is claimed.
+Not yet confirmed: 2026 tax-free travel allowance amounts for a sole trader's own business trips (per diem and kilometre rates; Vero's 2026 decision was not read from the official text), and separately scoped agriculture/forestry, seafarer, equity-remuneration and exceptional investment regimes. The ordinary mainland/Åland source-review evidence is recorded in the pack README; no professional attestation is claimed.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [scale]: https://www.finlex.fi/fi/lainsaadanto/2025/1140
 [business-law]: https://www.finlex.fi/fi/lainsaadanto/1968/360
+[kpl]: https://www.finlex.fi/fi/lainsaadanto/1997/1336
 [value-law]: https://www.finlex.fi/fi/lainsaadanto/2005/1142
 [health-law]: https://www.finlex.fi/fi/lainsaadanto/2004/1224
 [yle-law]: https://www.finlex.fi/fi/lainsaadanto/2012/484
@@ -259,7 +265,7 @@ Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remu
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This skill is maintained by the OpenAccountants network, accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

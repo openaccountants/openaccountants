@@ -9,7 +9,7 @@ description: >
   credit carryforwards and asset or residence transfers. Distinguishes net-basis
   income tax from withholding and reporting, with ordinary computations and
   two executable examples. Read alongside the corporate, transfer-pricing and
-  individual-residence Guides; specialist fund, hybrid, restructuring and
+  individual-residence skills; specialist fund, hybrid, restructuring and
   minimum-tax regimes require separate analysis.
 jurisdiction: FI
 category: cross-border
@@ -21,7 +21,7 @@ tier: 2
 
 # Finland Corporate Cross-Border Tax v0.1
 
-**Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. Independent source-review evidence and remaining publication gates are recorded in the [pack README](README.md); this Guide does not establish worldwide-goal completion.
+**Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. Independent source-review evidence and remaining publication gates are recorded in the [pack README](README.md); this skill does not establish worldwide-goal completion.
 
 ## Who this applies to
 
@@ -29,7 +29,7 @@ A Finnish-incorporated corporation is resident and taxable on worldwide income. 
 
 Assess corporate residence before PE. For a nonresident, section 13a's domestic PE rule identifies a permanent business place, with examples such as a management place, branch, office, factory and workshop. Then apply the actual treaty's PE definition, agency provisions, construction/project threshold and any effective MLI changes. There is no universal six-month or 183-day exemption for a foreign company. Finnish immovable-property income and other section 10 source income require their own treaty classification even without a PE. [Income Tax Act, sections 10 and 13a][ita]; [Vero, nonresident corporations][pe].
 
-Foreign funds require separate treatment, including the current section 9a management-company exception; this Guide's ordinary-corporation route does not decide a fund's residence. A registered Finnish branch and an income-tax PE are different classifications. [Income Tax Act, sections 9–9a][ita].
+Foreign funds require separate treatment, including the current section 9a management-company exception; this skill's ordinary-corporation route does not decide a fund's residence. A registered Finnish branch and an income-tax PE are different classifications. [Income Tax Act, sections 9–9a][ita].
 
 ## Rates, bands and thresholds
 
@@ -112,7 +112,7 @@ For dividend/interest self-assessed returns, Act 768/2016 sections 35–36 charg
 
 Apply the actual treaty, protocols, MLI effective provisions, beneficial-owner and anti-abuse conditions for the income and date. The official 2026 dividend/royalty table is an index to country rates, not proof of entitlement. In particular, the new Finland–France treaty applies starting in 2027; do not use its new provisions for a 2026 payment merely because the text has been signed or published. [Vero, 2026 treaty-rate index][rates]; [Vero, France commencement notice][france].
 
-Domestic corporate residence and treaty residence need separate conclusions. VAT fixed establishment, payroll/employer status, social-insurance coverage, customs, TP/CbCR, CFC, hybrid and minimum-tax rules also have their own tests. Keep individual residence in [the individual Guide](fi-individual-cross-border-residence.md). No universal treaty-rate schedule or specialist fund/reorganisation conclusion is supplied here.
+Domestic corporate residence and treaty residence need separate conclusions. VAT fixed establishment, payroll/employer status, social-insurance coverage, customs, TP/CbCR, CFC, hybrid and minimum-tax rules also have their own tests. Keep individual residence in [the individual skill](fi-individual-cross-border-residence.md). No universal treaty-rate schedule or specialist fund/reorganisation conclusion is supplied here.
 
 ## Two worked examples that recompute
 

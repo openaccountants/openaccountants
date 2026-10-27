@@ -43,7 +43,7 @@ Start with cash plus the value of other consideration, including a contractual p
 
 For newly built property-company shares, establish completion/approval for use, ownership transfer and construction-period debt under §20(5). Do not select an advertised cash price while excluding an allocated construction loan. The buyer's own bank financing does not independently add to the base when it merely finances consideration already included. [Act §20][law].
 
-Multiply the correctly established base by 3% or 1.5%. For several buyers prepare each buyer's allocation and own return/payment; the total of their bases and tax must reconcile to the acquisition. [Act §§6,20,30][law].
+Multiply the correctly established base by 3% or 1.5%. A consideration stated in a foreign currency is converted to euros at the European Central Bank rate published for the payment date, and no tax is payable if the amount is under EUR 10. [Act §27][law]. For several buyers prepare each buyer's allocation and own return/payment; the total of their bases and tax must reconcile to the acquisition. [Act §§6,20,30][law].
 
 ### Exemption screen
 
@@ -71,7 +71,7 @@ A wrong return is corrected by a full replacement including unchanged informatio
 
 Voluntary filing/correction within 60 days uses the late fee rather than the tax increase where §36b conditions hold. Outside that route, §36a imposes 10% of added tax ordinarily; repeated or manifest disregard 15–50%, estimated assessment 25%, unclear/unreasonable circumstances 5%, qualifying voluntary post-60-day correction 2%, with statutory minimums and waiver conditions. Do not select the smallest percentage without establishing its conditions. A late earnout return has its own sanction exposure. [Act §§36–36b][law]; [Vero earnout instructions][earnout].
 
-Late title registration can add the separate §8 surcharge even if the transfer tax was already paid. Overdue tax also bears interest, **9.5% for days in 2026**, from the day after the payment deadline through payment. Do not use that rate for 2027 without confirming the annual rate. [Act §§8,28][law]; [Vero late-payment guidance][late].
+Late title registration can add the separate §8 surcharge even if the transfer tax was already paid. If the property was transferred more than once before title is applied for, the applicant also pays the tax, with surcharges, on earlier transfers made in the three years before the application. [Act §§8–9][law]. Overdue tax also bears interest, **9.5% for days in 2026**, from the day after the payment deadline through payment. Do not use that rate for 2027 without confirming the annual rate. [Act §§8,28][law]; [Vero late-payment guidance][late].
 
 ## Cross-border points
 
@@ -136,7 +136,7 @@ expected:
 
 | Official source | Scope | Read date |
 |---|---|---|
-| [Transfer Tax Act 931/1996][law] | §§4–8,15–23,30–31,36–36b,40; current 2026 wording and 1143/2025 transition | 2026-10-26 |
+| [Transfer Tax Act 931/1996][law] | §§4–9,15–23,27,30–31,36–36b,40; current 2026 wording and 1143/2025 transition | 2026-10-26 |
 | [Vero overview][overview] | Rates and first-home transition | 2026-10-26 |
 | [Vero filing instructions][filing] and [deadline table][deadlines] | Transaction clocks, identifiers, signatures and returns | 2026-10-26 |
 | [Vero earnout instructions][earnout] | 2026 contingent-consideration return correction | 2026-10-26 |

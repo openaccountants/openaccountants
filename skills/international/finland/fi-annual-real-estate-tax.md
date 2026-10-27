@@ -10,7 +10,7 @@ description: >
   deviations, corrections and payment. Trigger on kiinteistövero, property-tax
   decision, building value, annual tax, municipal real-estate rate or property
   information corrections. Transfer tax on buying property and income tax on
-  rent or gains are separate computations in the companion Guides.
+  rent or gains are separate computations in the companion skills.
 jurisdiction: FI
 category: international
 tax_year: 2026
@@ -86,7 +86,7 @@ For late details increasing tax **before assessment ends**, the late fee is EUR 
 
 ## Cross-border points
 
-A nonresident owner still owes Finnish annual tax on Finnish property held at the year's beginning. Foreign real estate is outside this Finnish real-estate tax but can create foreign property tax and Finnish income-tax reporting/relief questions. Finland's annual real-estate tax is not automatically a creditable foreign **income** tax; determine treaty tax coverage and the income computation separately. Tax on a purchase uses the [transfer-tax Guide](fi-property-transfer-tax.md); rent and disposal gains use [individual](fi-income-tax.md) or [corporate income tax](fi-corporate-income-tax.md). [Act §§1–5][law].
+A nonresident owner still owes Finnish annual tax on Finnish property held at the year's beginning. Foreign real estate is outside this Finnish real-estate tax but can create foreign property tax and Finnish income-tax reporting/relief questions. Finland's annual real-estate tax is not automatically a creditable foreign **income** tax; determine treaty tax coverage and the income computation separately. Tax on a purchase uses the [transfer-tax skill](fi-property-transfer-tax.md); rent and disposal gains use [individual](fi-income-tax.md) or [corporate income tax](fi-corporate-income-tax.md). [Act §§1–5][law].
 
 ## Two worked examples that recompute
 
