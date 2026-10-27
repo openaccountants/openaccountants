@@ -1,7 +1,7 @@
 ---
 name: luxembourg-social-contributions
 description: "Luxembourg social security contributions (cotisations sociales) for tax year 2026, collected by the CCSS: employee and employer shares for sickness (2.80% + 0.25% cash surcharge each side), pension (8.50% each side, 17% in total from 1 January 2026), dependency (1.40%, employee only, no ceiling, after a quarter-SSM abatement), accident (0.65% times the bonus-malus factor), Mutualité des employeurs classes 1 to 4, occupational health 0.14% and family benefits 1.70% (public sector only); the SSM floor and 5x SSM ceiling for 1 January and 1 June 2026; self-employed contributions on professional income with the provisional SSM base; entry, exit and wage declarations, the monthly account statement and 10-day payment, 0.6% monthly late interest and fines. Trigger on: CCSS cotisations 2026, Luxembourg social security rates, independant cotisations, MDE classe, maximum cotisable, dependance abattement. Out of scope: luxembourg-payroll (wage tax withholding), luxembourg-income-tax, lu-cross-border, lu-corporate-tax."
-version: 0.3
+version: 0.4
 jurisdiction: LU
 tax_year: 2026
 last_updated: 2026-10-27
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Luxembourg social security contributions (2026)
 
-## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.3
+## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.4
 
 What matters for 2026:
 
@@ -84,6 +84,8 @@ So a one-off bonus carries 2.80% sickness, not 3.05%, and no MDE.
 - Dependency: the base is gross pay less the abatement (EUR 675.93, or EUR 692.83 from 1 June). If the person works fewer than 150 hours a month for an employer, the abatement is cut in proportion to hours declared over 173.
 - Hours: since 1 January 2020 the employer declares the exact hours paid, not a flat 173.
 
+**Residents: dependency on income beyond pay.** Dependency is not limited to wages or professional income. Its base also covers replacement income and income from assets (art. 376 CSS). For a resident taxpayer, the ACD (not the CCSS) charges 1.40% on the net income in categories 6 to 8 of art. 10 of the income tax law (income from capital, rental income and miscellaneous net income), counting each category only when it is positive (art. 378(1) and (2) CSS). The ACD also charges it on pensions and annuities under art. 96 of that law, except supplementary pension scheme benefits and pensions paid under Book III CSS or a statutory scheme. It applies only to residents who are within the dependency insurance's beneficiary group (art. 352 CSS, art. 378(3)). A yearly contribution of EUR 24.79 or less is treated as nil (art. 378(4)). The contribution is not income tax and is not deductible for income tax (art. 378(5)). Source: Code de la sécurité sociale, consolidated at 1 January 2026, arts. 376 and 378.
+
 **Self-employed.** The base is professional income: commercial profit, profit from a liberal profession, a self-employed manager's pay, replacement income (such as sick pay) and professional income earned abroad by someone insured in Luxembourg. With several activities, all income is added together.
 
 - In the first year, the CCSS bills provisionally on the SSM, unless the person gives a better estimate. For a side activity next to a job, the provisional base is one third of the SSM.
@@ -92,6 +94,7 @@ So a one-off bonus carries 2.80% sickness, not 3.05%, and no MDE.
 - No dependency abatement for the self-employed. The quarter-SSM abatement covers only the groups listed in art. 377(4) CSS (employees, apprentices, seafarers and others); self-employed people under art. 1(4) CSS are not on that list, so dependency is 1.40% of the full professional income.
 - If the self-employed person is entitled to cash sick pay, sickness carries the 0.50% surcharge on top of 5.60% (art. 29(2) CSS), and the self-employed person bears all of it (art. 32 CSS).
 - Accident: the bonus-malus factor applies to every contributor, including the self-employed, who form risk class 15 (règlement grand-ducal of 8 February 2016, arts. 2 and 3).
+- Who sets the factor: a new employer pays the base accident rate (0.65%) from the start of activity. Afterwards the Association d'assurance accident (AAA) sets each employer's bonus-malus factor and tells the employer; the CCSS applies it (CCSS employer registration page; CCSS rate notice of 16 January 2026, note 5).
 - Someone above the ceiling because of several activities can ask for a refund of the excess.
 
 ## Deadlines and filing
@@ -187,10 +190,10 @@ expected:
 | CCSS, self-employed: contribution base and recalculation | https://ccss.public.lu/fr/independants/cotisations-sociales/assiette-cotisation-adaptation.html | 2026-10-27 |
 | CCSS, self-employed: billing and payment | https://ccss.public.lu/fr/independants/cotisations-sociales/facturation.html | 2026-10-27 |
 | CCSS, self-employed: payment plans | https://ccss.public.lu/fr/independants/cotisations-sociales/demander-delai-paiement.html | 2026-10-27 |
-| Code de la sécurité sociale, consolidated at 1 January 2026 (arts. 1, 29, 32, 377, 445; RGD of 8 February 2016 on bonus-malus) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
+| Code de la sécurité sociale, consolidated at 1 January 2026 (arts. 1, 29, 32, 352, 376, 377, 378, 445; RGD of 8 February 2016 on bonus-malus) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
 | Guichet.lu, entry declaration and late fine | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-27 |
 
-Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); the amount the CCSS actually charges for a late exit or missing wage declaration within the art. 445 CSS cap of EUR 2,500; a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the dependency base for residents' portfolio income and capital gains; bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
+Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); the amount the CCSS actually charges for a late exit or missing wage declaration within the art. 445 CSS cap of EUR 2,500; a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the reference period the AAA uses to set the bonus-malus factor (the old version's 1 April Y-2 to 31 March Y-1 came from secondary sources; the AAA page was down on 27 October 2026); bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
 
 <!-- openaccountants-cta-block -->
 
