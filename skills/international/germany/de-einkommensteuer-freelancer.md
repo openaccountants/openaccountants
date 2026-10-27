@@ -1,11 +1,11 @@
 ---
 name: de-einkommensteuer-freelancer
 description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
-version: 1.1
+version: 1.2
 jurisdiction: DE
 category: international
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -176,7 +176,7 @@ A loss first offsets other income of the same year; the rest goes back one year,
 
 ### Trade tax credit (§ 35 EStG), traders only
 
-Income tax is reduced by four times the trade tax base amount (Messbetrag) set for the same year ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Two caps: only the part of the tariff tax that falls on trade income (positive trade income over all positive income, times the tax), and never more than the trade tax actually payable. No refund or carry-over of an unused credit. A trade income (rounded down to EUR 100) not above EUR 24,500 pays no trade tax, so gets no credit. Example: trade profit EUR 110,000, only income, taxable income EUR 100,000, Hebesatz 400%: tariff tax EUR 30,864; base amount (110,000 - 24,500) x 3.5% = EUR 2,992.50; trade tax EUR 11,970; credit 4 x 2,992.50 = EUR 11,970; income tax EUR 18,894, below EUR 20,350 so no surcharge; church tax at 9% is on EUR 30,864: EUR 2,777.76. The data go on Anlage G.
+Income tax is reduced by four times the trade tax base amount (Messbetrag) set for the same year ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Two caps: only the part of the tariff tax that falls on trade income (positive trade income over all positive income, times the tax), and never more than the trade tax actually payable. No refund or carry-over of an unused credit. A trade income (rounded down to EUR 100) not above EUR 24,500 pays no trade tax, so gets no credit. The base amount is the trade income less the allowance, times the 3.5% Steuermesszahl ([§ 11(1) and (2) GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); Example 3 works it through. The data go on Anlage G.
 
 ## Deadlines and filing
 
@@ -272,6 +272,34 @@ expected:
   soli_full: 1242.45
   soli_cap: 266.56
   soli: 266.56
+```
+
+**Example 3: sole trader with the § 35 credit, Hebesatz 400%.** A single online retailer (trade, § 15 EStG). Trade profit EUR 110,000, his only income; special expenses EUR 10,000, so taxable income EUR 100,000, zone 4. Tariff tax 0.42 x 100,000 - 11,135.63 = 30,864.37, so EUR 30,864. Trade tax: trade income EUR 110,000 (already a multiple of EUR 100) less the EUR 24,500 allowance = EUR 85,500; base amount 85,500 x 3.5% = EUR 2,992.50 ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); at a 400% Hebesatz the municipality charges EUR 11,970. Credit: 4 x 2,992.50 = EUR 11,970. First cap: all his income is trade income, so the share of tariff tax on it is the full EUR 30,864. Second cap: trade tax payable EUR 11,970. The credit is EUR 11,970 ([§ 35(1) EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Income tax EUR 18,894, below EUR 20,350, so no surcharge. Church tax at 9% is worked out on the tax before the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)): 9% x 30,864 = EUR 2,777.76. Total income tax plus trade tax EUR 30,864: at a 400% Hebesatz 4 x the base amount equals the trade tax, so the credit absorbs it in full; above 400% the credit stops at 4 x the base amount and the rest of the trade tax is a real cost.
+
+```oa-check
+name: DE 2026 sole trader, § 35 trade tax credit at Hebesatz 400%
+inputs:
+  trade_profit: 110000
+  special_expenses: 10000
+  hebesatz_pct: 400
+steps:
+  - taxable: floor(trade_profit - special_expenses)
+  - tariff_tax: floor(0.42 * taxable - 11135.63)
+  - trade_income: floor(trade_profit / 100) * 100
+  - messbetrag: max(0, trade_income - 24500) * 0.035
+  - trade_tax: messbetrag * hebesatz_pct / 100
+  - cap_share: tariff_tax * trade_profit / trade_profit
+  - credit: min(4 * messbetrag, cap_share, trade_tax)
+  - income_tax: tariff_tax - credit
+  - church: tariff_tax * 0.09
+expected:
+  taxable: 100000
+  tariff_tax: 30864
+  messbetrag: 2992.5
+  trade_tax: 11970
+  credit: 11970
+  income_tax: 18894
+  church: 2777.76
 ```
 
 A married couple with the same EUR 100,000 joint taxable income under splitting pays twice the tax on EUR 50,000: 2 x 10,548 = EUR 21,096, against EUR 30,864 for one single person; their EUR 40,700 surcharge limit is not exceeded.
