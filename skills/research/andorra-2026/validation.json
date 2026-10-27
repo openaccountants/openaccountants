@@ -21,7 +21,8 @@
     "count": 129,
     "result": "PASS",
     "environment": "TMPDIR=/private/tmp; RUNNER_TEMP=explicit persistent task test-runner",
-    "initial_result": "7 macOS /var/private-var path-resolution errors;1 RUNNER_TEMP unbound failure. See retained logs. No engineering files modified."
+    "initial_result": "7 macOS /var/private-var path-resolution errors;1 RUNNER_TEMP unbound failure. See retained logs. No engineering files modified.",
+    "publication_rerun": "129 pass on final country batch"
   },
   "metadata": {
     "baseline": "43a766a09b91b45392ee0522e5f69d9e2e6306b2",
@@ -40,7 +41,7 @@
     "closure": "independent-review/repair-closure.md",
     "accountant_attestation": false
   },
-  "publication": "HELD locally: exact annual dependant-income minimum-wage benchmark remains unverified; remote PR774 unchanged",
+  "publication": "Prepared for one update to existing PR774; exact IT-IND partial retained, issue376 stays open; no merge or new CLA consent",
   "core_partial": {
     "IT-IND": "Exact2026 annual dependent-income SMI benchmark afterJulychange"
   },
@@ -72,5 +73,7 @@
     "inherited_warning_groups": 3,
     "changed_guides": 7,
     "changed_warning_groups": 0
-  }
+  },
+  "publication_main": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "publication_checks": "publication-checks.json; all checks pass"
 }
