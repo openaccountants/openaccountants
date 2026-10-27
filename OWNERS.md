@@ -2,6 +2,8 @@
 
 Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
 
+**Every owner and every writer, human or AI, builds skills to one standard: [docs/skill-template.md](docs/skill-template.md) ("How to write a skill: the standard").** Primary sources only, one independent review before merge, nothing unconfirmed in the skill.
+
 | Owner | Regions | Jurisdictions | Thin (7 or fewer skills) |
 |---|---|---|---|
 | Jeff Watts | Americas: US federal and states, Canada and provinces, Latin America, Caribbean | 105 | 91 |

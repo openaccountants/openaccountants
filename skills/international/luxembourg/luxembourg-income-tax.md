@@ -1,10 +1,10 @@
 ---
 name: luxembourg-income-tax
 description: "Luxembourg personal income tax for resident individuals and self-employed people (indépendants) for tax year 2026: the 23-band scale (0% to 42%), tax classes 1, 1a and 2, the employment fund surcharge (7%, or 9% above EUR 150,000 / 300,000), the CIS, CII, CI-CO2, CISSM and single-parent credits, expenses, depreciation (arts. 32 and 34), special expenses and CCSS contributions, Form 100 and Form 163 annual adjustment, quarterly advances, penalties and interest. Trigger on: impôt sur le revenu Luxembourg, modèle 100, décompte annuel 163, classe d'impôt, barème 2026, indépendant Luxembourg, avances trimestrielles. Out of scope: lu-cross-border, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax."
-version: 0.3
+version: 0.4
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Luxembourg personal income tax: residents and the self-employed (2026) v0.3
+# Luxembourg personal income tax: residents and the self-employed (2026) v0.4
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Luxembourg.
 
@@ -83,7 +83,7 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 | Employment fund surcharge | 7% of the income tax; 9% where adjusted taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2) | [ACD, fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html) |
 | Employee credit (CIS) | EUR 300 + (gross - 936) x 0.029 for gross EUR 936 to 11,265; EUR 600 for 11,266 to 40,000; 600 - (gross - 40,000) x 0.015 for 40,001 to 79,999; nil from 80,000 | [LIR art. 154quater](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | CO2 credit (CI-CO2), employees and self-employed | EUR 216 for income EUR 936 to 40,000; 216 - (income - 40,000) x 0.0054 for 40,001 to 79,999; nil from 80,000 | LIR arts. 152ter and 154quater (same URL) |
-| Self-employed credit (CII) | Same bands as the CIS, on net profit; EUR 300 where net profit is under EUR 936; needs compulsory social-security affiliation for that profit; not combined with the CIS or the pensioner credit | LIR art. 152ter (same URL) |
+| Self-employed credit (CII) | Same bands as the CIS, on net profit; EUR 300 where net profit is under EUR 936; needs compulsory social-security affiliation for that profit; not combined with the CIS or the pensioner credit; granted once a year for all self-employed profit; CII and CI-CO2 are deducted from the tax on assessment, and the ACD pays out any part the tax does not absorb | LIR art. 152ter(1), (3) and (4) (same URL) |
 | Minimum-wage credit (CISSM), employees | EUR 81 a month for monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | LIR art. 139quater (same URL) |
 | Single-parent credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 from 60,000 to 105,000; EUR 750 above 105,000; reduced by 50% of child maintenance above EUR 2,712 a year | LIR art. 154ter (same URL) |
 | Child tax reduction as a rebate (no family allowance paid) | EUR 922.50 per child | LIR art. 122(3) (same URL) |

@@ -1,25 +1,15 @@
 # OpenAccountants
 
-**Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
-
-This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
-
-## Need someone to do the accounting?
-
-OpenAccountants also helps business owners get bookkeeping and tax work done through accountants in our network. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
-
-**[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
-
-The skills and AI connection remain free.
+**Open tax skills for AI.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline cited to its official source, for 266 jurisdictions.
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**2,091 AI skills** across **247 jurisdictions** · **33 accountant-reviewed** · **38 named accountants** · **21,502 questions answered** through connected AIs
+**2,105 AI skills** across **253 jurisdictions** · **33 accountant-reviewed** · **39 named accountants** · **22,112 questions answered** through connected AIs
 
-<sub>Live from openaccountants.com — updated 2026-10-24 by the nightly sync.</sub>
+<sub>Live from openaccountants.com — updated 2026-10-27 by the nightly sync.</sub>
 <!-- oa-stats:end -->
 
 ---
@@ -61,14 +51,17 @@ AI:     Residence and domicile · Remittance basis on foreign income
 
 ---
 
-## Two states, greppable honesty
+## Three states, greppable honesty
+
+This library holds accountant-reviewed skills and skills no accountant has signed off yet. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 Every skill is in exactly one state — and the repo greps honestly:
 
 | State | Meaning |
 |---|---|
 | **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from official sources, every figure cited to its source; not yet professionally reviewed |
+| **Checked against the law** | Built to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet |
+| **Sourced from the law** | Older skill not yet rebuilt to the standard: every figure cited to an official source; no accountant has signed it off yet |
 
 The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
 
@@ -85,6 +78,12 @@ Your name on the tax knowledge AI actually uses — with attribution built in:
 3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile) and your platform edits are committed to this repo as *you* — your contribution graph reflects your work.
 
 The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
+
+---
+
+## Need the work done?
+
+OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in the countries they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
 
 ---
 

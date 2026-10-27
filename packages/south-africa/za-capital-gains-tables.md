@@ -66,7 +66,12 @@ Not covered here: inclusion rates for companies and trusts; base cost rules;
 the small business asset exclusion under s 10(1)(zJ); roll-overs; or any
 computation rule.
 
- | --- | --- | --- | --- |
+---
+
+## Section 2 — CGT exclusions and inclusion rate (natural persons)
+
+| YoA | Annual exclusion | Annual exclusion (year of death) | Primary residence exclusion | Inclusion rate |
+| --- | --- | --- | --- | --- |
 | 2023 (2022/23) | R40,000 | R300,000 | R2,000,000 | 40% |
 | 2024 (2023/24) | R40,000 | R300,000 | R2,000,000 | 40% |
 | 2025 (2024/25) | R40,000 | R300,000 | R2,000,000 | 40% |

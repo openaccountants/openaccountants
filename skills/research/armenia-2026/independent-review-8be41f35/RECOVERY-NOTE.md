@@ -1,0 +1,3 @@
+# Historical independent review recovery
+
+The report is the independent reviewer’s recorded report at commit 8be41f35008a35214c20e9bcd5463e46b574a228. Its disposition is INCOMPLETE. The temporary snapshot, source cache, receipt JSON and original Git commit object were lost after restart. This copy is recovered from the saved reviewer tool call; it does not certify the recovered candidate or represent the source cache as restored. The original reviewer’s later formatting/clarification edits are recorded in the session history. New source retrieval, validation and a fresh review are required for the recovered branch.

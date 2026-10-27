@@ -3,15 +3,14 @@ name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
 version: 1.1
 jurisdiction: SK
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-24
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - foundation
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -221,3 +220,23 @@ expected:
 | Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |
 
 Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

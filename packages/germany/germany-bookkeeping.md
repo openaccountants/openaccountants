@@ -4,11 +4,9 @@ description: Use this skill whenever asked about bookkeeping, chart of accounts,
 version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
@@ -559,7 +557,7 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 | Tax Guide | How Bookkeeping Connects |
 | --- | --- |
-| **de-income-tax** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
+| **de-self-employed-income-tax** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
 | **de-vat-return** | VAT accounts (1400 and 1406 for input VAT, 3800 and 3806 for output VAT, in SKR04) feed the Umsatzsteuer-Voranmeldung, sent electronically. Monthly or quarterly: see the VAT return table below. Input VAT (Vorsteuer) is netted against output VAT (Umsatzsteuer). |
 | **de-trade-tax** | Gewerbesteuer is worked out from the adjusted trade profit. Financing costs are partly added back (Hinzurechnungen): see the trade tax table below. |
 | **de-crypto-tax** | Gains on crypto held privately are private sales when sold within one year of purchase. Bookkeeping must track acquisition cost per wallet and exchange. See that Guide for the method. |
@@ -678,6 +676,8 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
