@@ -9,7 +9,7 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.3
+version: 1.4
 ---
 
 # Monaco payroll and social contributions
@@ -28,23 +28,23 @@ Use the **pay-acquisition period**, not the payment date. The social year change
 
 | Component | 1 January–30 September 2026 | 1 October–31 December 2026 | Employer / employee rate |
 |---|---|---|---|
-| CCSS monthly cap | Not yet confirmed | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction |
-| CAR monthly cap | Not yet confirmed | EUR 6,276; full social-year cap EUR 75,312 | 8.39% from October (earlier employer rate not yet confirmed) / 6.85% |
+| CCSS monthly cap | EUR 9,800; full social-year cap EUR 117,600 | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction |
+| CAR monthly cap | EUR 6,112; full social-year cap EUR 73,344 (base salary EUR 1,528) | EUR 6,276; full social-year cap EUR 75,312 | 8.33% to September (7.45% base + 0.88% variable), 8.39% from October / 6.85% |
 | Unemployment monthly cap | EUR 16,020 | EUR 16,020 | 4.00% / 2.40% throughout |
-| CMRC A cap | Not yet confirmed | EUR 4,067 | 10.02% total, 60% employer / 40% employee |
-| CMRC B | Not yet confirmed | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee |
+| CMRC A cap | EUR 3,971 | EUR 4,067 | 10.02% total, 60% employer / 40% employee |
+| CMRC B | Above A to EUR 31,768 (8 × A) | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee |
 
 Sources: [official October 2025 circular, p. 1, preserved capture 15 December 2025](https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [dated current CSM schedule](https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations); [2025–26 CAR base](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/), [variable rate](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/), [adjustment](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/), [CMRC cap](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/). CAR base is four times the statutory salary base under [Law 455, arts. 8 ter–9](https://legimonaco.mc/tnc/loi/1947/06-27-455/).
 
-CCSS totals include CCSS 13.15%, OMT 0.25% and CGCS 0.05% where affiliated. Do not add these again. CAR employer is 6.15% fixed + 1.30% adjustment + 0.94% variable (from October); employee is 6.15% + 0.70%. CMRC A combines 7.87% rights-generating and 2.15% non-rights; B combines 21.59% and 2.70%. The upper B limit is eight times A, not eight extra bands. [CSM schedule](https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations).
+CCSS totals include CCSS 13.15%, OMT 0.25% and CGCS 0.05% where affiliated. Do not add these again. CAR employer is 6.15% fixed + 1.30% adjustment + 0.94% variable (from October; 0.88% from 1 October 2025 to 30 September 2026); employee is 6.15% + 0.70%. CMRC A combines 7.87% rights-generating and 2.15% non-rights; B combines 21.59% and 2.70%. The upper B limit is eight times A, not eight extra bands. [CSM schedule](https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations).
 
 | Independent contribution per full quarter | January–September 2026, social year 2025–26 | From October 2026, social year 2026–27 |
 |---|---|---|
-| CAMTI | Not yet confirmed | EUR 1,128 |
-| CARTI class 1 | Not yet confirmed | EUR 564.84 |
-| CARTI class 2 | Not yet confirmed | EUR 1,129.68 |
-| CARTI class 3 | Not yet confirmed | EUR 1,694.52 |
-| CARTI class 4 | Not yet confirmed | EUR 2,259.36 |
+| CAMTI | EUR 1,101 | EUR 1,128 |
+| CARTI class 1 | EUR 550.08 | EUR 564.84 |
+| CARTI class 2 | EUR 1,100.16 | EUR 1,129.68 |
+| CARTI class 3 | EUR 1,650.24 | EUR 1,694.52 |
+| CARTI class 4 | EUR 2,200.32 | EUR 2,259.36 |
 
 Sources: [official October 2025 independent circular, p. 2, preserved capture 16 October 2025](https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf); [October 2026 independent circular, p. 2](https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf). CARTI's 2025–26 additional rate is **0%**, confirmed by [Ordinance 11.574, art. 1](https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/); the current circular also states 0% for 2026–27.
 
@@ -124,7 +124,7 @@ expected:
 
 ### October 2026 ceiling and CMRC B case
 
-Use the same ordinary assumptions for EUR 12,000 cash gross in **October 2026**: CCSS EUR 1,345.00 on the EUR 10,000 cap; CAR EUR 526.56 / EUR 429.91 on the EUR 6,276 cap; unemployment EUR 480 / EUR 288. CMRC A is EUR 4,067, B EUR 7,933, total EUR 2,334.4391 before split, or EUR 1,400.66 employer and EUR 933.78 employee at the illustrated cent rounding. Employer contributions total EUR 3,752.22; employee deductions EUR 1,651.69; cash net EUR 10,348.31. For January to September 2026 pay periods use the earlier caps and rates, which are not yet confirmed against a live official page. Both examples separate individual cent calculations from CSM's aggregate return rounding.
+Use the same ordinary assumptions for EUR 12,000 cash gross in **October 2026**: CCSS EUR 1,345.00 on the EUR 10,000 cap; CAR EUR 526.56 / EUR 429.91 on the EUR 6,276 cap; unemployment EUR 480 / EUR 288. CMRC A is EUR 4,067, B EUR 7,933, total EUR 2,334.4391 before split, or EUR 1,400.66 employer and EUR 933.78 employee at the illustrated cent rounding. Employer contributions total EUR 3,752.22; employee deductions EUR 1,651.69; cash net EUR 10,348.31. For January to September 2026 pay periods use the earlier caps and rates in the table (CCSS EUR 9,800, CAR EUR 6,112 at 8.33% employer, CMRC A EUR 3,971 and B to EUR 31,768), from the [CSM employer circular, October 2025](https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf), which states them as applying from 1 October 2025 for the 2025-26 social year. Both examples separate individual cent calculations from CSM's aggregate return rounding.
 
 ```oa-check
 name: October 2026 ordinary payroll above the CCSS and CAR caps
@@ -168,6 +168,8 @@ expected:
 | CSM independent affiliation, populations, dates and forms/evidence | https://www.caisses-sociales.mc/accueil/travailleur-independant/travailleur-independant/adhesion | 2026-10-25 |
 | CSM current professional schedule and components | https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations | 2026-10-25 |
 | CSM October 2025 employer letter p. 1; archived because live file now serves October 2026 | https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf | 2026-10-25 |
+| CSM "Lettre d'information aux Employeurs" CCSS-CAR-CMRC, October 2025, p. 1, "Plafonds et taux de cotisations au 1er octobre 2025": CCSS 9,800/117,600; CAR 6,112/73,344, base 1,528, 7.45% + 0.88%; CMRC A 3,971 | https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf | 2026-10-27 |
+| CSM "Lettre d'information" CAMTI-CARTI, October 2025, p. 2, "Cotisations au 1er octobre 2025": CAMTI 1,101; CARTI classes 550.08-2,200.32, surcharge 0% | https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf | 2026-10-27 |
 | Law 455, arts. 8 ter–9; CAR ceiling/rate framework | https://legimonaco.mc/tnc/loi/1947/06-27-455/ | 2026-10-25 |
 | Orders 2025-584, 585, 586 and 589, arts. 1–3; linked individually above | https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/ | 2026-10-25 |
 | CCSS rules, arts. 15–36, 45–56; current and 14 June 2025 versions | https://legimonaco.mc/tnc/arrete-ministeriel/1991/12-20-91-688/ | 2026-10-25 |
@@ -195,7 +197,7 @@ expected:
 | BOI-IR-PAS-10-10-20, I-F §§94–98, II §100 | https://bofip.impots.gouv.fr/bofip/11242-PGP.html/identifiant=BOI-IR-PAS-10-10-20-20230706 | 2026-10-25 |
 | Ministerial response 9837, Monaco salary collection | https://questions.assemblee-nationale.fr/q15/15-9837QE.htm | 2026-10-25 |
 
-The earlier official PDFs were read and visually checked from dated archive captures because their live download IDs now return 2026 documents. They are not claimed as fresh live 2025 downloads. Original source URLs, capture dates, hashes, corroborating instruments and exceptions are recorded in the country research receipts. **Not yet confirmed:** the January to September 2026 (social year 2025-26) CCSS, CAR and CMRC caps, the earlier CAR variable employer rate, and the 2025-26 CAMTI and CARTI quarterly amounts; the only official copies found are archived October 2025 circulars and no live official page states them; special occupational flat bases, derogatory CMRC contracts and sector-specific employment costs. These require their own schedule; do not apply the ordinary examples to those cases without classification.
+The earlier official PDFs were read and visually checked from dated archive captures because their live download IDs now return 2026 documents. They are not claimed as fresh live 2025 downloads. Original source URLs, capture dates, hashes, corroborating instruments and exceptions are recorded in the country research receipts. The January to September 2026 (social year 2025-26) CCSS, CAR and CMRC caps, the 0.88% CAR variable employer rate and the 2025-26 CAMTI and CARTI quarterly amounts are confirmed from the official October 2025 CSM circulars themselves (headed "au 1er octobre 2025"; the social year runs to 30 September), re-read 27 October 2026 from the dated archive captures; no live official page now states them. **Not yet confirmed:** special occupational flat bases, derogatory CMRC contracts and sector-specific employment costs. These require their own schedule; do not apply the ordinary examples to those cases without classification.
 
 <!-- openaccountants-cta-block -->
 
