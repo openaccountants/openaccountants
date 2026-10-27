@@ -1,7 +1,7 @@
 ---
 name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
-version: 1.4
+version: 1.6
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.4
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.6
 
 Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
@@ -57,7 +57,7 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Personal allowance, base above EUR 26,083.13 | EUR 14,661.11 (51.6 x) minus one third of the base; zero from a base of EUR 43,983.32 | 2026 | same, §11(2)(b) |
 | Spouse allowance (19.2 x), taxpayer base up to EUR 43,983.32 | up to EUR 5,455.30, less the spouse's own income | 2026 | same, §11(3)(a) |
 | Spouse allowance, taxpayer base above EUR 43,983.32 | EUR 20,116.40 (70.8 x) minus one third of the base, less the spouse's own income | 2026 | same, §11(3)(b) |
-| Supplementary pension (DDS) and PEPP contributions | up to EUR 180 a year | 2026 | same, §11(9) |
+| Supplementary pension (DDS) and PEPP contributions | Own contributions actually paid, up to EUR 180 combined a year, subject to the contract and withdrawal conditions below | 2026 | same, §11(8)–(11) |
 | Flat-rate expenses for a non-VAT payer (paušálne výdavky) | 60% of business revenue, cap EUR 20,000, plus compulsory contributions paid | 2026 | same, §6(10) |
 | Child tax bonus, through the month of the 15th birthday | EUR 100 a month | 2026 | same, §33(1)(b) |
 | Child tax bonus, after the 15th-birthday month through the 18th-birthday month | EUR 50 a month | 2026 | same, §33(1)(a) |
@@ -90,6 +90,7 @@ The result is the business partial base. A tax loss can be carried forward for t
 **Allowances (nezdaniteľné časti, §11).** They reduce only the employment and business bases, never rental, capital or other income (§11(1)).
 - The personal allowance and the spouse allowance are tested on the tax base from §5 and §6(1),(2) income. A taxpayer who at the start of 2026 receives an old-age, early, service or similar foreign pension gets no personal allowance if the pension for the year, including the 13th pension, exceeds the allowance; otherwise the allowance is cut to the difference (§11(6)).
 - The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).
+- **DDS/PEPP pension contributions:** deduct the taxpayer's own contributions demonstrably paid in the year, with one EUR 180 annual cap across the qualifying products, including qualifying equivalent foreign products (§11(8)/(9)). For DDS, the participant contract must have been concluded after 31 December 2013, or amended to cancel its benefit plan; a qualifying PEPP contract is the alternative. The taxpayer must also have no other DDS participant contract that fails that condition (§11(10)). Thus EUR 240 eligible DDS payments plus EUR 60 eligible PEPP payments give a combined EUR 180 deduction, rather than EUR 180 for each product; retaining another non-qualifying DDS contract prevents the claim. If a statutory early withdrawal is paid after earlier DDS deductions, add back the previously deducted DDS contributions to the tax base within the three tax periods after the withdrawal year (§11(11)). A 2026 early withdrawal with EUR 360 previously deducted therefore requires EUR 360 added back by the end of tax year 2029. Keep the payment records, every DDS contract/amendment, PEPP contract and past deduction/withdrawal history ([ITA §11(8)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-11)).
 - Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).
 
 **Rental (§6(3)) and other income (§8).** Start with the actual income and supported category-specific expenses. Under §9(1)(g), rental and §8(1)(a) occasional income share EUR 500 of annual income exemption. If they exceed that amount, include only the excess and reduce related expenses in the same taxable-income/total-income proportion. For a rental-only case with EUR 6,000 receipts, EUR 2,000 expenses and the whole EUR 500 available, taxable receipts are EUR 5,500; allowable expenses are `2,000 × 5,500 / 6,000`, approximately EUR 1,833.33, leaving approximately EUR 3,666.67 before the applicable filing-rounding steps. Full EUR 2,000 expenses cannot be deducted against the reduced receipts, and rental expenses cannot create a rental loss (§6(6)). Where qualifying §8(1)(d)–(f) option/security/share disposals also occur, §9(1)(i) applies to their proceeds less statutory disposal costs, with its business-asset and specified noncash-share exclusions; the exemptions under (g) and (i) together cannot exceed EUR 500. Do not give each category another EUR 500. Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)–(f),(t)) retain their actual gain/exemption rules; a loss on one type is ignored (§8(2)). The §9(1)(k) securities exemption requires more than one year since acquisition **and** more than one year between regulated-market admission and sale, excluding business assets and the specified §9(1)(p)/§5(7)(q) noncash-share cases, subject to §52zzz(3)'s acquisition-after-2023 transition. These taxable gains enter base (a) on the bands ([ITA §§6, 8, 9 and 52zzz](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
@@ -298,7 +299,7 @@ expected:
 3. If self-employed: what was the business revenue (EUR 100,000 test, EUR 60,000 micro-taxpayer test), were they a VAT payer at any time in 2026, and do they want actual or flat-rate expenses? What contributions did they actually pay?
 4. Children: dates of birth/adoption and dependent status, months in the household, which parent claims, and both parents' eligible bases and Slovak/total income if aggregation is needed.
 5. Spouse: did they live together, which condition in §11(4) applies, and what was the spouse's own income?
-6. Did they receive a pension at the start of 2026, pay into supplementary pension (DDS) or PEPP, or have a housing loan? Obtain the contract/application and first-interest dates, co-borrowers, lender interest certificate, property use and prior-year income/reference wage.
+6. Did they receive a pension at the start of 2026, pay into supplementary pension (DDS) or PEPP, or have a housing loan? For DDS/PEPP obtain all contracts, the post-2013 date or benefit-plan cancellation amendment, proof of own payments, and any early withdrawal and past deductions. For the housing loan obtain the contract/application and first-interest dates, co-borrowers, lender interest certificate, property use and prior-year income/reference wage.
 
 ## Sources
 
@@ -321,7 +322,7 @@ expected:
 
 **Rate reference dates.** The [ECB history](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html), also published by [NBS](https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/), records main-refinancing rates of 2.15% from 11 June 2025, 2.40% from 17 June 2026 and 2.65% from 16 September 2026, observed through this 27 October read. At 2.65% the 10%/7%/3% penalty floors and 15% interest floor apply. Select the actual rate on delivery of the assessment or supplementary filing for §155 (§155(7)), and when arrears arise for §156(2). A future reference date needs the rate in force then; no future ECB rate is asserted. The form versions are verified by the actual Ministry packages above; the 31 December law transition remains governed by §52zzzm as explained at the start.
 
-Historical source credit from the original Guide: `priznanie-digital/priznanie-digital` (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
+Historical source credit from the original Guide: [priznanie-digital/priznanie-digital](https://github.com/priznanie-digital/priznanie-digital) (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
 > Contributed by Michael Cutajar.
 

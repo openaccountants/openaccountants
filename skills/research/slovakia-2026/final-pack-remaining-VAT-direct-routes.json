@@ -1,0 +1,25 @@
+{
+  "C265_18": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62018CJ0265",
+    "actual_full_8page_body_read_via_web": true,
+    "curl_download": "HTTP202zero-byte, not success",
+    "result": "Thresholdexcessassumedundisputedparas28–29;fullcompositesupplyholdingnotexactcircularity"
+  },
+  "KV2023": {
+    "actual_pdf_read": true,
+    "scope": "fineparagraphp35;predates2024firstchanceandrenumbering",
+    "result": "doesnotresolve2026interaction"
+  },
+  "NRSR538460": {
+    "status": "403 body unavailable;searchsnippetlead only",
+    "actual_document_read": false
+  },
+  "C249_12": {
+    "status": "challenge/202zero;notread",
+    "actual_document_read": false
+  },
+  "C110_94": {
+    "status": "challenge/202zero;notread",
+    "actual_document_read": false
+  }
+}

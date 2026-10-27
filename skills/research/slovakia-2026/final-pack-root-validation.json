@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/international/slovakia/README.md",
+        "skills/international/slovakia/references.md",
+        "skills/international/slovakia/sk-company-formation.md",
+        "skills/international/slovakia/sk-corporate-income-tax.md",
+        "skills/international/slovakia/sk-cross-border.md",
+        "skills/international/slovakia/sk-payroll-social.md",
+        "skills/international/slovakia/sk-tax-overview.md",
+        "skills/international/slovakia/sk-transfer-pricing.md",
+        "skills/international/slovakia/slovakia-pit.md",
+        "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+        "skills/international/slovakia/slovakia-vat-return.md"
+      ],
+      "exit_code": 0,
+      "log": "root-country-examples.txt"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "HEAD",
+        "--worktree",
+        "--mode",
+        "sync",
+        "--strict-metadata",
+        "--provenance",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-local-validation-provenance.json"
+      ],
+      "exit_code": 0,
+      "log": "root-strict-metadata.txt"
+    },
+    {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "log": "root-schema-no-index.txt"
+    }
+  ],
+  "Guide_hashes": {
+    "skills/international/slovakia/sk-payroll-social.md": "4879e2ac41b77ef4def3a4a0a0574dad31e3c270a9823f6821b5b524fb3232b1",
+    "skills/international/slovakia/slovakia-pit.md": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+    "skills/international/slovakia/slovakia-vat-return.md": "09a343035c30983ce93e776f81bbe1469021b3525aaf26e0a907867536f52886"
+  },
+  "provenance_note": "content_revision0 is a local validation marker, not platform revision",
+  "index_check": "not run; generated inventory unchanged, inherited mismatch",
+  "MCP_tests": "not rerun; dependency absent and no MCP code changed",
+  "unit_tests": "129 passed preceding checkpoint with unchanged repository code; no unnecessary rerun for Markdown-only delta"
+}
