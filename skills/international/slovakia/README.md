@@ -6,7 +6,7 @@ covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
 partial:
-  VAT: "The annual §50 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide needs executable examples; period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
+  VAT: "The annual §50 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide now has two recomputing examples and a passing independent review; its current form identifiers and the exact fixed-gross crossing-supply circularity remain unconfirmed. Period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
 ---
 
 # Slovakia: tax pack
