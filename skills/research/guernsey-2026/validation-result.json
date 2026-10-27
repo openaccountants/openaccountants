@@ -30,5 +30,10 @@
   },
   "review": "PASS: accurate partial at e98e9529; bounded contribution workflow closure4f2539df; Lost content restored2",
   "publication": "none",
-  "final_administrative_only_confirmation": "pending"
+  "final_administrative_only_confirmation": "ACCEPT at0952cd3b, source blobs fixed to23fa6a44",
+  "accepted_publication_guide_manifest": "review/final-administrative-confirmation.json",
+  "final_changed_only_control_count_including_duplicate_review_working_paper": 77,
+  "final_control_failures": 0,
+  "final_whole_branch_whitespace": "PASS after removing one extra EOF separator in writer-created corporate archive; both original blocks unchanged",
+  "github_final_head_ci": "Pending publication; final evidence will be recorded separately, not claimed before the run"
 }

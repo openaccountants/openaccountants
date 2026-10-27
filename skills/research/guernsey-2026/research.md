@@ -44,3 +44,6 @@ Fresh-review pinpoint correction: shareholder-advance repayment is s62AA(1)(b), 
 
 
 Targeted SC operational addition for review: Form366/CF30(2020) and current01/26CF130a/b, all8pages read, confirm estimate-to-final Income Tax assessment workflow, source/equity-rental information requested and contribution assessment payment notices. Old Form366June/December tax dates explicitly rejected under current s81. No unsupported complete Class2/3 inclusion/exclusion or mixed-period formula is asserted; exact SCpartial remains.
+
+
+Final review closure accepted23fa6a44 Guide/README manifest, extended research-only to0952cd3b. Whole-pack2P2findings and final administrativeP3statusfinding allclosed. Lostcontentrestored2. AlltenfinalGuideblobs heldunchanged;77changed-onlycalculationspass, strict9Guidemetadata0errors,129unitstestspass, fullschema2267Guides/6122generatedfrontmatterpasses withthreelegacywarninggroups. Public coverage remains explicitlypartial and397open. No newCLAconsent, merge orattestation. Final countrypush/CI notyetperformed atrecordcreation.

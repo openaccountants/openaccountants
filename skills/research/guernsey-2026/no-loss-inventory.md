@@ -10,7 +10,7 @@ No original substantive topic is intentionally deleted. Extra executable blocks 
 |---|---:|---:|---:|---|
 | README.md | 5729 | 8069 | 40.84% | 40 / 52 |
 | gg-company-accounts-and-reporting.md | 19304 | 25430 | 31.73% | 163 / 199 |
-| gg-company-formation.md | 8792 | 12178 | 38.51% | 79 / 125 |
+| gg-company-formation.md | 8792 | 12375 | 40.75% | 79 / 125 |
 | gg-corporate-tax-substance.md | 43283 | 67245 | 55.36% | 320 / 418 |
 | gg-gst-transition.md | 8447 | 9223 | 9.19% | 110 / 110 |
 | gg-individual-income-tax.md | 29733 | 43597 | 46.63% | 330 / 339 |
@@ -60,3 +60,6 @@ Reviewer preservation correction: both original corporate explanatory paragraphs
 
 
 Final fresh review at e98e9529 and bounded operational closure at4f2539df accepted the explicit partial methods, with no open material findings. **Lost content restored: 2.** Current size table includes restored prose, corrected pinpoint, the reviewed contribution workflow and administrative review-status references; no file is >25% shorter by bytes or lines. Original published source bodies and all32controls remain byte-exact.
+
+
+Final administrative-only confirmation accepted at0952cd3b, with all ten Guide/README blobs pinned to23fa6a44 and both source-review corrections plus the formation stale-status correction closed. The writer-created corporate-control archive lost only an extra EOF separator blank; original executable blocks remain byte-exact. Final reviewer artifacts are archived unchanged. Publication-record updates do not change any Guide blob.

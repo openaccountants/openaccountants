@@ -49,6 +49,20 @@
       "archived_path": "skills/research/guernsey-2026/review/result.json",
       "sha256": "c02c1a6d11f789a208362c7c2f4446aa52965c3ce6f9b014cd0a62e4d66c94c0",
       "bytes": 4724
+    },
+    {
+      "original_name": "final-administrative-confirmation.md",
+      "archived_path": "skills/research/guernsey-2026/review/final-administrative-confirmation.md",
+      "sha256": "8a0fc263265132e7232c38f6c90f70c810ea28d7504e506d5d7896e6e9856ed5",
+      "bytes": 4205
+    },
+    {
+      "original_name": "final-administrative-confirmation.json",
+      "archived_path": "skills/research/guernsey-2026/review/final-administrative-confirmation.json",
+      "sha256": "5626fe9bbde217ce9f65095d46410d1f84b6946de139ab7abef9507a47fcfd98",
+      "bytes": 9332
     }
-  ]
+  ],
+  "final_admin_accepted_head": "0952cd3bbc3aca46680b7f11d61437b47bec86ce",
+  "final_guide_manifest_head": "23fa6a44e6bbc80d008bd5613ae67587beb35282"
 }

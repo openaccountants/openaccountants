@@ -26,11 +26,11 @@
     {
       "path": "skills/international/guernsey/gg-company-formation.md",
       "old_bytes": 8792,
-      "new_bytes": 12178,
-      "byte_change_percent": 38.51,
+      "new_bytes": 12375,
+      "byte_change_percent": 40.75,
       "old_lines": 79,
       "new_lines": 125,
-      "new_sha256": "338a595ff2bea11438b92923e98d6b285a245f5b0d89ffd7fbcd753b463bba5c"
+      "new_sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007"
     },
     {
       "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
@@ -101,5 +101,6 @@
   "accepted_legal_body_head": "4f2539df8ac40f8496c1de98488284630c014d11",
   "review_original_head": "e98e95296a5f61fa4e30745a47a1eee3bdc7997d",
   "lost_content_restored": 2,
-  "final_admin_confirmation": "pending"
+  "final_admin_confirmation": "ACCEPT at0952cd3b; all ten Guide/README blobs fixed to23fa6a44 final independent manifest",
+  "final_admin_manifest": "review/final-administrative-confirmation.json"
 }
