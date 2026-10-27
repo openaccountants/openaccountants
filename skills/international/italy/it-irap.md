@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Italian regional tax on productive activities (IRAP)
 
-IRAP is a regional tax on the net value of production of an organised activity carried on in Italy. Italy's tax year is the calendar year; a company with another financial year uses that year. Rates, deductions and payment rules below come from the Agenzia delle Entrate instructions to the IRAP return filed in 2026 (tax year 2025), read with D.Lgs. 446/1997 as in force on 27 October 2026. The instructions for tax year 2026 are not yet published, so the same rules are used for 2026, plus the 2026 surcharges set by law.
+IRAP is a regional tax on the net value of production of an organised activity carried on in Italy. Italy's tax year is the calendar year; a company with another financial year uses that year. Rates, deductions and payment rules below come from the Agenzia delle Entrate instructions to the IRAP return filed in 2026 (tax year 2025), read with D.Lgs. 446/1997 as in force on 27 October 2026. The instructions for tax year 2026 are not yet published; the 2026 surcharges below come from the law itself. Whether the 2025 instruction figures hold for 2026 is on the Not yet confirmed line.
 
 ## Who this applies to
 
@@ -34,7 +34,7 @@ IRAP is a regional tax on the net value of production of an organised activity c
 | Insurers (art. 7) | 5.9% | 2025, used for 2026 | same instructions |
 | Public bodies, salary-based base (art. 10-bis) | 8.5% | 2025, used for 2026 | same instructions |
 | Regional variation of the art. 16(1) and (1-bis) rates | up to 0.92 points up or down | 2025, used for 2026 | same instructions |
-| Sector surcharge, main activity in an ATECO code of Table 1 to D.L. 21/2026 (energy sector) | +2 points | 2026 and 2027 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-20;21~art3 |
+| Energy-sector surcharge on the art. 16(1) and (1-bis) rates, main activity in an ATECO code of Table 1 to D.L. 21/2026 | +2 points | 2026 and 2027 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-20;21~art3 |
 | Bank and insurer surcharge (art. 16(1-bis)(b) and (c)), except art. 6(2), (3), (4) and (9) entities | +2 points | 2026, 2027, 2028 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 (art. 1(74)) |
 | Detrazione for banks and insurers, only up to the extra tax the surcharge causes | EUR 90,000 | 2027 and 2028 | same law, art. 1(74) |
 | Fixed-term staff deduction, per worker, up to 5 workers, if positive components do not exceed EUR 400,000 (art. 11(4-bis.1)) | EUR 1,850 | 2025, used for 2026 | IRAP instructions above |
