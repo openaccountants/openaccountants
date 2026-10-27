@@ -4,7 +4,7 @@
 
 The repository is treated as tax law. Every figure must be traceable to the law that sets it.
 
-## The ten rules
+## The eleven rules
 
 1. **Primary sources only.** Every rate, threshold, deadline and penalty comes from the law itself (the official gazette or law register) or the tax authority's own pages, fetched by you, for the tax year the skill covers. Never cite PwC, KPMG, Deloitte, EY, taxsummaries, blogs, law-firm notes or another AI. A secondary source may help you find the law; it is never the citation.
 2. **The statute wins.** If a tax authority page disagrees with the current law text, follow the law, cite it, and note the outdated page.
@@ -16,6 +16,7 @@ The repository is treated as tax law. Every figure must be traceable to the law 
 8. **Current tax year.** `tax_year` is the year the figures apply to. A skill with an old `tax_year` makes its pack partial. When a law changes mid-year, give both periods with their dates.
 9. **Independent review before merge.** Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment: figures checked, fixes made with sources, items still not confirmed. Only then does the PR merge, as **Checked against the law** (`tier: 2`).
 10. **Accountant sign-off is the only route to tier 1.** A licensed accountant reviews the whole skill and sets `tier: 1`, `reviewed_by` and `reviewed_on`. No one else sets these keys.
+11. **A rewrite never loses content.** Every rule, rate, threshold, deadline, exemption, taxpayer group and edge case the old version covered is carried into the new one (checked against the law) or listed on the "Not yet confirmed:" line. Only boilerplate, duplicates and content with no official source may go. If the new file is more than 25% shorter, the PR lists every cut under "Removed and why:", and the independent review compares old against new and records "Lost content restored: N". A rewrite that shrinks more than 25% without that review does not merge.
 
 ## Updating an existing skill
 
