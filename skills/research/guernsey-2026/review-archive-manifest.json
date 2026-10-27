@@ -1,0 +1,54 @@
+{
+  "archived_utc": "2026-10-27T23:20:09.737107+00:00",
+  "all_review_files_byte_exact": true,
+  "files": [
+    {
+      "original_name": "bounded-addition-closure.json",
+      "archived_path": "skills/research/guernsey-2026/review/bounded-addition-closure.json",
+      "sha256": "27ec4a4253b265d5f2f34ad4a77278d2698c49788e96cd72f53d8a9fa39832db",
+      "bytes": 1566
+    },
+    {
+      "original_name": "bounded-addition-closure.md",
+      "archived_path": "skills/research/guernsey-2026/review/bounded-addition-closure.md",
+      "sha256": "f87ff7f6247ee8fc467f4a18cfc64913e21e1688b175797cad92569f16673e20",
+      "bytes": 4268
+    },
+    {
+      "original_name": "checks.log",
+      "archived_path": "skills/research/guernsey-2026/review/checks.log",
+      "sha256": "95d8207b0dc4a64924adbb74131e85623ae4ba85a7302f2702b55273d6090ff2",
+      "bytes": 60
+    },
+    {
+      "original_name": "final-integrity.json",
+      "archived_path": "skills/research/guernsey-2026/review/final-integrity.json",
+      "sha256": "75e0c9a38ddf9b418b3632b4c2e428b26046762c0972be193b13b72a9d2b6ac1",
+      "bytes": 4889
+    },
+    {
+      "original_name": "integrity.json",
+      "archived_path": "skills/research/guernsey-2026/review/integrity.json",
+      "sha256": "f65fce38038a3570b5c905ef36c3fbac9e2c2e310c6cd98809d9c0b9b8d045f1",
+      "bytes": 48269
+    },
+    {
+      "original_name": "original-only-paragraphs.md",
+      "archived_path": "skills/research/guernsey-2026/review/original-only-paragraphs.md",
+      "sha256": "cc0d8a2190698034111d963be7a7b511ae9f1362771481c04a12016d5378e8f7",
+      "bytes": 48632
+    },
+    {
+      "original_name": "report.md",
+      "archived_path": "skills/research/guernsey-2026/review/report.md",
+      "sha256": "c429055273e7a9bab4e3595ced0f0fda746cc0b328f77b7c32d321a24af8ce64",
+      "bytes": 17512
+    },
+    {
+      "original_name": "result.json",
+      "archived_path": "skills/research/guernsey-2026/review/result.json",
+      "sha256": "c02c1a6d11f789a208362c7c2f4446aa52965c3ce6f9b014cd0a62e4d66c94c0",
+      "bytes": 4724
+    }
+  ]
+}

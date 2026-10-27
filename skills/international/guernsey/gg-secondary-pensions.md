@@ -150,7 +150,7 @@ All frontmatter sources were read on 22 October 2026. Exact page titles, URLs an
 |---|---|---|
 | [Secondary Pensions Penalties and Miscellaneous Provisions Regulations 2026](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327675) | Full rr1–8: scheme election, fixed/escalating penalty, review period, schedule amendments and 12 May commencement | 2026-10-27 |
 
-Not yet confirmed: full underlying-Law notice prerequisites, new-employer commencement, precise age boundaries and absence/status changes, specialist/foreign schemes, full enforcement/appeal/interest and commutation/transfer eligibility. Fresh whole-pack review remains pending. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
+Not yet confirmed: full underlying-Law notice prerequisites, new-employer commencement, precise age boundaries and absence/status changes, specialist/foreign schemes, full enforcement/appeal/interest and commutation/transfer eligibility. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. Neither this file's presence nor its arithmetic checks establish comprehensive pension or country coverage.
 
 ## Disclaimer
 

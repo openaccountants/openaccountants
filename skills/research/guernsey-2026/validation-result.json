@@ -1,0 +1,34 @@
+{
+  "candidate_review_head": "21fe2436e7ee3333a6347a8b50eed0881bece759",
+  "bounded_prose_repair_head": "71cc66b67b5daf78cc6c922a7dee2b6398556aae",
+  "checked_utc": "2026-10-27T23:12:52.942025+00:00",
+  "main_controls": 18,
+  "preserved_original_controls": 32,
+  "all_checks_including_duplicate_supplements": 57,
+  "examples_status": "PASS",
+  "strict_metadata": {
+    "guides": 9,
+    "errors": 0,
+    "warnings": 0,
+    "base": "4224c911c6c390e686f7fcf47bf5cbfc5cb6f0f3"
+  },
+  "full_schema": {
+    "guides": 2267,
+    "generated_frontmatter_blocks": 6122,
+    "status": "PASS",
+    "existing_warning_groups": [
+      "795 Guides missing Sources",
+      "5 Guides stale tax year/date",
+      "5 jurisdiction-agnostic exceptions"
+    ]
+  },
+  "unit_tests": {
+    "first_run": "FAIL: test_human_commit_without_file_attributes_reaches_platform, RUNNER_TEMP ingest-body.json directory absent",
+    "repair": "Created explicit RUNNER_TEMP directory; no code or test changes",
+    "retry": "PASS:129tests",
+    "duration_seconds": 6.411
+  },
+  "review": "PASS: accurate partial at e98e9529; bounded contribution workflow closure4f2539df; Lost content restored2",
+  "publication": "none",
+  "final_administrative_only_confirmation": "pending"
+}

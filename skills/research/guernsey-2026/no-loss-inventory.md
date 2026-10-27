@@ -8,16 +8,16 @@ No original substantive topic is intentionally deleted. Extra executable blocks 
 
 | Guide | Old bytes | Candidate bytes | Byte change | Old/new lines |
 |---|---:|---:|---:|---|
-| README.md | 5729 | 7556 | 31.89% | 40 / 52 |
-| gg-company-accounts-and-reporting.md | 19304 | 25191 | 30.5% | 163 / 199 |
-| gg-company-formation.md | 8792 | 11882 | 35.15% | 79 / 125 |
-| gg-corporate-tax-substance.md | 43283 | 65831 | 52.09% | 320 / 414 |
-| gg-gst-transition.md | 8447 | 8984 | 6.36% | 110 / 110 |
-| gg-individual-income-tax.md | 29733 | 43385 | 45.92% | 330 / 339 |
-| gg-payroll-social-insurance.md | 35420 | 35901 | 1.36% | 394 / 320 |
-| gg-property-document-duty.md | 15192 | 16537 | 8.85% | 184 / 183 |
-| gg-secondary-pensions.md | 13739 | 16122 | 17.34% | 147 / 157 |
-| gg-uk-treaty-employment-and-relief.md | 51467 | 52217 | 1.46% | 399 / 319 |
+| README.md | 5729 | 8069 | 40.84% | 40 / 52 |
+| gg-company-accounts-and-reporting.md | 19304 | 25430 | 31.73% | 163 / 199 |
+| gg-company-formation.md | 8792 | 12178 | 38.51% | 79 / 125 |
+| gg-corporate-tax-substance.md | 43283 | 67245 | 55.36% | 320 / 418 |
+| gg-gst-transition.md | 8447 | 9223 | 9.19% | 110 / 110 |
+| gg-individual-income-tax.md | 29733 | 43597 | 46.63% | 330 / 339 |
+| gg-payroll-social-insurance.md | 35420 | 38946 | 9.95% | 394 / 326 |
+| gg-property-document-duty.md | 15192 | 16781 | 10.46% | 184 / 183 |
+| gg-secondary-pensions.md | 13739 | 16361 | 19.08% | 147 / 157 |
+| gg-uk-treaty-employment-and-relief.md | 51467 | 52428 | 1.87% | 399 / 319 |
 
 ## Every moved executable block
 
@@ -57,3 +57,6 @@ No original substantive topic is intentionally deleted. Extra executable blocks 
 
 
 Reviewer preservation correction: both original corporate explanatory paragraphs (mixed-income £7,000 and daily-penalty catch-up £2,050 with all conditions) are now restored byte-exact in the main rate and penalty sections. Their archived blocks remain supplementary. Main two blocks remain unchanged.
+
+
+Final fresh review at e98e9529 and bounded operational closure at4f2539df accepted the explicit partial methods, with no open material findings. **Lost content restored: 2.** Current size table includes restored prose, corrected pinpoint, the reviewed contribution workflow and administrative review-status references; no file is >25% shorter by bytes or lines. Original published source bodies and all32controls remain byte-exact.

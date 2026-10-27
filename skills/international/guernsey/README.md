@@ -35,7 +35,7 @@ Each computational Guide has **exactly two main oa-check blocks**, 18 in total. 
 
 ## Fresh whole-pack review
 
-Candidate preparation complete; fresh independent whole-pack/no-loss review and final checks are pending. This status is not approval, professional attestation or authority to file/pay. Publication will be one country batch after findings are fixed; no per-Guide pushes, merge or new CLA consent.
+The [fresh whole-pack review](../../research/guernsey-2026/review/report.md) accepts the corrected country draft at `e98e9529` as accurate within its explicit partial scope, with no open material findings. The [bounded closure](../../research/guernsey-2026/review/bounded-addition-closure.md) also accepts the final Class 2/3 assessment-workflow addition at `4f2539df`. **Lost content restored: 2**: both original corporate explanatory paragraphs are back in the main Guide. The other correction fixes section 62AA(1)(b)(i)–(ii) pinpoints. All original controls and protected metadata/CTA are preserved. This is an independent AI source review, not accountant attestation or authority to file/pay. Final publication uses one country batch; issue #397 remains open and no merge or new CLA consent is claimed.
 
 ## Historical independent source-review records
 

@@ -176,7 +176,7 @@ Deliver the band calculation, relief assessment, source copies, unresolved legal
 | [2026 Budget and 2025 duty-amendment ordinances](https://parliament.gg/parliamentary-business/assets/propositions/P2025-121) | 2026-10-22 |
 | [5 November 2025 Hansard, pp63–65](https://parliament.gg/parliamentary-business/hansard/hansard-14-33) | 2026-10-22 |
 
-Original source receipts and scoped independent review are preserved. Not yet confirmed: complete current charging/valuation law, exemptions, anti-avoidance share-transfer definition/base/person liable, detailed payment/submission/claim deadlines and penalty/appeal rules, downsizing operative eligibility and other property-tax methods. The ordinary graduated calculation and repeal/transition material above remain within their cited scope; fresh whole-pack review is pending.
+Original source receipts and scoped independent review are preserved. Not yet confirmed: complete current charging/valuation law, exemptions, anti-avoidance share-transfer definition/base/person liable, detailed payment/submission/claim deadlines and penalty/appeal rules, downsizing operative eligibility and other property-tax methods. The ordinary graduated calculation and repeal/transition material above remain within their cited scope; the [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
 ## Disclaimer
 

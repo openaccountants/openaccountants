@@ -196,4 +196,4 @@ expected:
 | [Audit Exemption Amendment 2021](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265841) | Full instrument, replaced thresholds/revocations | 2026-10-27 |
 | Registry sources listed in frontmatter | Original guidance read and prior independent scoped reviews retained; current fee schedule rechecked | 2026-10-22; fees 2026-10-27 |
 
-Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. Fresh whole-pack review remains pending.
+Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.

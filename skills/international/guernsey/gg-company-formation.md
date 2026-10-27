@@ -1,7 +1,7 @@
 ---
 name: gg-company-formation
 description: >
-  Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent review is pending.
+  Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent whole-pack source review is recorded in the Sources section; professional attestation remains pending.
 jurisdiction: GG
 category: formation
 tax_year: 2026
@@ -78,7 +78,7 @@ Before using the application, reconcile the constitution, founder, director, own
 
 Section 17 now confirms the memorandum, first-director consents/particulars, registered office, resident-agent information/beneficial-owner compliance statement, founder details, initial share capital or guarantee, required consents/resolutions and compliance declaration. Distinguish cash from non-cash consideration in the initial-capital statement. The application may propose an incorporation date no later than **three months after application**; French constitutional text requires an English translation. The Registrar rejects a non-compliant application. These controls supplement the original application checklist rather than replacing it. [Companies Law s17(1)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
 
-Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. Independent source review and professional attestation are pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
 
 
 ## Two recomputing fee examples

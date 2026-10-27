@@ -309,7 +309,7 @@ All read on 22 October 2026: [Benefits in Kind Guide 2026](https://gov.gg/CHttpH
 | [Commencing self-employment Form 366/CF30 (2020)](https://gov.gg/CHttpHandler.ashx?id=101485&p=0) | Both pages; contribution estimate/final assessment mechanics only; obsolete tax payment dates expressly rejected | 2026-10-27 UTC |
 | [Class 3 CF130b (01/26)](https://gov.gg/CHttpHandler.ashx?id=197037&p=0) and [CF130a (01/26)](https://gov.gg/CHttpHandler.ashx?id=197038&p=0) | All three pages each, source disclosures and interim contribution assessment/payment notices | 2026-10-27 UTC |
 
-Not yet confirmed: complete Class 2/Class 3 assessable-income and mixed-class/partial-period rules; contribution-allocation and repayment statutory machinery; current surcharge-rate/minimum regulations and social-insurance penalty regime; all partial-period benefit conventions; share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. Fresh whole-pack review remains pending.
+Not yet confirmed: complete Class 2/Class 3 assessable-income and mixed-class/partial-period rules; contribution-allocation and repayment statutory machinery; current surcharge-rate/minimum regulations and social-insurance penalty regime; all partial-period benefit conventions; share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
 ## Disclaimer
 
