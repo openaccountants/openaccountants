@@ -1,0 +1,155 @@
+[
+  {
+    "control": "payment threshold 4.99",
+    "inputs": {
+      "raw_balance": "4.99"
+    },
+    "actual": "0",
+    "expected": "0",
+    "source": "ITA46; A71 footnote19; B135 footnote32; CIT1100 footnote3",
+    "pass": true
+  },
+  {
+    "control": "payment threshold 5.00",
+    "inputs": {
+      "raw_balance": "5.00"
+    },
+    "actual": "0",
+    "expected": "0",
+    "source": "ITA46; A71 footnote19; B135 footnote32; CIT1100 footnote3",
+    "pass": true
+  },
+  {
+    "control": "payment threshold 5.01",
+    "inputs": {
+      "raw_balance": "5.01"
+    },
+    "actual": "5.01",
+    "expected": "5.01",
+    "source": "ITA46; A71 footnote19; B135 footnote32; CIT1100 footnote3",
+    "pass": true
+  },
+  {
+    "control": "PIT annual child entitlement reconciliation",
+    "inputs": {
+      "A56": "6334.39",
+      "A57": "343.20",
+      "A59": 100,
+      "A69": 5500
+    },
+    "actual": "591.19",
+    "expected": "591.19",
+    "source": "A71 printed formula",
+    "pass": true
+  },
+  {
+    "control": "PIT refundable child bonus is not duplicated in overpayment",
+    "inputs": {
+      "A56": 100,
+      "A57": 1200,
+      "A59": 0,
+      "A61": 1100,
+      "A69": 0
+    },
+    "actual": "0",
+    "expected": "0",
+    "source": "A61 payout and A71/72 printed formula",
+    "pass": true
+  },
+  {
+    "control": "CIT prior minimum credit capped at room",
+    "inputs": {
+      "tax800": 1750,
+      "minimum810": 960,
+      "credit_balance": 1000
+    },
+    "actual": "790",
+    "expected": "790",
+    "source": "CIT910/K5col4/920",
+    "pass": true
+  },
+  {
+    "control": "CIT minimum dominates low ordinary tax",
+    "inputs": {
+      "tax800": 300,
+      "minimum810": 960
+    },
+    "actual": "960",
+    "expected": "960",
+    "source": "CIT820/900/1050",
+    "pass": true
+  },
+  {
+    "control": "CIT newly generated credit enters next period",
+    "inputs": {
+      "tax800": 300,
+      "minimum810": 960
+    },
+    "actual": "660",
+    "expected": "660",
+    "source": "CIT830; matching instructions p11 and p23",
+    "pass": true
+  },
+  {
+    "control": "CIT foreign credit ordinary cap",
+    "inputs": {
+      "E1": 100000,
+      "E2": 25000,
+      "tax700": 21000,
+      "E8": 6000
+    },
+    "actual": "5250.00",
+    "expected": "5250",
+    "source": "CIT Table E and instructions p16",
+    "pass": true
+  },
+  {
+    "control": "CIT final payment separate from next advances",
+    "inputs": {
+      "tax800": 1750,
+      "credit920": 500,
+      "advances1040": 1000,
+      "r500": 17500,
+      "r550": 10
+    },
+    "actual": "250",
+    "expected": "250",
+    "source": "CIT1100",
+    "pass": true
+  },
+  {
+    "control": "CIT unchanged next advance basis",
+    "inputs": {
+      "r500": 17500,
+      "r550": 10,
+      "r610": 0
+    },
+    "actual": "1750",
+    "expected": "1750",
+    "source": "CIT instructions p12 row1110",
+    "pass": true
+  },
+  {
+    "control": "CIT high-revenue settlement",
+    "inputs": {
+      "tax1050": 36000,
+      "advances1040": 30000
+    },
+    "actual": "6000",
+    "expected": "6000",
+    "source": "CIT1100",
+    "pass": true
+  },
+  {
+    "control": "Type B flat-rate expense field includes contributions",
+    "inputs": {
+      "income": 48000,
+      "flatcap": 20000,
+      "paid_contributions": 6000
+    },
+    "actual": "26000",
+    "expected": "26000",
+    "source": "B Table1 row10col2; instructions p12",
+    "pass": true
+  }
+]

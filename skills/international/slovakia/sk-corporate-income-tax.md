@@ -1,7 +1,7 @@
 ---
 name: sk-corporate-income-tax
 description: "Slovak corporate income tax (daň z príjmov právnických osôb) for tax year 2026 under Act No. 595/2003 Coll. as amended, including Act No. 261/2025 Coll. Covers the three rates set by taxable revenue (10% up to EUR 100,000, 24% above EUR 5,000,000, 21% otherwise), the minimum tax with its new EUR 11,520 band for revenue above EUR 5,000,000, the tax base from accounting profit, paid-basis expenses, unrecoverable VAT, depreciation groups 0 to 6, the 5-year loss carry-forward with the 50% cap, the two interest limits (25% EBITDA for related-party loans and 30% above EUR 3,000,000 net interest), dividends, advances, the DPPO return and extensions, and penalties. Trigger on: Slovakia corporate tax, DPPO, s.r.o. tax, 10% rate Slovakia, minimálna daň, daňová licencia, preddavky na daň. Out of scope: individuals (slovakia-pit), payroll (sk-payroll-social), VAT (slovakia-vat-return), company set-up (sk-company-formation)."
-version: 0.3
+version: 0.4
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing
+# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.4
 
 The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov). This skill reads the consolidated version in force from 1 January 2026 on slov-lex.sk, which includes the consolidation package Act No. 261/2025 Coll. Penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The Financial Administration (Finančná správa) runs the return and the portal at financnasprava.sk. Figures are for the 2026 tax period: the calendar year 2026, or a fiscal year (hospodársky rok) that ends in 2026 or 2027. Where a rule applies only to periods that start on or after 1 January 2026, the skill says so.
 
@@ -129,8 +129,8 @@ The excess of minimum tax over the computed tax can be credited against tax in t
 
 - **Return.** The DPPO return is due within three calendar months after the end of the tax period: 31 March 2027 for calendar 2026 (§ 49(2)). Tax is payable by the same date.
 - **Extension by notice.** A notice filed with the tax office before the deadline moves it by up to three whole calendar months, to 30 June 2027 for calendar 2026. The new date is the end of the month the company names. If the company has foreign-source income, the move is up to six months, to 30 September 2027 (§ 49(3)(a) and (b)). Tax is due on the new date. Companies in liquidation or bankruptcy apply instead, at least 15 days before the deadline (§ 49(3)(c)).
-- **Form.** On 23 October 2026 the Financial Administration's return page names form MF/012187/2025-721, with filing notes for periods whose deadline falls after 31 December 2025. It has 15 pages and at least five annexes even when blank. Before filing the 2026 return, check that page for a newer form.
-- **Electronic filing.** A legal person entered in the commercial register, and any VAT payer, must file electronically (Tax Procedure Code § 14(1)(a)). Some annexes may be sent in other ways, but the VII-part annex and the § 13a, § 13b, § 30ca and § 30e annexes form part of the return.
+- **Verified current form.** The [actual Ministry forms package](https://www.mfsr.sk/files/archiv/66/prispevok_16.zip), notice MF/014310/2026-721, supplies **MF/014309/2026-721, DPPOv26 v1.13**, a 21-page sample including the annex templates. It applies where the filing deadline falls **after 31 December 2026**, including a calendar-2026 return due in March 2027. The earlier 15-page MF/012187/2025-721 referenced in the prior Guide belongs to deadlines from 1 January through 31 December 2026; it is retained here as historical form information. Choose by the return's deadline rather than the year in the filename. The matching [2026 instructions, MF/014312/2026-721](https://www.mfsr.sk/files/archiv/36/prispevok_18.zip), identify the same current form.
+- **Electronic filing and annexes.** A legal person entered in the commercial register, and any VAT payer, must file electronically (Tax Procedure Code §14(1)(a)). Some supporting documents can be supplied separately, but the current form's five annex categories remain part of the return even if blank: the combined §13a/§13b annex, §30c, §30ca, §30e, and the **part VIII** additional-recipient annex. The earlier part VII recipient-annex reference belonged to the prior form. Count additional projects, recipient sheets and other documents as the instructions require (current form p.16; instructions p.28).
 - **Minimum tax** is payable by the return deadline (§ 46b(4)).
 - **Advances in 2026 (§ 42).** The tax that sets them (§ 42(6)) is the tax on the base after losses, at the § 15 rate shown in the previous period's return, less reliefs under the Act. It is the computed tax, not the minimum tax. Based on the 2025 tax:
   - above EUR 16,600: monthly, 1/12 of that tax, by the end of each month;
@@ -138,6 +138,20 @@ The excess of minimum tax over the computed tax can be credited against tax in t
   - up to EUR 5,000: none, unless the tax office orders them.
   Until the deadline for the 2025 return, advances follow the last known tax, from the 2024 return (§ 42(7)). A company formed during the year (other than by merger or division) pays no advances in its first period (§ 42(4)). A company filing its first return pays no advances until that return is due, then makes up the advances that fell due by the end of the following month (§ 42(8)).
 - **Financial transaction tax.** Separate from CIT, Act No. 279/2024 Coll. taxes financial transactions. Its § 6 rates from 1 January 2026: 0.4%, at most EUR 40 per transaction; 0.8% on cash withdrawals; EUR 2 per payment card. This skill does not cover it beyond this pointer.
+
+**Current DPPO mapping for an ordinary company.** Use the actual form and its instructions together; row numbers are the printed fields, not account numbers.
+
+| Stage | Fields and reconciliation |
+|---|---|
+| Accounting result and adjustments | Profit/loss before tax 100. Table A's nondeductible-expense total 17 goes to 130; representation is A6 and §21a interest A13. Unpaid §17(19) items go to 140; later payment deductions not already in profit go to 270. Table B accounting-versus-tax depreciation differences go to 150 or 250. Current §17k increases go to 310, not 130. Follow the remaining adjustments to 301,315 and 400; do not add a worked variant again to an already stated base. |
+| Taxable revenue and rate | Reconcile booked revenue in Table L 1 through its described adjustments to L99, then 560. Select the 10%/21%/24% rate in 550 from that taxable revenue, not 400 or accounting profit. |
+| Losses and deductions | Table D tracks prior-period losses from oldest to newest (a current loss is in 400 and enters Table D in the next period): original amount row 1, current use 2, carry balance 3 and previous use 4. Transfer row 2 column 9 to 410; 500 = 400 − 410. Ordinary loss limits above still apply. Any separately supported deductions 501–503 lead to 510; 600 = 510 × 550 /100. |
+| Relief and foreign tax credit | Relief 610 gives 700. Table E computes the §45 foreign-tax credit (with country details in part IX); E10 goes to 710, then 800 = 700 − 710. For an ordinary non-hybrid case, E1 is 400, E2 the foreign net base, E3 its percentage of E1, and E4 the proportion of 700; E8 is the supported foreign tax permitted by the treaty, and E10 the lower of E8 and the E9 cap. It is not an unrestricted credit for every foreign deduction. |
+| Minimum tax and earlier credits | Applicable minimum 810; 820/900 apply when it exceeds 800, with the positive difference 830 carried under the statutory rule and entered in Table K only from the next period. Earlier minimum-tax balances are tracked in Table K; available credit is limited by 910 = 800 − 810, K row 5 column 4 goes to 920, and 1000 = 800 − 920. Row 1050 selects the resulting ordinary tax or minimum tax. |
+| Advances and final payment | Advances 1010, security 1020 and eligible withholding 1030 total 1040. Row 1080 includes 1050 and any applicable special-base taxes; subtract permitted exit-tax instalment amount 1090 and 1040. The nonnegative balance is 1100, a negative balance 1101; apply the EUR 5 payment exception. Request a refund in part XI. |
+| Next-period advances | Row 1110 is 500 × 550 /100 less 610 under the instructions. It is not the cash balance 1100, nor automatically the minimum tax. |
+
+The actual form separates the §51e tax in 1070 and §51ea tax in 1071 from ordinary tax, and carries exit tax through 1060 where applicable. Bank-card-fee taxation remains outside this Guide. The loss register and minimum-tax credit register have different expiry rules; never move a balance between them. Current Table I reporting is explained in [sk-transfer-pricing](sk-transfer-pricing.md). Sources: current DPPO form pp.2–11,16; instructions pp.3–7,10–12,15–16,23,28.
 
 ## Penalties and interest
 
@@ -147,7 +161,7 @@ From the Tax Procedure Code, Act No. 563/2009 Coll. (version in force from 1 Sep
 - **Tax understated in a return and raised by the tax office (§ 155(1)(f)).** 3 times the ECB main refinancing rate a year on the extra tax, at least 10% a year (§ 155(5)). The rate used is the one on the day the assessment is delivered (§ 155(7)). It runs daily from the day after the filing deadline, at least 1% of the extra tax and at most the extra tax (§ 155(2)). Paying the assessed amount within 15 days of delivery cuts the fine to two thirds (§ 155(17)).
 - **Correction by a supplementary return (§ 155(1)(g)).** The ECB rate a year on the increase, at least 3% a year. If the supplementary return follows the start of a tax audit: twice the ECB rate, at least 7% a year (§ 155(1)(h) and (5)).
 - **Late payment interest (§ 156(2)).** 4 times the ECB main rate in force on the day the arrears arise, at least 15% a year, daily, for at most four years. It applies to late tax and late advances; on a late advance it runs at most to the return deadline (§ 156(4)).
-- **At the current ECB rate.** The ECB main refinancing rate is 2.65% from 16 September 2026. 3 times is 7.95%, 2 times 5.3%, 1 times 2.65% and 4 times 10.6%, so all four floors apply: 10%, 7%, 3% and 15% a year.
+- **At the observed ECB rate.** The actual ECB/NBS history records 2.15% from 11 June 2025,2.40% from 17 June 2026 and 2.65% from 16 September 2026, observed through 27 October 2026. At 2.65%, 3 times is 7.95%, 2times5.3%, 1time2.65% and 4times10.6%, so the 10%/7%/3%/15% floors apply. Use the actual rate on the statutory assessment-delivery, supplementary-filing or arrears date above; a future filing or payment does not inherit today's rate.
 
 ## Cross-border points
 
@@ -171,6 +185,10 @@ Alfa s.r.o. has a calendar 2026 year. Its taxable revenue is EUR 90,000 and its 
 - 2026 tax is not above EUR 5,000, so there are no advances in 2027.
 - The edge: with revenue of EUR 100,500 instead, the rate on the same base would be 21%, tax EUR 3,675. EUR 500 of extra revenue costs EUR 1,925 of tax.
 
+**Filing Alfa's figures.** Enter 100 = 20,000; Table A 6 and its total 17 = 1,500, carried to 130. With no other adjustments,400 = 21,500. Table D records the 2023 loss and current use 4,000; 410 = 4,000,500/510 = 17,500. Table L 99/560 = 90,000; 550 = 10; 600/700/800 = 1,750; 810 = 960, so 820/900 are zero. With no earlier minimum-tax credit or advances,1050/1080/1100 = 1,750. Row 1110 is 1,750, preserving the no-advance result.
+
+For a separate settlement variant, assume Alfa has EUR 500 of unexpired earlier minimum-tax credit and EUR 1,000 of eligible advances. The credit room 910 is `1,750 − 960 = 790`; Table K and 920 use 500,1000/1050 become 1,250,1040 is 1,000 and 1100 is EUR 250. This separate variant leaves the original annual tax computation intact and does not reduce row 1110 to the cash payment.
+
 Separate asset variants, not changes to Alfa's stated profit: a EUR 4,800 computer first used in July has six months of four-year straight-line depreciation, EUR 600; a EUR 30,000 ordinary car gives EUR 3,750, versus EUR 7,500 for a qualifying certificate-coded BEV/PHEV; EUR 6,000 furniture gives EUR 500. The same check recomputes the full-year administrative-building/hotel and exactly-10% improvements boundaries above. These are independent asset assumptions, not deductions to subtract again from Alfa's already stated base.
 
 ```oa-check
@@ -187,6 +205,8 @@ inputs:
   use_months: 6
   building_price: 800000
   qualifying_improvements: 80000
+  prior_min_tax_credit_variant: 500
+  paid_advances_variant: 1000
 steps:
   - base_before_loss: profit + addbacks
   - loss_cap: base_before_loss * 0.50
@@ -205,6 +225,10 @@ steps:
   - improvements_boundary: building_price * 0.10
   - improvement_excess_over_boundary: qualifying_improvements - improvements_boundary
   - separate_improvements_full_year: round(qualifying_improvements / 6, 2)
+  - min_credit_room_variant: max(0, tax_10 - min_tax_band)
+  - min_credit_used_variant: min(prior_min_tax_credit_variant, min_credit_room_variant)
+  - tax_after_prior_credit_variant: tax_10 - min_credit_used_variant
+  - final_payment_variant: tax_after_prior_credit_variant - paid_advances_variant
 expected:
   base_before_loss: 21500.00
   loss_cap: 10750.00
@@ -223,6 +247,10 @@ expected:
   improvements_boundary: 80000.00
   improvement_excess_over_boundary: 0
   separate_improvements_full_year: 13333.33
+  min_credit_room_variant: 790
+  min_credit_used_variant: 500
+  tax_after_prior_credit_variant: 1250
+  final_payment_variant: 250
 ```
 
 ### Example 2: large company at 24%, loss cap and advances
@@ -234,6 +262,8 @@ Beta a.s. has a calendar 2026 year with taxable revenue of EUR 6,200,000. Its ta
 - Revenue is above EUR 5,000,000, so the rate is 24%: tax EUR 36,000.
 - Minimum tax for revenue above EUR 5,000,000 is EUR 11,520. EUR 36,000 is higher, so it does not bite. Had Beta made a tax loss in 2026, it would still pay EUR 11,520. It could then credit that amount against the part of its 2027 to 2029 tax above the minimum tax.
 - The § 42(6) tax for 2026 is EUR 36,000 (base after losses at 24%, no reliefs). It is above EUR 16,600, so once the 2026 return is due (31 March 2027, or the extended date) Beta pays monthly advances of EUR 3,000 (1/12 of EUR 36,000). Until then its 2027 advances follow its 2025 tax (§ 42(7)).
+
+**Filing Beta's figures.** Row 400 is 300,000; Table D and 410 use 150,000 of the supported 2024/2025 losses and retain 250,000 by origin year; 500/510 are 150,000. Table L 99/560 is 6,200,000; 550 is 24; 600/700/800 are 36,000; 810 is 11,520, so 1050/1080 are 36,000. The original scenario supplies no advances-paid figure. In a separate normal settlement variant with 30,000 eligible advances in 1010/1040 and no other credits or special bases,1100 is 6,000. Row 1110 remains 36,000 and the subsequent monthly advance remains 3,000; it is not one twelfth of the 6,000 cash balance.
 
 Independent interest variants in the same check use the non-excluded borrower and separate §21a facts above: statutory sum of bases EUR 2,000,000; tax EBITDA EUR 7,000,000; §17k add-back EUR 1,900,000; next-period carry use EUR 400,000 and remaining balance EUR 1,500,000. Exactly EUR 3,000,000 has zero excess over the activation threshold, and therefore no current §17k increase. Separate covered related/back-to-back debt costs EUR 100,000 against the EUR 75,000 §21a limit give EUR 25,000 disallowance. At zero or negative accounting EBITDA, the same EUR 100,000 covered costs are fully disallowed, without an add-back greater than EUR 100,000. These amounts are not additions to Beta's separately stated EUR 300,000 base.
 
@@ -255,6 +285,7 @@ inputs:
   thin_total_debt_costs: 120000
   thin_capitalised_interest: 20000
   thin_accounting_ebitda: 300000
+  paid_advances_variant: 30000
 steps:
   - loss_cap: base_before_loss * 0.50
   - loss_used: min(loss_bf, loss_cap)
@@ -277,6 +308,7 @@ steps:
   - thin_disallowed: thin_covered_costs - thin_allowed
   - thin_negative_ebitda_disallowed: thin_covered_costs - min(thin_covered_costs, max(0, -100000 * 0.25))
   - thin_zero_ebitda_disallowed: thin_covered_costs - min(thin_covered_costs, max(0, 0 * 0.25))
+  - final_payment_variant: tax_payable - paid_advances_variant
 expected:
   loss_cap: 150000.00
   loss_used: 150000.00
@@ -299,6 +331,7 @@ expected:
   thin_allowed: 75000
   thin_negative_ebitda_disallowed: 100000
   thin_zero_ebitda_disallowed: 100000
+  final_payment_variant: 6000
 ```
 
 ## Ask the client first
@@ -327,8 +360,11 @@ expected:
 | Act No. 507/2023 Coll. on top-up tax, version in force from 31 December 2025 (§ 3(1)) | https://static.slov-lex.sk/static/SK/ZZ/2023/507/20251231.html | 2026-10-23 |
 | European Central Bank, key interest rates (main refinancing rate 2.65% from 16 September 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
 | Financial Administration, legal persons' income tax return | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-prijmov/pravnicke-osoby/danove-priznanie-dan-prijem-po | 2026-10-23 |
+| Ministry of Finance, notice MF/014310/2026-721 and actual current form MF/014309/2026-721 (DPPOv26 v1.13), actual package | https://www.mfsr.sk/files/archiv/66/prispevok_16.zip | 2026-10-27 |
+| Ministry of Finance, notice MF/014312/2026-721 and matching 2026DPPO instructions, actual package | https://www.mfsr.sk/files/archiv/36/prispevok_18.zip | 2026-10-27 |
+| NBS, actual ECB key-rate history supplementing the ECB table above | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-27 |
 
-Not yet confirmed: whether the Ministry issues a new DPPO form for 2026 periods (the return page on 23 October 2026 still names MF/012187/2025-721).
+The current form and matching instructions are verified from the actual Ministry packages above. The [31 December 2026 Income Tax Act text](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was compared with the earlier 2026 text: the corporate provisions used here are unchanged. Its §52zzzm directs the specified new §9/§11 rules to 2027 returns; the fact a2026 return is filed in 2027 does not itself move it to those rules. Future ECB rates still require the actual statutory reference date.
 
 > Contributed by Michael Cutajar.
 

@@ -7,8 +7,6 @@ covered_by:
   XB: sk-cross-border
   SC: sk-payroll-social
 partial:
-  IT-IND: "Ordinary child/mortgage credits, micro status and government-bond methods are supplied and independently reviewed. The current 2026 DPFO form versions remain to be read and reconciled."
-  IT-CORP: "Ordinary interest-limit scope, statutory bases, carry and asset classifications are supplied and independently reviewed, including zero/negative EBITDA. Current 2026 DPPO form identification and filing mapping remain to be reconciled."
   VAT: "The annual §50 common-input method where actual included-supplies turnover is zero, the exact fixed-gross crossing-supply circularity and control-statement first-breach sanction remain unconfirmed. The positive-denominator coefficient, ordinary registration computations and period-valid DPHv25/KVDPHv25/REGDPv24 form mappings are supplied and independently reviewed."
 ---
 
@@ -38,3 +36,6 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 - Ministry of Finance, list of cooperating states under § 2 x) with the treaty for each state, valid from 1 January 2026: https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf (read 2026-10-23)
 - Financial Directorate, list of tax treaties in force (as at 1 January 2022): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf (read 2026-10-23)
 - Ministry of Finance, transfer pricing: https://www.mfsr.sk/sk/dane-cla-uctovnictvo/priame-dane/dane-z-prijmu/transferove-ocenovanie/ (read 2026-10-23)
+
+- Ministry of Finance, actual current DPFO/DPPO forms and notice MF/014310/2026-721: https://www.mfsr.sk/files/archiv/66/prispevok_16.zip (read 2026-10-27)
+- Ministry of Finance, matching 2026 instructions and notice MF/014312/2026-721: https://www.mfsr.sk/files/archiv/36/prispevok_18.zip (read 2026-10-27)

@@ -1,0 +1,911 @@
+{
+  "artifacts": [
+    {
+      "path": "actual-primary-read-receipts.json",
+      "bytes": 5201,
+      "sha256": "b08dbdb1c6e20e81ad286c5ecf68f420cafd0f216c49d7ff7fac449f5b842994"
+    },
+    {
+      "path": "check_independent.py",
+      "bytes": 10203,
+      "sha256": "01a3576e1d47be35ffb7a62205d4d7485a2473aaff6d144dafdf43d7b47e5a7e"
+    },
+    {
+      "path": "final-audit.json",
+      "bytes": 929,
+      "sha256": "8877d1a38c17be7bface1c247ce965164de29029c85678deb590a8a57d554190"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 354,
+      "sha256": "c38df609dc8b16776fff49af2cc35d18c7b0316614d25bb4b210c5d05a0327f2"
+    },
+    {
+      "path": "forms--DPFOAv25 v1.10_vzor.pdf",
+      "bytes": 112798,
+      "sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933"
+    },
+    {
+      "path": "forms--DPFOAv25 v1.10_vzor.txt",
+      "bytes": 42992,
+      "sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880"
+    },
+    {
+      "path": "forms--DPFOBv26 v1.3_vzor.pdf",
+      "bytes": 223083,
+      "sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900"
+    },
+    {
+      "path": "forms--DPFOBv26 v1.3_vzor.txt",
+      "bytes": 127659,
+      "sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658"
+    },
+    {
+      "path": "forms--DPPOv26 v1.13_vzor.pdf",
+      "bytes": 204694,
+      "sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989"
+    },
+    {
+      "path": "forms--DPPOv26 v1.13_vzor.txt",
+      "bytes": 105296,
+      "sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745"
+    },
+    {
+      "path": "forms--Oznámenie o vydaní vzorov tlačív daňových priznaní.pdf",
+      "bytes": 192737,
+      "sha256": "4fffdeaa35c0c42260b041e625d85f3a4c50df30bb9013b76d9c6edb69468198"
+    },
+    {
+      "path": "forms--Oznámenie o vydaní vzorov tlačív daňových priznaní.txt",
+      "bytes": 1804,
+      "sha256": "d163ed3bcf774ba27b007f8982ba0a4746a2cdb566e4c80da73f39df3d4c8726"
+    },
+    {
+      "path": "forms-fresh.zip",
+      "bytes": 673012,
+      "sha256": "c5d5278e597c5ff25494cccbb680b02d021dccf160cf6d9cbbf15339de7af51e"
+    },
+    {
+      "path": "fresh-package-receipts.json",
+      "bytes": 3475,
+      "sha256": "aa696272d85f7e374d152c2ecf5715f12374fa7f1e9cb4f08cf7fb49518f47a2"
+    },
+    {
+      "path": "frozen-guide-manifest.json",
+      "bytes": 550,
+      "sha256": "efe203d3305482d409e3f69fb72a7d2b97a4dbeb8d4c662fcba8fee43376df63"
+    },
+    {
+      "path": "fs14-actual-independent.txt",
+      "bytes": 20077,
+      "sha256": "93fb2e2f2f443131482bc5239a83aa9fea38929fafbce54ca715f84d03e8a0c4"
+    },
+    {
+      "path": "full-no-loss-ledger.json",
+      "bytes": 111648,
+      "sha256": "1f27c4a1e549280e3b20871a358fdafd3f4899cbc6bd739e53a9642ea14cf18f"
+    },
+    {
+      "path": "independent-reference-arithmetic.json",
+      "bytes": 3438,
+      "sha256": "16c538b43be62397d96500eb2c788f58cd21cf846d2ffec0a494e3846ca48c8a"
+    },
+    {
+      "path": "instructions--Oznámenie o vydaní poučení.pdf",
+      "bytes": 125261,
+      "sha256": "80ec09df65c8b8c9f3f8318c7706ce5c0a90ee657f568280da7a829957840716"
+    },
+    {
+      "path": "instructions--Oznámenie o vydaní poučení.txt",
+      "bytes": 960,
+      "sha256": "bc7ebd991cfeb046e5910a3177dabd7bbe11d294de2581680bf46d6bd7003a23"
+    },
+    {
+      "path": "instructions--Poučenie DPFOA_2026.pdf",
+      "bytes": 464530,
+      "sha256": "ed661b8dbf4456961b67fc64d3640cac54d7aa83656455e617fe8a6ec6849b05"
+    },
+    {
+      "path": "instructions--Poučenie DPFOA_2026.txt",
+      "bytes": 89662,
+      "sha256": "5cc86695724b5b87b4dfe1172da9ca759d851e1e2680a46128386e048d78c49e"
+    },
+    {
+      "path": "instructions--Poučenie DPFOB_2026.pdf",
+      "bytes": 652173,
+      "sha256": "838403b7fd5534109c455ff31ef212ec0c595f3d6dfd8bc7ec2f2f28654a4cb9"
+    },
+    {
+      "path": "instructions--Poučenie DPFOB_2026.txt",
+      "bytes": 160182,
+      "sha256": "63b92e24cbfb151a608e61e67595c515b589e4657054fff3d49ccdb42d83808d"
+    },
+    {
+      "path": "instructions--Poučenie DPPO_2026.pdf",
+      "bytes": 392200,
+      "sha256": "712d42625e6304f52efbac415789424b760b9158c2f901027c14e250db61d36f"
+    },
+    {
+      "path": "instructions--Poučenie DPPO_2026.txt",
+      "bytes": 120079,
+      "sha256": "1ed8c73009a1f0b199478b6194a5ec41f5566320215c0ffdfcdbd29b9d5470bc"
+    },
+    {
+      "path": "instructions-fresh.zip",
+      "bytes": 1482754,
+      "sha256": "4313ce7c9846801463b6fe40a84f051fb243f9504873c4ffe9dc098413278cba"
+    },
+    {
+      "path": "law-transition-extract.txt",
+      "bytes": 262,
+      "sha256": "b56adc915d4773c3f774ecea62bc53904acadeea3c1b52e65a506aa4b4afbe1b"
+    },
+    {
+      "path": "law-transition-section-comparison.json",
+      "bytes": 9351,
+      "sha256": "b4b30f519f89b5c45db6f2d227078178ec314f0665ef815fb7d4683530758be8"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p1.txt",
+      "bytes": 4774,
+      "sha256": "ccf6bb18bc6a23b7fdadeed1ef5d7bfcb65adfc28a04c0637185e1f7c48f10eb"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p2.txt",
+      "bytes": 8839,
+      "sha256": "e132e64986fd266abdb92bd9b18a2d6e367f4e6fa194c97b4b813c8b3a9526d4"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p3.txt",
+      "bytes": 7697,
+      "sha256": "e5aad74de033546b629a83d603727f55c027293c9760a6a91b5d64520c22470d"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p4.txt",
+      "bytes": 8337,
+      "sha256": "3fcf498397f605e601b65f166de688f90074f238ba522f5ff110beb969796405"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p5.txt",
+      "bytes": 7941,
+      "sha256": "08277797875544cdebbce07279933406e2382298947979e1e42d53dda3bf0b03"
+    },
+    {
+      "path": "pages/forms--DPFOAv25 v1.10_vzor/p6.txt",
+      "bytes": 5398,
+      "sha256": "e1b1ed2374bf66b52298f5271b37194acd865060b1b1de14d25d1ec84a33beff"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p1.txt",
+      "bytes": 4993,
+      "sha256": "53922745af344de44521b708917863b273c305abf75c90d71d802059eed2bc34"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p10.txt",
+      "bytes": 6356,
+      "sha256": "ee9c8d0223169c9e45e20ba506948bd7d1bfbd6fbb8f767b42e1d40ee7b8b3e1"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p11.txt",
+      "bytes": 11156,
+      "sha256": "5ad36cf7e38ef0482534d663872cfa8a439dbd072ce48040aeab72b86d0a61e7"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p12.txt",
+      "bytes": 6981,
+      "sha256": "b1725cc0619486a6906f05c6490b20c168a514f020578939d9c303cc9b99bea8"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p13.txt",
+      "bytes": 4465,
+      "sha256": "dc5020a9fba6e4cc0259d72dddf095a48dc285aa1d71beca84ce1a43619fbb0a"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p14.txt",
+      "bytes": 4061,
+      "sha256": "f1de546a4401799d3e5a876eb6c8a5b4f280b787997d9ec7fe172a8c1227e9ed"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p15.txt",
+      "bytes": 3615,
+      "sha256": "11f872a3ba0ac4d098fa7dba2c20c08affdcea45b877ce13466046cdba0b6609"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p16.txt",
+      "bytes": 3266,
+      "sha256": "9c517b2d28fba735b0339114fb7a2554268dc2b351b69ca272fd84e1b369f022"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p17.txt",
+      "bytes": 6823,
+      "sha256": "80d706a682ef7c6fdbebebe292668ca5f995614200d26909eb3a662f1f0768bd"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p18.txt",
+      "bytes": 3517,
+      "sha256": "ab878f1ca9d939626e989a39f94181a0bc1038e5d9451e6d380caa9923fe214f"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p19.txt",
+      "bytes": 5209,
+      "sha256": "253ce7ca0d7de2abb83b7e577b542fe58193d096195cf841cd64389ad94d88f2"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p2.txt",
+      "bytes": 8520,
+      "sha256": "956c566cbdba129f52d71c5c705f74064c490f8e247cb4050ef5595042fb0920"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p20.txt",
+      "bytes": 5811,
+      "sha256": "fdd423bbbbb3d6bf9babb8c50b5313d15cd6a15a7c92d7ae04ff2f269c21fc5c"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p3.txt",
+      "bytes": 8628,
+      "sha256": "86cde05fb1ee8820e387b0337b3e8c1e04eaf4bc7095a247dde49ef9f0cdcf40"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p4.txt",
+      "bytes": 8050,
+      "sha256": "1fb9f97f8eadd893e67f2859e64fd948c9a2d14f7d144e3e35bd12712c28e8aa"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p5.txt",
+      "bytes": 5527,
+      "sha256": "c46a184d14b6f679a6190f8c042e53ca3797240dbca251b0024289485b8e3e53"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p6.txt",
+      "bytes": 8400,
+      "sha256": "6e717a4f8c8040f826e4e1907134d6d1d9ca7e5b64d8a5ab187986d589748ffe"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p7.txt",
+      "bytes": 7931,
+      "sha256": "05f22c77c8edee3b5bb088955ffeb4631ea452e1bbd54a5025960a5e0fd80b26"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p8.txt",
+      "bytes": 7578,
+      "sha256": "94084f88250662c68e95b71b335d4b095e525bfbe02f9a035541a704b9ceaf6c"
+    },
+    {
+      "path": "pages/forms--DPFOBv26 v1.3_vzor/p9.txt",
+      "bytes": 6752,
+      "sha256": "eab84cc58b3069c701f9b2cea24f11db87529c7c03a3b119d46ebc204fca1cea"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p1.txt",
+      "bytes": 4056,
+      "sha256": "c86228e1d1d4f88fb3d50ffe9e8ef01baf815cd4c3e660d4707f8fc9254fe602"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p10.txt",
+      "bytes": 5193,
+      "sha256": "8eaab6161417af30522bcb93905b0b937532278e978e6aa48a6311ff2186d024"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p11.txt",
+      "bytes": 5744,
+      "sha256": "ea8ebe8049938e07b72f85587ad635e55bf43ae02b1239af2b72af7106759bcd"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p12.txt",
+      "bytes": 5057,
+      "sha256": "eaa33a0210d20c9c1fa622fe1117adb463427cc44b62efc269f6bec3ee912ff6"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p13.txt",
+      "bytes": 4860,
+      "sha256": "56d6a48867a536fcdfd6658237c9ef5f9e48d1a66236b9529fa60048d8325e0a"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p14.txt",
+      "bytes": 5679,
+      "sha256": "ae3b0a984e0e25e48e04502ca1f3582a4221a7f0a76c881d9cd5464de01357a8"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p15.txt",
+      "bytes": 4707,
+      "sha256": "a547fff8d9aa323c3f8854763e93f854c7ddf7036b0f3ccc56d3e520ca04c337"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p16.txt",
+      "bytes": 4569,
+      "sha256": "942a2659029cc79894fa5284da6cb08be630daf854660bb6ac70f81551f894a4"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p17.txt",
+      "bytes": 1009,
+      "sha256": "32e63dfc8b1cab1902e48e9a12416c54ce122774f68b595bc9c3caf2472a6bc0"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p18.txt",
+      "bytes": 4002,
+      "sha256": "1fa9b3db890bdd658cb5fb6380f47c7353218df6e07e8990839034cb98f37540"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p19.txt",
+      "bytes": 3306,
+      "sha256": "73d78487b6944a5fe4db2020dbafbc532226aec63de25f2f80ae86c95c292e5f"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p2.txt",
+      "bytes": 6401,
+      "sha256": "2117d7a1aec0e3d56abc549ba6e54c4f7d043fde09d40a66ea26c52ff0277f78"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p20.txt",
+      "bytes": 3611,
+      "sha256": "79ee4f0dc60d4a59003aabfe274b94a62f209fb54ff79f73479ea2870f8afaa8"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p21.txt",
+      "bytes": 1461,
+      "sha256": "f5f12edd94ea8099a224de6fc8177f3dbca808144a1de4e2d3106a332ef9a40e"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p3.txt",
+      "bytes": 5492,
+      "sha256": "235dd52586b762201f950e7a3dbcfa6edaa9b9c08514841ef9f44db40289bfbc"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p4.txt",
+      "bytes": 7464,
+      "sha256": "f6de9d56c7d65bb929a0defb4051a29b1388f9f6bc855ecf84b4d5918a7c423f"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p5.txt",
+      "bytes": 5863,
+      "sha256": "35ab8a7f569c9a6f8da31856a802f5191fcbbc58014b44ca0d2bc9eb88eaab88"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p6.txt",
+      "bytes": 7933,
+      "sha256": "812a17f246ede356829533c3dd12a2b18492d9551b45d056d1cb1766c7c9cb4f"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p7.txt",
+      "bytes": 5840,
+      "sha256": "b728cc57411b050f218ae5bfd8cb9c7da955903087eb03cd642235faceed69db"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p8.txt",
+      "bytes": 6969,
+      "sha256": "632aa941e889db4237709d1b06dcd813cbec4f9d2d151849b61f26e44f50c512"
+    },
+    {
+      "path": "pages/forms--DPPOv26 v1.13_vzor/p9.txt",
+      "bytes": 6059,
+      "sha256": "b22f1c23a77ec07aa02b93940e9cdf87b07b2cab73fd8bd8031ffaa5b3ede136"
+    },
+    {
+      "path": "pages/forms--Oznámenie o vydaní vzorov tlačív daňových priznaní/p1.txt",
+      "bytes": 1803,
+      "sha256": "63064eda6041632d19a4b57b060cee793b9d15093e0e8a350974f475587a8e96"
+    },
+    {
+      "path": "pages/instructions--Oznámenie o vydaní poučení/p1.txt",
+      "bytes": 959,
+      "sha256": "b8e6366a46c3906a63da42eed0bd85e819391809d6da509793b11b1b3c778bad"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p1.txt",
+      "bytes": 4009,
+      "sha256": "68d9d85066e2afa55c3cd0418cb3edcfbc752fcd1e7fe7d5a7b49bfd2948f0f1"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p10.txt",
+      "bytes": 4353,
+      "sha256": "58ed549ab1c8ca67998e85538b3961ae93e25da9d60d64d1f2706df88fe082de"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p11.txt",
+      "bytes": 4433,
+      "sha256": "90ae6674ddf8cbaa14458cd10ac4cbc5619d63c58f7dae1d0fafa9421b117c17"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p12.txt",
+      "bytes": 4528,
+      "sha256": "8c7735d7f404cfadaa19f41cf0f0f5f0ca9fc838f0dc8d7c9e8865071ad45fbd"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p13.txt",
+      "bytes": 4224,
+      "sha256": "8fb22a7eca2fa1accccfc6fb3297ec282c8c4720365f94c1c56ffff3709c4d30"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p14.txt",
+      "bytes": 4528,
+      "sha256": "a054917e8f61098787dc3fb1053392041ad094f73416325e6773e8aeb21fd6ab"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p15.txt",
+      "bytes": 4200,
+      "sha256": "c612e18ee822b39fc26d0c096a67fa8909097b33c3071b9ee8a8acabd4e27f5c"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p16.txt",
+      "bytes": 4064,
+      "sha256": "c6a16a2d81511314fe044945f769350199dbdec74a7c3dae5d417e1c3a18b030"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p17.txt",
+      "bytes": 4130,
+      "sha256": "67418606a103af8d70134c926ddc1738d68ed58d3e102168d0b9a7edb5880f2c"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p18.txt",
+      "bytes": 3329,
+      "sha256": "72cba983945f0950eabac448ec581648e38e1ae6767f398edb87dde05927d60e"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p19.txt",
+      "bytes": 3386,
+      "sha256": "32b85b519ccf376a59909a70f3730a3fd4df219e4649b24a20c7c7dfab6b1658"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p2.txt",
+      "bytes": 4680,
+      "sha256": "f451e1c001b566ae9bd51ddd788b0f4e02cd7b739bfd760ec9410ebe7dc6b3eb"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p20.txt",
+      "bytes": 3501,
+      "sha256": "33e8154c5f2e6b9275ec70a002dcbfc5527e5f65bedbd73f17424a7eb36ed1f6"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p21.txt",
+      "bytes": 2697,
+      "sha256": "62b66c5c07d4008498e7159e8aa0177d23747a01867c780e348abfbc8c5583ff"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p22.txt",
+      "bytes": 3262,
+      "sha256": "841fdf73b41c78c277816367c1df2fad20e0d0660c818ddf5fe353d13d0e7b03"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p23.txt",
+      "bytes": 1180,
+      "sha256": "0d76103acdad3ae555d9fb564b4d28fbb60e7725f96dde95ecdb10bc5890a8f4"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p3.txt",
+      "bytes": 3995,
+      "sha256": "3e832ccca16b0e9a6d9af46ea2519ee6fc35c6f9000b49c967d8bc73bf857256"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p4.txt",
+      "bytes": 3733,
+      "sha256": "f1c97f94de04c133cba3a671d30dddc61a23e0b32f95e171ec03635b13032f6f"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p5.txt",
+      "bytes": 3972,
+      "sha256": "be31b2e44a1ab536d450680d71d4115ad007489acc08204a6df58458a5ef9444"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p6.txt",
+      "bytes": 4647,
+      "sha256": "c27d5dfe82bcaab2ddf9eefe85a9acc5d581c99017933300ca481d722e0ff459"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p7.txt",
+      "bytes": 4469,
+      "sha256": "f262edb9136709fd2cf65f6f57248a369b0fec09efd62238a0914bc990b3543d"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p8.txt",
+      "bytes": 4184,
+      "sha256": "a26524ad0126ebe8db9bf5bb46f8958994c481c986aca4994bffb7611811e7d7"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOA_2026/p9.txt",
+      "bytes": 4135,
+      "sha256": "a29c14d82fa1944395cb90c3bbccfa7b85daae7ff5bb93500a253a069b987c0a"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p1.txt",
+      "bytes": 4722,
+      "sha256": "961ec0634f67849e46cf4a04082749791604e6a57cfb864ce074f5eaec1b58fb"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p10.txt",
+      "bytes": 4430,
+      "sha256": "66b00361f7946a1f0e3f14e0604d46eea9013e09df826d254d0337e0cb7f44f6"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p11.txt",
+      "bytes": 4702,
+      "sha256": "d9c35106ff50ccf088b468d14371da4e1b0bd30703fa82f9039d4e4125c59441"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p12.txt",
+      "bytes": 4302,
+      "sha256": "dd1534cfe29c7c0958f137539520085357933afc130974cc4c6459981f5ad3bd"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p13.txt",
+      "bytes": 3742,
+      "sha256": "220a1d067f4ef600fbac9b0fd2c2167a3a070d0bb22679b6b6cc73d3b888dcd7"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p14.txt",
+      "bytes": 4763,
+      "sha256": "acb17f2c1613fcaab24a80ccbba847cf52bbd259d5933035f64199f9bc06e5bc"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p15.txt",
+      "bytes": 4314,
+      "sha256": "6ed3936080151a05ababf9f4f6505d13220595a072f131632670ed620ec0ac80"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p16.txt",
+      "bytes": 4488,
+      "sha256": "2db06a8fee637a73893a6479691dfb61d75b783c93d4d24edd808a441c458800"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p17.txt",
+      "bytes": 4300,
+      "sha256": "1edcb7a8fd0b399bb21bf8a1560128f02e0b10e9c0c110fbc90a81ff230b4021"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p18.txt",
+      "bytes": 4516,
+      "sha256": "d65bc7c7029aa6c16abd0174e5448261964efc8187cda5b8254307acb5790191"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p19.txt",
+      "bytes": 4640,
+      "sha256": "45c7f41d1d11b3cbd3ed4fa5143af4acabe5d8b98f4d4a4d87649baaab8e2e31"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p2.txt",
+      "bytes": 5238,
+      "sha256": "943d62de8106d38664059d76c0f5c08c7e83ab45385edb7f235bbd3c24369988"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p20.txt",
+      "bytes": 4727,
+      "sha256": "79203af68f60f2587dc4d4d37970fa2f57f4e29b9e26a8ba6ca9bd7b944a14d1"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p21.txt",
+      "bytes": 4382,
+      "sha256": "abe9cb22490340b65fae0dfb008268da9c57c94bf17b6f3c38e4dc7c3033fe73"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p22.txt",
+      "bytes": 4125,
+      "sha256": "544aec2fa5815e4c9475b0e49eb4110b0ad308ee0591fe8e311abb0f2481dc56"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p23.txt",
+      "bytes": 4406,
+      "sha256": "72a743209d2d2bb6dedecdf9954a1b05cb5ec8f8ea0bfc26dfa115838105482d"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p24.txt",
+      "bytes": 4460,
+      "sha256": "5905386ba4c1984b17835ac62b69b01e66baa06087be4922aeb0ccd9aabb683d"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p25.txt",
+      "bytes": 4211,
+      "sha256": "29092941ab9401b931ab5fdc2ff508fa902e4a6d22ce228b60fb3e67510ad48e"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p26.txt",
+      "bytes": 4566,
+      "sha256": "8cfba5fb94ca2944a9b0d760297bbe2c3f583243b4dd4a86581e13be498610fa"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p27.txt",
+      "bytes": 4542,
+      "sha256": "a498c708f2cb5a95b380515e00d936029ab6c032fb1c97799209f163efc72d39"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p28.txt",
+      "bytes": 4662,
+      "sha256": "8abfd76d3eef66dbc3ea154cbaee24407380ead06b18fa0c6c28e3894702678c"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p29.txt",
+      "bytes": 4178,
+      "sha256": "29810de168a23e230470cdc43697626856c450c97884305b4ac6968db579f18d"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p3.txt",
+      "bytes": 4312,
+      "sha256": "890e86212f0807a5f1463e49881d82988ba1a38d9c95498974b09fb66f2aa42c"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p30.txt",
+      "bytes": 3975,
+      "sha256": "f2764d98dfef6fbaba8706a1246f4f90b4b4f3806a0d1fd2760dd7061aa0b4cb"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p31.txt",
+      "bytes": 4018,
+      "sha256": "79bbfce97f8991b000edae9bfafc47ac97ed36e4bbdb2c92a89c070ced05f617"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p32.txt",
+      "bytes": 4248,
+      "sha256": "ba0df9135f63777c3d0dc8a08dd688d4c5389199df030c232e602f604d758b42"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p33.txt",
+      "bytes": 3757,
+      "sha256": "8b97d0f200b3f09e23c5eaaaf6dfea108402d28c6836a9121e9b3099cb1a9bdf"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p34.txt",
+      "bytes": 3902,
+      "sha256": "7cb76f9e8c5c82f927f73371b21858148711235b7e153e84b46874b310d4c560"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p35.txt",
+      "bytes": 3545,
+      "sha256": "fc5829e0e28d0faccaad9a8e52d34c2772d216349fe20d0c9de78b8d4b7e2f4c"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p36.txt",
+      "bytes": 2973,
+      "sha256": "cb336203aa814f9a485ad9b207af339fd0b02335f035063e7d8655cc8a3646e5"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p37.txt",
+      "bytes": 3239,
+      "sha256": "a79284708019cdfa9aa809f9648f5911b4d4451337d86dbb05b158e54ad031d6"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p38.txt",
+      "bytes": 1900,
+      "sha256": "62059d492ddd5515af9cc5f1be02cd5ebcdabbebc75e774ac73a12bb5c100594"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p4.txt",
+      "bytes": 4355,
+      "sha256": "db6cb2872f74ea7f7294fb17fd7070c6b7f55fa9f0106cb88e4e6e0b0646c213"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p5.txt",
+      "bytes": 4194,
+      "sha256": "d8c1be962088df414925682612b46dde78e75a428a2b9ccc52ceab858bb98a56"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p6.txt",
+      "bytes": 4430,
+      "sha256": "f80bd4d72c0116d64395ea03e8ec5c8959a692732e1c3b6730c7f72482277b2a"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p7.txt",
+      "bytes": 4332,
+      "sha256": "74196eb1a8a5ca573b1fdac3d7b2b71d6960dc370c9bc0a0d99e6f3c642efd0a"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p8.txt",
+      "bytes": 4485,
+      "sha256": "3e641b5ff1d8e68ac997897e2fea177cce435ad447dee8faa9d061769f338195"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPFOB_2026/p9.txt",
+      "bytes": 4063,
+      "sha256": "6647c302518040897c4295f9b3d2a370a73b6205c42e2ea08137818ef3f20827"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p1.txt",
+      "bytes": 4654,
+      "sha256": "b424fd6ed644d2e621e7804cbad993204d8e26d805e4382fe403d98049ade7a7"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p10.txt",
+      "bytes": 4774,
+      "sha256": "3f87bdbba34429f2e30b14a03cb1129bed25588a1333c455325ee8d349113e18"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p11.txt",
+      "bytes": 4357,
+      "sha256": "d53caac29acc29e5651b3a3b03c5ba25d5c82b89d5e2c5052709eb08b475ea01"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p12.txt",
+      "bytes": 4081,
+      "sha256": "dcc259edd359960a5cf7ad3b5eb7edb6bf31a5e60e913282b43b4f029e690440"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p13.txt",
+      "bytes": 3768,
+      "sha256": "859a18367c25b236ce8be8abf569db8a6d42bbedf9c909496e32ef1f996d9b5b"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p14.txt",
+      "bytes": 3914,
+      "sha256": "7633436b4d70364024099b5cdf0352b8554d3875e8d4d544f8e4278a4221695f"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p15.txt",
+      "bytes": 4259,
+      "sha256": "c6833c1c79567c8e850e25cc1da8867737587cb85d1eb5d48d9c132ebd9f7fca"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p16.txt",
+      "bytes": 4254,
+      "sha256": "632b32b77f77f3295a334017b5549ba5fb576c303200cfd4241892661fe84064"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p17.txt",
+      "bytes": 4182,
+      "sha256": "1566065a63c3b81c10bff2cb8276f78ed7ece7801c769647a80d651e470e6c44"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p18.txt",
+      "bytes": 4373,
+      "sha256": "dc07df8dbc3944949139d470b01bd969cfd171c794be2ca8517beb2cf2913262"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p19.txt",
+      "bytes": 3906,
+      "sha256": "7746a18e480c238681ba6d1ef26532c7494a7b8d5a0c10b9f60d2d67a0cba0ea"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p2.txt",
+      "bytes": 4103,
+      "sha256": "671195aa58d92529597d5248e2f49312fecc9993774df0f67f7aa296e2b3a8a9"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p20.txt",
+      "bytes": 3804,
+      "sha256": "1e7b6799cecb9139a40eae2965ca9be5998fa9dc57fc1ed3b5db0e456477b8f5"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p21.txt",
+      "bytes": 3424,
+      "sha256": "abdcd31b278dd9061b405da766acc49aec072e24fae20470adcf1448991bea87"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p22.txt",
+      "bytes": 4034,
+      "sha256": "5ee7cc6558a15da9afddec262030ca57717fca5886458339ed800a36ae472c5f"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p23.txt",
+      "bytes": 4246,
+      "sha256": "efbdff3869fce957f59226d09157951cff168b148dbb35a65653144e46177797"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p24.txt",
+      "bytes": 4161,
+      "sha256": "94b31d0b9e03366131560d532292d195372af51e4ac73aeed218ea230a1d94f0"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p25.txt",
+      "bytes": 3840,
+      "sha256": "ec4f7ae13147e158782c8b2ea864a1e6b205f69d68be4c116f36d94af301557f"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p26.txt",
+      "bytes": 3216,
+      "sha256": "93142e2671e845b41cce920f6b1a01ff9bd6f715fa17a8a91b575c1a2ce6c1a4"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p27.txt",
+      "bytes": 4131,
+      "sha256": "4ebc4345605f2f6214eea625ca267de0d2b1c2a60cfbc4d70ab0cbbbdfe4e0e1"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p28.txt",
+      "bytes": 3675,
+      "sha256": "84cf3c8f1eac4eb7e06e2f552c8154539cee0a5f5b9ce1e050d0ceeb6d8e1561"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p29.txt",
+      "bytes": 3277,
+      "sha256": "9e2721f4afaeb615c123b0037af4d0057538977a1a363de049e8d10d8412f812"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p3.txt",
+      "bytes": 4533,
+      "sha256": "fd0825f561191d33166d0dfc9f59a5d790c7f13dbfd20c4a3edc76bedb370926"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p4.txt",
+      "bytes": 4364,
+      "sha256": "30a6a83c560bf55762444795a1af5d6b897ef12f48b8c08e676baba07888ad80"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p5.txt",
+      "bytes": 4721,
+      "sha256": "0539e752e8f26f7272138d48560c9192aeb450364ea7fc62eaedeff1b49628b8"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p6.txt",
+      "bytes": 4349,
+      "sha256": "8b0d5abdc392ac2fab0017d231337c256418e83034930f089105c2fdd27fbc27"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p7.txt",
+      "bytes": 4741,
+      "sha256": "2df7a547fc39869251ae681c03fe808b94de958bd3cba57e77562447ebefa543"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p8.txt",
+      "bytes": 4801,
+      "sha256": "5031f7728df3d862b49118ac5d9d3c9d49a9b7444432779a7fca4fddccd15acb"
+    },
+    {
+      "path": "pages/instructions--Poučenie DPPO_2026/p9.txt",
+      "bytes": 4108,
+      "sha256": "7d94c29faa7662f9c9a558a4f662e22517e709d31985f3e3d1228fe055d9a604"
+    },
+    {
+      "path": "protection-controls.json",
+      "bytes": 800,
+      "sha256": "1cb63df729145077e8480ad032bc82d6e338b98de30ca548db1224dd54ea75c8"
+    },
+    {
+      "path": "renders/a-p4.png",
+      "bytes": 239949,
+      "sha256": "c9292f8ea8f3fc4827843ea3e25ec53eacacdf36933439a7173a239bb26572c5"
+    },
+    {
+      "path": "renders/b-p10.png",
+      "bytes": 247603,
+      "sha256": "91d7ddd09cb28f07fa020d609491ff397da641644fd4a9bb16c73fd7371183a4"
+    },
+    {
+      "path": "renders/b-p13.png",
+      "bytes": 167045,
+      "sha256": "e613faf8153a61c2a86e88bc2f459dda08bd062cf77aa62fe4e987fd961cfd29"
+    },
+    {
+      "path": "renders/b-p5.png",
+      "bytes": 191930,
+      "sha256": "b3a6e500abc297bfd72ba8ab030ab28e55a73c23f1a09d10602e0f53636a55c4"
+    },
+    {
+      "path": "renders/cit-p16.png",
+      "bytes": 165313,
+      "sha256": "d7e71a8240a2f2a16433bc5a5e6f1b62e9ebe15dfc72ab0f1fcbcf53d18b5a99"
+    },
+    {
+      "path": "renders/cit-p4.png",
+      "bytes": 207486,
+      "sha256": "b1f75fff854aef9c15e2c0f04546c1e0be5926115d5c52fc3dfa6c078395d01e"
+    },
+    {
+      "path": "report.md",
+      "bytes": 6392,
+      "sha256": "1916a1c67c38abad67684e3a8e83e656d012d62f4f986332cf9b33c31bdedb78"
+    },
+    {
+      "path": "repository-validation.json",
+      "bytes": 214,
+      "sha256": "658c9b23829ff127291fb565bcd1572b687c1587407531cfe303f962cd6bc048"
+    },
+    {
+      "path": "retained-primary-rehash-receipts.json",
+      "bytes": 4400,
+      "sha256": "2b537b3732c7dcfb0b2533782305c8a7da2efe9c304f4f4cd9ef770d924e2dfe"
+    },
+    {
+      "path": "settlement-controls.json",
+      "bytes": 3388,
+      "sha256": "acf42160d3eb41d50a2f4d935aae5e6bb59e634fdeeafc991c4f43ecc06c3fd8"
+    },
+    {
+      "path": "sk-corporate-income-tax.md.independent.diff",
+      "bytes": 18456,
+      "sha256": "49c2ff5dbd17e70bd417d2bae4ac65d2c959e500d67e45d45ed3e410f7b6a4b3"
+    },
+    {
+      "path": "slovakia-pit.md.independent.diff",
+      "bytes": 12944,
+      "sha256": "039db34a864525de16b275b49c3be45e0d9f7b682a7775be652a561bde16ab1e"
+    }
+  ],
+  "count": 181,
+  "excludes": "this self-referential manifest"
+}

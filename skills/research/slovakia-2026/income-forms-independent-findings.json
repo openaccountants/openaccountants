@@ -1,0 +1,11 @@
+{
+  "scope": "PIT/CIT current-form delta against 1cbc9afd",
+  "status": "PASS",
+  "actionable_findings": [],
+  "scope_limits": [
+    "No whole-country attestation",
+    "Separate payroll sanction candidate excluded",
+    "Three VAT primary-source gaps remain outside this review",
+    "Inherited legal claims preserved, not all freshly reattested"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "slovakia-pit.md",
+    "baseline_matches_1cbc9afd": true,
+    "protected_metadata_except_version": "PASS",
+    "nine_authored_H2": true,
+    "two_original_oa_blocks": true,
+    "all_original_oa_data_and_ordered_steps": "PASS",
+    "six_intake_questions_verbatim": true,
+    "all_original_urls_retained": 14,
+    "byline_and_complete_CTA": "PASS",
+    "baseline_units": 64
+  },
+  {
+    "file": "sk-corporate-income-tax.md",
+    "baseline_matches_1cbc9afd": true,
+    "protected_metadata_except_version": "PASS",
+    "nine_authored_H2": true,
+    "two_original_oa_blocks": true,
+    "all_original_oa_data_and_ordered_steps": "PASS",
+    "six_intake_questions_verbatim": true,
+    "all_original_urls_retained": 17,
+    "byline_and_complete_CTA": "PASS",
+    "baseline_units": 58
+  }
+]

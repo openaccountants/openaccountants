@@ -1,0 +1,64 @@
+{
+  "review_date": "2026-10-27",
+  "independence": "Different writer; source bodies and arithmetic checked independently. Earlier reports used as locators only.",
+  "fresh_downloads": "fresh-package-receipts.json; two actual official ZIPs, eight independently extracted PDF members and texts",
+  "primary_read_scope": [
+    {
+      "body": "forms--Oznámenie o vydaní vzorov tlačív daňových priznaní.pdf",
+      "scope": "Entire one-page actual notice, identifiers and deadline boundary"
+    },
+    {
+      "body": "instructions--Oznámenie o vydaní poučení.pdf",
+      "scope": "Entire one-page actual matching-instruction notice"
+    },
+    {
+      "body": "forms--DPFOAv25 v1.10_vzor.pdf",
+      "scope": "Actual text pages 1–6, identity/year/type, supporting evidence, employment/base/allowances/relief, credits, advances, printed settlement, attachment count and refund request. Pages 3/4 reread separately after a combined output was truncated.",
+      "visually_read": [4]
+    },
+    {
+      "body": "forms--DPFOBv26 v1.3_vzor.pdf",
+      "scope": "Actual ordinary mapping text pages 3–11, attachment/refund page 13, dividend/bond/contribution annexes pages 17–20; income categories and form identity checked against notice and matching instructions. No claim every unrelated specialist page was read.",
+      "visually_read": [5,10,13]
+    },
+    {
+      "body": "forms--DPPOv26 v1.13_vzor.pdf",
+      "scope": "Actual text pages 2–8,10–11,16: base/rate/loss/credit/minimum/advance/payment rows, Tables A/B/D/E/K/L, attachment and refund rules. Special-base row cross-references on page 4 checked. No claim all specialist annex templates were substantively reviewed.",
+      "visually_read": [4,16]
+    },
+    {
+      "body": "instructions--Poučenie DPFOA_2026.pdf",
+      "scope": "Actual 2026/type A continuity introduction pages 1–2; ordinary employment, allowances, 2026 rates, relief and credit/settlement paragraphs around pages 10–15; selected later attachment/request text. Form footnotes independently supply A65/A71 conditions. Not whole 23-page instruction attestation. Extraction line ranges read include 1–80 and 545–695,752–828."
+    },
+    {
+      "body": "instructions--Poučenie DPFOB_2026.pdf",
+      "scope": "Actual employment/business/flat-expense/contribution/Table1a/1b paragraphs pages 9–14; ordinary other-income/allowance/separate-base/relief/bonus/advance/settlement paragraphs pages 19–25, with pages20/21 separately reread; row154 and payout-request paragraph page29. Specific extraction ranges 440–715,920–1018,1100–1265,1425–1450. Combined truncated outputs supplemented by page files and actual form reads. Not whole 38-page instruction attestation."
+    },
+    {
+      "body": "instructions--Poučenie DPPO_2026.pdf",
+      "scope": "Actual deadline/ID introduction page1; ordinary adjustments pages3–7, tax/rate/credit/minimum/advances/settlement pages10–12; Tables D/E pages15–16; K/L page23; attachment count page28. Specific extraction ranges125–390,520–655,793–890,1200–1295,1480–1520. Not whole 29-page instruction attestation."
+    },
+    {
+      "body": "../sk-whole-pack-review/sources/fs14-dp-2026.pdf",
+      "scope": "Actual retained 189905-byte six-page PDF independently read/rehashed, re-extracted to fs14-actual-independent.txt and read in full in this review. Earlier review report not used as substitute."
+    },
+    {
+      "body": "../sk-whole-pack-review/sources/13.html,13.txt,14.html,14.txt",
+      "scope": "Raw actual bodies independently rehashed; 37 expressly listed corporate/mapping sections independently extracted and compared across vintages (law-transition-section-comparison.json). Operative §42,§46–47,§33a and §52zzzm text read. No whole statute read claim."
+    },
+    {
+      "body": "../sk-whole-pack-review/sources/20.html,20.txt,21.html,21.txt",
+      "scope": "Raw actual bodies independently rehashed. Actual §155(4)–(11) and §156(1)–(6), especially §155(7)/§156(2), read for new rate-date wording. No whole statute read claim."
+    },
+    {
+      "body": "../sk-whole-pack-review/sources/34.html,34.txt and fresh official NBS page",
+      "scope": "Actual ECB main-refinancing table and dates read, raw retained body rehashed. Fresh web open of official NBS page on this review confirms lines129–133: 16Sep2026 2.65%;17Jun2026 2.40%;11Jun2025 2.15%."
+    }
+  ],
+  "fresh_web": [
+    {"url":"https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/","result":"success; actual body table read"},
+    {"url":"https://www.mfsr.sk/sk/dane-cla-uctovnictvo/priame-dane/dane-z-prijmu/vzory-tlaciv/","result":"success, but catalog search did not expose notice identifiers. Not relied on to prove forms; actual fresh ZIP notice and PDF members do so."}
+  ],
+  "visual_method":"Actual PDF pages rendered independently with pdftoppm at95dpi and all six emitted images inspected using view_image. Renders retained in renders/.",
+  "limitations":"No live electronic filing/submission tested. Review concerns actual published sample forms and matching official instructions. No Guide/README/Git edits or country attestation."
+}

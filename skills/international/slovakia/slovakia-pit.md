@@ -1,7 +1,7 @@
 ---
 name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
-version: 1.3
+version: 1.4
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.3
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.4
 
 Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
@@ -131,6 +131,24 @@ The extension notice names the new deadline: the end of the month in which the r
 
 A self-employed person registered for income tax, a VAT payer, and any tax adviser or lawyer acting for a client must file electronically (Tax Procedure Code §14(1)). The last known tax for advances is the tax on the business base at 19%, after losses (§34(5)).
 
+**Verified forms for the 2026 return.** The [official Ministry forms package](https://www.mfsr.sk/files/archiv/66/prispevok_16.zip), notice MF/014310/2026-721, retains **type A MF/012185/2025-721** (DPFOAv25 v1.10, six pages). For type B it issues **MF/014308/2026-721** (DPFOBv26 v1.3, twenty pages). These apply where the filing deadline falls **after 31 December 2026**, including the ordinary 2026 return due in March 2027. The earlier type B MF/012186/2025-721 belongs to deadlines no later than 31 December 2026. The 2025 suffix on the retained type A does not make it obsolete. Use the matching [2026 instructions, notice MF/014312/2026-721](https://www.mfsr.sk/files/archiv/36/prispevok_18.zip), rather than selecting a form by its filename year alone.
+
+**Ordinary return mapping.** “Row” below means the numbered field on those actual forms; complete the identity, year and return-type fields first.
+
+| Calculation | Type A, employment only | Type B |
+|---|---|---|
+| Employment income and contributions | Gross taxable income 34; compulsory contributions 36; partial base 39 = 34 − 36 | Gross 36; contributions 37; partial base 38 |
+| Business, expenses and losses | Use type B if business income is present | Table 1 by income category, totals to 39/40, adjusted positive base 45 or loss 46. Loss history in columns 47–50a, current deductions 51–54a; reduced base 55, then 57 after any separately supported deductions. Apply the statutory loss limits above; the printed fields do not create extra relief. |
+| Allowances and separate taxable bases | Personal/spouse/pension allowances 40/41/42, total 43; reduced base 44, tax 45 | Allowances 73/74/75, total 77. Employment uses them first (78); unused allowance 91 reduces business base in 92/94. Non-business base 80 and business base 94 remain separate; taxable business revenue 95 chooses the rate for tax 96. |
+| Foreign relief and tax total | Exemption/credit calculation 48–55; resulting tax 56 | Non-business relief 82–90; business relief 97–105; ordinary §7 relief 107–115. Tax total 116 combines 90,105,115 and the separately computed dividend/bond taxes below. Use the treaty method and supported foreign tax, not a guessed rate. |
+| Child and mortgage credits | Child details 31, annual entitlement 57; mortgage details 33, entitlement 63. Other-parent augmentation, if used, is 56a. | Child details 33, entitlement 117; mortgage details 35, entitlement 123. Other-parent augmentation, if used, is 116a. |
+| Already paid credits and advances | Employer-paid child/mortgage bonuses 59/65; listed advances 68–70; final amount due 71 or overpayment 72 | Employer-paid bonuses 119/125; listed advance/security categories 129–134; final amount due 135 or overpayment 136 |
+| Refund or bonus payout request | Section XI; bonus payout fields 61/67 | Section XIV; bonus payout fields 121/127 |
+
+For flat-rate business expenses, put the total expense **including contributions** in Table 1 row 10 column 2 and mark the flat-rate choice; repeat the contribution information below the table and in Annex 4 without deducting it twice. Complete Table 1b for the retained inventory/receivables records. Rental uses Table 1 row 11 and flows through 58–65; taxable §8 gains use Table 3 and 69–71. Both join base 80, without consuming the business allowance again. Ordinary §7 income uses Table 2 and 66–68, tax 106 and, after any relief,115. The §51e dividend calculation is in Annex 2 (tax total row 28); §51ea government-bond yields use Annex 3 (tax total row 14); both feed 116. Keep exempt retail-bond receipts out of these taxable-yield fields.
+
+Follow each form's printed settlement formula. It adds back child or mortgage bonuses already paid by the employer, then subtracts the permitted advances; mortgage-bonus amounts in A65/B125 concern a return after the employer's annual settlement. Subtracting the full annual bonus again without that reconciliation would duplicate it. Apply the EUR 17 assessment rule and EUR 5 payment rule only on their stated conditions. Retain employer income/advance certificates, the lender certificate and any other-parent evidence supporting the fields. Count the actual attachments: the type B built-in annexes count only when completed (row 154), whereas type A counts all attached documents (row 86). Sources: actual forms, type A pp.2–6, type B pp.3–13,17–20; matching 2026 instructions.
+
 ## Penalties and interest
 
 All under the Tax Procedure Code, Act 563/2009, version in force from 1 September 2026. The 1 January 2027 version has the same text for §154 to §156.
@@ -155,6 +173,8 @@ All under the Tax Procedure Code, Act 563/2009, version in force from 1 Septembe
 Jana is a web designer with a trade licence. She is not a VAT payer. In 2026 her revenue is EUR 48,000. She uses flat-rate expenses and paid EUR 6,000 of compulsory social and health contributions. She has no other income.
 
 Flat-rate expenses are 60% of EUR 48,000, which is EUR 28,800, capped at EUR 20,000. With the contributions on top, her business partial base is 48,000 - 20,000 - 6,000 = EUR 22,000. That is below EUR 26,083.13, so she gets the full personal allowance of EUR 5,966.73 (21 x 284.13). Her tax base is EUR 16,033.27. Revenue is under EUR 100,000, so the rate is 15%: tax EUR 2,404.99, due with DPFO type B by 31 March 2027. Her last known tax is under EUR 5,000, so she pays no advances in the next period.
+
+**Filing Jana's figures.** On type B, Table 1 row 2 records her EUR 48,000 trade income and row 10 totals that income; row 10 column 2 has EUR 26,000 expenses, including her EUR 6,000 contributions. Rows 39/40 carry those totals; rows 41/45/55/57 are EUR 22,000 with no losses or other adjustments. The allowance is EUR 5,966.73 in 73/77 and the unused employment allocation 91; rows 92/94 are EUR 16,033.27,95 is EUR 48,000, and 96/105/116 are EUR 2,404.99. With no credits or advances,135 is EUR 2,404.99.
 
 Independent variants in the same check preserve Jana's computation: on a EUR 10,000 pre-loss business base with EUR 8,000 unexpired losses, a qualifying micro-taxpayer uses EUR 8,000; a trader excluded by a controlled transaction uses EUR 5,000. A separate EUR 1,000 coupon gives EUR 130 for a non-exempt §51ea government bond, EUR 190 for ordinary foreign bank interest, and zero for a qualifying non-business retail government bond.
 
@@ -201,6 +221,8 @@ The base is above EUR 26,083.13, so the personal allowance phases down: 14,661.1
 
 The child bonus would be 12 x EUR 100 = EUR 1,200. His base of EUR 36,000 is above EUR 27,432 (1.5 x 12 x 1,524), so the bonus falls by one tenth of the EUR 8,568 excess, EUR 856.80. The bonus is EUR 343.20, well under the 29% cap. Tax after the bonus is EUR 5,991.19, before the advances his employer withheld.
 
+**Filing Peter's figures.** On type A,34 is EUR 42,000,36 is EUR 6,000,39 is EUR 36,000; 40/43 are EUR 2,661.11,44 is EUR 33,338.89,45/56 are EUR 6,334.39, and 57 is EUR 343.20. Rows 58/64 are EUR 5,991.19 with no mortgage credit. For a separate settlement variant, if his certificates show EUR 5,500 wage-tax advances and EUR 100 child bonus already paid, enter 69 = 5,500 and 59 = 100:71 is `6,334.39 − 343.20 + 100 − 5,500 = EUR 591.19`. The EUR 100 is not an extra tax charge; it prevents paying the same part of his annual bonus twice.
+
 The same check also recomputes the separate low-base parent-aggregation and June birthday/birth cases above, and the old/new mortgage caps. Those variants do not change Peter's stated facts or tax result; mortgage eligibility is assumed satisfied for the variant borrowers.
 
 ```oa-check
@@ -218,6 +240,8 @@ inputs:
   new_eligible_interest: 3000
   new_partial_interest: 2000
   partial_loan_months: 6
+  employer_child_bonus_paid_variant: 100
+  wage_advances_variant: 5500
 steps:
   - partial_base: gross - contributions
   - allowance_cap: round(subsistence_min * 51.6, 2)
@@ -242,6 +266,7 @@ steps:
   - old_mortgage_bonus: min(old_eligible_interest * 0.50, 400)
   - new_mortgage_bonus: min(new_eligible_interest * 0.50, 1200)
   - new_partial_bonus: min(new_partial_interest * 0.50, 1200 * partial_loan_months / 12)
+  - return_balance_variant: tax_after_bonus + employer_child_bonus_paid_variant - wage_advances_variant
 expected:
   allowance_cap: 14661.11
   allowance: 2661.11
@@ -263,6 +288,7 @@ expected:
   old_mortgage_bonus: 400
   new_mortgage_bonus: 1200
   new_partial_bonus: 600
+  return_balance_variant: 591.19
 ```
 
 ## Ask the client first
@@ -289,8 +315,11 @@ expected:
 | Financial Administration, income tax for citizens: allowance EUR 5,966.73, phase-out from EUR 26,083.13, EUR 14,661.11, spouse EUR 5,455.30 / EUR 20,116.40 / EUR 43,983.32, child bonus 2026 and its taper | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/informovanie-dan-prijem | 2026-10-24 |
 | Financial Administration, employees: filing threshold EUR 2,983.37 and the 2026 allowance figures | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/zamestnanci | 2026-10-24 |
 | Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |
+| Ministry of Finance, notice MF/014310/2026-721 and actual type A/type B/DPPO sample forms, actual package | https://www.mfsr.sk/files/archiv/66/prispevok_16.zip | 2026-10-27 |
+| Ministry of Finance, notice MF/014312/2026-721 and actual 2026 type A/type B/DPPO instructions, actual package | https://www.mfsr.sk/files/archiv/36/prispevok_18.zip | 2026-10-27 |
+| ECB and NBS, actual historical main-refinancing rates | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html; https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-27 |
 
-Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions.
+**Rate reference dates.** The [ECB history](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html), also published by [NBS](https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/), records main-refinancing rates of 2.15% from 11 June 2025, 2.40% from 17 June 2026 and 2.65% from 16 September 2026, observed through this 27 October read. At 2.65% the 10%/7%/3% penalty floors and 15% interest floor apply. Select the actual rate on delivery of the assessment or supplementary filing for §155 (§155(7)), and when arrears arise for §156(2). A future reference date needs the rate in force then; no future ECB rate is asserted. The form versions are verified by the actual Ministry packages above; the 31 December law transition remains governed by §52zzzm as explained at the start.
 
 Historical source credit from the original Guide: `priznanie-digital/priznanie-digital` (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
