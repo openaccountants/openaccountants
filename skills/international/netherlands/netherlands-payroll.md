@@ -69,6 +69,7 @@ Out of this skill: the work-cost scheme (WKR) in detail, see nl-payroll-tax; pre
 8. **Director-shareholder.** A working shareholder with a substantial interest takes a customary wage: the highest of the most comparable employment, the highest-paid other employee, and EUR 58,000 (Wet LB art. 12a). If the customary wage for all work is EUR 5,000 or less, no fictitious wage is added. Insurance and Zvw status are determined separately.
 9. **Travel and mileage top-up.** EUR 0.25 per km applies back to 1 January 2026. If you paid EUR 0.23 or less, you may pay the EUR 0.02 difference tax-free with a later wage. If you taxed the excess over EUR 0.23 as wage, correct the earlier returns. If you paid 80% final levy on it, offset that levy in a later return.
 10. **Employment-law inputs.** Pay at least the hourly minimum wage for the age band (youth rates for ages 15 to 20). Holiday allowance at least 8%; a CAO may remove it only if the wage is at least 108% of minimum wage. The transition payment is one third of a monthly salary per full year of service plus a pro rata part, capped as in the table.
+11. **Sickness pay and statutory leave.** A sick employee keeps 70% of wage for 104 weeks, and for the first 52 weeks at least the statutory minimum wage; the wage counted is capped at the daily maximum premium wage (BW Book 7 art. 629(1)). Statutory leave is at least four times the agreed weekly working time per year (art. 634(1)). That statutory minimum expires six months after the end of the year in which it was earned, unless the employee could not reasonably take it (art. 640a).
 
 ## Deadlines and filing
 
@@ -165,9 +166,10 @@ expected:
 | Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
 | Rijksoverheid, minimum wage 2026 | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
 | Rijksoverheid, holiday allowance | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
+| Burgerlijk Wetboek Book 7, art. 629, 634, 640a | https://wetten.overheid.nl/BWBR0005290/2026-01-01 | 2026-10-27 |
 | Rijksoverheid, transition payment | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
 
-Not yet confirmed: the old version's employment-law points were not re-read today and are left out until checked (sickness pay of 70% for up to two years, statutory leave of four times weekly hours and its expiry, maternity and partner leave and their UWV benefits, working-time limits, payslip content list, third-party payments reporting); the exact customary-wage exceptions for start-ups and loss-making companies; the overtime revision method for multiple contracts and business transfers; the employee-count limit for filing in Mijn Belastingdienst Zakelijk; director-liability reporting deadlines in the Invorderingswet 1990.
+Not yet confirmed: the old version's employment-law points were not re-read today and are left out until checked (maternity and partner leave and their UWV benefits, working-time limits, payslip content list, third-party payments reporting); the exact customary-wage exceptions for start-ups and loss-making companies; the overtime revision method for multiple contracts and business transfers; the employee-count limit for filing in Mijn Belastingdienst Zakelijk; director-liability reporting deadlines in the Invorderingswet 1990.
 
 <!-- openaccountants-cta-block -->
 
