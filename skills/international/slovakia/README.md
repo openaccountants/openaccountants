@@ -6,7 +6,7 @@ covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
 partial:
-  VAT: "The ordinary §50 coefficient method and annual true-up remain unfinished; the registration Guide needs executable examples; period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
+  VAT: "The annual §50 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide needs executable examples; period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
 ---
 
 # Slovakia: tax pack
