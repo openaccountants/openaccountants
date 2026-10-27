@@ -1,7 +1,7 @@
 ---
 name: de-estimated-tax
 description: "German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer, de-self-employed-income-tax), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax)."
-version: 2.1
+version: 2.2
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-27
@@ -63,7 +63,7 @@ The 2026 solidarity surcharge limits first apply for assessment period 2026 ([§
 
 **Rental losses on a new building.** A loss from letting a building counts only for calendar years that begin after it was bought or completed (§ 37(3) sentences 8 and 9). Sentence 10 lifts this for buildings with § 7b special depreciation and some older incentives.
 
-**Surcharges.** The solidarity surcharge is measured on the prepayments (§ 3(1) number 2 SolzG) and charged only if the base exceeds the limit in the table (§ 3(3)). Above the limit, it is 5.5% of the whole base, but not more than 11.9% of the excess over the limit (§ 4). Joint filers use the EUR 40,700 limit; do not double the single limit by hand. Church tax prepayments are paid with the income tax prepayments ([§ 51a(4) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)). The EUR 400 and EUR 100 minimums do not apply to them (§ 51a(4) sentence 1).
+**Surcharges.** The solidarity surcharge is measured on the prepayments (§ 3(1) number 2 SolzG) and charged only if the base exceeds the limit in the table (§ 3(3)). Above the limit, it is 5.5% of the whole base, but not more than 11.9% of the excess over the limit (§ 4). Worked from § 4, the cap stops biting once the base passes EUR 37,838.28 (single) or EUR 75,676.56 (joint), where 5.5% of the whole base equals 11.9% of the excess. Income tax at the flat rate under § 32d(3) and (4) EStG is left out of the limit test (§ 3(3) SolzG). Joint filers use the EUR 40,700 limit; do not double the single limit by hand. Church tax prepayments are paid with the income tax prepayments ([§ 51a(4) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)). The EUR 400 and EUR 100 minimums do not apply to them (§ 51a(4) sentence 1).
 
 **How the yearly amount is split.** § 37 does not print a split across the four dates. Read the amounts from the notice.
 
@@ -172,4 +172,4 @@ The 30-day month in the steps is a simplification for this example; count calend
 | Finance ministry, "Steuern von A bis Z" (church tax 8% or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-24 |
 | Mein ELSTER, "Antrag auf Anpassung von Vorauszahlungen" | https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg | 2026-10-27 (named from the earlier version; page not re-read) |
 
-Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; the upper end of the mitigation zone (no official page prints it); church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.
+Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.
