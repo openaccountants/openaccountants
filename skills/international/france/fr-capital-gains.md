@@ -205,6 +205,7 @@ Key law: CGI art. 200 A (PFU), 158 (dividend allowance), 150-0 A to 150-0 D ter 
 | Légifrance, CGI art. 244 bis A (non-residents) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806274 | 2026-10-26 |
 
 Not yet confirmed: the CGI text of art. 150-0 D (holding allowances, ten-year loss carry-forward) and the social levy duration allowance scale read on Légifrance (figures from impots.gouv.fr and F10864); the EUR 15,000 sale price exemption in the code text; the social levies on non-residents' property gains; employee savings match caps; PER exit computation; the free-share regime for plans of 8 August 2015 to 31 December 2017; the conditions of the retiring director's allowance.
+
 <!-- openaccountants-cta-block -->
 
 ---

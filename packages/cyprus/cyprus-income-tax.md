@@ -4,7 +4,7 @@ description: "Cyprus personal income tax for tax year 2026 (Income Tax Law 118(I
 version: 0.2
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

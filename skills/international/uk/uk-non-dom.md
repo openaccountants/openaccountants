@@ -3,9 +3,7 @@ name: uk-non-dom
 description: "How the UK taxes the foreign income and gains of people who used to be non-doms, and of new arrivals, for tax year 2026/27 (6 April 2026 to 5 April 2027), after Finance Act 2025 ended the remittance basis. Covers the 4-year foreign income and gains (FIG) regime for people who were non-resident for 10 years, how to claim it and what the claim costs (personal allowance, CGT annual exempt amount, foreign losses), Overseas Workday Relief, the Temporary Repatriation Facility (12% for 2025/26 and 2026/27, 15% for 2027/28), rebasing to 5 April 2017, and the inheritance tax long-term UK resident test (10 of 20 years) with its tail. Trigger on: UK non-dom, remittance basis abolished, FIG regime, 4-year exemption, TRF, temporary repatriation facility, 2017 rebasing, long-term UK resident, IHT tail, overseas workday relief. Out of scope: deciding residence (uk-statutory-residence-test), non-resident returns (uk-non-resident-sa109), foreign tax credit relief (uk-foreign-tax-and-withholding), non-UK trusts."
 version: 1.1
 jurisdiction: GB
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
@@ -13,6 +11,8 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - uk-income-tax-sa100
   - uk-statutory-residence-test
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 

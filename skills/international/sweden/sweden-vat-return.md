@@ -3,13 +3,13 @@ name: sweden-vat-return
 description: "Swedish VAT (moms) and the VAT return (momsdeklaration) for 2026, for a business registered or registering for VAT in Sweden. Covers the 25%, 12% and 6% rates and their 2026 scope, including the temporary 6% food rate from 1 April 2026 to 31 December 2027 and 6% on dance events from 1 July 2026; the SEK 120,000 small-business exemption and the EU SME scheme (EUR 100,000); monthly, quarterly and annual periods by turnover with their deadlines; input VAT limits (cars, representation, mixed use); domestic reverse charge (construction, scrap, gold, phones and laptops); every return field; the EC Sales List (periodisk sammanställning); and förseningsavgift, skattetillägg and kostnadsränta. Trigger phrases: moms, momsdeklaration, momssats, omvänd betalningsskyldighet, periodisk sammanställning, momsbefrielse, Swedish VAT return. Out of scope: income tax (se-income-tax, se-corporate-tax), payroll (sweden-payroll), cross-border income tax (se-cross-border), bookkeeping (sweden-bookkeeping); OSS/IOSS returns, margin schemes, VAT groups and property VAT are referred."
 version: 2.1
 jurisdiction: SE
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
