@@ -1,0 +1,46 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.cipo.gov.dm/files/companies/companies-act21.pdf",
+      "bytes": 7339458,
+      "sha256": "01c264ef01c74d2a334be74763e1d6d163e021039088a9597759cf2c1f4dfefc"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/companies/companies-act11-1996.pdf",
+      "bytes": 72508,
+      "sha256": "e47ec8dc4affc6d16e674049b57a0c4633d2381f8664fa50c6dca671ed6000aa"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/companies/companies-act16-2001.pdf",
+      "bytes": 502135,
+      "sha256": "209d3a2af2c73203be7fbf176530da4956ca4ff3672e378a4a5224b1ab6f62e3"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/companies/companies-order-1997.pdf",
+      "bytes": 12529,
+      "sha256": "aa6cc929d4e558ac0bd9180968cf49c66da7a2ba769469b3708e05d02b8ba254"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/companies/companies-regulation-2012.pdf",
+      "bytes": 59880,
+      "sha256": "ed41e51843ab9f92e9b9be795a73fd719ee934d427573ff7df68fba9dc30c0ac"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/forms/bnc/From9A-director-of-company.pdf",
+      "bytes": 77501,
+      "sha256": "ea4058fc503538be2e4adfec305a0fc5cf2f5558f5c251c8225586561491485e"
+    },
+    {
+      "url": "https://www.dominica.gov.dm/laws/2021/international_business_companies_ibc_repeal_act_2021_6_of_2021.pdf",
+      "bytes": 548960,
+      "sha256": "78374bf12c112e136c01a0a222f4efec3cc914f61f2ae55bb5cae90f28d10331"
+    },
+    {
+      "url": "https://www.dominica.gov.dm/laws/2021/companies_amendment_act_2021_7_of_2021.pdf",
+      "bytes": 939028,
+      "sha256": "3eeee2c75bad26f08f09855499b5fd3ee7e8afa2a685010831b4775097410dd6"
+    }
+  ],
+  "review_status": "independent review pending"
+}
