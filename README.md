@@ -1,16 +1,6 @@
 # OpenAccountants
 
-**Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
-
-This library includes accountant-reviewed skills and skills no accountant has signed off yet (checked against the law, or sourced from the law). Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
-
-## Need someone to do the accounting?
-
-OpenAccountants also helps business owners get bookkeeping and tax work done through accountants in our network. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
-
-**[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
-
-The skills and AI connection remain free.
+**Open tax skills for AI.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline cited to its official source, for 266 jurisdictions.
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
@@ -61,7 +51,9 @@ AI:     Residence and domicile · Remittance basis on foreign income
 
 ---
 
-## Two states, greppable honesty
+## Three states, greppable honesty
+
+This library holds accountant-reviewed skills and skills no accountant has signed off yet. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 Every skill is in exactly one state — and the repo greps honestly:
 
@@ -86,6 +78,12 @@ Your name on the tax knowledge AI actually uses — with attribution built in:
 3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile) and your platform edits are committed to this repo as *you* — your contribution graph reflects your work.
 
 The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
+
+---
+
+## Need the work done?
+
+OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in every country they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
 
 ---
 
