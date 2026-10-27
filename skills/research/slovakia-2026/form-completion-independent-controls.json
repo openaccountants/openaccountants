@@ -1,0 +1,142 @@
+{
+  "method": "Independent exact Decimal computations and threshold comparisons, no writer controls imported. Form identifiers and row/section classification independently read from actual primary bodies.",
+  "restaurant_DPHv25": {
+    "03": "40000",
+    "04": "9200.00",
+    "01a": "10000",
+    "02a": "500.00",
+    "01": "2000",
+    "02": "380.00",
+    "17": "10080.00",
+    "input_total_18_18a_19": "4600",
+    "32": "5480.00",
+    "35": "5480.00"
+  },
+  "consultancy_DPHv25": {
+    "03": "30000",
+    "04": "6900.00",
+    "09b": "2000",
+    "10b": "460.00",
+    "17": "7360.00",
+    "car_credit": "2875",
+    "lunch_credit": "0",
+    "input_total_18_18a_19": "4485.00",
+    "32": "2875.00",
+    "35": "2875.00"
+  },
+  "registration_oa_examples": {
+    "service_output": "46.00",
+    "nonpayer_credit": "0",
+    "payer_credit": "46.00",
+    "turnover_before": "49500",
+    "ordinary_turnover": "54000",
+    "alternative_turnover": "63500",
+    "alternative_project_VAT": "3220.00",
+    "alternative_total": "17220.00",
+    "fixed_gross_net": "11382.11",
+    "nonpayer_cost": "246.00",
+    "payer_net": "0.00",
+    "fixed_gross_VAT": "2617.89",
+    "old_gross_comparison_arithmetic_only": "60882.11"
+  },
+  "KV_threshold_controls": [
+    {
+      "period_deducted_simplified_invoice_VAT": "2999.99",
+      "section": "B.3.1"
+    },
+    {
+      "period_deducted_simplified_invoice_VAT": "3000",
+      "section": "B.3.2"
+    },
+    {
+      "period_deducted_simplified_invoice_VAT": "3000.01",
+      "section": "B.3.2"
+    }
+  ],
+  "publication_boundary_controls": [
+    {
+      "category": "ex4901",
+      "inputs": {
+        "advertising": "50"
+      },
+      "content_gate_pass": true
+    },
+    {
+      "category": "ex4901",
+      "inputs": {
+        "advertising": "50.01"
+      },
+      "content_gate_pass": false
+    },
+    {
+      "category": "ex4902",
+      "inputs": {
+        "advertising": "50",
+        "erotic": "10"
+      },
+      "content_gate_pass": true
+    },
+    {
+      "category": "ex4902",
+      "inputs": {
+        "advertising": "50.01",
+        "erotic": "10"
+      },
+      "content_gate_pass": false
+    },
+    {
+      "category": "ex4902",
+      "inputs": {
+        "advertising": "50",
+        "erotic": "10.01"
+      },
+      "content_gate_pass": false
+    },
+    {
+      "category": "online_CPA58.11.30",
+      "inputs": {
+        "advertising": "50"
+      },
+      "content_gate_pass": true
+    },
+    {
+      "category": "online_CPA58.11.30",
+      "inputs": {
+        "advertising": "50.01"
+      },
+      "content_gate_pass": false
+    },
+    {
+      "category": "audio_CPA58.11.30",
+      "inputs": {
+        "narration": "49.99"
+      },
+      "content_gate_pass": false
+    },
+    {
+      "category": "audio_CPA58.11.30",
+      "inputs": {
+        "narration": "50"
+      },
+      "content_gate_pass": true
+    },
+    {
+      "category": "audio_CPA58.11.30",
+      "inputs": {
+        "narration": "50.01"
+      },
+      "content_gate_pass": true
+    }
+  ],
+  "semantic_mappings": {
+    "Irish_advertising_received": "B.1",
+    "ordinary_domestic_purchase_deducted": "B.2",
+    "eKasa_sales": "D.1",
+    "ordinary_full_taxable_issued_invoices": "A.1 when applicable; avoid D duplication",
+    "issued_domestic_RC_69_12_f_to_j": "A.2",
+    "supplementary_delete_code": 1,
+    "supplementary_new_code": 2
+  },
+  "all_pass": true,
+  "limits": "Content gates assume the stated actual Annex tariff/CPA classification. No automatic qualification of unrelated books/media. Input allocation across rates must follow actual invoices; subsets do not create extra deduction. Fixed-gross arithmetic does not resolve registration-trigger circularity."
+}

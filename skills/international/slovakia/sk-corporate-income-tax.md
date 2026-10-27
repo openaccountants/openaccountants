@@ -1,7 +1,7 @@
 ---
 name: sk-corporate-income-tax
 description: "Slovak corporate income tax (daň z príjmov právnických osôb) for tax year 2026 under Act No. 595/2003 Coll. as amended, including Act No. 261/2025 Coll. Covers the three rates set by taxable revenue (10% up to EUR 100,000, 24% above EUR 5,000,000, 21% otherwise), the minimum tax with its new EUR 11,520 band for revenue above EUR 5,000,000, the tax base from accounting profit, paid-basis expenses, unrecoverable VAT, depreciation groups 0 to 6, the 5-year loss carry-forward with the 50% cap, the two interest limits (25% EBITDA for related-party loans and 30% above EUR 3,000,000 net interest), dividends, advances, the DPPO return and extensions, and penalties. Trigger on: Slovakia corporate tax, DPPO, s.r.o. tax, 10% rate Slovakia, minimálna daň, daňová licencia, preddavky na daň. Out of scope: individuals (slovakia-pit), payroll (sk-payroll-social), VAT (slovakia-vat-return), company set-up (sk-company-formation)."
-version: 0.2
+version: 0.3
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -43,10 +43,10 @@ Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individual
 | Minimum tax, above EUR 250,000 up to EUR 500,000 (§ 46b(2)(c)) | EUR 1,920 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Minimum tax, above EUR 500,000 up to EUR 5,000,000 (§ 46b(2)(d)) | EUR 3,840 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Minimum tax, above EUR 5,000,000 (§ 46b(2)(e), new: Act No. 261/2025, periods starting on or after 1 January 2026) | EUR 11,520 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html |
-| Micro-taxpayer (mikrodaňovník): taxable revenue up to EUR 60,000 (§ 2(w)) | Full loss offset, no 50% cap | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Micro-taxpayer (mikrodaňovník): revenue up to EUR 60,000 **and all §2(w) conditions below** | Full loss offset, no 50% cap | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Loss carry-forward (§ 30) | 5 periods; capped at 50% of the base unless a micro-taxpayer | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
-| Related-party interest limit (§ 21a) | Interest above 25% of EBITDA (profit before tax plus depreciation plus interest expense) is not deductible | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
-| Interest limitation rule (§ 17k) | Net interest above EUR 3,000,000 added back to the extent it exceeds 30% of tax EBITDA | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Related-party interest limit (§21a), subject to lender/borrower and capitalised-interest boundaries below | Covered interest above 25% of accounting EBITDA is not deductible; no §21a adjustment if §17k increased the base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
+| Interest limitation rule (§17k), subject to exceptions and contract-date transition below | If covered net borrowing costs exceed EUR 3,000,000, add back their excess over 30% of statutory tax EBITDA; blocked costs have a five-period carry-forward | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Depreciable tangible movable asset (§ 22(2)(a)) | Entry price above EUR 1,700 and useful life over one year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Advances, prior-year tax above EUR 16,600 (§ 42(1)) | Monthly, 1/12 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
 | Advances, prior-year tax above EUR 5,000 up to EUR 16,600 (§ 42(2)) | Quarterly, 1/4 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |
@@ -80,11 +80,35 @@ Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individual
 | 5 | 20 years | 1/20 |
 | 6 | 40 years | 1/40 |
 
-Assets that fit no group in Annex 1 go into group 2 (§ 26(2)). § 26(14) as amended from 1 January 2026 (building depreciation over at least half the group 6 period) applies first to the period whose return is filed after 31 December 2025. Annex 1 as amended from that date applies first to technical improvements put into use, and repairs booked, in that period. Where the group, period or annual rate changes, the change is also made for assets already being depreciated, but depreciation already claimed is not reopened (§ 52zzzf). Check the asset's group against the 2026 Annex 1 before carrying last year's register forward.
+**Classify the actual asset before choosing the period.** Annex 1 uses CPA (KP) product codes and KS building codes; its code controls where the short name differs. Keep the asset specification and the vehicle registration certificate. Common entries are:
 
-**Interest: two separate limits.**
-- **§ 21a (thin capitalisation).** Interest and related costs on loans from a related person (závislá osoba) are not deductible to the extent they exceed 25% of EBITDA. EBITDA here is accounting profit before tax plus the depreciation and interest expense in it. Banks, insurers and leasing companies are out. § 21a does not apply where the company has already added back interest under § 17k.
-- **§ 17k (ATAD rule).** If net interest expense is above EUR 3,000,000, the excess over 30% of the tax base (increased by net interest and tax depreciation) is added back. Most owner-managed companies never reach the EUR 3,000,000 floor.
+| Asset and actual Annex 1 entry | CPA/KP or KS code | Group and ordinary period | Official source |
+|---|---|---|---|
+| Computers and peripheral equipment, item 1-13 | CPA 26.2 | 1: four years | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+| Ordinary passenger car, item 1-24, excluding the qualifying BEV/PHEV entry | CPA 29.10.2 | 1: four years | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+| Passenger car whose registration certificate Part II, field “18 P.3 Druh paliva/zdroj energie”, states BEV or PHEV in any combination with another fuel/energy source, item 0-1 | CPA 29.10.2 | 0: two years | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+| Furniture, item 2-33 | CPA 31.0 | 2: six years | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+| Residential buildings, item 6-1; hotels and similar buildings, item 6-2; administrative buildings, item 6-3 | KS 11; 121; 1220 | 6: forty years, with the specific §26(14) hotel/sports rule below | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1),(14) |
+| Culture/entertainment/education/health buildings, item 6-4 | KS 126 | 6: forty years; the sports subset is separately addressed below | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1),(14) |
+| Other non-residential buildings, item 6-5 | KS 127, except 1271 agricultural buildings and the stated 1274 firefighter buildings/barracks | 6: forty years for the included codes | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+| Other civil-engineering works, item 6-6 | KS 24 | 6: forty years, with the specific sports rule below | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1),(14) |
+| Buildings outside group 6, item 5-1; civil-engineering works outside groups 4/6 and the separately classified components, item 5-2 | KS 1 or 2, subject to the actual exclusions | 5: twenty years | [Annex 1](https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf); §26(1) |
+
+An asset fitting no Annex 1 group goes into group 2 only where no useful life is prescribed elsewhere and §26(6),(7) does not provide a special method. Classify a mixed-use building by its main use measured over total usable floor area; classify each structure in a functional complex separately (§26(2),(13)). A label such as “building” or “hybrid car” is insufficient to choose twenty years or group 0.
+
+**Hotel and sports boundary.** Section 26(14) allows straight-line depreciation over **twenty to forty years** for KS 121 buildings used to provide accommodation under an accommodation contract and associated services, and KS 1265/241 buildings/structures used for sport. It is not a general twenty-year election for residential or administrative buildings. Separately, the period's combined technical improvements and repairs on those qualifying properties, including qualifying rented properties, are a separate asset under §22(6)(f)/(g) when they reach **at least 10% of the building/structure's §25 entry price**. Annex 1 items 2-40/2-41 put that separate expenditure in group 2, six years. Below 10%, repairs follow ordinary accounting/tax treatment and technical improvements increase the building's entry price; the six-year rule does not absorb all refurbishment costs. The use/code test for the building's twenty-to-forty-year period and the 10% expenditure test are distinct ([ITA §§22,26,27,52zzzf](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html); [FS 21/DZPaU/2025/I, both pages](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.06.27_021_DZPaU_2025_I.pdf)).
+
+For a new EUR 800,000 administrative building with a full depreciation year, ordinary depreciation is EUR 20,000; a qualifying hotel choosing twenty years gives EUR 40,000. Qualifying hotel improvements/repairs of exactly EUR 80,000 reach the 10% boundary and form a separate six-year asset; EUR 79,999 does not. The original building's shortened period does not turn that separate asset into a twenty-year asset. Section 26(14) first applies to a period whose return is filed after 31 December 2025. The amended expenditure/Annex 1 rule first applies to technical improvements put into use/business assets and repairs booked/tax-recorded in such a period. It can therefore apply to a 2025 period with a return filed in 2026. Apply a changed group, period or annual rate to an existing register prospectively; do not reopen depreciation already claimed (§52zzzf).
+
+**Interest: apply the two limits in order.** Both concern double-entry/IFRS corporate borrowers and relevant Slovak permanent establishments. First test §17k; §21a is switched off **only if the base was increased under §17k**, not merely because §17k was considered (§21a(4)).
+
+1. **§17k scope and exceptions.** It covers net borrowing costs under contracts concluded after 31 December 2023, including later amendments to older contracts (§52zzr). It is not limited to related-party debt. Paragraph (8) excludes banks/foreign-bank branches; the specified insurers/reinsurers and branches; the financial entities identified in footnote 105b; and a borrower whose dependent persons under §2(n) are **only individuals**. Check that last exception before imposing a corporate-group calculation on an owner-managed business. The footnote identifies the statutory pension, supplementary-pension, financial-intermediation and collective-investment entities; this Guide's financial-sector exclusion remains.
+2. **Find net borrowing costs N.** From borrowing expenses that otherwise are tax expenses in the period, subtract taxable interest income/economically equivalent returns, including interest finally taxed by withholding under §17k(5) (§17k(3)–(5)). Include debt interest, bond/bill yields, finance-lease interest, debt-related derivatives, financing foreign-exchange differences, guarantees, contractual financing fees, arm's-length financing amounts and equivalent payments. Capitalised interest is included in the proportion in which it enters tax cost through the asset/technical-improvement cost or residual value (§17k(4)(e)); it is not automatically all deducted or blocked when paid.
+3. **Build the statutory denominator.** The sum S in §17k(6) is the §§17–29 ordinary base less foreign-taxed income/bases removed by exemption, **plus** the §17f exit-tax base, §51e special base and bases taxed by final withholding. Remove the v.o.s./k.s. partnership base shares specified in §17k(9),(10). Use the pre-adjustment base defined by §17(38), excluding its listed circular adjustments (§17(19)(h),(l), §17(34),(35),(37), §17k, §19(3)(n), §21(1)(h)); do not use taxable revenue, accounting EBITDA or the base after tax losses. Add N and tax depreciation actually included under §19(3)(a)/§22(12): `tax EBITDA = S + N + D`.
+4. **Current-period adjustment and carry.** Only if N **exceeds EUR 3,000,000**, increase the base by the amount by which N exceeds `30% × tax EBITDA` (§17k(2)). Exactly EUR 3,000,000 does not trigger that adjustment. The EUR 3,000,000 test is not a deductible allowance to subtract from the excess and is not an alternative floor for the 30% cap. Track blocked N by origin period. It can be deducted in the next **five immediately following periods**, only to the extent current N plus the older amounts deducted does not exceed that period's §17k(2) calculated capacity (§17k(7)); unused capacity itself is not a carried tax asset. For a positive-capacity case with current N = EUR 3,200,000 and 30% capacity EUR 3,600,000, at most EUR 400,000 of still-live blocked costs can be deducted. A EUR 1,900,000 balance becomes EUR 1,500,000; a 2026 blocked amount expires after the fifth following period, 2031 for consecutive calendar years. Paragraph (7) permits qualifying legal-successor carryover only on its stated anti-avoidance conditions, apportioned by transferred equity where there are several successors; reorganisations remain specialist work.
+5. **§21a if no §17k increase.** For a related lender, covered interest and borrowing costs above **25% of accounting profit before tax plus the depreciation and interest expense included in that profit** are disallowed. Exclude loans/loan portions whose interest forms asset acquisition/own cost (§21a(1)); that capitalisation exclusion differs from §17k's later tax-cost inclusion. An apparently independent lender is treated as related for the relevant loan if lending is conditional on a directly connected loan, borrowing or deposit supplied to that lender by a related person: the back-to-back rule (§21a(2)). Banks/foreign-bank branches, the specified insurers/reinsurers/branches, footnote-105b financial entities and leasing companies are excluded borrowers (§21a(3)). The deduction is `min(covered costs, max(0, 25% × accounting EBITDA))`; disallow only the covered costs less that deduction. If accounting EBITDA is zero or negative, disallow the covered costs in full, never more than those costs ([Financial Administration, low-capitalisation FAQ5](https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie-)). Section 21a provides no five-period carry-forward; do not transfer §17k(7)'s carry to it.
+
+For example, a non-excluded borrower has ordinary pre-adjustment base EUR 2,000,000, exempted foreign base EUR 500,000, exit base EUR 200,000, §51e base EUR 100,000 and final-withholding base EUR 200,000: S = EUR 2,000,000. With N = EUR 4,000,000 and D = EUR 1,000,000, tax EBITDA is EUR 7,000,000, capacity EUR 2,100,000 and §17k add-back EUR 1,900,000. There is no additional §21a adjustment. Separately, where §17k makes no increase, EUR 120,000 debt costs including EUR 20,000 capitalised interest leave EUR 100,000 covered expense; accounting EBITDA EUR 300,000 gives a EUR 75,000 cap and EUR 25,000 §21a disallowance. The same result applies to a qualifying back-to-back loan, even with an independent lender ([ITA §§17(38),17k,21a,52zzr](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
 
 **Tax losses (§ 30).** A tax loss is deducted over at most the five periods right after the loss year. The yearly deduction is capped at 50% of the base, unless the company is a micro-taxpayer in the year it deducts. Then the full base can be absorbed. A micro-taxpayer is a company with taxable revenue up to EUR 60,000 that has no controlled transaction with a related person, is not in bankruptcy, liquidation or a payment plan, and has a full 12-month period (§ 2(w)). Note the two thresholds differ: EUR 60,000 for the loss rule, EUR 100,000 for the 10% rate. Unused loss falls away after the fifth period and on entry into liquidation or bankruptcy.
 
@@ -147,6 +171,8 @@ Alfa s.r.o. has a calendar 2026 year. Its taxable revenue is EUR 90,000 and its 
 - 2026 tax is not above EUR 5,000, so there are no advances in 2027.
 - The edge: with revenue of EUR 100,500 instead, the rate on the same base would be 21%, tax EUR 3,675. EUR 500 of extra revenue costs EUR 1,925 of tax.
 
+Separate asset variants, not changes to Alfa's stated profit: a EUR 4,800 computer first used in July has six months of four-year straight-line depreciation, EUR 600; a EUR 30,000 ordinary car gives EUR 3,750, versus EUR 7,500 for a qualifying certificate-coded BEV/PHEV; EUR 6,000 furniture gives EUR 500. The same check recomputes the full-year administrative-building/hotel and exactly-10% improvements boundaries above. These are independent asset assumptions, not deductions to subtract again from Alfa's already stated base.
+
 ```oa-check
 name: Alfa s.r.o., revenue EUR 90,000, profit EUR 20,000, loss EUR 4,000 (2026)
 inputs:
@@ -155,6 +181,12 @@ inputs:
   addbacks: 1500
   loss_bf: 4000
   min_tax_band: 960
+  computer_price: 4800
+  car_price: 30000
+  furniture_price: 6000
+  use_months: 6
+  building_price: 800000
+  qualifying_improvements: 80000
 steps:
   - base_before_loss: profit + addbacks
   - loss_cap: base_before_loss * 0.50
@@ -164,6 +196,15 @@ steps:
   - tax_payable: max(tax_10, min_tax_band)
   - tax_if_21: base_after_loss * 0.21
   - cliff_cost: tax_if_21 - tax_10
+  - computer_first_year: round(computer_price / 4 * use_months / 12, 2)
+  - ordinary_car_first_year: round(car_price / 4 * use_months / 12, 2)
+  - qualifying_bev_first_year: round(car_price / 2 * use_months / 12, 2)
+  - furniture_first_year: round(furniture_price / 6 * use_months / 12, 2)
+  - admin_building_full_year: building_price / 40
+  - qualifying_hotel_full_year: building_price / 20
+  - improvements_boundary: building_price * 0.10
+  - improvement_excess_over_boundary: qualifying_improvements - improvements_boundary
+  - separate_improvements_full_year: round(qualifying_improvements / 6, 2)
 expected:
   base_before_loss: 21500.00
   loss_cap: 10750.00
@@ -173,6 +214,15 @@ expected:
   tax_payable: 1750.00
   tax_if_21: 3675.00
   cliff_cost: 1925.00
+  computer_first_year: 600.00
+  ordinary_car_first_year: 3750.00
+  qualifying_bev_first_year: 7500.00
+  furniture_first_year: 500.00
+  admin_building_full_year: 20000.00
+  qualifying_hotel_full_year: 40000.00
+  improvements_boundary: 80000.00
+  improvement_excess_over_boundary: 0
+  separate_improvements_full_year: 13333.33
 ```
 
 ### Example 2: large company at 24%, loss cap and advances
@@ -185,12 +235,26 @@ Beta a.s. has a calendar 2026 year with taxable revenue of EUR 6,200,000. Its ta
 - Minimum tax for revenue above EUR 5,000,000 is EUR 11,520. EUR 36,000 is higher, so it does not bite. Had Beta made a tax loss in 2026, it would still pay EUR 11,520. It could then credit that amount against the part of its 2027 to 2029 tax above the minimum tax.
 - The § 42(6) tax for 2026 is EUR 36,000 (base after losses at 24%, no reliefs). It is above EUR 16,600, so once the 2026 return is due (31 March 2027, or the extended date) Beta pays monthly advances of EUR 3,000 (1/12 of EUR 36,000). Until then its 2027 advances follow its 2025 tax (§ 42(7)).
 
+Independent interest variants in the same check use the non-excluded borrower and separate §21a facts above: statutory sum of bases EUR 2,000,000; tax EBITDA EUR 7,000,000; §17k add-back EUR 1,900,000; next-period carry use EUR 400,000 and remaining balance EUR 1,500,000. Exactly EUR 3,000,000 has zero excess over the activation threshold, and therefore no current §17k increase. Separate covered related/back-to-back debt costs EUR 100,000 against the EUR 75,000 §21a limit give EUR 25,000 disallowance. At zero or negative accounting EBITDA, the same EUR 100,000 covered costs are fully disallowed, without an add-back greater than EUR 100,000. These amounts are not additions to Beta's separately stated EUR 300,000 base.
+
 ```oa-check
 name: Beta a.s., revenue EUR 6,200,000, base EUR 300,000, losses EUR 400,000 (2026)
 inputs:
   base_before_loss: 300000
   loss_bf: 400000
   min_tax_band: 11520
+  interest_ordinary_base: 2000000
+  exempt_foreign_base: 500000
+  exit_base: 200000
+  special_51e_base: 100000
+  withholding_base: 200000
+  net_borrowing_costs: 4000000
+  interest_tax_depreciation: 1000000
+  carry_next_net_costs: 3200000
+  carry_next_capacity: 3600000
+  thin_total_debt_costs: 120000
+  thin_capitalised_interest: 20000
+  thin_accounting_ebitda: 300000
 steps:
   - loss_cap: base_before_loss * 0.50
   - loss_used: min(loss_bf, loss_cap)
@@ -199,6 +263,20 @@ steps:
   - tax_24: base_after_loss * 0.24
   - tax_payable: max(tax_24, min_tax_band)
   - monthly_advance: tax_payable / 12
+  - statutory_sum_bases: interest_ordinary_base - exempt_foreign_base + exit_base + special_51e_base + withholding_base
+  - tax_ebitda: statutory_sum_bases + net_borrowing_costs + interest_tax_depreciation
+  - interest_capacity: tax_ebitda * 0.30
+  - interest_addback: max(0, net_borrowing_costs - interest_capacity)
+  - threshold_boundary_excess: 3000000 - 3000000
+  - carry_room: max(0, carry_next_capacity - carry_next_net_costs)
+  - interest_carry_used: min(interest_addback, carry_room)
+  - interest_carry_left: interest_addback - interest_carry_used
+  - thin_covered_costs: thin_total_debt_costs - thin_capitalised_interest
+  - thin_capacity: thin_accounting_ebitda * 0.25
+  - thin_allowed: min(thin_covered_costs, max(0, thin_capacity))
+  - thin_disallowed: thin_covered_costs - thin_allowed
+  - thin_negative_ebitda_disallowed: thin_covered_costs - min(thin_covered_costs, max(0, -100000 * 0.25))
+  - thin_zero_ebitda_disallowed: thin_covered_costs - min(thin_covered_costs, max(0, 0 * 0.25))
 expected:
   loss_cap: 150000.00
   loss_used: 150000.00
@@ -207,24 +285,41 @@ expected:
   tax_24: 36000.00
   tax_payable: 36000.00
   monthly_advance: 3000.00
+  statutory_sum_bases: 2000000
+  tax_ebitda: 7000000
+  interest_capacity: 2100000
+  interest_addback: 1900000
+  threshold_boundary_excess: 0
+  carry_room: 400000
+  interest_carry_used: 400000
+  interest_carry_left: 1500000
+  thin_covered_costs: 100000
+  thin_capacity: 75000
+  thin_disallowed: 25000
+  thin_allowed: 75000
+  thin_negative_ebitda_disallowed: 100000
+  thin_zero_ebitda_disallowed: 100000
 ```
 
 ## Ask the client first
 
 1. Taxable revenue for the period. It sets the rate band (EUR 100,000 and EUR 5,000,000), the minimum tax band, and micro-taxpayer status (EUR 60,000).
 2. The tax period: calendar or fiscal year, and whether it is the company's first period (no minimum tax, no advances).
-3. Any transaction with a related person in the period. It removes micro-taxpayer status and brings in § 21a for related-party interest.
+3. Any controlled transaction with a related person; loan/ amendment dates, lenders and linked deposits, net borrowing costs, capitalised interest and unexpired §17k balances. Identify whether dependent persons are only individuals and whether borrower exclusions apply.
 4. Unused tax losses by year, and any minimum tax paid in 2023 to 2025 still to be credited.
-5. Unpaid year-end items in the § 17(19) list (rent, royalties, advisory and legal fees, penalties), and whether the company recovers its input VAT in full.
+5. Unpaid year-end items in the §17(19) list and input-VAT recovery; new assets with actual CPA/KS codes, commissioning dates, vehicle certificate fuel codes and hotel/sports use or improvements/repair amounts.
 6. Foreign income or payments to non-residents, and whether any counterparty is in a non-cooperating state.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 595/2003 Coll. on income tax, consolidated version in force 1 January to 30 December 2026 (§ 2(w), § 2(x), § 12(7), § 15, § 16(1)(e), § 17(19), § 17k, § 21, § 21a, § 22, § 26, § 27, § 30, § 30c, § 42, § 43, § 46b, § 49, § 51e, § 51ea, § 51eb, § 52zzzf, § 52zzzj, § 52zzzk) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
+| Financial Administration, low-capitalisation FAQ5: negative accounting EBITDA disallows covered costs in full | https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie- | 2026-10-27 |
+| Act No. 595/2003 Coll. on income tax, 2026: existing provisions plus §§17(38),17k,21a,22(6),26–27,52zzr,52zzzf reread for this update | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-27 |
 | Act No. 595/2003 Coll., version in force from 1 December 2025 (2025 minimum tax bands, for comparison) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20251201.html | 2026-10-23 |
-| Act No. 595/2003 Coll., version in force 31 December 2026 (changes affect individuals only) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-23 |
+| Act No. 595/2003 Coll., 31 December 2026 text: assigned corporate provisions unchanged | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-27 |
+| Actual 2026 Annex 1: CPA/KS classification, items 0-1,1-13,1-24,2-33,2-40/41,5-1/2,6-1 to6-6 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2003/595/20260101_5740211-2.pdf | 2026-10-27 |
+| FS 21/DZPaU/2025/I: Act152/2025 new separate hotel/sports improvements/repair assets and §26(14) building periods | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.06.27_021_DZPaU_2025_I.pdf | 2026-10-27 |
 | Act No. 261/2025 Coll. on consolidation of public finances (new § 46b(2), § 51eb, § 52zzzj, § 52zzzk) | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html | 2026-10-23 |
 | Act No. 563/2009 Coll. Tax Procedure Code, version in force from 1 September 2026 (§ 14, § 154, § 155, § 156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |
 | Act No. 279/2024 Coll. on financial transaction tax, version in force from 1 January 2026 (§ 6) | https://static.slov-lex.sk/static/SK/ZZ/2024/279/20260101.html | 2026-10-23 |
@@ -233,7 +328,7 @@ expected:
 | European Central Bank, key interest rates (main refinancing rate 2.65% from 16 September 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
 | Financial Administration, legal persons' income tax return | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-prijmov/pravnicke-osoby/danove-priznanie-dan-prijem-po | 2026-10-23 |
 
-Not yet confirmed: the full 2026 Annex 1 asset classification after the 1 January 2026 changes (Annex 1 is a separate download on slov-lex and was not read; only the group periods in § 26(1) were read); whether the Ministry issues a new DPPO form for 2026 periods (the return page on 23 October 2026 still names MF/012187/2025-721).
+Not yet confirmed: whether the Ministry issues a new DPPO form for 2026 periods (the return page on 23 October 2026 still names MF/012187/2025-721).
 
 > Contributed by Michael Cutajar.
 

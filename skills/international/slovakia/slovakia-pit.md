@@ -1,7 +1,7 @@
 ---
 name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
-version: 1.2
+version: 1.3
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.2
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.3
 
 Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
@@ -50,7 +50,8 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Band 4: above EUR 75,010.32 | 35% | 2026 | same, §15(a)(1d) |
 | Business base (§6(1),(2)) when that business revenue is EUR 100,000 or less | 15% | 2026 | same, §15(a)(2) |
 | Business base when that business revenue exceeds EUR 100,000 | 19% / 25% / 30% / 35% bands as above | 2026 | same, §15(a)(3) |
-| Capital income special base (§7), for example foreign interest | 19% | 2026 | same, §15(a)(4) |
+| Ordinary capital income special base (§7), for example foreign bank interest; government-bond exception below | 19% | 2026 | same, §15(a)(4) |
+| Non-exempt Slovak/EU/EEA government-bond and treasury-bill yields, gross special base (§51ea) | 13%; qualifying retail-government-bond yields and sales exempt under §9(1)(r), unless the bonds are or were business assets | 2026 | [ITA §15(a)(7), §51ea, §9(1)(r), §52zzzc](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Foreign dividends special base (§51e) | 7% for profit periods beginning in 2017–2023 or from 1 January 2025; 10% for periods beginning in 2024; 35% non-cooperating-state rule separately applies | Paid in 2026; rate follows profit period | [ITA §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Personal allowance (21.0 x), base up to 91.8 x (EUR 26,083.13) | EUR 5,966.73 | 2026 | same, §11(2)(a) |
 | Personal allowance, base above EUR 26,083.13 | EUR 14,661.11 (51.6 x) minus one third of the base; zero from a base of EUR 43,983.32 | 2026 | same, §11(2)(b) |
@@ -58,10 +59,12 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Spouse allowance, taxpayer base above EUR 43,983.32 | EUR 20,116.40 (70.8 x) minus one third of the base, less the spouse's own income | 2026 | same, §11(3)(b) |
 | Supplementary pension (DDS) and PEPP contributions | up to EUR 180 a year | 2026 | same, §11(9) |
 | Flat-rate expenses for a non-VAT payer (paušálne výdavky) | 60% of business revenue, cap EUR 20,000, plus compulsory contributions paid | 2026 | same, §6(10) |
-| Child tax bonus, child under 15 | EUR 100 a month | 2026 | same, §33(1)(b) |
-| Child tax bonus, child aged 15 to 18 | EUR 50 a month | 2026 | same, §33(1)(a) |
+| Child tax bonus, through the month of the 15th birthday | EUR 100 a month | 2026 | same, §33(1)(b) |
+| Child tax bonus, after the 15th-birthday month through the 18th-birthday month | EUR 50 a month | 2026 | same, §33(1)(a) |
 | Child tax bonus cap, as % of the employment or business base | 29% (1 child), 36% (2), 43% (3), 50% (4), 57% (5), 64% (6 or more) | 2026 | same, §33(6) |
 | Child tax bonus taper threshold: 1.5 x 12 x average monthly wage of 2024 (EUR 1,524) | EUR 27,432; above it the bonus per child falls by 1/10 of the excess | 2026 | same, §33(11); wage: https://www.employment.gov.sk/files/slovensky/ministerstvo/analyticke-centrum/2025/sprava_sossr_2024_pub.pdf |
+| Mortgage interest credit, contracts made by 31 December 2023 | 50% of eligible interest on at most EUR 50,000 of loan principal; annual cap EUR 400; reference-income multiple 1.3 | Continuing eligible five-year claims in 2026 | [Historical ITA §33a](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html), [current §52zzy(1)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
+| Mortgage interest credit, contracts made after 31 December 2023 | 50% of eligible interest; annual cap EUR 1,200; reference-income multiple 1.6; first/last-year caps prorated | 2026 | [ITA §33a, §52zzy(2)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Minimum tax of an individual | no tax assessed if the tax is EUR 17 or less, or total income is EUR 2,983.37 or less; not where a child or mortgage bonus is claimed or tax was withheld | 2026 | same, §46a |
 | Tax due in the return not paid | if EUR 5 or less | 2026 | same, §46 |
 | Exempt: rental plus occasional income | first EUR 500 a year | 2026 | same, §9(1)(g) |
@@ -80,7 +83,7 @@ Tax on a base B above EUR 75,010.32 is 19% x 43,983.32 + 25% x 16,365.89 + 30% x
 - **actual expenses** (preukázateľné výdavky), with tax records or double-entry accounts (§6(11)); or
 - **flat-rate expenses** of 60% of revenue, capped at EUR 20,000, if the person is not a VAT payer, or was one for only part of the year (§6(10)). The flat rate covers all expenses except the compulsory social and health contributions, which are deducted on top in the amount paid. The person still keeps a record of income and of inventory and receivables (§6(10), §6(11)(a),(d)).
 
-The result is the business partial base. A tax loss can be carried forward five years. A micro-taxpayer (business revenue up to EUR 60,000, §2(w)) can use it in full; others only up to 50% of the business base (§30(1)).
+The result is the business partial base. A tax loss can be carried forward for the five immediately following tax periods. Full-base loss relief requires micro-taxpayer status **in the deduction period**, not just revenue up to EUR 60,000. Under §2(w), the individual's taxable §6(1),(2) revenue must not exceed EUR 60,000; exclude a dependent person who carries out a controlled transaction in that period, a person declared bankrupt, entering liquidation or granted a payment plan, and a period shorter than twelve consecutive months except one shortened by death. Others can deduct at most 50% of the business base (§30(1)). Thus a EUR 10,000 base and EUR 8,000 unexpired loss allow EUR 8,000 relief for a qualifying micro-taxpayer, but only EUR 5,000 for the same-revenue trader with a controlled transaction; EUR 3,000 remains subject to the original expiry date. Exactly EUR 60,000 passes the revenue condition; EUR 60,000.01 does not ([ITA §§2(w),30](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
 
 **The 15% rate.** It turns on business revenue under §6(1) and (2), not on profit. Revenue of EUR 100,000 or less gives 15% on the whole business base. Above EUR 100,000 the whole business base goes on the bands (§15(a)(2),(3)).
 
@@ -91,11 +94,26 @@ The result is the business partial base. A tax loss can be carried forward five 
 
 **Rental (§6(3)) and other income (§8).** Start with the actual income and supported category-specific expenses. Under §9(1)(g), rental and §8(1)(a) occasional income share EUR 500 of annual income exemption. If they exceed that amount, include only the excess and reduce related expenses in the same taxable-income/total-income proportion. For a rental-only case with EUR 6,000 receipts, EUR 2,000 expenses and the whole EUR 500 available, taxable receipts are EUR 5,500; allowable expenses are `2,000 × 5,500 / 6,000`, approximately EUR 1,833.33, leaving approximately EUR 3,666.67 before the applicable filing-rounding steps. Full EUR 2,000 expenses cannot be deducted against the reduced receipts, and rental expenses cannot create a rental loss (§6(6)). Where qualifying §8(1)(d)–(f) option/security/share disposals also occur, §9(1)(i) applies to their proceeds less statutory disposal costs, with its business-asset and specified noncash-share exclusions; the exemptions under (g) and (i) together cannot exceed EUR 500. Do not give each category another EUR 500. Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)–(f),(t)) retain their actual gain/exemption rules; a loss on one type is ignored (§8(2)). The §9(1)(k) securities exemption requires more than one year since acquisition **and** more than one year between regulated-market admission and sale, excluding business assets and the specified §9(1)(p)/§5(7)(q) noncash-share cases, subject to §52zzz(3)'s acquisition-after-2023 transition. These taxable gains enter base (a) on the bands ([ITA §§6, 8, 9 and 52zzz](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
 
-**Capital income (§7).** Slovak interest is taxed by withholding under §43 and stays out of the return (§7(3)). Foreign interest and similar income go in a special base taxed at 19% (§15(a)(4)). Dividends from a Slovak company are taxed by withholding. For ordinary foreign profit dividends, select the profit period before the rate: 7% for periods beginning in 2017–2023 and from 1 January 2025, but 10% for periods beginning in 2024, even when all are received in 2026. The 35% non-cooperating-state rule is separate (§51e, §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)). For EUR 10,000 gross, those ordinary domestic-law rates give EUR 700 or EUR 1,000 before applicable foreign-tax relief. Pre-2017 profit distributions need their historical regime and are not assigned either rate here.
+**Capital income (§7).** Ordinary Slovak bank interest is taxed finally by withholding under §43 and stays out of the return (§7(3)); ordinary foreign bank interest enters the §7 special base at 19% (§15(a)(4)). Identify the instrument before applying that rule. Non-exempt yields on Slovak government bonds/treasury bills and bonds/bills issued by another EU/EEA state enter the **gross, no-expense-deduction §51ea special base at 13%** in 2026 (§15(a)(7)); the temporary 16% rate was for 2025 payments only (§52zzzc(3)). Section 43(3)(v)'s separate 13% withholding route concerns recipients not established or created for business; it is not a blanket withholding rule for individual bondholders. Qualifying Slovak retail government bonds (štátne dlhopisy pre občanov) and equivalent EU/EEA-state retail bonds have exempt yields **and sale income**, unless they are or were the taxpayer's business assets (§9(1)(r)). A non-exempt government-bond coupon of EUR 1,000 therefore gives EUR 130 tax before foreign-tax relief, ordinary foreign bank interest of EUR 1,000 gives EUR 190, and a qualifying non-business retail-bond coupon of EUR 1,000 gives zero. Do not extend the coupon special base to every bond sale ([ITA §§9,15,43,51ea,52zzzc](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)). Dividends from a Slovak company are taxed by withholding. For ordinary foreign profit dividends, select the profit period before the rate: 7% for periods beginning in 2017–2023 and from 1 January 2025, but 10% for periods beginning in 2024, even when all are received in 2026. The 35% non-cooperating-state rule is separate (§51e, §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)). For EUR 10,000 gross, those ordinary domestic-law rates give EUR 700 or EUR 1,000 before applicable foreign-tax relief. Pre-2017 profit distributions need their historical regime and are not assigned either rate here.
 
-**Credits.** From the tax computed:
-- **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).
-- **Mortgage interest bonus** for borrowers aged 18 to 35 at application (§33a). The conditions differ for loan contracts made up to 31 December 2023 and after; check them in the law before claiming it.
+**Child tax bonus (§33).** Start from the eligible dependent child living in the taxpayer's household and taxable §5 or §6(1),(2) income. Temporary absence from the household does not end eligibility. For each eligible month, the maximum is EUR 100 through the **month of the 15th birthday**, then EUR 50 through the **month of the 18th birthday**, and zero afterwards (§33(1),(2)). Ordinarily the conditions must hold at the month's start, but the birth, adoption, court-ordered substitute-care and commencement-of-continuous-vocational-preparation months count immediately (§33(5)). Only one eligible person claims for a month; parents can divide the year, with mother, father, then another eligible person taking priority if they do not agree (§33(4)).
+
+Use the §5 and §6(1),(2) partial bases before allowances, or their sum B, for the 29%/36%/43%/50%/57%/64% cap for one/two/three/four/five/six-or-more children. If the eligible child count changes, split the cap by the number of months at each child count and sum those proportional entitlements (§33(6),(10)). Above B = EUR 27,432 in 2026, reduce each child's entitlement by one tenth of the excess; for part-year eligibility apply the corresponding eligible-month share, without creating a negative bonus (§33(5),(11)). The tax return can augment B by the other eligible household person's §5/§6(1),(2) base when the claimant lacks the base for the full bonus, using only the proportional months at whose start the other person qualified if they qualified for only part of the year. This is a credit calculation, not a transfer of taxable income; test **both the percentage cap and the high-base taper on augmented B** (§33(8)). The claimant must have at least 90% of all income from Slovak taxable sources, and so must the other person if their base is added (§33(9)). Claim the excess bonus over tax as a payout (§33(7)).
+
+For a separate low-base case with one eligible under-15 child all year, claimant B = EUR 2,000 gives a EUR 580 cap. An eligible second parent's EUR 4,000 base raises B to EUR 6,000 and the cap to EUR 1,740, allowing the full EUR 1,200 nominal bonus; both parents must pass the 90% test. If that parent qualified for only six start-of-months, add EUR 2,000, not EUR 4,000: cap EUR 1,160. If B is EUR 4,000, one under-15 child qualifies all year and a second is born in July, the nominal total is EUR 1,800 but the changing-count cap is `4,000 × (29% × 6/12 + 36% × 6/12) = EUR 1,300`. For month boundaries with sufficient base below the taper threshold, a June 15th birthday gives `6 × 100 + 6 × 50 = EUR 900`; a June 18th birthday gives `6 × 50 = EUR 300`; a child born or adopted in June gives seven eligible months, or EUR 700 if under 15 ([ITA §33(1),(4)–(11)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
+
+**Mortgage interest bonus (§33a): select the contract date first.** It concerns one housing-loan contract and one domestic flat or family house. Obtain the lender's eligible-interest certificate; a contract amendment is the same contract (§33a(2)). Section 52zzy(1),(2) preserves the following two branches.
+
+| Contract date | Eligible interest and annual maximum | Income test at contract conclusion |
+|---|---|---|
+| By 31 December 2023 | 50% of interest attributable to at most EUR 50,000 of loan principal; maximum EUR 400 per full year. Use the lender-certified eligible portion, not automatically all interest on a larger loan. | Borrower's prior-calendar-year taxable income under the historical §33a(1)(b), divided by 12, at most 1.3 times that same year's official average monthly wage. |
+| After 31 December 2023 | 50% of interest on the housing loan; maximum EUR 1,200 per full year, without the former EUR 50,000 principal restriction. The flat/house must serve exclusively the borrower's own permanent housing, alone or with close persons. | Borrower's prior-calendar-year taxable income under current §33a(1)(b), divided by 12, at most 1.6 times that same year's official average monthly wage. |
+
+In both branches, the borrower and every co-borrower must be aged **18 through 35 inclusive at the loan application date**. The income test is fixed at contract conclusion, using the calendar year before that conclusion, not the current claim year. With co-borrowers, also test their combined average monthly income against `number of borrowers × 1.3 or 1.6 × reference wage`; only the claimant borrower receives the credit, not each co-borrower (§33a(4),(5)). Use the income categories specified in the applicable version: §§5,6,8 and special §§7,51e in the historical branch; the current branch also includes §51ea. The new branch's own-permanent-housing restriction must not be retrospectively added to the old branch. Do not claim as borrower while also co-borrower on another credited contract; the old/new-contract overlap exclusion in §52zzy(15) also applies. Pre-2018 state mortgage support prevents simultaneous interest-bonus claims until the month after that support last applied (§52zzy(14)).
+
+The window is **60 consecutive months from the first month of interest charging**. In the first and last calendar years, cap the credit at `annual maximum × eligible months / 12`, and take the lower of that cap and 50% of eligible interest actually paid for the eligible period (§33a(3),(7)). For example, interest beginning in October 2023 gives the old branch a EUR 100 cap for October–December 2023, EUR 400 for full eligible years including 2026, and EUR 300 for January–September 2028. An otherwise eligible new-branch loan starting interest in October 2026 instead has caps of EUR 300 for October–December 2026, EUR 1,200 for each full eligible year and EUR 900 for January–September 2031. An eligible old-contract 2026 interest certificate of EUR 1,000 gives `min(500,400) = EUR 400`; a new-contract certificate of EUR 3,000 gives `min(1,500,1,200) = EUR 1,200` for a full eligible year. For a new loan starting interest in July with EUR 2,000 eligible interest paid, the first-year result is `min(1,000,1,200 × 6/12) = EUR 600`. These examples assume the age, income, property and other eligibility tests are met; no assumed figure is represented as an official reference wage.
+
+Apply the mortgage bonus **after** the child bonus. Request payout of any amount exceeding the remaining tax in the return, or claim through the employer's annual settlement (§33a(8),(9)). A non-resident must satisfy the 90%-Slovak-income test (§33a(10)). On the borrower's death, §33a(11) transfers only the unexpired window to the person taking over the debt, with its stated age/income/co-borrower exceptions; the deceased claims through the death month and the successor from the following month ([current ITA §§33a,52zzy](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html); [historical §33a](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html)).
 
 **Rounding.** Every calculation is to two decimal places, with 5 and above rounded up (§47).
 
@@ -138,24 +156,41 @@ Jana is a web designer with a trade licence. She is not a VAT payer. In 2026 her
 
 Flat-rate expenses are 60% of EUR 48,000, which is EUR 28,800, capped at EUR 20,000. With the contributions on top, her business partial base is 48,000 - 20,000 - 6,000 = EUR 22,000. That is below EUR 26,083.13, so she gets the full personal allowance of EUR 5,966.73 (21 x 284.13). Her tax base is EUR 16,033.27. Revenue is under EUR 100,000, so the rate is 15%: tax EUR 2,404.99, due with DPFO type B by 31 March 2027. Her last known tax is under EUR 5,000, so she pays no advances in the next period.
 
+Independent variants in the same check preserve Jana's computation: on a EUR 10,000 pre-loss business base with EUR 8,000 unexpired losses, a qualifying micro-taxpayer uses EUR 8,000; a trader excluded by a controlled transaction uses EUR 5,000. A separate EUR 1,000 coupon gives EUR 130 for a non-exempt §51ea government bond, EUR 190 for ordinary foreign bank interest, and zero for a qualifying non-business retail government bond.
+
 ```oa-check
 name: SK PIT 2026, SZCO flat-rate expenses, revenue EUR 48,000, 15% rate
 inputs:
   revenue: 48000
   contributions: 6000
   subsistence_min: 284.13
+  loss_variant_base: 10000
+  loss_variant_available: 8000
+  bond_coupon: 1000
 steps:
   - flat_expenses: min(revenue * 0.60, 20000)
   - partial_base: revenue - flat_expenses - contributions
   - allowance: round(subsistence_min * 21, 2)
   - base: partial_base - allowance
   - tax: round(base * 0.15, 2)
+  - micro_loss_used: min(loss_variant_available, loss_variant_base)
+  - controlled_trader_loss_used: min(loss_variant_available, loss_variant_base * 0.50)
+  - controlled_trader_loss_left: loss_variant_available - controlled_trader_loss_used
+  - government_bond_tax: bond_coupon * 0.13
+  - foreign_bank_interest_tax: bond_coupon * 0.19
+  - exempt_retail_bond_tax: 0
 expected:
   flat_expenses: 20000
   partial_base: 22000
   allowance: 5966.73
   base: 16033.27
   tax: 2404.99
+  micro_loss_used: 8000
+  controlled_trader_loss_used: 5000
+  controlled_trader_loss_left: 3000
+  government_bond_tax: 130
+  foreign_bank_interest_tax: 190
+  exempt_retail_bond_tax: 0
 ```
 
 ### Example 2: employee with both phase-outs
@@ -166,6 +201,8 @@ The base is above EUR 26,083.13, so the personal allowance phases down: 14,661.1
 
 The child bonus would be 12 x EUR 100 = EUR 1,200. His base of EUR 36,000 is above EUR 27,432 (1.5 x 12 x 1,524), so the bonus falls by one tenth of the EUR 8,568 excess, EUR 856.80. The bonus is EUR 343.20, well under the 29% cap. Tax after the bonus is EUR 5,991.19, before the advances his employer withheld.
 
+The same check also recomputes the separate low-base parent-aggregation and June birthday/birth cases above, and the old/new mortgage caps. Those variants do not change Peter's stated facts or tax result; mortgage eligibility is assumed satisfied for the variant borrowers.
+
 ```oa-check
 name: SK PIT 2026, employee, allowance phase-out and child bonus taper
 inputs:
@@ -174,6 +211,13 @@ inputs:
   subsistence_min: 284.13
   avg_wage_2024: 1524
   months_child_under_15: 12
+  low_claimant_base: 2000
+  other_parent_base: 4000
+  other_parent_partial_months: 6
+  old_eligible_interest: 1000
+  new_eligible_interest: 3000
+  new_partial_interest: 2000
+  partial_loan_months: 6
 steps:
   - partial_base: gross - contributions
   - allowance_cap: round(subsistence_min * 51.6, 2)
@@ -185,6 +229,19 @@ steps:
   - bonus_cut: round((partial_base - taper_threshold) / 10, 2)
   - bonus: min(max(0, bonus_full - bonus_cut), round(partial_base * 0.29, 2))
   - tax_after_bonus: tax - bonus
+  - child_15_in_june: 6 * 100 + 6 * 50
+  - child_18_in_june: 6 * 50
+  - child_born_june: 7 * 100
+  - changing_count_cap: 4000 * (0.29 * 6 / 12 + 0.36 * 6 / 12)
+  - changing_count_bonus: min(1800, changing_count_cap)
+  - low_base_bonus: min(1200, low_claimant_base * 0.29)
+  - combined_base: low_claimant_base + other_parent_base
+  - combined_bonus: min(1200, combined_base * 0.29)
+  - partial_combined_base: low_claimant_base + other_parent_base * other_parent_partial_months / 12
+  - partial_combined_bonus: min(1200, partial_combined_base * 0.29)
+  - old_mortgage_bonus: min(old_eligible_interest * 0.50, 400)
+  - new_mortgage_bonus: min(new_eligible_interest * 0.50, 1200)
+  - new_partial_bonus: min(new_partial_interest * 0.50, 1200 * partial_loan_months / 12)
 expected:
   allowance_cap: 14661.11
   allowance: 2661.11
@@ -193,6 +250,19 @@ expected:
   taper_threshold: 27432
   bonus: 343.20
   tax_after_bonus: 5991.19
+  child_15_in_june: 900
+  child_18_in_june: 300
+  child_born_june: 700
+  changing_count_cap: 1300
+  changing_count_bonus: 1300
+  low_base_bonus: 580
+  combined_base: 6000
+  combined_bonus: 1200
+  partial_combined_base: 4000
+  partial_combined_bonus: 1160
+  old_mortgage_bonus: 400
+  new_mortgage_bonus: 1200
+  new_partial_bonus: 600
 ```
 
 ## Ask the client first
@@ -200,16 +270,17 @@ expected:
 1. Where was the client's home and permanent residence in 2026, and how many days were they in Slovakia? Did they have any foreign income?
 2. What kinds of income did they have: employment, business, rental, sale of property, shares or crypto, interest, dividends?
 3. If self-employed: what was the business revenue (EUR 100,000 test, EUR 60,000 micro-taxpayer test), were they a VAT payer at any time in 2026, and do they want actual or flat-rate expenses? What contributions did they actually pay?
-4. Children: dates of birth, months living in the household, and which parent claims the bonus.
+4. Children: dates of birth/adoption and dependent status, months in the household, which parent claims, and both parents' eligible bases and Slovak/total income if aggregation is needed.
 5. Spouse: did they live together, which condition in §11(4) applies, and what was the spouse's own income?
-6. Did they receive a pension at the start of 2026, pay into supplementary pension (DDS) or PEPP, or have a young person's mortgage?
+6. Did they receive a pension at the start of 2026, pay into supplementary pension (DDS) or PEPP, or have a housing loan? Obtain the contract/application and first-interest dates, co-borrowers, lender interest certificate, property use and prior-year income/reference wage.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 595/2003 Coll. on income tax, version in force 1 January 2026 to 30 December 2026 (§2, §4-§9, §11, §15, §30, §32-§34, §38, §45, §46, §46a, §47, §49, §51e, §52zzzj) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
-| Act No. 595/2003 Coll., version in force from 31 December 2026 (§52zzzm) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-23 |
+| Act No. 595/2003 Coll. on income tax, 2026: existing provisions plus §§2(w),9(1)(r),15(a)(7),30,33,33a,43(3)(v),51ea,52zzy,52zzzc reread for this update | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-27 |
+| Act No. 595/2003 Coll., 31 December 2026 text: assigned provisions unchanged; §52zzzm postpones its listed changes to 2027 returns | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-27 |
+| Historical ITA, final 2023 version, §33a: continuing pre-2024 housing-loan credit under current §52zzy | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20230801.html | 2026-10-27 |
 | Act No. 261/2025 Coll., consolidation package amending §11 and §15 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/vyhlasene_znenie.html | 2026-10-23 |
 | Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§14, §154-§156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |
 | Act No. 563/2009 Coll., version in force from 1 January 2027 (same §154-§156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20270101.html | 2026-10-23 |
@@ -219,7 +290,7 @@ expected:
 | Financial Administration, employees: filing threshold EUR 2,983.37 and the 2026 allowance figures | https://www.financnasprava.sk/sk/obcania/dane/dan-z-prijmov/zamestnanci | 2026-10-24 |
 | Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |
 
-Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.
+Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions.
 
 Historical source credit from the original Guide: `priznanie-digital/priznanie-digital` (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 

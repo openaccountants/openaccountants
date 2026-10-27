@@ -1,0 +1,69 @@
+[
+  {
+    "guide": "slovakia-pit.md",
+    "baseline_sha256": "1c23502f00dff55c940adbf7790f77c20f2b4d27bcacb068b317580240ce7a3a",
+    "reviewed_sha256": "e6ac260e6292250752edbdf87384ca37da4cd0d5a845c257fd41a08092d1abbf",
+    "metadata": {
+      "name": true,
+      "description": true,
+      "jurisdiction": true,
+      "tax_year": true,
+      "review_status": true,
+      "trust_label": true,
+      "depends_on": true,
+      "category": true,
+      "tier": true,
+      "license": true
+    },
+    "CTA_exact": true,
+    "all_source_URLs_retained": true,
+    "examples": [
+      {
+        "name": "SK PIT 2026, SZCO flat-rate expenses, revenue EUR 48,000, 15% rate",
+        "all_inputs_preserved": true,
+        "all_expected_preserved": true,
+        "all_steps_preserved": true
+      },
+      {
+        "name": "SK PIT 2026, employee, allowance phase-out and child bonus taper",
+        "all_inputs_preserved": true,
+        "all_expected_preserved": true,
+        "all_steps_preserved": true
+      }
+    ],
+    "historical_PIT_credit_retained": true
+  },
+  {
+    "guide": "sk-corporate-income-tax.md",
+    "baseline_sha256": "e1f61cf17e9c1db88993519eefc82550d1d7cba63814b28ee99303db3712fbf2",
+    "reviewed_sha256": "e20a2c9d720fe0c8802e778eaebd764868c36f9f9dcd08ea14ee6331a750b84a",
+    "metadata": {
+      "name": true,
+      "description": true,
+      "jurisdiction": true,
+      "tax_year": true,
+      "review_status": true,
+      "trust_label": true,
+      "category": true,
+      "tier": true,
+      "license": true
+    },
+    "CTA_exact": true,
+    "all_source_URLs_retained": true,
+    "examples": [
+      {
+        "name": "Alfa s.r.o., revenue EUR 90,000, profit EUR 20,000, loss EUR 4,000 (2026)",
+        "all_inputs_preserved": true,
+        "all_expected_preserved": true,
+        "all_steps_preserved": true
+      },
+      {
+        "name": "Beta a.s., revenue EUR 6,200,000, base EUR 300,000, losses EUR 400,000 (2026)",
+        "all_inputs_preserved": true,
+        "all_expected_preserved": true,
+        "all_steps_preserved": true
+      }
+    ],
+    "historical_PIT_credit_retained": null
+  }
+]

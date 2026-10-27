@@ -6,11 +6,11 @@ covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
 partial:
-  IT-IND: "Ordinary mortgage-interest credit across old/new contract populations and the remaining child-credit boundaries require completion under the fresh pack review."
-  IT-CORP: "The ordinary interest-limit exceptions, statutory base and carryforward require completion; the vehicle-specific VAT rule has been corrected and awaits reviewer recheck."
-  SC: "Employee health-minimum exceptions and pension-category contribution treatment require completion under the fresh pack review."
-  PR: "Foreign-employer wage-tax payer status needs its PE and 183-day gates corrected under the fresh pack review."
-  VAT: "The annual §50 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide now has two recomputing examples and a passing independent review; its current form identifiers and the exact fixed-gross crossing-supply circularity remain unconfirmed. Period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
+  IT-IND: "Ordinary child/mortgage credits, micro status and government-bond methods are supplied and independently reviewed. The current 2026 DPFO form versions remain to be read and reconciled."
+  IT-CORP: "Ordinary interest-limit scope, statutory bases, carry and asset classifications are supplied and independently reviewed, including zero/negative EBITDA. Current 2026 DPPO form identification and filing mapping remain to be reconciled."
+  SC: "Health-minimum exceptions and pension-category treatment are corrected and reviewed. Calendar-year base resets and posted-worker coverage qualifications remain under the fresh pack review."
+  PR: "Foreign-employer wage-tax payer status is corrected and reviewed; posted-worker coverage and the remaining payroll calendar qualifications are being completed."
+  VAT: "The annual §50 common-input method where actual included-supplies turnover is zero, the exact fixed-gross crossing-supply circularity and control-statement first-breach sanction remain unconfirmed. The positive-denominator coefficient, ordinary registration computations and period-valid DPHv25/KVDPHv25/REGDPv24 form mappings are supplied and independently reviewed."
 ---
 
 # Slovakia: tax pack

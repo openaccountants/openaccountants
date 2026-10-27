@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Micro exact revenue limit",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "name": "Micro one cent over",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Controlled trader excluded",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Bankruptcy excluded",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Short ordinary period excluded",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Death short-period exception",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "name": "Micro full loss",
+    "actual": "8000",
+    "expected": "8000",
+    "pass": true
+  },
+  {
+    "name": "Nonmicro half-base loss",
+    "actual": "5000.0",
+    "expected": "5000",
+    "pass": true
+  },
+  {
+    "name": "Government coupon gross13%",
+    "actual": "130.00",
+    "expected": "130",
+    "pass": true
+  },
+  {
+    "name": "Ordinary foreign bank interest19%",
+    "actual": "190.00",
+    "expected": "190",
+    "pass": true
+  },
+  {
+    "name": "Qualifying nonbusiness retail yield exemption",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "name": "15th birthday June inclusive",
+    "actual": "900",
+    "expected": "900",
+    "pass": true
+  },
+  {
+    "name": "18th birthday June inclusive",
+    "actual": "300",
+    "expected": "300",
+    "pass": true
+  },
+  {
+    "name": "Birth June starts immediately",
+    "actual": "700",
+    "expected": "700",
+    "pass": true
+  },
+  {
+    "name": "Birth December counts one month",
+    "actual": "100",
+    "expected": "100",
+    "pass": true
+  },
+  {
+    "name": "Changing child count cap",
+    "actual": "1300.000",
+    "expected": "1300",
+    "pass": true
+  },
+  {
+    "name": "Single-parent low base",
+    "actual": "580.00",
+    "expected": "580",
+    "pass": true
+  },
+  {
+    "name": "Parent aggregation full year",
+    "actual": "1200",
+    "expected": "1200",
+    "pass": true
+  },
+  {
+    "name": "Parent aggregation six start-months",
+    "actual": "1160.00",
+    "expected": "1160",
+    "pass": true
+  },
+  {
+    "name": "Aggregation also triggers high-base taper",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "name": "Six eligible months high-base taper",
+    "actual": "171.60",
+    "expected": "171.60",
+    "pass": true
+  },
+  {
+    "name": "Old full-year cap",
+    "actual": "400.00",
+    "expected": "400",
+    "pass": true
+  },
+  {
+    "name": "New full-year cap",
+    "actual": "1200.00",
+    "expected": "1200",
+    "pass": true
+  },
+  {
+    "name": "New July start cap",
+    "actual": "600.00",
+    "expected": "600",
+    "pass": true
+  },
+  {
+    "name": "Old October start cap",
+    "actual": "100.00",
+    "expected": "100",
+    "pass": true
+  },
+  {
+    "name": "New October start cap",
+    "actual": "300.00",
+    "expected": "300",
+    "pass": true
+  },
+  {
+    "name": "New final Jan-Sep cap",
+    "actual": "900.00",
+    "expected": "900",
+    "pass": true
+  },
+  {
+    "name": "Actual low interest below cap",
+    "actual": "250.50",
+    "expected": "250.50",
+    "pass": true
+  },
+  {
+    "name": "Computer six-month depreciation",
+    "actual": "600.00",
+    "expected": "600",
+    "pass": true
+  },
+  {
+    "name": "Ordinary car six-month depreciation",
+    "actual": "3750.00",
+    "expected": "3750",
+    "pass": true
+  },
+  {
+    "name": "BEV/PHEV six-month depreciation",
+    "actual": "7500.00",
+    "expected": "7500",
+    "pass": true
+  },
+  {
+    "name": "Furniture six-month depreciation",
+    "actual": "500.00",
+    "expected": "500",
+    "pass": true
+  },
+  {
+    "name": "Admin full-year depreciation",
+    "actual": "20000",
+    "expected": "20000",
+    "pass": true
+  },
+  {
+    "name": "Qualifying hotel20-year depreciation",
+    "actual": "40000",
+    "expected": "40000",
+    "pass": true
+  },
+  {
+    "name": "Exactly10% qualifies",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "name": "One euro below10% fails",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Separate hotel improvement6-year",
+    "actual": "13333.33",
+    "expected": "13333.33",
+    "pass": true
+  },
+  {
+    "name": "Statutory sum includes special/final tax bases",
+    "actual": "2000000",
+    "expected": "2000000",
+    "pass": true
+  },
+  {
+    "name": "TaxEBITDA30%capacity",
+    "actual": "2100000.00",
+    "expected": "2100000",
+    "pass": true
+  },
+  {
+    "name": "17k addback",
+    "actual": "1900000.00",
+    "expected": "1900000",
+    "pass": true
+  },
+  {
+    "name": "Exactly3m inactive",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "One cent above3m active",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "name": "Natural-person-only related17k exception",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "name": "Carry room",
+    "actual": "400000",
+    "expected": "400000",
+    "pass": true
+  },
+  {
+    "name": "Remaining live carry",
+    "actual": "1500000",
+    "expected": "1500000",
+    "pass": true
+  },
+  {
+    "name": "Carry last calendar period",
+    "actual": "2031",
+    "expected": "2031",
+    "pass": true
+  },
+  {
+    "name": "21a capitalised exclusion positiveEBITDA",
+    "actual": "25000.00",
+    "expected": "25000",
+    "pass": true
+  },
+  {
+    "name": "21a zeroEBITDA bounded full cost",
+    "actual": "100000",
+    "expected": "100000",
+    "pass": true
+  },
+  {
+    "name": "21a negativeEBITDA bounded full cost",
+    "actual": "100000",
+    "expected": "100000",
+    "pass": true
+  },
+  {
+    "name": "21a ampleEBITDA no disallowance",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  }
+]

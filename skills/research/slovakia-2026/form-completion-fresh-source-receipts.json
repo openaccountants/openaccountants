@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://www.financnasprava.sk/sk/katalog-formularov",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/catalog.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 379478,
+    "sha256": "b296919dd0b26dfd381ebba12b2d56da9ac91bad4911bb1dcc017f8e16250cb7"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/VzoryTlaciv/DPHv25.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/DPHv25.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 79701,
+    "sha256": "e7b3ecff6cdf4e6fd38539e2900588e1b3031a7d5782e1ce066a24479273b325"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.607.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/KVDPHv25.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 436111,
+    "sha256": "6dbb8564cae2b1d601b7f6e2dc2d9e5a013206e8e51013ee69948ef060846e85"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/REGDPv24.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 1348265,
+    "sha256": "e8133cfd0cd90917315b63a53b0129aad01cdd9132f5bbbacf65751fbadff08a"
+  },
+  {
+    "url": "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/annex7.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 809427,
+    "sha256": "c91eb5167c22fbc1018380c890f0dea2a89ce3322d3e52ade6f45d70af77a1b2"
+  },
+  {
+    "url": "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/annex7a.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 321190,
+    "sha256": "2c666fcf8b716ae279c6dff74f58157656610bde1dee571ad1112a71824680db"
+  },
+  {
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/vat-act.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 1984156,
+    "sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12"
+  }
+]

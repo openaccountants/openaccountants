@@ -1,7 +1,7 @@
 ---
 name: slovakia-vat-registration-4-7-7a
 description: "Which Slovak VAT registration a client needs in 2026 under Act No. 222/2004 Coll.: § 4 (VAT payer, EUR 50,000 calendar-year turnover for payer status from 1 January of the next year, EUR 62,500 for payer status at the crossing supply, application within five working days), voluntary § 4 registration, § 7 (goods from other member states, EUR 14,000) and § 7a (cross-border services, no threshold), and why a § 7 or § 7a registrant self-assesses VAT but cannot deduct it. Covers the 2025 change from EUR 49,790 over 12 months to the calendar-year test, decision times, and the fine for late registration. Trigger on: Slovak VAT registration, registracia DPH, platitel dane, § 7a, IC DPH, Meta or Google Ireland invoices Slovakia. Out of scope: the periodic return, rates, control statement and penalties (slovakia-vat-return), income tax (slovakia-pit)."
-version: 1.2
+version: 1.3
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -100,6 +100,17 @@ If the EUR 50,000 applicant needs a §7/§7a number before next January and has 
 A §7/§7a registrant keeps records of its EU acquisitions, outgoing §15(1) services to other member states, and received services for which it owes tax (§70(4)), and retains invoices for the statutory period. The outgoing EU B2B service invoice carries “prenesenie daňovej povinnosti” where the customer is liable. The EU invoice deadline is measured from **month-end**, not fifteen days from each invoice date. A third-country §15(1) service invoice follows §72(2) and the applicable ordinary §73 timing.
 
 **Ending registration.** A §4 payer can request deregistration after at least one calendar year from becoming a payer if the preceding calendar year's turnover did not exceed EUR 50,000 (§81(1)(a)). A §7 registrant can apply when net EU acquisitions stay below EUR 14,000 in both the current and preceding year (§82(1)), subject to the two-year voluntary-taxation commitment. A §7/§7a registrant must apply without delay on ending Slovak business, and those limited registrations are cancelled on becoming a payer (§82(2), (3)). A later credit note reducing turnover below the threshold does not by itself reverse status already confirmed by decision (FS method §2.3, example 6).
+
+### Actual registration form and statutory selection
+
+The [official active catalog](https://www.financnasprava.sk/sk/katalog-formularov) identifies **REGDPv24**, valid from 1 January 2025, as the common registration/change/cancellation form. Its actual [electronic form589](https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html) distinguishes individual/legal person, registration/change/cancellation and the VAT tax type. In **Annex 1 — VAT**, select the statutory ground that actually applies, retaining the event date and supporting evidence:
+
+- Mandatory §4(2), with the applicable §4(1)(a)–(i) event; later payer-status notices under §4(5) or §4(7) have separate selections. The form distinguishes exceeding EUR 50,000 without exceeding EUR 62,500 from exceeding EUR 62,500, as well as the other statutory events.
+- Ordinary voluntary application under §4(7), including the before-EUR-50,000 §4(6)(a) selection; the two early-status elections use the separate §4(8) notice and its §4(8)(a)/(b) choice. A checkbox does not displace the status date, decision-delivery condition or notice deadline established above.
+- Goods-acquisition registration before the transaction under §7(1), or voluntary §7(2), and the separate before-service §7a selection.
+- An applicant awaiting next-year §4 status who needs a §7/§7a number follows the separate **§4(11) notice**, indicating which obligation arose, rather than assuming a duplicate ordinary application.
+
+Reconcile the selected ground, actual event date, form receipt and authority decision/number. This is the form active at the 27 October 2026 source read, not a guarantee that its identifier will remain unchanged for a later filing. The full statutory conditions and limited-registration deduction rules above remain controlling.
 
 ## Penalties and interest
 
@@ -222,10 +233,11 @@ expected:
 | Historical VAT Act, 2024 version: §4(1), §7(3), §7a(3), §27(1); not used as current law | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html | 2026-10-27 |
 | FS SR §7 information sheet, historical 2018 procedure | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.19_DPH_reg_par7.pdf | 2026-10-27 |
 | FS SR §7a information sheet, historical 2018 procedure | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.18_DPH.pdf | 2026-10-27 |
+| Official active catalog and actual REGDPv24 form589, Annex 1 VAT selections, valid from 1 January 2025 | https://www.financnasprava.sk/sk/katalog-formularov ; https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html | 2026-10-27 |
 
 The two historical 2018 sheets remain published, but their 20% rate and seven-day registration decisions are outdated. The 2026 statute sets 23% and ten days; current statutory provisions support the procedures above. The former Guide also linked the authority's January 2025 consolidation, rates page and registration overview; those references are retained here for their history: https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2025/2025.01.28_zakon_DPH.pdf ; https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane ; https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/registracna-povinnost-pre-dph . Current figures above are sourced to the full 2026 Act.
 
-Not yet confirmed: the current registration form version and identifiers; the former example's specific conclusion that extracting EUR 2,617.89 VAT from a fixed EUR 14,000 crossing price at EUR 49,500 prior turnover prevents §4(1)(b) payer status (the statutory net-value test and gross-price arithmetic were read, but an official interpretation resolving that exact circularity was not obtained).
+Not yet confirmed: the former example's specific conclusion that extracting EUR 2,617.89 VAT from a fixed EUR 14,000 crossing price at EUR 49,500 prior turnover prevents §4(1)(b) payer status (the statutory net-value test and gross-price arithmetic were read, but an official interpretation resolving that exact circularity was not obtained).
 
 > Contributed by Michael Cutajar.
 

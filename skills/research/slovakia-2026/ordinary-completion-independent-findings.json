@@ -1,0 +1,34 @@
+{
+  "scope": [
+    "F09",
+    "F10",
+    "F13",
+    "F14",
+    "F19"
+  ],
+  "status": "PASS assigned final additions only",
+  "findings": [
+    {
+      "id": "OC-01",
+      "parent_finding": "F10",
+      "guide": "sk-corporate-income-tax.md",
+      "priority": 2,
+      "initial_sha256": "dde78468e9a3cdd71b5b96a29c8ab17bd19b897f96edd0196a6e770f4d42741d",
+      "initial_line": 109,
+      "finding": "The ordinary21a method omits the negative-EBITDA boundary; unrestricted covered-minus25%EBITDA can disallow more than the covered expense.",
+      "counterexample": {
+        "covered_costs": 100000,
+        "EBITDA": -100000,
+        "unrestricted_subtraction": 125000,
+        "primary_authority_result": 100000
+      },
+      "primary_url": "https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie-",
+      "retained_primary": "fs-thin-cap.html; interest-boundary-web.json; FAQ5",
+      "fix": "allowed=min(covered,max(0,.25*EBITDA));disallowed=covered-allowed;explicit zero/negative branch and controls",
+      "status": "closed; exact corrective delta rechecked",
+      "final_sha256": "e20a2c9d720fe0c8802e778eaebd764868c36f9f9dcd08ea14ee6331a750b84a"
+    }
+  ],
+  "open_in_assigned_scope": [],
+  "whole_country_pass": false
+}
