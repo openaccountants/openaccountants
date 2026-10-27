@@ -167,6 +167,8 @@ expected:
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form, so amounts are not mapped to boxes; the list of industries per net tax rate and the individual flat tax rates; the fine amount under Art. 98; the day-count basis for default interest; the changes in the MWSTV version in force from 1 January 2027 (not read; this skill uses the 2025 version for 2026); Liechtenstein treatment.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

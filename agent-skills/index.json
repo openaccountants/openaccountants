@@ -7781,7 +7781,7 @@
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ie-cgt",
@@ -17310,7 +17310,7 @@
    "jurisdiction": "GB",
    "path": "skills/international/uk/uk-payments-on-account.md",
    "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
+   "authored_by": "Michael Cutajar and the OpenAccountants team",
    "reviewed_by": null,
    "tax_year": 2026
   },

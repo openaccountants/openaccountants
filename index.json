@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T08:55:52+00:00",
+ "generated_at": "2026-10-27T09:26:04+00:00",
  "counts": {
   "guides": 2250,
   "jurisdictions": 274,
@@ -3599,12 +3599,12 @@
    "path": "skills/international/austria/at-svs-contributions.md",
    "name": "at-svs-contributions",
    "jurisdiction": "AT",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-22"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "at-tax-overview",
@@ -4264,7 +4264,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "be-corporate-tax",
@@ -4415,12 +4415,12 @@
    "path": "skills/international/belgium/belgium-payroll.md",
    "name": "belgium-payroll",
    "jurisdiction": "BE",
-   "category": "payroll",
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "belgium-vat-return",
@@ -7300,7 +7300,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "cy-transfer-pricing",
@@ -7324,19 +7324,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "cyprus-payroll",
    "path": "skills/international/cyprus/cyprus-payroll.md",
    "name": "cyprus-payroll",
    "jurisdiction": "CY",
-   "category": "payroll",
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "cyprus-social-contributions",
@@ -7348,7 +7348,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "cyprus-tax-optimization",
@@ -7540,7 +7540,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "dk-capital-gains",
@@ -7552,7 +7552,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "dk-corporate-tax",
@@ -9136,7 +9136,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-19"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "fr-cfe",
@@ -9208,7 +9208,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-19"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "fr-rental-income",
@@ -9232,7 +9232,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-19"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "fr-tax-audit",
@@ -9628,7 +9628,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "de-corporate-tax",
@@ -9748,7 +9748,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "de-rental-income",
@@ -9760,7 +9760,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "de-self-employed-income-tax",
@@ -9784,7 +9784,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "de-trade-tax",
@@ -9796,7 +9796,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "de-treaty-withholding-rates",
@@ -11759,12 +11759,12 @@
    "path": "skills/international/ireland/ie-cat.md",
    "name": "ie-cat",
    "jurisdiction": "IE",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ie-cgt",
@@ -11884,7 +11884,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ie-preliminary-tax",
@@ -11896,7 +11896,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ie-prsi-class-s",
@@ -11956,7 +11956,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ie-vat-return",
@@ -11968,7 +11968,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ireland-vat-return",
@@ -12172,7 +12172,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-22"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "it-income-tax",
@@ -16240,7 +16240,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "nl-cross-border",
@@ -16384,7 +16384,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "references",
@@ -17908,7 +17908,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "pt-cross-border",
@@ -21076,7 +21076,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "se-transfer-pricing",
@@ -21136,19 +21136,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "sweden-vat-return",
    "path": "skills/international/sweden/sweden-vat-return.md",
    "name": "sweden-vat-return",
    "jurisdiction": "SE",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "ch-ahv-iv",
@@ -21292,7 +21292,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "switzerland-crypto-tax",
@@ -22489,10 +22489,10 @@
    "jurisdiction": "GB",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "uk-financial-statements",
@@ -22564,7 +22564,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "uk-non-resident-sa109",
@@ -22585,22 +22585,22 @@
    "jurisdiction": "GB",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "uk-payroll",
    "path": "skills/international/uk/uk-payroll.md",
    "name": "uk-payroll",
    "jurisdiction": "GB",
-   "category": "payroll",
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "uk-rental-sa105",
@@ -22648,7 +22648,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "uk-student-loan-repayment",
@@ -22720,7 +22720,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-26"
   },
   {
    "slug": "vat-returns-for-small-businesses-in-the-uk",

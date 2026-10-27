@@ -4,7 +4,7 @@ description: "Portuguese corporate income tax (IRC) for tax year 2026: resident 
 version: 0.1
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
