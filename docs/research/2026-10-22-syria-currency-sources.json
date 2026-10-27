@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/syria/sy-currency-transition-and-tax-records.md",
+  "sha256": "00657cdaf34fd69295390d865c0bfcd219f85579df1866af4f59577e23014a62",
+  "sources": [
+    {
+      "url": "https://sana.sy/presidency/2364708/",
+      "locators": [
+        "Decree293/2025 articles1,3,7-10; surrounding2,4,11-12 reviewed"
+      ]
+    },
+    {
+      "url": "https://sana.sy/economy/syrian-economy/2543099/",
+      "locators": [
+        "2August2026 Central Bank statement: circulation vs withdrawal; expired temporary window"
+      ]
+    },
+    {
+      "url": "https://sana.sy/economy/syrian-economy/2603216/",
+      "locators": [
+        "11October2026 ministry statement; announcement not operative rates"
+      ]
+    }
+  ],
+  "ownership_check": "Michael Middle East regional scope. Shared origin/main and untruncated Ryan main no Syria paths; Syria title issue search empty. No issue created, no unpublished-work guarantee.",
+  "review": "Independent full source review by review_gi_minimum found no material defects at recorded hash. No attestation.",
+  "checks": "Targeted schema and two examples passed; aggregate checks follow commit.",
+  "limits": [
+    "No current tax schedule or full country coverage",
+    "Current redemption arrangements and territorial implementation unverified",
+    "Local unpublished draft"
+  ]
+}

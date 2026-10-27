@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-23",
+  "guide": "skills/international/syria/sy-property-transfers.md",
+  "sha256": "9bccfc3641b16aab79da3c49c47d7fe5e083045a6b86014458770eabdc25cda2",
+  "status": "local draft; independent source review complete after two precision corrections; not consolidated current law, published or attested",
+  "sources": [
+    {
+      "url": "https://archive.sana.sy/?p=1347631",
+      "scope": "full original Law15/2021 articles1-21 read; rates5, rights6, gifts7, additions8, declaration9, exemptions10/14/15, objection11/12, clearance13, commencement17/21"
+    },
+    {
+      "url": "https://sana.sy/economy/2256905/",
+      "scope": "dated2025 circular report, conditional valuation/clearance details"
+    },
+    {
+      "url": "https://sana.sy/locals/2223654/",
+      "scope": "dated2025 cancellation relief report"
+    },
+    {
+      "url": "https://sana.sy/economy/2446227/",
+      "scope": "April2026 proposal discussion, not enactment"
+    },
+    {
+      "url": "https://sana.sy/locals/2481883/",
+      "scope": "May2026 Suwayda temporary restriction, currentstatus unverified"
+    }
+  ],
+  "checks": {
+    "schema": "1 Guide, zeroerrors/warnings",
+    "examples": "2 blocks, zerofailures/missing",
+    "batch": "61 Guides validated; 120 examples passed; sync66files zeroerrors/warnings; existing GI2024 freshness warning"
+  },
+  "recovery_note": "SyrianMemory Circular135 transcript found at https://syrianmemory.org/archive/documents/68a379a18c72fb26a61840a9 ; metadata says30July2025 but transcribed signature date20July. Signed image not independently inspected; not used as additional legal authority for Guide. Official SANA report used with dated limits.",
+  "gaps": [
+    "signed administrative decisions and clarifications",
+    "later enactments",
+    "local additions",
+    "executive instructions and forms",
+    "rental changes",
+    "current territorial restrictions"
+  ],
+  "review": {
+    "reviewer": "review_gi_minimum",
+    "date": "2026-10-23",
+    "result": "full review plus confirmed correction delta",
+    "record": "2026-10-23-syria-property-transfers-review.md"
+  }
+}

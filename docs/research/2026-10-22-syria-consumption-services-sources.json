@@ -1,0 +1,56 @@
+{
+  "checked_on": "2026-10-22",
+  "guide": "skills/international/syria/sy-consumption-tax-services.md",
+  "guide_sha256": "88404a76511b8215f10e70c23e1341589ddb9a0d8645ccc4c4f260668f3db33c",
+  "status": "local draft; independent source/editorial review passed for stated scope; not published or professionally attested",
+  "primary_source": {
+    "url": "https://docs.mof.gov.sy/consumption_tax_on_imports_table.pdf",
+    "authority_link": "https://sana.sy/economy/2515968/",
+    "sha256": "951a25b73f88fab55300644515586ac38689b2b2074d5b6136c81c470683f37a",
+    "pdf_pages": 235,
+    "instruction_pages_visually_read": "1-20",
+    "annexes_not_reviewed": "24-235; import classification not fully reviewed",
+    "decision": "938/Q.W, 29 June 2026",
+    "additional_pages_visually_read_by_writer": "21-23: services Table 1 and opening import Table 2"
+  },
+  "claim_locators": {
+    "service_rates": "II(a-i), pages 1-3",
+    "air_tickets": "II(e)(1-11), page 2",
+    "commencement_and_returns": "V, pages 10-11",
+    "penalties": "VI, pages 11-12",
+    "objections": "VIII, page 13",
+    "exempt_entities": "XIII, pages 16-17; XVIII, page19",
+    "foreign_currency": "XIV, page17",
+    "records": "XV, pages17-18",
+    "tourism_classification": "XVI, page18",
+    "denomination": "XXII, page19",
+    "superseded_instructions": "XXIV, page20"
+  },
+  "checks": {
+    "schema": "1 guide; 0 errors; 0 warnings",
+    "examples": "3 blocks; 0 failures; 0 missing",
+    "batch": "58 Guides validated; 112 oa-check blocks passed; sync audit 63 source files, 0 errors/warnings after merging origin/main; whitespace clean"
+  },
+  "overlap_check": {
+    "ryan_main_recursive_tree": "no Syria or /sy- paths; truncated=false",
+    "limit": "does not rule out unpublished contributor work"
+  },
+  "gaps": [
+    "full underlying decree and amendments",
+    "later administrative measures",
+    "territorial implementation",
+    "discount Circular 698/2022",
+    "electronic invoice requirements",
+    "forms and payment channels",
+    "imports and goods annexes",
+    "full appeals and sanctions"
+  ],
+  "review": {
+    "completed_on": "2026-10-23",
+    "reviewer": "independent agent review_gi_minimum",
+    "result": "no material errors within stated scope",
+    "guide_sha256": "88404a76511b8215f10e70c23e1341589ddb9a0d8645ccc4c4f260668f3db33c",
+    "scope": "all 20 instruction pages and all Guide claims/examples",
+    "limitation": "reviewer freshly verified SANA link; direct PDF browser fetch failed; substantive checks used supplied local PDF images"
+  }
+}
