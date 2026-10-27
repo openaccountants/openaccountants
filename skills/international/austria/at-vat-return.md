@@ -1,7 +1,7 @@
 ---
 name: at-vat-return
 description: "Austrian VAT (Umsatzsteuer) for tax year 2026, worked box by box: how to turn a business's bank statement and invoices into the advance return (Umsatzsteuervoranmeldung, UVA, form U 30) and the annual return (U 1) under the Umsatzsteuergesetz 1994 as in force on 26 October 2026. Covers the 20%, 13% and 10% rates, the 4.9% rate on listed basic foods from 1 July 2026, the end of the 0% photovoltaic rate, the small business exemption (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), monthly or quarterly UVA periods, the 15th of the second following month, the U 1 by 30 April or 30 June, reverse charge, the recapitulative statement (ZM), the Kennzahl map, input VAT blocks, late-payment and late-filing surcharges, VAT interest and self-disclosure. Trigger on: prepare UVA, Austrian VAT return, Umsatzsteuer, U 30, Kennzahl, Kleinunternehmer, ZM Austria. Out of scope: income tax (at-income-tax), corporate tax (at-corporate-income-tax), non-residents and treaties (at-cross-border); the short overview is austria-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: AT
 category: international
 tax_year: 2026
@@ -60,6 +60,8 @@ This skill turns a business's bank statement and invoices into the Austrian VAT 
 
 The rates in § 10 apply in a strict order: 4.9% first, then 10%, then 13%. The 4.9% rate applies only where the goods fall wholly under a combined-nomenclature heading listed in Anlage 3. It never applies to services, so restaurant sales and catering stay at 10% ([BMF food rate page](https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html)). For any item not named here, take the rate from § 10 and its annexes, not from memory.
 
+Transition for the 4.9% rate: a down payment received before 1 July 2026 for Anlage 3 food delivered on or after 1 July 2026 is taxed at the rate in force when it is received, and corrected to 4.9% once the delivery is made. The supplier may instead show and tax the down payment at 4.9% on the invoice straight away; then no invoice correction is needed when the rate changes ([BMF food rate FAQ, question 2](https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html)).
+
 ## The taxable base
 
 ### The small business exemption (§ 6 Abs 1 Z 27 and Abs 3 UStG)
@@ -90,6 +92,7 @@ Worked tolerance check (2026): sales January to October EUR 54,500, a November o
 ### Input VAT (§ 12 UStG)
 
 - Deductible on a proper invoice for a supply to the business, used at least 10% for business. Cash-basis businesses under EUR 2,000,000 deduct only once they have paid.
+- **Down payments:** input VAT on a payment made before the supply is deductible once the invoice is held and the payment has been made (§ 12 Abs 1 Z 1 lit b).
 - **Cars, estate cars and motorcycles:** no input VAT on purchase, lease or running costs, even at full business use (§ 12 Abs 2 Z 2 lit b). Exceptions: driving school cars, demonstration cars, cars held for resale, cars used at least 80% for commercial passenger transport or rental, vans on the BMF list, and zero-emission cars (§ 12 Abs 2 Z 2a), within the EUR 40,000 reasonableness limit.
 - **Business meals:** default block. If the client proves the meal serves advertising and the business purpose far outweighs everything else, half is deductible for income tax (§ 20 Abs 1 Z 3 EStG). The cost is then not mainly non-deductible, so § 12 Abs 2 Z 2 lit a does not block the input VAT, and it is deducted in full.
 - **Travel services bought in for resale** to travellers: no input VAT.
@@ -282,7 +285,7 @@ expected:
 | BMF, VAT cut on selected foods | https://www.bmf.gv.at/rechtsnews/steuern-rechtsnews/aktuelle-infos-und-erlaesse/fachinformationen---umsatzsteuer/umsatzsteuersenkung-auf-ausgewaehlte-nahrungsmittel.html | 2026-10-26 |
 | USP, filing tax returns | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/weitere-informationen-zu-steuerlichen-rechten-und-pflichten-als-unternehmen/einreichen-von-steuererklaerungen.html | 2026-10-24 |
 
-Not yet confirmed: the BMF van list (Kleinbus and Kleinlastkraftwagen regulation) and any upper cap above EUR 40,000 for zero-emission cars, which are BMF guidance not read today; the EUR 40 gift threshold for own use, which is in the VAT guidelines, not the statute; the 2026 U 30a filling instructions (the BMF form server did not return the file).
+Not yet confirmed: the BMF van list (Kleinbus and Kleinlastkraftwagen regulation) and any upper cap above EUR 40,000 for zero-emission cars, which are BMF guidance not read today; the EUR 40 gift threshold for own use, which is in the VAT guidelines, not the statute; the 2026 U 30a filling instructions (the BMF form server did not return the file); three rules from the old version that the statute does not state: that input VAT on start-up costs before the first sale is deductible (UStR guidance, not read today), that a new business with no prior year files monthly from the start if it expects turnover above EUR 100,000 (§ 21 Abs 2 tests only the prior year), and that a domestic reverse-charge invoice is due by the 15th of the month after the supply (the statute sets that deadline only for intra-EU supplies of goods, Art. 11 Abs 1 Binnenmarkt).
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
 
