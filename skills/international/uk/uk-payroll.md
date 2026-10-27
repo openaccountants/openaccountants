@@ -105,7 +105,7 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027, unless a lin
 
 **Benefits in kind.** Benefits not payrolled go on a P11D, with Class 1A at 15% on the P11D(b). An employee whose benefits are all payrolled needs no P11D, but the P11D(b) is still due ([reporting and paying](https://www.gov.uk/employer-reporting-expenses-benefits/reporting-and-paying)). Example: a £6,000 car benefit not payrolled for 2026/27 means a P11D and P11D(b) by 6 July 2027 and £900 Class 1A by 22 July 2027. Payrolling is voluntary in 2026/27.
 
-**Termination awards.** Class 1A at 15% is due on the part of a termination award above £30,000, only where Class 1 has not already been paid on it. Unlike Class 1A on benefits, it is paid through PAYE in the month the award is paid, not after the year end ([pay Class 1A](https://www.gov.uk/pay-class-1a-national-insurance)).
+**Termination awards.** Class 1A at 15% is due on the part of a termination award above £30,000, only where Class 1 has not already been paid on it. Unlike Class 1A on benefits, it is paid through PAYE, not after the year end ([pay Class 1A](https://www.gov.uk/pay-class-1a-national-insurance)).
 
 **Mandatory payrolling of benefits (announced, not yet final law).** From 6 April 2027 most employers providing medical benefit, cars, vans and car and van fuel must report them in payroll and calculate Income Tax and Class 1A in real time, with no P11D for them. From 6 April 2028 most other benefits follow; payrolling loans and accommodation stays voluntary. The detailed regulations are to be introduced at Budget 2026 ([policy paper](https://www.gov.uk/government/publications/changes-to-reporting-of-benefits-in-kind-from-april-2027/mandatory-reporting-of-benefits-in-kind-in-real-time-information-rti-from-april-2027); [phased introduction](https://www.gov.uk/guidance/draft-guidance-and-legislation-to-aid-preparation-for-reporting-benefits-in-kind-in-real-time/the-phased-introduction-of-mandatory-payrolling-for-benefits-in-kind)). Check the software supports the new FPS fields.
 
@@ -254,7 +254,7 @@ expected:
 | The Pensions Regulator, earnings thresholds | https://www.thepensionsregulator.gov.uk/en/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds | 2026-10-24 |
 | gov.uk, workplace pension contributions | https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay | 2026-10-24 |
 
-Not yet confirmed: the final regulations and HMRC guidance for mandatory payrolling of benefits from 6 April 2027 (due at Budget 2026), including any penalty easement; minimum wage underpayment penalty figures; how the £15,000 Apprenticeship Levy allowance is shared in a connected group; the legislation text of the 2026/27 student loan thresholds (HMRC rates page used).
+Not yet confirmed: the exact PAYE period in which Class 1A on a termination award is paid (GOV.UK says only "through PAYE"); the final regulations and HMRC guidance for mandatory payrolling of benefits from 6 April 2027 (due at Budget 2026), including any penalty easement; minimum wage underpayment penalty figures; how the £15,000 Apprenticeship Levy allowance is shared in a connected group; the legislation text of the 2026/27 student loan thresholds (HMRC rates page used).
 
 <!-- openaccountants-cta-block -->
 
