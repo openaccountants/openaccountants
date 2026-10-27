@@ -17,7 +17,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 | IT-CORP, corporate income tax | nl-corporate-tax, nl-dividend-withholding | checked against the law |
 | VAT | netherlands-vat-return (2026 deep-tax), nl-vat-return (older duplicate, to be merged), nl-vat-registration | sourced from the law |
 | SC, social contributions | nl-social-contributions | checked against the law |
-| PR, payroll withholding | netherlands-payroll (2026 deep-tax: tables, credits, premiums, loonaangifte calendar, penalties), nl-payroll-tax (WKR), nl-company-car | sourced from the law |
+| PR, payroll withholding | netherlands-payroll (2026 deep-tax: tables, credits, premiums, loonaangifte calendar, penalties), nl-payroll-tax (2026 deep-tax: WKR free space, final levies, targeted exemptions, group election), nl-company-car | sourced from the law |
 | TP, transfer pricing | netherlands-transfer-pricing | checked against the law |
 | XB, cross-border | nl-cross-border (hub), nl-double-tax-relief, netherlands-30-percent-ruling, nl-30-percent-ruling | sourced from the law |
 
