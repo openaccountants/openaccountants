@@ -1,0 +1,54 @@
+{
+  "frozen": {
+    "historical": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/research/slovakia-2026/historical/slovakia-vat-return-before-rewrite.txt",
+      "sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+      "bytes": 37813
+    },
+    "current": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-return.md",
+      "sha256": "49bfe203ced8cde44bf3e768fb395edd4bdf28d0e1f16eb05d384f8430e7f432",
+      "bytes": 49828
+    },
+    "registration": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+      "sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+      "bytes": 32474
+    },
+    "proposal": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/F22-proposed-disposition.md",
+      "sha256": "adb5f684a6191a53eca44c221faa837b7f5169510c003a0fe0656140f12fe6c9",
+      "bytes": 6076
+    },
+    "proposed_manifest": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/F22-proposed-manifest.json",
+      "sha256": "89e69dcd2a5e2a7ae9036d6a7cb7a64278738d5f9f039cd241f1221203430ba1",
+      "bytes": 684
+    },
+    "rules": {
+      "source_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/docs/skill-template.md",
+      "sha256": "c27d84593170832a55ec01332e72f2b8c08e7cfc17c0d911c359d954b87f8dbc",
+      "bytes": 18000
+    }
+  },
+  "protected_metadata_equal": {
+    "name": true,
+    "jurisdiction": true,
+    "review_status": true,
+    "trust_label": true,
+    "tier": true,
+    "license": true
+  },
+  "CTA_exact": true,
+  "all50units_accounted_for": true,
+  "unaccounted_units": [],
+  "ordinary_rule_restored": "Existing7registrant needs no duplicate7aapplication; only VATreturn needed amendment, registrationGuide already retained it.",
+  "new_Not_yet_confirmed_required_for_F22": false,
+  "remaining_country_gaps_unchanged": [
+    "annualactualdenominator0",
+    "KVfirst-breachspecialsanction",
+    "fixed-grosscrossingcircularity",
+    "otherwhole-packfindings"
+  ],
+  "proposal_manifest_matches_actual": true
+}

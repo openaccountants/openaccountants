@@ -1,0 +1,86 @@
+{
+  "read_on": "2026-10-27",
+  "baseline_commit": "fce370c5",
+  "verdict": "PASSF22amendeddispositiononly",
+  "current_VAT_sha256": "49bfe203ced8cde44bf3e768fb395edd4bdf28d0e1f16eb05d384f8430e7f432",
+  "proposed_disposition_sha256": "adb5f684a6191a53eca44c221faa837b7f5169510c003a0fe0656140f12fe6c9",
+  "unaccounted_units": [],
+  "whole_country_PASS": false,
+  "files": [
+    {
+      "path": "arithmetic-controls.json",
+      "bytes": 1502,
+      "sha256": "ba86ea2009bbb5407c8541cfd56ff12fdba0aab3e85dc5498261476c848e2fbc"
+    },
+    {
+      "path": "check-examples.txt",
+      "bytes": 308,
+      "sha256": "216ff9dc09e523f3bfb64e4ba65fbc33011c1df22f7523506c3ef4253829a17e"
+    },
+    {
+      "path": "check.py",
+      "bytes": 10775,
+      "sha256": "16d7af0fb5649935685f342d6ace6ef7b417299c339f9f3e5bbe33cea5a6cb62"
+    },
+    {
+      "path": "current.md",
+      "bytes": 49828,
+      "sha256": "49bfe203ced8cde44bf3e768fb395edd4bdf28d0e1f16eb05d384f8430e7f432"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 1123,
+      "sha256": "d43c6e25877a56aca94c9db0bfb394a12816fab935c560affdc2cb1fca9d253a"
+    },
+    {
+      "path": "fresh-law-web.json",
+      "bytes": 11801,
+      "sha256": "dbd62da4f29ab75cdd5ce3d0fe11fef7f5117385a6f552834dcd6f46556db108"
+    },
+    {
+      "path": "frozen-controls.json",
+      "bytes": 2421,
+      "sha256": "d2fa74c502d5200e368f5c4c90adbb1fe41e777dc053a61c8eb632a37cd99cc4"
+    },
+    {
+      "path": "historical.txt",
+      "bytes": 37813,
+      "sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a"
+    },
+    {
+      "path": "primary-source-manifest.json",
+      "bytes": 2478,
+      "sha256": "4fd1357bf15ddc5765d56a3915a5c79de4fbcf63b14ee7493cfb4af14f7212b2"
+    },
+    {
+      "path": "proposal.md",
+      "bytes": 6076,
+      "sha256": "adb5f684a6191a53eca44c221faa837b7f5169510c003a0fe0656140f12fe6c9"
+    },
+    {
+      "path": "proposed_manifest.json",
+      "bytes": 684,
+      "sha256": "89e69dcd2a5e2a7ae9036d6a7cb7a64278738d5f9f039cd241f1221203430ba1"
+    },
+    {
+      "path": "registration.md",
+      "bytes": 32474,
+      "sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30"
+    },
+    {
+      "path": "report.md",
+      "bytes": 9917,
+      "sha256": "c1a8536044ecf226868244a5bf5278b5d221399229a1eb5f39ab7e5108496f58"
+    },
+    {
+      "path": "rules.md",
+      "bytes": 18000,
+      "sha256": "c27d84593170832a55ec01332e72f2b8c08e7cfc17c0d911c359d954b87f8dbc"
+    },
+    {
+      "path": "unit-ledger.json",
+      "bytes": 29448,
+      "sha256": "8c922209bd13bb2097fc49377c6e7f4c1cde42b310d3e184e0128c7d8bc38ce4"
+    }
+  ]
+}

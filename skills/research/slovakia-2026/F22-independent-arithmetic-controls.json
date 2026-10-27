@@ -1,0 +1,83 @@
+[
+  {
+    "test": 1,
+    "computed_tax_or_input": "46.00",
+    "expected": "46",
+    "pass": true
+  },
+  {
+    "test": 2,
+    "computed_tax_or_input": "230.00",
+    "expected": "230",
+    "pass": true
+  },
+  {
+    "test": 3,
+    "computed_tax_or_input": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "test": 4,
+    "computed_tax_or_input": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "test": 5,
+    "computed_tax_or_input": "4.60",
+    "expected": "4.60",
+    "pass": true
+  },
+  {
+    "test": 6,
+    "computed_tax_or_input": "5.00",
+    "expected": "5",
+    "pass": true
+  },
+  {
+    "test": 7,
+    "computed_tax_or_input": "11500.00",
+    "expected": "11500",
+    "pass": true
+  },
+  {
+    "test": 8,
+    "computed_tax_or_input": "2300.00",
+    "expected": "2300",
+    "pass": true
+  },
+  {
+    "test": 9,
+    "computed_tax_or_input": "3450.00",
+    "expected": "3450",
+    "pass": true
+  },
+  {
+    "test": 10,
+    "computed_tax_or_input": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "test": 11,
+    "computed_tax_or_input": "690.00",
+    "expected": "690",
+    "pass": true
+  },
+  {
+    "test": 12,
+    "computed_tax_or_input": "115.00",
+    "expected": "115",
+    "pass": true
+  },
+  {
+    "test": "legacy-entertainment-rate-check",
+    "historical_net": 406,
+    "historical_VAT": 94,
+    "correct23percent_of_reported_net": "93.38",
+    "correct_VAT_in_fixed500gross": "93.50",
+    "legacy_rate_arithmetic_valid": false,
+    "deduction_remains_zero": true
+  }
+]

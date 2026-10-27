@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "fce370c5a6bbf2267ac45f817ecb2c19d43640c0",
+  "finding_closed": "F22",
+  "VAT_Guide_sha256": "49bfe203ced8cde44bf3e768fb395edd4bdf28d0e1f16eb05d384f8430e7f432",
+  "independent_disposition_units": 50,
+  "conditional_arithmetic_controls": 12,
+  "lost_verified_qualifications_restored": 1,
+  "registration_sibling": "Already contained existing-7-registration exception; unchanged.",
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "remaining": [
+    "Annual actual zero denominator VAT",
+    "Special KV first-breach sanction",
+    "Fixed-gross registration-crossing circularity",
+    "Other whole-pack findings and ongoing ordinary/form work"
+  ],
+  "checks": {
+    "country_examples": "11 files / 14 oa-check blocks / 0 failures / 0 missing",
+    "strict_sync": "4 current changed source Guides / 0 errors, warnings or notices; other 3 Guide reviews pending, not staged in this checkpoint",
+    "schema": "2261 source / 6122 generated; PASS with 3 inherited warning groups: 798 source sections, 5 vintage, 5 jurisdiction",
+    "generated_index": "Inherited index mismatch not repaired; --no-index-check used"
+  }
+}

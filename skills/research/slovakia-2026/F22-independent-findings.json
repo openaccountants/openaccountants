@@ -1,0 +1,25 @@
+{
+  "verdict": "PASSF22only",
+  "findings": [
+    {
+      "id": "F22-I01",
+      "status": "closed",
+      "initial_guide": "VAT-return Services from abroad; proposed Test12 mapping",
+      "finding": "Existing7registrant exception to a duplicate7aapplication was not stated in the return sentence/mapping.",
+      "primary": "VAT7a(1)/(2),69(3),49(1),78(3)",
+      "correction": "Returnv2.4 explicitly preserves existing7registration and avoids a duplicate7aapplication;115selfassessment/noinput remains.",
+      "registration_sibling_allegation": "Withdrawn after complete reread: line133already retained the exception. No siblingedit required.",
+      "final_VAT_sha256": "49bfe203ced8cde44bf3e768fb395edd4bdf28d0e1f16eb05d384f8430e7f432"
+    },
+    {
+      "id": "F22-I02",
+      "status": "closed",
+      "finding": "Proposedmanifest current_bytes initially stale49557 after v2.4edit.",
+      "correction": "Actual49828bytes now recorded; hashes match."
+    }
+  ],
+  "unaccounted_units": [],
+  "additional_Guide_method_required": false,
+  "additional_Not_yet_confirmed_required": false,
+  "whole_country_PASS": false
+}
