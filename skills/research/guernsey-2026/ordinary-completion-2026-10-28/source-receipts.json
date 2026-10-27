@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253497",
+    "file": "work/sources/social-insurance-current.pdf",
+    "bytes": 2378130,
+    "sha256": "8cabb7551562cb29723cd9c2b86b75b88b49bd5770461a7ebfc8a7fedf9ed619",
+    "retrieved_utc": "2026-10-27T23:38:54.294173+00:00",
+    "mechanism": "documented browser printable-link downloadMedia",
+    "read_scope": "Targeted contribution provisions, not entire document"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268646",
+    "file": "work/sources/contributions-current.pdf",
+    "bytes": 662100,
+    "sha256": "d08ec62707c5d3be07a2813db977848f06b80b858d848f00530991c4d5917c2e",
+    "retrieved_utc": "2026-10-27T23:38:54.295198+00:00",
+    "mechanism": "documented browser printable-link downloadMedia",
+    "read_scope": "Targeted contribution provisions, not entire document"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=270319",
+    "file": "work/sources/classification-current.pdf",
+    "bytes": 211493,
+    "sha256": "876f35b99060eaf392c8c83aefc70fdf86b21ec8962a554a14fdda20694a8d45",
+    "retrieved_utc": "2026-10-27T23:38:54.295636+00:00",
+    "mechanism": "documented browser printable-link downloadMedia",
+    "read_scope": "Targeted contribution provisions, not entire document"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=262506",
+    "file": "work/sources/contribution-rates-2026.pdf",
+    "bytes": 127830,
+    "sha256": "3d70881c982c635b44df314501ce3cfcbd30c0793240ef9df89dc5d6232b1a9d",
+    "retrieved_utc": "2026-10-27T23:38:54.295957+00:00",
+    "mechanism": "documented browser printable-link downloadMedia",
+    "read_scope": "Complete text"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=130411&p=0",
+    "file": "work/sources/circular-13-2020.pdf",
+    "bytes": 530831,
+    "sha256": "f5a204e9f78365c54d9d8d34d824c0e881c2f23ac5955f551b8e7e6570c07dab",
+    "retrieved_utc": "2026-10-27T23:38:54.296632+00:00",
+    "mechanism": "curl normal TLS HTTP200",
+    "read_scope": "Complete text"
+  }
+]

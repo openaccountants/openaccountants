@@ -1,0 +1,11 @@
+{
+  "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
+  "protected_metadata_exact": true,
+  "CTA_exact": true,
+  "main_controls_byte_exact": true,
+  "old_payroll_bytes": 38946,
+  "new_payroll_bytes": 54730,
+  "new_payroll_sha256": "2223414c348632949a8aefb2da7aa77897f1de8dc482cada3049e667e553790b",
+  "independent_review": "pending",
+  "published": false
+}
