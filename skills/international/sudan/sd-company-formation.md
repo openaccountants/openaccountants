@@ -22,6 +22,33 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 > **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 > **YMYL — verify before relying.** Sudan's company registration framework operates under disrupted conditions since the October 2021 military takeover and the conflict since April 2023. Registration timelines vary widely. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), the Commercial Registrar, or a Sudan-qualified formation agent before acting.
 
+---
+
+## Section 1 — Scope statement
+
+This skill covers:
+
+- Common entity types under Sudanese corporate law (Companies Act — verify current year)
+- Minimum shareholders, directors, and capital requirements
+- Commercial (Trade) Registration procedure
+- Memorandum and Articles of Association preparation
+- Tax registration with the Sudan Taxation Chamber
+- VAT registration (when threshold met)
+- National Social Insurance Fund (NSIF) registration for employers
+- Free zone registration under the Free Zones Act
+- Sector-specific licensing (banking, oil, telecom)
+- Annual return, audit, and renewal obligations
+
+This skill does NOT cover:
+
+- Computing corporate income tax or filing the return — see `sd-corporate-income-tax`
+- VAT return preparation — see `sd-vat-gst`
+- Computing PAYE or NSIF contributions — see `sd-payroll-social`
+- Sudan tax system overview — see `sd-tax-overview`
+- Personal income tax registration — see `sd-income-tax`
+
+---
+
 ## Section 2 — Quick reference
 
 | Field | Value |

@@ -1,0 +1,525 @@
+{
+  "original": "96fe5f2a3510edfedfff145c24067fae15710203",
+  "final": "0151501c43748e6cff9c9b49ed160bfa9fd36db1",
+  "checks": [
+    {
+      "file": "skills/international/monaco/README.md",
+      "blob": "c1ca8d9bdff98cb02c9bce6caa9518bcae4769dd",
+      "unchanged_from_guide_correction": false,
+      "relative_links": [
+        [
+          "mc-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "monaco-vat.md",
+          true
+        ],
+        [
+          "mc-payroll-social.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-tax-overview.md",
+          true
+        ],
+        [
+          "mc-company-formation.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-pack-review.md",
+          true
+        ]
+      ],
+      "tier2": null
+    },
+    {
+      "file": "skills/international/monaco/mc-company-formation.md",
+      "blob": "4b43e69df8cc875bb49e4eb991b6df0fa036d3c2",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-corporate-income-tax.md",
+      "blob": "f88f08a0076966256d35bb0f59da61d246a05b86",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-cross-border.md",
+      "blob": "76eb4d3dfd79f91272c47754d110ac52088271d1",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-income-tax.md",
+      "blob": "1ffb5eb61f77fdd1ac2807e0c40a41ddaecdf539",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-payroll-social.md",
+      "blob": "50f1c800c422c44b34ad3f6079ac7895e6ae8194",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-tax-overview.md",
+      "blob": "2a03a298eebca36beddc7ae076dc0324d8200d9f",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "README.md",
+          true
+        ],
+        [
+          "mc-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "monaco-vat.md",
+          true
+        ],
+        [
+          "mc-payroll-social.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-company-formation.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/mc-transfer-pricing.md",
+      "blob": "d246fce994e02be2629af7078c2ed6d08e5a1e3f",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ],
+      "tier2": true
+    },
+    {
+      "file": "skills/international/monaco/monaco-vat.md",
+      "blob": "0fd20e40d9a973243d8133c46ec2729b3f99063c",
+      "unchanged_from_guide_correction": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ],
+      "tier2": true
+    }
+  ],
+  "guide_correction_commit": "b978b73efc342ce5a4888685a25a10f8cafe6035",
+  "guide_correction_checks": [
+    {
+      "file": "skills/international/monaco/README.md",
+      "blob": "2d12f2c02a64b5059ce94b84014b431de75d620b",
+      "unchanged_readme": true,
+      "relative_links": [
+        [
+          "mc-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "monaco-vat.md",
+          true
+        ],
+        [
+          "mc-payroll-social.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-tax-overview.md",
+          true
+        ],
+        [
+          "mc-company-formation.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-company-formation.md",
+      "blob": "4b43e69df8cc875bb49e4eb991b6df0fa036d3c2",
+      "category": "formation",
+      "version": "1.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-corporate-income-tax.md",
+      "blob": "f88f08a0076966256d35bb0f59da61d246a05b86",
+      "category": "international",
+      "version": "1.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-cross-border.md",
+      "blob": "76eb4d3dfd79f91272c47754d110ac52088271d1",
+      "category": "cross-border",
+      "version": "1.1",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "new_guide_no_invented_platform_fields": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-income-tax.md",
+      "blob": "1ffb5eb61f77fdd1ac2807e0c40a41ddaecdf539",
+      "category": "international",
+      "version": "1.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-payroll-social.md",
+      "blob": "50f1c800c422c44b34ad3f6079ac7895e6ae8194",
+      "category": "international",
+      "version": "1.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-tax-overview.md",
+      "blob": "2a03a298eebca36beddc7ae076dc0324d8200d9f",
+      "category": "international",
+      "version": "1.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 0,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ],
+        [
+          "README.md",
+          true
+        ],
+        [
+          "mc-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "mc-corporate-income-tax.md",
+          true
+        ],
+        [
+          "monaco-vat.md",
+          true
+        ],
+        [
+          "mc-payroll-social.md",
+          true
+        ],
+        [
+          "mc-transfer-pricing.md",
+          true
+        ],
+        [
+          "mc-cross-border.md",
+          true
+        ],
+        [
+          "mc-company-formation.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-research.md",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ],
+        [
+          "../../../docs/research/2026-10-24-monaco-sources.json",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/mc-transfer-pricing.md",
+      "blob": "d246fce994e02be2629af7078c2ed6d08e5a1e3f",
+      "category": "transfer-pricing",
+      "version": "1.1",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "new_guide_no_invented_platform_fields": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ]
+    },
+    {
+      "file": "skills/international/monaco/monaco-vat.md",
+      "blob": "0fd20e40d9a973243d8133c46ec2729b3f99063c",
+      "category": "international",
+      "version": "2.2",
+      "tier2": true,
+      "calculation_blocks_identical": true,
+      "calculation_count": 2,
+      "gap_last_authored_paragraph": true,
+      "legacy_verified_by_absent": true,
+      "protected_fields_equal_main": true,
+      "cta_bytes_equal_main": true,
+      "relative_links": [
+        [
+          "README.md",
+          true
+        ]
+      ]
+    }
+  ],
+  "final_provenance_recheck": {
+    "date": "2026-10-24",
+    "source_commit": "0151501c43748e6cff9c9b49ed160bfa9fd36db1",
+    "all_eight_guide_blobs_unchanged": true,
+    "all_seven_partial_flags_and_domain_mapping_unchanged": true,
+    "all_eight_guides_tier2": true,
+    "named_professional_review_added": false,
+    "issue_closure_claim_added": false,
+    "remaining_P3_provenance_observation": "closed",
+    "VAT_version_sequence": "main2.0 -> writer2.1 -> final2.2",
+    "copied_receipts": [
+      {
+        "file": "docs/research/2026-10-24-monaco-pack-review.md",
+        "matches_reviewer_receipt_before_final_addendum": true,
+        "sha256": "69ad3ab33488672e6fd3b7270a1387442de74704c0c295f01649cdb23cf7d892"
+      },
+      {
+        "file": "docs/research/2026-10-24-monaco-independent-calculations.json",
+        "matches_reviewer_receipt_before_final_addendum": true,
+        "sha256": "cfc217f038d5406baddf0351bc922822def9235ac4b756f17619d6746fc8a341"
+      },
+      {
+        "file": "docs/research/2026-10-24-monaco-review-retrieval.json",
+        "matches_reviewer_receipt_before_final_addendum": true,
+        "sha256": "15a294291c0a3721b0d2b7b090479df91898625e987ac2910e619fc47cc30b7e"
+      },
+      {
+        "file": "docs/research/2026-10-24-monaco-targeted-check.json",
+        "matches_reviewer_receipt_before_final_addendum": true,
+        "sha256": "40f7020dea41aed52c6373eeba19b813f8f571c12acbc5b07302259ff9630a6a"
+      }
+    ],
+    "law_retrieval_or_arithmetic_repeated": false,
+    "reason_no_repeat": "All eight Guide blobs and calculation blocks unchanged; final review is provenance/link/hash closure."
+  }
+}

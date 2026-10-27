@@ -1,356 +1,215 @@
 ---
 name: nl-corporate-tax
-description: "Use this skill whenever asked about Dutch corporate income tax (vennootschapsbelasting / VPB) for BV entities. Trigger on phrases like \"vennootschapsbelasting\", \"VPB aangifte\", \"corporate tax Netherlands\", \"BV belasting\", \"fiscal unity\", \"fiscale eenheid\", \"innovatiebox\", \"verliesverrekening\", \"carry forward losses\", \"DGA salary\", \"gebruikelijk loon\", \"deelnemingsvrijstelling\", \"participation exemption\", \"fiscal profit bridge\", \"commercial to fiscal result\", \"liquidatieverliesregeling\", or any question about computing or filing corporate income tax for a Dutch BV or NV. Also trigger when preparing annual accounts-to-tax reconciliation, computing VPB liability, or advising on fiscal adjustments. This skill covers VPB rates, fiscal profit computation, loss relief, fiscal unity, the innovation box, participation exemption, DGA salary rules, filing deadlines, and penalties. ALWAYS read this skill before touching any Dutch corporate tax work."
+description: "Dutch corporate income tax (vennootschapsbelasting, Vpb) for a resident bv or nv, tax year 2026. Covers the 19% and 25.8% rates with the EUR 200,000 bracket, the fiscal profit and what is not deductible, partly deductible costs (EUR 5,700 or 73.5%), depreciation caps and the building floor value, the director-shareholder usual salary, the participation exemption, the fiscal unity, earnings stripping (24.5% of tax EBITDA or EUR 1,000,000), loss carry-back of one year and unlimited carry-forward with the EUR 1,000,000 plus 50% cap, the 30% ownership-change rule, the innovation box, liquidation and cessation losses, provisional assessments, the return deadline and extensions, tax interest (belastingrente) and penalties. Trigger on: vennootschapsbelasting, Vpb aangifte, gemengde kosten, bodemwaarde, gebruikelijk loon, Dutch corporate tax, BV tax, fiscale eenheid, deelnemingsvrijstelling, earnings stripping, verliesverrekening, innovatiebox, liquidatieverlies, voorlopige aanslag, belastingr"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nl-corporate-tax"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-26"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Netherlands corporate income tax (vennootschapsbelasting, Vpb)
+# Netherlands corporate income tax (vennootschapsbelasting, Vpb), 2026
 
-## Scope and who this is for ([Belastingdienst: tax liability and return](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/belastingplicht_en_aangifte))
+This skill covers Dutch corporate income tax for a Dutch-resident bv (private limited company) or nv (public limited company) for financial years in 2026. The law is the Wet op de vennootschapsbelasting 1969 (Wet Vpb) as in force from 1 January 2026. The Belastingplan 2026 (Stb. 2025, 444) changes the Wet Vpb only from 1 January 2029, so the 2026 rates and limits are the same as 2025. Related skills: [nl-dividend-withholding](nl-dividend-withholding.md), [netherlands-transfer-pricing](netherlands-transfer-pricing.md), [nl-cross-border](nl-cross-border.md), [nl-double-tax-relief](nl-double-tax-relief.md), [nl-box2-substantial-interest](nl-box2-substantial-interest.md), [nl-tax-objection](nl-tax-objection.md), [netherlands-financial-statements](netherlands-financial-statements.md).
 
-This skill covers Dutch corporate income tax (vennootschapsbelasting, "Vpb") for a Dutch-resident **bv** (private limited company) or **nv** (public limited company). The primary year is **tax year 2026** (financial years that are the calendar year 2026). There is a dated section for the **2025 returns** being filed now.
+## Who this applies to
 
-- A bv and an nv must always file a Vpb return. Foundations (stichtingen), associations (verenigingen) and similar bodies file only in certain situations, and those are outside this skill.
-- A body set up under Dutch law is treated as established in the Netherlands. Otherwise residence depends on where management sits, where the head office is and where shareholder meetings are held.
-- From 1 January 2025 the rules changed for the tax liability of limited partnerships (cv), mutual funds (fgr), fiscal investment institutions (fbi), exempt investment institutions (vbi) and foreign legal forms. These are outside this skill.
+- **A bv or nv always files** a Vpb return. Foundations (stichtingen) and associations (verenigingen) file only in certain cases; they are out of scope.
+- **Residence.** A body incorporated under Dutch law is deemed established in the Netherlands for most of the Wet Vpb (art. 2(5)). Otherwise residence follows the facts: where management sits, the head office, where shareholder meetings are held. See [nl-cross-border](nl-cross-border.md).
+- **Financial year.** Usually the calendar year. A broken year (for example May to April) is allowed if it matches the articles of association. The first and last years may be longer or shorter.
+- **A non-resident company** with a Dutch permanent establishment is taxed on that Dutch income only. See [nl-dividend-withholding](nl-dividend-withholding.md) for the permanent establishment rules.
+- **Out of scope:** banks and insurers (extra interest rule at 89.4% of the balance sheet total in 2026), fiscal and exempt investment institutions (fbi, vbi), limited partnerships (cv) and mutual funds (fgr) under the 2025 classification reform, housing corporations, mergers and demergers.
 
-Tax is charged on the **taxable amount** (belastbaar bedrag) of a financial year: the profit minus losses that can still be offset ([Belastingdienst: taxable amount and financial year](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/belastbaar_bedrag)). The financial year is usually the calendar year, but a broken year (for example May to April) is allowed. It must match the financial year in the articles of association. The first and last years may be longer or shorter. Changing the financial year only to get a one-off tax advantage is not allowed.
+## Rates, bands and thresholds
 
-Practical rules come from the Belastingdienst's Dutch pages. Statute points cite the Wet op de vennootschapsbelasting 1969 ("Wet Vpb 1969") as in force from 1 January 2026 ([wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19% | 2026 (same 2023 to 2025) | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Vpb on taxable amount above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting |
+| Earnings stripping: net interest not deductible above the higher of (art. 15b(1)) | 24.5% of adjusted profit, or EUR 1,000,000 | 2026 (and 2025; 20% in 2023 and 2024) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026 |
+| Loss carry-back (art. 20(2)) | 1 year | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Loss carry-forward (art. 20(2)) | No time limit | Losses from 2022 on, and older losses still open at end 2021 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen |
+| Yearly loss offset cap (art. 20(2)) | EUR 1,000,000 plus 50% of taxable profit above EUR 1,000,000 | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Ownership change that blocks loss carry-forward (art. 20a) | 30% or more of the ultimate interest | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging |
+| Provisional loss carry-back | At most 80% of the loss declared | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen |
+| Participation exemption threshold (art. 13(2)(a)) | At least 5% of nominal paid-up capital | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Subject-to-tax test for an investment participation | A 10% profit tax normally counts as realistic | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/kwalificerende_beleggingsdeelneming |
+| Fiscal unity holding (art. 15(1)) | At least 95% of shares, votes, profit and capital | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Fiscal unity earliest start (art. 15(9)) | 3 months before the request | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Innovation box (art. 12b) | Qualifying benefits count for 9/25.8, an effective 9% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox |
+| Innovation box fixed option (art. 12bd(1)) | 25% of profit before the box, at most EUR 25,000 | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Innovation box smaller taxpayer | Gross IP benefit under EUR 37.5 million and net turnover at most EUR 250 million, over the year plus 4 prior years | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kleinere-en-grotere-belastingplichtigen |
+| Liquidation loss cap (art. 13d(2)) and cessation loss cap (art. 15i(4)) | EUR 5,000,000 unless the EU/EEA and control conditions are met | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Partly deductible costs: threshold, company with employees (art. 8(5); Wet IB 2001 art. 3.15(1)) | Not deductible up to the higher of EUR 5,700 and 0.4% of the year's taxed wages | 2026 (EUR 5,700 also in 2025) | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
+| Partly deductible costs: alternative if chosen in the return (art. 8(5); Wet IB 2001 art. 3.15(5)) | 73.5% deductible | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 |
+| Yearly depreciation cap (art. 8(1); Wet IB 2001 art. 3.30(2)) | Goodwill at most 10%, other assets at most 20% of cost | 2026 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Floor value for depreciation of buildings (art. 8(1); Wet IB 2001 art. 3.30a) | WOZ value of the building for the calendar year of the depreciation | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/afschrijving-vennootschapsbelasting |
+| Usual salary of a director-shareholder (gebruikelijk loon, wage tax rule, pointer) | At least EUR 58,000 (EUR 56,000 in 2024 and 2025) | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang |
+| Dividend tax on distributions (pointer) | 15% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/dividendbelasting/als_u_dividend_uitkeert |
+| Minimum tax (Pillar Two, pointer) | 15%, groups with revenue of at least EUR 750 million | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting |
+| Tax interest (belastingrente) on Vpb | 5% from 1 January 2026; 6.5% in 2025 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente |
+| Late or missing Vpb return penalty | EUR 3,354, up to EUR 6,709 for several years in a row | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
+| Late payment penalty | 5% of the unpaid amount, minimum EUR 50, maximum EUR 6,709 each time | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |
 
-This skill does not cover banks and insurers (special interest rules), fiscal investment institutions, cross-border groups beyond the summary of the minimum tax, transfer pricing, mergers and demergers, or the liquidation loss rule. See "When to refuse or refer".
+The rate bracket is "tot en met EUR 200,000": a taxable amount of exactly EUR 200,000 is taxed wholly at 19%.
+
+## The taxable base
+
+**Start from the commercial result.** The taxable amount (belastbaar bedrag) is the taxable profit of the financial year minus losses that can still be offset. Taxable profit applies tax rules to the commercial accounts under sound business practice (goed koopmansgebruik). Many income tax profit rules apply through art. 8(1): business costs, depreciation, investment deductions, tax reserves. The self-employed deduction does not apply to a company.
+
+**Add back what is never deductible.** Profit distributions, under whatever name or form (art. 10(1)(a)); the Vpb, the minimum tax and foreign profit taxes relieved under a double tax arrangement (art. 10(1)(e)); criminal and administrative fines, including comparable foreign and EU fines (art. 8(1) applying Wet IB 2001 art. 3.14(1)(c)).
+
+**Partly deductible costs (art. 8(5)).** In a year in which the company has one or more employees, costs of food, drink and stimulants, of representation (receptions, parties, entertainment) and of congresses, seminars, excursions and study trips, with the related travel and stay, are not deductible up to a threshold (Wet IB 2001 art. 3.15(1) and (2)). The threshold is EUR 5,700, or 0.4% of the total wages of the employees taxed under Wet LB 1964 arts. 20a, 20b, 26 and 26b if that is higher. The company may choose in the return to leave wages from former employment out of that total. Instead of the threshold, the company may choose in the return to deduct 73.5% of these costs (art. 8(5), applying art. 3.15(5)). The limit does not apply where the company's business is supplying these goods or services as part of its turnover (art. 3.15(3)).
+
+**Depreciation (art. 8(1) applying Wet IB 2001 arts. 3.30 and 3.30a).** Depreciation per year is at most 10% of cost for goodwill and at most 20% of cost for other assets (art. 3.30(2)). These are ceilings: the yearly amount still follows cost, residual value and useful life. A building is depreciated only while its book value is above its floor value (bodemwaarde), and by at most the difference (art. 3.30a(1)). The floor value is the WOZ value set for the building for the calendar year of the depreciation; for a broken financial year, the calendar year in which it ends (art. 3.30a(3) and (4)). Land is not depreciated.
+
+**Director-shareholder salary.** A shareholder with a substantial interest who works for the company is deemed to receive a usual salary (gebruikelijk loon) of at least the highest of: the pay in the most comparable employment, the pay of the company's (or a related company's) highest-paid employee, and EUR 58,000 for 2026. A lower amount applies only if the shareholder shows that comparable work is usually paid less; if the usual salary across all the person's companies is EUR 5,000 or less and that is shown, the actual pay is used. This is a wage tax rule; the salary paid is a deductible cost in the company's profit.
+
+**Participation exemption (art. 13).** Dividends and gains on a participation are exempt. Losses on it are not deductible, and costs of buying or selling it are not deductible either. A participation is at least 5% of the nominal paid-up capital of a company with share capital, or one of the other routes in art. 13(2) (a 5% fgr holding, a cooperative membership, the pull-along rules). A holding that falls below 5% after more than one year keeps the exemption for 3 more years, if it was exempt without a break. An investment participation (one whose assets are mainly portfolio investments, or that mainly finances the group) is exempt only if it passes the subject-to-tax test or the asset test; otherwise a credit applies instead (deelnemingsverrekening): the benefit is grossed up by 100/95 and included in profit, and the company credits the lower of 5% of the grossed-up benefit and the Vpb attributable to it. Credit not used for lack of Vpb carries forward to the next year by decision.
+
+**Liquidation and cessation losses.** A loss on a participation that shows up after the subsidiary is dissolved (liquidatieverlies) is deductible despite the participation exemption (art. 13d(1)). The loss is the amount paid for the participation minus the liquidation distributions (art. 13d(5)). It counts only up to EUR 5,000,000 unless, just before the liquidation ends, the company holds a qualifying interest (one that lets it decide the subsidiary's activities, art. 13d(4)) in a subsidiary established in the Netherlands, the EU or the EEA, and has met that condition without a break for the 5 years before (art. 13d(2)). A cessation loss on closing a foreign permanent establishment (stakingsverlies, art. 15i) has the same EUR 5,000,000 cap unless the establishment was in the EU or EEA, and is deductible only if the activities are not largely continued by a related body.
+
+**Fiscal unity (art. 15).** On request of both companies, a parent and a subsidiary in which it holds the full legal and economic ownership of at least 95% of the shares, with at least 95% of the votes and rights to at least 95% of profit and capital, are taxed as one taxpayer. The parent files; the subsidiary no longer files on its own. Losses of one member offset profits of another. Both must use the same financial years and profit rules and be established in the Netherlands, with EU exceptions for a Dutch granddaughter or Dutch sisters held through an EU company. The unity starts on the date named in the request, but not earlier than 3 months before the request (art. 15(9)). It ends when the conditions are no longer met (art. 15(10)). A Vpb fiscal unity is not a VAT fiscal unity.
+
+**Earnings stripping (art. 15b).** Net interest is interest costs on loans minus interest income on loans, at least nil. It is not deductible to the extent it exceeds the higher of 24.5% of adjusted profit and EUR 1,000,000. Adjusted profit (gecorrigeerde winst) is profit before this limit, plus depreciation, plus write-downs (minus reversals), plus net interest: broadly tax EBITDA, at least nil. The disallowed amount carries forward without time limit and is deducted in a later year to the extent that year's net interest is below the limit, oldest first. The inspector fixes it in a decision open to objection (art. 15b(5)).
+
+**Innovation box (art. 12b).** If the company chooses it in the return, qualifying benefits from an intangible it developed itself count for 9/H, where H is the top rate (25.8%), an effective rate of 9%. It applies only while the balance of qualifying benefits is positive, and only above the production costs already deducted (the box threshold). A smaller taxpayer needs an R&D declaration (S&O-verklaring from RVO); a larger one also needs a further right such as a patent, plant breeder's right or software. A company that created a qualifying asset in the year or the 2 prior years may instead take a fixed 25% of profit before the box, at most EUR 25,000, if that profit is positive (art. 12bd(1)). Innovation losses are deductible at the normal rate.
+
+**Losses (art. 20 and 20a).** A loss is carried back to the previous year first, then forward without time limit. In each year the offset is capped at EUR 1,000,000 plus 50% of the taxable profit above EUR 1,000,000; a taxable profit of EUR 1,000,000 or less can be fully offset. Losses are used in the order they arose, and only once the inspector has fixed them in a decision open to objection. If the ultimate interest in the company changes by 30% or more, earlier losses can no longer be carried forward, unless the asset test (assets not more than 50% investments for more than 3 months) and the activities and intention tests are met. Exceptions: inheritance or matrimonial property, and an acquirer who already held at least one third at the start of the oldest loss year (art. 20a(2)).
+
+**Order of the computation.** Commercial result, add-backs (including the partly deductible costs and any depreciation above the caps or below the building floor value), participation exemption, earnings stripping, innovation box, then loss offset, then the rate table on the taxable amount.
+
+## Deadlines and filing
+
+- **Return.** Calendar year: before 1 June of the next year (the 2026 return is due before 1 June 2027; the 2025 return was due before 1 June 2026). Broken year: within 5 months after the end of the financial year. Short year ending 31 December: by 1 June of the next year; short year ending in another month: before 1 April of the next calendar year.
+- **How.** Through Mijn Belastingdienst Zakelijk, tax software or a tax service provider.
+- **Extension.** Online in Mijn Belastingdienst Zakelijk to 1 November, for a calendar year only; apply before 1 June (the form is open from 1 March to 1 June). For a longer extension or a broken year, use the paper form with reasons, within 5 months after the end of the financial year. A tax service provider can also request it.
+- **Provisional assessments (voorlopige aanslag).** Most companies get one at the start of the year, based on earlier years. The company must check it and ask for a change if it expects a higher or lower profit; changes can be passed on until the return is filed, and the Belastingdienst processes at most 3 increases for one year. There is no objection against a provisional assessment, only a request to change it. If none arrives and tax is expected, ask for one. The final assessment credits all provisional assessments.
+- **Asking for a return.** A company that receives no return invitation must ask for one within 6 months after the tax debt arose.
+- **Loss and interest decisions.** Losses and carried-forward interest are fixed in decisions open to objection. See [nl-tax-objection](nl-tax-objection.md).
+
+## Penalties and interest
+
+- **Tax interest (belastingrente).** Charged if the return is received on or after 1 June after the tax year, or if the assessment departs from the return (even one filed before 1 June). It runs from 1 July after the tax year. If the return is followed unchanged, it runs at most to 19 weeks after the return is received, or to 6 weeks after the assessment date if earlier. No tax interest if the return is filed before 1 June and followed unchanged, or if a provisional assessment is requested before 1 May and imposed as asked. For a broken year, read the 5th month after year end for 1 May and the 6th month for 1 June. Interest is computed with 30-day months and a 360-day year, rounded down to whole euros.
+- **Rate.** 5% from 1 January 2026, 6.5% for 2025. The Supreme Court (Hoge Raad) ruled on 16 January 2026 that the higher Vpb rate could not be used, and the Belastingdienst cut the Vpb rates from 2022 to the general rate (2026 had been 7.5%).
+- **Late or missing return.** Filed after the deadline in the demand (aanmaning), or not at all: EUR 3,354, rising to EUR 6,709 for several years in a row. No penalty if the company is not at all to blame.
+- **Not asking for a return in time:** EUR 3,354 (none if asked within 2 weeks after the 6-month term).
+- **Late payment.** 5% of the unpaid amount of the (provisional) assessment, minimum EUR 50, maximum EUR 6,709 each time.
+- **Incorrect return.** 25% of the tax withheld for gross negligence, 50% for intent, up to 100% for fraud or a repeat offence. Correcting the return in time avoids this penalty.
+
+## Cross-border points
+
+- **Dividends paid.** A bv or nv paying a dividend usually withholds 15% dividend tax, with exemptions for qualifying shareholders. Payments to affiliates in listed low-tax jurisdictions also attract the conditional withholding tax. See [nl-dividend-withholding](nl-dividend-withholding.md).
+- **Foreign branches.** Profit from a foreign permanent establishment is exempt under the object exemption (art. 15e); a final cessation loss is deductible within the art. 15i limits. See [nl-double-tax-relief](nl-double-tax-relief.md).
+- **Transfer pricing.** Related-party prices must be at arm's length (art. 8b). See [netherlands-transfer-pricing](netherlands-transfer-pricing.md).
+- **Foreign subsidiaries.** They qualify for the participation exemption on the same 5% test; an investment participation needs the subject-to-tax or asset test. A foreign liquidation loss above EUR 5,000,000 counts only for EU or EEA subsidiaries.
+- **Minimum tax (Pillar Two).** Groups with consolidated revenue of at least EUR 750 million fall under the Wet minimumbelasting 2024 at 15%. The top-up information return (BIA) is due within 15 months after the reporting year (18 months for the first year); a top-up tax return within 17 months (20 for the first year). Refer to a specialist.
+- **Residence and migration.** Moving a company's place of management in or out of the Netherlands is in [nl-cross-border](nl-cross-border.md).
+
+## Worked examples
+
+**Example 1: small bv with a participation dividend (2026).** A calendar-year bv has a commercial profit before tax of EUR 480,000. This includes EUR 60,000 of dividend from a 40% held active trading subsidiary, and is after EUR 5,000 of administrative fines that the bv paid. There are no losses to offset and net interest is far below EUR 1,000,000. The dividend is exempt under the participation exemption, so it comes out. The fines are not deductible, so they are added back. Taxable amount: 480,000 minus 60,000 plus 5,000 = EUR 425,000. Tax: 19% on EUR 200,000 is EUR 38,000, plus 25.8% on EUR 225,000 is EUR 58,050, total EUR 96,050. The provisional assessments already paid are credited against this.
+
+```oa-check
+name: NL bv, commercial profit EUR 480,000 with exempt dividend and fines (2026)
+inputs:
+  commercial_profit: 480000
+  participation_dividend: 60000
+  fines: 5000
+  bracket: 200000
+steps:
+  - taxable_amount: commercial_profit - participation_dividend + fines
+  - tax_low: min(taxable_amount, bracket) * 19 / 100
+  - tax_high: max(taxable_amount - bracket, 0) * 25.8 / 100
+  - vpb: tax_low + tax_high
+expected:
+  taxable_amount: 425000
+  tax_low: 38000
+  tax_high: 58050
+  vpb: 96050
+```
+
+**Example 2: interest limit and loss cap in the same year (2026).** A bv has a profit before the interest limit of EUR 4,500,000. It booked depreciation of EUR 1,000,000 and net interest of EUR 2,500,000. Adjusted profit is 4,500,000 plus 1,000,000 plus 2,500,000 = EUR 8,000,000. 24.5% of that is EUR 1,960,000, higher than EUR 1,000,000, so that is the limit. EUR 540,000 of interest is not deductible this year and carries forward. Taxable profit becomes EUR 5,040,000. The bv has a 2025 loss of EUR 4,000,000 that it could not carry back. The offset cap is EUR 1,000,000 plus 50% of EUR 4,040,000 = EUR 3,020,000, so only EUR 3,020,000 of the loss is used and EUR 980,000 carries forward. Taxable amount: EUR 2,020,000. Tax: EUR 38,000 plus 25.8% of EUR 1,820,000 (EUR 469,560) = EUR 507,560. The edge: the interest add-back raises the profit, and the loss cap stops the loss from wiping it out.
+
+```oa-check
+name: NL bv, earnings stripping then capped loss offset (2026)
+inputs:
+  profit_before_limit: 4500000
+  depreciation: 1000000
+  net_interest: 2500000
+  loss_brought_forward: 4000000
+  threshold: 1000000
+  bracket: 200000
+steps:
+  - adjusted_profit: profit_before_limit + depreciation + net_interest
+  - interest_limit: max(adjusted_profit * 24.5 / 100, threshold)
+  - interest_disallowed: max(net_interest - interest_limit, 0)
+  - taxable_profit: profit_before_limit + interest_disallowed
+  - offset_cap: threshold + max(taxable_profit - threshold, 0) * 50 / 100
+  - loss_used: min(loss_brought_forward, offset_cap)
+  - loss_left: loss_brought_forward - loss_used
+  - taxable_amount: taxable_profit - loss_used
+  - vpb: min(taxable_amount, bracket) * 19 / 100 + max(taxable_amount - bracket, 0) * 25.8 / 100
+expected:
+  adjusted_profit: 8000000
+  interest_limit: 1960000
+  interest_disallowed: 540000
+  taxable_profit: 5040000
+  offset_cap: 3020000
+  loss_used: 3020000
+  loss_left: 980000
+  taxable_amount: 2020000
+  vpb: 507560
+```
 
 ## Ask the client first
 
-- Legal form (bv or nv) and whether it is Dutch-resident. Any foreign shareholders, subsidiaries or permanent establishments?
-- The financial year: calendar year or broken year, and is this the first or a shortened year?
-- Which year is being worked on: the 2025 return (filing now) or 2026 (provisional assessment and planning)?
-- Annual accounts (jaarrekening), trial balance and fixed asset register.
-- Prior-year assessments, the loss decisions (verliesbeschikkingen) and how much of each loss is left, and whether any **30% or more** change in ultimate ownership has happened since the oldest loss year ([change of ownership](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging)).
-- Every shareholding the company holds: percentage of nominal paid-up capital, voting rights, how long held, and what the subsidiary does (active business or mainly investments or group financing).
-- Is there a fiscal unity decision (beschikking) from the Belastingdienst? Which companies, from which date?
-- Interest paid and received (including to and from group companies), depreciation and write-downs for the year.
-- Innovation: any S&O-verklaring (R&D declaration issued by RVO), patents or software developed in-house?
-- Representation, food, drink and gift costs for the year; whether there are employees and the statutory payroll total for the mixed-cost threshold.
-- Director-major shareholder (dga) salary actually paid.
-- Provisional assessments (voorlopige aanslagen) received and paid for the year, and any extension already granted.
-- Group consolidated revenue for the preceding reporting years, year lengths and any restructurings (for the minimum tax scope test).
-
-## The method, step by step
-
-1. **Confirm liability and the year.** A bv or nv files every year. Fix the financial year and the return deadline before anything else (see "Filing and payment"). If the company is in a fiscal unity, only the parent files; work at the parent level.
-2. **Start from the commercial result, then apply tax rules.** Fiscal profit is computed by applying tax rules to the commercial profit and loss account and balance sheet, using sound business practice (goed koopmansgebruik). Tax values may differ from the accounts ([taxable amount](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/belastbaar_bedrag)). Most income tax profit rules also apply here: deduction of business costs, investment deductions, some tax reserves and work-in-progress valuation. The self-employed deduction (zelfstandigenaftrek) and the partner's work deduction (meewerkaftrek) do **not** apply to a company.
-3. **Limit partly deductible costs.** For a company with employees, representation costs and some business gifts are partly deductible; check the payroll-based threshold. Refer the no-employee case. Use either the threshold or the percentage method, not both (see "Figures by year").
-   **Not deductible at all:** profit distributions, whatever they are called or however they are made (article 10(1)(a) Wet Vpb 1969); the Vpb itself, the minimum tax and foreign profit taxes relieved under a double tax arrangement (article 10(1)(e)) ([Wet Vpb 1969](https://wetten.overheid.nl/BWBR0002672/2026-01-01)); and fines and bribes. Article 8(1) Wet Vpb 1969 applies article 3.14(1) Wet IB 2001, which bars costs connected with criminal and administrative fines (including sums paid to avoid prosecution) and with gifts, promises or services that are a criminal offence such as bribery ([Wet IB 2001](https://wetten.overheid.nl/BWBR0011353/2026-02-21) lists the other barred items). Add these back to the commercial result in full.
-4. **Apply tax depreciation.** Buildings stop at the WOZ value. Compute depreciation from cost less residual value over economic useful life, proportionately for part-year use; goodwill is limited to 10% a year and other assets to 20% a year of cost ([depreciation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/hoe_berekent_u_het_bedrag_van_de_afschrijving)).
-5. **Take out participation income.** Dividends and gains from a qualifying participation are exempt. Losses on it are not deductible, and costs of buying or selling it are not deductible either. Test first whether the holding is a participation, then whether it is an investment participation, then whether it qualifies (see "Boundary and exception table").
-6. **Apply the earnings stripping limit.** Net interest (interest costs minus interest income on loans, at least nil) is not deductible to the extent it exceeds the **higher** of 24.5% of the adjusted profit and €1,000,000 (2025 and 2026). The excess carries forward ([earnings stripping](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking)).
-7. **Apply the innovation box if elected.** Qualifying benefits above the box threshold count for only 9/25.8 of their amount, which gives an effective 9% at the top rate ([innovation box](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox)). The election is made in the return.
-8. **Offset losses.** Carry a loss back one year first, then forward without a time limit. Each year's offset is capped: €1,000,000 plus 50% of that year's taxable profit above €1,000,000. Check the ownership-change and holding-loss restrictions first ([loss offset](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen)).
-9. **Compute tax.** 19% on the first €200,000 of the taxable amount and 25.8% on the rest (2023 to 2026) ([rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting)).
-10. **Credit provisional assessments** and any withholding taxes, then compare with the final assessment when it arrives. Check for tax interest (belastingrente).
-11. **File by the deadline or get an extension in time.** Otherwise a late-filing penalty follows.
-
-The loss-offset and rate-bracket order matters. Losses are offset against the taxable profit **after** the participation exemption and the interest limit. The €200,000 bracket applies to the taxable amount **after** loss offset ([rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting)).
-
-## Figures by year
-
-### Vpb rates, 2023 to 2026 ([Belastingdienst: Vpb rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting))
-
-| Part of the taxable amount | Rate 2026 | Rate 2025 | Rate 2024 | Rate 2023 |
-| --- | --- | --- | --- | --- |
-| Up to and including €200,000 | 19.0% | 19.0% | 19.0% | 19.0% |
-| Above €200,000 | 25.8% | 25.8% | 25.8% | 25.8% |
-
-The 2026 changes page confirms "Het vennootschapsbelastingtarief is in 2026 niet gewijzigd" ([Changes to Vpb 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026)). Article 22 Wet Vpb 1969 sets the same table: tax on the first €200,000 is €38,000, and 25.8% applies to the part above ([wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
-
-### Earnings stripping (generieke renteaftrekbeperking) ([Belastingdienst: earnings stripping](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking))
-
-| Year | Net interest not deductible to the extent it exceeds |
-| --- | --- |
-| 2026 | 24.5% of the adjusted profit **and** €1,000,000 |
-| 2025 | 24.5% of the adjusted profit **and** €1,000,000 |
-| 2023 and 2024 | 20% of the profit **and** €1,000,000 |
-
-- Article 15b(1) Wet Vpb 1969 puts it as "het hoogste van de volgende bedragen: a. 24,5% van de gecorrigeerde winst; b. € 1.000.000" ([wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
-- **Net interest** (saldo aan renten) is interest costs on loans minus interest income on loans. It is at least nil. Loan fees, currency and hedging results and capitalised borrowing costs can also enter the statutory calculation; foreign-PE exempt items are excluded under article 15b(4). Refer those cases rather than using the simple examples.
-- **Adjusted profit** (gecorrigeerde winst, article 15b(3)) is the profit before this limit, plus depreciation of the year, plus write-downs to lower business value (minus reversals of write-downs), plus the net interest of the year, excluding the capitalised interest specified in article 15b(6)(d). It is at least nil. This is broadly tax EBITDA. The simple examples assume no other restriction denies the interest.
-- Interest not deductible in one year carries forward. It is deducted in a later year to the extent that year's net interest is below the limit, oldest first. The inspector sets the amount carried forward in a decision open to objection (article 15b(5)).
-- This generic limit does not establish deductibility under other rules: related-party debt, hybrid instruments, ownership changes affecting carried-forward interest and artificial fragmentation need separate review. Do not allocate a fresh threshold mechanically to every property company in a group.
-- Within a fiscal unity the limit is computed for the unity as a whole. When profit must be split per company to offset losses from before a company joined (articles 15ae and 15ah), each company's profit is first computed on its own, with a standalone earnings stripping calculation. Differences require the statutory allocation and limits; pre-joining loss relief must not exceed the standalone entitlement. This is specialist work, not a licence to give each member an independent deduction threshold in the consolidated return ([KG:032:2025:3](https://kennisgroepen.belastingdienst.nl/publicaties/kg03220253-winstsplitsing-bij-fiscale-eenheid-samenloop-artikel-15b-en-artikel-15ah-wet-vpb-1969/)).
-- Banks and insurers have an extra rule: in 2025 and 2026 interest is not deductible to the extent debt exceeds 89.4% of the balance sheet total ([2026 changes](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026); [2025 changes](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-vorige-jaren/veranderingen-vennootschapsbelasting-2025)). Refer these.
-
-### Loss offset (verliesverrekening) ([Belastingdienst: offsetting losses](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen))
-
-| Rule | What the Belastingdienst says |
-| --- | --- |
-| Carry-back | Against the taxable profit of the **previous** financial year, first |
-| Carry-forward | Losses from 2022 and later: no time limit. Also losses from financial years starting on or after 1 January 2013 that could still be carried forward at the end of 2021 |
-| Yearly cap (offset against profits of 2022 onward) | Taxable profit €1,000,000 or less: offset up to the full profit. Above €1,000,000: €1,000,000 plus 50% of the remaining profit |
-| Provisional loss carry-back | On written request when filing the loss-year return, if the assessment for the earlier year is final; at most 80% of the loss declared |
-| Loss overview | Ask the tax office in writing; issued within 6 weeks |
-
-- Article 20(2) Wet Vpb 1969 applies the cap to both the previous year and later years, and allows offset only once the inspector has set the loss in a decision open to objection ([wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)). Losses are offset in the order they arose.
-- **Change of ownership (belangenwijziging)** ([Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging)): losses can no longer be carried forward if the ultimate interest in the company changes by **30% or more**. They can still be used if, in the loss year and the profit year, assets were not for more than 3 months more than 50% investments, **and** activities just before the change were not less than 30% of those at the start of the oldest loss year, **and** there was no intention to shrink activities below 30% within 3 years. If only the asset test is met (the activities test or intention test fails), the losses can still be offset, but only against profits from the activities continued after the change. Carry-back to profit from before the change is blocked when a loss arises after the change and both apply: activities have stopped by 90% or more, and assets were for more than 3 months more than 50% investments in the profit and loss years. In the year of the change the result is computed separately for 2 periods, before and after the change; a loss before the change is attributed to the previous year and a loss after it to the next year. Exceptions: inheritance or matrimonial property law; an acquirer who already held at least 33 1/3% at the start of the oldest loss year; a company that did not and could not know of the change.
-- **Historical holding and finance company losses** ([Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/houdsterverliezen)) arising in financial years starting before 2019 remain subject to the transitional holding-loss restriction: they can only be offset against profits of holding/finance years, with the related-party receivable/debt test. Do not apply this abolished restriction to newly arising losses ([article 34i Wet Vpb](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
-- From 2025, a qualifying debt-forgiveness profit (kwijtscheldingswinst), arising from a creditor abandoning rights that cannot be realised, is first offset against the loss of that year and past losses; any remainder is fully exempt. Do not assume every commercial debt release qualifies; obtain specialist review of the exemption conditions ([2025 changes](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-vorige-jaren/veranderingen-vennootschapsbelasting-2025)).
-
-### Participation exemption (deelnemingsvrijstelling) ([Belastingdienst: participations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen))
-
-| Condition | Rule |
-| --- | --- |
-| Basic holding | At least 5% of the nominal paid-up capital of a company with share capital (such as a bv or nv) |
-| Other routes | At least 5% of units in a mutual fund (fgr); member of a cooperative; at least 5% of voting rights in an EU company where a tax treaty reduces dividend tax by voting rights; deemed participation (meesleepregeling); related-party pull-along (meetrekregeling) |
-| Special entities | Foreign-body and reverse-hybrid routes under article 13(2)(d)–(e) require a separate classification check; refer. Do not treat a former open cv as automatically qualifying after the 2025 classification reform. |
-| Below 5% | Normally no ordinary share-capital participation; first check the related-party pull-along and other statutory routes. A separate rule is: a holding of at least 5% held for more than 1 year, and exempt without a break ("onafgebroken") throughout that time, that falls below 5% keeps the exemption for 3 more years (article 13(16) Wet Vpb 1969) |
-| Non-qualifying investment participation | No exemption; a credit (deelnemingsverrekening) may apply instead ([credit method](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingsverrekening)): gross up the income by 100/95 and credit the lower of 5% of the grossed-up income and the Vpb attributable to it |
-
-The credit formula is a summary, not a filing calculation. Determine the linked management and financing costs that reduce the attributable benefit, whether an actual-tax election is available for qualifying EU-directive dividends, and any credit carryforward with a specialist before computing deelnemingsverrekening ([credit method](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingsverrekening)).
-
-- **Effect** ([Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling)): dividends and gains on sale are not taxed; losses on sale are not deductible; costs of buying and selling the participation are not deductible. The exemption does not apply to a fiscal investment institution's return.
-- **Qualifying investment participation** ([Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/kwalificerende_beleggingsdeelneming)): the exemption still applies if **either** the subsidiary is subject to a profit tax that is realistic by Dutch standards (subject-to-tax test; "Een tarief van 10% geldt normaal gesproken als reële heffing", with the base compared to Dutch rules) **or** its assets usually consist, directly or indirectly, of less than half low-taxed free portfolio investments (asset test).
-
-The short holding percentages are not a complete exemption test. Deductible distributions at subsidiary level and hybrid cases are excluded under article 13(17); classification changes and compartmentalisation require specialist review ([article 13](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
-
-### Fiscal unity (fiscale eenheid) ([Belastingdienst: fiscal unity](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting))
-
-| Condition | Rule |
-| --- | --- |
-| Parent's holding | At least 95% of the shares, entitled to at least 95% of the profit **and** at least 95% of the capital, and at least 95% of the voting rights |
-| Parent's form | bv, nv, mutual insurer, cooperative, or a foundation or association acting as housing corporation, or a comparable foreign form |
-| Subsidiary's form | bv or nv, or a comparable foreign form |
-| Both | Same financial years and same profit rules; actually established in the Netherlands |
-| Start date | Only on request, from the date named in the request, but "niet eerder dan drie maanden voor het tijdstip waarop het verzoek is gedaan" (article 15(9) Wet Vpb 1969, [wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)) |
-| End | Among other cases, when the conditions are no longer met (article 15(10)) |
-
-- Effect: the subsidiary's results are attributed to the parent. The subsidiary still exists but no longer files. Losses of one member can be set against profits of another.
-- EU exceptions: a Dutch parent with a Dutch granddaughter held through an intermediate company in another EU state; or Dutch sisters held by the same top company in another EU state (one sister is treated as the parent). The EU company itself is not in the unity.
-- A Vpb fiscal unity is **not** the same as a VAT fiscal unity.
-
-### Innovation box (innovatiebox) ([Belastingdienst: innovation box](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox))
-
-| Point | Rule |
-| --- | --- |
-| Effective rate | 9% on qualifying profits from innovative activities with an S&O-verklaring issued by RVO |
-| How it works | Qualifying benefits count for 9/H of their amount, where H is the top rate for the year (25.8% in 2025 and 2026), and only while the balance of qualifying benefits is positive (article 12b Wet Vpb 1969, [wetten.overheid.nl](https://wetten.overheid.nl/BWBR0002672/2026-01-01)) |
-| Self-developed | The company must have developed the intangible itself, at its own account and risk. A bought intangible does not qualify; only a new asset created by further development does ([conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/voorwaarden-aan-immateriele-activa)) |
-| Smaller taxpayer | Gross benefit from all intangibles over the year plus the 4 previous years less than €37.5 million, **and** net turnover over the same 5 years at most €250 million (group turnover if in a group) ([smaller and larger taxpayers](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kleinere-en-grotere-belastingplichtigen)) |
-| Smaller taxpayer needs | An S&O-verklaring |
-| Larger taxpayer needs | An S&O-verklaring **and** one of: patent (or application), plant breeder's right (or application), new biological crop protection, software, a medicines marketing authorisation, a registered utility model, or a supplementary protection certificate |
-| Box threshold (ordinary method) | Benefits enter the box only above the production costs deducted (balance still to recover plus costs of the year, plus unrecovered innovation losses) ([threshold](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/boxdrempel)) |
-| Fixed-percentage option | 25% of the profit before the box, at most €25,000, in the year the asset is created and the 2 following years. Only available when that profit is positive (article 12bd(1)) ([fixed percentage](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kiezen-voor-een-vast-bedrag)) |
-| Election | Made in the return for the first year of use, while that year's assessment is not yet final. One box per company. Not for an asset still in development ([choosing](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kiezen-voor-innovatiebox)) |
-| Losses | Innovation losses are deductible at the normal rate |
-
-The ordinary method also applies the **nexus fraction** under article 12bb: eligible R&D expenditure with the statutory uplift divided by total R&D expenditure, capped at the whole benefit. Related-party outsourcing can reduce the qualifying benefit; ownership of an S&O-verklaring alone does not put all commercial profit in the box. Allocation and the ordinary-method calculation require a specialist ([articles 12bb–12bc](https://wetten.overheid.nl/BWBR0002672/2026-01-01)).
-
-If a patent or breeder's right application is later refused, the normal rate applies after all.
-
-### Partly deductible costs (representation, food, drink, some gifts) ([Threshold 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026))
-
-| Year | Threshold method | Percentage method for Vpb | Source |
-| --- | --- | --- | --- |
-| 2026 | Deductible above the higher of €5,700 and 0.4% of the statutory wage base | 73.5% deductible | [Threshold 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026) |
-| 2025 | Deductible above the higher of €5,700 and 0.4% of the then-applicable statutory wage base | 73.5% deductible | [Threshold 2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/drempel-beperkt-aftrekbare-kosten-2025) |
-
-For a company without employees, refer the application of article 8(5) rather than automatically imposing these limits. For a company with employees, obtain the payroll totals before comparing the methods. Article 8(5) replaces the fixed threshold with 0.4% of wages when higher. For **2026**, use wages taxed under articles 20a, 20b, 26 and 26b Wet LB; the company may elect to exclude wages from former employment. For **2025**, the statutory base was taxable wages under article 9 Wet LB. The change took effect in 2026 ([Wet Vpb article 8(5)](https://wetten.overheid.nl/BWBR0002672/2026-01-01); [2025 article 8(5)](https://wetten.overheid.nl/BWBR0002672/2025-01-01)).
-
-The percentage is the part that **is** deductible. The Belastingdienst says entrepreneurs may deduct a percentage of these costs instead of applying the threshold, "Voor ondernemers voor de vennootschapsbelasting geldt het percentage van 73,5%."
-
-### Depreciation ([Belastingdienst: Vpb depreciation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/afschrijving-vennootschapsbelasting))
-
-| Asset | Rule |
-| --- | --- |
-| Buildings | No more depreciation for Vpb once the WOZ value is reached (the floor value, bodemwaarde). Use the WOZ value as at 1 January of the previous year ([business premises](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/afschrijving_bedrijfspand)). No depreciation on land |
-| Goodwill | At most 10% a year ([how to compute depreciation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/afschrijving/hoe_berekent_u_het_bedrag_van_de_afschrijving)) |
-| Other assets | At most 20% a year of cost |
-| Accelerated (willekeurige) depreciation | Only for designated assets, such as environmental assets; book value may not fall below residual value |
-
-These percentages are ceilings, not automatic deductions. For ordinary depreciation, establish cost, residual value and economic useful life, calculate the annual amount and prorate part-year use; never depreciate below residual value.
-
-### Director-major shareholder salary (gebruikelijk loon) ([Belastingdienst: salary and substantial interest](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang))
-
-| Year | Minimum amount in the test |
-| --- | --- |
-| 2026 | €58,000 |
-| 2025 and 2024 | €56,000 |
-
-The salary must be at least the **highest** of: pay in the most comparable employment; pay of the highest-paid employee of the company or of a related company; and the amount in the table. A lower figure is accepted only if the shareholder shows that comparable work is usually paid less. If the usual salary is €5,000 or lower (in total across all the person's companies) and that can be shown, the actual pay is used. This is a wage tax rule, but the salary is a cost in the company's Vpb profit.
-
-### Tax interest (belastingrente) on Vpb ([Belastingdienst: tax interest rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente))
-
-| Period | Vpb rate as now published |
-| --- | --- |
-| From 1 January 2026 | 5% (was 7.5%) |
-| 2025 | 6.5% (was 9%) |
-| 2024 | 7.5% (was 10%) |
-
-On 16 January 2026 the Supreme Court (Hoge Raad) ruled that the higher Vpb rate may not be used; the same rate as for other taxes applies, and the Belastingdienst corrected the rates from 2022. For corrections of past assessments, check the Belastingdienst's current news on the mass objection.
-
-## Boundary and exception table
-
-| Situation | Treatment | Source |
-| --- | --- | --- |
-| Taxable amount exactly €200,000 | All at 19% ("tot en met") | [Rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting) |
-| Taxable profit exactly €1,000,000 | Losses can be offset up to the full profit ("€ 1.000.000 of lager") | [Loss offset](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen) |
-| Net interest exactly €1,000,000 | Not limited: interest is disallowed only to the extent it is **more than** the limit | [Earnings stripping](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking) |
-| Holding of exactly 5% | A participation ("ten minste 5%") | [Participations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen) |
-| Holding fell from at least 5% to below 5% after more than 1 year | Exemption continues for 3 years, but only if the holding was exempt without a break during the time it was held (article 13(16)) | [Participations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen) |
-| Subsidiary mainly holds interests below 5%, or mainly does group financing | Always an investment participation, whatever the intention | [Investment participation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/wanneer_is_een_deelneming_een_beleggingsdeelneming) |
-| Subsidiary's business is an extension of the parent's, or top holding with a real group function | Not an investment participation | [Investment participation](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/wanneer_is_een_deelneming_een_beleggingsdeelneming) |
-| Ownership change of exactly 30% | Counts ("30% of meer"): loss carry-forward restricted unless the tests are met | [Change of ownership](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging) |
-| Parent holds 94% | No fiscal unity (needs at least 95%) | [Fiscal unity](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting) |
-| Innovation box, bought patent not developed further | Not eligible | [Conditions](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/voorwaarden-aan-immateriele-activa) |
-| Provisional assessment disagreed with | No objection possible; ask for a change instead | [Provisional assessment](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/voorlopige_aanslag_vennootschapsbelasting) |
-
-## Worked cases
-
-These cases use rounded inputs chosen for illustration. Each result follows from the rules above.
-
-### Case 1: tax on a taxable amount of €500,000 (2026) ([Rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting))
-
-- First €200,000 at 19%: €38,000.
-- Remaining €300,000 at 25.8%: €77,400.
-- Vpb due: €115,400, before crediting provisional assessments.
-
-### Case 2: capped loss offset (the Belastingdienst's own example) ([Loss offset](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen))
-
-- Profit 2026 €9,000,000; loss 2025 €7,000,000 (nothing left to carry back).
-- Offset allowed: €1,000,000 plus 50% of €8,000,000 (€4,000,000) = €5,000,000.
-- Taxable amount 2026: €4,000,000. Loss left for 2027 and later: €2,000,000.
-
-### Case 3: earnings stripping (2026) ([Earnings stripping](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking))
-
-- Company A: adjusted profit €10,000,000; net interest €3,000,000. 24.5% of the adjusted profit is €2,450,000, which is higher than €1,000,000. Deductible €2,450,000; not deductible €550,000, carried forward.
-- Company B: adjusted profit €2,000,000; net interest €800,000. 24.5% is €490,000, but the limit is the higher amount, €1,000,000, and net interest does not exceed it, so all €800,000 is deductible.
-
-### Case 4: innovation box fixed percentage (2026) ([Fixed percentage](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kiezen-voor-een-vast-bedrag))
-
-- A smaller taxpayer with an S&O-verklaring created software in 2026 and elects the box. Profit before the box is €80,000. 25% is €20,000, under the €25,000 cap, so €20,000 is the box benefit.
-- Under article 12b the box benefit counts for 9/25.8 of its amount: €6,977 (rounded). The taxable amount falls by €13,023.
-- With profit before the box of €200,000, 25% would be €50,000, so the cap applies and the box benefit is €25,000.
-- Under this forfait, do not subtract the ordinary box threshold from the fixed benefit. Track the unrecovered threshold for a later switch to the ordinary method (articles 12bb–12bd). Confirm a qualifying self-developed intangible exists from this or either of the two prior years; the ordinary method has a different calculation.
-
-### Case 5: partly deductible costs (2026) ([Threshold 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026))
-
-- Representation and food and drink costs of €20,000. Assume the company has employees and the wage-based threshold is no greater than €5,700.
-- Threshold method: deductible €20,000 minus €5,700 = €14,300.
-- Percentage method: 73.5% of €20,000 = €14,700 deductible, so €5,300 is added back.
-- The percentage method gives the higher deduction here.
-
-### Case 5B: payroll threshold above the fixed minimum (2026) ([article 8(5)](https://wetten.overheid.nl/BWBR0002672/2026-01-01))
-
-- Hypothetical statutory wage base €2,000,000; relevant mixed costs €40,000.
-- 0.4% of wages is €8,000, higher than €5,700. Threshold-method deduction: €40,000 minus €8,000 = €32,000.
-- Alternative deduction: 73.5% of €40,000 = €29,400. The threshold method gives the larger deduction.
-- Using only €5,700 would wrongly deduct €34,300, overstating the deduction by €2,300.
-
-### Case 6: participation that drops below 5% ([Participations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen))
-
-- A bv held 6% of an active trading company for 4 years, then was diluted to 3%. Dividends in the next 3 years stay exempt. An unrelated ordinary shareholding that was always 3%, with no statutory deemed-participation route, is not a participation, so its dividends are taxed.
-
-### Case 7: fiscal unity start date ([wetten.overheid.nl, article 15(9)](https://wetten.overheid.nl/BWBR0002672/2026-01-01))
-
-- A request filed on 1 May 2026 can take effect on 1 February 2026 at the earliest. A start date of 1 January 2026 is too early.
-
-### Case 8: late return (2025 return, calendar year) ([Penalties](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete))
-
-- No extension was requested and the return was not filed by 1 June 2026. The Belastingdienst sends a demand (aanmaning) with a deadline. Filing after the demand deadline brings a default penalty of €3,354, rising to €6,709 for repeated years. Because the return is received on or after 1 June, tax interest also runs from 1 July 2026 on the tax due.
-
-## When to refuse or refer
-
-- Cross-border elements: a foreign shareholder, a foreign subsidiary or permanent establishment, withholding taxes, controlled foreign company income, or a fiscal unity using the EU exceptions. Refer to an international tax adviser.
-- Fiscal unity formation, termination or a break (a member leaves or falls below 95%) ([fiscal unity](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting)). Refer.
-- Transfer pricing or undocumented intercompany loans and charges. Refer.
-- Earnings stripping where net interest is near or above €1,000,000, or within a fiscal unity ([earnings stripping](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking)). Refer.
-- Innovation box claims, other than confirming whether an S&O-verklaring exists. The allocation of profit to the box is technical. Refer.
-- Any 30% or more ownership change with losses, or holding company losses ([change of ownership](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging)). Refer.
-- Investment participations, the credit method, or a participation of less than 5% with a history above 5% ([participations](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen)). Refer.
-- Liquidation or cessation losses, mergers, demergers, share-for-share exchanges. Refer.
-- Groups with consolidated revenue of at least €750 million: the minimum tax ([minimum tax](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting)). Refer.
-- Banks, insurers, housing corporations, fiscal or exempt investment institutions, foundations and associations. Refer.
-- No annual accounts, or no trial balance and profit and loss account: refuse to compute; ask for them.
-- Uncertain positions with a material tax effect: flag them for a Dutch belastingadviseur before filing.
-
-## Filing and payment
-
-### Return deadlines ([Belastingdienst: filing the Vpb return](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen))
-
-| Financial year | Deadline |
-| --- | --- |
-| Calendar year | Before 1 June of the next year (2025 return: before 1 June 2026) |
-| Broken year | Within 5 months after the end of the financial year |
-| Short year ending 31 December | By 1 June of the next year |
-| Short year ending in another month | Before 1 April of the next calendar year, as the page states; confirm with the Belastingdienst if that date comes before the year's accounts can be ready |
-
-- File through Mijn Belastingdienst Zakelijk, with tax software, or through a tax service provider.
-- **Extension** ([Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/uitstel_aangifte_vennootschapsbelasting)): online, for a calendar year, to 1 November (5 months after 1 June). Apply before 1 June; the online form is open from 1 March to 1 June. For a broken year or a longer extension, use the paper form with reasons, within 5 months after the end of the financial year. Tax service providers can also request extension.
-- 2025 returns: due before 1 June 2026, or by 1 November 2026 if extended online.
-
-### Provisional assessments ([Belastingdienst: provisional assessment](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/voorlopige_aanslag_vennootschapsbelasting))
-
-- Most companies receive a provisional assessment at the start of the year, based on earlier years. The company must check it and ask for a change if it expects a higher or lower profit. Changes can be passed on until the return is filed. The Belastingdienst processes at most 3 increases for one year.
-- No objection against a provisional assessment; ask for a change instead.
-- No assessment received but tax expected? Request one.
-- **Paying** ([in instalments](https://www.belastingdienst.nl/wps/wcm/connect/nl/betalenenontvangen/content/in-termijnen-betalen)): a provisional assessment for the current year is paid in equal monthly instalments, fully by 31 December. If fewer than 2 whole months remain after the date on the assessment, the term is 6 weeks. The date of the first payment is on the assessment ([when to pay](https://www.belastingdienst.nl/wps/wcm/connect/nl/betalenenontvangen/content/wanneer-moet-ik-betalen)).
-- The final assessment credits all provisional assessments. Its payment date is printed on it.
-
-### Tax interest ([Belastingdienst: tax interest on Vpb](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/belastingrente_betalen_bij_vennootschapsbelasting))
-
-- Tax interest is charged if the return is received **on or after 1 June** after the tax year, or if the assessment departs from the return (even if filed before 1 June). It runs from 1 July. For a broken year read the 6th month after year end for 1 June.
-- No tax interest if the return is filed before 1 June and followed unchanged, or if a provisional assessment is requested before 1 May after the tax year and imposed as requested. For a broken year read the 5th month after year end for 1 May.
-- Rates: see "Figures by year".
-
-### Objection ([Belastingdienst: how to object](https://www.belastingdienst.nl/wps/wcm/connect/nl/bezwaar-en-beroep/content/eisen-bezwaar))
-
-- Object within 6 weeks after the date of the assessment, decision or payment. Vpb objections can be made in Mijn Belastingdienst Zakelijk or by letter. After 6 weeks, a request for reduction (verzoek om vermindering) is still possible.
-
-### Penalties ([Belastingdienst: penalties](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete))
-
-| Default | Penalty |
-| --- | --- |
-| Not asking for a return in time (Vpb: within 6 months after the tax debt arose; no penalty if asked within 2 weeks after that) | €3,354 |
-| Vpb return not filed, or filed after the deadline in the demand (aanmaning) | €3,354, rising to €6,709 if missed several years in a row |
-| Assessment not paid, paid late or paid short | 5% of the unpaid amount of the (provisional) assessment, minimum €50, maximum €6,709 each time |
-| Intentionally incorrect or no return | 50% of the tax intentionally withheld (25% for gross negligence), before increases or reductions; up to 100% for fraud or a previous offence |
-
-No penalty is imposed for a missing or late return if the company is not at all to blame.
-
-### Minimum tax (Pillar Two), summary only ([Belastingdienst: minimum tax](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting))
-
-- The Wet minimumbelasting 2024 applies to group entities of multinational and domestic groups meeting the revenue test of at least €750 million in the ultimate parent's consolidated accounts in at least two of the four immediately preceding reporting years (or at least two preceding years if fewer than four exist). The threshold is adjusted for short or long years, and excluded entities and restructuring rules require separate checks ([articles 2.1–2.2 Wet minimumbelasting](https://wetten.overheid.nl/BWBR0049111/2026-04-11)). The rate is 15%.
-- Per country, if the effective tax rate is below 15%, the difference is charged as a top-up tax (bijheffing).
-- A top-up tax information return (BIA) is due within 15 months after the end of the reporting year (18 months for the first year), unless filed in another country and exchanged; then a notification is due in the same period.
-- A tax return is due, if Dutch top-up tax is payable, within 17 months (20 months for the first year).
-- No default penalty for late minimum tax returns or payments up to and including 31 October 2026 ([news, 18 August 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/geen-verzuimboete-minimumbelasting-tot-en-met-31-oktober-2026)).
-- A single current-year revenue figure below the threshold does not establish exclusion. Review the prior-year test and any merger or demerger provisions; every potentially in-scope group needs specialist advice.
-
-## Completion checklist ([Belastingdienst: Vpb rates](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting))
-
-- [ ] Legal form, residence and financial year confirmed; year of the return identified (2025 or 2026).
-- [ ] Return deadline and any extension recorded; tax interest risk checked (filed before 1 June?).
-- [ ] Commercial result reconciled to fiscal profit; partly deductible costs limited by one method only.
-- [ ] Buildings not depreciated below WOZ value; goodwill at most 10% and other assets at most 20% a year.
-- [ ] Each shareholding tested: at least 5%, investment participation, qualifying; losses and acquisition costs on participations not deducted.
-- [ ] Fiscal unity decision in hand and all members still meet the 95% conditions.
-- [ ] Net interest compared with the higher of 24.5% of adjusted profit and €1,000,000; excess carried forward.
-- [ ] Innovation box: S&O-verklaring (and, for larger taxpayers, the extra right) on file; election made in the return.
-- [ ] Losses carried back first, then forward within the cap; ownership changes of 30% or more checked.
-- [ ] Tax computed at 19% up to €200,000 and 25.8% above; provisional assessments credited.
-- [ ] Dga salary tested against the highest of the three amounts (€58,000 statutory test amount for 2026); any lower comparable-pay or €5,000-or-lower usual-salary exception documented under the conditions above.
-- [ ] Prior-year group revenues, year lengths and restructuring history checked for the €750 million minimum tax scope test; specialist referral where potentially in scope.
-- [ ] Items in "When to refuse or refer" flagged for a Dutch belastingadviseur.
-
-This skill was first adapted from material by John in 't Hout (MIT licence) and has since been rewritten from official sources. It is not tax advice.
+1. The financial year (calendar, broken, short or long) and which return this is (2025 being finalised, or 2026).
+2. Every shareholding the company holds: percentage, how long, and what the subsidiary does (active business, investments, group financing); any subsidiary liquidated or foreign branch closed.
+3. Is there a fiscal unity decision, which companies, and from which date?
+4. Interest paid and received, including group loans, plus depreciation, to test the EUR 1,000,000 and 24.5% limits.
+5. Losses still open by year (the loss decisions), and any change of 30% or more in the ultimate ownership since the oldest loss year.
+6. Provisional assessments received and paid, and whether an extension was granted.
+7. Whether the company had employees in the year, its total taxed wages, and its costs of food, drink, representation and congresses, to pick between the threshold and the 73.5% method.
+8. Buildings owned (book value and WOZ value for the year), and any goodwill; and the salary paid to each director-shareholder.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Wet op de vennootschapsbelasting 1969, arts. 2, 8, 10, 12b, 12bd, 13, 13d, 15, 15b, 15i, 20, 20a, 22 (in force from 1 January 2026) | https://wetten.overheid.nl/BWBR0002672/2026-01-01 | 2026-10-24 |
+| Wet Vpb 1969, change overview (Belastingplan 2026, Stb. 2025, 444; Overige fiscale maatregelen 2026, Stb. 2025, 445) | https://wetten.overheid.nl/BWBR0002672/2026-01-01/0/informatie | 2026-10-24 |
+| Belastingplan 2026, Stb. 2025, 444 (art. IXA: Wet Vpb change from 1 January 2029) | https://zoek.officielebekendmakingen.nl/stb-2025-444.html | 2026-10-24 |
+| Wet inkomstenbelasting 2001, arts. 3.14 (fines not deductible), 3.15 (partly deductible costs), 3.30 and 3.30a (depreciation caps, building floor value), version in force from 1 January 2026 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
+| Belastingdienst, threshold for partly deductible costs 2026 (EUR 5,700; 73.5% for Vpb) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 | 2026-10-24 |
+| Belastingdienst, depreciation for Vpb (buildings stop at WOZ value) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/afschrijving-vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, salary and substantial interest (gebruikelijk loon EUR 58,000 in 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang | 2026-10-24 |
+| Belastingdienst, credit for investment participations (deelnemingsverrekening) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingsverrekening | 2026-10-24 |
+| Belastingdienst, Vpb rates | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, changes to Vpb 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026 | 2026-10-24 |
+| Belastingdienst, earnings stripping | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/generieke-renteaftrekbeperking | 2026-10-24 |
+| Belastingdienst, offsetting losses | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen | 2026-10-24 |
+| Belastingdienst, change of ownership | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen/belangenwijziging | 2026-10-24 |
+| Belastingdienst, participations | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/deelnemingen | 2026-10-24 |
+| Belastingdienst, qualifying investment participation | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/deelnemingsvrijstelling/kwalificerende_beleggingsdeelneming | 2026-10-24 |
+| Belastingdienst, fiscal unity | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/fiscale_eenheid_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, innovation box | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox | 2026-10-24 |
+| Belastingdienst, innovation box smaller and larger taxpayers | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/innovatiebox/kleinere-en-grotere-belastingplichtigen | 2026-10-24 |
+| Belastingdienst, filing the Vpb return | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen | 2026-10-24 |
+| Belastingdienst, extension for the Vpb return | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/uitstel_aangifte_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, provisional assessment | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/voorlopige_aanslag_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, tax interest on Vpb | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/belastingrente_betalen_bij_vennootschapsbelasting | 2026-10-24 |
+| Belastingdienst, tax interest rates | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
+| Belastingdienst, penalties | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete | 2026-10-24 |
+| Belastingdienst, paying a dividend (15% dividend tax) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/dividendbelasting/als_u_dividend_uitkeert | 2026-10-24 |
+| Belastingdienst, minimum tax | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/minimumbelasting | 2026-10-24 |
+
+Not yet confirmed: the tax interest rate for 2027 (set once a year from the ECB rate before 1 November); the measures in the Belastingplan 2027 presented on 15 September 2026, which are not yet law; how the earnings stripping limit is split inside a fiscal unity when pre-joining losses are offset.
 
 <!-- openaccountants-cta-block -->
 
@@ -372,4 +231,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

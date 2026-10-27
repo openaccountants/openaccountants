@@ -1,14 +1,15 @@
 ---
 name: slovenia-social-contributions
 description: "Slovenian social security contributions (prispevki za socialno varnost) for tax year 2026. Covers the rates for employees (22.1%) and employers (16.1%), the long-term care contribution in force since 1 July 2025 (1% + 1% on wages, 2% for the self-employed), the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum base for employees (EUR 1,521.62), and the self-employed (s.p.) and owner-manager bases: profit less 25%, at least 60% (90% for owner-managers) and at most 3.5 times the 2025 average wage of EUR 2,536.03, the relief for new s.p., the monthly OPSV return and payment by the 20th, and fines. Trigger phrases: Slovenia social security, prispevki s.p. 2026, zavarovalna osnova, OPSV, POPSV, prispevek za dolgotrajno oskrbo, OZP, minimalna osnova samozaposleni. Out of scope: the monthly gross-to-net and REK-O (slovenia-payroll), income tax on the s.p. profit and normed expenses (slovenia-income-tax), postings and A1 (si-cross-border)."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.3
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia social security contributions (2026)
@@ -189,3 +190,23 @@ expected:
 | ZZZS, long-term care contribution table for insured persons supervised by FURS | https://zavezanec.zzzs.si/fileadmin/user_upload/dokumenti/zavezanec/do/preglednica_zavarovanci__do_furs__v2.pdf | 2026-10-24 |
 
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); how FURS computes the new s.p. relief in practice (ZPIZ-2 art. 145(14) applies it to contributions on the art. 145(2) base; no FURS worked figure was read); the rules for part-time self-employment alongside a job (dopolnilna dejavnost) and for farmers; the parental care and employment acts (ZSDP-1, ZUTD) were not read for their own base rules, so this skill relies on the ZPSV rates and the FURS tables.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

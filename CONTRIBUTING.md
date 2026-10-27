@@ -4,13 +4,13 @@ Thanks for your interest in contributing. Here's how it works.
 
 ## Who can contribute
 
-Anyone. A skill lands as a **source-cited draft** (`tier: 2`): every figure cited to an official source, not yet reviewed by an accountant. Drafts are welcome; they are how most of the library started. A skill becomes **accountant-reviewed** (`tier: 1`) only when a licensed accountant whose credential we have checked reviews the whole skill and puts their name on it. Those are the only two states; see [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
+Anyone. A skill lands as **Checked against the law** (`tier: 2`): built to [the standard](docs/skill-template.md), every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet. Older skills not yet rebuilt to the standard are **Sourced from the law** (`tier: 2`): every figure cited to an official source, no accountant sign-off. Drafts are welcome; they are how most of the library started. A skill becomes **accountant-reviewed** (`tier: 1`) only when a licensed accountant whose credential we have checked reviews the whole skill and puts their name on it. Those are the only two tiers; see [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
 
 To review as an accountant: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number (provisional and student members of a professional body count, once checked), and set your GitHub username in your profile so we can match your pull requests to you.
 
 Not an accountant? You can still:
 
-- **Draft or fix a skill** from official sources and open a PR. It merges as a source-cited draft.
+- **Draft or fix a skill** from official sources and open a PR. It merges as Checked against the law (`tier: 2`).
 - **Report an error** in a skill by opening an issue with the source that shows it.
 - **Contribute code** (`mcp/`, `scripts/`, `calculators/`, `.github/`).
 
@@ -33,14 +33,10 @@ gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "C
 
 ## How to contribute a skill
 
-### Option 1: Via the website
+### Via GitHub PR
 
-1. Go to [openaccountants.com](https://www.openaccountants.com)
-2. Sign up for an account
-3. Use the submission form to upload your skill
-4. It goes live immediately as a **source-cited draft**
+Skills are added and changed only through pull requests to this repository.
 
-### Option 2: Via GitHub PR
 
 1. Fork this repo
 2. Create your skill in the appropriate **source** directory (`skills/federal/`, `skills/us-states/[code]/`, `skills/international/[country]/`, etc.)
@@ -75,7 +71,7 @@ All domain skills for a country live in the same directory (e.g., `skills/intern
 
 ## Quality standards
 
-- Every amount, percentage, and threshold must have a primary source citation (statute, tax authority guidance, or official rate schedule)
+- Follow the ten rules in [docs/skill-template.md](docs/skill-template.md): every amount, percentage, threshold and deadline cited to the law or the tax authority, with the article and a read date; never Big Four firms or blogs; nothing unconfirmed in the skill; one independent review before merge
 - Computation rules must be mechanical — the AI should be able to follow them step by step
 - Scope must be explicit — what's covered and what's deferred to other skills
 - **US skills** load on top of `us-tax-workflow-base` (in `skills/foundation/`)
@@ -127,7 +123,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review and merge
 
-Maintainers listed in [OWNERS.md](OWNERS.md) merge. A merged skill without a reviewer is a source-cited draft. When a licensed accountant reviews it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and their name goes on the skill here and on every AI answer that cites it.
+Maintainers listed in [OWNERS.md](OWNERS.md) merge. A merged skill without an accountant reviewer is `tier: 2` (Checked against the law). When a licensed accountant reviews it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and their name goes on the skill here and on every AI answer that cites it.
 
 ## Contributor License Agreement (CLA)
 

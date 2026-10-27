@@ -1,10 +1,10 @@
 ---
 name: cy-non-dom
-description: "Use this skill for any question about Cyprus non-domicile status. Trigger on: \"Cyprus non-dom\", \"non-domiciled Cyprus\", \"Cyprus Special Defence Contribution\", \"SDC Cyprus\", \"move to Cyprus tax\", \"Cyprus dividends tax exempt\", \"Cyprus interest SDC exempt\", \"17 of 20 years Cyprus\", \"Cyprus no tax on dividends non-dom\", \"Cyprus tax residency non-dom\". Covers non-dom eligibility, SDC exemption, Cyprus CGT position, and comparison with domiciled residents."
-version: 1.0
+description: "Cyprus non-domicile (non-dom) status for individuals, tax year 2026, under the Special Defence Contribution (SDC) Law 117(I)/2002 as amended by Law 245(I)/2025 from 1 January 2026 and the Income Tax Law 118(I)/2002. Covers the 183-day and 60-day residence rules, domicile of origin and its two exceptions, deemed domicile after 17 of the last 20 years and how long it lasts, the SDC exemption on dividends and interest, the 5%, 17% and 3% SDC rates a domiciled resident pays instead, the new Article 3D option to keep non-dom treatment for EUR 250,000 per five years (two periods at most), GHS (GESY) at 2.65% on dividends and interest, which non-dom status does not remove, forms, deadlines and penalties. Trigger on: Cyprus non-dom, deemed domicile 17 of 20 years, SDC exemption, Cyprus lump sum non-dom, TD 631, T.D.38. Out of scope: cyprus-income-tax, cy-cross-border, cyprus-social-contributions, cy-corporate-tax, cyprus-tax-optimization."
+version: 1.1
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -13,239 +13,188 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Cyprus non-domicile status and Special Defence Contribution
+# Cyprus non-domicile status and Special Defence Contribution (tax year 2026)
 
-This skill covers Cyprus non-domicile ("non-dom") status for individuals: the tax residence tests, the domicile tests, the Special Defence Contribution (SDC) exemption that non-dom status gives, the 2026 changes to SDC, and the optional lump-sum extension for long-stay residents. Figures are for tax year 2026. Cyprus taxes on a calendar year. Income tax itself, the new-resident income tax exemptions in detail, and wider planning are in the sibling skills `cyprus-income-tax` and `cyprus-tax-optimization`.
+Source-cited draft: not reviewed by an accountant, not for filing.
 
-## Section 1: Quick Reference
+Non-dom status in Cyprus is about one tax: the Special Defence Contribution (SDC) on dividends and interest. It does not change income tax and it does not change the General Healthcare System (GHS, GESY) contribution. Cyprus taxes on the calendar year. The 2026 reform (Law 245(I)/2025, in force 1 January 2026) cut the SDC rate on dividends for individuals, abolished SDC on rent, ended the deemed dividend distribution for 2026 profits onward and added Article 3D, a fixed-sum option for long-stay residents. Article numbers are to the Greek consolidated SDC Law on CyLaw. Income tax is in `cyprus-income-tax`; residence detail for leavers and non-residents in `cy-cross-border`; GHS rates in `cyprus-social-contributions`.
 
-| Field | Value |
-| --- | --- |
-| Country | Cyprus |
-| What non-dom status changes | Special Defence Contribution only. An individual who is not domiciled in Cyprus, or is not tax resident, is not subject to SDC on interest or dividends (rental income: SDC applied only up to and including the 2025 tax year). |
-| What it does not change | Income tax. The residency page lists SDC as the only tax consequence of non-dom status, and the 2026 income tax scale carries no domicile condition (Section 6). |
-| SDC charged on | Individuals who are BOTH tax resident AND domiciled in Cyprus (Section 3) |
-| Domicile tests | Domicile of origin, with two exceptions, plus the deemed domicile rule of 17 out of the last 20 years (Section 2) |
-| 2026 SDC changes | Dividend rate cut for individuals, SDC on rent abolished from 1 January 2026, optional lump-sum extension of non-dom treatment (Sections 3 and 3A) |
-| Primary legislation | Special Contribution for the Defence of the Republic of Cyprus Law of 2002 (Law 117(I)/2002), as amended; Income Tax Law of 2002 (N.118(I)/2002), article 2 |
-| Tax authority | Tax Department, https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/ |
+## Who this applies to
 
-## Section 2: What is Non-Dom Status?
+SDC on dividends and interest is charged on an individual who is "κάτοικος στη Δημοκρατία" (SDC Law arts. 3(1)(α), 3B(α)(i)). For SDC that means tax resident under the Income Tax Law AND domiciled in Cyprus (SDC Law art. 2(3); Tax Department residency page). So there are two tests, run for each tax year.
 
-SDC is charged only on a "resident of the Republic". For SDC that means an individual who is tax resident for income tax (Section 5) AND has a domicile in Cyprus. Non-dom status is therefore about domicile, not about where the person lives.
+**Test 1: tax residence (Income Tax Law art. 2).** A person is resident under either rule:
 
-| Source | all figures below | https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/ |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Resident for SDC | Tax resident for income tax AND domiciled in Cyprus | "a Cyprus resident for income tax purposes, as described above under Tax Residency , and who additionally has a domicile in Cyprus" |
-| General rule | Domicile in Cyprus follows a Cypriot domicile of origin | "In general, an individual is considered to have a domicile in Cyprus if their domicile of origin is in Cyprus" |
-| Domicile of origin | Normally acquired at birth, as a general rule the father's domicile; exceptionally the mother's | "as a general rule, is the same as the father’s domicile at the time of the child’s birth" |
-| Exception 1 (Cypriot domicile of origin) | Treated as not domiciled if BOTH: has acquired and keeps a domicile of choice outside Cyprus, AND was not Cyprus tax resident for at least 20 consecutive years immediately before the tax year | "was not a Cyprus tax resident for at least 20 consecutive years immediately before the relevant tax year" |
-| Exception 2 (Cypriot domicile of origin) | Treated as not domiciled if resided abroad for more than 20 consecutive years before 16 July 2015 | "resided abroad for more than 20 consecutive years before 16 July 2015" |
-| Deemed domicile | Whatever the domicile of origin: tax resident for at least 17 of the 20 years immediately before the tax year means deemed domiciled | "at least 17 out of the last 20 years immediately before the tax year is deemed to acquire a domicile in Cyprus" |
-| How long deemed domicile lasts | Kept until the person completes 20 years in which they are not Cyprus tax resident | "That domicile is retained until the individual completes 20 years during which they are not a Cyprus tax resident" |
+- **183-day rule.** In Cyprus for one or more periods exceeding 183 days in total in the tax year.
+- **60-day rule.** All four in the same year: at least 60 days in Cyprus; not more than 183 days in any other single state; carries on a business in Cyprus, or is employed in Cyprus, or holds an office in a Cyprus tax resident person, at any time in the year, and that did not end during the year; keeps a permanent home in Cyprus, owned or rented. From 2026 the person may also be tax resident elsewhere; the old condition that they were not resident in another state is gone (consistent with `cyprus-income-tax`).
+- **Day counting.** The day of arrival counts as a day in Cyprus; the day of departure as a day outside. Arrival and departure on the same day count as in Cyprus; departure and return on the same day count as outside (Tax Department residency page).
 
-How to read the deemed domicile rule:
+A non-resident pays no SDC on dividends or interest at all. Stop there.
 
-- Count income tax residence years only. The test looks at the 20 tax years immediately BEFORE the year being tested, and asks for at least 17 resident years among them. The page asks only for "at least 17 out of the last 20 years"; it sets no condition that those years be consecutive.
-- A person whose 17th resident year is 2026 is tested for 2027 against the years 2007 to 2026. The test for a given year never counts that year itself.
-- Once deemed domiciled, leaving Cyprus does not end it quickly. The 2026 SDC presentation (table in Section 3) says the 20 non-resident years are "όχι απαραίτητα συναπτών" (not necessarily consecutive), and its example keeps the domicile for a person who returns after only 4 non-resident years even though they were then resident for only 16 of the last 20 years.
-- A person with a foreign domicile of origin who has spent fewer than 17 of the last 20 years as a Cyprus tax resident is non-dom on these rules. The page does not discuss a foreigner who forms a domicile of choice in Cyprus. Refer that case.
+**Test 2: domicile (SDC Law art. 2(3)).** A person is domiciled in Cyprus if they have a Cypriot domicile of origin under the Wills and Succession Law, except:
 
-## Section 3: SDC Exemption: The Main Benefit
+- (i) a person who has acquired and keeps a domicile of choice outside Cyprus, provided they were not Cyprus resident for any period of at least 20 consecutive years before the tax year; or
+- (ii) a person who was not Cyprus resident for at least 20 consecutive years immediately before "the commencement of this Law" (art. 2(3)(ii); the domicile rules were added by Law 119(I)/2015, and the Tax Department page dates the test to 16 July 2015).
 
-Any individual who is either not domiciled in Cyprus or not Cyprus tax resident is not subject to SDC on interest income or dividend income. Rental income was also covered, but SDC on rent no longer exists from 1 January 2026, for everyone. The exemption applies year by year: a person who becomes deemed domiciled loses it from that tax year unless they use the alternative method in Section 3A.
+**Deemed domicile, the 17-year limit (art. 2(3), proviso (i)).** Whatever the domicile of origin, a person who was Cyprus tax resident for at least 17 of the last 20 years before the tax year is deemed domiciled. The years need not be consecutive. The tested year itself is not counted. In practice, a foreigner can be a non-dom resident for 17 years; from the 18th resident year SDC applies unless Article 3D is elected.
 
-| Source | all figures below | https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/ |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Who is outside SDC | Non-domiciled OR non-resident individuals | "does not have a domicile in Cyprus (non-domiciled) , or is not a Cyprus tax resident (non-resident) is not subject to Special Defence Contribution (SDC) on: rental income*; interest income; dividend income" |
-| Rent | SDC on rent ended after tax year 2025 | "Rental income was subject to Special Defence Contribution up to and including the 2025 tax year , after which it was abolished" |
-| Claiming the exemption | Apply for exemption from SDC on Form T.D.38 (the page text calls it T.F.38) | "you may apply for exemption from the payment of Special Defence Contribution by completing Form T.F.38" |
+**How long deemed domicile lasts (proviso (ii)).** Once deemed domiciled, the person keeps it until they complete 20 years in which they are not Cyprus resident. The Tax Department's 2026 presentation says those 20 years need not be consecutive.
 
-What a domiciled resident pays instead, from 2026. These rates apply only to individuals who are both tax resident and domiciled; for a non-dom the SDC is nil.
+The domicile of origin is normally acquired at birth and, as a general rule, is the father's domicile at the child's birth (Tax Department residency page).
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf |
-| --- | --- | --- |
-| Item | Rate or rule | Note (verbatim) |
-| Dividends received by individuals, from 2026 | 5% | "Άτομα σε ποσοστό 5% (μείωση από το 17%)" |
-| Dividends from a Cyprus-resident company out of profits of tax years up to and including 2025, received up to and including 31 December 2031 | 17% | "Καταβάλλεται ΕΕΑ σε ποσοστό 17% επί των μερισμάτων που λαμβάνονται από εταιρεία κάτοικο της Δημοκρατίας μέχρι και την 31/12/2031" |
-| Dividends outside SDC | No SDC on a dividend already deemed distributed in an earlier year, or paid out of income that comes directly or indirectly from dividends on which SDC was paid | "Δεν καταβάλλεται ΕΕΑ στο μέρισμα που: είχε λογιστεί ως διανεμηθέν σε προηγούμενο έτος, εκδίδεται από εισοδήματα που προέρχονται άμεσα ή έμμεσα από μερίσματα στα οποία καταβλήθηκε EEA" |
-| Official example: dividends received in 2027 | 17% on the part paid from 2025 profits, 5% on the part paid from 2026 profits | "σε ποσοστό 17% επί του (α) και ➢ σε ποσοστό 5% επί του (β)" |
-| Interest received or credited to a resident (domiciled) individual | 17% | "αναφορικά με τόκο που λαμβάνει ή πιστώνεται, σε 17%" |
-| Interest on Cyprus or other EU government savings certificates or development bonds, on corporate bonds listed on a recognised stock exchange, and on listed bonds of Cyprus or other EU local authorities or state bodies | 3% | "σε ποσοστό τρία τοις εκατό (3%)" |
-| Rent | SDC abolished from 1 January 2026 | "Κατάργηση από 1/1/2026 της ΕΕΑ σε εισόδημα από ενοίκια" |
-| Deemed dividend distribution | Abolished for company profits of 2026 onward | "Κατάργηση της λογιζόμενης διανομής των κερδών των ετών από το 2026 και εντεύθεν" |
-| Non-dom status kept by the reform | Non-dom regime retained | "Διατηρείται το καθεστώς non-dom" |
-| Deemed domicile ends only after 20 non-resident years | Not necessarily consecutive | "μέχρι τη συμπλήρωση είκοσι (20) ετών, όχι απαραίτητα συναπτών" |
+## Rates, bands and thresholds
 
-## Section 3A: Extending non-dom treatment by lump sum (Article 3D, from 2026)
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| SDC on dividends, resident and domiciled individual | 5% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3(1)(α)) |
+| SDC on dividends from a Cyprus-resident company out of profits of 2025 and earlier, received within 6 years of 1 January 2026 | 17% | 2026 to 2031 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3(1)(α), proviso (ii)) |
+| SDC on interest, resident and domiciled individual | 17% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3B(α)(i)) |
+| SDC on interest from Cyprus or EU government savings certificates and development bonds, and listed corporate and public bonds | 3% | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3B(β)(i)) |
+| Refund of SDC on interest above 3% where total yearly income incl. interest is not more than | EUR 12,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3B(α)(i), second proviso) |
+| SDC on interest or dividends, non-domiciled or non-resident individual | Nil | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (arts. 2(3), 3, 3B) |
+| SDC on rent | Abolished from 1 January 2026 | 2026 | https://www.cylaw.org/nomoi/arith/2025_1_245.pdf |
+| Deemed domicile | At least 17 of the last 20 years resident | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 2(3)) |
+| Deemed domicile ends after | 20 non-resident years | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 2(3)) |
+| Article 3D fixed SDC, annual equivalent | EUR 50,000 a year, whatever the income | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3D(1)) |
+| Article 3D payment per five-year period, one instalment | EUR 250,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3D(4)) |
+| Article 3D periods allowed | 2 five-year periods at most | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 3D(9)) |
+| GHS on dividends, interest and rent of a Cyprus tax resident (domiciled or not) | 2.65% | 2026 | https://www.gesy.org.cy/en-us/hiofinancing |
+| GHS annual income ceiling, all income combined | EUR 180,000 | 2026 | https://www.gesy.org.cy/en-us/hiofinancing |
+| Income tax on dividends and interest of an individual | Exempt | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html (art. 8(19), 8(20)) |
+| SDC late payment surcharge | 5%, plus 5% more if unpaid 2 months after the due date | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (art. 7B(ε)) |
+| Public default interest rate | 3.50% | 2026 | https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 
-An individual who does NOT have a Cypriot domicile of origin, but is deemed domiciled because they were tax resident for at least 17 of the last 20 years, may elect the "Alternative Method of Imposition of Special Defence Contribution" under Article 3D of the SDC Law and Circular 02/2026. It extends the exemption for up to two further five-year periods. A person with a Cypriot domicile of origin cannot use it.
+## The taxable base
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Amount for each five-year period | EUR 250,000 | "The Special Defence Contribution for the entire 5‑year period (€250,000) must be paid by the end of the month which follows the month in which the application is approved" |
-| Form | Form TD 631, submitted through the Tax For All (TFA) portal as a message, topic "Application for the extension of the non-dom regime" | "submitted via the Tax For All (TFA) Portal" |
-| Application deadline | By 30 June of the first year of the five-year period it covers | "This application shall be submitted by 30 June of the first year of the 5-year period to which it relates" |
-| Early application | Up to two years before the tax year in which the person will be deemed domiciled | "may also be submitted in advance, up to two (2) years prior to the tax year in which the individual will be considered domiciled" |
-| Required documents | Form T.D.38Qa with its documents; clean criminal record certificates from Cyprus and every country of citizenship; Tax Department certificate confirming the person is not domiciled | "Certificate issued by the the Tax Department confirming that you are not domiciled in the Republic of Cyprus" |
-| Unpaid liability | Written off when the payment deadline passes; the person then pays SDC as a domiciled resident for that year (next table) | "In case the said liability is not settled, it will be written off upon the expiration of the payment deadline" |
+**What non-dom status removes.** SDC on dividends and on interest (received or credited). Nothing else. Rent left SDC for everyone from 2026, so non-dom status no longer matters for rent.
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Annual equivalent, two five-year periods | EUR 50,000 a year | "κατ’ αποκοπή ετήσιο ποσό ΕΕΑ ύψους €50.000" |
-| Irrevocable | The election cannot be withdrawn | "Ανέκκλητη επιλογή του ατόμου" |
-| Not automatic | A new application, approved by the Commissioner, for EACH five-year period | "απαιτεί την υποβολή αίτησης στον Έφορο για κάθε 5ετή περίοδο, η οποία θα πρέπει να τύχει της έγκρισής του" |
-| Late application or late payment | For that year the person pays SDC as a domiciled resident on actual income, and may apply again the next year | "για το συγκεκριμένο έτος το άτομο καταβάλλει ΕΕΑ ως κάτοικος με βάση τα εισοδήματά του" |
-| Effect of payment | Settles ALL SDC for the five tax years covered | "εξαντλεί κάθε υποχρέωση του ατόμου αναφορικά με ΕΕΑ για τα πέντε (5) φορολογικά έτη" |
-| No refund | Not refunded for any reason | "δεν επιστρέφεται για οποιονδήποτε λόγο" |
-| No offset, no foreign tax credit | Not set against other tax or credit balances, and not reduced by foreign tax | "δεν μειώνεται με έκπτωση αναφορικά με αλλοδαπό φόρο" |
+**What stays the same for a non-dom resident.**
 
-The lump sum is a fixed charge. Whether it beats paying SDC at the domiciled rates in the table above depends on the client's expected dividends and interest over the five years. Compare the two on the client's own figures before the 30 June deadline; the skill does not supply a break-even.
+- **Income tax.** Dividends and interest of an individual are exempt from income tax (ITL art. 8(19) and 8(20)) for everyone, so domicile changes nothing here. Salary, business profit, rent and pensions are taxed at the 2026 bands (0% to EUR 22,000, then 20%, 25%, 30% and 35% above EUR 72,000) whatever the domicile. The 20%, 25% and 50% first-employment exemptions also ignore domicile. Full rules: `cyprus-income-tax`.
+- **GHS.** GHS turns on tax residence, not domicile. A Cyprus tax resident pays 2.65% on dividends, interest and rent, with all income counted together up to EUR 180,000 a year. A non-resident pays GHS only on Cyprus income, earnings and pensions, and none on dividends and interest (HIO financing page). So a resident non-dom who pays no SDC still pays GHS on the same dividends and interest. Rates and withholding: `cyprus-social-contributions`.
+- **Capital gains tax.** CGT at 20% applies to Cyprus immovable property and shares in companies that hold it, whatever the seller's residence or domicile. From 2026, shares in a company holding Cyprus property indirectly are caught if at least 20% (was 50%) of their market value comes from that property; directly held property makes the shares caught whatever the percentage; a treaty giving Cyprus the right only at 50% prevails. Individuals have a EUR 30,000 lifetime general exemption for disposals from 1 January 2026. Listed shares on a regulated market stay exempt; on a non-regulated market, exempt only while the year's disposals do not exceed EUR 50,000, except shares held at 31 December 2025 when they were already so listed (Tax Department SDC and CGT presentation, 6 March 2026, and CGT page, read 24 October 2026). Indexation and the other exemptions are outside this skill.
 
-## Section 4: Capital Gains
+**What a domiciled resident pays.** Dividends at 5%, or 17% on a dividend from a Cyprus-resident company paid out of 2025-or-earlier profits and received by 31 December 2031. A dividend already deemed distributed (art. 3C or old art. 3(3)), or paid out of dividends that already bore SDC, is taken out of the base (art. 3(1)(α), proviso (i)). Interest at 17%, or 3% on the listed and public bonds above. Interest on compensation for disability, serious bodily harm or death is exempt (art. 3B(α)(i)). SDC is not deductible for income tax (art. 5).
 
-Non-dom status is an SDC concept. The residency page lists no Capital Gains Tax (CGT) consequence of it. Shares are not always outside CGT. Shares in companies that own Cyprus immovable property can be caught, as the table below shows.
+**Article 3D, the fixed-sum option.** Who: a person whose domicile of origin is NOT Cyprus and who is deemed domiciled under the 17-of-20 rule (art. 3D(1)). A person with a Cypriot domicile of origin cannot use it. The election:
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Shares of a company that holds Cyprus immovable property directly | Count as property for CGT, whatever the percentage | "οι μετοχές εταιρείας, η οποία κατέχει άμεσα ακίνητη ιδιοκτησία συνιστούν ιδιοκτησία ανεξαρτήτως ποσοστού" |
-| Shares of a company that holds Cyprus immovable property indirectly, through other companies, from 2026 | Count as property for CGT if at least 20% of their market value comes from Cyprus immovable property | "εάν τουλάχιστον το 20% (αντί του 50%) της αγοραίας αξίας τους προέρχεται από την ακίνητη ιδιοκτησία στη Δημοκρατία" |
-| Shares listed on a regulated market of a recognised stock exchange | Exemption kept | "Διατηρήθηκε η εξαίρεση από την καταβολή ΦΚΚ" |
-| Shares listed on a non-regulated market of a recognised stock exchange | Exempt only while total disposals in the year do not exceed EUR 50,000; the disposal that crosses it brings CGT on all disposals made in the year up to and including that disposal | "δεν υπερβαίνει σωρευτικά τις €50.000" |
-| Shares held at 31 December 2025 that were then listed on a non-regulated market | Exemption continues for those shares whatever the year's total disposals | "η εξαίρεση αναφορικά με την πώληση μετοχών εισηγμένων σε μη ρυθμιζόμενη αγορά συνεχίζει να εφαρμόζεται σε μέτοχο για μετοχές που κατείχε κατά την 31/12/2025, οι οποίες κατά την εν λόγω ημερομηνία ήταν εισηγμένες σε μη ρυθμιζόμενη αγορά" |
+- covers 5 consecutive tax years and is irrevocable and binding (art. 3D(2));
+- needs an application on the set form, approved by the Commissioner, filed by 30 June of the first year of the period (art. 3D(3));
+- is paid in one sum of EUR 250,000 by the end of the month after the month of approval (art. 3D(4)). If it is not paid on time, Article 3D applies for none of the five years, and the person pays SDC on actual income under arts. 3 to 3C (art. 3D(4), proviso);
+- cannot be set off against other tax or credit balances (art. 3D(5)), settles all SDC for the five years (art. 3D(6)), is never refunded (art. 3D(7)) and gets no foreign tax credit (art. 3D(8));
+- can be used for 2 periods at most (art. 3D(9)). After 17 resident years plus 10 covered years, SDC applies on actual income.
 
-The Tax Department's CGT page prints the rate and the lifetime exemptions. Indexation, the agricultural-land and main-residence exemptions and their conditions are outside this skill; refer those computations.
+The fixed sum does not cover GHS or income tax.
 
-| Source | all figures below | https://www.gov.cy/mof-tax/documents/kefalaioychika-kerdi/ |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| CGT rate | 20% of the gain on a disposal of Cyprus immovable property or of shares in companies holding Cyprus immovable property, whatever the tax residence of the seller, subject to double tax treaty provisions | "Φόρος κεφαλαιουχικών κερδών επιβάλλεται ως ποσοστό 20%, στο κέρδος που προκύπτει από τη διάθεση ακινήτων στην Κύπρο ή από την πώληση μετοχών εταιρειών που κατέχουν ακίνητα στην Κύπρο (με την επιφύλαξη διατάξεων περί διπλής φορολογίας) ανεξάρτητα από τη φορολογική κατοικία μιας εταιρείας ή ενός ατόμου" |
-| General lifetime exemption, disposals from 1 January 2026 | EUR 30,000, individuals only, once in a lifetime; any unused balance carries to a later disposal | "Ημερομηνία διάθεσης από 01/01/2026 Απαλλαγές € Γενική απαλλαγή σε κέρδος που προκύπτει από διάθεση ιδιοκτησίας 30.000" |
-| Lifetime rule | Natural persons only; claimed once; remainder carried forward | "Αυτές οι απαλλαγές μπορούν να διεκδικηθούν μόνο μια φορά εφ' όρου ζωής. Τυχόν εναπομείναν ποσό απαλλαγής μεταφέρεται σε επόμενη διάθεση" |
+**Anti-abuse.** If a domiciled person transfers assets to a non-domiciled spouse or relative (up to the third degree, including the spouse's relatives) and the Commissioner finds that avoiding SDC was a main purpose, the income from those assets bears SDC, collected from either person (art. 4A). A general anti-abuse rule ignores non-genuine arrangements made mainly for an SDC advantage (art. 4B).
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Treaty override, indirect holdings | Where a treaty with the seller's residence state gives Cyprus the taxing right only if at least 50% of the share value comes from Cyprus property, the treaty prevails and no CGT is charged | "η οποία αποδίδει δικαίωμα φορολόγησης στην Κύπρο μόνο στην περίπτωση που τουλάχιστο το 50% της αξίας των μετοχών προέρχεται" |
+## Deadlines and filing
 
-## Section 5: Cyprus Tax Residency
+| What | When | Source |
+|---|---|---|
+| SDC withheld by a Cyprus payer of dividends or interest | Paid to the Commissioner by the end of the month after the month of withholding (art. 4(1A)) | SDC Law art. 4 |
+| SDC on dividends or interest from outside Cyprus (domiciled resident) | By the income tax return deadline for the year under ACL art. 5; for 2026, 31 July 2027 per the Tax Department FAQs. Foreign tax is credited under ITL arts. 34 to 36 (art. 4(4)) | SDC Law art. 4(4); FAQs 11 May 2026 |
+| Non-dom claim to the payer | Apply for exemption on Form T.D.38; related forms T.D.624/NP (declaration for exemption from SDC deduction), T.D038QA (domicile of origin questionnaire), T.D038QB (domicile of choice questionnaire) | Tax Department residency page |
+| Article 3D application | Form TD 631 through the Tax For All (TFA) portal, by 30 June of the first year of the five-year period; may be filed up to 2 years before the year the person becomes deemed domiciled. Attach T.D.38Qa, clean criminal record certificates from Cyprus and every country of citizenship, and a Tax Department certificate that the person is not domiciled | SDC Law art. 3D(3); Form TD 631 |
+| Article 3D payment | EUR 250,000 by the end of the month after the month of approval | SDC Law art. 3D(4) |
+| GHS on dividends and interest | Withheld by the Cyprus payer; otherwise self-assessed (see `cyprus-social-contributions`) | HIO; `cyprus-social-contributions` |
 
-Non-dom status matters only for a Cyprus tax resident: a non-resident is outside SDC anyway (Section 3). Residence is set by article 2 of the Income Tax Law N.118(I)/2002 and is tested for each tax year. An individual is resident under EITHER the 183-day rule OR the 60-day rule.
+## Penalties and interest
 
-| Source | all figures below | https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/ |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| 183-day rule | Resident if in Cyprus for MORE THAN 183 days in total in the tax year, in one or more periods | "they stay in Cyprus for one or more periods exceeding 183 days in total during a tax year" |
-| Day counting | Arrival day counts as in Cyprus; departure day counts as outside; arrival and departure on the same day count as in Cyprus; departure and arrival on the same day count as outside | "The day of arrival is counted as a day in Cyprus. The day of departure is counted as a day outside Cyprus." |
-| 60-day rule, condition 1 | AT LEAST 60 days in Cyprus in the tax year | "They remain in Cyprus for at least 60 days during the tax year" |
-| 60-day rule, condition 2 | Not more than 183 days in the year in any other country | "They do not reside for more than 183 days during the year in another country" |
-| 60-day rule, condition 3 | Carries on business in Cyprus and/or is employed in Cyprus, as employee and/or office holder | "They carry on any business in Cyprus and/or are employed in Cyprus, whether as an employee and/or office holder" |
-| 60-day rule, condition 4 | Keeps a permanent residence in Cyprus, owned or rented | "They maintain a permanent residence in Cyprus which they own or rent" |
-| 60-day rule, all four needed | ALL conditions must be met | "provided that they meet all of the following conditions" |
-| 60-day rule, losing it in the year | If the Cyprus business stops or the Cyprus employment ends during the year, the person is not resident under this rule for that year | "the individual ceases to be considered a Cyprus tax resident for that year" |
+- **Late SDC payment:** a 5% charge on the SDC due, and another 5% if still unpaid 2 months after the due date (art. 7B(ε)).
+- **Interest:** SDC not withheld, or withheld and not paid on time, carries interest at the public default rate from the due date (art. 4(3)); 3.50% for 2026 (K.D.P. 376/2025).
+- **Missed notice, return or duty with a set deadline:** EUR 500 for an individual (art. 7B(α)).
+- **Payer who fails to withhold:** the SDC is treated as charged on the payer, and the Commissioner may also collect from the person who received the income (art. 4(2)).
+- **Offences:** failing to pay SDC is a criminal offence; on conviction, the unpaid sum plus up to twice that amount (art. 6(2)); other breaches up to EUR 1,000 each (art. 6(3)). Prosecution needs the Attorney General's consent (art. 7).
+- **Article 3D unpaid:** no penalty under 3D itself, but the election falls for all five years and SDC is charged on actual income (art. 3D(4), proviso), with the late-payment rules above on that SDC.
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%A6%CF%8C%CF%81%CE%BF%CF%82-%CE%95%CE%B9%CF%83%CE%BF%CE%B4%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Tax residence in another state, 60-day rule | From tax year 2026 no longer a condition: the person may be tax resident elsewhere; the other 60-day conditions still apply | "Στη βάση του κανόνα των «60 ημερών», ανεξάρτητα αν είναι ή όχι φορολογικός κάτοικος άλλου κράτους (οι υπόλοιπες προϋποθέσεις του κανόνα των 60 ημερών εξακολουθούν να ισχύουν)" |
+## Cross-border points
 
-A Tax Residency Certificate is applied for separately; the residency page links to the procedure.
+- **Arrivals.** A foreigner arriving in Cyprus is non-dom from day one and stays so until the 17-of-20 test bites. Check the residence rule each year. The 60-day rule now works even if the person is also resident elsewhere, so treaty tie-breakers matter more; this skill applies Cyprus domestic rules only.
+- **Returning Cypriots.** A person with a Cypriot domicile of origin is non-dom only under exception (i) or (ii). Both need 20 consecutive non-resident years. Article 3D is not open to them.
+- **Leavers.** A non-resident pays no SDC on dividends or interest whatever the domicile. A deemed-domiciled person who leaves and comes back inside 20 non-resident years is domiciled again on return.
+- **Non-residents and dividends.** A non-resident who receives a dividend from profits that bore deemed distribution SDC may claim back that SDC for the shares held at 31 December 2025, where the deemed distribution was under the old art. 3(3) in force before 2026 (art. 3C(7), proviso). See `cy-cross-border` for withholding on payments abroad.
+- **Foreign-source income.** For a domiciled resident, SDC on foreign dividends and interest is self-assessed, with credit for foreign tax (art. 4(4)). Under Article 3D, no foreign tax credit (art. 3D(8)).
 
-## Section 6: Income Tax Rates (Cyprus Resident)
+## Worked examples
 
-The income tax scale has no domicile condition, so a resident non-dom is charged on the same scale as any other individual. The scale applies to chargeable income from tax year 2026:
+**Example 1: Anna, a non-dom resident in her fifth year.** Anna is Swedish, has lived in Cyprus under the 183-day rule since 2022 and has no Cypriot domicile of origin. In 2026 she earns a salary of EUR 60,000, Cyprus dividends of EUR 40,000 from 2026 profits and bank interest of EUR 10,000. She was resident for only 4 of the last 20 years, so she is not deemed domiciled. SDC is nil. Income tax does not touch the dividends and interest (ITL art. 8(19), 8(20)). GHS at 2.65% is due on the dividends and interest because she is tax resident; her total income of EUR 110,000 is under the EUR 180,000 ceiling, so the whole amount bears GHS. For comparison, a domiciled resident would pay SDC of EUR 3,700 on the same income.
 
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf |
-| --- | --- | --- |
-| Chargeable income | Rate | Note (verbatim) |
-| EUR 0 to EUR 22,000 | 0% | "0% από €0 μέχρι €22.000" |
-| EUR 22,001 to EUR 32,000 | 20% | "20% από €22.001 μέχρι €32.000" |
-| EUR 32,001 to EUR 42,000 | 25% | "25% από €32.001 μέχρι €42.000" |
-| EUR 42,001 to EUR 72,000 | 30% | "30% από €42.001 μέχρι €72.000" |
-| EUR 72,001 and above | 35% | "35% από €72.001 και άνω" |
+```oa-check
+name: Anna, non-dom resident, dividends 40,000 and interest 10,000 (2026)
+inputs:
+  salary: 60000
+  dividends: 40000
+  interest: 10000
+  ghs_rate: 0.0265
+  ghs_ceiling: 180000
+steps:
+  - total_income: salary + dividends + interest
+  - sdc_non_dom: 0
+  - investment_ghs_base: min(dividends + interest, max(0, ghs_ceiling - salary))
+  - ghs_on_investment: investment_ghs_base * ghs_rate
+  - sdc_if_domiciled: dividends * 0.05 + interest * 0.17
+expected:
+  total_income: 110000
+  sdc_non_dom: 0
+  investment_ghs_base: 50000
+  ghs_on_investment: 1325
+  sdc_if_domiciled: 3700
+```
 
-### New-resident income tax exemptions (domicile does not matter)
+**Example 2: Marco, deemed domiciled, weighing Article 3D.** Marco is Italian with an Italian domicile of origin. He has been Cyprus resident every year since 2009, so 2026 is tested against 2006 to 2025: 17 resident years (2009 to 2025). He is deemed domiciled from 2026. He expects dividends of EUR 1,200,000 a year from his Cyprus holding company's 2026-onward profits and interest of EUR 50,000 a year, with no other income. On actual income, SDC is EUR 68,500 a year, EUR 342,500 over five years. Article 3D costs EUR 250,000 for the five years if he applies by 30 June 2026 and pays by the end of the month after approval. The fixed sum saves EUR 92,500 on these figures, but it is irrevocable and never refunded, so if the dividends fall the saving can disappear. The break-even is EUR 50,000 of SDC a year. GHS is not covered by Article 3D: his income is above the EUR 180,000 ceiling, so GHS stops at EUR 4,770 a year.
 
-These are income tax exemptions, separate from non-dom status. Each has its own conditions; a person meets one or none, and the start date of the employment decides which can apply. Full treatment is in `cyprus-income-tax`.
-
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Article 8(21B), rate | 25% of remuneration from employment exercised in Cyprus, OR of profits from business carried out in Cyprus | "can claim an income tax exemption of 25% on- a. his/her remuneration from any employment exercised in Cyprus" |
-| Earnings test | Gross earnings must exceed EUR 30,000 in the relevant year, and the remuneration or profits must exceed EUR 30,000 in the first 12 months | "has gross earnings exceeding €30.000 in the relevant year" |
-| Cap | EUR 25,000 a tax year | "The exemption cannot exceed €25.000 in a tax year" |
-| Who (all conditions together) | (a) not Cyprus tax resident in the 7 years before the year the work started (2019 to 2025); AND (b) Cyprus tax resident in some year before those 7; AND (c) the first-12-months earnings test; AND (d) started employment or self-employment between 1/1/2025 and 31/12/2030; AND (e) at the start, EITHER a recognised university degree plus at least 36 months full-time employment abroad with a foreign employer in the 84 months before, OR at least 84 months full-time employment abroad with a foreign employer | "The individual must cumulatively satisfy the following conditions" |
-| Period | 7 consecutive tax years from the year work started (inclusive), only in years where Cyprus earnings exceed the test and the person is Cyprus tax resident (the start year excepted) | "for a period of seven (7) consecutive tax years" |
-
-The 8(21B) exemption is for returning former residents: condition (b) means a person who was never Cyprus tax resident cannot use it.
-
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Articles 8(23) and 8(23A), rate | 50% of remuneration from employment in Cyprus | "50% απαλλαγή της αμοιβής από" |
-| Minimum remuneration, 8(23) (table rows ticked for employment started 01.01.2012 to 31.12.2021 and 01.01.2022 to 25.07.2022) | More than EUR 100,000; exemption for 10 years | "Ελάχιστη αμοιβή > €100.000 > €55.000 > €55.000" |
-| Minimum remuneration, 8(23A) (employment from 1 January 2022) | More than EUR 55,000; exemption for 17 years (for the first-employment limb, or until that first employment ends if earlier) | "Περίοδος απαλλαγής 10 έτη 17 έτη" |
-| Look-back, 8(23A) | At least 15 consecutive years not Cyprus tax resident immediately before the first employment in Cyprus, for every employment starting in 2026 (Income Tax Law, art. 8(23A), as amended by Law 51(I)/2023 with effect from 1 January 2022). The 10-year look-back in the table survives only for a person already entitled before 30 June 2023 | "Τουλάχιστο 10 έτη πριν το έτος έναρξης της" |
-| Residence after starting | Granted whether or not the person then becomes Cyprus tax resident | "Όλες οι πιο πάνω απαλλαγές παραχωρούνται ανεξάρτητα αν το άτομο μετά την έναρξη της εργοδότησής του στη Δημοκρατία γίνεται φορολογικός κάτοικος" |
-
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/01/implementation-of-sections-21-and-21A-of-article-8-24072023.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| Articles 8(21) and 8(21A), rate | 20% of remuneration; 8(21A) covers the first employment in Cyprus started between 26/7/2022 and 31/12/2027 by a person employed outside Cyprus by a non-resident employer for the 3 consecutive years before; no minimum pay; 7 years from the year after employment starts, or until the first employment ends if earlier | "20% exemption of the remuneration from the first" |
-
-| Source | all figures below | https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf |
-| --- | --- | --- |
-| Item | Rule | Note (verbatim) |
-| 20% exemption cap | EUR 8,550 a tax year | "20% of your emoluments from any employment with a maximum of €8.550" |
-
-## The method, step by step
-
-1. Fix the tax year. Cyprus uses the calendar year. Every test below is run for one year at a time. Figures are for tax year 2026 (Income Tax Law N.118(I)/2002, article 2; https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/).
-2. Test tax residence for the year: the 183-day rule, else all four conditions of the 60-day rule (Section 5 table; https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/). Not resident means no SDC on interest or dividends; stop the SDC analysis there.
-3. Find the domicile of origin (normally the father's at birth). If it is Cypriot, check the two exceptions: domicile of choice abroad AND at least 20 consecutive non-resident years before the tax year, or more than 20 consecutive years abroad before 16 July 2015 (Section 2 table; https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/).
-4. Whatever the domicile of origin, count Cyprus tax residence years in the 20 years before the tax year. At least 17 means deemed domiciled, kept until 20 non-resident years are completed (Section 2 table; https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/).
-5. If not domiciled: no SDC on interest or dividends. Apply for exemption on Form T.D.38. The same page lists the related forms: T.D.624/NP (declaration for exemption from the deduction of SDC), T.D038QA (domicile of origin questionnaire) and T.D038QB (domicile of choice questionnaire) (https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/).
-6. If deemed domiciled only through the 17-of-20 rule and the domicile of origin is not Cypriot: weigh the Article 3D lump sum. Apply on Form TD 631 through TFA by 30 June of the first year of the five-year period, with the required documents, and pay within the deadline (Section 3A tables; https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf).
-7. If domiciled and resident: charge SDC at the domiciled rates, splitting dividends by the profit year they come from (Section 3 table; https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf). No SDC on rent from 2026.
-8. Separately, compute income tax on the 2026 scale and check the new-resident exemptions; domicile does not affect either (Section 6 tables; https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf). Route the income tax return to `cyprus-income-tax`.
+```oa-check
+name: Marco, deemed domiciled 17 of 20, Article 3D against actual SDC (2026)
+inputs:
+  resident_years_in_last_20: 17
+  dividends: 1200000
+  interest: 50000
+  lump_sum: 250000
+  years: 5
+  ghs_rate: 0.0265
+  ghs_ceiling: 180000
+steps:
+  - deemed_domiciled: min(1, max(0, resident_years_in_last_20 - 16))
+  - sdc_per_year: (dividends * 0.05 + interest * 0.17) * deemed_domiciled
+  - sdc_five_years: sdc_per_year * years
+  - saving_with_3d: sdc_five_years - lump_sum
+  - break_even_per_year: lump_sum / years
+  - ghs_per_year: min(dividends + interest, ghs_ceiling) * ghs_rate
+expected:
+  deemed_domiciled: 1
+  sdc_per_year: 68500
+  sdc_five_years: 342500
+  saving_with_3d: 92500
+  break_even_per_year: 50000
+  ghs_per_year: 4770
+```
 
 ## Ask the client first
 
-- In which country were you born, and what was your father's domicile at your birth? Have you ever had a Cypriot domicile of origin?
-- For each of the last 20 tax years, were you Cyprus tax resident under the 183-day or the 60-day rule? (This decides deemed domicile.)
-- This year: how many days in Cyprus, how many days in any other single country, do you have Cyprus work or business, and do you own or rent a home in Cyprus?
-- Do you receive dividends, and from which companies and which profit years? Do you receive interest, and from what kind of instrument?
-- Have you already filed Form T.D.38 or received a Tax Department certificate that you are not domiciled?
-- When did your Cyprus employment or business start, were you ever Cyprus tax resident before, and what did you earn in the first 12 months? (This decides the new-resident exemptions.)
-
-## When to refuse or refer
-
-- Refer any client with a Cypriot domicile of origin who claims non-dom status under either exception. The Wills and Succession Law tests for a domicile of choice are fact-heavy, and the page sends them there.
-- Refer a foreigner who says they have formed a domicile of choice in Cyprus. The page does not address it.
-- Refer anyone at or near 17 resident years out of 20, or a former deemed-domiciled person returning within 20 non-resident years. Counting errors here change SDC for every later year.
-- Refer the Article 3D decision. The election is irrevocable, the payment is never refunded, and the break-even depends on the client's future income.
-- Refer dividends from foreign companies paid out of pre-2026 profits to a domiciled resident. The 2026 presentation states the 17% transitional rate for dividends from Cyprus-resident companies; it does not settle foreign-company dividends.
-- Do not compute General Healthcare System (GHS/GESY) contributions here. They are a separate charge; see `cyprus-social-contributions`.
-- Refer CGT computations (indexation, the agricultural-land and main-residence exemptions). The rate and the general exemption are in the Section 4 table.
-- Refer treaty residence ties (a person resident in two countries). This skill applies Cyprus domestic rules only.
+- Where were you born, and what was your father's domicile at your birth? Is your domicile of origin Cypriot? (Decides whether the exceptions or Article 3D are in play.)
+- For each of the last 20 tax years, were you Cyprus tax resident under the 183-day or the 60-day rule? (Decides deemed domicile.)
+- This year: days in Cyprus, days in any other single country, any Cyprus work, business or office, and a home in Cyprus you own or rent?
+- What dividends do you receive, from which companies and out of which profit years, and what interest, from what instruments? (Decides the 5%, 17% or 3% rate and the Article 3D comparison.)
+- Have you filed Form T.D.38 or received a Tax Department certificate that you are not domiciled?
+- What is your total yearly income from all sources? (Decides the GHS ceiling.)
 
 ## Sources
 
-- Tax Department, Tax Residency/Domicility: https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/
-- Tax Department, Form TD 631, Application for the Alternative Method of Imposing the Special Contribution for the Defence: https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf
-- Tax Department, presentation on the SDC and CGT amendments 2026 (Greek): https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf
-- Tax Department, Tax Reform 2026 FAQs (Greek): https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf
-- Tax Department, Article 8(21B) of the Income Tax Law: https://www.gov.cy/media/sites/167/2026/06/Article-8-21B-of-the-Income-Tax-Law-N.118-I-2002.pdf
-- Tax Department, table for articles 8(23) and 8(23A) (Greek): https://www.gov.cy/media/sites/167/2026/06/%CE%A0%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%B1%CF%80%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CF%8E%CE%BD-823-%CE%BA%CE%B1%CE%B9-823%CE%91.pdf
-- Tax Department, table for articles 8(21) and 8(21A): https://www.gov.cy/media/sites/167/2026/01/implementation-of-sections-21-and-21A-of-article-8-24072023.pdf
-- Tax Department, TD59A 2026 instructions (English): https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf
+| Source | URL | Read on |
+|---|---|---|
+| Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): arts. 2(3), 3, 3A, 3B, 3C, 3D, 4, 4A, 4B, 5, 6, 7, 7B | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-26 |
+| SDC (Amendment) (No. 4) Law 245(I)/2025, commencement 1 January 2026 | https://www.cylaw.org/nomoi/arith/2025_1_245.pdf | 2026-10-24 |
+| Income Tax Law 118(I)/2002, consolidated (CyLaw): arts. 2, 8(19), 8(20) | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-26 |
+| Public Default Interest Rate for 2026 Order, K.D.P. 376/2025 | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-24 |
+| Health Insurance Organisation, GHS financing (2.65%, EUR 180,000, non-resident rule) | https://www.gesy.org.cy/en-us/hiofinancing | 2026-10-26 |
+| Tax Department, Tax Residency/Domicility (day counting, domicile of origin, forms) | https://www.gov.cy/mof-tax/en/documents/tax-residency-domicility/ | 2026-10-24 |
+| Tax Department, Form TD 631, Article 3D application | https://www.gov.cy/media/sites/167/2026/06/Application-Extension-of-Non-Dom.pdf | 2026-10-24 |
+| Tax Department, presentation on the 2026 SDC and CGT amendments (6 March 2026, Greek) | https://www.gov.cy/media/sites/167/2026/03/EEA-%CE%A6%CE%9A%CE%9A-%CE%9C%CE%95%CE%A4%CE%91%CE%A1%CE%A1%CE%A5%CE%98%CE%9C%CE%99%CE%A3%CE%97-06032026.pdf | 2026-10-24 |
+| Tax Department, Capital Gains Tax page (20% rate, EUR 30,000 lifetime exemption) | https://www.gov.cy/mof-tax/documents/kefalaioychika-kerdi/ | 2026-10-24 |
+| Tax Department, FAQs on the 2026 reform for individuals (11 May 2026; 2026 return due 31 July 2027) | https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf | 2026-10-24 |
 
-> **Working paper only.** Domicile determination is fact-specific. The 17-of-20-years test requires careful counting of years of Cyprus residence. Obtain formal confirmation from a Cyprus tax adviser.
+Not yet confirmed: the Tax Department pages on gov.cy (residency page, Form TD 631, the 2026 presentation, the CGT page) blocked automated reads on 26 October 2026, so their figures and form names are carried from the 24 October 2026 read and not re-read; whether a foreigner can form a domicile of choice in Cyprus before 17 years (the law and the page are silent); whether the 17% transitional rate reaches dividends from foreign companies out of pre-2026 profits (art. 3(1)(α) proviso (ii) names Cyprus-resident companies only); CGT indexation and the agricultural-land and main-residence exemptions; the 2026 income tax bands and the 20%, 25% and 50% first-employment exemptions from v1.0 are now only in `cyprus-income-tax` (not re-read here); Circular 02/2026 on Article 3D (named in v1.0, not re-read).
 
 <!-- openaccountants-cta-block -->
 

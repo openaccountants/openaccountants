@@ -17,13 +17,13 @@ A skill's presence is not coverage. Several skills below are thin lists with sec
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ro-income-tax (self-employed PFA, II, IF and liberal professions, 2026); ro-employee-income-tax (employees, rent and investment income, 2026) | source-cited draft |
-| IT-CORP, corporate income tax | ro-corporate-income-tax (2026: profit tax at 16%, micro-enterprise tax at 1%, minimum turnover tax, base, losses, interest limit, filing and penalties, from the Fiscal Code) | source-cited draft |
-| VAT | ro-vat-return (2026: 21% and 11% rates under Legea 141/2025, 395,000 lei small-enterprise threshold, D300, D394, D390, RO e-TVA, reverse charge, EU trade, refunds, penalties); romania-vat-return (older alias, points to ro-vat-return) | source-cited draft |
-| SC, social contributions | ro-cas-cass (self-employed CAS and CASS, 2026); ro-payroll-social (employee CAS and CASS, employer CAM, the minimum CAS and CASS on part-time contracts, 2026) | source-cited draft |
-| PR, payroll withholding | ro-payroll-social (2026 gross-to-net, minimum-wage relief, benefits, REGES ONLINE, D112, penalties, two worked examples) | source-cited draft |
-| TP, transfer pricing | ro-transfer-pricing | source-cited draft |
-| XB, cross-border | ro-cross-border | source-cited draft |
+| IT-IND, individual income tax | ro-income-tax (self-employed PFA, II, IF and liberal professions, 2026); ro-employee-income-tax (employees, rent and investment income, 2026) | checked against the law |
+| IT-CORP, corporate income tax | ro-corporate-income-tax (2026: profit tax at 16%, micro-enterprise tax at 1%, minimum turnover tax, base, losses, interest limit, filing and penalties, from the Fiscal Code) | checked against the law |
+| VAT | ro-vat-return (2026: 21% and 11% rates under Legea 141/2025, 395,000 lei small-enterprise threshold, D300, D394, D390, RO e-TVA, reverse charge, EU trade, refunds, penalties); romania-vat-return (older alias, points to ro-vat-return) | sourced from the law |
+| SC, social contributions | ro-cas-cass (self-employed CAS and CASS, 2026); ro-payroll-social (employee CAS and CASS, employer CAM, the minimum CAS and CASS on part-time contracts, 2026) | checked against the law |
+| PR, payroll withholding | ro-payroll-social (2026 gross-to-net, minimum-wage relief, benefits, REGES ONLINE, D112, penalties, two worked examples) | checked against the law |
+| TP, transfer pricing | ro-transfer-pricing | checked against the law |
+| XB, cross-border | ro-cross-border | checked against the law |
 
 ## Official sources
 
