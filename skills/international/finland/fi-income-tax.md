@@ -25,8 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.7
-
+# Finland individual income tax v1.8
 **Tax year:** 2026. Source-cited ordinary individual computation; independent source-review evidence is in the [pack README](README.md). The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
 ## Who this applies to
