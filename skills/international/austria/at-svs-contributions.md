@@ -64,7 +64,7 @@ Accident insurance: the law and the SVS contribution sheet both give EUR 12.95. 
 - The client may apply to lower or raise it (GSVG § 25a). A raised base avoids a large back-payment later; too high a guess creates a credit.
 - The application can be made until the end of the contribution year and repeated if the estimate changes. A lowered base cannot go below the minimum base and a raised base cannot go above the maximum base (GSVG § 25a Abs 5). If the base is raised, the extra contributions for earlier quarters fall due at the end of the second month of the quarter in which they are charged (GSVG § 35 Abs 2a).
 - A provisional base not yet re-assessed when a pension starts (the Stichtag) counts as the final pension base (GSVG § 25 Abs 7). A raised base can therefore become final for the pension.
-- On application, at the latest with the pension application, the pension bases of the first calendar year of GSVG insurance and the next two are raised to the maximum bases for those years (Höchstbeitragsgrundlagen aus Anlass von Betriebsgründungsinvestitionen, GSVG § 25 Abs 6).
+- On application, at the latest with the pension application, the pension bases of the first calendar year of GSVG insurance and the next two are raised to the maximum bases for those years (Höchstbeitragsgrundlagen aus Anlass von Betriebsgründungsinvestitionen, GSVG § 25 Abs 6a).
 
 **New business health base (GSVG § 25a Abs 4).** For a Gewerbetreibender, the minimum base is the provisional and the final health base for the first two calendar years, if there was no GSVG insurance in the 120 months before. It is not re-assessed. Calendar years count, so a July start keeps the fixed health base for 18 months. Neue Selbständige do not get this; their health base is re-assessed.
 
