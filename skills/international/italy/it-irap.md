@@ -1,7 +1,7 @@
 ---
 name: it-irap
 description: "Italian regional tax on productive activities (IRAP) for tax year 2026. Covers who pays (companies, partnerships, professional associations, entities, public bodies) and who does not (individual traders, professionals and forfettari since 2022), the 3.9% standard rate and the 4.2%, 4.65% and 5.9% special rates, regional variation up to 0.92 points, the 2026 sector and bank surcharges, the base for companies (art. 5), partnerships (art. 5-bis) and professional associations (art. 8), the staff deductions and the flat deduction for small bases, the IRAP return, saldo and acconti, penalties, the multi-region split and the IRAP deduction in income tax. Trigger on: IRAP, imposta regionale sulle attività produttive, valore della produzione netta, dichiarazione IRAP, acconto IRAP, IRAP studio associato. Out of scope: IRES (it-ires-corporate-tax), individual income tax (it-income-tax, it-regime-forfettario), payroll (italy-payroll), cross-border hub (it-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: IT
 tax_year: 2026
 last_updated: 2026-10-27
@@ -146,6 +146,15 @@ expected:
 - What IRAP did you declare last year, and do you apply the ISA indices?
 - Are you claiming back IRAP paid as an individual for a year before 2022?
 
+## When to refer
+
+These groups follow their own base rules or a separate regime. Do not compute their IRAP as if they were an ordinary company; refer.
+
+- **Banks and financial intermediaries (art. 6(1) and (2)), non-financial holding companies (art. 6(9)) and insurers (art. 7).** Each has its own base rule and its own taxpayer code on the return (codes 03, 04, 07, 08). Source: IRAP 2026 return instructions, table of taxpayer codes and the insurers' section; D.Lgs. 446/1997 art. 6 and 7.
+- **Concordato preventivo biennale (CPB) adherents.** The adherent declares the agreed value of production (D.Lgs. 13/2024 art. 17), with a minimum of EUR 2,000, and still fills in the ordinary base section. A holding company under art. 6(9) agrees its value under art. 5 only. Source: IRAP 2026 return instructions, quadro IS, section "Concordato preventivo biennale".
+- **Non-operating companies (società non operative or di comodo).** The IRAP return instructions name the non-operating-company rules as a regime the ISA rewards can switch off. Refer any company that may fall under them. Source: IRAP 2026 return instructions, par. 2.1.6 (ISA).
+- **Farming mixed with taxed activity.** Taxed and excluded farming activity are split by a ratio (Risoluzione 93/E of 18 July 2017) in a separate section of the return. Source: IRAP 2026 return instructions, par. 2.1.1 (excluded farming).
+
 ## Sources
 
 | Source | URL | Read on |
@@ -162,4 +171,4 @@ expected:
 | D.Lgs. 471/1997 art. 1 and 13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471 | 2026-10-24 |
 | D.Lgs. 472/1997 art. 13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13 | 2026-10-24 |
 
-Not yet confirmed: the 2026 IRAP return instructions (figures above are the tax year 2025 ones carried forward); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes.
+Not yet confirmed: the 2026 IRAP return instructions (figures above are the tax year 2025 ones carried forward); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
