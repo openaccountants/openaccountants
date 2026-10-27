@@ -122,4 +122,4 @@ expected:
 | [Registry fee schedule](https://www.guernseyregistry.com/companyfees) | Current incorporation/reservation fees, effective 1 December 2025 | 2026-10-27 |
 | All original Registry sources in frontmatter | Original scope, ownership and handover guidance and prior review retained | 2026-10-22 |
 
-Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. Fresh whole-pack review remains pending; no professional attestation is claimed.
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
