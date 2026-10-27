@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-27",
+  "reviewer": "Fresh independent reviewer /root/bulgaria_vat_income_independent; not any of these three deltas writer",
+  "retained_and_fresh_bodies": [
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/10.html",
+      "bytes": 3900388,
+      "sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual current Social Insurance Act§138 read full, particularly(2),(3),(8),(9),(14); separate cycle-specific income test and calendar-year contribution limits; actual adjustments and rounding retained."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.html",
+      "bytes": 3063459,
+      "sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual current ITA §§1(2),2(x)/(h),15,16,43,44 and statutory TP context17(5). Primary retained HTML independently parsed; own exact-section extracts. Confirmed Russian-residence classification alone is insufficient, source/payment/exemption/treaty and collection gates; full-base rates and exact threshold inclusion."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/14.html",
+      "bytes": 3067549,
+      "sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual31December2026 ITA§11(4),§52zzzm and all claimed same sections independently compared with13; own parser detects§11 difference and otherwise matches stated XB sections."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/15.html",
+      "bytes": 3071752,
+      "sha256": "ae9081d73e8ecaed38a0c0d81ec0a44482e37968cc901f21463343567287d51b",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual1January2027 ITA§§17/18 compared independently; unchanged sections verified, not a future-year tax-rate attestation."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/20.html",
+      "bytes": 1506665,
+      "sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual current TC§§16,155,156,161 read in full;69/154 compared for temporal continuity. Supplementary due date, audit trigger/bar, every penalty endpoint, bounds, ECB reference date,§155(11)threshold,§156existing/new balance distinction and§161rounding."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/21.html",
+      "bytes": 1507379,
+      "sha256": "70527959f4e87974ca7b8e5c8175773324a18a9e39e8746a938f33f2b65a2f05",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual1January2027 TC§§16,69,154–156,161 compared; exact normalized section equality independently reproduced."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/02.html",
+      "bytes": 52079,
+      "sha256": "a77df5d9da0cfcc4e0895b7b484b64ff75c7855a79b24fd7b2954cadbd9ec92c",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual Ministry subsistence body confirming284.13from1July2025; live web corroboration."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/34.html",
+      "bytes": 131222,
+      "sha256": "18060fd5335a68d59c8daf9fd0b340396e0d4539db5f088741d30e7618365d89",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual retained ECB history independently parsed; successful fresh official web open confirms2.15/2.40/2.65 main-refinancing rates and effective dates. No later scenario-date rate asserted."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/56.pdf",
+      "bytes": 214357,
+      "sha256": "43e5a2732ef055bbc7de337b6776d73758894db423ce87197851f1c4a3cdbbaa",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual2026Ministry cooperating-state list independently rehashed and extracted, header/countries read for Russia absence, historical treaty distinction; Kyrgyz entry64 effective1January2026. List count/treaty matrix are unchanged baseline claims, not a new independent bilateral treaty audit."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.pdf",
+      "bytes": 432615,
+      "sha256": "250679b5bdf4786ab3463747486843d411c3627aa03c27c2ea2ccc4ecc763d4d",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual nine-page SP employee-posting application independently rehashed/extracted and read: fields/evidence, signature/declarations, branch issuer and instructions, substantialhomeactivity/directrelationship/noreplacement/precedingcoverage/continuingconditions; narrow objective-replacement exception and Art16 handoff."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/fs14-dp-2026.pdf",
+      "bytes": 189905,
+      "sha256": "3332439ed41f7dcc4040023bc87f411799ff41f99e73564631f3c43b4e06bd2c",
+      "mode": "independent retained-body rehash; not a new HTTP request",
+      "actual_read": "Actual six-page FS14 notice read in full; own PDF extraction. Fresh curl fs14-fresh.pdf exactlymatches189905bytes and3332439e… hash. Actual pages3–5 rendered and visually inspected. Current form deadline vintage, TableI3parts/row400/loanhighestandyearend/smallflag/documentation, TableL1→2–98→99→560 all supported. No claim of reading the separate current return artifact."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-remaining-ordinary-completion/independent/fs14-fresh.pdf",
+      "bytes": 189905,
+      "sha256": "3332439ed41f7dcc4040023bc87f411799ff41f99e73564631f3c43b4e06bd2c",
+      "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2026/2026.10.22_014_DZPaU_2026_I.pdf",
+      "mode": "independent fresh normal HTTPS curl, certificate checks enabled; exit0",
+      "matches_retained": true,
+      "actual_read": "Fresh raw duplicate of actual FS14 body described above."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.pdf",
+      "bytes": 287990,
+      "sha256": "f8e5f576a277307df5a60bdc2ebc9b3b143927223d893f887fe0cb72a5671438",
+      "mode": "independent retained-body rehash and PDF extraction",
+      "actual_read": "Actual seven-page FS12/PO/2026/IM independently rehashed/extracted and read for historical accounting-result/base effect, loan interest22/principal omission, building acquisition-price control,99electronic/18print rows and documentation fallback; superseded ordinary vintage not imported into new TableI."
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-remaining-ordinary-completion/independent/fs18-taxable-revenue-fresh.pdf",
+      "bytes": 171856,
+      "sha256": "6f71dfaa52be99f51205a1e0cf8bb8ece70ca93470f2c894416a52746518fd58",
+      "mode": "independent fresh normal HTTPS curl, certificate checks enabled; exit0",
+      "actual_read": "Actual fresh three-page FS18/2021/MU, own extraction and fullbody read. Page2 item3 explicitly includes TP income-side corrections; expense exclusions follow. Old rates/thresholds expressly superseded; corrected locator verified."
+    }
+  ],
+  "other_successful_live_primary_reads": [
+    {
+      "url": "https://www.financnasprava.sk/sk/elektronicke-sluzby/verejne-sluzby/danove-kalkulacky/urok-z-omeskania",
+      "scope": "Actual statutory triggers, rates, arrears date/endpoints and4yearlimit; corroborates sourcebody, calculator not used to invent a pre-due interest period."
+    },
+    {
+      "url": "https://podpora.financnasprava.sk/901749-Dodato%C4%8Dn%C3%A9-da%C5%88ov%C3%A9-priznanie",
+      "scope": "Actual supplementary return due/payment rules and audit delivery triggers; corroboration, current statute controls omissions."
+    },
+    {
+      "url": "https://podpora.financnasprava.sk/425494-Pokuty--sadzby-pok%C3%BAt",
+      "scope": "Actual fine endpoint and calendar-year365/366examples; inclusiveEUR5threshold; statutorysource§155controls."
+    },
+    {
+      "url": "https://static.slov-lex.sk/static/SK/ZZ/1998/31/vyhlasene_znenie.html",
+      "scope": "Actual original Russian treaty publication/body; confirms historical instrument only, no current article-operation/suspension conclusion."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/883/oj/eng",
+      "mode": "Normal Brave browser via authorized computer-use tool; web renderer returnedJavaScriptchallenge. No CAPTCHA solved.",
+      "scope": "Actual original Arts11–13/16read; publication supports broad route distinction only."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02004R0883-20190731",
+      "mode": "Normal Brave browser, followed current consolidatedversionlink fromofficialoriginalpage; visiblebodyread.",
+      "scope": "Actual current consolidated Arts11–13/16read, singlelaw/workstateposting24months/notreplaceanotherpostedperson; multistateArt13andArt16commonagreement clearlydifferent. OriginalArt13subrules not used as current subrule instructions. Researchtabclosed."
+    }
+  ],
+  "limitations": "FS14 web renderer returnedinternalerror but independent normal HTTPS curlretainedactualPDF; cooperating-listfreshwebrenderertimeout but actualretainedPDFread; EUR-LexwebrendererJavaScriptchallenge resolved throughnormalbrowser. No inventedrawHTTPbodyandnofalsefreshdownloadclaimforretainedstatutes."
+}

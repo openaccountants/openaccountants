@@ -1,7 +1,7 @@
 ---
 name: sk-cross-border
 description: "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% or 10% on individual profit dividends by profit period and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
-version: 0.2
+version: 0.3
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This skill covers what happens in Slovak income tax when income, people or companies cross the border. The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov, "ZDP"), in the version in force from 1 January 2026 to 30 December 2026. Procedure, penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The authority is the Financial Administration (Finančná správa SR). The currency is the euro.
 
-Detail lives in the sibling skills. Read [slovakia-pit](slovakia-pit.md) for the individual return, [sk-corporate-income-tax](sk-corporate-income-tax.md) for companies, [sk-payroll-social](sk-payroll-social.md) for payroll and social contributions, and [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for VAT on cross-border services. Those four skills still carry 2025 figures.
+Detail lives in the sibling skills. Read [slovakia-pit](slovakia-pit.md) for the individual return, [sk-corporate-income-tax](sk-corporate-income-tax.md) for companies, [sk-payroll-social](sk-payroll-social.md) for payroll and social contributions, and [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for VAT on cross-border services. Those four Guides cover 2026; use their detailed methods with the relevant income year and payment date.
 
 **What changed for 2026.** The 2025 consolidation package, Act No. 261/2025 Coll. of 24 September 2025, did not change the withholding rules (§ 43) or the security rules (§ 44). It did change the individual rate bands to 19%, 25%, 30% and 35% for 2026 (§ 15 letter a), § 52zzzj), cut the personal allowance bands, and replaced the company minimum tax scale (§ 46b(2)). The 7% dividend rate and the 10% / 21% / 24% company rates were already in force from 2025. Set against the version in force from 1 December 2025, the 2026 text of § 2, § 13, § 16, § 17f, § 17g, § 44 and § 45 is unchanged. In § 43 only the content of the withholding notice changed (§ 43(11)): for each non-resident recipient it now gives the income type (for § 16(1)(e) points 1, 2, 4, 9 and 11), the amount, the rate, the recipient's address and its foreign tax number.
 
@@ -64,12 +64,14 @@ A legal person is resident if its seat or its place of effective management is i
 | Permanent establishment: services performed in Slovakia | more than 183 days in any 12-month period | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |
 | Non-resident share sale: real-estate-rich company test | Slovak real estate over 50% of equity | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(1)(h)) |
 | Non-resident individual: spouse allowance and PEPP and supplementary pension contributions deductible | Slovak income at least 90% of worldwide income | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 11(7)) |
-| Individual rates (resident and non-resident) | 19% up to 154.8 x subsistence minimum; 25% to 212.4 x; 30% to 264 x; 35% above. A sole trader with business revenue up to EUR 100,000 pays 15% on that base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 a) 1 to 3) |
+| Subsistence minimum used for the 2026 annual individual bands | EUR 284.13, the adult amount in force at 1 January 2026 | 2026 | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html; ZDP §11(2) |
+| Individual rates (resident and non-resident) | 19% up to 154.8 x subsistence minimum (EUR 43,983.32); 25% to 212.4 x (EUR 60,349.21); 30% to 264 x (EUR 75,010.32); 35% above. A sole trader with business revenue up to EUR 100,000 pays 15% on that base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 a) 1 to 3) |
 | Company rates | 10% (taxable revenue up to EUR 100,000); 21%; 24% (taxable revenue over EUR 5,000,000) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 1) |
 | Exit tax on a company's special tax base | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 3, § 17f(5)) |
 | Exit tax instalments (move to EU/EEA state with recovery agreement) | up to 5 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(1)) |
 | Exit tax instalments: no lien needed | tax up to EUR 3,000 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(5)) |
 | Cooperating states (§ 2 x)): Ministry of Finance list valid from 1 January 2026 | 138 states and jurisdictions, 71 of them through a tax treaty; Russia is not on it | 2026 | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf |
+| ECB base rate (main refinancing operations), observed history | 2.15% from 11 June 2025; 2.40% from 17 June 2026; 2.65% from 16 September 2026 | Read 27 Oct 2026 | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html |
 | Late payment interest (also on unremitted withholding and security) | 4 x ECB base rate a year, at least 15% a year, at most 4 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 156(1)-(2)) |
 
 ## The taxable base
@@ -111,7 +113,7 @@ Paid to a non-resident (§ 43(2)), withholding applies to:
 
 Paid to anyone (§ 43(3)), withholding also applies to bank interest, fund yields, lottery winnings, and dividends paid to individuals (point r), among others.
 
-The rates are 19% as the rule, 7% for dividends to individuals, and 35% for any of this income paid to a taxpayer of a non-cooperating state (§ 43(1)). If the payer cannot show who the beneficial owner of a non-resident's Slovak-source income is, it withholds 35% (§ 43(25)).
+For income within these withholding categories, the domestic rates are 19% as the rule, 7% or 10% for ordinary profit dividends to individuals according to the profit period shown above, 13% for the specified government-bond yields, and 35% where §43(1)(c) applies to a taxpayer of a non-cooperating state. Apply the relevant exemption and operative treaty before fixing the amount (§1(2), §2(x), §43(1)). If the payer cannot show who the beneficial owner of a non-resident's Slovak-source income is, it withholds 35% (§ 43(25)).
 
 **Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7)).
 
@@ -129,7 +131,13 @@ This catches Slovak-source income of a non-resident that is not withheld under �
 
 A taxpayer of a non-cooperating state is one whose permanent residence or seat is not in a state on the list published by the Ministry of Finance. The Ministry lists states with a tax treaty, a tax information exchange agreement, or a multilateral exchange agreement with Slovakia. It removes states on the EU list of non-cooperative jurisdictions as at 1 January, and states with no corporate income tax or a zero rate.
 
-The list valid from 1 January 2026 was built from the EU list published in the Official Journal on 17 October 2025 (C/2025/5613). It has 138 entries. A state with a Slovak tax treaty can still be non-cooperating: Russia has a treaty with Slovakia but is not on the list, so a payment to a Russian resident carries 35%. Check the list in force on the day of payment (https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf).
+The list valid from 1 January 2026 was built from the EU list published in the Official Journal on 17 October 2025 (C/2025/5613). It has 138 entries. Russia is absent from the 2026 list. That classification alone does not put every payment to a Russian resident at 35%. §2(x) expressly preserves treaty application when a state is removed from the list, and §1(2) gives an applicable treaty priority. Use this sequence for Russia and every other non-cooperating state:
+
+1. Identify the actual payment, the recipient and beneficial owner, and whether the income has a Slovak source under §16. Residence alone does not create Slovak-source income.
+2. Apply the relevant domestic exemption and select the collection route. Only income within §43(2)/(3) is subject to §43 withholding; the registered-PE exclusion in §43(2) still matters. For other taxable Slovak-source income paid to a non-EU/EEA non-resident, test §44, including its exclusion for income already withheld under §43 or subject to wage advances and its advance-payment certificate exception. The 35% rate attaches to the applicable §43(1)(c) or §44(2) route, not to an invoice merely because the supplier is Russian.
+3. Establish the treaty article actually operative for the payment date, including any protocol, MLI modification, suspension or other change, and retain residence and beneficial-owner evidence before applying treaty relief. The 2022 treaty inventory below is a historical reference, not proof that a particular Russian treaty article operates in 2026. The original treaty is published as [31/1998 Z. z.](https://static.slov-lex.sk/static/SK/ZZ/1998/31/vyhlasene_znenie.html); its publication alone does not settle later operation. Country-specific treaty rates and the current operation of the relevant Russian article are the precise unconfirmed items below.
+
+For example, a purchase of goods from a Russian supplier with no Slovak PE or other §16 source is not subject to these deductions merely because the supplier is Russian. A Slovak-source software royalty within §43(2), with no applicable exemption or operative treaty reduction, uses 35%: the EUR 8,000 royalty in example 1 then gives EUR 2,800 withholding. Check the list in force on the payment date (https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf; ZDP §§1(2), 2(x), 16, 43 and 44).
 
 ### Dividends paid abroad
 
@@ -178,7 +186,7 @@ There is no exit tax for individuals in the ZDP.
 
 ## Penalties and interest
 
-All from the Tax Procedure Code, Act No. 563/2009 Coll.
+All from the Tax Procedure Code, Act No. 563/2009 Coll. Select the ECB main-refinancing rate on the statutory reference date: delivery of an audit assessment or filing of a supplementary return for §155 fines (§155(7)); the date arrears arise for §156 late-payment interest. The history above supplies rates already observed by 27 October 2026; a later reference date requires the rate actually in force then.
 
 - **Late return:** a fine of EUR 100 to EUR 30,000 (§ 155(1)(a)). A tax office does not impose a fine set within a range for the first breach (§ 155(4)).
 - **Late notice or other reporting duty:** EUR 100 to EUR 10,000 (§ 155(1)(d) and (e)).
@@ -264,9 +272,16 @@ expected:
 | Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 Sep 2026 (§ 154, § 155, § 156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |
 | Financial Administration, international taxation legislation page | https://www.financnasprava.sk/sk/financna-sprava/legislativa/dane/priame-dane/dan-z-prijmov/medzinarodne-zdanenie | 2026-10-23 |
 | Ministry of Finance, list of cooperating states under § 2 x), valid from 1 Jan 2026 (with the treaty or agreement for each state) | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf | 2026-10-23 |
-| Financial Directorate, list of Slovak tax treaties in force (1/MZ/2022/IM, as at 1 Jan 2022; shows the Russia treaty) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |
+| Financial Directorate, historical list of Slovak tax treaties (1/MZ/2022/IM, as at 1 Jan 2022; records the Russia treaty, not current operation) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |
+| Ministry of Labour, subsistence minimum from 1 July 2025, in force at 1 January 2026 | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html | 2026-10-27 |
+| ECB, historical key interest rates | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-27 |
+| Income Tax Act, text from 31 December 2026, including §52zzzm | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-27 |
+| Original Russia treaty, 31/1998 Z. z.; used as original text, not evidence of current article operation | https://static.slov-lex.sk/static/SK/ZZ/1998/31/vyhlasene_znenie.html | 2026-10-27 |
 
-Not yet confirmed: treaty withholding rates for individual states; the subsistence minimum (životné minimum) at 1 January 2026, so the 2026 individual bands are given here as multiples only; the ECB base rate used for interest and fines on a given date; the text of a later version of Act No. 595/2003 in force from 31 December 2026 (Act No. 406/2025 Coll.), which is not covered here.
+**31 December boundary.** The later [Income Tax Act text from 31 December 2026](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was also read. §§1, 2, 12, 13, 15, 16, 17f, 17g, 43, 43a, 44, 45 and 49 are unchanged between these two texts. §11(4) changes, but §52zzzm applies that change, together with the specified §9 changes, first to returns for 2027. Do not apply those new allowance rules to a 2026 return merely because it is filed in 2027.
+
+
+Not yet confirmed: treaty withholding rates for individual states and the operation of the particular Russian treaty article on the payment date, including any suspension and its Slovak effect. A country-specific treaty reduction is not asserted without that evidence.
 
 > Contributed by Michael Cutajar.
 

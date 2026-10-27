@@ -1,0 +1,283 @@
+{
+  "method": "Independent Decimal/date computations written from statutory rules; all six example expected outputs compared exactly. No reuse of writer control implementation.",
+  "examples": [
+    {
+      "file": "sk-cross-border.md",
+      "example": 1,
+      "independently_calculated": {
+        "wht_19": "1520",
+        "net_paid": "6480",
+        "wht_35_noncooperating": "2800.00"
+      },
+      "all_expected_exact": true
+    },
+    {
+      "file": "sk-cross-border.md",
+      "example": 2,
+      "independently_calculated": {
+        "sk_tax": "84000.00",
+        "foreign_share_pct": "12.500",
+        "credit_limit": "10500.00",
+        "credit": "5000.00",
+        "tax_payable": "79000",
+        "not_creditable": "2500"
+      },
+      "all_expected_exact": true
+    },
+    {
+      "file": "sk-payroll-social.md",
+      "example": 1,
+      "independently_calculated": {
+        "ee_social": "235.00",
+        "ee_health": "125.00",
+        "advance": "312.13",
+        "advance_after_bonus": "212.13",
+        "net_pay": "1927.87",
+        "er_social": "610.00",
+        "employer_cost": "3405.00",
+        "to_social_insurer": "865.00"
+      },
+      "all_expected_exact": true
+    },
+    {
+      "file": "sk-payroll-social.md",
+      "example": 2,
+      "independently_calculated": {
+        "social_base": "1598.25",
+        "social_month": "529.80",
+        "health_base": "1345.89",
+        "health_advance": "215.34",
+        "special_month": "131.34",
+        "annual_floor_2026": "914.40",
+        "annual_ceiling_2026": "16764",
+        "annual_special_2026": "396.24",
+        "cycle_income_threshold_2026": "9144.00"
+      },
+      "all_expected_exact": true
+    },
+    {
+      "file": "sk-transfer-pricing.md",
+      "example": 1,
+      "independently_calculated": {
+        "adjustment": "70000",
+        "extra_tax": "14700.00",
+        "penalty": "1838.5",
+        "penalty_paid_early": "1225.6",
+        "minimum_penalty": "147"
+      },
+      "all_expected_exact": true
+    },
+    {
+      "file": "sk-transfer-pricing.md",
+      "example": 2,
+      "independently_calculated": {
+        "add_back": "120000",
+        "over_basic_threshold": "200000",
+        "extra_tax": "28800.00",
+        "penalty": "577.5",
+        "late_interest_variant": "118.3",
+        "small_revenue_after": "100500",
+        "small_tax_before": "2000.00",
+        "small_tax_after": "4410.00",
+        "small_extra_tax": "2410.00",
+        "large_revenue_after": "5000500",
+        "large_extra_tax": "6240.00"
+      },
+      "all_expected_exact": true
+    }
+  ],
+  "audit_calendar_year_split": [
+    {
+      "year": 2027,
+      "days": 275,
+      "denominator": 365
+    },
+    {
+      "year": 2028,
+      "days": 182,
+      "denominator": 366
+    }
+  ],
+  "audit_raw_penalty": "1838.517853132719514933752526",
+  "supplementary_days": 244,
+  "ten_day_interest_raw": "118.3561643835616438356164384",
+  "rate_cliffs": [
+    {
+      "revenue": "99999.99",
+      "rate_percent": "10.00",
+      "tax_on_20000_base": "2000.00"
+    },
+    {
+      "revenue": "100000",
+      "rate_percent": "10.00",
+      "tax_on_20000_base": "2000.00"
+    },
+    {
+      "revenue": "100000.01",
+      "rate_percent": "21.00",
+      "tax_on_20000_base": "4200.00"
+    },
+    {
+      "revenue": "4999999.99",
+      "rate_percent": "21.00",
+      "tax_on_20000_base": "4200.00"
+    },
+    {
+      "revenue": "5000000",
+      "rate_percent": "21.00",
+      "tax_on_20000_base": "4200.00"
+    },
+    {
+      "revenue": "5000000.01",
+      "rate_percent": "24.00",
+      "tax_on_20000_base": "4800.00"
+    }
+  ],
+  "income_threshold": [
+    {
+      "income_2025": "9143.99",
+      "route": "special",
+      "January2027_retest": false
+    },
+    {
+      "income_2025": "9144",
+      "route": "special",
+      "January2027_retest": false
+    },
+    {
+      "income_2025": "9144.01",
+      "route": "income-derived",
+      "January2027_retest": false
+    }
+  ],
+  "fine_nonimposition_boundaries": [
+    {
+      "computed_after_rounding": "3.00",
+      "tax_customs_imposed": false,
+      "municipality_imposed": false
+    },
+    {
+      "computed_after_rounding": "3.10",
+      "tax_customs_imposed": false,
+      "municipality_imposed": true
+    },
+    {
+      "computed_after_rounding": "5.00",
+      "tax_customs_imposed": false,
+      "municipality_imposed": true
+    },
+    {
+      "computed_after_rounding": "5.10",
+      "tax_customs_imposed": true,
+      "municipality_imposed": true
+    }
+  ],
+  "daily_penalty_bounds": {
+    "1000_tax_1day_3percent_raw": "0.08219178082191780821917808219",
+    "1percent_minimum": "10.00",
+    "1000_tax_40years_3percent_raw": "1200.00",
+    "100percent_cap": "1000.00"
+  },
+  "annual_wage_factors": {
+    ".60": "914.40",
+    "11": "16764",
+    ".26": "396.24"
+  },
+  "SZCO_contribution_components": {
+    "1598.25": [
+      "70.32",
+      "287.68",
+      "95.89",
+      "75.91"
+    ],
+    "914.40": [
+      "40.23",
+      "164.59",
+      "54.86",
+      "43.43"
+    ],
+    "396.24": [
+      "17.43",
+      "71.32",
+      "23.77",
+      "18.82"
+    ],
+    "16764": [
+      "737.61",
+      "3017.52",
+      "1005.84",
+      "796.29"
+    ]
+  },
+  "subsistence_bands": [
+    "43983.32",
+    "60349.21",
+    "75010.32"
+  ],
+  "statutory_route_controls": [
+    {
+      "case": "Russian ordinary goods purchase, no PE or other Slovak source",
+      "result": "No deduction based solely on residence; \u00a7\u00a716/43/44 gates required"
+    },
+    {
+      "case": "Russian Slovak-source software royalty, no exemption or operative treaty relief",
+      "result": "8000 \u00d735% =2800; current treaty operation remains a fact-specific reservation"
+    },
+    {
+      "case": "Slovak registered PE income",
+      "result": "\u00a743(2) withholding exclusion, separate \u00a744 test if relevant"
+    },
+    {
+      "case": "Non-EU/EEA source income not already withheld/wage-advanced, no certificate",
+      "result": "\u00a744 route rather than treating every payment as \u00a743 withholding"
+    },
+    {
+      "case": "Newly declared difference paid by \u00a716(2) due date",
+      "result": "\u00a7156 interest zero; \u00a7155 fine independently computed from original deadline"
+    },
+    {
+      "case": "Previously overdue originally declared balance at supplementary filing",
+      "result": "Existing-balance interest ends at filing under \u00a7156(2), not transposed to new difference"
+    },
+    {
+      "case": "Posting duration24months alone",
+      "result": "Insufficient: substantial home business, direct relationship, no routine replacement, prior coverage evidence"
+    },
+    {
+      "case": "Regular work in2states",
+      "result": "Art13 determination, not automatically serial Art12 postings"
+    },
+    {
+      "case": "Expected posting longer24months",
+      "result": "Art16 agreed-exception route; not automatic entitlement"
+    },
+    {
+      "case": "New TableI interest-free related loan",
+      "result": "Part2 highest principal and year-end balance, principal no longer omitted"
+    },
+    {
+      "case": "New TableI non-significant unaggregated transactions",
+      "result": "Part3 flag; no false general no-reporting statement"
+    },
+    {
+      "case": "2026 return deadline2027",
+      "result": "MF/014309/2026-721 TableI3parts; L1 adjustments L2\u201398\u2192L99\u2192560"
+    },
+    {
+      "case": "2025 return original deadline2026",
+      "result": "Old DPPOv25 controls apply; current-body acquisition price not copied into new tax-base-impact column"
+    },
+    {
+      "case": "January2027 contribution",
+      "result": "Reapply year-specific floor/ceiling/special base, keep underlying July/October income cycle"
+    },
+    {
+      "case": "Extended return deadline July\u2013September",
+      "result": "Carry base used through June under \u00a7138(3)"
+    },
+    {
+      "case": "31December2026 new\u00a711(4) allowance rule",
+      "result": "\u00a752zzzm first applies to2027 tax-period returns, not2026 return filed2027"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "2a17238e565468183276f0f666eaf36fd604e6f0",
+  "findings_closed": [
+    "F15",
+    "F17",
+    "F18",
+    "F20",
+    "F21"
+  ],
+  "Guide_hashes": {
+    "skills/international/slovakia/sk-cross-border.md": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+    "skills/international/slovakia/sk-payroll-social.md": "8268d19f9e76db76470ed913bb6c06b3766fed5e83319cf8595481d4e638da58",
+    "skills/international/slovakia/sk-transfer-pricing.md": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598"
+  },
+  "independent_review": "PASS, two findings fixed and rechecked",
+  "independent_no_loss_population": 193,
+  "original_example_blocks_recomputed": 6,
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "source_artifacts": "Public names prefixed remaining-ordinary; original independent artifact manifest retains private evidence filenames and hashes. Writer initial TP hash superseded by both final independent fixes.",
+  "remaining": [
+    "Current DPFO/DPPO forms under separate writing/review",
+    "Annual actual VAT denominator zero",
+    "Special KV first-breach sanction",
+    "Fixed-gross registration-crossing circularity",
+    "Monthly Prehlad fine band",
+    "Precise treaty and specialist/source reservations in Guides"
+  ],
+  "checks": {
+    "country_examples": "11 files,14 blocks,0 failures,0 missing",
+    "strict_sync": "3 source Guides,0 errors/warnings/notices; HEAD blob CAS, local revision0 validation marker",
+    "schema": "2261 sources/6122 generated PASS; 3 inherited warning groups:798 source sections,5 vintage,5 jurisdiction",
+    "index": "--no-index-check; inherited index mismatch unchanged",
+    "diff_check": "Full staged diff check flags literal context-space lines in the three retained raw .diff.txt evidence files. Raw evidence left byte-exact; focused staged check excludes only those files and passes all Guide/other research changes."
+  }
+}

@@ -1,7 +1,7 @@
 ---
 name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
-version: 0.3
+version: 0.4
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-10-27
@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Slovakia payroll and social contributions, tax year 2026
 
-> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team from Act No. 461/2003 Coll. on social insurance, Act No. 580/2004 Coll. on health insurance, Act No. 595/2003 Coll. on income tax and Act No. 563/2009 Coll. (Tax Procedure Code), with Sociálna poisťovňa, VšZP and Financial Directorate pages, read on 2026-10-23. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Slovak professional.
+> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team from Act No. 461/2003 Coll. on social insurance, Act No. 580/2004 Coll. on health insurance, Act No. 595/2003 Coll. on income tax and Act No. 563/2009 Coll. (Tax Procedure Code), with Sociálna poisťovňa, VšZP and Financial Directorate pages, read on 2026-10-23 and supplemented with the primary-source checks dated 2026-10-27 below. No accountant has reviewed it. Do not run a payroll from it without review by a qualified Slovak professional.
 
 Tax year: the calendar year. Currency: euro. Three bodies collect from a payroll: Sociálna poisťovňa (social insurance), the employee's own health insurer (VšZP, Dôvera or Union, supervised by ÚDZS) and the tax office (Finančná správa) for the wage tax advance. Each has its own registration, report and due date.
 
@@ -80,11 +80,12 @@ SZČO health-advance duties begin with the business, subject to the concurrent-e
 
 **Net pay** = gross − employee social − employee health − tax advance after bonus. **Employer cost** = gross + employer social (with accident) + employer health.
 
-**SZČO social base** (Act 461/2003 §138(2)):
-1. If last year's income from business (not profit) was above EUR 9,144: take the business tax base from the tax return, before deducting the social and health contributions paid. Divide it by 12, then by 1.486, and round down to the cent. The result is at least EUR 914.40 and at most EUR 16,764. It applies from 1 July of the year after the income year to 30 June of the next year, or from 1 October to 30 September with an extended tax deadline.
-2. Otherwise, and for a new entrant, the special base of EUR 396.24 applies.
+**SZČO social base** (Act 461/2003 §138(2), (3), (8), (9) and (14)). Keep the income-derived cycle separate from the calendar-year limits:
+1. For the cycle beginning July 2026, or October 2026 with an extended filing deadline, test 2025 business income (not profit) against EUR 9,144: 50% of the 2024 general assessment base of EUR 18,288. Exactly EUR 9,144 takes the special-base route; income above it takes the 1.486 route. For that route, take the business tax base before social and health contributions, make the statutory adjustments for income and expenses excluded from the assessment base, divide by 12 and by 1.486, and round down to the cent. This income-derived figure runs July to June, or October to September. With an extended return deadline, July–September retains the base used through June (§138(3)).
+2. Apply the minimum and maximum valid for the month being paid. During 2026 the ordinary minimum is EUR 914.40 and the ceiling EUR 16,764. Those amounts reset on 1 January using the general assessment base from two years before the contribution year; the income-derived July/October figure continues until its cycle ends. Do not carry the 2026 floor or ceiling into January 2027, or retest the cycle's income threshold merely because January arrives.
+3. If the income-derived route does not apply, including a new entrant once compulsory insurance starts, use the special base: 26% of one twelfth of the general assessment base from two years before the contribution year. It is EUR 396.24 in 2026 and also resets in January. The 2026 annual reference wage is EUR 1,524: `1,524 × 60% = 914.40`, `1,524 × 11 = 16,764`, and `1,524 × 26% = 396.24`. Future-year amounts require that year's reference wage and law, not reuse of these figures.
 
-Each component (4.4%, 18%, 6%, 4.75%) is rounded down separately.
+Each component (4.4%, 18%, 6%, 4.75%) is rounded down separately. The existing transition through June 2026 above still applies.
 
 **SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The ordinary minimum is EUR 121.92, or EUR 60.96 with a disability, where §16(8)(a) applies. The insurer states the advance in the annual reconciliation. For an SZČO who is concurrently an employee or state-insured under §11(7), use the calculated §16(2)(b) advance without the ordinary minimum (§16(6), (8)(e)); that concurrent person need not remit an advance below EUR 3 (§16(9)). Exactly EUR 3 does not meet the below-EUR-3 exception. This concerns advances, not an assumed zero annual reconciliation.
 
@@ -125,7 +126,8 @@ Social insurance has no annual reconciliation for employees: each month is final
 
 ## Cross-border points
 
-- **EU coordination.** Within the EU, EEA and Switzerland a person is subject to one country's social security law at a time (Regulation 883/2004 Art. 11(1)). A worker posted from Slovakia for work expected to last up to 24 months stays under Slovak law (Art. 12(1)) and carries an A1 form issued by Sociálna poisťovňa. A worker posted to Slovakia with a foreign A1 pays no Slovak social insurance.
+- **EU coordination and posting.** Within the EU, EEA and Switzerland a person covered by the coordination rules is subject to one country's social security law at a time. The ordinary rule is the country of work (Regulation 883/2004 Art.11(1), (3)(a)). An employee posted from Slovakia stays under Slovak law under Art.12(1) only if the expected posting does not exceed 24 months, the employer normally carries out substantial business in Slovakia beyond internal administration, the employee works on its behalf and the direct employment relationship continues throughout, and the employee is not sent to replace another posted person. A short assignment alone does not satisfy those conditions. Keep evidence of the employer's real Slovak activity and turnover, contracts and workforce, and its continuing authority over the nature of work, pay, discipline and termination. For an employee recruited for posting, also establish the immediately preceding Slovak coverage; the current application asks about at least one month.
+  The employer and employee apply sufficiently before departure to the Sociálna poisťovňa branch holding the employer's register. That branch checks the conditions and issues PD A1, which the employer gives to the employee. The current nine-page [official application and instructions](https://socpoist.sk/api/idsp/download/cc10770f-2166-45b6-a4c4-60423faec92a) directly confirm the issuer and evidence. Its narrowly described objective-replacement cases (for example death or long illness, with aggregate posting no longer than 24 months) need the branch's assessment; routine rotation on the same job is not a fresh posting. Keep the conditions satisfied throughout and notify changes. An expected posting beyond 24 months requires the separate Art.16 agreed-exception route rather than an assumed Art.12 entitlement. Regular work in two or more states instead requires an Art.13 applicable-legislation determination; do not classify it automatically as successive postings. A valid foreign A1 establishing foreign legislation for a worker posted to Slovakia means no Slovak social insurance for its covered period (Arts.11–13; official application, pp.5–9).
 - **Foreign employer.** A registered Slovak branch is not the sole wage-tax payer test. Apply ITA §48(1) first: a foreign person can be a payer because of a Slovak permanent establishment or employment in Slovakia for more than 183 days, continuously or cumulatively in any twelve consecutive months, with the specified §16(1)(c) service-provider and diplomatic-office qualifications; §48(1)(b) supplies its separate source-income ground. In an economic-employer case under §5(4), apply §48(2)'s special allocation: the foreign person is not the payer, except that a foreign person with a Slovak organisational branch is a payer to the extent of the wages it provides. Only after establishing that the employer is not a payer apply §35(10)/(11): a resident employee pays their own advances by the end of the following month, and a non-resident follows §35(11), including its from-start treatment where the contract shows more than 183 days. Retain the PE, actual employment-day history, contract and economic-employer facts ([ITA §§35 and 48](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-48)).
 - **Pay taxed abroad.** The employer withholds no advance on pay that is taxed abroad (Act 595/2003 §35(8)). The tax bonus needs at least 90% of total income from Slovak sources (§33(9)). Treaty conditions and documents are in `sk-cross-border`.
 
@@ -179,11 +181,11 @@ expected:
 
 Peter has been self-employed for years. His 2025 return shows business income of EUR 48,000 and a tax base of EUR 21,000, after deducting EUR 7,500 of social and health contributions he paid in 2025. His 2024 return showed a tax base of EUR 24,000 before contributions, for 12 months of business. He has no extended filing deadline and no disability.
 
-His 2025 income is above EUR 9,144, so the 1.486 method applies. The tax base before contributions is 21,000 + 7,500 = EUR 28,500. That gives 28,500 / 12 = EUR 2,375, and 2,375 / 1.486 = EUR 1,598.25 (rounded down). This is between EUR 914.40 and EUR 16,764. From July 2026 to June 2027 he pays EUR 70.32 sickness, EUR 287.68 old age, EUR 95.89 disability and EUR 75.91 reserve fund: EUR 529.80 a month, each due by the 8th of the next month.
+His 2025 income is above EUR 9,144, so the 1.486 method applies. The tax base before contributions is 21,000 + 7,500 = EUR 28,500. That gives 28,500 / 12 = EUR 2,375, and 2,375 / 1.486 = EUR 1,598.25 (rounded down). This is between EUR 914.40 and EUR 16,764. For July–December 2026 he pays EUR 70.32 sickness, EUR 287.68 old age, EUR 95.89 disability and EUR 75.91 reserve fund: EUR 529.80 a month, each due by the 8th of the next month. His EUR 1,598.25 income-derived figure continues through June 2027, but from January it must be checked against the 2027 floor and ceiling; the 2026 payment is not promised for those months.
 
 His 2026 health advance uses 2024: 24,000 / 12 / 1.486 = EUR 1,345.89, and 16% gives EUR 215.34 a month. That is above the EUR 121.92 minimum.
 
-The edge case: if his 2025 income had been EUR 9,144 or less, he would pay on the EUR 396.24 special base, EUR 131.34 a month, not on the EUR 914.40 minimum.
+The edge case: if his 2025 income had been exactly EUR 9,144 or less, he would pay on the EUR 396.24 special base during July–December 2026, EUR 131.34 a month, rather than the EUR 914.40 ordinary minimum. The special base itself resets in January 2027.
 
 ```oa-check
 name: Peter, SZCO, 2025 tax base 21,000 plus 7,500 contributions, social from July 2026
@@ -196,6 +198,7 @@ inputs:
   min_base: 914.40
   max_base: 16764
   special_base: 396.24
+  reference_wage_2024: 1524
 steps:
   - base_raw: floor((tax_base_2025 + contributions_deducted_2025) / 12 / 1.486 * 100) / 100
   - social_base: clamp(base_raw, min_base, max_base)
@@ -207,12 +210,20 @@ steps:
   - health_base: floor(tax_base_2024_before_contributions / months_2024 / 1.486 * 100) / 100
   - health_advance: max(floor(health_base * 16) / 100, 121.92)
   - special_month: floor(special_base * 4.4) / 100 + floor(special_base * 18) / 100 + floor(special_base * 6) / 100 + floor(special_base * 4.75) / 100
+  - annual_floor_2026: reference_wage_2024 * 0.60
+  - annual_ceiling_2026: reference_wage_2024 * 11
+  - annual_special_2026: reference_wage_2024 * 0.26
+  - cycle_income_threshold_2026: reference_wage_2024 * 12 * 0.50
 expected:
   social_base: 1598.25
   social_month: 529.80
   health_base: 1345.89
   health_advance: 215.34
   special_month: 131.34
+  annual_floor_2026: 914.40
+  annual_ceiling_2026: 16764
+  annual_special_2026: 396.24
+  cycle_income_threshold_2026: 9144
 ```
 
 ## Ask the client first
@@ -241,10 +252,12 @@ expected:
 | Financial Directorate, tax bonus on a dependent child in 2026 (podpora page; live site returned 503, read through the Wayback Machine copy of 15 October 2026) | https://podpora.financnasprava.sk/549090-Da%C5%88ov%C3%BD-bonus-na-vy%C5%BEivovan%C3%A9-die%C5%A5a-v-roku-2026 | 2026-10-24 |
 | Ministry of Health Decree No. 159/2018 Coll. on reporting health insurance advances, version from 1 July 2025, §2(2) | https://static.slov-lex.sk/static/SK/ZZ/2018/159/20250701.html | 2026-10-24 |
 | Ministry of Labour, minimum wage for 2026 | https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/historicky-narast-minimalnej-mzdy-je-realitou-roku-2026-je-minimalna-mzda-vo-vyske-915-eur.html | 2026-10-24 |
-| Regulation (EC) No 883/2004, consolidated 31 July 2019, Art. 11 and 12 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-24 |
+| Regulation (EC) No 883/2004, consolidated 31 July 2019, Art. 11 and 12 (existing reference retained) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-24 |
 | Financial Directorate, 31/DZPaU/2025/I, amounts for individuals' tax for 2026 | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.10.17_031_DZPaU_2025_I.pdf | 2026-10-23 |
+| Sociálna poisťovňa, current employee posting A1 application, nine pages including instructions and issuer | https://socpoist.sk/api/idsp/download/cc10770f-2166-45b6-a4c4-60423faec92a | 2026-10-27 |
+| Regulation (EC) No 883/2004, original publication, Arts.11–13 and 16, read for the posting/multistate distinction | https://eur-lex.europa.eu/eli/reg/2004/883/oj/eng | 2026-10-27 |
 
-Not yet confirmed: which fine band in Act 563/2009 §155 the tax office uses for a late monthly Prehľad (Act 595/2003 §39(11) points to §§ 155 and 156 without naming a band); the rule that Sociálna poisťovňa issues the A1 form rests on Regulation 987/2009 Art. 19(2), which was not read.
+Not yet confirmed: which fine band in Act 563/2009 §155 the tax office uses for a late monthly Prehľad (Act 595/2003 §39(11) points to §§155 and 156 without naming a band).
 
 > Contributed by Michael Cutajar.
 

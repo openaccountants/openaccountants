@@ -1,0 +1,19 @@
+[
+  {
+    "id": "P2-fine-threshold",
+    "issue": "Expanded ordinary TP§155fine method omitted§155(11)inclusive non-imposition threshold.",
+    "authority": "Actual current TC§155(11); officialFSfineguidancecorroborates.",
+    "fix": "Root addedEUR5tax/customs,EUR3municipal,5.00vs5.10controls and distinguished§156interest.",
+    "status": "CLOSED",
+    "closure_sha": "7894a2f86948a9dca302daa3ddb3a3f2baf3291c0a5c6c40d7f13d12990899e0",
+    "retained_in_final": true
+  },
+  {
+    "id": "P3-FS18-locator",
+    "issue": "FS18/2021PDFuses numbereditems,notsectionC.",
+    "authority": "ActualthreepagePDFp2item3andfollowingexpenseexclusions.",
+    "fix": "RootcorrectedbothbodylinklabelandSourcestablerow.",
+    "status": "CLOSED",
+    "closure_sha": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598"
+  }
+]

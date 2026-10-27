@@ -1,0 +1,32 @@
+{
+  "December31": {
+    "1": true,
+    "2": true,
+    "11": false,
+    "12": true,
+    "13": true,
+    "15": true,
+    "16": true,
+    "17": true,
+    "17f": true,
+    "17g": true,
+    "18": true,
+    "43": true,
+    "43a": true,
+    "44": true,
+    "45": true,
+    "49": true
+  },
+  "ITA_January2027": {
+    "17": true,
+    "18": true
+  },
+  "TC_January2027": {
+    "16": true,
+    "69": true,
+    "154": true,
+    "155": true,
+    "156": true,
+    "161": true
+  }
+}
