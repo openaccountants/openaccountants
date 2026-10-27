@@ -1,0 +1,32 @@
+[
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/vat-act-2026-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "sha256": "acc5a74c44c5efe077cdcd84dfe42b53c26faf1e95ddb1861767b2f26ff699c6",
+    "bytes": 570637,
+    "method": "independent hash verification and actual body reread; original fetch receipt retained"
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/tax-code-2026-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html",
+    "sha256": "2c8ed12052b2ca1c3b817a8a64f756398983b496eb62945c5b518d0e890fced4",
+    "bytes": 399983,
+    "method": "independent hash verification and actual body reread; original fetch receipt retained"
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/ecsales-method.pdf",
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2018/2018.01.04_MP_vykazov.pdf",
+    "sha256": "b78df23fa6c3f29a4e48f812fa0b4f73d0f9c764f2c0b98474eb966b3ae19531",
+    "bytes": 231588,
+    "method": "independent hash verification and actual body reread; original fetch receipt retained",
+    "independently_extracted_pdf_text_sha256": "d0969d6f234301cbabdfbb3caac7237281c0406cdd31ed3ceed146e733e75177",
+    "independent_extract_matches_reviewed_text": true
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/ecsales-current.html",
+    "url": "https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/suhrnny-vykaz-dph",
+    "sha256": "20031894f43f1466ab6fb1d821c53aa0829d34c52f9e88291fee3b0dfafa4387",
+    "bytes": 76018,
+    "method": "independent hash verification and actual body reread; original fetch receipt retained"
+  }
+]

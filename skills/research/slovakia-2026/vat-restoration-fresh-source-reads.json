@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://intrastat.financnasprava.sk/index.php?page=vsinfo",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "2026 administrative reporting instructions, actual body paras260\u2013264;15th calendar day, nextworking day, quarterly VAT still monthly",
+    "tool_reference": "turn733view0",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  },
+  {
+    "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/international-commerce/vat-number/vat-numbers-issued-by-different-eu-countries/",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "actual official Slovak format row: SK plus10digits",
+    "tool_reference": "turn722view1",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  },
+  {
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "actual historical27:20standard/10listed/remainder separate5route",
+    "tool_reference": "turn722view2/turn723view0",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  },
+  {
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260101.html",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "actual Jan2026sections16/69 and155(1)e/4/16;annual compatibility of restored procedures and100\u201310000range",
+    "tool_reference": "turn722view3/turn723view1/turn723view2/turn735view0",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  },
+  {
+    "url": "https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/danove-priznanie",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "actual current VAT-return page, supplemental corroboration; electronic payer duty rests directly onTaxCode14/15",
+    "tool_reference": "turn734view0",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  },
+  {
+    "url": "https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/suhrnny-vykaz-dph",
+    "read_on": "2026-10-27",
+    "actual_scope_read": "actual current electronic ECsaleslist page read plus verified cached fullbody; national reporting and no-acquisition-on-supplier-list distinction",
+    "tool_reference": "turn734view1",
+    "receipt_kind": "fresh web open/read; no raw-body hash claimed"
+  }
+]

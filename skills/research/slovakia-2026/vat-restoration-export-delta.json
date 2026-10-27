@@ -1,0 +1,33 @@
+{
+  "method": "reverse final export addition and verify exact previously reviewed bb2cb035 hash; final snapshot was captured after parent had already integrated the export change",
+  "controls": [
+    {
+      "name": "exact reverse of single export change reconstructs known reviewed SHA bb2cb035",
+      "pass": true
+    },
+    {
+      "name": "final frozen SHA7509ed35",
+      "pass": true
+    },
+    {
+      "name": "one uniquely changed export bullet",
+      "pass": true
+    },
+    {
+      "name": "export dispatch transport plus customs exit retained",
+      "pass": true
+    },
+    {
+      "name": "special oral deemed alternative not blanket",
+      "pass": true
+    },
+    {
+      "name": "export precise primary47(3)direct link",
+      "pass": true
+    },
+    {
+      "name": "no executable computation changed",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_revision": "187064a83bc15251730448448f9ed8a57a388ba6",
+  "guide": "skills/international/slovakia/slovakia-vat-return.md",
+  "guide_sha256": "7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766",
+  "restored_units": 24,
+  "finite_findings_raised": 2,
+  "finite_findings_open": 0,
+  "independent_assertions": 94,
+  "whole_country_ordinary_complete": false,
+  "accountant_attestation": false,
+  "remaining_ordinary_work": [
+    "VAT Act \u00a750 coefficient method and annual true-up",
+    "VAT registration Guide lacks executable examples",
+    "period-valid return/control-statement form layout",
+    "control-statement sanction first-breach application",
+    "date-specific ECB inputs where needed"
+  ],
+  "evidence": [
+    {
+      "file": "vat-restoration-export-delta.json",
+      "sha256": "38ea16bde0a9d782b645f84db4ce8a190efef7326a69b109f18d426e125c1abd"
+    },
+    {
+      "file": "vat-restoration-fresh-source-reads.json",
+      "sha256": "17f61c7ceb728eefcc06d7756517fe2ea23cb6e9ac071bd3e48c6e62a28194f0"
+    },
+    {
+      "file": "vat-restoration-independent-controls.json",
+      "sha256": "c544468723df9c9e1cfa9cd5ce9c54daff540dc770818e5b2ff62bec2767ed9a"
+    },
+    {
+      "file": "vat-restoration-independent-items.json",
+      "sha256": "4b82bcd46f07abb56b04b6464ec41f168b778c674e23a1ba4ad27ce393132721"
+    },
+    {
+      "file": "vat-restoration-independent-review.md",
+      "sha256": "2ded9444e14db02c6348bcab3a7f29c18f9b4da9bbbf836fb7022b428013af6e"
+    },
+    {
+      "file": "vat-restoration-item-ledger.json",
+      "sha256": "49b648c24b172d89ffc915009873eb3c136187bb829e7e45a43caf712bb88fb7"
+    },
+    {
+      "file": "vat-restoration-old-section-map.md",
+      "sha256": "aa513c8c098fe9978bfd42756b4e38ab1df976700900d5ebb7de28d3a94154a9"
+    },
+    {
+      "file": "vat-restoration-review-manifest.json",
+      "sha256": "bedd3d13dafc5e749630a5af2cb9784b860df7f6b4c0c9fbdce12cf9935fdac1"
+    },
+    {
+      "file": "vat-restoration-source-receipts.json",
+      "sha256": "44e8bcc74f5a4fe92dd766588f343d73c1e6c74ff82cd8e15bf29a1cc36bab5a"
+    }
+  ],
+  "whole_pack_example_check": {
+    "files": 11,
+    "blocks": 12,
+    "failures": 0,
+    "missing": [
+      "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md"
+    ]
+  }
+}
