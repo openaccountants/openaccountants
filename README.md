@@ -83,7 +83,7 @@ The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the
 
 ## Need the work done?
 
-OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in every country they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
+OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in the countries they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
 
 ---
 
