@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-individual-income-tax-and-payroll.md",
+  "sha256": "9cf772fa4c4f22e0dc5558a18e3c8e65b820c4045122e44831fab9019b4d9943",
+  "sources": [
+    {
+      "url": "https://agoyemen.net/lib_details.php?id=198",
+      "locators": [
+        "3: alternative individual residence tests",
+        "40: original quarterly small-enterprise payroll",
+        "48–50: employment income and conditional exclusions/exemptions",
+        "62: annual resident bands",
+        "63(f): nonresident employment rate",
+        "98–102: assessment, withholding, employer and recipient duties",
+        "Articles 65–67: resident payroll 15% cap; single/prorated exemption; specified other benefits at 15%; monthly one-twelfth bands"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/8-2021/",
+      "locators": [
+        "Article 1 adding160(c): small/micro enterprise and employee exemption;application unresolved"
+      ]
+    }
+  ],
+  "checks": "Targeted schema passed without warnings;two executable blocks passed",
+  "review": "v0.2 full independent re-review completed, including adjacent articles62–71. No further material defect; prior v0.1 approval explicitly withdrawn. Corrected hash verified by reviewer.",
+  "limits": [
+    "Not validated monthly payroll engine",
+    "Administration-specific applicability unresolved",
+    "Current amendment chain unresolved",
+    "No complete individual/payroll coverage",
+    "No professional attestation or publication",
+    "Interaction of nonresident63(f) and additional-payment66 remains unresolved; regular salary example excludes66payments"
+  ],
+  "version": "0.2"
+}

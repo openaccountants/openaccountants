@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-property-income-and-transfers.md",
+  "sha256": "af39ea77789d82043111d8bb8d90d0b202515f5b07e7995f69f15628288d04f7",
+  "sources": [
+    {
+      "url": "https://agoyemen.net/lib_details.php?id=198",
+      "locators": [
+        "51–55: rental scope, natural/legal person bases, exemptions",
+        "56–61: transfer value, liability, registration gate and exemptions",
+        "69–70: one-month natural-person rent and 1% transfer value",
+        "103–105: rental and transfer returns/payment",
+        "81–82: 30-day vacancy/cessation and sale notices, accrued-tax joint liability",
+        "111–112: separate business cessation return and payment with return"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/8-2021/",
+      "locators": [
+        "160(c): small-landlord exemption and reporting; applicability unresolved"
+      ]
+    }
+  ],
+  "checks": "Targeted schema passed without warnings;two executable examples passed",
+  "review": "Independent review found missing30-day sale notice and recommended vacancy notification/payment timing clarifications. Corrected against primary text. Final wording not separately re-reviewed.",
+  "limitations": [
+    "Full current amendment chain unresolved",
+    "Administration-specific applicability unresolved",
+    "No complete capital/property coverage",
+    "No professional attestation",
+    "Unpublished local draft"
+  ]
+}
