@@ -1,0 +1,42 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf",
+      "bytes": 733298,
+      "sha256": "6c0ddb7be452ece394912123d37858d80cc9049036779f1aaef9f1ad7abd80d5"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-8-of-2016-Income-Tax-Amendment.pdf",
+      "bytes": 278716,
+      "sha256": "041894329334769e4f86dfe49f847a56d3fb1828841f209c81aad86fe6aa1a66"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-26-of-2016-Income-Tax-Amendment-Act-Commencment-Order.pdf",
+      "bytes": 188291,
+      "sha256": "7c67c4727dce03a0d9bb8f73158dc04a16f763e3dd65b946a97a8b4e39684c2d"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf",
+      "bytes": 625095,
+      "sha256": "c5b8f4ae6bb87968bb0e1ce86817a0ccb486a8eeb8eb015de8f949a794c21e2c"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf",
+      "bytes": 51448,
+      "sha256": "674e68eae606bbc781a2918f9dbe56d3d1440abbf71ac2ffea642d086e79cd23"
+    }
+  ],
+  "corroboration": {
+    "url": "https://www.ird.gd/gtax/index.html",
+    "access": "web text; no local hash claimed"
+  },
+  "review_status": "independent review pending",
+  "gaps": [
+    "Section 50 versus section 96 remittance timing",
+    "Section 50(2) versus Third Schedule accrual timing",
+    "Later amendments and current penalty calculations",
+    "Resident exceptions, interest exemptions, treaty and dividend treatment",
+    "Current filing forms and route"
+  ]
+}
