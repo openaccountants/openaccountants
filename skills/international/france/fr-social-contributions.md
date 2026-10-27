@@ -15,10 +15,10 @@ description: >
   scope: payroll for employees and assimilés salariés (france-payroll), income tax
   (fr-income-tax, fr-personal-income-tax), CFE (fr-cfe), cross-border residence
   (fr-cross-border).
-version: 2.1
+version: 2.2
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -56,7 +56,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | PASS, Mayotte | EUR 36,264 (month 3,022) | 2026 | same page |
 | Single base: allowance on gross income (CSS L. 136-3 III) | 26% | from 2025 income | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html |
 | Allowance floor and ceiling (CSS D. 136-5) | floor 1.76% PASS (EUR 846); ceiling 130% PASS (EUR 62,478) | 2026 | https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049888566 |
-| Micro-fiscal business that is not an auto-entrepreneur: allowance replacing the 26% | 71% sales, 50% BIC services, 34% BNC | from 2025 income | same page |
+| Micro-fiscal business that is not an auto-entrepreneur: allowance replacing the 26% | 71% sales, 50% BIC services, 34% BNC; 30% unclassified furnished letting; 87% micro-BA (URSSAF 2026 declaration notice: "30% (location meublée non classée) ou 87% (BA)") | from 2025 income | same page |
 | Maladie-maternité 1, full rate (CSS D. 621-1) | 8.5% up to 3 PASS; 6.5% on the part above | 2026 | https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html |
 | Maladie 1, reduced rate below 3 PASS (CSS D. 621-2) | 0% below 20% PASS (EUR 9,612); rises linearly 0 to 1.5% (20-40%), 1.5 to 4% (40-60%), 4 to 6.5% (60-110%), 6.5 to 7.7% (110-200%), 7.7 to 8.5% (200-300%) | 2026 | same page |
 | Maladie 2, daily benefits: artisan, commerçant, unregulated liberal (D. 621-3) | 0.50% up to 5 PASS (EUR 240,300); minimum base 40% PASS | 2026 | same page |
@@ -69,6 +69,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Invalidité-décès, Cipav | 0.50% up to 1.85 PASS (EUR 88,911) | 2026 | Cipav page |
 | Allocations familiales (CSS D. 613-1) | 0% up to 110% PASS (EUR 52,866); rising rate 110-140%; 3.10% above 140% (EUR 67,284) | 2026 | ac-plnr page |
 | CSG and CRDS on activity income | 9.70% (CSG 9.20% + CRDS 0.50%) | 2026 | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html |
+| CSG and CRDS on replacement income of a travailleur indépendant | 6.70% | 2026 | ac-plnr page ("Revenus de remplacement 6,70 %") |
 | Training levy (CFP), on 1 PASS | 0.25% commerçant and liberal (EUR 120); 0.29% artisan (EUR 139); 0.34% with conjoint collaborateur (EUR 163) | 2026, paid November 2026 | ac-plnr page |
 | Minimum contributions, general group | daily benefits EUR 96 (base EUR 19,224); retraite de base EUR 967 (base EUR 5,409, 450 hourly Smic); invalidité-décès EUR 72 (base EUR 5,527, 11.5% PASS) | 2026 | ac-plnr page |
 | Minimum contributions, Cipav | daily benefits EUR 58; retraite de base EUR 573 (base EUR 5,409); invalidité-décès EUR 89 (base EUR 17,782, 37% PASS) | 2026 | Cipav page |
@@ -77,6 +78,11 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Maximum contributions, Cipav | daily benefits EUR 433; retraite de base EUR 8,690; retraite complémentaire EUR 35,565; invalidité-décès EUR 445 | 2026 | Cipav page |
 | First and second year flat base | 19% PASS: EUR 9,131 in 2026 | 2026 | ac-plnr page; CSS L. 131-6-2 |
 | First year 2026 without Acre, general group, training levy excluded | EUR 3,473 | 2026 | ac-plnr page |
+| First year 2026, Cipav: supplementary pension on the flat base (never exempted by Acre) | EUR 9,131 at 11% = EUR 1,004 | 2026 | Cipav page ("Taux 11 % ... Montant annuel 1 004 €") |
+| Overseas (not Mayotte): maladie 1, fixed rate | 8.50% up to EUR 144,180 (3 PASS); 6.50% above | 2026 | ac-plnr page |
+| Overseas (not Mayotte): allocations familiales, fixed | 3.10% on the whole income | 2026 | ac-plnr page |
+| Overseas start-up exemption (24 months), by income | income EUR 52,866 to 72,090 (110-150% PASS): exemption worth 110% PASS; EUR 72,090 to 120,150 (150-250% PASS): tapering; above EUR 120,150: none | 2026 | ac-plnr page |
+| Overseas, 3rd year / 4th year onward, income below EUR 72,090 | allowance of 75% / 50% of income, capped at 1 PASS | 2026 | ac-plnr page |
 | Acre, base at or below 75% PASS (EUR 36,045) (CSS L. 131-6-4, D. 131-6-1) | exemption of one quarter of maladie, daily benefits, family, retraite de base and invalidité-décès contributions, 12 months | creations from 1 Jan 2026 | https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189 |
 | Acre, base between 75% PASS and 1 PASS | exemption = 0.25 x E / (0.25 x PASS) x (PASS - income), E = those contributions at 75% PASS; nil at 1 PASS | creations from 1 Jan 2026 | same |
 | Micro-entrepreneur global rate (CSS D. 613-4) | sales BIC 12.3%; BIC services 21.2%; BNC (SSI) 25.6%; Cipav 23.2%; classified tourist lettings 6% | from 1 Jan 2026 | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
@@ -97,7 +103,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 **Real-base self-employed: the single base (CSS L. 131-6, L. 136-3).**
 
 1. **Gross income, business taxed to income tax:** BIC profit (produits less charges, excluding long-term gains and losses) or BNC receipts less expenses, without deducting the social contributions or the deductible CSG. The special CGI deductions listed in CSS R. 136-1 (for example art. 39 AB, 39 decies) are added back. Tax exemptions are not deducted socially: the 2026 URSSAF declaration notice says so in terms.
-2. **Gross income, business taxed to corporation tax:** the manager's pay and benefits in kind or cash, plus the part of dividends and associate current account interest received by the manager, spouse or PACS partner and minor children that exceeds 10% of their capital, share premiums and current account balances. For an entreprise individuelle taxed to IS the reference is 10% of net profit, or the affected assets if higher.
+2. **Gross income, business taxed to corporation tax:** the manager's pay and benefits in kind or cash, plus the part of dividends and associate current account interest received by the manager, spouse or PACS partner and minor children that exceeds 10% of their capital, share premiums and current account balances. Capital and share premiums are taken on the last day of the financial year before the distribution; the current account at its annual average balance (sum of the monthly average balances divided by the number of months) (URSSAF 2026 declaration notice: "apprécié au dernier jour de l'exercice précédant la distribution des revenus"; "le solde moyen annuel"). For an entreprise individuelle taxed to IS the reference is 10% of net profit, or the affected assets if higher.
 3. **Apply the allowance:** 26% of gross income (L. 136-3 III), never less than 1.76% PASS (EUR 846 in 2026) and never more than 130% PASS (EUR 62,478 in 2026) (CSS D. 136-5). The ceiling bites from gross income of EUR 240,300. A micro-fiscal business that is not an auto-entrepreneur uses its tax allowance (71%, 50% or 34%) instead.
 4. **The same base serves every contribution and the CSG and CRDS.** Before the reform the CSG base added back the contributions; it no longer does. URSSAF says the overall levy is unchanged: CSG and CRDS fall, pension rises. The URSSAF page "Quelles sont vos cotisations", updated 5 October 2026, still describes the old CSG base. The statute (L. 136-3) wins.
 
@@ -128,7 +134,7 @@ All URSSAF figures are mainland France and overseas except Mayotte, 2026, unless
 | Income declaration for social and tax purposes (déclaration des revenus des indépendants) | between April and June each year, with the income tax return | impots.gouv.fr |
 | Monthly payment | 12 debits January to December, on the 5th or the 20th | URSSAF online account |
 | Quarterly payment | 5 February, 5 May, 5 August, 5 November | URSSAF online account |
-| Training levy (real base) | called once, with the November instalment | URSSAF |
+| Training levy (real base) | called once, with the November instalment; calculated finally, not regularised | URSSAF |
 | First payments of a new business | no sooner than 90 days after the start | URSSAF |
 | Cessation | balance within 30 days of the avis d'appel; deferred or spread amounts within 60 days | URSSAF |
 | Change between monthly and quarterly | any time, once per calendar year | online account |
@@ -213,6 +219,10 @@ expected:
 - **For a company taxed to IS: capital, share premiums, current account balances and dividends paid to the manager's household.** They set the dividend share added to the base.
 - **Is the client on the RSA or the prime d'activité, or also employed or retired?** The first switches off the minimum contributions; the second does not.
 - **Which document a figure comes from (provisional echeancier, regularised echeancier, avis) and for which year.** In 2026 the old and the reformed base can both appear.
+- **Did the client's profession leave Cipav under the 2018 reform, or did the client exercise an option?** The pension rates then depend on the registration date and the option: escalate.
+- **For co-managers near half the shares, or holdings that changed during the year:** get the share register with dates. Crossing 50% moves the manager between this skill and payroll.
+
+Defaults while waiting: activity type or caisse unknown, do not compute; income unknown, apply the minimum bases; Acre unconfirmed in writing, no Acre; mainland or overseas unknown, ask; client both employed and self-employed, both sets of contributions apply and flag how the capped pension bands interact.
 
 ## Sources
 
