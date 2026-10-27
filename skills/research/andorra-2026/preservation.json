@@ -2,10 +2,10 @@
   {
     "path": "skills/international/andorra/README.md",
     "old_bytes": 2528,
-    "new_bytes": 4468,
-    "size_change_percent": 76.74,
+    "new_bytes": 4754,
+    "size_change_percent": 88.05,
     "old_sha256": "250a2f727e31b68eb8b365bf9083f9fe15c6c7bd75f8dd44cccc8ef1a9c05813",
-    "new_sha256": "45860dea956286ea4d9cc987aade8270e68588bc0733ad7a6a0e692b896101fb",
+    "new_sha256": "e0ea0fb26a165dd17efc61ce7ece765d3d347687fb6cffcd6caf0e9c9d9be709",
     "cta_unchanged": true,
     "supporting_unchanged": null
   },
@@ -22,20 +22,20 @@
   {
     "path": "skills/international/andorra/ad-corporate-income-tax.md",
     "old_bytes": 21380,
-    "new_bytes": 31268,
-    "size_change_percent": 46.25,
+    "new_bytes": 31464,
+    "size_change_percent": 47.17,
     "old_sha256": "fd442bfecdb48a21732d57091096374572d02b5a5ae3564e15e51b1282419d33",
-    "new_sha256": "70c05997d3be1d0dc0e8c8e4c95a5293831555af3e7def3d4f8fb2ced07ed182",
+    "new_sha256": "7eba190975a0eb66ea4b9c71f0cd300837f7286b5a573a78dd90ecde84473338",
     "cta_unchanged": true,
     "supporting_unchanged": null
   },
   {
     "path": "skills/international/andorra/ad-income-tax.md",
     "old_bytes": 52348,
-    "new_bytes": 28040,
-    "size_change_percent": -46.44,
+    "new_bytes": 31032,
+    "size_change_percent": -40.72,
     "old_sha256": "a4ab4b8bc510f9ee41fcad9e1efcdf1df8fe2adfea55513eb5eca8288919213c",
-    "new_sha256": "f9950e5e93cf696bb0cc222aac38bdf0f8e2b2b3d1b6358c1f9d00db2ff03f5d",
+    "new_sha256": "f6a957038f00272d234c5b498dca4ab265b17aa99c24c066378a1f695bcad3f5",
     "cta_unchanged": true,
     "supporting_unchanged": null
   },
@@ -52,10 +52,10 @@
   {
     "path": "skills/international/andorra/ad-payroll-social.md",
     "old_bytes": 41890,
-    "new_bytes": 34244,
-    "size_change_percent": -18.25,
+    "new_bytes": 35126,
+    "size_change_percent": -16.15,
     "old_sha256": "ca091b7cf301d1f88c09fec59a0e3cad8726b085fadc053babd2ea4fb2499e09",
-    "new_sha256": "5dd608ad7c8b1cd7ee97c46beeb4f3805d934aba6c96d849ba7028785736914a",
+    "new_sha256": "7a8f69de77fb41d9830ce93a318bf22f269b7f432781dad216c33f435a8a65a0",
     "cta_unchanged": true,
     "supporting_unchanged": null
   },
