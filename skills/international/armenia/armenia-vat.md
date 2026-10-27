@@ -296,7 +296,7 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network of accountants who put
+This guide is maintained by the OpenAccountants network — accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

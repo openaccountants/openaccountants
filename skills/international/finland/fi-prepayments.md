@@ -152,7 +152,7 @@ Not yet confirmed: 2027 interest rates and the exact December 2026 opening day f
 
 ## Talk to a verified accountant
 
-This skill is maintained by the OpenAccountants network, accountants who put
+This guide is maintained by the OpenAccountants network — accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
@@ -163,9 +163,3 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
-
-[register]: https://vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/
-[late]: https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/if-you-pay-late/
-[adjust]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/making-a-claim-for-adjustment-against-a-decision-on-prepayments/
-[backtax]: https://www.vero.fi/en/individuals/payments/back-taxes/payment-instructions/
-[prepayment-home]: https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/

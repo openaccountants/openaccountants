@@ -75,7 +75,7 @@ The independent source review, corrections and remaining gaps are recorded in th
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network: accountants who put
+This guide is maintained by the OpenAccountants network — accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
@@ -86,3 +86,9 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
+## Sources and review limits
+
+This router was reconciled to the existing Finland source pack on 26 October 2026. Tax rules and official URLs belong to the linked topic Guides; no independent legal conclusion is supplied by this index. Earlier 2025 summary figures remain in Git history and must not substitute for current topic-source checks.
+
+The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.

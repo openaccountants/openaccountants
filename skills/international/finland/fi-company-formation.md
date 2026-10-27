@@ -153,7 +153,7 @@ Not yet confirmed: complete company/accounting/Trade Register and fee-law chains
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network: accountants who put
+This guide is maintained by the OpenAccountants network — accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
@@ -164,3 +164,22 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
+
+## Sources and review limits
+
+Read 23 October 2026. PRH's startup page was directly opened. Permit, general filing, financial-statement and late-filing instructions were read as indexed official text. The listed company/auditing provisions were read directly from official Finlex HTML statutory content; retrieval hashes are in the country research record.
+
+- [PRH startup routes][startup]; [foreign-person permits][permits]; [filing instructions][filing].
+- [Companies Act 624/2006][companies-law], chapter 1 sections 2–3, chapter 2 sections 8–9, chapter 5 section 3, chapter 6 sections 8, 10 and 19, chapter 8 section 10.
+- [Auditing Act 1141/2015][audit-law], chapter 2 section 2. The statutory positive omission test is used rather than ambiguous English summaries of the two-period condition.
+- [PRH financial statements][statements]; [2026 late-filing notice][late].
+
+Not yet confirmed: complete company/accounting/Trade Register and fee-law chains; entity comparisons, share rights and non-cash subscriptions, all foreign-person exemptions, beneficial-owner specifics, group/sector audit and sustainability rules, actual late-fee cases and live filing. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). This secondary formation topic does not establish any core tax domain as complete.
+
+[startup]: https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html
+[permits]: https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html
+[filing]: https://www.prh.fi/en/companiesandorganisations/muutokset_rekisteritietoihin/yleisohje.html
+[companies-law]: https://www.finlex.fi/fi/lainsaadanto/2006/624
+[audit-law]: https://www.finlex.fi/fi/lainsaadanto/2015/1141
+[statements]: https://www.prh.fi/en/companiesandorganisations/financial_statements/limited_liability_companies_co-operatives_and_other_companies/digital.html
+[late]: https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/financial-statements-submitted-late-27.5.2026.html
