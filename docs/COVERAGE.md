@@ -19,7 +19,7 @@ Rules:
 python3 scripts/coverage-report.py --summary
 ```
 
-The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](../GOAL.md) and says, per jurisdiction, which are present and which are missing. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](../OWNERS.md).
+The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](../GOAL.md) and says, per jurisdiction, which are present and which are missing. Its “tax-domain maps with no missing domain” figure is an inventory result only. It does not check current official sources, recomputing examples, independent full-pack review or named-accountant review, and it does not calculate comprehensive coverage. A skill's presence is not coverage. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](../OWNERS.md).
 
 Two other sources exist and disagree with each other, because they count different things:
 

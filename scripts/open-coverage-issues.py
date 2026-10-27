@@ -5,7 +5,7 @@ coverage report. Idempotent: a jurisdiction that already has an open issue
 with that title is skipped. Needs the gh CLI, logged in.
 
 Usage:
-    python3 scripts/open-coverage-issues.py --dry-run        # print what would be opened
+    python3 scripts/open-coverage-issues.py --dry-run        # preview local candidates; no GitHub query
     python3 scripts/open-coverage-issues.py                  # open them
     python3 scripts/open-coverage-issues.py --owner ryan     # one owner only
 """
@@ -53,6 +53,8 @@ def body_for(row):
 Owner: {row['owner']}  Region: {row['region']}
 Skills now: {row['skills']}  Reviewed: {row['reviewed']}  Stale (>365 days): {row['stale']}
 
+This issue is the GitHub work record for the country. The counts below are inventory only: Guide presence and source preparation do not establish comprehensive coverage.
+
 **Domains present:** {fmt(row['present'])}
 **Domains missing:** {fmt(row['missing'])}
 **Not applicable:**
@@ -61,22 +63,37 @@ Skills now: {row['skills']}  Reviewed: {row['reviewed']}  Stale (>365 days): {ro
 Done when:
 - [ ] `{row['dir']}/README.md` declares `applicable:` and `not_applicable:` (with reasons)
 - [ ] one skill per applicable tax domain, in the deep-tax shape from docs/skill-template.md (rules, figures with sources, deadlines, penalties, two worked examples that recompute)
-- [ ] `python3 scripts/validate-guides.py --changed-only` passes
-- [ ] `python3 scripts/coverage-report.py --owner {row['owner']}` shows this code with no missing domains
-- [ ] PR merged by a maintainer, closing this issue
+- [ ] every material claim is checked against current official sources, with source URLs and read dates in the Guides
+- [ ] `python3 scripts/check-examples.py --changed-only --require` passes for the country batch
+- [ ] `python3 scripts/validate-guides.py --changed-only` and the required CI checks pass
+- [ ] one independent reviewer has checked the full country pack against its sources and examples; all findings are fixed
+- [ ] the complete country batch is published in one country PR, not separate PRs for individual Guides
+- [ ] after source checks and independent review are recorded, GitHub native auto-merge is enabled only with required CI and reviewer approval protections; otherwise leave the PR for a maintainer
+- [ ] a named accountant has reviewed the full applicable pack and each applicable domain is marked Accountant-reviewed (`tier: 1`, `reviewed_by`, `reviewed_on`)
+- [ ] `python3 scripts/coverage-report.py --owner {row['owner']}` shows no missing applicable tax domains
+- [ ] the PR uses `Closes #N` only after all gates pass; while accountant review is open, use `Refs #N` and leave this issue open
+- [ ] maintainer closes this issue only after every gate above passes
 
-See GOAL.md for the three tests and docs/skill-template.md for the format.
+See GOAL.md for the three goal tests and the country-batch workflow. A tax-domain map with no missing domain is still not comprehensive coverage until source, example, independent-review and accountant-review gates pass.
 """
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--dry-run", action="store_true", help="preview local candidates without querying GitHub")
     ap.add_argument("--owner")
     ap.add_argument("--update", action="store_true", help="rewrite the body of issues that already exist")
     args = ap.parse_args(argv)
 
     rows = report(args.owner)["rows"]
+    if args.dry_run:
+        for row in rows:
+            title = f"[{row['code']}] Complete the pack"
+            labels = f"coverage,owner:{row['owner']}"
+            print(f"candidate: {title}  [{labels}]  missing: {', '.join(row['missing']) or 'none'}")
+        print("GitHub issue state was not queried; candidates may already have an open issue.")
+        return 0
+
     have = existing_issues()
     opened = skipped = updated = 0
     for row in rows:
@@ -95,10 +112,6 @@ def main(argv=None):
                 skipped += 1
             continue
         labels = f"coverage,owner:{row['owner']}"
-        if args.dry_run:
-            print(f"would open: {title}  [{labels}]  missing: {', '.join(row['missing']) or 'none'}")
-            opened += 1
-            continue
         cmd = [
             "gh", "issue", "create", "-R", REPO, "--title", title, "--label", labels,
             "--milestone", MILESTONE, "--body", body_for(row),

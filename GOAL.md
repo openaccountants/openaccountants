@@ -14,18 +14,20 @@ There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `ti
 
 ## Where we are
 
-`python3 scripts/coverage-report.py --summary`, run on 2026-10-22 (tax domains only):
+`python3 scripts/coverage-report.py --summary`, run on 2026-10-25 (tax-domain inventory only):
 
 | Measure | Now |
 |---|---|
-| Skills | 2,134 |
-| Jurisdictions (real codes; pseudo-codes such as GLOBAL and INTL excluded) | 266 |
-| Jurisdictions with 7 skills or fewer | 193 |
-| Complete tax packs (no applicable tax domain missing) | 4 |
-| Packs with a README declaring applicability | 0 |
+| Skills | 2,250 |
+| Jurisdiction units in the repository catalogue (countries, territories, US states and Canadian provinces; pseudo-codes such as GLOBAL and INTL excluded) | 266 |
+| Jurisdictions with 7 skills or fewer | 184 |
+| Tax-domain maps with no missing applicable domain | 33 |
+| Packs with a README declaring applicability | 29 |
 | Skills with a named reviewer (`tier: 1`) | 33 |
 
-So the work is not "add countries". It is going deep on tax: turning 266 thin or partial packs into complete, verified ones, then getting them reviewed.
+These are inventory counts, not comprehensive-coverage counts. The 33 tax-domain maps only show that the report found a skill for each applicable domain and no domain marked `partial`; the report does not verify sources, examples, independent pack review, or sign-off by a named accountant. It does not yet calculate how many packs pass all three goal tests.
+
+The work is to finish each jurisdiction pack, verify it, and get it reviewed. A skill's presence, a source packet, or a row with no missing domain is not comprehensive coverage.
 
 ## Workstreams
 
@@ -43,10 +45,13 @@ Coverage is one of seven. Each has a label; every issue carries one workstream l
 
 ## How work moves
 
-- One issue per jurisdiction, `[XX] Complete the pack`, labelled `coverage` and `owner:<name>`, on the milestone. The issue body lists the domains missing.
-- The owner, or their agent, drafts, verifies sources, and opens a PR per jurisdiction or small batch with `Closes #N`. A maintainer merges. Nothing counts until merged.
-- A newcomer takes an `owner:open` issue, or asks for one.
-- Status is read from the milestone and the Monday coverage report, never from memory.
+GitHub issues are the work board and the repository is the content record. Do not keep a second board or a shadow assignment list. There is one `[XX] Complete the pack` issue per jurisdiction, labelled `coverage` and `owner:<name>`. The issue records the owner, current gaps, handoffs, independent-review status and accountant-review status. Different countries can move in parallel; only one writer owns a country at a time. Record a handoff on that country's issue before another writer takes it.
+
+Finish all applicable domains for one country locally, source-check every material claim, make sure every Guide has two recomputing worked examples, and run the relevant repository checks. Then get one independent review of the full pack and fix its findings. Publish one country batch, not one PR per Guide. Reuse the active consolidated PR when OWNERS.md assigns the workstream there. After source checks and the independent review are documented, queue the PR for GitHub's native auto-merge. GitHub must require the configured CI checks and reviewer approval before merging. If those protections are not configured, leave the PR pending a maintainer; never bypass the gates.
+
+Sign-off by a named accountant is the final coverage gate. A merged source-cited batch can improve the public library, but it does not complete the country issue or count as comprehensive coverage until the full applicable pack is reviewed by a named accountant and the pack passes the other two goal tests. Use `Closes #N` only when the PR completes those gates; otherwise use `Refs #N` and leave the issue open.
+
+Take an `owner:open` issue only after checking that no writer has an active claim. Record `taking` on the issue before drafting. Status comes from the GitHub issue and merged repository state, not memory or a file count.
 
 ## For agents
 
@@ -54,7 +59,7 @@ Coverage is one of seven. Each has a label; every issue carries one workstream l
 gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "Cover the world" --state open --json number,title,body
 ```
 
-Pick one, comment `taking`, branch `pack/<code>`, follow the checklist in the issue body, open a PR with `Closes #N`. The issue body, the pack README and [docs/skill-template.md](docs/skill-template.md) are the whole spec.
+Pick one available country issue, comment `taking`, and work on a country branch. Follow the issue checklist, README and [docs/skill-template.md](docs/skill-template.md). Do not open a PR until the complete country batch has passed source checks and independent pack review. Use `Closes #N` only for a country that also passes the named-accountant gate; otherwise reference the issue and leave it open.
 
 ## Owners
 

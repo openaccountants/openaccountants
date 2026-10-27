@@ -39,6 +39,27 @@ class PartialDomainsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             self.assertEqual(cr.read_pack_readme(d), (None, {}, {}, {}))
 
+    def test_summary_does_not_call_inventory_comprehensive_coverage(self):
+        report = {
+            "generated_on": "2026-10-25",
+            "guides": 1,
+            "jurisdictions": 1,
+            "domain_complete": 1,
+            "with_readme": 1,
+            "reviewed_skills": 0,
+            "pseudo_codes": {},
+            "rows": [{
+                "owner": "michael", "region": "europe", "code": "XX", "name": "Example",
+                "domain_complete": True, "skills": 1, "reviewed": 0, "stale": 0, "missing": [],
+            }],
+        }
+        summary = "\n".join(cr.summary_lines(report))
+        self.assertIn("Tax-domain maps with no missing domain: 1", summary)
+        self.assertIn("Comprehensive packs: not computed", summary)
+        markdown = "\n".join(cr.table_lines(report["rows"], markdown=True))
+        self.assertIn("Inventory only", markdown)
+        self.assertIn("Comprehensive coverage is not computed", markdown)
+
 
 if __name__ == "__main__":
     unittest.main()

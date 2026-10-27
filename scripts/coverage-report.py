@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-Coverage report: how far each jurisdiction is from a complete pack.
+Coverage report: tax-domain inventory for each jurisdiction pack.
 
-Tax packs only (GOAL.md, 22 Oct 2026): a jurisdiction is complete when every
-applicable tax domain is present. Reads the skill tree through build-index.py (in memory, so it never lags the
-committed index.json), groups guides by jurisdiction code, and says for each
-real jurisdiction which taxonomy domains are present and which are missing.
+Tax packs only (GOAL.md): reads the skill tree through build-index.py
+(in memory, so it never lags the committed index.json), groups guides by jurisdiction
+code, and reports which taxonomy domains appear present or missing. A domain-complete
+row is an inventory result only. It does not verify sources, calculations, independent
+pack review or named-accountant attestation, so it must not be presented as comprehensive
+coverage.
 Pseudo-codes (GLOBAL, INTL, EU variants, templates) are reported separately
 and never counted as jurisdictions.
 
@@ -181,7 +183,7 @@ def build_report(today=None):
             "not_applicable": not_applicable,
             "partial": partial,
             "has_readme": applicable is not None or bool(not_applicable),
-            "complete": not missing,
+            "domain_complete": not missing,
         })
     # Jurisdictions listed in the data file but with no guide at all.
     for code, info in meta.items():
@@ -190,7 +192,7 @@ def build_report(today=None):
                 "code": code, "name": info.get("name") or code, "region": info.get("region") or "unassigned",
                 "owner": info.get("owner") or "open", "dir": info.get("dir") or "", "skills": 0, "reviewed": 0,
                 "stale": 0, "present": [], "missing": list(DOMAIN_CODES), "not_applicable": {}, "partial": {},
-                "has_readme": False, "complete": False,
+                "has_readme": False, "domain_complete": False,
             })
     rows.sort(key=lambda r: (r["owner"], r["region"], r["code"]))
     return {
@@ -198,9 +200,11 @@ def build_report(today=None):
         "guides": index["counts"]["guides"],
         "jurisdictions": len(rows),
         "pseudo_codes": pseudo,
-        "complete": sum(1 for r in rows if r["complete"]),
+        "domain_complete": sum(1 for r in rows if r["domain_complete"]),
         "with_readme": sum(1 for r in rows if r["has_readme"]),
         "reviewed_skills": index["counts"]["accountant_reviewed"],
+        "comprehensive_packs": None,
+        "comprehensive_packs_note": "Not computed: source verification, worked examples, independent pack review and full-pack accountant attestation require separate checks.",
         "rows": rows,
     }
 
@@ -208,18 +212,19 @@ def build_report(today=None):
 def summary_lines(report):
     rows = report["rows"]
     lines = [
-        f"Coverage report, {report['generated_on']}",
-        f"Skills: {report['guides']:,}  Jurisdictions: {report['jurisdictions']}  "
-        f"Complete packs: {report['complete']}  Packs with README: {report['with_readme']}  "
+        f"Tax-domain inventory report, {report['generated_on']}",
+        f"Skills: {report['guides']:,}  Jurisdiction units: {report['jurisdictions']}  "
+        f"Tax-domain maps with no missing domain: {report['domain_complete']}  Packs with README: {report['with_readme']}  "
         f"Reviewed skills: {report['reviewed_skills']}",
+        "Comprehensive packs: not computed by this inventory report.",
         f"Pseudo-codes (not jurisdictions): {', '.join(f'{k} ({v})' for k, v in sorted(report['pseudo_codes'].items()))}",
         "",
-        f"{'Owner':<9}{'Juris':>6}{'Complete':>10}{'Thin(<=7)':>11}{'No skills':>11}{'Stale skills':>14}",
+        f"{'Owner':<9}{'Juris':>6}{'Domain OK':>10}{'Thin(<=7)':>11}{'No skills':>11}{'Stale skills':>14}",
     ]
     for owner in sorted({r["owner"] for r in rows}):
         rs = [r for r in rows if r["owner"] == owner]
         lines.append(
-            f"{owner:<9}{len(rs):>6}{sum(1 for r in rs if r['complete']):>10}"
+            f"{owner:<9}{len(rs):>6}{sum(1 for r in rs if r['domain_complete']):>10}"
             f"{sum(1 for r in rs if 0 < r['skills'] <= 7):>11}{sum(1 for r in rs if r['skills'] == 0):>11}"
             f"{sum(r['stale'] for r in rs):>14}"
         )
@@ -228,7 +233,12 @@ def summary_lines(report):
 
 def table_lines(rows, markdown=False):
     if markdown:
-        out = ["| Owner | Region | Code | Name | Skills | Reviewed | Stale | Missing domains |", "|---|---|---|---|---|---|---|---|"]
+        out = [
+            "> Inventory only: domain presence does not verify sources, calculations, independent review or accountant attestation. Comprehensive coverage is not computed.",
+            "",
+            "| Owner | Region | Code | Name | Skills | Reviewed | Stale | Missing domains |",
+            "|---|---|---|---|---|---|---|---|",
+        ]
         for r in rows:
             out.append(f"| {r['owner']} | {r['region']} | {r['code']} | {r['name']} | {r['skills']} | {r['reviewed']} | {r['stale']} | {', '.join(r['missing']) or 'none'} |")
         return out
