@@ -1,0 +1,37 @@
+[
+  {
+    "name": "minimum-jan2026",
+    "url": "https://www.cass.ad/sites/default/files/arxius/CASS_CALENDARI%20DELS%20PAGAMENTS%20DE%20PENSIONS%20PER%20A%20L%E2%80%99ANY%202026%20fitxa%2030-04-2026.pdf",
+    "sha256": "3138b5d6ff0bd64ae4193e77fa3ec973fc759fc4eec995a5853204b807d72621",
+    "bytes": 677574,
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "minimum-july2026",
+    "url": "https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20salari%20m%C3%ADnim%20a%20partir%20de%20l%271%20de%20juliol%20del%202026_0.pdf",
+    "sha256": "d491a9cd0cc7091448743679f2f8e54a0d2f0448b1ddf74c71b17f49c008057b",
+    "bytes": 340173,
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "minimum-jan2026",
+    "url": "https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20Salari%20m%C3%ADnim%202026.pdf",
+    "sha256": "ed1f15914c07d6b963b74fe6fe34c18be5e48b10df35bc476d922813b29587ee",
+    "bytes": 345142,
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "minimum-jan2026",
+    "url": "https://www.cass.ad/sites/default/files/documents/Calendari%202026.pdf",
+    "sha256": "7e142974b4654acb1134ae82f385d69871a362d564ed9d0da5e0f383cb07c2ec",
+    "bytes": 164952,
+    "read_date": "2026-10-27"
+  },
+  {
+    "name": "minimum-jan2026",
+    "url": "https://www.cass.ad/sites/default/files/documents/Calendari%202026.pdf",
+    "sha256": "7e142974b4654acb1134ae82f385d69871a362d564ed9d0da5e0f383cb07c2ec",
+    "bytes": 164952,
+    "read_date": "2026-10-27"
+  }
+]
