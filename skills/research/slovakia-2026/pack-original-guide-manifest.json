@@ -1,0 +1,76 @@
+[
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+    "sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+    "bytes": 30456,
+    "original_rev": "c9c520db^",
+    "original_sha256": "6e0901c419b4d99a7a2ddf7dfdf30f0830662b849dfdc8e17b553ece223c30d2",
+    "original_bytes": 18255
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-company-formation.md",
+    "sha256": "e824e5d28a4a15f6d9a727a7a78b49d6b04462e11bd29fbab1406e2f116cee5b",
+    "bytes": 4379
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-payroll-social.md",
+    "sha256": "1f63ecfa92278560ee779b0013d1357cfdb190b075f43e993de2be9fd687f527",
+    "bytes": 29140,
+    "original_rev": "b01d09d0^",
+    "original_sha256": "acbfbf7b90b1a0ff45092e6712528152d97b049ce59113cc9cee6cbd21ca712d",
+    "original_bytes": 4410
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/README.md",
+    "sha256": "78cbf25412a15c6fd87d597ba9749d786ddc0fbb955f149733c40622455142fc",
+    "bytes": 4913
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/references.md",
+    "sha256": "c6dbf7cd9e9e42ad52354f5d4fdb6260a333177b3bcf8a87e0f68fcdc8716472",
+    "bytes": 2071
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-transfer-pricing.md",
+    "sha256": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23",
+    "bytes": 33795,
+    "original_rev": "298bb516^",
+    "original_absent": true
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-cross-border.md",
+    "sha256": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd",
+    "bytes": 28515,
+    "original_rev": "74ac9cd1^",
+    "original_absent": true
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-tax-overview.md",
+    "sha256": "238ae80d30a5f919a3beb51942a38c8ef2156b7d42cdd7955c46959f88bc35f9",
+    "bytes": 3708
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-corporate-income-tax.md",
+    "sha256": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f",
+    "bytes": 27162,
+    "original_rev": "513ef7cb^",
+    "original_sha256": "4bdec05c19ab21b8a4226e83098c4b5eeaf34a84b07bd98a7653a44477e62eaf",
+    "original_bytes": 4274
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-return.md",
+    "sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531",
+    "bytes": 44412,
+    "original_rev": "c9c520db^",
+    "original_sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+    "original_bytes": 37813
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-pit.md",
+    "sha256": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07",
+    "bytes": 22641,
+    "original_rev": "92fb47e3^",
+    "original_sha256": "d4c0c10d6b693512407a43614e6a8807e509119b47c897a828b4be57a964665f",
+    "original_bytes": 9370
+  }
+]

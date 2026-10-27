@@ -1,10 +1,10 @@
 ---
 name: slovakia-pit
 description: "Slovak personal income tax (daň z príjmov fyzickej osoby, DPFO) for tax year 2026 under Act 595/2003 as amended by Act 261/2025. Covers residents and non-residents in outline, employment income (§5), self-employed SZČO business income (§6) with the 60% flat-rate expenses capped at EUR 20,000, the 15% rate for business revenue up to EUR 100,000, the new 19%, 25%, 30% and 35% bands set as multiples of the subsistence minimum (EUR 284.13), the 2026 personal allowance of EUR 5,966.73 and its phase-out, the spouse allowance, the child tax bonus and its taper above EUR 27,432, the EUR 17 minimum tax rule, capital income, the 31 March 2027 deadline and extensions, advances and penalties. Trigger on: daň z príjmov 2026, DPFO typ A, DPFO typ B, SZČO, živnostník, paušálne výdavky, nezdaniteľná časť, daňový bonus, Slovak income tax 2026. Out of scope: payroll withholding and contributions in sk-payroll-social, companies in sk-corporate-income-tax, non-residents and treaties in sk-cross-border."
-version: 1.1
+version: 1.2
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: personal income tax for employees and the self-employed (2026) v1.1
+# Slovakia: personal income tax for employees and the self-employed (2026) v1.2
 
 Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
@@ -51,7 +51,7 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Business base (§6(1),(2)) when that business revenue is EUR 100,000 or less | 15% | 2026 | same, §15(a)(2) |
 | Business base when that business revenue exceeds EUR 100,000 | 19% / 25% / 30% / 35% bands as above | 2026 | same, §15(a)(3) |
 | Capital income special base (§7), for example foreign interest | 19% | 2026 | same, §15(a)(4) |
-| Foreign dividends special base (§51e(3)(a)) | 7% (35% from a non-cooperating state) | 2026 | same, §15(a)(5),(6) |
+| Foreign dividends special base (§51e) | 7% for profit periods beginning in 2017–2023 or from 1 January 2025; 10% for periods beginning in 2024; 35% non-cooperating-state rule separately applies | Paid in 2026; rate follows profit period | [ITA §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Personal allowance (21.0 x), base up to 91.8 x (EUR 26,083.13) | EUR 5,966.73 | 2026 | same, §11(2)(a) |
 | Personal allowance, base above EUR 26,083.13 | EUR 14,661.11 (51.6 x) minus one third of the base; zero from a base of EUR 43,983.32 | 2026 | same, §11(2)(b) |
 | Spouse allowance (19.2 x), taxpayer base up to EUR 43,983.32 | up to EUR 5,455.30, less the spouse's own income | 2026 | same, §11(3)(a) |
@@ -65,7 +65,7 @@ The bands and allowances are multiples of the subsistence minimum (životné min
 | Minimum tax of an individual | no tax assessed if the tax is EUR 17 or less, or total income is EUR 2,983.37 or less; not where a child or mortgage bonus is claimed or tax was withheld | 2026 | same, §46a |
 | Tax due in the return not paid | if EUR 5 or less | 2026 | same, §46 |
 | Exempt: rental plus occasional income | first EUR 500 a year | 2026 | same, §9(1)(g) |
-| Exempt: listed securities held over one year (not business assets) | fully exempt | 2026 | same, §9(1)(k) |
+| Exempt regulated-market securities under §9(1)(k) | Both acquisition and regulated-market-admission clocks must exceed one year; business assets and the specified §9(1)(p)/§5(7)(q) noncash-share cases excluded, with §52zzz(3) transition | 2026 | [ITA §9(1)(k), §52zzz(3)](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html) |
 | Advances: last known tax over EUR 5,000 up to EUR 16,600 / over EUR 16,600 | quarterly 1/4 / monthly 1/12 | 2026 | same, §34(1)-(3) |
 
 **How the bands work.** The law sets two separate bases (§4(1)). Base (a) is employment income after allowances, plus rental and other income. Base (b) is business income after allowances and losses. Each base is taxed on its own scale in §15(a): base (a) always on the 19% to 35% bands, base (b) at 15% if business revenue is EUR 100,000 or less, otherwise on the same bands.
@@ -89,9 +89,9 @@ The result is the business partial base. A tax loss can be carried forward five 
 - The spouse allowance needs a spouse living with the taxpayer who cared for a minor child, received a care allowance, was a registered jobseeker, or is disabled (§11(4)). The spouse's own income is net of their contributions. Months count only if the conditions held at the start of the month (§11(5)).
 - Allowances come off the employment base first, and only the rest comes off the business base (§11(12)).
 
-**Rental (§6(3)) and other income (§8).** Income minus proven expenses. Rental income and occasional income are exempt up to EUR 500 in total (§9(1)(g)). Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)-(f),(t)) are taxed on the gain. A loss on one type is ignored (§8(2)). Several sales are exempt if held long enough, for example listed securities held over a year (§9(1)(k)). These gains are taxed in base (a) on the bands.
+**Rental (§6(3)) and other income (§8).** Start with the actual income and supported category-specific expenses. Under §9(1)(g), rental and §8(1)(a) occasional income share EUR 500 of annual income exemption. If they exceed that amount, include only the excess and reduce related expenses in the same taxable-income/total-income proportion. For a rental-only case with EUR 6,000 receipts, EUR 2,000 expenses and the whole EUR 500 available, taxable receipts are EUR 5,500; allowable expenses are `2,000 × 5,500 / 6,000`, approximately EUR 1,833.33, leaving approximately EUR 3,666.67 before the applicable filing-rounding steps. Full EUR 2,000 expenses cannot be deducted against the reduced receipts, and rental expenses cannot create a rental loss (§6(6)). Where qualifying §8(1)(d)–(f) option/security/share disposals also occur, §9(1)(i) applies to their proceeds less statutory disposal costs, with its business-asset and specified noncash-share exclusions; the exemptions under (g) and (i) together cannot exceed EUR 500. Do not give each category another EUR 500. Sales of property, movable things, options, securities, shares in an s.r.o. and crypto-assets (§8(1)(b)–(f),(t)) retain their actual gain/exemption rules; a loss on one type is ignored (§8(2)). The §9(1)(k) securities exemption requires more than one year since acquisition **and** more than one year between regulated-market admission and sale, excluding business assets and the specified §9(1)(p)/§5(7)(q) noncash-share cases, subject to §52zzz(3)'s acquisition-after-2023 transition. These taxable gains enter base (a) on the bands ([ITA §§6, 8, 9 and 52zzz](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
 
-**Capital income (§7).** Slovak interest is taxed by withholding under §43 and stays out of the return (§7(3)). Foreign interest and similar income go in a special base taxed at 19% (§15(a)(4)). Dividends from a Slovak company are taxed by withholding. Foreign dividends go in a special base at 7%, or 35% from a non-cooperating state (§51e, §15(a)(5),(6)).
+**Capital income (§7).** Slovak interest is taxed by withholding under §43 and stays out of the return (§7(3)). Foreign interest and similar income go in a special base taxed at 19% (§15(a)(4)). Dividends from a Slovak company are taxed by withholding. For ordinary foreign profit dividends, select the profit period before the rate: 7% for periods beginning in 2017–2023 and from 1 January 2025, but 10% for periods beginning in 2024, even when all are received in 2026. The 35% non-cooperating-state rule is separate (§51e, §15(a)(5),(6), §52zi(5), §52zzz(4), §52zzzb(5)). For EUR 10,000 gross, those ordinary domestic-law rates give EUR 700 or EUR 1,000 before applicable foreign-tax relief. Pre-2017 profit distributions need their historical regime and are not assigned either rate here.
 
 **Credits.** From the tax computed:
 - **Child tax bonus (§33).** EUR 100 a month for each child under 15 and EUR 50 a month for each child aged 15 to 18, for each month at whose start the conditions were met (§33(1),(5)). The child lives in the taxpayer's household, and the taxpayer needs employment or business income. The total is capped at a percentage of the employment or business partial base, or their sum, taken before allowances (§33(6)); the Financial Administration's worked return uses that base. If that base exceeds EUR 27,432, the bonus for each child falls by one tenth of the excess (§33(11)). Only one parent claims (§33(4)). If the bonus exceeds the tax, the difference is paid out (§33(7)). The taxpayer must have at least 90% of income from Slovak sources (§33(9)).
@@ -220,6 +220,8 @@ expected:
 | Financial Administration, worked DPFO type A example with the child bonus (tax year 2025, same §33 text): the bonus cap is tested on the §5 partial base before allowances (row 39 / 56a, not row 44) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Obcania/Dan_z_prijmov/2026/2026.01.15_prilad_BONUS.pdf | 2026-10-24 |
 
 Not yet confirmed: the current ECB base rate behind the penalty and interest floors; the 2026 DPFO form versions; the young person's mortgage bonus conditions in §33a.
+
+Historical source credit from the original Guide: `priznanie-digital/priznanie-digital` (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
 > Contributed by Michael Cutajar.
 

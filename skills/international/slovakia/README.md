@@ -6,12 +6,16 @@ covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
 partial:
+  IT-IND: "Ordinary mortgage-interest credit across old/new contract populations and the remaining child-credit boundaries require completion under the fresh pack review."
+  IT-CORP: "The ordinary interest-limit exceptions, statutory base and carryforward require completion; the vehicle-specific VAT rule has been corrected and awaits reviewer recheck."
+  SC: "Employee health-minimum exceptions and pension-category contribution treatment require completion under the fresh pack review."
+  PR: "Foreign-employer wage-tax payer status needs its PE and 183-day gates corrected under the fresh pack review."
   VAT: "The annual §50 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide now has two recomputing examples and a passing independent review; its current form identifiers and the exact fixed-gross crossing-supply circularity remain unconfirmed. Period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
 ---
 
 # Slovakia: tax pack
 
-Calendar tax year. Authority: the Financial Administration (Finančná správa SR); returns are filed electronically through eDane. Euro. Residents are taxed on worldwide income, non-residents on Slovak-source income. For 2026 individuals pay 19%, 25%, 30% or 35% depending on the band, set as multiples of the subsistence minimum. Companies pay 10%, 21% or 24% depending on taxable revenue. Payments to non-residents carry withholding tax (19%, 7% on dividends to individuals, 35% for non-cooperating states) or a 19% / 35% security deduction.
+Calendar tax year. Authority: the Financial Administration (Finančná správa SR); returns are filed electronically through eDane. Euro. Residents are taxed on worldwide income, non-residents on Slovak-source income. For 2026 individuals pay 19%, 25%, 30% or 35% depending on the band, set as multiples of the subsistence minimum. Companies pay 10%, 21% or 24% depending on taxable revenue. Payments to non-residents carry withholding tax (19%, 7% or 10% on individual profit dividends according to the generating profit period, 35% for non-cooperating states) or a 19% / 35% security deduction.
 
 ## Domains
 

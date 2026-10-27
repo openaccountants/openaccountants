@@ -1,10 +1,10 @@
 ---
 name: sk-transfer-pricing
 description: "Use this skill for Slovak transfer pricing (transferové oceňovanie) in tax year 2026. It covers dependent persons (závislá osoba, Income Tax Act § 2(n) to (r), the 25% test), significant controlled transactions (over EUR 10,000, or loans over EUR 50,000 principal), the arm's length adjustment in § 17(5), corresponding adjustments in § 17(6), methods and the median rule in § 18(1), full, basic and shortened documentation under Ministry of Finance guideline MF/012879/2025-724 and who keeps which, Table I of the corporate return, the 15-day deadline to hand documentation over, penalties and late payment interest under the Tax Code, country-by-country reporting (EUR 750 million) and APAs under § 18(4) to (10). Trigger on: transfer pricing Slovakia, transferové oceňovanie, závislá osoba, kontrolovaná transakcia, transferová dokumentácia, APA Slovakia. Out of scope: corporate tax in general (sk-corporate-income-tax), individual income tax (slovakia-pit), VAT (slovakia-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovakia: transfer pricing (2026) v0.1
+# Slovakia: transfer pricing (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on Slov-Lex, the guideline from the Ministry of Finance (mfsr.sk) and the return guidance from the Financial Directorate (financnasprava.sk), all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -82,6 +82,8 @@ At the ECB base rate of 2.65%: 3 times is 7.95%, so the 10% floor applies to an 
 2. it would pay for the service if an independent person supplied it, or it would do the work itself;
 3. it can show the total costs and how they are split among those who benefit;
 4. its share is booked in its accounts or tax records.
+
+**Materiality for documentation tier selection.** Where guideline art. 3 relies on Accounting Act §17(9), information is material if omitting it or stating it incorrectly could affect a financial-statement user’s judgement or decision. Assess the item in the context of those statements; this is not an extra universal euro threshold replacing the guideline’s actual tests ([Accounting Act §17(9)](https://static.slov-lex.sk/static/SK/ZZ/2002/431/20260101.html#paragraf-17); [guideline art.3](https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf)).
 
 **Methods** (§ 18(1) to (3)). The law names five methods:
 
@@ -171,8 +173,8 @@ A Slovak s.r.o. has taxable revenue of EUR 3,000,000 in 2026, so its rate is 21%
 1. Documentation check: the fee is cross-border and above EUR 10,000, so it is significant. The company does not report under IFRS, claims no regional investment aid and Austria is not a non-cooperative state. The fee is below EUR 1,000,000 and the company's revenue is below EUR 8,000,000, so neither full nor basic documentation applies (guideline art. 3(1) and (2)). Table I in the 2026 return meets the duty (guideline art. 3(3)).
 2. Adjustment to the median: EUR 250,000 less EUR 180,000 = EUR 70,000 (ITA § 17(5)(a), § 18(1)).
 3. Extra tax at 21%: EUR 14,700.
-4. Penalty: the ECB rate used is the one on the day the assessment is delivered (TC § 155(7)). The example assumes it is still 2.65%: 3 times is 7.95%, so the 10% floor applies (§ 155(5)). The floor stops applying only if the ECB rate rises above 3.33%. It runs from 1 April 2027 (the day after the 31 March 2027 deadline) to 30 June 2028, the date the § 16(9) window is assumed to close: 457 days. On a 365-day year: 14,700 x 10% x 457 / 365 = EUR 1,840.52. That is above the 1% minimum of EUR 147.
-5. Paying within 15 days of the assessment cuts the penalty to two thirds: EUR 1,227.01 (§ 155(17)).
+4. Penalty: the ECB rate used is the one on the day the assessment is delivered (TC § 155(7)). The example assumes it is still 2.65%: 3 times is 7.95%, so the 10% floor applies (§ 155(5)). The floor stops applying only if the ECB rate rises above 10/3% (3⅓%). It runs from 1 April 2027 (the day after the 31 March 2027 deadline) to 30 June 2028, the date the § 16(9) window is assumed to close: 457 days. Split the calendar years: 275 days in 2027 over 365, and 182 days in leap year 2028 over 366. Raw penalty is `14,700 × 10% × (275/365 + 182/366) = 1,838.517853…`; Tax Code §161 rounds it down to tens of eurocents, giving EUR 1,838.50. That exceeds the 1% minimum of EUR 147.
+5. Paying within 15 days of the assessment cuts the penalty to two thirds: EUR 1,225.60 after the same §161 downward rounding (§155(17)).
 6. Late payment interest is extra and is not computed here, because the ECB rate on the day the arrears arose is not yet known.
 7. To relieve the double tax, the parent asks Austria for a corresponding adjustment through the treaty's mutual agreement procedure or the EU Arbitration Convention.
 
@@ -183,19 +185,22 @@ inputs:
   median_fee: 180000
   cit_rate: 21
   penalty_rate: 10
-  days: 457
-  days_in_year: 365
+  days_2027: 275
+  days_2028: 182
+  year_2027: 365
+  year_2028: 366
 steps:
   - adjustment: fee_paid - median_fee
   - extra_tax: adjustment * cit_rate / 100
-  - penalty: round(extra_tax * penalty_rate / 100 * days / days_in_year, 2)
-  - penalty_paid_early: round(penalty * 2 / 3, 2)
+  - raw_penalty: extra_tax * penalty_rate / 100 * (days_2027 / year_2027 + days_2028 / year_2028)
+  - penalty: floor(raw_penalty * 10) / 10
+  - penalty_paid_early: floor(penalty * 2 / 3 * 10) / 10
   - minimum_penalty: extra_tax / 100
 expected:
   adjustment: 70000
   extra_tax: 14700
-  penalty: 1840.52
-  penalty_paid_early: 1227.01
+  penalty: 1838.50
+  penalty_paid_early: 1225.60
   minimum_penalty: 147
 ```
 
@@ -207,7 +212,7 @@ A Slovak a.s. has taxable revenue of EUR 9,000,000, so its rate is 24%. In 2025 
 2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.
 3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).
 4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).
-5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). On 30 November 2026 it is 2.65% (in force from 16 September 2026), below 3%, so the 3% floor applies (§ 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.
+5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). Assume it is 2.65% on the future 30 November 2026 filing date; this is a scenario input, not a rate observed at the 27 October read date. It is below 3%, so the 3% floor applies (§155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. Raw penalty is `28,800 × 3% × 244 / 365 = 577.578082…`; §161 downward rounding to tens of eurocents gives EUR 577.50.
 6. Had the office found it on audit instead, the 10% floor would apply over a longer period (TC § 155(1)(f)).
 
 ```oa-check
@@ -224,12 +229,13 @@ steps:
   - add_back: royalty_paid - royalty_alp
   - over_basic_threshold: royalty_paid - basic_doc_threshold
   - extra_tax: add_back * cit_rate / 100
-  - penalty: round(extra_tax * penalty_rate / 100 * days / days_in_year, 2)
+  - raw_penalty: extra_tax * penalty_rate / 100 * days / days_in_year
+  - penalty: floor(raw_penalty * 10) / 10
 expected:
   add_back: 120000
   over_basic_threshold: 200000
   extra_tax: 28800
-  penalty: 577.58
+  penalty: 577.50
 ```
 
 ## Ask the client first
@@ -256,8 +262,10 @@ expected:
 | Ministry of Finance, transfer pricing page | https://www.mfsr.sk/sk/dane-cla-uctovnictvo/priame-dane/dane-z-prijmu/transferove-ocenovanie/ | 2026-10-23 |
 | Financial Directorate, 12/PO/2026/IM, filling Table I of the 2025 corporate return | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/DPPO/2026/2026.03.26_012_PO_2026_IM.pdf | 2026-10-23 |
 | Národná banka Slovenska, ECB key interest rates | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-23 |
+| Financial Administration, penalty-rate guidance: actual calendar-year day denominators; Tax Code §161, downward rounding to tens of eurocents | https://podpora.financnasprava.sk/425494-Pokuty--sadzby-pok%C3%BAt ; https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-161 | 2026-10-27 |
+| Accounting Act §17(9), materiality used by documentation guideline art.3 | https://static.slov-lex.sk/static/SK/ZZ/2002/431/20260101.html#paragraf-17 | 2026-10-27 |
 
-Not yet confirmed: the day-count basis the tax office uses for per-day penalties and interest (the examples assume 365 days); whether interest also runs on tax disclosed in a timely supplementary return, alongside the § 155(1)(g) penalty; the end date of the audit penalty where no § 16(9) window applies; whether a TP adjustment that raises income counts towards the EUR 100,000 and EUR 5,000,000 revenue tests in § 15; whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the materiality test in Accounting Act § 17(9) that the guideline uses (not read); the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.
+Not yet confirmed: whether interest also runs on tax disclosed in a timely supplementary return, alongside the § 155(1)(g) penalty; the end date of the audit penalty where no § 16(9) window applies; whether a TP adjustment that raises income counts towards the EUR 100,000 and EUR 5,000,000 revenue tests in § 15; whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.
 
 > Contributed by Michael Cutajar.
 

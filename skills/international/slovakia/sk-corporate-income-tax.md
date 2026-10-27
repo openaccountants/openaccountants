@@ -1,10 +1,10 @@
 ---
 name: sk-corporate-income-tax
 description: "Slovak corporate income tax (daň z príjmov právnických osôb) for tax year 2026 under Act No. 595/2003 Coll. as amended, including Act No. 261/2025 Coll. Covers the three rates set by taxable revenue (10% up to EUR 100,000, 24% above EUR 5,000,000, 21% otherwise), the minimum tax with its new EUR 11,520 band for revenue above EUR 5,000,000, the tax base from accounting profit, paid-basis expenses, unrecoverable VAT, depreciation groups 0 to 6, the 5-year loss carry-forward with the 50% cap, the two interest limits (25% EBITDA for related-party loans and 30% above EUR 3,000,000 net interest), dividends, advances, the DPPO return and extensions, and penalties. Trigger on: Slovakia corporate tax, DPPO, s.r.o. tax, 10% rate Slovakia, minimálna daň, daňová licencia, preddavky na daň. Out of scope: individuals (slovakia-pit), payroll (sk-payroll-social), VAT (slovakia-vat-return), company set-up (sk-company-formation)."
-version: 0.1
+version: 0.2
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -62,7 +62,7 @@ Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individual
 **Common add-backs.**
 - Expenses that are not tax expenses under § 21, such as representation (entertainment) costs, and fines and penalties imposed by public bodies.
 - Expenses deductible only when paid (§ 17(19)). Among them: rent and royalties; marketing and market studies; commissions; legal and advisory services under CPA codes 69.1, 69.2, 70.1 and 70.22; contractual penalties and late payment interest owed by the company; payments to a person in a non-cooperating state once withholding duties are met. If they are booked in 2026 and paid in 2027, they come into the 2027 base.
-- From 1 January 2026, VAT that a VAT payer has no right to deduct is not a tax expense, and on tangible assets it is not part of the entry price (§ 52zzzk, inserted by Act No. 261/2025). If the split between business and non-business use of the asset later changes, that VAT is not taken into the base either. Check this for any VAT-registered client with exempt supplies or blocked input VAT.
+- From 1 January 2026, the nondeductible-VAT rule in § 52zzzk applies specifically to VAT restricted under [VAT Act § 85n](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-85n), as its footnote 161 states. That restricted vehicle-related VAT is not a tax expense and, for the specified tangible vehicle, is not part of its tax entry price; the linked later business/private-use VAT change is outside the income-tax base. This is not a general disallowance of all VAT that an exempt or mixed business cannot recover. Ordinary nondeductible VAT and coefficient VAT follow § 19(3)(k): eligible expense VAT can be a tax expense; VAT included in tangible/intangible asset entry price under § 25(5)(b)/(c) instead follows the asset treatment. For example, outside the § 85n restriction, a qualifying machine costing EUR 10,000 plus EUR 2,300 VAT, with 60% VAT recovery, has EUR 920 nondeductible VAT and tax entry price EUR 10,920, not an automatic EUR 920 add-back ([ITA §§ 19, 25 and 52zzzk](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html)).
 - Accounting depreciation above tax depreciation.
 - Interest caught by § 21a or § 17k (see below).
 

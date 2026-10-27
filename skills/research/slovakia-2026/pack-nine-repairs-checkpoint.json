@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-27",
+  "baseline": "ad42d100",
+  "status": "Nine defined findings corrected and independently rechecked",
+  "findings": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F12"
+  ],
+  "guides": [
+    {
+      "file": "sk-corporate-income-tax.md",
+      "sha256": "e1f61cf17e9c1db88993519eefc82550d1d7cba63814b28ee99303db3712fbf2",
+      "bytes": 27850
+    },
+    {
+      "file": "slovakia-pit.md",
+      "sha256": "1c23502f00dff55c940adbf7790f77c20f2b4d27bcacb068b317580240ce7a3a",
+      "bytes": 25014
+    },
+    {
+      "file": "sk-cross-border.md",
+      "sha256": "aaa7da1943048c6568c717df7d1595929f18129c72ee8e95e3476412fa98f810",
+      "bytes": 29324
+    },
+    {
+      "file": "sk-transfer-pricing.md",
+      "sha256": "36da53364ba985b215ed1d6e45783836e91b7219e47e25e5f00c561bfa4cfa0d",
+      "bytes": 35148
+    },
+    {
+      "file": "sk-payroll-social.md",
+      "sha256": "6a6fea4123d16d3b78b5bdd4ccc292615bdebbb192e0741cca2ca263465f04e6",
+      "bytes": 32574
+    }
+  ],
+  "whole_pack_review": "FAIL/incomplete: additional ordinary findings and historical unit dispositions remain",
+  "accountant_attestation": false,
+  "historical_no_loss": "Full original VAT text retained as historical TXT; source-credit restored in PIT; comparison/workflow/specialist-reference dispositions remain explicit in original-content review",
+  "remaining": "F09,F10,F11,F13,F14,F15,F17,F18,F19,F20,F21 plus specifically disclosed VAT annual denominator0,first-breach KV and fixed-gross crossing edge;historical removed-unit disposition",
+  "evidence": [
+    {
+      "file": "pack-nine-finding-closure.json",
+      "sha256": "2ed52440aceba0dee9b187cd7079db3aa9532028b6dcc859c21ae38aeea9bae6"
+    },
+    {
+      "file": "pack-interim-findings.json",
+      "sha256": "5c4d1bc16ab1b251927408e4aba27d498dddfe8cd81258c423e6535519c6c699"
+    },
+    {
+      "file": "pack-original-content-review.md",
+      "sha256": "29404c54505e76cdbc7c067003885851dc43216a5ad6e59682299560834dd650"
+    },
+    {
+      "file": "pack-original-guide-manifest.json",
+      "sha256": "986da4305eaab6c172632081bd56bc878b165a11256fe745d2556d8ca7016dd3"
+    },
+    {
+      "file": "pack-nine-repairs-sync.txt",
+      "sha256": "76142d89a388590a8f53d7bfab66ba511e70d2f0197373082cae6d93e08c4615"
+    },
+    {
+      "file": "pack-nine-repairs-validation.txt",
+      "sha256": "c5cc9827d84736b323c425bc386eecc4f3a58419da04e898378e610a4b0970ac"
+    }
+  ]
+}

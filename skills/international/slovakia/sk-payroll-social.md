@@ -1,10 +1,10 @@
 ---
 name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
-version: 0.2
+version: 0.3
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -32,7 +32,7 @@ See also: `slovakia-pit` (the annual return, other income, flat-rate expenses), 
 - Insurance now lasts until the licence ends. The old income test at 1 July no longer ends it.
 - **Transition:** to 30 June 2026 an SZČO who held a licence before 1 January 2026 stays under the old rules. Under those rules insurance started on 1 July 2025 (1 October 2025 with an extended tax deadline) if 2024 income was above EUR 8,580 (Sociálna poisťovňa, 2026 tables, note 3).
 
-Every SZČO pays health insurance advances from the start of the business (Act 580/2004 §16(2)(b), (8)(a)).
+SZČO health-advance duties begin with the business, subject to the concurrent-employment/state-insured exceptions and the below-EUR-3 rule described in the base method (Act 580/2004 §16(2)(b), (8), (9)).
 
 **Not covered here.** Voluntary insurance (dobrovoľne poistená osoba), the special scheme for municipal police, and health insurance on dividends. See `slovakia-pit` for an SZČO's annual return.
 
@@ -50,8 +50,8 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 | Health insurance, employee | 5% (2.5% for a person with a disability), no cap | 2026 | [Act 580/2004](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html) §12(1)(a); [VšZP, changes from 1 January 2026](https://www.vszp.sk/platitelia/platenie-poistneho/oznamenia-zmeny/zmeny-od-01-01.2026/) |
 | Health insurance, employer | 11% (5.5% for an employee with a disability), no cap, for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(c) |
 | Health insurance, SZČO | 16% (8% with a disability), for 2026 and 2027 | 2026 | Act 580/2004 §38ezk(b); VšZP, changes from 1 January 2026 |
-| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability); set by the Act, so the same at every insurer | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |
-| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25); set by the Act, so the same at every insurer | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1) |
+| Minimum monthly health advance, SZČO (16% of 50% of EUR 1,524) | EUR 121.92 (EUR 60.96 with a disability) where the statutory minimum applies; concurrent employment/state-insured exceptions below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §13(10), §16(8)(a) |
+| Minimum monthly health advance per employee (5% + 11% of the subsistence minimum of EUR 284.13, each rounded down) | EUR 45.45 (employee EUR 14.20 + employer EUR 31.25) for a full month without §16a(2) excluded days; concurrent-employer election below | 2026 | VšZP, changes from 1 January 2026; Act 580/2004 §16a, §16(1) |
 | Health deductible amount for a low-paid employee who claims it | Up to EUR 380 a month, zero from EUR 570 of pay; up to EUR 4,560 a year in the reconciliation | 2026 | Act 580/2004 §16(16) to (18), §13a; [VšZP, odpočítateľná položka](https://www.vszp.sk/platitelia/platenie-poistneho/odpocitatelna-polozka/) |
 | SZČO social insurance: sickness 4.4%, old age 18%, disability 6%, solidarity reserve 4.75% | 33.15% of the assessment base | 2026 | Sociálna poisťovňa, 2026 tables; Act 461/2003 §§ 130 to 132, 137 |
 | SZČO minimum social base (60% of EUR 1,524) and payment | EUR 914.40; EUR 303.11 a month | 2026 | Sociálna poisťovňa, 2026 tables, note 1; Act 461/2003 §138(8) |
@@ -72,7 +72,7 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 
 **Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). From 2026 the employee and employer pay social insurance on any pay accounted during sickness, maternity or care leave. The old exclusion periods are gone for employees (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).
 
-**Employee health base.** The same employment income, with no ceiling (Act 580/2004 §13(1); VšZP, employer page). The employer's 11% runs on the gross before any deductible amount (§13(4), §16(2)(c)). The total employee and employer health advance must be at least EUR 45.45 for a full month; any shortfall is added to the employee's share (§16a).
+**Employee health base.** The same employment income, with no ceiling (Act 580/2004 §13(1); VšZP, employer page). The employer's 11% runs on the gross before any deductible amount (§13(4), §16(2)(c)). Start with the EUR 45.45 combined minimum only for a full month without excluded days. Under §16a(2), reduce that minimum proportionately for calendar days when the person is self-employed, state-insured under §11(7)/(8), disabled, declared missing, or not an employee. Count each excluded calendar day once. Compare the reduced minimum with the actual employee-plus-employer advance, after the applicable deductible amount; only a positive shortfall increases the employee share (§16a(3)/(4)). An employee with concurrent employers can elect not to apply that shortfall increase and must notify the employer within eight days of the employment/concurrency starting, and within eight days of a change. The employee also communicates excluded-day status where another body is not required to notify it; retain the prescribed written notice (§16a(5)). With EUR 200 pay, no deductible amount and no excluded days, ordinary advances are EUR 10 employee plus EUR 22 employer; the EUR 13.45 shortfall increases the employee advance to EUR 23.45. If the same person is state-insured for the entire month, the minimum reduces to zero: actual advances remain EUR 10 and EUR 22, with no minimum shortfall. State-insured status does not itself erase the contributions on employment ([Health Act §16a](https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html#paragraf-16a)).
 
 **Wage tax advance.** Taxable wage = gross taxable pay less the employee's social and health contributions, less EUR 497.23 if the employee has signed the declaration (vyhlásenie) with this employer (Act 595/2003 §35(1), (4), §36(6)). Only one employer may hold that declaration. The spouse allowance and pension savings deductions wait for the annual reconciliation (§35(1)(b)). Apply the monthly bands to the taxable wage, then reduce the advance by the child tax bonus (§35(2), (5)).
 
@@ -86,7 +86,7 @@ Every SZČO pays health insurance advances from the start of the business (Act 5
 
 Each component (4.4%, 18%, 6%, 4.75%) is rounded down separately.
 
-**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The advance is at least EUR 121.92 (Act 580/2004 §16(2)(b), (3), (8)(a)). The insurer states the amount in the annual reconciliation. An SZČO who is also an employee pays their own SZČO advance, with no minimum (§16(6), (8)(e)).
+**SZČO health advance.** 16% of the business tax base from two years earlier (2024 for 2026), taken before contributions paid, divided by the months of business in that year and by 1.486. The ordinary minimum is EUR 121.92, or EUR 60.96 with a disability, where §16(8)(a) applies. The insurer states the advance in the annual reconciliation. For an SZČO who is concurrently an employee or state-insured under §11(7), use the calculated §16(2)(b) advance without the ordinary minimum (§16(6), (8)(e)); that concurrent person need not remit an advance below EUR 3 (§16(9)). Exactly EUR 3 does not meet the below-EUR-3 exception. This concerns advances, not an assumed zero annual reconciliation.
 
 ## Deadlines and filing
 
@@ -126,7 +126,7 @@ Social insurance has no annual reconciliation for employees: each month is final
 ## Cross-border points
 
 - **EU coordination.** Within the EU, EEA and Switzerland a person is subject to one country's social security law at a time (Regulation 883/2004 Art. 11(1)). A worker posted from Slovakia for work expected to last up to 24 months stays under Slovak law (Art. 12(1)) and carries an A1 form issued by Sociálna poisťovňa. A worker posted to Slovakia with a foreign A1 pays no Slovak social insurance.
-- **Foreign employer.** A foreign employer with no Slovak branch is not the tax payer. A resident employee pays the tax advances themselves by the end of the next month (Act 595/2003 §35(10)). A non-resident does the same under §35(11), from the start of the stay if the contract shows more than 183 days.
+- **Foreign employer.** A registered Slovak branch is not the sole wage-tax payer test. Apply ITA §48(1) first: a foreign person can be a payer because of a Slovak permanent establishment or employment in Slovakia for more than 183 days, continuously or cumulatively in any twelve consecutive months, with the specified §16(1)(c) service-provider and diplomatic-office qualifications; §48(1)(b) supplies its separate source-income ground. In an economic-employer case under §5(4), apply §48(2)'s special allocation: the foreign person is not the payer, except that a foreign person with a Slovak organisational branch is a payer to the extent of the wages it provides. Only after establishing that the employer is not a payer apply §35(10)/(11): a resident employee pays their own advances by the end of the following month, and a non-resident follows §35(11), including its from-start treatment where the contract shows more than 183 days. Retain the PE, actual employment-day history, contract and economic-employer facts ([ITA §§35 and 48](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-48)).
 - **Pay taxed abroad.** The employer withholds no advance on pay that is taxed abroad (Act 595/2003 §35(8)). The tax bonus needs at least 90% of total income from Slovak sources (§33(9)). Treaty conditions and documents are in `sk-cross-border`.
 
 ## Worked examples
@@ -219,10 +219,10 @@ expected:
 
 1. **Contract type for each worker.** Employment contract, work agreement (dohoda) or self-employed. This changes the unemployment and support rates, the EUR 200 deduction and the health deductible amount.
 2. **Has the employee signed the tax declaration with you, and which children (with ages) are claimed?** Only one employer gives the EUR 497.23 allowance and the tax bonus.
-3. **Disability, pension or second-pillar status.** Disability halves the health rates; a pensioner pays no disability or unemployment insurance; a saver's 4% goes to the pension fund.
+3. **Exact disability/pension category, award date, retirement age and second-pillar status.** The health disability rates need the statutory qualifying status. Social disability premiums do not apply after an old-age or early-old-age pension award, or to a service-pension recipient who has reached retirement age; the employer follows the same exclusion (§128(3)). Unemployment insurance separately excludes old-age/early-old-age recipients, disability-pension recipients with more than 70% loss of earning capacity, and disability-pension recipients who reached retirement age (§19(3)(b)). Do not treat every pensioner as exempt from both branches. Check a work agreement's actual §4 insurance category rather than automatically applying the ordinary employee total; a second-pillar saver's 4% contribution is allocated to their pension fund ([Social Insurance Act §§4, 19 and 128](https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html)).
 4. **Your payday.** Social and health payments fall due on it; the tax advance 5 days later.
 5. **For an SZČO: the date the licence started, any licence that ended in the last 60 months, the last two returns (income, tax base, contributions deducted) and any extended filing deadline.** These set the start date and both bases.
-6. **Any work abroad, A1 form or foreign employer.** This changes who collects.
+6. **Any work abroad, A1 form or foreign employer, including a Slovak PE, branch, employment days in each rolling twelve-month period and economic-employer arrangements.** These facts determine the applicable country and wage-tax payer.
 
 ## Sources
 

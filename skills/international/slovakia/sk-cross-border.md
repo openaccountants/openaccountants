@@ -1,10 +1,10 @@
 ---
 name: sk-cross-border
-description: "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% on dividends to individuals and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
-version: 0.1
+description: "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% or 10% on individual profit dividends by profit period and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
+version: 0.2
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -53,7 +53,7 @@ A legal person is resident if its seat or its place of effective management is i
 |---|---|---|---|
 | Residence: days of presence that make an individual resident | 183 days in the calendar year, any day started counts | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 2 d) 1b) |
 | Withholding tax, general rate | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(b)) |
-| Withholding tax on dividends and similar profit shares paid to individuals | 7% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(a), § 43(3)(r)) |
+| Withholding on ordinary profit dividends paid to individuals | 7% for profit periods beginning in 2017–2023 or from 1 January 2025; 10% for periods beginning in 2024 | Paid in 2026; profit-period transition | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§43(1)(a), §43(3)(r), §52zi(5), §52zzz(4), §52zzzb(5)) |
 | Withholding tax on any withheld income paid to a taxpayer of a non-cooperating state | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(c), § 2 x)) |
 | Withholding on yields from Slovak and EU/EEA government bonds paid to non-business entities | 13% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 43(1)(d), § 43(3)(v)) |
 | Security deduction on payments to non-residents outside the EU/EEA | 19% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(2)) |
@@ -133,7 +133,7 @@ The list valid from 1 January 2026 was built from the EU list published in the O
 
 ### Dividends paid abroad
 
-- **To a non-resident individual:** 7% withholding (§ 43(1)(a), § 43(3)(r)), unless a lower treaty rate applies.
+- **To a non-resident individual:** for ordinary profit dividends, select the period that generated the profit: 7% for periods beginning in 2017–2023 or from 1 January 2025; 10% for periods beginning in 2024 (§43(1)(a), §43(3)(r), §52zi(5), §52zzz(4), §52zzzb(5)). A EUR 10,000 gross dividend therefore gives EUR 700 or EUR 1,000 domestic-law withholding before a lower applicable treaty rate. Confirm the profit period from the distribution records; payment in 2026 does not itself make a 2024-profit dividend subject to 7%. Pre-2017 profits require the applicable historical regime, outside this stated rate selection. Liquidation and settlement shares use their own statutory transition triggers rather than a guessed profit year.
 - **To a non-resident company:** not subject to Slovak tax, to the extent the dividend was not a deductible expense of the payer (§ 12(7)(c)).
 - **To a taxpayer of a non-cooperating state:** 35% (§ 12(7)(c) point 1, § 16(1)(e) point 9, § 43(1)(c)).
 
