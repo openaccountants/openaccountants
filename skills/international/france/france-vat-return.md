@@ -14,10 +14,10 @@ description: >
   e-invoicing formats and platforms (france-einvoice), tax audits (fr-tax-audit),
   income and corporate tax (fr-income-tax, fr-corporate-tax), bookkeeping
   (france-bookkeeping).
-version: 2.1
+version: 2.2
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -60,9 +60,9 @@ Two facts about the law itself in 2026:
 | Franchise: lawyers', authors' and performers' regulated work, previous / current year (art. 293 B, I bis) | EUR 50,000 / EUR 55,000 | 2026 | same |
 | Franchise: their other activities, previous / current year | EUR 35,000 / EUR 38,500 | 2026 | same |
 | Franchise for an EU-established business: EU-wide turnover, previous and current year (art. 293 B bis) | EUR 100,000 | 2026 | same |
-| Régime simplifié: previous year turnover, goods, on-site catering, accommodation (CIBS L. 162-4, 1°; amount fixed for 2026 by CIBS art. A. 162-7) | up to EUR 945,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000049803748/2026-10-24 |
+| Régime simplifié: previous year turnover, goods, on-site catering, accommodation (CIBS L. 162-4, 1°; amount fixed for 2026 by CIBS art. A. 162-7) | EUR 85,000 to EUR 945,000 (below the lower end, the franchise; F23566: "compris entre : 85 000 € et 945 000 €") | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000049803748/2026-10-24 |
 | Régime simplifié: current year ceiling, same activities (CIBS L. 162-5, 1°; A. 162-7) | EUR 1,040,000 | 2026 | same |
-| Régime simplifié: previous year turnover, other services incl. furnished lets (CIBS L. 162-4, 2°; A. 162-7) | up to EUR 286,000 | 2026 | same |
+| Régime simplifié: previous year turnover, other services incl. furnished lets (CIBS L. 162-4, 2°; A. 162-7) | EUR 37,500 to EUR 286,000 (F23566) | 2026 | same |
 | Régime simplifié: current year ceiling, other services (CIBS L. 162-5, 2°; A. 162-7) | EUR 323,000 | 2026 | same |
 | Régime simplifié: VAT due for the previous year must not exceed (CIBS L. 162-7) | EUR 15,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000044598127/2026-10-24 |
 | Régime réel normal: quarterly CA3 where annual VAT due is below (CGI art. 287-2) | EUR 4,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-24 |
@@ -72,7 +72,7 @@ Two facts about the law itself in 2026:
 | First year of a new business: each self-set instalment at least (CGI art. 287-3) | 80% of the half-year's real tax | 2026 | same |
 | CA12 credit refundable at year end (frame VII) only where at least | EUR 150 | 2026 | https://www.impots.gouv.fr/sites/default/files/formulaires/3517-s-sd/2026/3517-s-sd_5291.pdf |
 | Distance sales of goods and B2C digital services to other EU states stay French below (CA3 notice, line E3) | EUR 10,000 a year | 2026 | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf |
-| Intra-EU acquisitions by a business in the franchise: above this the French buyer self-assesses | EUR 10,000 | 2026 | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |
+| Intra-EU acquisitions by a business in the franchise: above this the French buyer self-assesses at the French rate and must ask its SIE for an intra-EU VAT number as soon as it knows the limit is crossed | EUR 10,000 | 2026 | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |
 | Invoices with total excluding VAT at or below this need not show the seller's VAT number (that particular only) | EUR 150 | 2026 | https://entreprendre.service-public.gouv.fr/vosdroits/F31808 |
 | Small equipment taken straight to expense, unit value excluding VAT up to (decides line 19 or line 20) | EUR 500 | 2026 | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
 | Fuel: petrol, diesel and E85 in a vehicle excluded from deduction, or a lease the lessee cannot deduct / in any other vehicle | 80% / 100% deductible | from 2022 | https://bofip.impots.gouv.fr/bofip/1194-PGP.html |
@@ -143,15 +143,15 @@ Line 18 is a Monaco memo line, not the line for self-assessed EU services. A cre
 
 | Cost | Treatment | Source |
 |---|---|---|
-| Vehicles designed to carry people or for mixed use, their parts and upkeep | Not deductible. The test is how the vehicle was designed, judged at purchase or lease, not how it is used | https://bofip.impots.gouv.fr/bofip/1192-PGP.html |
+| Vehicles designed to carry people or for mixed use, their parts and upkeep | Not deductible. The test is how the vehicle was designed, judged at purchase or lease, not how it is used. Leisure quads and cycles, electrically assisted or not, are caught unless specifically fitted for the exclusive carriage of goods (https://bofip.impots.gouv.fr/bofip/1192-PGP.html, § 45) | https://bofip.impots.gouv.fr/bofip/1192-PGP.html |
 | Exceptions to the vehicle exclusion | Vehicles bought for resale new; taxis, VTC and public passenger transport used exclusively for it; driving schools; hearses used exclusively by undertakers; vehicle hire businesses; vehicles with more than eight seats besides the driver carrying staff; horse transport vehicles from 2024; ski-domain all-terrain vehicles; aircraft for paid air services; racing sailboats. Each needs exclusive use | same |
-| Fuel | Shares in the rates table. Electric charging is not on the fuel list: ordinary rules apply once the vehicle's own exclusion is settled | https://bofip.impots.gouv.fr/bofip/1194-PGP.html |
+| Fuel | Shares in the rates table. The limit applies only to products used as fuel to propel vehicles and engines; petrol, diesel and E85 used in tests for manufacturing engines are outside it. Liquefied petroleum gases (butane, propane and similar) and natural gas in gaseous form follow the ordinary rules (https://bofip.impots.gouv.fr/bofip/1194-PGP.html, § 40 and 160). Electric charging is not on the fuel list: ordinary rules apply once the vehicle's own exclusion is settled | https://bofip.impots.gouv.fr/bofip/1194-PGP.html |
 | Housing directors or staff free of charge | Not deductible, including buying or renting the premises; apportion by headcount where third parties are housed too | https://bofip.impots.gouv.fr/bofip/1190-PGP.html |
-| Gifts and goods given away | Not deductible, except goods of very low value (amount fixed by CGI annexe IV, art. 28-00 A; not printed here, see Sources) | https://bofip.impots.gouv.fr/bofip/1196-PGP.html |
+| Gifts and goods given away | Not deductible, except goods of very low value (amount fixed by CGI annexe IV, art. 28-00 A, measured including all taxes, per object and per year for the same recipient; amount not printed here, see Sources) | https://bofip.impots.gouv.fr/bofip/1196-PGP.html |
 | Private use by owners, directors or staff | Not deductible | https://bofip.impots.gouv.fr/bofip/1194-PGP.html |
 | Restaurant meals | Not excluded by name. Deductible only where incurred for the business, with the purpose and guests documented | CGI annexe II, art. 206 |
 | Advertising for alcoholic drinks | Deductible under the ordinary rules from 21 February 2026 (CGI art. 273 septies E, LF 2026 art. 91) | https://bofip.impots.gouv.fr/bofip/15011-PGP.html |
-| Fixed assets | Line 19, not line 20. Adjusted over five years (movable) or twenty years (immovable) if use changes. The EUR 500 small-equipment tolerance decides asset or expense | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
+| Fixed assets | Line 19, not line 20. Adjusted over five years (movable) or twenty years (immovable) if use changes. The EUR 500 small-equipment tolerance decides asset or expense; where an item is made of several parts, the tolerance is tested on the global price of all the parts (https://bofip.impots.gouv.fr/bofip/2109-PGP.html: "en considération du prix global de l'ensemble des éléments") | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
 
 **Conservative defaults when facts are missing.** Unknown rate on a sale: 20%. Unknown VAT status of a purchase: not deductible. Unknown counterparty country: France. Unknown B2B or B2C status of an EU customer: consumer, charge French VAT. Unknown business-use share (car, phone, home office): no recovery. Unknown SaaS billing entity: line A3 self-assessment. Unknown whether a cost is blocked: blocked. Unknown whether in scope: in scope.
 
@@ -168,6 +168,7 @@ Line 18 is a Monaco memo line, not the line for self-assessed EU services. A cre
 | SNCF, Ouigo, RATP, taxis, G7, Bolt, Heetch, Uber rides, Air France domestic | 10%, line 20. International flights: exclude. Motorway tolls (Vinci, Sanef, APRR): 20% |
 | Supermarkets (Carrefour, Auchan, Leclerc, Lidl, Monoprix, etc.) and restaurants | Default block unless a catering business or a documented business meal |
 | Google, Microsoft, Adobe, Meta, LinkedIn, Spotify, Dropbox, Slack, Atlassian, Zoom (EU billing entities); Notion, OpenAI, Anthropic, Figma, Canva, Twilio, GitHub, HubSpot (non-EU or check); AWS EMEA SARL | A3 plus line 20 (self-assessment). If the invoice shows French TVA actually charged, treat as a domestic 20% purchase |
+| Amazon, Etsy, eBay marketplace fees | A3 plus line 20 where billed from outside France (CA3 notice n° 3310 NOT-CA3-SD: line A3 is "prestations de services fournies par un prestataire non établi en France et imposables en France sur le fondement des articles 259-1° et 283-2 du CGI"); the sales themselves go to A1 at the applicable rate (or E3, distance sales taxable in the member state of arrival above the EUR 10,000 limit of CGI art. 259 D or by option, declared through the OSS: same notice, line E3) |
 | Stripe, PayPal transaction fees | Exclude (exempt payment services). Stripe subscription: A3 plus 20. SumUp, Square, Zettle: by billing entity |
 | Expert-comptable, avocat, notaire (business), commissaire aux comptes, architecte | Domestic 20%, line 20 |
 | LOYER COMMERCIAL, SCI with TVA invoiced | 20% only where the landlord opted for VAT. Residential rent and TAXE FONCIERE: exclude |
@@ -178,6 +179,8 @@ Bank-statement reading: French exports are usually semicolon-separated with DD/M
 **Questions to raise when a line is ambiguous.** Fuel and vehicle costs (was the vehicle designed for people or goods, and which fuel?); restaurants (who was present and why?); SaaS (legal entity, country, any French TVA charged?); round transfers from the owner's name (sale, capital or loan?); incoming money from individuals or foreign accounts (sale? business or consumer? which country?); large one-off purchases near EUR 500 (asset or expense?); mixed-use phone or home costs (business share?); outgoing transfers to individuals (contractor with invoice, wages, refund or private?); foreign hotels (foreign VAT is not French input VAT; a refund may be claimed in that state); Airbnb income (furnished letting falls in the services band); construction subcontractors (domestic reverse charge?); platform sales on Amazon, Etsy or eBay (cross-border consumer sales above EUR 10,000 go through the OSS, refuse here under `eu-vat-directive` R-EU-5).
 
 **Invoices.** Every mandatory particular applies at any amount; the EUR 150 rule only waives the seller's VAT number. Reverse-charge invoices say "Auto-liquidation". From 1 September 2026 (large companies and ETI) and 1 September 2027 (SMEs and micro-enterprises), invoices add four new particulars: the customer's SIREN, the delivery address if different, whether the invoice is for goods, services or both, and "Option pour le paiement de la taxe d'après les débits" where that option was made (service-public F31808).
+
+**Bank statement only (OpenAccountants working practice, not a legal rule).** If there is no bank statement at all, stop. With a bank statement but no invoices, prepare the return and tell the reviewer in writing that every input VAT claim must be checked against a compliant invoice before the return is approved.
 
 **Working paper.** Follow `vat-workflow-base` Section 3. In the Transactions sheet the line-code column accepts only 2026 CA3 codes, blank for excluded lines, and "A3/20" style for self-assessed lines. The Line Summary sheet sums A1, E1, E2, E3, F2, A3, A4, B2, B4, then the rate block 08, 09, 9B, I1 to I6, line 16, memo 17, lines 19, 20, 22, 23, memo 24, then 25 or TD, 26, 27, 28 and 32. If line 23 exceeds line 16, line 25 is the credit and line 27 = 25 less 26 carries to the next return; otherwise TD = 16 less 23. Shade any row resting on a conservative default and recalculate the workbook before handing it over.
 
@@ -327,7 +330,7 @@ expected:
 | impots.gouv.fr: overseas department rates (Internet Archive copy of 18 May 2026) | https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom | 2026-10-24 |
 | impots.gouv.fr: VAT regimes, modified 21 May 2026, still showing 2023-2025 limits (Internet Archive copy of 29 September 2026) | https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva | 2026-10-24 |
 
-Not yet confirmed: the amount of the very-low-value gift exception (CGI annexe IV, art. 28-00 A, not re-read); the CA12 completion notice 3517-S-NOT-SD 2026 (no copy reachable; CA12 lines taken from the form and the earlier read of the notice); the reference date for measuring a business's size for the e-invoicing timetable (LFR 2022 art. 26, III and its decree, not re-read); the consolidated text of LFR 2022 art. 26, III after LF 2025 and LF 2026 (the dates were checked against the LF 2024 text, BOFiP of 30 September 2026 and service-public F31808); the exact date a business leaves the régime simplifié after crossing a current-year ceiling under CIBS L. 162-5 and its implementing decree; the full lists of goods and services under the 10% and 5.5% rates after LF 2026 (only the article headings and the BOFiP summary were read); Corsican rate rules beyond the CA3 lines; the restaurant-meal treatment rests on CGI annexe II art. 206, not re-read today.
+Not yet confirmed: the amount of the very-low-value gift exception (CGI annexe IV, art. 28-00 A, not re-read); the CA12 completion notice 3517-S-NOT-SD 2026 (no copy reachable; CA12 lines taken from the form and the earlier read of the notice); the reference date for measuring a business's size for the e-invoicing timetable (LFR 2022 art. 26, III and its decree, not re-read); the consolidated text of LFR 2022 art. 26, III after LF 2025 and LF 2026 (the dates were checked against the LF 2024 text, BOFiP of 30 September 2026 and service-public F31808); the exact date a business leaves the régime simplifié after crossing a current-year ceiling under CIBS L. 162-5 and its implementing decree; the full lists of goods and services under the 10% and 5.5% rates after LF 2026 (only the article headings and the BOFiP summary were read); Corsican rate rules beyond the CA3 lines; whether the franchise applies as of right in the first year of activity up to the higher limits (EUR 93,500 / EUR 41,250, as the impots.gouv.fr regimes page says) or only after scaling turnover to a full year (service-public F21746): the two pages differ and CGI art. 293 B was not re-read on this point; the exclusion of jet fuel used in aircraft without a right to deduct (older version of this skill, not found in the saved BOFiP text); the restaurant-meal treatment rests on CGI annexe II art. 206, not re-read today.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,12 +1,12 @@
 ---
 name: austria-vat-return
 description: "Austrian VAT (Umsatzsteuer) for tax year 2026 in the deep-tax shape: who must charge VAT, the rates under § 10 UStG 1994 (20%, 13%, 10%, the 4.9% rate on listed basic foods from 1 July 2026, 19% for Jungholz and Mittelberg), the small business exemption under § 6 Abs 1 Z 27 (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), the UVA period (monthly above EUR 100,000, quarterly, none at or below EUR 55,000), the due date on the 15th of the second following month, the annual U 1 by 30 April or 30 June, reverse charge under § 19, the recapitulative statement (ZM), the late-filing surcharge (§ 135 BAO) and late-payment surcharges (§ 217 BAO). Trigger on: Austrian VAT return, UVA, Umsatzsteuervoranmeldung, U 30, U 1, Kleinunternehmerregelung, Säumniszuschlag, Austrian reverse charge. Out of scope: the Kennzahl-by-Kennzahl bank-statement method in at-vat-return; corporate income tax in at-corporate-income-tax; non-residents and treaties in at-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: AT
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-27
 verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -55,6 +55,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Exempt without credit.** Banking, insurance, medical care, most education, letting of business premises unless the landlord opts to tax, and the small business exemption (§ 6 Abs 1 UStG). Input VAT on related costs is lost; a business with both kinds of supply apportions (§ 12 Abs 4 to 6 UStG).
 - **Input VAT.** Deductible on a proper invoice for supplies made to the business (§ 12 UStG). No deduction for ordinary cars and motorcycles and their running costs, and for business meals except where the advertising purpose far outweighs everything else. Zero-emission cars are an exception within the reasonableness cap. A cash-basis business deducts only once it has paid.
 - **Reverse charge.** The customer enters the tax as output VAT and, if entitled, deducts the same amount as input VAT in the same return, so a fully taxable business pays nothing net.
+- **Change of use of a capital asset.** If the facts that decided the input VAT deduction on a fixed asset change in the four calendar years after the year of first use, the deduction is corrected for each year of change, one fifth of the asset's input VAT a year. For land (including capitalised costs and major repairs) the period is nineteen years and the correction is one twentieth a year. On a sale, the rest of the period is corrected at the latest in the last UVA of that year (§ 12 Abs 10 and 11 UStG, RIS consolidated text read 26 October 2026).
 - **The small business limit is counted gross.** The limit test uses the agreed consideration, not a base computed as if VAT applied (§ 6 Abs 1 Z 27 last sentence). Ancillary sales, the sale of the business, and most exempt supplies are left out.
 
 ## Deadlines and filing
