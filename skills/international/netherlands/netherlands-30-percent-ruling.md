@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-27
-version: 0.2
+version: 0.3
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -27,7 +27,7 @@ An incoming employee (ingekomen werknemer, UB LB art. 10e(2)(b)) is someone who:
 
 Two exceptions to the 150 km rule:
 
-- **PhD graduates.** If work starts within one year of the doctorate, the PhD period spent in the Netherlands or within 150 km of it is ignored (UB LB art. 10e(3)).
+- **PhD graduates.** If work starts within one year of the doctorate, the PhD period spent in the Netherlands or within 150 km of it is ignored (UB LB art. 10e(3)). Two more PhD cases also count as incoming: the person had a Dutch employment alongside the PhD research, or got the employment contract before the doctorate and the doctorate was a condition of hiring. In both, the ruling starts only from the date the doctorate is obtained (Handboek §19.4.1).
 - **Returning employees.** The 150 km rule does not apply if the person met it before an earlier Dutch employment that started no more than five years before the new one (UB LB art. 10e(4)). The earlier period still shortens the new term.
 
 Residents of Aruba, Curaçao, Sint Maarten and the BES islands can also qualify (Handboek §19.4.1). The employer must hold a decision (beschikking) from the Belastingdienst. Employees sent abroad from the Netherlands (uitgezonden werknemers) have their own version and are not covered here.
@@ -57,15 +57,15 @@ The 2024 phasing (30% for 20 months, then 20%, then 10%) does not apply from 202
 
 ## The taxable base
 
-**The allowance.** Up to 30% (2026) of the wage including the allowance, which equals 30/70 of the wage excluding it. The base is wage from current employment taxed in Dutch payroll, so far as the employee has no right to double tax relief on it, plus the allowance itself (UB LB art. 10ea(1)). The employer is not obliged to pay the maximum. Three limits apply:
+**The allowance.** Up to 30% (2026) of the wage including the allowance, which equals 30/70 of the wage excluding it. The base is wage from current employment taxed in Dutch payroll, so far as the employee has no right to double tax relief on it, plus the allowance itself (UB LB art. 10ea(1)). Payments classed as wage from former employment are not in the base (Handboek §19.4.3: "loon uit tegenwoordige dienstbetrekking"). The employer is not obliged to pay the maximum. Three limits apply:
 
-1. **Salary norm.** The taxable wage excluding the allowance must be more than the norm, tested on a full-year basis (Handboek §19.4.1). If a full 30% would push it to or below the norm, cut the allowance so the wage stays above it. In the Handboek example, a wage including the allowance of EUR 50,000 gives a maximum allowance of EUR 1,986 (§19.4.3).
-2. **WNT cap.** The allowance is calculated on at most the WNT norm: EUR 78,600 for a full year in 2026 (Wet LB art. 31a(8)). For a part year the cap is pro rated (a month counts as 65/3 days, a year as 260). The rule delaying the cap for rulings applied in the last pay period of 2022 ended on 1 January 2026, so from 2026 the cap applies to everyone (Handboek §19.4.3).
-3. **School fees.** Fees for international schools can be paid tax-free on top of the allowance (UB LB art. 10e(8), 10ea(1)(b)).
+1. **Salary norm.** The taxable wage excluding the allowance must be more than the norm, tested on a full-year basis (Handboek §19.4.1). If a full 30% would push it to or below the norm, cut the allowance so the wage stays above it. In the Handboek example, a wage including the allowance of EUR 50,000 gives a maximum allowance of EUR 1,986 (§19.4.3). The lower norm (EUR 36,497) applies only while the employee is under 30: from the month after the month they turn 30, the general norm of EUR 48,013 applies. The master's must be academic (wetenschappelijk onderwijs): a Dutch degree accredited by the NVAO, or a foreign degree that Nuffic finds equivalent (Handboek §19.4.1, Let op 4).
+2. **WNT cap.** The allowance is calculated on at most the WNT norm: EUR 78,600 for a full year in 2026 (Wet LB art. 31a(8)). For a part year the cap is pro rated (a month counts as 65/3 days, a year as 260). The rule delaying the cap for rulings applied in the last pay period of 2022 ended on 1 January 2026, so from 2026 the cap applies to everyone (Handboek §19.4.3). If the employee changes employer during the year, the WNT norm is split between the employers by the number of pay periods the ruling is applied at each (Handboek §19.4.3, KG:041:2025:5). The employer may spread the annual maximum evenly over the pay periods, or optimise it with a year-end calculation (Handboek §19.4.3, KG:041:2024:22).
+3. **Tax-free on top of the allowance.** Three items can be designated as targeted-exempt on top of the ruling (Handboek §19.4.8; UB LB art. 10ea(1)(b) for school fees): (a) relocation costs, up to EUR 7,750 plus the actual cost of moving household goods and temporary storage, where the move is linked to the employment (Handboek §22.1.5); (b) the cost of an orientation visit by the employee to the business in the Netherlands; (c) fees for an international school or the international department of an ordinary school (foreign curriculum, mainly for children of seconded employees).
 
 Anything above the maximum is taxable wage. It can be designated as final-levy wage under the werkkostenregeling where that is customary (Handboek §19.4).
 
-**Ruling or actual costs, each year.** For the first pay period of each calendar year in which extraterritorial costs are reimbursed, the employer chooses either the ruling or reimbursing proven actual costs. The choice holds for the whole year (Wet LB art. 31a(17)). After a timely application the employer may choose per pay period in the first 4 months, then for the rest of that year (art. 31a(18)). If the employer uses the ruling and also pays actual extraterritorial costs, the extra payment is taxable wage, except school fees (Handboek §19.4).
+**Ruling or actual costs, each year.** For the first pay period of each calendar year in which extraterritorial costs are reimbursed, the employer chooses either the ruling or reimbursing proven actual costs. The choice holds for the whole year (Wet LB art. 31a(17)). After a timely application the employer may choose per pay period in the first 4 months, then for the rest of that year (art. 31a(18)). If the employer uses the ruling and also pays actual extraterritorial costs, the extra payment is taxable wage, except relocation costs, the orientation visit and international school fees (Handboek §19.4.8).
 
 **What counts as extraterritorial cost** (relevant when actual costs are reimbursed): cost-of-living differences, an orientation trip, permits and visas, medical checks, double housing, first housing above 18% of wage, storage, home leave, language courses, the extra cost of having the tax return prepared, A1 certificate applications and international school fees (Handboek §19.4.5). For periods of work or stay in the Netherlands, extra living expenses and private calls home are excluded by law (Wet LB art. 31a(2)(e)). Never extraterritorial: expat or foreign-service allowances, bonuses, capital losses, buying and selling a home, tax equalisation.
 
@@ -77,7 +77,9 @@ Anything above the maximum is taxable wage. It can be designated as final-levy w
 
 - **Application.** Employer and employee apply together on the form "Verzoek Loonheffingen expatregeling" for the year (Handboek §19.4.1). Filed within 4 months of the start of work, the decision applies from the first working day. Filed later, it applies from the first day of the month after the month of the request, and the term is reduced by the gap (UB LB art. 10ei(2), 10eg). The Belastingdienst says it decides within 8 weeks.
 - **Term.** At most 5 years from the first working day, ending on the last day of the pay period after the one in which employment ends (UB LB art. 10ec(1)). It is reduced by earlier Dutch work or stay that ended within the 25 years before, rounded up to whole months (art. 10ef, 10eh). Not counted: up to 20 working days a year, up to 6 weeks a year for holidays or family, and once a single stay of up to 3 consecutive months (art. 10ef(3)-(4)).
-- **Change of employer.** The ruling continues for the remaining term if the new employment starts within 3 months and the new employer and employee request it jointly (UB LB art. 10ed). Within a connected group of withholding agents no new request is needed (art. 10ej).
+- **Wage paid after the end date.** The ruling applies only to wage enjoyed for tax purposes on or before the end date in the decision. A bonus paid after that date gets no allowance, even if it relates to an earlier period (Handboek §19.4.1, KG:041:2023:6).
+- **Suspension and garden leave.** If the employee is suspended, put on non-active status or released from work on full pay until the employment ends, the ruling cannot be used for that period of inactivity. It can still be applied to the wage paid in the first pay period after the period in which the inactivity began (Handboek §19.4.1, Let op 3).
+- **Change of employer.** The ruling continues for the remaining term if the new employment starts within 3 months and the new employer and employee request it jointly (UB LB art. 10ed). Within a connected group of withholding agents no new request is needed (art. 10ej). On a transfer of undertaking (BW Book 7 art. 662) the employee moves to the acquirer by law, and no new decision is needed (Handboek §19.4.1, Let op 5).
 - **Payroll return and payment.** The allowance goes in the normal payroll tax return (aangifte loonheffingen). The return is due within the term the inspector sets, at least one month after the end of the period (AWR art. 10(2)). Payment is due within one month of the end of the period (AWR art. 19(1)).
 - **Corrections.** After a salary-norm failure, correct the payroll returns for that year (Handboek §19.4.1).
 - **Income tax return.** The employee reports the wage from the annual statement. Partial non-resident status, where still allowed, is chosen in the return (see Cross-border points).
@@ -142,6 +144,13 @@ expected:
   taxable: 107676.00
 ```
 
+**Short cases (rules above, Handboek §19.4.1 and §19.4.3).**
+- Ruling first applied in March 2025: 30% in 2025 and 2026, 27% from 2027, and the new 2027 salary norm applies from 2027.
+- Ruling applied in the December 2023 pay period: keeps 30% for the rest of its term, also in 2027, with the indexed 2024 norm.
+- First working day 1 February 2026, application filed 15 June 2026 (more than 4 months later): the decision applies from 1 July 2026. February to June can only get proven actual extraterritorial costs, and the 5-year term is reduced by those months.
+- Annual test failed in 2026 (taxable wage EUR 47,500 without the allowance, below EUR 48,013): the ruling ends from 1 January 2026, the 2026 returns are corrected, and it does not come back if the wage rises in 2027.
+- Taxable wage exactly EUR 48,013: fails. The wage must be more than the norm.
+
 ## Ask the client first
 
 - **When the ruling was first applied in payroll:** by the last pay period of 2022, of 2023, during 2024, or from 2025. This fixes the 2027 percentage (30% or 27%), the salary norm, and partial non-resident status.
@@ -163,7 +172,7 @@ Refer to a Dutch tax adviser: objections against a decision, scarcity-test cases
 | Algemene wet inzake rijksbelastingen, art. 10, 19, 30h, 67b, 67c, 67f | https://wetten.overheid.nl/BWBR0002320/2026-01-01/0 | 2026-10-27 |
 | Belastingplan 2025, Stb. 2024, 434 (Wet LB art. 31a(8): 30% for 2025 and 2026, 27% from 2027) | https://zoek.officielebekendmakingen.nl/stb-2024-434.html | 2026-10-27 |
 | Draft Fiscaal verzamelbesluit 2026, art. II parts B to D (UB LB art. 10ea and 10eb), consultation closed 13 March 2026 | https://www.internetconsultatie.nl/fiscaalverzamelbesluit/document/15293 | 2026-10-27 |
-| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 and §22.1.5 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
 | Belastingdienst, Can I apply for the Expat Scheme (30% facility)? | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-10-27 |
 | Belastingdienst, percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
 
