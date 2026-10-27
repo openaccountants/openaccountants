@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-27
-version: 0.1
+version: 0.2
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -43,7 +43,6 @@ Residents of Aruba, Curaçao, Sint Maarten and the BES islands can also qualify 
 | Salary norm, under 30 with an academic master's degree | EUR 36,497 | 2026 | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 (UB LB art. 10eb(2)) |
 | Salary norm, general / under 30 with master's | EUR 46,660 / EUR 35,468 | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility |
 | Salary norm, general / under 30 with master's | EUR 46,107 / EUR 35,048 | 2024 | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility |
-| New salary norm, announced before a further indexation | EUR 51,899 / EUR 39,450 | 2027 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (§19.4.1, Let op 1) |
 | Researchers at designated institutions, doctors in specialist training | No salary norm | 2026 | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 (UB LB art. 10eb(3)) |
 | Cap on the base (WNT norm) | EUR 262,000, so at most EUR 78,600 a full year | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (§19.4.3); Wet LB art. 31a(8) |
 | Maximum term | 5 years | Since 2019 | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 (UB LB art. 10ec(1)) |
@@ -54,7 +53,7 @@ Residents of Aruba, Curaçao, Sint Maarten and the BES islands can also qualify 
 
 Who keeps the old salary norm: an employee whose decision was valid in 2024 and whose ruling was applied by the last pay period of 2024 keeps the 2024 norm, indexed each year, for the whole term. Rulings first applied from 1 January 2025 move to the new norm from 2027 (Handboek §19.4.1 and §19.4.3).
 
-The 2024 phasing (30% for 20 months, then 20%, then 10%) was largely reversed from 2025 and replaced by the 27% rate from 2027 (Handboek §19.4.3). Do not apply 30/20/10 to any year from 2025.
+The 2024 phasing (30% for 20 months, then 20%, then 10%) does not apply from 2025. Belastingplan 2025 (Wet van 18 December 2024, Stb. 2024, 434) set a flat maximum in Wet LB art. 31a(8): 30% for 2025 and 2026, 27% from 1 January 2027. The government left UB LB art. 10ea(1)(a) and (3) unamended by mistake, so the consolidated text for 2026 still shows 30/20/10. The draft Fiscaal verzamelbesluit 2026 (art. II, part B) deletes the phasing with retroactive effect to 1 January 2025 and (part C) changes 30% to 27% from 2027. The Belastingdienst applies 30% for the full term in 2025 and 2026 (Handboek §19.4.3). For 2026, apply 30% for every incoming employee.
 
 ## The taxable base
 
@@ -162,11 +161,13 @@ Refer to a Dutch tax adviser: objections against a decision, scarcity-test cases
 | Wet op de loonbelasting 1964, art. 31a (version 1 January 2027, 27%) | https://wetten.overheid.nl/BWBR0002471/2027-01-01/0 | 2026-10-27 |
 | Uitvoeringsbesluit loonbelasting 1965, art. 10e to 10ej | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 | 2026-10-27 |
 | Algemene wet inzake rijksbelastingen, art. 10, 19, 30h, 67b, 67c, 67f | https://wetten.overheid.nl/BWBR0002320/2026-01-01/0 | 2026-10-27 |
+| Belastingplan 2025, Stb. 2024, 434 (Wet LB art. 31a(8): 30% for 2025 and 2026, 27% from 2027) | https://zoek.officielebekendmakingen.nl/stb-2024-434.html | 2026-10-27 |
+| Draft Fiscaal verzamelbesluit 2026, art. II parts B to D (UB LB art. 10ea and 10eb), consultation closed 13 March 2026 | https://www.internetconsultatie.nl/fiscaalverzamelbesluit/document/15293 | 2026-10-27 |
 | Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
 | Belastingdienst, Can I apply for the Expat Scheme (30% facility)? | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-10-27 |
 | Belastingdienst, percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
 
-Not yet confirmed: the final indexed 2027 salary norms (EUR 51,899 and EUR 39,450 are before indexation) and the 2027 WNT norm; the consolidated UB LB art. 10ea on wetten.overheid.nl (version from 1 January 2026) still shows the 2024 30/20/10 phasing while the Handboek states it was reversed from 2025, and the amending instrument was not located; the transitional rules (30% after 2026, old salary norm, partial non-resident status to 2026) are taken from the Handboek, not from the amending act; how periods abroad as a recruited employee affect the term (UB LB art. 10ef(5)) in specific cases; knowledge group positions KG:204:2023:21, KG:041:2024:13 and KG:041:2024:22 were not read.
+Not yet confirmed: the 2027 salary norms (Handboek §19.4.1 gives EUR 51,899 / EUR 39,450 before a further indexation; the draft Fiscaal verzamelbesluit 2026 gives EUR 52,521 / EUR 39,923 before the 2026 table correction factor; neither is law yet) and the 2027 WNT norm; the Staatsblad publication of the Fiscaal verzamelbesluit 2026 (on 27 October 2026 wetten.overheid.nl still showed UB LB art. 10ea with 30/20/10, version from 1 January 2026); the transitional rules (30% after 2026, old salary norm, partial non-resident status to 2026) are taken from the Handboek, not from the amending act; how periods abroad as a recruited employee affect the term (UB LB art. 10ef(5)) in specific cases; knowledge group positions KG:204:2023:21, KG:041:2024:13 and KG:041:2024:22 were not read.
 
 <!-- openaccountants-cta-block -->
 
