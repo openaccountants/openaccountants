@@ -3,12 +3,12 @@ name: ie-usc
 description: "Ireland's Universal Social Charge (USC) for tax year 2026, for employees, pensioners, the self-employed and investors. Covers the 2026 bands (0.5% on the first EUR 12,012, 2% on the next EUR 16,688, 3% on the next EUR 41,344, 8% on the balance), the EUR 13,000 exemption cliff, the reduced rates for people aged 70 or over and full medical card holders with income of EUR 60,000 or less, the 3% surcharge on non-PAYE income over EUR 100,000, exempt income such as social welfare payments and DIRT-paid interest, capital allowances and losses, spouses and maintenance, cumulative deduction through payroll, payment with preliminary tax and Form 11, and the late filing surcharge and interest. Trigger on 'USC', 'universal social charge', 'USC rates 2026', 'USC surcharge', 'USC medical card', 'USC exemption'. Out of scope: running a payroll (ie-payroll), income tax (ie-income-tax-form11), PRSI (ie-prsi-class-s), residence (ie-cross-border)."
 version: 2.1
 jurisdiction: IE
-category: international
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-26
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

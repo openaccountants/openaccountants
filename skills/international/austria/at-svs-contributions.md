@@ -5,11 +5,8 @@ version: 2.1
 jurisdiction: AT
 tax_year: 2026
 last_updated: 2026-10-26
-authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -197,6 +194,8 @@ expected:
 | USP, Basispauschalierung (SVS deductible on top) | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/pauschalierung-weitere-infos/basispauschalierung-einkommensteuer.html | 2026-10-24 |
 
 Not yet confirmed: the Selbständigenvorsorge scope for opted-in and pension-only freelancers (BMSVG § 52a not read); the SVS worked example on contentid 10007.816634 prints 32,000 x 1.181 = 34,784, which is arithmetically wrong (it is 37,792), so this skill does not use it; whether the § 27f credit was booked in Q3 2026; the old version's Krankengeld terms (day 4, 26 weeks, six-month wait, start before 60) and the Unterstützungsleistung from day 43, kept out of the rates table and not re-read; the retirement rule (GSVG pension contributions continue alongside a pension); the registration deadline and the right to pay by monthly direct debit (in the old version, not re-read).
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

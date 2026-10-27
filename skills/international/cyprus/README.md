@@ -2,7 +2,8 @@
 jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial: {}
+partial:
+  SC: "Self-employed insurable income by occupational category and the quarterly due dates are not yet confirmed from Social Insurance Services; only the actual-earnings basis is covered."
 covered_by: {}
 ---
 
@@ -17,8 +18,8 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | IT-IND, individual income tax | cyprus-income-tax (2026 bands with the EUR 22,000 tax-free band, exempt dividends and interest, the 20%, 25% and 50% exemptions for new arrivals, the one-fifth cap, the child, housing and green deductions with their family income caps, special 8% and 5% rates, SDC from 2026, filing duty, deadlines, provisional tax, penalties and interest) | checked against the law |
 | IT-CORP, corporate income tax | cy-corporate-tax | checked against the law |
 | VAT | cyprus-vat-return (2026 rates including the temporary 0% on basic goods into 2027, registration, the return boxes, VIES, domestic reverse charge, property, partial exemption, cash accounting and SME-SS, penalties) | checked against the law |
-| SC, social contributions | cyprus-social-contributions | sourced from the law |
-| PR, payroll withholding | cyprus-payroll | sourced from the law |
+| SC, social contributions | cyprus-social-contributions (2026: Social Insurance 8.8% + 8.8%, 16.6% self-employed, voluntary rates, the EUR 5,742 / 1,325 maximum insurable earnings, GHS 2.65%, 2.90% and 4.00% with the EUR 180,000 maximum and its order, employer funds, payment, registration, late charges) | partial: self-employed deemed income by occupation and quarterly dates not yet confirmed |
+| PR, payroll withholding | cyprus-payroll (2026 PAYE from the T.D.59A with the EUR 22,000 band, the one-fifth cap, first-employment deductions, the 12 or 13 divisor, employee and employer contributions, minimum wage, monthly and annual PAYE returns, the 1% surcharge) | checked against the law |
 | TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | checked against the law |
 | XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | sourced from the law |
 
@@ -37,4 +38,6 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - OECD Transfer Pricing Guidelines 2022, Chapter X (financial transactions): https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf (read 2026-10-23)
 - VAT Law 95(I)/2000, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (read 2026-10-24)
 - VAT orders Κ.Δ.Π. 337/2025, 168/2026, 354/2026 and 362/2026 (temporary 0% on basic goods): https://www.cylaw.org/KDP/data/2025_1_337.pdf, https://www.cylaw.org/KDP/data/2026_1_168.pdf, https://www.cylaw.org/KDP/data/2026_1_354.pdf, https://www.cylaw.org/KDP/data/2026_1_362.pdf (read 2026-10-24)
+- Social Insurance Law 59(I)/2010 and General Healthcare System Law 89(I)/2001, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html, https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html (read 2026-10-26)
+- Social Insurance Services, 2026 maximum insurable earnings: https://sisweb.mlsi.gov.cy/anotato2025/ (read 2026-10-26)
 - Tax Department: https://www.gov.cy/tax/ (read 2026-10-22)
