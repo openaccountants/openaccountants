@@ -43,5 +43,14 @@
     "retrieved_utc": "2026-10-27T23:38:54.296632+00:00",
     "mechanism": "curl normal TLS HTTP200",
     "read_scope": "Complete text"
+  },
+  {
+    "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079",
+    "file": "work/sources/tax-surcharges-2005.pdf",
+    "bytes": 208409,
+    "sha256": "692e56f188c81f9789d3a11c041b77f9b4122ae4c86bd9c9383470273967fd5a",
+    "retrieved_utc": "2026-10-27T23:48:10.448882+00:00",
+    "mechanism": "documented browser printable-link downloadMedia",
+    "read_scope": "All rr1\u20139; pages1\u20132 also rendered and visually checked for figures/conditions"
   }
 ]

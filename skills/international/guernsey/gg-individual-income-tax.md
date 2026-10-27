@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "0.9"
+version: "0.10"
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=122165&p=0"
@@ -52,7 +52,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey individual income tax and residence v0.9
+# Guernsey individual income tax and residence v0.10
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -218,7 +218,17 @@ The linked Form 690(b), dated 12/21, gives a 30-day appeal period from the penal
 
 Collection is suspended only if the Director confirms it in writing; otherwise pay by the due date or arrange payment. This is distinct from stopping further daily penalties by filing. Page 2 expects filing within 14 days after the impediment ends and leaves disputed reasonable grounds to the Tribunal. The £50 no-liability restriction does not apply to companies. [Form, pages 1–2](https://gov.gg/CHttpHandler.ashx?id=101085&p=0).
 
-The form remains the authority's linked operational document but is dated 2021. Current section 76 now confirms the written grounds and 30-day issue-date route for the specified assessments/orders, with separate surcharge-notification triggers and reasonable-cause late admission. Interim assessments use section 76A’s separate route; do not treat every interim figure as an ordinary section 76 appeal. [Sections 76 and 76A](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819). Detailed Tribunal/court rules and current surcharge-rate regulations remain unreconciled. Do not extend the penalty-appeal clock to assessment appeals.
+The form remains the authority's linked operational document but is dated 2021. Current section 76 now confirms the written grounds and 30-day issue-date route for the specified assessments/orders, with separate surcharge-notification triggers and reasonable-cause late admission. Interim assessments use section 76A’s separate route; do not treat every interim figure as an ordinary section 76 appeal. [Sections 76 and 76A](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819). Detailed Tribunal/court rules remain unreconciled; the surcharge rates and minimum are now supplied below. Do not extend the penalty-appeal clock to assessment appeals.
+
+### Statutory income-tax surcharge calculation
+
+For ordinary amounts within Income Tax Law section 199, establish the **settlement date**, the amount unpaid at its close, and any valid statutory/practice exemption or express deferral before calculating a charge. The currently listed [Surcharges and Supplements Regulations 2005, rr1–4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079) supply the missing rates and minimum: **5%** initially and **5%** additional surcharge on the total then outstanding at each statutory six-month point, including unpaid earlier surcharges. Amounts include an unpaid penalty; a surcharge itself is separately payable in addition to penalties. Section 199(8) makes the initial surcharge payable on the thirtieth day after settlement, rather than moving the original settlement date thirty days later. [Income Tax Law s199(1)–(9), (13)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+The **£50 minimum applies to the total surcharge and additional surcharges**, not separately to each event. Once that total has attained £50, a payment reducing its remaining balance below £50 does not cancel the balance. Regulation 4's qualifying coding/direction-notice exception concerns the **employee**, not the employer, and requires payment in the year due or the next year; if that condition fails, arrears apply as if the exception had not applied. Establish the actual current notice/equivalent ETI provision before using that exception; the original regulation cites the older 2001 ETI instrument. [Regulations rr3–4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079).
+
+Keep an event ledger of due dates, payments and surcharge dates. Section 199(6) can backdate charges following the specified late/incomplete-return or omitted-liability assessments; for post-2022 years its references are the quarterly statutory dates. Mere non-enforcement does not defer settlement: section 199(10) requires the express agreement and complete-return conditions it states. Section 199(11)(b) separately protects the stated timely complete-return/assessment/payment case. A return is not complete until required supporting documents/information are also received under subsection (12). Do not use a later assessment notice to erase an already incurred surcharge without applying the actual provision. [Section 199(6), (10)–(12)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
+
+**Ordinary arrears control:** assume a £10,000 balance lawfully due, no relevant exemption/deferral/backdating complication, no payment and no other charge throughout the following twelve months. Initial surcharge is £500; the first six-month additional surcharge is 5% of £10,500 = £525; the next is 5% of £11,025 = £551.25. Total surcharges are £1,576.25 and total outstanding is £11,576.25. Apply actual payment dates in a real case. [Supplementary recomputing control](../../research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md).
 
 ### Tribunal preparation and further appeal
 
@@ -322,7 +332,9 @@ Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [sectio
 | R10 overseas business on arrival/departure, complete practice | https://gov.gg/CHttpHandler.ashx?id=181119&p=0 | 2026-10-27 |
 | 2026 monetary table, p5 standard charge and caps, p6 contributions | https://gov.gg/CHttpHandler.ashx?id=185595&p=0 | 2026-10-27 |
 
-The legal-library consolidation is expressly non-authoritative; authentic enactments and their effective dates control. Not yet confirmed: the implementing instrument reconciling the published 2026 £50,000 standard charge with consolidated s5B’s £40,000; special Open Market/Alderney cap eligibility and transitions; full pension deduction/encashment limits; fractional-period allowance/withdrawal allocation outside the cited practice; current surcharge-rate/minimum regulations; complete Tribunal/court rules and case-specific credit/claim operations. These exact limits do not cancel the ordinary source/base, rental-transition, payment or residence methods now supplied. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft. Professional attestation remains pending.
+| Surcharges and Supplements Regulations 2005, rr1–9 (complete); current Law s199 operative subsections (complete) | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079 and https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
+
+The legal-library consolidation is expressly non-authoritative; authentic enactments and their effective dates control. Not yet confirmed: the implementing instrument reconciling the published 2026 £50,000 standard charge with consolidated s5B’s £40,000; special Open Market/Alderney cap eligibility and transitions; full pension deduction/encashment limits; fractional-period allowance/withdrawal allocation outside the cited practice; complete Tribunal/court rules and case-specific credit/claim operations. These exact limits do not cancel the ordinary source/base, rental-transition, payment or residence methods now supplied. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2. The new surcharge method awaits independent review; professional attestation remains pending.
 
 ## Disclaimer
 

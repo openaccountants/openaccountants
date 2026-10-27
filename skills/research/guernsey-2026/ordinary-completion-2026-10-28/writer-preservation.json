@@ -1,11 +1,34 @@
 {
   "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
-  "protected_metadata_exact": true,
-  "CTA_exact": true,
-  "main_controls_byte_exact": true,
-  "old_payroll_bytes": 38946,
-  "new_payroll_bytes": 54730,
-  "new_payroll_sha256": "2223414c348632949a8aefb2da7aa77897f1de8dc482cada3049e667e553790b",
   "independent_review": "pending",
-  "published": false
+  "published": false,
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "old_bytes": 38946,
+      "new_bytes": 59024,
+      "sha256": "c85e88698ba7981f21fd93198db853e4d35efce16e1166f2fdc7862e041eaef9",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "old_bytes": 43597,
+      "new_bytes": 46978,
+      "sha256": "d961daa12b3685e3d332eea0a99910e36b4747505dfd49ecc490790d0f5e8f9b",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "old_bytes": 67245,
+      "new_bytes": 68864,
+      "sha256": "b5b867dcad9247476eb2ef654749a1672537c5e9dc1300895324c8c11e50f283",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    }
+  ]
 }

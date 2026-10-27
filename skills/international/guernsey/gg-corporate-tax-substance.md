@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "1.0"
+version: "1.1"
 verified_by: pending
 sources:
   - url: "https://gov.gg/RStax-rates-and-allowances"
@@ -37,7 +37,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey corporate tax, distributions and substance v1.0
+# Guernsey corporate tax, distributions and substance v1.1
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -149,6 +149,10 @@ The Revenue Service penalty page states an initial corporate late-return penalty
 An appeal must be submitted within **30 days of the Order imposing the penalty**. The FAQ says appeal does not suspend penalties: submit the return or evidence of prior submission to stop further daily charges. Retain the final online submission number and confirmation. Late filing, non-filing and inaccurate-return matters require their own analysis; payment surcharges and a complete statutory penalty opinion remain unverified. The personal-allowance £50 restriction on the same webpage is not a corporate exemption. [Penalty FAQ, evidence, appeal and suspension](https://gov.gg/taxpenalties).
 
 **Daily-penalty catch-up.** Assume no successful appeal/reduction and a corporate return submitted after the 30-day concession period, with **35 chargeable days established from the Order and submission dates**. The guidance calculation is £300 + 35 × £50 = **£2,050**, not merely five daily penalties. A return qualifying for the within-30-day concession would retain the £300 initial penalty without daily penalties. This example does not decide inclusive date counting or the Order's validity. [Penalty FAQ](https://gov.gg/taxpenalties).
+
+### Current ordinary late-payment surcharges
+
+Income Tax Law section 199 and the [2005 Surcharges and Supplements Regulations rr1–4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079) apply to ordinary company income-tax arrears: 5% initially, then 5% of the total then outstanding at each six-month point, including unpaid prior surcharges, subject to the actual settlement, assessment, exemption and deferral rules. The £50 minimum is aggregate; once reached, paying down below £50 does not cancel its remainder. The employee coding/direction-notice exception does not exempt an employer or company as such. Use the [full statutory event-ledger method](gg-individual-income-tax.md#statutory-income-tax-surcharge-calculation), including complete-return/backdating conditions, instead of importing the social-insurance rate. With a £10,000 ordinary debt and no payments/other adjustments for twelve months, the sourced working paper gives £500, £525 and £551.25 in charges, or £1,576.25 total. [Income Tax Law s199](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [supplementary control](../../research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md). This new method awaits independent review; earlier published review evidence does not cover it.
 
 ## Substance and cross-border distributions
 
@@ -401,7 +405,9 @@ This is not a company-incorporation checklist, document-duty calculation, treaty
 | C37 disregarded non-resident distributions and credits, all pages | https://gov.gg/CHttpHandler.ashx?id=193346&p=0 | 2026-10-27 |
 | C44 cap and distribution-pool timing, entire practice | https://gov.gg/CHttpHandler.ashx?id=191282&p=0 | 2026-10-27 |
 
-Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept publication as an accurate explicitly partial draft after two verified corrections. Final publication checks are recorded separately; professional attestation remains pending. Distribution/loan provisions and their implementing regulations, current company residence/migration practice C52, loss-ordering practice M24 and distribution practice C37/C44 were additionally read on 27 October 2026. The 2013 repeal of the general commercial-interest loan exemption is expressly applied above. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Not yet confirmed: mixed-rate distribution-credit mechanics beyond the cited statutory rule, complete minimum-tax and regulated-sector scope, and the source-specific limits stated above.
+Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept publication as an accurate explicitly partial draft after two verified corrections. Final publication checks are recorded separately; professional attestation remains pending. Distribution/loan provisions and their implementing regulations, current company residence/migration practice C52, loss-ordering practice M24 and distribution practice C37/C44 were additionally read on 27 October 2026. The 2013 repeal of the general commercial-interest loan exemption is expressly applied above. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Additional primary source read 28 October 2026: [Surcharges and Supplements Regulations 2005](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079), all rr1–9, with the complete operative s199 in the current Law. New ordinary surcharge calculations await independent review.
+
+Not yet confirmed: mixed-rate distribution-credit mechanics beyond the cited statutory rule, complete minimum-tax and regulated-sector scope, and the source-specific limits stated above.
 
 ## Disclaimer
 
