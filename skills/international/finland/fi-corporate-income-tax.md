@@ -19,7 +19,7 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.4
+version: 1.5
 category: international
 ---
 
@@ -49,7 +49,7 @@ Treat each accounting period ending in 2026 as part of tax year 2026, but file i
 | Corporate broadcasting tax | If taxable income is at least EUR 50,000: EUR 140 + 0.35% of excess over EUR 50,000, capped at EUR 3,000 | [Broadcasting Tax Act, sections 1, 3][yle-law] |
 | Ordinary prepayments | Minimum EUR 500; EUR 500–2,000 in two equal instalments in period months three/nine; over EUR 2,000 in twelve instalments under the decision | [Vero instalment rules][instalments] |
 
-Do not substitute an announced future 18% rate or 25-year loss period for the applicable 2026 law. The special new-machinery 50% depreciation regime covered 2020–2025, not an ordinary 2026 acquisition. Åland corporations use the regional media fee instead of mainland broadcasting tax; exempt entities listed in section 3 do not pay it. [Vero depreciation][depreciation]; [Broadcasting Tax Act][yle-law]; [Vero broadcasting/media fee][yle].
+The special new-machinery 50% depreciation regime covered 2020–2025, not an ordinary 2026 acquisition. Åland corporations use the regional media fee instead of mainland broadcasting tax; exempt entities listed in section 3 do not pay it. [Vero depreciation][depreciation]; [Broadcasting Tax Act][yle-law]; [Vero broadcasting/media fee][yle].
 
 ## The base
 
@@ -175,7 +175,7 @@ expected:
 | [Vero broadcasting/media fee][yle]; [detailed broadcasting guidance][yle-detail] | Mainland/Åland and expense timing | 2026-10-26 |
 | [Vero instalments][instalments]; [calendar][calendar]; [interest][interest-guide] | Payments and 2026 interest | 2026-10-26 |
 
-Not yet confirmed: separately scoped specialist incentives, reorganisations, financial-sector/fund treatment, final foreign subsidiary losses, CFC/hybrid and minimum-tax computations. Fresh independent whole-pack review is pending. No named professional sign-off is claimed.
+Not yet confirmed: proposals only, not 2026 law and not to be applied: an announced 18% corporate rate from 2027 and a 25-year loss carry-forward period (not found enacted in Finlex at the 27 Oct 2026 pack review). Also not covered: separately scoped specialist incentives, reorganisations, financial-sector/fund treatment, final foreign subsidiary losses, CFC/hybrid and minimum-tax computations. Fresh independent whole-pack review is pending. No named professional sign-off is claimed.
 
 [income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [business-law]: https://www.finlex.fi/fi/lainsaadanto/1968/360

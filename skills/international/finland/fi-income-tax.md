@@ -12,7 +12,7 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border skill; Åland municipal differences require
   the separate regional schedule.
-version: 1.7
+version: 1.8
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-26
@@ -95,6 +95,8 @@ Net eligible capital expenses/interest/current-business-loss election can create
 Use business recognition, deductions, inventory and depreciation rules under the Business Income Tax Act; the [corporate skill's ordinary asset/cost schedules](fi-corporate-income-tax.md) identify shared base rules, but corporate participation/group/interest restrictions do not automatically apply to a sole trader. Private drawings are not wages/expenses. Own/spouse remuneration and pay to a child or family member under 14 before the tax year are excluded; fines, penalty charges and bribes are not deductible; only 50% of entertainment (representation) costs is deductible; mixed-use assets/cars and negative-equity borrowing require their statutory allocation. [Business Income Tax Act, sections 7–8, 16, 18, 30, 33–34][business-law].
 
 Depreciation for 2026: machinery, equipment and vehicles at most 25% of the pooled undepreciated balance (reducing balance); a pool balance of EUR 1,200 or less can be written off at once. Buildings are depreciated per building on the undepreciated cost: at most 7% for shops, warehouses, factories, workshops and similar; 4% for residential, office and similar; 20% for light wooden structures, metal tanks and similar, and buildings used only for business research. [Business Income Tax Act, sections 30, 34][business-law].
+
+Own business trips (2026). A sole trader deducts the actual travel costs booked for a temporary trip outside the normal area of operation. On top of that, Business Income Tax Act section 55 gives an additional deduction: the difference between Vero's tax-free per diem maximum and the actual increased living costs, and the difference between the tax-free kilometre allowance and the actual costs of a business trip in the trader's private car. Use the 2026 Vero decision VH/6575/00.01.00/2025: domestic per diem EUR 25 for a trip over 6 hours, EUR 54 for over 10 hours (halved where the day includes free meals); the place must be over 15 km from home or workplace and over 5 km from both; private car EUR 0.55/km plus the listed additions; foreign per diems by the decision's country table. Where the accounting period is not the calendar year, apply the maximums fixed for the calendar year in which the period ends to the whole period. Home-to-workplace travel is not a business trip; if booked, add it back on Form 5. [2026 travel decision, sections 3, 9, 11–13][travel-2026]; [Vero guidance VH/721/00.01.00/2025][travel-trader]; [Business Income Tax Act, section 55][business-law].
 
 A cash donation of EUR 850 to EUR 500,000 to an EEA publicly funded university or college (or its university fund) for science or art is deductible from net earned income. [Income Tax Act, section 98a][law].
 
@@ -218,7 +220,7 @@ expected:
 |---|---|---|
 | [Income Tax Act 1535/1992][law] | Sections 9–14, 29–33c, 38–41, 45–60, 61–69, 93–100, 98a, 106, 118–125, 127–127f, 131–134; Act 873/2026 commencement | 2026-10-26 |
 | [2026 state-scale Act 1140/2025][scale] | Sections 1–2 | 2026-10-26 |
-| [Business Income Tax Act 360/1968][business-law] | Sections 8, 16, 30, 34: business costs, non-deductibles and depreciation | 2026-10-27 |
+| [Business Income Tax Act 360/1968][business-law] | Sections 8, 16, 30, 34, 55: business costs, non-deductibles, depreciation and travel additional deduction | 2026-10-27 |
 | [Accounting Act 1336/1997][kpl] | Chapter 2 section 10: record retention | 2026-10-27 |
 | [Valuation Act 1142/2005][value-law] | Sections 2–10, 15–17; dividend and sole-trader assets | 2026-10-26 |
 | [Health Insurance Act 1224/2004][health-law] | Chapter 18 sections 14–24; bases and annual-rate mechanism | 2026-10-26 |
@@ -233,8 +235,9 @@ expected:
 | [Åland Municipal Tax Act 2011:119][ax-law] | Sections 1–2, 9–28, 2026:10 commencement; current official browser text | 2026-10-26 |
 | [Åland Media Fee Act 2019:103][ax-media-law]; [Vero 2026 media fee][ax-media] | Sections 2, 4 and indexed EUR 128 amount | 2026-10-26 |
 | [Vero Åland deductions][aland] | Claim routes; its older national commuting figures are superseded by Act 873/2026 | 2026-10-26 |
+| [Vero 2026 travel decision VH/6575/00.01.00/2025][travel-2026]; [Vero sole-trader travel guidance VH/721/00.01.00/2025][travel-trader] | §§3, 9, 11–13 amounts and distance tests; EVL 55 additional deduction; fiscal-year rule | 2026-10-27 |
 
-Not yet confirmed: 2026 tax-free travel allowance amounts for a sole trader's own business trips (per diem and kilometre rates; Vero's 2026 decision was not read from the official text), and separately scoped agriculture/forestry, seafarer, equity-remuneration and exceptional investment regimes. The ordinary mainland/Åland source-review evidence is recorded in the pack README; no professional attestation is claimed.
+Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remuneration and exceptional investment regimes. The ordinary mainland/Åland source-review evidence is recorded in the pack README; no professional attestation is claimed.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [scale]: https://www.finlex.fi/fi/lainsaadanto/2025/1140
@@ -258,6 +261,8 @@ Not yet confirmed: 2026 tax-free travel allowance amounts for a sole trader's ow
 [household]: https://vero.fi/en/individuals/deductions/Tax-credit-for-household-expenses/tax-credit-amount/
 [automatic]: https://www.vero.fi/en/individuals/deductions/what-can-I-deduct/these-deductions-are-calculated-automatically-by-the-tax-administration/
 [aland]: https://www.vero.fi/en/individuals/deductions/what-can-I-deduct/deductions-for-the-residents-of-aland/
+[travel-2026]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
+[travel-trader]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48192/liikkeen-ja-ammatinharjoittajien-seka-maataloudenharjoittajien-matkakustannusten-vahentaminen/
 
 <!-- openaccountants-cta-block -->
 

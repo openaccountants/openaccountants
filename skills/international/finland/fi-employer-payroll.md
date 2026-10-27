@@ -17,7 +17,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-26
-version: 0.9
+version: 0.10
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -42,7 +42,8 @@ Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance 
 | Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025, section 3][health-rates] |
 | Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2][health-rates]; [Health Insurance Act chapter 18][health-law] |
 | Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153][tyel-law]; [Vero 2026 contributions][insurance] |
-| TyEL monthly minimum | EUR 71.72 per employee/employer; indexed statutory threshold | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions annual statutory-amount table][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
+| TyEL monthly minimum | EUR 71.72 per employee/employer in 2026: the Act's EUR 41.89 (section 4(3)(1)) × 2026 wage coefficient 1.712 (section 96). Below that in a calendar month, TyEL does not apply to that employee | [Employees Pensions Act, sections 4, 96][tyel-law]; [Finnish Centre for Pensions: 2026 coefficient 1.712][etk-2026]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
+| TyEL temporary employer | No continuous employee and fixed-term wages under EUR 10,272 per six months in 2026 (EUR 6,000 × 1.712); may insure without a contract | [Employees Pensions Act, sections 96, 147][tyel-law]; [Finnish Centre for Pensions: 2026 coefficient][etk-2026] |
 | TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4][tyel-law] |
 | Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
 | Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
@@ -88,7 +89,7 @@ Withholding on cash plus benefits is calculated on the taxable total but cannot 
 
 Resolve Finnish applicable law/A1 first, then each scheme independently. TyEL starts/ends by the birthday-month rules and monthly minimum in the table; it covers qualifying remuneration even for a pensioner working below the upper age. A working manager with more than 30% personally or more than 50% with family ownership/control is screened for YEL instead; indirect control and family definitions matter. Do not apply both schemes to the same entrepreneurial work. [TyEL Act, sections 4, 7][tyel-law]; [YEL Act, section 3][yel-law].
 
-Unemployment begins the month after turning 18. For those born before 1965 it ends after the month of turning 65; later cohorts use their statutory minimum pension age under section 12a. In 2026 the older-cohort age rule is the relevant upper transition. YEL/MYEL entrepreneurs, specified athletes, seasonal workers and foreign-law cases are excluded. Working part-owners who are not YEL entrepreneurs use reduced employee contribution: leading role with personal ownership at least 15% or personal+family at least 30%, or nonleading ownership/control at least 50%, applying the statutory family/indirect-control rules on payday. Keep the classification evidence. [Unemployment Financing Act, sections 12a, 15, 18–19][fund-law]; [Employment Fund part-owner guidance][fund-scope].
+Unemployment begins the month after turning 18. For those born before 1965 it ends after the month of turning 65; later cohorts use their statutory minimum pension age under section 12a. In 2026 the older-cohort age rule is the relevant upper transition. YEL/MYEL entrepreneurs, specified athletes, seasonal workers and foreign-law cases are excluded. Working part-owners who are not YEL entrepreneurs use reduced employee contribution: leading role with personal ownership at least 15% or personal+family at least 30%, or nonleading ownership/control at least 50%, applying the statutory family/indirect-control rules on payday. Leading position means managing director, board member or equivalent; family means spouse and relatives in direct line living in the same household; indirect ownership counts where the person (with family) holds at least half of the intermediate company. In 2026 the part-owner pays 0.39% and the employer pays a flat 0.31% on part-owner wages (no 1.23% upper band). Keep the classification evidence. [Unemployment Security Act 1290/2002, chapter 1 section 6][tt-law]; [Unemployment Financing Act, sections 12a, 15, 18–19][fund-law]; [Employment Fund part-owner guidance][fund-scope].
 
 Deduct liable employee unemployment even where total employer annual wages do not exceed EUR 1,500; the employer then retains the deduction, and still reports liability. Above threshold the Fund invoices both shares using actual reported earnings. For covered ordinary annual payroll compute `min(payroll,2509500) × 0.0031 + max(0,payroll−2509500) × 0.0123`; calculate part-owner employer wages at 0.31% separately. [Unemployment Financing Act, sections 12a, 18, 21][fund-law].
 
@@ -191,8 +192,9 @@ expected:
 | [Prepayment Act 1118/1996][prepayment-law]; [Decree 1124/1996][decree] | Act sections 9–13, 25; decree sections 2–4, 9, 17; wage/card/cash rules | 2026-10-26 |
 | [Income Tax Act 1535/1992][income-law]; [2026 Benefit Decision][benefits]; [2026 Travel Decision][travel] | Sections 64–69, 71–73, Act 873/2026 commencement; annual valuation/reimbursement rules | 2026-10-26 |
 | [TyEL Act 395/2006][tyel-law]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] (pension insurer, used because telp.fi blocked automated reads); [Vero insurance][insurance]; [Ilmarinen contribution calculation][tyel-calculation] | Sections 4, 7, 70, 72, 142–144, 152–153; current threshold/share | 2026-10-26 |
+| [Unemployment Security Act 1290/2002][tt-law]; [Finnish Centre for Pensions 2026 indices][etk-2026] | Ch. 1 §6 part-owner definition; 2026 wage coefficient 1.712 (TyEL §§4, 96, 147 amounts) | 2026-10-27 |
 | [YEL Act 1272/2006][yel-law] | Section 3 owner/entrepreneur test | 2026-10-26 |
-| [Unemployment Financing Act 555/1998][fund-law]; [Fund liability][fund-scope]; [Fund payment][fund-payment] | Sections 12–15, 18–21; 2026 rates and reporting/invoices | 2026-10-26 |
+| [Unemployment Financing Act 555/1998][fund-law]; [Fund liability][fund-scope]; [Fund payment][fund-payment] | Sections 12–15, 18–21; 2026 rates (s18 part-owner 0.39% / employer 0.31% re-read) and reporting/invoices | 2026-10-27 |
 | [Employer Health Act 771/2016][employer-health]; [Health Insurance Act 1224/2004][health-law]; [Decree 1026/2025][health-rates] | Coverage, wages, insurance salary and 2026 annual rates | 2026-10-26 |
 | [Accident Act 459/2015][accident-law] | Sections 3, 8–9, 81, 166, 268; scope, wage and actual rate | 2026-10-26 |
 | [Incomes Register Act 53/2018][ir-law]; [deadlines][deadlines]; [reporting][reporting]; [corrections][corrections] | Sections 6, 12, 22–23; reports, recovery and late fees | 2026-10-26 |
@@ -207,6 +209,8 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 [travel]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [tyel-law]: https://www.finlex.fi/fi/lainsaadanto/2006/395
+[tt-law]: https://www.finlex.fi/fi/lainsaadanto/2002/1290
+[etk-2026]: https://www.etk.fi/ajankohtaista/tyoelakkeisiin-tulossa-lahes-yhden-prosentin-korotus/
 [tyel-elo]: https://www.elo.fi/en/employer/tyel-insurance/
 [tyel-index]: https://www.telp.fi/indeksit/tyoelakelaeissa_saadetyt_rahamaarat_vuodesta-2/tyel_2026/
 [tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/
