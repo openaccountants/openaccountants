@@ -29,3 +29,11 @@ No new push/public update, merge, issue397closure, CLAconsent, external authorit
 The reviewer found the actual Form706section6 declaration was not covered by the initial opening/sections1–4read. Writer subsequently read allsections5–6 and the complete current-index alternateForm706118095. Both require certifying Guernseycentralmanagement/control orcontrol. The Companies-page183549copy includesPEopening/type, but the118095copy lacks that addedPEwording; both retain the same08/21versionlabel. Neither authorises a nonresidentPE to make a false declaration. The Guide now expressly retains the completion gap and requires actualRevenueServiceinstructions if neither declaration is true. This is a precise operational limitation, not a new residence exemption or a completePEregistrationclaim.
 
 The signedDT-IndividualPartF is printedp6; NotesPartF is p10. Source/readscope references now distinguish them. No new legal method inferred from the page correction.
+
+## Review and final local checks
+
+The bounded source/no-loss review accepts repaired candidate cd3dc1b8 after both findings were fixed. The report and integrity manifest are copied byte-exact under independent-review/. All six domain partials remain. The accepted ordinary PE base/electronic-return method does not resolve the section 6 registration declaration-completion gap. The UK pension process does not replace a Guernsey domestic credit claim process. Lost content restored: 0 in this addition; earlier restorations remain.
+
+Writer verification: all 95 country/research calculation controls pass; all ten changed Guides pass schema with zero warnings; strict metadata against the previous local checkpoint passes. Full no-index schema passes: 2,268 Guides, 6,122 generated blocks, three inherited warning groups. All 129 repository unit tests pass in the required local temporary-directory environment, log /private/tmp/oa-guernsey-final-tests/remaining-methods-tests.txt. Generated index staleness in the earlier accidental default run was not repaired by editing derived trees. No engineering changes or new tests were introduced.
+
+Review-status-only administrative closure follows the accepted legal candidate. Publication remains a separate recorded action. Do not count these reviewed supplied methods as a complete Guernsey ordinary pack.

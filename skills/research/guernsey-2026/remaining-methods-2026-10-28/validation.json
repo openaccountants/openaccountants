@@ -1,0 +1,34 @@
+{
+  "accepted_legal_candidate": "cd3dc1b8fa142ec18f549e08892ea880af25dc78",
+  "calculations": 95,
+  "calculation_failures": 0,
+  "main_controls": 20,
+  "original_main_preserved": 18,
+  "original_archive_preserved": 32,
+  "changed_schema_guides": 10,
+  "changed_schema_errors": 0,
+  "changed_schema_warnings": 0,
+  "strict_metadata_errors": 0,
+  "full_no_index_schema": {
+    "guides": 2268,
+    "generated_blocks": 6122,
+    "errors": 0,
+    "inherited_warning_groups": 3
+  },
+  "unit_tests": 129,
+  "unit_result": "pass",
+  "unit_log": "/private/tmp/oa-guernsey-final-tests/remaining-methods-tests.txt",
+  "review_findings_fixed": 2,
+  "open_material_review_findings": 0,
+  "country_complete": false,
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "published": false,
+  "publication_note": "Reviewed local continuation; publication is separate from this evidence and does not close remaining country coverage."
+}
