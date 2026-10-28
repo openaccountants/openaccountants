@@ -1,0 +1,464 @@
+{
+  "xlrd_version": "2.0.2",
+  "raw_sha256": "4ef123ee1bf5539b8dc4f997f7fee2c336bdf39c18c92183adb5306435e8e0fb",
+  "all_cells_identical": true,
+  "independently_read_cells": [
+    {
+      "sheet": "Form CT4 ",
+      "rows": 125,
+      "columns": 28,
+      "cells": [
+        {
+          "row": 1,
+          "col": 3,
+          "type": 1,
+          "value": "Income Tax Office"
+        },
+        {
+          "row": 1,
+          "col": 28,
+          "type": 1,
+          "value": "Form CT4 (ITA 2010)"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "type": 1,
+          "value": "HM Government of Gibraltar"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "type": 1,
+          "value": "CLAIM TO REDUCE PAYMENTS ON ACCOUNT FOR AN ACCOUNTING PERIOD"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "type": 1,
+          "value": "Important notes & guidelines"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "type": 1,
+          "value": "WHEN SHOULD YOU USE THIS FORM?"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "type": 1,
+          "value": "This form is to be used to make a claim to the Commissioner of Income Tax to reduce the payments on account towards your corporation tax liability due on 30 September and 28 February, in accordance with section 39(5) of the Income Tax Act 2010 (\"the Act\")."
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "type": 1,
+          "value": "WHAT IS THE DEADLINE FOR MAKING YOUR CLAIM?"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "type": 1,
+          "value": "This claim should be submitted before the payment on account of either 28 February and 30 September is due."
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "type": 1,
+          "value": "INSTANCES FOR MAKING A CLAIM?"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "type": 1,
+          "value": "You should make this claim if you believe that your tax liability for this accounting period is less than your tax liability for the last accounting period. This could be because:"
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "type": 1,
+          "value": "you expect your trading profits to be lower; or"
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "type": 1,
+          "value": "you expect other significant sources of income to be lower; or"
+        },
+        {
+          "row": 25,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 25,
+          "col": 4,
+          "type": 1,
+          "value": "more of your income will be taxed at source; or"
+        },
+        {
+          "row": 26,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 26,
+          "col": 4,
+          "type": 1,
+          "value": "more of your income will come from non-chargeable sources (e.g. interest and dividends)."
+        },
+        {
+          "row": 28,
+          "col": 2,
+          "type": 1,
+          "value": "HOW TO COMPLETE AND SUBMIT THE FORM?"
+        },
+        {
+          "row": 29,
+          "col": 2,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 29,
+          "col": 3,
+          "type": 1,
+          "value": "Tick and complete the appropriate box(es) overleaf;"
+        },
+        {
+          "row": 30,
+          "col": 2,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 30,
+          "col": 3,
+          "type": 1,
+          "value": "Make a reasonable estimate, on the basis of the information available now, of your expected corporation tax liability for the accounting period;"
+        },
+        {
+          "row": 32,
+          "col": 2,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 32,
+          "col": 3,
+          "type": 1,
+          "value": "Enter half of this estimated amount in the reduced payment on account box overleaf. This is the amount of each of the two payments on account."
+        },
+        {
+          "row": 34,
+          "col": 2,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 34,
+          "col": 3,
+          "type": 1,
+          "value": "Please read, sign and date the declaration."
+        },
+        {
+          "row": 36,
+          "col": 2,
+          "type": 1,
+          "value": "The completed form should be posted to the Income Tax Office at St. Jago's Stone Block, 331 Main Street, Gibraltar."
+        },
+        {
+          "row": 38,
+          "col": 2,
+          "type": 1,
+          "value": "If you require any assistance in completing this form please contact this Office on Tel. No. 20074889."
+        },
+        {
+          "row": 40,
+          "col": 2,
+          "type": 1,
+          "value": "WARNING"
+        },
+        {
+          "row": 44,
+          "col": 2,
+          "type": 1,
+          "value": "IF YOU PAY LESS THAN YOU SHOULD YOU WILL BE LIABLE TO A SURCHARGE IN ACCORDANCE WITH THE PROVISIONS OF SECTION 64 OF THE ACT"
+        },
+        {
+          "row": 49,
+          "col": 1,
+          "type": 1,
+          "value": "Company information"
+        },
+        {
+          "row": 51,
+          "col": 2,
+          "type": 1,
+          "value": "Taxpayer reference number"
+        },
+        {
+          "row": 51,
+          "col": 17,
+          "type": 1,
+          "value": "Incorporation number"
+        },
+        {
+          "row": 53,
+          "col": 2,
+          "type": 1,
+          "value": "Company name"
+        },
+        {
+          "row": 53,
+          "col": 22,
+          "type": 1,
+          "value": "Contact Tel No."
+        },
+        {
+          "row": 56,
+          "col": 2,
+          "type": 1,
+          "value": "Registered office address"
+        },
+        {
+          "row": 62,
+          "col": 1,
+          "type": 1,
+          "value": "F C Carreras"
+        },
+        {
+          "row": 63,
+          "col": 1,
+          "type": 1,
+          "value": "Commissioner of Income Tax"
+        },
+        {
+          "row": 64,
+          "col": 1,
+          "type": 1,
+          "value": "Details of claim"
+        },
+        {
+          "row": 66,
+          "col": 2,
+          "type": 1,
+          "value": "This claim is made for the accounting period ended"
+        },
+        {
+          "row": 68,
+          "col": 2,
+          "type": 1,
+          "value": "Please select one of the options provided below."
+        },
+        {
+          "row": 70,
+          "col": 2,
+          "type": 1,
+          "value": "1."
+        },
+        {
+          "row": 70,
+          "col": 3,
+          "type": 1,
+          "value": "I believe that my tax liability for this accounting period will be less than the payments on account based on the last accounting period; or"
+        },
+        {
+          "row": 73,
+          "col": 2,
+          "type": 1,
+          "value": "2."
+        },
+        {
+          "row": 73,
+          "col": 3,
+          "type": 1,
+          "value": "There will be no tax due for this accounting period."
+        },
+        {
+          "row": 77,
+          "col": 2,
+          "type": 1,
+          "value": "Please indicate the reason(s) why you are claiming to reduce your payments on account:"
+        },
+        {
+          "row": 79,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 79,
+          "col": 4,
+          "type": 1,
+          "value": "trading profits have decreased; or"
+        },
+        {
+          "row": 81,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 81,
+          "col": 4,
+          "type": 1,
+          "value": "other significant sources of income have decreased; or"
+        },
+        {
+          "row": 83,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 83,
+          "col": 4,
+          "type": 1,
+          "value": "more of my income will be taxed at source; or"
+        },
+        {
+          "row": 85,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 85,
+          "col": 4,
+          "type": 1,
+          "value": "more of my income will be derived from non-chargeable sources of income."
+        },
+        {
+          "row": 88,
+          "col": 3,
+          "type": 1,
+          "value": "-"
+        },
+        {
+          "row": 88,
+          "col": 4,
+          "type": 1,
+          "value": "Other (please specify below)"
+        },
+        {
+          "row": 94,
+          "col": 2,
+          "type": 1,
+          "value": "Please enter the amount of each reduced payment on account you wish to make for the accounting period in the box provided."
+        },
+        {
+          "row": 96,
+          "col": 2,
+          "type": 1,
+          "value": "IMPORTANT"
+        },
+        {
+          "row": 96,
+          "col": 21,
+          "type": 1,
+          "value": "£"
+        },
+        {
+          "row": 97,
+          "col": 2,
+          "type": 1,
+          "value": "Each reduced payment on account should be half of the tax liability you expect to have to pay for the accounting period"
+        },
+        {
+          "row": 102,
+          "col": 2,
+          "type": 1,
+          "value": "I understand that if the payments on account finally due, as based on actual returns submitted and agreed, are greater than the amounts paid, surcharges will be applied on the difference."
+        },
+        {
+          "row": 106,
+          "col": 2,
+          "type": 1,
+          "value": "Signature"
+        },
+        {
+          "row": 106,
+          "col": 21,
+          "type": 1,
+          "value": "Date"
+        },
+        {
+          "row": 109,
+          "col": 2,
+          "type": 1,
+          "value": "A photocopy of a signature is not acceptable"
+        },
+        {
+          "row": 110,
+          "col": 2,
+          "type": 1,
+          "value": "Name (in capitals)"
+        },
+        {
+          "row": 113,
+          "col": 2,
+          "type": 1,
+          "value": "Designation"
+        },
+        {
+          "row": 115,
+          "col": 2,
+          "type": 1,
+          "value": "Except where a liquidator or administrator has been appointed, any person signing this declaration must be authorised to sign on behalf of the company."
+        },
+        {
+          "row": 118,
+          "col": 3,
+          "type": 1,
+          "value": "If the form is signed by an advisor or representative on behalf of the company, please enter his/her details in the boxes provided above."
+        },
+        {
+          "row": 122,
+          "col": 1,
+          "type": 1,
+          "value": "FOR OFFICE USE ONLY"
+        },
+        {
+          "row": 124,
+          "col": 2,
+          "type": 1,
+          "value": "APPROVED"
+        },
+        {
+          "row": 124,
+          "col": 11,
+          "type": 1,
+          "value": "YES"
+        },
+        {
+          "row": 124,
+          "col": 15,
+          "type": 1,
+          "value": "NO"
+        },
+        {
+          "row": 125,
+          "col": 19,
+          "type": 1,
+          "value": "Name of Officer"
+        }
+      ]
+    }
+  ]
+}

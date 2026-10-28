@@ -69,7 +69,7 @@ proof('UKorder','UK','UK social-security Order2024 paragraphs2–4',r'^2\. This 
 proof('SE1','SE1','Official SE1 form sections3–9, status/document/licence and separate-PAYE fields',r'^Section 3 - Employment Details')
 proof('SCS','SCS','Official 2026/27 self-employed annual schedule, one page',r'^26/27')
 proof('SGerrors','SG','July2025 self-employed guide shared-week/partial-month printed intermediate products',r'^With effect from 1st July 2025',r'^When contributions need not be paid')
-proof('SGadmin','SG','July2025 self-employed guide monthly payment, written-rate authority and annual assessment',r'^Monthly remittances',r'^For further information')
+proof('SGadmin','SG','July2025 self-employed guide physical page8: monthly payment, written-rate authority and annual assessment',r'^Monthly remittances',r'^For further information',last=True)
 proof('CA22','CA22','HMRC CA3822: Gibraltar,12month lead time, eligibility, agent, evidence, extension and online route',r'^You can use this form',r'^Check when you can expect a reply')
 proof('CA22postal','CA22','HMRC CA3822 official change log: print/post removed',r'^Print and post option',r'^22 June 2023')
 proof('CA37','CA37','HMRC CA3837: Gibraltar,12month lead time, evidence, agent, extension and online route',r'^You can use this form',r'^Check when you can expect a reply')

@@ -581,7 +581,7 @@
     },
     {
       "id": "IND-40",
-      "rule": "\u00a35,800 custody/maintenance deduction and joint-custody half, legal separation and father rule7(b)/(c) exclusions, death reduction transferred to survivor, monthly residence qualification. Synthetic half \u00a32,900.",
+      "rule": "\u00a35,800 custody/maintenance deduction: if the claimant is a spouse/civil partner, that claimant must not be entitled to rule7 for the assessment year; joint-custody half, legal separation and father rule7(b)/(c) exclusions, death reduction transferred to survivor, monthly residence qualification. Synthetic half \u00a32,900.",
       "guide_section": "The base",
       "proof_ids": [
         "A12",
@@ -832,7 +832,7 @@
     },
     {
       "id": "IND-60",
-      "rule": "Current maintenance notice overrides inference from public portal listing; 2026 IT1 actual income/election years and receipt deadline; category email, ID, authority and attachment requirements. No future-year form or actual receipt inferred.",
+      "rule": "Current maintenance notice overrides inference from public portal listing; 2026 IT1 income year plus type-specific election/allowance labels: PAYE/HEPSS commencing1July2026, Other ending30June2026; receipt deadline; category email, ID, authority and attachment requirements. No future-year form or actual receipt inferred.",
       "guide_section": "Deadlines and filing",
       "proof_ids": [
         "ITOinterim",
@@ -2846,7 +2846,7 @@
     "IND-P066",
     "IND-P068"
   ],
-  "guide_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
+  "guide_sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07",
   "before_sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
   "original_qnups_xml_sha256": "bd6472b4eb7741dc1b5a83bdf82229084f4236bdb7ba3ce0895d8ec1e1da90f3",
   "new_independent_acceptance": false,
