@@ -4,7 +4,7 @@
   "main_controls": 20,
   "all10guides_control_and_protected_fields_exact": true,
   "nine_guides_entirely_unchanged": true,
-  "independent_review": "pending",
+  "independent_review": "accepted at cd3dc1b8; report/integrity copied byte-exact; final administrative comparison follows",
   "published": false,
   "files": [
     {
@@ -94,8 +94,8 @@
       "protected_metadata_exact": true,
       "main_controls_byte_exact": true,
       "cta_exact": true,
-      "sha256": "2cbdeba6208f467a5c098f5caf4906527959faa758bdcac375be195975046c84",
-      "bytes": 71957
+      "sha256": "4e2a2266cbda75047e791d1b2575c75bb3782f5973461dff3b0675929875152b",
+      "bytes": 72554
     }
   ]
 }
