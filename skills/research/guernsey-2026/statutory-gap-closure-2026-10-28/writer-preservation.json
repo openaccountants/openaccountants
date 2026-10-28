@@ -1,6 +1,6 @@
 {
   "baseline": "d4ea78488b8feed9e93c375076a9fc5e7f7825f6",
-  "independent_review": "pending",
+  "independent_review": "accepted at696132b85dd81b7ed12d3d897459cb21054db4fc;11pins in independent-review/closure.json",
   "published": false,
   "main_controls": 20,
   "original_main_controls_preserved": 18,
@@ -30,5 +30,6 @@
       "CTA_exact": true,
       "main_controls_byte_exact": true
     }
-  ]
+  ],
+  "publication_note": "Local reviewed checkpoint, held while remaining ordinary gaps are researched. PR780remainsd4ea7848."
 }

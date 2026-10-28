@@ -15,7 +15,7 @@
     "TMPDIR": "/private/tmp/oa-guernsey-final-tests",
     "RUNNER_TEMP": "/private/tmp/oa-guernsey-final-tests"
   },
-  "review": "whole-pack source/no-loss accepted; final administrative closure pending",
+  "review": "fresh whole-pack and bounded status closure accepted at696132b8, no open material findings",
   "published": false,
   "country_complete": false,
   "partial_domains": [
@@ -25,5 +25,7 @@
     "PR",
     "TP",
     "XB"
-  ]
+  ],
+  "final_status_candidate": "696132b85dd81b7ed12d3d897459cb21054db4fc",
+  "publication_note": "Local only. Preserved11blob closure; do not equate supplied-method acceptance with ready/complete ordinary pack. Continue next researchable ordinary gap before any new country push."
 }
