@@ -37,3 +37,9 @@ The bounded source/no-loss review accepts repaired candidate cd3dc1b8 after both
 Writer verification: all 95 country/research calculation controls pass; all ten changed Guides pass schema with zero warnings; strict metadata against the previous local checkpoint passes. Full no-index schema passes: 2,268 Guides, 6,122 generated blocks, three inherited warning groups. All 129 repository unit tests pass in the required local temporary-directory environment, log /private/tmp/oa-guernsey-final-tests/remaining-methods-tests.txt. Generated index staleness in the earlier accidental default run was not repaired by editing derived trees. No engineering changes or new tests were introduced.
 
 Review-status-only administrative closure follows the accepted legal candidate. Publication remains a separate recorded action. Do not count these reviewed supplied methods as a complete Guernsey ordinary pack.
+
+## Final administrative recovery closure
+
+An unpublished local archive commit temporarily wrote audit JSON into the corridor path. The corrective commit bd8bdf6d restored the exact accepted cd3dc1b8 legal text, then changed only the one review-status paragraph. Independent full-file comparison confirms that restoration, all eleven final Guide/README blob pins, all 95 controls, all metadata/CTA and the exact remaining partials. The report distinguishes zero content loss relative to the accepted legal baseline from one whole Guide recovered after the local overwrite. Closure records are archived byte-exact in independent-review/closure.md and closure.json. This final record-only commit changes no Guide or README blob.
+
+The accepted country batch is an accurate partial source-cited draft. Publication and actual final-head CI are separate actions; neither is claimed by the independent local review. Keep issue #397 open and do not count Guernsey as complete.

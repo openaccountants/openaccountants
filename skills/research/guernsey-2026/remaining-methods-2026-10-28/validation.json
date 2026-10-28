@@ -30,5 +30,10 @@
     "XB"
   ],
   "published": false,
-  "publication_note": "Reviewed local continuation; publication is separate from this evidence and does not close remaining country coverage."
+  "publication_note": "Reviewed local continuation; publication is separate from this evidence and does not close remaining country coverage.",
+  "final_status_recovery_head": "bd8bdf6df625ea0156f2061bc16f66e16d3a1c17",
+  "final_11_file_pins_match": true,
+  "full_pr_strict_metadata_guides": 10,
+  "full_pr_strict_metadata_errors": 0,
+  "review": "source review and final status/recovery closure accepted, zero open material findings"
 }
