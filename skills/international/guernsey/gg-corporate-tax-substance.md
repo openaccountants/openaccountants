@@ -8,7 +8,6 @@ tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
 version: "1.1"
-verified_by: pending
 sources:
   - url: "https://gov.gg/RStax-rates-and-allowances"
     title: "2026 changes: definition of a distribution"
@@ -419,6 +418,16 @@ General tax and accounting reference material only. These drafts have not been p
 
 ---
 
-## Talk to an accountant
+## Talk to a verified accountant
 
-Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
