@@ -7,30 +7,30 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "0.18"
+version: "0.19"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement: Articles 3–5, 7–9, 21 and 28–29"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Income Tax Act 2010, 23 March 2026 consolidation"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf"
     title: "Rates of Tax Rules 1989, rule 6, 1 July 2024 consolidation"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf"
     title: "Income Tax Office Guidance Notes for Companies, August 2025"
     as_of: "2026-10-22"
   - url: "https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate"
     title: "Income Tax Office corporate filing, payments and penalty guidance"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf"
     title: "Income Tax Office business entertainment guidance; undated, limitations noted in body"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf"
     title: "Income Tax Office allocation table 2022–2033; stale rate footer, not rate authority"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls"
     title: "ITO published CT4 workbook: instructions, fields and declaration; current operational limit retained"
     as_of: "2026-10-28"
@@ -43,7 +43,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar corporate tax and filing v0.18
+# Gibraltar corporate tax and filing v0.19
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -53,7 +53,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, cessation stock valuation, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope.
 
-Earlier source reads and completed corporate reviews date from 22 October 2026. The 28 October continuation adds targeted section 39/CT4 and published return-contact checks; it does not claim that every inherited method has been newly reviewed. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
+Earlier source reads and completed corporate reviews date from 22 October 2026. The 28 October continuation supplies a complete writer quote ledger, actual CT4 and published return-contact procedures, and the ordinary rented-premises/non-annual approved-fund rules. Current independent acceptance is pending; earlier completed reviews retain their exact scopes. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
 ### Company residence and the source of profits
 
@@ -114,6 +114,16 @@ Interest needs its own checks: paragraph 2(1)(j) excludes interest to a non-resi
 Where income is partly chargeable and partly non-chargeable, paragraph 2(2)(a) requires pro-rata apportionment of deductions between them. For a simple established allocation of 75% to chargeable income, £12,000 of otherwise allowable shared expense gives £9,000 against chargeable income. This example assumes the income classification and allocation basis have been verified; do not use turnover mechanically where the facts require a different analysis. [Paragraph 2(2)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For the defined apportioned branch head-office expenses, paragraph 2(1)(p) excludes the amount exceeding **5% of the Gibraltar branch's gross income**. If the relevant expense is £40,000 and branch gross income is £500,000, the ceiling is £25,000 and £15,000 is disallowed under that restriction, before other conditions. This is not a deduction of 5% without expenditure and is separate from connected-company expense restrictions. [Paragraph 2(1)(p)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+#### Rented domestic premises used to produce income
+
+Where Schedule 3 paragraph 2(1)(a) applies to a dwelling-house or domestic office, identify the part used to produce the trade or profession’s income. The deduction for those premises must not exceed **two-thirds of the rent bona fide paid**, unless the greater-sum exception is justified on the particular circumstances specified in the paragraph. The cap is not an automatic deduction: an unsupported or private amount does not qualify merely because it is below two-thirds. This rule does not create a deduction for imputed rent where no rent was paid. [Schedule 3, paragraph 2(1)(a), printed page 159](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Conditional illustration:** assume £18,000 of relevant bona fide rent was paid and a separate supported analysis establishes £9,000 as the income-producing rent amount. The ordinary two-thirds cap is £12,000, so the amount within both those tests is £9,000. If the otherwise eligible amount instead is £14,400 and no greater-sum exception is relied on, the cap leaves £12,000. These are assumed inputs, not a prescribed business-use percentage, a final tax assessment or a conclusion about the recipient’s tax or employee benefits. The [supplementary rent control](../../research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md) checks only that arithmetic.
+
+#### Non-annual employer contributions to an approved fund
+
+Schedule 3 paragraph 4 addresses an employer contribution to an approved employee provident, pension or other fund **which is not an ordinary annual contribution**. It is deducted in the year paid or spread over the period the Commissioner decides is proper. Do not invent a default spreading period or replace the paid-year condition with an unsupported book accrual. Retain the fund approval, contribution character, payment evidence and any Commissioner decision supporting the spreading treatment. This rule does not itself establish an employee exemption or another fund’s approval. [Schedule 3, paragraphs 2(1)(n) and 4, printed pages 161 and 163](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ### Bad debts, entertainment and gifts
 
@@ -273,7 +283,7 @@ For a changed accounting date, section 39(4)(f) retains the previous-date basis 
 
 ### Applying to reduce instalments
 
-If required payments on account will exceed the current period's liability, section 39(5) permits an application for full or partial discharge. The Commissioner decides whether to discharge or reduce the obligation under subsection (6); an internal forecast is not itself that decision. The ITO identifies **Form CT4** and says it is not valid for an accounting period that has already ended. Prepare the expected tax computation and supporting forecast, retain the application and decision, and update the payment schedule. The published form’s fields and calculation are set out below. Its current operational acceptance and postal route remain explicitly unconfirmed. [Section 39(5)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO CT4 guidance and download](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
+If required payments on account will exceed the current period's liability, section 39(5) permits an application for full or partial discharge. The Commissioner decides whether to discharge or reduce the obligation under subsection (6); an internal forecast is not itself that decision. The ITO identifies **Form CT4** and says it is not valid for an accounting period that has already ended. Prepare the expected tax computation and supporting forecast, retain the application and decision, and update the payment schedule. The published form’s fields, calculation and postal instructions are set out below. A particular claim’s receipt and the Commissioner’s decision require their own evidence. [Section 39(5)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO CT4 guidance and download](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 Payments on account are themselves subject to late-payment surcharge. If an amount omitted following a discharge application is later found payable, section 39(7) treats the relevant shortfall as due on the original instalment date for surcharge purposes. Do not describe an approved reduction as protection against surcharge if the estimate proves insufficient. [Section 39(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -287,7 +297,7 @@ Estimate the **whole period’s expected corporation-tax liability** reasonably 
 
 The declaration requires signature, date, signatory name and designation. The form says a photocopied signature is unacceptable; except where a liquidator or administrator is appointed, the signer must be authorised for the company. It also calls for an adviser/representative’s details when signing for the company. Preserve the signed claim, evidence of authority and actual decision. [CT4 declaration, rows 102–118](https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls).
 
-**Exact submission limit:** the linked workbook instructs postal delivery to the Income Tax Office at St. Jago’s Stone Block, 331 Main Street, Gibraltar. Its file metadata records a March 2015 save date and it names F C Carreras as Commissioner. Those observations do not prove the form invalid, but a current CT4-specific acceptance protocol or updated postal instruction has not been verified. The ITO contact page lists **corporate.enquiries@gibraltar.gov.gi** for general corporate queries; it does not label that address a CT4 filing channel. Do not substitute it for the workbook’s route or treat a query as an accepted claim. [Published CT4 instructions, row 36](https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls); [ITO Corporate Tax Section](https://www.gibraltar.gov.gi/contacts/income-tax-office-76).
+**Published submission instructions:** the workbook currently linked by the ITO instructs postal delivery to the Income Tax Office at St. Jago’s Stone Block, 331 Main Street, Gibraltar. Its file metadata records a March 2015 save date and it names F C Carreras as Commissioner; the current ITO page nevertheless expressly links this form for reduction claims. An old file-save date is not a stated legal expiry. Follow the published instructions, retain delivery/receipt evidence and obtain the actual reduction decision; this Guide does not claim a live filing was tested or a particular claim accepted. The ITO contact page lists **corporate.enquiries@gibraltar.gov.gi** for general corporate queries; it does not label that address a CT4 filing channel. Do not substitute it for the workbook’s route or treat a query as an accepted claim. [Published CT4 instructions, row 36](https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls); [ITO Corporate Tax Section](https://www.gibraltar.gov.gi/contacts/income-tax-office-76).
 
 ## Penalties and interest
 
@@ -444,7 +454,7 @@ The following links collect the sources already cited above. Their applicable ve
 - [ITO downloads page](https://www.gibraltar.gov.gi/income-tax-office/downloads-ito)
 - [ITO allocation table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf)
 
-The seven inherited source URLs were accessed on 22 October 2026; the added CT4 and contact-page sources were read on 28 October 2026. The dated research records retain statutory locators and source limitations. Inclusion of the allocation table or undated entertainment guidance does not remove the specific limitations noted above. The arithmetic blocks verify only the stated examples; they do not settle the mixed-loss cap interpretation or establish taxpayer eligibility.
+Earlier source reads are preserved at 22 October 2026. The Act, corporate Rates Rules, cited UK treaty articles, entertainment guidance, allocation table and current ITO corporate/contact/CT4 material were read for the 28 October writer ledger; the August 2025 company-guidance PDF retains its earlier read scope. The dated research records retain statutory locators and source limitations. Inclusion of the allocation table or undated entertainment guidance does not remove the specific limitations noted above. The arithmetic blocks verify only the stated examples; they do not settle the mixed-loss cap interpretation or establish taxpayer eligibility.
 
 ### 28 October corporate procedure continuation
 
@@ -455,9 +465,9 @@ The seven inherited source URLs were accessed on 22 October 2026; the added CT4 
 | [ITO corporate page](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate) | Current CT4 link, expired-period restriction and surcharge warning | 2026-10-28 |
 | [ITO contact page](https://www.gibraltar.gov.gi/contacts/income-tax-office-76) | Corporate Tax Section: CT1/CT2 returns and general-query contacts | 2026-10-28 |
 
-The [continuation ledger and full old-topics map](../../research/gibraltar-2026/corporate-completion-2026-10-28/ledger.md) distinguish these new procedure rows from the still-pending inherited corporate ledger. This local v0.18 continuation has not received independent acceptance; the earlier full/delta reviews cover their recorded predecessors.
+The [complete writer rule ledger and old-topics map](../../research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md) cover the inherited and new rules with exact primary-source quotes, dates and full original-paragraph destinations. This local v0.19 continuation has not received independent acceptance; the earlier full/delta reviews cover their recorded predecessors.
 
-Not yet confirmed: current CT4-specific operational acceptance and updated postal protocol; remaining ordinary deduction/claim implementation and inherited capital-allowance/loss interpretation limits described above. The new published CT1/CT2 contact does not establish a tested filing or a CT4 route.
+Not yet confirmed: section 16(6) extended-period boundaries; the Schedule 10 table’s specific anomalous dates; Schedule 3 paragraph 9(6) disposal wording and the paragraph 2(1)(o) Gazette-guideline identity; other capital-allowance/claim interactions and administrative confirmation of the labelled mixed-loss reading described above. The new published CT1/CT2 contact does not establish a tested filing or a CT4 route.
 
 ### Disclaimer
 

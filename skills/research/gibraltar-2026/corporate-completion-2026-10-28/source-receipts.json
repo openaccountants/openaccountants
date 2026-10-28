@@ -5,7 +5,7 @@
     "bytes": 1849515,
     "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
     "read_on": "2026-10-28",
-    "actual_scope": "Actual complete corporate reads: section11; company/source/investment-company definitions in74;16,20,20A,21,29,30; company payment/reduction39(4)\u2013(9), printed pages71,79\u201384,89\u201391,100\u2013101,136\u2013139. Earlier whole-Guide reviews retained, not replayed. Not a fresh full297page read."
+    "actual_scope": "Actual complete targeted reads:11,16,20,20A,21,29,30,36(10),39(1),(4)\u2013(9),64\u201365;74company/source definitions;Schedule1TableCClasses1A/3A/3B;Schedule3paragraphs1\u20139,12A\u201312B,14\u201315. Not a fresh full297page read."
   },
   {
     "saved_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/rates-tax-rules-20240701.pdf",
@@ -13,7 +13,7 @@
     "bytes": 167676,
     "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
     "read_on": "2026-10-28",
-    "actual_scope": "Actual corporation-tax rule6(1)\u2013(3) and6D(1) read for charge/rate ledger; no fresh full individual-rates read claimed."
+    "actual_scope": "Corporate rules6(1)\u2013(3),6D(1)actually read; no new full individual-rate review claimed."
   },
   {
     "saved_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/ct4-payments-reduction.xls",
@@ -52,15 +52,23 @@
     "official_url": "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf",
     "bytes": 196360,
     "sha256": "2dc8ff2febef990795d2fd3606f25016a91ffde75132cc19bfb051f85726ee0c",
-    "read_on": null,
-    "actual_scope": "Downloaded once; operative body not newly read in this continuation; earlier undated/Gazette limitation remains."
+    "read_on": "2026-10-28",
+    "actual_scope": "Entire supplied5printed-page guidance read; undated status and unidentified Gazette publication remain explicit."
   },
   {
     "saved_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/corporate/payments-allocation-2022-2033.pdf",
     "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf",
     "bytes": 130853,
     "sha256": "737527aa78916131ce619e539cf32bfb3042897ed5ed5da76366a7f23ce3cc93",
-    "read_on": null,
-    "actual_scope": "Downloaded once; table rows not newly read in this continuation; no use of stale footer as current rate."
+    "read_on": "2026-10-28",
+    "actual_scope": "All3pages read for footer and specific irregular dates; no silent correction or invented current allocation."
+  },
+  {
+    "saved_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/uk-gibraltar-treaty-official.html",
+    "official_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+    "bytes": 244951,
+    "sha256": "d20b012e4327f9c050363ca2885c998fc6a6f8e5f3fb9f838582af04b0d61202",
+    "read_on": "2026-10-28",
+    "actual_scope": "Actual Articles1,3\u20135,7\u20139,21,28\u201329 read; no fresh full-treaty review claimed. Crowncopyright2020,OGLv3.0."
   }
 ]

@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
   IT-IND: "Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled"
-  IT-CORP: "CT4 current operational acceptance/postal protocol and remaining ordinary deduction/claim implementation remain unverified; local field/calculation and CT1/CT2-route additions await a complete corporate ledger and independent acceptance"
+  IT-CORP: "Schedule 10 allocation anomalies, section 16(6) extended-period boundaries and Schedule 3 paragraphs 9(6)/2(1)(o) drafting/publication limits remain unresolved; local corporate v0.19 awaits independent acceptance"
   VAT: "Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified"
   SC: "Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified"
   PR: "Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion"
@@ -22,7 +22,7 @@ Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/o
 
 The 28 October continuation adds ordinary net-borrowing-cost and corporate tax-residence exit methods. Both revised Guides have complete rule/quote ledgers, original-topic destination maps and the nine-section tax structure. The [independent country review and bounded repair records](../../research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions, findings and closure. Earlier completed reviews retain their exact scopes. The structured `partial:` map records the ordinary gaps already disclosed below; all seven domains being mapped does not establish a complete country.
 
-An additional unpublished corporate writer continuation supplies the actual CT4 fields/forecast calculation and current published CT1/CT2 contact. It now uses the nine-section shape with two main controls and six originals preserved in research; its complete inherited-rule ledger and independent acceptance are still pending; the accepted earlier country review does not cover this new text.
+An additional unpublished corporate writer continuation supplies CT4 fields/calculation, the current published CT1/CT2 contact and ordinary rented-premises/non-annual approved-fund rules. It has the nine-section shape, two main controls, six originals preserved in research and a complete 118-row writer ledger. Current independent country acceptance remains pending; the accepted earlier country review does not cover this new text.
 
 Full independent AI source/editorial review records are listed below. Each record identifies its reviewed versions, corrections and limits; subsequent additions have separate delta records in [research](../../../docs/research/). These reviews do not establish professional attestation.
 
