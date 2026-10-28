@@ -1,0 +1,29 @@
+{
+  "candidate": "5d8327adbb6ddf637b678cc51e9fdeee1dd5c53f",
+  "independent_controls": 93,
+  "independent_control_failures": 0,
+  "main_controls": 20,
+  "original_main_preserved": 18,
+  "original_archive_preserved": 32,
+  "schema_guides": 10,
+  "schema_errors": 0,
+  "schema_warnings": 0,
+  "writer_changed_checks_including_archives": 93,
+  "unit_tests": 129,
+  "unit_result": "pass",
+  "unit_environment": {
+    "TMPDIR": "/private/tmp/oa-guernsey-final-tests",
+    "RUNNER_TEMP": "/private/tmp/oa-guernsey-final-tests"
+  },
+  "review": "whole-pack source/no-loss accepted; final administrative closure pending",
+  "published": false,
+  "country_complete": false,
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ]
+}

@@ -29,3 +29,10 @@ The first newpayroll metadata check found bodyheadingv0.9stillunchanged after fr
 
 
 New currentlinked MAP guidance178595 downloaded normally, issue8dated12February2024. Read7.1–7.4,7.7.1–7.7.5; actual submission method/minimum-completeness/timing and corresponding-adjustment process now supplied in corridor and domesticTPGuide. Earlier failure is historical, not currentblocker. No standalone currentabsenceofTP claim found there. NewprimaryOECD2020BP1paragraph3 expressly recordsGuernsey’s then-no-specificTPlegislation position; retainedonlydatedhistory. March2025profile confirmsnoAPA,notuniversalTPabsence. Exactcurrentauthorityquestionpreparedprivately;nomessage sent. DedicateddomesticGuidehas2gatedsection108pricingexamples; original9slugs/corridorcontrols unchanged.
+
+
+## Fresh whole-pack review and administrative closure
+
+The independent reviewer accepted5d8327ad within the exact incomplete scope. No material legal/numerical/no-loss error found;93controls/10Guideschema pass. Original18main and32archived controls byte-exact, seven full original Guide bodies unchanged, payroll/corridor full replacements preserve prior coverage. Lostcontentrestored0thiscontinuation/historical2preserved. Allthree reviewer artifacts copied byte-exact. Fresh reviewer retrieval failed for four official URLs and a browserPDF did not expose readable text, so source review explicitly relies on writer-fetched saved primary copies/hash receipts. It does not claim fresh reviewer retrieval.
+
+Only review-status wording and light spacing in the new domesticGuide are changed for final closure. Every exact ordinary partial remains. Prior review history is unchanged. The failed optionalOpenAccountantssearch had no returned evidence before interruption; no retry or tax conclusion from that call. Repository129unit tests pass at5d8327ad with the established TMPDIR/RUNNER_TEMP setup. All work uses existing included tools; no purchased credits, APIkeys or model/settings changes.

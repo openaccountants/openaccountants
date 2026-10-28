@@ -8,8 +8,8 @@
     {
       "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
       "old_bytes": 62192,
-      "new_bytes": 67126,
-      "sha256": "2864b4d6ab17947d672b14f50b7e156259d5208e659277430d81e7c4c67985f3",
+      "new_bytes": 67406,
+      "sha256": "9f660785d0ff25d10d5f7f5028fbf2d75f9d63c93331b68af1804801bd067c57",
       "protected_metadata_exact": true,
       "CTA_exact": true,
       "main_controls_byte_exact": true
@@ -17,15 +17,15 @@
     {
       "path": "skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md",
       "new_guide": true,
-      "new_bytes": 23942,
-      "sha256": "202c69de6417e6402646b07ce77cc85852cc63113027ca6cc9fc3c2dff2b9065",
+      "new_bytes": 24283,
+      "sha256": "790db265af168f91613d615572464d8654ac3c6f3e80c4d9e91ccdd2262fc382",
       "main_controls": 2
     },
     {
       "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
       "old_bytes": 58882,
-      "new_bytes": 62455,
-      "sha256": "f8a3364368647603574acb9fc27589eb1b56929303eed04e9ce4bc1678ee0af6",
+      "new_bytes": 62731,
+      "sha256": "141233f33252d445baa3da30995164cf7e404f2bede38497201d65fdac312476",
       "protected_metadata_exact": true,
       "CTA_exact": true,
       "main_controls_byte_exact": true
