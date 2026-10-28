@@ -866,11 +866,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Solar and wind installation deductions"
     },
     {
       "id": "REL-02",
-      "guide_section": "Rates, bands and thresholds",
+      "guide_section": "The base",
       "rule": "Installation-cost deduction: \u00a36,000 aggregate across all claimants, claimed in equal amounts over two assessment years.",
       "proof_ids": [
         "REL-EN"
@@ -879,11 +880,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Solar and wind installation deductions"
     },
     {
       "id": "REL-03",
-      "guide_section": "The base / Deadlines and filing",
+      "guide_section": "The base",
       "rule": "Energy: additional deduction; joint written allocation agreement or Commissioner determination considering relative expenditure; Town Planner permit/compliance/evidence; written claim within two years after assessment-year end, with the certification letter.",
       "proof_ids": [
         "REL-EN"
@@ -892,7 +894,8 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Solar and wind installation deductions"
     },
     {
       "id": "REL-04",
@@ -905,11 +908,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Property energy-performance deductions"
     },
     {
       "id": "REL-05",
-      "guide_section": "Rates, bands and thresholds",
+      "guide_section": "The base",
       "rule": "Achieved-rating deduction percentages: A+ 100%, A 85%, B 70%, C 50%, D 30%, E 25%, F 10%, G 0%. Apply the percentage for the rating obtained.",
       "proof_ids": [
         "REL-EP"
@@ -918,11 +922,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Property energy-performance deductions"
     },
     {
       "id": "REL-06",
-      "guide_section": "The base / Deadlines and filing",
+      "guide_section": "The base",
       "rule": "Performance: additional relief subject to the same-expenditure tax-deductible-property-zone exclusion; joint written allocation or determination; Department of Environment evidence/certification; written claim within two years after assessment-year/accounting-period end.",
       "proof_ids": [
         "REL-EP"
@@ -931,11 +936,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Property energy-performance deductions"
     },
     {
       "id": "REL-07",
-      "guide_section": "Who this applies to / The base",
+      "guide_section": "The base",
       "rule": "EV charger: legal title to a Gibraltar parking space or garage, actual installation cost and Commissioner certificate.",
       "proof_ids": [
         "REL-EV"
@@ -944,11 +950,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Electric-vehicle charging systems"
     },
     {
       "id": "REL-08",
-      "guide_section": "Rates, bands and thresholds",
+      "guide_section": "The base",
       "rule": "EV installation deduction: cost capped at \u00a32,000 aggregate across claimants; additional deduction; joint written allocation agreement or Commissioner determination.",
       "proof_ids": [
         "REL-EV"
@@ -957,11 +964,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Electric-vehicle charging systems"
     },
     {
       "id": "REL-09",
-      "guide_section": "Deadlines and filing",
+      "guide_section": "The base",
       "rule": "EV rule 7 requires a written claim to the Commissioner. The 2022 amendment deletes the 30 June 2021 date. This does not establish that all general tax claim limits are absent.",
       "proof_ids": [
         "REL-EV",
@@ -972,11 +980,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Electric-vehicle charging systems"
     },
     {
       "id": "REL-10",
-      "guide_section": "Who this applies to / The base",
+      "guide_section": "The base",
       "rule": "Disabled access: company/business legal owner of Gibraltar property from which a trade, business, profession or vocation is carried on; actual qualifying access/inclusion work expenditure. Private-home eligibility is not established by ownership alone.",
       "proof_ids": [
         "REL-DA"
@@ -985,11 +994,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Disabled access to business property"
     },
     {
       "id": "REL-11",
-      "guide_section": "Rates, bands and thresholds",
+      "guide_section": "The base",
       "rule": "Access-cost deduction: \u00a315,000 aggregate. Current rule 3(1)(d) deadline is 30 June 2030 after LN 2026/125 commenced on publication, 18 June 2026. The older 30 June 2024 search excerpt is superseded.",
       "proof_ids": [
         "REL-DA",
@@ -1000,11 +1010,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Disabled access to business property"
     },
     {
       "id": "REL-12",
-      "guide_section": "Deadlines and filing",
+      "guide_section": "The base",
       "rule": "Access certification: authority letter, planning permission/building approval where required and expenditure evidence; Town Planner where full permission is required, otherwise Building Control Officer. Written claim within two years after assessment-year/accounting-period end, with the rule 5 letter.",
       "proof_ids": [
         "REL-DA"
@@ -1013,11 +1024,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Disabled access to business property"
     },
     {
       "id": "REL-13",
-      "guide_section": "Sources / remaining limits",
+      "guide_section": "The base",
       "rule": "Printed access rule 3(1)(c) refers to a certificate under rule 6, although certification is in rule 5 and claims in rule 6. Preserve the reference and its unresolved application; do not silently renumber the law.",
       "proof_ids": [
         "REL-DA"
@@ -1026,11 +1038,12 @@
         "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Disabled access to business property"
     },
     {
       "id": "REL-14",
-      "guide_section": "Sources / scope limits",
+      "guide_section": "Sources",
       "rule": "These instruments do not alone resolve ABS/GIBS interaction, the appropriate claim year for actual facts, every other relief or actual certification/acceptance. Preserve the remaining partial reasons.",
       "proof_ids": [
         "REL-EN",
@@ -1045,7 +1058,8 @@
         "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
       ],
       "read_on": "2026-10-28",
-      "new_material": true
+      "new_material": true,
+      "new_anchor": "Not yet confirmed:"
     }
   ],
   "source_proofs": [
