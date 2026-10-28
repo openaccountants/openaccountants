@@ -1,0 +1,125 @@
+{
+  "reviewed_candidate": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "read_on": "2026-10-28",
+  "repairs": [
+    {
+      "id": "IND-R1",
+      "ledger_rows": [
+        "IND-60"
+      ],
+      "finding": "IT1 election/allowance year omitted taxpayer-type distinction",
+      "before": "with a separate election/allowance part for the year commencing 1 July 2026 and a stated receipt deadline of 30 November 2026.",
+      "after": "with its separate election/allowance part labelled PAYE/HEPSS for the year commencing 1 July 2026 and Other for the year ending 30 June 2026, and a stated receipt deadline of 30 November 2026.",
+      "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf",
+      "evidence": "Current IT1 physicalpage1 and guidance ITGyear; visually re-read complete first page before writer draft, independently checked by reviewer",
+      "independent_closure": false
+    },
+    {
+      "id": "IND-R2",
+      "ledger_rows": [
+        "IND-40"
+      ],
+      "finding": "Rule12 claimant condition was worded as the other spouse/partner entitlement",
+      "before": "a spouse/partner must not be entitled to rule 7 relief.",
+      "after": "if the claimant is a spouse or civil partner, the claimant must not be entitled for that assessment year to a deduction under rule 7.",
+      "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+      "provision": "rule12; exact A12 quote in full ledger: if a spouse or civil partner, he is not entitled",
+      "independent_closure": false
+    },
+    {
+      "id": "PAY-R3",
+      "ledger_rows": [
+        "PAY-P057",
+        "PAY-P059"
+      ],
+      "proof_id": "SGadmin",
+      "finding": "Source-paired quotations came from the contents page, not operative guidance",
+      "correction": "Select the last/body Monthly remittances occurrence, covering actual physical page8 before For further information; full page visually rechecked",
+      "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf",
+      "note": "Actual official URL is retained in SGadmin source proof; no Guide method or arithmetic changed",
+      "independent_closure": false
+    }
+  ],
+  "status": "Writer corrections only; country review and bounded closure pending",
+  "repair_blobs": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "reviewed_sha256": "9170b69122d757907f3bb8146f3d6c65a88fb90182383035025a9f3e7882744c",
+      "working_sha256": "5d9a58735cad05daf0953fb22cf2b647efd214febe78a77f0e39f1df3f08867a"
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "reviewed_sha256": "aee5a9f04743ad23b8ddd43d9ac4e95fbd22b92a8888467741349f9953a03c67",
+      "working_sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61"
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "reviewed_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
+      "working_sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/writer-complete-audit.json",
+      "reviewed_sha256": "cebd79822d88c8f451db9c104140ef53e87f16952647c0e36dbb20309a5eb626",
+      "working_sha256": "3dc0f6dbbb16191d535f75eb810b5c069b115cac7fa0c49762e6b30bfcb34a33"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/build_writer_ledger.py",
+      "reviewed_sha256": "6286f8459ac5d28199e708458a42fdebc1e8ac6255c3d578817c2083b427be03",
+      "working_sha256": "9ed6656a00b94abc315cdb1f9491ca5c4b35b3f4c31a7b8d499893d69e44a165"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledger.json",
+      "reviewed_sha256": "f4ce1cf826c0420743bea33d8c6f5cacec16f13a758ef4b27bce62d78e1f025a",
+      "working_sha256": "924e4a833300795eee358e8609f2a7fe8ae017dbe2d05b99bbf63293b2b5c602"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "reviewed_sha256": "4699fefe705c166d413c6351cefe9483bb690c95fb607ed9ce5a26490da9bef7",
+      "working_sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/writer-complete-audit.json",
+      "reviewed_sha256": "2149526e4c3b3c18ec863d007026d361a1c71cb222780245542ba6dbf86fb925",
+      "working_sha256": "1714c37f1177aec936a555d3120d323a50248d2f7ba35232438199f9a44f2922"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/build_writer_ledger.py",
+      "reviewed_sha256": "a379b8eb48bd192e416b6c17122ca99aa58871b06cbb2f055d51b0f413f82762",
+      "working_sha256": "d551641460a5afcf15e07ad2e467a63cd46cb04085118f510f11cbe19ce1c21e"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledger.json",
+      "reviewed_sha256": "ed787b2653845c0e6ebaf6dd05185b2d4b28228f0cbb83c74844e2d9f7032c3d",
+      "working_sha256": "7a7ab6a9ccbba35d8a6cfbf5dcbe49eea98deaa7d5131f421ca3cc3ae92dd46f"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+      "reviewed_sha256": "9faea782f55b882d12cf00b0fd2b591c174e74107b3fd5f6c9e7feb41d9b6bd8",
+      "working_sha256": "523d19fad761fa4a779250f9b331a6509e4b03515a0847505c0be7cd95a0814e"
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/writer-complete-audit.json",
+      "reviewed_sha256": "74a3273d422ed81bacb22cc98b25eb0020388862db7cc9dade6914b639f28414",
+      "working_sha256": "25dd6f8d5488ba8e5515855cd6af82817be969abf910eb1aae54f62a7026090f"
+    }
+  ],
+  "review_status": "Initial pinned review complete; three findings repaired, bounded closure pending",
+  "publication_status_updates": [
+    {
+      "guide": "gi-corporate-tax",
+      "before": "This local v0.19 continuation has not received independent acceptance; the earlier full/delta reviews cover their recorded predecessors.",
+      "after": "The [fresh country review](../../research/gibraltar-2026/final-country-review-2026-10-28/review.md) and its bounded repair closure identify the exact revisions checked; the earlier full/delta reviews retain their recorded scopes. Professional attestation remains pending.",
+      "purpose": "Replace stale pre-review status with exact-scope review provenance; no legal-method or acceptance claim"
+    },
+    {
+      "guide": "gi-individual-income-tax",
+      "before": "New text awaits one country review.",
+      "after": "The [fresh country review](../../research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.",
+      "purpose": "Replace stale pre-review status with exact-scope review provenance; no legal-method or acceptance claim"
+    },
+    {
+      "guide": "README",
+      "purpose": "Link new country review/repair record, remove stale awaiting-review/unpublished wording; all seven substantive partials retained"
+    }
+  ]
+}

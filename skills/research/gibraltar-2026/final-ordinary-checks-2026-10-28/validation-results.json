@@ -1,0 +1,42 @@
+{
+  "candidate": "Four new Guide writers; prior accepted methods unchanged",
+  "guide_versions": {
+    "corporate": "0.19",
+    "individual": "0.10",
+    "payroll": "0.15",
+    "consumption": "0.9"
+  },
+  "writer_rule_rows": 333,
+  "original_paragraphs_mapped": 346,
+  "examples": {
+    "files": 28,
+    "oa_checks": 61,
+    "failures": 0
+  },
+  "schema": {
+    "guides": 18,
+    "errors": [],
+    "warnings": [
+      "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+      "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+    ]
+  },
+  "metadata": {
+    "changed_guides": 4,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "tests": {
+    "count": 129,
+    "passed": true,
+    "log": "tests-canonical-temp.log",
+    "initial_attempt": "tests.log; macOS temporary-path alias and RUNNER_TEMP issues; no source fix"
+  },
+  "old_controls_preserved": 47,
+  "old_research_exact": 121,
+  "accepted_research_exact": 32,
+  "coverage": "All seven domains remain partial; no country-complete finding",
+  "independent_acceptance": false,
+  "published": false
+}

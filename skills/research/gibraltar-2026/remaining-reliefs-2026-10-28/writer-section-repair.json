@@ -1,0 +1,99 @@
+{
+  "finding": "New-row guide_section mapped the topic type rather than the actual Guide location",
+  "reviewed_candidate": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "changed_new_rows": [
+    {
+      "id": "REL-01",
+      "old_section": "The base",
+      "new_section": "The base",
+      "new_anchor": "Solar and wind installation deductions"
+    },
+    {
+      "id": "REL-02",
+      "old_section": "Rates, bands and thresholds",
+      "new_section": "The base",
+      "new_anchor": "Solar and wind installation deductions"
+    },
+    {
+      "id": "REL-03",
+      "old_section": "The base / Deadlines and filing",
+      "new_section": "The base",
+      "new_anchor": "Solar and wind installation deductions"
+    },
+    {
+      "id": "REL-04",
+      "old_section": "The base",
+      "new_section": "The base",
+      "new_anchor": "Property energy-performance deductions"
+    },
+    {
+      "id": "REL-05",
+      "old_section": "Rates, bands and thresholds",
+      "new_section": "The base",
+      "new_anchor": "Property energy-performance deductions"
+    },
+    {
+      "id": "REL-06",
+      "old_section": "The base / Deadlines and filing",
+      "new_section": "The base",
+      "new_anchor": "Property energy-performance deductions"
+    },
+    {
+      "id": "REL-07",
+      "old_section": "Who this applies to / The base",
+      "new_section": "The base",
+      "new_anchor": "Electric-vehicle charging systems"
+    },
+    {
+      "id": "REL-08",
+      "old_section": "Rates, bands and thresholds",
+      "new_section": "The base",
+      "new_anchor": "Electric-vehicle charging systems"
+    },
+    {
+      "id": "REL-09",
+      "old_section": "Deadlines and filing",
+      "new_section": "The base",
+      "new_anchor": "Electric-vehicle charging systems"
+    },
+    {
+      "id": "REL-10",
+      "old_section": "Who this applies to / The base",
+      "new_section": "The base",
+      "new_anchor": "Disabled access to business property"
+    },
+    {
+      "id": "REL-11",
+      "old_section": "Rates, bands and thresholds",
+      "new_section": "The base",
+      "new_anchor": "Disabled access to business property"
+    },
+    {
+      "id": "REL-12",
+      "old_section": "Deadlines and filing",
+      "new_section": "The base",
+      "new_anchor": "Disabled access to business property"
+    },
+    {
+      "id": "REL-13",
+      "old_section": "Sources / remaining limits",
+      "new_section": "The base",
+      "new_anchor": "Disabled access to business property"
+    },
+    {
+      "id": "REL-14",
+      "old_section": "Sources / scope limits",
+      "new_section": "Sources",
+      "new_anchor": "Not yet confirmed:"
+    }
+  ],
+  "fix": "Canonical H2 section and exact actual subsection/paragraph anchor supplied for all fourteen new rows",
+  "unchanged": "All rule text, six new source-proof units, inherited sixty rows/eighty-seven proof units, Guide body, examples, protected metadata, CTA and old-topic map are unchanged",
+  "verification": {
+    "actual_anchors_present": 14,
+    "inherited_rows_exact": 60,
+    "all_proof_units_exact": 93,
+    "guide_sha256_exact": true
+  },
+  "independent_closure_pending": true
+}
