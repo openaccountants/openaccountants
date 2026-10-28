@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
   IT-IND: "Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled"
-  IT-CORP: "CT4 payment-on-account reduction form fields/submission and remaining ordinary deduction/claim implementation remain unverified"
+  IT-CORP: "CT4 current operational acceptance/postal protocol and remaining ordinary deduction/claim implementation remain unverified; local field/calculation and CT1/CT2-route additions await a complete corporate ledger and independent acceptance"
   VAT: "Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified"
   SC: "Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified"
   PR: "Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion"
@@ -21,6 +21,8 @@ covered_by:
 Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Country PR [#778](https://github.com/openaccountants/openaccountants/pull/778) preserves the original work from consolidated #514. Current main reconciled locally on 28 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft.
 
 The 28 October continuation adds ordinary net-borrowing-cost and corporate tax-residence exit methods. Both revised Guides have complete rule/quote ledgers, original-topic destination maps and the nine-section tax structure. The [independent country review and bounded repair records](../../research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions, findings and closure. Earlier completed reviews retain their exact scopes. The structured `partial:` map records the ordinary gaps already disclosed below; all seven domains being mapped does not establish a complete country.
+
+An additional unpublished corporate writer continuation supplies the actual CT4 fields/forecast calculation and current published CT1/CT2 contact. It now uses the nine-section shape with two main controls and six originals preserved in research; its complete inherited-rule ledger and independent acceptance are still pending; the accepted earlier country review does not cover this new text.
 
 Full independent AI source/editorial review records are listed below. Each record identifies its reviewed versions, corrections and limits; subsequent additions have separate delta records in [research](../../../docs/research/). These reviews do not establish professional attestation.
 

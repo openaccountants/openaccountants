@@ -1,0 +1,21 @@
+{
+  "phase": "Local corporate writer checkpoint; full inherited-rule ledger and independent acceptance incomplete",
+  "published_head_unchanged": "b98e7f01d8d5468e0ad4a99a09d03392244d1ab6",
+  "corporate_version": "0.18",
+  "original_country_controls_preserved": 47,
+  "current_controls_across_main_and_selected_supplements": 53,
+  "corporate_main_controls": 2,
+  "corporate_original_controls_archived": 6,
+  "corporate_cta_byte_exact": true,
+  "canonical_h2_count_before_cta": 9,
+  "old_topic_map_paragraphs": 113,
+  "original_paragraphs_exact_across_guide_and_archive": 110,
+  "explicit_old_paragraph_reconciliations": 3,
+  "completed_rule_rows": 27,
+  "completed_exact_source_snippets": 58,
+  "remaining_inherited_paragraph_queue": 87,
+  "independent_review": "Not requested before complete corporate ledger/remaining country candidate",
+  "country_complete": false,
+  "published": false,
+  "prior_accepted_methods_unchanged": true
+}
