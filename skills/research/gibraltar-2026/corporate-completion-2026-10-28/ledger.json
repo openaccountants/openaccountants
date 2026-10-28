@@ -1685,7 +1685,7 @@
       "id": "CORP-P033",
       "old_heading": "Establish the tax accounting periods",
       "actual_assertion": "Section 16 starts a company's tax accounting period when it is first registered in Gibraltar or when the preceding accounting period ends. It normally ends at the earlier of twelve months from its beginning and the company's accounting date. Do not automatically use trading commencement as the first tax-period start, or assume a long set of financial statements creates one equally long tax period. Retain the registration evidence, accounting-date history and prior assessments. [Section 16(1)\u2013(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
@@ -1699,35 +1699,35 @@
       "id": "CORP-P035",
       "old_heading": "Establish the tax accounting periods",
       "actual_assertion": "Winding up ends an accounting period and begins another at its commencement, subject to section 16(1)\u2013(3). Thereafter periods end at twelve-month intervals, with the last ending on completion of winding up. Cessation of sales is not the same event as commencement or completion of winding up. Where period boundaries are uncertain, subsection (5) permits a Commissioner assessment for a period no longer than twelve months, subject to revision on further facts or an appeal revealing the proper periods. [Section 16(4)\u2013(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P036",
       "old_heading": "Establish the tax accounting periods",
       "actual_assertion": "For accounts exceeding twelve months, subsection (6) requires time apportionment on the basis that profits accrued evenly. Its wording identifies an initial period ending on the company's accounting date and a subsequent period comprising the remaining twelve months. **Do not substitute a standard first-twelve-months-plus-remainder convention without confirming the applicable boundaries.** Obtain the determined periods and reconcile allocated profits to the accounts. If a confirmed allocation divides \u00a3180,000 evenly over eighteen months into six- and twelve-month periods, the amounts are \u00a360,000 and \u00a3120,000; this arithmetic does not determine which dates apply. Subsection (7) gives the Commissioner discretion over profit allocation if an accounting-date delay beyond twelve months was effected to reduce tax. [Section 16(6)\u2013(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P037",
       "old_heading": "Filing requirements",
       "actual_assertion": "A company must file if it is **registered in Gibraltar or has assessable income** under the Act. A Gibraltar branch with assessable income files for the branch's income. The registration limb means that zero assessable income is not itself a filing exemption for a registered company. The obligation continues even if the Commissioner has not sent a return form. [Sections 29(1)\u2013(2), 30(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P038",
       "old_heading": "Filing requirements",
       "actual_assertion": "Section 29(3) gives the normal deadline of nine months after the month containing the accounting-period end. **For an extended accounting period**, section 29(4) instead expressly measures the return deadline from the end of the month containing the extended period's end. Thus an extended set of accounts ending 30 June 2026 points to 31 March 2027 for that return rule. Keep the component tax computations and payment obligations separately checked; this return provision does not by itself postpone instalments or establish every payment deadline. [Section 29(3)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P039",
       "old_heading": "Filing requirements",
       "actual_assertion": "Section 30 requires the prescribed form and specified accompanying information, plus payment in accordance with the return computation, subject to its stated exceptions. For the below-threshold independent-report route, accounts must be signed for the board by two directors, or the sole director if there is only one. An unsigned accounts file, omitted required report or omitted attachment cannot be treated as a complete filing merely because a CT1 was submitted. Keep the signed submission set and proof of receipt; current submission-channel acceptance must be confirmed before filing. [Section 30(1)(a), (ca), (d)\u2013(g)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
@@ -1741,7 +1741,7 @@
       "id": "CORP-P041",
       "old_heading": "Filing requirements",
       "actual_assertion": "For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least \u00a31,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives \u00a3875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
@@ -1930,133 +1930,133 @@
       "id": "CORP-P069",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "Section 21 supplies a separate valuation rule when a trade or business is discontinued. Use the **amount realised or value of consideration** if the stock is sold/transferred for valuable consideration to a person carrying on, or intending to carry on, a trade or business in Gibraltar **and** its cost can be deducted by that purchaser in computing the relevant assessable income/profits. Both conditions matter. A purchaser's Gibraltar address alone does not establish them. [Section 21(1)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P070",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "For other stock, use what it would have realised on an **open-market sale at discontinuance**. Do not automatically use historic cost, accounting carrying value, zero because it was given away, or the actual price of a transaction that does not meet paragraph (a). Establish the cessation date and a supportable valuation as at that date. This rule determines the stock value for the cessation profit computation; it does not itself quantify the whole taxable profit. [Section 21(1)(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P071",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "The statutory stock definition extends beyond finished retail goods. It includes real or personal property ordinarily sold in the trade, items that would be sold when mature or complete, and materials used in manufacture, preparation or construction. It also includes services, articles or materials treated as professional work in progress. Identify the business's actual stock/WIP rather than applying the rule only to warehouse goods. [Section 21(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P072",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "**Example 1: qualifying purchaser.** Assume a discontinued trade transfers its stock for \u00a325,000 cash and non-cash consideration independently valued at \u00a35,000. The buyer intends to carry on the relevant Gibraltar trade and the stock cost is deductible in the buyer's taxable computation. Section 21(1)(a)'s value is **\u00a330,000**. A \u00a340,000 open-market estimate is not substituted merely because it is higher, though other applicable anti-avoidance/connected-party rules must still be checked. These facts and consideration values are assumed, not statutory safe harbours.",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P074",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "**Example 2: other stock.** Assume the paragraph (a) buyer/deductibility conditions are not met. Supported open-market values at cessation are \u00a318,000 for finished goods and \u00a312,000 for qualifying unfinished stock. The section 21(1)(b) total is **\u00a330,000**, even if the actual disposal proceeds are \u00a320,000. The \u00a310,000 difference is a valuation reconciliation, not automatically the final taxable gain or tax bill; reconcile it to the accounts without counting a receipt twice.",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P076",
       "old_heading": "Trading stock when a trade ends",
       "actual_assertion": "Recommended working papers: cessation date and stock/WIP inventory; buyer's trade and deductible-cost evidence where paragraph (a) is used; contract and cash/non-cash consideration; market valuation where paragraph (b) applies; and the bridge to the cessation accounts. Keep stock valuation separate from capital-allowance disposals and transferred-loss eligibility. Interactions with connected-party provisions, actual valuation disputes and return-field mechanics remain case-specific review work. [Sections 20A\u201321; Schedule 3 Part II](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P077",
       "old_heading": "Trade losses: eligibility and continuity",
       "actual_assertion": "Section 20(1) provides for losses to be set against assessable profits or gains of subsequent periods, subject to its restrictions. Establish the **tax loss**, rather than copying an accounting deficit. A loss is excluded if the corresponding profit would not have been taxable under the Act, and the same loss cannot be used twice. At the claim date, the loss must relate to a period for which an assessment could then be made if the loss had been a profit. Do not treat an old ledger balance as proof that a loss remains claimable. [Section 20(1), (2), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P078",
       "old_heading": "Trade losses: eligibility and continuity",
       "actual_assertion": "Maintain a roll-forward by originating period: established tax loss, prior utilisation, current claim and balance. For a company outside the designated-person restriction, assume \u00a380,000 of eligible unused losses and \u00a350,000 of otherwise assessable profits, with all continuity and claim conditions satisfied. Set off \u00a350,000, leaving zero on that profit component and \u00a330,000 of unused losses. A separate \u00a310,000 loss from an activity whose profits would not be taxable is not added to the eligible pool. These assumptions must be proved in an actual claim. [Section 20(1)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P079",
       "old_heading": "Trade losses: eligibility and continuity",
       "actual_assertion": "A company loses the specified relief where, within any three-year period, there is **both** a change of ownership and a major change in the nature or conduct of its trade. The trade change can precede, follow or coincide with the ownership change. The restriction concerns losses in a basis period beginning before the ownership change set against profits of a basis period ending after it. Ownership means a change in effective control through direct or indirect voting-share ownership together with changed beneficial ownership. Record the control history and changes in customers, activities and operating model; the last items are evidence prompts, not statutory tests of a major change. [Section 20(3), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P080",
       "old_heading": "Designated persons: 50% loss limit and exceptions",
       "actual_assertion": "For accounting periods ending **on or after 31 July 2024**, section 20(6) limits a designated person's loss set-off to **50% of the Schedule 3 measure of profits or gains**. Section 20(7) covers persons carrying on regulated activities within section 5 of the Financial Services Act 2019, activities licensable under section 3(1) of the Gambling Act, and their connected persons. A company outside the regulated industry can therefore still fall within the rule through connection. Check the statutory activity definitions and [connected-person rules](gi-connected-party-pricing-and-interest.md) before classifying it. [Section 20(6)\u2013(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P081",
       "old_heading": "Designated persons: 50% loss limit and exceptions",
       "actual_assertion": "Example: assume a designated company has a Schedule 3 profit measure of \u00a3100,000 and \u00a380,000 of eligible carried-forward losses, all outside the protected periods below, with no insolvency exception. The cap is \u00a350,000; set off \u00a350,000, leaving \u00a350,000 of profits before other applicable adjustments and \u00a330,000 of unused losses. At exactly \u00a350,000 of eligible losses the entire pool fits the cap. This calculation does not establish the company's status or eligibility. [Section 20(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P083",
       "old_heading": "Designated persons: 50% loss limit and exceptions",
       "actual_assertion": "The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)\u2013(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P084",
       "old_heading": "Designated persons: 50% loss limit and exceptions > Mixed protected and restricted losses: statutory working-paper interpretation",
       "actual_assertion": "**Interpretation, not published Commissioner guidance:** section 20(6) measures the 50% cap by profits computed under Schedule 3. Subsection (9) excludes protected-period losses from that restriction, and subsection (10) requires their use first. Read together, these provisions support keeping the cap at **50% of the original Schedule 3 profit measure**, while limiting the subsequent restricted-loss claim to the profits remaining after protected losses. They do not expressly direct a second calculation of 50% on that smaller remainder. This is the Guide's reasoned statutory reading; no official mixed-pool worked example or case-specific ruling has been verified. [Section 20(1), (6), (9)\u2013(11); Schedule 3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P085",
       "old_heading": "Designated persons: 50% loss limit and exceptions > Mixed protected and restricted losses: statutory working-paper interpretation",
       "actual_assertion": "For a reviewable working paper, let **P** be the positive Schedule 3 profit measure, **A** eligible unused protected losses and **B** eligible unused restricted losses. On that reading, protected losses used are `min(A, P)`, the cap is `0.5 \u00d7 P`, and restricted losses used are the smallest of B, the cap and the remaining profit. Keep unused amounts in their respective pools. Assume all general eligibility and continuity conditions hold, no insolvency exception applies and no applicable regulations change the treatment. This illustration does not determine a taxpayer's designated status or the eligibility of a loss.",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P086",
       "old_heading": "Designated persons: 50% loss limit and exceptions > Mixed protected and restricted losses: statutory working-paper interpretation",
       "actual_assertion": "With P = \u00a3100,000, A = \u00a340,000 and B = \u00a380,000, use \u00a340,000 protected losses first and \u00a350,000 restricted losses next. The remaining profit component is **\u00a310,000**, with \u00a330,000 restricted losses unused. If A instead equals \u00a370,000, only **\u00a330,000** of restricted losses can be used, despite the \u00a350,000 cap; remaining profit is zero and \u00a350,000 restricted losses remain. If protected losses equal or exceed P, restricted losses are not used. These are loss-set-off examples, not final tax assessments.",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P088",
       "old_heading": "Designated persons: 50% loss limit and exceptions > Mixed protected and restricted losses: statutory working-paper interpretation",
       "actual_assertion": "Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Before filing, verify applicable regulations and obtain review of this interpretation for the actual claim. Retain the Schedule 3 computation, separate loss-period roll-forwards, protected-first ordering and the reason for the selected cap base. The arithmetic test checks the stated reading; it does not prove administrative acceptance. [Section 20(10)\u2013(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P089",
       "old_heading": "Losses transferred in a group restructure",
       "actual_assertion": "Section 20A permits corresponding unrelieved trade losses to be available against the recipient entity's future profits when the trade or business transfers to a separate entity as part of a group restructure. The provision includes reorganisations, takeovers, mergers and sales of a trade or business. It is not a general permission to pool losses between companies merely because they share an owner. The transferred business must have been taxable had it made profits. [Section 20A(1), (2), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P090",
       "old_heading": "Losses transferred in a group restructure",
       "actual_assertion": "Only the proportion attributable to the transferred part is available, measured by **income attributable to each share of the trade**. For example, if eligible unrelieved losses are \u00a3100,000 and a supported income-based allocation attributes 40% to the transferred part, the potential transferred pool is \u00a340,000, subject to the remaining conditions. A 40% asset-value share alone does not establish that result. [Section 20A(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
       "id": "CORP-P091",
       "old_heading": "Losses transferred in a group restructure",
       "actual_assertion": "No set-off is given under section 20A(1) if, within the specified three-year period from transfer, there is both a change in ultimate company ownership and a major change in the nature or conduct of the trade. The effective-control and beneficial-ownership definition appears in subsection (5). Retain the transfer agreement, income allocation, loss history and post-transfer ownership/trade monitoring. Interaction with section 20 restrictions, evidence required for a claim and any advance clearance needs case-specific review. [Section 20A(3)\u2013(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
-      "source_quote_status": "pending inherited-rule exact quote ledger; prior source reviews preserved",
+      "source_quote_status": "writer source-matched/classified in inherited_source_matched_rows; not independently accepted at current revision",
       "not_a_new_independent_acceptance": true
     },
     {
@@ -2299,10 +2299,478 @@
       "read_on": "2026-10-28",
       "all_quotes_present": true,
       "prior_review": "2026-10-22-gibraltar-corporate-full-review.md; retained scope, not acceptance of current rewrite"
+    },
+    {
+      "id": "CORP-P033",
+      "guide_section": "Deadlines and filing",
+      "rule": "Company period begins at first registration or prior period end; ends on first occurrence of 12 months or accounting date.",
+      "actual_original_assertion": "Section 16 starts a company's tax accounting period when it is first registered in Gibraltar or when the preceding accounting period ends. It normally ends at the earlier of twelve months from its beginning and the company's accounting date. Do not automatically use trading commencement as the first tax-period start, or assume a long set of financial statements creates one equally long tax period. Retain the registration evidence, accounting-date history and prior assessments. [Section 16(1)\u2013(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section16(1)\u2013(3)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p79",
+      "quotes": [
+        "that company is first registered in Gibraltar; or",
+        "a previous accounting period ends.",
+        "the expiration of 12 months from the beginning of the accounting period; or",
+        "an accounting date of the company."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P035",
+      "guide_section": "Deadlines and filing",
+      "rule": "Winding-up commencement/completion boundaries; uncertain-period Commissioner assessment up to 12 months remains revisable.",
+      "actual_original_assertion": "Winding up ends an accounting period and begins another at its commencement, subject to section 16(1)\u2013(3). Thereafter periods end at twelve-month intervals, with the last ending on completion of winding up. Cessation of sales is not the same event as commencement or completion of winding up. Where period boundaries are uncertain, subsection (5) permits a Commissioner assessment for a period no longer than twelve months, subject to revision on further facts or an appeal revealing the proper periods. [Section 16(4)\u2013(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section16(4)\u2013(5)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p80",
+      "quotes": [
+        "an accounting period shall end and a new one begin with the commencement of the winding up",
+        "the last accounting period which ends on completion of the winding up.",
+        "for a period, not exceeding 12 months",
+        "it is revised by the Commissioner on consideration of further facts"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P036",
+      "guide_section": "Deadlines and filing",
+      "rule": "Literal extended-period time apportionment and discretionary anti-delay provision retained; 18-month numerical split assumes period boundaries.",
+      "actual_original_assertion": "For accounts exceeding twelve months, subsection (6) requires time apportionment on the basis that profits accrued evenly. Its wording identifies an initial period ending on the company's accounting date and a subsequent period comprising the remaining twelve months. **Do not substitute a standard first-twelve-months-plus-remainder convention without confirming the applicable boundaries.** Obtain the determined periods and reconcile allocated profits to the accounts. If a confirmed allocation divides \u00a3180,000 evenly over eighteen months into six- and twelve-month periods, the amounts are \u00a360,000 and \u00a3120,000; this arithmetic does not determine which dates apply. Subsection (7) gives the Commissioner discretion over profit allocation if an accounting-date delay beyond twelve months was effected to reduce tax. [Section 16(6)\u2013(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section16(6)\u2013(7)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p80",
+      "quotes": [
+        "deem the profits to have accrued evenly over this extended accounting period and apportion by reference to time",
+        "an initial accounting period ending on the company\u2019s accounting date and a subsequent accounting period comprising the remaining 12 months.",
+        "in whichever way as he shall, in his discretion, think fit"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Statutory rule plus expressly assumed arithmetic; no invented period-boundary reconciliation",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P037",
+      "guide_section": "Deadlines and filing",
+      "rule": "Registration or assessable-income filing limbs; assessable-income branch obligation; no-form issue does not remove duty.",
+      "actual_original_assertion": "A company must file if it is **registered in Gibraltar or has assessable income** under the Act. A Gibraltar branch with assessable income files for the branch's income. The registration limb means that zero assessable income is not itself a filing exemption for a registered company. The obligation continues even if the Commissioner has not sent a return form. [Sections 29(1)\u2013(2), 30(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, sections29(1)\u2013(2),30(2)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p89\u201391",
+      "quotes": [
+        "a company that is registered in Gibraltar or has assessable income",
+        "make a full and complete return in respect of the income of that branch.",
+        "the failure of the Commissioner to issue a return does not diminish the obligation"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P038",
+      "guide_section": "Deadlines and filing",
+      "rule": "Ordinary and extended-period return due dates are nine months after the relevant period-end month; return rule does not decide every payment.",
+      "actual_original_assertion": "Section 29(3) gives the normal deadline of nine months after the month containing the accounting-period end. **For an extended accounting period**, section 29(4) instead expressly measures the return deadline from the end of the month containing the extended period's end. Thus an extended set of accounts ending 30 June 2026 points to 31 March 2027 for that return rule. Keep the component tax computations and payment obligations separately checked; this return provision does not by itself postpone instalments or establish every payment deadline. [Section 29(3)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section29(3)\u2013(4)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p89",
+      "quotes": [
+        "within 9 months after the end of the month in which the accounting period ends.",
+        "within the 9 months immediately following the month in which the extended accounting period ends."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P039",
+      "guide_section": "Deadlines and filing",
+      "rule": "Prescribed form and supporting information/payment; two directors or sole director sign the below-threshold accounts.",
+      "actual_original_assertion": "Section 30 requires the prescribed form and specified accompanying information, plus payment in accordance with the return computation, subject to its stated exceptions. For the below-threshold independent-report route, accounts must be signed for the board by two directors, or the sole director if there is only one. An unsigned accounts file, omitted required report or omitted attachment cannot be treated as a complete filing merely because a CT1 was submitted. Keep the signed submission set and proof of receipt; current submission-channel acceptance must be confirmed before filing. [Section 30(1)(a), (ca), (d)\u2013(g)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section30(1)(a),(ca),(d)\u2013(g)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p89\u201390",
+      "quotes": [
+        "be in a form specified by the Minister by notice in the Gazette;",
+        "accounts shall be signed on behalf of the board by two directors of the company, or, if there is only one director, by that director;",
+        "be accompanied by such information or documentation as is specified in the form",
+        "be accompanied by payment of the tax due"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P041",
+      "guide_section": "Deadlines and filing",
+      "rule": "Audited accounts at \u00a31,750,000 assessable income; below-threshold independent report, monthly short-period proportion; issuer approval/independence/practising certificate.",
+      "actual_original_assertion": "For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least \u00a31,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives \u00a3875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).",
+      "provision": "Income Tax Act, section30(1)(b)\u2013(cb)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p89\u201390",
+      "quotes": [
+        "an assessable income of at least \u00a31,750,000",
+        "the appropriate proportion of \u00a31,750,000 computed on the basis of the number of months",
+        "be accompanied by audited accounts;",
+        "be accompanied by accounts together with an independent accountant\u2019s report;",
+        "independent with respect to the entity",
+        "holding a practising certificate issued by a recognised international accountancy body;"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P069",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Cessation stock uses actual consideration only with qualifying Gibraltar-trade purchaser and deductible purchaser cost.",
+      "actual_original_assertion": "Section 21 supplies a separate valuation rule when a trade or business is discontinued. Use the **amount realised or value of consideration** if the stock is sold/transferred for valuable consideration to a person carrying on, or intending to carry on, a trade or business in Gibraltar **and** its cost can be deducted by that purchaser in computing the relevant assessable income/profits. Both conditions matter. A purchaser's Gibraltar address alone does not establish them. [Section 21(1)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section21(1)(a)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p84",
+      "quotes": [
+        "sold or transferred for valuable consideration to a person who carries on or intends to carry on a trade or business in Gibraltar;",
+        "the cost whereof may be deducted by the purchaser as an expense",
+        "the amount realised on the sale or the value of the consideration given for the transfer;"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P070",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Other cessation stock uses hypothetical open-market sale value at discontinuance, not automatically book/cost/actual price.",
+      "actual_original_assertion": "For other stock, use what it would have realised on an **open-market sale at discontinuance**. Do not automatically use historic cost, accounting carrying value, zero because it was given away, or the actual price of a transaction that does not meet paragraph (a). Establish the cessation date and a supportable valuation as at that date. This rule determines the stock value for the cessation profit computation; it does not itself quantify the whole taxable profit. [Section 21(1)(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section21(1)(b)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p84",
+      "quotes": [
+        "the amount which it would have realised if it had been sold in the open market at the discontinuance of the trade."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P071",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Trading stock definition includes property, maturing/unfinished goods, materials and specified professional WIP.",
+      "actual_original_assertion": "The statutory stock definition extends beyond finished retail goods. It includes real or personal property ordinarily sold in the trade, items that would be sold when mature or complete, and materials used in manufacture, preparation or construction. It also includes services, articles or materials treated as professional work in progress. Identify the business's actual stock/WIP rather than applying the rule only to warehouse goods. [Section 21(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section21(2)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p84",
+      "quotes": [
+        "property of any description, whether real or personal",
+        "if its manufacture, preparation or construction were complete",
+        "materials such as are used in the manufacture, preparation or construction",
+        "be treated as work in progress of the profession"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P072",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Assumed \u00a325,000 cash / \u00a35,000 noncash qualifying purchaser example derives \u00a330,000 consideration; eligibility is assumed.",
+      "actual_original_assertion": "**Example 1: qualifying purchaser.** Assume a discontinued trade transfers its stock for \u00a325,000 cash and non-cash consideration independently valued at \u00a35,000. The buyer intends to carry on the relevant Gibraltar trade and the stock cost is deductible in the buyer's taxable computation. Section 21(1)(a)'s value is **\u00a330,000**. A \u00a340,000 open-market estimate is not substituted merely because it is higher, though other applicable anti-avoidance/connected-party rules must still be checked. These facts and consideration values are assumed, not statutory safe harbours.",
+      "provision": "Income Tax Act, section21(1)(a)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p84",
+      "quotes": [
+        "the amount realised on the sale or the value of the consideration given for the transfer;"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Synthetic inputs and derived illustration; no statutory pound amounts asserted",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P074",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Assumed open-market components 18,000 + 12,000 derive 30,000 stock value and 10,000 reconciliation difference; not final tax.",
+      "actual_original_assertion": "**Example 2: other stock.** Assume the paragraph (a) buyer/deductibility conditions are not met. Supported open-market values at cessation are \u00a318,000 for finished goods and \u00a312,000 for qualifying unfinished stock. The section 21(1)(b) total is **\u00a330,000**, even if the actual disposal proceeds are \u00a320,000. The \u00a310,000 difference is a valuation reconciliation, not automatically the final taxable gain or tax bill; reconcile it to the accounts without counting a receipt twice.",
+      "provision": "Income Tax Act, section21(1)(b)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p84",
+      "quotes": [
+        "the amount which it would have realised if it had been sold in the open market at the discontinuance of the trade."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Synthetic inputs and derived illustration; eligibility/market values assumed",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P076",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Cessation working-paper checklist keeps stock, capital-allowance disposal and transferred-loss methods separate; it is not a prescribed form.",
+      "actual_original_assertion": "Recommended working papers: cessation date and stock/WIP inventory; buyer's trade and deductible-cost evidence where paragraph (a) is used; contract and cash/non-cash consideration; market valuation where paragraph (b) applies; and the bridge to the cessation accounts. Keep stock valuation separate from capital-allowance disposals and transferred-loss eligibility. Interactions with connected-party provisions, actual valuation disputes and return-field mechanics remain case-specific review work. [Sections 20A\u201321; Schedule 3 Part II](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, sections20A\u201321",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p83\u201384",
+      "quotes": [
+        "corresponding unrelieved tax losses",
+        "any trading stock belonging to the trade or business at the discontinuance thereof"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Writer preparation controls derived from separately cited methods",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P077",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Eligible tax losses carry forward subject to chargeable-profit requirement, no double use and claim-period assessment eligibility.",
+      "actual_original_assertion": "Section 20(1) provides for losses to be set against assessable profits or gains of subsequent periods, subject to its restrictions. Establish the **tax loss**, rather than copying an accounting deficit. A loss is excluded if the corresponding profit would not have been taxable under the Act, and the same loss cannot be used twice. At the claim date, the loss must relate to a period for which an assessment could then be made if the loss had been a profit. Do not treat an old ledger balance as proof that a loss remains claimable. [Section 20(1), (2), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(1)\u2013(2),(4)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p81\u201382",
+      "quotes": [
+        "be set off against what would otherwise have been assessable profits or gains for subsequent years",
+        "shall not be set off in computing the assessable profits or gains of any other year",
+        "if it had been a profit, would not have been chargeable with taxation",
+        "a period for which an assessment could be made at the time of claim"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P078",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Assumed 80,000 eligible loss versus 50,000 profit leaves 30,000 pool; non-taxable-activity loss is excluded.",
+      "actual_original_assertion": "Maintain a roll-forward by originating period: established tax loss, prior utilisation, current claim and balance. For a company outside the designated-person restriction, assume \u00a380,000 of eligible unused losses and \u00a350,000 of otherwise assessable profits, with all continuity and claim conditions satisfied. Set off \u00a350,000, leaving zero on that profit component and \u00a330,000 of unused losses. A separate \u00a310,000 loss from an activity whose profits would not be taxable is not added to the eligible pool. These assumptions must be proved in an actual claim. [Section 20(1)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(1)\u2013(2)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p81",
+      "quotes": [
+        "be set off against what would otherwise have been assessable profits or gains",
+        "nothing in this section shall be construed as permitting the set off of any loss which, if it had been a profit, would not have been chargeable"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Synthetic amounts and roll-forward control; scope facts assumed",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P079",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Ownership plus major trade change in any three-year period restricts pre/post change loss use; effective voting control and beneficial ownership define change.",
+      "actual_original_assertion": "A company loses the specified relief where, within any three-year period, there is **both** a change of ownership and a major change in the nature or conduct of its trade. The trade change can precede, follow or coincide with the ownership change. The restriction concerns losses in a basis period beginning before the ownership change set against profits of a basis period ending after it. Ownership means a change in effective control through direct or indirect voting-share ownership together with changed beneficial ownership. Record the control history and changes in customers, activities and operating model; the last items are evidence prompts, not statutory tests of a major change. [Section 20(3), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(3),(5)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "within any period of three years there is both a change in the ownership",
+        "either earlier or later in the period, or at the same time",
+        "beginning before the change of ownership",
+        "ending after the change of ownership.",
+        "voting shares together with a change in beneficial ownership."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P080",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Designated-person 50% Schedule 3 cap for periods ending on/after 31 July 2024; financial/gambling activities and connected persons covered.",
+      "actual_original_assertion": "For accounting periods ending **on or after 31 July 2024**, section 20(6) limits a designated person's loss set-off to **50% of the Schedule 3 measure of profits or gains**. Section 20(7) covers persons carrying on regulated activities within section 5 of the Financial Services Act 2019, activities licensable under section 3(1) of the Gambling Act, and their connected persons. A company outside the regulated industry can therefore still fall within the rule through connection. Check the statutory activity definitions and [connected-person rules](gi-connected-party-pricing-and-interest.md) before classifying it. [Section 20(6)\u2013(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(6)\u2013(7)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "accounting periods ending on or after 31 July 2024",
+        "limited to 50 percent of the measure of profits or gains",
+        "any regulated activity within the meaning of section 5 of the Financial Services Act 2019;",
+        "any activity that would be licensable",
+        "a connected person of the person referred to in (a) or (b)."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P081",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Assumed 100,000 profit / 80,000 restricted losses yields 50,000 cap/use, 50,000 profit and 30,000 loss remaining; scope and exceptions assumed.",
+      "actual_original_assertion": "Example: assume a designated company has a Schedule 3 profit measure of \u00a3100,000 and \u00a380,000 of eligible carried-forward losses, all outside the protected periods below, with no insolvency exception. The cap is \u00a350,000; set off \u00a350,000, leaving \u00a350,000 of profits before other applicable adjustments and \u00a330,000 of unused losses. At exactly \u00a350,000 of eligible losses the entire pool fits the cap. This calculation does not establish the company's status or eligibility. [Section 20(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(6)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "limited to 50 percent of the measure of profits or gains"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Synthetic inputs and derived boundary,not company status determination",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P083",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Protected loss periods end 1 July 2021\u201330 June 2023 and are used first; specified insolvency exception separate.",
+      "actual_original_assertion": "The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)\u2013(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(8)\u2013(10)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "subject to insolvency proceedings",
+        "ending in the period extending from 1 July 2021 to 30 June 2023.",
+        "before setting off losses incurred in other accounting periods"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Statutory protected-period and ordering rules; no waiver of general eligibility",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P084",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Reasoned statutory mixed-pool reading preserves original Schedule 3 cap after protected losses; no Commissioner guidance claimed.",
+      "actual_original_assertion": "**Interpretation, not published Commissioner guidance:** section 20(6) measures the 50% cap by profits computed under Schedule 3. Subsection (9) excludes protected-period losses from that restriction, and subsection (10) requires their use first. Read together, these provisions support keeping the cap at **50% of the original Schedule 3 profit measure**, while limiting the subsequent restricted-loss claim to the profits remaining after protected losses. They do not expressly direct a second calculation of 50% on that smaller remainder. This is the Guide's reasoned statutory reading; no official mixed-pool worked example or case-specific ruling has been verified. [Section 20(1), (6), (9)\u2013(11); Schedule 3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(6),(9)\u2013(11)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82\u201383",
+      "quotes": [
+        "50 percent of the measure of profits or gains computed in accordance with the provision of Schedule 3.",
+        "Subsection (6) will not apply to the amount of loss",
+        "before setting off losses incurred in other accounting periods"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Existing independently reviewed statutory interpretation, not an express statutory formula or administrative acceptance",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P085",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Mixed-pool formulas are writer arithmetic from protected-first/original-cap interpretation; all pool/status conditions expressly assumed.",
+      "actual_original_assertion": "For a reviewable working paper, let **P** be the positive Schedule 3 profit measure, **A** eligible unused protected losses and **B** eligible unused restricted losses. On that reading, protected losses used are `min(A, P)`, the cap is `0.5 \u00d7 P`, and restricted losses used are the smallest of B, the cap and the remaining profit. Keep unused amounts in their respective pools. Assume all general eligibility and continuity conditions hold, no insolvency exception applies and no applicable regulations change the treatment. This illustration does not determine a taxpayer's designated status or the eligibility of a loss.",
+      "provision": "Income Tax Act, section20(6),(9)\u2013(10)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "50 percent of the measure of profits or gains",
+        "before setting off losses incurred in other accounting periods"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Derived formula with the preserved statutory-interpretation qualification",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P086",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Two synthetic mixed-pool examples preserve 100k profit / 40k or 70k protected / 80k restricted assumptions and original cap.",
+      "actual_original_assertion": "With P = \u00a3100,000, A = \u00a340,000 and B = \u00a380,000, use \u00a340,000 protected losses first and \u00a350,000 restricted losses next. The remaining profit component is **\u00a310,000**, with \u00a330,000 restricted losses unused. If A instead equals \u00a370,000, only **\u00a330,000** of restricted losses can be used, despite the \u00a350,000 cap; remaining profit is zero and \u00a350,000 restricted losses remain. If protected losses equal or exceed P, restricted losses are not used. These are loss-set-off examples, not final tax assessments.",
+      "provision": "Income Tax Act, section20(6),(9)\u2013(10)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p82",
+      "quotes": [
+        "50 percent of the measure of profits or gains",
+        "before setting off losses incurred in other accounting periods"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Synthetic amounts and recomputed results,not final tax assessments",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P088",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Minister may alter cap, designations and relief treatment by regulations; claim review remains necessary.",
+      "actual_original_assertion": "Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Before filing, verify applicable regulations and obtain review of this interpretation for the actual claim. Retain the Schedule 3 computation, separate loss-period roll-forwards, protected-first ordering and the reason for the selected cap base. The arithmetic test checks the stated reading; it does not prove administrative acceptance. [Section 20(10)\u2013(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20(11)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p83",
+      "quotes": [
+        "alter the percentage in subsection (6);",
+        "designate any person as a \u201cDesignated Person\u201d",
+        "determine the treatment of any relief, allowance or exemption"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P089",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Group-restructure transfer permits corresponding unrelieved taxable-trade losses against recipient future profits; not general pooling.",
+      "actual_original_assertion": "Section 20A permits corresponding unrelieved trade losses to be available against the recipient entity's future profits when the trade or business transfers to a separate entity as part of a group restructure. The provision includes reorganisations, takeovers, mergers and sales of a trade or business. It is not a general permission to pool losses between companies merely because they share an owner. The transferred business must have been taxable had it made profits. [Section 20A(1), (2), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20A(1)\u2013(2),(6)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p83",
+      "quotes": [
+        "transferred to a separate legal entity and is part of a group restructure",
+        "available to be set off against future profits of that separate legal entity.",
+        "only be available to set off against future profits if that trade or business would have been taxable",
+        "a re-organisation",
+        "merger or sale of a trade or business."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P090",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Transferred-part loss allocation follows attributable income, not an unsupported asset-value share; example amounts assumed.",
+      "actual_original_assertion": "Only the proportion attributable to the transferred part is available, measured by **income attributable to each share of the trade**. For example, if eligible unrelieved losses are \u00a3100,000 and a supported income-based allocation attributes 40% to the transferred part, the potential transferred pool is \u00a340,000, subject to the remaining conditions. A 40% asset-value share alone does not establish that result. [Section 20A(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20A(4)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p83",
+      "quotes": [
+        "restricted proportionally, on the basis of income attributable to each share of the trade"
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "Statutory allocation plus synthetic100k/40%illustration",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
+    },
+    {
+      "id": "CORP-P091",
+      "guide_section": "The base / Two worked examples that recompute",
+      "rule": "Within three years of transfer, both ultimate ownership and major trade changes deny transfer relief; ownership/control definition retained.",
+      "actual_original_assertion": "No set-off is given under section 20A(1) if, within the specified three-year period from transfer, there is both a change in ultimate company ownership and a major change in the nature or conduct of the trade. The effective-control and beneficial-ownership definition appears in subsection (5). Retain the transfer agreement, income allocation, loss history and post-transfer ownership/trade monitoring. Interaction with section 20 restrictions, evidence required for a claim and any advance clearance needs case-specific review. [Section 20A(3)\u2013(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "provision": "Income Tax Act, section20A(3),(5)",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locator": "printed p83",
+      "quotes": [
+        "within any period of three years from the date of transfer",
+        "change in the ultimate ownership of the company; and",
+        "major change in the nature or conduct of that trade or business.",
+        "voting shares together with a change in beneficial ownership."
+      ],
+      "read_on": "2026-10-28",
+      "all_quotes_present": true,
+      "kind": "statutory rule",
+      "prior_review": "Completed22October corporate/mixed-loss/accounting-period/cessation review scopes preserved, not new acceptance"
     }
   ],
-  "inherited_paragraphs_with_completed_quotes": 6,
-  "remaining_inherited_paragraphs": 87,
-  "completed_rule_rows": 27,
-  "completed_exact_quote_snippets": 58
+  "inherited_paragraphs_with_completed_quotes": 36,
+  "remaining_inherited_paragraphs": 61,
+  "completed_rule_rows": 53,
+  "completed_exact_quote_snippets": 136
 }
