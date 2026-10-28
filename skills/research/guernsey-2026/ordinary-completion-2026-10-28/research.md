@@ -41,3 +41,22 @@ Mixeddistributionlead: re-read61,62A(2),81B and174 plusC35,C37,C44. Currentmy.go
 Fetched/read current taxpackageFAQ (oldgstplusfaqs301redirect), Imports/Exports index and complete substantive pages customs territory,duties,whyduty,claimingVAT,importexport. All HTTP200 receipts copied here; no failed access treated as substantive evidence. TaxpackageFAQ targetsQ12029GST and saysregistration/return designworkunderway, withSarkoutsidefiscalunion/reformscope. Customs distinguishes2duties, specifiescustomsunionstatusconditions/originversusdispatch andexcisealcohol/tobacco/somefuels; UKVAT mustberesolvedwithUKsupplier/HMRC, notrefundedlocally.
 
 FreshHMRCwebread VATNotice700p4.7.3 explicitlystates noVATinChannelIslands; VATPOSG2300's complete territorial explanationagrees. They are primaryauthorityforVATterritorialscope. TogetherwithcurrentGuernseyfutureGSTscope/adoptedsafeguards thissupportsproposed2026VAT/GSTNA. No generalnotax/importdutyexemptioninference. GOAL.md definesVATdomainasVAT/GST/salestax, notallcustomsexcise. Do notextenddraftpartialsolelybecausecompletecommoditytariffisnotincluded. READMEapplicable/VATpartialremainunchangedpendingindependentreviewoffinding; transitionGuide/slugs/old2controls/allpriorworkpreserved.
+
+
+## Source-available ordinary property methods
+
+Recovered current chargingLaw253627(v.0011), indirectLaw253628(v.0014), directRates263098 andindirectRates263097, andFeesGSI127/2025file265347. Readtargetedoperativeprovisionsinreceipts; ratesoperativeclausescomplete. Feescomplete,p2renderchecked79/158/7and1Jan2026commencement.
+
+DirectLawchargeonacquisition/registeredcharge, declarationandpaymentbeforeregistration, armslengthconsiderationvsmarketvalueandGreffierinadequacydecision, registrationdateFX, namedfamily/trust/group/inheritanceexemptions now supplied. Nonexemptsecuredcharge0%rateisdistinctfromacquisitiongraduatedbands. Indirectconsideration/significantbenefit/disqualificationsandactivebusinessnonlettingexemptions, transactiondatemarketvalue, jointseveral28dayreturn/paymentincludingexemptfee,100%penaltyceiling/notautomatic,andcourt28dayassessmentdateappealnowincluded. No formula equatingbenefitvaluewithnetshares/propertyvalueassumed.
+
+CurrentDirectRatesconsolidation erroneouslystillprints1C(a)thoughactualadopted2025amendmentrepealsit. IndirectRatesnotesmisstate2025repealyearas2024andfootnoteamendmentnumberhasplaceholder. Do notuseconsolidationnotesasnewauthorityagainstactual2025amendment/Hansard. Directdownsizingcutoffisregistration1Jan2027;indirectisexecution1Jan2027. Directrepeat-usecomparesformerowners;indirectcomparesformeroccupiers. PlanareaassessableunitsnotcashTRPbillfor25%test. Thesearematerialprimaryfindings,notcosmeticexclusions. Newextensionawaitsonefreshwholepackreviewwithrestofordinarybatch; no additionalpush.
+
+
+## Remaining ordinary benefit period questions narrowed
+
+Reread retained2026BenefitsGuide id202739section11/examples4–5,FactSheet2,E12,E28. Partialperiodhousinghasactualavailable-days/in-Guernsey-daysmethodonactualemoluments:50/50*3000*.175=525. E28split-employmentusesallrelevantemolumentsandhasseparatespouse/electionrules. Newworkpaperextendsoldproseintogatedcalculations. Genuinecarperiodconflictremains:171/365*6000=2810.96versusfive500monthlyentries+20/30*500=2833.33. No genericblanketmissingpartial-yearformulaassertion; exact£22.37reconciliationquestionrecorded. £900across-employerallocationnotsettledbyE28housingrule. Specialistbenefitlimitskeptseparatefromtheseordinarymethods.
+
+
+## Domestic relief method extension
+
+Read complete current IncomeTaxLaw173 and176 operative text from recovered v.0113. Section173 supplies residency, same-income effective-rate and aggregate ceilings, gross-up/excess-deduction controls, company look-through, six-year initial claims and later material-tax-adjustment reopening. Section176 supplies non-treaty 75%-of-effective-Guernsey-rate ceiling, same-income/effective-foreign-rate gates, two-year normal claims and conjunctive six-year/six-month late-admission conditions. Added actual ordinary no-excess computations and two supplementary controls, retaining both main corridor controls byte-exact. This closes the former blanket missing statutory relief-clock/foreign-adjustment rule, not current prescribed forms/change-notification deadlines or PE/exit computations. Re-read67/108; no inference of complete domestic TP or universal documentation exemption. CopyoptionA applies, with original full corridor body saved before editing.

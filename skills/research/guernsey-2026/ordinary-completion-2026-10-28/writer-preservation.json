@@ -2,25 +2,8 @@
   "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
   "independent_review": "pending",
   "published": false,
+  "main_controls": 18,
   "files": [
-    {
-      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
-      "old_bytes": 38946,
-      "new_bytes": 59024,
-      "sha256": "c85e88698ba7981f21fd93198db853e4d35efce16e1166f2fdc7862e041eaef9",
-      "protected_metadata_exact": true,
-      "CTA_exact": true,
-      "main_controls_byte_exact": true
-    },
-    {
-      "path": "skills/international/guernsey/gg-individual-income-tax.md",
-      "old_bytes": 43597,
-      "new_bytes": 46978,
-      "sha256": "d961daa12b3685e3d332eea0a99910e36b4747505dfd49ecc490790d0f5e8f9b",
-      "protected_metadata_exact": true,
-      "CTA_exact": true,
-      "main_controls_byte_exact": true
-    },
     {
       "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
       "old_bytes": 67245,
@@ -35,6 +18,42 @@
       "old_bytes": 9223,
       "new_bytes": 13765,
       "sha256": "26f645852afb2db4c02b172d467d5d05216e9d6c0c4f32a7dfe5222074979bb5",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "old_bytes": 43597,
+      "new_bytes": 46978,
+      "sha256": "d961daa12b3685e3d332eea0a99910e36b4747505dfd49ecc490790d0f5e8f9b",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "old_bytes": 38946,
+      "new_bytes": 62043,
+      "sha256": "8d5638a847ce349a12256c600b8a6a5a3b7fbfac42a1a44af49a51d69d637ed7",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "old_bytes": 16781,
+      "new_bytes": 29016,
+      "sha256": "4eceef9f12934f2eaeaf9ff8435017bed502be1381c48b84f81280134fc466a5",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "old_bytes": 52428,
+      "new_bytes": 58764,
+      "sha256": "e84a3965f79529847f8dab782569c05fbe1c49ec7f54c3e41561c290e0bdbe15",
       "protected_metadata_exact": true,
       "CTA_exact": true,
       "main_controls_byte_exact": true
