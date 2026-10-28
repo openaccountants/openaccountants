@@ -1,18 +1,10 @@
 {
-  "writer_rule_rows": 59,
-  "provision_proofs": 81,
-  "short_quotes_matched_to_own_source": 424,
-  "original_paragraphs_mapped": 73,
-  "original_paragraphs_exact_across_guide_and_archive": 70,
-  "explicit_reconciliations": 3,
-  "inherited_rule_paragraphs_covered": 52,
-  "original_executable_blocks_preserved": 8,
-  "main_individual_blocks": 2,
-  "new_independent_synthetic_scenarios": 4,
-  "canonical_tax_sections": 9,
-  "cta_tail_byte_exact": true,
-  "guide_sha256": "d7d294876be7a87a6f34fafe502eae1c21144c17a7563fb02d4cda84a5e06217",
-  "independent_review": false,
-  "pushed": false,
-  "country_complete": false
+  "rows": 60,
+  "proofs": 87,
+  "short_quotes": 457,
+  "old_paragraphs": 73,
+  "old_paragraphs_exact": 70,
+  "guide_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
+  "independent_acceptance": false,
+  "published": false
 }

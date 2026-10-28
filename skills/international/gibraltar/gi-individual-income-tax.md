@@ -46,6 +46,15 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405"
     title: "Official current Allowances Rules index and consolidation date"
     as_of: "2026-10-28"
+  - url: "https://www.gibraltar.gov.gi/income-tax-office"
+    title: "Current ITO individual-return maintenance and interim PDF notice"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf"
+    title: "IT1 current 2026 filing form, first page and period labels"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf"
+    title: "Individual-return guidance 2026, opening notice and email instructions"
+    as_of: "2026-10-28"
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -259,6 +268,8 @@ The authenticated 2026/27 return fields/release and special assessment payment c
 
 The current government Tax eServices page lists separate “Tax return”, “Pay income tax online” and “Represent or authorise another individual” services. Its return/representation entry requires registration of a personal account, identity verification and registration for tax eServices, with the taxpayer-reference linking step. Establish the taxpayer and representative authority first; keep the submitted year, declaration/claim attachments, receipt, payment reference and payment reconciliation separately. This public listing verifies published routes. It does not show that the future 2026/27 return is already released, reveal authenticated fields, or prove a return/payment was accepted. The statutory filing/payment dates above still control their respective obligations. [Government Tax eServices](https://portal.egov.gi/services/tax).
 
+As read on 28 October 2026, the ITO main page and current return guidance say Tax eService is temporarily unavailable and direct taxpayers to the editable PDF return by email; the public service listing above does not establish availability. The current IT1 covers income and outgoings for 1 July 2025–30 June 2026, with a separate election/allowance part for the year commencing 1 July 2026 and a stated receipt deadline of 30 November 2026. Its first-page routing table gives PAYE returns to **paye.returns@gibraltar.gov.gi**, Other returns to **taxopi@gibraltar.gov.gi**, and HEPSS returns to **taxqi@gibraltar.gov.gi**. It requires photo ID, says no taxpayer signature is needed, and rejects a return without ID. A representative supplies authority and name/capacity. The guidance recommends PDF, JPEG or PNG attachments and says paper/lobby-mailbox returns are not accepted. These are the published 2026 filing arrangements, not verified delivery receipts or an assertion that the future year-ending-June-2027 return is released. Follow the actual form year/type and retain submission and assessment evidence. [ITO notice](https://www.gibraltar.gov.gi/income-tax-office); [IT1 first page](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf); [return guidance, opening notice and pages 3, 10–12](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf).
+
 For an employee leaving Gibraltar permanently or indefinitely, the current ITO PAYE FAQ instructs submission of the Claim for Final Assessment form with Part 1 of the last employer's P7A to **paye.leavinggib@gibraltar.gov.gi**. Keep employment-end and departure dates, income/benefits, claims, withholding and the resulting assessment/payment evidence. The FAQ supplies a published claim route, not a universal departure-tax exemption, a cancellation of an existing debt, or a replacement for the applicable statutory return/payment clock. No form has been submitted or tax paid in preparing this Guide. [ITO departure instructions](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/paye).
 
 ## Penalties and interest
@@ -338,11 +349,17 @@ expected:
 Primary legislation and [self-employed payment guidance](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed) read on **22 October 2026**: [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf), [Rates of Tax Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), [Allowances Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). Frontmatter records the same versions. Remaining work includes the complete relief schedule and GIBS deductions, current submission and payment channels, special assessment dates, the partial-year cross-reference, exact credit application, special regimes and independent source/professional review. The dates on the legislation index are evidence of the displayed consolidation, not a guarantee against later amendments.
 
 
+| ITO current maintenance/interim-route notice | [Official source](https://www.gibraltar.gov.gi/income-tax-office) | 2026-10-28 |
+| IT1 for 2026 filing and period labels | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf) | 2026-10-28 |
+| Current individual-return guidance and email instructions | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf) | 2026-10-28 |
+
 Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](../../research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. New text awaits one country review.
 
 ### Retained calculation controls
 
 Six original executable controls remain byte-exact in the [individual supplement](../../research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](../../research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
+
+Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; remaining property/energy and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points.
 
 ### Self-checks and output
 

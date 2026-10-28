@@ -829,6 +829,22 @@
       "original_paragraph_ids": [],
       "new_anchor": "Earlier reads and completed review scopes remain recorded",
       "read_on": "2026-10-28"
+    },
+    {
+      "id": "IND-60",
+      "rule": "Current maintenance notice overrides inference from public portal listing; 2026 IT1 actual income/election years and receipt deadline; category email, ID, authority and attachment requirements. No future-year form or actual receipt inferred.",
+      "guide_section": "Deadlines and filing",
+      "proof_ids": [
+        "ITOinterim",
+        "IT1p1",
+        "ITGnotice",
+        "ITGyear",
+        "ITGemail",
+        "ITGagent"
+      ],
+      "original_paragraph_ids": [],
+      "new_anchor": "As read on 28 October 2026, the ITO main page",
+      "read_on": "2026-10-28"
     }
   ],
   "source_proofs": [
@@ -1984,6 +2000,93 @@
       "quotes": [
         "RestrictStartDate=\"2020-12-31\""
       ]
+    },
+    {
+      "id": "ITOinterim",
+      "source": "ITO",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office",
+      "provision": "Current ITO maintenance and interim editable-PDF notice",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "IMPORTANT NOTICE: You must submit your tax return electronically. This can be done by using our editable PDF below. Paper-based returns will no longer be accepted. Notice: Online Tax Return Service Temporarily Unavailable The online tax return service is temporarily unavailable while we complete essential",
+        "maintenance and finalise our new, fully integrated online service."
+      ]
+    },
+    {
+      "id": "IT1p1",
+      "source": "IT1",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf",
+      "provision": "Current IT1 first page: taxpayer types, period labels, email routing and ID/authority",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "Form IT1 TAX RETURN Please select what taxpayer type best describes you PAYE PAYE Other Taxpayer type Description HEPSS PAYE You are in receipt of employment income or are aged under 60 and receive pension income. Other You are in receipt of either (i) any",
+        "of the below or (ii) any of the below in combination with the above: \u2022 income from a trade or business (including as a sole proprietor) \u2022 income from being a member of a partnership \u2022 rental income \u2022 income from a trust or foundation",
+        "\u2022 dividends HEPSS You are an individual in receipt of a certificate issued by the Finance Centre under the High Executive Possessing Specialist Skills Rules 2008. IMPORTANT INFORMATION You are required by law to make a return of your assessable income. This is included in",
+        "Part 1 of this Return. Section 2 allows you to claim your allowances and indicate to us Once completed this form must be returned by email. Please use the which system of taxation you elect for the tax year following key to identify where you",
+        "need to send your completed return. Taxpayer type Email where Return needs to be sent PAYE/HEPSS - Year commencing 01 July 2026 PAYE paye.returns@gibraltar.gov.gi Other - Year ending 30 June 2026 Other taxopi@gibraltar.gov.gi HEPSS taxqi@gibraltar.gov.gi This tax return must be received by no later than",
+        "the 30th November 2026 You will be charged a \u00a350 penalty if your tax return is received late with further penalties accruing if the failure continues. You do not need to sign this Return. You do need to provide us with a copy of your",
+        "photo ID (either ID Card or passport) in order to assist us in verifying your identity for the purposes of your declaration. We will reject your submission if proof of ID is not submitted with your Return. Each person obliged to file a return must",
+        "do so on an individual basis. You cannot include your spouse or civil partner in your return. You can however submit both your own and your spouse or civil partner's return in the same email to us. Not providing the additional information referred to in",
+        "this Return will likely affect your assessment and may result in further enquiries being made. PERSONAL DETAILS - SELF Name (please include name as shown on photo ID) Date of Birth (dd/mm/yyyy) Taxpayer Reference Telephone No. (please include country code) E-mail Marital status (please select",
+        "from the drop down menu provided) Select One Married Civil Partner PERSONAL DETAILS - SPOUSE/CIVIL PARTNER Single Widowed Name Date of Birth (dd/mm/yyyy) Divorced Separated Telephone No. (please include country code) E-mail ADDRESS Residential Address Mailing Address (only complete if different from above) DECLARATION I",
+        "declare that to the best of my knowledge and belief the particulars given on this form are correct and complete and I am the person whose photo ID accompanies the submission of this Return. I accept full responsibility for this submission and understand that any",
+        "false statement, misrepresentation or concealment of any material fact presented may result in prosecution. If you are completing this return on behalf of another person you will need to provide the following details and accompany this submission with a signed letter of authority . Name",
+        "Capacity Issued by: Commissioner of Income Tax PART 1 - INCOME & EXPENDITURE"
+      ]
+    },
+    {
+      "id": "ITGnotice",
+      "source": "ITG",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf",
+      "provision": "Current return guidance opening maintenance/interim notice",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "Dear Taxpayer, TAX RETURNS It\u2019s that time of year again. As you prepare to submit your tax return, please ensure that it is filed no later than 30 November 2026. This leaflet provides key guidance on what is required and how to complete and submit",
+        "your tax return. Please read the information carefully, as it is designed to help you complete your return accurately and efficiently. Please be advised that Egov (Tax eService) is currently undergoing essential maintenance and is temporarily unavailable. As an interim measure, tax returns should be",
+        "completed using the downloadable PDF tax return form available on the Income Tax Office website and submitted by email in accordance with the instructions provided. We will provide a further update and advise taxpayers as soon as the Tax eService is fully operational and available",
+        "for use. You are welcome to share this information with friends, family and colleagues. We appreciate your assistance in helping to spread awareness of the tax return requirements, filing deadline and the temporary arrangements currently in place. We hope you find this useful. Kind regards",
+        "Commissioner of Income Tax"
+      ]
+    },
+    {
+      "id": "ITGyear",
+      "source": "ITG",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf",
+      "provision": "Current return guidance income year and elections",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "What is my tax return and what do I need to do? A tax return consists of two main parts: Part 1. Income declaration This is where you declare all income earned during the relevant tax year and the sources of that income. For this",
+        "return, the tax year covers the period 1 July 2025 to 30 June 2026. Part 2. Claim for allowances This section is where you confirm which tax allowances you are entitled to and wish to claim. Most allowances are available under the Allowances Based System",
+        "(ABS), although some may also be available under the Gross Income Based System (GIBS). As a taxpayer, you may elect to be assessed under either system. However, regardless of your choice, the Income Tax Office will assess you under the system that results in the",
+        "lowest tax liability. For this reason, it is essential that you provide full and accurate information. Failure to provide complete information may prevent us from applying for the most favourable assessment and could result in you paying more tax than necessary. If you are an",
+        "employee taxed under the PAYE system, your tax return determines the allowances to be included in your tax code for the 2026/2027 tax year (1 July 2026 to 30 June 2027). If you are registered as trade income, your tax return tells us what allowances",
+        "you wish to claim in your assessment for the tax year 2025/2026, i.e. in the year from 1 July 2025 up to 30 June 2026. Please note that claiming an allowance does not guarantee it will be granted. We are required to verify eligibility and",
+        "ensure that appropriate supporting documentation has been provided Eligibility may also depend on factors such as your tax residency status in Gibraltar and whether your spouse or civil partner has opted to be taxed under the Gross Income Based System (GIBS). Note that even if",
+        "you have recently updated your tax code due to a change in circumstances, or notified the office of such a change, you must still complete the allowances section of your tax return. Return to list of key areas 1"
+      ]
+    },
+    {
+      "id": "ITGemail",
+      "source": "ITG",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf",
+      "provision": "Return guidance page10 email, photo-ID and attachment instructions",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "How do I submit my tax return by email? Our editable PDF tax return allows you to input your information directly. It also uses drop down menus, hyperlinks and check boxes to guide you through the process. The tax return must be submitted by email",
+        "only. Paper returns will not be accepted. Please do not place your tax return in any of the mailboxes located in our lobbies, as these submissions will not be processed and may be subject to sanctions. You are not required to sign your tax return;",
+        "however, you must include a copy of your photo identification with your submission. This may be either your ID card or passport. To ensure compatibility with our systems, we recommend that all attachments are saved in PDF, JPEG, or PNG format. Return to list of",
+        "key areas"
+      ]
+    },
+    {
+      "id": "ITGagent",
+      "source": "ITG",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf",
+      "provision": "Return guidance email authority and representative name/capacity",
+      "read_on": "2026-10-28",
+      "quotes": [
+        "If you are submitting a tax return by email on behalf of another person, you must include an authority letter confirming that you have been authorised to act on their behalf. You should also state your name and the capacity in which you are acting."
+      ]
     }
   ],
   "old_paragraph_map": [
@@ -2743,7 +2846,7 @@
     "IND-P066",
     "IND-P068"
   ],
-  "guide_sha256": "d7d294876be7a87a6f34fafe502eae1c21144c17a7563fb02d4cda84a5e06217",
+  "guide_sha256": "89d951ef71f85ee186b8b8ebbe84802e158046482b3cc8c5de2a7281c31d3ab5",
   "before_sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
   "original_qnups_xml_sha256": "bd6472b4eb7741dc1b5a83bdf82229084f4236bdb7ba3ce0895d8ec1e1da90f3",
   "new_independent_acceptance": false,

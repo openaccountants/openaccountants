@@ -523,6 +523,8 @@ Earlier full/delta review records keep their exact versions and source hashes. O
 
 Six original executable blocks remain byte-exact in [preserved payroll controls](../../research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md), alongside the two main examples here. Separate new benefit illustrations are in [benefit controls](../../research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md).
 
+Not yet confirmed: current-linked PAYE tables versus dated notes and grey cells; ordinary missed employee-SI wage recovery; general first-employer/concurrent allocation and annual/quarterly self-employed interaction; benefit-threshold wording and pension-definition reference; specialist employment-cost/coverage and actual submission/approval issues described above.
+
 ### Self-checks and output
 
 - Retain the relevant source version, the applicable period and the facts establishing scope.
