@@ -1,4 +1,4 @@
-# Assumed certified relief calculations, unreviewed additions
+# Assumed certified relief calculation controls
 
 These scenarios assume the stated statutory eligibility, recognised expenditure, actual certification and claim period. Amounts are deductions from income, not tax refunds. The source ledger records scope/conditions; GIBS interaction remains outside these computations.
 

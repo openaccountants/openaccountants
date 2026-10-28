@@ -1,7 +1,7 @@
 {
-  "status": "Full v0.11 writer candidate; 14 new rows await independent review",
+  "status": "Full v0.11 writer ledger; independent review and repair closure are recorded separately",
   "guide_version": "0.11",
-  "guide_sha256": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+  "guide_sha256": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
   "read_on": "2026-10-28",
   "inherited_acceptance": {
     "head": "f7d59d7c4679192f0e5d3bbe286742fb78531c11",
