@@ -1,0 +1,101 @@
+{
+  "baseline": "e9c82dcdd5a1a2fb37f582b37c6ecea0fcac96d3",
+  "accepted_predecessor": "696132b85dd81b7ed12d3d897459cb21054db4fc",
+  "main_controls": 20,
+  "all10guides_control_and_protected_fields_exact": true,
+  "nine_guides_entirely_unchanged": true,
+  "independent_review": "pending",
+  "published": false,
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "bytes": 25430
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "bytes": 12375
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "7c1921f96c8c6f631a27abdd709d278aaffe9419ecd0a0b51c5c1446c1937c35",
+      "bytes": 69286
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "1e95f0db588efe760c34b8a99c130bb5d50fea83ff6faf8917a499c369be90df",
+      "bytes": 14050
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "809b3cf140a1f72ae7af449beb34c0a5abe95a2552fb281c97f53473585f3bf1",
+      "bytes": 47253
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "9f660785d0ff25d10d5f7f5028fbf2d75f9d63c93331b68af1804801bd067c57",
+      "bytes": 67406
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "1542cd9b3b69f8fd9270971d1398579313b4b7c23bc80ddc43910262021826a4",
+      "bytes": 29281
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "bytes": 16361
+    },
+    {
+      "path": "skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md",
+      "full_body_unchanged": true,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "790db265af168f91613d615572464d8654ac3c6f3e80c4d9e91ccdd2262fc382",
+      "bytes": 24283
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "full_body_unchanged": false,
+      "protected_metadata_exact": true,
+      "main_controls_byte_exact": true,
+      "cta_exact": true,
+      "sha256": "2cbdeba6208f467a5c098f5caf4906527959faa758bdcac375be195975046c84",
+      "bytes": 71957
+    }
+  ]
+}
