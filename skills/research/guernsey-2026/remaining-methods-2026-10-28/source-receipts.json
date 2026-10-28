@@ -5,7 +5,7 @@
     "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/hmrc-dt-individual-current.pdf",
     "sha256": "a9c147e73a60fd555f4dbb97afa4e3e181936d2dd1b601972ea6219d2cec7050",
     "bytes": 429805,
-    "actual_read_scope": "13-page10/22form acquired; actual pension/process reads pp1\u20133,5\u20138,C.2p9 and declarationp10; other selected non-pension text acquired/read but not used to extend category claims",
+    "actual_read_scope": "13-page10/22form acquired; actual pension/process reads pp1\u20133,5\u20138,C.2p9 and signedPartFp6andNotesPartFp10; other selected non-pension text acquired/read but not used to extend category claims",
     "read_on": "2026-10-28"
   },
   {
@@ -60,6 +60,15 @@
     "sha256": "f6cf6d4ac6e5fe3bcd6ec8b95f604e924fc90a10a2ca9d6697cb600b24e0b5df",
     "bytes": 4540,
     "actual_read_scope": "Actual visible result list read; located2020amendment and secondLawPDF326135. Doesnotprove2026instrumentabsent.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "file": "company-registration-current-index.pdf",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=118095&p=0",
+    "local_acquired_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/company-registration-current-index.pdf",
+    "sha256": "024eff04533becb7f9c5f74ab91693df1cf047452079d86685fd936f627eb8f4",
+    "bytes": 412740,
+    "actual_read_scope": "CompleteForm70608/21allsections1\u20136andfootersread. Currentformsindexcopy lacks Companies-page183549PEopening/type additions; sameversionlabel; same section6 declarations. Not used to infer an exemption or submission without truthful declaration.",
     "read_on": "2026-10-28"
   }
 ]

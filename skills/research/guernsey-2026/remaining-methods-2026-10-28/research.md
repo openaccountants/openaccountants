@@ -12,7 +12,7 @@ Baseline: local e9c82dcd; accepted statutory/TP legal/status checkpoint696132b8,
 
 ## Actual source read/acquisition limits
 
-Full receipt hashes/local primary copies: source-receipts.json. Raw browserAX exports are acquisitions of visible page text, not HTTPresponses. The original currentLaw253819PDF and actual treaty remain in work/sources, with earlier source receipts preserved. New reads rechecked operative domestic47G–47I/68/68AA/7, actualForm706opening/sections1–4, and the pension/process parts listed in the receipt. Specialist non-pensionDT-Individual appendices were not used.
+Full receipt hashes/local primary copies: source-receipts.json. Raw browserAX exports are acquisitions of visible page text, not HTTPresponses. The original currentLaw253819PDF and actual treaty remain in work/sources, with earlier source receipts preserved. New reads rechecked operative domestic47G–47I/68/68AA/7, actualForm706opening/sections1–6, and the pension/process parts listed in the receipt. Specialist non-pensionDT-Individual appendices were not used.
 
 HMRC form publication https://www.gov.uk/government/publications/double-taxation-treaty-relief-form-dt-individual and PAYE81010 https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye81010 were opened/read on28October2026; sourceauthority—not secondary summaries. TheGuernsey forms index still has a stale2023intro while linking2025returns; current linkage is evidence of linkage, not proof every dated form covers2026facts. Existing31-pageBenefitGuide/otherpriorresearch not rewritten.
 
@@ -23,3 +23,9 @@ Exactly20maincontrols,2perGuide, must remain; original18main/original32archivedc
 A mistaken --help call to validate-guides.py ran its fulldefaultcheck:2268Guides/6122generatedblocks,3inheritedwarninggroups, failedsolelystalegeneratedindex(counts). No generated file is edited; requiredPRmode is --changed-only --no-index-check. SystemPython3 lacksPyYAML; use the existing Armenia recovery venv, without dependency or code changes. Actual validation results will be recorded separately.
 
 No new push/public update, merge, issue397closure, CLAconsent, external authority contact or accountant attestation. All six partial domains remain, with ordinaryPE/pensionmethods now distinguished from the actual remainingGuernseycredit/exitwork. IncludedProallowanceonly; no purchasedcredits/paidAPI/settingsactions.
+
+## Bounded review repairs
+
+The reviewer found the actual Form706section6 declaration was not covered by the initial opening/sections1–4read. Writer subsequently read allsections5–6 and the complete current-index alternateForm706118095. Both require certifying Guernseycentralmanagement/control orcontrol. The Companies-page183549copy includesPEopening/type, but the118095copy lacks that addedPEwording; both retain the same08/21versionlabel. Neither authorises a nonresidentPE to make a false declaration. The Guide now expressly retains the completion gap and requires actualRevenueServiceinstructions if neither declaration is true. This is a precise operational limitation, not a new residence exemption or a completePEregistrationclaim.
+
+The signedDT-IndividualPartF is printedp6; NotesPartF is p10. Source/readscope references now distinguish them. No new legal method inferred from the page correction.
