@@ -1,0 +1,431 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 30 frá 7. apríl 1986 um frítíð við løn,  sum seinast broytt við løgtingslóg nr. 33 frá 24. mars 2022
+7. apríl 1986Nr. 30
+Løgtingslóg um frítíð við løn, sum seinast broytt við løgtingslóg nr. 33 frá 24. mars 2022
+(Frítíðarlógin) 1)
+Kapittul 1 Lógarøki
+Kapittul 2 Innvinningarár og talið á frídøgum
+Kapittul 3 Frítíðarár og frítíðarskeið
+Kapittul 4 Frítíðarløn og frítíð við løn
+Kapittul 5 Vanligar reglur
+Kapittul 6 Avtøka av frítíðargrunninum
+Kapittul 7 Revsireglur
+Kapittul 8.
+Kapittul 9 Gildisfyriskipanir
+Kapittul 1
+Lógarøki
+§ 1. 1) Løntakarar í almennum ella privatum starvi hava rætt til frítíð og frítíðarløn, sum fyrisett í hesari løgtingslóg.
+§ 2. 1) Undir løgtingslógina koma tó ikki
+1)   tænastumenn landsins, ríkisins, fólkakirkjunnar og fólkaskúlans.
+2)   fiskimenn undir starvsviðurskiftum, ið ikki áseta reglur um frítíð við løn.
+§ 3. 1) Henda løgtingslóg viðvíkir ikki løntakara í almennum starvi, sum av landi, ríki, løgtingi ella kommunu hevur fingið vissað frítíð við løn, um so er, at landsstýrismaðurin metir viðkomandi skipan at veita løntakaranum ikki verri kor, enn fyriskipanirnar í hesi løgtingslóg tryggja.
+2. stk. 1) Landsstýrismaðurin kann fyriseta, at lógin verður ikki at galda starv ella starvsøki, har við sáttmála ella fyriskipan er vissað løntakaranum frítíð við løn eftir reglum, sum bjóða ikki verri kor, enn fyriskipanirnar í hesi løgtingslóg.
+3. stk. 1) Henda løgtingslóg minkar einki um víðari fevnandi frítíðarrætt sambært aðrari lóg ella fyriskipan eftir semju millum arbeiðsgevara og løntakara ella eftir gerðarrættardómi ella vanligum siði.
+§ 4. 1) Landsstýrismaðurin tekur avgerð í ivaspurningum, um persónur kemur undir hesa løgtingslóg.
+Kapittul 2
+Innvinningarár og talið á frídøgum
+§ 5. 2) Frítíðin er 30 dagar fyri fulla starvstíð í tíðarskeiðinum 1. apríl til 31. mars (innvinningarárið). Innvinningarárið kann í staðin vera álmanakkaárið, um hetta er ásett í sáttmála millum avvarðandi partar. Er starvstíðin styttri enn fult innvinningarár, verður frítíðin sett í mun til starvstíðina.
+2. stk. 1) Burturvera frá arbeiðinum vegna sjúku, vanlukku, fyribils arbeiðssteðg av rakstrarligum ávum ella frítíð eftir hesari løgtingslóg, eins og burturvera vegna barnsburð skal ikki verða frádrigin við uppgerðini av starvstíðini, sum gevur rætt til frítíð.
+3. stk. Frítíðarrætturin verður at rokna uttan mun til, um viðkomandi virki ella skip skiftir eigara í starvstíðini.
+§ 6. 2) Løntakari, ið ikki hevur vunnið rætt til frítíð við løn ella frítíðarløn í 30 dagar hevur tó rætt til at taka frí uttan løn ella frítíðarløn í upp til 30 dagar í einum frítíðarári.
+Kapittul 3
+Frítíðarár og frítíðarskeið
+§ 7. Frítíðin skal verða tikin í tíðarskeiðinum 2. mai til 1. mai (frítíðarárið).
+2. stk. Frítíð eftir § 5 verður tikin áðrenn frítíð eftir § 6.
+§ 8. 2) Minst 24 dagar av frítíðini skulu gevast samanhangandi í tíðini 2. mai til 30. september (frítíðarskeiðið). Er løntakari uppsagdur, má tó uppsagnarfreistin í ongum føri skerjast við, at frítíðin verður løgd innan fyri uppsagnarfreistina.
+2. stk. 2) Frítíð út yvir teir 24 dagarnar kann verða givin uttan fyri frítíðarskeiðið, tó seinast 1. mai árið eftir.
+Stk. 3. 3) Fyri fólk, sum starvast á skipi ella í flogfari, kann frítíðin, tá viðurskiftini gera tað neyðugt, tó verða givin aðra tíð av árinum. Frítíðin skal falla, so skjótt skips- ella flogfarisstarvið loyvir tað, og taka við á tí degi, sum báðir partar semjast um.
+§ 9. Arbeiðsgevarin ásetir í samráð við løntakaran, nær frítíðin skal takast og boðar honum frá hesum við rímiligari freist.
+Kapittul 4
+Frítíðarløn og frítíð við løn
+§ 10. 2) 4) Arbeiðsgevarin veitir løntakaranum frítíðarløn, ið er 12% av vunnari løn. Frítíðarlønin fellur til gjaldingar samstundis við lønini.
+§ 11. 3) 2) Mánaðarløntir løntakarar hava rætt til frítíð við løn. Veitt verður harafturat frítíðarískoyti, ið er 1½ % av vunnari løn í undanfarna innvinningarári.
+2. stk. 4) Fer mánaðarløntur løntakari úr starvi, verður veitt honum frítíðarløn eftir § 10 fyri alla ta frítíð, hann eigur á. Samstundis sum hann fer úr starvinum, verður upphæddin goldin eftir reglunum í § 20 a.
+§ 12. Við útrokning av frítíðarløn og frítíðarískoyti verður ikki tald við løn, sum er útgoldin í frítíðini, veitt frítíðarløn ella útgoldið frítíðarískoyti.
+§ 13. Við útrokning av frítíðarløn og frítíðarískoyti teljast við allar skattskyldugar lønarveitingar.
+2. stk. Fyri fiskimenn verður frítíðarlønin útroknað og útgoldin sambært galdandi sáttmála.
+3. stk. 1) Um so er, at lønin fult ella partvís er kostur og innivist ella aðrir fríir ágóðar, verður virðið av hesum at seta av landsstýrismanninum í fíggjarmálum ella øðrum heimilaðum myndugleika. Hava partarnir avtalað eitt hægri virði, er hetta tó galdandi.
+§ 14. 1) Í tí føri, at eitt virki verður steðgað í frítíðini, kann løntakari har, sum ikki eigur rætt til frítíð allar dagarnar, virkið er steðgað, ikki av steðginum krevja endurgjald út um ta frítíðarløn, sum viðkomandi eigur á eftir ásetingunum í hesari løgtingslóg.
+§ 15. 1) Viðvíkjandi løntakarum á skipi eigur landsstýrismaðurin heimild at gera tey avvik frá fyrisetanunum í hesari løgtingslóg, sum kunna vera neyðug og rímilig undir teim serligu viðurskiftum, sum elvast á sjónum; t.d. kunna eftir samráð við viðkomandi løntakarafeløg setast reglur, soleiðis at tann árliga frítíðin kann vera býtt ella samanløgd við viðkomandi frítíð, og undir viðurskiftum, har okkurt serligt verður til hindurs fyri tí lógfyrisettu frítíð, frammíhjá løn og kostpeningur verða givin sum frítíðarendurgjald.
+§ 16. Verður frítíðarlønin ikki goldin rættstundis, skal gjaldast 1½% í rentum fyri hvønn byrjaðan mánaða frá gjalddegnum.
+Kapittul 5
+Vanligar reglur
+§ 17. Rætturin til frítíðarløn, løn í frítíðini ella frítíðarískoyti fyrnast, um krav til rættin ikki verður fráboðað arbeiðsgevaranum fyri 1. apríl í frítíðarárinum, frítíðin skal takast.
+2. stk. Ger arbeiðsgevarin ikki eftir kravinum, fyrnast tað, um ikki løntakarin uttan óneyðugt dvøl letur kravið fremja.
+3. stk. 1) Er kravið fyrnað, fer upphæddin í landskassan.
+§ 18. 4) 1) Krøv um frítíðarløn, ið ikki eru fráboðað TAKS í seinasta lagi 5 ár frá tí degi, frítíðarlønin er tøk, eru fyrnað.
+Stk. 2. 1) Frítíðarløn, sum er fyrnað, fer í landskassan.
+§ 19. Avtala um at siga frá sær rætt til frítíð, frítíðarløn, frítíð við løn ella frítíðarískoyti er ógildug.
+2. stk. Loyvt er ikki at lata øðrum rættin til vunna frítíðarløn, eins og hesin rættur ikki kann verða fyri rættarsókn.
+§ 20. Avgerð í ósemju arbeiðsgevara og løntakara millum um rættin til frítíð ella frítíðarløn verður tikin av Føroya Rætti.
+§ 20 a. 5) 4) 1) Arbeiðsgevarin skal um góðkent avrokningarstað rinda frítíðarlønina á frítíðarlønarkontu, sum TAKS umsitur.
+Stk. 2. 4) 1) TAKS umsitur inngjald og útgjald av frítíðarløn. Landskassin ber kostnaðin av hesum, sbr. tó stk. 3 og § 21, stk. 3.
+Stk. 3.4) 1) Løntakarafeløg, sum brúka álmanakkaárið sum innvinningarár, rinda TAKS fyri at umsita inngjald og útgjald av frítíðarløn.
+Stk. 4. 4) 1) Landsstýrismaðurin ásetur nærri reglur um, hvussu inngjøld og útgjøld verða skipað.
+Stk. 5. 4) 1) (Strikað).
+Stk. 6. 4) 1) (Strikað).
+Stk. 7. 4) 1) (Strikað).
+Kapittul 6
+Avtøka av frítíðargrunninum 1)
+§ 21. 4) 1) Frítíðargrunnurin verður avtikin, og fæ grunsins verður flutt Granskingarráðnum og markað til gransking í arbeiðsmarknaðarviðurskiftum, sbr. tó stk. 2-3. Granskingarráðið umsitur peningin eftir reglum, sum landsstýrismaðurin ásetur.
+Stk. 2. 4) 1) Av fæi grunsins verða fluttar Frítíðargrunninum 1 mió. kr., sum skulu brúkast til at fíggja munin á frítíðarlønarkontu og til at gera upp og enda Frítíðargrunnin.
+Stk. 3. 6)  1) Av fæi grunsins verða fluttar landskassanum 2 mió. kr. at fíggja umsitingina av frítíðarlønarkontunum tað fyrsta árið.
+Stk. 4. 4) 1) Sitandi nevnd fyri Frítíðargrunnin heldur fram at virka til 1. apríl 2023, tá grunnurin verður gjørdur upp og rakstraravlopið flutt Granskingarráðnum.
+Stk. 5. 6) 4) 1) (Strikað).
+Stk. 6. 4) 1) (Strikað).
+Kapittul 7
+Revsireglur
+§ 22. 1) Við sekt verður revsaður
+1)   arbeiðsgevari, sum uttan rímiliga orsøk letur vera við at gjalda vunna frítíðarløn, løn í frítíðini ella frítíðarískoyti, hóast hann verður kravdur,
+2)   arbeiðsgevari, sum ger avtalu um at siga frá sær skylduna at veita frítíðarløn, løn í frítíðini ella frítíðarískoyti, og
+3)   persónur, sum ger avtalu av avhending av rætti til vunna frítíðarløn.
+Stk. 2. 1) Revsiábyrgd kann verða áløgd løgfrøðiligum persónum sambært reglunum í 5. kapitli í revsilógini.
+Stk. 3. 1) Í reglum, givnar við heimild í løgtingslógini, kann verða ásett, at brot á reglurnar verður revsað við sekt.
+Kapittul 8.
+§ 23. 3) (Strikað).
+Kapittul 9
+Gildisfyriskipanir
+§ 24. Henda lóg kemur í gildi 1. apríl 1986, og samstundis fer úr gildi løgtingslóg nr. 31 frá 19. mars 1951 um frítíð við løn við seinri broytingum og § 4, 4. stk. og 5. stk. í løgtingslóg nr. 29 frá 12. oktober 1954 um lærlingaviðurskifti við seinni broytingum.
+1) Broytt við løgtingslóg nr. 33 frá 24. mars 2022, har §§ 2 og 3 ljóða soleiðis: “§ 2, Stk. 1. Henda løgtingslóg kemur í gildi 1. apríl 2022, sbr. tó § 3. Stk. 2. Frá 1. apríl 2022 skal øll frítíðarløn verða rindað á frítíðarlønarkontu hjá TAKS. § 3, Stk. 1. Stuðul sambært umsókn til tiltøk, ið útvega løntakarunum frítíðarmøguleikar, sbr. § 21, stk. 3, í løgtingslógini og § 1 í kunngerð um virki og fyrisiting av frítíðargrunninum, sum Frítíðargrunnurin hevur játtað, men ikki útgoldið, tá ið løgtingslógin fær gildi, verður støðlaður á kontu hjá TAKS til og við 1. apríl 2023. Stk. 2. Játtaður stuðul, sum ikki er útgoldin 1. apríl 2023, fellur burtur, og peningurin verður fluttur Granskingarráðnum, sbr. § 21, stk. 2.”
+2) Broytt við løgtingslóg nr. 75 frá 20. mai 1996.
+3) Broytt við løgtingslóg nr. 70 frá 2. apríl 1993. § 2 í hesi løgtingslóg er tikin av við løgtingslóg nr. 75 frá 20. mai 1996 § 1, nr. 7.
+4) Broytt við løgtingslóg nr. 56 frá 16. mai 2006, har § 2 ljóðar soleiðis: “Henda løgtingslóg fær gildi 1. juni 2006.”
+5) Broytt við løgtingslóg nr. 67 frá 23. mai 1997, har § 2 ljóðar soleiðis: “Henda lóg fær gildi frá 1. januar 1998.”
+6) Broytt við løgtingslóg nr. 40 frá 14. marts 1995, har § 2, stk. 2 ljóðar soleiðis: “Lógin fevnir eisini um frítíðarlønarkrøv, sum vóru greið til útgjaldingar 2. mai 1994.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Almanna- og bústaðamálaráðið
+Útgávudagur: 10-04-1986
+Tilvísingar
+Heimildir
+Broytingar
+Kunngerðablaðið
+Kunngerðarblað  1986 A - Løgtingslóg 30 frá 7. apríl 1986
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

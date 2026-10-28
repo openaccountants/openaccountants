@@ -1,0 +1,1362 @@
+{
+  "pin": "ebf5863b6f219368291d91aecbe0e260a304900634eaa64451094b44cb7a820c",
+  "rows": 56,
+  "ledger_sha256": "9ed2ad6850251ea60d7765cb8f46e719e73f0c0048c08c8528c50c63b8559c27",
+  "quote_checks": [
+    {
+      "id": "PIT-002",
+      "file": "tax.reader.txt",
+      "LF": 321,
+      "exact": true
+    },
+    {
+      "id": "PIT-002",
+      "file": "tax.reader.txt",
+      "LF": 337,
+      "exact": true
+    },
+    {
+      "id": "PIT-002",
+      "file": "tax.reader.txt",
+      "LF": 434,
+      "exact": true
+    },
+    {
+      "id": "PIT-003",
+      "file": "tax.reader.txt",
+      "LF": 365,
+      "exact": true
+    },
+    {
+      "id": "PIT-003",
+      "file": "tax.reader.txt",
+      "LF": 372,
+      "exact": true
+    },
+    {
+      "id": "PIT-006",
+      "file": "rate.reader.txt",
+      "LF": 305,
+      "exact": true
+    },
+    {
+      "id": "PIT-007",
+      "file": "rate.reader.txt",
+      "LF": 306,
+      "exact": true
+    },
+    {
+      "id": "PIT-008",
+      "file": "rate.reader.txt",
+      "LF": 307,
+      "exact": true
+    },
+    {
+      "id": "PIT-009",
+      "file": "rate.reader.txt",
+      "LF": 308,
+      "exact": true
+    },
+    {
+      "id": "PIT-010",
+      "file": "rate.reader.txt",
+      "LF": 309,
+      "exact": true
+    },
+    {
+      "id": "PIT-011",
+      "file": "rate.reader.txt",
+      "LF": 310,
+      "exact": true
+    },
+    {
+      "id": "PIT-013",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-016",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-016",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-017",
+      "file": "rate.reader.txt",
+      "LF": 316,
+      "exact": true
+    },
+    {
+      "id": "PIT-017",
+      "file": "rate.reader.txt",
+      "LF": 317,
+      "exact": true
+    },
+    {
+      "id": "PIT-017",
+      "file": "rate.reader.txt",
+      "LF": 318,
+      "exact": true
+    },
+    {
+      "id": "PIT-018",
+      "file": "tax.reader.txt",
+      "LF": 686,
+      "exact": true
+    },
+    {
+      "id": "PIT-019",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-020",
+      "file": "support.reader.txt",
+      "LF": 323,
+      "exact": true
+    },
+    {
+      "id": "PIT-020",
+      "file": "support.reader.txt",
+      "LF": 333,
+      "exact": true
+    },
+    {
+      "id": "PIT-021",
+      "file": "rate.reader.txt",
+      "LF": 336,
+      "exact": true
+    },
+    {
+      "id": "PIT-021",
+      "file": "rate.reader.txt",
+      "LF": 336,
+      "exact": true
+    },
+    {
+      "id": "PIT-021",
+      "file": "rate.reader.txt",
+      "LF": 336,
+      "exact": true
+    },
+    {
+      "id": "PIT-022",
+      "file": "rate.reader.txt",
+      "LF": 333,
+      "exact": true
+    },
+    {
+      "id": "PIT-022",
+      "file": "rate.reader.txt",
+      "LF": 333,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 434,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 458,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 689,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 693,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 707,
+      "exact": true
+    },
+    {
+      "id": "PIT-023",
+      "file": "tax.reader.txt",
+      "LF": 710,
+      "exact": true
+    },
+    {
+      "id": "PIT-024",
+      "file": "tax.reader.txt",
+      "LF": 454,
+      "exact": true
+    },
+    {
+      "id": "PIT-024",
+      "file": "tax.reader.txt",
+      "LF": 531,
+      "exact": true
+    },
+    {
+      "id": "PIT-024",
+      "file": "tax.reader.txt",
+      "LF": 544,
+      "exact": true
+    },
+    {
+      "id": "PIT-024",
+      "file": "tax.reader.txt",
+      "LF": 542,
+      "exact": true
+    },
+    {
+      "id": "PIT-024",
+      "file": "tax.reader.txt",
+      "LF": 575,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 317,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 322,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 325,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 340,
+      "exact": true
+    },
+    {
+      "id": "PIT-025",
+      "file": "depreciation.reader.txt",
+      "LF": 343,
+      "exact": true
+    },
+    {
+      "id": "PIT-026",
+      "file": "tax.reader.txt",
+      "LF": 537,
+      "exact": true
+    },
+    {
+      "id": "PIT-026",
+      "file": "tax.reader.txt",
+      "LF": 539,
+      "exact": true
+    },
+    {
+      "id": "PIT-026",
+      "file": "tax.reader.txt",
+      "LF": 540,
+      "exact": true
+    },
+    {
+      "id": "PIT-026",
+      "file": "tax.reader.txt",
+      "LF": 541,
+      "exact": true
+    },
+    {
+      "id": "PIT-027",
+      "file": "consumption.reader.txt",
+      "LF": 298,
+      "exact": true
+    },
+    {
+      "id": "PIT-027",
+      "file": "consumption.reader.txt",
+      "LF": 311,
+      "exact": true
+    },
+    {
+      "id": "PIT-027",
+      "file": "consumption.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-028",
+      "file": "pension.reader.txt",
+      "LF": 412,
+      "exact": true
+    },
+    {
+      "id": "PIT-028",
+      "file": "pension.reader.txt",
+      "LF": 413,
+      "exact": true
+    },
+    {
+      "id": "PIT-028",
+      "file": "pension.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-029",
+      "file": "tax.reader.txt",
+      "LF": 365,
+      "exact": true
+    },
+    {
+      "id": "PIT-030",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 636,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 642,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 643,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 645,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-031",
+      "file": "rate.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-032",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-032",
+      "file": "tax.reader.txt",
+      "LF": 686,
+      "exact": true
+    },
+    {
+      "id": "PIT-032",
+      "file": "tax.reader.txt",
+      "LF": 430,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "church.reader.txt",
+      "LF": 347,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "church.reader.txt",
+      "LF": 349,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "church.reader.txt",
+      "LF": 352,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "church.reader.txt",
+      "LF": 357,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-033",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-034",
+      "file": "tax.reader.txt",
+      "LF": 317,
+      "exact": true
+    },
+    {
+      "id": "PIT-034",
+      "file": "tax.reader.txt",
+      "LF": 379,
+      "exact": true
+    },
+    {
+      "id": "PIT-034",
+      "file": "tax.reader.txt",
+      "LF": 381,
+      "exact": true
+    },
+    {
+      "id": "PIT-034",
+      "file": "tax.reader.txt",
+      "LF": 383,
+      "exact": true
+    },
+    {
+      "id": "PIT-035",
+      "file": "tax.reader.txt",
+      "LF": 431,
+      "exact": true
+    },
+    {
+      "id": "PIT-035",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-035",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-036",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-036",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 309,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 346,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 353,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 365,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 369,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 372,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 375,
+      "exact": true
+    },
+    {
+      "id": "PIT-037",
+      "file": "capital.reader.txt",
+      "LF": 378,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 309,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 386,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 388,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 392,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 421,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 425,
+      "exact": true
+    },
+    {
+      "id": "PIT-038",
+      "file": "capital.reader.txt",
+      "LF": 430,
+      "exact": true
+    },
+    {
+      "id": "PIT-039",
+      "file": "rate.reader.txt",
+      "LF": 336,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 297,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 302,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 314,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 323,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 326,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 333,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 360,
+      "exact": true
+    },
+    {
+      "id": "PIT-040",
+      "file": "support.reader.txt",
+      "LF": 363,
+      "exact": true
+    },
+    {
+      "id": "PIT-041",
+      "file": "tax.reader.txt",
+      "LF": 452,
+      "exact": true
+    },
+    {
+      "id": "PIT-041",
+      "file": "tax.reader.txt",
+      "LF": 558,
+      "exact": true
+    },
+    {
+      "id": "PIT-041",
+      "file": "tax.reader.txt",
+      "LF": 561,
+      "exact": true
+    },
+    {
+      "id": "PIT-041",
+      "file": "tax.reader.txt",
+      "LF": 572,
+      "exact": true
+    },
+    {
+      "id": "PIT-041",
+      "file": "rate.reader.txt",
+      "LF": 311,
+      "exact": true
+    },
+    {
+      "id": "PIT-042",
+      "file": "tax.reader.txt",
+      "LF": 565,
+      "exact": true
+    },
+    {
+      "id": "PIT-042",
+      "file": "tax.reader.txt",
+      "LF": 567,
+      "exact": true
+    },
+    {
+      "id": "PIT-042",
+      "file": "tax.reader.txt",
+      "LF": 569,
+      "exact": true
+    },
+    {
+      "id": "PIT-043",
+      "file": "tax.reader.txt",
+      "LF": 801,
+      "exact": true
+    },
+    {
+      "id": "PIT-043",
+      "file": "tax.reader.txt",
+      "LF": 805,
+      "exact": true
+    },
+    {
+      "id": "PIT-043",
+      "file": "tax.reader.txt",
+      "LF": 810,
+      "exact": true
+    },
+    {
+      "id": "PIT-043",
+      "file": "tax.reader.txt",
+      "LF": 817,
+      "exact": true
+    },
+    {
+      "id": "PIT-044",
+      "file": "tax.reader.txt",
+      "LF": 734,
+      "exact": true
+    },
+    {
+      "id": "PIT-044",
+      "file": "tax.reader.txt",
+      "LF": 748,
+      "exact": true
+    },
+    {
+      "id": "PIT-044",
+      "file": "tax.reader.txt",
+      "LF": 748,
+      "exact": true
+    },
+    {
+      "id": "PIT-044",
+      "file": "tax.reader.txt",
+      "LF": 751,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 752,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 760,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 759,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 762,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 761,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 765,
+      "exact": true
+    },
+    {
+      "id": "PIT-045",
+      "file": "tax.reader.txt",
+      "LF": 770,
+      "exact": true
+    },
+    {
+      "id": "PIT-046",
+      "file": "capital.reader.txt",
+      "LF": 430,
+      "exact": true
+    },
+    {
+      "id": "PIT-047",
+      "file": "tax.reader.txt",
+      "LF": 814,
+      "exact": true
+    },
+    {
+      "id": "PIT-047",
+      "file": "tax.reader.txt",
+      "LF": 1043,
+      "exact": true
+    },
+    {
+      "id": "PIT-047",
+      "file": "capital.reader.txt",
+      "LF": 430,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 759,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 1057,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 1059,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 1063,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 1071,
+      "exact": true
+    },
+    {
+      "id": "PIT-048",
+      "file": "tax.reader.txt",
+      "LF": 1072,
+      "exact": true
+    },
+    {
+      "id": "PIT-049",
+      "file": "tax.reader.txt",
+      "LF": 317,
+      "exact": true
+    },
+    {
+      "id": "PIT-049",
+      "file": "tax.reader.txt",
+      "LF": 337,
+      "exact": true
+    },
+    {
+      "id": "PIT-049",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-049",
+      "file": "rate.reader.txt",
+      "LF": 333,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 438,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 324,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 326,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 331,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 337,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 340,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "capital.reader.txt",
+      "LF": 343,
+      "exact": true
+    },
+    {
+      "id": "PIT-050",
+      "file": "tax.reader.txt",
+      "LF": 1108,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "tax.reader.txt",
+      "LF": 531,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "pension.reader.txt",
+      "LF": 411,
+      "exact": true
+    },
+    {
+      "id": "PIT-052",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "tax.reader.txt",
+      "LF": 531,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "pension.reader.txt",
+      "LF": 411,
+      "exact": true
+    },
+    {
+      "id": "PIT-053",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "tax.reader.txt",
+      "LF": 531,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "pension.reader.txt",
+      "LF": 411,
+      "exact": true
+    },
+    {
+      "id": "PIT-054",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "rate.reader.txt",
+      "LF": 304,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "rate.reader.txt",
+      "LF": 312,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "tax.reader.txt",
+      "LF": 531,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "tax.reader.txt",
+      "LF": 649,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "tax.reader.txt",
+      "LF": 653,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "depreciation.reader.txt",
+      "LF": 315,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "pension.reader.txt",
+      "LF": 411,
+      "exact": true
+    },
+    {
+      "id": "PIT-055",
+      "file": "capital.reader.txt",
+      "LF": 414,
+      "exact": true
+    }
+  ],
+  "source_identity_checks": [
+    {
+      "file": "tax.html",
+      "sha256": "db1f5c69a30b751417ab77ab6462cc8bc8c4f1dd68d46f5736eca16ec5595332"
+    },
+    {
+      "file": "tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c"
+    },
+    {
+      "file": "rate.html",
+      "sha256": "30d85b62c859c57588cd35690a2bf3c9a1661e1344717c9a97132e4066b3e40e"
+    },
+    {
+      "file": "rate.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8"
+    },
+    {
+      "file": "church.html",
+      "sha256": "a7093defb05042158a04c7d33b73a47ff40419f4dd0e188361e540f04655bb82"
+    },
+    {
+      "file": "church.reader.txt",
+      "sha256": "8e21110bc2ae123a7675e4178c067c2d7f0177a0ff832588c49e85e3c62934b3"
+    },
+    {
+      "file": "support.html",
+      "sha256": "7a832819f7aeb6066d656225fd42d8306ac12bb23ba95f5fa01e7d1ee6eccbb8"
+    },
+    {
+      "file": "support.reader.txt",
+      "sha256": "fb0862bc2f01f57486f8a324ba678d729c47cc6008443441932a86a0537df07c"
+    },
+    {
+      "file": "consumption.html",
+      "sha256": "c6d092a7f43292b450371d8b0138837967f13e8e78cd890a850e8080bdc8cae6"
+    },
+    {
+      "file": "consumption.reader.txt",
+      "sha256": "bdd531f5e52010dcb57f968315cde6c9af1f0494a64e27c5b8377122a12e194a"
+    },
+    {
+      "file": "national.html",
+      "sha256": "0c473793428343f069bd55146192f510c48bcc7d59e7aaefda7d1120453ee0fa"
+    },
+    {
+      "file": "national.reader.txt",
+      "sha256": "c5ee6062ec3c3f1576779370049946b7ed74d2c64f35671592e5bcbce91af853"
+    },
+    {
+      "file": "municipal.html",
+      "sha256": "31362eed49002cdb57ccdee3d6a47e090dabc7811e2942bbc20bc853d00730cd"
+    },
+    {
+      "file": "municipal.reader.txt",
+      "sha256": "d3fd68c6779bda1340cbcf20baff6026299b8375f1ddf54f6189bdb8b439aaac"
+    },
+    {
+      "file": "child.html",
+      "sha256": "638333a9b4fab8e66917bcc9e0b73e1b6cb964397499bc46ae653e073f4b4f28"
+    },
+    {
+      "file": "child.reader.txt",
+      "sha256": "9e4fef13626016d9b24da3eb4462dcc45404b622ad5caa7b7622f7dde27611c3"
+    },
+    {
+      "file": "rent.html",
+      "sha256": "cdbcbeb4c952bc76e4ba520e01366c0e4d9ae77b18f137e25d22f06fb854fe17"
+    },
+    {
+      "file": "rent.reader.txt",
+      "sha256": "e1725158cae0c9d994dcbee82fd23db68e7cbf0c8c3c555e25dbd20bdd4fdd13"
+    },
+    {
+      "file": "returns.html",
+      "sha256": "898fd1d2cb434246397302fc2d0fd434c624d3eb8982b5451e8e80ad71b61570"
+    },
+    {
+      "file": "returns.reader.txt",
+      "sha256": "029ab6b1ceefd2463307e1d4dfb9bb4e2d2b1a8f5932bfdf06ada83ba0fa68a2"
+    },
+    {
+      "file": "spouse.html",
+      "sha256": "56eb96fc06f288355ffae1a47d31a32311802b80e7a17e1e94ef703b166bdeb4"
+    },
+    {
+      "file": "spouse.reader.txt",
+      "sha256": "f44ee1a5080cba769b1d0f75fe4e9d082856e0b4c92d1f85b81a52c42eaf6b6b"
+    },
+    {
+      "file": "residence.html",
+      "sha256": "7ab705a6f9027687bbf1d619113a90bd7c4bd05e506626d3355c131d731f1a30"
+    },
+    {
+      "file": "residence.reader.txt",
+      "sha256": "8096aa78420c7ac166ff7af80dc624a557b6ddef06c5c1441bbdd56ff79c9d5a"
+    },
+    {
+      "file": "capital.html",
+      "sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262"
+    },
+    {
+      "file": "capital.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c"
+    },
+    {
+      "file": "pension.html",
+      "sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42"
+    },
+    {
+      "file": "pension.reader.txt",
+      "sha256": "ed84f7d349a6aaccb0634da4e3e7f85bbde63fe42190c68b5c27ee64f72f4f64"
+    },
+    {
+      "file": "depreciation.html",
+      "sha256": "689e5c100bb0af72262b5b2f94d44adbacd1a130d0e157d6f409bc04d149ef6d"
+    },
+    {
+      "file": "depreciation.reader.txt",
+      "sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599"
+    },
+    {
+      "file": "audit-2024.pdf",
+      "sha256": "b714cc60ae7361abc5facde1c8b2df0dbabc0c0348da376ed711f9af3012f71c"
+    },
+    {
+      "file": "audit-2024.reader.txt",
+      "sha256": "b3e8644a81fd19d96838b484dde81112b72d8d8139e2428c4b9a3106373ec167"
+    },
+    {
+      "file": "audit-2024-page-045.png",
+      "sha256": "423939ac463697a56edb870dd4e8532f6b593ec2619d74910289920f3bc72785"
+    },
+    {
+      "file": "calculator-180days-150000.ax.txt",
+      "sha256": "b4dd0463406b592ea99e2da42201537872fe6fd432a91a0a1c984765e942aeed"
+    },
+    {
+      "file": "calculator-365days-150000.ax.txt",
+      "sha256": "8bc645e3b42b82a8e80a5057258004832e06683f01d1e2c0e4ea0852ebcf6fa9"
+    },
+    {
+      "file": "calculator-180days-150000.png",
+      "sha256": "dee0159b89b8ef97a2812fd3de5a3f21b02e7508aea956770eb05d61fcb3576d"
+    },
+    {
+      "file": "root-web-receipts.json",
+      "sha256": "2f5be635a379ddc27f47446a75e727cdd45a8b0c3687c484b0786de6b4bcbd83"
+    }
+  ],
+  "old_oa_exact": 2,
+  "oldtopic_units": 131,
+  "whole_inverse": true,
+  "all_old_URLs": true,
+  "protected_frontmatter": true,
+  "operations": [
+    {
+      "old_start": 11,
+      "old_end": 12,
+      "new_start": 11,
+      "new_end": 12,
+      "old": "  annualisation, treaty relief, benefits and specified implementation questions\n",
+      "new": "  credits, treaty relief, benefits and specified implementation questions\n"
+    },
+    {
+      "old_start": 19,
+      "old_end": 21,
+      "new_start": 19,
+      "new_end": 21,
+      "old": "last_updated: 2026-10-25\nversion: \"0.4\"\n",
+      "new": "last_updated: 2026-10-28\nversion: \"0.5\"\n"
+    },
+    {
+      "old_start": 28,
+      "old_end": 29,
+      "new_start": 28,
+      "new_end": 29,
+      "old": "# Faroe Islands individual income tax v0.4\n",
+      "new": "# Faroe Islands individual income tax v0.5\n"
+    },
+    {
+      "old_start": 30,
+      "old_end": 31,
+      "new_start": 30,
+      "new_end": 31,
+      "old": "> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026; professional review is pending.\n",
+      "new": "> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026, with the church-tax, spouse and bounded part-year methods checked on 28 October; professional review is pending.\n"
+    },
+    {
+      "old_start": 86,
+      "old_end": 86,
+      "new_start": 86,
+      "new_end": 88,
+      "old": "",
+      "new": "For a full-year cohabiting spouse case under §4, first establish each spouse's own taxable income. Where the lower nonnegative income is below DKK 30,000 and the other is above it, the ordinary adjustment transfers the unused amount: `transfer = 30,000 − lower income`; raise the lower income to DKK 30,000 and reduce the higher income by that transfer. TAKS expressly illustrates DKK 20,000 / 300,000 becoming DKK 30,000 / 290,000, and DKK 0 / 300,000 becoming DKK 30,000 / 270,000, automatically at year-end. Keep the spouses separately assessed on the adjusted bases. This bounded method does not settle negative-income, separation, death or part-year spouse cases. [Tax Act §4][tax]; [TAKS spouse adjustment][spouse]\n\n"
+    },
+    {
+      "old_start": 90,
+      "old_end": 91,
+      "new_start": 92,
+      "new_end": 103,
+      "old": "For municipal calculation, §47 directs rounding taxable income down to a multiple of DKK 100 before computing the tax. Keep that rounding distinct from payment rounding. Compute each national/municipal/church component, eligible credits and the §54(2) proportional ceiling adjustment in a traceable schedule. The ceiling does not establish a 50% limit on every tax, contribution and pension outflow together. Part-year annualisation, church base/rounding and credit/ceiling ordering in unusual cases require the additional checks listed in Sources. [Tax Act §§24(2), 46–47, 54(2)][tax]\n",
+      "new": "For municipal calculation, §47 directs rounding taxable income down to a multiple of DKK 100 before computing the tax. Keep that rounding distinct from payment rounding. Compute each national/municipal/church component, eligible credits and the §54(2) proportional ceiling adjustment in a traceable schedule. The ceiling does not establish a 50% limit on every tax, contribution and pension outflow together. Use the bounded part-year method below; unusual credit/ceiling interactions require the additional checks listed in Sources. [Tax Act §§24(2), 46–47, 54(2)][tax]\n\nFor an ordinary full-year church member, calculate church tax on the ordinary municipal income base **after the DKK 30,000 exempt amount**, using the actual parish rate. Church Finance Act §§11–13 separates national and local church rates and uses the municipal collection rules. The official 2024 audit report expressly confirms that TAKS calculates church tax in the same way as municipal tax, deducting the municipal exempt amount first. Read with Tax Act §§46–47, the working-paper base is `max(income rounded down to DKK 100 − 30,000, 0)`. Apply the church rate to that base separately; a municipal child credit does not reduce the base. The report also records the Finance Ministry's explanation that the special 42%/35% limited-liability gross levy does not attract an additional church charge. This full-year method does not settle changes of membership during a year, part-year allowances or final sub-krone settlement rounding. [Church Finance Act §§11–14][church]; [Tax Act §§46–47][tax]; [Landsgrannskoðanin, 2024 report §4.10, pp. 44–46][church-audit]; [2026 parish rates][municipal]\n\n### Ordinary arrival and departure during the year\n\nLiability continues while the statutory residence/source conditions are met. Acquiring a home without actually taking up residence does not itself start the home-based route; the 180-day stay route instead starts retrospectively from the first qualifying arrival. Preserve the actual home, arrival/departure and presence evidence. A registration date alone does not decide tax residence. A home retained after departure requires the actual facts to be assessed. [Tax Act §§1, 6–8][tax]; [TAKS VLS C.1][residence]\n\nFor a bounded 2026 ordinary resident period with no credits, church membership, foreign relief, spouse transfer or special-rate income, §24(2) requires conversion to full-year income. The TAKS 2026 calculator demonstrates the administrative sequence: actual taxable income × `365 / taxable days`, rounded down to DKK 100; compute the current full-year national and municipal taxes on that annualised base, then multiply their sum by `taxable days / 365`. The municipal exempt amount is applied in the annual calculation before this reduction. Treat this as the observed calculator working-paper method, not an express statutory rounding rule for every component. [Tax Act §§24(2), 46–47][tax]; [TAKS calculator guidance][calculator-info]; [TAKS 2026 calculator][calculator]\n\n**Observed control, not a client assessment:** for DKK 150,000 income over 180 taxable days in Tórshavn, without church tax or any credit, the official calculator shows annualised income DKK 304,100, gross annual tax DKK 85,644 and reduced tax DKK 42,235.40; its final income-tax display is DKK 42,235. The unrounded annual equivalent is DKK 304,166.67. This recomputes as national DKK 33,565 plus municipal DKK 52,079, then ×180/365. Its separately displayed 3% AM charge is DKK 4,500 on actual income. The calculator is expressly indicative. Its displayed child-credit amount differs from the current Assessment Act, so no child-credit result is adopted from it. Part-year credits, spouse cases, changing church membership and final settlement rounding remain separate questions. [Assessment Act §§1–2][rate]; [TAKS calculator][calculator]\n"
+    },
+    {
+      "old_start": 128,
+      "old_end": 129,
+      "new_start": 140,
+      "new_end": 144,
+      "old": "Capital Income Act §19 permits capped foreign-tax credit for income from a country **without** a double-tax treaty. Treaty credits/exemptions and ordinary foreign-tax relief need separate authority; do not use that clause as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]\n",
+      "new": "Capital Income Act §19 permits capped foreign-tax credit for capital income from a country **without** a double-tax treaty. Tax Act §154 supplies the separate ordinary-income credit; the [cross-border Guide’s bounded method](fo-cross-border-payments.md#ordinary-foreign-tax-credit) explains source expenses, the positive-base fraction and credit ordering. Treaty credits/exemptions, nonpositive bases and the other stated limits require their own authority; do not use §19 as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]\n\n\n[Church calculation and its supporting arithmetic](../../research/faroe-islands-2026/ordinary-completion-2026-10-28/fo-individual-income-tax-supplementary-controls.md) is retained in supplementary research.\n"
+    },
+    {
+      "old_start": 216,
+      "old_end": 216,
+      "new_start": 231,
+      "new_end": 236,
+      "old": "",
+      "new": "| [Church Finance Act][church] | §§11–15; membership, national/local church tax and municipal collection rules | 2026-10-28 |\n| [Landsgrannskoðanin 2024 annual report][church-audit] | §4.10, pp. 44–46; TAKS's actual church-tax base and limited-liability explanation | 2026-10-28 |\n| [TAKS spouse adjustment][spouse] | Explicit full-year 0/300,000 and 20,000/300,000 adjustment examples; Tax Act §4 checked with them | 2026-10-28 |\n| [TAKS VLS C.1][residence] | Selected residence commencement/cessation discussion, cross-checked against current §§6–8; obsolete examples excluded | 2026-10-28 |\n| [TAKS calculator][calculator] and [guidance][calculator-info] | Actual 2026 synthetic no-credit/no-church 365-day and 180-day runs at DKK 150,000; indicative observed method, child-credit display excluded | 2026-10-28 |\n"
+    },
+    {
+      "old_start": 219,
+      "old_end": 220,
+      "new_start": 239,
+      "new_end": 240,
+      "old": "Not yet confirmed: complete part-year annualisation and commencement/cessation procedure, church-tax base/rounding, unusual ceiling/credit interaction, benefit part-year/payment adjustments and full exemption implementation, ordinary foreign-tax/treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.\n",
+      "new": "Not yet confirmed: part-year credit and spouse adjustments beyond the bounded no-credit calculator method, part-year or membership-change church calculations and final sub-krone settlement rounding, unusual ceiling/credit interaction, benefit part-year/payment adjustments and full exemption implementation, foreign-credit nonpositive bases, tax changes, unused-credit treatment and treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent whole-pack AI review accepted the previous v0.4 material for partial tier-2 draft publication on 25 October 2026; this update requires fresh review. Professional attestation remains pending.\n"
+    },
+    {
+      "old_start": 231,
+      "old_end": 231,
+      "new_start": 251,
+      "new_end": 253,
+      "old": "",
+      "new": "[church]: https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar\n[church-audit]: https://lg.fo/download/file/f3e290b4e758ae966b65955f9beb36e8c540831d.pdf\n"
+    },
+    {
+      "old_start": 233,
+      "old_end": 233,
+      "new_start": 255,
+      "new_end": 259,
+      "old": "",
+      "new": "[spouse]: https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur\n[residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting\n[calculator-info]: https://www.taks.fo/fo/borgari/skattur/skattaroknarin\n[calculator]: https://www.eskatt.fo/sjtp/sjtpsim.aspx\n"
+    }
+  ]
+}
