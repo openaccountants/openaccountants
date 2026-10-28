@@ -1,0 +1,555 @@
+{
+  "review_type": "bounded closure of completed independent country new-material review",
+  "read_on": "2026-10-28",
+  "initial_review_head": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "accepted_head": "4d2640c63d82b4a1a67479364190fd12b238439f",
+  "accepted": true,
+  "open_findings": [],
+  "closed_findings": [
+    {
+      "id": "GI-R1",
+      "status": "closed",
+      "affected_rows": [
+        "IND-60"
+      ],
+      "guide_line": 271,
+      "closure": "Guide and row now explicitly give PAYE/HEPSS year commencing1July2026 and Other year ending30June2026. Complete IT1page1 visually re-read; unchanged proof IT1p1/ITGyear retains the supported income period, deadline, routing and authority conditions.",
+      "source": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf"
+    },
+    {
+      "id": "GI-R2",
+      "status": "closed",
+      "affected_rows": [
+        "IND-40"
+      ],
+      "guide_line": 159,
+      "closure": "Guide and row now test the claimant, if a spouse/civil partner, for absence of entitlement under rule7 in that assessment year. Unchanged A12 quote independently matched operative physicalpage22. No joint-custody condition changed.",
+      "source": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
+    },
+    {
+      "id": "GI-R3",
+      "status": "closed",
+      "affected_rows": [
+        "PAY-P057",
+        "PAY-P059"
+      ],
+      "proof": "SGadmin",
+      "closure": "Extractor selects the last/body occurrence. Four quotations independently match complete operative physicalpage8 and its rendered original. Fifteen-day payment, portal, written authority and annual assessment/refund/collection support are now in JSON and canonical Markdown. Guide method and arithmetic unchanged.",
+      "source": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf"
+    }
+  ],
+  "counts": {
+    "ledger_rows": 333,
+    "previously_supported_rows_unchanged": 329,
+    "affected_rows_closed": 4,
+    "text_snippets": 1920,
+    "visual_snippets": 51
+  },
+  "scope": "Independent AI primary-source/editorial acceptance of Gibraltar corporate v0.19, individual v0.10, payroll v0.15 and transaction-tax v0.9 ordinary-method source-cited drafts, with all stated conditions and unresolved limits. Initial333row review plus this exact bounded closure constitute the evidence.",
+  "not_claimed": [
+    "full country completeness",
+    "professional or accountant attestation",
+    "case-specific legal clearance",
+    "permission to file or pay",
+    "merge authorisation",
+    "final remote CI success",
+    "closure of issue398"
+  ],
+  "readme_and_sources_notes": "Accepted as review provenance only. All seven substantive partial reasons are preserved exactly after removal of superseded pending-review suffixes. Earlier acceptance is not extended to these four drafts; current AI review remains distinct from professional attestation. Writer pending-closure fields and the initial request-changes report remain dated historical records; this closure supplies the subsequent acceptance.",
+  "archive_only_publication": {
+    "allowed": true,
+    "condition": "A later commit may add/archive closure and publication evidence while publishing this accepted material unchanged. All Guide,README,ledger and other accepted-content blobs in the manifest below must equal accepted head4d2640c6. No legal-method,proof,example,limitation or substantive partial change is covered by this carry-forward. Preserve initial review evidence. Final-head CI is still required; no new independent legal review is required merely because archive-only additions change the commit hash.",
+    "comparison": "git diff --exit-code 4d2640c63d82b4a1a67479364190fd12b238439f <publication-head> -- <all accepted_content_manifest paths>",
+    "manifest_key": "verification.accepted_content_manifest"
+  },
+  "verification": {
+    "reviewed_head": "4d2640c63d82b4a1a67479364190fd12b238439f",
+    "baseline_review_head": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+    "counts": {
+      "corporate": {
+        "rows": 118,
+        "text_snippets": 372,
+        "visual_snippets": 0
+      },
+      "individual": {
+        "rows": 60,
+        "text_snippets": 457,
+        "visual_snippets": 0
+      },
+      "payroll": {
+        "rows": 105,
+        "text_snippets": 589,
+        "visual_snippets": 51
+      },
+      "consumption": {
+        "rows": 50,
+        "text_snippets": 502,
+        "visual_snippets": 0
+      }
+    },
+    "total_rows": 333,
+    "total_text_snippets": 1920,
+    "total_visual_snippets": 51,
+    "bounded_deltas": [
+      {
+        "guide": "corporate",
+        "changed_rule_rows": [],
+        "changed_proof_units": []
+      },
+      {
+        "guide": "individual",
+        "changed_rule_rows": [
+          "IND-40",
+          "IND-60"
+        ],
+        "changed_proof_units": []
+      },
+      {
+        "guide": "payroll",
+        "changed_rule_rows": [],
+        "changed_proof_units": [
+          "SGadmin"
+        ]
+      },
+      {
+        "guide": "consumption",
+        "changed_rule_rows": [],
+        "changed_proof_units": []
+      }
+    ],
+    "source_proofs": {
+      "SGadmin_four_quotes_match_only_operative_page8": true,
+      "SGadmin_source_sha256": "1ce3b5b26ca05d8f51c4f92f4ccc1fb8f95d7bc577e6c2cc21c04618b8245ad8",
+      "A12_matches_page22": true,
+      "A12_source_sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+      "IT1_type_year_labels_rechecked_complete_page1": true,
+      "IT1_source_sha256": "0424f1e3bc81a6ea7040cba4892561bd88abcbcbaedd1a38a2977fce72b4efc6"
+    },
+    "guide_audit_hashes": [
+      {
+        "guide": "corporate",
+        "guide_sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61",
+        "audit_guide_sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61",
+        "audit_hash_matches": true
+      },
+      {
+        "guide": "individual",
+        "guide_sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07",
+        "audit_guide_sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07",
+        "audit_hash_matches": true,
+        "ledger_guide_sha256_matches": true
+      },
+      {
+        "guide": "payroll",
+        "guide_sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+        "audit_guide_sha256": null,
+        "audit_hash_matches": null,
+        "ledger_guide_sha256_matches": true
+      },
+      {
+        "guide": "consumption",
+        "guide_sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+        "audit_guide_sha256": null,
+        "audit_hash_matches": null,
+        "ledger_guide_sha256_matches": true
+      }
+    ],
+    "original_topic_maps_unchanged": true,
+    "all_61_oa_checks_byte_exact": true,
+    "example_rerun": {
+      "files": 28,
+      "checks": 61,
+      "failures": 0
+    },
+    "schema": {
+      "guides": 18,
+      "errors": [],
+      "warnings": [
+        "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+        "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+      ]
+    },
+    "strict_metadata": {
+      "base": "b98e7f01d8d5468e0ad4a99a09d03392244d1ab6",
+      "guides": 4,
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0
+    },
+    "partial_map": [
+      {
+        "domain": "IT-IND",
+        "reason": "Part-year ABS/GIBS eligibility/reference, printed senior/dependant and special-home drafting questions, remaining property/energy and social-insurance deduction authority, credit interactions and future-year authenticated fields remain unresolved",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "IT-CORP",
+        "reason": "Schedule 10 allocation anomalies, section 16(6) extended-period boundaries and Schedule 3 paragraphs 9(6)/2(1)(o) drafting/publication limits remain unresolved",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "VAT",
+        "reason": "Customs/payment and Union special-procedure methods now drafted; section 102 export-refund form/deadline, warehousing endpoints, relief extension and case-specific aid/commodity/transition issues remain unresolved",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "SC",
+        "reason": "Published maximum-in-primary second-job application now drafted; general first-employer/concurrent-job allocation, ordinary missed employee-SI recovery and annual/quarterly self-employed schedule interaction remain unresolved",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "PR",
+        "reason": "Conflicting official PAYE examples, ordinary missed employee-SI recovery, benefit-threshold wording and pension-definition reference remain unresolved",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "TP",
+        "reason": "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; ordinary record/notice duties rechecked; distinct local-file submission and specialised reporting scope not established",
+        "substantive_gap_preserved": true
+      },
+      {
+        "domain": "XB",
+        "reason": "Domestic foreign-tax-relief claim/correction submission; exit payment/return implementation and asset-transfer-definition mismatch; remaining residence/treaty procedure limits remain unverified",
+        "substantive_gap_preserved": true
+      }
+    ],
+    "primary_review_evidence": [
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.md",
+        "git_blob": "7c9f40d4f7b40edcd6eca3a04900e0fc55c22708",
+        "sha256": "cd9d98dba443dcc4be45b2c8f831211d6b960720ac42789bc46006ea670e488e",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.json",
+        "git_blob": "e69119e131c5dfdfda5b354de61efe640fd467a2",
+        "sha256": "578a11d1d2a6e8ac8529ca8ea8e7a09f2b621119e33e08437fd75a151326b367",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/row-check-results.json",
+        "git_blob": "6cccedae514069f83164b5c64fc33a92fa136f8c",
+        "sha256": "19bba1b182b7e31eabe476499432951c48b2c44e95d3beb830d18ca63f339243",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/prose-arithmetic-results.json",
+        "git_blob": "533c0d8dc18f275e274ee30c4a41ffdd03443146",
+        "sha256": "056ab1a97bc72c57392b1b9e01228c43b70a7413310e95d0553db226abab10a7",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/original-topic-spotchecks.json",
+        "git_blob": "f045b722ad636841f337d41ea4466cc3625cf443",
+        "sha256": "c603715486f88fb717052e97166c5229da708943646e3878a0679e22ba905b1a",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/preservation-and-shape.json",
+        "git_blob": "ebeddf56cd963257837b7484f53c8eaf65a84965",
+        "sha256": "073876a6a2748254ef05af004d5406b56288a233687aa322830db1d00465d999",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/example-check-summary.json",
+        "git_blob": "d2fcfc2ae3294b1b931eef544a043a8b4cfd7b9a",
+        "sha256": "1e2eddcd0f46975eed8061e662c15ea6b8a04e4d10b113dbbf0efed38517b300",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-examples.log",
+        "git_blob": "a81c8c9b9844b79128fa6c9e7acd8366ff05d05b",
+        "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-schema-results.json",
+        "git_blob": "20face9951563622659b4a9d4610f5e1dc17ad6c",
+        "sha256": "83fc82e472cbdaf2ff9254491bd2d42ffe61fe66b27af5dd18d35cfd7f67db6f",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-metadata.log",
+        "git_blob": "af86bd809ce010c0b65380e11b49d59928114611",
+        "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-unit-tests.log",
+        "git_blob": "fc97520b928f3f1ca7963df3bd11f423009fa5a3",
+        "sha256": "838e0732b323b7b8eee58b03688d0c7d9aa6a39d59f3f55ee3052acdd6269090",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/repo-pr-validation.log",
+        "git_blob": "3ff89d82145d527c3f379c6ed14b56b8e427b04a",
+        "sha256": "65bc5d777fc8567d9e5f61ffdfb92d4c0f2c761da48ef1a74f4565dd2b6455aa",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-independent-cell-comparison.json",
+        "git_blob": "b53642b9b59bc36099cfac9f6d843e148b9bf858",
+        "sha256": "c4c0335587f716460b448d83477c14e620adf2ce2416f6d5196ed124c0db9822",
+        "matches_reviewer_local_artifact": true
+      },
+      {
+        "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-metadata-check.json",
+        "git_blob": "95fd9177118d6520ea8aa5c1e0ce775d330fd9f4",
+        "sha256": "43713adcd48977e04a1964cea5313880267095de2a71e82955f140f4c5ac707b",
+        "matches_reviewer_local_artifact": true
+      }
+    ],
+    "accepted_content_manifest": [
+      {
+        "path": "skills/international/gibraltar/README.md",
+        "git_blob": "8d337fd3d6b5e93ab3ca0fe2a74d33294f1e6a03",
+        "sha256": "5d9a58735cad05daf0953fb22cf2b647efd214febe78a77f0e39f1df3f08867a"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+        "git_blob": "f712823fde6d4d66f1105b6ff0fb97524d5fdd04",
+        "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+        "git_blob": "7462016e62ba8fc8e6a6d2b2f58663a13bce3fe7",
+        "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-company-formation.md",
+        "git_blob": "64a47ed6ed1a8b41834bb41f09a163cfbe47c135",
+        "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+        "git_blob": "59146440b506590fdd54beac0a69ae2615a79048",
+        "sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-corporate-tax.md",
+        "git_blob": "272396f3e701a6713f6e412c879c771b35be5b22",
+        "sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-einvoice.md",
+        "git_blob": "211df1cdbe202d1e87a4903d32b92798bd8f114e",
+        "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+        "git_blob": "6d0ea5c974d616f82dc79066327e2f871ae6dc26",
+        "sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+        "git_blob": "075b7820e921d40235246b70252bafbc11b56643",
+        "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+        "git_blob": "9e5368294a8ac9baf12a34950936d54fd2448645",
+        "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+        "git_blob": "22b6fe552586c81b9f01fa2187050185cb309024",
+        "sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+        "git_blob": "425267ca18d0f40df24e7255a22e364c6ca37697",
+        "sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+        "git_blob": "463778a12d2f931552504a835f252e65bef5399a",
+        "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+        "git_blob": "6502b869531546f5edcbc88c83aa1708d6e5dccd",
+        "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+        "git_blob": "e8c94556c66af940aad8d7cce43eeb0533030a21",
+        "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+        "git_blob": "b6cd12ef52422e0b07cf0446a437d4f0623cc020",
+        "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+        "git_blob": "5ab9f178e7644c49e08f6501c4d8a3c7fced78f9",
+        "sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+        "git_blob": "6af56a47c11a9b0e8fb7cbbb6887a6e867b49318",
+        "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f"
+      },
+      {
+        "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+        "git_blob": "e27130dd4f2ea2ee6cf8affa1909c2bb7a29247e",
+        "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledger.json",
+        "git_blob": "ccbbf2471bf5095054d278201a189d802a34ddf1",
+        "sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledgers/gi-transaction-tax-transition.md",
+        "git_blob": "9ad9b7f095e5a6cd95d765ef98ab2808f916a72d",
+        "sha256": "dfac180fe97851ad8f51423bf6ca8e337f162406724d1b5ef8ecc753cc778c56"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md",
+        "git_blob": "e8304d2d0e9711dd5a3644796b9413dee5da5cb9",
+        "sha256": "39d8bb04b3bae2012ea6fcf4b23a9309f288add4dc7c315cc34837182f9544ef"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/writer-complete-audit.json",
+        "git_blob": "f5062bab6c693b64b2066d41fef967d456a1d494",
+        "sha256": "5fbba29b8e9637c063b7ec056eb00c77ede6adbe7cdcec44410f780af91867c4"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md",
+        "git_blob": "80b5e08ee0db46eb06b2f400ca7527bae8c0bfb5",
+        "sha256": "e69ffd4b30bc3d9844a4b494cb5c0c927484b01f80171ddd579eb344873eb322"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.json",
+        "git_blob": "f6fda591d10805713af5bf4618a16b80a6619d1f",
+        "sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md",
+        "git_blob": "ab88f8bd6da49a8093e0eebf97586d27046b2d42",
+        "sha256": "30ae753b37704cc630f71afa0d9fbbd631b537c76f75ab893e8bb4d08fdd6a5a"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md",
+        "git_blob": "face6f56c742a7b52da591b37dc957c59c7224c4",
+        "sha256": "c21c014f5f9d0b0fb19f0f83e2673d225b6d852f66bd48610b63170e2d819e32"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md",
+        "git_blob": "94d9ba03730d6bc04936ecaf4e8b095c5dbab68b",
+        "sha256": "b630e80f56593a6879475d8586691a4b4c91dd32bf863d77938f17a452132ad5"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/writer-complete-audit.json",
+        "git_blob": "9d49c37892bbd96e5ba2e5d1e87641eedee39cf9",
+        "sha256": "3dc0f6dbbb16191d535f75eb810b5c069b115cac7fa0c49762e6b30bfcb34a33"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledger.json",
+        "git_blob": "259f3b3a8a17230ba6502a2ddaaf9182c6cd6a78",
+        "sha256": "924e4a833300795eee358e8609f2a7fe8ae017dbe2d05b99bbf63293b2b5c602"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+        "git_blob": "67322a0bc0accc46a8c59718dee108e2aaa69343",
+        "sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md",
+        "git_blob": "e0b36ef9adb0d908337d75168619a31232c09254",
+        "sha256": "589bf819acf9fe6907d970bd9e110be46bf562f62006f6f6dc324d5e69220826"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md",
+        "git_blob": "7dd2cf5ed6abdc3e5e35c2e771007e18f3746b5d",
+        "sha256": "4a9f56d96624a42d5929731a6e44a23ed5a64f8672130f62474c6eb015e30a59"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/writer-complete-audit.json",
+        "git_blob": "e90b7b7abf7623448437a9c422b6f1ca281aaa27",
+        "sha256": "1714c37f1177aec936a555d3120d323a50248d2f7ba35232438199f9a44f2922"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md",
+        "git_blob": "ce796a5531b8eed391214a60bf84fa0f1dcde8c7",
+        "sha256": "cca8bb97ff3acb8b7dce9f3dccf671df25a148fd48d78a8f75337e625fa564b8"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+        "git_blob": "cf5f1171cc8a28571263e3e416f9446fff0f3597",
+        "sha256": "022d29fe55f50130d2e52f4ded770236624f39fb796fbed886695944255e72cc"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md",
+        "git_blob": "8dbea436b4a4004c7c70db918ab6a08dd0da3345",
+        "sha256": "2d56658ec40ea6d33ce0ecf18473aab433b07934bc21fe81de9a5bbb7049dc27"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledger.json",
+        "git_blob": "e64f9435590d237bca61a2134d47454110eb5007",
+        "sha256": "7a7ab6a9ccbba35d8a6cfbf5dcbe49eea98deaa7d5131f421ca3cc3ae92dd46f"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+        "git_blob": "fc7128bec98aaeebcbf1872b67cfd81b1aad06d3",
+        "sha256": "523d19fad761fa4a779250f9b331a6509e4b03515a0847505c0be7cd95a0814e"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md",
+        "git_blob": "64935171f0170a086d9c3c70fdf2c77138192896",
+        "sha256": "e68bc33609d13eca3633b45fd0c1aa1c076916317f5eab62a0a88cb61a7eaf9f"
+      },
+      {
+        "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/writer-complete-audit.json",
+        "git_blob": "7a39c0d9b6e55f485f01cc50d43a999ce7eb16fa",
+        "sha256": "25dd6f8d5488ba8e5515855cd6af82817be969abf910eb1aae54f62a7026090f"
+      }
+    ],
+    "no_reopened_329_rows": true,
+    "unit_tests": "Prior129tests pass; not repeated because the repair adds no application code or arithmetic changes. Final-headCI remains parent work.",
+    "all_18_frontmatter_and_CTA_byte_exact": true,
+    "main_shapes": [
+      {
+        "guide": "gi-corporate-tax",
+        "canonical_sections": 9,
+        "main_oa_checks": 2
+      },
+      {
+        "guide": "gi-individual-income-tax",
+        "canonical_sections": 9,
+        "main_oa_checks": 2
+      },
+      {
+        "guide": "gi-payroll-social-insurance",
+        "canonical_sections": 9,
+        "main_oa_checks": 2
+      },
+      {
+        "guide": "gi-transaction-tax-transition",
+        "canonical_sections": 9,
+        "main_oa_checks": 2
+      }
+    ],
+    "frozen_accepted_research_unchanged": true
+  },
+  "reviewer_actions": {
+    "guide_edits": false,
+    "commits": false,
+    "pushes": false,
+    "external_messages": false,
+    "live_transactions": false,
+    "delegation": false
+  },
+  "files_for_archive": [
+    "closure.md",
+    "closure.json"
+  ],
+  "local_scratch_not_required_for_publication": [
+    "check_closure.py",
+    "checks.json",
+    "examples.log",
+    "metadata.log",
+    "se-guide-operative-page8.png"
+  ]
+}
