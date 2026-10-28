@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "0.10"
+version: "0.11"
 verified_by: pending
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
@@ -55,13 +55,31 @@ sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf"
     title: "Individual-return guidance 2026, opening notice and email instructions"
     as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
+    title: "Energy (Deductions) Rules 2015, rules 3–7"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
+    title: "Energy Performance (Deductions) Rules 2018, rules 3–8 and Schedule"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download"
+    title: "Electric Vehicle Charger (Deductions) Rules 2018, rules 3–7 as amended 2022"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
+    title: "Disabled Access to Property (Deductions) Rules 2020, rules 3–6 as amended 18 June 2026"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download"
+    title: "LN 2026/125, rules 2–3"
+    as_of: "2026-10-28"
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download"
+    title: "LN 2022/170, rules 2–3"
+    as_of: "2026-10-28"
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.10
+# Gibraltar individual income tax: ordinary assessment v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -94,7 +112,7 @@ Source for every band: [Rates of Tax Rules, rules 2–3C](https://www.gibraltarl
 
 ## The base
 
-First establish assessable income under the charging provisions. ABS taxable income is the balance after eligible deductions; GIBS is not authority to transfer ABS allowances into a gross-income calculation. The following core amounts are supplemented by the ordinary claim methods below. Separate property-improvement/energy instruments, the legal basis of the webpage’s social-insurance deduction entries, and the stated drafting questions still prevent a claim to a complete relief schedule:
+First establish assessable income under the charging provisions. ABS taxable income is the balance after eligible deductions; GIBS is not authority to transfer ABS allowances into a gross-income calculation. The following core amounts are supplemented by the ordinary claim methods below. The separate property and energy deduction conditions are recorded below. The legal basis of the webpage’s social-insurance deduction entries, the remaining cross-scheme/claim interactions and the stated drafting questions still prevent a claim to a complete relief schedule:
 
 | Item | Rule and amount | Conditions and period |
 |---|---|---|
@@ -195,6 +213,41 @@ For administration, the current Income Tax Office PAYE page requests the Mortgag
 Schedule 3 paragraph 19A permits a credit capped at the lower of 10% of the individual's qualifying Gibraltar gym/fitness membership or contracted Gibraltar personal-trainer cost and that individual's tax liability. A personal trainer must be registered with ITO and compliant to the Commissioner's satisfaction. The claim needs evidence for the entire cost. Unused credit becomes zero and cannot be transferred or carried forward. [Income Tax Act, Schedule 3 paragraph 19A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Paragraph 19B applies the same 10%-of-cost and tax-liability ceilings to a parent's private primary/secondary school tuition fees paid in Gibraltar for the defined child. Nursery is excluded from this school definition; its separate allowance has different conditions. The entire tuition cost needs supporting evidence. Unused credit becomes zero and cannot be transferred or carried forward. In separate assumed cases, £900 of qualifying gym cost with £50 liability permits £50 credit; £8,000 tuition with £900 liability permits £800. These are independent illustrations, not permission to apply several credits repeatedly against the same liability or an asserted statutory ordering between them. [Schedule 3 paragraph 19B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+### Solar and wind installation deductions
+
+A person with an interest in property in Gibraltar can claim under the Energy (Deductions) Rules for the specified solar/wind electricity systems, photovoltaic panels or wind turbines, with qualifying installation expenditure and a rule 6 certification letter. The deduction is limited to actual installation cost and **£6,000 in aggregate across all claimants**, claimed in **equal amounts over two years of assessment**. It is a deduction from income, not the amount of tax saved. The Town Planner's letter must confirm installation and expenditure; the required Town Planning Act 2018 section 17 permit, compliance with it and other relevant law, and sufficient expenditure evidence are conditions. [Rules 3 and 6](https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download).
+
+Rule 4 makes this additional to other deduction/relief/allowance for the same expenditure. For joint claimants, provide the Commissioner with the written allocation agreement; without agreement the Commissioner determines allocation considering all relevant facts, particularly expenditure proportions. Rule 7 requires a written claim to the Commissioner **within two years after the end of the assessment year claimed**, with the certification letter. An assumed eligible £8,000 installation therefore gives at most £6,000 total, £3,000 in each of the two years; an evidenced 60:40 agreement allocates £1,800 and £1,200 per year. This assumes valid eligibility, expenditure, certification and allocation, not approval of an actual claim. [Rules 3–7](https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download).
+
+### Property energy-performance deductions
+
+The Energy Performance (Deductions) Rules require an interest in Gibraltar property, expenditure improving its energy-efficiency rating, an Energy Performance Certificate and Department of the Environment certification. Include the EPC cost in the evidenced expenditure. Apply the percentage corresponding to the **rating obtained**, rather than the difference between two rating percentages. [Rules 3–4 and Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download).
+
+| Rating obtained | Income-deduction percentage | Official source |
+|---|---:|---|
+| A+ | 100% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| A | 85% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| B | 70% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| C | 50% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| D | 30% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| E | 25% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| F | 10% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+| G | 0% | [Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) |
+
+Rule 5 permits additional relief but bars this deduction if the person claimed under the named tax-deductible-property-zone premises rules for the same expenditure. Joint allocation uses a written agreement supplied to the Commissioner or, failing agreement, the Commissioner's determination considering relative expenditure and other relevant facts. The Department's letter must confirm expenditure, improvement and the new rating; evidence must satisfy it. Claim in writing to the Commissioner **within two years after assessment-year or accounting-period end**. For an assumed qualifying improvement to D, £10,000 works plus £200 EPC cost gives a £10,200 base and **£3,060 income deduction**, not £3,060 tax saved. [Rules 4–8 and Schedule](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download).
+
+### Electric-vehicle charging systems
+
+The Electric Vehicle Charger (Deductions) Rules require **legal title to a parking space or garage in Gibraltar**, actual charging-system installation expenditure and the Commissioner's rule 6 certificate. The deduction is cost limited to **£2,000 aggregate across claimants** and is additional to other relief for the same expenditure. Joint claimants supply a written allocation agreement; otherwise the Commissioner determines allocation, taking relevant facts and expenditure proportions into account. The certificate confirms compliant installation and actual expenditure, supported by sufficient evidence; the Commissioner can request further information. [Rules 3–6](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download).
+
+Current rule 7 requires a written claim to the Commissioner. LN 2022/170, effective on publication on 7 July 2022, deleted the former **30 June 2021** date. Do not insert a two-year period from a different relief, or infer that no general tax claim limit can apply. An assumed qualifying £2,800 installation is capped at £2,000; an evidenced 75:25 allocation gives £1,500 and £500. These are income deductions under assumed eligibility and certification. [Current rule 7](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download); [LN 2022/170, rules 2–3](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download).
+
+### Disabled access to business property
+
+The Disabled Access to Property (Deductions) Rules apply to a **company or business with legal title to Gibraltar property from which a trade, business, profession or vocation is carried on**, and expenditure on modifications improving disabled individuals' access and inclusion. They do not establish relief for every private-home alteration. Qualifying cost is capped at **£15,000 aggregate**. Current rule 3(1)(d) requires the works by **30 June 2030**: LN 2026/125 substituted 2030 for 2024, effective on publication on **18 June 2026**. Retain actual work dates and check transitional facts separately; this does not decide retrospective claims during the earlier deadline gap. [Current rules 2–4](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download); [LN 2026/125, rules 2–3](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download).
+
+Rule 4 makes this additional to other relief for the same expenditure. Rule 5 requires a letter confirming compliant works and expenditure; planning permission/building-control approval and compliance with them are required where applicable. The relevant authority is the Town Planner if full planning permission is required, otherwise the Building Control Officer. Rule 6 requires a written claim to the Commissioner **within two years after assessment-year or accounting-period end**, with a copy of the rule 5 letter. The printed eligibility provision **3(1)(c) refers to a certificate under rule 6, although certification is in rule 5**. Preserve that mismatch as a remaining interpretation point; do not silently renumber it or approve an actual certificate. With all applicable conditions assumed satisfied, £18,000 qualifying cost is capped at £15,000; this arithmetic does not settle the certificate-reference issue. [Rules 3–6](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download).
 
 ### Approved pensions and imported-pension exceptions
 
@@ -355,11 +408,22 @@ Primary legislation and [self-employed payment guidance](https://www.gibraltar.g
 
 Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](../../research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. The [fresh country review](../../research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.
 
+| Instrument | Official source | Read date |
+|---|---|---|
+| Energy (Deductions) Rules 2015, rules 3–7 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download) | 2026-10-28 |
+| Energy Performance (Deductions) Rules 2018, rules 3–8 and Schedule | [Official source](https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download) | 2026-10-28 |
+| Electric Vehicle Charger (Deductions) Rules 2018, rules 3–7 as amended 2022 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download) | 2026-10-28 |
+| Disabled Access to Property (Deductions) Rules 2020, rules 3–6 as amended 18 June 2026 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download) | 2026-10-28 |
+| LN 2026/125, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download) | 2026-10-28 |
+| LN 2022/170, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download) | 2026-10-28 |
+
+The new property/energy addition is local v0.11 material outside the published f7d59d7c review. The [complete current ledger and topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows/proofs unchanged and add 14 bounded source/limit rows. The prior review retains its exact scope. The [four conditional relief scenarios](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved. No new independent acceptance or publication is claimed.
+
 ### Retained calculation controls
 
 Six original executable controls remain byte-exact in the [individual supplement](../../research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](../../research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
 
-Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; remaining property/energy and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points.
+Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points.
 
 ### Self-checks and output
 
