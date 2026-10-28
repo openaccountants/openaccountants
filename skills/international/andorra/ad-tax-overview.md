@@ -3,7 +3,9 @@ name: ad-tax-overview
 description: "Source-cited draft: tax overview for Andorra (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: AD
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-23
+version: 0.2
+category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -22,7 +24,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Headline corporate income tax rate** — 10% (Impost sobre Societats) %  _(Llei 95/2010 de l'impost sobre societats (IS))_
 - **Does Andorra have a VAT/GST?** — Yes — Impost General Indirecte (IGI), standard rate 4.5%  _(Llei 11/2012 de l'impost general indirecte (IGI))_
 - **Personal income tax (IRPF) filing window** — 1 April to 30 September of the year following the tax year  _(Llei 5/2014 IRPF)_
-- **Corporate income tax (IS) filing deadline** — Within 6 months following the close of the tax year (typically by 31 July for calendar-year filers) ((approx — confirm exact statutory window with Departament de Tributs))  _(Llei 95/2010 IS)_
+- **Corporate income tax (IS) filing window** — The month following the six months after the period ends: July for a 31 December year-end. Earlier filing does not alter payment/refund deadlines. Filing rule checked 23 October 2026; other overview entries remain subject to their stated review limits. [Corporate-tax regulation, Article 45](https://www.portaljuridicandorra.ad/R20231229C).
 - **Wealth, inheritance and gift tax** — Andorra levies no wealth tax, no inheritance tax and no gift tax  _(Andorran tax code (absence of wealth/inheritance statute))_
 - **Communal (local) taxes** — Each of the 7 parishes (comuns) levies local taxes such as the foc i lloc residence tax and business activity taxes ((approx — rates vary by parish; confirm locally))  _(Llei de finances comunals)_
 

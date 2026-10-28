@@ -1,0 +1,43 @@
+{
+  "review_candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+  "files": [
+    {
+      "path": "computations.json",
+      "sha256": "831fa236df346fc882d20d16407b1598f67fff83e7222aae7999c80c85994b43",
+      "bytes": 15493
+    },
+    {
+      "path": "coverage-andorra.json",
+      "sha256": "2135abf52a6720d4e847ce53810f6f8674dc9fcc5ec93b42d2217f51f234a138",
+      "bytes": 665
+    },
+    {
+      "path": "preservation.json",
+      "sha256": "7fa7aa28707af87110df8b4868081125dc59d423eed26773bed1f842e5f6cc25",
+      "bytes": 10966
+    },
+    {
+      "path": "repair-closure.md",
+      "sha256": "dffc5034c512b2c0420e07143b24585529894db86fef6c0b3c23995397a2f836",
+      "bytes": 5810
+    },
+    {
+      "path": "repair-verification.json",
+      "sha256": "8338568375720f2c33b4c9ee366198e2c8cbf10dc56926a1bbb61b0648796a4a",
+      "bytes": 8539
+    },
+    {
+      "path": "report.md",
+      "sha256": "1131a75a1c2020e32756fffdca88eb1511941604f6ac83eb4c340bc4c03b75eb",
+      "bytes": 21102
+    },
+    {
+      "path": "review_checks.py",
+      "sha256": "de7d49081c209fc6ae1ffe219346e8582d30bef0e9b63b18a4a8b7338d98ac68",
+      "bytes": 4793
+    }
+  ],
+  "original_reports_unchanged": true,
+  "repair_closure": "PASS; F1\u2013F4 and P3 closed; exact IT-IND partial retained",
+  "repair_commit": "ce1666a9ef976cb9b42bcbea4a1d9d2adc08efe9"
+}
