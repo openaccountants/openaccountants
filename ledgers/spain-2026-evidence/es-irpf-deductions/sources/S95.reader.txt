@@ -1,0 +1,139 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Orden de aplicación de las deducciones sobre la cuota íntegra autonómica
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad de Castilla y León
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Orden de aplicación de las deducciones sobre la cuota íntegra autonómica
+
+Sobre la cuota íntegra autonómica del ejercicio 2025 las deducciones autonómicas se aplicarán en el siguiente orden:
+
+El importe de las deducciones del ejercicio 2025.
+
+El importe de las deducciones "Por familia numerosa", "Por nacimiento o adopción de hijos", "Por partos múltiples o adopciones simultáneas", "Por gastos de adopción", "Por cuidado de hijos menores" y "Por cuotas a la Seguridad Social de empleados del hogar" pendientes de aplicación de ejercicios anteriores (2022) .
+
+Importante: los importes de estas deducciones generados en 2022 pendientes de aplicación se consignarán, en la casilla [0983] y el que se aplique en el ejercicio 2025 en la casilla [0984].
+
+La devolución de las deducciones generadas en 2022 y no aplicadas en el ejercicio 2025 se podrá solicita a la Junta de Castilla y León conforme al procedimiento establecido.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

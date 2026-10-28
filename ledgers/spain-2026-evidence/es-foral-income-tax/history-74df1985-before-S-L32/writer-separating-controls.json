@@ -1,0 +1,402 @@
+{
+  "foreign-full-year-specific-not-reprorated": {
+    "actual": "6500",
+    "expected": "6500",
+    "pass": true
+  },
+  "foreign-residual": {
+    "actual": "32000",
+    "expected": "32000",
+    "pass": true
+  },
+  "Basque-foreign-cap": {
+    "actual": "19900",
+    "expected": "19900",
+    "pass": true
+  },
+  "Navarra-foreign-cap": {
+    "actual": "20000",
+    "expected": "20000",
+    "pass": true
+  },
+  "N-partyear": {
+    "actual": "7600",
+    "expected": "7600",
+    "pass": true
+  },
+  "N-partyear-residual": {
+    "actual": "13800",
+    "expected": "13800",
+    "pass": true
+  },
+  "N-two-payers": {
+    "actual": "11100",
+    "expected": "11100",
+    "pass": true
+  },
+  "A-foreign-tax-limb": {
+    "actual": "1990",
+    "expected": "1990",
+    "pass": true
+  },
+  "B-foreign-tax-limb": {
+    "actual": "4975",
+    "expected": "4975",
+    "pass": true
+  },
+  "B-alternative-50pct": {
+    "actual": "5000.0",
+    "expected": "5000",
+    "pass": true
+  },
+  "simplified-A-G-marginal": {
+    "actual": "16000.00",
+    "expected": "16000",
+    "pass": true
+  },
+  "B-selected10pct": {
+    "actual": "10000.0",
+    "expected": "10000",
+    "pass": true
+  },
+  "bonus-first-ceiling": {
+    "actual": "2999.6400",
+    "expected": "2999.64",
+    "pass": true
+  },
+  "pension-disabled-residual": {
+    "actual": "4250",
+    "expected": "4250",
+    "pass": true
+  },
+  "pension-disabled-equal-allocation": {
+    "actual": "2125",
+    "expected": "2125",
+    "pass": true
+  },
+  "dividend-exempt-1500": {
+    "actual": "4500",
+    "expected": "4500",
+    "pass": true
+  },
+  "dividend-first-band": {
+    "actual": "855.00",
+    "expected": "855",
+    "pass": true
+  },
+  "listed3-strict-equal": {
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  "listed3-below": {
+    "actual": "299.97",
+    "expected": "299.97",
+    "pass": true
+  },
+  "unlisted-capitalized-profit": {
+    "actual": "1.500E+4",
+    "expected": "15000",
+    "pass": true
+  },
+  "crypto-first-lot-cost": {
+    "actual": "1010.0",
+    "expected": "1010",
+    "pass": true
+  },
+  "crypto-net-transfer": {
+    "actual": "1782",
+    "expected": "1782",
+    "pass": true
+  },
+  "crypto-gain": {
+    "actual": "772",
+    "expected": "772",
+    "pass": true
+  },
+  "crypto-first19pct": {
+    "actual": "146.68",
+    "expected": "146.68",
+    "pass": true
+  },
+  "crypto-laterlot-wrong-separator": {
+    "actual": "267.0",
+    "expected": "267",
+    "pass": true
+  },
+  "crypto-updated-cost": {
+    "actual": "1030.200",
+    "expected": "1030.20",
+    "pass": true
+  },
+  "crypto-updated-gain": {
+    "actual": "405.30",
+    "expected": "405.30",
+    "pass": true
+  },
+  "crypto-max-swap": {
+    "actual": "3500",
+    "expected": "3500",
+    "pass": true
+  },
+  "crypto-mixed-disposal": {
+    "actual": "3940",
+    "expected": "3940",
+    "pass": true
+  },
+  "crypto-incoming": {
+    "actual": "5040",
+    "expected": "5040",
+    "pass": true
+  },
+  "crypto-feetoken": {
+    "actual": "40",
+    "expected": "40",
+    "pass": true
+  },
+  "crypto-later-sale": {
+    "actual": "960",
+    "expected": "960",
+    "pass": true
+  },
+  "crypto-combined-taxable-gains": {
+    "actual": "4940",
+    "expected": "4940",
+    "pass": true
+  },
+  "crypto-recognition-release": {
+    "actual": "400.0",
+    "expected": "400",
+    "pass": true
+  },
+  "N-identified-lot-gain": {
+    "actual": "5740",
+    "expected": "5740",
+    "pass": true
+  },
+  "N-identified-lot-quota": {
+    "actual": "1148.0",
+    "expected": "1148",
+    "pass": true
+  },
+  "employee-B-male": {
+    "actual": "1000.0",
+    "expected": "1000",
+    "pass": true
+  },
+  "employee-B-female": {
+    "actual": "1500.00",
+    "expected": "1500",
+    "pass": true
+  },
+  "employee-AG-male": {
+    "actual": "1500.00",
+    "expected": "1500",
+    "pass": true
+  },
+  "employee-AG-female": {
+    "actual": "2000.0",
+    "expected": "2000",
+    "pass": true
+  },
+  "employee-lifetime-remaining": {
+    "actual": "500",
+    "expected": "500",
+    "pass": true
+  },
+  "newcompany-BA": {
+    "actual": "2500.00",
+    "expected": "2500",
+    "pass": true
+  },
+  "newcompany-G": {
+    "actual": "2000.0",
+    "expected": "2000",
+    "pass": true
+  },
+  "newcompany-BA-carry": {
+    "actual": "500.0",
+    "expected": "500",
+    "pass": true
+  },
+  "newcompany-G-carry": {
+    "actual": "7000.0",
+    "expected": "7000",
+    "pass": true
+  },
+  "business-schedule": {
+    "actual": "8896.00",
+    "expected": "8896",
+    "pass": true
+  },
+  "business-post-minoracion": {
+    "actual": "7281",
+    "expected": "7281",
+    "pass": true
+  },
+  "business-BI-pool": {
+    "actual": "2912.4",
+    "expected": "2912.40",
+    "pass": true
+  },
+  "business35-cap": {
+    "actual": "1019.3400",
+    "expected": "1019.34",
+    "pass": true
+  },
+  "business35-carry": {
+    "actual": "980.66",
+    "expected": "980.66",
+    "pass": true
+  },
+  "ordinary-Basque-credit-use": {
+    "actual": "1400.00",
+    "expected": "1400",
+    "pass": true
+  },
+  "ordinary-N-credit-use": {
+    "actual": "1000.00",
+    "expected": "1000",
+    "pass": true
+  },
+  "G-charity-liquid-base-ceiling": {
+    "actual": "10500.0",
+    "expected": "10500",
+    "pass": true
+  },
+  "G-charity-not-BI": {
+    "actual": "2100.0",
+    "expected": "2100",
+    "pass": true
+  },
+  "annuity-yield": {
+    "actual": "6000.0",
+    "expected": "6000",
+    "pass": true
+  },
+  "AG-annuity-exempt-yield": {
+    "actual": "4000.0",
+    "expected": "4000",
+    "pass": true
+  },
+  "AG-annuity-taxable-yield": {
+    "actual": "2000",
+    "expected": "2000",
+    "pass": true
+  },
+  "fallback20years": {
+    "actual": "2000.00",
+    "expected": "2000",
+    "pass": true
+  },
+  "fallback40years-cap": {
+    "actual": "3500.00",
+    "expected": "3500",
+    "pass": true
+  },
+  "fallback-missing-membership": {
+    "actual": "2500.00",
+    "expected": "2500",
+    "pass": true
+  },
+  "capital-current-work": {
+    "actual": "56000.0",
+    "expected": "56000",
+    "pass": true
+  },
+  "capital-preserved-work": {
+    "actual": "60000.0",
+    "expected": "60000",
+    "pass": true
+  },
+  "progression-augmented-schedule": {
+    "actual": "10564.80",
+    "expected": "10564.80",
+    "pass": true
+  },
+  "progression-expressed-rate": {
+    "actual": "26.41",
+    "expected": "26.41",
+    "pass": true
+  },
+  "progression-taxable": {
+    "actual": "7923.0000",
+    "expected": "7923",
+    "pass": true
+  },
+  "progression-after-minoracion": {
+    "actual": "6308",
+    "expected": "6308",
+    "pass": true
+  },
+  "B-established-instalment": {
+    "actual": "1800.00",
+    "expected": "1800",
+    "pass": true
+  },
+  "B-start-instalment": {
+    "actual": "900.0",
+    "expected": "900",
+    "pass": true
+  },
+  "B-nonpositive-general": {
+    "actual": "480.000",
+    "expected": "480",
+    "pass": true
+  },
+  "B-wholesale": {
+    "actual": "250.0000",
+    "expected": "250",
+    "pass": true
+  },
+  "A-start-instalment": {
+    "actual": "150.00",
+    "expected": "150",
+    "pass": true
+  },
+  "A-halfyear-agricultural": {
+    "actual": "2000.00",
+    "expected": "2000",
+    "pass": true
+  },
+  "N-firstmode": {
+    "actual": "400.00",
+    "expected": "400",
+    "pass": true
+  },
+  "N-exact100": {
+    "actual": "100.00",
+    "expected": "100",
+    "pass": true
+  },
+  "N-justbelow100": {
+    "actual": "99.99",
+    "expected": "99.99",
+    "pass": true
+  },
+  "N-secondmode-cumulative": {
+    "actual": "700.00",
+    "expected": "700",
+    "pass": true
+  },
+  "energy-community-netbase": {
+    "actual": "8000.0",
+    "expected": "8000",
+    "pass": true
+  },
+  "energy-community-credit": {
+    "actual": "1200.00",
+    "expected": "1200",
+    "pass": true
+  },
+  "care-ordinary-year": {
+    "actual": "1500",
+    "expected": "1500",
+    "pass": true
+  },
+  "care-unused": {
+    "actual": "500",
+    "expected": "500",
+    "pass": true
+  }
+}

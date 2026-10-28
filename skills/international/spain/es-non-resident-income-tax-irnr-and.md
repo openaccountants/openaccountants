@@ -3,18 +3,18 @@ name: es-non-resident-income-tax-irnr-and
 description: Use this Guide to select and compute Spain’s ordinary non-resident and departure tax routes for 2026. It covers individual residence, Spanish-source income, income without a permanent establishment, EU and EEA expense conditions, rental and own-use property, pensions, investment gains, purchaser withholding, Modelo 210 and Modelo 211. It also supplies an ordinary permanent-establishment accounting-to-tax method, branch remittance tests, asset-transfer charges and individual shareholding exit-tax thresholds, valuation, elections and filing clocks. Trigger phrases include IRNR, no residente, Modelo 210, establecimiento permanente, renta imputada, comprador retención tres por ciento, cambio de residencia and exit tax Spain. Obtain actual residence, source, treaty, ownership, accrual, cost and election evidence before calculating. Use the separate foral nonresident Guide where the agreements select Basque law or a foral collector; specialist treaty or establishment outcomes require their actual rules.
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.0
+version: 1.1
 category: international
 ---
 
-# Spain: non-residents, permanent establishments and departure v1.0
+# Spain: non-residents, permanent establishments and departure v1.1
 
 Select residence and source, then compute the applicable 2026 IRNR or departure route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. A treaty or special-regime election can change the route and must be evidenced.
 
@@ -117,6 +117,8 @@ Temporary work moves to the specified non-cooperative-excluded states, or other 
 
 Determine whether a separate 210 is required: [TRLIRNR art. 28.3](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a28) relieves the specified already-withheld income, with its fund-gain exception; do not file an unnecessary duplicate tax payment merely because a dividend exists. A refund claim and property-sale return have their own rules. Preserve residence/exemption certificates, withholding evidence, accepted return and successful payment separately.
 
+For a **property transfer jointly owned by married spouses who are both non-resident**, AEAT permits a single Modelo 210. Complete 210 H with **C** in the C/O box, identify each spouse and record each ownership percentage. For the paper filing, **both spouses must sign**. This specific property-transfer rule does not create a general joint return for spouses’ other income ([AEAT Modelo 210 instructions: obligation to declare, 210 H and paper date/signature](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html)).
+
 Use the annual-grouping conditions in the amended order, not an obsolete quarterly-grouping shortcut or loss-offset assumption. Record owner, payer/property, rate and accrual compatibility before grouping. PE books, instalments and corporate-format return are required under [TRLIRNR arts. 22–23](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a22); a 210 does not replace them. State non-working-day and actual direct-debit operational adjustments from the applicable calendar where relevant.
 
 ## Penalties and interest
@@ -198,6 +200,7 @@ expected:
 | Official source | Scope read | Read on |
 |---|---|---|
 |[AEAT non-resident pre-1994 asset guidance](https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimon-proced-bienes-adquiridos-1994.html)|Current non-PE individual abatement,400,000 cumulative transfer cap,proportion and 2005 listed-security value method|2026-10-27|
+| [AEAT Modelo 210 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html) | Nonresident married joint-owner property-transfer return, 210 H ownership entries and both signatures for paper filing | 2026-10-28 |
 | [TRLIRNR, RDL 5/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527) | Source/PE definition; arts. 16–25 ordinary PE/non-PE bases, rates, property retention, exit/instalments, returns and payer rules | 2026-10-26 |
 | [LIRPF, Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), [operative art. 85 version](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1#a85) | Residence, 2026 imputation/DA 55, gain rules, savings scale and individual share exit; future 2027 art. 85 separated | 2026-10-26 |
 | [RIRPF, RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820), [IRNR regulation, RD 1776/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532) | Exit election/deferral/return clocks, non-PE/property procedure | 2026-10-26 |

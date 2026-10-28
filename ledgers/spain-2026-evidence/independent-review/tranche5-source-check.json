@@ -1,0 +1,1408 @@
+{
+  "source_checks": [
+    {
+      "key": "S0",
+      "kind": "raw",
+      "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "matches": true
+    },
+    {
+      "key": "S0",
+      "kind": "reader",
+      "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "matches": true
+    },
+    {
+      "key": "S1",
+      "kind": "raw",
+      "sha256": "bd92602a24c0261c7dd134f3b8ef5c533508a221694f5dcab4a8354d1ade656f",
+      "matches": true
+    },
+    {
+      "key": "S1",
+      "kind": "reader",
+      "sha256": "f765fc5e932e4b41cfa467081ade4f99a14bbb259a576ab03452177a70abfb09",
+      "matches": true
+    },
+    {
+      "key": "S2",
+      "kind": "raw",
+      "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "matches": true
+    },
+    {
+      "key": "S2",
+      "kind": "reader",
+      "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "matches": true
+    },
+    {
+      "key": "S3",
+      "kind": "raw",
+      "sha256": "2dfc4002aae17438f7e7a37e6ea627dfdc2acc5f354188f038790a05310f58bd",
+      "matches": true
+    },
+    {
+      "key": "S3",
+      "kind": "reader",
+      "sha256": "12321a29183ecfa15c0a0dff606630bdcbb537234d6275c7430814feb358a8c2",
+      "matches": true
+    },
+    {
+      "key": "S4",
+      "kind": "raw",
+      "sha256": "7d4665be9e7406f39630f684b76461bc38bb70b354a82d2c11591c1c5c8678be",
+      "matches": true
+    },
+    {
+      "key": "S4",
+      "kind": "reader",
+      "sha256": "22fdeb4fb5a16a54ae734bbaefbf16e633a5bb43f147b677c842551ca56f71cc",
+      "matches": true
+    },
+    {
+      "key": "S5",
+      "kind": "raw",
+      "sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11",
+      "matches": true
+    },
+    {
+      "key": "S5",
+      "kind": "reader",
+      "sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+      "matches": true
+    },
+    {
+      "key": "S6",
+      "kind": "raw",
+      "sha256": "9216033bf3e0b20cdce1a00f392e11065d63bd3646e73b54975081f379c55259",
+      "matches": true
+    },
+    {
+      "key": "S6",
+      "kind": "reader",
+      "sha256": "df2792f770ee35bf00ec9628c6cc5f0d1f4853783907e54f679f4e32d5242d3d",
+      "matches": true
+    },
+    {
+      "key": "S7",
+      "kind": "raw",
+      "sha256": "66d4e692cf48aab7aa07d96613cc3e8fa270d3d46abbced6de4c362a43c69fee",
+      "matches": true
+    },
+    {
+      "key": "S7",
+      "kind": "reader",
+      "sha256": "f03927573cb4501d50e65b7c511ad160903cf28cfe4ba6cc44ed284ea18985ba",
+      "matches": true
+    },
+    {
+      "key": "S8",
+      "kind": "raw",
+      "sha256": "4a32b2b2dd3830b1a7a8bc6353a58dfea8d8d33d3f3039912c5b0b0ba2487928",
+      "matches": true
+    },
+    {
+      "key": "S8",
+      "kind": "reader",
+      "sha256": "3709d626cbd31551a0e751cd426af4ad9734b34d89d86fbd74520b0eec14ee71",
+      "matches": true
+    },
+    {
+      "key": "S9",
+      "kind": "raw",
+      "sha256": "f3916846bcd6f50aa7bc590f9fc13a0a5c361b02e4963e41ccd540a5439a8d93",
+      "matches": true
+    },
+    {
+      "key": "S9",
+      "kind": "reader",
+      "sha256": "037731da61ab9b900b96e7cd10756b9763147f9f4d3b988ce8bde206d9ccf373",
+      "matches": true
+    },
+    {
+      "key": "S10",
+      "kind": "raw",
+      "sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+      "matches": true
+    },
+    {
+      "key": "S10",
+      "kind": "reader",
+      "sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+      "matches": true
+    },
+    {
+      "key": "S11",
+      "kind": "raw",
+      "sha256": "033df559dc795e15d5a9125b814cebc923c8bd176994a840b1894130605ae9ec",
+      "matches": true
+    },
+    {
+      "key": "S11",
+      "kind": "reader",
+      "sha256": "121d5e556741302eb7c0d2aff1d0b7cf6edc87e955b78665f3d7ab2c8da38e4c",
+      "matches": true
+    },
+    {
+      "key": "S12",
+      "kind": "raw",
+      "sha256": "2e5fd7a83743f84bb88bc6924e2ccd3754b9ffee9eb3e316cb4856f86833321f",
+      "matches": true
+    },
+    {
+      "key": "S12",
+      "kind": "reader",
+      "sha256": "13c52e7c8e2d46c11f9f06d22106035e3f154e47862a1a74637213009deac3a9",
+      "matches": true
+    },
+    {
+      "key": "S13",
+      "kind": "raw",
+      "sha256": "535eca97b204bdef183b260630c17125587122d31b65420ea9018368474e1976",
+      "matches": true
+    },
+    {
+      "key": "S13",
+      "kind": "reader",
+      "sha256": "002a12135550bd314abde7ef27412f9ffb05e413d35111a79d588c8ce7de3e34",
+      "matches": true
+    },
+    {
+      "key": "S14",
+      "kind": "raw",
+      "sha256": "1e25161257ebd6485c2a4353bcf56e8d20ef4a4dbfbfb5d152dff9b724044d58",
+      "matches": true
+    },
+    {
+      "key": "S14",
+      "kind": "reader",
+      "sha256": "8e305116460d38f9734bbb55188ea4b951c55434e9313dc6afc7eb6662556f07",
+      "matches": true
+    },
+    {
+      "key": "S15",
+      "kind": "raw",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "matches": true
+    },
+    {
+      "key": "S15",
+      "kind": "reader",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "matches": true
+    },
+    {
+      "key": "S16",
+      "kind": "raw",
+      "sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+      "matches": true
+    },
+    {
+      "key": "S16",
+      "kind": "reader",
+      "sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+      "matches": true
+    }
+  ],
+  "quote_checks": [
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2421,
+        2421
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2423,
+        2423
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2723,
+        2723
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2723,
+        2723
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2802,
+        2802
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2440,
+        2440
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2440,
+        2440
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2442,
+        2442
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2448,
+        2448
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2448,
+        2448
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S3.reader.txt",
+      "LF": [
+        168,
+        168
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S3.reader.txt",
+      "LF": [
+        94,
+        94
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1870,
+        1870
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1872,
+        1872
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1874,
+        1874
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1848,
+        1848
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1856,
+        1856
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1876,
+        1876
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1868,
+        1868
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S8.reader.txt",
+      "LF": [
+        144,
+        144
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S8.reader.txt",
+      "LF": [
+        146,
+        146
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2446,
+        2446
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2448,
+        2448
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2454,
+        2454
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2456,
+        2456
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2450,
+        2450
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2446,
+        2446
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        12361,
+        12361
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        12363,
+        12363
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        12365,
+        12365
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S6.reader.txt",
+      "LF": [
+        824,
+        824
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S6.reader.txt",
+      "LF": [
+        824,
+        824
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S6.reader.txt",
+      "LF": [
+        824,
+        824
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2458,
+        2458
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2462,
+        2462
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2464,
+        2464
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2466,
+        2466
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2468,
+        2468
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2472,
+        2472
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2476,
+        2476
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2478,
+        2478
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2480,
+        2480
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2482,
+        2482
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2484,
+        2484
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2502,
+        2502
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2504,
+        2504
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2486,
+        2486
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2454,
+        2454
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2488,
+        2488
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2498,
+        2498
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2470,
+        2470
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2462,
+        2462
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2500,
+        2500
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2500,
+        2500
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2502,
+        2502
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        2619,
+        2619
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2504,
+        2504
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2506,
+        2506
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2508,
+        2508
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2508,
+        2508
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2510,
+        2510
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        1851,
+        1851
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1909,
+        1909
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1909,
+        1909
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1919,
+        1919
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1921,
+        1921
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S3.reader.txt",
+      "LF": [
+        98,
+        98
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S3.reader.txt",
+      "LF": [
+        108,
+        108
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S3.reader.txt",
+      "LF": [
+        106,
+        106
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S8.reader.txt",
+      "LF": [
+        90,
+        90
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S8.reader.txt",
+      "LF": [
+        96,
+        96
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S8.reader.txt",
+      "LF": [
+        92,
+        92
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S7.reader.txt",
+      "LF": [
+        129,
+        129
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S7.reader.txt",
+      "LF": [
+        414,
+        414
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S7.reader.txt",
+      "LF": [
+        262,
+        262
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2514,
+        2514
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2514,
+        2514
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        2516,
+        2516
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1933,
+        1933
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1935,
+        1935
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        1937,
+        1937
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S9.reader.txt",
+      "LF": [
+        86,
+        86
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S9.reader.txt",
+      "LF": [
+        108,
+        108
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S9.reader.txt",
+      "LF": [
+        110,
+        110
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S9.reader.txt",
+      "LF": [
+        106,
+        106
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2526,
+        2526
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        2526,
+        2526
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        6194,
+        6194
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        6196,
+        6196
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        6198,
+        6198
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S4.reader.txt",
+      "LF": [
+        6200,
+        6200
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        10810,
+        10810
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        10812,
+        10812
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S5.reader.txt",
+      "LF": [
+        1796,
+        1796
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S5.reader.txt",
+      "LF": [
+        1866,
+        1866
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S5.reader.txt",
+      "LF": [
+        1872,
+        1872
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S5.reader.txt",
+      "LF": [
+        1870,
+        1870
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        5956,
+        5956
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        5958,
+        5958
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        4276,
+        4276
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        4274,
+        4274
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        4278,
+        4278
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S2.reader.txt",
+      "LF": [
+        4374,
+        4374
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S10.reader.txt",
+      "LF": [
+        630,
+        630
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S10.reader.txt",
+      "LF": [
+        630,
+        630
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S11.reader.txt",
+      "LF": [
+        504,
+        504
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S11.reader.txt",
+      "LF": [
+        506,
+        506
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S12.reader.txt",
+      "LF": [
+        8,
+        8
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S12.reader.txt",
+      "LF": [
+        8,
+        8
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S13.reader.txt",
+      "LF": [
+        80,
+        80
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S13.reader.txt",
+      "LF": [
+        84,
+        84
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S14.reader.txt",
+      "LF": [
+        8,
+        8
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S14.reader.txt",
+      "LF": [
+        8,
+        8
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S15.reader.txt",
+      "LF": [
+        2209,
+        2209
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S15.reader.txt",
+      "LF": [
+        2213,
+        2213
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S16.reader.txt",
+      "LF": [
+        1716,
+        1716
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S16.reader.txt",
+      "LF": [
+        1736,
+        1736
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S16.reader.txt",
+      "LF": [
+        1732,
+        1732
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        3772,
+        3772
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        4672,
+        4672
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        7226,
+        7226
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        5937,
+        5937
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/S0.reader.txt",
+      "LF": [
+        5941,
+        5941
+      ],
+      "present": true
+    }
+  ],
+  "coverage_remainder": [
+    {
+      "lf": 1,
+      "text": "---"
+    },
+    {
+      "lf": 2,
+      "text": "name: es-rental-income"
+    },
+    {
+      "lf": 3,
+      "text": "description: Use this Guide to compute common-territory Spanish individual rental and own-use property income for 2026. It covers ownership and income classification, gross rent, property-specific interest and repair caps, other expenses, bad debts, depreciation and lifetime limits, residential net-income reductions, the October reform and December lease-date transition, relative lettings and imputed income. Trigger phrases include alquiler Espa\u00f1a, arrendamiento vivienda, rendimiento capital inmobiliario, reducci\u00f3n alquiler, amortizaci\u00f3n inmueble, gastos reparaci\u00f3n, renta imputada and landlord tax Spain. Obtain actual lease and renewal dates, tenant use and age, prior rent and reference-price evidence, large-holder status, cadastral values, acquisition costs, rental days and prior expense ledgers. Resident rental results feed the full state and regional IRPF computation. Non-resident income, property businesses, corporate landlords and indirect-tax treatment have separate companion routes."
+    },
+    {
+      "lf": 4,
+      "text": "version: 1.3"
+    },
+    {
+      "lf": 5,
+      "text": "jurisdiction: ES"
+    },
+    {
+      "lf": 6,
+      "text": "tax_year: 2026"
+    },
+    {
+      "lf": 7,
+      "text": "last_updated: 2026-10-28"
+    },
+    {
+      "lf": 8,
+      "text": "review_status: pending_review"
+    },
+    {
+      "lf": 9,
+      "text": "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+    },
+    {
+      "lf": 10,
+      "text": "drafted_by: OpenAccountants"
+    },
+    {
+      "lf": 11,
+      "text": "approved_by: pending"
+    },
+    {
+      "lf": 12,
+      "text": "category: international"
+    },
+    {
+      "lf": 13,
+      "text": "tier: 2"
+    },
+    {
+      "lf": 14,
+      "text": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+    },
+    {
+      "lf": 15,
+      "text": "---"
+    },
+    {
+      "lf": 17,
+      "text": "# Spain: rental and own-use property income v1.3"
+    },
+    {
+      "lf": 21,
+      "text": "## Who this applies to"
+    },
+    {
+      "lf": 29,
+      "text": "## Rates, bands and thresholds"
+    },
+    {
+      "lf": 33,
+      "text": "| Expense/base rule | 2026 amount/condition | Official source |"
+    },
+    {
+      "lf": 34,
+      "text": "|---|---|---|"
+    },
+    {
+      "lf": 42,
+      "text": "### Choose the lease-date regime first"
+    },
+    {
+      "lf": 46,
+      "text": "| Contract population | Applicable housing reduction | Source |"
+    },
+    {
+      "lf": 47,
+      "text": "|---|---|---|"
+    },
+    {
+      "lf": 54,
+      "text": "### Current ladder for a new post-transition lease"
+    },
+    {
+      "lf": 58,
+      "text": "| New-contract condition | Reduction | Source |"
+    },
+    {
+      "lf": 59,
+      "text": "|---|---:|---|"
+    },
+    {
+      "lf": 76,
+      "text": "## The base"
+    },
+    {
+      "lf": 78,
+      "text": "### Property income, expenses and depreciation"
+    },
+    {
+      "lf": 90,
+      "text": "### Apply relief to each positive property result"
+    },
+    {
+      "lf": 110,
+      "text": "### Partial use, indirect tax and annual handoff"
+    },
+    {
+      "lf": 118,
+      "text": "### Urban-rent withholding exceptions"
+    },
+    {
+      "lf": 122,
+      "text": "## Deadlines and filing"
+    },
+    {
+      "lf": 130,
+      "text": "## Penalties and interest"
+    },
+    {
+      "lf": 134,
+      "text": "## Cross-border points"
+    },
+    {
+      "lf": 138,
+      "text": "## Two worked examples that recompute"
+    },
+    {
+      "lf": 140,
+      "text": "### 1. Full-year preserved lease, depreciation and 50% reduction"
+    },
+    {
+      "lf": 168,
+      "text": "### 2. Capped repair carryforward, unreduced loss and qualifying December first lease"
+    },
+    {
+      "lf": 200,
+      "text": "## Ask the client first"
+    },
+    {
+      "lf": 209,
+      "text": "## Sources"
+    },
+    {
+      "lf": 211,
+      "text": "| Official source | Scope read | Read on |"
+    },
+    {
+      "lf": 212,
+      "text": "|---|---|---|"
+    },
+    {
+      "lf": 229,
+      "text": "<!-- openaccountants-cta-block -->"
+    },
+    {
+      "lf": 231,
+      "text": "---"
+    },
+    {
+      "lf": 233,
+      "text": "## Talk to a verified accountant"
+    },
+    {
+      "lf": 235,
+      "text": "This guide is maintained by the OpenAccountants network \u2014 accountants who put"
+    },
+    {
+      "lf": 236,
+      "text": "their name behind the tax answers AI gives people. The live, always-current"
+    },
+    {
+      "lf": 237,
+      "text": "version (and the professional behind it) is at"
+    },
+    {
+      "lf": 238,
+      "text": "[openaccountants.com](https://www.openaccountants.com)."
+    },
+    {
+      "lf": 240,
+      "text": "- Use it in your AI: https://www.openaccountants.com/connect"
+    },
+    {
+      "lf": 241,
+      "text": "- Meet the accountants: https://www.openaccountants.com/network"
+    },
+    {
+      "lf": 243,
+      "text": "> **General reference only.** This document does not constitute tax, legal, or"
+    },
+    {
+      "lf": 244,
+      "text": "> financial advice. Verify figures against the cited primary sources or with a"
+    },
+    {
+      "lf": 245,
+      "text": "> licensed professional before relying on them."
+    }
+  ]
+}

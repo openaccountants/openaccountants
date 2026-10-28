@@ -1,0 +1,572 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "actual_raw_sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "actual_raw_bytes": 463345,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt",
+    "reader_sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969#a7"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e331990af8b3d58734b5.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e331990af8b3d58734b5.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+    "actual_raw_sha256": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+    "actual_raw_bytes": 491050,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e331990af8b3d58734b5.reader.txt",
+    "reader_sha256": "39898c8ae5860f3678c70bcfacbb39f9559ffea6b23cd570eca97551417d5818",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117#a1-13"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_bytes": 678881,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf#a88"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_bytes": 989922,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf#a84"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts-additional.json",
+    "claimed_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_bytes": 1555948,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd#a100"
+  },
+  {
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_bytes": 1352672,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+    "reader_sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+    "selected_url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true#a71"
+  },
+  {
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_bytes": 1352672,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+    "reader_sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+    "selected_url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true#a70"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_bytes": 678881,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf#a106"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_bytes": 989922,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf#a104"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts-additional.json",
+    "claimed_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_bytes": 1555948,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd#a120"
+  },
+  {
+    "url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "actual_raw_bytes": 1352672,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6918c8b2a1db91ace587.reader.txt",
+    "reader_sha256": "ca06c402c3d182c330480bfbcf53aff0986cb9e3e0cc2cd3157cd2f46c0335b5",
+    "selected_url": "https://www.navarra.es/es/web/normativa-hacienda/-/reglamento-del-impuesto-sobre-la-renta-de-las-personas-f%C3%ADsicas-df-174/1999-de-24-de-mayo-?print=true#a90"
+  },
+  {
+    "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf9f74be329b59ad803f.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf9f74be329b59ad803f.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+    "actual_raw_sha256": "828b901d565ae28f6ae68281ce174c92a9e569f75ee9a8c61b5fde0aad8a3f1e",
+    "actual_raw_bytes": 845405,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf9f74be329b59ad803f.pdf.reader.txt",
+    "reader_sha256": "92829f16d97665dad4622724c2f9eb71f42b39321d6f1c82cc349bc048b5b6fa",
+    "selected_url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2022/12/23/I-1160_cas.pdf?hash=7616a7ccaecc78b9aafa548934f8043a"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/110",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/be2de358afb4db73b871.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/be2de358afb4db73b871.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "4d3d1a5642ed8158557678a510eaf87978533ef8ce9724f6551f9e04a0259964",
+    "actual_raw_sha256": "4d3d1a5642ed8158557678a510eaf87978533ef8ce9724f6551f9e04a0259964",
+    "actual_raw_bytes": 233152,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/be2de358afb4db73b871.reader.txt",
+    "reader_sha256": "985a3f38606b514a25f341013aac25bdc8ca63f2e7a06b46f32d5c47a3917d6a",
+    "selected_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/110"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/111",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf768d085feeca77a7b1.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf768d085feeca77a7b1.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "341362ea85fe1dc809b49d90036d6672777e24330ecfb5b0111888104a267b6a",
+    "actual_raw_sha256": "341362ea85fe1dc809b49d90036d6672777e24330ecfb5b0111888104a267b6a",
+    "actual_raw_bytes": 232182,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf768d085feeca77a7b1.reader.txt",
+    "reader_sha256": "ed6cf86b55dd8f5ce08813b1e40817c4b33f21f2d21318fa5658dd5a1bf87860",
+    "selected_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/111"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/190",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/130849d5421526c58c54.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/130849d5421526c58c54.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "a4d962e0b09f77815f1f6c00b7f6e4fcb4559ec823d79f9a47dee1175afbad92",
+    "actual_raw_sha256": "a4d962e0b09f77815f1f6c00b7f6e4fcb4559ec823d79f9a47dee1175afbad92",
+    "actual_raw_bytes": 232518,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/130849d5421526c58c54.reader.txt",
+    "reader_sha256": "c08fe440ac380de3609e06048c705ce4d56ce22f03850adddace88e156ac7781",
+    "selected_url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/190"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=12301",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/33ea9e35f0cf99003f73.body",
+    "readers": [],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "ad94e96f05dfc0ed61db417d40f9bd3bc39de09425ac8ad8929cbf46d71dcc3d",
+    "actual_raw_sha256": "ad94e96f05dfc0ed61db417d40f9bd3bc39de09425ac8ad8929cbf46d71dcc3d",
+    "actual_raw_bytes": 28916,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/group-b-derived-ad94e96f05dfc0ed.txt",
+    "reader_sha256": "910aa39aad535ad8de2f53b4493af5d11763b9d9916b4af4e33fbc3b5e94924e",
+    "selected_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=12301"
+  },
+  {
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=37052",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ba14e9df8dad05cad434.body",
+    "readers": [],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fb603c8748d0aea26755393119fd6f5a8f8f0b984b7d11fc66b594ad5af7e3a7",
+    "actual_raw_sha256": "fb603c8748d0aea26755393119fd6f5a8f8f0b984b7d11fc66b594ad5af7e3a7",
+    "actual_raw_bytes": 18621,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/group-b-derived-fb603c8748d0aea2.txt",
+    "reader_sha256": "d2e7168e0de3cd7801db7dfb277778b63ab38ab00bdbab2f883f379c8157addf",
+    "selected_url": "https://www.lexnavarra.navarra.es/detalle.asp?r=37052"
+  },
+  {
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2022/12/23/c2208406.pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/OF575-gazette.pdf",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/OF575-gazette.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/fetch-receipts.json",
+    "claimed_sha256": "af776c1c3d2d33d3475788cd982efd215b7914baf457c32d85d91fabf3d789fc",
+    "actual_raw_sha256": "af776c1c3d2d33d3475788cd982efd215b7914baf457c32d85d91fabf3d789fc",
+    "actual_raw_bytes": 151787,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-G110-January-extension-source/OF575-gazette.reader.txt",
+    "reader_sha256": "ba8c251cd9c9a2d2fe25eb6c7cc5903d4dbacf7edea75f149850bb6f6ba819d0",
+    "selected_url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2022/12/23/c2208406.pdf"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_bytes": 1502987,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca#a26"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_bytes": 1502987,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca#a27"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_bytes": 1502987,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca#a28"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_bytes": 1502987,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca#a196"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "actual_raw_bytes": 1502987,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_2_2005.pdf?idioma=ca#a203"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_bytes": 1683910,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf#a27"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_bytes": 1683910,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf#a28"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "actual_raw_bytes": 1683910,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf#a195"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_bytes": 2762742,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2#a27"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_bytes": 2762742,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2#a28"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "actual_raw_bytes": 2762742,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20%282026%29.pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2#a195"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_bytes": 1189685,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494#a52"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_bytes": 1189685,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494#a76"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "actual_raw_bytes": 1189685,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-3494#a77"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+    "actual_raw_sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+    "actual_raw_bytes": 2870265,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.reader.txt",
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "selected_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128#da-90"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "actual_raw_bytes": 678881,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf#a87"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "actual_raw_bytes": 989922,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf#a83"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts-additional.json",
+    "claimed_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "actual_raw_bytes": 1555948,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd#a99"
+  },
+  {
+    "url": "https://www.navarra.es/documents/48192/35409067/Manual%2Bte%C3%B3rico%2Bde%2Bla%2Bcampa%C3%B1a%2Bde%2B2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?download=true&t=1775726152475",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5f1cb085d3190b3da13a.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5f1cb085d3190b3da13a.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-ordinary-crypto-independent-review/source-map-and-immutability.json",
+    "claimed_sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "actual_raw_sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "actual_raw_bytes": 2360617,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5f1cb085d3190b3da13a.pdf.reader.txt",
+    "reader_sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+    "selected_url": "https://www.navarra.es/documents/48192/35409067/Manual%2Bte%C3%B3rico%2Bde%2Bla%2Bcampa%C3%B1a%2Bde%2B2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?download=true&t=1775726152475"
+  },
+  {
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "actual_raw_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "actual_raw_bytes": 1542148,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.pdf.reader.txt",
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "selected_url": "https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068#a79"
+  },
+  {
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "actual_raw_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "actual_raw_bytes": 1602000,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.pdf.reader.txt",
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "selected_url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf#a79"
+  },
+  {
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.pdf.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts-additional.json",
+    "claimed_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "actual_raw_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "actual_raw_bytes": 2290042,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.pdf.reader.txt",
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "selected_url": "https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc#a79"
+  },
+  {
+    "url": "https://vivienda.castillalamancha.es/iprem",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf6f17c0f36a9f0ad3c0.body",
+    "readers": [
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf6f17c0f36a9f0ad3c0.reader.txt"
+    ],
+    "receipt": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/source-receipts.json",
+    "claimed_sha256": "35fd566e96f38d7b73b99e67521d2066f1b0e56b6ea08afd0480c0d088440728",
+    "actual_raw_sha256": "35fd566e96f38d7b73b99e67521d2066f1b0e56b6ea08afd0480c0d088440728",
+    "actual_raw_bytes": 67672,
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cf6f17c0f36a9f0ad3c0.reader.txt",
+    "reader_sha256": "35281ebbb6f248ff7b2888476898a1559c06373108174810d79afdb1a535a4c2",
+    "selected_url": "https://vivienda.castillalamancha.es/iprem"
+  }
+]

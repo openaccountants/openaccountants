@@ -1,7 +1,7 @@
 ---
 name: es-social-contributions
 description: Use this Guide to calculate Spanish social-security contributions for ordinary self-employed RETA workers and employers in the Régimen General in 2026. It covers annual computable income, the calendar-day monthly average, contribution bands, chosen and final bases, generic deductions, company and family floors, coverage rates, starting-fee conditions, bonuses, annual regularisation and pluriactividad refunds. For payroll it covers assessable remuneration, extra-pay proration, overtime, contribution groups, employer and employee shares, occupational tariffs, capped bases, MEI and solidarity, plus household salary bands and agricultural monthly, daily and inactivity methods. Trigger phrases include cuota de autónomos, RETA, cotización, TGSS, regularización, tarifa plana, Seguridad Social, RLC and payroll contributions. Obtain the actual registration, base, coverage and assessment records when reconciling an individual charge; the labelled public starting-fee worksheet also supplies a prospective administrative calculation.
-version: 2.3
+version: 2.4
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spanish social contributions: RETA and employer payroll v2.3
+# Spanish social contributions: RETA and employer payroll v2.4
 
 Compute 2026 contributions from the worker's status, assessable income, contribution base and coverage. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. Amounts below are euros.
 
@@ -83,7 +83,7 @@ For ordinary full RETA coverage with the same base for every line, the **derived
 | 3, administrative/workshop heads | 1,435.20/month | 5,101.20/month | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
 | 4–7 | 1,424.40/month | 5,101.20/month | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
 | 8–11, daily-paid categories | 47.48/day | 170.04/day | [2026 art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3) |
-| Accident/occupational base | Floor 1,424.40/month; ceiling 5,101.20/month | Apply applicable daily/partial-period rules | [2026 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2) |
+| Accident/occupational base | Ordinary full-month floor 1,424.50 (= 1,221 × 7/6); ceiling 5,101.20/month | Art. 2 sets SMI plus one-sixth, subject to an absolute minimum of 1,424.40. Apply applicable daily/partial-period rules | [2026 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2); [2026 SMI art. 1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815#a1) |
 
 | Contribution | Employer | Employee | Year and source |
 |---|---:|---:|---|

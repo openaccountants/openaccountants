@@ -1,0 +1,348 @@
+{
+  "scope": "Independent calculations with entitlement facts stipulated; no universal company-tenant, posttransition boundary, treaty or claimant evidence conclusion. Dates evaluated in calendar months, not arbitrary180days.",
+  "count": 57,
+  "checks": [
+    {
+      "name": "case1 building acquisition",
+      "actual": "120000",
+      "expected": "120000",
+      "passed": true
+    },
+    {
+      "name": "case1 cadastral building",
+      "actual": "80000",
+      "expected": "80000",
+      "passed": true
+    },
+    {
+      "name": "case1 depreciation",
+      "actual": "3600",
+      "expected": "3600",
+      "passed": true
+    },
+    {
+      "name": "case1 net",
+      "actual": "5400",
+      "expected": "5400",
+      "passed": true
+    },
+    {
+      "name": "preserved2024 default50percent",
+      "actual": "2700",
+      "expected": "2700",
+      "passed": true
+    },
+    {
+      "name": "case1 taxable rental",
+      "actual": "2700",
+      "expected": "2700",
+      "passed": true
+    },
+    {
+      "name": "case2 property A finance cap",
+      "actual": "4000",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "name": "case2 A own cost carryforward",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "case2 A unreduced negative",
+      "actual": "-2000",
+      "expected": "-2000",
+      "passed": true
+    },
+    {
+      "name": "case2 A no housing reduction",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "case2 B net",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "name": "case2 B independently eligible100percent",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "case2 combined result",
+      "actual": "-2000",
+      "expected": "-2000",
+      "passed": true
+    },
+    {
+      "name": "no crossproperty financecap pooling",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "lifetime residual binds yearly depreciation",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "name": "partyear building depreciation",
+      "actual": "129600/73",
+      "expected": "129600/73",
+      "passed": true
+    },
+    {
+      "name": "inherited building value not mere paid fees",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "strict doubtful debt June30 passes six months",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "July1 firstaction fails morethan6calendar months",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "otherwise eligible1000debt deduction",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "later recovery reincluded",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "name": "retained60 company route",
+      "actual": "7200",
+      "expected": "7200",
+      "passed": true
+    },
+    {
+      "name": "retained60 company reducednet",
+      "actual": "4800",
+      "expected": "4800",
+      "passed": true
+    },
+    {
+      "name": "generic employee destination alone no proved reduction",
+      "actual": "12000",
+      "expected": "12000",
+      "passed": true
+    },
+    {
+      "name": "irregular housingfirst residual",
+      "actual": "4000",
+      "expected": "4000",
+      "passed": true
+    },
+    {
+      "name": "irregular30 on residual",
+      "actual": "1200",
+      "expected": "1200",
+      "passed": true
+    },
+    {
+      "name": "successive not additive",
+      "actual": "2800",
+      "expected": "2800",
+      "passed": true
+    },
+    {
+      "name": "90percent housing then irregular",
+      "actual": "700",
+      "expected": "700",
+      "passed": true
+    },
+    {
+      "name": "100percent housing leaves no irregularbase",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "binding irregularbase after housing",
+      "actual": "400000",
+      "expected": "400000",
+      "passed": true
+    },
+    {
+      "name": "binding irregular reduction",
+      "actual": "90000",
+      "expected": "90000",
+      "passed": true
+    },
+    {
+      "name": "binding irregular taxable",
+      "actual": "310000",
+      "expected": "310000",
+      "passed": true
+    },
+    {
+      "name": "same nature positive cap allocation first",
+      "actual": "100000",
+      "expected": "100000",
+      "passed": true
+    },
+    {
+      "name": "same nature positive cap allocation second",
+      "actual": "200000",
+      "expected": "200000",
+      "passed": true
+    },
+    {
+      "name": "same nature relief first",
+      "actual": "30000",
+      "expected": "30000",
+      "passed": true
+    },
+    {
+      "name": "same nature relief second",
+      "actual": "60000",
+      "expected": "60000",
+      "passed": true
+    },
+    {
+      "name": "signed irregular sum preserves loss",
+      "actual": "100000",
+      "expected": "100000",
+      "passed": true
+    },
+    {
+      "name": "exact5percentcut fails strictmorethan",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "5.01percentcut meets numerical gate",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "rent increase5 inclusive40percent",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "rent increase10 inclusive30percent",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "rent increase15 inclusive25percent",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "rent increase20 inclusive20percent",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "20.01percent increase15percent bracket",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "largeholder ordinary10 notstrictlymorethan10",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "largeholder ordinary11 meets property limb",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "largeholder1500 notstrictlymorethan1500",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "firstletting reference equality doesnotmeetbelow100",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "firstletting reference equality fallback50",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "withholding19percent",
+      "actual": "190",
+      "expected": "190",
+      "passed": true
+    },
+    {
+      "name": "CeutaMelilla conditional withholding60percent reduction",
+      "actual": "19/250",
+      "expected": "19/250",
+      "passed": true
+    },
+    {
+      "name": "samepayer900 equality exemptionlimb",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "samepayer900.01 outsideexemptionlimb",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "2026qualifying ownuse1.1percent",
+      "actual": "1100",
+      "expected": "1100",
+      "passed": true
+    },
+    {
+      "name": "2026ordinary ownuse2percent",
+      "actual": "2000",
+      "expected": "2000",
+      "passed": true
+    },
+    {
+      "name": "2026 unnotified substitute halfvalue1.1percent",
+      "actual": "1100",
+      "expected": "1100",
+      "passed": true
+    },
+    {
+      "name": "late2complete months3percent",
+      "actual": "30",
+      "expected": "30",
+      "passed": true
+    }
+  ]
+}

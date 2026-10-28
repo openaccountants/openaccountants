@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2012-6280 Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero" />
+    <title>BOE-A-2012-6280 Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/consolidada.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2012-6280" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#date_document" content="2012-05-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#number" content="18" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/449"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3790"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3887"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4101"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5645"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/9430"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2012-6280" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2012-05-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#number" content="18" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/449"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3790"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3887"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4101"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5645"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/9430"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#corrected_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/corrigendum/20120530/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/cat"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#title" content="Reial decret llei 18/2012, d&#039;11 de maig, sobre sanejament i venda dels actius immobiliaris del sector financer." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#date_publication" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/cat"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/eus"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#title" content="18/2012 Errege Lege Dekretua, maiatzaren 11koa, finantza-sektoreko higiezin-aktiboak saneatu eta saltzeari buruzkoa." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#date_publication" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/eus"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/glg"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#title" content="Real decreto lei 18/2012, do 11 de maio, sobre saneamento e venda dos activos inmobiliarios do sector financeiro." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#date_publication" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/glg"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/vci"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#title" content="Reial Decret Llei 18/2012, d&#039;11 de maig, sobre sanejament i venda dels actius immobiliaris del sector financer." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#date_publication" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof/vci"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2012-6280" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#date_document" content="2012-05-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#number" content="18" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/449"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3790"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3887"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4101"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5645"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/9430"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#version_date" content="2012-10-31" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20121031/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2012-6280" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#date_document" content="2012-05-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#number" content="18" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/449"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3790"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3887"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4101"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5645"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/9430"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#version_date" content="2012-05-26" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120526/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/rdl"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2012-6280" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#date_document" content="2012-05-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#number" content="18" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/449"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3790"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3887"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4101"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5645"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6803"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7162"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7896"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/9430"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#version_date" content="2012-05-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/dof"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" property="http://data.europa.eu/eli/ontology#title" content="Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/rdl/2012/05/11/18/con/20120512/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="act.php?lang=es&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="act.php?lang=ca&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=gl&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="act.php?lang=eu&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="act.php?lang=va&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=en&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="act.php?lang=fr&amp;id=BOE-A-2012-6280&amp;tn=1&amp;p=" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>
+        <li class="destino">Documento consolidado BOE-A-2012-6280</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<div class="titulo-wrapper">
+  <h2>Legislación consolidada<img class="tooltipimg" src="/imagenes/msg_info.png" alt="(información)"/><span class="tooltiptext">Este texto consolidado es de carácter informativo y no tiene valor jurídico.<br/>La consolidación consiste en integrar en un solo texto, sin valor oficial, las modificaciones, correcciones y derogaciones de carácter expreso que una norma ha tenido desde su origen, con el objetivo de facilitar el acceso al Derecho vigente. Para fines jurídicos, debe consultarse la publicación oficial.</span></h2>
+  <div class="puntoAyuda">
+    <a href="/buscar/ayudas/legislacion_actualizada.php">
+      <span class="pc tablet">Ayuda</span>
+    </a>
+  </div>
+</div>
+<div id="barraSep" class="enlacesDoc">
+  <h3 class="documento-tit">Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero</h3>
+  <p class="derogada">[Disposición derogada]</p>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl class="conso">
+        <dt>Publicado en:</dt>
+        <dd><abbr title="Boletín Oficial del Estado">«BOE»</abbr> <abbr title="número">núm.</abbr> 114, de 12/05/2012.</dd>
+        <dt>Entrada en vigor:</dt>
+        <dd>12/05/2012</dd>
+        <dt>Departamento:</dt>
+        <dd>Jefatura del Estado</dd>
+        <dt>Referencia:</dt>
+        <dd>
+          <a href="/buscar/doc.php?id=BOE-A-2012-6280">BOE-A-2012-6280</a>
+        </dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/rdl/2012/05/11/18/con">https://www.boe.es/eli/es/rdl/2012/05/11/18/con</a>
+        </dd>
+      </dl>
+    </div>
+    <div class="redaccion">
+      <label for="activar-versiones">
+        <span class="etiqDoc">Seleccionar redacción: </span>
+      </label>
+      <div class="dropdown">
+        <input id="activar-versiones" type="checkbox"/>
+        <label class="version-actual" for="activar-versiones" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">
+          <span>Última actualización publicada el 31/10/2012</span>
+        </label>
+        <ul id="lista-versiones">
+          <li>
+            <a class="version-selected" href="?id=BOE-A-2012-6280&amp;tn=1&amp;p=20121031">Última actualización publicada el 31/10/2012</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2012-6280&amp;tn=1&amp;p=20120526">Modificación publicada el 26/05/2012</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2012-6280&amp;tn=1&amp;p=20120512">Texto inicial publicado el 12/05/2012</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="enlaces-conso">
+      <li class="puntoPDF2">
+        <a target="_blank" title="Abre el PDF en una nueva ventana" href="/buscar/pdf/2012/BOE-A-2012-6280-consolidado.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a target="_blank" href="/buscar/epub/2012/BOE-A-2012-6280-consolidado.epub">ePUB</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+<script src="/djrae/_js/jquery.djRAE.js?rnd=690"></script>
+<link   rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE.css" />
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE_ie8.css" />
+<![endif]-->
+	
+<div id="barra_dj">
+	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="GET">
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
+		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
+		</label>
+		<div id="container_dj">
+			<input type="text" name="w" id="caja-busqueda-djrae"/>
+			<div class="lupa_dj">
+				<span class="movil"><input for="caja-busqueda-djrae" type="image" src="/imagenes/home/lupa_16x16.png" title="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE" alt="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE"></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+	if(typeof jQuery !== "undefined"){
+
+		jQuery.noConflict();
+
+		var carga = true, djrae_t = "P";
+
+		if(!window.matchMedia){
+			//IE9
+			carga = true;
+		}else if(window.matchMedia("(max-width:669px)").matches){
+			carga = true;
+			djrae_t  = "M";
+		} else if(window.matchMedia("(min-width:670px) and (max-width:1050px)").matches) {
+			carga = true;
+			djrae_t  = "T";
+		}
+
+		if(carga){
+			jQuery("#container_dj").djraeWidget({modo: djrae_t});
+		}
+	}
+</script>
+<div class="pretexto" id="tabs">
+  <ul class="navlist">
+    <li><span class="pc tablet"><a href="#" class="current">Completo</a></span>
+    <span class="movil"><a href="#tabs" class="current">Completo</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=0">Solo Texto</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=0#tabs">Texto</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=2">&Iacute;ndice</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=2#tabs">&Iacute;ndice</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=6">An&aacute;lisis</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=6#tabs">An&aacute;lisis</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=3" class="guardar">Recibir alerta <img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2012-6280&amp;p=20121031&amp;tn=3#tabs" class="guardar"><img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span></li>
+  </ul>
+</div>
+            <details class="info-flotante">
+              <summary title="Ver información">Derogada</summary>
+              <div class="detail-titulo">Real Decreto-ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobiliarios del sector financiero</div>
+            </details>
+<div id="textoxslt">
+<h3>Texto consolidado<span class="subtitMostrado">: &laquo;&Uacute;ltima actualizaci&oacute;n, publicada el 31/10/2012&raquo;</span></h3>
+  <div class="marcadores">
+    <label for="activar-marcadores"><span class="etiqDoc">Ir a: </span></label>
+    <div id="selector-marcador"  class="dropdown">
+      <input id="activar-marcadores" type="checkbox">
+      <label class="marcador-actual" for="activar-marcadores" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span>Seleccionar apartado</span></label>
+      <ul id="lista-marcadores">
+        <li><a href="#preambulo">[Pre&aacute;mbulo]</a></li>
+        <li><a href="#ci">CAPÍTULO I</a></li>
+        <li><a href="#a1">Artículo 1</a></li>
+        <li><a href="#a2">Artículo 2</a></li>
+        <li><a href="#cii">CAPÍTULO II</a></li>
+        <li><a href="#a3">Artículo 3</a></li>
+        <li><a href="#a4">Artículo 4</a></li>
+        <li><a href="#a5">Artículo 5</a></li>
+        <li><a href="#a6">Artículo 6</a></li>
+        <li><a href="#ciii">CAPÍTULO III</a></li>
+        <li><a href="#a7">Artículo 7</a></li>
+        <li><a href="#civ">CAPÍTULO IV</a></li>
+        <li><a href="#a8">Artículo 8</a></li>
+        <li><a href="#daprimera">Disposición adicional primera</a></li>
+        <li><a href="#dasegunda">Disposición adicional segunda</a></li>
+        <li><a href="#datercera">Disposición adicional tercera</a></li>
+        <li><a href="#dtunica">Disposición transitoria única</a></li>
+        <li><a href="#ddunica">Disposición derogatoria única</a></li>
+        <li><a href="#dfprimera">Disposición final primera</a></li>
+        <li><a href="#dfsegunda">Disposición final segunda</a></li>
+        <li><a href="#dftercera">Disposición final tercera</a></li>
+        <li><a href="#dfcuarta">Disposición final cuarta</a></li>
+        <li><a href="#dfquinta">Disposición final quinta</a></li>
+        <li><a href="#dfsexta">Disposición final sexta</a></li>
+        <li><a href="#dfseptima">Disposición final séptima</a></li>
+        <li><a href="#dfoctava">Disposición final octava</a></li>
+        <li><a href="#firma">[Firma]</a></li>
+        <li><a href="#an">ANEXO</a></li>
+      </ul>
+    </div>
+  </div>
+          <div class="bloque" id="no">
+
+<blockquote class="notaInicial">
+  <p class="siempreSeVe">Norma derogada, con efectos de 31 de octubre de 2012, por la disposición derogatoria de la Ley 8/2012, de 30 de octubre. <a href="/buscar/act.php?id=BOE-A-2012-13487#dd" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-13487</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="preambulo">
+            <p class="bloque">[Bloque 2: #preambulo]</p>
+
+<p class="parrafo">Advertido el impacto que el deterioro de los activos vinculados al sector inmobiliario tiene sobre la solidez de nuestro sistema financiero, el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, de saneamiento del sector financiero, se dictó con el fin de adoptar medidas urgentes conducentes a lograr el saneamiento de los balances de las entidades de crédito, afectados negativamente por dicho deterioro.</p>
+<p class="parrafo">Los requerimientos establecidos por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, orientados a la cobertura del deterioro en los balances bancarios ocasionado por los activos problemáticos vinculados a la actividad inmobiliaria, han representado para las entidades de crédito un esfuerzo considerable en el presente ejercicio 2012, extensible a 2013 para aquéllas que acometan modificaciones organizativas de carácter estructural.</p>
+<p class="parrafo">Las medidas de reforzamiento de provisiones y de capital establecidas el citado real decreto-ley, tuvieron una acogida favorable tanto por los participantes en los mercados como por las instituciones financieras internacionales.</p>
+<p class="parrafo">Por ello, en la misma línea marcada por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, de tratar de disipar las incertidumbres que vienen dificultando la normalización del sector financiero español y la recuperación de su función canalizadora del ahorro a la economía real, el presente real decreto-ley establece, en el Capítulo I, requerimientos de cobertura adicionales a los establecidos en aquél, por el deterioro de las financiaciones vinculadas a la actividad inmobiliaria clasificadas como en situación normal. Estos nuevos requerimientos se establecen, de modo análogo a lo anterior, por una sola vez, de manera diferenciada en función de las diversas clases de financiaciones.</p>
+<p class="parrafo">La metodología empleada respeta el criterio recogido en las normas internacionales de contabilidad en la medida en que, en relación con los activos a los que va dirigida, trata de aproximar las menores expectativas de mercado respecto de las reflejadas en los estados financieros de las entidades, evidenciadas mediante unas capitalizaciones de mercado sensiblemente inferiores a sus valores teórico contables, por lo que se contempla reconocer una pérdida incurrida si el importe recuperable de un activo es inferior a su valor en libros, introduciendo una mera presunción de pérdida mínima a considerar.</p>
+<p class="parrafo">Por otro lado, se establecen las disposiciones precisas para asegurar el cumplimiento de los nuevos requerimientos en coherencia con los plazos establecidos en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, para lo cual las entidades de crédito habrán de presentar al Banco de España, no más tarde del próximo 11 de junio, un plan en el que detallen las medidas que tienen previsto adoptar para dicho cumplimiento.</p>
+<p class="parrafo">Asimismo, en coherencia con lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, se ha establecido un mecanismo de flexibilización del plazo de cumplimiento de los nuevos requerimientos de provisiones para aquellas entidades que vayan a acometer procesos de integración, que dispondrán de un plazo de doce meses a partir de la autorización del respectivo proceso. Con el fin de evitar ineficiencias en la presentación de los proyectos de procesos de integración, en virtud de los que pudieran surgir por los nuevos requerimientos establecidos en el presente real decreto-ley, se prorroga hasta el próximo 30 de junio el plazo de presentación de dichos proyectos previsto en el real decreto-ley antes citado.</p>
+<p class="parrafo">En el supuesto de que las entidades de crédito, para cumplir con los nuevos requerimientos de cobertura del riesgo inmobiliario, deterioren su solvencia de modo tal que su capital principal o sus recursos propios resulten deficitarios, habrán de prever en su plan de cumplimiento las medidas alternativas que garanticen lo previsto en este real decreto-ley. En particular, si así lo considera el Banco de España a la vista de la situación económica-financiera de las entidades, estas vendrán obligadas a solicitar apoyo financiero público a través de la intervención del Fondo de Reestructuración Ordenada Bancaria, institución que podrá inyectar recursos en las entidades a través de la adquisición bien de capital ordinario, o bien de otros instrumentos convertibles en capital.</p>
+<p class="parrafo">Con el fin de aislar y dar salida en el mercado a los activos cuya integración en el balance de las entidades está lastrando la recuperación del crédito, en el capítulo II se prevé la constitución de sociedades de capital a las que las entidades de crédito deberán aportar todos los inmuebles adjudicados o recibidos en pago de deudas relacionadas con el suelo para la promoción inmobiliaria y con las construcciones o promociones inmobiliarias. Para ello es preciso garantizar que su valoración resulte ajustada a la realidad del mercado así como la profesionalización de la gestión de las sociedades citadas.</p>
+<p class="parrafo">Asimismo, el Real Decreto-ley establece las reglas necesarias para garantizar la neutralidad fiscal de las operaciones que se realicen en la constitución de las sociedades para la gestión de activos. Con el objeto de estimular la venta de los activos inmobiliarios, en relación con el Impuesto sobre Sociedades, Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre la Renta de no Residentes, se introduce una exención parcial de las rentas derivadas de la transmisión de bienes inmuebles urbanos que se adquieran a partir de la entrada en vigor del presente Real Decreto-ley y hasta el 31 de diciembre de 2012 cuando se cumplan determinados requisitos.</p>
+<p class="parrafo">Finalmente, se moderan los aranceles notariales y registrales que serán de aplicación en los supuestos de traspasos de activos financieros o inmobiliarios como consecuencia de operaciones de saneamiento y reestructuración de entidades financieras En definitiva, las medidas previstas en este real decreto-ley y, en concreto, las exigencias adicionales de provisiones, vienen a reforzar la solvencia del sector financiero y a sanear sus balances. Esto fortalecerá la credibilidad en nuestro sistema financiero en el actual contexto, lo que a su vez contribuirá a la estabilidad financiera no sólo en el sector, sino del conjunto de la economía nacional. Es por ello que la adopción de tales medidas exige acudir al procedimiento del Real Decreto-ley, cumpliéndose los requisitos del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a86" target="_blank" title="Abre nueva ventana">artículo 86 de la Constitución Española</a> en cuanto a su extraordinaria y urgente necesidad.</p>
+<p class="parrafo">En su virtud, haciendo uso de la autorización contenida en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a86" target="_blank" title="Abre nueva ventana">artículo 86 de la Constitución española</a>, a propuesta de los Ministros de Economía y Competitividad y de Hacienda y Administraciones Públicas y previa deliberación del Consejo de Ministros en su reunión del día 11 de mayo de 2012,</p>
+<p class="centro_redonda">DISPONGO:</p>
+<blockquote>
+  <p class="nota_pie">Redactado conforme a la corrección de errores publicada en BOE núm. 129, de 30 de mayo de 2012. <a href="/buscar/doc.php?id=BOE-A-2012-7137" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-7137</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci">
+            <p class="bloque">[Bloque 3: #ci]</p>
+
+<h4 class="capitulo_num">CAPÍTULO I</h4>
+<h4 class="capitulo_tit">Saneamiento de las entidades de crédito</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1">
+            <p class="bloque">[Bloque 4: #a1]</p>
+
+<h5 class="articulo">Artículo 1. Medidas para el saneamiento de los balances de las entidades de crédito.</h5>
+<p class="parrafo">1. Sobre el saldo vivo a 31 de diciembre de 2011 de las financiaciones relacionadas con el suelo para promoción inmobiliaria y con las construcciones o promociones inmobiliarias, correspondientes a la actividad en España de las entidades de crédito y grupos consolidables de entidades de crédito, a las que se refiere el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículo 1.2 del Real Decreto-ley 2/2012, de 3 de febrero</a>, de saneamiento del sector financiero, se constituirán, por una sola vez, las coberturas que se indican en el anexo del presente real decreto-ley con carácter adicional a las establecidas en aquella norma. El importe de dichas coberturas podrá ser utilizado en la forma prevista en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículo 1.2 del Real Decreto-ley 2/2012, de 3 de febrero</a>.</p>
+<p class="parrafo">2. Si a 31 de diciembre de 2013 el importe de las citadas coberturas no hubiese sido aplicado en su integridad a la finalidad antes indicada, el saldo remanente de las mismas será, en su caso, asignado a las coberturas de aquellos activos que se determinen por el Banco de España.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2">
+            <p class="bloque">[Bloque 5: #a2]</p>
+
+<h5 class="articulo">Artículo 2. Plan de cumplimiento.</h5>
+<p class="parrafo">1. Las entidades de crédito y los grupos consolidables de entidades de crédito deberán cumplir lo previsto en el artículo 1 de este real decreto-ley antes del 31 de diciembre de 2012.</p>
+<p class="parrafo">Las entidades de crédito que, durante el ejercicio 2012, lleven a cabo procesos de integración que supongan una transformación significativa de entidades que no pertenezcan a un mismo grupo dispondrán de doce meses desde que obtengan la preceptiva autorización para cumplir lo previsto en el artículo 1 de este real decreto-ley, siempre que la integración se lleve a cabo a través de operaciones que supongan modificaciones estructurales o adquisición de entidades participadas mayoritariamente por el Fondo de Reestructuración Ordenada Bancaria o en las que éste haya sido designado administrador provisional, incluya medidas tendentes a la mejora de su gobierno corporativo, incorpore un plan de desinversión de activos relacionados con riesgos inmobiliarios, así como compromisos de incrementar el crédito a familias y pequeñas y medianas empresas.</p>
+<p class="parrafo">2. Para ello, las entidades de crédito y los grupos consolidables de entidades de crédito presentarán al Banco de España, hasta el 11 de junio de 2012, un plan en el que detallarán las medidas que tienen previsto adoptar para dar cumplimiento a lo previsto en el artículo 1 de este real decreto-ley, incluyendo un programa de desinversión de activos relacionados con riesgos inmobiliarios y un calendario de ejecución del mismo.</p>
+<p class="parrafo">Cuando del plan resulte que la entidad o el grupo consolidable de entidades de crédito, una vez constituidas las provisiones exigidas en el artículo 1 de este real decreto-ley, puedan incurrir en déficit de capital principal o de recursos propios computables, deberán incluir en el citado plan las medidas que tienen previsto acometer para no incurrir en dicho déficit y cuyo plazo de ejecución no podrá ser superior a cinco meses.</p>
+<p class="parrafo">3. El plan presentado deberá ser aprobado por el Banco de España en el plazo de quince días hábiles, pudiendo exigir éste las modificaciones o las medidas adicionales que considere necesarias para garantizar el cumplimiento de lo previsto en este real decreto-ley.</p>
+<p class="parrafo">En particular, el Banco de España valorará la probabilidad de que las medidas previstas por la entidad o el grupo consolidable de entidades de crédito puedan llevarse a efecto en los plazos previstos y, si así lo considera necesario, a la vista de las circunstancias concurrentes, podrá imponer medidas adicionales, incluida, en particular, la solicitud de apoyo financiero del Fondo de Reestructuración Ordenada Bancaria, cuyo otorgamiento se ajustará a lo dispuesto en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575#a9" target="_blank" title="Abre nueva ventana">artículos 9.3 y 10.3 del Real Decreto Ley 9/2009, de 26 de junio</a>, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito.</p>
+<p class="parrafo">4. Sin perjuicio de la responsabilidad administrativa en que puedan incurrir la entidad y quienes ostenten cargos de administración y dirección en la misma, el incumplimiento grave de alguna de las medidas incluidas en el plan aprobado por el Banco de España, que ponga en peligro la consecución de los objetivos del plan, podrá determinar la aplicación de lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575#a7" target="_blank" title="Abre nueva ventana">artículo 7 del Real Decreto-ley 9/2009, de 26 de junio</a>, cuando la entidad en cuestión se encuentre en la situación prevista en el artículo 6 de la citada norma.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="cii">
+            <p class="bloque">[Bloque 6: #cii]</p>
+
+<h4 class="capitulo_num">CAPÍTULO II</h4>
+<h4 class="capitulo_tit">Sociedades para la gestión de activos</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3">
+            <p class="bloque">[Bloque 7: #a3]</p>
+
+<h5 class="articulo">Artículo 3. Constitución y régimen jurídico.</h5>
+<p class="parrafo">1. Los activos adjudicados o recibidos en pago de deudas a que se refiere el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículo 1.1 del Real Decreto-Ley 2/2012, de 3 de febrero</a>, deberán ser aportados por las entidades de crédito a una sociedad anónima en los términos establecidos en el presente capítulo. Igualmente habrán de aportarse aquellos otros activos adjudicados o recibidos en pago de deudas con posterioridad 31 de diciembre de 2011.</p>
+<p class="parrafo">2. Estas sociedades se regirán por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544" target="_blank" title="Abre nueva ventana">texto refundido de la Ley de Sociedades de Capital</a>, aprobado por el Real Decreto-legislativo 1/2010, de 2 de julio, sin perjuicio de lo previsto en el presente real decreto-ley.</p>
+<p class="parrafo">3. El objeto social exclusivo de las sociedades a las que aporten sus activos las entidades que hubiesen recibido apoyo financiero del Fondo de Reestructuración Ordenada Bancaria será la administración y enajenación, ya sea de forma directa o indirecta, de los activos aportados a la misma.</p>
+<p class="parrafo">4. En el caso de entidades participadas mayoritariamente por el Fondo de Reestructuración Ordenada Bancaria así como en el de entidades en las que el Fondo haya sido designado administrador provisional, el Fondo decidirá si la entidad de crédito debe o no constituir una sociedad de las previstas en este capítulo.</p>
+<p class="parrafo">Con carácter previo a la decisión de creación de dichas sociedades el Fondo de Reestructuración Ordenada Bancaria elevará al Ministro de Hacienda y Administraciones Públicas una memoria económica en la que se detalle la programación económico-financiera para el período de duración previsto. Sobre la base de dicha memoria, la Intervención General de la Administración del Estado informará de los posibles efectos de esta operación en las cuentas públicas al Ministro de Hacienda y Administraciones Públicas, el cual podrá oponerse motivadamente en el plazo de diez días a contar desde que le sea elevada la citada memoria.</p>
+<p class="parrafo">5. Reglamentariamente podrán establecerse instrumentos de apoyo financiero a las adquisiciones de capital en dichas sociedades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4">
+            <p class="bloque">[Bloque 8: #a4]</p>
+
+<h5 class="articulo">Artículo 4. Aportación de los activos.</h5>
+<p class="parrafo">1. Las aportaciones a la sociedad deberán efectuarse antes de que termine el plazo de dotación de provisiones que resulte de aplicación a la entidad, según lo previsto en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículos 1 y 2 del Real Decreto-ley 2/2012, de 3 de febrero</a>, y el artículo 2 del presente real decreto-ley.</p>
+<p class="parrafo">2. Las aportaciones a la sociedad se valorarán por su valor razonable. En ausencia de valor razonable o cuando exista dificultad para obtenerlo, se valorarán por su valor en libros, que se determinará tomando en consideración las provisiones que los activos deban tener constituidas en aplicación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículo 1.1 del Real Decreto-ley 2/2012, de 3 febrero</a>, y del artículo 1.1 del presente Real Decreto-ley.</p>
+<p class="parrafo">En el caso de que, en el momento de la aportación a la sociedad, los activos no tuviesen constituidas las provisiones mencionadas en el párrafo anterior, dichas provisiones deberán ser completadas por la sociedad beneficiaria de la aportación en las fechas en que resulten exigibles de acuerdo con lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, y en el presente Real Decreto-ley.</p>
+<p class="parrafo">A los efectos de lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544#a67" target="_blank" title="Abre nueva ventana">artículo 67 de la Ley de Sociedades de Capital</a>, la valoración establecida conforme a los párrafos anteriores sustituirá la valoración de experto independiente prevista en dicho precepto, siempre que la aportación se realice dentro del calendario de provisionamiento al que viniera obligada la entidad aportante.</p>
+<p class="parrafo">3. Las entidades que hayan recibido apoyo financiero del Fondo de Reestructuración Ordenada Bancaria en virtud de lo previsto en el artículo 2 de este real decreto-ley dispondrán de un plazo de 3 años a contar desde su entrada en vigor, para adoptar y ejecutar las medidas precisas para que la vinculación de la sociedad para la gestión de activos con la entidad sea como máximo la de empresa asociada.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5">
+            <p class="bloque">[Bloque 9: #a5]</p>
+
+<h5 class="articulo">Artículo 5. Enajenación de activos.</h5>
+<p class="parrafo">Las sociedades participadas por las entidades de crédito que reciban apoyo financiero al amparo de lo previsto en este real decreto-ley estarán obligadas a enajenar anualmente, al menos, un 5 % de sus activos a un tercero distinto de la entidad de crédito aportante o de cualquier sociedad de su grupo. Los administradores de dichas sociedades deberán tener experiencia acreditada en la gestión de activos inmobiliarios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a6">
+            <p class="bloque">[Bloque 10: #a6]</p>
+
+<h5 class="articulo">Artículo 6. Bases de datos</h5>
+<p class="parrafo">Las entidades de crédito deberán contar con bases de datos con la información necesaria para la gestión de los activos que deben aportar a la sociedad de acuerdo con lo previsto en el artículo 3 de este real decreto-ley. El Banco de España, en el plazo de dos meses desde la entrada en vigor del presente Real Decreto-ley determinará los requisitos que deben cumplir estas bases de datos. Dichas bases deberán ser transferidas a la sociedad antes de que termine el plazo de dotación de provisiones que resulte de aplicación a la entidad, según lo previsto en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674#a1" target="_blank" title="Abre nueva ventana">artículos 1 y 2 del Real Decreto-ley 2/2012, de 3 de febrero</a>, y el artículo 2 del presente Real Decreto-ley.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ciii">
+            <p class="bloque">[Bloque 11: #ciii]</p>
+
+<h4 class="capitulo_num">CAPÍTULO III</h4>
+<h4 class="capitulo_tit">Régimen sancionador</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7">
+            <p class="bloque">[Bloque 12: #a7]</p>
+
+<h5 class="articulo">Artículo 7. Infracciones y sanciones.</h5>
+<p class="parrafo">1. Las obligaciones previstas en este real decreto-ley se considerarán normas de ordenación y disciplina, incurriendo las entidades de crédito y quienes ostenten cargos de administración y dirección en las mismas que las incumplan en responsabilidad administrativa sancionable con arreglo a lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1988-18845#ti" target="_blank" title="Abre nueva ventana">título I de la Ley 26/1988, de 29 de julio</a>, sobre Disciplina e Intervención de las Entidades de Crédito.</p>
+<p class="parrafo">2. En particular, el incumplimiento de lo previsto en este real decreto-ley se considerará infracción grave o muy grave de acuerdo con lo previsto en la letra h) del artículo 5 y en la letra c) del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1988-18845#a4" target="_blank" title="Abre nueva ventana">artículo 4 de la Ley 26/1988, de 29 de julio</a>.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="civ">
+            <p class="bloque">[Bloque 13: #civ]</p>
+
+<h4 class="capitulo_num">CAPÍTULO IV</h4>
+<h4 class="capitulo_tit">Régimen fiscal de las operaciones de aportación de activos a sociedades para la gestión de activos</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a8">
+            <p class="bloque">[Bloque 14: #a8]</p>
+
+<h5 class="articulo">Artículo 8. Régimen fiscal.</h5>
+<p class="parrafo">1. El régimen fiscal establecido en el capítulo VIII del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456#tvii" target="_blank" title="Abre nueva ventana">título VII del texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por el Real Decreto Legislativo 4/2004, de 5 de marzo</a>, para las operaciones mencionadas en el artículo 83 de dicha Ley, incluidos sus efectos en los demás tributos, se aplicará a las transmisiones de activos y pasivos que se realicen en cumplimiento de lo dispuesto en el artículo 3 de este real decreto-ley, aun cuando no se correspondan con las operaciones mencionadas en el artículo 83 y 94 de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328" target="_blank" title="Abre nueva ventana">Ley del Impuesto sobre Sociedades</a>.</p>
+<p class="parrafo">2. No será de aplicación la excepción a la exención prevista en el apartado 2 del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1988-18764#a108" target="_blank" title="Abre nueva ventana">artículo 108 de la Ley 24/1988, de 28 de julio</a>, del Mercado de Valores, a las transmisiones posteriores de las participaciones recibidas como consecuencia de la aportación de activos a las sociedades para la gestión de activos previstas en el artículo 3 de este real decreto-ley y de las participaciones de entidades de crédito afectadas por planes de integración reguladas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575" target="_blank" title="Abre nueva ventana">Real Decreto-ley 9/2009, de 26 de junio</a>, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito.</p>
+<p class="parrafo">3. Las entidades de crédito que realicen las operaciones mencionadas anteriormente, podrán instar al Banco de España que solicite informe a la Dirección General de Tributos del Ministerio de Hacienda y Administraciones Públicas, sobre las consecuencias tributarias que se deriven de las operaciones a que se refiere el apartado 1 de este artículo.</p>
+<p class="parrafo">El informe se emitirá en el plazo máximo de un mes, y tendrá efectos vinculantes para los órganos y entidades de la Administración tributaria encargados de la aplicación de los tributos.</p>
+<blockquote>
+  <p class="nota_pie">Redactado conforme a la corrección de errores publicada en BOE núm. 129, de 30 de mayo de 2012. <a href="/buscar/doc.php?id=BOE-A-2012-7137" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-7137</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="daprimera">
+            <p class="bloque">[Bloque 15: #daprimera]</p>
+
+<h5 class="articulo">Disposición adicional primera. Tratamiento excepcional de las participaciones preferentes y otros instrumentos en circulación.</h5>
+<p class="parrafo">Las entidades de crédito que tengan en circulación participaciones preferentes o instrumentos de deuda obligatoriamente convertibles en acciones emitidos antes de la entrada en vigor de este real decreto-ley o canjeados por los anteriores podrán incluir, en el plan al que se refiere el artículo 2 de este real decreto-ley, la solicitud de diferir por un plazo no superior a doce meses el pago de la remuneración prevista, a pesar de que, como consecuencia del saneamiento que hayan tenido que llevar a cabo según lo previsto en este real decreto-ley, no dispongan de beneficios o reservas distribuibles suficientes o exista un déficit de recursos propios en la entidad de crédito emisora o dominante.</p>
+<p class="parrafo">El pago de la remuneración así diferido solamente podrá efectuarse transcurrido el plazo de diferimiento si se dispone de beneficios o reservas distribuibles suficientes y no existe un déficit de recursos propios en la entidad de crédito emisora o dominante.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dasegunda">
+            <p class="bloque">[Bloque 16: #dasegunda]</p>
+
+<h5 class="articulo">Disposición adicional segunda. Arancel de los notarios y registradores de la propiedad.</h5>
+<p class="parrafo">En los supuestos que requieran la previa inscripción de traspasos de activos financieros o inmobiliarios como consecuencia de operaciones de saneamiento y reestructuración de entidades financieras, todas las transmisiones realizadas se practicarán necesariamente en un solo asiento, y solo se devengarán los honorarios correspondientes a la última operación inscrita, conforme al número 2.1 del arancel de los registradores, o en su caso, el número 2.2, si se trata de préstamos o créditos hipotecarios, sobre la base del capital inscrito en el Registro.</p>
+<p class="parrafo">En los supuestos de novación, subrogación o cancelación de hipoteca, incluso cuando previamente deba hacerse constar el traspaso de activos financieros o inmobiliarios como consecuencia de operaciones de saneamiento y reestructuración de entidades financieras, las inscripciones que se practiquen solo devengarán los honorarios establecidos en el número 2.2. del arancel de los registradores, correspondientes a la novación, subrogación o cancelación, tomando como base el capital inscrito, reducido al 60 por ciento, con un mínimo de 24 euros.</p>
+<p class="parrafo">Para determinar los honorarios notariales de las escrituras de novación, subrogación o cancelación de préstamos y créditos hipotecarios se aplicará, por todos los conceptos, el número 2.2.f. del arancel de los notarios, tomando como base el capital inscrito o garantizado, reducido en todo caso al 70 por ciento y con un mínimo de 90 euros. No obstante lo anterior, se aplicará el número 7 del arancel a partir del folio quincuagésimo primero inclusive.</p>
+<p class="parrafo">Esta disposición se aplicará respecto de todas las inscripciones practicadas y escrituras autorizadas a partir de la entrada en vigor de este real decreto-ley.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="datercera">
+            <p class="bloque">[Bloque 17: #datercera]</p>
+
+<h5 class="articulo">Disposición adicional tercera. Régimen específico del Instituto de Crédito Oficial.</h5>
+<p class="parrafo">El Instituto de Crédito Oficial queda excluido del ámbito de aplicación de este real decreto-ley.</p>
+<blockquote>
+  <p class="nota_pie">Se añade por la disposición final 5 del Real Decreto-ley 19/2012, de 25 de mayo. <a href="/buscar/doc.php?id=BOE-A-2012-6929" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-6929</a>.</p>
+</blockquote>
+
+<p class="pie_unico">Texto a&ntilde;adido, publicado el 26/05/2012, en vigor a partir del 27/05/2012.</p>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dtunica">
+            <p class="bloque">[Bloque 18: #dtunica]</p>
+
+<h5 class="articulo">Disposición transitoria única. Régimen aplicable a los títulos convertibles adquiridos por el Fondo de Reestructuración Ordenada Bancaria antes de la entrada en vigor de este real decreto-ley.</h5>
+<p class="parrafo">Lo dispuesto en los párrafos quinto y sexto del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575#a10" target="_blank" title="Abre nueva ventana">artículo 10.2 del Real Decreto-ley 9/2009, de 26 de junio</a>, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito, según la nueva redacción introducida por este real decreto-ley, será asimismo aplicable a los títulos convertibles adquiridos por el Fondo de Reestructuración Ordenada Bancaria con anterioridad a la entrada en vigor del presente Real Decreto-ley.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ddunica">
+            <p class="bloque">[Bloque 19: #ddunica]</p>
+
+<h5 class="articulo">Disposición derogatoria única. Derogación normativa.</h5>
+<p class="parrafo">Quedan derogadas cuantas normas de igual o inferior rango se opongan a lo previsto en el presente Real Decreto-ley.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfprimera">
+            <p class="bloque">[Bloque 20: #dfprimera]</p>
+
+<h5 class="articulo">Disposición final primera. Modificación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por el Real Decreto Legislativo 4/2004, de 5 de marzo</a>.</h5>
+<p class="parrafo">Con efectos desde la entrada en vigor de este real decreto-ley, se añade una nueva disposición adicional decimosexta al <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por el Real Decreto Legislativo 4/2004, de 5 de marzo</a>, que queda redactada de la siguiente forma:</p>
+<p class="sangrado_articulo">«Disposición adicional decimosexta. Exención de rentas derivadas de la transmisión de determinados inmuebles.</p>
+<p class="sangrado">Estarán exentas en un 50 por ciento las rentas positivas derivadas de la transmisión de bienes inmuebles de naturaleza urbana que tengan la condición de activo no corriente o que hayan sido clasificados como activos no corrientes mantenidos para la venta y que hubieran sido adquiridos a título oneroso a partir de la entrada en vigor del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280" target="_blank" title="Abre nueva ventana">Real Decreto-ley 18/2012</a> y hasta el 31 de diciembre de 2012.</p>
+<p class="sangrado">No formarán parte de la renta con derecho a la exención el importe de las pérdidas por deterioro relativas a los inmuebles, ni las cantidades correspondientes a la reversión del exceso de amortización que haya sido fiscalmente deducible en relación con la amortización contabilizada.</p>
+<p class="sangrado">La exención prevista en esta disposición será compatible, en su caso, con la aplicación de la deducción por reinversión de beneficios extraordinarios prevista en el artículo 42 de esta Ley.</p>
+<p class="sangrado">No resultará de aplicación la presente disposición cuando el inmueble se hubiera adquirido o transmitido a una persona o entidad respecto de la que se produzca alguna de las circunstancias establecidas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627#art42" target="_blank" title="Abre nueva ventana">artículo 42 del Código de Comercio</a>, con independencia de la residencia y de la obligación de formular cuentas anuales consolidadas, o al cónyuge de la persona anteriormente indicada o a cualquier persona unida a esta por parentesco, en línea recta o colateral, por consanguinidad o afinidad, hasta el segundo grado incluido.»</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfsegunda">
+            <p class="bloque">[Bloque 21: #dfsegunda]</p>
+
+<h5 class="articulo">Disposición final segunda. Modificación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo</a>.</h5>
+<p class="parrafo">Con efectos desde la entrada en vigor de este real decreto-ley, se añade una disposición adicional cuarta al <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527" target="_blank" title="Abre nueva ventana">texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo</a>, que queda redactada de la siguiente forma:</p>
+<p class="sangrado_articulo">«Disposición adicional cuarta. Exención parcial en ganancias patrimoniales derivadas de la transmisión de determinados bienes inmuebles.</p>
+<p class="sangrado">Estarán exentas en un 50 por ciento las ganancias patrimoniales obtenidas sin mediación de establecimiento permanente en España, derivadas de la enajenación de bienes inmuebles urbanos situados en territorio español, que hubiesen sido adquiridos a partir de la entrada en vigor del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280" target="_blank" title="Abre nueva ventana">Real Decreto-ley 18/2012</a> y hasta el 31 de diciembre de 2012.</p>
+<p class="sangrado">No resultará de aplicación lo dispuesto en el párrafo anterior cuando concurran las circunstancias previstas en el segundo párrafo de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#datrigesimaseptima" target="_blank" title="Abre nueva ventana">disposición adicional trigésima séptima de la Ley 35/2006, de 28 de noviembre</a>, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, o tratándose de entidades, las circunstancias previstas en el último párrafo de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2004-4456#dadecimosexta" target="_blank" title="Abre nueva ventana">disposición adicional decimosexta del texto refundido de la Ley del Impuesto sobre Sociedades, aprobado por el Real Decreto Legislativo 4/2004, de 5 de marzo</a>.»</p>
+<blockquote>
+  <p class="nota_pie">Redactado conforme a la corrección de errores publicada en BOE núm. 129, de 30 de mayo de 2012. <a href="/buscar/doc.php?id=BOE-A-2012-7137" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-7137</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dftercera">
+            <p class="bloque">[Bloque 22: #dftercera]</p>
+
+<h5 class="articulo">Disposición final tercera. Modificación de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" target="_blank" title="Abre nueva ventana">Ley 35/2006, de 28 de noviembre</a>, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio.</h5>
+<p class="parrafo">Con efectos desde la entrada en vigor de este real decreto-ley, se añade una nueva disposición adicional trigésima séptima a la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" target="_blank" title="Abre nueva ventana">Ley 35/2006, de 28 de noviembre</a>, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, que queda redactada de la siguiente forma:</p>
+<p class="sangrado_articulo">«Disposición adicional trigésima séptima. Ganancias patrimoniales procedentes de la transmisión de determinados inmuebles.</p>
+<p class="sangrado">Estarán exentas en un 50 por ciento las ganancias patrimoniales que se pongan de manifiesto con ocasión de la transmisión de inmuebles urbanos adquiridos a título oneroso a partir de la entrada en vigor del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280" target="_blank" title="Abre nueva ventana">Real Decreto-ley 18/2012</a> y hasta el 31 de diciembre de 2012.</p>
+<p class="sangrado">No resultará de aplicación lo dispuesto en el párrafo anterior cuando el inmueble se hubiera adquirido o transmitido a su cónyuge, a cualquier persona unida al contribuyente por parentesco, en línea recta o colateral, por consanguinidad o afinidad, hasta el segundo grado incluido, a una entidad respecto de la que se produzca, con el contribuyente o con cualquiera de las personas anteriormente citadas, alguna de las circunstancias establecidas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627#art42" target="_blank" title="Abre nueva ventana">artículo 42 del Código de Comercio</a>, con independencia de la residencia y de la obligación de formular cuentas anuales consolidadas.</p>
+<p class="sangrado">Cuando el inmueble transmitido fuera la vivienda habitual del contribuyente y resultara de aplicación lo dispuesto en el segundo párrafo del artículo 38 de esta Ley, se excluirá de tributación la parte proporcional de la ganancia patrimonial obtenida, una vez aplicada la exención prevista en esta disposición adicional, que corresponda a la cantidad reinvertida en los términos y condiciones previstos en dicho artículo.»</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfcuarta">
+            <p class="bloque">[Bloque 23: #dfcuarta]</p>
+
+<h5 class="articulo">Disposición final cuarta. Modificación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575" target="_blank" title="Abre nueva ventana">Real Decreto-ley 9/2009, de 26 de junio</a>, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito.</h5>
+<p class="parrafo">El <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2009-10575" target="_blank" title="Abre nueva ventana">Real Decreto-ley 9/2009, de 26 de junio</a>, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito, queda modificado como sigue:</p>
+<p class="parrafo_2">Uno. El apartado 1 del artículo 10 queda redactado del siguiente modo:</p>
+<p class="sangrado_2">«1. El Fondo de Reestructuración Ordenada Bancaria podrá adquirir títulos emitidos por entidades de crédito que, sin incurrir en las circunstancias establecidas en el artículo 6 del presente Real Decreto-ley, vayan a acometer un proceso de integración y necesiten reforzar sus recursos propios. Igualmente podrá adquirir títulos emitidos por entidades de crédito que requieran apoyo financiero conforme a lo previsto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280#a2" target="_blank" title="Abre nueva ventana">artículo 2 del Real Decreto-ley 18/2012</a>, sobre saneamiento y venta de los activos inmobiliarios del sector financiero, en cuyo caso tendrán que presentar un plan de recapitalización conforme a lo previsto en el capítulo II.</p>
+<p class="sangrado">Las entidades que, de acuerdo con lo previsto en el párrafo anterior, vayan a acometer un proceso de integración, elaborarán un plan de integración que deberá contener compromisos específicos de mejora de su eficiencia, de racionalización de su administración y gerencia, así como de redimensionamiento de su capacidad productiva y todo ello con la finalidad de mejorar sus perspectivas futuras.</p>
+<p class="sangrado">El plan de integración deberá contar con la aprobación del Banco de España.</p>
+<p class="sangrado">Al decidir sobre la adopción de las medidas propuestas, el Fondo de Reestructuración Ordenada Bancaria deberá tener en cuenta el plazo y riesgo de la operación, la necesidad de evitar distorsiones competitivas así como que con ello se facilite la ejecución y cumplimiento del plan de integración aprobado por el Banco de España. En todo caso, la decisión estará presidida por el principio de utilización más eficiente de los recursos públicos.</p>
+<p class="sangrado">El pago del precio de adquisición o suscripción de los títulos a los que se refiere este artículo podrá realizarse en efectivo o mediante la entrega de valores representativos de deuda pública o valores emitidos por el propio Fondo de Reestructuración Ordenada Bancaria. Asimismo, el Fondo de Reestructuración Ordenada Bancaria podrá satisfacer dicho precio mediante compensación de los créditos que ostente frente a la correspondiente entidad.»</p>
+<p class="parrafo_2">Dos. El apartado 2 del artículo 10 queda redactado como sigue:</p>
+<p class="sangrado_2">«2. Los títulos a los que se refiere el apartado 1 anterior serán instrumentos convertibles en acciones o en aportaciones al capital social.</p>
+<p class="sangrado">Las entidades emisoras deberán aprobar, en el momento de la adopción del acuerdo de emisión de los títulos previstos en este artículo, los acuerdos necesarios para la ampliación de capital o la suscripción de aportaciones al capital en la cuantía necesaria. Los términos y condiciones de la retribución de los títulos se establecerán teniendo en cuenta la normativa de ayudas de Estado.</p>
+<p class="sangrado">La adquisición de títulos convertibles por parte del Fondo de Reestructuración Ordenada Bancaria requerirá que se acuerde la supresión del derecho de suscripción preferente de los accionistas existentes en el momento de la adopción del acuerdo de emisión, o la renuncia por todos ellos a ese derecho.</p>
+<p class="sangrado">Las entidades emisoras deberán comprometerse a recomprar o amortizar los títulos suscritos por el Fondo de Reestructuración Ordenada Bancaria tan pronto como estén en condiciones de hacerlo en los términos comprometidos en el plan de integración o de recapitalización. Transcurridos cinco años desde el desembolso sin que los títulos hayan sido recomprados por la entidad, el Fondo de Reestructuración Ordenada Bancaria podrá solicitar su conversión en acciones o en aportaciones sociales del emisor. El ejercicio de esta facultad deberá realizarse, en su caso, en el plazo máximo de seis meses contados a partir de la finalización del quinto año desde que se produjo el desembolso. No obstante lo anterior, el acuerdo de emisión deberá contemplar asimismo la convertibilidad de los títulos a instancia del Fondo de Reestructuración Ordenada Bancaria si, antes del transcurso del plazo de cinco años, el Banco de España considera improbable, a la vista de la situación de la entidad o su grupo, que su recompra o amortización pueda llevarse a cabo en ese plazo.</p>
+<p class="sangrado">La conversión se realizará en condiciones de mercado y de acuerdo con el valor económico de la entidad emisora de los títulos en ese momento, que se determinará con arreglo a lo previsto en el artículo 9.5 del presente Real Decreto-ley. La entidad emisora y sus accionistas adoptarán los acuerdos y realizarán las actuaciones necesarias para asegurar que la conversión se realiza de acuerdo con dicho valor económico, debiendo instrumentar, en la medida necesaria para alcanzar dicho objetivo, las operaciones de transmisión de acciones o aportaciones o de reducción de capital, ya sea por compensación de pérdidas, constitución o incremento de reservas o devolución del valor de aportaciones, que resulten oportunas.</p>
+<p class="sangrado">Sin perjuicio de cualesquiera otras acciones y responsabilidades y, en particular, de lo previsto en los artículos 6 y 7 de este real decreto-ley, en caso de incumplimiento por parte de la entidad emisora o de aquellos de sus accionistas que tengan la condición de entidad de crédito de la obligación establecida en el párrafo anterior en el plazo establecido al efecto por el Fondo de Reestructuración Ordenada Bancaria, el Banco de España podrá acordar, además de cualesquiera otras medidas cautelares que estime oportuno, la sustitución provisional de los órganos de administración o dirección de la entidad emisora y de aquellos de sus accionistas que tengan la condición de entidad de crédito hasta que se complete la operación de conversión, designando como administrador provisional al Fondo de Reestructuración Ordenada Bancaria, que, a su vez, nombrará a la persona o personas físicas que, en su nombre y en ejercicio de las funciones y facultades propias de esa condición, adoptarán los acuerdos y realizarán las actuaciones necesarias para dar efecto a la conversión. Desde el momento de su designación como administrador provisional, el Fondo de Reestructuración Ordenada Bancaria estará facultado para adoptar los acuerdos y realizar las actuaciones necesarias para completar la conversión en nombre y representación de la entidad emisora y de aquellos de sus accionistas que tengan la condición de entidad de crédito y de los que hubiera sido designado administrador provisional.</p>
+<p class="sangrado">Los títulos emitidos al amparo de lo dispuesto en este precepto serán computables como recursos propios básicos y como capital principal, sin que para ello sea obligatorio que coticen en un mercado secundario organizado. A estos efectos, no les serán de aplicación las limitaciones legalmente establecidas para la computabilidad de los recursos propios y del capital principal.</p>
+<p class="sangrado">El acuerdo de emisión de estos títulos deberá ajustarse a las restantes condiciones comprometidas en el plan de integración o de recapitalización.»</p>
+<blockquote>
+  <p class="nota_pie">Redactado conforme a la corrección de errores publicada en BOE núm. 129, de 30 de mayo de 2012. <a href="/buscar/doc.php?id=BOE-A-2012-7137" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-7137</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfquinta">
+            <p class="bloque">[Bloque 24: #dfquinta]</p>
+
+<h5 class="articulo">Disposición final quinta. Modificación del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2012-1674" target="_blank" title="Abre nueva ventana">Real Decreto-ley 2/2012, de 3 de febrero</a>, de saneamiento del sector financiero.</h5>
+<p class="parrafo">El segundo párrafo del apartado 4 del artículo 2 queda redactado como sigue:</p>
+<p class="sangrado_2">«Dicha solicitud deberá presentarse ante la Secretaría General del Tesoro y Política Financiera antes del 30 de junio de 2012. El cumplimiento de dicho plazo no será exigible en el caso de operaciones de adquisición de entidades que, a la fecha de entrada en vigor de este real decreto-ley, se encuentren participadas mayoritariamente por el Fondo de Reestructuración Ordenada Bancaria o de las que el fondo haya sido designado administrador provisional. A la misma se acompañará el proyecto que acredite el cumplimiento de los requisitos previstos en las letras a) a f) del apartado 2.»</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfsexta">
+            <p class="bloque">[Bloque 25: #dfsexta]</p>
+
+<h5 class="articulo">Disposición final sexta. Títulos competenciales.</h5>
+<p class="parrafo">El presente real decreto-ley se dicta al amparo de lo dispuesto en las reglas 6.ª, 8.ª, 11.ª, 13.ª y 14.ª del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a149" target="_blank" title="Abre nueva ventana">artículo 149.1 de la Constitución española</a>, que atribuyen al Estado la competencia sobre legislación mercantil, legislación civil, bases de la ordenación del crédito, banca y seguros, bases y coordinación de la planificación general de la actividad económica y hacienda general y Deuda del Estado, respectivamente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfseptima">
+            <p class="bloque">[Bloque 26: #dfseptima]</p>
+
+<h5 class="articulo">Disposición final séptima. Facultad de desarrollo.</h5>
+<p class="parrafo">El Gobierno podrá dictar las normas reglamentarias necesarias para el desarrollo de lo dispuesto en este real decreto-ley. En particular, mediante Real Decreto se establecerán los supuestos en los cuales las entidades emisoras de participaciones preferentes u obligaciones subordinadas deberán ofrecer su canje por acciones o por obligaciones subordinadas de la entidad emisora o de cualquiera otra de su grupo; así como los criterios para determinar el porcentaje del valor nominal de dichos instrumentos que deberán ser objeto de canje.</p>
+<p class="parrafo">Se habilita al Ministro de Economía y Competitividad para modificar lo previsto en el anexo y los plazos de cumplimiento de la obligación establecida en el artículo 1 de este real decreto-ley.</p>
+<p class="parrafo">El Banco de España aprobará las modificaciones que resulten pertinentes para acomodar lo dispuesto en la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2004-21845" target="_blank" title="Abre nueva ventana">Circular 4/2004</a> al presente Real Decreto-ley, quedando facultado para introducir las precisiones que puedan ser necesarias para asegurar la efectividad de su cumplimiento. A partir del 31 de diciembre de 2012 el Banco de España podrá modificar las coberturas previstas en el anexo de acuerdo con lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1988-18845#a48" target="_blank" title="Abre nueva ventana">artículo 48.1 de la Ley 26/1988, de 29 de julio</a>, sobre Disciplina e Intervención de las Entidades de Crédito.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dfoctava">
+            <p class="bloque">[Bloque 27: #dfoctava]</p>
+
+<h5 class="articulo">Disposición final octava. Entrada en vigor.</h5>
+<p class="parrafo">El presente Real Decreto-ley entrará en vigor el mismo día de su publicación en el «Boletín Oficial del Estado».</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="firma">
+            <p class="bloque">[Bloque 28: #firma]</p>
+
+<p class="parrafo_2">Dado en Madrid, el 11 de mayo de 2012.</p>
+<p class="firma_rey">JUAN CARLOS R.</p>
+<p class="firma_ministro">El Presidente del Gobierno,</p>
+<p class="firma_ministro">MARIANO RAJOY BREY</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="an">
+            <p class="bloque">[Bloque 29: #an]</p>
+
+<h4 class="anexo">ANEXO</h4>
+<table class="tabla">
+  <tbody>
+    <tr>
+      <th colspan="2">
+        <p class="cabeza_tabla">Tipo de financiación de construcción o promoción inmobiliaria</p>
+      </th>
+      <th>
+        <p class="cabeza_tabla">Porcentaje</p>
+        <p class="cabeza_tabla">de cobertura</p>
+      </th>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        <p class="cuerpo_tabla_izq">Con garantía real.</p>
+      </td>
+      <td>
+        <p class="cuerpo_tabla_izq">Suelo.</p>
+      </td>
+      <td>
+        <p class="cuerpo_tabla_der">45 %</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="cuerpo_tabla_izq">Promoción en curso.</p>
+      </td>
+      <td>
+        <p class="cuerpo_tabla_der">22 %</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="cuerpo_tabla_izq">Promoción terminada.</p>
+      </td>
+      <td>
+        <p class="cuerpo_tabla_der">7 %</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p class="cuerpo_tabla_izq">Sin garantía real.</p>
+      </td>
+      <td>
+        <p class="cuerpo_tabla_der">45 %</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<blockquote>
+  <p class="nota_pie">Redactado conforme a la corrección de errores publicada en BOE núm. 129, de 30 de mayo de 2012. <a href="/buscar/doc.php?id=BOE-A-2012-7137" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2012-7137</a>.</p>
+</blockquote>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+        </div> <!-- #textoxslt -->
+        <div class="caja redondeada gris info" role="alert">
+          <p>Este documento es de car&aacute;cter informativo y no tiene valor jur&iacute;dico.</p>
+          <p>Ay&uacute;denos a mejorar: puede dirigir sus comentarios y sugerencias a nuestro <a href="/contactar/formulario_completo.php">Servicio de atenci&oacute;n al ciudadano</a></p>
+        </div>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

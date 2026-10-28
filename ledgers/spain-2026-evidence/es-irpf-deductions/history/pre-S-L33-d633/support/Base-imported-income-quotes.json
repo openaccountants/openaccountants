@@ -1,0 +1,1269 @@
+{
+  "Income_resident": [
+    {
+      "source": "S0",
+      "article": "2/9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 1319,
+      "LF_end": 1319,
+      "quote": "Constituye el objeto de este Impuesto la renta del contribuyente, entendida como la totalidad de sus rendimientos, ganancias y pérdidas patrimoniales y las imputaciones de renta que se establezcan por la ley, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "2/9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 1721,
+      "LF_end": 1721,
+      "quote": "a) Que permanezca más de 183 días, durante el año natural, en territorio español. Para determinar este período de permanencia en territorio español se computarán las ausencias esporádicas, salvo que el contribuyente acredite su residencia fiscal en otro país. En el supuesto de países o territorios considerados como paraíso fiscal, la Administración tributaria podrá exigir que se pruebe la permanencia en éste durante 183 días en el año natural.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "2/9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 1725,
+      "LF_end": 1725,
+      "quote": "b) Que radique en España el núcleo principal o la base de sus actividades o intereses económicos, de forma directa o indirecta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "2/9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 1727,
+      "LF_end": 1727,
+      "quote": "Se presumirá, salvo prueba en contrario, que el contribuyente tiene su residencia habitual en territorio español cuando, de acuerdo con los criterios anteriores, resida habitualmente en España el cónyuge no separado legalmente y los hijos menores de edad que dependan de aquél.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_community": [
+    {
+      "source": "S0",
+      "article": "72",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5524,
+      "LF_end": 5524,
+      "quote": "1.º Cuando permanezcan en su territorio un mayor número de días del período impositivo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "72",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5530,
+      "LF_end": 5530,
+      "quote": "2.º Cuando no fuese posible determinar la permanencia a que se refiere el ordinal 1.º anterior, se considerarán residentes en el territorio de la Comunidad Autónoma donde tengan su principal centro de intereses. Se considerará como tal el territorio donde obtengan la mayor parte de la base imponible del Impuesto sobre la Renta de las Personas Físicas, determinada por los siguientes componentes de renta:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "72",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5538,
+      "LF_end": 5538,
+      "quote": "3.º Cuando no pueda determinarse la residencia conforme a los criterios establecidos en los ordinales 1.º y 2.º anteriores, se considerarán residentes en el lugar de su última residencia declarada a efectos del Impuesto sobre la Renta de las Personas Físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "72",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5546,
+      "LF_end": 5546,
+      "quote": "3. No producirán efecto los cambios de residencia que tengan por objeto principal lograr una menor tributación efectiva en este impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_general": [
+    {
+      "source": "S0",
+      "article": "45",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3772,
+      "LF_end": 3772,
+      "quote": "Formarán la renta general los rendimientos y las ganancias y pérdidas patrimoniales que con arreglo a lo dispuesto en el artículo siguiente no tengan la consideración de renta del ahorro, así como las imputaciones de renta a que se refieren los artículos 85, 91, 92 y 95 de esta Ley y el Capítulo II del Título VII del texto refundido de la Ley del Impuesto sobre Sociedades.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_savings": [
+    {
+      "source": "S0",
+      "article": "46",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3795,
+      "LF_end": 3795,
+      "quote": "b) Las ganancias y pérdidas patrimoniales que se pongan de manifiesto con ocasión de transmisiones de elementos patrimoniales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "46.a",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3789,
+      "LF_end": 3793,
+      "quote": "No obstante, formarán parte de la renta general los rendimientos del capital mobiliario previstos en el apartado 2 del artículo 25 de esta Ley correspondientes al exceso del importe de los capitales propios cedidos a una entidad vinculada respecto del resultado de multiplicar por tres los fondos propios, en la parte que corresponda a la participación del contribuyente, de esta última.\n\nA efectos de computar dicho exceso, se tendrá en consideración el importe de los fondos propios de la entidad vinculada reflejados en el balance correspondiente al último ejercicio cerrado con anterioridad a la fecha de devengo del Impuesto y el porcentaje de participación del contribuyente existente en esta fecha.\n\nEn los supuestos en los que la vinculación no se defina en función de la relación socios o partícipes-entidad, el porcentaje de participación a considerar será el 25 por ciento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_generalLoss": [
+    {
+      "source": "S0",
+      "article": "48",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3863,
+      "LF_end": 3863,
+      "quote": "Si el resultado de la integración y compensación a que se refiere este párrafo arrojase saldo negativo, su importe se compensará con el saldo positivo de las rentas previstas en el párrafo a) de este artículo, obtenido en el mismo período impositivo, con el límite del 25 por ciento de dicho saldo positivo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "48",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3865,
+      "LF_end": 3865,
+      "quote": "Si tras dicha compensación quedase saldo negativo, su importe se compensará en los cuatro años siguientes en el mismo orden establecido en los párrafos anteriores.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_savingsLoss": [
+    {
+      "source": "S0",
+      "article": "49",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3902,
+      "LF_end": 3902,
+      "quote": "Si el resultado de la integración y compensación a que se refiere este párrafo arrojase saldo negativo, su importe se compensará con el saldo positivo de las rentas previstas en la letra b) de este apartado, obtenido en el mismo período impositivo, con el límite del 25 por ciento de dicho saldo positivo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "49",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3904,
+      "LF_end": 3904,
+      "quote": "Si tras dicha compensación quedase saldo negativo, su importe se compensará en los cuatro años siguientes en el mismo orden establecido en los párrafos anteriores.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "49",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3912,
+      "LF_end": 3912,
+      "quote": "2. Las compensaciones previstas en el apartado anterior deberán efectuarse en la cuantía máxima que permita cada uno de los ejercicios siguientes y sin que puedan practicarse fuera del plazo a que se refiere el apartado anterior mediante la acumulación a rentas negativas de ejercicios posteriores.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "49.1.b",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3906,
+      "LF_end": 3910,
+      "quote": "b) El saldo positivo resultante de integrar y compensar, exclusivamente entre sí, en cada período impositivo, las ganancias y pérdidas patrimoniales obtenidas en el mismo a que se refiere el artículo 46 de esta Ley.\n\nSi el resultado de la integración y compensación a que se refiere este párrafo arrojase saldo negativo, su importe se compensará con el saldo positivo de las rentas previstas en la letra a) de este apartado, obtenido en el mismo período impositivo, con el límite del 25 por ciento de dicho saldo positivo.\n\nSi tras dicha compensación quedase saldo negativo, su importe se compensará en los cuatro años siguientes en el mismo orden establecido en los párrafos anteriores.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_baseReduction": [
+    {
+      "source": "S0",
+      "article": "50",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3946,
+      "LF_end": 3946,
+      "quote": "1. La base liquidable general estará constituida por el resultado de practicar en la base imponible general, exclusivamente y por este orden, las reducciones a que se refieren los artículos 51, 53, 54, 55 y disposición adicional undécima de esta Ley, sin que pueda resultar negativa como consecuencia de dichas disminuciones.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "50",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3948,
+      "LF_end": 3948,
+      "quote": "2. La base liquidable del ahorro será el resultado de disminuir la base imponible del ahorro en el remanente, si lo hubiera, de la reducción prevista en el artículo 55, sin que pueda resultar negativa como consecuencia de tal disminución.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_pension": [
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3990,
+      "LF_end": 3990,
+      "quote": "Podrán reducirse en la base imponible general las siguientes aportaciones y contribuciones a sistemas de previsión social:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 3994,
+      "LF_end": 3994,
+      "quote": "1.º Las aportaciones realizadas por los partícipes a planes de pensiones, incluyendo las contribuciones del promotor que le hubiesen sido imputadas en concepto de rendimiento del trabajo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4010,
+      "LF_end": 4010,
+      "quote": "1.º Las cantidades abonadas en virtud de contratos de seguro concertados con mutualidades de previsión social por profesionales no integrados en alguno de los regímenes de la Seguridad Social, por sus cónyuges y familiares consanguíneos en primer grado, así como por los trabajadores de las citadas mutualidades, en la parte que tenga por objeto la cobertura de las contingencias previstas en el artículo 8.6 del texto refundido de la Ley de Regulación de los Planes y Fondos de Pensiones siempre que no hayan tenido la consideración de gasto deducible para los rendimientos netos de actividades económicas, en los términos que prevé el segundo párrafo de la regla 1.ª del artículo 30.2 de esta Ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4058,
+      "LF_end": 4058,
+      "quote": "Tratándose de seguros colectivos de dependencia efectuados de acuerdo con lo previsto en la disposición adicional primera del texto refundido de la Ley de Regulación de los Planes y Fondos de Pensiones, aprobado por el Real Decreto Legislativo 1/2002, de 29 de noviembre, como tomador del seguro figurará exclusivamente la empresa y la condición de asegurado y beneficiario corresponderá al trabajador. Las primas satisfechas por la empresa en virtud de estos contratos de seguro e imputadas al trabajador tendrán un límite de reducción propio e independiente de 5.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4112,
+      "LF_end": 4112,
+      "quote": "1. Como límite máximo conjunto para las reducciones previstas en los apartados 1, 2, 3, 4 y 5 del artículo 51 de esta ley, se aplicará la menor de las cantidades siguientes:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4114,
+      "LF_end": 4114,
+      "quote": "a) El 30 por 100 de la suma de los rendimientos netos del trabajo y de actividades económicas percibidos individualmente en el ejercicio.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4116,
+      "LF_end": 4116,
+      "quote": "b) 1.500 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "51/52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4120,
+      "LF_end": 4120,
+      "quote": "1.º En 8.500 euros anuales, siempre que tal incremento provenga de contribuciones empresariales, o de aportaciones del trabajador al mismo instrumento de previsión social por importe igual o inferior a las cantidades que resulten del siguiente cuadro en función del importe anual de la contribución empresarial:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_joint": [
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6147,
+      "LF_end": 6147,
+      "quote": "1. Podrán tributar conjuntamente las personas que formen parte de alguna de las siguientes modalidades de unidad familiar:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6149,
+      "LF_end": 6149,
+      "quote": "1.ª La integrada por los cónyuges no separados legalmente y, si los hubiera:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6151,
+      "LF_end": 6151,
+      "quote": "a) Los hijos menores, con excepción de los que, con el consentimiento de los padres, vivan independientes de éstos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6153,
+      "LF_end": 6153,
+      "quote": "b) Los hijos mayores de edad incapacitados judicialmente sujetos a patria potestad prorrogada o rehabilitada.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6155,
+      "LF_end": 6155,
+      "quote": "2.ª En los casos de separación legal, o cuando no existiera vínculo matrimonial, la formada por el padre o la madre y todos los hijos que convivan con uno u otro y que reúnan los requisitos a que se refiere la regla 1.ª de este artículo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6157,
+      "LF_end": 6157,
+      "quote": "2. Nadie podrá formar parte de dos unidades familiares al mismo tiempo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6159,
+      "LF_end": 6159,
+      "quote": "3. La determinación de los miembros de la unidad familiar se realizará atendiendo a la situación existente a 31 de diciembre de cada año.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6192,
+      "LF_end": 6192,
+      "quote": "2. Los importes y límites cuantitativos establecidos a efectos de la tributación individual se aplicarán en idéntica cuantía en la tributación conjunta, sin que proceda su elevación o multiplicación en función del número de miembros de la unidad familiar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6196,
+      "LF_end": 6196,
+      "quote": "1.º Los límites máximos de reducción en la base imponible previstos en los artículos 52, 53 y 54 y en la disposición adicional undécima de esta Ley, serán aplicados individualmente por cada partícipe o mutualista integrado en la unidad familiar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6198,
+      "LF_end": 6198,
+      "quote": "2.º En cualquiera de las modalidades de unidad familiar, se aplicará, con independencia del número de miembros integrados en la misma, el importe del mínimo previsto en el apartado 1 del artículo 57, incrementado o disminuido en su caso para el cálculo del gravamen autonómico en los términos previstos en el artículo 56.3 de esta Ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6200,
+      "LF_end": 6200,
+      "quote": "Para la cuantificación del mínimo a que se refiere el apartado 2 del artículo 57 y el apartado 1 del artículo 60, ambos de esta Ley, se tendrán en cuenta las circunstancias personales de cada uno de los cónyuges integrados en la unidad familiar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6202,
+      "LF_end": 6202,
+      "quote": "En ningún caso procederá la aplicación de los citados mínimos por los hijos, sin perjuicio de la cuantía que proceda por el mínimo por descendientes y discapacidad.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6204,
+      "LF_end": 6204,
+      "quote": "3.º En la primera de las modalidades de unidad familiar del artículo 82 de esta ley, la base imponible, con carácter previo a las reducciones previstas en los artículos 51, 53 y 54 y en la disposición adicional undécima de esta Ley, se reducirá en 3.400 euros anuales. A tal efecto, la reducción se aplicará, en primer lugar, a la base imponible general sin que pueda resultar negativa como consecuencia de tal minoración. El remanente, si lo hubiera, minorará la base imponible del ahorro, que tampoco podrá resultar negativa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6206,
+      "LF_end": 6206,
+      "quote": "4.º En la segunda de las modalidades de unidad familiar del artículo 82 de esta ley, la base imponible, con carácter previo a las reducciones previstas en los artículos 51, 53 y 54 y en la disposición adicional undécima de esta Ley, se reducirá en 2.150 euros anuales. A tal efecto, la reducción se aplicará, en primer lugar, a la base imponible general sin que pueda resultar negativa como consecuencia de tal minoración. El remanente, si lo hubiera, minorará la base imponible del ahorro, que tampoco podrá resultar negativa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "82/84",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6208,
+      "LF_end": 6208,
+      "quote": "No se aplicará esta reducción cuando el contribuyente conviva con el padre o la madre de alguno de los hijos que forman parte de su unidad familiar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_minimum": [
+    {
+      "source": "S0",
+      "article": "56",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4310,
+      "LF_end": 4310,
+      "quote": "1. El mínimo personal y familiar constituye la parte de la base liquidable que, por destinarse a satisfacer las necesidades básicas personales y familiares del contribuyente, no se somete a tributación por este Impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "56",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4312,
+      "LF_end": 4312,
+      "quote": "2. Cuando la base liquidable general sea superior al importe del mínimo personal y familiar, éste formará parte de la base liquidable general.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "56",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4314,
+      "LF_end": 4314,
+      "quote": "Cuando la base liquidable general sea inferior al importe del mínimo personal y familiar, éste formará parte de la base liquidable general por el importe de esta última y de la base liquidable del ahorro por el resto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "56",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4316,
+      "LF_end": 4316,
+      "quote": "Cuando no exista base liquidable general, el mínimo personal y familiar formará parte de la base liquidable del ahorro.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "56",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4318,
+      "LF_end": 4318,
+      "quote": "3. El mínimo personal y familiar será el resultado de sumar el mínimo del contribuyente y los mínimos por descendientes, ascendientes y discapacidad a que se refieren los artículos 57, 58, 59 y 60 de esta Ley, incrementados o disminuidos a efectos de cálculo del gravamen autonómico en los importes que, de acuerdo con lo establecido en la Ley 22/2009, por el que se regula el sistema de financiación de las Comunidades Autónomas de régimen común y Ciudades con Estatuto de Autonomía, hayan sido aprobados por la Comunidad Autónoma.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_personal": [
+    {
+      "source": "S0",
+      "article": "57",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4342,
+      "LF_end": 4342,
+      "quote": "1. El mínimo del contribuyente será, con carácter general, de 5.550 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "57",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4344,
+      "LF_end": 4344,
+      "quote": "2. Cuando el contribuyente tenga una edad superior a 65 años, el mínimo se aumentará en 1.150 euros anuales. Si la edad es superior a 75 años, el mínimo se aumentará adicionalmente en 1.400 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_familyGates": [
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4560,
+      "LF_end": 4560,
+      "quote": "1.ª Cuando dos o más contribuyentes tengan derecho a la aplicación del mínimo por descendientes, ascendientes o discapacidad, respecto de los mismos ascendientes o descendientes, su importe se prorrateará entre ellos por partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4562,
+      "LF_end": 4562,
+      "quote": "No obstante, cuando los contribuyentes tengan distinto grado de parentesco con el ascendiente o descendiente, la aplicación del mínimo corresponderá a los de grado más cercano, salvo que éstos no tengan rentas anuales, excluidas las exentas, superiores a 8.000 euros, en cuyo caso corresponderá a los del siguiente grado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4564,
+      "LF_end": 4564,
+      "quote": "2.ª No procederá la aplicación del mínimo por descendientes, ascendientes o discapacidad, cuando los ascendientes o descendientes que generen el derecho a los mismos presenten declaración por este Impuesto con rentas superiores a 1.800 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4566,
+      "LF_end": 4566,
+      "quote": "3.ª La determinación de las circunstancias personales y familiares que deban tenerse en cuenta a efectos de lo establecido en los artículos 57, 58, 59 y 60 de esta Ley, se realizará atendiendo a la situación existente en la fecha de devengo del Impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4568,
+      "LF_end": 4568,
+      "quote": "4.ª No obstante lo dispuesto en el apartado anterior, en caso de fallecimiento de un descendiente o ascendiente que genere el derecho al mínimo por descendientes o ascendientes, la cuantía será de 2.400 euros anuales o 1.150 euros anuales por ese descendiente o ascendiente, respectivamente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "61",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4570,
+      "LF_end": 4570,
+      "quote": "5.ª Para la aplicación del mínimo por ascendientes, será necesario que éstos convivan con el contribuyente, al menos, la mitad del período impositivo o, en el caso de fallecimiento del ascendiente antes de la finalización de este, la mitad del período transcurrido entre el inicio del período impositivo y la fecha de fallecimiento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_scaleMethod": [
+    {
+      "source": "S0",
+      "article": "63",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4748,
+      "LF_end": 4748,
+      "quote": "2.º La cuantía resultante se minorará en el importe derivado de aplicar a la parte de la base liquidable general correspondiente al mínimo personal y familiar, la escala prevista en el número 1.º anterior.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "66",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4985,
+      "LF_end": 4985,
+      "quote": "2.º La cuantía resultante se minorará en el importe derivado de aplicar a la parte de la base liquidable del ahorro correspondiente al mínimo personal y familiar, la escala prevista en el número 1.º anterior.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "76",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5741,
+      "LF_end": 5741,
+      "quote": "2.º La cuantía resultante se minorará en el importe derivado de aplicar a la parte de la base liquidable del ahorro correspondiente al mínimo personal y familiar que resulte de los incrementos o disminuciones a que se refiere el artículo 56.3 de esta ley, la escala prevista en el número 1.º anterior.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "63.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 4750,
+      "LF_end": 4750,
+      "quote": "2. Se entenderá por tipo medio de gravamen general estatal el derivado de multiplicar por 100 el cociente resultante de dividir la cuota obtenida por la aplicación de lo previsto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general estatal se expresará con dos decimales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "74.1/2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5598,
+      "LF_end": 5604,
+      "quote": "1. La parte de la base liquidable general que exceda del importe del mínimo personal y familiar que resulte de los incrementos o disminuciones a que se refiere el artículo 56.3 de esta Ley, será gravada de la siguiente forma:\n\n1.º A la base liquidable general se le aplicarán los tipos de la escala autonómica del Impuesto que, conforme a lo previsto en la Ley 22/2009, por el que se regula el sistema de financiación de las Comunidades Autónomas de régimen común y Ciudades con Estatuto de Autonomía, hayan sido aprobadas por la Comunidad Autónoma.\n\n2.º La cuantía resultante se minorará en el importe derivado de aplicar a la parte de la base liquidable general correspondiente al mínimo personal y familiar que resulte de los incrementos o disminuciones a que se refiere el artículo 56.3 de esta Ley, la escala prevista en el número 1.º anterior.\n\n2. Se entenderá por tipo medio de gravamen general autonómico, el derivado de multiplicar por 100 el cociente resultante de dividir la cuota obtenida por la aplicación de lo previsto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general autonómico se expresará con dos decimales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_allocation": [
+    {
+      "source": "S0",
+      "article": "67",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5114,
+      "LF_end": 5114,
+      "quote": "b) El 50 por ciento del importe total de las deducciones previstas en los apartados 2, 3, 4 y 5 del artículo 68 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "67",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5112,
+      "LF_end": 5112,
+      "quote": "a) Las deducciones previstas en el apartado 1 y 6 del artículo 68 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "67",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5116,
+      "LF_end": 5116,
+      "quote": "2. El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "67.1.a current rented-home state-only",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5112,
+      "LF_end": 5118,
+      "quote": "a) Las deducciones previstas en el apartado 1 y 6 del artículo 68 de esta ley.\n\nb) El 50 por ciento del importe total de las deducciones previstas en los apartados 2, 3, 4 y 5 del artículo 68 de esta ley.\n\n2. El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo.\n\nSe modifica el apartado 1 por el art. 6.2.3 del Real Decreto-ley 29/2026, de 6 de octubre. Ref. BOE-A-2026-20823",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_allocationRegional": [
+    {
+      "source": "S0",
+      "article": "77",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5813,
+      "LF_end": 5813,
+      "quote": "a) El 50 por ciento del importe total de las deducciones previstas en los apartados 2, 3, 4 y 5 del artículo 68 de esta Ley, con los límites y requisitos de situación patrimonial previstos en sus artículos 69 y 70.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "77",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5817,
+      "LF_end": 5817,
+      "quote": "2. El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_employee": [
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2268,
+      "LF_end": 2268,
+      "quote": "1. El rendimiento neto del trabajo será el resultado de disminuir el rendimiento íntegro en el importe de los gastos deducibles.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2272,
+      "LF_end": 2272,
+      "quote": "a) Las cotizaciones a la Seguridad Social o a mutualidades generales obligatorias de funcionarios.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2274,
+      "LF_end": 2274,
+      "quote": "b) Las detracciones por derechos pasivos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2276,
+      "LF_end": 2276,
+      "quote": "c) Las cotizaciones a los colegios de huérfanos o entidades similares.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2278,
+      "LF_end": 2278,
+      "quote": "d) Las cuotas satisfechas a sindicatos y colegios profesionales, cuando la colegiación tenga carácter obligatorio, en la parte que corresponda a los fines esenciales de estas instituciones, y con el límite que reglamentariamente se establezca.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2280,
+      "LF_end": 2280,
+      "quote": "e) Los gastos de defensa jurídica derivados directamente de litigios suscitados en la relación del contribuyente con la persona de la que percibe los rendimientos, con el límite de 300 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2282,
+      "LF_end": 2282,
+      "quote": "f) En concepto de otros gastos distintos de los anteriores, 2.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2284,
+      "LF_end": 2284,
+      "quote": "Tratándose de contribuyentes desempleados inscritos en la oficina de empleo que acepten un puesto de trabajo que exija el traslado de su residencia habitual a un nuevo municipio, en las condiciones que reglamentariamente se determinen, se incrementará dicha cuantía, en el periodo impositivo en el que se produzca el cambio de residencia y en el siguiente, en 2.000 euros anuales adicionales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2286,
+      "LF_end": 2286,
+      "quote": "Tratándose de personas con discapacidad que obtengan rendimientos del trabajo como trabajadores activos, se incrementará dicha cuantía en 3.500 euros anuales. Dicho incremento será de 7.750 euros anuales, para las personas con discapacidad que siendo trabajadores activos acrediten necesitar ayuda de terceras personas o movilidad reducida, o un grado de discapacidad igual o superior al 65 por ciento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2288,
+      "LF_end": 2288,
+      "quote": "Los gastos deducibles a que se refiere esta letra f) tendrán como límite el rendimiento íntegro del trabajo una vez minorado por el resto de gastos deducibles previstos en este apartado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_employmentReduction": [
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2310,
+      "LF_end": 2310,
+      "quote": "Los contribuyentes con rendimientos netos del trabajo inferiores a 19.747,5 euros siempre que no tengan rentas, excluidas las exentas, distintas de las del trabajo superiores a 6.500 euros, minorarán el rendimiento neto del trabajo en las siguientes cuantías:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2312,
+      "LF_end": 2312,
+      "quote": "a) Contribuyentes con rendimientos netos del trabajo iguales o inferiores a 14.852 euros: 7.302 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2314,
+      "LF_end": 2314,
+      "quote": "b) Contribuyentes con rendimientos netos del trabajo superiores a 14.852 euros, pero iguales o inferiores a 17.673,52 euros: 7.302 euros menos el resultado de multiplicar por 1,75 la diferencia entre el rendimiento del trabajo y 14.852 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2316,
+      "LF_end": 2316,
+      "quote": "c) Contribuyentes con rendimientos netos del trabajo comprendidos entre 17.673,52 y 19.747,5 euros: 2.364,34 euros menos el resultado de multiplicar por 1,14 la diferencia entre el rendimiento del trabajo y 17.673,52 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2318,
+      "LF_end": 2318,
+      "quote": "A estos efectos, el rendimiento neto del trabajo será el resultante de minorar el rendimiento íntegro en los gastos previstos en las letras a), b), c), d) y e) del artículo 19.2 de esta Ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 2320,
+      "LF_end": 2320,
+      "quote": "Como consecuencia de la aplicación de la reducción prevista en este artículo, el saldo resultante no podrá ser negativo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_filing": [
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7230,
+      "LF_end": 7230,
+      "quote": "a) Rendimientos íntegros del trabajo, con el límite de 22.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7242,
+      "LF_end": 7242,
+      "quote": "3. El límite a que se refiere la letra a) del apartado 2 anterior será de 15.876 euros para los contribuyentes que perciban rendimientos íntegros del trabajo en los siguientes supuestos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7246,
+      "LF_end": 7246,
+      "quote": "1.º Si la suma de las cantidades percibidas del segundo y restantes pagadores, por orden de cuantía, no supera en su conjunto la cantidad de 1.500 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7232,
+      "LF_end": 7232,
+      "quote": "b) Rendimientos íntegros del capital mobiliario y ganancias patrimoniales sometidos a retención o ingreso a cuenta, con el límite conjunto de 1.600 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7236,
+      "LF_end": 7236,
+      "quote": "c) Rentas inmobiliarias imputadas en virtud del artículo 85 de esta Ley, rendimientos íntegros del capital mobiliario no sujetos a retención derivados de letras del Tesoro y subvenciones para la adquisición de viviendas de protección oficial o de precio tasado y demás ganancias patrimoniales derivadas de ayudas públicas, con el límite conjunto de 1.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7238,
+      "LF_end": 7238,
+      "quote": "En ningún caso tendrán que declarar los contribuyentes que obtengan exclusivamente rendimientos íntegros del trabajo, de capital o de actividades económicas, así como ganancias patrimoniales, con el límite conjunto de 1.000 euros anuales y pérdidas patrimoniales de cuantía inferior a 500 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7240,
+      "LF_end": 7240,
+      "quote": "No obstante lo anterior, estarán en cualquier caso obligadas a declarar todas aquellas personas físicas que en cualquier momento del período impositivo hubieran estado de alta, como trabajadores por cuenta propia, en el Régimen Especial de Trabajadores por Cuenta Propia o Autónomos, o en el Régimen Especial de la Seguridad Social de los Trabajadores del Mar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7256,
+      "LF_end": 7256,
+      "quote": "4. Estarán obligados a declarar en todo caso los contribuyentes que tengan derecho a deducción por doble imposición internacional o que realicen aportaciones a patrimonios protegidos de las personas con discapacidad, planes de pensiones, planes de previsión asegurados o mutualidades de previsión social, planes de previsión social empresarial y seguros de dependencia que reduzcan la base imponible, en las condiciones que se establezcan reglamentariamente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7258,
+      "LF_end": 7258,
+      "quote": "5. Los modelos de declaración se aprobarán por la persona titular del Ministerio de Hacienda y Función Pública, que establecerá la forma y plazos de su presentación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96.2 exclusive-source conditions/96.3 specific triggers",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7226,
+      "LF_end": 7228,
+      "quote": "1. Los contribuyentes estarán obligados a presentar y suscribir declaración por este Impuesto, con los límites y condiciones que reglamentariamente se establezcan.\n\n2. No obstante, no tendrán que declarar los contribuyentes que obtengan rentas procedentes exclusivamente de las siguientes fuentes, en tributación individual o conjunta:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "96.3 specific triggers",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 7242,
+      "LF_end": 7254,
+      "quote": "3. El límite a que se refiere la letra a) del apartado 2 anterior será de 15.876 euros para los contribuyentes que perciban rendimientos íntegros del trabajo en los siguientes supuestos:\n\na) Cuando procedan de más de un pagador. No obstante, el límite será de 22.000 euros anuales en los siguientes supuestos:\n\n1.º Si la suma de las cantidades percibidas del segundo y restantes pagadores, por orden de cuantía, no supera en su conjunto la cantidad de 1.500 euros anuales.\n\n2.º Cuando se trate de contribuyentes cuyos únicos rendimientos del trabajo consistan en las prestaciones pasivas a que se refiere el artículo 17.2.a) de esta Ley y la determinación del tipo de retención aplicable se hubiera realizado de acuerdo con el procedimiento especial que reglamentariamente se establezca.\n\nb) Cuando se perciban pensiones compensatorias del cónyuge o anualidades por alimentos diferentes de las previstas en el artículo 7 de esta ley.\n\nc) Cuando el pagador de los rendimientos del trabajo no esté obligado a retener de acuerdo con lo previsto reglamentariamente.\n\nd) Cuando se perciban rendimientos íntegros del trabajo sujetos a tipo fijo de retención.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_correction": [
+    {
+      "source": "S3",
+      "article": "67 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+      "reader": "sources/S3.reader.txt",
+      "LF_start": 3754,
+      "LF_end": 3754,
+      "quote": "1. Los contribuyentes deberán rectificar, completar o modificar las autoliquidaciones presentadas por este Impuesto mediante la presentación de una autoliquidación rectificativa, utilizando el modelo de declaración aprobado por la persona titular del Ministerio de Hacienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S3",
+      "article": "67 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+      "reader": "sources/S3.reader.txt",
+      "LF_start": 3756,
+      "LF_end": 3756,
+      "quote": "No obstante lo dispuesto en el párrafo anterior, cuando el motivo de la rectificación del obligado tributario sea exclusivamente la alegación razonada de una eventual vulneración por la norma aplicada en la autoliquidación previa de los preceptos de otra norma de rango superior legal, constitucional, de Derecho de la Unión Europea o de un Tratado o Convenio internacional se podrá instar la rectificación a través del procedimiento previsto en el artículo 120.3 de la Ley 58/2003, de 17 de diciembre, General Tributaria, y desarrollado en los artículos 126 a 128 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio. Si este motivo concurriese con otros de distinta naturaleza, por estos últimos el obligado tributario deberá presentar una autoliquidación rectificativa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_late": [
+    {
+      "source": "S170",
+      "article": "27",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 2209,
+      "LF_end": 2209,
+      "quote": "2. El recargo será un porcentaje igual al 1 por ciento más otro 1 por ciento adicional por cada mes completo de retraso con que se presente la autoliquidación o declaración respecto al término del plazo establecido para la presentación e ingreso.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "27",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 2213,
+      "LF_end": 2213,
+      "quote": "Si la presentación de la autoliquidación o declaración se efectúa una vez transcurridos 12 meses desde el término del plazo establecido para la presentación, el recargo será del 15 por ciento y excluirá las sanciones que hubieran podido exigirse. En estos casos, se exigirán los intereses de demora por el período transcurrido desde el día siguiente al término de los 12 meses posteriores a la finalización del plazo establecido para la presentación hasta el momento en que la autoliquidación o declaración se haya presentado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "27",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 2235,
+      "LF_end": 2235,
+      "quote": "5. El importe de los recargos a que se refiere el apartado 2 anterior se reducirá en el 25 por ciento siempre que se realice el ingreso total del importe restante del recargo en el plazo del apartado 2 del artículo 62 de esta Ley abierto con la notificación de la liquidación de dicho recargo y siempre que se realice el ingreso total del importe de la deuda resultante de la autoliquidación extemporánea o de la liquidación practicada por la Administración derivada de la declaración extemporánea, al tiempo de su presentación o en el plazo del apartado 2 del artículo 62 de esta Ley, respectivamente, o siempre que se realice el ingreso en el plazo o plazos fijados en el acuerdo de aplazamiento o fraccionamiento de dicha deuda que la Administración tributaria hubiera concedido con garantía de aval o certificado de seguro de caución y que el obligado al pago hubiera solicitado al tiempo de presentar la autoliquidación extemporánea o con anterioridad a la finalización del plazo del apartado 2 del artículo 62 de esta Ley abierto con la notificación de la liquidación resultante de la declaración extemporánea.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "27.2 penalty/interest exclusion",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 2211,
+      "LF_end": 2211,
+      "quote": "Dicho recargo se calculará sobre el importe a ingresar resultante de las autoliquidaciones o sobre el importe de la liquidación derivado de las declaraciones extemporáneas y excluirá las sanciones que hubieran podido exigirse y los intereses de demora devengados hasta la presentación de la autoliquidación o declaración.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_offence": [
+    {
+      "source": "S170",
+      "article": "191",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 8209,
+      "LF_end": 8209,
+      "quote": "La sanción por infracción leve consistirá en multa pecuniaria proporcional del 50 por ciento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "191",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 8223,
+      "LF_end": 8223,
+      "quote": "La sanción por infracción grave consistirá en multa pecuniaria proporcional del 50 al 100 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del apartado 1 del artículo 187 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "191",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 8229,
+      "LF_end": 8229,
+      "quote": "La sanción por infracción muy grave consistirá en multa pecuniaria proporcional del 100 al 150 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del apartado 1 del artículo 187 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S170",
+      "article": "191 classification limbs",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+      "reader": "sources/S170.reader.txt",
+      "LF_start": 8200,
+      "LF_end": 8229,
+      "quote": "\nLa infracción no será leve, cualquiera que sea la cuantía de la base de la sanción, en los siguientes supuestos:\n\na) Cuando se hayan utilizado facturas, justificantes o documentos falsos o falseados, aunque ello no sea constitutivo de medio fraudulento.\n\nb) Cuando la incidencia de la llevanza incorrecta de los libros o registros represente un porcentaje superior al 10 por ciento de la base de la sanción.\n\nc) Cuando se hayan dejado de ingresar cantidades retenidas o que se hubieran debido retener o ingresos a cuenta.\n\nLa sanción por infracción leve consistirá en multa pecuniaria proporcional del 50 por ciento.\n\n3. La infracción será grave cuando la base de la sanción sea superior a 3.000 euros y exista ocultación.\n\nLa infracción también será grave, cualquiera que sea la cuantía de la base de la sanción, en los siguientes supuestos:\n\na) Cuando se hayan utilizado facturas, justificantes o documentos falsos o falseados, sin que ello sea constitutivo de medio fraudulento.\n\nb) Cuando la incidencia de la llevanza incorrecta de los libros o registros represente un porcentaje superior al 10 por ciento e inferior o igual al 50 por ciento de la base de la sanción.\n\nc) Cuando se hayan dejado de ingresar cantidades retenidas o que se hubieran debido retener o ingresos a cuenta, siempre que las retenciones practicadas y no ingresadas, y los ingresos a cuenta repercutidos y no ingresados, representen un porcentaje inferior o igual al 50 por ciento del importe de la base de la sanción.\n\nLa utilización de medios fraudulentos determinará que la infracción sea calificada en todo caso como muy grave.\n\nLa sanción por infracción grave consistirá en multa pecuniaria proporcional del 50 al 100 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del apartado 1 del artículo 187 de esta ley.\n\n4. La infracción será muy grave cuando se hubieran utilizado medios fraudulentos.\n\nLa infracción también será muy grave, aunque no se hubieran utilizado medios fraudulentos, cuando se hubieran dejado de ingresar cantidades retenidas o que se hubieran debido retener o ingresos a cuenta, siempre que las retenciones practicadas y no ingresadas, y los ingresos a cuenta repercutidos y no ingresados, representen un porcentaje superior al 50 por ciento del importe de la base de la sanción.\n\nLa sanción por infracción muy grave consistirá en multa pecuniaria proporcional del 100 al 150 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del apartado 1 del artículo 187 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_interest": [
+    {
+      "source": "S171",
+      "article": "explicit2026",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+      "reader": "sources/S171.reader.txt",
+      "LF_start": 122,
+      "LF_end": 122,
+      "quote": "Nota: para 2026 se aplica el tipo de interés de demora del 4,0625 por 100 hasta que se apruebe y entre en vigor la Ley de Presupuestos Generales del Estado para 2026 que puede establecer un nuevo tipo de interés.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Income_cityCredit": [
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5259,
+      "LF_end": 5259,
+      "quote": "a) Los contribuyentes que tengan su residencia habitual y efectiva en Ceuta o Melilla se deducirán el 60 por ciento de la parte de la suma de las cuotas íntegras estatal y autonómica que proporcionalmente corresponda a las rentas computadas para la determinación de las bases liquidables que hubieran sido obtenidas en Ceuta o Melilla.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5261,
+      "LF_end": 5261,
+      "quote": "b) También aplicarán esta deducción los contribuyentes que mantengan su residencia habitual y efectiva en Ceuta o Melilla durante un plazo no inferior a tres años, en los períodos impositivos iniciados con posterioridad al final de ese plazo, por las rentas obtenidas fuera de dichas ciudades cuando, al menos, una tercera parte del patrimonio neto del contribuyente, determinado conforme a la normativa reguladora del Impuesto sobre el Patrimonio, esté situado en dichas ciudades.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5263,
+      "LF_end": 5263,
+      "quote": "La cuantía máxima de las rentas, obtenidas fuera de dichas ciudades, que puede acogerse a esta deducción será el importe neto de los rendimientos y ganancias y pérdidas patrimoniales obtenidos en dichas ciudades.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5265,
+      "LF_end": 5265,
+      "quote": "2.º Los contribuyentes que no tengan su residencia habitual y efectiva en Ceuta o Melilla, se deducirán el 60 por ciento de la parte de la suma de las cuotas íntegras estatal y autonómica que proporcionalmente corresponda a las rentas computadas para la determinación de las bases liquidables positivas que hubieran sido obtenidas en Ceuta o Melilla.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5267,
+      "LF_end": 5267,
+      "quote": "En ningún caso se aplicará esta deducción a las rentas siguientes:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5269,
+      "LF_end": 5269,
+      "quote": "– Las procedentes de Instituciones de Inversión Colectiva, salvo cuando la totalidad de sus activos esté invertida en Ceuta o Melilla, en las condiciones que reglamentariamente se determinen.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "68.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5271,
+      "LF_end": 5271,
+      "quote": "– Las rentas a las que se refieren los párrafos a), e) e i) del apartado siguiente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ]
+}

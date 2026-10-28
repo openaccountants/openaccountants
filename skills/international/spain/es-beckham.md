@@ -1,7 +1,7 @@
 ---
 name: es-beckham
 description: Use this Guide to assess and compute Spain’s incoming-worker special tax regime under article 93 for 2026, commonly called the Beckham regime. It covers qualifying employment, remote employment, administrators, entrepreneurs, highly qualified professionals and associated family members, the prior non-residence test, election evidence, income-source and service-period rules, annual ordinary and savings scales, foreign-tax relief, withholding, Modelo 149 and Modelo 151. Trigger phrases include Ley Beckham, régimen de impatriados, trabajadores desplazados, incoming-worker tax, digital nomad tax election, 24 percent regime and Spanish special residence taxation. Obtain the move and activity dates, residence history, actual election, service-period income, source evidence and payer certificates. A visa, foreign employer or foreign bank account alone does not settle eligibility or tax treatment.
-version: 1.2
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: incoming-worker special tax regime v1.2
+# Spain: incoming-worker special tax regime v1.3
 
 Calculate the 2026 art. 93 special regime, commonly called the Beckham regime, only after documenting eligibility and election. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -62,7 +62,7 @@ Apply the IRNR base rules as modified by art. 93: ordinary employment is gross i
 2. Compute `ordinary_tax = 0.24 ×min(O, 600,000) +0.47 ×max(O −600,000, 0)`.
 3. Compute savings tax progressively using the table, including **30% above 300,000**. The regime has two annual categories, not a 24% tax on everything and not the old 28% top savings rate.
 4. Determine permitted donation/payment-on-account deductions under [TRLIRNR art. 26](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a26) and [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114). Include the specified IRNR tax already paid on account where applicable.
-5. For foreign employment/qualifying entrepreneurial income, calculate the [LIRPF art. 80](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80) foreign-tax credit, then enforce the additional **30% of work/entrepreneur quota** cap in RIRPF art. 114.2.b. The effective-rate computation excludes both savings base and savings quota. In a salary-only ordinary category, the ceiling is `min(qualifying_foreign_tax, foreign_work_income ×ordinary_tax/O, 0.30 ×ordinary_tax)`. With mixed ordinary-category income, first attribute the quota to all qualifying work/entrepreneur income; do not take 30% of unrelated property tax or the savings quota.
+5. For foreign employment/qualifying entrepreneurial income, calculate the [LIRPF art. 80](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80) foreign-tax credit, then enforce the additional **30% of work/entrepreneur quota** cap in RIRPF art. 114.2.b. The effective-rate computation excludes both savings base and savings quota. Express the effective percentage to two decimal places under LIRPF art. 80.2: `effective_percentage = round(100 × ordinary_tax / O, 2)`. In a salary-only ordinary category, the ceiling is `min(qualifying_foreign_tax, foreign_work_income × effective_percentage / 100, 0.30 ×ordinary_tax)`. With mixed ordinary-category income, first attribute the quota to all qualifying work/entrepreneur income; do not take 30% of unrelated property tax or the savings quota.
 6. Subtract supported withholdings/payments on account to obtain the return balance. Multiple employers each below the payer withholding threshold can leave a material annual top-rate balance. Reconcile final annual tax with actual payer certificates rather than assuming the 24% deducted was final.
 
 For professional economic activity, [RIRPF art. 114.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114) limits withholding to activities classified as professional under its special rule and requires the applicable rate on invoices. Formal payer reporting follows the IRNR-model route stated there; do not assume all special-regime payroll belongs in ordinary 111. A Spanish-property transfer also carries the [TRLIRNR art. 25.2](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a25) purchaser-retention rule through RIRPF art. 114.5.
@@ -127,7 +127,7 @@ expected:
 
 ### 2. Two employers, top savings band and foreign-credit cap
 
-A hypothetical valid full-year elector receives **650,000 employment**, half from each of two payers, all for services during the regime. Of it, 300,000 relates to work abroad with 80,000 qualifying foreign tax. Spanish-source dividends are 310,000, with no loss or donation deduction. Ordinary tax is **167,500**; savings tax **74,880**. The salary-only effective-rate foreign-income limit is 77,307.69, but the extra 30%-of-employment-quota limit restricts credit to **50,250**. Tax after credit is **192,130**. Each salary payer paid only 325,000 and withheld 24%, total 156,000; dividend withholding at the IRNR 19% rate is 58,900. With supported credits of 214,900, the return balance is **−22,770**, a refund. The result tests annual aggregation, payer-specific withholding and the additional credit cap ([LIRPF art. 93.2.e/f](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a93); [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114); [TRLIRNR art. 25.1.f](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a25)).
+A hypothetical valid full-year elector receives **650,000 employment**, half from each of two payers, all for services during the regime. Of it, 300,000 relates to work abroad with 80,000 qualifying foreign tax. Spanish-source dividends are 310,000, with no loss or donation deduction. Ordinary tax is **167,500**; savings tax **74,880**. The salary-only effective percentage is **25.77%**, expressed to two decimal places under LIRPF art. 80.2, giving a foreign-income limit of **77,310**, but the extra 30%-of-employment-quota limit restricts credit to **50,250**. Tax after credit is **192,130**. Each salary payer paid only 325,000 and withheld 24%, total 156,000; dividend withholding at the IRNR 19% rate is 58,900. With supported credits of 214,900, the return balance is **−22,770**, a refund. The result tests annual aggregation, payer-specific withholding and the additional credit cap ([LIRPF art. 93.2.e/f](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a93); [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114); [TRLIRNR art. 25.1.f](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a25)).
 
 ```oa-check
 name: Spain 2026 impatriate annual bands and foreign-credit ceiling
@@ -139,7 +139,8 @@ inputs:
 steps:
   employment_tax: min(salary, 600000) * 0.24 + max(salary - 600000, 0) * 0.47
   savings_tax: 71880 + (spanish_dividend - 300000) * 0.30
-  foreign_income_limit: foreign_work_salary * employment_tax / salary
+  foreign_effective_percentage: round(100 * employment_tax / salary, 2)
+  foreign_income_limit: foreign_work_salary * foreign_effective_percentage / 100
   special_credit_limit: employment_tax * 0.30
   foreign_credit: min(foreign_tax, min(foreign_income_limit, special_credit_limit))
   tax_after_credit: employment_tax + savings_tax - foreign_credit
@@ -149,7 +150,8 @@ steps:
 expected:
   employment_tax: 167500
   savings_tax: 74880
-  foreign_income_limit: 77307.69230769
+  foreign_effective_percentage: 25.77
+  foreign_income_limit: 77310
   special_credit_limit: 50250
   foreign_credit: 50250
   tax_after_credit: 192130
@@ -177,6 +179,7 @@ expected:
 | [Orden HFP/1338/2023](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416) | Electronic 149/151 and annual campaign/direct-debit windows | 2026-10-26 |
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Late filing, interest/collection and penalty classification | 2026-10-26 |
 | RIRPF arts.89.B/116.3 and AEAT general incoming-worker page linked above | Prior special ordinary-withholding procedure bars the incoming-worker special-regime election; Modelo147 distinguished from149 | 2026-10-28 |
+| [LIRPF art. 80.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a80) and [RIRPF art. 114.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a114) | Effective percentage expressed to two decimal places in the general salary-only method and second example; additional cap and final result unchanged | 2026-10-28 |
 
 
 **Not yet confirmed:** the exact allocation of a complex multi-period equity award or mixed-category foreign-credit ceiling without its supporting service/source records; case-specific treaty residence entitlement and wealth-tax calculation. The ordinary employment and Spanish-source savings computations above are supplied; specialist PE/activity and family boundary cases need their actual eligibility evidence. Independent whole-pack review remains outstanding.

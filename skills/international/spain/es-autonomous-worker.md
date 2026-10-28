@@ -1,10 +1,10 @@
 ---
 name: es-autonomous-worker
 description: Compute the 2026 tax, social contributions and cash position of a Spanish resident sole trader or professional. Covers autónomo registration, actual assessment-method selection, deductible expenses, simplified provisions, professional withholding, cumulative income-tax prepayments, VAT reconciliation and day-based RETA income banding. Distinguishes company controllers, family collaborators, TRADE arrangements and pluriactividad, and identifies the separate conditions for reduced contributions and new-activity relief. Use for cuota de autónomos, alta autónomo, Modelo 130, professional invoices, take-home profit or income-based regularisation questions. Includes an annual Madrid tax-to-cash reconciliation and a part-year contribution example. Common-territory computations are supplied; foral and island/city indirect taxes retain explicit limits.
-version: 1.3
+version: 1.4
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.3
+# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.4
 
 > Based on work by Nambu89 (Impuestify) and Pau March (larenta), licensed under MIT. Adapted for the OpenAccountants format.
 
@@ -80,6 +80,8 @@ For direct assessment, build annual computable activity income by adding deducte
 Let D be **regularisable calendar days** after statutory benefit/reduced-fee exclusions. `monthly_band_income = annual_computable_income_after_generic_deduction / D × 30`. Do not substitute annual/12 or a count of monthly bank debits. Compare against the actual year's bands, choose a permissible base, and apply all covered components and eligible bonuses. Annual regularisation compares the day-weighted provisional base against the final band, retaining signed monthly differences, partial-month proportions and historical-base elections ([RD 2064/1995 arts. 44–46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44)). Use [the contribution Guide](es-social-contributions.md#the-base) for exclusions, final-base floors, notices and refunds.
 
 **Starting reduction.** [Ley 20/2007 art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5) covers qualifying first registration or no registration in the preceding two years, three when previously enjoyed. Request it at registration. Its first period runs from effective registration through the following twelve complete calendar months; a requested further twelve needs annual computable income below annual SMI, with the stated annual tests. Qualifying disability of at least 33%, gender violence and terrorism cases have 24/36 complete months. It expressly extends to qualifying company/cooperative members and excludes the listed joining relatives/religious members. A baja ends the benefit. The general **new-2026 monetary amount is unconfirmed**: [RDL 13/2022 DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) fixes amounts only through 2025, while the TGSS display does not reconcile its components. Record an individual's actual award/assessment without turning it into a general statutory amount.
+
+**While the reduction applies.** Hiring employees after starting the activity does not itself end it. An express renunciation takes effect on the first day of the month after communication. Economic benefits during the reduced-fee period use the applicable minimum base of the lowest general-table band. After the maximum benefit period ends, contribution for all protected contingencies resumes on the first day of the following month. The initial reduced-fee period is not annually income-regularised; the extension has its separate income/reassessment test in [es-social-contributions](es-social-contributions.md#reduced-starting-fee-and-familyterritorial-bonuses) ([LETA art.38 ter.3–8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5)).
 
 **Other relief.** Qualifying family collaborators under [art. 35](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a35) receive 50% for eighteen months then 25% for six on CC at general-band-1 minimum, subject to prior-registration/relationship conditions. Company/family final floors still require testing. [Art. 36](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a36) changes qualifying Ceuta/Melilla CC relief from 50% to 75% for quotas accrued from **1 October 2026**; use each period's sector list and do not reduce MEI or every contingency. Pluriactividad includes employer and employee CC plus RETA CC before applying the excess/refund cap.
 

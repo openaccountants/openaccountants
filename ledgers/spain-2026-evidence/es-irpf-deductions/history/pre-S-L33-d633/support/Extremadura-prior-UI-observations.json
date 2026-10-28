@@ -1,0 +1,98 @@
+{
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "browser": "Brave1",
+  "own_tab": "1623103303",
+  "version": "OPEN1.19",
+  "date": "2026-10-28",
+  "fictional_identity": {
+    "NIF": "12345678Z",
+    "name": "PRUEBA EXTREMADURA",
+    "DOB": "01/01/1990",
+    "sex": "Hombre",
+    "civil_status": "Soltero",
+    "individual_only": true,
+    "region": "Extremadura",
+    "wages": 40000,
+    "social_security": "blank",
+    "wage_net_observed": 38000
+  },
+  "no_auth_filing_payment": true,
+  "case_type": "fictional public simulator only; no observed2026campaign",
+  "states": [
+    {
+      "id": "rejected-prior-year-completion",
+      "investment": 10000,
+      "finish": "2024-12-31",
+      "rented": 300,
+      "offered": 65,
+      "result": "Validation requires finish in2025; not a settled tax result or proof of2026completion restriction",
+      "input": "day300-offer65-input-AX.txt",
+      "validation": "prior-year-completion-validation-AX.txt",
+      "input_sha256": "c463c603d731253844fbaf0b00eab7204c72b3fd722c74e61748e7fa2118ff27",
+      "validation_sha256": "b2d5766fbd625ae274729d3c902c8d076b600a7e9869e0ba86f52ee887b7872d"
+    },
+    {
+      "id": "rejected-Jan1-excessday",
+      "investment": 10000,
+      "finish": "2025-01-01",
+      "rented": 300,
+      "offered": 65,
+      "result": "Validation sum must equal days AFTER completion",
+      "input": "completedJan1-day300-offer65-input-AX.txt",
+      "validation": "completedJan1-day365-validation-AX.txt",
+      "input_sha256": "0f38ee0e857dde6c076f41234142818f3a0851cf92d2dcabda448950ab1e9e03",
+      "validation_sha256": "f02e8786904d3ea374f05866d40754479db41a7596f2c5077d8e441a59845b75"
+    },
+    {
+      "id": "Jan1-300rented64offered",
+      "investment": 10000,
+      "finish": "2025-01-01",
+      "rented": 300,
+      "offered": 64,
+      "settled_credit": "1117.58",
+      "input": "completedJan1-day300-offer64-input-AX.txt",
+      "result": "completedJan1-day300-offer64-result-AX.txt",
+      "input_sha256": "ae2eb55c6a52097dcd6b003d9a2a17e2fbb0c665ea7a53512ae0ba8c659d7870",
+      "result_sha256": "6f8778d6861d962031a50c5b6733d00c0f082ec458d4d5cf4b210085c540d518"
+    },
+    {
+      "id": "Mar31-200rented75offered",
+      "investment": 10000,
+      "finish": "2025-03-31",
+      "rented": 200,
+      "offered": 75,
+      "settled_credit": "986.18",
+      "input": "completedMar31-day200-offer75-input-AX.txt",
+      "result": "completedMar31-day200-offer75-result-AX.txt",
+      "input_sha256": "6a5f6769474745ffc8ba1fb54e19f8f5a9977816130372a1f0ea1c1084ffe932",
+      "result_sha256": "57606049f8877bf2650ab97f842a3a16a1b95ab4cd786e9ed257d5403ef10672"
+    },
+    {
+      "id": "Mar31-275rented0offered",
+      "investment": 10000,
+      "finish": "2025-03-31",
+      "rented": 275,
+      "offered": 0,
+      "settled_credit": "1356.00",
+      "input": "completedMar31-day275-offer0-input-AX.txt",
+      "result": "completedMar31-day275-offer0-result-AX.txt",
+      "input_sha256": "87bde7c1bff72a93e547a67d887e2ac5efa1d7c6205fed0fc2dccaba14b48058",
+      "result_sha256": "3aa7445bc832a313b11dea979a2d17be453b7168b7d3ffc4a2e6b8553cd209d6"
+    },
+    {
+      "id": "Mar31-net8000-200rented75offered",
+      "investment": 8000,
+      "finish": "2025-03-31",
+      "rented": 200,
+      "offered": 75,
+      "settled_credit": "872.73",
+      "input": "completedMar31-net8000-day200-offer75-input-AX.txt",
+      "result": "completedMar31-net8000-day200-offer75-result-AX.txt",
+      "screenshot": "final-net8000-day200-offer75.png",
+      "input_sha256": "0fee886e231bd9900bad00d228f14bffee55d32435421fb3f3e4dff38dc51d2c",
+      "result_sha256": "56217271258cd8eb1ff85b78d31f5bdb4bd3ae175e8a932a036b1fb1c2bce5e4",
+      "screenshot_sha256": "d444f61489382d9a58040714f129add1c140b5b6a450898684360e6fc7bebd68"
+    }
+  ],
+  "scope": "Grant shares calculated outside UI from source+stated award-certified fictional facts; program received net8000, no automatic grant allocation claimed. No sessionfile imported or downloaded. Final screenshot actually viewed; result2007/total0564=872.73."
+}

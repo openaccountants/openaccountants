@@ -1,0 +1,16 @@
+{
+  "current_ledger_sha256": "8c3f32ab844c98129f295317534e711b5f21c9914049f50a0b2519fa13b1c8c9",
+  "guide_unchanged_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+  "history": "history/pre-semantic-source-precision-268d82ab",
+  "corrections": [
+    "Every nonexact old topic now has an explicit semantic destination or presentation status; no fuzzy line guesses.",
+    "RDL2/2026art11/publication plus AEAT preservation note and currentRIRPF33/35 directly quote the exceptional window, actual filing/first-quarter routes,3years and same-year exception.",
+    "Gazetted actualbox05 quoted separately from16–19.",
+    "130 eligible withholding/year-versus-quarter/fishing;12clamp;16positive14−15;249/255Q1–3A-deducir/Q4negative directly quoted.",
+    "131actualhours/units and everyoperativebox01–15/positivecaps/remaininghomeceiling/negativecarry quoted.",
+    "CeutaAct actual02Septemberpublication/day-after commencement plusDA64more-than-month gate directly quoted.",
+    "Wholelow-income table source quotation now explicitly citesLF6296–6310."
+  ],
+  "source_acquisition_not_whole_read": true,
+  "no_independent_PASS": true
+}

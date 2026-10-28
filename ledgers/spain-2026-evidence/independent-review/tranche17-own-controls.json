@@ -1,0 +1,847 @@
+{
+  "method": "Independent Decimal arithmetic and explicit schedule vectors; no writer controls imported. Statutory printed Navarra cumulative quotas retained; adjacent rounding tolerance one cent, not legal universal rounding.",
+  "count": 140,
+  "failures": 0,
+  "controls": [
+    {
+      "name": "Basque-general-printed-vector-0",
+      "actual": "(Decimal('0'), Decimal('0'), Decimal('23'))",
+      "expected": "(Decimal('0'), Decimal('0'), Decimal('23'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-1",
+      "actual": "(Decimal('18080'), Decimal('4158.40'), Decimal('28'))",
+      "expected": "(Decimal('18080'), Decimal('4158.40'), Decimal('28'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-1-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-2",
+      "actual": "(Decimal('36160'), Decimal('9220.80'), Decimal('35'))",
+      "expected": "(Decimal('36160'), Decimal('9220.80'), Decimal('35'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-2-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-3",
+      "actual": "(Decimal('54240'), Decimal('15548.80'), Decimal('40'))",
+      "expected": "(Decimal('54240'), Decimal('15548.80'), Decimal('40'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-3-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-4",
+      "actual": "(Decimal('77450'), Decimal('24832.80'), Decimal('45'))",
+      "expected": "(Decimal('77450'), Decimal('24832.80'), Decimal('45'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-4-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-5",
+      "actual": "(Decimal('107260'), Decimal('38247.30'), Decimal('46'))",
+      "expected": "(Decimal('107260'), Decimal('38247.30'), Decimal('46'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-5-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-6",
+      "actual": "(Decimal('142960'), Decimal('54669.30'), Decimal('47'))",
+      "expected": "(Decimal('142960'), Decimal('54669.30'), Decimal('47'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-6-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-printed-vector-7",
+      "actual": "(Decimal('208390'), Decimal('85421.40'), Decimal('49'))",
+      "expected": "(Decimal('208390'), Decimal('85421.40'), Decimal('49'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-general-adjacent-cumulative-7-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-0",
+      "actual": "(Decimal('0'), Decimal('0'), Decimal('19'))",
+      "expected": "(Decimal('0'), Decimal('0'), Decimal('19'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-1",
+      "actual": "(Decimal('7500'), Decimal('1425'), Decimal('20'))",
+      "expected": "(Decimal('7500'), Decimal('1425'), Decimal('20'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-1-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-2",
+      "actual": "(Decimal('15000'), Decimal('2925'), Decimal('22'))",
+      "expected": "(Decimal('15000'), Decimal('2925'), Decimal('22'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-2-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-3",
+      "actual": "(Decimal('30000'), Decimal('6225'), Decimal('24'))",
+      "expected": "(Decimal('30000'), Decimal('6225'), Decimal('24'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-3-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-4",
+      "actual": "(Decimal('50000'), Decimal('11025'), Decimal('25.5'))",
+      "expected": "(Decimal('50000'), Decimal('11025'), Decimal('25.5'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-4-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-5",
+      "actual": "(Decimal('90000'), Decimal('21225'), Decimal('26'))",
+      "expected": "(Decimal('90000'), Decimal('21225'), Decimal('26'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-5-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-6",
+      "actual": "(Decimal('120000'), Decimal('29025'), Decimal('26.5'))",
+      "expected": "(Decimal('120000'), Decimal('29025'), Decimal('26.5'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-6-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-7",
+      "actual": "(Decimal('240000'), Decimal('60825'), Decimal('27'))",
+      "expected": "(Decimal('240000'), Decimal('60825'), Decimal('27'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-7-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-printed-vector-8",
+      "actual": "(Decimal('300000'), Decimal('77025'), Decimal('28'))",
+      "expected": "(Decimal('300000'), Decimal('77025'), Decimal('28'))",
+      "pass": true
+    },
+    {
+      "name": "Basque-savings-adjacent-cumulative-8-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-0",
+      "actual": "(Decimal('0'), Decimal('0'), Decimal('13'))",
+      "expected": "(Decimal('0'), Decimal('0'), Decimal('13'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-1",
+      "actual": "(Decimal('4458'), Decimal('579.54'), Decimal('22'))",
+      "expected": "(Decimal('4458'), Decimal('579.54'), Decimal('22'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-1-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-2",
+      "actual": "(Decimal('10030'), Decimal('1805.38'), Decimal('25'))",
+      "expected": "(Decimal('10030'), Decimal('1805.38'), Decimal('25'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-2-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-3",
+      "actual": "(Decimal('21175'), Decimal('4591.63'), Decimal('28'))",
+      "expected": "(Decimal('21175'), Decimal('4591.63'), Decimal('28'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-3-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-4",
+      "actual": "(Decimal('35663'), Decimal('8648.27'), Decimal('36.5'))",
+      "expected": "(Decimal('35663'), Decimal('8648.27'), Decimal('36.5'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-4-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-5",
+      "actual": "(Decimal('51266'), Decimal('14343.37'), Decimal('41.5'))",
+      "expected": "(Decimal('51266'), Decimal('14343.37'), Decimal('41.5'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-5-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-6",
+      "actual": "(Decimal('66869'), Decimal('20818.61'), Decimal('44'))",
+      "expected": "(Decimal('66869'), Decimal('20818.61'), Decimal('44'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-6-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-7",
+      "actual": "(Decimal('89159'), Decimal('30626.21'), Decimal('47'))",
+      "expected": "(Decimal('89159'), Decimal('30626.21'), Decimal('47'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-7-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-8",
+      "actual": "(Decimal('139310'), Decimal('54197.18'), Decimal('49'))",
+      "expected": "(Decimal('139310'), Decimal('54197.18'), Decimal('49'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-8-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-9",
+      "actual": "(Decimal('195034'), Decimal('81501.94'), Decimal('50.5'))",
+      "expected": "(Decimal('195034'), Decimal('81501.94'), Decimal('50.5'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-9-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-printed-vector-10",
+      "actual": "(Decimal('334344'), Decimal('151853.49'), Decimal('52'))",
+      "expected": "(Decimal('334344'), Decimal('151853.49'), Decimal('52'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-general-adjacent-cumulative-10-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-0",
+      "actual": "(Decimal('0'), Decimal('0'), Decimal('20'))",
+      "expected": "(Decimal('0'), Decimal('0'), Decimal('20'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-1",
+      "actual": "(Decimal('6000'), Decimal('1200'), Decimal('22'))",
+      "expected": "(Decimal('6000'), Decimal('1200'), Decimal('22'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-adjacent-cumulative-1-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-2",
+      "actual": "(Decimal('10000'), Decimal('2080'), Decimal('24'))",
+      "expected": "(Decimal('10000'), Decimal('2080'), Decimal('24'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-adjacent-cumulative-2-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-3",
+      "actual": "(Decimal('15000'), Decimal('3280'), Decimal('26'))",
+      "expected": "(Decimal('15000'), Decimal('3280'), Decimal('26'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-adjacent-cumulative-3-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-4",
+      "actual": "(Decimal('200000'), Decimal('51380'), Decimal('27'))",
+      "expected": "(Decimal('200000'), Decimal('51380'), Decimal('27'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-adjacent-cumulative-4-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-printed-vector-5",
+      "actual": "(Decimal('300000'), Decimal('78380'), Decimal('28'))",
+      "expected": "(Decimal('300000'), Decimal('78380'), Decimal('28'))",
+      "pass": true
+    },
+    {
+      "name": "Navarra-savings-adjacent-cumulative-5-within-one-cent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "B-employee-net",
+      "actual": "37400",
+      "expected": "37400",
+      "pass": true
+    },
+    {
+      "name": "B-base",
+      "actual": "34400",
+      "expected": "34400",
+      "pass": true
+    },
+    {
+      "name": "B-gross",
+      "actual": "8728.00",
+      "expected": "8728",
+      "pass": true
+    },
+    {
+      "name": "B-annual-net",
+      "actual": "8063.00",
+      "expected": "8063",
+      "pass": true
+    },
+    {
+      "name": "B-payable",
+      "actual": "563.00",
+      "expected": "563",
+      "pass": true
+    },
+    {
+      "name": "N-general-round-half-up",
+      "actual": "9282.28",
+      "expected": "9282.28",
+      "pass": true
+    },
+    {
+      "name": "N-work-credit",
+      "actual": "652.00",
+      "expected": "652",
+      "pass": true
+    },
+    {
+      "name": "N-payable",
+      "actual": "46.28",
+      "expected": "46.28",
+      "pass": true
+    },
+    {
+      "name": "AG-marginal-allowance-60k",
+      "actual": "10750.00",
+      "expected": "10750",
+      "pass": true
+    },
+    {
+      "name": "G-charity-BL-not-BI",
+      "actual": "2100.0000",
+      "expected": "2100",
+      "pass": true
+    },
+    {
+      "name": "wrong-BI-charity-separator",
+      "actual": "2400.0000",
+      "expected": "2400",
+      "pass": true
+    },
+    {
+      "name": "disability-multiplier250-uplift",
+      "actual": "10500.0",
+      "expected": "10500",
+      "pass": true
+    },
+    {
+      "name": "disability-positive-income-floor",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "bonus-boundary-left",
+      "actual": "2999.6400",
+      "expected": "2999.6400",
+      "pass": true
+    },
+    {
+      "name": "FIFO-partial-cost",
+      "actual": "1010",
+      "expected": "1010",
+      "pass": true
+    },
+    {
+      "name": "FIFO-net-market-value",
+      "actual": "1782",
+      "expected": "1782",
+      "pass": true
+    },
+    {
+      "name": "FIFO-gain",
+      "actual": "772",
+      "expected": "772",
+      "pass": true
+    },
+    {
+      "name": "FIFO-gross-tax",
+      "actual": "146.68",
+      "expected": "146.68",
+      "pass": true
+    },
+    {
+      "name": "wrong-later-lot",
+      "actual": "267",
+      "expected": "267",
+      "pass": true
+    },
+    {
+      "name": "updated-older-cost",
+      "actual": "1030.200",
+      "expected": "1030.200",
+      "pass": true
+    },
+    {
+      "name": "older-updated-gain",
+      "actual": "405.3",
+      "expected": "405.3",
+      "pass": true
+    },
+    {
+      "name": "no-update-separator",
+      "actual": "425.5",
+      "expected": "425.5",
+      "pass": true
+    },
+    {
+      "name": "swap-symmetry-4000",
+      "actual": "3500",
+      "expected": "3500",
+      "pass": true
+    },
+    {
+      "name": "swap-symmetry-4500",
+      "actual": "3500",
+      "expected": "3500",
+      "pass": true
+    },
+    {
+      "name": "mixed-main",
+      "actual": "3940",
+      "expected": "3940",
+      "pass": true
+    },
+    {
+      "name": "incoming-expense",
+      "actual": "5040",
+      "expected": "5040",
+      "pass": true
+    },
+    {
+      "name": "fee-token-disposal",
+      "actual": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "name": "later-sale",
+      "actual": "960",
+      "expected": "960",
+      "pass": true
+    },
+    {
+      "name": "no-double-count-fee",
+      "actual": "4940",
+      "expected": "4940",
+      "pass": true
+    },
+    {
+      "name": "N-established-lot",
+      "actual": "1148.0",
+      "expected": "1148",
+      "pass": true
+    },
+    {
+      "name": "blocked-loss-part-release",
+      "actual": "400.0",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "blocked-unreleased",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "business-positive-schedule",
+      "actual": "10564.80",
+      "expected": "10564.8",
+      "pass": true
+    },
+    {
+      "name": "business-two-decimal-percent",
+      "actual": "26.41",
+      "expected": "26.41",
+      "pass": true
+    },
+    {
+      "name": "business-gain-adjust",
+      "actual": "241.0000",
+      "expected": "241",
+      "pass": true
+    },
+    {
+      "name": "AG-prior-loss-adjust",
+      "actual": "96.4000",
+      "expected": "96.4",
+      "pass": true
+    },
+    {
+      "name": "foreign-progressive-tax",
+      "actual": "6308.0000",
+      "expected": "6308",
+      "pass": true
+    },
+    {
+      "name": "business-BI-pool",
+      "actual": "2912.4",
+      "expected": "2912.4",
+      "pass": true
+    },
+    {
+      "name": "business-cap",
+      "actual": "1019.340",
+      "expected": "1019.34",
+      "pass": true
+    },
+    {
+      "name": "business-carry",
+      "actual": "980.66",
+      "expected": "980.66",
+      "pass": true
+    },
+    {
+      "name": "wrong-BL-separator",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "employee-B-male",
+      "actual": "1000.00",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "employee-B-female",
+      "actual": "1500.00",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "employee-AG-male",
+      "actual": "1500.00",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "employee-AG-female",
+      "actual": "2000.00",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "new-B-A",
+      "actual": "2500.00",
+      "expected": "2500",
+      "pass": true
+    },
+    {
+      "name": "new-G",
+      "actual": "2000.00",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "ordinary-Basque-businesscap",
+      "actual": "1400.00",
+      "expected": "1400",
+      "pass": true
+    },
+    {
+      "name": "ordinary-N-businesscap",
+      "actual": "1000.00",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "annuity-current-yield",
+      "actual": "6000.00",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "AG-exempt-yield",
+      "actual": "4000.00",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "annuity-taxable",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "capital30pct",
+      "actual": "56000.00",
+      "expected": "56000",
+      "pass": true
+    },
+    {
+      "name": "old25pct",
+      "actual": "60000.00",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "age65-mid-taper",
+      "actual": "196.5000",
+      "expected": "196.5",
+      "pass": true
+    },
+    {
+      "name": "age75-mid-taper",
+      "actual": "357.0000",
+      "expected": "357",
+      "pass": true
+    },
+    {
+      "name": "widow-mid-taper",
+      "actual": "100.00",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "age-credit-exact30k",
+      "actual": "0.0000",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "N-pension-income-cap",
+      "actual": "6000.00",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "N-pension-spouse-strict8500",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "first-modality-net",
+      "actual": "400.00",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "under100-waiver",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "exact100-not-waived",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "B-prior-year-instalment",
+      "actual": "1800.00",
+      "expected": "1800",
+      "pass": true
+    },
+    {
+      "name": "B-start-half",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "B-nonpositive-general",
+      "actual": "480.000",
+      "expected": "480",
+      "pass": true
+    },
+    {
+      "name": "B-wholesale",
+      "actual": "250.0000",
+      "expected": "250",
+      "pass": true
+    },
+    {
+      "name": "A-start",
+      "actual": "150.00",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "name": "A-agrarian-halfyear",
+      "actual": "2000.00",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "N-second-cumulative",
+      "actual": "700.00",
+      "expected": "700",
+      "pass": true
+    },
+    {
+      "name": "energy-community-netbase",
+      "actual": "8000.0",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "energy-credit",
+      "actual": "1200.00",
+      "expected": "1200",
+      "pass": true
+    },
+    {
+      "name": "care-currentquota",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "care-unused",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "Emanzipa-shared-before-eligibility",
+      "actual": "140",
+      "expected": "140",
+      "pass": true
+    },
+    {
+      "name": "IFP-lower-boundary",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ]
+}

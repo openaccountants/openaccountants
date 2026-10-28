@@ -1,0 +1,87 @@
+[
+  {
+    "name": "National",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/National.md",
+    "sha256": "fa894e025f4d89e070121102d46c51fce221bdbfc5e42b31b8e0e6e3d2cd43b7"
+  },
+  {
+    "name": "Madrid",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Madrid.md",
+    "sha256": "26bfd82b6e545901fe91d33321b98a8944ea09fb3b69e2485709f30acbf9c64e"
+  },
+  {
+    "name": "Catalan",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Catalan.md",
+    "sha256": "b38949dfcb5fc387d840e3b1bbc0e8e9b5522180fbf1bc29f3b0bd5f8164c8b5"
+  },
+  {
+    "name": "Andalucia",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Andalucia.md",
+    "sha256": "d4755155c19f7253ba82270ee352da8950198e1e83c24e6cff5925e278a6fb75"
+  },
+  {
+    "name": "Aragon",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Aragon.md",
+    "sha256": "9d12b7077aa70a35ab71505a712c7d9e9e5685744de282b15d2b7a4b3b5d0279"
+  },
+  {
+    "name": "CLM",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/CLM.md",
+    "sha256": "f1435ffee51bb07e683f5004b9c8e685016d7f3d883a4fad4cba37428b29c53b"
+  },
+  {
+    "name": "Asturias",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Asturias.md",
+    "sha256": "8e1dad1194bb069f885ade777d7f072e569b07d02ba52a38f84a6a77ff8dc140"
+  },
+  {
+    "name": "Balears",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Balears.md",
+    "sha256": "9b149e28487402ffb379a1d67c757d923b58dee7596d2934a5b3c8aa81d30cec"
+  },
+  {
+    "name": "Cantabria",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Cantabria.md",
+    "sha256": "7af962f4d2813c3667c03611dfa60080d8b3c4b72940bc2421910ca4f83ae74c"
+  },
+  {
+    "name": "Canarias",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Canarias.md",
+    "sha256": "f93cc4bc5e609a2d680e50fece7acbecbc30d261f51ee7e5fc0aa64c86c3af7a"
+  },
+  {
+    "name": "CyL",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/CyL.md",
+    "sha256": "66e39cf7ab3fb778fd4f8067b9eb56d8496aa1207eb1e3f14a8b272c7f341887"
+  },
+  {
+    "name": "Extremadura",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Extremadura.md",
+    "sha256": "a5a9c4ea38745b30d1973225d37b210e6af89fe680323629e156cea4fabca469"
+  },
+  {
+    "name": "Rioja",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Rioja.md",
+    "sha256": "c24fa540dcdf90841cbd98fa6bea4a8f782a50683d700dceba61f0f22f49b856"
+  },
+  {
+    "name": "Murcia",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Murcia.md",
+    "sha256": "f1a9957a7ea8246311e22c3f024821c1611bd7a6f69b6aad0637b26ef6aa3da0"
+  },
+  {
+    "name": "Galicia",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Galicia.md",
+    "sha256": "a213c921efd445a1d7d8ce688e6a79eba0db0c78e98ac3f0e5fc266d04a3d25d"
+  },
+  {
+    "name": "Valencia",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Valencia.md",
+    "sha256": "f18bc688dd44d8adb52c44a748379f317bd6a2332eb85cc165fe622a7d9f5c43"
+  },
+  {
+    "name": "Base",
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/sections/Base.md",
+    "sha256": "a5025739d2723e0dfc93ef99ee89c1de3d076898cb5c9fbadcc5f8ecd4b0a3b9"
+  }
+]
