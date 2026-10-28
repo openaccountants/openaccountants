@@ -46,7 +46,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey payroll and social contributions v0.9
+# Guernsey payroll and social contributions v0.10
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
