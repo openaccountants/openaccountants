@@ -1,0 +1,17 @@
+{
+  "baseline": "d4ea78488b8feed9e93c375076a9fc5e7f7825f6",
+  "independent_review": "pending",
+  "published": false,
+  "main_controls": 18,
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "old_bytes": 62192,
+      "new_bytes": 67125,
+      "sha256": "1a845fc5448b384eeee428c000b5bb7164911cb62b4f04cd53cdb0ff7dc23b19",
+      "protected_metadata_exact": true,
+      "CTA_exact": true,
+      "main_controls_byte_exact": true
+    }
+  ]
+}
