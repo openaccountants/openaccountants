@@ -1,6 +1,6 @@
 {
   "baseline": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
-  "independent_review": "pending",
+  "independent_review": "accepted at102a7bb82945633466c93002ba755e2b9c173cc7; see independent-review/closure.json",
   "published": false,
   "main_controls": 18,
   "files": [
@@ -58,5 +58,6 @@
       "CTA_exact": true,
       "main_controls_byte_exact": true
     }
-  ]
+  ],
+  "publication_note": "Preservation snapshot before the one planned country continuation push; final remote/CI evidence is recorded separately."
 }

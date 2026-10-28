@@ -36,6 +36,18 @@
     "initial_run": "1 failure (RUNNER_TEMP unbound),7 errors (macOS /var vs /private/var tempfile path); no code changes needed"
   },
   "other_initial_checks": "System python lacked PyYAML; used existing task venv. validate-guides --help is not a help flag and ran full validation with stale index; required --no-index-check passes. No generated data modified.",
-  "review": "fresh independent whole-pack review pending; two stale status cross-references repaired in worktree only",
-  "publication": "not pushed; existing PR780 published6ae8c8a2 unchanged"
+  "review": "fresh independent whole-pack and bounded repair closure accepted; no open material findings",
+  "publication": "Pre-push validation and accepted ten-blob manifest; country issue397 remains open for six exact ordinary-domain partials. Final remote/CI evidence recorded separately.",
+  "repair_candidate": "102a7bb82945633466c93002ba755e2b9c173cc7",
+  "changed_schema_after_repairs": {
+    "guides": 9,
+    "non_guide_markdown_skipped": 16,
+    "warnings": 0,
+    "result": "pass"
+  },
+  "changed_calculations_after_repairs": {
+    "files": 54,
+    "blocks_including_archive_duplicates": 89,
+    "failures": 0
+  }
 }
