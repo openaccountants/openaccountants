@@ -1,0 +1,31 @@
+{
+  "baseline": "265f91ff",
+  "finding": "F11",
+  "status": "integrated awaiting fresh independent recheck",
+  "changed_guides": {
+    "slovakia-vat-return.md": {
+      "before_sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531",
+      "after_sha256": "3736801e9f36dd741fdd1294d5ec10af84038f0432468dbdb885c283921b62ac"
+    },
+    "slovakia-vat-registration-4-7-7a.md": {
+      "before_sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+      "after_sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30"
+    }
+  },
+  "primary_read": "Actual DPHv25 pages2/3 visually inspected and extracted; actual form607/589 read, active catalog freshly opened27October",
+  "unclosed": "Annual denominator0,KVfirstbreach,fixedgrosscircularity andotherpackfindings",
+  "findings": [
+    "F11",
+    "F23"
+  ],
+  "publication_primary_read": {
+    "Annex7": "Fresh official PDF read 27October2026; ex4901 advertising limit50%; ex4902 advertising50% plus erotic10%; distinct physical-medium categories inspected, no blanket extension",
+    "Annex7a": "Fresh official one-page PDF: CPA58.11.30 online books advertising50%; book-narration audio at least50%.",
+    "urls": [
+      "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf",
+      "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf"
+    ]
+  },
+  "review_finding_fix": "Moved REGDP source row into actual contiguous Sources table; no wording or source removed.",
+  "review_publication_category_fix": "Identify ex4901/ex4902 and CPA58.11.30 expressly; do not generalize ex4901 cap to4903/4904."
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "file": "sk-cross-border.md",
+    "baseline_sha256": "aaa7da1943048c6568c717df7d1595929f18129c72ee8e95e3476412fa98f810",
+    "final_sha256": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+    "metadata_changes": {
+      "version": [
+        "0.2",
+        "0.3"
+      ]
+    },
+    "original_urls_retained": true,
+    "CTA_byline_identical": true,
+    "intake_identical": true,
+    "authored_H2": 9,
+    "oa": [
+      {
+        "example": 1,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 0,
+        "new_steps": 0,
+        "new_expected": 0
+      },
+      {
+        "example": 2,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 0,
+        "new_steps": 0,
+        "new_expected": 0
+      }
+    ],
+    "baseline_paragraph_units": 74,
+    "word_change": {
+      "baseline": 4604,
+      "final": 5160
+    }
+  },
+  {
+    "file": "sk-payroll-social.md",
+    "baseline_sha256": "6a6fea4123d16d3b78b5bdd4ccc292615bdebbb192e0741cca2ca263465f04e6",
+    "final_sha256": "8268d19f9e76db76470ed913bb6c06b3766fed5e83319cf8595481d4e638da58",
+    "metadata_changes": {
+      "version": [
+        "0.3",
+        "0.4"
+      ]
+    },
+    "original_urls_retained": true,
+    "CTA_byline_identical": true,
+    "intake_identical": true,
+    "authored_H2": 9,
+    "oa": [
+      {
+        "example": 1,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 0,
+        "new_steps": 0,
+        "new_expected": 0
+      },
+      {
+        "example": 2,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 1,
+        "new_steps": 4,
+        "new_expected": 4
+      }
+    ],
+    "baseline_paragraph_units": 48,
+    "word_change": {
+      "baseline": 4881,
+      "final": 5415
+    }
+  },
+  {
+    "file": "sk-transfer-pricing.md",
+    "baseline_sha256": "36da53364ba985b215ed1d6e45783836e91b7219e47e25e5f00c561bfa4cfa0d",
+    "final_sha256": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+    "metadata_changes": {
+      "version": [
+        "0.2",
+        "0.3"
+      ]
+    },
+    "original_urls_retained": true,
+    "CTA_byline_identical": true,
+    "intake_identical": true,
+    "authored_H2": 9,
+    "oa": [
+      {
+        "example": 1,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 0,
+        "new_steps": 0,
+        "new_expected": 0
+      },
+      {
+        "example": 2,
+        "old_inputs_steps_expected_preserved": true,
+        "new_inputs": 7,
+        "new_steps": 7,
+        "new_expected": 7
+      }
+    ],
+    "baseline_paragraph_units": 61,
+    "word_change": {
+      "baseline": 5485,
+      "final": 6708
+    }
+  }
+]

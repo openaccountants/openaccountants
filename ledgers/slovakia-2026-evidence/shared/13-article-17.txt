@@ -1,0 +1,658 @@
+§ 17
+Všeobecné ustanovenia o zisťovaní základu dane
+(1)
+ Pri zisťovaní základu dane alebo daňovej straty sa vychádza
+a)
+ u daňovníka účtujúceho v sústave jednoduchého účtovníctva1) alebo u daňovníka, ktorý vedie evidenciu podľa § 6 ods. 10 alebo ods. 11, z rozdielu medzi príjmami a výdavkami,
+b)
+ u daňovníka účtujúceho v sústave podvojného účtovníctva1) z výsledku hospodárenia,
+c)
+ u daňovníka, ktorý na základe povinnosti podľa osobitného predpisu1) vykazuje výsledok hospodárenia v individuálnej účtovnej závierke77a) podľa medzinárodných štandardov pre finančné výkazníctvo, z tohto výsledku hospodárenia,
+ upraveného spôsobom ustanoveným vo všeobecne záväznom právnom predpise vydanom ministerstvom,
+ alebo z výsledku hospodárenia, ktorý by vyčíslil, ak by účtoval v sústave podvojného
+ účtovníctva,1) pričom na účely zistenia tohto výsledku hospodárenia je povinný viesť evidenciu v
+ rozsahu a spôsobom ustanoveným pre sústavu podvojného účtovníctva1) a uchovávať ju podľa osobitného predpisu;77b) ak pri zisťovaní základu dane daňovník uplatnil postup, pri ktorom sa vychádza z
+ výsledku hospodárenia vykázanom v individuálnej účtovnej závierke podľa medzinárodných
+ štandardov pre finančné výkazníctvo upravenom spôsobom ustanoveným vo všeobecne záväznom
+ právnom predpise vydanom ministerstvom, takto uplatnený postup je daňovník povinný
+ uplatňovať aj v nasledujúcich zdaňovacích obdobiach,
+d)
+ u daňovníka s obmedzenou daňovou povinnosťou [§ 2 písm. e)], ktorý na území Slovenskej republiky vykonáva činnosť prostredníctvom stálej prevádzkarne,
+ ktorý nemá povinnosť viesť účtovníctvo podľa osobitného predpisu1) a nerozhodne sa postupovať podľa písmena a) alebo písmena b), z rozdielu medzi príjmami
+ (výnosmi) a výdavkami (nákladmi) vykázanými v evidencii tohto daňovníka priraditeľnými
+ tejto stálej prevádzkarni,
+e)
+ u daňovníka s obmedzenou daňovou povinnosťou [§ 2 písm. e)], ktorý na území Slovenskej republiky nevykonáva činnosť prostredníctvom stálej prevádzkarne,
+ ktorý nemá povinnosť viesť účtovníctvo podľa osobitného predpisu1) a nerozhodne sa postupovať podľa písmena a) alebo písmena b), z rozdielu medzi príjmami
+ (výnosmi) a výdavkami (nákladmi) vykázanými v evidencii tohto daňovníka.
+(2)
+ Výsledok hospodárenia alebo rozdiel medzi príjmami a výdavkami podľa odseku 1 pri
+ zisťovaní základu dane sa
+a)
+ zvýši o sumy, ktoré nemožno podľa tohto zákona zahrnúť do daňových výdavkov alebo
+ ktoré boli do daňových výdavkov zahrnuté v nesprávnej výške,
+b)
+ upraví o sumy, ktoré nie sú súčasťou výsledku hospodárenia, ale podľa tohto zákona
+ sú zahrnované do základu dane,
+c)
+ upraví o sumy, ktoré sú súčasťou výsledku hospodárenia, ale podľa tohto zákona sa
+ nezahrnú do základu dane,
+d)
+ v dôsledku zmeny účtovnej metódy pri použití medzinárodných štandardov pre finančné
+ výkazníctvo okrem úpravy základu dane podľa odseku 44, v zdaňovacom období, v ktorom
+ sa o zmene účtovnej metódy účtovalo,
+1.
+ zvýši o sumu, ktorá v dôsledku tejto zmeny zvýšila vlastné zdroje, ak by táto zmena
+ účtovnej metódy ovplyvnila zdaniteľné príjmy a daňové výdavky v tomto zdaňovacom období,
+2.
+ zníži o sumu, ktorá v dôsledku tejto zmeny znížila vlastné zdroje, ak by táto zmena
+ účtovnej metódy ovplyvnila zdaniteľné príjmy a daňové výdavky v tomto zdaňovacom období.
+(3)
+ Do základu dane podľa odseku 1 sa nezahŕňa
+a)
+ príjem, pri ktorom vybraním dane zrážkou podľa § 43 ods. 6 je splnená daňová povinnosť alebo pri ktorom daňovník nevyužil možnosť odpočítať daň
+ vybranú zrážkou ako preddavok na daň podľa § 43 ods. 7,
+b)
+ príjem z nákupu vlastných akcií za hodnotu nižšiu, ako je ich menovitá hodnota, pri
+ následnom znížení základného imania; za príjem z nákupu sa považuje rozdiel medzi
+ menovitou hodnotou akcií a nižšou hodnotou, za ktorú sa nakúpili,
+c)
+ suma, ktorá už bola u toho istého daňovníka zdanená podľa tohto zákona alebo podľa
+ doterajších predpisov,
+d)
+ daň z pridanej hodnoty vzťahujúca sa na hmotný majetok a nehmotný majetok,
+1.
+ na ktorú si platiteľ dane z pridanej hodnoty6) uplatnil nárok na odpočet pri registrácii podľa osobitného predpisu, pričom o daň
+ z pridanej hodnoty6) je daňovník povinný znížiť vstupnú cenu hmotného majetku a nehmotného majetku,
+2.
+ ktorú je platiteľ dane z pridanej hodnoty povinný odviesť pri zrušení registrácie
+ podľa osobitného predpisu,6) o ktorú upraví vstupnú cenu hmotného majetku a nehmotného majetku,
+e)
+ suma rovnajúca sa hodnote 45 % z rozdielu, o ktorý úhrn výdavkov (nákladov) z prevádzky
+ vlastného stravovacieho zariadenia prevyšuje úhrn príjmov z jeho prevádzky,
+f)
+ dotácia poskytnutá na obstaranie odpisovaného hmotného majetku v zdaňovacom období,
+ v ktorom bolo o nej účtované vo výnosoch podľa osobitného predpisu;1) táto dotácia sa zahrnie do základu dane počas doby odpisovania tohto majetku podľa
+ § 26 a vo výške odpisu podľa § 27 alebo § 28 alebo v pomernej časti zodpovedajúcej výške použitej dotácie na obstaranie tohto
+ majetku,
+g)
+ suma súvisiaca s obstaraním dlhodobého nehmotného majetku alebo dlhodobého hmotného
+ majetku alebo dlhodobého finančného majetku účtovaná na účtoch obstarania dlhodobého
+ nehmotného majetku alebo obstarania dlhodobého hmotného majetku alebo obstarania dlhodobého
+ finančného majetku alebo v knihe dlhodobého majetku podľa osobitného predpisu1) alebo evidovaná v evidencii podľa § 6 ods. 11 pri zrušení prác a trvalom zastavení prác alebo pri ukončení obstarávania dlhodobého
+ finančného majetku, ak nejde o škodu; táto suma sa zahrnie do základu dane rovnomerne
+ počas 36 mesiacov počnúc mesiacom, v ktorom daňovník o týchto skutočnostiach účtoval
+ alebo ich evidoval v evidencii podľa § 6 ods. 11,
+h)
+ dotácia, podpora a príspevok u daňovníka, ktorý účtuje v sústave jednoduchého účtovníctva
+ alebo, ktorý vedie daňovú evidenciu podľa § 6 ods. 11 v zdaňovacom období, v ktorom ich prijal, ak neboli použité na úhradu daňových výdavkov;
+ tieto príjmy nepoužité na úhradu daňových výdavkov sú zahrnované do základu dane
+1.
+ postupne vo výške odpisov majetku nadobudnutého z týchto príjmov alebo v pomernej
+ časti zodpovedajúcej výške použitej dotácie, podpory a príspevku na obstaranie odpisovaného
+ majetku,
+2.
+ v období čerpania dotácie, podpory a príspevku, ak tieto príjmy nesúvisia s výdavkom
+ účtovaným v zdaňovacom období, v ktorom boli prijaté,
+i)
+ príjem a obstarávacia cena cenného papiera účtovaná do výdavkov (nákladov) pri zabezpečovacom
+ prevode cenného papiera u dlžníka a pri spätnom prevode cenného papiera u veriteľa,
+j)
+ inventarizačný prebytok odpisovaného hmotného majetku a nehmotného majetku zistený
+ pri inventarizácii1) v zdaňovacom období, v ktorom bolo o ňom účtované vo výnosoch podľa osobitného predpisu;1) tento prebytok sa zahrnie do základu dane počas doby odpisovania tohto majetku podľa
+ § 26 a vo výške odpisu podľa § 27,
+k)
+ príjem na základe zmluvy o sponzorstve v športe29ab) u daňovníka, ktorý účtuje v sústave jednoduchého účtovníctva alebo, ktorý vedie daňovú
+ evidenciu podľa § 6 ods. 11 v zdaňovacom období, v ktorom ho prijal, ak nebol použitý na úhradu daňových výdavkov;
+ tieto príjmy nepoužité na úhradu daňových výdavkov sú zahrnované do základu dane
+1.
+ postupne vo výške odpisov majetku nadobudnutého z týchto príjmov alebo v pomernej
+ časti zodpovedajúcej výške použitého príjmu na obstaranie odpisovaného majetku,
+2.
+ v období čerpania sponzorského, ak tieto príjmy nesúvisia s výdavkom účtovaným v
+ zdaňovacom období, v ktorom boli prijaté,
+l)
+ príjem (výnos) na základe zmluvy o sponzorstve v športe29ab) použitý na obstaranie odpisovaného hmotného majetku v zdaňovacom období, v ktorom
+ bolo o ňom účtované vo výnosoch podľa osobitného predpisu;1) toto sponzorské sa zahrnie do základu dane počas doby odpisovania tohto majetku podľa
+ § 26 a vo výške odpisu podľa § 27 alebo § 28 alebo v pomernej časti zodpovedajúcej výške použitého príjmu na obstaranie tohto
+ majetku,
+m)
+ príjem (výnos) z reklám plynúci daňovníkovi podľa § 12 ods. 3 písm. a), ktorý účtuje v sústave podvojného účtovníctva v zdaňovacom období, v ktorom bolo
+ o ňom účtované vo výnosoch podľa osobitného predpisu;1) tento príjem (výnos) z reklám sa zahrnie do základu dane daňovníka v zdaňovacom období,
+ v ktorom ich prijal,
+n)
+ príjem (výnos) z kryptoaktíva nadobudnutého prírastkom získaným overovaním transakcií
+ v sieti daného kryptoaktíva v zdaňovacom období jeho nadobudnutia; tento príjem (výnos)
+ sa zahrnie do základu dane v zdaňovacom období realizácie predaja kryptoaktíva,
+o)
+ suma rovnajúca sa rozdielu medzi reálnou hodnotou77ba) a vstupnou cenou podľa § 25b ods. 1 písm. a) pri kryptoaktíve nadobudnutom kúpou,
+p)
+ výnos (príjem) vyplácaný zo štátnych dlhopisov a štátnych pokladničných poukážok
+ a výnos (príjem) vyplácaný z dlhopisov a pokladničných poukážok vydaných iným členským
+ štátom Európskej únie alebo štátom, ktorý je zmluvnou stranou Dohody o Európskom hospodárskom
+ priestore zahrnovaný do osobitného základu dane podľa § 51ea,
+q)
+ výnos (príjem) z poplatkov za vykonanie platobnej operácie prostredníctvom platobnej
+ karty v prospech hráčskeho účtu56) zahrňovaný do osobitného základu dane podľa § 51eb,
+r)
+ suma vo výške poskytnutej pomoci pri splácaní úveru na bývanie formou vrátenia časti
+ zvýšenej splátky úveru na bývanie39e) bankou a pobočkou zahraničnej banky,94) okrem stavebnej sporiteľne.39f)
+(4)
+ Súčasťou základu dane je aj príjem, z ktorého daň vyberanú zrážkou podľa § 43 ods. 6 písm. a) až c) je možné považovať za preddavok na daň, pri ktorom daňovník využil možnosť daň vyberanú
+ zrážkou odpočítať ako preddavok na daň podľa § 43 ods. 7. Súčasťou základu dane daňovníka s obmedzenou daňovou povinnosťou podľa § 2 písm. e) tretieho bodu, ktorý na území Slovenskej republiky podniká prostredníctvom stálej prevádzkarne
+ a daňovníka s neobmedzenou daňovou povinnosťou podľa § 2 písm. d) druhého bodu s výnimkou subjektu nezaloženého alebo nezriadeného na podnikanie (§ 12 ods. 2), a Národnej banky Slovenska je aj výnos z dlhopisov a pokladničných poukážok.
+(5)
+ Pri určení základu dane závislej osoby podľa § 2 písm. n)
+a)
+ je jeho súčasťou aj rozdiel, o ktorý sa ceny alebo podmienky vo významných kontrolovaných
+ transakciách líšia od cien alebo podmienok, ktoré by sa použili medzi nezávislými
+ osobami v porovnateľných transakciách, pričom tento rozdiel znižuje základ dane alebo
+ zvyšuje daňovú stratu a pri určení tohto rozdielu sa použije postup podľa § 18; za významnú kontrolovanú transakciu alebo skupinu kontrolovaných transakcií sa na
+ účely určenia základu dane závislej osoby považuje právny vzťah alebo iný obdobný
+ vzťah, na ktorého základe v príslušnom zdaňovacom období jedna alebo viac závislých
+ osôb dosiahne zdaniteľný príjem (výnos) alebo daňový výdavok (náklad) v hodnote prevyšujúcej
+ 10 000 eur, pričom za významnú kontrolovanú transakciu sa považuje aj úver alebo pôžička
+ s istinou nad 50 000 eur,
+b)
+ môže táto osoba zahrnúť do daňových výdavkov pomernú časť výdavkov (nákladov) vynaložených
+ inou osobou alebo subjektom, voči ktorej je závislou osobou, ak
+1.
+ tieto výdavky (náklady) preukázateľne súvisia s predmetom činnosti tejto osoby,
+2.
+ by bola za porovnateľných okolností a podmienok transakcie ochotná za takéto plnenie
+ zaplatiť, ak by bolo poskytnuté nezávislou osobou, alebo by si takúto činnosť uskutočnila
+ sama pre seba,
+3.
+ preukáže úhrnnú výšku výdavkov (nákladov) súvisiacich alebo vynaložených na toto
+ plnenie a spôsob ich delenia medzi osoby dosahujúce úžitok z tohto predmetu transakcie
+ a
+4.
+ je táto pomerná časť výdavkov zaúčtovaná v účtovníctve daňovníka podľa osobitného
+ predpisu1) alebo je zaevidovaná v evidencii daňovníka podľa § 6 ods. 11.
+(6)
+ Úpravu základu dane závislej osoby na území Slovenskej republiky povolí správca dane,
+ ktorého zverejní na svojom webovom sídle finančné riaditeľstvo, ak daňová správa štátu,
+ s ktorým má Slovenská republika uzavretú zmluvu o zamedzení dvojitého zdanenia, vykonala
+ úpravu základu dane závislej osoby v zahraničí, ktorá je v súlade s princípom nezávislého
+ vzťahu podľa § 18 ods. 1. Povolenie takejto úpravy správca dane, ktorého zverejní na svojom webovom sídle
+ finančné riaditeľstvo písomne oznámi daňovníkovi. Ak daňovník s neobmedzenou daňovou
+ povinnosťou vykonal úpravu základu dane podľa odseku 5 alebo ak bola správcom dane
+ vykonaná úprava základu dane inej závislej osoby na území Slovenskej republiky podľa
+ odseku 5, ktorá je v súlade s princípom nezávislého vzťahu podľa § 18 ods. 1, môže iná závislá osoba, ktorá je daňovníkom s neobmedzenou daňovou povinnosťou alebo
+ daňovníkom podľa § 2 písm. e) so stálou prevádzkarňou, vykonať úpravu základu dane pre kontrolované transakcie,
+ ktoré podliehali úprave podľa odseku 5. Ak bola vykonaná úprava základu dane inej
+ závislej osoby na území Slovenskej republiky podľa odseku 5 a daňovník s neobmedzenou
+ daňovou povinnosťou si uplatňuje úľavu na dani podľa § 30a alebo § 30b, je tento daňovník povinný vykonať úpravu základu dane pre kontrolované transakcie.
+ Ak daňovník uplatňujúci si úľavu na dani podľa § 30a alebo § 30b znížil základ dane a súčasne uplatnil postup podľa § 30a ods. 8 alebo § 30b ods. 8, je iná závislá osoba na území Slovenskej republiky povinná vykonať úpravu základu
+ dane pre kontrolované transakcie podľa odseku 5. Súčasne je daňovník povinný v lehote
+ na podanie daňového priznania alebo dodatočného daňového priznania predložiť správcovi
+ dane oznámenie o takto vykonanej úprave základu dane, ktorého vzor určí finančné riaditeľstvo
+ a uverejní ho na svojom webovom sídle. Toto oznámenie obsahuje
+a)
+ označenie daňovníka, ktorý vykonal úpravu základu dane podľa prvej až šiestej vety,
+ v rozsahu
+1.
+ daňové identifikačné číslo,
+2.
+ meno, priezvisko, adresa trvalého pobytu,
+3.
+ obchodné meno alebo názov, adresa sídla,
+4.
+ informácia o uplatnení úľavy na dani pre príjemcov investičnej pomoci podľa § 30a,
+5.
+ informácia o uplatnení úľavy na dani pre prijímateľa stimulov podľa § 30b,
+6.
+ ďalšie údaje identifikujúce daňovníka, ktorý vykonal úpravu základu dane,
+b)
+ údaje o inej závislej osobe na území Slovenskej republiky, ktorá vykonala úpravu
+ základu dane podľa odseku 5, v rozsahu
+1.
+ daňové identifikačné číslo,
+2.
+ meno, priezvisko, adresa trvalého pobytu,
+3.
+ obchodné meno alebo názov, adresa sídla,
+4.
+ informácia o uplatnení úľavy na dani pre príjemcov investičnej pomoci podľa § 30a,
+5.
+ informácia o uplatnení úľavy na dani pre prijímateľa stimulov podľa § 30b,
+6.
+ ďalšie údaje identifikujúce závislú osobu, ktorá vykonala úpravu základu dane,
+c)
+ údaje o výške úpravy základu dane podľa prvej až šiestej vety.
+(7)
+ Základ dane alebo daňová strata daňovníka s obmedzenou daňovou povinnosťou, ktorý
+ vykonáva činnosť na území Slovenskej republiky prostredníctvom stálej prevádzkarne,
+ nemôže byť nižší alebo daňová strata nemôže byť vyššia, ako by bola dosiahnutá, keby
+ ako nezávislá osoba vykonávala rovnaké alebo podobné činnosti nezávisle od jej zriaďovateľa.
+ Základ dane alebo daňová strata sa zistí podľa § 17 až 29. Do zdaniteľných príjmov (výnosov) sa zahŕňa príjem (výnos) dosiahnutý činnosťou
+ stálej prevádzkarne alebo nakladaním s majetkom stálej prevádzkarne. Do daňových výdavkov
+ (nákladov) sa môžu zahrnúť aj výdavky (náklady) preukázateľne vynaložené zriaďovateľom
+ stálej prevádzkarne na účely tejto stálej prevádzkarne vrátane výdavkov (nákladov)
+ na vedenie a všeobecných správnych výdavkov (nákladov) bez ohľadu na miesto ich vzniku,
+ ak zriaďovateľ stálej prevádzkarne preukáže úhrnnú výšku týchto výdavkov (nákladov)
+ za podnik ako celok, zdôvodní spôsob ich delenia medzi jednotlivé časti podniku daňovníka
+ a preukáže tok výrobkov alebo služieb smerujúcich do tejto stálej prevádzkarne. Ak
+ nemožno určiť základ dane týmto spôsobom alebo ak určenie základu dane týmto spôsobom
+ nie je v súlade s princípom nezávislého vzťahu (§ 18), na jeho určenie možno použiť pomer zisku alebo straty k výdavkom (nákladom) alebo
+ k príjmom (výnosom) alebo podobné porovnateľné ukazovatele u porovnateľných daňovníkov,
+ ak sa na ich základe preukázateľne vyčísli základ dane v súlade s princípom nezávislého
+ vzťahu (§ 18). Ďalej možno použiť metódu delenia celkových ziskov podniku daňovníka jeho rôznym
+ častiam alebo organizačným zložkám, ak sa dodrží princíp nezávislého vzťahu (§ 18). Príjmy (výnosy) a výdavky (náklady), ktoré sú priraditeľné stálej prevádzkarni
+ umiestnenej na území Slovenskej republiky a ktoré vznikli u daňovníka s obmedzenou
+ daňovou povinnosťou pred vznikom stálej prevádzkarne, sa uvedú v prvom daňovom priznaní
+ podanom za túto stálu prevádzkareň. Ak daňovníkovi s obmedzenou daňovou povinnosťou
+ vznikli príjmy (výnosy) priraditeľné stálej prevádzkarni umiestnenej na území Slovenskej
+ republiky po zdaňovacom období, v ktorom zanikla stála prevádzkareň, tieto príjmy
+ (výnosy) sa uvedú v daňovom priznaní za zdaňovacie obdobie, v ktorom sú tieto príjmy
+ (výnosy) vykázané u daňovníka s obmedzenou daňovou povinnosťou. Ak daňovníkovi s obmedzenou
+ daňovou povinnosťou vznikli výdavky (náklady) priraditeľné stálej prevádzkarni umiestnenej
+ na území Slovenskej republiky alebo splní podmienky na ich zahrnutie do daňových výdavkov
+ po zdaňovacom období, v ktorom zanikla stála prevádzkareň, tieto výdavky (náklady)
+ sa môžu vykázať v dodatočnom daňovom priznaní za niektoré z posledných dvoch zdaňovacích
+ období, v ktorých táto stála prevádzkareň existovala. Na úpravu základu dane stálej
+ prevádzkarne sa primerane použije postup podľa § 18. O použitej metóde úpravy základu dane stálej prevádzkarne vo vzťahu k zriaďovateľovi
+ a iným závislým osobám je daňovník s obmedzenou daňovou povinnosťou povinný viesť
+ dokumentáciu. Obsah a rozsah dokumentácie o použitej metóde určenia základu dane stálej
+ prevádzkarne určí ministerstvo. Daňovník môže písomne požiadať správcu dane, ktorého
+ zverejní na svojom webovom sídle finančné riaditeľstvo, o odsúhlasenie použitia konkrétnej
+ metódy určenia základu dane stálej prevádzkarne. Na odsúhlasenie použitia konkrétnej
+ metódy určenia základu dane stálej prevádzkarne sa primerane použije postup podľa
+ § 18 ods. 4 až 10.
+(8)
+ Základ dane v zdaňovacom období, v ktorom dochádza k zrušeniu daňovníka s likvidáciou
+ (§ 41 ods. 3) alebo v ktorom bol na daňovníka vyhlásený konkurz (§ 41 ods. 5), alebo v ktorom dochádza k skončeniu podnikania daňovníka (§ 6) alebo k skončeniu inej samostatnej zárobkovej činnosti, alebo prenájmu (§ 6), upraví daňovník, ktorý
+a)
+ účtuje v sústave jednoduchého účtovníctva alebo ktorý vedie evidenciu podľa § 6 ods. 11, o cenu nespotrebovaných zásob, zostatky vytvorených rezerv podľa § 20 ods. 9 písm. b), d) a e) a opravných položiek k nadobudnutému majetku, výšku záväzkov, ktorých úhrada sa považuje
+ za daňový výdavok podľa § 19, a výšku pohľadávok, ktorých inkaso sa považuje za zdaniteľný príjem, okrem pohľadávok
+ uvedených v § 19 ods. 2 písm. h) prvom až piatom a siedmom bode a o pomernú výšku nájomného, ktorá pripadá na príslušné zdaňovacie obdobie alebo
+ jeho časť; pri ďalšom predaji nespotrebovaných zásob sa zahrnie do základu dane iba
+ rozdiel, o ktorý prevyšuje cena, za ktorú boli nespotrebované zásoby predané, cenu
+ nespotrebovaných zásob už zahrnutých do základu dane,
+b)
+ účtuje v sústave podvojného účtovníctva, o zostatky vytvorených rezerv a opravných
+ položiek, príjmov budúcich období, výnosov budúcich období, výdavkov budúcich období
+ a nákladov budúcich období s výnimkou tých, ktoré preukázateľne súvisia s obdobím
+ likvidácie alebo konkurzu,
+c)
+ uplatňuje výdavky podľa § 6 ods. 10, o cenu nespotrebovaných zásob a o výšku pohľadávok s výnimkou pohľadávok uvedených
+ v § 19 ods. 2 písm. h).
+(9)
+ Na účely zistenia základu dane podľa odseku 8 daňovníka, ktorý je fyzickou osobou,
+ skončením podnikania, inej samostatnej zárobkovej činnosti alebo prenájmu je zánik
+ oprávnenia, osvedčenia alebo iného rozhodnutia na výkon činnosti, prerušenie alebo
+ pozastavenie a neobnovenie podnikania do lehoty na podanie daňového priznania s výnimkou
+ sezónnych činností alebo skončenie poberania príjmov z podnikania, inej samostatnej
+ zárobkovej činnosti alebo poberania príjmov z prenájmu.
+(10)
+ Rozdiel zo vzájomného započítania pohľadávok a záväzkov pri zlúčení, splynutí alebo
+ odštiepení obchodných spoločností alebo družstiev vykázaný podľa osobitného predpisu1) účtovaný na účet nerozdelený zisk minulých rokov alebo neuhradená strata minulých
+ rokov sa zahrnie do základu dane v zdaňovacom období, ktoré začína rozhodným dňom
+ podľa osobitného predpisu.77c)
+(11)
+ Na vyčíslenie základu dane podľa odseku 1 pri
+a)
+ kúpe podniku alebo jeho časti sa použije ocenenie majetku v reálnych hodnotách a
+ postupuje sa podľa § 17a, ak ide o daňovníka, ktorý zisťuje základ dane podľa odseku 1 písm. a), b) alebo
+ písm. c),
+b)
+ nepeňažnom vklade sa použije ocenenie majetku v
+1.
+ reálnych hodnotách alebo v hodnote započítanej na vklad spoločníka,37a) ak sa postupuje podľa § 17b, alebo
+2.
+ pôvodných cenách, ak sa postupuje podľa § 17d,
+c)
+ premene sa použije ocenenie majetku v
+1.
+ reálnych hodnotách, ak sa postupuje podľa § 17c a § 17ca, alebo
+2.
+ pôvodných cenách, ak sa postupuje podľa §17e a § 17ea.
+(12)
+ Základ dane daňovníka s príjmami podľa § 6, ktorý účtuje v sústave jednoduchého účtovníctva alebo ktorý vedie evidenciu podľa
+ § 6 ods. 10 alebo ods. 11, sa
+a)
+ zvýši o menovitú hodnotu pohľadávky pri jej vklade do obchodnej spoločnosti alebo
+ družstva alebo pri jej postúpení, a to aj ak ide o pohľadávku, ktorú daňovník vložil
+ alebo postúpil za cenu nižšiu, ako je jej menovitá hodnota,
+b)
+ zvýši pri vyradení pohľadávky z účtovníctva alebo z evidencie o sumu vo výške odpisu
+ menovitej hodnoty pohľadávky alebo pri pohľadávke nadobudnutej postúpením vo výške
+ jej obstarávacej ceny okrem pohľadávok uvedených v § 19 ods. 2 písm. h) prvom až piatom a siedmom bode,
+c)
+ zníži pri vyradení pohľadávky z účtovníctva alebo z evidencie o sumu vo výške zaplatenej
+ obstarávacej ceny pohľadávky nadobudnutej postúpením pri splnení podmienok uvedených
+ v § 19 ods. 2 písm. h) prvom až piatom a siedmom bode,
+d)
+ zníži o sumu vo výške zaplatenej obstarávacej ceny pohľadávky nadobudnutej postúpením
+ v zdaňovacom období, v ktorom došlo k úhrade dlžníkom alebo postupníkom pri jej ďalšom
+ postúpení, najviac však do výšky príjmov plynúcich z tejto úhrady.
+(13)
+ Postup podľa odseku 19 použije pri zisťovaní základu dane daňovník, ktorý
+a)
+ kupuje podnik alebo jeho časť (ďalej len „daňovník kupujúci podnik“),
+b)
+ je prijímateľom nepeňažného vkladu,
+c)
+ je právnym nástupcom daňovníka zrušeného bez likvidácie alebo daňovníka, ktorý sa
+ rozdeľuje odštiepením.
+(14)
+ Súčasťou základu dane daňovníka s neobmedzenou daňovou povinnosťou je aj základ dane
+ alebo daňová strata stálej prevádzkarne umiestnenej v zahraničí. Pri jeho zisťovaní
+ sa postupuje podľa odseku 1 s výnimkou výdavkov, ktoré je daňovník povinný uhrádzať
+ podľa právnych predpisov platných v štáte, v ktorom je zdroj príjmu, ktoré možno uplatniť
+ do daňových výdavkov v rozsahu ustanovenom v týchto právnych predpisoch. Rovnako postupuje
+ daňovník pri zmene sídla alebo miesta skutočného vedenia obchodnej spoločnosti alebo
+ družstva zo zahraničia na územie Slovenskej republiky, ak v zahraničí zostáva jeho
+ stála prevádzkareň.
+(15)
+ Pri zrušení opravných položiek a zrušení rezerv na účet nerozdelený zisk minulých
+ rokov1) sa základ dane zvyšuje o zaúčtovanú výšku zostatkov týchto účtov, ak ich tvorba je
+ považovaná za daňový výdavok. Opravy chýb minulých účtovných období, ak ide o náklady
+ (výdavky) uznané za daňový výdavok alebo výnosy (príjmy) zahrnované do zdaniteľných
+ príjmov, sa zahrnujú do základu dane toho zdaňovacieho obdobia, s ktorým vecne a časovo
+ súvisia, bez ohľadu na to, či sa účtujú do nákladov, výnosov alebo na účet nerozdelený
+ zisk minulých rokov.
+(16)
+ Do základu dane daňovníka nezaloženého alebo nezriadeného na podnikanie (§ 12 ods. 2) sa pri predaji majetku, ktorý bol používaný na činnosť, z ktorej príjmy sú predmetom
+ dane, zahrnie rozdiel, o ktorý príjem z jeho predaja prevyšuje cenu podľa § 25, zníženú o odpisy uplatnené v daňových výdavkoch vypočítané podľa § 27 alebo § 28. Pri predaji hmotného majetku, ktorý tento daňovník nepoužíval na činnosť, z ktorej
+ príjmy sú predmetom dane, je súčasťou základu dane aj rozdiel, o ktorý príjem z jeho
+ predaja prevyšuje cenu, v ktorej bol majetok ocenený v účtovníctve pri jeho nadobudnutí,
+ zvýšenú o náklady preukázateľne vynaložené na jeho technické zhodnotenie.
+(17)
+ Kurzové rozdiely vznikajúce v účtovníctve z dôvodu nezrealizovaného inkasa pohľadávok
+ alebo neuhradených platieb záväzkov ku dňu, ku ktorému sa zostavuje účtovná závierka,
+ sa zahrnujú do základu dane daňovníka v zdaňovacom období, v ktorom o nich účtuje,
+ ak sa nerozhodne zahrnovať ich do základu dane v tom zdaňovacom období, v ktorom došlo
+ k inkasu alebo odpisu pohľadávky, platbe alebo odpisu záväzku. V zdaňovacom období,
+ v ktorom sa daňovník rozhodne zahrnovať kurzové rozdiely do základu dane v súlade
+ s účtovníctvom, je povinný zahrnúť do základu dane aj kurzové rozdiely vyčíslené v
+ účtovníctve nezahrnuté do základu dane v predchádzajúcich zdaňovacích obdobiach. Právny
+ nástupca daňovníka zrušeného bez likvidácie alebo nástupník daňovníka, ktorý sa rozdeľuje
+ odštiepením môže pokračovať v postupe nezahrnovania kurzových rozdielov vznikajúcich
+ v účtovníctve do základu dane, ak právnym nástupcom alebo nástupníkom je novozaložená
+ obchodná spoločnosť alebo ak tento postup už uplatňoval aj daňovník, ktorý je právnym
+ nástupcom daňovníka zrušeného bez likvidácie alebo nástupníkom daňovníka, ktorý sa
+ rozdeľuje odštiepením. Skutočnosti o osobitnom spôsobe zahrnovania a ukončenia zahrnovania
+ kurzových rozdielov do základu dane vyznačí daňovník v daňovom priznaní za príslušné
+ zdaňovacie obdobie.
+(18)
+ Súčasťou základu dane je aj daň z pridanej hodnoty,
+a)
+ na ktorú si platiteľ dane z pridanej hodnoty uplatnil nárok na odpočítanie pri registrácii
+ podľa osobitného predpisu6) s výnimkou podľa odseku 3 písm. d),
+b)
+ ktorá je dodatočne odpočítateľná alebo dodatočne neodpočítateľná, ak platiteľ dane
+ z pridanej hodnoty zmenil účel použitia hmotného majetku podľa osobitného predpisu.78)
+(19)
+ Súčasťou základu dane daňovníka, okrem výdavkov (nákladov), ktoré sú súčasťou obstarávacej
+ ceny alebo vlastných nákladov majetku, len po zaplatení sú
+a)
+ kompenzačné platby vyplácané podľa osobitného predpisu37ad) u ich dlžníka,
+b)
+ výdavky (náklady) na nájomné za prenájom hnuteľnej veci, nehnuteľnosti, odplaty za
+ poskytnutie práva na použitie alebo za použitie predmetu priemyselného vlastníctva,
+ počítačových programov (softvér), návrhov alebo modelov, plánov, výrobno-technických
+ a iných hospodársky využiteľných poznatkov (know-how) a odplaty za poskytnutie práva
+ na použitie alebo za použitie autorského práva alebo práva príbuzného autorskému právu,
+ pričom tieto výdavky (náklady) a odplaty zaplatené fyzickej osobe za príslušné zdaňovacie
+ obdobie sa uznajú najviac do výšky časovo rozlíšenej sumy prislúchajúcej na zdaňovacie
+ obdobie,
+c)
+ výdavky (náklady) na marketingové štúdie a iné štúdie a na prieskum trhu u dlžníka,
+d)
+ odplaty (provízie) za sprostredkovanie u prijímateľa služby, a to aj ak ide o sprostredkovanie
+ na základe mandátnych zmlúv alebo obdobných zmlúv,79a)
+e)
+ výdavky (náklady) vzťahujúce sa k úhrade príjmov podľa § 16 ods. 1 vyplácaných, poukazovaných alebo pripisovaných v prospech daňovníka nespolupracujúceho
+ štátu a po splnení povinností ustanovených v § 43 ods. 11 alebo § 44 ods. 3 pre daňovníka, ktorý vypláca, poukazuje alebo pripisuje uvedené príjmy, ak mu takéto
+ povinnosti vznikli,
+f)
+ výdavky (náklady) na poradenské služby a právne služby zatriedené do kódu Klasifikácie
+ produktov 69.1, 69.2, 70.1 a 70.22,120)
+g)
+ paušálna náhrada nákladov spojených s uplatnením pohľadávky,77d) zmluvné pokuty, poplatky z omeškania a úroky z omeškania u dlžníka a odstupné u oprávnenej
+ osoby,79b)
+h)
+ výdavky (náklady) na sponzorské u sponzora na základe zmluvy o sponzorstve v športe29ab) poskytnuté počas obdobia trvania zmluvy o sponzorstve v športe29ab) v rozsahu podľa jeho skutočného použitia v príslušnom zdaňovacom období, ak v príslušnom
+ zdaňovacom období sponzor vykáže kladný základ dane; za výdavky (náklady) na sponzorské
+ sa nepovažuje poskytnutie sponzorského pre športovca79c) okrem športového reprezentanta,79d)
+i)
+ výdavky (náklady) na reklamu poskytnuté daňovníkovi podľa § 12 ods. 3 písm. a),
+j)
+ daň z poistenia platená poistníkom a daň z poistenia z preúčtovaných nákladov poistenia
+ podľa osobitného predpisu,79e)
+k)
+ odvod z nadmerných príjmov,79g)
+l)
+ výdavky (náklady) na podporu športu podľa § 30ca, ak v príslušnom zdaňovacom období daňovník vykáže kladný základ dane.
+(20)
+ Súčasťou základu dane je aj nepeňažný príjem prenajímateľa, ktorý je vlastníkom veci
+ prenajatej na základe nájomnej zmluvy alebo iného užívacieho vzťahu,80) (ďalej len "nájomná zmluva") a to vo výške výdavkov vynaložených nájomcom alebo užívateľom
+ podľa osobitného predpisu80) (ďalej len "nájomca"), po predchádzajúcom písomnom súhlase prenajímateľa, na technické
+ zhodnotenie tejto veci nad rámec povinností dohodnutých v nájomnej zmluve80) a neuhradených prenajímateľom, a to v zdaňovacom období, v ktorom
+a)
+ bolo technické zhodnotenie uvedené do užívania, ak o hodnotu technického zhodnotenia
+ vlastník prenajatej veci zvýšil vstupnú (zostatkovú) cenu tohto majetku,
+b)
+ došlo k skončeniu nájomnej zmluvy; nepeňažný príjem sa určí vo výške zostatkovej
+ ceny, ktorú by malo technické zhodnotenie pri použití rovnomerného odpisovania (§ 27).
+(21)
+ Nepeňažným príjmom prenajímateľa sú aj výdavky vynaložené nájomcom na opravy prenajatého
+ hmotného majetku zahrnuté do daňových výdavkov nájomcu nad rámec povinností nájomcu
+ dohodnutých v nájomnej zmluve.80)
+(22)
+ Pri zisťovaní daňovej straty sa postupuje rovnako, ako pri zisťovaní základu dane.
+(23)
+ Náklad, na ktorý bola tvorená rezerva podľa osobitného predpisu,1) ktorej tvorba nie je uznaná za daňový výdavok, sa zahrnie do základu dane v tom zdaňovacom
+ období, v ktorom dôjde k použitiu rezervy, a to do výšky, v akej je tento náklad súčasne
+ uznaný za daňový výdavok podľa § 19; zúčtovaný rozdiel medzi nákladom, na ktorý bola táto rezerva tvorená a sumou tejto
+ rezervy, sa do základu dane nezahŕňa. Zrušenie rezervy, ktorej tvorba nie je uznaná
+ za daňový výdavok sa nezahrnie do základu dane. Rovnako sa postupuje aj pri opravnej
+ položke neuznanej za daňový výdavok podľa § 19.
+(24)
+ Pri vyčíslení základu dane v zdaňovacom období, v ktorom došlo
+a)
+ k porušeniu podmienok finančného prenájmu podľa § 2 písm. s) u daňovníka, ktorý obstaráva hmotný majetok formou finančného prenájmu, sa pri vyradení
+ tohto hmotného majetku postupuje podľa § 19 ods. 3 písm. b), d), e) alebo písm. g),
+b)
+ po skončení nájmu bez vopred dohodnutého práva kúpy prenajatej veci ku kúpe prenajatej
+ veci za kúpnu cenu nižšiu, ako je jej zostatková cena podľa § 25 ods. 3, sa základ dane zvýši o kladný rozdiel už uplatneného nájomného v daňových výdavkoch
+ a odpisov, ktoré by mohol vlastník uplatniť z tohto majetku počas trvania nájomnej
+ zmluvy podľa § 27 a o tento rozdiel sa zvýši vstupná cena obstarávaného majetku.
+(25)
+ Základ dane daňovníka podľa § 2 písm. e) sa vypočíta ako súčet základov dane a daňových strát jednotlivých stálych prevádzkarní
+ a základu dane z tých druhov príjmov, ktoré nie sú súčasťou základu dane stálej prevádzkarne,
+ z ktorých sa daň nevyberá zrážkou podľa § 43 alebo z ktorých vybraním dane zrážkou nie je splnená daňová povinnosť.
+(26)
+ Ak pri zmene sídla alebo miesta skutočného vedenia obchodnej spoločnosti alebo družstva
+ z územia Slovenskej republiky do členského štátu Európskej únie vznikne na území Slovenskej
+ republiky stála prevádzkareň, daňovník neupravuje základ dane o zostatky rezerv, opravných
+ položiek a účtov časového rozlíšenia, ak sa vzťahujú k majetku a záväzkom tejto stálej
+ prevádzkarne, okrem opravnej položky podľa § 20, pokračuje v odpisovaní hmotného majetku a nehmotného majetku tejto stálej prevádzkarne
+ a odpočítavaní daňovej straty podľa § 30, ak sa vzťahuje k majetku a záväzkom tejto stálej prevádzkarne.
+(27)
+ Daňovník okrem daňovníka podľa osobitného predpisu80a) a daňovníka, na ktorého bol vyhlásený konkurz, základ dane zistený podľa odseku 1
+ písm. b) a c) upraví o výšku záväzku prislúchajúceho k výdavku (nákladu), ktorý je
+ podľa § 19 daňovým výdavkom, a to aj k výdavku (nákladu) prislúchajúcemu k odpisovanému a neodpisovanému
+ majetku, zásobám, finančnému majetku a inému majetku, pri ktorom vzniká výdavok (náklad)
+ pri jeho zaradení alebo vyradení zo spotreby alebo z používania, alebo neuhradenej
+ časti takéhoto záväzku, ako aj o výšku záväzku účtovaného ako zníženie výnosu (príjmu)
+ tak, aby zvýšenie základu dane, ak od dohodnutej lehoty splatnosti záväzku, ktorú
+ na účely tohto ustanovenia nie je možné predĺžiť, uplynula doba dlhšia ako
+a)
+ 360 dní, predstavovalo v úhrne najmenej 20 % menovitej hodnoty záväzku alebo jeho
+ nesplatenej časti,
+b)
+ 720 dní, predstavovalo v úhrne najmenej 50 % menovitej hodnoty záväzku alebo jeho
+ nesplatenej časti,
+c)
+ 1 080 dní, predstavovalo v úhrne najmenej 100 % menovitej hodnoty záväzku alebo jeho
+ nesplatenej časti.
+(28)
+ Základ dane zistený podľa § 17 ods. 1 písm. b) a c) sa v zdaňovacom období, v ktorom dôjde
+a)
+ k postúpeniu pohľadávky, zvýši o sumu opravnej položky, ktorej tvorba bola uznaná
+ za daňový výdavok podľa § 19, a súčasne zníži o výdavok (náklad) podľa § 19 ods. 3 písm. h), ak bola pohľadávka v zdaňovacom období postúpenia pohľadávky aspoň jeden kalendárny
+ deň nepremlčaná; pri postúpení pohľadávky, ktorá v zdaňovacom období jej postúpenia
+ nebola aspoň jeden kalendárny deň nepremlčaná, je možné základ dane znížiť o výdavok
+ (náklad) podľa § 19 ods. 3 písm. h) najviac do výšky opravnej položky k pohľadávke, ktorá bola daňovníkom uplatnená ako
+ daňový výdavok v čase, keď ešte nebola pohľadávka premlčaná,
+b)
+ k odpisu pohľadávky, zvýši o sumu opravnej položky, ktorej tvorba bola uznaná za
+ daňový výdavok podľa § 19, a súčasne zníži o výdavok (náklad) podľa § 19 ods. 2 písm. h) alebo sa zníži o výdavok (náklad) podľa § 19 ods. 2 písm. r), ak bola pohľadávka v zdaňovacom období odpisu pohľadávky aspoň jeden kalendárny
+ deň nepremlčaná; pri odpise pohľadávky, ktorá v zdaňovacom období jej odpisu nebola
+ aspoň jeden kalendárny deň nepremlčaná, je možné základ dane znížiť o výdavok (náklad)
+ podľa § 19 ods. 2 písm. r) najviac do výšky opravnej položky, ktorá bola daňovníkom uplatnená ako daňový výdavok
+ v čase, keď ešte nebola pohľadávka premlčaná,
+c)
+ k čiastočnému zaplateniu pohľadávky, upraví o časť opravnej položky podľa § 20.
+(29)
+ Ak daňovník v príslušnom zdaňovacom období zahrnul do výsledku hospodárenia vyššie
+ výnosy (príjmy), ako mu vyplýva z osobitného predpisu1) alebo v príslušnom zdaňovacom období zahrnul do výsledku hospodárenia nižšie náklady
+ (výdavky), ako mu vyplýva z osobitného predpisu1) a z tohto dôvodu vykázal vyšší základ dane a odviedol vyššiu daň, úprava výsledku
+ hospodárenia alebo nerozdeleného zisku minulých rokov alebo neuhradenej straty minulých
+ rokov v nasledujúcich účtovných obdobiach už nebude mať vplyv na výšku základu dane
+ a daňovej povinnosti; ak sa daňovník rozhodne pre takýto postup v príslušnom zdaňovacom
+ období, neuplatní sa úprava základu dane podľa odseku 15. Daňovník môže takýto postup
+ uplatniť len vtedy, ak za príslušné zdaňovacie obdobie nezaniklo právo na vyrubenie
+ dane.34)
+(30)
+ Mimoriadny odvod podľa osobitného predpisu80aa) sa zahrnie do základu dane vo výške jeho úhrady alebo časti jeho úhrady, a to v tom
+ zdaňovacom období, v ktorom k úhrade došlo.
+(31)
+ Pri vyradení hmotného majetku, pri ktorom boli uplatnené odpisy podľa § 26 ods. 12, pred uplynutím doby odpisovania podľa § 26 ods. 1 a 5, je daňovník povinný zvýšiť základ dane o kladný rozdiel medzi už uplatnenými odpismi
+ podľa § 26 ods. 12 a odpismi vyčíslenými podľa § 27 alebo § 28.
+(32)
+ Ak po období, v ktorom bol základ dane zvýšený podľa odseku 27
+a)
+ o 100 % menovitej hodnoty záväzku alebo jeho nesplatenej časti, dôjde k úhrade záväzku
+ alebo jeho časti, základ dane sa zníži o výšku uhradeného záväzku v tom zdaňovacom
+ období, v ktorom bol záväzok alebo jeho časť uhradený; za úhradu záväzku sa nepovažuje
+ nahradenie záväzku zmenkou,
+b)
+ dôjde k premlčaniu, zániku, odpisu alebo čiastočnému odpisu tohto záväzku, základ
+ dane sa zníži o výšku záväzku, o ktorú daňovník zvýšil základ dane podľa odseku 27,
+ a to najviac do výšky zaúčtovaného výnosu v tom zdaňovacom období, v ktorom sa o výnose
+ účtuje,
+c)
+ sa doterajší záväzok nahrádza novým záväzkom,80aaaa) základ dane sa zníži najviac o sumu, o ktorú menovitá hodnota pôvodného záväzku prevyšuje
+ menovitú hodnotu nového záväzku, pričom na účely odseku 27 sa lehotou splatnosti záväzku
+ rozumie splatnosť pôvodného záväzku,
+d)
+ dôjde k potvrdeniu reštrukturalizačného plánu súdom38a) alebo k vyhláseniu konkurzu na daňovníka,80aaa) základ dane sa zníži o sumu záväzku prislúchajúceho k výdavku (nákladu), o ktorú
+ sa zvyšoval základ dane podľa odseku 27 v tom zdaňovacom období, v ktorom došlo k
+ potvrdeniu reštrukturalizačného plánu súdom,38a) alebo v zdaňovacom období ukončenom ku dňu predchádzajúcemu dňu účinnosti vyhlásenia
+ konkurzu;80b) postup podľa odseku 27 neuplatní daňovník na záväzky, ktoré sú obsiahnuté v reštrukturalizačnom
+ pláne potvrdenom súdom.38a)
+(33)
+ Súčasťou základu dane
+a)
+ sú mzdy vrátane poistného a príspevkov pri konte pracovného času,80ab) ktoré sú vyplatené zamestnávateľom za zamestnanca pred vykonaním práce a účtované
+ na účet nákladov budúcich období;1) následné zúčtovanie nákladov budúcich období podľa osobitného predpisu1) v čase vykonania práce sa do základu dane nezahŕňa,
+b)
+ je výnos z predaja majetku, ktorý predávajúci súčasne nadobúda zmluvou o finančnom
+ prenájme, účtovaný na účet výnosov budúcich období;1) následné zúčtovanie výnosov budúcich období podľa osobitného predpisu1) počas dohodnutej doby finančného prenájmu sa do základu dane nezahŕňa,
+c)
+ je u daňovníka účtujúceho v sústave podvojného účtovníctva ocenenie cenných papierov
+ určených na obchodovanie účtované ako náklad alebo výnos pri oceňovaní reálnou hodnotou.
+(34)
+ Základ dane daňovníka, ktorý je právnickou osobou, alebo základ dane (čiastkový základ
+ dane) z príjmov podľa § 6 daňovníka, ktorý je fyzickou osobou, sa zvýši o kladný rozdiel medzi úhrnom skutočne
+ uplatnených daňových odpisov v príslušnom zdaňovacom období z osobných automobilov
+ zatriedených do kódu Klasifikácie produktov 29.10.2 so vstupnou cenou (§ 25) 48 000 eur a viac podľa § 19 ods. 3 písm. a) a úhrnom ročných odpisov alebo pomerných častí ročných odpisov za príslušné zdaňovacie
+ obdobie z týchto osobných automobilov vypočítaných zo vstupnej ceny 48 000 eur spôsobom
+ podľa § 27, ak tento základ dane je nižší ako násobok počtu osobných automobilov so vstupnou
+ cenou 48 000 eur a viac a ročného daňového odpisu vypočítaného zo vstupnej ceny 48
+ 000 eur. Táto úprava základu dane sa nevykoná u prenajímateľa u osobných automobilov,
+ ktoré boli prenajaté na základe nájomnej zmluvy bez vopred dohodnutého práva kúpy
+ prenajatej veci.
+(35)
+ Základ dane daňovníka, ktorý je právnickou osobou, alebo základ dane (čiastkový základ
+ dane) z príjmov podľa § 6 daňovníka, ktorý je fyzickou osobou, sa zvýši o rozdiel medzi úhrnom uplatneného
+ nájomného na základe nájomnej zmluvy bez vopred dohodnutého práva kúpy prenajatej
+ veci v daňových výdavkoch v príslušnom zdaňovacom období z osobných automobilov zatriedených
+ do kódu Klasifikácie produktov 29.10.2 so vstupnou cenou (§ 25) 48 000 eur a viac a súčtom násobkov počtu týchto prenajatých osobných automobilov
+ a limitovaného ročného nájomného vo výške 14 400 eur zodpovedajúceho počtu mesiacov
+ nájmu v príslušnom zdaňovacom období, ak tento základ dane je nižší ako súčet násobkov
+ počtu prenajatých osobných automobilov so vstupnou cenou 48 000 eur a viac a limitovaného
+ ročného nájomného vo výške 14 400 eur zodpovedajúceho počtu mesiacov nájmu v príslušnom
+ zdaňovacom období.
+(36)
+ V zdaňovacom období, v ktorom sa daňovník stal mikro účtovnou jednotkou podľa osobitného
+ predpisu1) a v predchádzajúcom zdaňovacom období zahrnul do výsledku hospodárenia zmenu reálnej
+ hodnoty cenných papierov, o ktorej účtoval ku dňu, ku ktorému sa zostavuje účtovná
+ závierka, sa základ dane
+a)
+ zvýši o hodnotu účtovanú do nákladov a odúčtovanú na účet nerozdelený zisk minulých
+ rokov alebo na účet neuhradená strata minulých rokov,
+b)
+ zníži o hodnotu účtovanú do výnosov a odúčtovanú na účet nerozdelený zisk minulých
+ rokov alebo na účet neuhradená strata minulých rokov.
+(37)
+ Základ dane daňovníka, ktorý poskytuje praktické vyučovanie žiakovi na základe učebnej
+ zmluvy podľa osobitného predpisu,80ac) sa zníži o
+a)
+ 3 200 eur na žiaka, ak daňovník poskytne v zdaňovacom období viac ako 400 hodín praktického
+ vyučovania,
+b)
+ 1 600 eur na žiaka, ak daňovník poskytne v zdaňovacom období viac ako 200 hodín praktického
+ vyučovania.
+(38)
+ Základom dane daňovníka, ktorý je právnickou osobou alebo základom dane (čiastkovým
+ základom dane) z príjmov podľa § 6 ods. 1 a 2 alebo základom dane (čiastkovým základom dane) z príjmov podľa § 6 ods. 3 a 4 daňovníka, ktorý je fyzickou osobou na účely uplatnenia odseku 19 písm. h) a l), odsekov 34, 35 a 37, § 17k, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h) sa rozumie základ dane daňovníka, ktorý je právnickou osobou alebo základ dane (čiastkový
+ základ dane) z príjmov podľa § 6 ods. 1 a 2 alebo základ dane (čiastkový základ dane) z príjmov podľa § 6 ods. 3 a 4 daňovníka, ktorý je fyzickou osobou zistený podľa § 17 až 29 okrem ustanovení § 17 ods. 19 písm. h) a l), ods. 34, 35 a 37, § 17k, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h).
+(39)
+ Základ dane držiteľa motorového vozidla podľa osobitného predpisu,80aca) ktorý do jedného roka od zápisu motorového vozidla do evidencie vozidiel v Slovenskej
+ republike nevykoná prevod držby motorového vozidla a zároveň najneskôr do 15 dní po
+ uplynutí tejto lehoty neuhradí poplatok podľa osobitného predpisu80acb) vo výške zodpovedajúcej sume poplatku pri prvej evidencii vozidla, sa v zdaňovacom
+ období, v ktorom uplynie lehota na úhradu poplatku podľa osobitného predpisu,80acb) zvyšuje o výdavky na obstaranie, technické zhodnotenie, prevádzkovanie, opravy a
+ udržiavanie motorového vozidla uplatnené v zdaňovacom období, v ktorom došlo k zápisu
+ motorového vozidla do evidencie vozidiel v Slovenskej republike. Počnúc zdaňovacím
+ obdobím nasledujúcim po zdaňovacom období, v ktorom došlo k zápisu motorového vozidla
+ do evidencie vozidiel v Slovenskej republike, sa základ dane držiteľa motorového vozidla80aca) zvyšuje o výdavky na obstaranie, technické zhodnotenie, prevádzkovanie, opravy a
+ udržiavanie motorového vozidla uplatnené v základe dane, a to za každé zdaňovacie
+ obdobie až do zdaňovacieho obdobia predchádzajúceho zdaňovaciemu obdobiu, v ktorom
+ dôjde k úhrade poplatku podľa osobitného predpisu80acb) vo výške zodpovedajúcej sume poplatku pri prvej evidencii vozidla. Držiteľ motorového
+ vozidla80aca) do zdaňovacieho obdobia, ktoré predchádza zdaňovaciemu obdobiu, v ktorom dôjde k
+ úhrade poplatku podľa osobitného predpisu80acb) vo výške zodpovedajúcej sume poplatku pri prvej evidencii vozidla, nemôže pri motorovom
+ vozidle, pri ktorom nie je tento poplatok uhradený podľa osobitného predpisu,80acb) uplatniť prerušenie odpisovania podľa § 22 ods. 9.
+(40)
+ Súčasťou základu dane daňovníka, ktorý zisťuje základ dane podľa § 17 ods. 1 písm. b) alebo písm. c), nie je príjem z prerozdelenia kapitálového fondu z príspevkov do výšky daňovníkom
+ splateného príspevku. Za príjem z prerozdelenia kapitálového fondu z príspevkov sa
+ považuje aj príjem plynúci zo zníženia základného imania obchodnej spoločnosti v časti,
+ v akej bolo predtým zvýšené zo splatených príspevkov do kapitálového fondu z príspevkov.
+ Súčasťou základu dane daňovníka, ktorý príspevok nerealizoval, je iba suma výnosu
+ z prerozdelenia kapitálového fondu z príspevkov v tom zdaňovacom období, v ktorom
+ o tejto pohľadávke účtuje.1)
+(41)
+ Súčasťou základu dane daňovníka, ktorý účtuje v sústave jednoduchého účtovníctva
+ alebo ktorý vedie evidenciu podľa § 6 ods. 11, je aj príjem z prerozdelenia kapitálového fondu z príspevkov v zdaňovacom období,
+ v ktorom ho prijal; za príjem z prerozdelenia kapitálového fondu z príspevkov sa považuje
+ aj príjem plynúci zo zníženia základného imania obchodnej spoločnosti v časti, v akej
+ bolo predtým zvýšené zo splatených príspevkov do kapitálového fondu z príspevkov.
+ Základ dane daňovníka sa zníži o sumu ním splateného príspevku. Ak suma splateného
+ príspevku prevyšuje príjem podľa prvej vety, môže sa uplatniť v tomto zdaňovacom období
+ až do výšky tohto príjmu, pričom ak tento príjem plynie aj v ďalšom zdaňovacom období,
+ postupuje sa rovnako, a to až do výšky celkovej sumy splateného príspevku. Súčasťou
+ základu dane daňovníka, ktorý príspevok nerealizoval, je iba príjem z prerozdelenia
+ kapitálového fondu z príspevkov v tom zdaňovacom období, v ktorom ho prijal.
+(42)
+ Pri uplatňovaní oslobodenia podľa § 13a alebo § 13b, nie sú výdavky (náklady) vynaložené na príjmy (výnosy) podľa § 13a alebo § 13b súčasťou základu dane v rovnakom pomere, v akom sú tieto príjmy (výnosy) oslobodené
+ od dane.
+(43)
+ Súčasťou základu dane je príjem z predaja kryptoaktíva dosiahnutý pri výmene kryptoaktíva
+ za majetok, pri výmene kryptoaktíva za iné kryptoaktívum alebo pri výmene kryptoaktíva
+ za poskytnutie služby v tom zdaňovacom období, v ktorom dochádza k tejto výmene, pri
+ použití ocenenia vymieňaného kryptoaktíva reálnou hodnotou80acc) ku dňu výmeny.
+(44)
+ Súčasťou základu dane u daňovníka, ktorý pri zisťovaní základu dane alebo daňovej
+ straty postupuje podľa odseku 1 písm. c) a využil možnosť oceňovať finančný majetok
+ reálnou hodnotou do vlastných zdrojov bez vplyvu na výsledok hospodárenia, je pri
+ realizácii tohto finančného nástroja aj suma zodpovedajúca zmenám vlastných zdrojov
+ súvisiacich s týmto finančným nástrojom od jeho nadobudnutia do jeho realizácie vrátane
+ sumy, o ktorú sa neupravil základ dane podľa odseku 2 písm. d); to sa nevzťahuje na
+ finančný majetok, z ktorého príjem (výnos) z predaja spĺňa podmienky na oslobodenie
+ podľa § 13c. Pri uplatňovaní daňového výdavku podľa § 19 ods. 2 písm. f) alebo písm. g) sa vychádza zo vstupnej ceny finančného majetku podľa § 25a upravenej o sumu zmien vlastných zdrojov súvisiacich s týmto finančným majetkom zahrnovaných
+ do základu dane.
+Ocenenie v reálnych hodnotách pri predaji a kúpe podniku alebo jeho časti, nepeňažnom
+ vklade a premene

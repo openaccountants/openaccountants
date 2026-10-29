@@ -1,0 +1,940 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="bg_html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+   <head>
+   		
+<!-- META TAGY-->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="content-language" content="sk" />
+
+
+
+<title>Výška životného minima od 1. júla 2025 - MPSVR SR</title>
+
+
+<!-- META TAGY-->
+<meta http-equiv="Content-language" content="sk" />
+
+<meta name="title" content="Výška životného minima od 1. júla 2025" />
+<meta name="keywords" content="Výška životného minima od 1. júla 2025" />
+<meta name="author" content="MPSVR SR" />
+<meta name="generator" content="Redakčný systém WebJET - www.webjet.sk" />
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+<!-- JQUERY -->
+<script type="text/javascript" src="/components/_common/javascript/jquery.min.js" ></script><script type="text/javascript" src="/components/_common/javascript/page_functions.js.jsp?language=sk" ></script><link rel="stylesheet" type="text/css" media="screen" href="/components/form/check_form.css" /> 
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="/jscripts/common.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.ezmark.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="/jscripts/bootstrap-filestyle.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/jscripts/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript" src="/jscripts/sorttable.js"></script>
+<script type="text/javascript" src="/jscripts/jquery-scripts.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/page.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/print.css" type="text/css" media="print" />
+<link type="text/css" rel="stylesheet" href="/css/page-medium.css" media="screen and (max-height: 720px)" />
+
+<!--[if lte IE 7]>
+<script type="text/javascript" src="/jscripts/ie-adapt.js"></script>
+<script type="text/javascript" src="/jscripts/adapt.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/jscripts/ie-adapt.js"></script>
+<script type="text/javascript" src="/jscripts/adapt.min.js"></script>
+<![endif]-->
+
+
+
+   </head>
+   <body id="bg_body">
+
+	<div class="page">
+        <div id="header">
+        	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-cookie-bar">
+    <div class="cookies-bar-wrapper cookies-top">
+        <div class="cookies-bar">
+            <h2>Vážime si vaše súkromie</h2>
+            <p>Súbory cookies sú potrebné pre správne fungovanie webu, ako aj pre účely analýzy prevádzky a návštevnosti. Cookies nám neposkytujú prístup k Vášmu počítaču alebo akýmkoľvek informáciám o Vás. Webovým stránkam umožňujú zapamätať si informácie o Vašej návšteve, napríklad na ukladanie predvolieb bezpečného vyhľadávania, na zjednodušenie registrácie do nových služieb a na ochranu osobných údajov. Výberom „Prijať všetko“ udeľujete súhlas so spracovaním cookies pre uvedené účely. Kliknutím na „Odmietnuť všetko“ môžete používanie voliteľných cookies blokovať. <a href="/sk/podrobnosti-cookies/">Podrobnosti o používaní súborov cookies.</a></p>
+            <div class="bottom-buttons">
+                <a href="javascript:void(0);" class="btn btn-akcept btn-primary" data-acceptall="yes">
+                    Akceptovať
+                </a>
+                <a href="javascript:void(0);" class="btn btn-reject btn-secondary" data-rejectall="yes">
+                    Odmietnuť všetko
+                </a>
+                <a href="javascript:void(0);" class="btn more showHideBlock">
+                    Nastavenia
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="cookies-list">
+
+    </div>
+</div>
+<div class="cb-overlay"></div>
+<script type="text/javascript" src="/components/gdpr/jscripts/jquery.cookie.js"></script>
+<script type="text/javascript">
+    function initFunctions(){
+        var cookiesList = $(".cookies-list");
+        var contentLoaded = false;
+        $(".btn-akcept").on("click", function () {
+            $(".cookies-bar-wrapper, div.cookies-list").hide();
+
+            var cookieList = document.cookie.split(/;\s*/);
+            for (var J = cookieList.length - 1; J >= 0; --J) {
+                var cookieName = cookieList[J].replace(/\s*(\w+)=.+$/, "$1");
+                eraseCookie(cookieName);
+            }
+
+            $.cookie("cookies-gdpr-policy", "saved", {path: '/', expires: 365});
+
+            var selector = "div.cookies-list input[type=checkbox]";
+            //ak na Acku nie je data element acceptAll musime vybrat len zaskrtnute
+            if ("yes" !== $(this).data("acceptall")) selector += ":checked";
+
+            var inputCheckbox = $(selector),
+                rels = inputCheckbox.map(function () {
+                    //console.log($(this));
+                    return $(this).attr("data-rel");
+                }).toArray();
+
+            $.cookie("enableCookieCategory", rels.join("_"), {path: '/', expires: 365});
+            window.location.reload();
+        });
+
+        $(".btn-reject").on("click", function () {
+            $(".cookies-bar-wrapper, div.cookies-list").hide();
+            $.cookie("cookies-gdpr-policy", "saved", {path: '/', expires: 365});
+            if ("yes" === $(this).data("rejectall")) {
+                rels = [];
+                rels.push("nutne");
+            }
+
+            $.cookie("enableCookieCategory", rels.join("_"), {path: '/', expires: 365});
+            window.location.reload();
+        });
+
+        $("a.cookies-settings").on("click", function () {
+            if (cookiesList.is(":visible") !== true) {
+                cookiesList.show();
+            }
+            var cookies = $.cookie("enableCookieCategory");
+            var cookie = cookies.split("_");
+            $.each(cookie, function (i, v) {
+                $("input#checkboxAccept-" + v).attr("checked", "checked");
+            });
+            return false;
+        });
+        $(".resp-tabs-list li").on("click", function () {
+            $(".resp-tabs-container .resp-tab-content").hide();
+            $(".resp-tabs-list li").removeClass("resp-tab-active");
+            $(this).addClass("resp-tab-active");
+            $($(this).find('a').attr("data-href")).fadeIn();
+        });
+        $(".cookies-list-menu a").on("click", function () {
+            $(".cookies-list-content").hide();
+            $(".cookies-list-menu li").removeClass("active");
+            $(this).parent().addClass("active");
+            $($(this).attr("data-href")).show();
+        });
+        $(".showHideBlock, div.cookies-list span.close").on("click", function () {
+            if (cookiesList.is(":visible") === true) {
+                $("div.cookies-top a.btn.more").text('Zobraziť detaily');
+                cookiesList.hide();
+                if ($.cookie("cookies-gdpr-policy") != null) {
+                    $("div.cookies-top").hide();
+                } else {
+                    $("div.cookies-top").show();
+                }
+            } else {
+                $("div.cookies-top a.btn.more").text('Skryť detaily');
+                if(!contentLoaded){
+                    $.get("/components/gdpr/cookie_bar_ajax.jsp", function(data){
+                        cookiesList.append(data);
+                        initFunctions();
+                        contentLoaded = true;
+                    });
+                } else {
+                    setTimeout(function () {
+                        cookiesList.show();
+                        $("div.cookies-top").hide();
+                    }, 1)
+                }
+                cookiesList.show();
+                $("div.cookies-top").hide();
+            }
+        });
+    }
+    $(function () {
+        initFunctions();
+        if ($.cookie("cookies-gdpr-policy") != null) {
+            $(".cookies-bar-wrapper").hide();
+        } else {
+            $(".cookies-bar-wrapper").show();
+        }
+        $(".cookies-list").hide();
+    });
+
+
+
+    function eraseCookie(cookieName) {
+        var domain = document.domain;
+        var domain2 = document.domain.replace(/^www\./, "");
+        var domain3 = document.domain.replace(/^(\w+\.)+?(\w+\.\w+)$/, "$2");
+        var pathNodes = location.pathname.split("/").map(function (pathWord) {
+            return '/' + pathWord;
+        });
+        var cookPaths = [""].concat(pathNodes.map(function (pathNode) {
+            if (this.pathStr) {
+                this.pathStr += pathNode;
+            }
+            else {
+                this.pathStr = "; path=";
+                return (this.pathStr + pathNode);
+            }
+            return (this.pathStr);
+        }));
+
+        (eraseCookie = function (cookieName) {
+            cookPaths.forEach(function (pathStr) {
+                document.cookie = cookieName + "=" + pathStr + "; expires=Thu, 01-Jan-1970 00:00:01 GMT;";
+                document.cookie = cookieName + "=" + pathStr + "; domain=" + domain + "; expires=Thu, 01-Jan-1970 00:00:01 GMT;";
+                document.cookie = cookieName + "=" + pathStr + "; domain=" + domain2 + "; expires=Thu, 01-Jan-1970 00:00:01 GMT;";
+                document.cookie = cookieName + "=" + pathStr + "; domain=" + domain3 + "; expires=Thu, 01-Jan-1970 00:00:01 GMT;";
+            });
+        })(cookieName);
+    }
+</script>
+<link rel="stylesheet" href="/components/gdpr/style.css">
+<ul id="header_links">
+	<li class="hl_home"><a href="/" title="Úvodná stránka">Domov</a></li>
+	<li class="hl_blind"><a href="/showdoc.do?docid=62927&amp;forceBrowserDetector=blind" title="Textová verzia">Textová verzia</a></li>
+	<li class="hl_site_map"><a href="/sk/mapa-stranky.html" title="Mapa stránky">Mapa stránky</a></li>
+	<li class="hl_rss"><a href="/rss.xml" onclick="return openTargetBlank(this, event)" title="RSS">RSS</a></li>
+	<li class="hl_lang_en"><a href="/en/" title="Anglická verzia web sídla">English</a></li>
+</ul>
+
+<div class="logo"><a href="/" title="Ministerstvo práce, sociálnych vecí a rodiny Slovenskej republiky">Ministerstvo práce, sociálnych vecí a&nbsp;rodiny Slovenskej republiky <span>&nbsp;</span></a></div>
+
+<div class="search_top">
+
+
+
+
+
+
+
+
+
+
+	
+	
+<form class="smallSearchForm" action="/sk/vysledky-vyhladavania.html" method="get">
+		<p>
+			
+			<input class="smallSearchInput" type="text" name="words" size="25" 
+				value="Vyhľadajte" id="searchWordsTop" />
+          	<label for="searchWordsTop" class="screenReaderOnly">Vyhľadajte</label><br>
+			<input class="smallSearchSubmit" type="submit" value="Hľadať" title="Hľadať" />
+		</p>
+	</form>
+
+	
+
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+		var searchText = 'Vyhľadajte'
+		var defaultText = 'Vyhľadajte'
+	
+    	$("#searchWordsTop").focus(function () {
+        	var text = $(this).val();
+        	if(text == defaultText){
+            	$(this).val("");
+        	}else{
+            	$(this).val(text);
+        	}
+    	});
+    	$("#searchWordsTop").blur(function () {
+        	var text = $(this).val();
+        	if(text == ""){
+            	$(this).val('Vyhľadajte');
+        	}else{
+            	$(this).val(text);
+        	}
+    	});
+	});
+	//]]>
+	</script>
+
+
+
+</div>
+
+<ul id="header_links2">
+	<li class="hl_contacts"><a href="/sk/kontakt/" title="Kontaktujte nás">Kontaktujte nás</a></li>
+</ul>
+
+
+            <hr />
+        </div>
+
+        <div class="top_menu_box cf">
+            <h3 id="b_top_menu" class="blind_nadpis">Hlavné menu</h3>
+
+
+
+
+<ul id="top_menu"><li class="mi_1" >
+<a href="/sk/praca-zamestnanost/"  class="mi_1"  ><span></span>
+Práca a zamestnanosť
+</a>
+
+<ul>
+<li>
+<a href="/sk/praca-zamestnanost/podpora-zamestnanosti/strategicke-dokumenty/" ><span></span>
+Podpora zamestnanosti</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/" ><span></span>
+Zamestnanec a zamestnávateľ</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/inspekcia-prace/" ><span></span>
+Inšpekcia práce</a>
+</li>
+<li>
+<a href="" ><span></span>
+Pomoc pri hľadaní práce</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/zakonnik-prace/" ><span></span>
+Zákonník práce</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/inspekcia-prace/podnety/" ><span></span>
+Podať podnet na inšpekciu práce</a>
+</li>
+<li>
+<a href="/sk/organizacie-ministerstva/ustredie-prace-socialnych-veci-rodiny/" ><span></span>
+Ústredie práce sociálnych vecí a rodiny</a>
+</li>
+<li>
+<a href="/sk/praca-zamestnanost/bezpecnost-ochrana-zdravia-pri-praci/" ><span></span>
+Bezpečnosť a ochrana zdravia pri práci</a>
+</li>
+<li>
+<a href="https://www.employment.gov.sk/sk/praca-zamestnanost/socialna-ekonomika/" ><span></span>
+Sociálna ekonomika, sociálne podniky, rodinné podniky</a>
+</li>
+</ul>
+</li>
+<li class="mi_2" >
+<a href="/sk/rodina-socialna-pomoc/"  class="mi_2"  ><span></span>
+Rodina a sociálna pomoc
+</a>
+
+<ul>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/" ><span></span>
+Podpora rodinám s deťmi</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/hmotna-nudza/" ><span></span>
+Pomoc v hmotnej núdzi</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/integrovana-posudkova-cinnost.html" ><span></span>
+Integrovaná posudková činnosť</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/" ><span></span>
+Ťažké zdravotné postihnutie</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/penazna-pomoc/rodicovsky-prispevok/" ><span></span>
+Rodičovský príspevok</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/" ><span></span>
+Životné minimum</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/socialne-sluzby/" ><span></span>
+Sociálne služby</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/penazna-pomoc/pridavok-dieta/" ><span></span>
+Prídavok na dieťa</a>
+</li>
+<li>
+<a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/" ><span></span>
+Sociálnoprávna ochrana detí a sociálna kuratela</a>
+</li>
+</ul>
+</li>
+<li class="mi_3" >
+<a href="/sk/socialne-poistenie-dochodkovy-system/"  class="mi_3"  ><span></span>
+Sociálne poistenie a dôchodkový systém
+</a>
+
+<ul>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/i-pilier-dochodkove-poistenie/" ><span></span>
+Povinné dôchodkové poistenie (I.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/nemocenske-poistenie/" ><span></span>
+Nemocenské poistenie</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/poistenie-nezamestnanosti/" ><span></span>
+Poistenie v nezamestnanosti</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/ii-pilier-starobne-dochodkove-sporenie/" ><span></span>
+Starobné dôchodkové sporenie (II.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/urazove-poistenie/" ><span></span>
+Úrazové poistenie</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/iii-pilier-doplnkove-dochodkove-sporenie/" ><span></span>
+Doplnkové dôchodkové sporenie (III.pilier)</a>
+</li>
+<li>
+<a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/garancne-poistenie/" ><span></span>
+Garančné poistenie</a>
+</li>
+</ul>
+</li>
+<li class="mi_4" >
+<a href="/sk/ministerstvo/"  class="mi_4"  ><span></span>
+Ministerstvo
+</a>
+
+<ul>
+<li>
+<a href="/sk/ministerstvo/minister/" ><span></span>
+Minister</a>
+</li>
+<li>
+<a href="/isp/" ><span></span>
+Inštitút sociálnej politiky</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/poskytovanie-dotacii/" ><span></span>
+Poskytovanie dotácií</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/statni-tajomnici/" ><span></span>
+Štátni tajomníci</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/volne-pracovne-miesta/" ><span></span>
+Voľné pracovné miesta</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/zmluvy-objednavky-faktury/" ><span></span>
+Zmluvy, objednávky, faktúry</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/" ><span></span>
+Generálny tajomník služobného úradu</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/rozpocet-ministerstva/rozpocet-ministerstva-rok-2022.html" ><span></span>
+Rozpočet ministerstva</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/europska-unia-a-medzinarodne-vztahy/" ><span></span>
+Európska únia a medzinárodné vzťahy</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/organizacna-struktura/" ><span></span>
+Organizačná štruktúra</a>
+</li>
+<li>
+<a href="/sk/ministerstvo/verejne-obstaravanie/" ><span></span>
+Verejné obstarávanie</a>
+</li>
+</ul>
+</li>
+</ul>
+
+ 
+
+
+
+
+
+
+<div class="menu_info">
+
+
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/praca-zamestnanost/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/rodina-socialna-pomoc/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/socialne-poistenie-dochodkove-sporenie/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+			<div class="box">
+
+			
+			
+			
+				
+					
+					<p class="bg_btn"><a href="/sk/ministerstvo/"><span> </span>Viac</a></p>
+					
+					
+											
+					
+				
+			
+				</div>
+				
+	
+	
+	
+
+
+
+
+
+</div>
+
+        </div>
+
+        <div class="navbar cf">
+            <a href='/sk/'>Úvod</a> <span class="nb_separator">></span> <a href='/sk/rodina-socialna-pomoc/'>Rodina a sociálna pomoc</a> <span class="nb_separator">></span> <a href='/sk/rodina-socialna-pomoc/hmotna-nudza/'>Pomoc v hmotnej núdzi</a> <span class="nb_separator">></span> <a href='/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/'>Životné minimum</a> <span class="nb_separator">></span> Výška životného minima od 1. júla 2025
+            <hr />
+        </div>
+
+        <div class="content_box cf">
+        	<div id="content" class="cf c_sp">
+                <h1>Výška životného minima od 1. júla 2025</h1>
+                
+
+                
+                <p>  <strong> K 1. júlu 2025 </strong>  boli ustanovené sumy životného minima Opatrením Ministerstva práce, sociálnych vecí a rodiny SR č. 168/2025 Z. z. </p>
+
+<p> Za  <strong> životné minimum </strong>  fyzickej osoby alebo fyzických osôb, ktorých príjmy sa posudzujú, sa považuje suma alebo úhrn súm: </p>
+
+<ul>
+	 <li>  <strong> 284,13 &euro;  </strong> mesačne, ak ide o  <strong> jednu plnoletú fyzickú osobu </strong> , </li>
+	 <li>  <strong> 198,22 &euro; </strong>  mesačne, ak ide o  <strong> ďalšiu spoločne posudzovanú plnoletú fyzickú osobu </strong> , </li>
+	 <li>  <strong> 129,74 &euro; </strong>  mesačne, ak ide o  <strong> nezaopatrené dieťa alebo zaopatrené neplnoleté dieťa </strong> . </li>
+</ul>
+
+<p>  <strong> Výpočet súm životného minima v modelových situáciách: </strong>  <br />
+<strong> Jednotlivec </strong>  <br />
+Životné minimum jednotlivca, t. j. plnoletej fyzickej osoby, predstavuje sumu  <strong> 284,13 &euro; </strong>  mesačne. <br />
+<strong> Jednotlivec s nezaopatreným dieťaťom </strong>  <br />
+Životné minimum jednotlivca, t. j. plnoletej fyzickej osoby, s jedným nezaopatreným dieťaťom sa vypočíta nasledovne, <br />
+284,13 &euro; + 129,74 &euro; =  <strong> 413,87 &euro; </strong>  mesačne. <br />
+<strong> Dvojica bez detí </strong>  <br />
+Životné minimum dvojice bez detí sa vypočíta nasledovne, <br />
+284,13 &euro; + 198,22 &euro; =  <strong> 482,35 &euro; </strong>  mesačne. <br />
+<strong> Dvojica s jedným nezaopatreným dieťaťom </strong>  <br />
+Životné minimum dvojice s jedným nezaopatreným dieťaťom sa vypočíta nasledovne, <br />
+284,13 &euro; + 198,22 &euro; + 129,74 &euro; =  <strong> 612,09 </strong>   <strong> &euro; </strong>  mesačne. <br />
+<strong> Dvojica s tromi nezaopatrenými deťmi </strong>  <br />
+Životné minimum dvojice s tromi nezaopatrenými deťmi sa vypočíta nasledovne, <br />
+284,13 &euro; + 198,22 &euro; + 129,74 &euro; + 129,74 &euro; + 129,74 &euro; =  <strong> 871,57 &euro; </strong>  mesačne </p>
+            </div>
+            
+            <div id="menu" class="sp_menu">
+            	<h3 class="blind_nadpis" id="b_side_menu">Menu</h3>
+
+   <ul id="left_menu" class="">
+      <li><a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/">Podpora rodín s deťmi</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/detske-skupiny/">Detské skupiny</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/">Sociálnoprávna ochrana detí a sociálna kuratela</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/prispevok-pohreb/"  class="hide">Príspevok na pohreb</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/kompenzacny-prispevok-banikom/">Kompenzačný príspevok baníkom</a></li>
+      <li class="open"><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/">Pomoc v hmotnej núdzi</a>
+      <ul>
+         <li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/davky-hmotnej-nudzi/jednorazova-davka-hmotnej-nudzi/">Jednorazová dávka v hmotnej núdzi</a></li>
+         <li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/prispevky-k-davke-hmotnej-nudzi/">Dotácie na podporu výchovy dieťaťa do ukončenia základnej školy</a></li>
+         <li class="open"><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/">Životné minimum</a>
+         <ul>
+            <li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2026/">Výška životného minima od 1. júla 2026</a></li>
+         </ul>
+         </li>
+         <li><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/socialna-kalkulacka/">Sociálna kalkulačka</a></li>
+      </ul>
+      </li>
+      <li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/integrovana-posudkova-cinnost.html">Integrovaná posudková činnosť</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/">Ťažké zdravotné postihnutie</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialne-sluzby/">Sociálne služby</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/operacny-program-potravinovej-zakladnej-materialnej-pomoci/">Operačný program potravinovej a základnej materiálnej pomoci</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/boj-proti-chudobe/">Boj proti chudobe</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/potravinova-zakladna-materialna-pomoc-2021-2027/">Potravinová a základná materiálna pomoc 2021-2027</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/koronavirus-pracovna-socialna-oblast/">Koronavírus - pracovná a sociálna oblasť</a></li>
+   </ul>
+
+
+
+<h3>Neprehliadnite</h3>
+
+<ul id="side_links">
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/rovnost/odmenovanie/" onclick="return openTargetBlank(this, event)"><strong>Metodika k&nbsp;rovnakému odmeňovaniu mužov a&nbsp;žien za rovnakú prácu alebo za prácu rovnakej hodnoty</strong></a></li>
+	<li><a href="/files/system/menu/sk-lave-menu-subpage/oznamenie-web_stavebn-dod-13.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 196,92 kB">Uzatvorená reprezentatívna kolektívna zmluva vyššieho stupňa v&nbsp;znení dodatku č. 1&nbsp;až 13&nbsp;v&nbsp;stavebníctve. Účinnosť 1.&nbsp;novembra 2026</a></li>
+	<li><a href="/files/system/menu/sk-lave-menu-subpage/web-oznamenie-reprezent-kzvs-zneni-dod-1-sklarstvo.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 196,69 kB">Uzatvorená reprezentatívna kolektívna zmluva vyššieho stupňa v&nbsp;znení Dodatku č. 1&nbsp;v&nbsp;sklárskom priemysle účinnosť 1.&nbsp;augusta 2026</a></li>
+	<li><a href="/files/system/menu/sk-lave-menu-subpage/web-oznamenie-reprezent-kzvs-sklarstvo.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 195,71 kB">Uzatvorená reprezentatívna kolektívna zmluvy vyššieho stupňa v&nbsp;&nbsp;sklárstve účinnosť 1.&nbsp;januára 2026</a></li>
+	<li><a href="https://www.skratenapraca.gov.sk/" onclick="return openTargetBlank(this, event)">Podpora v&nbsp;čase skrátenej práce</a></li>
+	<li><a href="https://sos.mpsvr.gov.sk/pm/poskytovatel-sos" onclick="return openTargetBlank(this, event)">Poskytovatelia sociálnych služieb - &nbsp;Informačný systém sociálnych služieb</a></li>
+	<li><a href="/sk/ministerstvo/poskytovanie-dotacii/">Poskytovanie dotácií</a></li>
+	<li><a href="/sk/ministerstvo/ostatne/">0800 212&nbsp;212&nbsp;- Bezplatná nonstop linka pre&nbsp;ženy zažívajúce násilie</a></li>
+	<li><a href="/files/slovensky/informacie-slovakov-pracujucich-zahranici.pdf" onclick="return openTargetBlank(this, event)" title="Súbor PDF, veľkosť 771,07 kB"><span style="color: rgb(255, 23, 82);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(162, 0, 59);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 0);">Informácie pre&nbsp;návrat Slovákov pracujúcich v&nbsp;zahraničí</span></span></span></span></span></a></li>
+	<li><a href="/sk/ministerstvo/vyskum-oblasti-prace-socialnych-veci-institut-socialnej-politiky/mapa-socialnych-sluzieb-3.html">MAPA SOCIÁLNYCH SLUŽIEB</a></li>
+	<li><a href="/isp/">KALKULAČKA príspevku na&nbsp;opatrovanie</a></li>
+	<li><a href="/sk/ministerstvo/akreditacie/">Akreditácie pre&nbsp;SPOD a&nbsp;SK a&nbsp;sociálne služby</a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/socialne-sluzby/zariadenia-starostlivosti-deti-do-troch-rokov/">Zariadenia starostlivosti o&nbsp;deti do&nbsp;troch rokov</a></li>
+	<li><a href="/sk/legislativa/konzultacie-podnikatelskymi-subjektmi/">Konzultácie s&nbsp;podnikateľskými subjektmi</a></li>
+	<li><a href="http://www.komisarpredeti.sk/" onclick="return openTargetBlank(this, event)">Komisár pre&nbsp;deti</a></li>
+	<li><a href="http://www.komisarprezdravotnepostihnutych.sk/" onclick="return openTargetBlank(this, event)">Komisár pre&nbsp;osoby so&nbsp;zdravotným postihnutím</a></li>
+	<li><a href="http://socialnapraca.sk/" onclick="return openTargetBlank(this, event)">Slovenská komora sociálnych pracovníkov a&nbsp;asistentov sociálnej práce</a></li>
+	<li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/kontaktne-miesto-prava-osob-so-zdravotnym-postihnutim/">Hlavné kontaktné miesto pre&nbsp;práva osôb so&nbsp;zdravotným postihnutím</a></li>
+	<li><a href="/spolocny-sekretariat-vyborov/">Spoločný sekretariát výborov</a></li>
+	<li><a href="/sk/organizacie-ministerstva/zoznam-odporucanych-stranok/">Zoznam odporúčaných stránok</a></li>
+</ul>
+
+<div id="__hggasdgjhsagd_once" style="display: none;"></div>
+
+<div id="__if72ru4sdfsdfruh7fewui_once" style="display: none;"></div>
+
+<div id="__zsc_once"></div>
+
+<p>&nbsp;</p>
+            </div>
+            
+            <div class="clearer">&nbsp;</div>
+            <div class="content_nav cf">
+                    
+
+
+
+
+
+     
+
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/sk_SK/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="social_btn">
+  <div class="fb-like" data-width="124" data-layout="button_count" data-action="recommend" data-show-faces="false" data-send="false"></div>
+</div>
+
+
+
+
+<ul id="c_nav">
+	<li class="ico_up"><a href="#" title="Presunúť na začiatok stránky">Hore</a></li>
+	<li class="ico_print_pdf">
+	
+
+
+
+
+
+
+
+
+
+	
+	<a onclick="return openTargetBlank(this, event)" href="/topdf/vyska-zivotneho-minima-od-1.-jula-2025.pdf?docid=62927&amp;insets=20" title='Vytlačiť do pdf'>Vytlačiť do pdf</a>
+	
+
+	</li>
+	<li class="ico_print"><a href="javascript:print();" title="Vytlačiť stránku">Vytlačiť stránku</a></li>
+</ul>
+                </div>
+            <div class="cb_bottom cf">&nbsp;</div>
+
+        </div>
+        
+        <div id="partners">
+            <h3 class="blind_nadpis" id="b_partners">Partners</h3>
+
+<table style="width: 100%;">
+	<tbody>
+		<tr>
+			<td><a href="http://www.esf.gov.sk/" onclick="return openTargetBlank(this, event)" title="Európsky sociálny fond"><img alt="ESF" height="35" src="/images/slovensky/uvod/esf-logo.jpg" style="border: 0px none;" width="115" /></a></td>
+			<td><a href="http://www.sluzbyzamestnanosti.gov.sk/" onclick="return openTargetBlank(this, event)"><img alt="Portál voľných pracovných miest" class="" src="/images/system/menu/sk-partners-c/portal-volnych-prac-miest-sk-ua-v2.jpg?v=1647442115" style="width: 133px; height: 68px;" title="portal volnych prac miest" /></a></td>
+			<td><a href="http://www.gender.gov.sk/" onclick="return openTargetBlank(this, event)" title="Stránky rodovej rovnosti, rovnosti príležitosti a postavenie žien"><img alt="Stránky rodovej rovnosti, rovnosti príležitosti a postavenie žien" height="33" src="/images/logos/srr.png" width="105" /></a></td>
+			<td><a href="https://www.skratenapraca.gov.sk/" onclick="return openTargetBlank(this, event)" title="Podpora v čase skrátenej práce"><img alt="logo skrátená práca" src="/images/system/menu/sk-partners-c/logo-skratenapraca.jpg?v=1644482790" style="height: 67px; width: 120px;" /></a></td>
+			<td><a href="https://www.eures.sk/" onclick="return openTargetBlank(this, event)" title="EURES - Európske služby zamestnanosti"><img alt="EURES" src="/images/logo-eures.png" style="border: 0px none; width: 116px; height: 33px;" /></a></td>
+			<td><a href="http://detstvobeznasilia.gov.sk/" onclick="return openTargetBlank(this, event)" title="Národné koordinačné stredisko
+pre riešenie problematiky násilia na deťoch"><img alt="odkaz na www.detstvobeznasilia.gov.sk" src="/images/mpsvar-logo-stextom.png" style="border: 0px none; width: 110px; height: 110px;" /></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<div id="" style="left: 607.733px; top: 12.6667px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 55px; top: -3px;"></i><i class="tr" style="display: block; left: 112px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 14px;"></i><i class="rm" style="display: block; left: 112px; top: 14px;"></i><i class="bl" style="display: block; left: -3px; top: 29px;"></i><i class="bm" style="display: block; left: 55px; top: 29px;"></i><i class="br" style="display: block; left: 112px; top: 29px;"></i></div>
+
+<div id="" style="left: 607.733px; top: 12.6667px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 55px; top: -3px;"></i><i class="tr" style="display: block; left: 112px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 14px;"></i><i class="rm" style="display: block; left: 112px; top: 14px;"></i><i class="bl" style="display: block; left: -3px; top: 29px;"></i><i class="bm" style="display: block; left: 55px; top: 29px;"></i><i class="br" style="display: block; left: 112px; top: 29px;"></i></div>
+
+
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+
+<div id="" style="left: 244.604px; top: 13px;"><span></span><i class="tl" style="display: block; left: -3px; top: -3px;"></i><i class="tm" style="display: block; left: 64px; top: -3px;"></i><i class="tr" style="display: block; left: 129px; top: -3px;"></i><i class="lm" style="display: block; left: -3px; top: 31px;"></i><i class="rm" style="display: block; left: 129px; top: 31px;"></i><i class="bl" style="display: block; left: -3px; top: 64px;"></i><i class="bm" style="display: block; left: 64px; top: 64px;"></i><i class="br" style="display: block; left: 129px; top: 64px;"></i></div>
+            <div class="partners_bottom">&nbsp;</div>
+        </div>
+    </div>
+
+    <div id="footer_box">
+        <div id="footer_links">
+            <h3 class="blind_nadpis" id="b_footer_links">Pätičkové odkazy</h3>
+
+<div class="fb_links">
+<h3><a href="/sk/praca-zamestnanost/">Práca<br />
+a&nbsp;zamestnanosť</a></h3>
+
+   <ul id="" class="">
+      <li><a href="/sk/praca-zamestnanost/podpora-zamestnanosti/">Podpora zamestnanosti</a></li>
+      <li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/">Zamestnanec a zamestnávateľ</a></li>
+      <li><a href="/sk/praca-zamestnanost/bezpecnost-ochrana-zdravia-pri-praci/">Bezpečnosť a ochrana zdravia pri práci</a></li>
+      <li><a href="/sk/praca-zamestnanost/inspekcia-prace/">Inšpekcia práce</a></li>
+      <li><a href="/sk/praca-zamestnanost/vztah-zamestnanca-zamestnavatela/nelegalna-praca-nelegalne-zamestnavanie/"  class="hide">Nelegálna práca a nelegálne zamestnávanie</a></li>
+      <li><a href="/sk/praca-zamestnanost/socialna-ekonomika/">Sociálna ekonomika, sociálne podniky, rodinné podniky</a></li>
+      <li><a href="/sk/praca-zamestnanost/ex-post-konzultacie-podnikatelskymi-subjektmi/">Ex post konzultácie s podnikateľskými subjektmi</a></li>
+      <li><a href="/sk/koronavirus-pracovna-socialna-oblast/">Koronavírus - pracovná a sociálna oblasť</a></li>
+   </ul>
+
+
+</div>
+
+<div class="fb_links">
+<h3><a href="/sk/rodina-socialna-pomoc/">Sociálna<br />
+a&nbsp;rodinná politika</a></h3>
+
+<ul id="">
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/">Podpora rodín s&nbsp;deťmi</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/">Sociálnoprávna ochrana detí a&nbsp;sociálna kuratela</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/">Pomoc v&nbsp;hmotnej núdzi</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/">Ťažké zdravotné postihnutie</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/socialne-sluzby/">Sociálne služby</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/boj-proti-chudobe/">Boj proti chudobe</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/rodina-socialna-pomoc/">Viac...</a></li>
+</ul>
+<!--
+   <ul id="" class="">
+      <li><a href="/sk/rodina-socialna-pomoc/podpora-rodinam-detmi/">Podpora rodín s deťmi</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/detske-skupiny/">Detské skupiny</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialnopravna-ochrana-deti-socialna-kuratela/">Sociálnoprávna ochrana detí a sociálna kuratela</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/prispevok-pohreb/"  class="hide">Príspevok na pohreb</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/kompenzacny-prispevok-banikom/">Kompenzačný príspevok baníkom</a></li>
+      <li class="open"><a href="/sk/rodina-socialna-pomoc/hmotna-nudza/">Pomoc v hmotnej núdzi</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/integrovana-posudkova-cinnost.html">Integrovaná posudková činnosť</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/tazke-zdravotne-postihnutie/">Ťažké zdravotné postihnutie</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/socialne-sluzby/">Sociálne služby</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/operacny-program-potravinovej-zakladnej-materialnej-pomoci/">Operačný program potravinovej a základnej materiálnej pomoci</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/boj-proti-chudobe/">Boj proti chudobe</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/potravinova-zakladna-materialna-pomoc-2021-2027/">Potravinová a základná materiálna pomoc 2021-2027</a></li>
+      <li><a href="/sk/rodina-socialna-pomoc/koronavirus-pracovna-socialna-oblast/">Koronavírus - pracovná a sociálna oblasť</a></li>
+   </ul>
+
+
+--></div>
+
+<div class="fb_links">
+<h3><a href="/sk/socialne-poistenie-dochodkove-sporenie/">Sociálne poistenie<br />
+a&nbsp;dôchodkové sporenie</a></h3>
+
+   <ul id="" class="">
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/socialne-poistenie/">Sociálne poistenie</a></li>
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/dochodkovy-system/">Dôchodkový systém</a></li>
+      <li><a href="/sk/socialne-poistenie-dochodkovy-system/nahrada-prijmu-pri-pracovnej-neschopnosti/">Náhrada príjmu pri pracovnej neschopnosti</a></li>
+   </ul>
+
+
+</div>
+
+<div class="fb_links">
+<h3><a href="/sk/ministerstvo/">Ministerstvo</a></h3>
+
+<ul id="">
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/minister/">Minister</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/statni-tajomnici/">Štátni tajomníci</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/">Generálny&nbsp;tajomník&nbsp;služobného úradu</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/organizacna-struktura/">Organizačná štruktúra</a></li>
+	<li><a href="https://www.employment.gov.sk/sk/ministerstvo/">Viac...</a></li>
+</ul>
+<!--
+   <ul id="" class="">
+      <li><a href="/sk/ministerstvo/minister/">Minister</a></li>
+      <li><a href="/sk/ministerstvo/statni-tajomnici/">Štátni tajomníci</a></li>
+      <li><a href="/sk/ministerstvo/generalny-tajomnik-sluzobneho-uradu/">Generálny tajomník služobného úradu</a></li>
+      <li><a href="/sk/ministerstvo/organizacna-struktura/"  class="show">Organizačná štruktúra</a></li>
+      <li><a href="/sk/ministerstvo/hospodarska-socialna-rada-sr/">Hospodárska a sociálna rada SR</a></li>
+      <li><a href="/sk/ministerstvo/rada-vlady-sr-prava-seniorov/">Rada vlády Slovenskej republiky pre práva seniorov a prispôsobovanie verejných politík procesu starnutia populácie</a></li>
+      <li><a href="/sk/ministerstvo/rada-vladysr-pre-osoby-so-zdravotnym-postihnutim/">Rada vlády Slovenskej republiky pre osoby so zdravotným postihnutím</a></li>
+      <li><a href="/sk/ministerstvo/rada-vlady-slovenskej-republiky-rodinu-demograficky-vyvoj/">Rada vlády Slovenskej republiky pre rodinu a demografický vývoj</a></li>
+      <li><a href="/oddelenie-poradnych-organov/">Oddelenie poradných orgánov</a></li>
+      <li><a href="/sk/ministerstvo/rovnost/">Rovnosť</a></li>
+      <li><a href="/sk/ministerstvo/NKSpreRPNnD/">NKS pre riešenie problematiky násilia na deťoch</a></li>
+      <li><a href="/isp/">Inštitút sociálnej politiky</a></li>
+      <li><a href="/sk/ministerstvo/volne-pracovne-miesta/"  class="show">Voľné pracovné miesta</a></li>
+      <li><a href="/sk/ministerstvo/rozpocet-ministerstva/">Rozpočet ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/vyrocne-spravy-uctovne-uzavierky-ministerstva/">Výročné správy a účtovné závierky ministerstva</a></li>
+      <li><a href="/sk/ministerstvo/verejne-obstaravanie/"  class="show">Verejné obstarávanie</a></li>
+      <li><a href="/sk/ministerstvo/poskytovanie-dotacii/"  class="show">Poskytovanie dotácií</a></li>
+      <li><a href="/sk/ministerstvo/poskytovanie-informacii-podla-z-c-211/2000-z-z/poskytovanie-informacii-podla-z-c-211-2000-z-z.html">Poskytovanie informácií podľa z. č. 211&#47;2000 Z. z.</a></li>
+      <li><a href="/sk/ministerstvo/zmluvy-objednavky-faktury/"  class="show">Zmluvy, objednávky, faktúry</a></li>
+      <li><a href="/sk/ministerstvo/sprava-majetku/"  class="show">Správa majetku</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie/">Akreditácie pre SPOD a SK a sociálne služby</a></li>
+      <li><a href="/sk/ministerstvo/akreditacie-vzdelavanie/">Akreditácie pre oblasť vzdelávania podľa zákona 219&#47;2014 Z. z.</a></li>
+      <li><a href="/sk/ministerstvo/spolocenska-zodpovednost/"  class="show">Spoločenská zodpovednosť</a></li>
+      <li><a href="/sk/ministerstvo/projekty/projekty-ministerstva.html">Projekty</a></li>
+   </ul>
+
+
+--></div>
+            <div class="clearer">&nbsp;</div>
+        </div>
+
+        <div id="footer">
+        	<hr />
+        	<p>Správca obsahu a&nbsp;technický prevádzkovateľ web sídla: Ministerstvo práce, sociálnych vecí a&nbsp;rodiny Slovenskej republiky</p>
+
+<p>Špitálska 4,6,8 Bratislava 816&nbsp;43&nbsp;<span class="f_separator">|</span> Tel.:+421 2&nbsp;2046&nbsp;0000&nbsp;<span class="f_separator">|</span> <a href="mailto:okv@employment.gov.sk">okv@employment.gov.sk</a> <span class="f_separator">|</span> <a href="/sk/informacie-web-sidle.html">Informácie o&nbsp;web sídle</a> <span class="f_separator">|</span><a href="https://www.employment.gov.sk/sk/informacie-web-sidle/">Vyhlásenie o&nbsp;spracúvaní osobných údajov</a></p>
+            <div class="clearer">&nbsp;</div>
+        </div>
+        <div class="clearer">&nbsp;</div>
+    </div>
+
+    
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DKKRWSHRFM"></script> 
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-DKKRWSHRFM'); </script>
+
+
+
+</body>
+</html>

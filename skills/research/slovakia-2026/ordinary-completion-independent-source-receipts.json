@@ -1,0 +1,20 @@
+[
+  {
+    "file": "fs-thin-cap.html",
+    "url": "https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie-",
+    "final_url": "https://podpora.financnasprava.sk/663968-Pravidl%C3%A1-n%C3%ADzkej-kapitaliz%C3%A1cie-",
+    "status": 200,
+    "bytes": 22118,
+    "sha256": "776699989620858aad8b321106822f6e9cd405176dbacd1245af22c0c36cfeb8",
+    "fetched_on": "2026-10-27"
+  },
+  {
+    "file": "fs-hotel-sports.pdf",
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.06.27_021_DZPaU_2025_I.pdf",
+    "final_url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Priame_dane_uct/2025/2025.06.27_021_DZPaU_2025_I.pdf",
+    "status": 200,
+    "bytes": 394498,
+    "sha256": "37c5f9c97571fc5e8e4d4c5d38e413cd479f77daf8aa2fcb9122cdd0b4361edd",
+    "fetched_on": "2026-10-27"
+  }
+]

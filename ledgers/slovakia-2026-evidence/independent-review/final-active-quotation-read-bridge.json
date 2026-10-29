@@ -1,0 +1,6432 @@
+[
+  {
+    "key": "ITA2.links",
+    "quotation": 1,
+    "LF": [
+      73,
+      80
+    ],
+    "quote_sha256": "78486a738f3ebf4a4d13de07d17aa63dcab332307b561715e90519d4b0f8965c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.links",
+    "quotation": 2,
+    "LF": [
+      81,
+      95
+    ],
+    "quote_sha256": "755f375baf752481bf64ac20300ac63a6e34e34d088e70bf7f4146c58712f557",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.links",
+    "quotation": 3,
+    "LF": [
+      96,
+      110
+    ],
+    "quote_sha256": "e9b2dcccd10c7c339db873324835128c066f0242b4c98089562ca08fd45d7430",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.links",
+    "quotation": 4,
+    "LF": [
+      111,
+      120
+    ],
+    "quote_sha256": "7f0e243b9bafd67ef7970b0d02e1e2a3f5422b2aeab149a5f23d532f35e8d2e6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.micro",
+    "quotation": 1,
+    "LF": [
+      160,
+      173
+    ],
+    "quote_sha256": "5b75a91e8e465864d562869f7ce9a7b88476476a54f32fe419bea7df44dd91f6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.noncoop",
+    "quotation": 1,
+    "LF": [
+      174,
+      192
+    ],
+    "quote_sha256": "7342ebcf4b336b7fe6629f88075fbf8403e083eccf9d53a5a8508c405fe92401",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.transaction",
+    "quotation": 1,
+    "LF": [
+      200,
+      209
+    ],
+    "quote_sha256": "e664952c1c118ef51d574acabd1a6a9b8b20c3a814e30328d8c93db8cb1ed9ae",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA15.corporate",
+    "quotation": 1,
+    "LF": [
+      46,
+      65
+    ],
+    "quote_sha256": "2042a5d7939160e2ad3dd559130d293dd7349ae1bfa02e0746d4cc1d051197f9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.adjustment",
+    "quotation": 1,
+    "LF": [
+      5552,
+      5564
+    ],
+    "quote_sha256": "3bb5f36ec494d2eb228b4a232f58b940a21d4b35be6f8181992c736d14cd5bd3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.adjustment",
+    "quotation": 2,
+    "LF": [
+      5565,
+      5578
+    ],
+    "quote_sha256": "377f1f8c92fbb2e59a9228fa6ec1370efeae088e3ec0fdd89298e90466cf4f24",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.corresponding",
+    "quotation": 1,
+    "LF": [
+      5580,
+      5596
+    ],
+    "quote_sha256": "bb66a55b662cfca4abc463beae5c37e89c2b3df2b74f99006eb7f59bff92f67e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.corresponding",
+    "quotation": 2,
+    "LF": [
+      5597,
+      5629
+    ],
+    "quote_sha256": "71bfe6661d0f3b32454bbb877e16a4cbfa30b9b1d19c606ed103208a6167a8a1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.PE",
+    "quotation": 1,
+    "LF": [
+      5631,
+      5642
+    ],
+    "quote_sha256": "4daa570eefaf844652ec5ba477c22aba7e3ccacc977917046ae32cd2bcb6faa3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.PE",
+    "quotation": 2,
+    "LF": [
+      5660,
+      5668
+    ],
+    "quote_sha256": "712153e9ac65c348393c5840330ab7c04fde05403dc2edc7e93f13674044a5c7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k",
+    "quotation": 1,
+    "LF": [
+      5,
+      9
+    ],
+    "quote_sha256": "86f759b59d6d8b635f1e6a605aea15e04cb310799eca525b39a786e9a42d2bbc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k",
+    "quotation": 2,
+    "LF": [
+      10,
+      15
+    ],
+    "quote_sha256": "ab77b4c58e6b260a53fbf5af6a4aa2d465a78779b75798811fa5182dc5472d62",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k",
+    "quotation": 3,
+    "LF": [
+      63,
+      76
+    ],
+    "quote_sha256": "e5f6c44a45a974e2702b1ba019c5e3beabdd0655a492e5bacf03c5436309a223",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.methods",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "d856e4c820ad8ae42f877f5943141690009b910bf4606c369d644c9b0397263e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.methods",
+    "quotation": 2,
+    "LF": [
+      18,
+      24
+    ],
+    "quote_sha256": "7ed8d781688f400390e6fbdc81a6177925e9d5056818da0bf06b1a2f29c57337",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.methods",
+    "quotation": 3,
+    "LF": [
+      25,
+      44
+    ],
+    "quote_sha256": "94ddac7822221c709cf6a15476ac3d1ad28d3fc58eda3f8033e785460ea2c336",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.methods",
+    "quotation": 4,
+    "LF": [
+      45,
+      56
+    ],
+    "quote_sha256": "754f497b3cb1e8fb927c235185fd7b0abf19a0c7f86e6a2ede2057c55bc09ccd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 1,
+    "LF": [
+      58,
+      70
+    ],
+    "quote_sha256": "62ce1a88026d2d8807132ea6976d9abb574e2e5ce7d03cca3adb10f560e894b7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 2,
+    "LF": [
+      72,
+      87
+    ],
+    "quote_sha256": "c2ce8518d43f17a7020a9bd3dbe2efe446eff5a4384c02a899fc7325d3145fd9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 3,
+    "LF": [
+      89,
+      103
+    ],
+    "quote_sha256": "e09490af26736dea3cabe02779d5d43a6745cb814252576d48ae2ce8d10d2bd2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 4,
+    "LF": [
+      105,
+      120
+    ],
+    "quote_sha256": "88d7fd19e3e9ca45a7b06927057761e699034ae6f4834df5163c37c23e088fed",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 5,
+    "LF": [
+      122,
+      129
+    ],
+    "quote_sha256": "0dc2ae3e72b0addc2616dd73e5515453c13ed87f7966b2a6b3f7689cb71b1dab",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.APA",
+    "quotation": 6,
+    "LF": [
+      131,
+      142
+    ],
+    "quote_sha256": "859748a9f9232d6609fdc0f11d404aeefbb1aafb8e100e2161d9657bf5ed1feb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.records",
+    "quotation": 1,
+    "LF": [
+      144,
+      154
+    ],
+    "quote_sha256": "6f1c103fdf41f0f6b964aeba5d28e076a7e2b1a3f22eae97433cf299378ffa56",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18.records",
+    "quotation": 2,
+    "LF": [
+      155,
+      170
+    ],
+    "quote_sha256": "1370aaa309992fa0f8a0a87e480288b5dbf75ec21d1efee248a259b65128d47e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18a",
+    "quotation": 1,
+    "LF": [
+      3,
+      10
+    ],
+    "quote_sha256": "1ff4175c34d83d1f2e6d28b6e60b709c673ce82a5843991ae4f9ffa5303455c6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18a",
+    "quotation": 2,
+    "LF": [
+      12,
+      18
+    ],
+    "quote_sha256": "bb7e20c57f0674a91b5bfde7c99b890f9a80359680cd6f463f767d522538975d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21a",
+    "quotation": 1,
+    "LF": [
+      4,
+      11
+    ],
+    "quote_sha256": "c32937fb29bcb9cd3319acf5f5b3ec6a1f60a7d4bd7e1b781d43589592d6f60f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21a",
+    "quotation": 2,
+    "LF": [
+      18,
+      23
+    ],
+    "quote_sha256": "563376b06b5e97297ed7af676d192ea0401b69b5033de7cc359764dad2c8ac3b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA49.filing",
+    "quotation": 1,
+    "LF": [
+      7,
+      17
+    ],
+    "quote_sha256": "904f20297ad7c00483e433f12bc722bd3bc6dea9db3a6f2db2d6abb120fbe051",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA49.filing",
+    "quotation": 2,
+    "LF": [
+      19,
+      33
+    ],
+    "quote_sha256": "946eeb88cbdac36762d73887b434b3df68a7b5ffe798afcec546085fa499a567",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA49.filing",
+    "quotation": 3,
+    "LF": [
+      34,
+      42
+    ],
+    "quote_sha256": "e665011d57968fca0c67a470093b2f4b2dd5472af3a8ca384cd509ce0fa042ba",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.ranges",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "9a4d2709cc17113efd5eef2bccc2978aeba7c013c70fa080766c975a10532ddb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.daily",
+    "quotation": 1,
+    "LF": [
+      19,
+      41
+    ],
+    "quote_sha256": "e6d39dcd10cad5b1d31e54e0fe4a82a977c37018cc7bf613c4e93171b0a59e56",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.daily",
+    "quotation": 2,
+    "LF": [
+      43,
+      51
+    ],
+    "quote_sha256": "7ce7ef633f91a4c283c197ce357dd71bf68f03b19b39fa83eebd14a4139a80a5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.first",
+    "quotation": 1,
+    "LF": [
+      56,
+      59
+    ],
+    "quote_sha256": "65e38321e400b7a08294465e0b6e3803c4668c720d8b319885713761a864cfac",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.floor",
+    "quotation": 1,
+    "LF": [
+      61,
+      69
+    ],
+    "quote_sha256": "c3a090ff988449fd7b906be5bbb289c51c0500314ff807ac30b090cbaa902eb4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.floor",
+    "quotation": 2,
+    "LF": [
+      70,
+      80
+    ],
+    "quote_sha256": "ea44d66f7c4d3d78c072ce142610a525b694ddc0837e953fc826bfa237cb2496",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.threshold",
+    "quotation": 1,
+    "LF": [
+      106,
+      108
+    ],
+    "quote_sha256": "c2c75a448ac53cf3a8429e486b68236737f0059cfdf7cfb0f43ba12e0c9648da",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.repeat",
+    "quotation": 1,
+    "LF": [
+      133,
+      139
+    ],
+    "quote_sha256": "f59e9087278d2409fd4bacb66b5ca98ea5136d082b8140af9db41ad0818dc162",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC155.repeat",
+    "quotation": 2,
+    "LF": [
+      140,
+      143
+    ],
+    "quote_sha256": "84956469b1c77f8994e00802cc8d94b45b82c40e9695fe35b6208ad7c9574f6e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC16",
+    "quotation": 1,
+    "LF": [
+      8,
+      15
+    ],
+    "quote_sha256": "da8210322807d9bd50b2d52fe438e83152775f8e3530b7cb28c70c6f4831765d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC16",
+    "quotation": 2,
+    "LF": [
+      48,
+      51
+    ],
+    "quote_sha256": "d45a7814417041cc25933905603f885e8cf5c192473601fce0c6d04b534f82b4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC16",
+    "quotation": 3,
+    "LF": [
+      57,
+      63
+    ],
+    "quote_sha256": "e528d922f9154068f4e0e3b23b6e3b4f4fb100c1ac32c15c1513c6a9b0eb0bfb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC69",
+    "quotation": 1,
+    "LF": [
+      4,
+      16
+    ],
+    "quote_sha256": "796ef6f640f9c927b7127ef5576f5dcd68a7672e635be1767c1e9353ee1625ba",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC69",
+    "quotation": 2,
+    "LF": [
+      18,
+      23
+    ],
+    "quote_sha256": "b8c5ea0aa349ec91876415c469b5808aa8b945c7bd0ce0d2095582e09242c188",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC69",
+    "quotation": 3,
+    "LF": [
+      30,
+      35
+    ],
+    "quote_sha256": "f0feb9fdc0dcd616cf90c93cfd1b7062efeeec5bcb1404ac7c63ad6a8ea72676",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC156",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "8ff85800e4c1a3dd10372a0e164acdc15b7b46323e7b56a86e2a2ae3b40a46e9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC156",
+    "quotation": 2,
+    "LF": [
+      20,
+      39
+    ],
+    "quote_sha256": "6347400cfa2d6afda9a91b6a185202cfeae4e8705393ea52dab92c2745ad8f8d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC156",
+    "quotation": 3,
+    "LF": [
+      56,
+      65
+    ],
+    "quote_sha256": "88c82981064153e2eda3136f165e99eb18fd00b40d6a313da6adcde0d5fcd245",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC161",
+    "quotation": 1,
+    "LF": [
+      1,
+      4
+    ],
+    "quote_sha256": "a07bf8034ee3d45a85a84527121b14a1fdb58534f1d2625b7ccc86a5b946a3f8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.penalty.calendar",
+    "quotation": 1,
+    "LF": [
+      65,
+      71
+    ],
+    "quote_sha256": "3d7d58b4ef111901d499fed9c915ed2c5c6293026b0ec1ca42e4cff18c7edfe7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.penalty.calendar",
+    "quotation": 2,
+    "LF": [
+      88,
+      100
+    ],
+    "quote_sha256": "9b63206d6fa3a639e522e6272645c5ea13779603072a0ec1520db5fdfe3211d8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "NBS.ECB",
+    "quotation": 1,
+    "LF": [
+      221,
+      226
+    ],
+    "quote_sha256": "c140d20ff4915532325afdcd270273bbad4cf95190213629477ef55c010a70fc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ECB.history",
+    "quotation": 1,
+    "LF": [
+      542,
+      544
+    ],
+    "quote_sha256": "db3aa86d9282b75b12b690bc32d58030835d088cd4fefccd5d7fc4997d43288e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ECB.history",
+    "quotation": 2,
+    "LF": [
+      548,
+      573
+    ],
+    "quote_sha256": "a8b1b6f0007d33afedf1ed73d77c880d0be9b17b428a463431f9002d4a349fc7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Accounting17.9",
+    "quotation": 1,
+    "LF": [
+      2430,
+      2438
+    ],
+    "quote_sha256": "57737ee69380db971fce43ec2ba4111fde45978281e4cc313cfa22043223fa72",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG2",
+    "quotation": 1,
+    "LF": [
+      68,
+      82
+    ],
+    "quote_sha256": "7fb6e72ab384a21b257f969f766c5cbc949f9c4d748c4fea64f81531a139dbe4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG2",
+    "quotation": 2,
+    "LF": [
+      83,
+      101
+    ],
+    "quote_sha256": "7d01a28bfa825ce4db66c3834debb388e76bb09a1a219a0223032d1cf6daa390",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG2",
+    "quotation": 3,
+    "LF": [
+      102,
+      110
+    ],
+    "quote_sha256": "dbfb744bbf60e0b27025f7b9b28d8bed31b6b9bd79b80a975c636468878ade18",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG3.full",
+    "quotation": 1,
+    "LF": [
+      114,
+      139
+    ],
+    "quote_sha256": "3b6580ed835efb128838cde5754c39757cb8206d73024e9c47cddf9493bdca0f",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "TPG3.full",
+    "quotation": 2,
+    "LF": [
+      140,
+      152
+    ],
+    "quote_sha256": "3d5d704c908f0d2c76bff6f11fd67515425a16c2389d582d66ae4c95da2fc51b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG3.basic",
+    "quotation": 1,
+    "LF": [
+      154,
+      169
+    ],
+    "quote_sha256": "38b7777a490962de473e8a1ffe46d0ccb5f592a5f365c146096f104803b0cb11",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG3.basic",
+    "quotation": 2,
+    "LF": [
+      170,
+      182
+    ],
+    "quote_sha256": "02aeea3fb1dd29fc0b4b4da4c25760ba46f0c1db16bc494170a1210f09e22584",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG3.basic",
+    "quotation": 3,
+    "LF": [
+      189,
+      193
+    ],
+    "quote_sha256": "c91ef89d7354b522b2131818aed1676db07f7e6d4316144519ad511f6526d916",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG4",
+    "quotation": 1,
+    "LF": [
+      199,
+      216
+    ],
+    "quote_sha256": "df477a29d5768f64c08881c9717738722fa20749632684785890c632e7bb83ec",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG4",
+    "quotation": 2,
+    "LF": [
+      218,
+      237
+    ],
+    "quote_sha256": "77574e3f2ec4b050fcb1f467540d8558caebccfd7134bdf3f29baa29b8e9a9dd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG4",
+    "quotation": 3,
+    "LF": [
+      238,
+      263
+    ],
+    "quote_sha256": "a328832107c6a3e08a2406549cc15acca2d7b9cb6d9fdc8b0e449b9215721e4c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG4",
+    "quotation": 4,
+    "LF": [
+      264,
+      285
+    ],
+    "quote_sha256": "10c8f71adb9586be0d71099cc33239ad01456000fea04e2df2450003d8b50e2e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG4",
+    "quotation": 5,
+    "LF": [
+      286,
+      301
+    ],
+    "quote_sha256": "2007ae053a3c294692034a7406b8a6e144c99e3806db268a45d3b7028f186e5e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG5",
+    "quotation": 1,
+    "LF": [
+      307,
+      319
+    ],
+    "quote_sha256": "41cb4cc52eebdf2937bcac32146ebe5bc33333970a93311a40c9825bba901d0b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG5",
+    "quotation": 2,
+    "LF": [
+      321,
+      348
+    ],
+    "quote_sha256": "38fb77fe9e7b890262bbb00062e54fed579868570c1c9eed79dc93b927630a60",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG6.7",
+    "quotation": 1,
+    "LF": [
+      349,
+      364
+    ],
+    "quote_sha256": "da71c1c95894a326293a5f064f835814cdaf6068d719fb44f933f682ea9a11bd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG8",
+    "quotation": 1,
+    "LF": [
+      368,
+      382
+    ],
+    "quote_sha256": "fa5c355cfe964bf240b67ab9b133f952996c3203d5ce0e7aa748b56533598735",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG8",
+    "quotation": 2,
+    "LF": [
+      383,
+      402
+    ],
+    "quote_sha256": "0d72cfdd96694946b1eb423619db8e41fdd47f514b80094ca44fb637344d5e25",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TPG9",
+    "quotation": 1,
+    "LF": [
+      412,
+      415
+    ],
+    "quote_sha256": "e9d7d26a4b7b39cecd159fa3b6fe26a907c7e4890d0ebf6714f2fd0caf33eb77",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.significance",
+    "quotation": 1,
+    "LF": [
+      26,
+      31
+    ],
+    "quote_sha256": "3017d12bcedb2250f2a1690d45a9dd1f0f3102248f1784b9daada7215f2a7394",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.significance",
+    "quotation": 2,
+    "LF": [
+      50,
+      59
+    ],
+    "quote_sha256": "0c51c1a387eac3e5ad5e2f22a93f512ff2f39698037d81ba0f0aed99ecc895d1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.oldtable",
+    "quotation": 1,
+    "LF": [
+      60,
+      76
+    ],
+    "quote_sha256": "895b71fc7dc1c7a1074f004c47973c6934b2d9442bd5eb4a5b1670131ea0c53a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.oldtable",
+    "quotation": 2,
+    "LF": [
+      107,
+      115
+    ],
+    "quote_sha256": "df57bb2078c73a48e557da6b81810ea3b7e9c79525f4da0f2704711ca29f7de2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.oldtable",
+    "quotation": 3,
+    "LF": [
+      151,
+      162
+    ],
+    "quote_sha256": "94eef18fc043c96ee3c1d1ac9413917c467b1e55471ddf4b6fad2fee242c8184",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.oldtable",
+    "quotation": 4,
+    "LF": [
+      170,
+      184
+    ],
+    "quote_sha256": "986e5a7aab7a103e887651abe2659e6658f45dcea3471b921bd87da63e8e4e3f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS12.oldtable",
+    "quotation": 5,
+    "LF": [
+      218,
+      224
+    ],
+    "quote_sha256": "c1ef44264b54ac795663c3babf7cacd61368b9d524b07d15bbde974028f433ae",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22a",
+    "quotation": 1,
+    "LF": [
+      1734,
+      1744
+    ],
+    "quote_sha256": "84ed1802c4b5e2a84c0ea92138bfa0ff9879c93eb9c1f2ec5561ba1efed9827c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22b",
+    "quotation": 1,
+    "LF": [
+      1804,
+      1810
+    ],
+    "quote_sha256": "d66168fbd04e1582433baeaf852f4cc64a6fee124a67ad616a03fe8c543522cd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22c",
+    "quotation": 1,
+    "LF": [
+      1838,
+      1853
+    ],
+    "quote_sha256": "cbea107973ea28ecfb2be314cedf5ab167ce1599514241e40871cf920ca7bddc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22d",
+    "quotation": 1,
+    "LF": [
+      1886,
+      1909
+    ],
+    "quote_sha256": "79a36ba255004dcd0138baafd96a745e07403c78f0a49fb2987b18b4b79c10ad",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22e",
+    "quotation": 1,
+    "LF": [
+      1912,
+      1928
+    ],
+    "quote_sha256": "203d6d989970847601570320b7bdb402d71dd8b16cf98aaae56e54775e808500",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22f",
+    "quotation": 1,
+    "LF": [
+      1931,
+      1943
+    ],
+    "quote_sha256": "482eb12162ca33c4897fbd241b0626441ffdfffc1a07c407d7fdbf2f0601bbc3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CbCR22g",
+    "quotation": 1,
+    "LF": [
+      1946,
+      1963
+    ],
+    "quote_sha256": "f720717c86efd6e4229c9c04f1aa5dea34af4a3edf1f5a235377361ba25cfb85",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.vintage",
+    "quotation": 1,
+    "LF": [
+      19,
+      36
+    ],
+    "quote_sha256": "04620497b952a920f51dfb3e28c9a901346dc8b61940899067650f4502255787",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.tables",
+    "quotation": 1,
+    "LF": [
+      148,
+      159
+    ],
+    "quote_sha256": "b69da23cc31a8e04b3f114a0e4a7fe61421a80946befea978b03049fc02ba536",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.tables",
+    "quotation": 2,
+    "LF": [
+      195,
+      204
+    ],
+    "quote_sha256": "452d66eb103b3ce8d5fd5435d656b0fcfe591420e369aacb494dbed83b0c59a1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.tables",
+    "quotation": 3,
+    "LF": [
+      205,
+      221
+    ],
+    "quote_sha256": "7a4b54619e5f4544f7fdf067d9e712b0c93acbb172234ed81ede09ccda60fc53",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.tables",
+    "quotation": 4,
+    "LF": [
+      223,
+      237
+    ],
+    "quote_sha256": "f4bd5a206cc1a3bb85196c34ca3d01814e83e0f5ceab3a9214a16c6e90a52f91",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS14.tables",
+    "quotation": 5,
+    "LF": [
+      239,
+      245
+    ],
+    "quote_sha256": "e766c49040b656aee62ee03b5b5b63ccdc3555fcc4e8b29e2d94b666611185da",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS18.revenue",
+    "quotation": 1,
+    "LF": [
+      87,
+      95
+    ],
+    "quote_sha256": "3866044cb49fd01e4df24562ab2433a595e851b92d963e1cd632f5c75b603ee1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS18.revenue",
+    "quotation": 2,
+    "LF": [
+      102,
+      109
+    ],
+    "quote_sha256": "bdd0dc2953942bd8244ef0b89b3820de99d7377b4ad7854fb43203ea8a03e63c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA18a.footnotes",
+    "quotation": 1,
+    "LF": [
+      15393,
+      15398
+    ],
+    "quote_sha256": "ef15faa08360e03888a4845206a7aae3989e242d9dc2c344ccf0ec1b1f20ebf8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.civil-footnote",
+    "quotation": 1,
+    "LF": [
+      14869,
+      14870
+    ],
+    "quote_sha256": "9a99cbdaa37e5fa8b0104d005ef99c1c270ce909e0723fa1ca21cd5093eacf02",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.residence",
+    "quotation": 1,
+    "LF": [
+      15,
+      32
+    ],
+    "quote_sha256": "c303ade6a08e1b9b5c2f176d99dc3634f3bd6731117f30102ee6f63427f1aefa",
+    "actual_read_basis": "Actual native residence15–35/61–73 + exact SK-L02/03 delta read"
+  },
+  {
+    "key": "ITA2.residence",
+    "quotation": 2,
+    "LF": [
+      32,
+      53
+    ],
+    "quote_sha256": "0a422314a1673f5bc0e5f0858f94ddba2eac8a4cdeff6c149eb843e9d019ae09",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.residence",
+    "quotation": 3,
+    "LF": [
+      64,
+      67
+    ],
+    "quote_sha256": "c11098c5ceb934c53f472c036e02ecd6d89e7fbc618dc9df6438acc29618ea78",
+    "actual_read_basis": "Actual native residence15–35/61–73 + exact SK-L02/03 delta read"
+  },
+  {
+    "key": "ITA4.PIT",
+    "quotation": 1,
+    "LF": [
+      4,
+      14
+    ],
+    "quote_sha256": "71149c4c01820c21e5c00d6ded7feb23b312a7e27f9b070fc4153c27d6d0b9cc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA4.PIT",
+    "quotation": 2,
+    "LF": [
+      30,
+      33
+    ],
+    "quote_sha256": "33cc9acea7fe3d564c0237e74a78d9c51f344cca761a33f86f9a3b38cd7fdb16",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA5.pay",
+    "quotation": 1,
+    "LF": [
+      4,
+      16
+    ],
+    "quote_sha256": "e96aa2198d6f41f47e27716eff14cc56a1e9c287d014125ce717cf13a16767f4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA5.contributions",
+    "quotation": 1,
+    "LF": [
+      245,
+      249
+    ],
+    "quote_sha256": "9128d9d7a82df7d7b59f840a9584fa1b2af67195301663fb9adfb537720dafb1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA6.business",
+    "quotation": 1,
+    "LF": [
+      1,
+      37
+    ],
+    "quote_sha256": "0faada9a22073f238b70134b5d1a1f44ebd530c86b545695ae3c14bf75f45e14",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA6.no-rental-loss",
+    "quotation": 1,
+    "LF": [
+      50,
+      58
+    ],
+    "quote_sha256": "47981b0c9705369c6e7cee67074261cdd3e78aef8e7b9d227034eebe0a5e6e2c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA6.flat",
+    "quotation": 1,
+    "LF": [
+      77,
+      107
+    ],
+    "quote_sha256": "8da5a3ab263766c64703f27a07acd1bf198084fd7af3d14775e1d44cf2c4b1e6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA7.capital",
+    "quotation": 1,
+    "LF": [
+      4,
+      10
+    ],
+    "quote_sha256": "877b2717210b41329734fac17a6e366d7d771c0a7540746f1d772b46a75d6ac2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA7.capital",
+    "quotation": 2,
+    "LF": [
+      23,
+      42
+    ],
+    "quote_sha256": "26c425492d82bd5d48bbc1efd1d5242c7a5ee3d09071cc4a0f5d9e8abc0c6c29",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA7.capital",
+    "quotation": 3,
+    "LF": [
+      66,
+      69
+    ],
+    "quote_sha256": "bb89d51c79b444ea1ba8d08ede853d2a082dda18e9363b1a21e3c8b060946a36",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA8.categories",
+    "quotation": 1,
+    "LF": [
+      4,
+      22
+    ],
+    "quote_sha256": "c6eeec02ccce96d110fdc431d27e49a367a543cf157c363ea9cb47eb5f2227cb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA8.categories",
+    "quotation": 2,
+    "LF": [
+      54,
+      60
+    ],
+    "quote_sha256": "e4c19c9d2a1fc0ae86b95f9438c4090a6b375ef7f324a6cf1d8b7efd0988d652",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA9.rental500",
+    "quotation": 1,
+    "LF": [
+      36,
+      40
+    ],
+    "quote_sha256": "4827ce2d20387ee0d8368ee0c820b6c97c255561a81e07718162001d1b1bb13e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA9.shared500",
+    "quotation": 1,
+    "LF": [
+      48,
+      57
+    ],
+    "quote_sha256": "ee5adac9a52958f8221c30339d0ad4a701f64624da654bf447058c8ec0c00c99",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA9.securities",
+    "quotation": 1,
+    "LF": [
+      62,
+      67
+    ],
+    "quote_sha256": "64c66707731760d5874e5bc550bc2a50c25cdefc6c3b9877b5dd8d1158c4cca5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA9.retail-bonds",
+    "quotation": 1,
+    "LF": [
+      115,
+      121
+    ],
+    "quote_sha256": "4088b30bdbe4383dfd16a23ffae1aa5746a4327fda411bc8b3c4b6880e81ee6f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.base",
+    "quotation": 1,
+    "LF": [
+      3,
+      5
+    ],
+    "quote_sha256": "5f1c20a5d6817e2def753552152e7a4f5ca487d0aa9f96eba8507eb717ba733b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.personal",
+    "quotation": 1,
+    "LF": [
+      6,
+      17
+    ],
+    "quote_sha256": "c73ef7494189c2893257d75a33be253763918a4d83355df4609a8c6299928bc0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.spouse",
+    "quotation": 1,
+    "LF": [
+      18,
+      46
+    ],
+    "quote_sha256": "e71697ba1b61081af95324de9cebd8e57a29c500c29eecd5edcd7c5d5a931724",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.spouse-conditions",
+    "quotation": 1,
+    "LF": [
+      47,
+      64
+    ],
+    "quote_sha256": "e75395dabaae2cb8b57b50e50ec60224b75ef0fdfb6ab2902cb5b2c39917155e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.pensioner",
+    "quotation": 1,
+    "LF": [
+      65,
+      76
+    ],
+    "quote_sha256": "35a36ff7b93c7f7997468ff97097573827525e3a0048bbf7d0850b1267b6a42b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.nonresident",
+    "quotation": 1,
+    "LF": [
+      77,
+      81
+    ],
+    "quote_sha256": "ef751fac0b3708bf0336430276cbcb21de42770942c10d6139d1d2b04b8e99d2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.DDS-PEPP",
+    "quotation": 1,
+    "LF": [
+      82,
+      109
+    ],
+    "quote_sha256": "f36c6b7a755c9dbfda65ece9637d1415256f707e19c137f9f9e6df47eaca4b57",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA11.allocation",
+    "quotation": 1,
+    "LF": [
+      110,
+      113
+    ],
+    "quote_sha256": "f97903a30a0394c9f2ac035e20fe5f9a412c3d8dbba6de9531c14b75bc31444f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA15.PIT",
+    "quotation": 1,
+    "LF": [
+      6,
+      37
+    ],
+    "quote_sha256": "c04216e2c250b965b8f0fc8bfd117220c6ecc1d05cd57c80fd72d2eb7798b2b0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA15.PIT",
+    "quotation": 2,
+    "LF": [
+      38,
+      45
+    ],
+    "quote_sha256": "acd6f86bf173bab8785606db9e682f9844a0af794289b45680a1fa6de8528874",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA30.loss",
+    "quotation": 1,
+    "LF": [
+      1,
+      16
+    ],
+    "quote_sha256": "426dad078579be065105c354ec18aad8b56dbddc58c885d30afd2ec39526c392",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA32.filing",
+    "quotation": 1,
+    "LF": [
+      9763,
+      9769
+    ],
+    "quote_sha256": "beeb89b1e85894c2ce5188efe594198893f9e9b1098eb29b469cd317cbf9f70b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA32.filing",
+    "quotation": 2,
+    "LF": [
+      9771,
+      9784
+    ],
+    "quote_sha256": "83af272edb3f0e7bcd3b73ed018b936f8d81419642099a685327c768d3b35773",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33.child-age",
+    "quotation": 1,
+    "LF": [
+      3,
+      18
+    ],
+    "quote_sha256": "4f00b4cecaff42203885cce1f4de0ea3451b5a6c620c1c5453e61590980750ee",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33.child-months",
+    "quotation": 1,
+    "LF": [
+      26,
+      41
+    ],
+    "quote_sha256": "c764a0c854027fca0cbf58a9afc0488e2f3502e6f01488896755610196524c67",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33.child-cap",
+    "quotation": 1,
+    "LF": [
+      42,
+      71
+    ],
+    "quote_sha256": "7d1c4513e28a827af1c0a46d6065d731029a42935424197d8e727b2b5b82b21c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33.child-parent",
+    "quotation": 1,
+    "LF": [
+      72,
+      99
+    ],
+    "quote_sha256": "b5f7e8f265c73c006e8ec4fd65fd2cf14c737e4b407984f54a3a15d478344cc9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33.child-taper",
+    "quotation": 1,
+    "LF": [
+      100,
+      111
+    ],
+    "quote_sha256": "cdc96d902326b84ba079e183a7e442f343a9981816c7c8ea6db695c86642d387",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.eligibility",
+    "quotation": 1,
+    "LF": [
+      3,
+      37
+    ],
+    "quote_sha256": "d50711eb51b1e1bd9c80d3e58382a155147f696d10c4768047e5ee31857a80f5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.window",
+    "quotation": 1,
+    "LF": [
+      38,
+      47
+    ],
+    "quote_sha256": "791023811c529b1ae43df4865e533f3da3d4286353cf7582d4ea080b9cd0c9b1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.order-payout",
+    "quotation": 1,
+    "LF": [
+      48,
+      64
+    ],
+    "quote_sha256": "8e7a4ee5102b397e8f68d0c79a0f3226dccca65ea9683c787273540d56e83fa4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.death",
+    "quotation": 1,
+    "LF": [
+      65,
+      74
+    ],
+    "quote_sha256": "9fe4be7f4f2c2d655926b234684433692f6adc9fd29bba16ff20fffa210b1a71",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA34.advances",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "862f9b0b917dbc5c284cdfd5e7896a0a660877c420318639dc94ccabf60b2367",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA34.advances",
+    "quotation": 2,
+    "LF": [
+      23,
+      34
+    ],
+    "quote_sha256": "bf9e40b07e6b42ac236bae5df1b5e2a996dec7f485f5e004b8b5dbac639cdb16",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.settlement",
+    "quotation": 1,
+    "LF": [
+      4,
+      12
+    ],
+    "quote_sha256": "18b9736146de00a9ced27bd7f225d65d542dc1c9e3fe8781d6d06abf3fe3a931",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.settlement",
+    "quotation": 2,
+    "LF": [
+      21,
+      31
+    ],
+    "quote_sha256": "000f16b80b2250b8c292b6e92f41f3cef8d7904f172edbb6fc3efb9d4eab9d79",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC14.electronic",
+    "quotation": 1,
+    "LF": [
+      1,
+      17
+    ],
+    "quote_sha256": "632a1cd9089141ed03b100ac0bb2f4adde3925a96f2010ecf14b3ddcc532af4b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.PIT",
+    "quotation": 1,
+    "LF": [
+      4,
+      14
+    ],
+    "quote_sha256": "79cd73ce1c09950e1659bf8462045c59ae84447d846ec31b47c2d7998e9b9b54",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.PIT",
+    "quotation": 2,
+    "LF": [
+      23,
+      28
+    ],
+    "quote_sha256": "a5a59274b6c721076999e991eb3ac35204545165dbcfb639c660c3aa0021b285",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.PIT",
+    "quotation": 3,
+    "LF": [
+      86,
+      88
+    ],
+    "quote_sha256": "a4a359a165ed16c780b016745e20cf2cd22d1bd9f577985975d94b20efce934f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.PIT",
+    "quotation": 4,
+    "LF": [
+      100,
+      104
+    ],
+    "quote_sha256": "2230c088d3307d451a592d022ada5c80729da483adb8210b18b58e4c30c99553",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA45.relief",
+    "quotation": 1,
+    "LF": [
+      4,
+      21
+    ],
+    "quote_sha256": "54849f4be7b30e18c88e01f21eda99b7b9f35a2a1487f1ac9c27d86352f91b33",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA45.relief",
+    "quotation": 2,
+    "LF": [
+      22,
+      26
+    ],
+    "quote_sha256": "307be895487ffa4ba7fee61342639f79ca3d1a63c93ee5f0615d62d2c18edd4d",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "ITA45.relief",
+    "quotation": 3,
+    "LF": [
+      28,
+      42
+    ],
+    "quote_sha256": "0d84f818c8b4da05cd11ae04c9a75a162a7a130512f9b8f359a9a33968c5c1d7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA46.payment",
+    "quotation": 1,
+    "LF": [
+      1,
+      2
+    ],
+    "quote_sha256": "f7c2769dfd2b38363c16f0e06cb5c66e97c29eaf0b302c22666da5a415bbe62e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA46a.minimum",
+    "quotation": 1,
+    "LF": [
+      1,
+      7
+    ],
+    "quote_sha256": "b271ceae4fb9b80d4f2f9beb4e34bbd42558f32a0988be2c84f1b5b79a3a0ee9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA47.rounding",
+    "quotation": 1,
+    "LF": [
+      1,
+      10
+    ],
+    "quote_sha256": "8f74ac43bda6b11069c66c5e84520a125808c70eb2a571d6c384a9bba2f50ae6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA51e.dividends",
+    "quotation": 1,
+    "LF": [
+      12388,
+      12396
+    ],
+    "quote_sha256": "46924f9bf4b80f84472ed324fcce9759eb6d98204786d5a7369b182bd824b1f1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA51e.dividends",
+    "quotation": 2,
+    "LF": [
+      12408,
+      12422
+    ],
+    "quote_sha256": "0a40a27cb0c90183fbf1b9a3cee2bed2b8ea312326c2ccc7ca6446578f6d16f4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA51ea.bonds",
+    "quotation": 1,
+    "LF": [
+      1,
+      16
+    ],
+    "quote_sha256": "1bda109e6f1383904fd184754ff66c2c73e41a2f62c44a940b605adbef0e1020",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zi.dividends2017",
+    "quotation": 1,
+    "LF": [
+      13646,
+      13657
+    ],
+    "quote_sha256": "454be556737f787a7f3764fad3615194b8ba13b8baa75ebf1646f5bc240f7be7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzz.transitions",
+    "quotation": 1,
+    "LF": [
+      6,
+      11
+    ],
+    "quote_sha256": "6ca5b574af7ba18260a7f984d5cd466ce198f861e0999bd4604c3e3847a3806f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzz.transitions",
+    "quotation": 2,
+    "LF": [
+      13,
+      21
+    ],
+    "quote_sha256": "6a5d515e3861d03edb9c5d66a86e70c09fb04c3303a1f77a8d864262a774fb6b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzb.dividends2025",
+    "quotation": 1,
+    "LF": [
+      17,
+      26
+    ],
+    "quote_sha256": "835c74beae7e458cc3c33ff52e1cbf63b169473640b9c11e879192dcea69594d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzc.bonds",
+    "quotation": 1,
+    "LF": [
+      14717,
+      14720
+    ],
+    "quote_sha256": "828a3486f3175f0ec61d9e678b80bff59bc45d56799c817a973b0e6dc0c021ef",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzc.bonds",
+    "quotation": 2,
+    "LF": [
+      14726,
+      14731
+    ],
+    "quote_sha256": "5e24247128e22fc87b43f20003c1c1fb7132c94d9f465793e902a2a383734504",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzj.2026",
+    "quotation": 1,
+    "LF": [
+      1,
+      5
+    ],
+    "quote_sha256": "862e5e9d4963c392d02e52ac615ff61268c65eb159d3e103730017197d25f0c0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzm.2027",
+    "quotation": 1,
+    "LF": [
+      14823,
+      14826
+    ],
+    "quote_sha256": "226be2c2a067c6e87494989ed55e1d999edfc6b12d67f7d272b5cc11aec1c7ff",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzy.mortgages",
+    "quotation": 1,
+    "LF": [
+      4,
+      7
+    ],
+    "quote_sha256": "b2c3b7c2c2818d74df90197653e9874a97ed7da66b8d4d565f8a75b13aee59ba",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzy.mortgages",
+    "quotation": 2,
+    "LF": [
+      73,
+      81
+    ],
+    "quote_sha256": "9d5d036edaed973d768ca50e2f0ba76c7c7be7944ce7c4c84a4d7d6be4dde981",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "quotation": 1,
+    "LF": [
+      33408,
+      33431
+    ],
+    "quote_sha256": "055517d338931f8b81c0883f802c58155e27d30bc0dd89751d18cce137edfacf",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "quotation": 2,
+    "LF": [
+      33444,
+      33449
+    ],
+    "quote_sha256": "b58607205c195c4c2e5345443de0ed2baa1089e71544768de359ca1a50d62f4c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "quotation": 3,
+    "LF": [
+      33455,
+      33496
+    ],
+    "quote_sha256": "916349915ca06f9244c6bf262b0c438dd18170c76a31e735816cab398eeeacac",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "quotation": 4,
+    "LF": [
+      33504,
+      33515
+    ],
+    "quote_sha256": "a598878706513e7889af48f700b01abd56ba56511d4f41b6aa8e06c6a9abb82d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "quotation": 5,
+    "LF": [
+      33521,
+      33580
+    ],
+    "quote_sha256": "e63114c65bb8564078f21dbbd248210027077680f96231b6d439665b8d34525c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Minimum168.2025",
+    "quotation": 1,
+    "LF": [
+      63,
+      67
+    ],
+    "quote_sha256": "3ac873281664960902d208fa6e56735855a8265670c3a0a45409b6f25e50fdeb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Wage2024",
+    "quotation": 1,
+    "LF": [
+      2396,
+      2399
+    ],
+    "quote_sha256": "ab21be7dbea37b3e7ef1971e60039f55618c001b3074fc7c5c6d6dfe0014c9b9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.dividend-periods",
+    "quotation": 1,
+    "LF": [
+      158,
+      166
+    ],
+    "quote_sha256": "93e9cd81fb9c29035c47e0d5c255dc0080806f29be1c3ab7feb7023196d52e18",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA15.dividend2024",
+    "quotation": 1,
+    "LF": [
+      58,
+      62
+    ],
+    "quote_sha256": "0d7cdaabb064e527c86daba0d4a628064006f372dfab6be2671c4cfe50e0e497",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 1,
+    "LF": [
+      74,
+      75
+    ],
+    "quote_sha256": "0e415c7419e6facc4d509e92252c1769f93611634e28e4bc7fb502557d6336ce",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 2,
+    "LF": [
+      77,
+      84
+    ],
+    "quote_sha256": "8f6e1141be9fe13912b369fbbf68a97cbc6ce1f0aec34ca1e62514639fb749ea",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 3,
+    "LF": [
+      86,
+      96
+    ],
+    "quote_sha256": "6b1f9edaf7b5e77344429c64b99f48d0a7da737d559973c097dc2528d93fd393",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 4,
+    "LF": [
+      98,
+      103
+    ],
+    "quote_sha256": "1abeac25645122daf3ca3949cbf0308c86227b46bd5fa2299c78e77f872f99b9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 5,
+    "LF": [
+      107,
+      156
+    ],
+    "quote_sha256": "cf3ac0b8fd6a1ebc9ce396bddd66afddb3b8dbea673292986603156a5232a872",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 6,
+    "LF": [
+      159,
+      161
+    ],
+    "quote_sha256": "281a8895e09065cb299bb30b4023e2c61b8b765a7a0b96b61e1c5760a70f4581",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 7,
+    "LF": [
+      163,
+      169
+    ],
+    "quote_sha256": "ff63e6c6827bfae17b3b02766cd107f9bbf309c0fb16094b5d34491844270e26",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 8,
+    "LF": [
+      171,
+      183
+    ],
+    "quote_sha256": "4c15cc658d7d2bba228d71e62ba9995046ca9f5bd06455fe488bed106cf01ee5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.details",
+    "quotation": 9,
+    "LF": [
+      185,
+      186
+    ],
+    "quote_sha256": "3ecb80f6b60bd1ea7d12002a273b800cea71092f121e78d1b08c90bf6367a258",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.base",
+    "quotation": 1,
+    "LF": [
+      187,
+      207
+    ],
+    "quote_sha256": "cbb4c508647cb12feb82fa23bb3d007cc718173a060364867d2cba63ce4ef341",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.base",
+    "quotation": 2,
+    "LF": [
+      209,
+      242
+    ],
+    "quote_sha256": "07f8dd6d64c6d88ec1a483c6e6ec6bfee8b7cc33dbddb94dee29d97a746e44cc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.relief-credit",
+    "quotation": 1,
+    "LF": [
+      243,
+      244
+    ],
+    "quote_sha256": "c69152a825d3caa6630a37605d7ab67ac773444db8e167e91b29019d8171dd54",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.relief-credit",
+    "quotation": 2,
+    "LF": [
+      246,
+      337
+    ],
+    "quote_sha256": "7af53658d52fcc1c3bdb3829d25e250b373e42b31ad001b595ae40767a23aa10",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.relief-credit",
+    "quotation": 3,
+    "LF": [
+      339,
+      339
+    ],
+    "quote_sha256": "7e78c20daf438de95330975e4d8cf2218649a1139a6fb360df316940f74b19da",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.settlement-notes",
+    "quotation": 1,
+    "LF": [
+      340,
+      341
+    ],
+    "quote_sha256": "5883fd8553f856718728a4ff7f1009ea3a73196109a7a6752c9017316e5dcec8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.settlement-notes",
+    "quotation": 2,
+    "LF": [
+      343,
+      349
+    ],
+    "quote_sha256": "5c21223ec1cd6c162b6b0ad339bec93bb1a87ca629e59b112b335d38b3d7849f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.settlement-notes",
+    "quotation": 3,
+    "LF": [
+      351,
+      351
+    ],
+    "quote_sha256": "1a752e5b3ca698a53426de72e489e235c1d5943f5dcc8572c485725afe977019",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 1,
+    "LF": [
+      440,
+      441
+    ],
+    "quote_sha256": "afa97f2df874d64f82c9567f548fd2290e9e66bee922f4a9c054769e72d91f88",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 2,
+    "LF": [
+      443,
+      449
+    ],
+    "quote_sha256": "f97977e04266b731cfb4c80a301982c939a07933cfd14b35969d52f91406e0d3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 3,
+    "LF": [
+      451,
+      455
+    ],
+    "quote_sha256": "2ce9eaac71bc81d64bf25bf581c6d0fcd52480ea291a46bfa06492e402381fb9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 4,
+    "LF": [
+      460,
+      460
+    ],
+    "quote_sha256": "f07a7fe4834239c1ca6ba68e32edd0e8775a2f2cacd743108a331df238f3d01b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 5,
+    "LF": [
+      462,
+      463
+    ],
+    "quote_sha256": "81931b67dcde2edea2828380a4c1be4671207cd0cbaa8f6bace12e177b3a4005",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 6,
+    "LF": [
+      467,
+      480
+    ],
+    "quote_sha256": "7e94d7f5071f1db80c1459b7fe8df026ce3cde458223b50458008fd8f2288b1f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 7,
+    "LF": [
+      482,
+      487
+    ],
+    "quote_sha256": "f4196fe3731bc2f47e5b552957863c615e7d689c9ac11591b21a9aef38a8a91b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 8,
+    "LF": [
+      489,
+      499
+    ],
+    "quote_sha256": "8ce0cc6d2e17b20bc805bbfacedf4056e37fa32726966381c116748cdff78c76",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 9,
+    "LF": [
+      501,
+      501
+    ],
+    "quote_sha256": "7e345c3ba789219b10b575493ae8ff1391d50b681c68ba6cbd8f25a4d73fbf7e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 10,
+    "LF": [
+      503,
+      506
+    ],
+    "quote_sha256": "a082ac836c6914ebd4d62a1fb93a3221d65908f210811c5dc6e9651cad59eee4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 11,
+    "LF": [
+      508,
+      509
+    ],
+    "quote_sha256": "0158fb99dbde9154813453909b646b2df43ad37793425eca1b81b8a13d9b251a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.payout-attachments",
+    "quotation": 12,
+    "LF": [
+      511,
+      511
+    ],
+    "quote_sha256": "f380653ef8464dc70512707419853dfde9c78e9fdf76ab0dfd4bf4faf163e735",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 1,
+    "LF": [
+      75,
+      78
+    ],
+    "quote_sha256": "517a27b05c93f4ff274c41a6cd93e27f98deca06dcf04b75bf56af891696f72a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 2,
+    "LF": [
+      82,
+      91
+    ],
+    "quote_sha256": "1283c58cba7f7600b02f694ffb32f649c3f13d53663dff3cf3d578c2db8176f2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 3,
+    "LF": [
+      93,
+      107
+    ],
+    "quote_sha256": "3a2354be45411d0dcc4b6d420310c2eb8778e6299c4ead286f04650a671cdb8c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 4,
+    "LF": [
+      109,
+      114
+    ],
+    "quote_sha256": "f04dfcfd90fe9921977cf36c0e723567a04808337da5c4c5d7fa2e3141e9ca77",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 5,
+    "LF": [
+      118,
+      158
+    ],
+    "quote_sha256": "bbd3a0089544aac5531bd3cc7f488ecee67150bd16fb2d98abd4d5b0a285e7f8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.details",
+    "quotation": 6,
+    "LF": [
+      162,
+      162
+    ],
+    "quote_sha256": "984a78041a585df871f2170c622f29a56b90887a8d01c8b152ad309fb8a1649f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 1,
+    "LF": [
+      163,
+      164
+    ],
+    "quote_sha256": "0d054646047f600b02919636c7dd775b4521c1b5b4cb0770ad693fd4ca636753",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 2,
+    "LF": [
+      166,
+      183
+    ],
+    "quote_sha256": "7ec8d00a60e4de46c9e128c834d134615bf0f4d5d30ecffd0bae8a756f677325",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 3,
+    "LF": [
+      185,
+      197
+    ],
+    "quote_sha256": "5275b6b927096d9037fb49ed29283dca42987fb12784bf6d3f0dcdac08f46fc0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 4,
+    "LF": [
+      199,
+      217
+    ],
+    "quote_sha256": "6764073d4294215a1cdb7a17deed9d2d8cd4e7fc5c1a254d9568549bef6bdec2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 5,
+    "LF": [
+      219,
+      246
+    ],
+    "quote_sha256": "2533c066e92e906df65fb68cb2d7e77be90f0fce3cab59c958ae5b1558d60bed",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.employment",
+    "quotation": 6,
+    "LF": [
+      248,
+      248
+    ],
+    "quote_sha256": "02ce72037d020cc23af82e1085201b5ca5c7bd29a8eab54f11a72e4f5f190a37",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.flat-expenses",
+    "quotation": 1,
+    "LF": [
+      249,
+      250
+    ],
+    "quote_sha256": "5e8c13a8902f878a5763d67d5253f39b284e19f98570b3cde375b021fe05685a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.flat-expenses",
+    "quotation": 2,
+    "LF": [
+      252,
+      289
+    ],
+    "quote_sha256": "328a3306525ec06c7e6d62cb64900bfae437049f2b0d11b2ee87c15d1eacff22",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.flat-expenses",
+    "quotation": 3,
+    "LF": [
+      291,
+      305
+    ],
+    "quote_sha256": "3ed00f7e6945a1af2a520103641c2cf8578260fb0c927369d0f01536c136ad2f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.flat-expenses",
+    "quotation": 4,
+    "LF": [
+      307,
+      321
+    ],
+    "quote_sha256": "ce50d54f394af0ee5e8f08902d1b8cb1ff2e74487765a6b69dc571b956f6f5f7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 1,
+    "LF": [
+      322,
+      323
+    ],
+    "quote_sha256": "f8c5968a990b62e520ad709fe5afffe8394bb1439f0c31294f2a2f82a9101a70",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 2,
+    "LF": [
+      325,
+      327
+    ],
+    "quote_sha256": "80ca1cec378bde5e099c5ee7a0a92ba9ab274ea131fb4f67f7b97da1e09e0055",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 3,
+    "LF": [
+      329,
+      355
+    ],
+    "quote_sha256": "8e8b83efa4da17ddf937b299322b9d0c2b5199940f0483e7e06c0663a5e1e2d6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 4,
+    "LF": [
+      357,
+      357
+    ],
+    "quote_sha256": "847350f4698c68ec8910e052ef4e856f22997b97f41e1d40d1a18134fd0b4978",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 5,
+    "LF": [
+      360,
+      368
+    ],
+    "quote_sha256": "5b5d292d2636bb4d681720457cdc672045d2a2b54e4716cad6b85c99c52e2d4e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 6,
+    "LF": [
+      371,
+      395
+    ],
+    "quote_sha256": "2468179c92ca1814b75678d43d9f1c78a2255f1ba8a5d439cb6b704bbde1d31d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.business-loss",
+    "quotation": 7,
+    "LF": [
+      397,
+      397
+    ],
+    "quote_sha256": "ea811ce446a2fc62dc7146bf8f6ce157a971d1fd0939f83dadd0e97423fd3bc6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.rental",
+    "quotation": 1,
+    "LF": [
+      398,
+      399
+    ],
+    "quote_sha256": "d7b8b84e4ea5dd3d6843d8a792dfcec8584f81fe0df08a9c4bc247423aa7422e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.rental",
+    "quotation": 2,
+    "LF": [
+      401,
+      458
+    ],
+    "quote_sha256": "5bafe345225318c4d02a4592b439a7c3f900b7e5b6b592998cbb3094977da1d1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.rental",
+    "quotation": 3,
+    "LF": [
+      460,
+      487
+    ],
+    "quote_sha256": "58e4385c52fb7ea345b815886a8a0895b14147ad21aa297ed3c4d7642fa815e8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.rental",
+    "quotation": 4,
+    "LF": [
+      489,
+      489
+    ],
+    "quote_sha256": "3c805a88a7f76f8a69d4ff0f8cb1a3e0619e0cd1659251d5e6935623eb61f05b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 1,
+    "LF": [
+      490,
+      491
+    ],
+    "quote_sha256": "c122e5ceaf4dacb20c92935683bb47345b9b1c8b597d91974ea4fac50d634bd3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 2,
+    "LF": [
+      493,
+      532
+    ],
+    "quote_sha256": "753052e9153eaecf149d2b7391807ec255da194bfdb98c619b2f2ed5cef3a56d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 3,
+    "LF": [
+      534,
+      573
+    ],
+    "quote_sha256": "e016110423eaf449c46401b82d8c6e7d6d0c14cc9ad5d49e031f7d5364bd53c1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 4,
+    "LF": [
+      575,
+      616
+    ],
+    "quote_sha256": "67d3feb9d74f8e6f394ce666be26bd8d3604cf926d88b8d400e0c97227ec11d6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 5,
+    "LF": [
+      618,
+      653
+    ],
+    "quote_sha256": "b874a3ce3e5b2a298b547fe5477e983046b7a437380aec6ff0a65cebac5eee65",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.capital-other",
+    "quotation": 6,
+    "LF": [
+      655,
+      655
+    ],
+    "quote_sha256": "0eb7d492e0996851f718f0710dc947381aac42168aadd5b65e882c5d07bf6417",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.scales-relief",
+    "quotation": 1,
+    "LF": [
+      656,
+      657
+    ],
+    "quote_sha256": "7c5f8d4a86475aa15b2147e51d605ec72c172ad9600d423d0b5cafb354336d38",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.scales-relief",
+    "quotation": 2,
+    "LF": [
+      659,
+      771
+    ],
+    "quote_sha256": "accb1bc1b719520f080c7331c8e1f35e85803b252c99bcc14b74b2a54bd4f22a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.credits",
+    "quotation": 1,
+    "LF": [
+      772,
+      773
+    ],
+    "quote_sha256": "22e3fcdb680345b76ff0a49b05e397e4f1dc88802e9024d2ba73322490c85be6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.credits",
+    "quotation": 2,
+    "LF": [
+      775,
+      876
+    ],
+    "quote_sha256": "1d1ed516e88816d2759edc2cb68bdacde7890ac667b97ba629eff8c54c65f37e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.settlement",
+    "quotation": 1,
+    "LF": [
+      877,
+      878
+    ],
+    "quote_sha256": "3361db21a4adef3b29dbb630e2d30ce7bf75824f317bc38b6e6b37a667a1c870",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.settlement",
+    "quotation": 2,
+    "LF": [
+      880,
+      933
+    ],
+    "quote_sha256": "04f3ac5a6624586a6317e8565911902cce26a07a02079ed3ca7754c0eae9c208",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.settlement",
+    "quotation": 3,
+    "LF": [
+      935,
+      975
+    ],
+    "quote_sha256": "81448b11550eb0d0363d15915db60763d4805b7792f1407df25ca69c3c972d48",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.settlement",
+    "quotation": 4,
+    "LF": [
+      977,
+      978
+    ],
+    "quote_sha256": "0e1e0ec212b2ce9bb1272dfa687db76040b11b7022ae5add4e7b0bd35df49245",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 1,
+    "LF": [
+      1057,
+      1058
+    ],
+    "quote_sha256": "834bb3cafc7621ef7ce8b59d09e23008e9ff1d93e763417e8f222ddadd1e898e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 2,
+    "LF": [
+      1060,
+      1062
+    ],
+    "quote_sha256": "5aa9846ef549cf1fa7eb3c5d0cd4b12fc1acb224c462d224a547810421fba1dd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 3,
+    "LF": [
+      1064,
+      1067
+    ],
+    "quote_sha256": "c4839fade479cf50c6d5b23a0a01540bfa0bf6db95507dcd9424cf70416434db",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 4,
+    "LF": [
+      1069,
+      1069
+    ],
+    "quote_sha256": "813d67ba6715d5d15a3f7a24d23129e7ed8af8308711a588728251b50f8f0094",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 5,
+    "LF": [
+      1071,
+      1078
+    ],
+    "quote_sha256": "a7f01b3e21009497bfbaa6e61ce0a770889d5e5a84472793bde08b84ea45d7d6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 6,
+    "LF": [
+      1083,
+      1083
+    ],
+    "quote_sha256": "7ecfed517875d2986e06427c0a54de98fc93ed18731d54ca449691f6f7658a56",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 7,
+    "LF": [
+      1085,
+      1090
+    ],
+    "quote_sha256": "c9d51376faca15978356cddc753ee728e810443182f0c130361d76584eddacdf",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 8,
+    "LF": [
+      1092,
+      1100
+    ],
+    "quote_sha256": "9388e248183bd1ebf57fe978637069d11c98c9e10e9c79e9a6329f72c29dae0d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 9,
+    "LF": [
+      1102,
+      1105
+    ],
+    "quote_sha256": "967d7a803c066a72aa5cfb508926f39323b9dc0ca1bb5c9458926f8d8e1ae2d7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 10,
+    "LF": [
+      1108,
+      1109
+    ],
+    "quote_sha256": "2288adec32d4e8c87e8647c43b2102342b367271c422cc4bd35b60830ff66279",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.payout-attachments",
+    "quotation": 11,
+    "LF": [
+      1113,
+      1113
+    ],
+    "quote_sha256": "d5b0abb1ab098e74ed5746638bcd4132ebaffc5e7064de439cc82439cdd9ac64",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 1,
+    "LF": [
+      1271,
+      1272
+    ],
+    "quote_sha256": "4e6b60865721d271775094397eea9f9d84c0836f5c5b4f661e1158361f223147",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 2,
+    "LF": [
+      1274,
+      1279
+    ],
+    "quote_sha256": "403e19f2bfa21659fc9648d47e1c4ea4aa71f2ef00884cf6a4d567f90eafa989",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 3,
+    "LF": [
+      1281,
+      1311
+    ],
+    "quote_sha256": "3061da607a3a8392409453c877897feeaca28af8b771bbde1daf99f208632567",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 4,
+    "LF": [
+      1313,
+      1320
+    ],
+    "quote_sha256": "7e5a03d553c03fc290cd0a74dd9c9507ee0021e51138377f3ca57779fb35510f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 5,
+    "LF": [
+      1322,
+      1347
+    ],
+    "quote_sha256": "a44cd18a6a0669c552a2eb5e1793d11d576533b9e84b9c2493949ed830af3a9b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 6,
+    "LF": [
+      1349,
+      1351
+    ],
+    "quote_sha256": "a3bb70bd1e2d5dec974eabd65c6e4c182aaa7743129165a765e76a73cc977e40",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 7,
+    "LF": [
+      1353,
+      1361
+    ],
+    "quote_sha256": "4451f7113c0b61c54bd4e83650282183859d5e5a9b1bc072fa73a8af4c63ef3a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 8,
+    "LF": [
+      1363,
+      1390
+    ],
+    "quote_sha256": "611fb1e7fbeab2071679650c648a1a36d3185b9934e83b2f91ebccee9df70310",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 9,
+    "LF": [
+      1392,
+      1398
+    ],
+    "quote_sha256": "545a97639b4be17b78d52de1c37d28cfd9c5cc4a1d52389d8d23efe4b344049a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.dividends",
+    "quotation": 10,
+    "LF": [
+      1403,
+      1403
+    ],
+    "quote_sha256": "86b8b49ab59d12942ee3348462a5f9e13d70d5cb2727d5611fc1f3e20b803516",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.bonds",
+    "quotation": 1,
+    "LF": [
+      1404,
+      1405
+    ],
+    "quote_sha256": "e28a4b67eed8ec7d37c79d398c01956c4a8df1fb80c465d332afdba3444b628a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.bonds",
+    "quotation": 2,
+    "LF": [
+      1407,
+      1424
+    ],
+    "quote_sha256": "7b790defddfde3c1f6fdc9c289c2d64ff43591cc3259bba7f4a5d39ef4db609d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.bonds",
+    "quotation": 3,
+    "LF": [
+      1426,
+      1434
+    ],
+    "quote_sha256": "8aa17417e6b71999b219dd8c00fe051937dad5d12ed8fd5108fd3f0f960f1813",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.bonds",
+    "quotation": 4,
+    "LF": [
+      1436,
+      1467
+    ],
+    "quote_sha256": "2d0cc500771b46014ead9981e98aac8ea1616d0a74c357adcd6ffa558f551208",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.bonds",
+    "quotation": 5,
+    "LF": [
+      1472,
+      1472
+    ],
+    "quote_sha256": "86b8b49ab59d12942ee3348462a5f9e13d70d5cb2727d5611fc1f3e20b803516",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 1,
+    "LF": [
+      1473,
+      1474
+    ],
+    "quote_sha256": "65115bf51dfa1681f068449a65aa7d07396947e54135c5fdefc33e3f3d8b4602",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 2,
+    "LF": [
+      1477,
+      1478
+    ],
+    "quote_sha256": "d01ee9022b3deb6c7ca9345ac4ac35dab00bf8b468793eefcda4593e1180f95f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 3,
+    "LF": [
+      1480,
+      1512
+    ],
+    "quote_sha256": "57097d90734fbe7a7fe47da048a2c2ad15b5ec69425ac52255aaad6e63da7504",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 4,
+    "LF": [
+      1514,
+      1535
+    ],
+    "quote_sha256": "03aeae81b92d1b766c39505598be1508c67c64300a072f8f8237ced2cb0437e4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 5,
+    "LF": [
+      1537,
+      1542
+    ],
+    "quote_sha256": "680ed653d9e6197ee7fc6bad699355850f326e71d6bbdc877ef1040ee0f4e46a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 6,
+    "LF": [
+      1544,
+      1545
+    ],
+    "quote_sha256": "2288adec32d4e8c87e8647c43b2102342b367271c422cc4bd35b60830ff66279",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.contribution-annex",
+    "quotation": 7,
+    "LF": [
+      1550,
+      1550
+    ],
+    "quote_sha256": "86b8b49ab59d12942ee3348462a5f9e13d70d5cb2727d5611fc1f3e20b803516",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-filing",
+    "quotation": 1,
+    "LF": [
+      7,
+      8
+    ],
+    "quote_sha256": "3b38d52e6157eb10811e826b452e744da37a890ea0df9abb0f68fd727ac61c57",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-filing",
+    "quotation": 2,
+    "LF": [
+      10,
+      16
+    ],
+    "quote_sha256": "ee9bec723f916e5eba0303b9c68f30ce12350e3b0667a5cca88cb5c06fe305e8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-filing",
+    "quotation": 3,
+    "LF": [
+      18,
+      38
+    ],
+    "quote_sha256": "209209996ab4618676661c8efd723fb87ca02ba5f866df639f729de5a41b457b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-credits",
+    "quotation": 1,
+    "LF": [
+      650,
+      652
+    ],
+    "quote_sha256": "7d4bb250babcf9ee505a9b1c09c4d86523c60dab8195a029c49882bc1bc74a0b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-credits",
+    "quotation": 2,
+    "LF": [
+      654,
+      657
+    ],
+    "quote_sha256": "3dca2eb6abdfbe7e19eb94598d97193beb484fbaf9e33df130544bcd88db0e47",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "A.instructions-credits",
+    "quotation": 3,
+    "LF": [
+      659,
+      690
+    ],
+    "quote_sha256": "67bbd2094867cc21db3127cd873b74e33d8439ad4a848a19997c52b54109ed3a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.instructions-flat",
+    "quotation": 1,
+    "LF": [
+      543,
+      549
+    ],
+    "quote_sha256": "bcf0a23da9d92b3583cfc67f6e9419f8edfdf3740191d8aa323161c3f63298b5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.instructions-flat",
+    "quotation": 2,
+    "LF": [
+      551,
+      591
+    ],
+    "quote_sha256": "308b4d06b03af925400d39d784c79245104d7d3b203947fbb5a54740238f58b1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.instructions-flat",
+    "quotation": 3,
+    "LF": [
+      593,
+      603
+    ],
+    "quote_sha256": "aadd6f27e2a0d0943ccf8b01291a37248508b714b14a3f9e950083e6b5506037",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "B.instructions-flat",
+    "quotation": 4,
+    "LF": [
+      605,
+      620
+    ],
+    "quote_sha256": "b31d2fbbf75bea977f8273514f0a4275cb3c896881a02467e85eb9caefb96e9c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Act261.PIT",
+    "quotation": 1,
+    "LF": [
+      953,
+      961
+    ],
+    "quote_sha256": "9a7ee2fcb767777c73f8d80d5f94e76c5d3a2046a3beea5587fbbef63c2337d7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Act261.PIT",
+    "quotation": 2,
+    "LF": [
+      963,
+      977
+    ],
+    "quote_sha256": "0281415a3ba90aa7efc57cbd727224fe8de5c22063401e8da31b0d136e7ca55b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Act261.PIT",
+    "quotation": 3,
+    "LF": [
+      979,
+      995
+    ],
+    "quote_sha256": "90beb81bfe13a3a55c76067e2f28fc8075683d40b8d6864e1ac444cb73c1a2bc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC154.return-duty",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "e9ab079ccd678752db3028588db61b3e2e41f100953c0775a94ca143ada09670",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC154.other-duty",
+    "quotation": 1,
+    "LF": [
+      42,
+      45
+    ],
+    "quote_sha256": "1c2e6e3e7ef80e4f581db6ab0da7d65be52e2702f72d46a6069cb3b883c6ffbc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA1.treaty",
+    "quotation": 1,
+    "LF": [
+      6,
+      14
+    ],
+    "quote_sha256": "0f279b3d77dae34aca7eee023d2677e9e32c83ad2b3ebbbf6d38f2225c9a8116",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17f.exit",
+    "quotation": 1,
+    "LF": [
+      4,
+      17
+    ],
+    "quote_sha256": "a306b522aec7729dd5d7ea4afc05f1746d4c97db736b18f846ed8361f0e7fc0d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17f.exit",
+    "quotation": 2,
+    "LF": [
+      18,
+      35
+    ],
+    "quote_sha256": "353fff87d1e874b9768085962a200690ef78a5b0e0b5574fd1a660f73ccaee04",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "ITA17f.exit",
+    "quotation": 3,
+    "LF": [
+      36,
+      59
+    ],
+    "quote_sha256": "6fe9ac2c9bd97d5109f985da5fb0148aa84a1cb9d71d6c2ae4293aca70acaa5e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17f.exit",
+    "quotation": 4,
+    "LF": [
+      61,
+      84
+    ],
+    "quote_sha256": "ff9cabaab0b253a5a991913246045ad89fa3814711c7829cf86f7f5622eda224",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17g.instalments",
+    "quotation": 1,
+    "LF": [
+      4,
+      20
+    ],
+    "quote_sha256": "5ca96f899648675145ce3e95e98729e04bce66f4f30a29edd860bd864868c56c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17g.instalments",
+    "quotation": 2,
+    "LF": [
+      22,
+      45
+    ],
+    "quote_sha256": "946c60a094302d79974c1d085b9cf35809d39b719fdd02a93ad242352e83f84d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17g.instalments",
+    "quotation": 3,
+    "LF": [
+      46,
+      56
+    ],
+    "quote_sha256": "c3be9737eac48a46574afc8cdcbed2f6dea1376710078457504b91a88b4d79a9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43a.challenge",
+    "quotation": 1,
+    "LF": [
+      4,
+      17
+    ],
+    "quote_sha256": "45767f496b33279b8a0974ad57c7ee9b996b19b4b6d5fdc4172e575b4294729f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.source",
+    "quotation": 1,
+    "LF": [
+      4,
+      15
+    ],
+    "quote_sha256": "e52e505e0b8115d1fddddac99f6413a36b83a2f85fef77eeda42b71a6ed41b73",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.source",
+    "quotation": 2,
+    "LF": [
+      24,
+      74
+    ],
+    "quote_sha256": "28017f0250f8e6b76a026c0b5e035a09f2c05b9eac7fa3823243987e5c168a20",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.source",
+    "quotation": 3,
+    "LF": [
+      76,
+      101
+    ],
+    "quote_sha256": "3088e05921bfd92016fa368d9975016f076e3df114afcf339e8508e0fba84d12",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.source",
+    "quotation": 4,
+    "LF": [
+      103,
+      114
+    ],
+    "quote_sha256": "690ee85b94d867b7d281c6fb56985511cda45c2f234f701a3433c6140816afc8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.PE",
+    "quotation": 1,
+    "LF": [
+      115,
+      142
+    ],
+    "quote_sha256": "add4ef3948931eb66be4e640b060f32ff276c796d6670b97d72c7a1b03053414",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA16.PE",
+    "quotation": 2,
+    "LF": [
+      143,
+      154
+    ],
+    "quote_sha256": "a42534e4992654b96737581ad668265acdb3a3798212e8e2dfe413c40cc1a5c7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA13.EU-interest",
+    "quotation": 1,
+    "LF": [
+      50,
+      70
+    ],
+    "quote_sha256": "3b91e9af2c5eb1745e1f1fc2a73ef7fb6682a3ca19439ea8c80b4b76b64ea077",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA13.EU-royalty",
+    "quotation": 1,
+    "LF": [
+      74,
+      94
+    ],
+    "quote_sha256": "869a0b8ffc1523320f8e58698704375ed74bd825b642250a245452229abbff86",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA13.EU-royalty",
+    "quotation": 2,
+    "LF": [
+      109,
+      113
+    ],
+    "quote_sha256": "ec41b8ef5fb1f2b7d9f8a5fb7caf1672f319944d4e6e147bc130bd70ab745772",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA12.dividends",
+    "quotation": 1,
+    "LF": [
+      46,
+      55
+    ],
+    "quote_sha256": "e397e770321bbf82fe3b73b237ea0158af34c9112d221bdcd6024541d890f6d4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.nonresident",
+    "quotation": 1,
+    "LF": [
+      4,
+      20
+    ],
+    "quote_sha256": "a10d0a97376202c03dbb3d0d891892652f13000a870ce1d64fc6326993358bd9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.nonresident",
+    "quotation": 2,
+    "LF": [
+      24,
+      38
+    ],
+    "quote_sha256": "bb058fd2f59b7737d1a00b36f78ff4a66e188a0f5e2f661df961e204806f9807",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.nonresident",
+    "quotation": 3,
+    "LF": [
+      84,
+      104
+    ],
+    "quote_sha256": "0e33b18a9a2759fd73de22110346f0abbaec9b5fa0b8aef5189ecb0b2c7d40d9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.credit-election",
+    "quotation": 1,
+    "LF": [
+      137,
+      162
+    ],
+    "quote_sha256": "d32e8100be8e63d1611e97920ba26d6364031ca5b7a998faa844e54138615b95",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.collection",
+    "quotation": 1,
+    "LF": [
+      170,
+      175
+    ],
+    "quote_sha256": "28d1ed26a196f7075ad8a1e0b09294ed7cce707b42fd775c469865bcaf013ca3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.collection",
+    "quotation": 2,
+    "LF": [
+      190,
+      195
+    ],
+    "quote_sha256": "6686b901570ad1ad60fbbec0d6f30d24b845cd9c4d4e6ec1439f1a5583d6804b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.collection",
+    "quotation": 3,
+    "LF": [
+      205,
+      216
+    ],
+    "quote_sha256": "5e3ff78465ac3e730b3282f095c0cd612cfd521927280ecbea5a4f502776a138",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.collection",
+    "quotation": 4,
+    "LF": [
+      228,
+      231
+    ],
+    "quote_sha256": "8b3e8bed296e6db0fa8f0f64d212c1e40652845c3a49813a180f7285badb1ed1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.EU-refund",
+    "quotation": 1,
+    "LF": [
+      317,
+      325
+    ],
+    "quote_sha256": "5ac7e83a44edcbfea07e9a88189a055efeb2dd155ad75493ed1ecd733d5b9a8f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA43.unknownBO",
+    "quotation": 1,
+    "LF": [
+      364,
+      371
+    ],
+    "quote_sha256": "daa84b386c27be062cfa3ec4dccf131ab2757d99ffcc922b0550c0c78fda7d4b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA44.security",
+    "quotation": 1,
+    "LF": [
+      1,
+      59
+    ],
+    "quote_sha256": "de1cc464a1fc7b3ee0725c86df7ed80dd70324c6a2244e11eb34482328654f7d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA2.BO",
+    "quotation": 1,
+    "LF": [
+      227,
+      233
+    ],
+    "quote_sha256": "8bb91e791519321fa45b51478103eaab1d393803bfb04bf897089782aef701b7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "MF.cooperation2026",
+    "quotation": 1,
+    "LF": [
+      3,
+      15
+    ],
+    "quote_sha256": "78b8060c292486118adcea02b582ceaef305216eba161df73e64bdf520f8f3ca",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "MF.cooperation2026",
+    "quotation": 2,
+    "LF": [
+      407,
+      410
+    ],
+    "quote_sha256": "303bb877666fd9f9af8b8fe683633a79dc59516232c1dad8509fdcf8755047b6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "MF.cooperation2026",
+    "quotation": 3,
+    "LF": [
+      800,
+      807
+    ],
+    "quote_sha256": "24dfabc4116961c435247b3626c04a5eaae6a8377c9fa158df7412273c9c89ef",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.accounts",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "34ca24e5be9d97681f8f8e4f20dd7158fafde6954db70625067c04d71e1db61f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.accounts",
+    "quotation": 2,
+    "LF": [
+      28,
+      39
+    ],
+    "quote_sha256": "b2da6bf021495feb38e97377790799c53df3bd840427341ab46bf65185fb645d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.paid",
+    "quotation": 1,
+    "LF": [
+      386,
+      414
+    ],
+    "quote_sha256": "b8aaab4618d546470ac7f11a41fd3dddc7542368f91c1636246e31203c825095",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17.pre-adjustment",
+    "quotation": 1,
+    "LF": [
+      600,
+      603
+    ],
+    "quote_sha256": "f4fe0f5281bdce4dd6e91e81b3cf5d3dfcc8d35ab53be89df1c2a1f0e1a6df69",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21.disallow",
+    "quotation": 1,
+    "LF": [
+      3,
+      7
+    ],
+    "quote_sha256": "b35ef19e3952680d4472001e4de9d84d040b4ac4bc3658faccba223e3fe63101",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21.disallow",
+    "quotation": 2,
+    "LF": [
+      28,
+      38
+    ],
+    "quote_sha256": "5c2e16aad40b6d2761a89b3e3f2f8bc20d9a4265abe092544d92851114f17a7c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21.disallow",
+    "quotation": 3,
+    "LF": [
+      54,
+      58
+    ],
+    "quote_sha256": "9af92eb66914bdd4cabcd4fedbd682db3be87b7aa1abe1f85d0be878199cf145",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA22.assets",
+    "quotation": 1,
+    "LF": [
+      4,
+      13
+    ],
+    "quote_sha256": "c9c15f1a1d8ba31be07a3f8285683410c1aba40d11bab0a2fd834904c1c70ec8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA22.assets",
+    "quotation": 2,
+    "LF": [
+      69,
+      77
+    ],
+    "quote_sha256": "b7270c5aeed43094ae009b03867f4d6b90427d28eb7a8987b40d5b3e9f0c37b5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA19.VAT",
+    "quotation": 1,
+    "LF": [
+      303,
+      311
+    ],
+    "quote_sha256": "3786225e7e77f3a49ee1c091d7c677f575386a0ebf00e02bd9f79d952d572a40",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA25.VAT",
+    "quotation": 1,
+    "LF": [
+      59,
+      69
+    ],
+    "quote_sha256": "d3f140caaf689f6badc50bc0a972851054bf1407882dea74dc048f9e1a5ee16c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA30c.pointer",
+    "quotation": 1,
+    "LF": [
+      4,
+      15
+    ],
+    "quote_sha256": "0d00315f7a3776d2d5b96dc95f221651efb7d47f4f73826d82eda6202145a13d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzr.interest",
+    "quotation": 1,
+    "LF": [
+      3,
+      5
+    ],
+    "quote_sha256": "24e19d137da8d3fd9112bf625df4aeb983a6416aee1e0323af70572c943bbebb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzf.assets",
+    "quotation": 1,
+    "LF": [
+      4,
+      13
+    ],
+    "quote_sha256": "fc56b7e69e6b6559284eb47d3b6a883bd3cc476b38a1aa18068197193914686f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA51eb.scope",
+    "quotation": 1,
+    "LF": [
+      4,
+      6
+    ],
+    "quote_sha256": "a1b81b83805dc6593a5cfda61fdaf46b7e28a0b6e569bf9252e1678fba642a81",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA26.depreciation",
+    "quotation": 1,
+    "LF": [
+      4,
+      33
+    ],
+    "quote_sha256": "9d2c730b44e6bb48b59c56e7e0815972bb6c5a0c16976f1925133a51ede83327",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA26.depreciation",
+    "quotation": 2,
+    "LF": [
+      70,
+      83
+    ],
+    "quote_sha256": "22eba092c584327e2f001d6c28afe5f8eddbe9ee5b6580f6147caba4073e5414",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA27.straight",
+    "quotation": 1,
+    "LF": [
+      4,
+      36
+    ],
+    "quote_sha256": "d7a0c433b5b0b2ae8ed71fcd7bf6f31938f99e9058ed92da7e7d1f8b0875a6da",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA42.advances",
+    "quotation": 1,
+    "LF": [
+      4,
+      29
+    ],
+    "quote_sha256": "4569c4c8db9b2b3e5938995fe2a6ce174380d34463d61473787a9a2a4e41c55c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA42.advances",
+    "quotation": 2,
+    "LF": [
+      58,
+      79
+    ],
+    "quote_sha256": "db91a0a0b90dee0a7f352a8bbba043cf38e0bedde64950b5734e0447d7e7f41f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA46b.minimum",
+    "quotation": 1,
+    "LF": [
+      4,
+      36
+    ],
+    "quote_sha256": "86a441e7aa5df4423deaea3d995874cad0e975c30ac8bcce388b715eb32ede33",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA46b.minimum",
+    "quotation": 2,
+    "LF": [
+      38,
+      76
+    ],
+    "quote_sha256": "dfb7d36a16fa752810578a96304671aaeb0291694cdda27f6ef8d8e1116d33c9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k.complete",
+    "quotation": 1,
+    "LF": [
+      4,
+      14
+    ],
+    "quote_sha256": "9c1c04bd0549880bc8edf745c367af57a6ef494ffaac0ac427ff75e1b0f85e8d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k.complete",
+    "quotation": 2,
+    "LF": [
+      16,
+      45
+    ],
+    "quote_sha256": "439368dfcece47112aaaf566d57508d20dd5bf2741b2115a4d264eaf46bd689d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k.complete",
+    "quotation": 3,
+    "LF": [
+      47,
+      61
+    ],
+    "quote_sha256": "0478a4273af4a4fe2c3516482677ee278c9ad843ab32c84a8cc55b09c880bdef",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k.complete",
+    "quotation": 4,
+    "LF": [
+      63,
+      77
+    ],
+    "quote_sha256": "73b1a2fdb4d5f21f970c1fec735b6a2bd839047c6cb75774722bf05c06d34316",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA17k.complete",
+    "quotation": 5,
+    "LF": [
+      79,
+      94
+    ],
+    "quote_sha256": "1393b434a65c02513dda2367c969b3badfaf66f8e1db53dc7318be11632c169b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA21a.complete",
+    "quotation": 1,
+    "LF": [
+      4,
+      23
+    ],
+    "quote_sha256": "69040cb007f5f22faa6d9f946ec9d1b8b0773baf51a4e96c6c6559f60901ba66",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA105b.entities",
+    "quotation": 1,
+    "LF": [
+      15524,
+      15528
+    ],
+    "quote_sha256": "58e61d9017f7b4987b1e5bae4631643f4840837f19fd845f05ffd185f41b2a4e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FTT6.pointer",
+    "quotation": 1,
+    "LF": [
+      534,
+      543
+    ],
+    "quote_sha256": "0602a8b7cac596e47effda06d4eca6a16df31d906278eabff9c2240b322b2ae5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TopUp3.scope",
+    "quotation": 1,
+    "LF": [
+      1318,
+      1331
+    ],
+    "quote_sha256": "7176be5a8611fe4f056b82648f0293a754b922f744679efa9c5fc4bf49c60fce",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.cars",
+    "quotation": 1,
+    "LF": [
+      4,
+      10
+    ],
+    "quote_sha256": "cd551333b17245109a9a6d19f2b8de5d479eee90657c650695c4e7716a0d9a47",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.cars",
+    "quotation": 2,
+    "LF": [
+      39,
+      39
+    ],
+    "quote_sha256": "26f2249ed86ee84f9becca1ad923b036f666b9ef1b5392cb93556a7ed6e06abe",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.cars",
+    "quotation": 3,
+    "LF": [
+      52,
+      56
+    ],
+    "quote_sha256": "27c7e78a5b84b769efd16a8ba8720e5cbc21ca3da3b0f7b5a2bfc31518923b9e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.furniture-improvements",
+    "quotation": 1,
+    "LF": [
+      117,
+      117
+    ],
+    "quote_sha256": "7b12452509fcb296ecd992104194af7e809163ac759f3bc3ca63c844f5667ccb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.furniture-improvements",
+    "quotation": 2,
+    "LF": [
+      126,
+      130
+    ],
+    "quote_sha256": "ed665e6f70330b7fb14d5c415cb868998587f932f1f0774a065798bad154b3ca",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "CITannex.buildings",
+    "quotation": 1,
+    "LF": [
+      184,
+      198
+    ],
+    "quote_sha256": "92bf8369ed287626f82febc8419b1abd4873b6abec88d90f1b0096b38095a3f0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.thin-negative",
+    "quotation": 1,
+    "LF": [
+      48,
+      51
+    ],
+    "quote_sha256": "145c6ce2757fc8885034941a124d4cf3ae73737809fcdaa9f2bb91e596a651e8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.adjustments",
+    "quotation": 1,
+    "LF": [
+      73,
+      88
+    ],
+    "quote_sha256": "c950da0f0a05e347c66d9bb53b64397465c981458f62661e8df3b92d2ab172b7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.adjustments",
+    "quotation": 2,
+    "LF": [
+      110,
+      115
+    ],
+    "quote_sha256": "f5fffc980328f639e776d36da6a36483eb1ad97d477576cfe054f30f37820a87",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.adjustments",
+    "quotation": 3,
+    "LF": [
+      159,
+      178
+    ],
+    "quote_sha256": "a2574d3ee37493e3d5445f2438e7134d1b41d113b0ce0ad562416dff42846cf0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.adjustments",
+    "quotation": 4,
+    "LF": [
+      186,
+      205
+    ],
+    "quote_sha256": "cc036bb898bad6240fd08950e58fb548e25be4b7fc89e3d7d3a3ebc34ea02b98",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.minimum-settlement",
+    "quotation": 1,
+    "LF": [
+      211,
+      242
+    ],
+    "quote_sha256": "8b0b640db4ac2eb9f67faf5f0cf8893b5acd5d8c7ec1e24baab08a28cb1c5ec8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.minimum-settlement",
+    "quotation": 2,
+    "LF": [
+      256,
+      282
+    ],
+    "quote_sha256": "59a59f80402306bf620a6ab15aba41c36f13e7c68ce5beefa6c5e69359df9407",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableA-B",
+    "quotation": 1,
+    "LF": [
+      341,
+      343
+    ],
+    "quote_sha256": "c123400b56bf43b00fd759ad489ed8b747f3c99f34452434d9c18b9bcd6bf64b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableA-B",
+    "quotation": 2,
+    "LF": [
+      357,
+      358
+    ],
+    "quote_sha256": "340b6b2d1fce63e548042d8c0e181520190bd4a01b376926e1828f2b4e5f442e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableA-B",
+    "quotation": 3,
+    "LF": [
+      369,
+      375
+    ],
+    "quote_sha256": "49a50327cd5aa652592e2984eea8a2873b7c56142dc3943a9cd0061b0ff3e876",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.loss",
+    "quotation": 1,
+    "LF": [
+      467,
+      483
+    ],
+    "quote_sha256": "edd0882102e29765303b95d212a05321bd8b373504dc42ce970662b4c8451ffe",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.loss",
+    "quotation": 2,
+    "LF": [
+      501,
+      524
+    ],
+    "quote_sha256": "7497f763d0b842ef3399d44ef906b6044f1bbadf5e31c35dcce16cfaf7dce186",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.loss",
+    "quotation": 3,
+    "LF": [
+      526,
+      546
+    ],
+    "quote_sha256": "5c9ae5f0b496ccdd9656e801b7ad95e287cf05d44c56bcbb8c3d9db14878b33f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableK-L",
+    "quotation": 1,
+    "LF": [
+      709,
+      734
+    ],
+    "quote_sha256": "5320ca02643cfc70cf7ea1e2925ea19db71276ebbd6dfaf531d096d49a5cdf1c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableK-L",
+    "quotation": 2,
+    "LF": [
+      741,
+      747
+    ],
+    "quote_sha256": "1d32ff29a1579d0093f448c4ded1dda6e6e12d5b5b0e43068cefe478a4392dd6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.tableK-L",
+    "quotation": 3,
+    "LF": [
+      800,
+      801
+    ],
+    "quote_sha256": "952b2757ddcfa7d98eeee341065230f1f2e418b4e56104d2941f7e9dedc2de61",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.attachments",
+    "quotation": 1,
+    "LF": [
+      1121,
+      1124
+    ],
+    "quote_sha256": "82a947831fa9f02379ce8b4f884da5b299bc624ceb8ed10ab5bf70ce05e7c443",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.instructions-vintage",
+    "quotation": 1,
+    "LF": [
+      1,
+      14
+    ],
+    "quote_sha256": "7379491bab4c767851ed3105f57d18adab51424253df0bdd931e1f21a3a64df4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.instructions-vintage",
+    "quotation": 2,
+    "LF": [
+      25,
+      30
+    ],
+    "quote_sha256": "6caa803aba814aecca8b4c9ef7873f50e68721d152e3c22b9a530ca607cce20c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "C.instructions-payment",
+    "quotation": 1,
+    "LF": [
+      614,
+      640
+    ],
+    "quote_sha256": "7418d4650e471d428ec62cb43de5f4e52f0f77037be58303da3089e1e5a90a79",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA30.loss-CIT",
+    "quotation": 1,
+    "LF": [
+      4,
+      16
+    ],
+    "quote_sha256": "16247b7e2cf4c0548b9c63d934c0891ba060781756d06f92768f1940d0449b5b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA30.loss-CIT",
+    "quotation": 2,
+    "LF": [
+      17,
+      28
+    ],
+    "quote_sha256": "2a0094cfe1d98dcd95a41906b9faf93f400638afd0f31896f1375f9a207cf05d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA12.nonprofit-scope",
+    "quotation": 1,
+    "LF": [
+      14,
+      32
+    ],
+    "quote_sha256": "02ea4b3ba0dc4ecbe0fe21e1612614ef4a290e0730cbf96ef72564758fef083c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzj.CIT",
+    "quotation": 1,
+    "LF": [
+      6,
+      9
+    ],
+    "quote_sha256": "68732f3e0866e57d50803a3044d55ea788d8be3edfb8f4a3256a699350ec6e35",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzj.CIT",
+    "quotation": 2,
+    "LF": [
+      16,
+      18
+    ],
+    "quote_sha256": "42ccd82363e95bc1a3d2c4b1555c9415deac2463b2a151ff52eb4e62322e94d9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA52zzzk.vehicles",
+    "quotation": 1,
+    "LF": [
+      1,
+      5
+    ],
+    "quote_sha256": "a2e0249f73ed0f0fa828f4b2ebad846493400c16a4215a05d050ca778cb4f060",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social128",
+    "quotation": 1,
+    "LF": [
+      4,
+      12
+    ],
+    "quote_sha256": "551d91ec2f35b5a412ead57dee019c60e6eedebf3fe46350467510ff2ffaafe0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social128",
+    "quotation": 2,
+    "LF": [
+      49,
+      59
+    ],
+    "quote_sha256": "282de3e2ca119a0c1df287136a1c6010a623b850f7f0779929ac57b16c46d107",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social128",
+    "quotation": 3,
+    "LF": [
+      65,
+      69
+    ],
+    "quote_sha256": "e49b1dd5bc6d55300d2c6a4db83e82946844a28919c9c4afa98b2a4503d2b3e4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social130",
+    "quotation": 1,
+    "LF": [
+      1,
+      12
+    ],
+    "quote_sha256": "f15a41b7440f8fb889aaa94d30fbd9e558837beaee9002693e3c90d48c5b5afc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social131",
+    "quotation": 1,
+    "LF": [
+      4,
+      14
+    ],
+    "quote_sha256": "a02f8ae2ffd2b679b01d0721cc1af0d72ce2948d107da709334c077ae4c2d147",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social131",
+    "quotation": 2,
+    "LF": [
+      19,
+      25
+    ],
+    "quote_sha256": "347e1aa53bbde54baece7ac565c21af232e90bafb79482bd675c633e28036c89",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social132",
+    "quotation": 1,
+    "LF": [
+      1,
+      12
+    ],
+    "quote_sha256": "a480c7d81f1806a5d8ffc40e57207c5ec267da94d07a5f79d3f6b5ac556866bb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social133",
+    "quotation": 1,
+    "LF": [
+      1,
+      4
+    ],
+    "quote_sha256": "283609b6f80cbe0c02a4e68f3f71c0f915a335e09988e4cce7f65e8ca1c83acf",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social135",
+    "quotation": 1,
+    "LF": [
+      1,
+      4
+    ],
+    "quote_sha256": "a10ca193b2702c17f60340c73830178516dbd63298548e8484a9681689620cc1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social136",
+    "quotation": 1,
+    "LF": [
+      1,
+      13
+    ],
+    "quote_sha256": "dc407030dcc8ed437f4f72a69937defc7e68b476350660f242f9c77d4659c741",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social137",
+    "quotation": 1,
+    "LF": [
+      1,
+      10
+    ],
+    "quote_sha256": "402d5ed796384d3b10b41d83354cc4a5c1beb7d2b6753873dfbec3b3f758521d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138a",
+    "quotation": 1,
+    "LF": [
+      1,
+      5
+    ],
+    "quote_sha256": "7af74c9a813cbe7c923a48812b9cd64a20d41e42cd751d1e5ea4b7ea7ef5e8d5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social141",
+    "quotation": 1,
+    "LF": [
+      4,
+      10
+    ],
+    "quote_sha256": "2de7d44605959a9007cc8fa97cfcfa1b3fe305514c78995b7205828f0e4072bd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social143",
+    "quotation": 1,
+    "LF": [
+      4,
+      16
+    ],
+    "quote_sha256": "7e6543345ed208a4f7b8a89c100edba143dbb0bd207233d321d63f9923748ab3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social239",
+    "quotation": 1,
+    "LF": [
+      1,
+      10
+    ],
+    "quote_sha256": "30ddfbb5c7b7bb0df51334455e284b52f72d8e03ebf1d2ee72f0298f4f667edf",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social240",
+    "quotation": 1,
+    "LF": [
+      4,
+      23
+    ],
+    "quote_sha256": "994ebfdadef660a95e560826819d869d3b56ea2499a27ad9bb6bd82be70e9a66",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138",
+    "quotation": 1,
+    "LF": [
+      4,
+      22
+    ],
+    "quote_sha256": "e6072d4bd4ae533d3a11ca02740d1299f3395c1ef72144e2f7ebb1bf60f86dcd",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "Social138",
+    "quotation": 2,
+    "LF": [
+      24,
+      53
+    ],
+    "quote_sha256": "d376d28a406734cd52ff654762bf1b74917795ebba26e8a3fd0eac913ed88bff",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138",
+    "quotation": 3,
+    "LF": [
+      69,
+      75
+    ],
+    "quote_sha256": "da3abad3429e17ca28092ac3a312ef1b6b864df97c4c54d2ffaae5ce7b1cd56a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138",
+    "quotation": 4,
+    "LF": [
+      80,
+      104
+    ],
+    "quote_sha256": "392f438c953a574d7d696f93be51ac39f33b3031422f704cd1fbc79471f48fce",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138",
+    "quotation": 5,
+    "LF": [
+      114,
+      149
+    ],
+    "quote_sha256": "3a2baf37472aaaef7cff2dd4d7f2cdb6044ba7b47b902f51f88830b87619fe3c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138",
+    "quotation": 6,
+    "LF": [
+      150,
+      151
+    ],
+    "quote_sha256": "940077d0ab3a660fe9014c1628db1d1568d124fcd16d0b09e8887e3b986b61b1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social4",
+    "quotation": 1,
+    "LF": [
+      1,
+      56
+    ],
+    "quote_sha256": "6a0505d6ce89363f33eb21004cba0748066dafb921a1c72b158dab728ca26bd7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social5",
+    "quotation": 1,
+    "LF": [
+      1,
+      7
+    ],
+    "quote_sha256": "cc75e89203f95423878758c46f5c524ca108b64c99a040dd71dd9ad5a8bb47a1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social19",
+    "quotation": 1,
+    "LF": [
+      19,
+      27
+    ],
+    "quote_sha256": "0618086f72a3fb813f67c560a83caec21c6edce2d19b1e9790e0e6be05cc0686",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social21",
+    "quotation": 1,
+    "LF": [
+      5,
+      15
+    ],
+    "quote_sha256": "3020176d25570a9eef3419ab61aa79b076d55b0528e28e71795fbae0aacc6fcd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social21",
+    "quotation": 2,
+    "LF": [
+      17,
+      39
+    ],
+    "quote_sha256": "1f5cbc32b6ebd49539db768be5192ce1ca61bd1a9f992a9d762f74f9d5e9eea6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social21",
+    "quotation": 3,
+    "LF": [
+      41,
+      59
+    ],
+    "quote_sha256": "35523c2a0df83023433cfce91750b71c671c3f9ccca9129f01ebf19959bdcbd5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social21",
+    "quotation": 4,
+    "LF": [
+      61,
+      107
+    ],
+    "quote_sha256": "b00543c32260fa60b1089aceebe14df9854fe1f73c040f6b09c7e2c8b110f8b1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social136a",
+    "quotation": 1,
+    "LF": [
+      1,
+      4
+    ],
+    "quote_sha256": "24b86114c0d0af261a68011e28faa0b94aef65469af71329bb56aa7977d27a75",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social231",
+    "quotation": 1,
+    "LF": [
+      4,
+      15
+    ],
+    "quote_sha256": "e659398e340c1fede44259107992183454ed696f488b251ef267c87603b28a94",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social231",
+    "quotation": 2,
+    "LF": [
+      35,
+      46
+    ],
+    "quote_sha256": "a94f230e339586588e3c6913fc0c7a265eae240d74b474757c179974c42adc7f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social293gma",
+    "quotation": 1,
+    "LF": [
+      3,
+      11
+    ],
+    "quote_sha256": "fe9caea3f269515c23fe636b450cd33c2e1e22e4461f64e3e7f2a524f50ce1e0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social293gma",
+    "quotation": 2,
+    "LF": [
+      21,
+      26
+    ],
+    "quote_sha256": "43333f51c3ca0cd1f4b987351dc5ee3a305426cce5b1cddc68ad9ba7862da5dc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health12",
+    "quotation": 1,
+    "LF": [
+      4,
+      7
+    ],
+    "quote_sha256": "f6407a4f5f7daab0fe2b8049cac70ff336cfedff99e483787a2ac4bc23a0537f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health12",
+    "quotation": 2,
+    "LF": [
+      27,
+      35
+    ],
+    "quote_sha256": "0c498ad174b9367e6a962a4a971f0874db86d6c16f30a58211834d3ba5413093",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health13",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "ed3b26b54d79a483182c9a2ab97a95e9edc9e5a75ecf942368d6c824678d4dbc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health13",
+    "quotation": 2,
+    "LF": [
+      45,
+      58
+    ],
+    "quote_sha256": "f37a7149738018276b98bdd98a79d31defd93d39282c4d1db064a3a4ba04e721",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health13",
+    "quotation": 3,
+    "LF": [
+      82,
+      83
+    ],
+    "quote_sha256": "2f57a1eedf2c4165c9add392efa1cc2943650c88f444fd6f4106ca57f8ca505d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health13a",
+    "quotation": 1,
+    "LF": [
+      4,
+      9
+    ],
+    "quote_sha256": "867c6310e1bcaeb41bc50e716765dfd3fce34baa60c992d1c659b06991820067",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health13a",
+    "quotation": 2,
+    "LF": [
+      25,
+      36
+    ],
+    "quote_sha256": "9a0c3f1e09410a0a85bca59fb934ebf810ec110f43235c0782b4c3e6564c7238",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health16",
+    "quotation": 1,
+    "LF": [
+      4,
+      18
+    ],
+    "quote_sha256": "4d91f25bd4922854973c131d3f882bf9e534083717c544f84fcd0f34db7df057",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health16",
+    "quotation": 2,
+    "LF": [
+      27,
+      38
+    ],
+    "quote_sha256": "96367714ed16e34cfa0b9dd95cb62c4c861dab77e3015a566986b246691f7747",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health16",
+    "quotation": 3,
+    "LF": [
+      44,
+      68
+    ],
+    "quote_sha256": "708cceb31b1fa0d40b42aeb7fc796241fcf60f5b6325058e6950d5ee3f97ff8a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health16",
+    "quotation": 4,
+    "LF": [
+      95,
+      110
+    ],
+    "quote_sha256": "c50accb3a7194f20e0a6929753f9831b5e61243b178ca68b770593d7e30e6c9d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health16a",
+    "quotation": 1,
+    "LF": [
+      1,
+      33
+    ],
+    "quote_sha256": "a948a9f5448c0b0619544e5015655249e5aaffc86f5b4e657d23ac722b011a9d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health17",
+    "quotation": 1,
+    "LF": [
+      4,
+      11
+    ],
+    "quote_sha256": "6f652ae4ab8d09bf4d0804e6381a8dc886254ec06dc50f3d3b0135a7f3b2930f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health18",
+    "quotation": 1,
+    "LF": [
+      4,
+      11
+    ],
+    "quote_sha256": "fb58c989694a5ea7bdd360fac6d6e1b1a67d96a26bbabaeba876f821d8fb8783",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health19",
+    "quotation": 1,
+    "LF": [
+      45,
+      49
+    ],
+    "quote_sha256": "d9deaa6205404aea1d825c33fe7d78d8029b63acbcc806393ca0cc790cfe867a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health19",
+    "quotation": 2,
+    "LF": [
+      127,
+      131
+    ],
+    "quote_sha256": "470a21e10b6b69867a1b779712527fdbdd217075d7d6fc673ca740664b95d2db",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health20",
+    "quotation": 1,
+    "LF": [
+      4,
+      10
+    ],
+    "quote_sha256": "e746801695f1a0b817c5292238e2a8c579a54059c7d4345dd1401a705814a619",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health20",
+    "quotation": 2,
+    "LF": [
+      34,
+      42
+    ],
+    "quote_sha256": "cbb15099d33f3fc64ce5a5a4ae32bf5aa8270412f793ecf1f0de5ebe2ec20686",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health26",
+    "quotation": 1,
+    "LF": [
+      4,
+      23
+    ],
+    "quote_sha256": "3c793bb0ea1ce05ee93ae8c6ffac9aac4bc4c44617587288e31e403a6ed5122f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health38ezk",
+    "quotation": 1,
+    "LF": [
+      1,
+      16
+    ],
+    "quote_sha256": "6c137a575afa3cd802a19ba7dc0fd65a89687c531b3aee76a5905dd7b6474310",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health38ezl",
+    "quotation": 1,
+    "LF": [
+      9,
+      11
+    ],
+    "quote_sha256": "98c556b832553f8b4af1029fe5118f54d4a2c85a41ed84027a4f9c05ad0b832c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.table",
+    "quotation": 1,
+    "LF": [
+      38,
+      67
+    ],
+    "quote_sha256": "05b35fbf34f8d8a1fb6604d8554aa66cc6acd435098c54e90c6662f3eb1835ec",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.table",
+    "quotation": 2,
+    "LF": [
+      80,
+      113
+    ],
+    "quote_sha256": "761664b1f0fe6a9b8db859851667d9527b3ca8c84b9ceb38d92b5037dcffd48d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.table",
+    "quotation": 3,
+    "LF": [
+      127,
+      157
+    ],
+    "quote_sha256": "26d76fc0b2881f75050883468bdadc24de51664543eec491ea141a798bcfbbb8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.table",
+    "quotation": 4,
+    "LF": [
+      229,
+      236
+    ],
+    "quote_sha256": "2dbc4f51f0a97d3ec543939957d737b83e74b1c351ac5987a7340924efee1c64",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.table",
+    "quotation": 5,
+    "LF": [
+      254,
+      266
+    ],
+    "quote_sha256": "a18a3be17a65e4648e30e641fd01b1de4569e7fd1a5a99963747bd56d3982ef5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.pillar2",
+    "quotation": 1,
+    "LF": [
+      200,
+      202
+    ],
+    "quote_sha256": "6095fa651aabdce137003cd0d2828bec2781986f32c617b0b5a5b9c67a1a43a9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "MinimumWage2026",
+    "quotation": 1,
+    "LF": [
+      63,
+      65
+    ],
+    "quote_sha256": "757277819a8320d7ed596553c9e0867698984d92edccfa570d35b96adcf5d6c9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Health.report-decree",
+    "quotation": 1,
+    "LF": [
+      356,
+      368
+    ],
+    "quote_sha256": "7141978614185ba8b8155177192f0369177b6afc16a626ec4dd83ca68bf57d27",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VszP.employer",
+    "quotation": 1,
+    "LF": [
+      355,
+      357
+    ],
+    "quote_sha256": "25be88d72d8b904c015d0f73ba743b2ae339b8f1d84e307211e10b68e48d6cba",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VszP.employer",
+    "quotation": 2,
+    "LF": [
+      366,
+      366
+    ],
+    "quote_sha256": "949809366f611f1f1b0819a49e2543408b3078c6820e4a0d849304d2732f0f0b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VszP.employer",
+    "quotation": 3,
+    "LF": [
+      376,
+      376
+    ],
+    "quote_sha256": "50090d549729134a583c4876b6ad983a192e3d44540d52a801e53b75de846372",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA35.payroll",
+    "quotation": 1,
+    "LF": [
+      3,
+      22
+    ],
+    "quote_sha256": "ca548c245a6de29f7545914fad08841e480ac859c9c1cf390c846c3bd8454bc0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA35.payroll",
+    "quotation": 2,
+    "LF": [
+      47,
+      60
+    ],
+    "quote_sha256": "7f715a04d0720495e39e2b7924c3e266ee6d10910374176a759887e2dbdfac22",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA35.payroll",
+    "quotation": 3,
+    "LF": [
+      67,
+      89
+    ],
+    "quote_sha256": "c16d4cfdb3a3d1ed9c954933b4f65c3abc34f1985af6c63b7d9df170df9d4e8c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA35.payroll",
+    "quotation": 4,
+    "LF": [
+      95,
+      124
+    ],
+    "quote_sha256": "83ac0def0fb11f158c165a6824e14875c37e506e4b2f2b9735c498f27cb506fc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.payroll",
+    "quotation": 1,
+    "LF": [
+      37,
+      41
+    ],
+    "quote_sha256": "b714947c1e17f004381f4b2e4a8fe592f0b6d60c5834e42cf846bee17fc7db37",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.payroll",
+    "quotation": 2,
+    "LF": [
+      43,
+      48
+    ],
+    "quote_sha256": "bb5955bd848ae283c0eb29c3772f6909a0496142501b7d48726173b74f62bba8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.payroll",
+    "quotation": 3,
+    "LF": [
+      58,
+      69
+    ],
+    "quote_sha256": "5ab28aab728a527ef1567f63d13c52c949cd0c7d339747685a1b447db7cc8c88",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA38.payroll",
+    "quotation": 4,
+    "LF": [
+      75,
+      84
+    ],
+    "quote_sha256": "80eec1c2bcb535682f158a25eb1b7374ec681167f1145c84f5f38e057308f5cd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA39.payroll",
+    "quotation": 1,
+    "LF": [
+      87,
+      107
+    ],
+    "quote_sha256": "290fe1f5c5cddb73867186e7a83f06c66bf2b7ae3d37195e496e0bcf6c50361d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA39.payroll",
+    "quotation": 2,
+    "LF": [
+      110,
+      121
+    ],
+    "quote_sha256": "56280ad4a65e650db4096d5428a35be31e195f6d5993843c78862581c0565804",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA48.payroll",
+    "quotation": 1,
+    "LF": [
+      4,
+      22
+    ],
+    "quote_sha256": "0eae4ee8466fd5732d71f69867117cee74c6436bda9d4e6e6b8c51426c0bebd5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.monthly",
+    "quotation": 1,
+    "LF": [
+      22,
+      26
+    ],
+    "quote_sha256": "0425a477db2e3d35faf78e66f54c34bd14f0288d3803050483091ce631eb71bd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 1,
+    "LF": [
+      314,
+      341
+    ],
+    "quote_sha256": "820570ac5d046d266e7230546af783430e3e50cbf372c3e5e02b6053a5594e60",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 2,
+    "LF": [
+      344,
+      354
+    ],
+    "quote_sha256": "5149cf71e462428b81a121025ed5ae87fd0fa646e0787233439331efe84a028a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 3,
+    "LF": [
+      380,
+      389
+    ],
+    "quote_sha256": "4421010ee358ab4cadfdcfb45248abd31ec5a3c5ba5b7f588da79111a27be094",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 4,
+    "LF": [
+      396,
+      411
+    ],
+    "quote_sha256": "6bfa10fc52000fedac1d24b7d063aa0aa5c21e57df07dc8fc6f13372b9a85838",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 5,
+    "LF": [
+      472,
+      480
+    ],
+    "quote_sha256": "e3e64d9bb6cdcb223f01fe7043012033cd6a155a233c901bf9d8cf842c9ee914",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.A1",
+    "quotation": 6,
+    "LF": [
+      486,
+      502
+    ],
+    "quote_sha256": "8a544e4c915b71b2483c2237ea8ee47154e3e6698b3aba7aeaec7823c7656089",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPJuly",
+    "quotation": 1,
+    "LF": [
+      55,
+      65
+    ],
+    "quote_sha256": "3859bc557cb7f72d4b98020de842637f00cf90555434eceb468ecf9009ad4f5f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPJuly",
+    "quotation": 2,
+    "LF": [
+      74,
+      82
+    ],
+    "quote_sha256": "f1c535eac721efe362f304a3e690e7b4275b1bc61b8f3a78d1a6c307213fc7e3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPJuly",
+    "quotation": 3,
+    "LF": [
+      83,
+      98
+    ],
+    "quote_sha256": "0a5c51be7abdfd61d1daa773a38a550aab9ef0fa5bd8f89e04c899b326ee8c64",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPJuly",
+    "quotation": 4,
+    "LF": [
+      112,
+      135
+    ],
+    "quote_sha256": "58a3a54e3213c89eb6dc71d175855d7919af458e03aff3e753d4581c22f06633",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPOctober",
+    "quotation": 1,
+    "LF": [
+      41,
+      75
+    ],
+    "quote_sha256": "da6b7054bc25130e9b86693e0a7efa34f89998b86bdb193b89571c1c719d4614",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SPpartial",
+    "quotation": 1,
+    "LF": [
+      64,
+      87
+    ],
+    "quote_sha256": "ab7c772e624a88d00b48e384be54b47813fdab1aecfd0e9d800cdacea7ffc34e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social122",
+    "quotation": 1,
+    "LF": [
+      71,
+      94
+    ],
+    "quote_sha256": "d618dac36a7eff68bc60d2a988635b296920c8b2e9f004a6d55296a5749a45aa",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social122",
+    "quotation": 2,
+    "LF": [
+      96,
+      140
+    ],
+    "quote_sha256": "9e7e98fde9afda99ae31e9222dc41a0e89fb66f40a5969f50eef7f8ba6b05168",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social122",
+    "quotation": 3,
+    "LF": [
+      157,
+      204
+    ],
+    "quote_sha256": "a68c13c27013d167ad4e233446277fbb0945e5542159349eebdfa98580dd04db",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social122",
+    "quotation": 4,
+    "LF": [
+      208,
+      211
+    ],
+    "quote_sha256": "e4504b6c1ec5a101b3305a4e2e828e8ee78b97863b8ae634b7e8842b10980d65",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT27.rates",
+    "quotation": 1,
+    "LF": [
+      4,
+      10
+    ],
+    "quote_sha256": "58ecb3794cd901b9be54755e8c4b55b4c228c035bc61c737635500417f7fa6fd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT27.rates",
+    "quotation": 2,
+    "LF": [
+      12,
+      29
+    ],
+    "quote_sha256": "c9454dc8261ca5e17ca2580d8fe7e54340e487fb86b37f3505b450fdff5b170c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT27.rates",
+    "quotation": 3,
+    "LF": [
+      35,
+      38
+    ],
+    "quote_sha256": "75d0997e537d41268ae8a11846aa08172635d3d5220c3c9cdfd9f18765e67105",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 1,
+    "LF": [
+      3,
+      38
+    ],
+    "quote_sha256": "e67f39b51cc6c28a68771f51cfca2324c87cf6b0a68baeed1e6a00af8caf7119",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 2,
+    "LF": [
+      40,
+      60
+    ],
+    "quote_sha256": "00b174888a8347402a87904b3c18707398762070c87f5494df48628b41a10359",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 3,
+    "LF": [
+      69,
+      99
+    ],
+    "quote_sha256": "b15fc5078a71730a716bd0bcd9963ab8d1935d27789b02bf5d0a6aacff1f875e",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 4,
+    "LF": [
+      96,
+      118
+    ],
+    "quote_sha256": "ae16e91a744239e7ece0e667db1c6a5cb1930ce839746943d08c502e1cbed3ae",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 5,
+    "LF": [
+      119,
+      151
+    ],
+    "quote_sha256": "10aab2902c2a153664c9f7de421381a2de44c20b08335254a66e666819d12301",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 6,
+    "LF": [
+      151,
+      170
+    ],
+    "quote_sha256": "21e4943ccd55411c53cde8657493d093bc3cc90c228073518ccfc824101dfbd7",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT4.status",
+    "quotation": 7,
+    "LF": [
+      183,
+      187
+    ],
+    "quote_sha256": "52c503acdd85f72b11ad53b0b3c7f795513ca56e77089febc77dd3dd0a3c48f3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT5.foreign",
+    "quotation": 1,
+    "LF": [
+      3,
+      41
+    ],
+    "quote_sha256": "703f6c169de3a17a158f779726d4309f0969e1d0a53d572a3ac1ba097882c338",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT5.foreign",
+    "quotation": 2,
+    "LF": [
+      43,
+      77
+    ],
+    "quote_sha256": "27b4ae320d3baabd757ba5a730bc625befd4191cd06ac6002fc3953d27038fb1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT7.goods",
+    "quotation": 1,
+    "LF": [
+      3,
+      20
+    ],
+    "quote_sha256": "0d92498a62ffc1629e39c38b771bb3e7a7568d0d75cc43cb81ad9382bea9a5d3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT7a.services",
+    "quotation": 1,
+    "LF": [
+      3,
+      20
+    ],
+    "quote_sha256": "02a6700bc4d2664469e5bed152a371cdc6146bc246c347b546b7a3943303da2c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "quotation": 1,
+    "LF": [
+      3,
+      36
+    ],
+    "quote_sha256": "6d83a78afcadfe768db6b5067f32b88fe8d5fe5a4822c2e2ba5541fed21b207b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "quotation": 2,
+    "LF": [
+      37,
+      52
+    ],
+    "quote_sha256": "ca8091b1d6a55c3c49097682d6b96a105ba10f9a07e6c566c605e5c21b125427",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "quotation": 3,
+    "LF": [
+      71,
+      105
+    ],
+    "quote_sha256": "125c09fce4d922f01ce4406cbce09f7860a071d5e6e276255364d3c28bd8be5f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT15.services",
+    "quotation": 1,
+    "LF": [
+      3,
+      23
+    ],
+    "quote_sha256": "853f968b528a37b1858e0500ecdaf3c73613aa42558e210bafb14843c215057f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4a.group",
+    "quotation": 1,
+    "LF": [
+      3,
+      20
+    ],
+    "quote_sha256": "fdd07a59a3fcb9c782ff559e3f8b3ab7f000b5d418e3631c42fa7ed7f785aee1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4b.group",
+    "quotation": 1,
+    "LF": [
+      3,
+      18
+    ],
+    "quote_sha256": "2b31324a48e8af2d8e267a83907ea839e444a0b9d30208d8de76895b2a805932",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT4b.group",
+    "quotation": 2,
+    "LF": [
+      18,
+      37
+    ],
+    "quote_sha256": "b95094f32e547602c9bc52581859765d702ea76e67c8ee546048511e3712960e",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT4b.group",
+    "quotation": 3,
+    "LF": [
+      39,
+      52
+    ],
+    "quote_sha256": "9f08554a02a2617b53b4202deb1d753c10925411549b5a24ed158a5de3efffcb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT22.base",
+    "quotation": 1,
+    "LF": [
+      3,
+      14
+    ],
+    "quote_sha256": "23bfe1de1117ffe9c94768e4c14910bdd3c1fc20951f31e12df40ea6fcc6ca59",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT24.import",
+    "quotation": 1,
+    "LF": [
+      3,
+      30
+    ],
+    "quote_sha256": "34b07e76923d82925c54bb40394affe24661f4d1dba98ba6edff74351dd0aba7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT25.notes",
+    "quotation": 1,
+    "LF": [
+      3,
+      24
+    ],
+    "quote_sha256": "587e5dfcede30ea59a7074dfa2a888ec4d2b3dc08349ec167282bc573bed8123",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT25.notes",
+    "quotation": 2,
+    "LF": [
+      40,
+      56
+    ],
+    "quote_sha256": "681328a2ff3bff4e7b05be558df17a6e7180ad7b8014eb90e1fbbf5215aa158a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT49.deduction",
+    "quotation": 1,
+    "LF": [
+      3,
+      10
+    ],
+    "quote_sha256": "2963c138aba220425916cb40851f7baf616ef1477b5e41f5b36c63890bd3b1a1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT49.deduction",
+    "quotation": 2,
+    "LF": [
+      11,
+      24
+    ],
+    "quote_sha256": "7da79c56022516d5fbad38f57708994338c4f511dd603e936f38f3b3054a918a",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT49.deduction",
+    "quotation": 3,
+    "LF": [
+      25,
+      74
+    ],
+    "quote_sha256": "2eaf1a0519e8f191492c551e8a32e5311f8936e8b9151acf9271e2d6b72815c7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT50.coefficient",
+    "quotation": 1,
+    "LF": [
+      3,
+      36
+    ],
+    "quote_sha256": "312d056d26ae39c8e899055249e0e70cbcaeb69aadc3c3792c531f749327399c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT51.documents",
+    "quotation": 1,
+    "LF": [
+      3,
+      29
+    ],
+    "quote_sha256": "d50cb8180c5c0e1dc8a6c775fc28ab184a0ecbec3ba51ae910de9a2bccdb9f6b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69.reverse",
+    "quotation": 1,
+    "LF": [
+      3,
+      43
+    ],
+    "quote_sha256": "4c4af3c8b025e75e2e8a8eb5d306da63cbaf9ad891d77ccc8dad7bc3f630375c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69.reverse",
+    "quotation": 2,
+    "LF": [
+      47,
+      94
+    ],
+    "quote_sha256": "af6c85a98da942a61088e7df47d83bbaf09fecda9c8a2d5df085e4a53bed04c8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69.reverse",
+    "quotation": 3,
+    "LF": [
+      115,
+      130
+    ],
+    "quote_sha256": "af51d5f1bf923e5e960d4a6bcb26463fe6fed939bb4fc1fc6f620a8fca840ce6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT77.period",
+    "quotation": 1,
+    "LF": [
+      3,
+      30
+    ],
+    "quote_sha256": "74596fcdbdff85048aafb592eb2c22abdd43a1106825bfcc8a5250899b3ecdd4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT78.return",
+    "quotation": 1,
+    "LF": [
+      3,
+      49
+    ],
+    "quote_sha256": "67a6007a4ee40ee273d6214019d9086547b6eeed9c2525e98946372a6a0a7106",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT78.return",
+    "quotation": 2,
+    "LF": [
+      65,
+      70
+    ],
+    "quote_sha256": "82e4237875b43fdcde68abb00290dd744df572af751d48569888fce1099878b2",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT78a.control",
+    "quotation": 1,
+    "LF": [
+      3,
+      16
+    ],
+    "quote_sha256": "dffffda7adbf289c4cb0a83ec90c92fb1e59d6bb9a925b0a5da89f05cfbeccad",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT78a.control",
+    "quotation": 2,
+    "LF": [
+      23,
+      45
+    ],
+    "quote_sha256": "b5ad4ba5f85b330070c7e5494b89ee358ad6c5e0800041cff049f7501ffef24e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT78a.control",
+    "quotation": 3,
+    "LF": [
+      61,
+      75
+    ],
+    "quote_sha256": "f5e839c7af31224152f0f7286f5e0bd218bd9716f654b59c185ce81d927d7c9b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT78a.control",
+    "quotation": 4,
+    "LF": [
+      122,
+      154
+    ],
+    "quote_sha256": "e2a6f2155632ebb421ff7a1b81dffe5ec0df7b74fe07007acf9b10a93cb52e96",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT79.refund",
+    "quotation": 1,
+    "LF": [
+      3,
+      40
+    ],
+    "quote_sha256": "88989852ff29f34f6b62b3ec27ece9b7777de7aab65bfeed050363eedd98cecd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT79.refund",
+    "quotation": 2,
+    "LF": [
+      47,
+      74
+    ],
+    "quote_sha256": "20bb6615c5debfc87027e5190f3df2d2a3a2047d4ed8c2e4dbc411f937bec9b5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT80.EC",
+    "quotation": 1,
+    "LF": [
+      3,
+      42
+    ],
+    "quote_sha256": "effbb649cbb76f47600fa9fad1e6f2a07f374d6fb3bb440f022a542a96ac3ba1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT80.EC",
+    "quotation": 2,
+    "LF": [
+      75,
+      105
+    ],
+    "quote_sha256": "8a45da5cb3b24c020b30112bddeb9069484a56dc39fb37b73ea51d2c6a2f811a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT84a.import",
+    "quotation": 1,
+    "LF": [
+      3,
+      40
+    ],
+    "quote_sha256": "474806908462c1ff14e70f002c7abf8961748cef363e9cdec341e272d3342a5f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "quotation": 1,
+    "LF": [
+      3,
+      35
+    ],
+    "quote_sha256": "cdf80003ccb110054fd75020fdaa8b1f5e4b9e6e801f99df982c6f8002431bf1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "quotation": 2,
+    "LF": [
+      37,
+      67
+    ],
+    "quote_sha256": "229658415b510ee3318264d01cb5fd3f1c6b4bfd8363706509b74b29f9417ca4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "quotation": 3,
+    "LF": [
+      80,
+      107
+    ],
+    "quote_sha256": "bf8a47526370915f2d94142d0d843b8cadeef2384b4ed884d6b8f243758eff15",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT52a.capital",
+    "quotation": 1,
+    "LF": [
+      3,
+      21
+    ],
+    "quote_sha256": "f9faab2e497080103825f4e2439ef174eba20c516b1b3c2fa3773c208748d597",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT54.capital",
+    "quotation": 1,
+    "LF": [
+      15,
+      26
+    ],
+    "quote_sha256": "46b50226009b7fd010a329babf2d7682af1336623c5a24ff2d7a0e307611cec0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT54.capital",
+    "quotation": 2,
+    "LF": [
+      36,
+      66
+    ],
+    "quote_sha256": "b6a6e657cf3be857ac8b34bba51ae4f196eeba2c6c2ff2b5bbe1278537fa0699",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT53.notes",
+    "quotation": 1,
+    "LF": [
+      3,
+      22
+    ],
+    "quote_sha256": "b6132cf395292c8850b600efce5c3c19755822d197395a3f9810957b223d40a0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT5a.number",
+    "quotation": 1,
+    "LF": [
+      3,
+      11
+    ],
+    "quote_sha256": "a0af66392edeb69636fd81af61d31e83b1bb2135fed391c877115b69f856c94b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT8.gifts",
+    "quotation": 1,
+    "LF": [
+      21,
+      28
+    ],
+    "quote_sha256": "1dd838698d568d2cb5f8c61b746fb0e2f59ae18c31bac1565cf1e04bb3ba3d4b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT9.private",
+    "quotation": 1,
+    "LF": [
+      3,
+      29
+    ],
+    "quote_sha256": "68fdccf6255ca8ee2e082a18627efcfb99f8347763d0055c3d0747f925166390",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT10.transfer",
+    "quotation": 1,
+    "LF": [
+      3,
+      14
+    ],
+    "quote_sha256": "4ae37a171fc216ff9738dde44cb0c9cf9cf6bd84249615dd823bc3b4bac48b08",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT28.post",
+    "quotation": 1,
+    "LF": [
+      3,
+      4
+    ],
+    "quote_sha256": "81f3a26d870b4210e71aee0462b0695e473c6b2ca082bc8eb23c314cd4a722a6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT29.health",
+    "quotation": 1,
+    "LF": [
+      3,
+      23
+    ],
+    "quote_sha256": "04f644cba2c514942faadd6d5b874570ca95b8aba74127654767472fadd1c250",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT31.education",
+    "quotation": 1,
+    "LF": [
+      3,
+      15
+    ],
+    "quote_sha256": "a10420a99aab5b514e3be3ae08826bee746b80a74b699bc780e98f9391fa7949",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT39.finance",
+    "quotation": 1,
+    "LF": [
+      3,
+      28
+    ],
+    "quote_sha256": "76f049792aba1ad695177571ca7ed1f7bc0fad213aed62efd2ea87f22207dcc2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT41.gambling",
+    "quotation": 1,
+    "LF": [
+      3,
+      11
+    ],
+    "quote_sha256": "3b362ff17ea870e63a2a0ca50c8c1d3c95e161ee525ec165d3d8a4033318c620",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT43.EU",
+    "quotation": 1,
+    "LF": [
+      3,
+      12
+    ],
+    "quote_sha256": "929ed1f87a231369f7f11b90d02856d79618e243a7f488f3ca47ed0c32fbdfbc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT43.EU",
+    "quotation": 2,
+    "LF": [
+      25,
+      30
+    ],
+    "quote_sha256": "ae9cc93cc5710796f5202ecdca81a67a7100df82a6ebb62e13d1f3632c07831f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT46.transport",
+    "quotation": 1,
+    "LF": [
+      3,
+      20
+    ],
+    "quote_sha256": "dc5702687f0d5f0b572680e44ca94fb35664f4fcda841f888e2b79dd4cbfd41a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT47.export",
+    "quotation": 1,
+    "LF": [
+      3,
+      19
+    ],
+    "quote_sha256": "820b19eb7f9394d57a391af581a948c6d82b3da7b75096d8587f37132c6438f9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT47.export",
+    "quotation": 2,
+    "LF": [
+      40,
+      43
+    ],
+    "quote_sha256": "3080e45cb267e191019df3eeeebd2737edef3b70d6f9afa77c0b9a442b434692",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT54a.property",
+    "quotation": 1,
+    "LF": [
+      3,
+      18
+    ],
+    "quote_sha256": "75490cbbd1a7a3fb1a79f3e954497062a80842d8bc5ce3d2717c882bdf86624d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT54d.firstuse",
+    "quotation": 1,
+    "LF": [
+      3,
+      31
+    ],
+    "quote_sha256": "1a07ab043ae5c4e0afa08ef2dd126ef43e4f2c80019bbb27e59206be0d58a57e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT55.initial",
+    "quotation": 1,
+    "LF": [
+      3,
+      15
+    ],
+    "quote_sha256": "e253a422746fbb5252e60b9744f5523e2ef9ee0155e37e66393fead89df89022",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68cb.smallimport",
+    "quotation": 1,
+    "LF": [
+      3,
+      7
+    ],
+    "quote_sha256": "09a2984c9f712510400d5363e8eede8cf1ab0f729c0f479ec5f6e57b4bf74557",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68f.foreignSME",
+    "quotation": 1,
+    "LF": [
+      3,
+      28
+    ],
+    "quote_sha256": "8df190a5b3a71f75ff9e57a64de668b479f0f9b6577911d81f8e227b5d1f33fa",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68f.foreignSME",
+    "quotation": 2,
+    "LF": [
+      56,
+      71
+    ],
+    "quote_sha256": "655a4ae4f9ac3101e6cb960d9bd1f69e15485738222731fe8233ab4390b897d1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "quotation": 1,
+    "LF": [
+      4,
+      16
+    ],
+    "quote_sha256": "000ab0d5447c4d13d06ebd38426ef71c8013eb5275514ce695fedf866c4bf8dd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "quotation": 2,
+    "LF": [
+      87,
+      106
+    ],
+    "quote_sha256": "2a8b1d6ffdd775901179c579a3ffa8dcd7b3ddc6f26e7c0453cadac6d6aaa7a2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "quotation": 3,
+    "LF": [
+      112,
+      123
+    ],
+    "quote_sha256": "d6edf25d096097d8a18a911f180660fd50c27fbf435c87251205cc99bede5dee",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69a.representative",
+    "quotation": 1,
+    "LF": [
+      3,
+      18
+    ],
+    "quote_sha256": "71be1f5419e29b3c955e7145b556e5ad01c9eab4cb39fac1cabbb1513cf356bb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69a.representative",
+    "quotation": 2,
+    "LF": [
+      32,
+      39
+    ],
+    "quote_sha256": "88a65d879ed39eb247e314e890b2ba99972a56c45a883a34071219d2b3f2edc2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT69a.representative",
+    "quotation": 3,
+    "LF": [
+      59,
+      61
+    ],
+    "quote_sha256": "70d20613bfb46cd8f97099bb58aca53fba9e09df4f3e361ce9f7f5a05a9301b1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT70.records",
+    "quotation": 1,
+    "LF": [
+      3,
+      14
+    ],
+    "quote_sha256": "d107ceb874a10905db8a0171225ff4611de7f458870ae5b8694f3b996899ae53",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT70.records",
+    "quotation": 2,
+    "LF": [
+      45,
+      55
+    ],
+    "quote_sha256": "505861c135c155d8156dfd1038e9eb706ecc6dfddc55baa047a9dd66337c2a0c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT72.invoice",
+    "quotation": 1,
+    "LF": [
+      27,
+      30
+    ],
+    "quote_sha256": "d45cf2fe23daaf951ef66fad7653274d469660020b2a29a0bb66a4ce0547f068",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT73.deadline",
+    "quotation": 1,
+    "LF": [
+      3,
+      23
+    ],
+    "quote_sha256": "16600941d193e4ffadf19fd1ef55345f12584c08393e3dab80074f6c7f3ef6d5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT74.wording",
+    "quotation": 1,
+    "LF": [
+      3,
+      39
+    ],
+    "quote_sha256": "ffdc8af021b7763d944b334bcc2c318abe056c20e52c661eed083d0f3f8786f8",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT74.wording",
+    "quotation": 2,
+    "LF": [
+      53,
+      57
+    ],
+    "quote_sha256": "897706734bf5de65cd42350b592a2337d342ccb6e86a73e6d69fcc7457825d20",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT76.retention",
+    "quotation": 1,
+    "LF": [
+      3,
+      26
+    ],
+    "quote_sha256": "f5fb205441f7c223692a3ef2d5807996f386d0316c3beea40d087f1d5e2030ef",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT81.dereg",
+    "quotation": 1,
+    "LF": [
+      2,
+      14
+    ],
+    "quote_sha256": "b2a0a13ac0dab29387a8ab5aa1615f213cfefa71d1ce924f7e4f72e2450eaae4",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT81.dereg",
+    "quotation": 2,
+    "LF": [
+      29,
+      37
+    ],
+    "quote_sha256": "a2aae1e9e2244a88d8895e81efe5e8f8c57c3fc5a5a6be32a63ca028eca492ac",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT81.dereg",
+    "quotation": 3,
+    "LF": [
+      60,
+      68
+    ],
+    "quote_sha256": "9f37ba82c62d0398ae9f0a37e685080161d53dd2365314f0e8e7ac82ab5b3257",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT82.dereg",
+    "quotation": 1,
+    "LF": [
+      2,
+      20
+    ],
+    "quote_sha256": "bd64a4af002b002c700f9e1c2b8c96dca183a32a407ffa0fc141d499b5df9b1c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT85kn.oldtransition",
+    "quotation": 1,
+    "LF": [
+      1,
+      4
+    ],
+    "quote_sha256": "5490b0e8e5a505e924e66c4055042f0a288b67668c96945697694cc88734514a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT85kp.capitaltransition",
+    "quotation": 1,
+    "LF": [
+      3,
+      13
+    ],
+    "quote_sha256": "b44972eaf8f1ea9aaa9801aba9c04d959993960cc5c32a06544fd1a1b9f31e6e",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT2024.rates",
+    "quotation": 1,
+    "LF": [
+      3,
+      27
+    ],
+    "quote_sha256": "86f9bdadbe6f88727b8e1eb2729c42dc8fbb0d5f2fefc9a128318f2eaa6db9cd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT2024.rates",
+    "quotation": 2,
+    "LF": [
+      31,
+      33
+    ],
+    "quote_sha256": "c33c82b5484a5d389111edc5e8ba33bb012843228fdeedeec1cf15d985aa2b26",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT2024.registration",
+    "quotation": 1,
+    "LF": [
+      3,
+      20
+    ],
+    "quote_sha256": "a07e58310d6b961025bad97c024bd0c91004a99e3d6aaa882e0959a6bf31e6e6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC27.weekend",
+    "quotation": 1,
+    "LF": [
+      13,
+      16
+    ],
+    "quote_sha256": "c3713babc342ff3341fff5b7ef780cf65fa118ef44d14fb8260a467d55584826",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.services",
+    "quotation": 1,
+    "LF": [
+      10,
+      40
+    ],
+    "quote_sha256": "24a98a826f34a8e9810fe020e1a22149d7157932994e6826e6ae2cc615a66c70",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "quotation": 1,
+    "LF": [
+      6,
+      12
+    ],
+    "quote_sha256": "68513b4dc021f08c7830c5524da92a2d0adf5c1279649f0129568ce918acd4ec",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "quotation": 2,
+    "LF": [
+      66,
+      69
+    ],
+    "quote_sha256": "72cfd8f2adb0b3b04c53c89f09dd25a0f05953c9111193704a2c33373e9481bf",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "quotation": 3,
+    "LF": [
+      107,
+      108
+    ],
+    "quote_sha256": "428138bfe182c10af6e9d6e019964eef5a890025b4bb284e176d79466f9134c2",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "quotation": 1,
+    "LF": [
+      109,
+      129
+    ],
+    "quote_sha256": "72a1cd0c6bc57d9c7bdec96e5ff54e47a181339c57ea34406700781883d1c31a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "quotation": 2,
+    "LF": [
+      134,
+      155
+    ],
+    "quote_sha256": "dc12bf43c23b9dad19c4fa19954e0925fa97b8994f9c4c31e92308e77ba6a2ab",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "quotation": 3,
+    "LF": [
+      174,
+      189
+    ],
+    "quote_sha256": "50319acc7e23a2580031dfe9fac1248bfba118bebf6c12414009f288490e96f6",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "quotation": 4,
+    "LF": [
+      208,
+      218
+    ],
+    "quote_sha256": "8a6bc01e8358ff7ca7a37c18bdd91f0d278120a5b9fdf1cc620bbc5e0c04a9d5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "quotation": 5,
+    "LF": [
+      219,
+      245
+    ],
+    "quote_sha256": "fa59837fb3d7a81cc221009dd51f35f8903bf657c2c1fd84cc92e204ac42a5f0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.VATrates",
+    "quotation": 1,
+    "LF": [
+      40,
+      40
+    ],
+    "quote_sha256": "cd3f839c95591006333a1a8b8777577feb818c9ea602e948aed2df62f3e57ef5",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.VATrates",
+    "quotation": 2,
+    "LF": [
+      57,
+      60
+    ],
+    "quote_sha256": "e5cad82f4c21301e9cfe5a20bcb054744ac4f5e7a5a46e87cf00730a3245a0fe",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.EC.fineclass",
+    "quotation": 1,
+    "LF": [
+      448,
+      452
+    ],
+    "quote_sha256": "8ff04da67bc5bc93ebe42428dc4a28e6d79850198279803f06b4f774bb4aeef9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.turnover",
+    "quotation": 1,
+    "LF": [
+      97,
+      105
+    ],
+    "quote_sha256": "185e50b71fd6c260d6887a574dda320f501b4dfe8f6dd6b39e29692518a52afd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.turnover",
+    "quotation": 2,
+    "LF": [
+      163,
+      181
+    ],
+    "quote_sha256": "b12fcc4a90199adb806a51d1c823926b0aaaf4ba314b53643eb0a0618abd8b3c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.turnover",
+    "quotation": 3,
+    "LF": [
+      205,
+      208
+    ],
+    "quote_sha256": "bbcbbf50780e2c69fe5c6c8294cc7876f5c99739341925985045189e95fbd82f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.decision",
+    "quotation": 1,
+    "LF": [
+      330,
+      341
+    ],
+    "quote_sha256": "a37a5176277897433280b622d49977c490ce7529a92301aaaf6d92e2c499e9d3",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.voluntary",
+    "quotation": 1,
+    "LF": [
+      367,
+      393
+    ],
+    "quote_sha256": "f4f578c422d8982d344940ea1cf8632400ca589098277ac60657bc91b91f52dc",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.registration.voluntary",
+    "quotation": 2,
+    "LF": [
+      406,
+      441
+    ],
+    "quote_sha256": "d046f5ba48f02563fe6250bc7e73368aef5249fd919573653ca61bfa2870b3be",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.VATnumber",
+    "quotation": 1,
+    "LF": [
+      152,
+      154
+    ],
+    "quote_sha256": "9dac9069f482efbc445d1643e086556eb22568e404ef310603f6d3daa2833752",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Forms.VATcatalog",
+    "quotation": 1,
+    "LF": [
+      219,
+      226
+    ],
+    "quote_sha256": "67c8127943e02d588862fad1e393815be6cf13bdf38a10637d6f8d8d40bc321b",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Forms.VATcatalog",
+    "quotation": 2,
+    "LF": [
+      272,
+      280
+    ],
+    "quote_sha256": "a1144f47457392a309452c8b06c75c6cb03360f6de25ba116f17cc39bdc44efb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.REGDPv24",
+    "quotation": 1,
+    "LF": [
+      2,
+      6
+    ],
+    "quote_sha256": "20319bf6ae5e8a20ba3a7cd8fcbe3e39a2562faec4e572d25eb99801a9f795e0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.REGDPv24",
+    "quotation": 2,
+    "LF": [
+      14,
+      26
+    ],
+    "quote_sha256": "30c2d017386c0c03723e3c1763fcdd3f4624c8c48e686be805236245845765a1",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.REGDPv24",
+    "quotation": 3,
+    "LF": [
+      184,
+      246
+    ],
+    "quote_sha256": "01afb760bd73649657fe059e2cafbd9101ed4239522f8e2fbdf72bf2d3f7626c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "quotation": 1,
+    "LF": [
+      1,
+      14
+    ],
+    "quote_sha256": "55f7e8d6b5473cc0bea1338bb227e5c053a1d258b722f35a3833bf59a346cebb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "quotation": 2,
+    "LF": [
+      29,
+      48
+    ],
+    "quote_sha256": "447cbd5964b476768d4ce9ca0bfeb260c6d2ad2886b3f3677deeabb1c3d882c7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "quotation": 3,
+    "LF": [
+      70,
+      103
+    ],
+    "quote_sha256": "c8bba5068b2e2e5aea629a5df330993b53826ad5d7ca0c662256336f994ae300",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "quotation": 4,
+    "LF": [
+      116,
+      147
+    ],
+    "quote_sha256": "9cfac8b40a6cc84e4e23149a1369dc8fac34fccea4d98cf0cda43918ffcf9acb",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "quotation": 5,
+    "LF": [
+      169,
+      206
+    ],
+    "quote_sha256": "fd8e9bb58338639385236b3064d4f13783d0c33b41685a13e42419c3285d4fb0",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.DPHv25",
+    "quotation": 1,
+    "LF": [
+      51,
+      121
+    ],
+    "quote_sha256": "75cc78dec6acecc7d3fa9bb197e207760d7a1e7b170bb47e6c4f42527370655c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.DPHv25",
+    "quotation": 2,
+    "LF": [
+      122,
+      180
+    ],
+    "quote_sha256": "62dc54d763dcf675cac49bd2445b85095a12a8a5e293201b809dcafd2a7c0ca9",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.DPHv25",
+    "quotation": 3,
+    "LF": [
+      181,
+      229
+    ],
+    "quote_sha256": "0286daa2f38fd5d10b8aea1e030db826a50f0d81dc36dfc41a3b02a45aa33301",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Form.DPHv25",
+    "quotation": 4,
+    "LF": [
+      230,
+      296
+    ],
+    "quote_sha256": "3aba832b9713d21cc05506d453e71377c9e613ea76b51f6c87710664d6bff6bd",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT38.property",
+    "quotation": 1,
+    "LF": [
+      3,
+      19
+    ],
+    "quote_sha256": "4295648c664dfe07f08f66720405dffb47200ea5f2938f9bd2cf5afa02d4ad3f",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "VAT38.property",
+    "quotation": 2,
+    "LF": [
+      66,
+      76
+    ],
+    "quote_sha256": "a5bd7409db6a4627089973c5bbd7c75cbbd4853211c685c4f90222971d954408",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.Intrastat",
+    "quotation": 1,
+    "LF": [
+      310,
+      321
+    ],
+    "quote_sha256": "1df287ba69716b27fea2f80fc9c4c3d94c195a9291e7e37d3a7cc0627659088c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA5.economic-employer",
+    "quotation": 1,
+    "LF": [
+      99,
+      104
+    ],
+    "quote_sha256": "0a7ea1f44c88a28d7c52ae55b402fac570d05d12514aba2c814a16122a76a458",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA36.declaration",
+    "quotation": 1,
+    "LF": [
+      45,
+      58
+    ],
+    "quote_sha256": "6ede7677214272832cd8e0c567b3e1fe83a78bfb2150be0dc22be69edc320d3d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.employee-2026",
+    "quotation": 1,
+    "LF": [
+      375,
+      387
+    ],
+    "quote_sha256": "42b954af63291e7137de520b1bf21b3323cc589b29b62a6c53ec73aec96c7554",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "SP.employee-2026",
+    "quotation": 2,
+    "LF": [
+      390,
+      392
+    ],
+    "quote_sha256": "6de4adb204af86b7e5b1949ab69c0e68962616f3a57d4fee1560f531440d7964",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "ITA161.vehicle-reference",
+    "quotation": 1,
+    "LF": [
+      15868,
+      15869
+    ],
+    "quote_sha256": "6523830c509e93cb904b959a0ba0ceabf961778ed71917c12946801fc10f9e9c",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "FS.VAT2026foods",
+    "quotation": 1,
+    "LF": [
+      92,
+      103
+    ],
+    "quote_sha256": "b1f54d0ecd32133dca94144a3329dd79851c906d93398fb2cc842531641acf49",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC79.overpayment",
+    "quotation": 1,
+    "LF": [
+      3,
+      12
+    ],
+    "quote_sha256": "59259f59403233e238e918d78fc3f6584d9ec65e6301db1f9e5674cc096e5f58",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "TC79.overpayment",
+    "quotation": 2,
+    "LF": [
+      46,
+      48
+    ],
+    "quote_sha256": "2bebd5d4fe454f201dbd7dc21b0aeafe6b614375cefd1bf86dea8db71b3fbf4d",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Decision2025.monthly",
+    "quotation": 1,
+    "LF": [
+      4,
+      5
+    ],
+    "quote_sha256": "df9254407d78ad1c6375999ed80b7e2cf1292b7a080ced5f27d96ba63c35d670",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Decision2025.monthly",
+    "quotation": 2,
+    "LF": [
+      26,
+      34
+    ],
+    "quote_sha256": "a5973ba4d69714ce54162f42509120c5ee05364c73a2df090ba62ceae67f8e9a",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Decision2025.monthly",
+    "quotation": 3,
+    "LF": [
+      42,
+      63
+    ],
+    "quote_sha256": "b54fb8bf75c920b4a588aac0bc01c2c459f850359f2325b339c40586bb5170f7",
+    "actual_read_basis": "Original quoted body actually read in chunks001–053, or explicit five unused quotations"
+  },
+  {
+    "key": "Social138c",
+    "quotation": 1,
+    "LF": [
+      9219,
+      9224
+    ],
+    "quote_sha256": "58f419a0f93208661fcd17884fad4b62f69b36f6850f6b6628c26ccc0ad57059",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "TC154.registration",
+    "quotation": 1,
+    "LF": [
+      13,
+      14
+    ],
+    "quote_sha256": "5c35737f44f73a89d1124ca8a487a4badae07f93e0b66dcbf8a3aec8e2cd8ba1",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT2024.goods-decision",
+    "quotation": 1,
+    "LF": [
+      2446,
+      2451
+    ],
+    "quote_sha256": "cd817ac6477621ba89b0fce0d82c6ee41a67969b99e02e7ed968c2f108895ccc",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "VAT2024.services-decision",
+    "quotation": 1,
+    "LF": [
+      2468,
+      2473
+    ],
+    "quote_sha256": "4a29e953604cfe7d4a1e11a6b8020ae77737990c8365d56cdfd23d517738dac9",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "Health10b",
+    "quotation": 1,
+    "LF": [
+      3435,
+      3466
+    ],
+    "quote_sha256": "b6327bb1c7b96da2e9b6160b63ef1bd149bc6e9d82d86dd5130e20a03d79e583",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "Health10b",
+    "quotation": 2,
+    "LF": [
+      3480,
+      3494
+    ],
+    "quote_sha256": "8f43d6093dff7c30bd715dba209874032d12199d4c03f0d4f904cb0a6ffeb35a",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "SP.A1.current-admin",
+    "quotation": 1,
+    "LF": [
+      51,
+      51
+    ],
+    "quote_sha256": "7a90705820631ddbdf25ea2484f80159dcc9485a71d30039ff097eb795e3f20f",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "SP.A1.current-admin",
+    "quotation": 2,
+    "LF": [
+      119,
+      121
+    ],
+    "quote_sha256": "420979a7151fec7a307b28222cb5d14dcf0e272cf28a2b217f1b27d0847e6942",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  },
+  {
+    "key": "SP.A1.current-admin",
+    "quotation": 3,
+    "LF": [
+      124,
+      126
+    ],
+    "quote_sha256": "a6fbfbb92a0c259a3012a84fe8e600a4fcadf6ce47359fb8c1ed85c6ee755d8c",
+    "actual_read_basis": "Successor quoted body actually read in successor-quotes01–02"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "R01",
+    "independent_conclusion": "SK+10digit administrative format restored. Format is explicitly not validity/deduction entitlement.",
+    "actual_authority_read": "Vero country table",
+    "status": "checked"
+  },
+  {
+    "id": "R02",
+    "independent_conclusion": "Scope classifier restores money movements without reviving the old blanket bank-fee exclusion. Actual financial service must be classified.",
+    "actual_authority_read": "VAT2\u20133/39",
+    "status": "checked"
+  },
+  {
+    "id": "R03",
+    "independent_conclusion": "Postal/health/education/licensed gambling categories restored with actual exemptions and healthcare product exclusion/input restriction.",
+    "actual_authority_read": "VAT28/29/31/41/49(3)",
+    "status": "checked"
+  },
+  {
+    "id": "R04",
+    "independent_conclusion": "Going-concern topic restored as conditional non-supply; both exempt-acquirer and exempt-transferor exceptions retained.",
+    "actual_authority_read": "VAT10(1)\u2013(2)",
+    "status": "checked"
+  },
+  {
+    "id": "R05",
+    "independent_conclusion": "International passenger and export-linked service exemptions restored as specific categories; foreign counterparty alone insufficient.",
+    "actual_authority_read": "VAT46/47(6)/49",
+    "status": "checked"
+  },
+  {
+    "id": "R06",
+    "independent_conclusion": "General private/free deemed supply restored, conditional input recovery for goods and separate services rules;85n override retained.",
+    "actual_authority_read": "VAT8(3)/9/85n",
+    "status": "checked"
+  },
+  {
+    "id": "R07",
+    "independent_conclusion": "Gift input/output distinction corrected;17net/item inclusive business-purpose output exception and samples.",
+    "actual_authority_read": "VAT8(3)/49(7)",
+    "status": "checked"
+  },
+  {
+    "id": "R08",
+    "independent_conclusion": "Capital vs resale,1700strictnetthreshold,firstuse-inclusive5/20years,noncalendaryear and actual85kp transition restored. Conceptual register does not certify every adjustment combination.",
+    "actual_authority_read": "VAT52a/54/54a/54d/85kp",
+    "status": "checked"
+  },
+  {
+    "id": "R09",
+    "independent_conclusion": "Import self-assessment corrected from blanket customs-only route to actual mandatory eligible84a/AEO routes;completebase and11500deductibility qualification checked.",
+    "actual_authority_read": "VAT24/49/51/84a/85l",
+    "status": "checked"
+  },
+  {
+    "id": "R10",
+    "independent_conclusion": "Correction timing/original rate restored; independentfindingSK01 closes literal25(6) written-agreement exception, not a generic cancellation/increase waiver.",
+    "actual_authority_read": "VAT25/53",
+    "status": "checked"
+  },
+  {
+    "id": "R11",
+    "independent_conclusion": "Six-year office age/election topic restored with current clocks40pctresets/residential exclusions; buyer agreement not invented.",
+    "actual_authority_read": "VAT38/69(12)c",
+    "status": "checked"
+  },
+  {
+    "id": "R12",
+    "independent_conclusion": "N1/N2+ boundary restored;46fuel deduction only whollytaxable business, not automatic full recovery for private/exempt use.",
+    "actual_authority_read": "VAT49/85n",
+    "status": "checked"
+  },
+  {
+    "id": "R13",
+    "independent_conclusion": "Pre2026acquisition distinction restored without automatic100pct;2026running cap and notice exception kept separate.",
+    "actual_authority_read": "VAT85n(1)/(3)/(9)",
+    "status": "checked"
+  },
+  {
+    "id": "R14",
+    "independent_conclusion": "Group eligibility/registration/representative/jointliability restored; ordinary voluntary4 distinct from4a.",
+    "actual_authority_read": "VAT4a/4b",
+    "status": "checked"
+  },
+  {
+    "id": "R15",
+    "independent_conclusion": "Tax representative topic corrected to optional specific foreign-nonpayer import/onwardEUroute, not allnonEU mandatory representation.",
+    "actual_authority_read": "VAT69a",
+    "status": "checked"
+  },
+  {
+    "id": "R16",
+    "independent_conclusion": "Electronic payer return and period-validform restored; unverified old formbox identifiers not revived.",
+    "actual_authority_read": "TaxCode14/15(4)",
+    "status": "checked"
+  },
+  {
+    "id": "R17",
+    "independent_conclusion": "Intrastat separate monthly calendar15deadline restored, quarterly VAT/monthly statistics and workingday rule; no new threshold claim.",
+    "actual_authority_read": "FS actualcurrentIntrastat260\u2013264",
+    "status": "checked"
+  },
+  {
+    "id": "R18",
+    "independent_conclusion": "ECsalesnonmonetary sanction classification and current100\u201310000range restored with first-breach rule. 2018method used only for classification, current statute for figures.",
+    "actual_authority_read": "TaxCode154(1)j/155(1)e/4;FSmethodsection6",
+    "status": "checked"
+  },
+  {
+    "id": "R19",
+    "independent_conclusion": "Old automaticdoubling corrected to specified equal-amount persistentnonmonetary fine.",
+    "actual_authority_read": "TaxCode155(16)",
+    "status": "checked"
+  },
+  {
+    "id": "R20",
+    "independent_conclusion": "Amendment topic restored with discovery-nextmonth payment, elective limitations,ordinary5year from obligationyearend,restart/max/lastyear/audit15days. No blanket penalty-free claim.",
+    "actual_authority_read": "TaxCode16/69 both2026versions",
+    "status": "checked"
+  },
+  {
+    "id": "R21",
+    "independent_conclusion": "Refund minimum10 corrected to appropriatelyapplied Code greater-than5 cashcontrol,actual offset preserved.",
+    "actual_authority_read": "TaxCode55/79(1)/(2)/(7)/(11);VAT79(11)",
+    "status": "checked"
+  },
+  {
+    "id": "R22",
+    "independent_conclusion": "Unsupported60day promises replaced by actual ordinary/fast gateways and10day postaudit/partialprotocol/finaldecision mechanics.",
+    "actual_authority_read": "VAT79",
+    "status": "checked"
+  },
+  {
+    "id": "R23",
+    "independent_conclusion": "Historical20/10 connected to original-rate correction without saying allpre2025only20/10; separate2024fivepct route acknowledged.",
+    "actual_authority_read": "VAT25(7);historical27",
+    "status": "checked"
+  },
+  {
+    "id": "R24",
+    "independent_conclusion": "Independent no-loss finding SK02 closed: actual export-evidence condition restored directly in goods bullet, with47(3)dispatch/transport plus customs-exit/limitedalternative route. Both mistaken sibling evidence claims corrected in writer map; actual EU sibling has no export evidence rule.",
+    "actual_authority_read": "VAT47(3)",
+    "status": "checked after correction"
+  }
+]

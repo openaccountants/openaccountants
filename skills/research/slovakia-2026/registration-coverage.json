@@ -1,0 +1,27 @@
+{
+  "code": "SK",
+  "name": "Slovakia",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/international/slovakia",
+  "skills": 10,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "missing": [
+    "VAT"
+  ],
+  "not_applicable": {},
+  "partial": {
+    "VAT": "The annual \u00a750 common-input method where actual included-supplies turnover is zero remains unconfirmed; the ordinary positive-denominator coefficient and annual true-up are supplied. The registration Guide now has two recomputing examples and a passing independent review; its current form identifiers and the exact fixed-gross crossing-supply circularity remain unconfirmed. Period-valid return/control-statement layout and the control-statement first-breach sanction question remain unconfirmed."
+  },
+  "has_readme": true,
+  "complete": false
+}

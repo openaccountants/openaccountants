@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-29",
+  "mode": "Actual view_image visual read of both retained DPHv25page2/3 PNGs; used to disambiguate extracted multicolumn fields.",
+  "images": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/DPHv25-2.png",
+      "sha256": "3517b5a7ab9a2964156557274b2381723f732df016ec660ea562c12394fe1ae9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/DPHv25-3.png",
+      "sha256": "fc99f8da2162f44e183dd81141744a8a572d507805da5c8ccf9b702888193daa"
+    }
+  ],
+  "pdf_scope": "Form.DPHv25 in canonical source-scopes.json"
+}

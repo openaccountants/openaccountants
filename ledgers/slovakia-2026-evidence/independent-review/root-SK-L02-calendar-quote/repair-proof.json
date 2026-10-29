@@ -1,0 +1,35 @@
+{
+  "finding": "SK-L02 calendar-year quotation missing operative LF67",
+  "Guide_changes": false,
+  "Guide_or_ledger_pair_bytes_changed": false,
+  "source_reader_unchanged": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+  "actual_root_read_native_LF": [
+    61,
+    73
+  ],
+  "original_writer_read_scope_retained": [
+    1,
+    72
+  ],
+  "old_quote": "daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l)",
+  "successor_quote": "daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l) zdaňovacím obdobím kalendárny rok, ak tento zákon neustanovuje inak,",
+  "quote_whitespace_joined_exact": true,
+  "changes": [
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-scopes.json",
+      "before_sha256": "8ea14c129b5c6ff948b4b8f30dc8f9bd59daeadacc285fc842a41be5f925985b",
+      "after_sha256": "f0b5d55b0fc7dc4d5989344c9fc22da71ed113eb39080f03ea2ac9204916ee28"
+    },
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/source-quotes.md",
+      "before_sha256": "e7745f2cacf5edd87f1d125745780d395c103461cb77fde4894c4a17d50bdcee",
+      "after_sha256": "db634339db80309a066f11cbf3fa71a35378ebf2a66bbf42626f6b516485fcd7"
+    },
+    {
+      "path": ".claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/pit-sources.py",
+      "before_sha256": "94f0aa952b9a3e96ca0ffbaaa26edeafbdf12777113a1fdb4304376f433bd666",
+      "after_sha256": "576c6d0e63a564cf493e05b95aadd0a7b5426d0f97f21071ea5b6cfdb109de7e"
+    }
+  ],
+  "status": "Writer evidence repair; awaiting independent closure. Sealed original writer manifest preserved, with this exact successor bridge."
+}

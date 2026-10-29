@@ -1,0 +1,13 @@
+{
+  "finding": "SK-L01",
+  "selected_option": "A",
+  "before_sha256": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+  "after_sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+  "operations": 6,
+  "exact_inverse": true,
+  "original_examples_byte_exact": true,
+  "CTA_byte_exact": true,
+  "other_Guide_body_bytes": "Exact outside two eligibility sentences, three monotonic metadata/heading fields and one narrowly scoped source-read row",
+  "source_evidence": "actual-read-sources.json, all three declared native-LF excerpts actually read and reader hashes checked by root",
+  "independent_review": "Not yet requested; country ledgers still in writing."
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "name": "vat-current.html",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 1984156,
+    "sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "ita-current.html",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 3063459,
+    "sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "social-current.html",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2003/461/20260901.html",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 3900388,
+    "sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "health-current.html",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/580/20260701.html",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 1631779,
+    "sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "taxcode-current.html",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 1506665,
+    "sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "c265-18.pdf",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62018CJ0265",
+    "curl_exit": 0,
+    "http": "202",
+    "stderr": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "c249-12.pdf",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:62012CJ0249",
+    "curl_exit": 0,
+    "http": "202",
+    "stderr": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "c110-94.pdf",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:61994CJ0110",
+    "curl_exit": 0,
+    "http": "202",
+    "stderr": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "nrsr538460.html",
+    "url": "https://www.nrsr.sk/web/Dynamic/DocumentPreview.aspx?DocID=538460",
+    "curl_exit": 0,
+    "http": "403",
+    "stderr": "",
+    "bytes": 35053,
+    "sha256": "e9005591030693d48c40c4e8de470a0457ce6f0c15f68159392ecb677539b3d5",
+    "actual_pdf": false,
+    "bot_challenge": false
+  },
+  {
+    "name": "kv-method-2023.pdf",
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2023/2023.03.07_005_DPH_2023_MP.pdf",
+    "curl_exit": 0,
+    "http": "200",
+    "stderr": "",
+    "bytes": 820444,
+    "sha256": "41f4a78143f25feaa3a78db262fdc5d0a752d814e22fd52ec2ff58e5dc746667",
+    "actual_pdf": true,
+    "bot_challenge": false
+  }
+]

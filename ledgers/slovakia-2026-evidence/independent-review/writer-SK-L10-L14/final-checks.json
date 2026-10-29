@@ -1,0 +1,54 @@
+{
+  "successor_pairs": [
+    {
+      "slug": "slovakia-vat-registration-4-7-7a",
+      "Guide_sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+      "ledger_sha256": "4ee70196b6bd6429a5ed8446f806ea5e724ab53130e218e290208392cb04bb7a",
+      "rows_sha256": "208765f92c207f276405a7fdd2b53ba3bacec51280c8fc1eb46e14d9c5124d72",
+      "row_count": 66
+    },
+    {
+      "slug": "sk-payroll-social",
+      "Guide_sha256": "62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38",
+      "ledger_sha256": "06fa28262f6b43bf0e729c7ce7e4712db6b1cae806e205be89c6cfdb2a49f680",
+      "rows_sha256": "0e1c8ef6ba7bd62e25ac1331d552b8770cdbcb8cebc3e1225ac14d4dea351c4e",
+      "row_count": 67
+    },
+    {
+      "slug": "slovakia-vat-return",
+      "Guide_sha256": "32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77",
+      "ledger_sha256": "41e30b273a37986c6993d6d1531ed84689237c2a78f9c9fba8e5e58826ec6aa1",
+      "rows_sha256": "30a2f9a4db3f3431708047954c7ffb005aa516ff0b9f16d0072a0ad5ef2c43f7",
+      "row_count": 92
+    }
+  ],
+  "changed_source_keys": [
+    "TPG3.full",
+    "ITA45.relief",
+    "ITA17f.exit",
+    "Social138",
+    "VAT4.status",
+    "VAT11.acquisitions",
+    "VAT4b.group",
+    "VAT49.deduction",
+    "VAT78.return"
+  ],
+  "added_source_keys": [
+    "Health10b",
+    "SP.A1.current-admin",
+    "Social138c",
+    "TC154.registration",
+    "VAT2024.goods-decision",
+    "VAT2024.services-decision"
+  ],
+  "source_scopes_sha256": "af082a12f5afe33b81432094f61454676cb631516f14a6dfe62ded4ff49f0ef8",
+  "source_quotes_sha256": "7e8590f812a292d763df7ceaf28b51e8b95a39c5a66633198d2ec73981d4441a",
+  "literal_selected_quote_checks": 42,
+  "actual_raw_reader_hash_pairs": 15,
+  "all66_registration_routes_reviewed": true,
+  "all_493_original_rows_not_reaudited": true,
+  "root_SK_L02_L03_residence_exactly_preserved": true,
+  "previous_old_topics_and_earliest_preimages_exact": true,
+  "Guide_files_written_by_this_repair": false,
+  "three_retained_VAT_uncertainties_changed": false
+}

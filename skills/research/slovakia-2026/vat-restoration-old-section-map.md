@@ -1,0 +1,51 @@
+# Old-to-current section map and excluded material
+
+Read the entire 716-line pre-PR737 file, then the 193-line current return and the linked 212-line registration Guide. The linked EU VAT Guide was also inspected for the specific moved topics. A sibling mapping records coverage only; it is not a new independent certification of that sibling's law.
+
+| Old section / lines | Treatment |
+|---|---|
+| Metadata, confidence labels, escalation formats, contribution boilerplate, generic disclaimer and CTA | Excluded administrative/style boilerplate. Current protected metadata, contributed-by line and CTA must remain byte-identical. No attribution change proposed. |
+| Onboarding, lines 38–52 | Registration, frequency, exempt supplies, vehicles and foreign transactions are current client questions. The missing ID-format input is R01; import-eligibility input is addressed by R09. Resale/capital classification is R08. |
+| Scope classification, lines 54–62 | R02 covers actual tax scope. Country lists/UK third-country classification are already in the explicitly linked EU VAT Guide, section 1. A country-address list is not itself a place-of-supply rule. |
+| Rate table, lines 64–79 | Current 23/19/5% tables supersede the old incorrect rate-category assignments, including accommodation/medicines/sports/electricity and changed 2026 food categories. These are corrections, not missing taxpayer groups. Historical rate correction context is R23. Extra exemption groups and going-concern treatment are R03/R04/R05. |
+| Expense category and 5/20-year periods, lines 81–83 | R08. |
+| DPHv25 row tables and matrix, lines 85–203 | Current Sources explicitly puts 2026 row numbers and control-statement layout on “Not yet confirmed”. Excluded from LOST count under the brief. No old fabricated rows are restored. The underlying domestic input, EU acquisitions/services, domestic reverse charge, exports and EU supplies are already in the current return or its pointed-to EU Guide. Import self-assessment is R09; deemed supplies R06. |
+| Reverse charge mechanics, lines 205–253 | The basic EU/non-EU reverse-charge rules and net-neutrality for eligible fully taxable businesses are current or in the linked EU Guide. Current domestic list and EUR5,000 inclusive invoice-base test correct the old section letters/strict-greater-than test. R09 restores the missing import regime with actual eligibility. A foreign VAT charge is not itself authority to ignore a Slovak place-of-supply liability; do not restore the old blanket invoice-based exclusion. Current §15/§69 approach supplies the correct test. |
+| Blocked and vehicle rules, lines 255–299 | Hospitality, M1/L1e/L3e, fuel/maintenance, exclusive-business records/notice and taxi/rental exceptions are already current. Current law corrects the old section citation and “notify in advance” claim. R07 addresses the incorrect blanket gift exclusion; R12/R13 address N1 and pre-2026 boundaries. §7/7a no-deduction treatment is extensively covered in the current registration sibling. |
+| Coefficient, lines 300–314 | The current return explicitly reserves “the detail of the §50 coefficient (rounding and de minimis)”. All old coefficient detail, including provisional/final workings, is treated as the expressly reserved detail rather than a silently lost method. It is excluded under the instruction to ignore items already on Not yet confirmed. This audit does not revive the old unsupported ≥95% rule. |
+| Control statement, lines 316–328 | Current §78a paragraph/table provides period/deadline, invoice capture, EUR3,000 simplified-input grouping, retail totals, correction and sanctions. It corrects the old unsupported EUR5,000 detail/aggregation rule. A/B layout is explicitly unconfirmed. |
+| Thresholds and registration, lines 330–360 | Correct EUR50,000/62,500 tests, time windows, application deadlines, voluntary status, §7/7a and deregistration are covered in the current linked registration Guide. Old proposed EUR85,000 domestic threshold has no enacted 2026 basis in the read §4 and is superseded by the correct current law. EU distance-selling EUR10,000/OSS is covered in the pointed-to EU Guide; the current return replaces the old incorrect domestic SME EUR85,000 with actual §68f/68g limits. R08 capital periods, R14 group and R15 fiscal representation remain distinct omissions. |
+| Filing deadlines/penalties, lines 362–389 | VAT return/payment, control statement, EC sales-list deadlines, current fines and interest are retained or corrected in the current return. R17 addresses the separate Intrastat deadline, R18 the missing EC sales-list sanction, R19 the old generic repeat-penalty rule. R16 restores electronic VAT-return submission/portal procedure. |
+| Derived summary, lines 391–393 | Current §79 definition of excess deduction and both examples preserve output less allowable input and payable/excess logic. Box-specific formulas are explicitly unconfirmed, so old row arithmetic is not reinstated. |
+| Edge cases EC1 and EC2, lines 397–407 | Foreign local hotel/restaurant/taxi place-of-supply treatment and the separate foreign-VAT refund route are in the linked EU Guide, “Local Consumption Abroad”. Non-EU SaaS reverse charge is also explicit there and within current foreign-services wording. Do not restore the old assertion that Austrian VAT is universally irrecoverable. |
+| EC3–EC6, lines 409–431 | Construction reverse charge and the mixed-use M1 example are current. Blocked hospitality is current. Import self-assessment remains R09. The old dinner's claimed 23% restaurant rate is not reintroduced. |
+| EC7, lines 433–437 | R10, credit-note method. |
+| EC8–EC13, lines 439–473 | EU goods supplies, phones above/below the legal threshold, §7/7a no deduction, acquisitions and exports all remain current or in the linked registration/EU Guide. The old claim that purchases belong on the EC sales list is wrong: current §80/supply treatment corrects it. Independent review found that the linked EU Guide does not supply the export-evidence condition. Restored separately as R24 under VAT47(3). |
+| EC14–EC16, lines 475–491 | R11 property-age/election boundary, R12 N1 fuel and R13 pre-2026 car deduction scope. |
+| Detailed rate examples, lines 493–531 | The standard residual rule and corrected current category tables retain substantive classification. Incorrect old categories are superseded, not appended to Not yet confirmed. Historical rate issue is R23. No separate lost rule arises from a duplicate illustration of standard-rated electronics or legal/IT services. |
+| Malta comparison, lines 533–554 | Duplicate Slovak figures map to the rows above; foreign Malta figures are outside this task and not reintroduced. The old Slovak EUR49,790 is already current historical material in the registration sibling. No Malta work performed. |
+| Reviewer escalation formats, lines 556–578 | Excluded boilerplate. |
+| Tests 1–12, lines 580–640 | Distinct regime scenarios are mapped individually below. Purely changed invoice amounts for the same rule are duplicates under the brief. Exactly two executable examples remain protected. |
+| Refund table, lines 642–654 | Current paragraph supplies corrected ordinary/fast refund and request-pause rules. R21 preserves/corrects minimum/offset concerns; R22 replaces unsupported audit/new-registration 60-day promises. |
+| Voluntary disclosure, lines 656–665 | R20 restores actual amendment procedure; current penalty/interest table already supersedes old 10%/20%/ECB+10 claims. No blanket penalty-free title survives. |
+| Direct-tax reference, lines 667–682 | Current introduction expressly routes PIT/CIT/payroll to linked siblings; these old rates are not VAT losses and are not reintroduced. Motor-vehicle/local/special-levy passing mentions do not become a new non-VAT project. OSS is covered by the pointed-to EU Guide. |
+| Prohibitions/contribution notes, lines 684–700 | Underlying tax rules mapped above. Blanket “always control statement” and “no reverse charge if supplier charges VAT” do not override current statutory exceptions/place-of-supply rules. Arithmetic-engine and AI workflow prohibitions are boilerplate, not tax-law omissions. |
+
+## Old test-suite scenario disposition
+
+| Old test | Current coverage / action |
+|---|---|
+|1, domestic purchase gross246/input46 | Current general input-deduction rule and both examples. The invoice amount is a duplicate scenario. |
+|2, EU consulting1000/output230/input230 | Current April example uses advertising2000/output460/input460; same B2B service/deduction mechanics. |
+|3, blocked business dinner | Current April example's lunch VAT69 is blocked. Old gross500/net406/VAT94 and 23% restaurant assumption are not a source of law. |
+|4, EU goods sale5000 | Current §43/§80 coverage and linked EU Guide. |
+|5, US SaaS20/output4.60/input4.60 | Current foreign-services rule and linked EU non-EU SaaS section. Same mechanics, no distinct missing exception. |
+|6, bread/milk105 including5VAT | Current 5% basic-food categories plus general input deduction. No unique restriction/edge case. |
+|7, imported machinery50000/output11500/input11500 | R09 restores this scenario after correcting AEO/status eligibility and the complete import tax base. |
+|8, mixed M1 car20000/VAT4600/deduct2300 | Current example car25000/VAT5750/deduct2875 tests the same rule. |
+|9, construction15000/self-tax3450 | Current §69(12) construction rule; changing the invoice amount adds no separate law. |
+|10, export8000 | Current §47 exemption; missing export evidence restored separately as R24 after independent review. |
+|11, intra-EU acquisition3000/self-tax690 | Current output/input acquisition treatment and linked EU acquisition rules. Old EC-sales-list-for-acquisitions claim is rejected. |
+|12, §7 service500/tax115/no deduction | Current registration sibling's Meta200/tax46/no deduction example. Same no-deduction computation. |
+
+Lost topics are never considered “covered” merely because the current Guide mentions a section number. In particular, the bare current §50 mention is excluded because there is an express unconfirmed reservation; the missing capital/property/import computation rules are counted and restored in the proposal.

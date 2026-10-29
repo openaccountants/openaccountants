@@ -1,0 +1,1551 @@
+                                                                        VZOR                                                                 Príloha č. 1
+     DPFOBv26_1
+                                                     DAŇOVÉ PRIZNANIE
+       FO
+       typ: B
+                                           K DANI Z PRÍJMOV FYZICKEJ OSOBY
+                                    pre daňovníka, ktorý má príjmy podľa § 5 až 8 zákona č. 595/2003 Z. z.
+                                       o dani z príjmov v znení neskorších predpisov (ďalej len „zákon”)
+Číselné údaje sa zarovnávajú vpravo, ostatné údaje sa píšu zľava. Nevyplnené riadky sa ponechávajú prázdne.
+Údaje sa vypĺňajú paličkovým písmom (podľa tohto vzoru), písacím strojom alebo tlačiarňou, a to čiernou alebo tmavomodrou farbou.
+
+
+
+01 - DIČ (ak nie je pridelené, uvádza sa rodné číslo)                   Druh daňového priznania
+                                                                                                                          Za rok
+                                                                            daňové priznanie
+                                                                                                                Dátum zistenia skutočnosti na podanie
+                                         Riadok 02 sa vypĺňa, len ak        opravné daňové priznanie              dodatočného daňového priznania
+02 - Dátum narodenia
+                                         ide o daňovníka, ktorý                                           1)
+                                                                            dodatočné daňové priznanie
+       .          .                      nemá pridelené DIČ ani
+                                         rodné číslo                         (vyznačí sa x)
+                                                                                                                          .          .
+03 - SK NACE                  Hlavná,
+                              prevažná
+       .          .           činnosť
+
+I. ODDIEL - ÚDAJE O DAŇOVNÍKOVI
+04 - Priezvisko                                                        05 - Meno                                   06 -Titul pred menom / za priezviskom
+
+                                                                                                                                         /
+Adresa trvalého pobytu v deň podania daňového priznania na území Slovenskej republiky alebo v zahraničí
+07 - Ulica                                                                                                             08 - Súpisné/orientačné číslo
+
+
+09 - PSČ              10 - Obec                                                                            11 - Štát
+
+
+                           2)
+                                   áno                                                 Identifikačné číslo na daňové účely (TIN), pridelené v štáte
+12 - Daňový nerezident
+                                                                                       daňovej rezidencie
+od           .        .                      do          .         .
+13 Daňovník realizoval kontrolované transakcie alebo skupinu kontrolovaných transakcií podľa § 2 písm. ab) zákona3)                            áno
+                                                                                                                                                      4)
+Adresa bydliska alebo adresa pobytu na území Slovenskej republiky, kde sa daňovník zdržiaval v zdaňovacom období
+14 - Ulica                                                                                                             15 - Súpisné/orientačné číslo
+
+
+16 - PSČ              17 - Obec
+
+
+
+II. ODDIEL - ÚDAJE O ZÁKONNOM ZÁSTUPCOVI ALEBO DEDIČOVI ALEBO ZÁSTUPCOVI ALEBO
+             SPRÁVCOVI V KONKURZNOM KONANÍ, KTORÝ PODÁVA DAŇOVÉ PRIZNANIE (ďalej len “zástupca”)
+18 - Priezvisko                                                        19 - Meno                                   20 -Titul pred menom / za priezviskom
+
+                                                                                                                                         /
+21 - Rodné číslo                                    22 - Ulica                                                         23 - Súpisné/orientačné číslo
+
+                          /
+24 - PSČ              25 - Obec                                                                            26 - Štát
+
+
+
+       Záznamy daňového úradu
+
+
+
+
+                          Miesto pre evidenčné číslo                               Odtlačok prezentačnej pečiatky daňového úradu
+
+     MF/014308/2026-721                                                                                                                  Strana 1
+      DPFOBv26_2
+                                         DIČ (Rodné číslo)
+                       5)                                                               5)
+27 - Telefónne číslo                                          28 - Emailová adresa
+
+
+
+1) Ak sa podáva dodatočné daňové priznanie len z dôvodov uvedených v § 32 ods. 8, 11 a 12 alebo § 40 ods. 7 zákona, uvádzajú sa tieto dôvody v XIII. oddiele.
+2) Vyznačí sa, ak ide o daňovníka s obmedzenou daňovou povinnosťou (nerezidenta) na území Slovenskej republiky podľa § 2 písm. e) bod 1 a 2 zákona a
+   príslušného článku zmluvy o zamedzení dvojitého zdanenia; vypĺňa sa aj XI. oddiel. Ako dátum od - do sa uvedie tá časť zdaňovacieho obdobia, počas ktorej bol
+   daňovník na území Slovenskej republiky daňovníkom s obmedzenou daňovou povinnosťou.
+3) Vyznačí sa, ak daňovník, ktorý je prepojenou osobou podľa § 2 písm. n) zákona, v príslušnom zdaňovacom období vykonal vzájomnú obchodnú transakciu
+   s osobou, voči ktorej je považovaný za závislú osobu podľa zákona, pričom sa v XIII. oddiele uvedie druh prepojenia a identifikácia osôb, s ktorými je prepojený.
+4) Vypĺňa sa, len ak daňovník nemá trvalý pobyt na území Slovenskej republiky.
+5) Ak daňové priznanie podáva daňovník sám, uvádza sa v tomto riadku jeho telefónne číslo a emailová adresa. Ak za daňovníka podáva daňové priznanie
+   zástupca, v tomto riadku sa uvádza telefónne číslo a emailová adresa tohto zástupcu, ak sa s daňovníkom nedohodli inak. Údaje v r. 27 a 28 nie sú podľa § 32
+   ods. 7 zákona povinné.
+
+III. ODDIEL - ÚDAJE NA UPLATNENIE ZNÍŽENIA ZÁKLADU DANE (§ 11 zákona) A DAŇOVÉHO
+                      BONUSU (§ 33 zákona)
+Údaje o poberaní dôchodkov uvedených v § 11 ods. 6 zákona
+Poberal (a) som na začiatku zdaňovacieho obdobia dôchodok (ky) uvedený (é) v § 11 ods. 6 zákona alebo
+mi bol tento (tieto) dôchodok (ky) priznaný (é) spätne k začiatku príslušného zdaňovacieho obdobia (vypĺňa 29
+                                                                                                                                            áno
+sa, len ak daňovník bol poberateľom dôchodku uvedeného v § 11 ods. 6 zákona na začiatku zdaňovacieho
+obdobia alebo mu tento dôchodok bol priznaný spätne k začiatku príslušného zdaňovacieho obdobia)
+Úhrnná suma dôchodku (ov) uvedeného (ných) v § 11 ods. 6 zákona                                                          30
+za zdaňovacie obdobie (v eurách)
+                                 6)
+                                                                                                                                                     , ,
+                                                                                                7)
+Údaje o manželke (manželovi), ktorá (ý) žije s daňovníkom v domácnosti na uplatnenie nezdaniteľnej časti základu dane
+31 - Priezvisko a meno                                                             Rodné číslo
+
+                                                                                                                                                 /
+           uplatňujem nezdaniteľnú časť základu dane                           Vlastné                                                      Počet
+32
+           na manželku (manžela) podľa § 11 ods. 3 zákona                      príjmy (v eurách)
+                                                                                                 8)                           ,             mesiacov
+                                                                                                                                                     8)
+
+
+
+Údaje o vyživovaných deťoch žijúcich s daňovníkom v domácnosti na uplatnenie daňového zvýhodnenia na vyživované
+                                                                9)
+dieťa podľa § 33 zákona (ďalej len „daňový bonus podľa zákona“)
+33 - Priezvisko a meno                          Rodné číslo                                          Daňový bonus podľa zákona uplatňujem v mesiacoch
+                                                                                                     1-12   1    2   3   4    5    6    7    8       9   10 11 12
+                                                                           /
+                                                                                                     1-12   1    2   3   4    5    6    7    8       9   10 11 12
+                                                                           /
+                                                                                                     1-12   1    2   3   4    5    6    7    8       9   10 11 12
+                                                                           /
+                                                                                                     1-12   1    2   3   4    5    6    7    8       9   10 11 12
+                                                                           /
+33a          Údaje o ďalších vyživovaných deťoch uvádzam v XIII. oddiele v členení podľa r. 33
+Údaje druhej oprávnenej osoby vyživujúcej dieťa (deti) v domácnosti uvedené na r. 33
+      Uplatňujem postup podľa § 33 ods. 8 zákona
+34 - Priezvisko a meno
+                            9a)
+                                                Rodné číslo                                          Mesiace, na začiatku ktorých druhá oprávnená osoba splnila
+                                                                                                     podmienky na uplatnenie daňového bonusu podľa zákona
+                                                                                                     1-12  1 2 3 4 5 6 7 8 9 10 11 12
+                                                                           /
+                                                                                                                                  9b)
+      Oznamujem, že druhá oprávnená osoba uvedená na r. 34 podala daňové priznanie na území Slovenskej republiky
+Druhá oprávnená osoba uvedená na r. 34 na území Slovenskej republiky nepodala daňové priznanie, preto k daňovému priznaniu prikladám:
+      kópiu dokladu o vykonanom ročnom zúčtovaní preddavkov na daň z príjmov zo závislej činnosti podľa zákona (ďalej len „ročné zúčtovanie“)
+                              9c)
+      druhej oprávnenej osoby
+      kópiu dokladu preukazujúceho výšku základu dane z príjmov podľa § 5 zákona druhej oprávnenej osoby, ktorej ročné zúčtovanie nebolo
+                                                          9c)
+      vykonané, a nemala povinnosť podať daňové priznanie
+Základ dane (čiastkový základ dane) z príjmov zo závislej činnosti alebo z príjmov
+                                                                                                             34a
+z podnikania alebo z inej samostatnej zárobkovej činnosti alebo ich úhrn druhej
+oprávnenej osoby z r. 34, pre uplatnenie daňového bonusu podľa zákona
+                                                                         9d)                                                                               ,
+6) Ak daňovník vypĺňa r. 29, uvádza sa v r. 30 úhrnná suma dôchodku (ov) podľa § 11 ods. 6 zákona za zdaňovacie obdobie len vtedy, ak si uplatňuje
+   zníženie základu dane na daňovníka podľa § 11 ods. 2 zákona.
+7) Vypĺňa sa, len ak si daňovník uplatňuje nezdaniteľnú časť základu dane na manželku (manžela) podľa § 11 ods. 3 zákona.
+8) Uvádzajú sa vlastné príjmy manželky (manžela) za celé zdaňovacie obdobie, za ktoré sa podáva daňové priznanie, t.j. príjmy znížené o zaplatené
+   poistné na verejné zdravotné poistenie, na sociálne poistenie a povinné príspevky na starobné dôchodkové sporenie (ďalej len „poistné a príspevky“),
+   ktoré manželka (manžel) v príslušnom zdaňovacom období bola (bol) povinná (povinný) zaplatiť z týchto príjmov a v stĺpci počet mesiacov sa uvádza
+
+
+
+      MF/014308/2026-721                                                                                                                              Strana 2
+         DPFOBv26_3
+                                          DIČ (Rodné číslo)
+
+   počet kalendárnych mesiacov v zdaňovacom období (kalendárnom roku), počas ktorých manželka (manžel) splnila (splnil) podmienky uvedené v § 11 ods. 4
+   zákona, pričom do počtu mesiacov sa započítava každý kalendárny mesiac, na začiatku ktorého boli splnené ustanovené podmienky. Ak sú súčasne splnené
+   dve a viac podmienok v tom istom kalendárnom mesiaci, do počtu mesiacov sa započíta takýto mesiac len jedenkrát.
+9) Uvádzajú sa údaje o vyživovanom dieťati (deťoch), na ktoré za rovnaké obdobie kalendárneho roka neuplatnil iný daňovník nárok na daňový bonus podľa
+   zákona. Prílohou daňového priznania sú aj doklady preukazujúce nárok na daňový bonus podľa zákona (§ 32 ods. 10 zákona). Ak daňovník v zdaňovacom
+   období, za ktoré podáva daňové priznanie, takéto doklady predložil svojmu zamestnávateľovi a neuplatňuje si daňový bonus podľa zákona ani jeho pomernú
+   časť podaním daňového priznania, uvedené doklady nie sú prílohou daňového priznania.
+9a) Prílohou daňového priznania je aj doklad preukazujúci oprávnenosť nároku na priznanie daňového bonusu podľa zákona druhou oprávnenou osobou, okrem
+    rodného listu dieťaťa, ktorý bol vydaný na území SR.
+9b) Daňovník zaškrtne políčko v prípade, ak druhá oprávnená osoba podala daňové priznanie, v ktorom vykázala základ dane na účely výpočtu daňového bonusu
+    podľa zákona, a to bez ohľadu na skutočnosť, či mala povinnosť podať daňové priznanie podľa § 32 zákona alebo nie, okrem prípadov uvedených v odkaze 9c.
+9c) Ak daňovník uplatňuje postup podľa § 33 ods. 8 zákona, t.j. navyšuje svoj základ dane o základ dane druhej oprávnenej osoby, môže tak v čase podania
+    daňového priznania spraviť len v prípade, ak môže preukázať základ dane druhej oprávnenej osoby pre účely uplatnenia daňového bonusu, v súlade
+    s citovaným znením zákona. Uvedené znamená, že ak druhá oprávnená osoba nepodala daňové priznanie na území Slovenskej republiky, potom daňovník
+    k daňovému priznaniu priloží kópiu dokladu o ročnom zúčtovaní alebo kópiu dokladu preukazujúceho výšku základu dane z príjmov zo závislej činnosti podľa
+    § 5 zákona druhej oprávnenej osoby, ktorej ročné zúčtovanie nebolo vykonané a nemala povinnosť podať daňové priznanie.
+9d) Vypĺňa sa na základe dokladov uvedených v odkaze 9b alebo 9c preukazujúcich výšku základu dane druhej oprávnenej osoby, pričom doklady uvedené
+    v odkaze 9c sú prílohou daňového priznania.
+
+IV. ODDIEL - ÚDAJE NA UPLATNENIE DAŇOVÉHO BONUSU NA ZAPLATENÉ ÚROKY (§ 33a zákona)
+             uplatňujem daňový bonus                               Zaplatené úroky za zdaňovacie                                           Počet
+35
+             na zaplatené úroky podľa § 33a zákona
+                                                   10)
+                                                                   obdobie (v eurách)                                        ,             mesiacov
+                                                                                       Dátum uzavretia
+Dátum začatia úročenia úveru                    .            .                         zmluvy o úvere na bývanie                   .          .
+10) R. 35 sa vypĺňa, ak si daňovník uplatňuje nárok na daňové zvýhodnenie na zaplatené úroky pri úveroch na bývanie podľa § 33a zákona (ďalej len „daňový
+    bonus na zaplatené úroky podľa § 33a zákona“). Suma zaplatených úrokov za zdaňovacie obdobie, dátum uzavretia zmluvy o úvere a dátum začatia úročenia
+    úveru sa uvádza podľa potvrdenia vydaného veriteľom podľa § 26a zákona č. 90/2016 Z. z. o úveroch na bývanie a o zmene a doplnení niektorých zákonov v
+    znení neskorších predpisov, kópia potvrdenia je prílohou daňového priznania. V stĺpci počet mesiacov sa uvádza počet kalendárnych mesiacov v zdaňovacom
+    období (kalendárnom roku), v ktorých má daňovník nárok na uplatnenie daňového bonusu na zaplatené úroky podľa § 33a zákona.
+
+V. ODDIEL - VÝPOČET ZÁKLADU DANE (čiastkového základu dane) Z PRÍJMOV ZO ZÁVISLEJ
+                        ČINNOSTI (§ 5 zákona) - v eurách
+                                                                            36
+Úhrn príjmov od všetkých zamestnávateľov
+                                                     11)
+                                                                                                                         ,
+z toho
+         úhrn príjmov plynúcich na základe dohôd o prácach                  36a
+         vykonávaných mimo pracovného pomeru                                                                             ,
+                                                                            37
+Úhrn povinného poistného (§ 5 ods. 8 zákona)
+                                                           11)
+                                                                                                                         ,
+                                                                            38
+Základ dane (čiastkový základ dane) (r. 36 - r. 37)                                                                      ,
+11) Vypĺňa sa na základe všetkých potvrdení (dokladov) o príjmoch zo závislej činnosti plynúcich zo zdrojov na území Slovenskej republiky a zo zdrojov
+    v zahraničí a o zaplatenom povinnom poistnom preukazujúcich uvádzané skutočnosti vrátane dostatočnej identifikácie daňovníka. Údaje o príjmoch
+    zo zdrojov v zahraničí sa uvádzajú v XIII. oddiele. Súčasťou príjmov v r. 36 sú aj príjmy podľa § 5 ods. 7 zákona, pri ktorých nie sú v príslušnom zdaňovacom
+    období splnené podmienky pre ich oslobodenie od dane. Kópie potvrdení (dokladov) sú prílohami daňového priznania.
+
+VI. ODDIEL - VÝPOČET ZÁKLADU DANE (čiastkového základu dane) Z PRÍJMOV Z PODNIKANIA,
+                         Z INEJ SAMOSTATNEJ ZÁROBKOVEJ ČINNOSTI, Z PRENÁJMU A Z POUŽITIA DIELA A
+                         UMELECKÉHO VÝKONU (§ 6 zákona) - v eurách
+Tabuľka č. 1 – prehľad príjmov a výdavkov podľa § 6 zákona (vypĺňa sa, len ak daňovník účtuje v sústave jednoduchého
+účtovníctva alebo uplatňuje výdavky percentom z príjmov, alebo vedie evidenciu podľa § 6 ods. 11 zákona)
+R.                 Druh príjmov podľa § 6 zákona                    1                 Príjmy                       2                   Výdavky
+         z poľnohospodárskej výroby, lesného a vodného
+1
+         hospodárstva                   /ods. 1 písm. a)                                               ,                                               ,
+2        zo živnosti                         /ods. 1 písm. b)                                          ,                                               ,
+         z podnikania vykonávaného podľa osobitných
+3
+         predpisov                     /ods. 1 písm. c)                                                ,                                               ,
+         spoločníkov v. o. s. a komplementárov
+4
+         kom. spol.                      /ods. 1 písm. d)                                              ,                                               ,
+         z vytvorenia diela a z podania umeleckého výkonu, pri
+         ktorých daňovník uplatnil postup podľa § 43 ods. 14
+         zákona a z vydávania, rozmnožovania a rozširovania
+5        diel na vlastné náklady a z vytvorenia alebo zhotovenia
+         iného predmetu duševného vlastníctva a z použitia
+                                                                                                       ,                                               ,
+         iného predmetu duševného vlastníctva alebo
+         z postúpenia práv k predmetu duševného vlastníctva
+                                             /ods. 2 písm. a)
+         z činností, ktoré nie sú živnosťou ani podnikaním
+6
+                                           /ods. 2 písm. b)                                            ,                                               ,
+
+          MF/014308/2026-721                                                                                                                      Strana 3
+     DPFOBv26_4
+                                         DIČ (Rodné číslo)
+
+     znalcov a tlmočníkov za činnosť podľa
+7
+     osobitného predpisu             /ods. 2 písm. c)                                                   ,                                               ,
+     z činností sprostredkovateľov, ktoré nie sú
+8
+     živnosťou                        /ods. 2 písm. d)                                                  ,                                               ,
+     z činnosti športovca alebo športového odborníka podľa
+9                         11a)
+     osobitného predpisu vrátane príjmov na základe
+     zmluvy o sponzorstve v športe       /ods. 2 písm. e)
+                                                                                                        ,                                               ,
+10 spolu r. 1 až 9                                                                                      ,                                               ,
+11   z prenájmu nehnuteľností                           /ods. 3                                         ,                                               ,
+     z použitia diela a umeleckého výkonu, ak nepatria do
+12 príjmov podľa § 6 ods. 2 písm. a) zákona uvádzaných
+   v r. 5
+          11a)
+                                                /ods. 4
+                                                                                                        ,                                               ,
+13 spolu r. 11 a 12                                                                                     ,                                               ,
+11a) Uvádzajú sa príjmy podľa § 6 ods. 2 písm. a), e) a ods. 4 zákona, pri ktorých daňovník uplatnil postup podľa § 43 ods. 14 zákona.
+Súčasťou príjmov a výdavkov v r. 1 až 9, 11 a 12 sú aj príjmy zo zdrojov v zahraničí a výdavky súvisiace s týmito príjmami, pričom údaje o príjmoch zo zdrojov
+v zahraničí a výdavkoch s nimi súvisiacich sa uvádzajú v XIII. oddiele.
+Ak ide o spoločníka v.o.s. a komplementára kom. spol., uvádza sa v tejto tabuľke v r. 4 v stĺ. 1 časť základu dane pripadajúca na spoločníka alebo komplementára.
+Ak v.o.s. alebo kom. spol. vykázala daňovú stratu, časť tejto straty pripadajúca na spoločníka alebo komplementára sa uvádza v r. 4 v stĺ. 2. V r. 4 v stĺ. 2 sa
+uvádzajú aj poistné a príspevky. Ak je daňovník spoločníkom v.o.s. alebo komplementárom kom. spol., uvádza sa v XIII. oddiele názov spoločnosti, DIČ a výška
+podielu spoločníka v percentách. V stĺ. 1 súčasťou príjmov v r. 1 až 9, 11 a 12 je aj podiel pripadajúci na daňovníka, ktorý dosiahol spoločne s ďalším daňovníkom
+alebo s viacerými daňovníkmi z dôvodu spoluvlastníctva k veci alebo zo spoločných práv (§ 10 ods. 1 zákona), pričom údaje o týchto daňovníkoch sa uvádzajú
+v XIII. oddiele; rovnako sa tu uvádza aj príjem pripadajúci na daňovníka, ktorý dosiahol pri spoločnom podnikaní alebo zo spoločnej inej samostatnej zárobkovej
+činnosti na základe písomnej zmluvy o združení (účastník združenia). Ak ide o účastníka združenia, uvádza sa celková suma spoločne dosiahnutých príjmov a
+vynaložených výdavkov v XIII. oddiele, pričom súčasne s daňovým priznaním sa predloží aj kópia zmluvy o združení; toto neplatí, ak bola už správcovi dane
+predložená. V stĺ. 2 sa uvádzajú výdavky. Ak daňovník uplatňuje podľa § 19 zákona daňové výdavky, môžu sa uviesť úhrnom v r. 10, ak sa vzťahujú len k príjmom
+uvedeným v r. 1 až 9; ak daňovník uplatňuje výdavky percentom z príjmov podľa § 6 ods. 10 zákona, neuvádza sa v stĺ. 2 suma výdavku pri jednotlivých druhoch
+príjmov uvedených v stĺ. 1 v r. 1 až 9, ale výdavky sa uvádzajú úhrnom vrátane preukázateľnej výšky zaplateného poistného a príspevkov v r. 10 stĺ. 2.
+Preukázateľné výdavky, ktoré daňovník uplatňuje pri príjmoch uvedených v r. 11, sa uvádzajú v tomto riadku maximálne do výšky príjmov. Rovnako sa postupuje aj
+pri príjmoch uvedených v r. 12. Ak daňovník pod tabuľkou č. 1 uvádza preukázateľne zaplatené poistné z príjmov podľa § 6 ods. 1 a 2 zákona, uvádza sa nielen, ak
+sa uplatňujú preukázateľné výdavky na základe jednoduchého účtovníctva alebo z evidencie podľa § 6 ods. 11 zákona alebo výdavky percentom z príjmov podľa § 6
+ods. 10 zákona, ale aj, ak sa uplatňujú preukázateľné výdavky na základe podvojného účtovníctva.
+
+       Spĺňam podmienky pre mikrodaňovníka podľa § 2 písm. w) zákona pri príjmoch podľa § 6 ods. 1 a 2 zákona a uplatňujem si
+       výhody z toho plynúce určené v zákone
+Uplatňujem preukázateľné výdavky z daňovej evidencie podľa § 6 ods. 11 zákona
+      pri príjmoch podľa § 6 ods. 1 a 2 zákona    pri príjmoch podľa § 6 ods. 3 zákona                               pri príjmoch podľa § 6 ods. 4 zákona
+Uplatňujem výdavky percentom z príjmov podľa § 6 ods. 10 zákona
+      pri príjmoch podľa § 6 ods. 1 a 2 zákona                 pri príjmoch podľa § 6 ods. 4 zákona
+Preukázateľne zaplatené poistné
+z príjmov podľa § 6 ods. 1 a 2 zákona                                                                            ,
+Uplatňujem osobitný spôsob zahrnovania kurzových rozdielov do základu dane podľa § 17 ods. 17 zákona
+      pri príjmoch podľa § 6 ods. 1 a 2 zákona                 pri príjmoch podľa § 6 ods. 3 a 4 zákona
+Ukončujem uplatňovanie osobitného spôsobu zahrnovania kurzových rozdielov do základu dane podľa § 17 ods. 17 zákona
+     pri príjmoch podľa § 6 ods. 1 a 2 zákona                pri príjmoch podľa § 6 ods. 3 a 4 zákona
+Zdaniteľné príjmy z podnikania podľa § 6 ods. 1 zákona,                                                                         vypĺňa iba štátny príslušník tretej
+vypĺňa aj daňovník, ktorý vedie podvojné účtovníctvo                                                             ,              krajiny, ktorý podáva žiadosť
+                                                                                                                                o obnovenie prechodného pobytu
+
+Tabuľka č. 1a - Údaje daňovníka s príjmami z podnikania, z inej samostatnej zárobkovej činnosti, z prenájmu a z použitia
+diela a umeleckého výkonu z daňovej evidencie podľa § 6 ods. 11 zákona a daňovníka s príjmami z prenájmu a z použitia
+diela a umeleckého výkonu z účtovníctva podľa § 6 ods. 13 zákona
+R.                              Druh                                1 Na začiatku zdaňovacieho obdobia 2                  Na konci zdaňovacieho obdobia
+     Zostatková cena hmotného majetku zaradeného
+1
+     do obchodného majetku                                                                              ,                                               ,
+     Zostatková cena nehmotného majetku
+2
+     zaradeného do obchodného majetku                                                                   ,                                               ,
+3    Zásoby                                                                                             ,                                               ,
+4    Pohľadávky                                                                                         ,                                               ,
+5    Záväzky                                                                                            ,                                               ,
+6    Finančný majetok                                                                                   ,                                               ,
+      MF/014308/2026-721                                                                                                                          Strana 4
+     DPFOBv26_5
+                                       DIČ (Rodné číslo)
+
+Tabuľka č. 1b - Údaje daňovníka s príjmami z podnikania, z inej samostatnej zárobkovej činnosti, z použitia diela a
+umeleckého výkonu z evidencie, ktorú vedie podľa § 6 ods. 10 zákona, ak uplatňuje výdavky percentom z príjmov
+R.                           Druh                           1 Na začiatku zdaňovacieho obdobia 2    Na konci zdaňovacieho obdobia
+
+1    Zásoby                                                                            ,                                  ,
+2    Pohľadávky                                                                        ,                                  ,
+                                                                  39
+Príjmy z tabuľky č. 1, stĺ. 1, r. 10                                                                ,
+                                                                  40
+Výdavky z tabuľky č. 1, stĺ. 2, r. 10                                                               ,
+Základ dane (kladný rozdiel r. 39 a r. 40);                       41
+výsledok hospodárenia (zisk)                                           +                            ,
+Strata (záporný rozdiel r. 39 a r. 40);                           42
+výsledok hospodárenia (strata)                                         -                            ,
+                                                      12)
+Položky zvyšujúce základ dane (znižujúce stratu)
+                                                                  43
+[§ 17 až 17b, § 17d, § 19 ods. 3 písm. n) a § 21 ods. 1
+písm. h) tretí bod zákona]
+                                                                                                    ,
+                                                      12)
+Položky znižujúce základ dane (zvyšujúce stratu)                  44
+(§ 17 až 17b a § 17d zákona)                                                                        ,
+Základ dane (čiastkový základ dane)
+                                                                  45
+z príjmov podľa § 6 ods. 1 a 2 zákona
+(r. 41 + r. 42 + r. 43 - r. 44) > 0
+                                                                       +                            ,
+Daňová strata z príjmov podľa § 6 ods. 1 a 2 zákona               46
+(r. 41 + r. 42 + r. 43 - r. 44) < 0                                    -                            ,
+Daňová strata uplatňovaná podľa § 30, § 52zza ods. 16 a § 52zzb ods. 5 zákona
+
+1    Rok vykázania daňovej straty                            47                                     48
+
+
+2    Suma vykázanej daňovej straty                                                 ,                                     ,
+     Suma daňovej straty odpočítaná
+3
+     v predchádzajúcich zdaňovacích obdobiach                                      ,                                      ,
+     Suma daňovej straty, ktorá môže byť
+4    odpočítavaná podľa § 30, § 52zza ods. 16 a
+     § 52zzb ods. 5 zákona
+                           13)                                                     ,                                      ,
+1                 49                                         50                                    50a
+
+
+2                                            ,                                     ,                                     ,
+3                                            ,                                     ,
+4                                            ,                                     ,                                      ,
+Uplatnenie daňovej straty z predchádzajúcich zdaňovacích období v príslušnom zdaňovacom období
+Uplatnenie daňovej straty vykázanej za rok 2021, najviac do sumy           51
+uvedenej v r. 4 stĺpec 47, maximálne však do sumy uvedenej v r. 45                                          ,
+Uplatnenie daňovej straty vykázanej za rok 2022, najviac do sumy
+                                                                           52
+uvedenej v r. 4 stĺpec 48, maximálne však do sumy zodpovedajúcej
+kladnému rozdielu sumy uvedenej v r. 45 a r. 51
+                                                                                                            ,
+Uplatnenie daňovej straty vykázanej za rok 2023, najviac do sumy
+                                                                           53
+uvedenej v r. 4 stĺpec 49, maximálne však do sumy zodpovedajúcej
+kladnému rozdielu sumy uvedenej v r. 45 a súm na (r. 51 + r. 52)
+                                                                                                            ,
+Uplatnenie daňovej straty vykázanej za rok 2024, najviac do sumy
+                                                                           54
+uvedenej v r. 4 stĺpec 50, maximálne však do sumy zodpovedajúcej
+kladnému rozdielu sumy uvedenej v r. 45 a súm na (r. 51 + r. 52 + r. 53)
+                                                                                                            ,
+Uplatnenie daňovej straty vykázanej za rok 2025, najviac do sumy
+uvedenej v r. 4 stĺpec 50a, maximálne však do sumy zodpovedajúcej          54a
+kladnému rozdielu sumy uvedenej v r. 45 a súm na (r. 51 + r. 52 + r. 53                                     ,
++ r. 54)
+
+      MF/014308/2026-721                                                                                             Strana 5
+     DPFOBv26_6
+                                              DIČ (Rodné číslo)
+
+Znížený čiastkový základ dane z príjmov podľa § 6 ods. 1 a 2                            55
+zákona o stratu z predchádzajúcich zdaňovacích období
+(r. 45 - r. 51 - r. 52 - r. 53 - r. 54 - r. 54a)
+                                                                                                                                 ,
+Uplatnenie odpočtu výdavkov (nákladov) na výskum a vývoj podľa § 30c zákona, na investície podľa § 30e zákona a
+na podporu športu podľa § 30ca zákona (vypĺňa sa aj príloha č. 1, resp. aj príloha č. 1b, resp. aj príloha č. 1c)
+Odpočet výdavkov (nákladov) na výskum a vývoj podľa § 30c
+zákona a na investície podľa § 30e zákona a na podporu športu      56
+podľa § 30ca zákona maximálne do sumy uvedenej v r. 55                                                                           ,
+(r. 9 prílohy č. 1 + r. 11 prílohy č. 1b + r. 8 prílohy č. 1c)
+Základ dane (čiastkový základ dane) z príjmov podľa § 6 ods. 1 a 2 57
+zákona znížený o odpočet výdavkov (nákladov) na výskum a vývoj
+a na investície a na podporu športu (r. 55 - r. 56)
+                                                                                                                                 ,
+                                                                                  58
+Príjmy z tabuľky č. 1, stĺ. 1, r. 13                                                                                             ,
+                                                                                  59
+Výdavky z tabuľky č. 1, stĺ. 2, r. 13                                                                                            ,
+                                                                                 60
+Základ dane (rozdiel r. 58 a r. 59)
+                                                                                        +                                        ,
+                                                                                 61
+Výsledok hospodárenia (zisk)
+                                      12)
+                                                                                        +                                        ,
+                                                                                 62
+Výsledok hospodárenia (strata)
+                                        12)
+                                                                                        -                                        ,
+                                                               12)
+Položky zvyšujúce základ dane (znižujúce stratu)
+                                                                                 63
+[§ 17 až 17b, § 17d, § 19 ods. 3 písm. n) a § 21 ods. 1
+písm. h) tretí bod zákona]
+                                                                                                                                 ,
+                                                               12)
+Položky znižujúce základ dane (zvyšujúce stratu)                                 64
+(§ 17 až 17b a § 17d zákona)                                                                                                     ,
+Základ dane (čiastkový základ dane)
+z príjmov podľa § 6 ods. 3 a 4 zákona
+                                                                                 65
+r. 60 + [(r. 61 + r. 63 - r. 64) > 0; ak je tento rozdiel záporný,
+r. 65 = r. 60] alebo r. 60 + [(r. 62 + r. 63 - r. 64) > 0; ak je                        +                                        ,
+tento rozdiel záporný, r. 65 = r. 60]
+12) Riadky 43, 44 a 61 až 64 sa vypĺňajú, len ak daňovník s príjmami podľa § 6 ods. 1 a 2 alebo ods. 3 alebo ods. 4 zákona účtuje v sústave podvojného účtovníctva
+    okrem pripočítateľných položiek, ktoré súvisia s úpravami ustanovenými v § 17 ods. 19 písm. h) a l) a ods. 34 a 35, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h) treťom
+    bode zákona, ktoré sa uvádzajú v r. 43 a 63 a odpočítateľnej položky podľa § 17 ods. 37 zákona, ktorá sa uvádza v r. 44 a 64. V XIII. oddiele sa uvádzajú položky,
+    o ktoré sa konkrétne základ dane (výsledok hospodárenia) zvýšil alebo znížil. Ak daňovník účtuje v sústave podvojného účtovníctva, tabuľka č. 1 sa nevypĺňa;
+    vypĺňajú sa len r. 41 až 46 a 61 až 65.
+    Ak daňovník s príjmami podľa § 6 ods. 1 a 2 alebo ods. 3 alebo ods. 4 zákona účtuje v sústave jednoduchého účtovníctva, vypĺňajú sa tieto riadky, len ak sa podáva
+    dodatočné daňové priznanie, alebo ak sa podáva daňové priznanie po skončení podnikania alebo inej samostatnej zárobkovej činnosti alebo prenájmu a postupuje
+    sa podľa § 32 ods. 12 zákona, okrem pripočítateľných položiek, ktoré súvisia s úpravami ustanovenými v § 17 ods. 19 písm. h) a l) a ods. 34 a 35, § 19 ods. 3 písm. n)
+    a § 21 ods. 1 písm. h) treťom bode zákona, ktoré sa uvádzajú v r. 43 a 63 a odpočítateľnej položky podľa § 17 ods. 37 zákona, ktorá sa uvádza v r. 44 a 64.
+    Výdavky uvedené v § 17 ods. 19 písm. h) a l) a ods. 34 a 35, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h) treťom bode zákona sú v plnej výške súčasťou základu dane,
+    pričom suma prevyšujúca výšku daňových výdavkov vypočítaných podľa uvedených ustanovení zákona sa uvádza v r. 43 a 63.
+13) Vo výške 50 % [alebo 100%, ak daňovník spĺňa podmienky pre mikrodaňovníka podľa § 2 písm. w) zákona] sumy uvedenej v r. 45 pre roky 2021, 2022, 2023, 2024 a
+    2025. Maximálne však do sumy zodpovedajúcej rozdielu súm uvedených v r. 2 a r. 3 stĺpca 47 pre rok 2021, stĺpca 48 pre rok 2022, stĺpca 49 pre rok 2023, stĺpca 50
+    pre rok 2024 a maximálne do sumy uvedenej v r. 2 stĺpca 50a pre rok 2025.
+
+VII. ODDIEL - VÝPOČET OSOBITNÉHO ZÁKLADU DANE Z PRÍJMOV Z KAPITÁLOVÉHO
+                        MAJETKU (§ 7 zákona) - v eurách
+                                                                                  14)
+Tabuľka č. 2 - prehľad príjmov a výdavkov podľa § 7 zákona
+R.               Druh príjmov podľa § 7 zákona                                               Príjmy                                          Výdavky
+                                                                       1                                                  2
+     úroky a ostatné výnosy z cenných papierov
+1                                    /ods. 1 písm. a)                                                        ,                                                 ,
+     úroky, výhry a iné výnosy z vkladov na vkladných
+     knižkách, z peňažných prostriedkov na vkladovom
+2
+     účte, na účte stavebného sporiteľa a z bežného
+     účtu okrem úrokov uvedených v § 6 ods. 5 písm. b)
+                                                                                                             ,                                                 ,
+      zákona                          /ods. 1 písm. b)
+     úroky a iné výnosy z poskytnutých úverov a
+     pôžičiek a úroky z hodnoty splateného vkladu
+3
+     v dohodnutej výške spoločníkov verejných                                                                ,                                                 ,
+     obchodných spoločností           /ods. 1 písm. c)
+     dávky z celoeurópskeho osobného dôchodkového
+4    produktu a dávky z doplnkového dôchodkového
+     sporenia                         /ods. 1 písm. d)
+                                                                                                             ,                                                 ,
+     plnenia z poistenia pre prípad dožitia určitého
+     veku; jednorazové vyrovnanie alebo odbytné
+5    vyplácané v prípade poistena osôb pri                                                                   ,                                                 ,
+     predčasnom skončení poistenia /ods. 1 písm. e)
+
+      MF/014308/2026-721                                                                                                                                 Strana 6
+     DPFOBv26_7
+                                          DIČ (Rodné číslo)
+
+     výnosy zo zmeniek okrem príjmov z ich predaja
+6                                  /ods. 1 písm. f)                                                         ,                                                 ,
+     príjmy z podielových listov dosiahnuté z ich
+7
+     vyplatenia (vrátenia)
+                           15)
+                                      /ods. 1 písm. g)                                                      ,                                                 ,
+     výnosy zo štátnych dlhopisov a štátnych
+8
+     pokladničných poukážok
+                             15a)
+                                     /ods. 1 písm. h)                                                       ,                                                 ,
+     výnos, ktorý vzniká pri splatnosti cenného papiera
+9    z rozdielu medzi menovitou hodnotou cenného
+     papiera a emisným kurzom pri jeho vydaní /ods. 2
+                                                                                                            ,                                                 ,
+     rozdiel medzi menovitou hodnotou dlhopisu alebo
+10   pokladničnej poukážky a nižšou obstarávacou
+     cenou                                       /ods. 3
+                                                                                                            ,                                                 ,
+11   spolu r. 1 až 10                                                                                       ,                                                 ,
+     príjmy dosiahnuté z vyplatenia (vrátenia) podielových
+     listov obstaraných do 31.decembra 2003, na ktoré sa
+12 uplatňuje oslobodenie od dane podľa § 52b ods. 11                                                        ,
+     zákona v súlade s § 52 ods. 20 zákona
+14) Ak bol daňovník povinný v súvislosti s poberaním príjmov uvádzaných v r. 1 až 3, 6, 8 až 10 platiť poistné na verejné zdravotné poistenie podľa zákona č. 580/2004
+     Z.z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z.z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+     (ďalej len „zákon o zdravotnom poistení“), uplatňuje sa preukázateľne zaplatené poistné na verejné zdravotné poistenie ako výdavok k týmto príjmom v stĺ. 2.
+     V stĺ. 2 v r. 1 až 3, 6, 8 až 10 sa uvádza len toto preukázateľne zaplatené poistné na verejné zdravotné poistenie, pričom žiadne iné výdavky sa v týchto riadkoch
+     v stĺ. 2 neuvádzajú. Ak bol daňovník povinný v súvislosti s poberaním príjmov uvádzaných v r. 4, 5 a 7 platiť poistné na verejné zdravotné poistenie podľa zákona
+     o zdravotnom poistení, preukázateľne zaplatené poistné na verejné zdravotné poistenie sa uplatňuje ako súčasť výdavkov k týmto príjmom v stĺ. 2.
+15) Neuvádzajú sa príjmy z podielových listov dosiahnuté z ich vyplatenia (vrátenia) obstaraných do 31. decembra 2003, na ktoré sa uplatňuje oslobodenie od dane
+     podľa § 52b ods. 11 v súlade s § 52 ods. 20 zákona. Ak výdavky v r. 7 v stĺ. 2 sú vyššie ako príjem v stĺ. 1 v tomto riadku, uvádzajú sa tieto výdavky len do výšky
+     príjmov (r. 7 stĺ. 1 = r. 7 stĺ. 2).
+15a) Okrem výnosov (príjmov) zo štátnych dlhopisov a štátnych pokladničných poukážok, ktoré sa zahrnujú do osobitného základu dane podľa § 51ea zákona.
+V tabuľke č. 2 stĺ. 1 súčasťou príjmov v r. 1 až 10 je aj podiel pripadajúci na daňovníka, ktorý dosiahol spoločne s ďalším daňovníkom alebo s viacerými
+daňovníkmi z dôvodu spoluvlastníctva k veci alebo zo spoločných práv alebo bezpodielového spoluvlastníctva manželov (§ 10 ods. 1 zákona a § 7 ods. 9
+zákona). Údaje o týchto daňovníkoch sa uvádzajú v XIII. oddiele. Súčasťou príjmov v r. 1 až 10 sú aj príjmy zo zdrojov v zahraničí, pričom údaje o týchto
+príjmoch sa uvádzajú v XIII. oddiele. Súčasťou príjmov uvádzaných v tabuľke č. 2 nie sú príjmy dosahované na území Slovenskej republiky, pri ktorých sa
+daň vyberá zrážkou, okrem príjmov uvedených v § 43 ods. 6 zákona.
+
+                                                                              66
+Príjmy z tabuľky č. 2, r. 11, stĺ. 1                                                                                        ,
+                                                                              67
+Výdavky z tabuľky č. 2, r. 11, stĺ. 2                                                                                       ,
+Osobitný základ dane podľa § 7 zákona (r. 66 - r. 67, ak                      68
+je tento rozdiel záporný, uvádza sa v r. 68 nula)                                                                           ,
+VIII. ODDIEL - VÝPOČET ZÁKLADU DANE (čiastkového základu dane) Z OSTATNÝCH PRÍJMOV
+                         (§ 8 zákona) - v eurách
+Tabuľka č. 3 - prehľad príjmov podľa § 8 zákona
+                                                                                                                                                     16)
+R.              Druh príjmov podľa § 8 zákona                                             Príjmy                                          Výdavky
+                                                                      1                                                 2
+     z príležitostných činností vrátane príjmov z prí-
+     ležitostnej poľnohospodárskej výroby, lesného
+1    a vodného hospodárstva a z príležitostného                                                             ,                                                 ,
+     prenájmu hnuteľných vecí         /ods. 1 písm. a)
+     z prevodu vlastníctva nehnuteľností
+2                                     /ods. 1 písm. b)                                                      ,                                                 ,
+     z predaja hnuteľných vecí
+3                                             /ods. 1 písm. c)                                              ,                                                 ,
+     z prevodu opcií
+4                                             /ods. 1 písm. d)                                              ,                                                 ,
+     z prevodu cenných papierov
+5                                             /ods.1 písm. e)                                               ,                                                 ,
+     z prevodu účasti (podielu) na s. r. o., kom. spol.
+6    alebo z prevodu členských práv družstva
+                                       /ods. 1 písm. f)
+                                                                                                            ,                                                 ,
+     zo zdedených práv z priemyselného a iného dušev-
+7    ného vlastníctva vrátane autorských práv a práv
+     príbuzných autorskému právu       /ods. 1 písm. g)
+                                                                                                            ,                                                 ,
+     dôchodky a podobné opakujúce sa požitky
+8                                 /ods. 1 písm. h)                                                          ,                                                 ,
+     výhry a ceny
+9
+                                          /ods. 1 písm. i) a j)                                             ,                                                 ,
+      MF/014308/2026-721                                                                                                                               Strana 7
+     DPFOBv26_8
+                                          DIČ (Rodné číslo)
+
+     príjmy z derivátových operácií
+10                                            /ods. 1 písm. k)                                             ,                                                ,
+     peňažné plnenie a nepeňažné plnenie prijaté
+11
+     pri výkone klinického skúšania /ods. 1 písm. l)                                                       ,                                                ,
+   náhrada nemajetkovej ujmy, okrem náhrady
+12 nemajetkovej ujmy, ktorá bola spôsobená
+   trestným činom                  /ods. 1 písm. n)
+                                                                                                           ,                                                ,
+     príjmy na základe zmluvy o sponzorstve v športe,
+13 prijaté športovcom alebo športovým odborníkom
+                                    /ods. 1 písm. p)
+                                                                                                           ,                                                ,
+   náhrada za stratu času dobrovoľníka zapísaného
+14 v informačnom systéme športu podľa osobitného
+   predpisu                         /ods. 1 písm. r)
+                                                                                                           ,                                                ,
+     príjmy z prerozdelenia kapitálového
+15 fondu z príspevkov                         /ods. 1 písm. s)                                             ,                                                ,
+     príjmy z predaja kryptoaktíva
+16                                            /ods. 1 písm. t)                                             ,                                                ,
+17 iné                                                                                                     ,                                                ,
+   kladný rozdiel medzi vyššou hodnotou nepeňaž-
+18 ného vkladu započítanou na vklad spoločníka a
+   hodnotou vkladaného majetku
+                                17)
+                                          /ods. 2
+                                                                                                           ,
+19 Spolu r. 1 až 18                                                                                        ,                                                ,
+16) Ak sú výdavky v r. 1 až 16 v stĺ. 2 vyššie ako príjem v týchto riadkoch, uvádzajú sa tieto výdavky len do výšky príjmov. V r. 17 sa uvádzajú výdavky len do výšky
+    každého jednotlivého druhu príjmu, ak ide o príjem neuvedený v r. 1 až 16. Ak bol daňovník v súvislosti s poberaním týchto príjmov povinný platiť poistné
+    na verejné zdravotné poistenie podľa zákona o zdravotnom poistení, súčasťou jeho výdavkov je aj preukázateľne zaplatené zdravotné poistenie.
+17) Ak daňovník vložil do obchodnej spoločnosti alebo družstva nepeňažný vklad, uvádza sa v tomto riadku kladný rozdiel medzi vyššou hodnotou nepeňažného
+    vkladu započítanou na vklad spoločníka a hodnotou vkladaného majetku, v tom zdaňovacom období, v ktorom došlo k splateniu nepeňažného vkladu alebo
+    pomerná časť tohto rozdielu, ak sa rozhodol tento zahrnovať do základu dane (čiastkového základu dane) podľa § 8 ods. 2 zákona postupne. Ak bol daňovník
+    v súvislosti s poberaním tohto príjmu povinný platiť odvody na zdravotné poistenie, príjem v r. 18 v stĺ. 1 sa zníži o preukázateľne zaplatené zdravotné poistenie.
+    Pri postupnom zahrnovaní tohto rozdielu do základu dane sa uvádza v oddiele XIII. kalendárny rok, v ktorom došlo k poskytnutiu nepeňažného vkladu a celková
+    výška rozdielu zahrnovaného do základu dane.
+V tabuľke č. 3 stĺ. 1 súčasťou príjmov v r. 1 až 17 sú aj príjmy zo zdrojov v zahraničí, pričom údaje o týchto príjmoch sa uvádzajú v XIII. oddiele. Rovnako súčasťou
+týchto príjmov je aj podiel pripadajúci na daňovníka, ktorý dosiahol spoločne s ďalším daňovníkom alebo s viacerými daňovníkmi z dôvodu spoluvlastníctva alebo
+zo spoločných práv (§ 10 ods. 1 zákona). Údaje o týchto daňovníkoch sa uvádzajú v XIII. oddiele. Podľa § 8 ods. 2 zákona, ak sú výdavky spojené s jednotlivým
+druhom príjmu (v r. 1 až 17) vyššie ako príjem, na rozdiel sa neprihliada.
+
+                                                                             69
+Príjmy z tabuľky č. 3, r. 19, stĺ. 1                                                                                       ,
+Výdavky z tabuľky č. 3, r. 19, stĺ. 2                                        70
+                                                                                                                           ,
+                                                                             71
+Základ dane (čiastkový základ dane) (r. 69 - r. 70)                                                                        ,
+IX. ODDIEL - VÝPOČET DANE podľa § 15 zákona - v eurách
+Zníženie     Základ dane z príjmov podľa § 5 a § 6 ods. 1 a 2
+                                                              72
+základu
+dane o
+             zákona pred znížením o nezdaniteľnú časť
+             základu dane (r. 38 + r. 57)
+                                                                                                                           ,
+nezdani-     ods. 2 - na daňovníka                            73
+teľné        vypočítaná zo sumy v r. 72                                                                                    ,
+časti
+             ods. 3 - na manželku (manžela)                                  74
+podľa
+§ 11         vypočítaná zo sumy v r. 72                                                                                    ,
+zákona       ods. 8 - na preukázateľne zaplatené príspevky
+             na celoeurópsky osobný dôchodkový produkt a                     75
+             príspevky na doplnkové dôchodkové sporenie                                                                    ,
+             maximálne v úhrnnej výške 180 eur
+             Spolu (r. 73 + r. 74 + r. 75)                                   77
+             maximálne do výšky základu dane v r. 72                                                                       ,
+Základ dane z príjmov podľa § 5 po znížení o nezdaniteľnú
+                                                                             78
+časť (r. 38 - r. 77, ak je rozdiel r. 38 a r. 77 záporný, uvádza
+sa v r. 78 nula)
+                                                                                                                           ,
+Suma príspevkov alebo ich časti, o ktorú sa zvyšuje základ                   79
+dane z príjmov podľa § 11 ods. 11 a § 52zza ods. 2 zákona
+                                                          18)                                                              ,
+Základ dane zistený podľa § 4 ods. 1 písm. a) zákona                         80
+(r. 78 + r. 65 + r. 71 + r. 79)                                                                                            ,
+
+      MF/014308/2026-721                                                                                                                              Strana 8
+    DPFOBv26_9
+                                         DIČ (Rodné číslo)
+
+Daň zo základu dane zisteného podľa § 4 ods. 1 písm. a)                 81
+zákona uvedeného v riadku 80                                                  ,
+Výpočet dane       Úhrn vyňatých príjmov podľa § 5, § 6
+                                                                        82
+zo základu dane
+zisteného podľa
+                   ods. 3 a 4 a § 8 zákona
+                   [základov dane (+)]
+                                                                              ,
+§ 4 ods 1. písm a)
+zákona po vyňatí   Základ dane znížený o úhrn vyňatých
+príjmov zo zdrojov príjmov (r. 80 - r. 82)                              83
+                                                                              ,
+v zahraničí            (ak je rozdiel r. 80 a r. 82 záporný, uvádza
+                       sa v r. 83 nula)
+Daň zo základu dane zisteného podľa § 4 ods. 1 písm. a)
+                                                            84
+zákona po vyňatí príjmov zo zdrojov v zahraničí
+uvedeného v riadku 83
+                                                                              ,
+Výpočet dane       Úhrn príjmov (základov dane) podľa § 5,
+                                                            85
+zo základu dane
+zisteného podľa
+                   § 6 ods. 3 a 4 a § 8 zákona zo zdrojov
+                   v zahraničí
+                                                                              ,
+§ 4 ods. 1 písm a) Daň zaplatená v zahraničí z príjmov
+                                                            86
+zákona uznanej
+na zápočet
+                   z r. 85 - uvádza sa suma zaplatenej dane
+                       podľa zmluvy o zamedzení dvojitého zdanenia
+                                                                              ,
+na tuzemskú
+daňovú povinnosť       Výpočet percenta dane na účely zápočtu
+                                                                        87
+zo zaplatenej          r. 85 : [(r. 38 + r. 65 + r. 71 - r. 82) alebo
+                       (r. 38 + r. 65 + r. 71)] x 100
+                                                                              ,
+dane v zahraničí
+podľa zmluvy           Z dane zaplatenej v zahraničí možno              88
+o zamedzení            započítať [(r. 84 alebo r. 81) x r. 87] : 100          ,
+dvojitého zdanenia
+                       Daň uznaná na zápočet                            89
+(§ 45 ods. 1
+zákona)                (r. 88 maximálne do sumy v r. 86)                      ,
+Daň zo základu dane zisteného podľa § 4 ods 1. písm. a)
+                                                              90
+zákona po vyňatí a zápočte (daňová povinnosť)
+(r. 84 alebo r. 81) alebo (r. 84 - r. 89 alebo r. 81 - r. 89)
+                                                                              ,
+Zostatok nezdaniteľnej časti základu dane z r. 77                       91
+(ak r. 78 = 0, potom r. 77 - r. 38, inak 0)                                   ,
+Základ dane z príjmov podľa § 6 ods. 1 a 2 zákona                       92
+po znížení o nezdaniteľnú časť (r. 57 - r. 91)                                ,
+Suma príspevkov alebo ich časti, o ktorú sa zvyšuje základ              93
+dane z príjmov podľa § 11 ods. 11 a § 52zza ods. 2 zákona
+                                                          18)                 ,
+Základ dane zistený podľa § 4 ods. 1 písm. b) zákona                    94
+(r. 92 + r. 93)                                                               ,
+Zdaniteľné príjmy (výnosy) z podnikania a z inej samostatnej            95
+zárobkovej činnosti podľa § 6 ods. 1 a 2 zákona
+                                                19)                           ,
+Daň zo základu dane zisteného podľa § 4 ods. 1 písm. b)                 96
+zákona uvedeného v riadku 94                                                  ,
+Výpočet dane       Úhrn vyňatých príjmov podľa § 6 ods.
+                                                                        97
+zo základu dane
+zisteného podľa
+                   1 a 2 zákona [základov dane (+) a
+                   daňových strát (-)]
+                                                                              ,
+§ 4 ods 1. písm b)
+zákona po vyňatí   Základ dane znížený/zvýšený o úhrn
+príjmov zo zdrojov vyňatých príjmov (r. 94 - r. 97)                     98
+                                                                              ,
+v zahraničí            (ak je rozdiel r. 94 a r. 97 záporný, uvádza
+                       sa v r. 98 nula)
+Daň zo základu dane zisteného podľa § 4 ods. 1 písm. b)
+                                                             99
+zákona po vyňatí príjmov zo zdrojov v zahraničí
+uvedeného v riadku 98
+                                                                              ,
+Výpočet dane       Úhrn príjmov (základov dane) podľa § 6 100
+zo základu dane
+zisteného podľa
+                   ods. 1 a 2 zákona zo zdrojov v zahraničí                   ,
+§ 4 ods. 1 písm b) Daň zaplatená v zahraničí z príjmov
+                                                             101
+zákona uznanej
+na zápočet
+                   z r. 100 - uvádza sa suma zaplatenej dane
+                       podľa zmluvy o zamedzení dvojitého zdanenia
+                                                                              ,
+na tuzemskú            Výpočet percenta dane na účely zápočtu           102
+daňovú povinnosť
+zo zaplatenej
+                       r. 100 : [(r. 57 - r. 97) alebo r. 57] x 100           ,
+dane v zahraničí       Z dane zaplatenej v zahraničí možno              103
+podľa zmluvy
+o zamedzení
+                       započítať [(r. 99 alebo r. 96) x r. 102] : 100         ,
+dvojitého zdanenia     Daň uznaná na zápočet                            104
+(§ 45 ods. 1 zákona)   (r. 103 maximálne do sumy v r. 101)                    ,
+Daň zo základu dane zisteného podľa § 4 ods 1. písm. b)
+                                                                105
+zákona po vyňatí a zápočte (daňová povinnosť)
+(r. 99 alebo r. 96) alebo (r. 99 - r. 104 alebo r. 96 - r. 104)
+                                                                              ,
+Daň (19 %) z osobitného základu dane z príjmov podľa § 7                106
+zákona uvedeného v r. 68                                                      ,
+     MF/014308/2026-721                                                           Strana 9
+    DPFOBv26_10
+                                     DIČ (Rodné číslo)
+
+Výpočet dane         Úhrn vyňatých príjmov (základov dane) 107
+z osobitného         podľa § 7 zákona                                         ,
+základu dane podľa Základ dane znížený/zvýšený o úhrn
+§ 7 zákona           vyňatých príjmov (r. 68 - r. 107)      108
+po vyňatí príjmov zo (ak je rozdiel r. 68 a r. 107 záporný,                   ,
+zdrojov v zahraničí uvádza sa v r. 108 nula)
+Daň z osobitného základu dane podľa § 7 zákona
+po vyňatí príjmov zo zdrojov v zahraničí zo základu dane 109                  ,
+uvedeného v riadku 108
+Výpočet dane       Úhrn príjmov (základov dane) podľa § 7
+z osobitného       zákona zo zdrojov v zahraničí
+                                                                    110
+                                                                              ,
+základu dane
+podľa § 7 zákona Daň zaplatená v zahraničí z príjmov uvedených 111
+uznanej na zápo- v r. 110 - uvádza sa suma zaplatenej dane
+                   podľa zmluvy o zamedzení dvojitého zdanenia
+                                                                              ,
+čet na tuzemskú
+daňovú povinnosť Výpočet percenta dane na účely zápočtu             112
+zo zaplatenej      r. 110 : [(r. 68 - r. 107) alebo r. 68] x 100              ,
+dane v zahraničí
+podľa zmluvy       Z dane zaplatenej v zahraničí možno              113
+o zamedzení        započítať [(r. 109 alebo r. 106) x r. 112] : 100           ,
+dvojitého zdanenia
+                   Daň uznaná na zápočet                            114
+(§ 45 ods. 1
+zákona)            (r. 113 maximálne do sumy v r. 111)                        ,
+Daň z osobitného základu dane podľa § 7 zákona
+                                                                        115
+po vyňatí a zápočte (r. 109 alebo r. 106) alebo
+(r. 109 - r. 114 alebo r. 106 - r. 114)
+                                                                              ,
+Daň (daňová povinnosť) zo základu dane zisteného
+podľa § 4 zákona, z osobitného základu dane podľa § 7
+                                                                        116
+zákona a z osobitného základu dane podľa § 51e zákona                         ,
+a z osobitného základu dane podľa § 51ea zákona
+                                                                    20)
+(r. 90 + r. 105 + r. 115 + r. 28 prílohy č. 2 + r. 14 prílohy č. 3)
+Navýšený základ dane na účely výpočtu daňového bonusu
+podľa zákona (r. 34a / 12 × počet zaškrtnutých mesiacov 116a                  ,
+                         20a)
+v r. 34 + r. 38 + r. 45)
+Nárok na daňový bonus podľa zákona (na jedno dieťa                   117
+alebo úhrn na viac vyživovaných detí)
+                                      21)
+                                                                              ,
+Daň (daňová povinnosť) znížená o daňový bonus                        118
+podľa zákona (r. 116 - r. 117)
+                               22)                                            ,
+Suma daňového bonusu podľa zákona priznaného a                       119
+vyplateného zamestnávateľom                                                   ,
+                                                                     120
+Rozdiel r. 117 - r. 119 > 0                                                   ,
+Suma daňového bonusu podľa zákona na poukázanie
+správcom dane
+              23)
+                  r. 120 - r. 116 > 0
+                                                                     121
+                                                                              ,
+Suma daňového bonusu podľa zákona vyplatená zamestná- 122
+vateľom nesprávne alebo vo vyššej sume r. 119 - r. 117 > 0                    ,
+Nárok na daňový bonus na zaplatené úroky
+podľa § 33a zákona
+                   24)
+                                                                     123
+                                                                              ,
+Daň (daňová povinnosť) znížená o daňový bonus
+podľa zákona a o daňový bonus na zaplatené
+úroky podľa § 33a zákona (r. 118 - r. 123)
+                                           25)
+                                                                     124
+                                                                              ,
+Suma daňového bonusu na zaplatené úroky podľa § 33a
+zákona priznaného a vyplateného zamestnávateľom
+                                                26)
+                                                                     125
+                                                                              ,
+Rozdiel r. 123 - r. 125 > 0                                          126
+                                                                              ,
+Suma daňového bonusu na zaplatené úroky podľa § 33a
+zákona na poukázanie správcom dane
+                                   27)
+                                       r. 126 - r. 118 > 0
+                                                           127
+                                                                              ,
+Suma zamestnaneckej prémie nesprávne vyplatenej                      128
+zamestnávateľom alebo správcom dane                                           ,
+                                                                     129
+Suma preddavku vybraná podľa § 43 zákona
+                                                  28)
+                                                                              ,
+Suma preddavku vybraná pri vyplatení (vrátení) podielového
+                                                                     130
+listu obstaraného do 31. decembra 2003 podľa § 43 ods. 10
+zákona (z príjmov uvedených v r. 12 tabuľky č. 2)
+                                                  29)                         ,
+Zrazený preddavok § 35 zákona - z príjmov zo závislej                131
+na daň            činnosti
+                           30)                                                ,
+     MF/014308/2026-721                                                           Strana 10
+     DPFOBv26_11
+                                          DIČ (Rodné číslo)
+
+Zrazený preddavok § 44 zákona - na zabezpečenie                               132
+na daň            dane                                                                                                         ,
+                                                             31)
+                                                                              133
+Zaplatené preddavky na daň podľa § 34 zákona                                                                                   ,
+Zaplatené preddavky na daň podľa § 35 ods. 10 a 11                            134
+zákona                                                                                                                         ,
+Daň na úhradu vrátane zamestnávateľom nesprávne                               135
+                                                   32)
+vyplateného daňového bonusu podľa zákona
+r. 116 - r. 117 + r. 119 + r. 121 - r. 123 + r. 125 + r. 127 + r. 128                +                                         ,
+- r. 129 - r. 130 - r. 131 - r. 132 - r. 133 - r. 134 (+)
+Daňový preplatok znížený o zamestnávateľom nesprávne                          136
+vyplatený daňový bonus podľa zákona
+r. 116 - r. 117 + r. 119 + r. 121 - r. 123 + r. 125 + r. 127 + r. 128                -                                         ,
+- r. 129 - r. 130 - r. 131 - r. 132 - r. 133 - r. 134 (-)
+18) Daňovník uvedie sumu príspevkov len na r. 79 alebo len r. 93 alebo ju rozdelí a uvedie časť na r. 79 a časť na r. 93.
+19) V r. 95 uvedie daňovník všetky zdaniteľné príjmy, o ktorých účtuje v sústave jednoduchého účtovníctva alebo vedie evidenciu podľa § 6 ods. 10 a 11 aj keď nie sú
+    súčasťou základu dane (čiastkového základu dane) z príjmov podľa § 6 ods. 1 a 2 zákona. Ak daňovník účtuje v sústave podvojného účtovníctva uvedie v r. 95 všetky
+    výnosy, ktoré sú predmetom dane a nie sú od dane oslobodené.
+20a) Vypĺňa sa, len ak daňovník postupuje podľa § 33 ods. 8 zákona.
+20) Ak daňovník neuplatňuje nárok na daňový bonus podľa zákona (r. 117) alebo daňový bonus na zaplatené úroky podľa § 33a zákona (r. 123) a výsledná suma dane
+    nepresiahne 17 eur alebo ak daňovník neuplatňuje nárok na daňový bonus podľa zákona (r. 117) alebo daňový bonus na zaplatené úroky podľa § 33a zákona (r. 123)
+    a jeho celkové zdaniteľné príjmy nepresiahnu 50 % sumy podľa § 11 ods. 2 písm. a) zákona alebo ide o daňovníka uvedeného v § 11 ods. 6 zákona, ktorý uplatňuje
+    postup podľa § 46a zákona, v r. 116 sa uvádza nula.
+21) Ak sa uplatňuje daňový bonus podľa zákona, uvádza sa suma daňového bonusu na jedno dieťa alebo úhrn súm na viac detí (podľa údajov uvedených v III. a XIII.
+    oddiele).
+22) Ak je suma v r. 117 vyššia ako suma v r. 116, uvádza sa nula.
+23) Ak je v r. 121 suma daňového bonusu podľa zákona na vyplatenie správcom dane alebo kladná suma v r. 142, vypĺňa sa žiadosť o jej vyplatenie v XIV. oddiele.
+24) Ak daňovník uplatňuje daňový bonus na zaplatené úroky a zmluvu o úvere na bývanie uzavrel najneskôr do 31.12.2023, daňovým bonusom na zaplatené úroky je
+    suma vo výške 50% zo zaplatených úrokov v príslušnom zdaňovacom období, najviac však do výšky 400 eur za rok. Ak daňovník uplatňuje daňový bonus
+    na zaplatené úroky a zmluvu o úvere na bývanie uzavrel najskôr po 31. 12. 2023, daňovým bonusom na zaplatené úroky je suma vo výške 50% zo zaplatených
+    úrokov v príslušnom zdaňovacom období, najviac však do výšky 1 200 eur za rok. Ak obdobie úročenia úveru na bývanie, počas ktorého má daňovník nárok na tento
+    daňový bonus, začalo alebo skončilo v priebehu zdaňovacieho obdobia, uvádza sa v r. 123 suma zodpovedajúca pomernej časti daňového bonusu na zaplatené
+    úroky podľa § 33a zákona z maximálnej sumy určenej zákonom pripadajúca na počet kalendárnych mesiacov, v ktorých vznikol nárok na jeho uplatnenie.
+25) Ak je suma v r. 123 vyššia ako suma v r. 118, uvádza sa nula.
+26) Vypĺňa sa, ak bolo podané daňové priznanie po vykonaní ročného zúčtovania.
+27) Ak je v r. 127 suma daňového bonusu na zaplatené úroky podľa § 33a zákona na vyplatenie správcom dane alebo v r. 144 dodatočného daňového priznania kladné
+    číslo, vypĺňa sa žiadosť o jej vyplatenie v XIV. oddiele.
+28) Uvádza sa len tá suma preddavku, ktorá sa vzťahuje k príjmom uvedeným v § 43 ods. 6 písm. a) až c) zákona, ktoré si daňovník priznáva v daňovom priznaní (§ 4 ods.
+    6 a § 7 ods. 10 zákona) okrem sumy preddavku vybranej pri vyplatení (vrátení) podielového listu obstaraného do 31.decembra 2003 podľa § 43 ods. 10 zákona (táto
+    suma sa uvedie v r. 130). Suma preddavku vybraná u manželov sa delí v rovnakom pomere, ako si delia príjmy, ktoré si priznávajú na zdanenie v daňovom priznaní.
+    Ak suma preddavku bola vybraná u v. o. s., uvádza sa v r. 129 len podiel z toho preddavku, ktorý je v rovnakej výške, ako si spoločníci tejto spoločnosti delia zisk.
+    Rovnako sa postupuje aj, ak ide o komplementára kom. spol. Riadok 129 sa vypĺňa na základe kópií potvrdení o príjmoch, z ktorých sa daň vybrala podľa § 43
+    zákona, pri ktorých sa daňovník rozhodol vybratú daň považovať za preddavok podľa § 43 ods. 6 zákona. Kópie potvrdení sú prílohami daňového priznania.
+29) Ak sa vypĺňa r. 130, prílohou daňového priznania je aj kópia potvrdenia (potvrdení) o týchto príjmoch a o sume preddavku vybranej pri vyplatení (vrátení) podielového
+    listu obstaraného do 31. decembra 2003 podľa § 43 ods. 10 zákona.
+30) Preddavok (preddavky) z potvrdení (dokladov) o zdaniteľných príjmoch zo závislej činnosti, ktoré sú prílohami daňového priznania. V uvedenom riadku sa
+    neuvádzajú preddavky zrazené podľa daňových právnych predpisov platných v zahraničí, preddavky, ktoré nie sú zrazené v súlade s § 35 zákona, a tiež preddavky
+    platené daňovníkom podľa § 35 ods. 10 a 11 zákona, ktoré sú uvedené v r. 134.
+31) Do tejto sumy sa uvádzajú aj preddavky, ktoré daňovník uhradil po skončení zdaňovacieho obdobia, do lehoty na podanie daňového priznania, ak sa vzťahujú
+    k daňovej povinnosti za zdaňovacie obdobie, za ktoré sa daňové priznanie podáva. Rovnako súčasťou tejto sumy je aj preplatok použitý na úhradu preddavkov.
+    Do tejto sumy sa nezapočítavajú preddavky platené daňovníkom na budúce zdaňovacie obdobie.
+32) Daň na úhradu sa neplatí, ak nepresiahne 5 eur, a to aj vtedy, ak daňovník využije postup podľa § 50 alebo § 50aa zákona, pričom v tomto riadku sa uvádza nula.
+
+X. ODDIEL - ROZDIELY Z DODATOČNÉHO DAŇOVÉHO PRIZNANIA - v eurách
+Daň (daňová povinnosť) z r. 116 daňového priznania 33)                                                     137
+                                    33)
+alebo r. 56 daňového priznania typ A alebo r. 06 ročného zúčtovania                                                                                          ,
+                                                                                                           138
+Zvýšenie (+) alebo zníženie (-) dane (r. 116 - r. 137)                                                                                                       ,
+Daň na úhradu z r. 135 alebo daňový preplatok z r. 136 daňového priznania33)                               139
+                                                33)
+alebo r. 71 alebo r. 72 daňového priznania typ A alebo r. 21 ročného zúčtovania                                                                              ,
+Daň na úhradu (+) alebo daňový preplatok (-) (r. 135 alebo r. 136) - r. 139 + [(r. 152 daňového
+          33)                         34)
+priznania - 2% alebo 3% z r. 124) > 0] alebo (r. 135 alebo r. 136) - r. 139 + [(r. 82           140
+                          33)                           34)
+daňového priznania typ A - 2% alebo 3% z r. 124) > 0] alebo (r. 135 alebo r. 136) - r. 139 +
+                                                                                            34)
+                                                                                                                                                             ,
+[(r. 13 vyhlásenia o poukázaní sumy podielu zaplatenej dane - 2% alebo 3% z r. 124) > 0]
+Suma daňového bonusu podľa zákona na poukázanie správcom dane
+                                                                                                           141
+                           33)                                  33)
+z r. 121 daňového priznania alebo r. 61 daňového priznania typ A alebo
+r. 12 ročného zúčtovania
+                                                                                                                                                             ,
+Rozdiel súm daňového bonusu podľa zákona na poukázanie správcom dane
+(+), na vrátenie správcovi dane (-) (r. 121 - r. 141)
+                                                      23)
+                                                                                                           142
+                                                                                                                                                             ,
+Suma daňového bonusu na zaplatené úroky podľa § 33a zákona na poukázanie
+                                                                                                           143
+                                             33)
+správcom dane z r. 127 daňového priznania alebo r. 67 daňového priznania typ
+A33) alebo r. 16 ročného zúčtovania
+                                                                                                                                                             ,
+Rozdiel súm daňového bonusu na zaplatené úroky podľa § 33a zákona na                                       144
+poukázanie správcom dane (+), na vrátenie správcovi dane (-) (r. 127 - r. 143)
+                                                                              27)
+                                                                                                                                                             ,
+33) Ide o daňové priznanie podané v lehote na podanie daňového priznania podľa § 49 zákona alebo o bezprostredne predchádzajúce podané dodatočné daňové
+    priznanie, ak daňovník podáva ďalšie dodatočné daňové priznanie.
+34) Ak daňovník uplatňoval postup podľa § 50aa zákona, daňový preplatok je potrebné upraviť v súlade s § 50aa ods. 8 zákona.
+
+      MF/014308/2026-721                                                                                                                               Strana 11
+         DPFOBv26_12
+                                             DIČ (Rodné číslo)
+
+    XI. ODDIEL - ĎALŠIE ÚDAJE O DAŇOVNÍKOVI
+145 - Štát daňovej rezidencie 35)
+
+
+
+    Úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území                                          146
+    Slovenskej republiky a zo zdrojov v zahraničí v eurách
+                                                           35a)
+                                                                                                                                                               ,
+z toho
+         úhrn všetkých zdaniteľných príjmov plynúcich zo zdrojov na území                                     146a
+         Slovenskej republiky
+                              35a)
+                                                                                                                                                               ,
+    Výška výnosu z prenájmu nehnuteľnosti podľa § 6 ods. 3 zákona, ak nerezident                              147
+    účtuje v sústave podvojného účtovníctva                                                                                                                    ,
+    Výška príjmu (výnosu) z prevodu nehnuteľností, ktoré sú zaradené do obchodného 148
+    majetku nerezidenta s príjmami podľa § 6 ods. 1 a 2 zákona                                                                                                 ,
+    Uplatňujem lehotu na podanie daňového                        149                      Počet stálych prevádzkarní umiestnených                    150
+                                                                                áno                                     36)
+    priznania podľa § 49 ods. 7 prvej vety zákona                                         na území Slovenskej republiky
+    35) Vypĺňa sa, ak ide o daňovníka s obmedzenou daňovou povinnosťou.
+    35a) Vypĺňa sa, ak ide o daňovníka s neobmedzenou daňovou povinnosťou (rezidenta), ktorý uplatňuje postup podľa § 33 ods. 9 zákona a ak ide o daňovníka
+        s obmedzenou daňovou povinnosťou (nerezidenta), ktorý uplatňuje postup podľa § 11 ods. 7, § 33 ods. 9, § 33a ods. 10 a § 46a zákona a ak ide o daňovníka
+        (rezidenta aj nerezidenta), ktorý je druhou oprávnenou osobou pre účely uplatnenia § 33 ods. 8 zákona. V riadku sa uvádzajú aj zdaniteľné príjmy, z ktorých sa daň
+        vyberá zrážkou.
+    36) Ak daňovník s obmedzenou daňovou povinnosťou má na území Slovenskej republiky viac stálych prevádzkarní, uvádza sa ich počet v r. 150 a v XIII. oddiele sa
+        uvádzajú ich adresy umiestnenia.
+
+    XII. ODDIEL - VYHLÁSENIE o poukázaní podielu zaplatenej dane z príjmov fyzickej osoby podľa § 50 a § 50aa zákona
+151 - ÚDAJE O PRIJÍMATEĽOVI                                       neuplatňujem postup podľa § 50 zákona (vyznačí sa x)
+IČO
+         37)
+                                                                  spĺňam podmienky            2 % alebo 3 % 38)
+                                                                  na poukázanie 3 %           zo zaplatenej dane         152
+                                                                  z dane
+                                                                         38)
+                                                                                              (minimálne 3 eurá)                                              ,
+                                                                  (vyznačí sa x)              z r. 124
+Obchodné meno (názov)
+
+
+
+
+          súhlasím so zaslaním údajov (meno, priezvisko a trvalý pobyt) mnou určenému prijímateľovi podielu zaplatenej dane
+          uvedenému v r. 151 podľa § 50 ods. 8 zákona (vyznačí sa x)
+153 - ÚDAJE O RODIČOVI / RODIČOCH                                 neuplatňujem postup podľa § 50aa zákona (vyznačí sa x)
+     Rodné číslo                                        Priezvisko                                                     Meno
+
+a
+                                 /
+b
+                                 /
+                                                                                                                                                     39)
+          bol som zverený do starostlivosti nahrádzajúcej starostlivosť rodičov na základe rozhodnutia príslušného orgánu                                  (vyznačí sa x)
+    37) IČO sa zarovnáva sprava a ak obsahuje menej ako 12 čísiel, nepoužité polia zostávajú prázdne.
+    38) Podiel do výšky 3 % dane podľa § 50 ods. 1 písm. a) zákona môže prijímateľovi poukázať fyzická
+         osoba, ktorá v zdaňovacom období vykonávala dobrovoľnícku činnosť podľa zákona
+         č. 406/2011 Z. z. o dobrovoľníctve a o zmene a doplnení niektorých zákonov v znení neskorších
+         predpisov počas najmenej 40 hodín, pričom písomné potvrdenie o výkone tejto činnosti je
+         prílohou daňového priznania.                                                                                   podpis daňovníka (zástupcu)
+    39) Kópia rozhodnutia príslušného orgánu o zverení do starostlivosti nahrádzajúcej starostlivosť                   podpisuje sa len pri uplatňovaní postupu
+         rodičov je prílohou daňového priznania.                                                                             podľa § 50 a § 50aa zákona
+
+    XIII. ODDIEL - MIESTO NA OSOBITNÉ ZÁZNAMY DAŇOVNÍKA
+           Uvádzam osobitné záznamy
+    Údaje o príjmoch a výdavkoch dosahovaných daňovníkom s neobmedzenou daňovou povinnosťou zo zdrojov v zahraničí, ktoré sú
+    súčasťou základu dane, osobitného základu dane podľa § 7, § 51e a § 51ea zákona
+                   Druh príjmu                                                                                                                                         40)
+Kód štátu                                                  Príjmy                                         Výdavky                              z toho výdavky
+                   §    ods. písm.
+
+                                                                           ,                                                ,                                      ,
+                                                                           ,                                                ,                                      ,
+                                                                           ,                                                ,                                      ,
+          MF/014308/2026-721                                                                                                                               Strana 12
+     DPFOBv26_13
+                                        DIČ (Rodné číslo)
+
+              Druh príjmu                                                                                                                                 40)
+Kód štátu                                              Príjmy                                      Výdavky                            z toho výdavky
+               §     ods. písm.
+
+                                                                     ,                                              ,                                 ,
+                                                                     ,                                              ,                                 ,
+                                                                     ,                                              ,                                 ,
+40) Z toho výdavky na povinné zahraničné poistenie preukázateľne zaplatené z príjmov podľa § 5 a § 6 ods. 1 a 2 zákona.
+
+      Uplatňujem príspevok na rekreáciu podľa § 19 ods. 2 písm. w) zákona
+
+Výška príspevku na rekreáciu                              ,
+Údaje požadované v jednotlivých oddieloch pod tabuľkami č. 1, 2 a 3 sa uvádzajú v členení:
+druh a výška príjmov dosiahnutých zo zdrojov v zahraničí (vypíše sa jednotlivo pre každý druh príjmov podľa § 5 až 8 zákona), pričom sa uvádza číselný kód
+štátu podľa vyhlášky Štatistického úradu Slovenskej republiky č. 112/2012 Z. z., ktorou sa vydáva Štatistický číselník krajín v znení vyhlášky č. 108/2014 Z.z.;
+ak má daňovník viac druhov príjmov dosiahnutých v zahraničí podľa § 5 až 8 zákona, uvádzajú sa v tabuľke najskôr príjmy podľa § 5 a § 6 ods. 1 a 2 zákona,
+pričom ďalšie druhy príjmov sa uvádzajú v mieste na osobitné záznamy pod tabuľkou; ak ide o spoločne dosiahnuté príjmy, uvádza sa meno, priezvisko,
+adresa trvalého pobytu, DIČ alebo rodné číslo a celkové spoločne dosiahnuté príjmy a výdavky; ak ide o účastníkov združenia, uvádza sa aj percentuálny
+podiel pripadajúci na každého účastníka združenia.
+
+
+
+
+               Ak nepostačuje miesto na osobitné záznamy, uvádzajú sa v tomto členení v osobitnej prílohe tohto daňového priznania.
+
+                   154              Uvádza sa počet všetkých príloh, ktoré
+Počet príloh                        sú súčasťou daňového priznania (vrátane
+                                    príloh č. 1 až 4, len ak sa vypĺňajú)
+Vyhlasujem, že všetky údaje uvedené v daňovom priznaní
+sú správne a úplné.
+                       Dátum                       .            .                                        podpis daňovníka (zástupcu)
+
+XIV. ODDIEL - ŽIADOSŤ O VRÁTENIE DAŇOVÉHO PREPLATKU ALEBO O VYPLATENIE DAŇOVÉHO BONUSU
+      Žiadam o vyplatenie daňového bonusu alebo rozdielu daňového bonusu podľa zákona
+      (r. 121 alebo rozdiel z r. 142, ak je kladný)
+      Žiadam o vyplatenie daňového bonusu na zaplatené úroky alebo rozdielu daňového bonusu na zaplatené úroky
+      podľa § 33a zákona (r. 127 alebo rozdiel z r. 144, ak je kladný)
+      Žiadam o vrátenie daňového preplatku podľa § 79 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a
+      o zmene a doplnení niektorých zákonov v znení neskorších predpisov (z r. 136 alebo rozdiel z r. 140, ak je záporný)
+                   poštovou poukážkou                           na účet               na účet v zahraničí, ktorého nie som majiteľom
+                   (do výšky 15 000 eur vrátane)
+
+IBAN
+U daňovníka, ktorý žiada vrátenie daňového preplatku alebo vyplatenie daňového bonusu na bankový účet vedený v zahraničí (cezhraničný prevod finančných
+prostriedkov) v inom formáte ako IBAN, sa uvádza v XIII. oddiele číslo bankového účtu, SWIFT/BIC kód, názov banky, mesto a štát banky alebo pobočky
+banky daňovníka. Ak daňovník nie je majiteľom bankového účtu, uvádza sa v XIII. oddiele názov bankového účtu príjemcu.
+
+
+Dátum                .         .                          podpis daňovníka
+                                                             (zástupcu)
+
+
+
+      MF/014308/2026-721                                                                                                                        Strana 13
+     DPFOBv26_14
+                                          DIČ (Rodné číslo)
+
+PRÍLOHA č. 1 - Odpočet výdavkov (nákladov) na výskum a vývoj a údaje
+               o projektoch výskumu a vývoja podľa § 30c zákona
+Projekt výskumu a vývoja (ďalej len „projekt“)                                                    Dátum začiatku
+číslo / počet projektov                                                     /                     realizácie projektu                    .          .
+                                                 Výška vykázaného nároku na odpočet výdavkov                                    časť odpočítavaná
+           Zdaňovacie obdobie                    (nákladov) na výskum a vývoj podľa § 30c ods. 1                        v príslušnom zdaňovacom období
+                                                          zákona v zdaňovacom období
+                                           1                                                             2                                                             3
+
+            .           .                                                                     ,                                                             ,
+1
+            .           .
+            .           .                                                                     ,                                                             ,
+2
+            .           .
+            .           .                                                                     ,                                                             ,
+3
+            .           .
+            .           .                                                                     ,                                                             ,
+4
+            .           .
+            .           .                                                                     ,                                                             ,
+5
+            .           .
+6   SPOLU                                                                                                                                                   ,
+Ciele projektu, ktoré sú dosiahnuteľné podľa doby jeho realizácie a merateľné po jeho ukončení
+
+
+
+
+7 Odpočet 41) podľa § 30c ods. 1 zákona         (súčet všetkých r. 6 Prílohy č. 1)                                                                          ,
+8 Odpočet 41) podľa § 30c ods. 2 zákona                                                                                                                     ,
+41) V r. 7 sa uvádza suma odpočtu podľa § 30c ods. 1 zákona odpočítavaná v príslušnom zdaňovacom období v úhrne z r. 6 za všetky projekty. Riadok 7 sa vypĺňa aj
+    pri daňovníkovi, ktorý uplatňuje odpočet výdavkov (nákladov) na výskum a vývoj iba za jeden projekt, pričom sa v ňom uvádza suma z r. 6. V r. 8 sa uvádza suma
+    odpočtu podľa § 30c ods. 2 zákona odpočítavaná v príslušnom zdaňovacom období. Riadky 7 a 8 sa vypĺňajú len v prílohe k § 30c zákona, v ktorej sa uvádza
+    projekt č. 1.
+           42)
+9 SPOLU odpočet podľa § 30c ods. 1 a 2 zákona za všetky projekty                                                                                            ,
+  (r. 7 + r. 8)
+42) Pri daňovníkovi, ktorý odpočítava výdavky (náklady) na výskum a vývoj podľa § 30c ods. 1 zákona u viacerých projektov, sa vypĺňajú r. 1 až 6 za každý projekt
+   samostatne, pričom r. 9 sa vypĺňa len v prílohe k § 30c zákona, v ktorej sa uvádza projekt č. 1. V r. 9 sa uvádza suma odpočtu podľa § 30c ods. 1 zákona z r. 7 a suma
+   odpočtu podľa § 30c ods. 2 zákona z r. 8, pričom suma v r. 9 sa uvádza najviac do výšky čiastkového základu dane uvedeného v r. 55 a údaj z r. 9 sa prenáša do r. 56.
+
+
+
+      MF/014308/2026-721                                                                                                                                Príloha
+       DPFOBv26_15
+                                       DIČ (Rodné číslo)
+
+PRÍLOHA č. 1b - Evidencia a odpočet výdavkov (nákladov) na investície podľa § 30e zákona
+                                                      Hodnota investície zaradená
+                                                 do užívania alebo obchodného majetku
+            Zdaňovacie obdobie                         podľa § 30e ods. 5 zákona
+                                                                                            2
+                                             Výška vykázaného nároku na odpočet výdavkov                časť odpočítavaná
+                                           (nákladov) na investície podľa § 30e ods. 1 zákona   v príslušnom zdaňovacom období
+                                                          v zdaňovacom období
+                                       1                                                    3                                      4
+
+             .         .                                                           ,
+1
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+2
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+3
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+4
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+5
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+6
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+7
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+8
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+9
+             .         .                                                           ,                                        ,
+             .         .                                                           ,
+10
+             .         .                                                           ,                                        ,
+11    SPOLU                                                                                                                 ,
+     Plánovaná výška preinvestovania priemernej hodnoty investícií v %
+12
+     podľa § 30e ods. 8 zákona                                                                                              ,
+
+
+
+
+       MF/014308/2026-721                                                                                                Príloha
+      DPFOBv26_16
+                                         DIČ (Rodné číslo)
+
+PRÍLOHA č. 1c - Odpočet výdavkov (nákladov) na podporu športu podľa § 30ca zákona
+                                                Výška vykázaného nároku na odpočet výdavkov                                 časť odpočítavaná
+           Zdaňovacie obdobie                  (nákladov) na podporu športu podľa § 30ca ods. 1                     v príslušnom zdaňovacom období
+                                                        zákona v zdaňovacom období
+                                         1                                                            2                                                           3
+
+            .          .                                                                   ,                                                            ,
+1
+            .          .
+            .          .                                                                   ,                                                            ,
+2
+            .          .
+            .          .                                                                   ,                                                            ,
+3
+            .          .
+            .          .                                                                   ,                                                            ,
+4
+            .          .
+            .          .                                                                   ,                                                            ,
+5
+            .          .
+6 Odpočet podľa § 30ca ods. 1 zákona                                                                                                                    ,
+7 Odpočet podľa § 30ca ods. 2 zákona                                                                                                                    ,
+           43)
+8 SPOLU odpočet podľa § 30ca ods. 1 a 2 zákona                                                                                                          ,
+  (r. 6 + r. 7)
+43) Pri daňovníkovi, ktorý odpočítava výdavky (náklady) na podporu športu podľa § 30ca ods. 1 zákona, sa vypĺňajú r. 1 až 6. V r. 8 sa uvádza suma súčtu odpočtu
+    podľa § 30ca ods. 1 zákona z r. 6 a suma odpočtu podľa § 30ca ods. 2 zákona z r. 7, pričom suma v r. 8 sa uvádza najviac do výšky základu dane uvedeného v r. 55
+    zníženého o odpočet výdavkov (nákladov) podľa § 30c a 30e, ale zároveň v úhrnnej sume najviac do výšky 250 000 eur a údaj z r. 8 sa prenáša do r. 56.
+
+Údaje o športovej organizácii, ktorej bolo poskytnuté plnenie podľa § 30ca ods. 7 zákona
+
+Dátum začiatku realizácie podpory športu                      .          .
+    37)
+IČO
+
+
+Názov športovej organizácie
+
+
+
+
+Adresa sídla
+Ulica                                                                                                                            Súpisné/orientačné číslo
+
+
+
+PSČ                     Obec
+
+
+
+
+      MF/014308/2026-721                                                                                                                           Príloha
+    DPFOBv26_17
+                                           DIČ (Rodné číslo)
+
+PRÍLOHA č. 2 - Podiely na zisku (dividendy) a ostatné príjmy, ktoré sú súčasťou osobitného
+               základu dane podľa § 51e zákona
+Podiely na zisku (dividendy) a ostatné príjmy, ktoré sú súčasťou osobitného základu dane podľa § 51e zákona, ak sú vyplácané
+od právnickej osoby, ktorá je daňovníkom štátu, s ktorým má Slovenská republika uzavretú zmluvu o zamedzení dvojitého
+zdanenia a od právnickej osoby, ktorá je daňovníkom štátu, s ktorým nemá Slovenská republika uzavretú zmluvu o zamedzení
+dvojitého zdanenia, pričom nejde o daňovníka nespolupracujúceho štátu podľa § 2 písm. x) zákona
+
+Druh príjmov (výnosov) plynúci od právnickej osoby, ktorá
+ je daňovníkom štátu, s ktorým má Slovenská republika
+   uzavretú zmluvu o zamedzení dvojitého zdanenia a
+od právnickej osoby, ktorá je daňovníkom štátu, s ktorým
+                                                                          Suma príjmov (výnosov)                        Suma výdavkov (nákladov)
+nemá Slovenská republika uzavretú zmluvu o zamedzení
+      dvojitého zdanenia, pričom nejde o daňovníka
+  nespolupracujúceho štátu podľa § 2 písm. x) zákona
+                                                                  1                                              2
+                                                             01
+Podiel na zisku (dividenda)                                                                          ,
+Podiel člena pozemkového spoločenstva s                      02
+právnou subjektivitou na zisku a na majetku
+                                            44)
+                                                                                                     ,
+Podiel na výsledku podnikania vyplácaný                      03
+tichému spoločníkovi                                                                                 ,
+                                                             04
+Vyrovnací podiel
+                    45)
+                                                                                                     ,                                              ,
+                                                             05
+Podiel na likvidačnom zostatku
+                                     45)
+                                                                                                     ,                                              ,
+                                                             06
+Spolu                                                                                                ,                                              ,
+44) Uvádza sa suma presahujúca 500 eur. Ak je tento podiel vyplácaný viacerými pozemkovými spoločenstvami so sídlom v zahraničí, uvádza sa úhrn súm presahujúci
+    500 eur od každého pozemkového spoločenstva.
+45) Suma výdavku (nákladu) sa uplatňuje v hodnote splateného vkladu zistenej podľa § 25a písm. c) až f) zákona za každý podiel jednotlivo, pričom ak je hodnota
+    splateného vkladu vyššia ako vyrovnací podiel alebo podiel na likvidačnom zostatku, na rozdiel sa neprihliada.
+
+Výpočet dane z osobitného základu dane podľa § 51e zákona podielov na zisku (dividendy) a ostatných príjmov, ktoré sú
+súčasťou tohto osobitného základu dane, ktoré sú vyplácané od právnickej osoby, ktorá je daňovníkom štátu, s ktorým má
+Slovenská republika uzavretú zmluvu o zamedzení dvojitého zdanenia a od právnickej osoby, ktorá je daňovníkom štátu,
+s ktorým nemá Slovenská republika uzavretú zmluvu o zamedzení dvojitého zdanenia, pričom nejde o daňovníka
+nespolupracujúceho štátu podľa § 2 písm. x) zákona
+Osobitný základ dane podľa § 51e zákona                                               07
+(r. 06 stĺ. 1 - r. 06 stĺ. 2)                                                                                                     ,
+Sadzba dane (v %)                                                                     08
+
+Daň z osobitného základu dane vypočítaná sadzbou dane
+                                                                                      09
+podľa § 15 písm. a) piateho bodu zákona
+(r. 07 x r. 08) : 100
+                                                                                                                                  ,
+Výpočet dane po vyňatí podielov na zisku (dividend) a ostatných príjmov zo zdrojov v zahraničí, ktoré sú súčasťou
+osobitného základu dane podľa § 51e zákona
+Úhrn vyňatých podielov na zisku (dividend) a ostatných príjmov                        10
+(základov dane), ktoré sú súčasťou príjmov uvedených v r. 06                                                                      ,
+Podiely na zisku (dividendy) a ostatné príjmy (základy dane) znížené                  11
+o úhrn vyňatých podielov na zisku (r. 07 - r. 10)                                                                                 ,
+Daň po vyňatí podielov na zisku (dividend) a ostatných príjmov
+                                                                                      12
+(základov dane) zo zdrojov v zahraničí
+(r. 11 x r. 08) : 100
+                                                                                                                                  ,
+Výpočet dane uznanej na zápočet na daňovú povinnosť v tuzemsku zo zaplatenej dane v zahraničí z podielov na zisku
+(dividend) a ostatných príjmov, ktoré sú súčasťou osobitného základu dane podľa § 51e zákona
+Úhrn podielov na zisku (dividend) a ostatných príjmov (základov                       13
+dane), ktoré sú súčasťou príjmov uvedených v r. 06                                                                                ,
+Daň zaplatená v zahraničí z príjmov z r. 13 - uvádza sa suma                          14
+zaplatenej dane podľa zmluvy o zamedzení dvojitého zdanenia                                                                       ,
+Výpočet percenta dane na účely zápočtu                                                15
+r. 13 : [(r. 07 - r. 10) alebo r. 07] x 100                                                                                       ,
+Z dane zaplatenej v zahraničí možno započítať                                         16
+[(r. 12 alebo r. 09) x r. 15] : 100                                                                                               ,
+
+     MF/014308/2026-721                                                                                                                        Príloha
+    DPFOBv26_18
+                                        DIČ (Rodné číslo)
+
+Daň uznaná na zápočet                                                    17
+(r. 16 maximálne do sumy v r. 14)                                                                    ,
+Daň z osobitného základu dane
+                                                                         18
+podľa § 51e zákona po vyňatí a zápočte
+(r. 12 alebo r. 09) alebo (r. 12 - r. 17 alebo r. 09 - r. 17)
+                                                                                                     ,
+Podiely na zisku (dividendy) a ostatné príjmy, ktoré sú súčasťou osobitného základu dane podľa § 51e zákona, ak sú vyplácané
+od právnickej osoby, ktorá je daňovníkom nespolupracujúceho štátu podľa § 2 písm. x) zákona
+
+Druh príjmov (výnosov) plynúci od právnickej osoby,
+                                                                 Suma príjmov (výnosov)       Suma výdavkov (nákladov)
+  ktorá je daňovníkom nespolupracujúceho štátu
+             podľa § 2 písm. x) zákona                       1                            2
+                                                        19
+Podiel na zisku (dividenda)                                                          ,
+Podiel člena pozemkového spoločenstva s                 20
+právnou subjektivitou na zisku a na majetku
+                                            44)
+                                                                                     ,
+Podiel na výsledku podnikania vyplácaný                 21
+tichému spoločníkovi                                                                 ,
+                                                        22
+Vyrovnací podiel
+                   45)
+                                                                                     ,                              ,
+                                                        23
+Podiel na likvidačnom zostatku
+                                  45)
+                                                                                     ,                              ,
+                                                        24
+Spolu                                                                                ,                              ,
+Výpočet dane z osobitného základu dane podľa § 51e zákona podielov na zisku (dividendy) a ostatných príjmov, ktoré sú
+súčasťou tohto osobitného základu dane, ktoré sú vyplácané od právnickej osoby, ktorá je daňovníkom nespolupracujúceho
+štátu podľa § 2 písm. x) zákona
+Osobitný základ dane podľa § 51e zákona                                  25
+(r. 24 stĺ. 1 - r. 24 stĺ. 2)                                                                        ,
+Sadzba dane (v %)                                                        26
+
+Daň z osobitného základu dane vypočítaná sadzbou dane podľa
+                                                                         27
+§ 15 písm. a) šiesteho bodu zákona
+(r. 25 x r. 26) : 100
+                                                                                                     ,
+Daň z osobitného základu dane podľa § 51e zákona                         28
+(r. 18 + r. 27)                                                                                      ,
+
+
+
+
+     MF/014308/2026-721                                                                                         Príloha
+    DPFOBv26_19
+                                    DIČ (Rodné číslo)
+
+PRÍLOHA č. 3 - Výnosy (príjmy) zo štátnych dlhopisov a štátnych pokladničných poukážok,
+               ktoré sú súčasťou osobitného základu dane podľa § 51ea zákona
+Výnosy (príjmy) zo štátnych dlhopisov a štátnych pokladničných poukážok, ktoré sú súčasťou osobitného základu dane
+podľa § 51ea zákona, ak sú vyplácané zo štátnych dlhopisov a štátnych pokladničných poukážok, výnosy (príjmy) vyplácané
+z dlhopisov a pokladničných poukážok vydaných iným členským štátom Európskej únie alebo štátom, ktorý je zmluvnou
+stranou Dohody o Európskom hospodárskom priestore, okrem výnosov (príjmov) vyplácaných daňovníkovi podľa § 43 ods. 3
+písm. i) a v) zákona.
+                        Druh príjmov (výnosov)                              Suma príjmov (výnosov)
+Výnosy (príjmy) zo štátnych dlhopisov a štátnych pokladničných       01
+poukážok                                                                                             ,
+Výnosy (príjmy) vyplácané z dlhopisov a pokladničných poukážok
+vydaných iným členským štátom Európskej únie alebo štátom, ktorý je 02
+zmluvnou stranou Dohody o Európskom hospodárskom priestore                                           ,
+okrem výnosov (príjmov) vyplácaných daňovníkovi podľa § 43 ods. 3
+písm. i) a v) zákona
+Osobitný základ dane podľa § 51ea zákona                             03
+r. 01 + r. 02                                                                                        ,
+Sadzba dane (v %)                                                    04
+
+Daň z osobitného základu dane vypočítaná sadzbou dane
+                                                                     05
+podľa § 15 písm. a) siedmeho bodu zákona
+(r. 03 x r. 04) : 100
+                                                                                                     ,
+Výpočet dane po vyňatí výnosov (príjmov) vyplácaných z dlhopisov a pokladničných poukážok vydaných iným členským
+štátom Európskej únie alebo štátom, ktorý je zmluvnou stranou Dohody o Európskom hospodárskom priestore, okrem
+výnosov (príjmov) vyplácaných daňovníkovi podľa § 43 ods. 3 písm. i) a v) zákona zo zdrojov v zahraničí, ktoré sú súčasťou
+osobitného základu dane podľa § 51ea zákona
+
+Úhrn vyňatých výnosov (príjmov) z dlhopisov a pokladničných poukážok 06
+(základov dane), ktoré sú súčasťou príjmov uvedených v r. 03                                         ,
+Osobitný základ dane podľa § 51ea zákona znížený o úhrn vyňatých
+                                                                     07
+výnosov (príjmov) vyplácaných z dlhopisov a pokladničných poukážok                                   ,
+(r. 03 - r. 06)
+Daň po vyňatí výnosov (príjmov) a z dlhopisov a pokladničných
+                                                                     08
+poukážok (základov dane) zo zdrojov v zahraničí
+(r. 07 x r. 04) : 100
+                                                                                                     ,
+Výpočet dane uznanej na zápočet na daňovú povinnosť v tuzemsku zo zaplatenej dane v zahraničí z výnosov (príjmov)
+vyplácaných z dlhopisov a pokladničných poukážok vydaných iným členským štátom Európskej únie alebo štátom, ktorý je
+zmluvnou stranou Dohody o Európskom hospodárskom priestore, okrem výnosov (príjmov) vyplácaných daňovníkovi podľa
+§ 43 ods. 3 písm. i) a v) zákona zo zdrojov v zahraničí, ktoré sú súčasťou osobitného základu dane podľa § 51ea zákona
+Úhrn výnosov (príjmov) vyplácaných z dlhopisov a pokladničných
+                                                                     09
+poukážok (základov dane), ktoré sú súčasťou osobitného základu                                       ,
+dane uvedeného v r. 03 na zápočet
+Daň zaplatená v zahraničí z príjmov z r. 09 - uvádza sa suma         10
+zaplatenej dane podľa zmluvy o zamedzení dvojitého zdanenia                                          ,
+Výpočet percenta dane na účely zápočtu                               11
+r. 09 : [(r. 03 - r. 06) alebo r. 03] x 100                                                          ,
+Z dane zaplatenej v zahraničí možno započítať                        12
+[(r. 08 alebo r. 05) x r. 11] : 100                                                                  ,
+Daň uznaná na zápočet                                                13
+(r. 12 maximálne do sumy v r. 10)                                                                    ,
+Daň z osobitného základu dane podľa § 51ea zákona
+                                                                     14
+po vyňatí a zápočte
+(r. 08 alebo r. 05) alebo (r. 08 - r. 13 alebo r. 05 - r. 13)
+                                                                                                     ,
+
+
+
+
+     MF/014308/2026-721                                                                                       Príloha
+         DPFOBv26_20
+                                     DIČ (Rodné číslo)
+
+
+PRÍLOHA č. 4 - Údaje na účely sociálneho poistenia a zdravotného poistenia
+Na účely sociálneho poistenia a zdravotného poistenia
+
+                                                              1            Príjmy (výnosy)                2             Výdavky (náklady)
+Príjmy (výnosy) z výkonu osobnej asistencie
+uvádzané v VI. oddiele ako súčasť základu dane 01
+(čiastkového základu dane) z príjmov podľa § 6                                                 ,                                            ,
+ods. 1 a 2 zákona    /§ 6 ods. 2 písm. b) zákona
+Základ dane z príjmov z výkonu osobného asistenta
+                                                                         02
+(kladný rozdiel medzi príjmami a výdavkami); výsledok
+hospodárenia (zisk)
+                                                                               +                                  ,
+Strata z príjmov z výkonu osobného asistenta (záporný rozdiel); 03
+výsledok hospodárenia (strata)                                     -                                              ,
+Položky zvyšujúce základ dane (znižujúce stratu)
+                                                                         04
+(§ 17 až 17b, § 17d, § 19 ods. 3 písm. n) a § 21 ods. 1 písm. h)
+tretí bod zákona)
+                                                                                                                  ,
+Položky znižujúce základ dane (zvyšujúce stratu)                         05
+(§ 17 až 17b a § 17d zákona)                                                                                      ,
+Základ dane (čiastkový základ dane) z príjmov z výkonu
+osobného asistenta po úprave o položky zvyšujúce základ dane 06
+alebo znižujúce základ dane                                     +                                                 ,
+(r. 02 + r. 04 - r. 05) > 0 alebo (r. 03 + r. 04 - r. 05) > 0
+Daňová strata z príjmov z výkonu osobného asistenta
+                                                                         07
+po úprave o položky znižujúce stratu alebo zvyšujúce stratu
+(r. 02 + r. 04 - r. 05) < 0 alebo (r. 03 + r. 04 - r. 05) < 0
+                                                                               -                                  ,
+Ak daňovník dosahuje príjmy za výkon osobnej asistencie podľa zákona č. 447/2008 Z. z. o peňažných príspevkoch na kompenzáciu ťažkého
+zdravotného postihnutia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, uvádzajú sa v tejto tabuľke príjmy a výdavky, základ
+dane, strata z týchto príjmov a ak vedie podvojné účtovníctvo aj základ dane a daňová strata po uplatnení pripočítateľných položiek a odpočítateľných
+položiek upravujúcich základ dane alebo daňová strata daňovníka z príjmov týkajúca sa tejto činnosti, ktoré daňovník zahrnul do základu dane
+(čiastkového základu dane) z príjmov podľa § 6 ods. 1 a 2 zákona uvedeného v VI. oddiele.
+
+Na účely sociálneho poistenia a zdravotného poistenia
+                                                                              08
+Úhrn povinného poistného (§ 5 ods. 8 zákona)                                                                        ,
+                                                                              09
+         úhrn poistného na sociálne poistenie (zabezpečenie)                                                        ,
+z toho
+                                                                              10
+         úhrn poistného na zdravotné poistenie                                                                      ,
+Preukázateľne zaplatené poistné na sociálne poistenie                         11
+z príjmov podľa § 6 ods. 1 a 2 zákona                                                                               ,
+z toho
+         preukázateľne zaplatené poistné na dobrovoľné sociálne               12
+         poistenie                                                                                                  ,
+Preukázateľne zaplatené poistné na zdravotné poistenie             13
+z príjmov podľa § 6 ods. 1 a 2 zákona                                                                               ,
+    preukázateľne zaplatené preddavky na zdravotné poistenie
+z toho
+    z príjmov podľa § 6 ods. 1 a 2 zákona príslušné k zdaňovaciemu 14                                               ,
+    obdobiu, za ktoré sa podáva daňové priznanie
+Ak daňovník vypĺňa riadok preukázateľne zaplateného poistného z príjmov podľa § 6 ods. 1 a 2 zákona uvedeného pod tabuľkou č. 1 priznania, vypĺňa sa
+aj r. 11 a r. 14 bez ohľadu na spôsob uplatňovania výdavkov (podvojné účtovníctvo, jednoduché účtovníctvo, daňová evidencia podľa § 6 ods. 11 zákona,
+výdavky percentom z príjmov podľa § 6 ods. 10 zákona).
+
+          Pri príjmoch podľa § 6 ods. 1 a 2 zákona vediem podvojné účtovníctvo
+Výnosy podľa § 6 ods. 1 a 2 zákona
+                                                                         15
+(vypĺňa sa, len ak daňovník vedie podvojné účtovníctvo a
+nevypĺňa r. 1 až 3 a r. 5 až 9 v tabuľke č. 1)
+                                                                                                                  ,
+
+Dátum                  .       .                      podpis daňovníka
+                                                         (zástupcu)
+
+
+
+
+          MF/014308/2026-721                                                                                                          Príloha
+

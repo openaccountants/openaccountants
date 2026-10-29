@@ -1,0 +1,6 @@
+Official route https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02004R0883-20190731
+Read 2026-10-29. Tool returned3lines only:
+L0: # JavaScript is disabled
+L1:
+L2: In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page.
+No regulation body acquired or quoted. Hidden IAB creation returned Browser is not available: iab.

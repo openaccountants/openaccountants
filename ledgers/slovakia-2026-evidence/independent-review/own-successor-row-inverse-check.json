@@ -1,0 +1,60 @@
+[
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "changed_rows": [
+      1,
+      3,
+      6,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      26,
+      27,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      43,
+      46,
+      48,
+      51,
+      52,
+      53,
+      54,
+      55,
+      57,
+      63,
+      64,
+      65
+    ],
+    "row_inverse_exact": true,
+    "untouched_rows": 33
+  },
+  {
+    "slug": "sk-payroll-social",
+    "changed_rows": [
+      38,
+      40,
+      62
+    ],
+    "row_inverse_exact": true,
+    "untouched_rows": 64
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "changed_rows": [
+      31
+    ],
+    "row_inverse_exact": true,
+    "untouched_rows": 91
+  }
+]

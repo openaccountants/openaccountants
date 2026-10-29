@@ -1,0 +1,89 @@
+§ 74
+Obsah faktúry
+(1)
+ Faktúra vyhotovená osobou podľa § 72 musí obsahovať
+a)
+ meno a priezvisko zdaniteľnej osoby alebo názov zdaniteľnej osoby, adresu jej sídla,
+ miesta podnikania, prevádzkarne, bydliska alebo adresu miesta, kde sa obvykle zdržiava,
+ a jej identifikačné číslo pre daň, pod ktorým tovar alebo službu dodala,
+b)
+ meno a priezvisko príjemcu tovaru alebo služby alebo názov príjemcu tovaru alebo
+ služby, adresu jeho sídla, miesta podnikania, prevádzkarne, bydliska alebo adresu
+ miesta, kde sa obvykle zdržiava, a jeho identifikačné číslo pre daň, pod ktorým mu
+ bol dodaný tovar alebo pod ktorým mu bola dodaná služba,
+c)
+ poradové číslo faktúry,
+d)
+ dátum, keď bol tovar alebo služba dodaná, alebo dátum, keď bola platba prijatá, ak
+ tento dátum možno určiť a ak sa odlišuje od dátumu vyhotovenia faktúry,
+e)
+ dátum vyhotovenia faktúry,
+f)
+ množstvo a druh dodaného tovaru alebo rozsah a druh dodanej služby,
+g)
+ základ dane pre každú sadzbu dane, jednotkovú cenu bez dane a zľavy a rabaty, ak
+ nie sú obsiahnuté v jednotkovej cene,
+h)
+ uplatnenú sadzbu dane alebo oslobodenie od dane; pri oslobodení od dane sa uvedie
+ odkaz na ustanovenie tohto zákona alebo smernice Rady 2006/112/ES z 28. novembra 2006
+ o spoločnom systéme dane z pridanej hodnoty v platnom znení alebo slovná informácia
+ „dodanie je oslobodené od dane“,
+i)
+ výšku dane spolu v eurách, ktorá sa má zaplatiť, okrem výšky dane uplatnenej podľa
+ osobitnej úpravy v § 66,
+j)
+ slovnú informáciu „vyhotovenie faktúry odberateľom“, ak odberateľ, ktorý je príjemcom
+ tovaru alebo služby, vyhotovuje faktúru podľa § 72 ods. 6,
+k)
+ slovnú informáciu „prenesenie daňovej povinnosti“, ak osobou povinnou platiť daň
+ je príjemca tovaru alebo služby,
+l)
+ údaje o dodanom novom dopravnom prostriedku podľa § 11 ods. 12,
+m)
+ slovnú informáciu „úprava zdaňovania prirážky - cestovné kancelárie“, ak sa uplatní
+ osobitná úprava podľa § 65,
+n)
+ slovnú informáciu „úprava zdaňovania prirážky - použitý tovar“, „úprava zdaňovania
+ prirážky - umelecké diela“ alebo „úprava zdaňovania prirážky - zberateľské predmety
+ a starožitnosti“, a to v závislosti od tovaru, pri ktorom sa uplatní osobitná úprava
+ podľa § 66,
+o)
+ meno a priezvisko alebo názov daňového zástupcu podľa § 69a, adresu jeho sídla alebo bydliska a jeho osobitné identifikačné číslo pre daň, ak
+ zahraničná osoba je zastúpená daňovým zástupcom podľa § 69a.
+(2)
+ Faktúra vyhotovená pri dodaní tovaru alebo služby s miestom dodania v inom členskom
+ štáte, ak osobou povinnou platiť daň je príjemca tovaru alebo služby, nemusí obsahovať
+ údaje podľa odseku 1 písm. g) až i), ak formou odkazu na množstvo alebo rozsah a druh
+ tovaru alebo služby možno určiť základ dane.
+(3)
+ Platiteľ a zdaniteľná osoba, ktorá nie je platiteľom, môžu vyhotoviť zjednodušenú
+ faktúru, ktorá neobsahuje všetky údaje podľa odseku 1. Zjednodušenou faktúrou je
+a)
+ doklad za tovar alebo službu, ak cena vrátane dane nie je viac ako 100 eur; doklad
+ nemusí obsahovať údaje podľa odseku 1 písm. b) a jednotkovú cenu podľa odseku 1 písm.
+ g),
+b)
+ doklad vyhotovený pokladnicou e-kasa klient podľa osobitného predpisu,29a) ak cena tovaru alebo služby vrátane dane nie je viac ako 400 eur, a doklad vyhotovený
+ tankovacím automatom pre bezobslužné čerpanie pohonných látok, ak cena tovaru vrátane
+ dane uhradená elektronickým platobným prostriedkom nie je viac ako 400 eur; doklad
+ nemusí obsahovať údaje podľa odseku 1 písm. b) a jednotkovú cenu podľa odseku 1 písm.
+ g),
+c)
+ faktúra podľa § 71 ods. 2; faktúra musí obsahovať poradové číslo pôvodnej faktúry, ktorým môže byť aj pôvodný
+ identifikátor pokladničného dokladu podľa osobitného predpisu,29a) a údaje, ktoré sa menia.
+(4)
+ Zjednodušená faktúra podľa odseku 3 písm. a) a b) sa nesmie vyhotoviť pri dodaní
+ tovaru alebo služby podľa § 72 ods. 1 písm. b), d) a e).
+(5)
+ Za identifikačné číslo pre daň sa na účely vyhotovenia zjednodušenej faktúry podľa
+ odseku 3 písm. b) považuje aj daňové identifikačné číslo, ktoré bolo platiteľovi pridelené
+ podľa osobitného predpisu,29aaa) alebo identifikačné číslo, ktoré bolo platiteľovi pridelené podľa osobitného predpisu,29aab) ak ku dňu vyhotovenia tejto zjednodušenej faktúry platiteľ, ktorý splnil registračnú
+ povinnosť, nemá pridelené identifikačné číslo pre daň podľa § 4 alebo § 5.
+(6)
+ Ak tovar alebo službu dodáva skupina, uvedie sa vo faktúre ako údaj podľa odseku
+ 1 písm. a) meno a adresa sídla, miesta podnikania, prípadne prevádzkarne člena skupiny,
+ ktorý dodáva tovar alebo službu, a identifikačné číslo pre daň skupiny.
+(7)
+ Ak elektronické faktúry sú poslané alebo sprístupnené rovnakému príjemcovi v jednom
+ súbore, môžu sa údaje, ktoré sú spoločné pre jednotlivé faktúry, uviesť len raz, ak
+ sú pre každú faktúru prístupné všetky informácie.

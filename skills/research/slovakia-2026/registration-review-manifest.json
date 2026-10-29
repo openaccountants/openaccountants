@@ -1,0 +1,116 @@
+{
+  "primary_bodies_and_method": [
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/vat-act-2026-browser.txt",
+      "sha256": "acc5a74c44c5efe077cdcd84dfe42b53c26faf1e95ddb1861767b2f26ff699c6",
+      "bytes": 570637
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/tax-code-2026-browser.txt",
+      "sha256": "2c8ed12052b2ca1c3b817a8a64f756398983b496eb62945c5b518d0e890fced4",
+      "bytes": 399983
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/tax-2026-jan-full-browser.txt",
+      "sha256": "a12bbade26a2bbd223e313b15c4979c7e6eaca57f51a7980654625aade0349b6",
+      "bytes": 398319
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/vat-2024-full-browser.txt",
+      "sha256": "0908716fc90e16f445b09271cd8bf5c2d2277ca3e172a4ddaaefda6bf1327e07",
+      "bytes": 505459
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/fs-registration-method.pdf",
+      "sha256": "c54b6e92ee861a83e6c8aa67bc91dbe27f278707da4444b5de257ddd57be6961",
+      "bytes": 386442
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/fs-registration-method.txt",
+      "sha256": "f787980afa8ad322596c3931920a97284187e1cbee7fad0f01f0b08be0b4758f",
+      "bytes": 58827
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/fs-7-historic.pdf",
+      "sha256": "44d275adb0e2c9968df7ab687ba54e1513908102b89e10c2a430f172fa2a490e",
+      "bytes": 495864
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/fs-7a-historic.pdf",
+      "sha256": "4c72413b11e96db7b507003a95c67246178287157a8128c8108f7e38d8fab442",
+      "bytes": 475842
+    }
+  ],
+  "baseline": {
+    "commit": "169d1855",
+    "sha256": "e7f4f45b9a85d4ebdfb52a1ee51fe6581be3acfe8b787916a70f4836e52c906c"
+  },
+  "reviewed_guide": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+    "sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b"
+  },
+  "scope": "Fresh full registration Guide source/no-loss review only; not whole-country attestation",
+  "status": "PASS",
+  "artifacts": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/baseline-guide.md",
+      "sha256": "e7f4f45b9a85d4ebdfb52a1ee51fe6581be3acfe8b787916a70f4836e52c906c",
+      "bytes": 20500
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/check-examples.txt",
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "bytes": 58
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/check.py",
+      "sha256": "30e9fd729527d9dd15e3bdf86f3b9a76163e1f67b25274cacaefd162b6e5858e",
+      "bytes": 5755
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/controls.json",
+      "sha256": "d9fbb32d2c9050aa11863505a25d259b55c5b714c1f3826eb5cd0ca82e142638",
+      "bytes": 1967
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/findings.json",
+      "sha256": "e10a2a88096af1ded496910d8725a6a0a30eb475c65285f8f71e96582af230c6",
+      "bytes": 746
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/fresh-web-open-receipts.json",
+      "sha256": "0bb51fe17a28a2b8464f12e4f3c49d05de39c37e55c0d8a5d1732a2ff103579c",
+      "bytes": 18217
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/raw-primary-extract-verification.json",
+      "sha256": "7b7f4f0e28be5907134d97e944c2a405d598cc8767146fbcb26dd781bc716f1f",
+      "bytes": 6218
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/report.md",
+      "sha256": "bbeadfe83dbab0a5b750c8be3f0246fd53867dd96b105f9465278232a10a8c00",
+      "bytes": 10928
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/reviewed-guide.md",
+      "sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+      "bytes": 30456
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/tax2026jan-raw-derived-excerpts.txt",
+      "sha256": "614ed2c600e438a66cb7163793b3626c367180eddc22293b30ce77e8a154484c",
+      "bytes": 18722
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/tax2026sep-raw-derived-excerpts.txt",
+      "sha256": "614ed2c600e438a66cb7163793b3626c367180eddc22293b30ce77e8a154484c",
+      "bytes": 18722
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-independent/vat2026-raw-derived-excerpts.txt",
+      "sha256": "b6b3ee35455ae18cbbc71fb8cd5d833aa703480a07c649b5780223473a3d524e",
+      "bytes": 69467
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "R01",
+    "old_lines": [
+      42,
+      351
+    ],
+    "old_item": "SlovakVAT ID isSK+10digits",
+    "current_comparison": "Format omitted; question1 asks registration only",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Ask the client first, question1",
+    "source_conclusion": "Confirmed administrative identifier; format is not validity",
+    "primary_sources": [
+      "Vero official country-format table"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R02",
+    "old_lines": [
+      58,
+      686
+    ],
+    "old_item": "Money movements, wages, tax/social contributions, loan principal/dividends/bank charges treated outside VAT",
+    "current_comparison": "No underlying-supply classifier",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, new paragraph",
+    "source_conclusion": "Restore limited consideration test; correct bank-fee blanket exclusion",
+    "primary_sources": [
+      "VAT2/3/39"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R03",
+    "old_lines": [
+      77,
+      268
+    ],
+    "old_item": "Domestic no-credit exempt catalogue including postal, healthcare, education, financial, insurance, residential rental, gambling",
+    "current_comparison": "Only financial/insurance/housing examples remain; postal/healthcare/education/gambling absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, exemption catalogue",
+    "source_conclusion": "Restore conditions for the four missing categories; retain existing financial/insurance/housing coverage",
+    "primary_sources": [
+      "VAT28/29/31/41/49(3)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R04",
+    "old_lines": [
+      77,
+      77
+    ],
+    "old_item": "Transfer of going concern listed as exempt without credit",
+    "current_comparison": "No\u00a710 transfer rule",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, separate transfer paragraph",
+    "source_conclusion": "Correct to conditional non-supply treatment, not generic exemption",
+    "primary_sources": [
+      "VAT10(1)/(2)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R05",
+    "old_lines": [
+      76,
+      76
+    ],
+    "old_item": "International transport and supplies linked to international trade exempt with credit",
+    "current_comparison": "Exports under47 remain, specific46/47(6) service relief absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Cross-border points",
+    "source_conclusion": "Restore specific international passenger and export-linked service categories, not a blanket international exemption",
+    "primary_sources": [
+      "VAT46/47(6)/49"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R06",
+    "old_lines": [
+      114,
+      114
+    ],
+    "old_item": "Self/private/free-gift deemed supplies create output tax",
+    "current_comparison": "Only50%-vehicle private-use exception appears",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base",
+    "source_conclusion": "Restore general8(3)/9 rules with vehicle exception preserved",
+    "primary_sources": [
+      "VAT8(3)/9/85n"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R07",
+    "old_lines": [
+      264,
+      264
+    ],
+    "old_item": "Every business gift treated as blocked entertainment",
+    "current_comparison": "Business-gift classification missing",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, withR06",
+    "source_conclusion": "Correct blanket input block; distinguish17net/item business-purpose gifts/samples output exception",
+    "primary_sources": [
+      "VAT8(3)/49(2)/(7)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R08",
+    "old_lines": [
+      81,
+      83
+    ],
+    "old_item": "Capital/resale category and5year movable/20year immovable adjustments on changes of use",
+    "current_comparison": "No capital-adjustment register or periods",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base",
+    "source_conclusion": "Restore current52a/54mechanics, first-use years, eligibleasset definition and85kp historic transition",
+    "primary_sources": [
+      "VAT52a/54/54a/54d/85kp"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R09",
+    "old_lines": [
+      221,
+      234
+    ],
+    "old_item": "ImportVAT return self-assessment fromJuly2025, customs documents, machinery50000/11500scenario",
+    "current_comparison": "Imports blanket-described as customs assessed/outside own tax liability",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Cross-border points, replace import paragraph",
+    "source_conclusion": "Restore correct mandatory84a eligibility/AEO routes, taxable base, deduction conditions; retain box-number reservation",
+    "primary_sources": [
+      "VAT24/49/51/84a/85l"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R10",
+    "old_lines": [
+      433,
+      437
+    ],
+    "old_item": "Supplier credit note reduces inputVAT",
+    "current_comparison": "No invoice tax-base/input correction method",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base",
+    "source_conclusion": "Restore25/53 timing and original rate, correcting old blanket reverse-original-entry method",
+    "primary_sources": [
+      "VAT25(1)/(3)/(7)/53(1)/(2)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R11",
+    "old_lines": [
+      475,
+      479
+    ],
+    "old_item": "Office sale6years after first occupation normally exempt; option to tax andRC",
+    "current_comparison": "OptedtaxedRC category remains, five-year property exemption/election boundary missing",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base",
+    "source_conclusion": "Restore38age/reset/residential exclusions; oldbuyer-agreement claim not substantiated by statute",
+    "primary_sources": [
+      "VAT38(1)/(7)/(8)/69(12)(c)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R12",
+    "old_lines": [
+      280,
+      285
+    ],
+    "old_item": "N1/N2+ outside passenger cap;N1fuel200+46 fully recoverable",
+    "current_comparison": "NoexplicitN1/N2+boundary or ordinary-business-usequalification",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, vehicle paragraph",
+    "source_conclusion": "Restore class boundary, correct no-restriction=>automatic100%; retain46illustration only with wholly taxablebusinessuse",
+    "primary_sources": [
+      "VAT49/85n(1)\u2013(3)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R13",
+    "old_lines": [
+      487,
+      491
+    ],
+    "old_item": "Pre2026 passenger-car acquisition automatically fully deductible",
+    "current_comparison": "Cap starts2026 but historical acquisition boundary not explicit",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, vehicle paragraph",
+    "source_conclusion": "Restore nonretroactive acquisition scope; correct automatic100%;2026runningcost rule independent of acquisitiondate",
+    "primary_sources": [
+      "VAT49/85n(1)/(3)/(9)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R14",
+    "old_lines": [
+      44,
+      355
+    ],
+    "old_item": "Group registration available for related entities under4b; voluntary incorrectly labelled4a",
+    "current_comparison": "Group not covered by registration sibling;linkedEUGuide explicitly excludes national group detail",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Who this applies to",
+    "source_conclusion": "Restore4a/4b qualifyinggroup and group representative only, no new fullgroupfilingmanual",
+    "primary_sources": [
+      "VAT4a/4b"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R15",
+    "old_lines": [
+      360,
+      360
+    ],
+    "old_item": "Fiscal representative mandatory for allnonEUbusinesses",
+    "current_comparison": "No69a representative route",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Cross-border points",
+    "source_conclusion": "Correct to optional qualifying foreign-importer representation for48(3) onward supply",
+    "primary_sources": [
+      "VAT69a(1)\u2013(6)/(10)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R16",
+    "old_lines": [
+      22,
+      22
+    ],
+    "old_item": "Filing throughFinancnasprava/eDane/eTaxportal",
+    "current_comparison": "Onlycontrolstatement explicitlyelectronic;returnportal absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Deadlines and filing",
+    "source_conclusion": "Restore statutoryelectronicpayerfiling and period-validform;do notfreezeUI/formversion",
+    "primary_sources": [
+      "TaxCode14/15(4);FSreturnpage"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R17",
+    "old_lines": [
+      375,
+      375
+    ],
+    "old_item": "Intrastat monthlyby15th",
+    "current_comparison": "Absent in currentreturn,registration and linkedEUGuide",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Deadlines and filing, adjacent-report sentence",
+    "source_conclusion": "Confirm separate statistical deadline, including quarterlyVATpayer;no unaskedthreshold added",
+    "primary_sources": [
+      "FSIntrastat generalinstructions260\u2013264"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R18",
+    "old_lines": [
+      385,
+      385
+    ],
+    "old_item": "ECsaleslistnonfilingfine up to10000",
+    "current_comparison": "NoECsaleslistfine row",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Penalties and interest",
+    "source_conclusion": "Restore2026range100\u201310000and statutory first-breach test using154(1)(j)/155(1)(e) classification",
+    "primary_sources": [
+      "TaxCode154/155;FSmethodologyp8"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R19",
+    "old_lines": [
+      388,
+      388
+    ],
+    "old_item": "Repeatednoncompliance causesdoublepenalties",
+    "current_comparison": "Onlyspecialcontrolstatementrecurrence rule covered",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Penalties and interest",
+    "source_conclusion": "Correct to specifiedpersistentnonmonetarybreach equal-amountrepetition under155(16);no automaticdouble",
+    "primary_sources": [
+      "TaxCode155(16)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R20",
+    "old_lines": [
+      656,
+      665
+    ],
+    "old_item": "Amendedreturn within4years,beforeaudit starts;voluntarydisclosure penalty-freeheading",
+    "current_comparison": "Sanctionrates retained,but substantiveamendmentprocedure/window absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Deadlines and filing",
+    "source_conclusion": "Restore16mandatorydiscoverydeadline/payment,electivecorrection,audit15days,69ordinary5year/restarts;keep currentcorrectsanctions",
+    "primary_sources": [
+      "TaxCode16/69/155;Jan2026same16/69text"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R21",
+    "old_lines": [
+      648,
+      653
+    ],
+    "old_item": "Refundminimum10and offsetagainstotherliabilities",
+    "current_comparison": "Correctcurrent79ordinary/fasttiming exists,but minimum/offsetdetail absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, refund paragraph",
+    "source_conclusion": "Correct10toCodegreater-than5cashthresholdappliedappropriatelytoexcessVAT;restoreoffsetcontrols",
+    "primary_sources": [
+      "VAT79(11);TaxCode55(6)\u2013(7)/79(1)/(2)/(7)/(11)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R22",
+    "old_lines": [
+      650,
+      654
+    ],
+    "old_item": "Auditverificationrefund60days;newregistrationsfirst12monthsrefund60days",
+    "current_comparison": "Fast12monthgatewayretained;audittiming absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "The taxable base, refund paragraph",
+    "source_conclusion": "Replaceunsupported60dayguarantees with79(6)10daysafteraudit/partialprotocolrules;newpayerordinaryroute",
+    "primary_sources": [
+      "VAT79(1)/(2)/(6)/(7)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R23",
+    "old_lines": [
+      79,
+      79
+    ],
+    "old_item": "Historicalpre2025standard20/reduced10rates",
+    "current_comparison": "Registration siblingstates20historical,but10historicalandcorrectionconnection absent",
+    "disposition": "sourced restoration with correction where needed",
+    "proposed_location": "Rates, bands and thresholds",
+    "source_conclusion": "Restore narrowverifiedJan2024example underthen27,do notrepresent20/10as exhaustiveallpre2025rates",
+    "primary_sources": [
+      "VAT25(7);Jan2024VAT27(1)\u2013(3)"
+    ],
+    "proposal_file": "restoration-proposal.md",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "id": "R24",
+    "old_lines": [
+      472
+    ],
+    "old_item": "Goods-export customs documentation condition",
+    "current_comparison": "Current \u00a747 exemption alone does not retain evidential condition; linked EU/registration Guides do not supply it",
+    "disposition": "independent review discovered loss; restored source condition",
+    "proposed_location": "Cross-border points, goods/export bullet",
+    "source_conclusion": "VAT47(3)dispatch/transport and customs exit evidence; specified alternative for oral/deemed declarations",
+    "primary_sources": [
+      "VATAct47(3)current2026"
+    ],
+    "independent_review": "closed by independent final-export-delta checks and final report",
+    "status": "integrated; independent restoration review passed on final 7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  }
+]

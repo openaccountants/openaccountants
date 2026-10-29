@@ -1,0 +1,509 @@
+Metodický pokyn k podávaniu súhrnných výkazov  
+podľa § 80 zákona č. 222/2004 Z. z.  o dani z pridanej hodnoty v znení neskorších 
+predpisov po 1.1.2018 
+ 
+ 
+        Vzhľadom na zmenu ustanovenia § 80 ods. 3 zákona č. 222/2004 Z. z. o  dani z pridanej hodnoty v  znení 
+neskorších predpisov (ďalej len „zákon o  DPH“) s účinnosťou od 1.1.2018 Finančné riaditeľstvo SR vydáva nový 
+aktualizovaný metodický pokyn k  podávaniu súhrnných výkazov podľa § 80 zákona o  DPH. Týmto metodickým 
+pokynom sa ruší metodický pokyn k podávaniu súhrnných výkazov podľa § 80 zákona č. 222/2004    Z. z.  o dani 
+z pridanej hodnoty v  znení neskorších predpisov po 1.10.2014 , z ktorého sa do nového metodického pokynu 
+preberajú všetky časti pôvodného metodického pokynu, ktorých sa novela zákona o DPH od 1.1.2018 nedotkla.  
+ 
+        Vzor súhrnného výkazu  je ustanovený opatrením Ministerstva financií SR č. 500/2009 Z. z..  Tento vzor 
+súhrnného výkazu sa prvýkrát použi l pri podávaní súhrnných výkazov za január 2010 alebo prvý štvrťrok 2010.  
+V nadväznosti na novelu ustanovenia § 80 zákona o  DPH bude vydané nové Poučenie na vyplnenie súhrnného 
+výkazu k dani z pridanej hodnoty. Vzor súhrnného výkazu ostáva v platnosti aj po novelizácii § 80 zákona o DPH.  
+ 
+        Súhrnný výkaz podľa § 80 zákona o  DPH podáva  platiteľ dane v  prípade, ak nastane aspoň jedna zo  
+skutočností uvedených v § 80 ods. 1 písm. a) až d) zákona o  DPH, a zdaniteľná osoba registrovaná pre DPH 
+podľa § 7 alebo § 7a zákona o DPH, ak nastane skutočnosť uvedená v § 80 ods. 1 písm. d) zákona o DPH.  
+ 
+1.  oddiel     Podanie súhrnného výkazu platiteľom dane 
+ 
+        Platiteľ dane je povinný podať súhrnný výkaz, ak v kalendárnom mesiaci  
+ dodal tovar oslobodený od dane podľa § 43 ods. 1 zákona o  DPH z tuzemska do iného členského štátu 
+osobe, ktorá je identifikovaná pre daň v inom členskom štáte, alebo 
+ premiestnil tovar, ktorý je v jeho vlastníctve, a ktorý je oslobodený od dane podľa § 43 ods. 4 zákona o DPH, 
+z tuzemska do iného členského štátu na účely jeho podnikania v tomto členskom štáte alebo 
+ sa zúčastnil na trojstrannom obchode ako prvý odberateľ podľa § 45 zákona o DPH alebo 
+ dodal službu s miestom dodania v inom členskom štáte podľa § 15 ods. 1 zákona o DPH zdaniteľnej osobe 
+alebo právnickej osobe, ktorá nie je zdaniteľnou osobou a  je identifikovaná pre daň, a táto osoba je povinná 
+platiť daň. 
+ 
+        V súhrnnom výkaze sa okrem dodania tovarov podľa § 43 ods. 1 a  4 a  podľa § 45  uvádzajú aj dod ávky 
+služieb, ktorých miesto dodania je podľa § 15 ods. 1 zákona o  DPH v inom členskom štáte a  osobou povinnou 
+platiť daň je príjemca služby. V § 15 ods. 1 zákona o  DPH je ustanovené všeobecné pravidlo miesta dodania 
+služby medzi zdaniteľnými osobami . Z ákon o  DPH zároveň ustanovuje, že na účely určenia miesta dodania 
+služby podľa § 15 a § 16 sa zdaniteľná osoba, ktorá vykonáva aj činnosti, ktoré nie sú predmetom dane podľa § 2 
+ods. 1 písm. a) alebo  b) zákona o DPH , považuje za zdaniteľnú osobu pre vše tky služby, ktoré sú jej dodané , 
+a rovnako sa za zdaniteľnú osobu na tieto účely považuje aj právnická osoba, ktorá nie je zdaniteľnou oso bou, 
+ale je identifikovaná pre daň . Podľa § 15 ods. 1 zákona o  DPH je m iestom dodania služby zdaniteľnej osobe, 
+ktorá koná v  postavení zdaniteľnej osoby, miesto, kde má táto osoba sídlo alebo miesto podnikania, a  ak je 
+služba do daná prevádzkarni zdaniteľnej osoby, miestom dodania služby je miesto, kde má táto osoba 
+prevádzkareň. A k zdaniteľná osoba, ktorá je príjemcom služby, nemá sídlo, miesto podnikania alebo 
+prevádzkareň, miestom dodania služby je jej bydlisko alebo miesto, kd e sa obvykle zdržiava.  Toto všeobecné 
+pravidlo určenia miesta dodania služby medzi zdaniteľnými osobami platí pre všetky dodávané služby okrem 
+výnimiek, ktoré sú ustanovené v § 16 ods. 1 až 4, 10 a 11 zákona o DPH.  
+ 
+Príklad č. 1 
+Platiteľ dane poskytol v  mesiaci január 2018 reklamnú službu českému podnikateľovi identifikovanému pre daň 
+v Českej republike. Český podnikateľ si službu objednal zo svojho sídla, ktoré má v  Českej republike. Miesto 
+dodania služby je podľa § 15 ods. 1 zákona o  DPH v Českej republike. Platiteľ dane fakturuje službu v  cene bez 
+dane, pretože osobou povinnou platiť daň v  Českej republike je český podnikateľ. Platiteľ dane uvedie dodanie 
+2 
+ 
+služby v  súhrnnom výkaze podanom v  tuzemsku za obdobie, v  ktorom vznikla daňová povinnosť . V  daňovom 
+priznaní podanom v tuzemsku toto dodanie služby neuvádza.           
+ 
+       Podľa § 80 ods. 1 zákona o  DPH je platiteľ dane povinný podať súhrnný výkaz za každý kalendárny mesiac . 
+Zákon o DPH v § 80 ods. 2  však platiteľovi dane umožňuje podať súhrnný výka z za kalendárny štvrťrok , a to 
+vtedy, ak hodnota ním dodaných tovarov z tuzemska do iného členského štátu podľa § 43 ods. 1 zákona o  DPH, 
+vrátane premiestnenia tovaru podľa § 43 ods. 4 zákona o DPH a tovaru dodaného v rámci trojstranného obchodu 
+druhému odberateľovi nepresiahne v príslušnom kalendárnom štvrťroku a súčasne v žiadnom z predchádzajúcich 
+štyroch kalendárnych štvrťrokov hodnotu  50 000 eur.  Hodnota 50 000 eur sa viaže na konkrétny kalendárny 
+štvrťrok, čo znamená, že táto hodnota sa v posudzovanom kalendárnom štvrťroku a v štyroch predchádzajúcich 
+kalendárnych štvrťrokoch nesčítava.  
+ 
+        Do hodnoty 50 000 eur sa nezahŕňa hodnota dodaných služieb. Ak platiteľ dane dodáva len službu 
+s miestom dodania v  inom členskom štáte podľa § 15 ods. 1 zákon a o DPH zdaniteľnej osobe alebo právnickej 
+osobe, ktorá nie je zdaniteľnou osobou a  je identifikovaná pre daň, a  táto osoba je povinná platiť daň, môže 
+podať súhrnný výkaz za kalendárny štvrťrok, pretože hodnota tovarov je v danom prípade nula.  
+ 
+Príklad č. 2 
+Platiteľ dane dodal v januári 2018 tovar pre rakúskeho podnikateľa identifikovaného pre daň v Rakúsku v hodnote 
+15 000 eur a  pre maďarského podnikateľa identifikovaného pre daň v  Maďarsku v hodnote 5 000 eur. V mesiaci 
+február 2018 dodal službu pre ne meckého podnikateľa identifikovaného pre daň v  Nemecku s miestom dodania 
+podľa § 15 ods. 1 zákona o DPH v Nemecku v hodnote 52 000 eur. V mesiaci február 2018 neuskutočnil dodávky 
+tovaru do iného členského štátu a  rovnako sa nezúčastnil na trojstrannom obc hode. V  mesiaci marec 2018  
+premiestnil tovar do svojej prevádzky v  Poľsku, kde je identifikovaný pre daň, v  hodnote 8 000 eur. Celková 
+hodnota tovarov dodaných a  premiestnených z  tuzemska do iného členského štátu v  I. štvrťroku 2018 
+predstavuje 28 000 eur.  Platiteľ dane môže súhrnný výkaz podať za kalendárny štvrťrok (I.Q.2018) za 
+predpokladu, že ani za štyri predchádzajúce kalendárne štvrťroky nebola hodnota 50 000 eur presiahnutá.       
+ 
+        Ak hodnota dodaných tovarov uvedených v § 80 ods. 1 písm. a) až c) zákona o DPH presiahne v príslušnom 
+kalendárnom štvrťroku hodnotu 50 000 eur , platiteľ dane nemôže súhrnný výkaz podať za kalendárny štvrťrok . 
+Možnosť podať súhrnný výkaz za kalendárny štvrťrok prestáva platiť od skončenia kalendárneho mesiaca, 
+v ktorom hodnota dodaných tovarov presiahne v  príslušnom kalendárnom štvrťroku hodnotu 50 000 eur . 
+V takomto prípade je platiteľ dane povinný podať súhrnný výkaz osobitne za každý kalendárny mesiac 
+príslušného kalendárneho štvrťroka.  
+ 
+Príklad č. 3 
+Platiteľ dane dodal v apríli 2018  tovar pre rakúskeho podnikateľa identifikovaného pre daň v  Rakúsku v hodnote 
+20 000 eur a  pre maďarského podnikateľa identifikovaného pre daň v Maďarsku v hodnote 23 000 eur. V mesiaci 
+máj 2018 dodal tovar pre nemeckého podnikateľa identifikovaného pre daň v Nemecku  v hodnote 15 000 eur. Po 
+skončení mesiaca máj 2018 hodnota dodaných tovarov  za mesiace  apríl a  máj 2018  predstavuje 58 000 eur. 
+Keďže sa presiahla hodnota 5 0 000 eur, p latiteľ dane je povinný podať súhrnný výkaz za  každý kalendárny 
+mesiac II. štvrťroka 201 8, t.j. samostatne za kalendárny mesiac apríl 2018 a samostatne za kalendárny mesiac 
+máj 2018  v lehote na podanie súhrnného výkazu  za kalendárny mesiac , v  ktorom hodnota dodaných tovarov 
+presiahla 50 000 eur, teda do 25. júna 2018.  
+ 
+        Ak hodnota dodaných tovarov presiahla v  niektorom z  kalendárnych štvrťrokov hodnotu 50 000 eur, 
+možnosť podať súhrnný výkaz za kalendárny štvrťrok prichádza do úvahy najskôr po uplynutí ďalších štyroch 
+kalendárnych štvrťrokov.  
+ 
+Príklad č. 4 
+Platiteľ dane podal za I. štvrťrok 2018 súhrnný výkaz  do 25.4.201 8. V rámci II. štvrťrok a 2018 platiteľ dane 
+podával súhrnný výkaz za jednotlivé kalendárne mesiace , pretože v  mesiaci apríl 201 8 dodal tovar do iného 
+členského štátu oslobodený od da ne v  celkovej hodnote 102  000 eur. Opätovne p odať súhrnný výkaz za 
+kalendárny štvrťrok bude platiteľ dane môcť najskôr až za III. štvrťrok 2019, za podmienky, ak hodnota dodaných 
+3 
+ 
+tovarov do iného členského štátu nepresiahne v  tomto kalendárnom štvrťroku a  v každom zo štyroch 
+predchádzajúcich kalendárnych štvrťrokov (III.Q.2018, IV.Q.2018, I.Q.2019, II.Q.2019) hodnotu 50 000 eur.    
+ 
+        Ak platiteľ dane v  príslušnom kalendárnom mesiaci alebo kalendárnom štvrťroku nedodal tovar z tuzemska 
+do iného člensk ého štátu, nepremiestnil tovar z  tuzemska do iného členského štátu , nezúčastnil sa na 
+trojstrannom obchode ako prvý odberateľ a  zároveň nedodal službu s  miestom dodania v  inom členskom štáte 
+podľa § 15 ods. 1 zákona o DPH, súhrnný výkaz nepodáva.  
+ 
+2. oddiel     Podanie súhrnného výkazu zdaniteľnou osobou 
+ 
+        Povinnosť podať súhrnný výkaz zdaniteľnou osobou registrovanou pre daň podľa § 7 alebo § 7a zákona 
+o DPH (ďalej len „zdaniteľná osoba“) , ak poskytla služby s  miestom dodania podľa § 15 ods. 1 záko na o DPH 
+v inom členskom štáte zdaniteľným osobám a nezdaniteľným právnickým osobám identifikovaným pre DPH, ktoré 
+sú osobou povinnou platiť daň, sa zaviedla s  účinnosťou od 1.1.2010. Tieto osoby sú povinné podať súhrnný 
+výkaz za každý kalendárny štvrťrok, v ktorom dodali službu uvedenú v § 80 ods. 1 písm. d) zákona o DPH.      
+ 
+        S účinnosťou od 1.1.2018 sa pre zdaniteľné osoby zavádza povinnosť podať súhrnný výkaz  okrem 
+doterajšej úpravy aj v prípade, ak sa zúčastňuj ú na trojstrannom obchode ako prv ý odberateľ podľa § 45 ods. 1 
+zákona o DPH. Ak sa zdaniteľná osoba zúčastňuje na trojstrannom obchode ako prvý odberateľ, na podávanie 
+súhrnného výkazu sa bude vzťahovať ustanovenie § 80 ods. 2 zákona o  DPH, ktoré upravuje možnosť podávať 
+súhrnný výkaz za obdobie kalendárneho štvrťroka len v  prípade splnenia podmienok uvedených v  tomto 
+ustanovení. Dodanie tovaru prvým odberateľom pre druhého odberateľa v  rámci trojstranného obchodu sa 
+v súhrnnom výkaze uvádza pod kódom 1. 
+ 
+        Ak bude zdaniteľná osoba p o 1.1.2018 poskytovať len  službu s  miestom dodania v  inom členskom štáte 
+podľa § 15 ods. 1 zákona o  DPH zdaniteľnej osobe alebo právnickej osobe, ktorá nie je zdaniteľnou osobou , 
+ale je identifikovaná pre daň , a je povinná platiť daň , potom obdobím na poda nie súhrnného výkazu ostáva 
+naďalej kalendárny štvrťrok. 
+ 
+        Ak po 1.1.2018 zdaniteľná osoba dodáva okrem služby uvedenej v § 80 ods. 1 písm. d) zákona o  DPH aj 
+tovar v rámci trojstranného obchodu, kedy koná v postavení prvého odberateľa, obdobím na p odanie súhrnného 
+výkazu je kalendárny mesiac alebo kalendárny štvrťrok. Rozhodujúcou skutočnosťou pre to, aby zdaniteľná 
+osoba bola povinná podať súhrnný výkaz za obdobie kalendárneho mesiaca, je hodnota tovarov ňou dodaných 
+druhému odberateľovi v  inom čle nskom štáte v  rámci trojstranného obchodu. Ak hodnota tovarov dodaných 
+zdaniteľnou osobou ako prvým odberateľom druhému odberateľovi v  rámci trojstranného obchodu presiahne 
+v príslušnom kalendárnom štvrťroku hodnotu 50 000 eur, zdaniteľná osoba musí súhrnný výkaz podať mesačne. 
+Do hodnoty 50 000 eur sa nezahŕňa hodnota dodaných služieb.  
+ 
+        Z uvedeného vyplýva, že s úhrnný výkaz môže po 1.1.2018 z daniteľná osoba podať za kalendárny štvrťrok 
+len v prípade, ak: 
+ dodáva len službu s miestom dodania v  inom členskom štáte podľa § 15 ods. 1 zákona o  DPH, pri ktorej je 
+osobou povinnou platiť daň príjemca služby, 
+ zúčastňuje sa na trojstrannom obchode ako prvý odberateľ podľa § 45 ods. 1 zákona o  DPH, pričom hodnota 
+tovarov dodaných druhému odberateľovi v  inom členskom štáte v  rámci trojstranného obchodu nepresiahne 
+v príslušnom kalendárnom štvrťroku a súčasne v predchádzajúcich štyroch kalendárnych štvrťrokoch hodnotu 
+50 000 eur.  
+ 
+Príklad č. 5 
+Zdaniteľná osoba registrovaná pre DPH podľa § 7a zákona o DPH dodala v januári 2018 tovar v  rámci 
+trojstranného obchodu ako prvý odberateľ pre rakúskeho podnikateľa identifikovaného pre daň v  Rakúsku 
+v hodnote 10  000 eur a   pre maďarského podnikateľa identifikovaného pre daň v  Maďarsku v  hodnote 13  000 
+eur. Okrem toho posky tla právne služby pre českého podnikateľa identifikovaného pre DPH v  Českej republike 
+v hodnote 20 000 eur. V  mesiaci február  2018 dodala tovar v  rámci trojstranného obchodu v  postavení prvého 
+odberateľa pre nemeckého podnikateľa identifikovaného pre daň v Nemecku  v hodnote 15 000 eur. V  mesiaci 
+marec nedodala žiaden tovar  v  rámci trojstranného obchodu a  neposkytla žiadne služby podľa § 15 ods. 1 
+4 
+ 
+zákona o  DPH pre zdaniteľné osoby v  inom členskom štáte . Keďže hodnota dodaných tovarov v príslušnom 
+kalendárnom štvrťroku nepresiahla hodnotu 50 000 eur, zdaniteľná osoba podá súhrnný výkaz za kalendárny 
+štvrťrok, teda za I. štvrťrok 2018.  
+ 
+        Zdaniteľná osoba, ktorá dodáva tovary v  rámci trojstranného obchodu v  postavení prvého odberateľa, musí 
+sledovať h odnotu dodávaných tovarov v  rámci kalendárneho štvrťroka. Ak by hodnota dodaných tovarov 
+v príslušnom kalendárnom štvrťroku presiahla h odnotu 50  000 eur, zdaniteľná osoba nemá možnosť podávať 
+súhrnný výkaz za obdobie kalendárneho štvrťroka. V  takomto prípa de možnosť podať súhrnný výkaz za 
+kalendárny štvrťrok prestáva platiť od skončenia kalendárneho mesiaca, v  ktorom hodnota tovarov dodaných 
+druhému odberateľovi v  rámci trojstranného obchodu presiahne hodnotu  50 000 eur  a zdaniteľná osoba je 
+povinná podať s úhrnný výkaz osobitne za každý kalendárny mesiac príslušného kalendárneho štvrťroka. Ak 
+hodnota tovarov dodaných druhému odberateľovi v  rámci trojstranného obchodu presiahne v  niektorom 
+z kalendárnych štvrťrokov hodnotu 50  000 eur, možnosť podať súhrnný vý kaz za kalendárny štvrťrok prichádza 
+do úvahy najskôr po uplynutí ďalších štyroch kalendárnych štvrťrokov.  
+ 
+Príklad č. 6 
+Zdaniteľná osoba registrovaná pre DPH podľa § 7a zákona o DPH dodala v januári 2018 tovar v  rámci 
+trojstranného obchodu pre rakúskeho podnikateľa identifikovaného pre daň v  Rakúsku v  hodnote 20  000 eur 
+a  pre maďarského podnikateľa identifikovaného pre daň v  Maďarsku v hodnote 23 000 eur. V  mesiaci február  
+2018 dodala tovar v  rámci trojstranného obchodu pre nemeckého podnikateľa identif ikovaného pre daň 
+v Nemecku  v hodnote 15  000 eur. Po skončení mesiaca február 2018 hodnota dodaných tovarov v  rámci 
+trojstranného obchodu za mesiace január a  február 2018 predstavuje 58  000 eur. Keďže sa presiahla hodnota 
+50 000 eur, zdaniteľná osoba je p ovinná podať súhrnný výkaz za každý kalendárny mesiac I. štvrťroka 2018, t.j. 
+samostatne za kalendárny mesiac január 2018 a  samostatne za  kalendárny mesiac február 2018 v  lehote na 
+podanie súhrnného výkazu za kalendárny mesiac, v ktorom hodnota dodaných tovarov presiahla 50 000 eur, teda 
+do 26. marca 2018.  
+ 
+        Ak sa zdaniteľná osoba v  príslušnom kalendárnom mesiaci alebo kalendárnom štvrťroku   nezúčastnila  na 
+trojstrannom obchode ako prvý odberateľ a  zároveň nedodala službu s  miestom dodania v inom členskom štáte 
+podľa § 15 ods. 1 zákona o DPH, súhrnný výkaz nepodáva.  
+ 
+        Ak službu s  miestom dodania podľa § 15 ods. 1 zákona o  DPH dodáva právnická osoba, ktorá nie je 
+zdaniteľnou osobou, bez ohľadu na to, či je alebo nie je registrovaná pre daň po dľa § 7 zákona o  DPH, súhrnný 
+výkaz nepodáva z dôvodu, že toto poskytnutie služby nie je predmetom dane podľa § 2 ods. 1 písm. b) zákona 
+o DPH, keďže poskytovateľ služby nekoná v postavení zdaniteľnej osoby.  
+ 
+Úprava § 80 ods. 3 zákona o DPH účinná do 31.12.2017 
+ 
+        Podľa znenia § 80 ods. 3 zákona o  DPH účinného do 31.12.2017 zdaniteľná osoba registrovaná pre DPH 
+podľa § 7 alebo § 7a zákona o  DPH bola povinná podať súhrnný výkaz za každý kalendárny štvrťrok, v ktorom 
+dodala službu s  miestom dodania v  inom členskom štáte podľa § 15 ods. 1 zákona o  DPH zdaniteľnej osobe 
+alebo právnickej osobe, ktorá nie je zdaniteľnou osobou a  je identifikovaná pre DPH, a  táto osoba je povinná 
+platiť daň. To znamená, že zdaniteľná osoba registrovaná pre DPH podľa § 7 aleb o § 7a zákona o  DPH mohla 
+podať súhrnný výkaz len za kalendárny štvrťrok, nie za kalendárny mesiac. Dodanie služby s  miestom dodania 
+podľa § 15 ods. 1 zákona o  DPH v inom členskom štáte, keď osobou povinnou platiť daň je príjemca služby , sa 
+v súhrnnom výkaze uvádza pod kódom 2.  
+ 
+3. oddiel     Lehota na podanie súhrnného výkazu 
+ 
+        Lehota na podanie súhrnného výkazu  je najneskôr do 25 dní po skončení obdobia , za ktoré je povinnosť 
+podať súhrnný výkaz.  
+ 
+        Súhrnný výkaz je možné podať len elektron ickými prostriedkami. Takto podávaný súhrnný výkaz musí byť 
+podpísaný kvalifikovaným elektronickým podpisom . V  prípade, že osoba, ktor á podáva súhrnný výkaz, má 
+s daňovým úradom uzavretú písomnú dohodu ohľadne náležitosti elektronického doručovania, spôsob u 
+5 
+ 
+overovania podania urobeného elektronickými prostriedkami a preukazovania doručenia, súhrnný výkaz nemusí 
+byť podpísaný kvalifikovaným elektronickým podpisom.  
+ 
+        Ak koniec lehoty na podanie súhrnného výkazu pripadne na sobotu, nedeľu alebo na deň pracovného 
+pokoja, posledným dňom lehoty je najbližší nasledujúci pracovný deň. 
+ 
+4. oddiel     Vykazovanie údajov v súhrnnom výkaze 
+ 
+        V súhrnnom výkaze sa uvádza identifikačné číslo pre daň osoby, ktorá súhrnný výkaz podáva, a  
+a) pri tovare  
+ identifikačné číslo pre daň nadobúdateľa  tovaru z  iného členského štátu , pod ktorým mu bol tovar 
+dodaný podľa § 43 ods. 1 zákona o DPH , a celková hodnota dodaného tovaru pre každého 
+nadobúdateľa osobitne, 
+ identifikačné číslo pre daň, ktoré má platiteľ dane pridelené v členskom štáte, v ktorom sa skončí 
+odoslanie alebo preprava tovaru  premiestneného z  tuzemska podľa § 43 ods. 4 zákona o DPH , a 
+hodnota tovaru zodpovedajúca základu dane podľa § 22 ods. 6 zákona o DPH, 
+ identifikačné číslo pre daň druhého odberateľa pridelené v členskom štáte, v ktorom sa skončí odoslanie 
+alebo preprava tovaru  dodaného v rámci trojstranného obchodu , a hodnot a tovaru dodaného druhému 
+odberateľovi, 
+ kód 1 len v prípade dodania tovaru druhému odberateľovi  v inom členskom štáte v  rámci trojstranného 
+obchodu; ostatné dodávky tovaru sa uvádzajú bez kódu.  
+ 
+b) pri službe s miestom dodania podľa § 15 ods. 1 zákona o  DPH v inom členskom štáte, keď osobou povinnou 
+platiť daň je príjemca služby  
+ identifikačné číslo pre daň príjemcu služby, pod ktor ým mu bola služba dodaná, a celkov á hodnota 
+dodaných služieb pre každého príjemcu služby osobitne, 
+ kód 2, ktorý bude charakterizovať v súhrnnom výkaze dodanie služby.   
+ 
+        Údaje v súhrnnom výkaze sa uvádzajú v eurách a zaokrúhľujú sa na celé eurá do 0,5 eura nadol a  od 0,5 
+eura vrátane nahor. 
+ 
+Príklad č. 7 
+Platiteľ dane dodal v  januári 2018 tovar pre belgického podnikateľa identifikovaného pre daň v Belgicku (BE 
+1212121111) v hodnote 15 000 eur a v mesiaci marec 2018 v hodnote 12 000 eur. V mesiaci február 2018 dodal 
+tovar pre dánskeho podnikateľa identifikovaného pre daň v Dánsku (DK 88888888), ktorý je druhým odberateľom 
+v rámci trojstranného obchodu,  v hodnote 17  000 eur. Okrem toho v mesiaci marec 2018  dodal poradenskú 
+službu českému podnikateľovi identifikovanému pre daň  v Českej republike (CZ 333333333) v  hodnote 28 000 
+eur. Celková hodnota dodaných tovarov do iného členského štátu v  I. štvrťroku 2018 je v sume 44  000 eur. 
+V súhrnnom výkaze podanom za I. štvrťrok 2018 platiteľ dane uvedie nasledovné údaje: 
+ 
+Kód štátu IČ pre daň nadobúdateľa 
+tovaru alebo príjemcu služby  
+Hodnota tovarov a služieb 
+(v eurách) 
+Kód  
+1 alebo 2   
+BE  1212121111 27 000  
+DK  88888888 17 000 1 
+CZ  333333333 28 000 2 
+      
+        V súhrnnom výkaze sa neuvádzajú služby os lobodené od dane podľa zákona platného v  členskom štáte, 
+v ktorom je miesto dodania služby. To znamená, že ak platiteľ dane alebo zdaniteľná osoba registrovaná pre daň 
+podľa § 7 alebo § 7a zákona o  DPH dodajú v príslušnom období len služby s miestom dodania v inom členskom 
+štáte podľa § 15 ods. 1 zákona o DPH, ktoré sú oslobodené od dane, nie sú povinní podať súhrnný výkaz.  
+ 
+Príklad č. 8 
+Nemecký podnikateľ identifikovaný pre daň v  Nemecku si objednal u slovenského platiteľa dane prepravu tovaru 
+z Nemecka n a Ukrajinu. Miesto dodania prepravnej služby je v  Nemecku. Podľa článku 146 ods. 1 písm. e) 
+6 
+ 
+smernice Rady 2006/112/ES členské štáty oslobodia od dane poskytovanie služieb vrátane prepravných 
+a doplnkových transakcií, ak sú tieto služby priamo spojené s  vývozom tovaru. Keďže sú prepravné služby  
+priamo spojené s vývozom tovaru oslobodené od dane podľa § 47 ods. 6 zákona o DPH , platiteľ dane neuvedie 
+tieto služby v súhrnnom výkaze. Nemecký podnikateľ nie je osobou povinnou platiť daň z prijatej služby prepravy, 
+pretože ide o službu oslobodenú od dane.  
+ 
+        Hodnota dodaného tovaru oslobodeného od dane podľa § 43 ods. 1 a 4 zákona o  DPH, dodaného tovaru 
+druhému odberateľovi v  rámci trojstranného obchodu a dodaných služieb s miestom dodania v  inom členskom 
+štáte podľa § 15 ods. 1 zákona o DPH, keď osobou povinnou platiť daň je príjemca služby, sa v súhrnnom výkaze 
+uvádza za obdobie, v ktorom vznikla daňová povinnosť. Pri dodaní tovaru podľa § 43 ods. 1 a 4 zákona o DPH sa 
+daňová povinnosť určí podľa  § 19 ods.  8 zákona o  DPH. Pri dodaní tovaru prvým odberateľom pre druhého 
+odberateľa sa hodnota dodaných tovarov uvádza za obdobie, v  ktorom bol tovar dodaný druhému odberateľovi. 
+Pri dodaní služby s miestom dodania v  inom členskom štáte podľa § 15 ods. 1 zákona o  DPH vzniká d aňová 
+povinnosť dňom dodania služby. Ak sa služba dodáva čiastkovo alebo opakovane, deň dodania je ustanovený v 
+§ 19 ods. 3 zákona o DPH.  
+ 
+Príklad č. 9 
+Platiteľ dane vykonáva pre podnikateľa identifikovaného pre daň v  Poľsku prieskum trhu. Zml uvné strany sa 
+dohodli na poskytovaní služby v  priebehu celého roka 201 8 a poľský podnikateľ sa zaviazal zaplatiť za každý 
+kalendárny štvrťrok protihodnotu vo výške 1  500 eur. Opakovane poskytovaná služba sa považuje za dodanú 
+najneskôr posledným dňom obdobia, na ktoré sa platba za opakovane dodávanú službu vzťahuje. Ak sa za deň 
+dodania služby považuje posledný deň obdobia, na ktoré sa platba za opakovane dodávanú službu vzťahuje, 
+platiteľ dane uvedie službu v súhrnnom výkaze v mesiacoch marec 2018, jún 2018, september 2018 a december 
+2018 alebo v jednotlivých štvrťrokoch 2018, ak obdobím, za ktoré podáva súhrnný výkaz, je kalendárny štvrťrok. 
+  
+        Ak je pred dodaním služby  s miestom dodania v  inom členskom štáte podľa § 15 ods. 1 zákona o  DPH, 
+prijatá platba, daňová povinnosť  vzniká z  prijatej platby dňom prijatia platby.  To znamená, že pri vykazovaní 
+služieb v súhrnnom výkaze sa bude brať do úvahy aj vznik daňovej povinnosti podľa § 19 ods. 4 zákona o  DPH. 
+Z článkov 65 a 66 smernice 2006/112/ES doplnenej smernicou 2008/117/ES vyplýva, že ak je platba prijatá pred 
+poskytnutím služby s miestom dodania v  inom členskom štáte, za ktorú je povinný platiť daň príjemca služby, 
+daňová povinnosť vzniká z  prijatej sumy prijatím platby. To znamená, že vznik daňove j povinnosti sa v  danom 
+prípade posudzuje rovnako v každom členskom štáte.  
+ 
+Príklad č. 10 
+Rakúsky podnikateľ identifikovaný pre daň v  Rakúsku si objednal u  platiteľa dane opravu stroja . Dňa 15. marca 
+2018 zaplatil preddavok na dodanie služby v o výške 50% dohodnutej protihodnoty. Služba bola poskytnutá dňa 
+5. apríla 2018. Miesto dodania služby je v  Rakúsku a osobou povinnou platiť daň je rakúsky podnikateľ. Ak je 
+platiteľ dane povinný podať súhrnný výkaz mesačne, uvedie hodnot u dodanej služby vo výške 50% d ohodnutej 
+protihodnoty v  súhrnnom výkaze podanom za kalendárny mesiac marec 2018 a vo výške ostávajúcej časti 
+protihodnoty v súhrnnom výkaze podanom za kalendárny mesiac apríl 2018. Ak by bola dňa 1 5. marca 2018 
+zaplatená celá dohodnutá protihodnota, dodan ie služby sa v  súhrnnom výkaze uvedie len za kalendárny mesiac 
+marec 2018.       
+ 
+        Dodanie tovaru prvým odberateľom druhému odberateľovi v  rámci trojstranného obchodu sa v  súhrnnom 
+výkaze uvádza za obdobie, v ktorom vznikla daňová povinnosť. Keďže druhý odberateľ nie je nadobúdateľom 
+tovaru z iného členského štátu, ale osobou povinnou platiť daň namiesto prvého odberateľa, v zmysle predpisov 
+platných v tuzemsku mu daňová povinnosť vzniká dňom, keď nadobudne právo nakladať s tovarom ako vlastník. 
+Ak prvý odberateľ prijme platbu pred dodaním tovaru druhému odberateľovi, daňová povinnosť by mala druhému 
+odberateľovi vzniknúť z prijatej platby dňom prijatia platby. Smernica 2006/112/ES však v článku 66 uvádza, že 
+členské štáty môžu odchylne od článk ov 63, 64 a 65 ustanoviť, že pri niektorých transakciách  alebo niektorých 
+kategóriách zdaniteľných osôb daňová povinnosť vzniká najneskôr v  deň vyhotovenia faktúry alebo najneskôr 
+v deň prijatia platby alebo v stanovenej lehote po dni vzniku zdaniteľnej udalosti . Na základe uvedeného možno 
+predpokladať, že v prípade dodania tovaru prvým odberateľom druhému odberateľovi môže v členských štátoch, 
+v ktorých je miesto dodania takto dodávaného tovaru , daňová povinnosť vznikať odlišne. Vzhľadom na túto 
+7 
+ 
+skutočnosť platiteľ dane, ktorý sa zúčastnil trojstran ného obchodu ako prvý odberateľ, uvedie hodnotu dodaného 
+tovaru druhému odberateľovi v súhrnnom výkaze za obdobie, v ktorom dodal tovar druhému odberateľovi. 
+ 
+        Zákon o DPH v § 80 ods. 6 ust anovuje, že ak dodávateľ služby s  miestom dodania v  inom členskom štáte 
+podľa § 15 ods. 1, keď osobou povinnou platiť daň je príjemca služby, nemá do uplynutia lehoty na podanie 
+súhrnného výkazu identifikačné číslo pre daň príjemcu služby, pričom príjemca služby ho informoval o  tom, že 
+požiadal o  pridelenie identifikačného čísla pre daň, dodanie služby uvedie do súhrnného výkazu za obdobie, 
+v ktorom bolo identifikačné číslo pre daň príjemcovi služby pridelené. Predmetná úprava nadväzuje na článok 18 
+vykonávacieho nariadenia Rady  (EÚ) č. 282/2011,  ktorým sa ustanovujú vykonávacie opatrenia smernice 
+2006/112/ES o spoločnom systéme dane z pridanej hodnoty. V  tomto článku sa uvádza, že pokiaľ poskytovateľ 
+nemá informácie, ktoré svedčia o opaku, môže odberateľa usadeného v rámci Spoločenstva, ktorý je zdaniteľnou 
+osobou a ktorému ešte nebolo pridelené identifikačné číslo pre DPH, považovať za zdaniteľnú osobu, ak ho 
+odberateľ informoval o tom, že oň požiadal, a ak získa akýkoľvek iný dôkaz, že odberateľ je zdaniteľnou osobou. 
+Týmto dôk azom môže byť napríklad potvrdenie daňovej správy členského štátu odberateľa, že je zdaniteľnou 
+osobou alebo že odberateľ požiadal o  vydanie identifikačného čísla pre DPH, alebo výpis z  webovej stránky 
+odberateľa, identifikácia odberateľa ako zdaniteľnej osoby na objednávkovom formulári alebo v zmluve, prípadne 
+platba z podnikateľského účtu.  
+ 
+        Ak v  čase dodania služby odberateľ neposkytol dodávateľovi identifikačné číslo pre DPH pridelené 
+v členskom štáte, v ktorom je usadený, ale ho informoval o tom, že požiadal o pridelenie identifikačného čísla pre 
+DPH, a poskytovateľ si overil, že príjemca je zdaniteľnou osobou v  zmysle § 3 alebo sa považuje za zdaniteľnú 
+osobu podľa § 15 ods. 4 zákona o  DPH, dodanie služby s  miestom dodania podľa § 15 ods. 1 zák ona o DPH 
+dodávateľ fakturuje v  cene bez DPH. Dodávateľ služby s  miestom dodania v  inom členskom štáte podľa § 15 
+ods. 1 zákona o  DPH neuvádza túto službu v  daňovom priznaní, ale je povinný uviesť dodanie služby 
+v súhrnnom výkaze. Ak do lehoty na podanie s úhrnného výkazu poskytovateľ služby nemá k  dispozícii 
+identifikačné číslo odberateľa služby pridelené príslušným členským štátom, v  zmysle zákona o  DPH uvedie 
+dodanie služby v  súhrnnom výkaze podanom za obdobie, v  ktorom bolo identifikačné číslo pre daň pr íjemcovi 
+služby pridelené.          
+ 
+Príklad č. 11 
+Platiteľ dane sa dňa 2 6. februára 2018 dohodol s  českým podnikateľom, že mu poskytne prepravu tovaru 
+z územia Maďarska do Českej republiky. V  tento deň český podnikateľ oznámil platiteľovi dane, že požiada  
+o pridelenie identifikačného čísla pre DPH v  Českej republike a  že mu toto identifikačné číslo oznámi hneď po 
+jeho pridelení. Prepravná služba bola poskytnutá dňa 28. februára 2018. Keďže platiteľ dane nemal v  čase 
+vyhotovenia faktúry k  dispozícii identif ikačné číslo pre DPH odberateľa, požiadal českého podnikateľa 
+o predloženie dôkazov, že je zdaniteľnou osobou. Keď si platiteľ dane overil postavenie zákazníka, vyhotovil dňa 
+1. marca 2018 faktúru v  cene bez DPH. Český podnikateľ dňa 2 8. marca 2018 poskytol platiteľovi dane 
+informáciu, že mu bolo dňa 2 7. marca 2018 pridelené identifikačné číslo pre DPH. Platiteľ dane uvedie dodanie 
+služby do súhrnného výkazu za marec 2018, ak obdobím, za ktoré podáva súhrnný výkaz, je kalendárny mesiac. 
+ 
+5. oddiel     Oprava údajov uvedených v podanom súhrnnom výkaze 
+ 
+        Ak osoba, ktorá podala súhrnný výkaz, zistí , že údaje uvedené v súhrnnom výkaze sú neúplné alebo 
+nesprávne, postupuje pri oprave týchto údajov v  závislosti od toho, či k zisteniu dôjde pred uplynutím le hoty na 
+podanie súhrnného výkazu alebo po uplynutí tejto lehoty. Ak k zisteniu, že údaje uvedené v súhrnnom výkaze sú 
+neúplné alebo nesprávne, dôjde pred uplynutím lehoty na podanie súhrnného výkazu, osoba, ktorá podala 
+súhrnný výkaz, podá opravný súhrnný výkaz. V opravnom súhrnnom výkaze sa uvádzajú všetky správne údaje, 
+teda nielen tie, ktoré sa opravujú. Opravný súhrnný výkaz nahrádza pôvodne podaný súhrnný výkaz.  
+ 
+        Ak osoba, ktorá podala súhrnný výkaz, zistí, že údaje v  podanom súhrnnom výkaze s ú neúplné alebo 
+nesprávne, po uplynutí lehoty na podanie súhrnného výkazu, podáva dodatočný súhrnný výkaz . V dodatočnom 
+súhrnnom výkaze sa uvádzajú len tie údaje, ktoré sa opravujú alebo dopĺňajú. Postup pri oprave údajov , ako je 
+oprava hodnoty dodaného tovaru alebo služby, oprava identifikačného čísla pre daň nadobúdateľa tovaru alebo 
+príjemcu služby a lebo oprava nesprávneho priradenia kódu 1 alebo kódu 2 sa uvádza v  Poučení na vyplnenie 
+8 
+ 
+súhrnného výkazu k  dani z  pridanej hodnoty.  Pokiaľ nebol podaný riadn y súhrnný výkaz, nemožno podať 
+dodatočný súhrnný výkaz. 
+ 
+        Ak platiteľ dane alebo zdaniteľná osoba po uplynutí lehoty na podanie súhrnného výkazu zistí, že údaje 
+v podanom súhrnnom výkaze za kalendárny štvrťrok sú neúplné  a že hodnota dodaných tovaro v presiahla 
+v tomto kalendárnom štvrťroku hodnotu 5 0 000 eur, je podľa § 80 ods. 2 zákona o DPH povinný podať súhrnný 
+výkaz osobitne za každý kalendárny mesiac príslušného kalendárneho štvrťroka. Súhrnný výkaz , ktorý bol 
+podaný za kalendárny štvrťrok, sa bude považovať za súhrnný výkaz za posledný mesiac kalendárneho štvrťroka 
+z dôvodu, že sa podáva v  lehote na podanie súhrnného výkazu za kalendárny štvrťrok . K tomuto obdobiu  sa 
+podá dodatočný súhrnný výkaz  v prípade, ak podaný súhrnný výkaz obsahuje aj úda je za iné kalendárne 
+mesiace kalendárneho štvrťroka , za ktorý bol podaný . Za prvé dva kalendárne mesiace príslušného štvrťroka  
+musia byť platiteľom dane podané dva samo statné súhrnné výkazy , ak boli v  týchto mesiacoch dodané tovary 
+alebo služby uvedené v § 80 ods. 1 zákona o DPH.  
+ 
+Príklad č. 12 
+Platiteľ dane podal dňa 23. januára 2018 súhrnný výkaz za IV. štvrťrok 2017. Hodnota dodaných tovarov za tento 
+štvrťrok bola vo výške 33 500 eur. Dňa 12. februára 2018 platiteľ dane zistil, že v podanom súhrnnom výkaze za 
+IV. štvrťrok 2017 neuviedol dodanie tovaru v hodnote 52 000 eur pre rakúskeho podnikateľa identifikovaného pre 
+daň v Rakúsku. Dňom dodania tovaru pre rakúskeho podnikateľa bol 15. november 2017. Vzhľadom k tomu, že 
+v IV. štvrťroku 2017 hodnota tovar ov presiahla hodnotu 5 0 000 eur, platiteľ dane bol povinný podať súhrnný 
+výkaz mesačne. Súhrnný výkaz za kalendárny mesiac október 2017 a november 2017 bol platiteľ dane povinný 
+podať do 2 7. decembra 2017. Keďže v  lehote do 2 5. januára 2018 platiteľ dane  podal súhrnný výkaz  
+s označením I V. štvrťrok 2017, bude sa na tento súhrnný výkaz hľadieť, ako keby bol podaný za kalendárny 
+mesiac december 2017. K  takto podanému súhrnnému výkazu platiteľ dane podá dodatočný súhrnný výkaz, 
+v ktorom uvedie opravené údaje, a to tak, aby sa tieto údaje týkali len dodávok v mesiaci december 2017. Okrem 
+dodatočného súhrnného výkazu je platiteľ dane povinný podať samostatne súhrnný výkaz za mesiac október 
+2017 a november 2017. Vzhľadom na zistenie rozdielov dňa 12. februára 2018, tieto dva súhrnné výkazy budú 
+podané oneskorene.         
+ 
+        Ak platiteľ dane alebo zdaniteľná osoba registrovaná pre daň podľa § 7 alebo § 7a  zákona o DPH opravuje 
+základ dane podľa § 25 zákona o  DPH, je povinný opraviť aj údaje v  podanom súhrnnom výkaze. V prípade 
+opravy základu dane podľa § 25 zákona o  DPH sa v súhrnnom výkaze uvádza suma, o ktorú sa základ dane 
+opravil, a to za obdobie, v ktorom bola oprava základu dane oznámená nadobúdateľovi tovaru alebo príjemcovi 
+služby. 
+ 
+Príklad č. 13 
+Platiteľ dane dodal v mesiaci január 2018 tovar oslobodený od dane nemeckému podnikateľovi identifikovanému 
+pre daň v  Nemecku v  hodnote 48  000 eur. Súhrnný výkaz podáva mesačne. Na základe uznanej reklamácie 
+znížil cenu dodaného tovaru o 10 000 eur a v mesiaci apríl 2018 vyhotovil pre nemeckého podnikateľa dobropis , 
+ktorý mu zaslal v mesiaci máj 2018 . V súhrnnom výkaze podanom za kalendárny mesiac máj 2018 , resp.  II. 
+štvrťrok 2018 platiteľ dane  uvedie identifikačné číslo nemeckého podnikateľa a  sumu, o ktorú sa z áklad dane 
+opravil, teda – 10 000 eur.  
+ 
+6. oddiel     Výzva na odstránenie nedostatkov podaného súhrnného výkazu 
+ 
+        Ak vzniknú pochybnosti o  správnosti, pravdivosti alebo úplnosti podaného súhrnného výkazu alebo 
+o pravdivosti údajov v ňom uvedených, postupuje sa podľa § 80 ods. 11 zákona o DPH. Podľa tohto ustanovenia, 
+ak má daňový úrad pochybnosti o správnosti, pravdivosti alebo úplnosti údajov uvedených  v súhrnnom výkaze, 
+oznámi tieto pochybnosti osobe, ktorá súhrnný výkaz podala, a  vyzve ju, aby s a k nim vyjadrila, neúplné údaje 
+doplnila, nejasnosti vysvetlila a  nepravdivé údaje opravila alebo pravdivosť údajov riadne preukázala. Zákon 
+o DPH zároveň ustanovuje povinnosť pre osobu, ktorá súhrnný výkaz podala, odstrániť nedostatky podaného 
+súhrnného výkazu do piatich dní od doručenia výzvy. Ak osoba, ktorá podala súhrnný výkaz, neodstráni 
+nedostatky podaného súhrnného výkazu v  lehote piatich dní od doručenia výzvy, daňový úrad tejto osobe uloží 
+sankciu podľa § 154 ods. 1 písm. j) daňového poriadku vo výške stanovenej v § 155 ods. 1 písm. e) daňového 
+poriadku za porušenie povinnosti nepeňažnej povahy ustanovenej zákonom o DPH.  
+9 
+ 
+        Vzhľadom k  tomu, že v  súhrnnom výkaze sa uvádzajú údaje o  dodávkach tovarov a  služieb do iných 
+členských štátov, pri ktorých je osobou povinnou platiť daň príjemca v inom členskom štáte, a ktoré sa poskytujú 
+daňovým správam iných členských štátov na kontrolné účely, je potrebné zabezpečiť korektnosť týchto 
+zasielaných údajov. Pokiaľ sa na základe výzvy daňového úradu má op raviť napríklad hodnota dodaného tovaru 
+alebo služby alebo identifikačné číslo pre DPH nadobúdateľa tovaru alebo príjemcu služby alebo kód 1 alebo 2, 
+opravu je možné vykonať len podaním dodatočného súhrnného výkazu, pričom v  dodatočnom súhrnnom výkaze 
+sa u vádzajú len tie údaje, ktoré sa opravujú alebo dopĺňajú. V  súvislosti s  takouto opravou je málo 
+pravdepodobné, že by sa oprava mala vykonať podaním opravného súhrnného výkazu, ktorý sa podáva 
+v prípade, ak sa nesprávne údaje v  podanom súhrnnom výkaze zisti a ešte pred uplynutím lehoty na podanie 
+súhrnného výkazu. Ak však nastane situácia, že osoba, ktorá podala súhrnný výkaz, vykoná opravu uvedených 
+údajov v čase, keď ešte neuplynula lehota na podanie súhrnného výkazu, opravu vykoná podaním opravného 
+súhrnného výkazu.  
+ 
+        Oprava nesprávneho údaja v  podanom súhrnom výkaze nie je v  každom prípade dôvodom na podanie 
+dodatočného súhrnného výkazu. Ak sa o pravuje zrejmý omyl pri vypĺňaní tlačiva súhrnného výkazu, ako je 
+napríklad nesprávne označenie obdobia, za ktorý sa súhrnný výkaz podáva, alebo uvedenie nesprávneho 
+identifikačného čísla osoby podávajúcej súhrnný výkaz, za predpokladu, že spracovanie súhrnného výkazu je 
+pozastavené, nie je potrebné a  ani možné nesprávny údaj opraviť podaním dodatočného súhrn ného výkazu. 
+V takomto prípade môže na základe vysvetlenia osoby podávajúcej súhrnný výkaz opraviť nesprávny údaj 
+daňový úrad a  následne súhrnný výkaz spracovať a  zaevidovať v  informačnom s ystéme. Po zaevidovaní 
+súhrnného výkazu v  informačnom systéme sa do  systému VIES odošlú už správne údaje. Je potrebné však 
+podotknúť, že k oprave nesprávnych údajov je potrebné pristupovať individuálne a  v prípade, ak boli do systému 
+VIES zaslané nesprávne údaje, je potrebné zabezpečiť korekciu týchto údajov.  
+ 
+Príklad č. 14 
+Platiteľ dane podal dňa 2 4. januára 2018 súhrnný výkaz, v ktorom uviedol obdobie V I. štvrťrok 201 6 a hodnotu 
+dodaného tovaru v sume 32 000 eur. V daňovom priznaní DPH podanom za IV. štvrťrok 2017 uviedol v riadku 16 
+sumu 48 500 eur. Keďže podaný súhrnný výkaz s vyznačením obdobia IV. štvrťrok 2016 bol podaný po lehote na 
+podanie súhrnného výkazu za vyznačené obdobie a  za takto vyznačené obdobie už bol platiteľom dane podaný 
+súhrnný výkaz, druhý v  poradí podaný súhrnný výkaz nebol ešte v  systéme spracovaný. Daňový úrad dňa 2 9. 
+januára 2018 oznámil platiteľovi dane pochybnosti o správnosti údajov v   súhrnnom výkaze podanom dňa 2 4. 
+januára 2018 a vyzval ho, aby sa k  podanému súhrnnému výkazu vyjadril. Platiteľ dane sa dňa 3 1. januára 2018  
+dostavil na daňový úrad, kde uviedol, že v  predmetnom súhrnnom výkaze omylom uviedol namiesto obdobia I V. 
+štvrťrok 201 7 obdobie I V. štvrťrok 201 6 a požiadal daňový úrad, aby sa podaný súhrnný výkaz považoval za 
+podaný za obdobie VI. štvrťrok 2017. Keďže súhrnný výkaz ešte nebol spracovaný, daňový úrad vykonal opravu 
+obdobia, za ktoré sa súhrnný výkaz podáva, a  takto opravený súhrnný výkaz zaevidoval v  systéme. Do systému 
+VIES budú potom zaslané údaje o dodávkach tovarov za správne obdobie. Oprava obdobia, za ktoré sa súhrnn ý 
+výkaz podal, nie je v danom prípade dôvodom na podanie dodatočného súhrnného výkazu.  
+Poznámka: 
+Ak by za obdobie VI. štvrťrok 2016 nebol platiteľom dane pôvodne podaný súhrnný výkaz z  dôvodu, že nenastali 
+skutočnosti na podanie súhrnného výkazu, a  následne podaný súhrnný výkaz dňa 2 4. januára 2018 sa spracuje 
+za obdobie, ktoré j e vyznačené v súhrnnom výkaze (V I. štvrťrok 201 6), opravu údajov za obdobie IV. štvrťrok 
+2016 je možné vykonať len podaním dodatočného súhrnného výkazu.    
+ 
+        Ak osoba, ktorá  podala súhrnný výkaz, neodstráni nedostatky podaného súhrnného výkazu a  na výzvu 
+daňového úradu nereaguje do konca mesiaca, v  ktorom bol podaný súhrnný výkaz, resp. najneskôr do konca 
+mesiaca nasledujúceho po mesiaci, ako bol podaný súhrnný výkaz, odporúč a sa, aby daňový úrad u  tejto osoby 
+vykonal daňovú kontrolu alebo miestne zisťovanie s cieľom zabezpečiť, aby sa do systému VIES zaslali korektné 
+údaje.      
+ 
+ 
+ 
+Vypracoval: Finančné riaditeľstvo SR, Banská Bystrica  
+                   Odbor daňovej metodiky  
+                   Január 2018 

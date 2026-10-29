@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "slovakia-pit",
+    "prior_frozen_sha256": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+    "root_successor_sha256": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+    "root_change": "SK-L01: \u00a711(11) DDS settlement exclusion; v1.7/date/H1 and one Sources row",
+    "root_proof_folder": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-writer-2026-10-28/SK-L01",
+    "writer_changed_guide": false
+  }
+]

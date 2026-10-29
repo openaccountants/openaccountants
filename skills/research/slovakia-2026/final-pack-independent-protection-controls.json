@@ -1,0 +1,267 @@
+[
+  {
+    "file": "slovakia-pit.md",
+    "metadata_changes": {
+      "last_updated": [
+        "2026-10-24",
+        "2026-10-27"
+      ],
+      "version": [
+        1.1,
+        1.6
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 13,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "SK PIT 2026, SZCO flat-rate expenses, revenue EUR 48,000, 15% rate",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "SK PIT 2026, employee, allowance phase-out and child bonus taper",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  },
+  {
+    "file": "sk-corporate-income-tax.md",
+    "metadata_changes": {
+      "last_updated": [
+        "2026-10-24",
+        "2026-10-27"
+      ],
+      "version": [
+        0.1,
+        0.4
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 13,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "Alfa s.r.o., revenue EUR 90,000, profit EUR 20,000, loss EUR 4,000 (2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "Beta a.s., revenue EUR 6,200,000, base EUR 300,000, losses EUR 400,000 (2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  },
+  {
+    "file": "sk-payroll-social.md",
+    "metadata_changes": {
+      "last_updated": [
+        "2026-10-24",
+        "2026-10-27"
+      ],
+      "version": [
+        0.2,
+        0.8
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 18,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "Jana, EUR 2,500 gross, one child under 15, declaration signed (2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "Peter, SZCO, 2025 tax base 21,000 plus 7,500 contributions, social from July 2026",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  },
+  {
+    "file": "sk-cross-border.md",
+    "metadata_changes": {
+      "last_updated": [
+        "2026-10-23",
+        "2026-10-27"
+      ],
+      "version": [
+        0.1,
+        0.3
+      ],
+      "description": [
+        "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% on dividends to individuals and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing.",
+        "Use this skill for Slovak cross-border income tax in 2026 (calendar year). It covers who is a Slovak tax resident (home, 183 days, seat or place of effective management), what Slovak-source income a non-resident is taxed on, when a permanent establishment exists (six months, 183 days of services, dependent agents, repeat platform letting), withholding tax at 19%, 7% or 10% on individual profit dividends by profit period and 35% for non-cooperating states, the 19% / 35% security deduction (zabezpečenie dane) on payments to non-EU/EEA non-residents, the EU interest and royalty exemption, dividends paid abroad, the treaty credit and exemption methods, and the company exit tax at 21%. Trigger on: zrážková daň, zabezpečenie dane, nerezident, stála prevádzkareň, Slovak withholding tax, paying a foreign supplier from Slovakia, moving to or leaving Slovakia, foreign tax credit Slovakia, exit tax Slovakia. Out of scope: slovakia-pit (individual return), sk-corporate-income-tax, sk-payroll-social, slovakia-vat-registration-4-7-7a and slovakia-vat-return (VAT), transfer pricing."
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 9,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "SK royalty to a foreign company, 19% and 35% withholding (2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "SK company, credit for foreign royalty tax capped at treaty rate (2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  },
+  {
+    "file": "sk-transfer-pricing.md",
+    "metadata_changes": {
+      "last_updated": [
+        "2026-10-23",
+        "2026-10-27"
+      ],
+      "version": [
+        0.1,
+        0.3
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 14,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "Management fee cut to the median, audit penalty at the 10% floor (2026)",
+        "changed_or_split_inputs": {
+          "days": 457,
+          "days_in_year": 365
+        },
+        "corrected_expected": {
+          "penalty": [
+            1840.52,
+            1838.5
+          ],
+          "penalty_paid_early": [
+            1227.01,
+            1225.6
+          ]
+        },
+        "original_steps_subsequence": false,
+        "disposition": "F02 calendar-year splitting and statutory dime flooring"
+      },
+      {
+        "name": "Royalty self-correction at 24%, supplementary return penalty at the 3% floor (2025 return, corrected 2026)",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {
+          "penalty": [
+            577.58,
+            577.5
+          ]
+        },
+        "original_steps_subsequence": false,
+        "disposition": "F02 calendar-year splitting and statutory dime flooring"
+      }
+    ]
+  },
+  {
+    "file": "slovakia-vat-return.md",
+    "metadata_changes": {
+      "version": [
+        2.2,
+        2.5
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 43,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "Cafe Dunaj s.r.o., March 2026 return",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "Tatra Consulting s.r.o., April 2026 return",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  },
+  {
+    "file": "slovakia-vat-registration-4-7-7a.md",
+    "metadata_changes": {
+      "version": [
+        1.2,
+        1.3
+      ]
+    },
+    "protected_metadata": "PASS",
+    "nine_H2": true,
+    "six_questions": true,
+    "two_oa": true,
+    "baseline_URL_count": 15,
+    "all_baseline_urls_preserved": true,
+    "full_CTA_and_byline": "PASS",
+    "oa": [
+      {
+        "name": "SK first EU service as non-payer and equivalent service after payer registration, 2026",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      },
+      {
+        "name": "SK domestic thresholds and net versus fixed-gross invoice prices, 2026",
+        "changed_or_split_inputs": {},
+        "corrected_expected": {},
+        "original_steps_subsequence": true,
+        "disposition": "all original inputs/steps/expected retained; extensions only"
+      }
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+Web L0:   * 【0†Formuláre】
+Web L1:   * 【1†Pobočky】
+Web L2:   * 【2†Rezervačný systém†esluzby.socpoist.sk】
+Web L3:   * 【3†Zoznam dlžníkov】
+Web L4: 
+Web L5: Menu
+Web L6: 
+Web L7: [Input: Napíšte hľadaný výraz]
+Web L8: 
+Web L9: [Input]
+Web L10: 
+Web L11: [Input] [Input]
+Web L12: 
+Web L13: 【4†Elektronické služby】
+Web L14: 
+Web L15:   * 【5†Kto som】
+Web L16:   * 【6†Životné situácie】
+Web L17:   * 【7†Sociálne poistenie】
+Web L18:   * 【8†Nástroje a služby】
+Web L19:   * 【9†Kontakty】
+Web L20:   * 【10†English】
+Web L21: # Práca v EÚ, EHP, vo Švajčiarsku a v Spojenom kráľovstve Veľkej Británie a Severného Írska
+Web L22: 
+Web L23: [Button: Koordinácia sociálneho zabezpečenia]
+Web L24: 
+Web L25:   * 【11†1 Koordinácia sociálneho zabezpečenia】
+Web L26:   * 【12†2 Určovanie uplatniteľnej legislatívy】
+Web L27:   * 【13†3 Uplatňovanie výnimky】
+Web L28:   * 【14†4 Brexit】
+Web L29:   * 【15†5 Osobitné pravidlá určovania príslušnosti právnych predpisov počas pandémie koronavírusu】
+Web L30:   * 【16†6 Povinnosti zamestnávateľa so sídlom mimo územia SR】
+Web L31:   * 【17†7 Vykonávanie cezhraničnej telepráce】
+Web L32: ## Koordinácia sociálneho zabezpečenia
+Web L33: 
+Web L34: Na úrovni krajín EÚ, Európskeho hospodárskeho priestoru (EHP) a Švajčiarska (ďalej „členské štáty“) upravujú sociálne zabezpečenie migrujúcich osôb dva základné právne predpisy – koordinačné nariadenia účinné od 1. mája 2010.
+Web L35: 
+Web L36: Koordinačné predpisy pokrývajú tieto oblasti sociálneho zabezpečenia:
+Web L37:   * nemocenské dávky (napr. nemocenské peňažné dávky, vecné dávky zdravotnej starostlivosti)
+Web L38:   * dávky v materstve a rovnocenné dávky v otcovstve (napr. materské)
+Web L39:   * dávky v invalidite (napr. invalidné dôchodky)
+Web L40:   * dávky v starobe (napr. starobné dôchodky)
+Web L41:   * pozostalostné dávky (napr. vdovské, vdovecké a sirotské dôchodky)
+Web L42:   * dávky v súvislosti s pracovnými úrazmi a chorobami z povolania
+Web L43:   * podpora pri úmrtí (príspevok na pohreb)
+Web L44:   * dávky v nezamestnanosti (dávka v nezamestnanosti)
+Web L45:   * preddôchodkové dávky (nejde o predčasný dôchodok)
+Web L46:   * rodinné dávky (napr. prídavok na dieťa, rodičovský príspevok a iné)
+Web L47: Na základe pravidiel koordinačných predpisov je určené, legislatíva ktorého členského štátu sa na migrujúcu osobu vzťahuje, resp. právne predpisy ktorého členského štátu upravujú výber poistného a poskytovanie dávok sociálneho zabezpečenia.
+Web L48: ## Určovanie uplatniteľnej legislatívy
+Web L49: 
+Web L50: Hlavnou zásadou je, že osoby, na ktoré sa vzťahujú koordinačné predpisy, podliehajú právnym predpisom len jedného členského štátu. Obvykle sa na osobu uplatňuje legislatíva členského štátu, v ktorom činnosť ako zamestnanec alebo SZČO vykonáva (zásada lex loci laboris). Zamestnávateľ so zamestnancom v inom členskom štáte plní povinnosti podľa legislatívy platnej na území štátu miesta výkonu činnosti zamestnanca.
+Web L51: V niektorých konkrétnych situáciách sú však opodstatnené aj iné kritériá, ako je skutočné miesto výkonu práce. Ide napríklad o dočasné vyslanie zamestnanca do iného členského štátu, keď osoba zvyčajne pracuje v dvoch alebo vo viacerých členských štátoch, alebo napríklad o kategóriu štátnych zamestnancov (uvedené situácie sú opísané nižšie).
+Web L52: ## Štátny zamestnanec
+Web L53: podlieha právnym predpisom členského štátu, pre ktorého správu pracuje. Činnosť zamestnanca alebo SZČO zvyčajne vykonávaná na palube plavidla na mori plávajúceho pod vlajkou členského štátu sa považuje za činnosť vykonávanú v danom členskom štáte.
+Web L54: Avšak osoba zamestnaná na palube plavidla plávajúceho pod vlajkou členského štátu a odmeňovaná za takúto činnosť podnikom alebo osobou, ktorej registrované sídlo alebo miesto podnikania je v inom členskom štáte, podlieha právnym predpisom tohto iného členského štátu, ak tu má daná osoba bydlisko.
+Web L55: Činnosť člena letovej posádky alebo palubného sprievodcu, ktorý poskytuje služby v oblasti osobnej alebo nákladnej leteckej dopravy, sa považuje za činnosť vykonávanú v členskom štáte, v ktorom sa nachádza domáca základňa. Ak zamestnanec s bydliskom v členskom štáte, v ktorom nevykonáva podstatnú činnosť, vykonáva činnosť v dvoch alebo vo viacerých členských štátoch pre zamestnávateľa usadeného mimo územia EÚ, vzťahujú sa naňho právne predpisy členského štátu bydliska.
+Web L56: ## Vyslanie zamestnanca
+Web L57: 
+Web L58: Ak zamestnanec, ktorý zvyčajne vykonáva činnosť pre zamestnávateľa na území vysielajúceho členského štátu, je dočasne vyslaný týmto zamestnávateľom na územie iného členského štátu (prijímajúci štát), aby tam vykonával prácu pre daného zamestnávateľa, naďalej podlieha právnym predpisom vysielajúceho štátu za podmienok, že predpokladané trvanie tejto práce nepresiahne 24 mesiacov a že nie je vyslaný, aby nahradil inú vyslanú osobu.
+Web L59: K nahrádzaniu dochádza, ak zamestnávateľ na základe pokračujúcej zmluvy opakovane vysiela rôznych zamestnancov na rovnakú pozíciu a na rovnaký účel. Vyslanie je možné uplatniť aj na osobu zamestnanú na účely vyslania do iného členského štátu pod podmienkou, že sa na ňu bezprostredne pred začatím jej zamestnania vzťahuje legislatíva vysielajúceho štátu. Túto podmienku spĺňa obdobie aspoň jedného mesiaca, kratšie obdobie si vyžaduje individuálne posúdenie.
+Web L60: Nie je potrebné, aby osoba počas tohto obdobia pracovala pre vysielajúceho zamestnávateľa, môže ísť napríklad aj o študenta alebo dôchodcu zapojeného do systému sociálneho zabezpečenia vysielajúceho štátu.
+Web L61: Podmienka priameho vzťahu medzi vysielajúcim zamestnávateľom a vyslaným zamestnancom je charakterizovaná najmä zodpovednosťou za prijatie do zamestnania, existenciou pracovnej zmluvy, povinnosťou vyplácať mzdu, právomocou rozviazať pracovnoprávny vzťah, určiť povahu práce či začať disciplinárne konanie voči zamestnancovi.
+Web L62: Podmienka obvyklej činnosti zamestnávateľa vo vysielajúcom štáte znamená, že podnik obvykle vykonáva podstatnú časť činností na jeho území. Ak sa činnosti podniku týkajú len vnútorného riadenia, nepredpokladá sa, že je táto podmienka splnená. Osobitne sa kontroluje v každom konkrétnom prípade, pričom do úvahy sa berie najmä:
+Web L63:   * miesto, kde má zamestnávateľ sídlo a správu
+Web L64:   * počet administratívnych zamestnancov pracujúcich na území vysielajúceho štátu a v prijímajúcom štáte
+Web L65:   * miesto náboru vyslaného zamestnanca
+Web L66:   * miesto, kde sa uzatvára väčšina zmlúv s klientmi
+Web L67:   * právne predpisy uplatniteľné na zmluvy medzi zamestnávateľom a klientmi a medzi zamestnávateľom a jeho zamestnancami
+Web L68:   * obrat počas príslušného typického obdobia vo vysielajúcom a v prijímajúcom štáte
+Web L69:   * počet zmlúv uzatvorených vo vysielajúcom a v prijímajúcom štáte
+Web L70:   * výkon činnosti zamestnávateľa vo vysielajúcom štáte najmenej dva mesiace pred začatím vyslania
+Web L71:   * vykonávanie obchodných činností zamestnávateľa na území vysielajúceho štátu počas vyslania zamestnancov
+Web L72: Vyslanie je možné uplatniť aj vtedy, keď vyslaný zamestnanec pracuje počas obdobia vyslania následne alebo súčasne v niekoľkých podnikoch v tom istom prijímajúcom štáte. Rozhodujúce je, že práca sa musí vykonávať v mene vysielajúceho zamestnávateľa. Krátke pozastavenie výkonu činnosti nepresahujúce dva mesiace počas vyslania z akéhokoľvek dôvodu (sviatky, ochorenie, školenie vo vysielajúcom podniku, atď.) nie je prerušením vyslania a nepredstavuje dôvod, ktorý by oprávňoval predĺženie obdobia vyslania.
+Web L73: Vyslanie zamestnanca do iného prijímajúceho štátu nasledujúce bezprostredne po predchádzajúcom vyslaní sa považuje za nové vyslanie, ktoré môže trvať najviac 24 mesiacov. Keď sa zamestnancovi skončí obdobie vyslania, pre toho istého zamestnanca, toto istého zamestnávateľa a ten istý členský štát, nemôže sa povoliť žiadne nové obdobie vyslania, pokiaľ neuplynuli minimálne dva mesiace odo dňa skončenia predchádzajúceho obdobia vyslania.
+Web L74: Podmienky vyslania musia byť zachované počas celého obdobia vyslania zamestnancov. Počas celého tohto obdobia musí byť možné vykonať všetky kontroly, najmä pokiaľ ide o platby poistného a zachovanie priameho vzťahu medzi zamestnávateľom a vyslaným zamestnancom.
+Web L75: ## Vyslanie SZČO
+Web L76: 
+Web L77: Na osobu, ktorá obvykle pracuje ako SZČO vo vysielajúcom štáte a vykonáva podobnú činnosť v prijímajúcom štáte, sa naďalej uplatňujú právne predpisy vysielajúceho štátu pod podmienkou, že predpokladané trvanie tejto práce nepresiahne 24 mesiacov.
+Web L78: Podmienka obvyklej činnosti znamená, že osoba obvykle vykonáva podstatnú časť činnosti na území vysielajúceho štátu, konkrétne určitý čas pred vyslaním, spĺňa všetky požiadavky potrebné na výkon jej činnosti vo vysielajúcom štáte a naďalej tam má prostriedky umožňujúce výkon činnosti aj po svojom návrate. V súvislosti s podmienkou výkonu činnosti určitý čas pred vyslaním sa považuje za dostatočné splnenie obdobie aspoň dvoch mesiacov, kratšie obdobie si vyžaduje individuálne posúdenie.
+Web L79: Pri skúmaní splnenia požiadavky výkonu podstatnej časti činnosti SZČO na území SR sa prihliada najmä na:
+Web L80:   * existenciu priestorov na vykonávanie samostatnej zárobkovej činnosti (napr. prevádzka, kancelárske priestory, prenajaté priestory na podnikanie, atď.),
+Web L81:   * registráciu v živnostenskom registri alebo komorách, profesijných spolkoch, atď.,
+Web L82:   * platenie daní na území SR,
+Web L83:   * existenciu daňového identifikačného čísla.
+Web L84: Pri určovaní toho, či ide SZČO do iného členského štátu vykonávať podobnú činnosť, je dôležitá skutočná povaha činnosti, a nie to, ako je kategorizovaná v prijímajúcom štáte, t. j. či je označená ako zamestnanie alebo samostatná zárobková činnosť. Krátke pozastavenie výkonu činnosti nepresahujúce dva mesiace počas vyslania z akéhokoľvek dôvodu (sviatky, ochorenie, školenie vo vysielajúcom podniku, atď.) nie je prerušením vyslania a nepredstavuje dôvod, ktorý by oprávňoval predĺženie obdobia vyslania.
+Web L85: Podmienky vyslania musia byť zachované počas celého obdobia vyslania SZČO. Počas celého tohto obdobia musí byť možné vykonať všetky kontroly, najmä pokiaľ ide o platby poistného a zachovanie potrebnej infraštruktúry vo vysielajúcom štáte.
+Web L86: ## Potvrdenie o právnych predpisoch sociálneho zabezpečenia, ktoré sa vzťahujú na držiteľa – prenosný dokument A1 (PD A1)
+Web L87: 
+Web L88: Vysielajúci zamestnávateľ alebo vyslaná SZČO pred vyslaním kontaktuje príslušnú inštitúciu vysielajúceho štátu – na území SR podaním žiadosti o vystavenie PD A1 z dôvodu vyslania príslušnej pobočke Sociálnej poisťovne (pozri tlačivo 【18†Žiadosť o vystavenie PD A1 z dôvodu vyslania zamestnanca】, resp. 【19†Žiadosť o vystavenie PD A1 z dôvodu vyslania SZČO】).
+Web L89: Dôležitá informácia: Od 1. júla 2026 budú zamestnávatelia povinní podávať žiadosti v oblasti uplatniteľnej legislatívy výlučne prostredníctvom svojej elektronickej schránky. Žiadosti bude potrebné podať vyplnením príslušného elektronického formulára. Zamestnávatelia so sídlom mimo Slovenskej republiky, ktorí nemajú prístup k portálu elektronických služieb, sú od tejto povinnosti oslobodení. Viac informácii nájdete tu: 【20†Zamestnávatelia, pozor: Pri vysielaní zamestnancov na prácu v zahraničí sa od 1.
+Web L90: júla 2026 budú žiadosti PD A1 podávať výlučne elektronicky】.
+Web L91: Ak sú splnené podmienky vyslania, pobočka Sociálnej poisťovne vystaví PD A1, ktorým sa osvedčuje, že v určitom období zamestnanec/SZČO podlieha slovenským právnym predpisom, a zašle ho zamestnávateľovi/zamestnancovi alebo SZČO. Zamestnávateľ bude za zamestnanca naďalej odvádzať poistné do slovenského systému, z ktorého bude mať zamestnanec naďalej právo v prípade splnenia podmienok čerpať dávky sociálneho zabezpečenia, obdobné platí pre vyslanú SZČO.
+Web L92: Zamestnanec alebo SZČO by ho mali mať počas svojho vyslania v zahraničí pri sebe, doložia ním zahraničnej inštitúcii, že sa na nich vzťahujú slovenské právne predpisy sociálneho zabezpečenia a vyžadujú ho aj orgány vykonávajúce kontrolu v sociálnom zabezpečení. Počas obdobia vyslania pobočka Sociálnej poisťovne kontroluje, či sú aj naďalej splnené všetky podmienky vyslania.
+Web L93: Zmeny, ktoré sa vyskytnú počas obdobia vyslania, zamestnávateľ, zamestnanec a SZČO oznamujú písomne pobočke Sociálnej poisťovne do desiatich dní (pozri tlačivo 【21†Oznámenie zamestnávateľa a zamestnanca o zmenách, ktoré nastali počas doby vyslania】, resp. 【22†Oznámenie SZČO o zmenách, ktoré nastali počas doby vyslania】).
+Web L94: Ak nie sú splnené podmienky vyslania, dotknutý zamestnanec alebo SZČO podliehajú legislatíve členského štátu, v ktorom vykonávajú činnosť (platí teda základná zásada lex loci laboris). Zamestnávateľ, zamestnanec a SZČO plnia všetky povinnosti súvisiace s registráciou a platením príspevkov na sociálne zabezpečenie podľa legislatívy štátu výkonu činnosti.
+Web L95: V súlade so zásadou jednej uplatniteľnej legislatívy, ak zamestnanec alebo SZČO podlieha legislatíve štátu výkonu činnosti, nemôže platiť príspevky podľa slovenských právnych predpisov sociálneho zabezpečenia, aj keď má bydlisko na Slovensku.
+Web L96: Inštitút vyslania sa uplatní aj v prípade krátkodobého vyslania, ktoré môže trvať aj jeden deň. Ak nie je možné z objektívnych dôvodov požiadať o vystavenie PD A1 v dostatočnom časovom predstihu pred vyslaním, PD A1 možno vystaviť aj počas obdobia vyslania, aj po jej ukončení so spätným účinkom, ak sú splnené podmienky vyslania a ak je ich možné preskúmať.
+Web L97: ## Výkon činnosti zamestnanca alebo SZČO na Slovensku
+Web L98: Osoba, ktorá je v SR zamestnaná alebo samostatne zárobkovo činná, pričom podlieha slovenskej legislatíve (zásada lex loci laboris) a z tohto dôvodu chce byť vyňatá zo systému sociálneho zabezpečenia iného členského štátu (napr. štátu bydliska), môže podať v príslušnej pobočke Sociálnej poisťovne žiadosť o vystavenie PD A1 z dôvodu výkonu činnosti v SR (pozri tlačivo 【23†Žiadosť o vystavenie PD A1 osobe, ktorá vykonáva činnosť ako zamestnaná osoba alebo činnosť ako samostatne zárobkovo činná osoba v SR】).
+Web L99: Dôležitá informácia: Od 1. júla 2026 budú zamestnávatelia povinní podávať žiadosti v oblasti uplatniteľnej legislatívy výlučne prostredníctvom svojej elektronickej schránky. Žiadosti bude potrebné podať vyplnením príslušného elektronického formulára. Zamestnávatelia so sídlom mimo Slovenskej republiky, ktorí nemajú prístup k portálu elektronických služieb, sú od tejto povinnosti oslobodení. Viac informácii nájdete tu: 【20†Zamestnávatelia, pozor: Pri vysielaní zamestnancov na prácu v zahraničí sa od 1.
+Web L100: júla 2026 budú žiadosti PD A1 podávať výlučne elektronicky】.
+Web L101: ## Súbežné vykonávanie činnosti v dvoch alebo vo viacerých členských štátoch
+Web L102: Ak osoba zvyčajne vykonáva činnosť ako zamestnanec v dvoch alebo vo viacerých členských štátoch, prvým krokom je určenie toho, či vykonáva podstatnú časť činnosti, t. j. najmenej 25 % z celkového pracovného času a/alebo dosahuje najmenej 25 % z celkovej odmeny, v členskom štáte bydliska (za bydlisko sa považuje miesto, kde sa osoba zvyčajne zdržiava a kde sa nachádza zvyčajné centrum jej záujmov, najmä kde má rodinné väzby, majetok, atď.):
+Web L103:   * ak áno, uplatňujú sa právne predpisy členského štátu bydliska
+Web L104:   * ak nie, uplatňujú sa
+Web L105:     * právne predpisy členského štátu, v ktorom je registrované sídlo alebo miesto podnikania podniku zamestnávajúceho danú osobu, ak je zamestnaná jedným podnikom alebo zamestnávateľom
+Web L106:     * právne predpisy členského štátu, v ktorom je registrované sídlo alebo miesto podnikania podnikov zamestnávajúcich danú osobu, ak je zamestnaná dvoma podnikmi s registrovaným sídlom alebo miestom podnikania v tom istom členskom štáte
+Web L107:     * právne predpisy členského štátu, v ktorom je registrované sídlo alebo miesto podnikania podniku zamestnávajúceho danú osobu, iného, ako je členský štát bydliska, ak je daná osoba zamestnaná dvoma podnikmi, z ktorých jeden má registrované sídlo v členskom štáte bydliska a druhý v inom členskom štáte
+Web L108:     * právne predpisy členského štátu bydliska, ak osobu zamestnávajú viaceré podniky alebo zamestnávatelia s registrovanými sídlami alebo miestami podnikania v odlišných členských štátoch mimo krajiny bydliska
+Web L109: SZČO, ktorá zvyčajne vykonáva činnosť v dvoch alebo vo viacerých členských štátoch, podlieha
+Web L110: 
+Web L111:   * právnym predpisom členského štátu bydliska, ak vykonáva podstatnú časť činnosti, t. j. najmenej 25 % z celkového pracovného času a/alebo dosahuje najmenej 25 % z celkovej odmeny v tomto členskom štáte
+Web L112:   * právnym predpisom členského štátu, v ktorom sa nachádza centrum jej záujmu, ak nemá bydlisko v jednom z členských štátov, v ktorých vykonáva podstatnú časť činnosti
+Web L113: Centrum záujmu SZČO sa pritom posudzuje individuálne, najmä v súvislosti s miestom, ktoré je stálym a trvalým miestom jej činnosti, zvyčajnej povahy a dĺžky trvania činností, počtu poskytovaných služieb a jej zámeru, ako naň poukazujú všetky tieto okolnosti.
+Web L114: 
+Web L115: Osoba, ktorá zvyčajne vykonáva činnosť ako zamestnanec a ako SZČO v odlišných členských štátoch, podlieha právnym predpisom členského štátu, v ktorom vykonáva činnosť ako zamestnanec.
+Web L116: Osoba, ktorá je zamestnaná ako štátny zamestnanec niektorým členským štátom a vykonáva činnosť ako zamestnanec a/alebo ako SZČO v jednom alebo vo viacerých členských štátoch, podlieha právnym predpisom členského štátu, ktorého správa ju zamestnáva.
+Web L117: Pri určovaní uplatniteľnej legislatívy v prípade výkonu činnosti na území dvoch alebo viacerých členských štátov sa neberú do úvahy zanedbateľné činnosti, t. j. činnosti, ktoré svojím rozsahom nepresahujú viac ako 5 % z celkového pracovného času a/alebo 5 % z celkovej dosiahnutej odmeny.
+Web L118: Aj v prípade súbežného vykonávania činnosti v dvoch alebo vo viacerých členských štátoch sa príslušnosť k právnym predpisom sociálneho zabezpečenia potvrdzuje PD A1. Osoba zvyčajne vykonávajúca činnosť ako zamestnanec alebo SZČO na území dvoch alebo viacerých členských štátov oznámi svoju situáciu príslušnej inštitúcii členského štátu bydliska – na území SR podaním žiadosti o určenie uplatniteľnej legislatívy príslušnej pobočke Sociálnej poisťovne.
+Web L119: Ak žiadosť podá osoba s bydliskom na území iného členského štátu, Sociálna poisťovňa ju postúpi príslušnej inštitúcii iného členského štátu, resp. ju vráti dotknutej osobe. V prípade, že Sociálna poisťovňa – ústredie určí, že osoba podlieha slovenským predpisom, vystaví a zašle jej PD A1, ktorým sa táto skutočnosť osvedčuje.
+Web L120: V prípade určenia právnych predpisov iného členského štátu Sociálna poisťovňa túto informáciu oznámi dotknutej osobe a príslušnej zahraničnej inštitúcii, ktorá bude príslušná na vystavenie PD A1 s definitívnou platnosťou. Dotknutá osoba bude zo všetkých činností v rôznych členských štátoch odvádzať poistné tomuto inému členskému štátu.
+Web L121: 【24†Vzory tlačív k formuláru A1】
+Web L122: ## Uplatňovanie výnimky
+Web L123: Ak dotknutá osoba chce, aby podliehala inej legislatíve ako určenej podľa vyššie uvedených pravidiel určovania, žiadosť o výnimku podá Ministerstvu práce, sociálnych vecí a rodiny SR (ďalej „ministerstvo“), ak chce na jej základe v oblasti sociálneho zabezpečenia podliehať slovenskej legislatíve alebo príslušnej inštitúcii iného členského štátu, ak chce podliehať legislatíve tohto štátu. Na jej udelenie nie je právny nárok.
+Web L124: V prípade, že ministerstvo výnimku udelí, a na jej základe bude osoba podliehať iba slovenskej legislatíve, pobočka Sociálnej poisťovne vystaví tejto osobe PD A1 na základe podanej 【25†Žiadosti o vystavenie prenosného dokumentu A1 z dôvodu udelenia výnimky】.
+Web L125: Výnimka z článkov 11 – 15 základného nariadenia je umožnená v zmysle článku 16 za podmienok, že sa na jej udelení dohodnú dva alebo viac členských štátov, ich príslušné orgány alebo subjekty nimi určené a že bude v záujme určitých osôb alebo skupín osôb, v osobitných prípadoch aj so spätným účinkom.
+Web L126: ## Brexit
+Web L127: 
+Web L128: Vyššie uvedené pravidlá a postupy platili v nezmenenom rozsahu vo vzťahu k Spojenému kráľovstvu Veľkej Británie a Severného Írska aj v období od 1. februára 2020 do 31. decembra 2020 na základe Dohody o vystúpení Spojeného kráľovstva Veľkej Británie a Severného Írska z Európskej únie a Európskeho spoločenstva pre atómovú energiu (ďalej „Dohoda o vystúpení“).
+Web L129: ## Uvedené pravidlá a postupy platia aj po 31. decembri 2020
+Web L130: 
+Web L131: ak dotknuté osoby podliehajú osobnému rozsahu Dohody o vystúpení v zmysle článku 30, t.j ich situácia sa začala pre 1. januárom 2021 a bez prerušenia trvá po 31. decembri 2020.
+Web L132: ## Vyššie uvedené pravidlá a postupy pre oblasť určovania uplatniteľnej legislatívy s výnimkou možnosti uplatniť výnimku platia vo vzťahu k Spojenému kráľovstvu Veľkej Británie a Severného Írska  od 1. januára 2021
+Web L133: na základe Dohody o obchode a spolupráci medzi Európskou úniou a Európskym spoločenstvom pre atómovú energiu na jednej strane a Spojeným kráľovstvom Veľkej Británie a Severného Írska na strane druhej (ďalej len „Dohoda o obchode“). Dohoda o obchode sa uplatňuje na situácie, ktoré vznikli po 31. decembri 2020.
+Web L134: Upozorňujeme však, že podmienky na vstup, pobyt a pracovné podmienky pracovníkov vyslaných na územie Spojeného kráľovstva Veľkej Británie a Severného Írska  sa riadia jeho vnútroštátnymi právnymi predpismi.
+Web L135: 
+Web L136: Viac informácií nájdete na stránke Ministerstva práce, sociálnych vecí a rodiny SR 【26†TU.†www.employment.gov.sk】
+Web L137: ## Osobitné pravidlá určovania príslušnosti právnych predpisov počas pandémie koronavírusu
+Web L138: 
+Web L139: Počas pandémie koronavírusu sa aplikovali/aplikujú osobitné pravidlá určovania uplatniteľnej legislatívy na všetky situácie, kedy prerušenie výkonu zárobkovej činnosti v inom členskom štáte, resp. zmena miesta/spôsobu výkonu práce bolo/a zapríčinené v dôsledku mimoriadnych opatrení prijatých jednotlivými členskými štátmi počas pandémie koronavírusu.
+Web L140: Podrobnejšie informácie o osobitných pravidlách nájdete tu:
+Web L141: 【27†Ako majú postupovať zamestnanci a SZČO, ktorí počas koronakrízy nemohli vycestovať do zahraničia?】
+Web L142: ## Povinnosti zamestnávateľa so sídlom mimo územia SR
+Web L143: 
+Web L144: Ak zamestnanec podlieha slovenským právnym predpisom sociálneho zabezpečenia, zamestnávateľ, ktorého sídlo sa nachádza na území iného členského štátu (ďalej „zamestnávateľ“), plní v oblasti sociálneho poistenia všetky povinnosti podľa zákona o sociálnom poistení.
+Web L145: ## Zamestnávateľ je povinný registrovať sa v registri zamestnávateľov v pobočke Sociálnej poisťovne
+Web L146: príslušnej podľa miesta trvalého pobytu zamestnanca na území SR najneskôr v deň predchádzajúci dňu, v ktorom jeho prvý zamestnanec podliehal slovenským právnym predpisom, a odhlasuje sa do ôsmich dní odo dňa, keď už nezamestnáva žiadneho takéhoto zamestnanca. Ak má takýto zamestnávateľ v čase registrácie viac ako jedného zamestnanca, miestne príslušnou je pobočka Sociálnej poisťovne podľa trvalého pobytu jedného z poistencov, podľa výberu zamestnávateľa.

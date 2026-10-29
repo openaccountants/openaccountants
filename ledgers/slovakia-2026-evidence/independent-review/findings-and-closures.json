@@ -1,0 +1,62 @@
+[
+  {
+    "id": "SK-L01",
+    "finding": "PIT employer settlement must exclude DDS addback claimants",
+    "status": "CLOSED",
+    "closure": "Guide and source supported; exact six-edit inverse and two original examples preserved."
+  },
+  {
+    "id": "SK-L02",
+    "finding": "Calendar-year quotation omitted operative line67",
+    "status": "CLOSED",
+    "closure": "Exact native64–67 extension read, preserving original evidence history."
+  },
+  {
+    "id": "SK-L03",
+    "finding": "Legal-person residence quote omitted seat/effective-management clause",
+    "status": "CLOSED",
+    "closure": "Exact first-quote15–32 extension read; calendar-year fix retained."
+  },
+  {
+    "id": "SK-L04/SK-L05",
+    "finding": "Social-base trainer exception and pre-2026 backpay transition; independent health base",
+    "status": "CLOSED",
+    "closure": "Positive trainer300/lower-base method and unreduced accident/guarantee bases match own138/138c; current62143 Guide inverse exact."
+  },
+  {
+    "id": "SK-L06–08",
+    "finding": "Foreign-year credit, exit exclusions and full-TP-documentation opening missing from quotes",
+    "status": "CLOSED",
+    "closure": "Actual retained native quotations extended; no Guide change."
+  },
+  {
+    "id": "SK-L09",
+    "finding": "Car goods self-supply exclusion stated too broadly",
+    "status": "CLOSED",
+    "closure": "Current32fe Guide limits exclusion to nondeducted extent, independently matches85n."
+  },
+  {
+    "id": "SK-L10",
+    "finding": "VAT-registration source routing shifted away from actual rules",
+    "status": "CLOSED",
+    "closure": "All66 routes actually rechecked,33 corrected; full row inverse and two-year§11 quote extension verified."
+  },
+  {
+    "id": "SK-L11–14",
+    "finding": "VAT return subject, registration effects/interim status, deduction limbs and group liability source gaps",
+    "status": "CLOSED",
+    "closure": "All exact operative extensions actually read, raw/reader identities verified; no new tax rule invented."
+  },
+  {
+    "id": "A1 evidence limitation",
+    "finding": "Direct11(1)/13 acquisition failed",
+    "status": "CLOSED",
+    "closure": "Current official SP administrative page supports one-state/multistate/A1 rules. Explicit web-tool-response provenance; no direct-regulation quote fabricated."
+  },
+  {
+    "id": "Header precision",
+    "finding": "Two successor byte counts were stale",
+    "status": "CLOSED",
+    "closure": "Header-only payroll49917/VAT50351 successors invert to prior exact ledgers; no row/source change."
+  }
+]

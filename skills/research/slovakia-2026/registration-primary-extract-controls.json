@@ -1,0 +1,192 @@
+[
+  {
+    "extract": "vat-3.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "615f601d7f233aef5f43a623067691ffb9b6bc6c464e1ee7503a5adb9e372d31"
+  },
+  {
+    "extract": "vat-4.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "a91c8b7ec4d907ac295f3d75411295b4815da4c2a95808793656b7742f88c7e0"
+  },
+  {
+    "extract": "vat-5a.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "596a6a1ae8ac0c0f60d64095ceef828aed1c9705e668d2b95000742128920649"
+  },
+  {
+    "extract": "vat-7.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "09ef0a6b76c0f8d580b1465fe854bf6a93fa6a54892ab5a472d6f3d05f1d9e6d"
+  },
+  {
+    "extract": "vat-7a.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "0353fec45bbce66e7ca2abd27d85a83a50502e2da0908c27d6cbe13c9d1e35ad"
+  },
+  {
+    "extract": "vat-11.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "9d9c0f6f67845e1439f618106dc784b1d9ab5effc53ac9bdde8cfff84b6514dc"
+  },
+  {
+    "extract": "vat-15.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "abaf0c8da39de5e4a1598ab41244891535553444e493aa0ead8789c9c6a98ae1"
+  },
+  {
+    "extract": "vat-19.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "d10b84b4ddb89fdb54dda0f42cc5634b2f6290279cbf4526373a7b5ea2cf212c"
+  },
+  {
+    "extract": "vat-22.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "6764417b7ecbfdc64f40273dc13dc6ca1e1bf8ca4f087f55972bcf93dec740c2"
+  },
+  {
+    "extract": "vat-27.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "73a9598cbb28d1fa8ec37cf93ed314e1d137b843756beb5fc25029100118c3a5"
+  },
+  {
+    "extract": "vat-49.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "58719d09abe724e3283e055c79261cd2b386aee1446c2b8ad40f50d5775d5f3e"
+  },
+  {
+    "extract": "vat-51.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "7df42455a629583346d706ce4c3dbf7e7f818b81ceba51bc69c6ab3d2155db3f"
+  },
+  {
+    "extract": "vat-55.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "a96dd91e65c42b3f8cfd9e64d6e5f2a72f00d19a607fd62633b487b185826b05"
+  },
+  {
+    "extract": "vat-69.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "c046c0454686bd754ae22944621d7ddb18c9432eab4debb132e2757e1609d274"
+  },
+  {
+    "extract": "vat-70.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "3ffd0a81559fe27a4c681321a13d35a730bf3bbffdf51abcc84190d5ecfcae90"
+  },
+  {
+    "extract": "vat-72.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "6036bf5e06ee56e9db371d63275712b26c062f88ef2f5a1230419b020c752d92"
+  },
+  {
+    "extract": "vat-73.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "6ffe3e3ac9947f8ba4cd56897dbe062239660b3790765988cb4d88943ffa7179"
+  },
+  {
+    "extract": "vat-74.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "130bbdefea8377363827b835cb4302c3d2e7e855a2c80560db8307f9b589aea3"
+  },
+  {
+    "extract": "vat-76.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "74224c0efd038715df387227f886eef60ae100111869f5601199ea425f753972"
+  },
+  {
+    "extract": "vat-77.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "c7786ffec5f2efb0b7f5fb5d0b56dba43c30a5534ded8987afe4ac224e851fc9"
+  },
+  {
+    "extract": "vat-78.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "e3771f9d6f70bf50c178cf19aa70b4b5f47cab3cd158df0b9fb1f60b66ca897b"
+  },
+  {
+    "extract": "vat-78a.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "0a1ba92cdec2d2ec36a0eb4fbebf2b94058c3ef48b1715885216f701cfe0d0d6"
+  },
+  {
+    "extract": "vat-80.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "82ebc4fb96e3727a58bba42fb22c33c892c1005888fdd5c97a0ff0b81a903d3d"
+  },
+  {
+    "extract": "vat-81.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "088d35fcbec6af5bc361c00b458cbe898c77de8141a3a6a2285653919f2d7547"
+  },
+  {
+    "extract": "vat-82.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "2e4e4b7910860be3b78750c0c01bdd34f3658a8f58865ec935dec6927f92a2ea"
+  },
+  {
+    "extract": "vat-85kn.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "6f013f5398ae0fae62e60a75cb41ded320d1c9177b0bc8468ba1ce5e633c10d0"
+  },
+  {
+    "extract": "tax-27.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "86f9de737fc92f43bb3ccebe3512b01505373079099bae6d69bf2c0e935f895a"
+  },
+  {
+    "extract": "tax-154.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "ed492216d74ddbb5aa9b40e6313d3b3c9facee3ad0bcae8439ecaf0b4baba924"
+  },
+  {
+    "extract": "tax-155.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "92646f4e98e3e9c3e3cd451706cf664b73746e1fafdad99a32d6a8947c67d69d"
+  },
+  {
+    "extract": "tax-156.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "e9f9bf17dc5683631a08ad169a64d60406de38007be232b373dc6da3f5efb774"
+  },
+  {
+    "extract": "tax-2026-jan-27.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "86f9de737fc92f43bb3ccebe3512b01505373079099bae6d69bf2c0e935f895a"
+  },
+  {
+    "extract": "tax-2026-jan-154.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "ed492216d74ddbb5aa9b40e6313d3b3c9facee3ad0bcae8439ecaf0b4baba924"
+  },
+  {
+    "extract": "tax-2026-jan-155.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "92646f4e98e3e9c3e3cd451706cf664b73746e1fafdad99a32d6a8947c67d69d"
+  },
+  {
+    "extract": "tax-2026-jan-156.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "e9f9bf17dc5683631a08ad169a64d60406de38007be232b373dc6da3f5efb774"
+  },
+  {
+    "extract": "vat-2024-4.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "84ab975106eaa6e8f5a2ec4be3610066b87711184e0eebd67c021e4f157eb23f"
+  },
+  {
+    "extract": "vat-2024-7.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "5c420f4b6490378c6bbfc04201f7e095e3e77b31ad89eb961adef9636332a606"
+  },
+  {
+    "extract": "vat-2024-7a.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "7476b901e1b152cfe8915f6e763644ade70607cec0c099a06d69903658a36ca1"
+  },
+  {
+    "extract": "vat-2024-27.txt",
+    "verbatim_in_full_primary_body": true,
+    "sha256": "6d2211d30e98c46c32318767cee27003022dedbbcd00923131ab346f7621aa3d"
+  }
+]

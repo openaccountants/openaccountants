@@ -1,0 +1,94 @@
+§ 17k
+Pravidlo o obmedzení úrokových nákladov
+(1)
+ Základ dane zistený podľa § 17 až 29 u daňovníka podľa § 2 písm. d) druhého bodu a písm. e) tretieho bodu so stálou prevádzkarňou (§ 16 ods. 2), ktorý zisťuje základ dane podľa § 17 ods. 1 písm. b) alebo písm. c), sa upraví podľa odseku 2.
+(2)
+ Ak suma čistých úrokových nákladov je vyššia ako 3 000 000 eur, základ dane sa zvýši
+ o sumu, o ktorú čisté úrokové náklady presiahnu 30 % úhrnu základov dane zvýšeného
+ o čisté úrokové náklady a o odpisy zahrnuté v zdaňovacom období do základu dane podľa
+ § 19 ods. 3 písm. a) a § 22 ods. 12.
+(3)
+ Čistými úrokovými nákladmi sa rozumie suma, o ktorú výdavky (náklady) na prijaté
+ úvery a pôžičky podľa odseku 4, ktoré sú v príslušnom zdaňovacom období daňovými výdavkami,
+ presahujú úrokové výnosy a iné príjmy ekonomicky rovnocenné úrokovým výnosom, ktoré
+ sú v príslušnom zdaňovacom období zdaniteľným príjmom.
+(4)
+ Na účely tohto ustanovenia sa za výdavky (náklady) na prijaté úvery a pôžičky považujú
+ úrokové náklady spojené so všetkými druhmi dlhu, iné náklady ekonomicky rovnocenné
+ úrokom, výdavky, ktoré vznikli v súvislosti so získavaním finančných prostriedkov
+ u dlžníka, ktorými sú
+a)
+ úroky z úverov a pôžičiek,
+b)
+ úroky z dlhopisov, pokladničných poukážok a iných platieb z finančných nástrojov
+ zodpovedajúce charakteru úrokov,
+c)
+ úrok z finančného prenájmu,
+d)
+ úrokové sumy v rámci derivátových operácií súvisiace s úvermi a pôžičkami daňovníka,
+e)
+ úroky, ktoré sú súčasťou obstarávacej ceny majetku alebo vlastných nákladov, a to
+ v pomere v akom sa tieto úroky podieľajú na obstarávacej cene majetku alebo vlastných
+ nákladoch majetku vrátane technického zhodnotenia alebo v pomere v akom sa tieto úroky
+ podieľajú na zostatkovej cene (§ 25 ods. 3),
+f)
+ sumy vypočítané na základe výnosu z finančných prostriedkov určené v súlade s princípom
+ nezávislého vzťahu podľa § 18 ods. 1,
+g)
+ kurzové rozdiely z úverov, pôžičiek a nástrojov spojené so získavaním finančných
+ prostriedkov,
+h)
+ poplatky za záruky v súvislosti so schémami financovania,
+i)
+ zmluvné poplatky a náklady súvisiace s pôžičkami a úvermi a
+j)
+ iné obdobné platby, ktoré sú ekonomicky rovnocenné úrokom.
+(5)
+ Na účely tohto ustanovenia sa za úrokové výnosy a iné príjmy ekonomicky rovnocenné
+ úrokovým výnosom rozumejú príjmy (výnosy) zodpovedajúce výdavkom (nákladom) podľa
+ odseku 4 vznikajúce u veriteľa vrátane úrokových výnosov, z ktorých sa daň vyberá
+ zrážkou a jej vybratím sa považuje daňová povinnosť za splnenú.
+(6)
+ Úhrnom základov dane na účely odseku 2 sa rozumie úhrn
+a)
+ základu dane zisteného podľa § 17 až 29 zníženého o úhrn vyňatých príjmov (základov dane) podliehajúcich zdaneniu v zahraničí,
+b)
+ osobitného základu dane podľa § 17f,
+c)
+ osobitného základu dane podľa § 51e,
+d)
+ základov dane z príjmov, z ktorých sa daň vyberá zrážkou a jej vybratím sa považuje
+ daňová povinnosť za splnenú.
+(7)
+ Čisté úrokové náklady nezahrnuté do základu dane podľa odseku 2 v príslušnom zdaňovacom
+ období možno odpočítať od základu dane v najviac piatich bezprostredne po sebe nasledujúcich
+ zdaňovacích obdobiach počnúc zdaňovacím obdobím bezprostredne nasledujúcom po zdaňovacom
+ období, v ktorom boli čisté úrokové náklady nezahrnuté do základu dane podľa odseku
+ 2, pričom úhrn čistých úrokových nákladov z príslušného zdaňovacieho obdobia a čistých
+ úrokových nákladov nezahrnutých do základu dane v predchádzajúcich zdaňovacích obdobiach
+ nesmie presiahnuť sumu vypočítanú podľa odseku 2. Právny nástupca daňovníka zrušeného
+ bez likvidácie si môže odpočítať od základu dane časť sumy čistých úrokových nákladov
+ nezahrnutých do základu dane podľa odseku 2 v nasledujúcich zdaňovacích obdobiach,
+ ak je zanikajúca právnická osoba a jej právny nástupca daňovníkom dane z príjmov právnickej
+ osoby a súčasne, ak účelom tohto zániku nie je len zníženie alebo vyhnutie sa daňovej
+ povinnosti. Ak je právnych nástupcov daňovníka zrušeného bez likvidácie viac, suma
+ čistých úrokových nákladov nezahrnutých do základu dane podľa druhej vety sa odpočítava
+ u každého z nich pomerne, a to podľa výšky vlastného imania zaniknutého daňovníka,
+ v akej prešlo na jednotlivých právnych nástupcov.
+(8)
+ Odseky 1 a 2 sa neuplatnia u dlžníka,
+a)
+ ktorý je bankou alebo pobočkou zahraničnej banky,
+94) poisťovňou, pobočkou poisťovne z iného členského štátu alebo pobočkou zahraničnej
+ poisťovne, zaisťovňou, pobočkou zaisťovne z iného členského štátu alebo pobočkou zahraničnej
+ zaisťovne, subjektom podľa osobitného predpisu,
+105b)
+b)
+ ktorého závislými osobami podľa § 2 písm. n) sú len fyzické osoby.
+(9)
+ U daňovníka podľa § 2 písm. d) druhého bodu, ktorý je spoločníkom verejnej obchodnej spoločnosti, pri výpočte úhrnu základu dane
+ podľa odseku 6 nie je súčasťou základu dane zisteného podľa § 17 až 29 časť základu dane verejnej obchodnej spoločnosti, ktorá je súčasťou jeho základu
+ dane.
+(10)
+ U daňovníka podľa § 2 písm. d) druhého bodu, ktorý je komplementárom komanditnej spoločnosti, pri výpočte úhrnu základu dane
+ podľa odseku 6 nie je súčasťou základu dane zisteného podľa § 17 až 29 časť základu dane komanditnej spoločnosti, ktorá je súčasťou jeho základu dane.

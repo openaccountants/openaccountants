@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -1348,8 +1348,8 @@
+     "quotations": [
+       {
+         "LF_start": 15,
+-        "LF_end": 28,
+-        "quote": "pohľadávku veriteľovi, ktorý je fyzickou osobou, d) daňovníkom s neobmedzenou daňovou povinnosťou 1. fyzická osoba, ktorá má na území Slovenskej republiky trvalý pobyt,1a) bydlisko alebo sa tu obvykle zdržiava, pričom 1a. fyzická osoba má na území Slovenskej republiky bydlisko, ak má možnosť ubytovania, ktoré neslúži len na príležitostné ubytovanie, a so zreteľom na všetky súvisiace skutočnosti a okolnosti vrátane osobných väzieb a ekonomických väzieb fyzickej osoby k územiu Slovenskej republiky je zrejmý zámer fyzickej osoby sa v tomto bydlisku trvale zdržiavať, 1b. fyzická osoba sa obvykle zdržiava na území Slovenskej republiky, ak sa tu zdržiava aspoň 183 dní v príslušnom kalendárnom roku, a to súvisle alebo v niekoľkých obdobiach; do tohto obdobia sa započítava každý, aj začatý deň pobytu,"
++        "LF_end": 32,
++        "quote": "pohľadávku veriteľovi, ktorý je fyzickou osobou, d) daňovníkom s neobmedzenou daňovou povinnosťou 1. fyzická osoba, ktorá má na území Slovenskej republiky trvalý pobyt,1a) bydlisko alebo sa tu obvykle zdržiava, pričom 1a. fyzická osoba má na území Slovenskej republiky bydlisko, ak má možnosť ubytovania, ktoré neslúži len na príležitostné ubytovanie, a so zreteľom na všetky súvisiace skutočnosti a okolnosti vrátane osobných väzieb a ekonomických väzieb fyzickej osoby k územiu Slovenskej republiky je zrejmý zámer fyzickej osoby sa v tomto bydlisku trvale zdržiavať, 1b. fyzická osoba sa obvykle zdržiava na území Slovenskej republiky, ak sa tu zdržiava aspoň 183 dní v príslušnom kalendárnom roku, a to súvisle alebo v niekoľkých obdobiach; do tohto obdobia sa započítava každý, aj začatý deň pobytu, 2. právnická osoba, ktorá má na území Slovenskej republiky sídlo1b) alebo miesto skutočného vedenia; miestom skutočného vedenia je miesto, kde sa vytvárajú alebo prijímajú zásadné riadiace rozhodnutia a obchodné rozhodnutia pre právnickú osobu ako celok, aj ak adresa tohto miesta nie je zapísaná v obchodnom registri,"
+       },
+       {
+         "LF_start": 32,

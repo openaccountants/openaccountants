@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://www.mfsr.sk/files/archiv/66/prispevok_16.zip",
+    "status": 200,
+    "bytes": 673012,
+    "sha256": "c5d5278e597c5ff25494cccbb680b02d021dccf160cf6d9cbbf15339de7af51e",
+    "discovery": "Actual official Ministry2026publication expanded in normal browser; visible actualdownloadlink",
+    "read_on": "2026-10-27",
+    "members": [
+      {
+        "archive_member": "DPPOv26 v1.13_vzor.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/forms/DPPOv26 v1.13_vzor.pdf",
+        "bytes": 204694,
+        "sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989"
+      },
+      {
+        "archive_member": "DPFOBv26 v1.3_vzor.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/forms/DPFOBv26 v1.3_vzor.pdf",
+        "bytes": 223083,
+        "sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900"
+      },
+      {
+        "archive_member": "Oznámenie o vydaní vzorov tlačív daňových priznaní.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/forms/Oznámenie o vydaní vzorov tlačív daňových priznaní.pdf",
+        "bytes": 192737,
+        "sha256": "4fffdeaa35c0c42260b041e625d85f3a4c50df30bb9013b76d9c6edb69468198"
+      },
+      {
+        "archive_member": "DPFOAv25 v1.10_vzor.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/forms/DPFOAv25 v1.10_vzor.pdf",
+        "bytes": 112798,
+        "sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933"
+      }
+    ]
+  },
+  {
+    "url": "https://www.mfsr.sk/files/archiv/36/prispevok_18.zip",
+    "status": 200,
+    "bytes": 1482754,
+    "sha256": "4313ce7c9846801463b6fe40a84f051fb243f9504873c4ffe9dc098413278cba",
+    "discovery": "Actual official Ministry2026publication expanded in normal browser; visible actualdownloadlink",
+    "read_on": "2026-10-27",
+    "members": [
+      {
+        "archive_member": "Poučenie DPFOA_2026.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/instructions/Poučenie DPFOA_2026.pdf",
+        "bytes": 464530,
+        "sha256": "ed661b8dbf4456961b67fc64d3640cac54d7aa83656455e617fe8a6ec6849b05"
+      },
+      {
+        "archive_member": "Poučenie DPFOB_2026.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/instructions/Poučenie DPFOB_2026.pdf",
+        "bytes": 652173,
+        "sha256": "838403b7fd5534109c455ff31ef212ec0c595f3d6dfd8bc7ec2f2f28654a4cb9"
+      },
+      {
+        "archive_member": "Poučenie DPPO_2026.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/instructions/Poučenie DPPO_2026.pdf",
+        "bytes": 392200,
+        "sha256": "712d42625e6304f52efbac415789424b760b9158c2f901027c14e250db61d36f"
+      },
+      {
+        "archive_member": "Oznámenie o vydaní poučení.pdf",
+        "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/instructions/Oznámenie o vydaní poučení.pdf",
+        "bytes": 125261,
+        "sha256": "80ec09df65c8b8c9f3f8318c7706ce5c0a90ee657f568280da7a829957840716"
+      }
+    ]
+  }
+]

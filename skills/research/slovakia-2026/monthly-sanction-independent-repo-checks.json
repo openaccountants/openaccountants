@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/international/slovakia/sk-payroll-social.md"
+    ],
+    "exit_code": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": "validate-guides.check_guides only sk-payroll-social.md",
+    "errors": [],
+    "warnings": []
+  }
+]

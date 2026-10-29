@@ -1,0 +1,6222 @@
+[
+  {
+    "key": "ITA6.flat",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-6.txt",
+    "source_quote_LF": [
+      77,
+      107
+    ]
+  },
+  {
+    "key": "ITA15.PIT",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-15.txt",
+    "source_quote_LF": [
+      6,
+      37
+    ]
+  },
+  {
+    "key": "ITA15.PIT",
+    "q": 2,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-15.txt",
+    "source_quote_LF": [
+      38,
+      45
+    ]
+  },
+  {
+    "key": "ITA11.personal",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      6,
+      17
+    ]
+  },
+  {
+    "key": "ITA33.child-taper",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "source_quote_LF": [
+      100,
+      111
+    ]
+  },
+  {
+    "key": "ITA46a.minimum",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46a.txt",
+    "source_quote_LF": [
+      1,
+      7
+    ]
+  },
+  {
+    "key": "ITA49.filing",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-49.txt",
+    "source_quote_LF": [
+      7,
+      17
+    ]
+  },
+  {
+    "key": "ITA49.filing",
+    "q": 2,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-49.txt",
+    "source_quote_LF": [
+      19,
+      33
+    ]
+  },
+  {
+    "key": "ITA49.filing",
+    "q": 3,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-49.txt",
+    "source_quote_LF": [
+      34,
+      42
+    ]
+  },
+  {
+    "key": "Act261.PIT",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/27.txt",
+    "source_quote_LF": [
+      953,
+      961
+    ]
+  },
+  {
+    "key": "Act261.PIT",
+    "q": 2,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/27.txt",
+    "source_quote_LF": [
+      963,
+      977
+    ]
+  },
+  {
+    "key": "Act261.PIT",
+    "q": 3,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/27.txt",
+    "source_quote_LF": [
+      979,
+      995
+    ]
+  },
+  {
+    "key": "ITA52zzzj.2026",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzj.txt",
+    "source_quote_LF": [
+      1,
+      5
+    ]
+  },
+  {
+    "key": "ITA52zzzm.2027",
+    "q": 1,
+    "reader_chunk": 1,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/14.txt",
+    "source_quote_LF": [
+      14823,
+      14826
+    ]
+  },
+  {
+    "key": "ITA2.residence",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      15,
+      28
+    ]
+  },
+  {
+    "key": "ITA2.residence",
+    "q": 2,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      32,
+      53
+    ]
+  },
+  {
+    "key": "ITA2.residence",
+    "q": 3,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      64,
+      66
+    ]
+  },
+  {
+    "key": "ITA11.nonresident",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      77,
+      81
+    ]
+  },
+  {
+    "key": "ITA33.child-parent",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "source_quote_LF": [
+      72,
+      99
+    ]
+  },
+  {
+    "key": "ITA5.pay",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-5.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "ITA38.settlement",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      4,
+      12
+    ]
+  },
+  {
+    "key": "ITA38.settlement",
+    "q": 2,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      21,
+      31
+    ]
+  },
+  {
+    "key": "ITA32.filing",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      9763,
+      9769
+    ]
+  },
+  {
+    "key": "ITA32.filing",
+    "q": 2,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      9771,
+      9784
+    ]
+  },
+  {
+    "key": "A.instructions-filing",
+    "q": 1,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOA_2026.txt",
+    "source_quote_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "key": "A.instructions-filing",
+    "q": 2,
+    "reader_chunk": 2,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOA_2026.txt",
+    "source_quote_LF": [
+      10,
+      16
+    ]
+  },
+  {
+    "key": "A.instructions-filing",
+    "q": 3,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOA_2026.txt",
+    "source_quote_LF": [
+      18,
+      38
+    ]
+  },
+  {
+    "key": "ITA6.business",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-6.txt",
+    "source_quote_LF": [
+      1,
+      37
+    ]
+  },
+  {
+    "key": "ITA7.capital",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-7.txt",
+    "source_quote_LF": [
+      4,
+      10
+    ]
+  },
+  {
+    "key": "ITA7.capital",
+    "q": 2,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-7.txt",
+    "source_quote_LF": [
+      23,
+      42
+    ]
+  },
+  {
+    "key": "ITA7.capital",
+    "q": 3,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-7.txt",
+    "source_quote_LF": [
+      66,
+      69
+    ]
+  },
+  {
+    "key": "ITA8.categories",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-8.txt",
+    "source_quote_LF": [
+      4,
+      22
+    ]
+  },
+  {
+    "key": "ITA8.categories",
+    "q": 2,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-8.txt",
+    "source_quote_LF": [
+      54,
+      60
+    ]
+  },
+  {
+    "key": "Minimum168.2025",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/02.txt",
+    "source_quote_LF": [
+      63,
+      67
+    ]
+  },
+  {
+    "key": "ITA47.rounding",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-47.txt",
+    "source_quote_LF": [
+      1,
+      10
+    ]
+  },
+  {
+    "key": "ITA51ea.bonds",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-51ea.txt",
+    "source_quote_LF": [
+      1,
+      16
+    ]
+  },
+  {
+    "key": "ITA9.retail-bonds",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-9.txt",
+    "source_quote_LF": [
+      115,
+      121
+    ]
+  },
+  {
+    "key": "ITA52zzzc.bonds",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      14717,
+      14720
+    ]
+  },
+  {
+    "key": "ITA52zzzc.bonds",
+    "q": 2,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      14726,
+      14731
+    ]
+  },
+  {
+    "key": "ITA51e.dividends",
+    "q": 1,
+    "reader_chunk": 3,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      12388,
+      12396
+    ]
+  },
+  {
+    "key": "ITA51e.dividends",
+    "q": 2,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      12408,
+      12422
+    ]
+  },
+  {
+    "key": "ITA52zi.dividends2017",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      13646,
+      13657
+    ]
+  },
+  {
+    "key": "ITA15.dividend2024",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/ITA-20240101-web-response.reader.txt",
+    "source_quote_LF": [
+      58,
+      62
+    ]
+  },
+  {
+    "key": "ITA52zzz.transitions",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzz.txt",
+    "source_quote_LF": [
+      6,
+      11
+    ]
+  },
+  {
+    "key": "ITA52zzz.transitions",
+    "q": 2,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzz.txt",
+    "source_quote_LF": [
+      13,
+      21
+    ]
+  },
+  {
+    "key": "ITA52zzzb.dividends2025",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzb.txt",
+    "source_quote_LF": [
+      17,
+      26
+    ]
+  },
+  {
+    "key": "ITA11.spouse",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      18,
+      46
+    ]
+  },
+  {
+    "key": "ITA11.DDS-PEPP",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      82,
+      109
+    ]
+  },
+  {
+    "key": "ITA33.child-age",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "source_quote_LF": [
+      3,
+      18
+    ]
+  },
+  {
+    "key": "ITA33.child-cap",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "source_quote_LF": [
+      42,
+      71
+    ]
+  },
+  {
+    "key": "Wage2024",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/35.txt",
+    "source_quote_LF": [
+      2396,
+      2399
+    ]
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "q": 1,
+    "reader_chunk": 4,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/v00.txt",
+    "source_quote_LF": [
+      33408,
+      33431
+    ]
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "q": 2,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/v00.txt",
+    "source_quote_LF": [
+      33444,
+      33449
+    ]
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "q": 3,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/v00.txt",
+    "source_quote_LF": [
+      33455,
+      33496
+    ]
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "q": 4,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/v00.txt",
+    "source_quote_LF": [
+      33504,
+      33515
+    ]
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "q": 5,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/v00.txt",
+    "source_quote_LF": [
+      33521,
+      33580
+    ]
+  },
+  {
+    "key": "ITA52zzy.mortgages",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzy.txt",
+    "source_quote_LF": [
+      4,
+      7
+    ]
+  },
+  {
+    "key": "ITA52zzy.mortgages",
+    "q": 2,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzy.txt",
+    "source_quote_LF": [
+      73,
+      81
+    ]
+  },
+  {
+    "key": "ITA33a.eligibility",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33a.txt",
+    "source_quote_LF": [
+      3,
+      37
+    ]
+  },
+  {
+    "key": "ITA33a.window",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33a.txt",
+    "source_quote_LF": [
+      38,
+      47
+    ]
+  },
+  {
+    "key": "ITA46.payment",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46.txt",
+    "source_quote_LF": [
+      1,
+      2
+    ]
+  },
+  {
+    "key": "ITA9.rental500",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-9.txt",
+    "source_quote_LF": [
+      36,
+      40
+    ]
+  },
+  {
+    "key": "ITA9.securities",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-9.txt",
+    "source_quote_LF": [
+      62,
+      67
+    ]
+  },
+  {
+    "key": "ITA34.advances",
+    "q": 1,
+    "reader_chunk": 5,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-34.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "ITA34.advances",
+    "q": 2,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-34.txt",
+    "source_quote_LF": [
+      23,
+      34
+    ]
+  },
+  {
+    "key": "ITA4.PIT",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-4.txt",
+    "source_quote_LF": [
+      4,
+      14
+    ]
+  },
+  {
+    "key": "ITA4.PIT",
+    "q": 2,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-4.txt",
+    "source_quote_LF": [
+      30,
+      33
+    ]
+  },
+  {
+    "key": "ITA11.allocation",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      110,
+      113
+    ]
+  },
+  {
+    "key": "ITA5.contributions",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-5.txt",
+    "source_quote_LF": [
+      245,
+      249
+    ]
+  },
+  {
+    "key": "ITA30.loss",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-30.txt",
+    "source_quote_LF": [
+      1,
+      16
+    ]
+  },
+  {
+    "key": "ITA2.micro",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      160,
+      173
+    ]
+  },
+  {
+    "key": "ITA11.base",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      3,
+      5
+    ]
+  },
+  {
+    "key": "ITA11.pensioner",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      65,
+      76
+    ]
+  },
+  {
+    "key": "ITA11.spouse-conditions",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "source_quote_LF": [
+      47,
+      64
+    ]
+  },
+  {
+    "key": "ITA6.no-rental-loss",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-6.txt",
+    "source_quote_LF": [
+      50,
+      58
+    ]
+  },
+  {
+    "key": "ITA9.shared500",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-9.txt",
+    "source_quote_LF": [
+      48,
+      57
+    ]
+  },
+  {
+    "key": "ITA43.PIT",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      4,
+      14
+    ]
+  },
+  {
+    "key": "ITA43.PIT",
+    "q": 2,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      23,
+      28
+    ]
+  },
+  {
+    "key": "ITA43.PIT",
+    "q": 3,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      86,
+      88
+    ]
+  },
+  {
+    "key": "ITA43.PIT",
+    "q": 4,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      100,
+      104
+    ]
+  },
+  {
+    "key": "ITA33.child-months",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "source_quote_LF": [
+      26,
+      41
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 1,
+    "reader_chunk": 6,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      74,
+      75
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 2,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      77,
+      84
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 3,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      86,
+      96
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 4,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      98,
+      103
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 5,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      107,
+      156
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 6,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      159,
+      161
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 7,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      163,
+      169
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 8,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      171,
+      183
+    ]
+  },
+  {
+    "key": "A.details",
+    "q": 9,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      185,
+      186
+    ]
+  },
+  {
+    "key": "ITA33a.order-payout",
+    "q": 1,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33a.txt",
+    "source_quote_LF": [
+      48,
+      64
+    ]
+  },
+  {
+    "key": "ITA33a.death",
+    "q": 1,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33a.txt",
+    "source_quote_LF": [
+      65,
+      74
+    ]
+  },
+  {
+    "key": "TC14.electronic",
+    "q": 1,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-14.txt",
+    "source_quote_LF": [
+      1,
+      17
+    ]
+  },
+  {
+    "key": "FS14.vintage",
+    "q": 1,
+    "reader_chunk": 7,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      19,
+      36
+    ]
+  },
+  {
+    "key": "A.base",
+    "q": 1,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      187,
+      207
+    ]
+  },
+  {
+    "key": "A.base",
+    "q": 2,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      209,
+      242
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 1,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      163,
+      164
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 2,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      166,
+      183
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 3,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      185,
+      197
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 4,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      199,
+      217
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 5,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      219,
+      246
+    ]
+  },
+  {
+    "key": "B.employment",
+    "q": 6,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      248,
+      248
+    ]
+  },
+  {
+    "key": "B.flat-expenses",
+    "q": 1,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      249,
+      250
+    ]
+  },
+  {
+    "key": "B.flat-expenses",
+    "q": 2,
+    "reader_chunk": 8,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      252,
+      289
+    ]
+  },
+  {
+    "key": "B.flat-expenses",
+    "q": 3,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      291,
+      305
+    ]
+  },
+  {
+    "key": "B.flat-expenses",
+    "q": 4,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      307,
+      321
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 1,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      322,
+      323
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 2,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      325,
+      327
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 3,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      329,
+      355
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 4,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      357,
+      357
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 5,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      360,
+      368
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 6,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      371,
+      395
+    ]
+  },
+  {
+    "key": "B.business-loss",
+    "q": 7,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      397,
+      397
+    ]
+  },
+  {
+    "key": "B.rental",
+    "q": 1,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      398,
+      399
+    ]
+  },
+  {
+    "key": "B.rental",
+    "q": 2,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      401,
+      458
+    ]
+  },
+  {
+    "key": "B.rental",
+    "q": 3,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      460,
+      487
+    ]
+  },
+  {
+    "key": "B.rental",
+    "q": 4,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      489,
+      489
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 1,
+    "reader_chunk": 9,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      490,
+      491
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 2,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      493,
+      532
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 3,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      534,
+      573
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 4,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      575,
+      616
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 5,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      618,
+      653
+    ]
+  },
+  {
+    "key": "B.capital-other",
+    "q": 6,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      655,
+      655
+    ]
+  },
+  {
+    "key": "B.scales-relief",
+    "q": 1,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      656,
+      657
+    ]
+  },
+  {
+    "key": "B.scales-relief",
+    "q": 2,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      659,
+      771
+    ]
+  },
+  {
+    "key": "A.relief-credit",
+    "q": 1,
+    "reader_chunk": 10,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      243,
+      244
+    ]
+  },
+  {
+    "key": "A.relief-credit",
+    "q": 2,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      246,
+      337
+    ]
+  },
+  {
+    "key": "A.relief-credit",
+    "q": 3,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      339,
+      339
+    ]
+  },
+  {
+    "key": "B.credits",
+    "q": 1,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      772,
+      773
+    ]
+  },
+  {
+    "key": "B.credits",
+    "q": 2,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      775,
+      876
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 1,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1271,
+      1272
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 2,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1274,
+      1279
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 3,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1281,
+      1311
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 4,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1313,
+      1320
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 5,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1322,
+      1347
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 6,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1349,
+      1351
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 7,
+    "reader_chunk": 11,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1353,
+      1361
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 8,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1363,
+      1390
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 9,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1392,
+      1398
+    ]
+  },
+  {
+    "key": "B.dividends",
+    "q": 10,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1403,
+      1403
+    ]
+  },
+  {
+    "key": "B.bonds",
+    "q": 1,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1404,
+      1405
+    ]
+  },
+  {
+    "key": "B.bonds",
+    "q": 2,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1407,
+      1424
+    ]
+  },
+  {
+    "key": "B.bonds",
+    "q": 3,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1426,
+      1434
+    ]
+  },
+  {
+    "key": "B.bonds",
+    "q": 4,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1436,
+      1467
+    ]
+  },
+  {
+    "key": "B.bonds",
+    "q": 5,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1472,
+      1472
+    ]
+  },
+  {
+    "key": "ITA45.relief",
+    "q": 1,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+    "source_quote_LF": [
+      4,
+      21
+    ]
+  },
+  {
+    "key": "ITA45.relief",
+    "q": 2,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+    "source_quote_LF": [
+      28,
+      42
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 1,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      75,
+      78
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 2,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      82,
+      91
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 3,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      93,
+      107
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 4,
+    "reader_chunk": 12,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      109,
+      114
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 5,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      118,
+      158
+    ]
+  },
+  {
+    "key": "B.details",
+    "q": 6,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      162,
+      162
+    ]
+  },
+  {
+    "key": "B.settlement",
+    "q": 1,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      877,
+      878
+    ]
+  },
+  {
+    "key": "B.settlement",
+    "q": 2,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      880,
+      933
+    ]
+  },
+  {
+    "key": "B.settlement",
+    "q": 3,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      935,
+      975
+    ]
+  },
+  {
+    "key": "B.settlement",
+    "q": 4,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      977,
+      978
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 1,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      440,
+      441
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 2,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      443,
+      449
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 3,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      451,
+      455
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 4,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      460,
+      460
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 5,
+    "reader_chunk": 13,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      462,
+      463
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 6,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      467,
+      480
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 7,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      482,
+      487
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 8,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      489,
+      499
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 9,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      501,
+      501
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 10,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      503,
+      506
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 11,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      508,
+      509
+    ]
+  },
+  {
+    "key": "A.payout-attachments",
+    "q": 12,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      511,
+      511
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 1,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1057,
+      1058
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 2,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1060,
+      1062
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 3,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1064,
+      1067
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 4,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1069,
+      1069
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 5,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1071,
+      1078
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 6,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1083,
+      1083
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 7,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1085,
+      1090
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 8,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1092,
+      1100
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 9,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1102,
+      1105
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 10,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1108,
+      1109
+    ]
+  },
+  {
+    "key": "B.payout-attachments",
+    "q": 11,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1113,
+      1113
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 1,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1473,
+      1474
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 2,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1477,
+      1478
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 3,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1480,
+      1512
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 4,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1514,
+      1535
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 5,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1537,
+      1542
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 6,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1544,
+      1545
+    ]
+  },
+  {
+    "key": "B.contribution-annex",
+    "q": 7,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOBv26 v1.3_vzor.txt",
+    "source_quote_LF": [
+      1550,
+      1550
+    ]
+  },
+  {
+    "key": "B.instructions-flat",
+    "q": 1,
+    "reader_chunk": 14,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOB_2026.txt",
+    "source_quote_LF": [
+      543,
+      549
+    ]
+  },
+  {
+    "key": "B.instructions-flat",
+    "q": 2,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOB_2026.txt",
+    "source_quote_LF": [
+      551,
+      591
+    ]
+  },
+  {
+    "key": "B.instructions-flat",
+    "q": 3,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOB_2026.txt",
+    "source_quote_LF": [
+      593,
+      603
+    ]
+  },
+  {
+    "key": "B.instructions-flat",
+    "q": 4,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPFOB_2026.txt",
+    "source_quote_LF": [
+      605,
+      620
+    ]
+  },
+  {
+    "key": "A.settlement-notes",
+    "q": 1,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      340,
+      341
+    ]
+  },
+  {
+    "key": "A.settlement-notes",
+    "q": 2,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      343,
+      349
+    ]
+  },
+  {
+    "key": "A.settlement-notes",
+    "q": 3,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPFOAv25 v1.10_vzor.txt",
+    "source_quote_LF": [
+      351,
+      351
+    ]
+  },
+  {
+    "key": "TC155.ranges",
+    "q": 1,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "TC155.daily",
+    "q": 1,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      19,
+      41
+    ]
+  },
+  {
+    "key": "TC155.daily",
+    "q": 2,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      43,
+      51
+    ]
+  },
+  {
+    "key": "TC156",
+    "q": 1,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-156.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "TC156",
+    "q": 2,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-156.txt",
+    "source_quote_LF": [
+      20,
+      39
+    ]
+  },
+  {
+    "key": "TC156",
+    "q": 3,
+    "reader_chunk": 15,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-156.txt",
+    "source_quote_LF": [
+      56,
+      65
+    ]
+  },
+  {
+    "key": "TC154.return-duty",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-154.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "TC155.first",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      56,
+      59
+    ]
+  },
+  {
+    "key": "TC155.floor",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      61,
+      69
+    ]
+  },
+  {
+    "key": "TC155.floor",
+    "q": 2,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      70,
+      80
+    ]
+  },
+  {
+    "key": "TC155.repeat",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      133,
+      139
+    ]
+  },
+  {
+    "key": "TC155.repeat",
+    "q": 2,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      140,
+      143
+    ]
+  },
+  {
+    "key": "TC155.threshold",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "source_quote_LF": [
+      106,
+      108
+    ]
+  },
+  {
+    "key": "NBS.ECB",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/06.txt",
+    "source_quote_LF": [
+      221,
+      226
+    ]
+  },
+  {
+    "key": "ECB.history",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/34.txt",
+    "source_quote_LF": [
+      542,
+      544
+    ]
+  },
+  {
+    "key": "ECB.history",
+    "q": 2,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/34.txt",
+    "source_quote_LF": [
+      548,
+      573
+    ]
+  },
+  {
+    "key": "ITA15.corporate",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-15.txt",
+    "source_quote_LF": [
+      46,
+      65
+    ]
+  },
+  {
+    "key": "ITA46b.minimum",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46b.txt",
+    "source_quote_LF": [
+      4,
+      36
+    ]
+  },
+  {
+    "key": "ITA46b.minimum",
+    "q": 2,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46b.txt",
+    "source_quote_LF": [
+      38,
+      76
+    ]
+  },
+  {
+    "key": "ITA17.accounts",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "ITA17.accounts",
+    "q": 2,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17.txt",
+    "source_quote_LF": [
+      28,
+      39
+    ]
+  },
+  {
+    "key": "ITA26.depreciation",
+    "q": 1,
+    "reader_chunk": 16,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-26.txt",
+    "source_quote_LF": [
+      4,
+      33
+    ]
+  },
+  {
+    "key": "ITA26.depreciation",
+    "q": 2,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-26.txt",
+    "source_quote_LF": [
+      70,
+      83
+    ]
+  },
+  {
+    "key": "ITA30.loss-CIT",
+    "q": 1,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-30.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "ITA30.loss-CIT",
+    "q": 2,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-30.txt",
+    "source_quote_LF": [
+      17,
+      28
+    ]
+  },
+  {
+    "key": "ITA21a.complete",
+    "q": 1,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-21a.txt",
+    "source_quote_LF": [
+      4,
+      23
+    ]
+  },
+  {
+    "key": "ITA17k.complete",
+    "q": 1,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      4,
+      14
+    ]
+  },
+  {
+    "key": "ITA17k.complete",
+    "q": 2,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      16,
+      45
+    ]
+  },
+  {
+    "key": "ITA17k.complete",
+    "q": 3,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      47,
+      61
+    ]
+  },
+  {
+    "key": "ITA17k.complete",
+    "q": 4,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      63,
+      77
+    ]
+  },
+  {
+    "key": "ITA17k.complete",
+    "q": 5,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      79,
+      94
+    ]
+  },
+  {
+    "key": "ITA52zzzj.CIT",
+    "q": 1,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzj.txt",
+    "source_quote_LF": [
+      6,
+      9
+    ]
+  },
+  {
+    "key": "ITA52zzzj.CIT",
+    "q": 2,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzj.txt",
+    "source_quote_LF": [
+      16,
+      18
+    ]
+  },
+  {
+    "key": "ITA16.source",
+    "q": 1,
+    "reader_chunk": 17,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      4,
+      15
+    ]
+  },
+  {
+    "key": "ITA16.source",
+    "q": 2,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      24,
+      74
+    ]
+  },
+  {
+    "key": "ITA16.source",
+    "q": 3,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      76,
+      101
+    ]
+  },
+  {
+    "key": "ITA16.source",
+    "q": 4,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      103,
+      114
+    ]
+  },
+  {
+    "key": "ITA43.nonresident",
+    "q": 1,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      4,
+      20
+    ]
+  },
+  {
+    "key": "ITA43.nonresident",
+    "q": 2,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      24,
+      38
+    ]
+  },
+  {
+    "key": "ITA43.nonresident",
+    "q": 3,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      84,
+      104
+    ]
+  },
+  {
+    "key": "ITA12.nonprofit-scope",
+    "q": 1,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-12.txt",
+    "source_quote_LF": [
+      14,
+      32
+    ]
+  },
+  {
+    "key": "ITA51eb.scope",
+    "q": 1,
+    "reader_chunk": 18,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-51eb.txt",
+    "source_quote_LF": [
+      4,
+      6
+    ]
+  },
+  {
+    "key": "TopUp3.scope",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/24.txt",
+    "source_quote_LF": [
+      1318,
+      1331
+    ]
+  },
+  {
+    "key": "ITA30c.pointer",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-30c.txt",
+    "source_quote_LF": [
+      4,
+      15
+    ]
+  },
+  {
+    "key": "ITA18.records",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      144,
+      154
+    ]
+  },
+  {
+    "key": "ITA18.records",
+    "q": 2,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      155,
+      170
+    ]
+  },
+  {
+    "key": "FS18.revenue",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-remaining-ordinary-completion/independent/fs18-own.txt",
+    "source_quote_LF": [
+      87,
+      95
+    ]
+  },
+  {
+    "key": "FS18.revenue",
+    "q": 2,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-remaining-ordinary-completion/independent/fs18-own.txt",
+    "source_quote_LF": [
+      102,
+      109
+    ]
+  },
+  {
+    "key": "ITA17f.exit",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+    "source_quote_LF": [
+      4,
+      17
+    ]
+  },
+  {
+    "key": "ITA17f.exit",
+    "q": 2,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+    "source_quote_LF": [
+      36,
+      59
+    ]
+  },
+  {
+    "key": "ITA17f.exit",
+    "q": 3,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17f.txt",
+    "source_quote_LF": [
+      61,
+      84
+    ]
+  },
+  {
+    "key": "ITA22.assets",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-22.txt",
+    "source_quote_LF": [
+      4,
+      13
+    ]
+  },
+  {
+    "key": "ITA22.assets",
+    "q": 2,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-22.txt",
+    "source_quote_LF": [
+      69,
+      77
+    ]
+  },
+  {
+    "key": "ITA42.advances",
+    "q": 1,
+    "reader_chunk": 19,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-42.txt",
+    "source_quote_LF": [
+      4,
+      29
+    ]
+  },
+  {
+    "key": "ITA42.advances",
+    "q": 2,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-42.txt",
+    "source_quote_LF": [
+      58,
+      79
+    ]
+  },
+  {
+    "key": "ITA21.disallow",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-21.txt",
+    "source_quote_LF": [
+      3,
+      7
+    ]
+  },
+  {
+    "key": "ITA21.disallow",
+    "q": 2,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-21.txt",
+    "source_quote_LF": [
+      28,
+      38
+    ]
+  },
+  {
+    "key": "ITA21.disallow",
+    "q": 3,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-21.txt",
+    "source_quote_LF": [
+      54,
+      58
+    ]
+  },
+  {
+    "key": "ITA17.paid",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17.txt",
+    "source_quote_LF": [
+      386,
+      414
+    ]
+  },
+  {
+    "key": "ITA19.VAT",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-19.txt",
+    "source_quote_LF": [
+      303,
+      311
+    ]
+  },
+  {
+    "key": "ITA25.VAT",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-25.txt",
+    "source_quote_LF": [
+      59,
+      69
+    ]
+  },
+  {
+    "key": "ITA52zzzk.vehicles",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzk.txt",
+    "source_quote_LF": [
+      1,
+      5
+    ]
+  },
+  {
+    "key": "ITA161.vehicle-reference",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      15868,
+      15869
+    ]
+  },
+  {
+    "key": "ITA12.dividends",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-12.txt",
+    "source_quote_LF": [
+      46,
+      55
+    ]
+  },
+  {
+    "key": "ITA27.straight",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-27.txt",
+    "source_quote_LF": [
+      4,
+      36
+    ]
+  },
+  {
+    "key": "CITannex.cars",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      4,
+      10
+    ]
+  },
+  {
+    "key": "CITannex.cars",
+    "q": 2,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      39,
+      39
+    ]
+  },
+  {
+    "key": "CITannex.cars",
+    "q": 3,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      52,
+      56
+    ]
+  },
+  {
+    "key": "CITannex.furniture-improvements",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      117,
+      117
+    ]
+  },
+  {
+    "key": "CITannex.furniture-improvements",
+    "q": 2,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      126,
+      130
+    ]
+  },
+  {
+    "key": "CITannex.buildings",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "source_quote_LF": [
+      184,
+      198
+    ]
+  },
+  {
+    "key": "ITA52zzzf.assets",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-52zzzf.txt",
+    "source_quote_LF": [
+      4,
+      13
+    ]
+  },
+  {
+    "key": "ITA17.pre-adjustment",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17.txt",
+    "source_quote_LF": [
+      600,
+      603
+    ]
+  },
+  {
+    "key": "ITA52zzr.interest",
+    "q": 1,
+    "reader_chunk": 20,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-52zzr.txt",
+    "source_quote_LF": [
+      3,
+      5
+    ]
+  },
+  {
+    "key": "ITA105b.entities",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      15524,
+      15528
+    ]
+  },
+  {
+    "key": "FS.thin-negative",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/fs-thin-cap.txt",
+    "source_quote_LF": [
+      48,
+      51
+    ]
+  },
+  {
+    "key": "ITA2.noncoop",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      174,
+      192
+    ]
+  },
+  {
+    "key": "MF.cooperation2026",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/56.txt",
+    "source_quote_LF": [
+      3,
+      15
+    ]
+  },
+  {
+    "key": "MF.cooperation2026",
+    "q": 2,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/56.txt",
+    "source_quote_LF": [
+      407,
+      410
+    ]
+  },
+  {
+    "key": "MF.cooperation2026",
+    "q": 3,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/56.txt",
+    "source_quote_LF": [
+      800,
+      807
+    ]
+  },
+  {
+    "key": "C.instructions-vintage",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPPO_2026.txt",
+    "source_quote_LF": [
+      1,
+      14
+    ]
+  },
+  {
+    "key": "C.instructions-vintage",
+    "q": 2,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPPO_2026.txt",
+    "source_quote_LF": [
+      25,
+      30
+    ]
+  },
+  {
+    "key": "C.attachments",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      1121,
+      1124
+    ]
+  },
+  {
+    "key": "FTT6.pointer",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/25.txt",
+    "source_quote_LF": [
+      534,
+      543
+    ]
+  },
+  {
+    "key": "C.adjustments",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      73,
+      88
+    ]
+  },
+  {
+    "key": "C.adjustments",
+    "q": 2,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      110,
+      115
+    ]
+  },
+  {
+    "key": "C.adjustments",
+    "q": 3,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      159,
+      178
+    ]
+  },
+  {
+    "key": "C.adjustments",
+    "q": 4,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      186,
+      205
+    ]
+  },
+  {
+    "key": "C.tableA-B",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      341,
+      343
+    ]
+  },
+  {
+    "key": "C.tableA-B",
+    "q": 2,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      357,
+      358
+    ]
+  },
+  {
+    "key": "C.tableA-B",
+    "q": 3,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      369,
+      375
+    ]
+  },
+  {
+    "key": "C.tableK-L",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      709,
+      734
+    ]
+  },
+  {
+    "key": "C.tableK-L",
+    "q": 2,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      741,
+      747
+    ]
+  },
+  {
+    "key": "C.tableK-L",
+    "q": 3,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      800,
+      801
+    ]
+  },
+  {
+    "key": "FS14.tables",
+    "q": 1,
+    "reader_chunk": 21,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      148,
+      159
+    ]
+  },
+  {
+    "key": "FS14.tables",
+    "q": 2,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      195,
+      204
+    ]
+  },
+  {
+    "key": "FS14.tables",
+    "q": 3,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      205,
+      221
+    ]
+  },
+  {
+    "key": "FS14.tables",
+    "q": 4,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      223,
+      237
+    ]
+  },
+  {
+    "key": "FS14.tables",
+    "q": 5,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/fs14-actual-independent.txt",
+    "source_quote_LF": [
+      239,
+      245
+    ]
+  },
+  {
+    "key": "C.loss",
+    "q": 1,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      467,
+      483
+    ]
+  },
+  {
+    "key": "C.loss",
+    "q": 2,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      501,
+      524
+    ]
+  },
+  {
+    "key": "C.loss",
+    "q": 3,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      526,
+      546
+    ]
+  },
+  {
+    "key": "C.minimum-settlement",
+    "q": 1,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      211,
+      242
+    ]
+  },
+  {
+    "key": "C.minimum-settlement",
+    "q": 2,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/forms--DPPOv26 v1.13_vzor.txt",
+    "source_quote_LF": [
+      256,
+      282
+    ]
+  },
+  {
+    "key": "C.instructions-payment",
+    "q": 1,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-income-forms-completion/independent/instructions--Poučenie DPPO_2026.txt",
+    "source_quote_LF": [
+      614,
+      640
+    ]
+  },
+  {
+    "key": "ITA1.treaty",
+    "q": 1,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-1.txt",
+    "source_quote_LF": [
+      6,
+      14
+    ]
+  },
+  {
+    "key": "Social130",
+    "q": 1,
+    "reader_chunk": 22,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-130.txt",
+    "source_quote_LF": [
+      1,
+      12
+    ]
+  },
+  {
+    "key": "Social131",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-131.txt",
+    "source_quote_LF": [
+      4,
+      14
+    ]
+  },
+  {
+    "key": "Social131",
+    "q": 2,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-131.txt",
+    "source_quote_LF": [
+      19,
+      25
+    ]
+  },
+  {
+    "key": "Social132",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-132.txt",
+    "source_quote_LF": [
+      1,
+      12
+    ]
+  },
+  {
+    "key": "Social133",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-133.txt",
+    "source_quote_LF": [
+      1,
+      4
+    ]
+  },
+  {
+    "key": "Social135",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-135.txt",
+    "source_quote_LF": [
+      1,
+      4
+    ]
+  },
+  {
+    "key": "Social136",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-136.txt",
+    "source_quote_LF": [
+      1,
+      13
+    ]
+  },
+  {
+    "key": "Social136a",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-136a.txt",
+    "source_quote_LF": [
+      1,
+      4
+    ]
+  },
+  {
+    "key": "Social137",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-137.txt",
+    "source_quote_LF": [
+      1,
+      10
+    ]
+  },
+  {
+    "key": "Health12",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-12.txt",
+    "source_quote_LF": [
+      4,
+      7
+    ]
+  },
+  {
+    "key": "Health12",
+    "q": 2,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-12.txt",
+    "source_quote_LF": [
+      27,
+      35
+    ]
+  },
+  {
+    "key": "Health38ezk",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-38ezk.txt",
+    "source_quote_LF": [
+      1,
+      16
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 1,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 2,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      24,
+      53
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 3,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      69,
+      75
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 4,
+    "reader_chunk": 23,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      80,
+      104
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 5,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      114,
+      149
+    ]
+  },
+  {
+    "key": "Social138",
+    "q": 6,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "source_quote_LF": [
+      150,
+      151
+    ]
+  },
+  {
+    "key": "ITA35.payroll",
+    "q": 1,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-35.txt",
+    "source_quote_LF": [
+      3,
+      22
+    ]
+  },
+  {
+    "key": "ITA35.payroll",
+    "q": 2,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-35.txt",
+    "source_quote_LF": [
+      47,
+      60
+    ]
+  },
+  {
+    "key": "ITA35.payroll",
+    "q": 3,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-35.txt",
+    "source_quote_LF": [
+      67,
+      89
+    ]
+  },
+  {
+    "key": "ITA35.payroll",
+    "q": 4,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-35.txt",
+    "source_quote_LF": [
+      95,
+      124
+    ]
+  },
+  {
+    "key": "Social128",
+    "q": 1,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-128.txt",
+    "source_quote_LF": [
+      4,
+      12
+    ]
+  },
+  {
+    "key": "Social128",
+    "q": 2,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-128.txt",
+    "source_quote_LF": [
+      49,
+      59
+    ]
+  },
+  {
+    "key": "Social128",
+    "q": 3,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-128.txt",
+    "source_quote_LF": [
+      65,
+      69
+    ]
+  },
+  {
+    "key": "Social141",
+    "q": 1,
+    "reader_chunk": 24,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-141.txt",
+    "source_quote_LF": [
+      4,
+      10
+    ]
+  },
+  {
+    "key": "Health16",
+    "q": 1,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "Health16",
+    "q": 2,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16.txt",
+    "source_quote_LF": [
+      27,
+      38
+    ]
+  },
+  {
+    "key": "Health16",
+    "q": 3,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16.txt",
+    "source_quote_LF": [
+      44,
+      68
+    ]
+  },
+  {
+    "key": "Health16",
+    "q": 4,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16.txt",
+    "source_quote_LF": [
+      95,
+      110
+    ]
+  },
+  {
+    "key": "Social4",
+    "q": 1,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-4.txt",
+    "source_quote_LF": [
+      1,
+      56
+    ]
+  },
+  {
+    "key": "SP.table",
+    "q": 1,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/60.txt",
+    "source_quote_LF": [
+      38,
+      67
+    ]
+  },
+  {
+    "key": "SP.table",
+    "q": 2,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/60.txt",
+    "source_quote_LF": [
+      80,
+      113
+    ]
+  },
+  {
+    "key": "SP.table",
+    "q": 3,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/60.txt",
+    "source_quote_LF": [
+      127,
+      157
+    ]
+  },
+  {
+    "key": "SP.table",
+    "q": 4,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/60.txt",
+    "source_quote_LF": [
+      229,
+      236
+    ]
+  },
+  {
+    "key": "SP.table",
+    "q": 5,
+    "reader_chunk": 25,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/60.txt",
+    "source_quote_LF": [
+      254,
+      266
+    ]
+  },
+  {
+    "key": "MinimumWage2026",
+    "q": 1,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/36.txt",
+    "source_quote_LF": [
+      63,
+      65
+    ]
+  },
+  {
+    "key": "Social5",
+    "q": 1,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-5.txt",
+    "source_quote_LF": [
+      1,
+      7
+    ]
+  },
+  {
+    "key": "Social21",
+    "q": 1,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-21.txt",
+    "source_quote_LF": [
+      5,
+      15
+    ]
+  },
+  {
+    "key": "Social21",
+    "q": 2,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-21.txt",
+    "source_quote_LF": [
+      17,
+      39
+    ]
+  },
+  {
+    "key": "Social21",
+    "q": 3,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-21.txt",
+    "source_quote_LF": [
+      41,
+      59
+    ]
+  },
+  {
+    "key": "Social21",
+    "q": 4,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-21.txt",
+    "source_quote_LF": [
+      61,
+      107
+    ]
+  },
+  {
+    "key": "Social122",
+    "q": 1,
+    "reader_chunk": 26,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.txt",
+    "source_quote_LF": [
+      71,
+      94
+    ]
+  },
+  {
+    "key": "Social122",
+    "q": 2,
+    "reader_chunk": 27,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.txt",
+    "source_quote_LF": [
+      96,
+      140
+    ]
+  },
+  {
+    "key": "Social122",
+    "q": 3,
+    "reader_chunk": 27,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.txt",
+    "source_quote_LF": [
+      157,
+      204
+    ]
+  },
+  {
+    "key": "Social122",
+    "q": 4,
+    "reader_chunk": 27,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.txt",
+    "source_quote_LF": [
+      208,
+      211
+    ]
+  },
+  {
+    "key": "SPJuly",
+    "q": 1,
+    "reader_chunk": 27,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.txt",
+    "source_quote_LF": [
+      55,
+      65
+    ]
+  },
+  {
+    "key": "SPJuly",
+    "q": 2,
+    "reader_chunk": 27,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.txt",
+    "source_quote_LF": [
+      74,
+      82
+    ]
+  },
+  {
+    "key": "SPJuly",
+    "q": 3,
+    "reader_chunk": 28,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.txt",
+    "source_quote_LF": [
+      83,
+      98
+    ]
+  },
+  {
+    "key": "SPJuly",
+    "q": 4,
+    "reader_chunk": 28,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.txt",
+    "source_quote_LF": [
+      112,
+      135
+    ]
+  },
+  {
+    "key": "Social293gma",
+    "q": 1,
+    "reader_chunk": 28,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-293gma.txt",
+    "source_quote_LF": [
+      3,
+      11
+    ]
+  },
+  {
+    "key": "Social293gma",
+    "q": 2,
+    "reader_chunk": 28,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-293gma.txt",
+    "source_quote_LF": [
+      21,
+      26
+    ]
+  },
+  {
+    "key": "SPOctober",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-october-current.txt",
+    "source_quote_LF": [
+      41,
+      75
+    ]
+  },
+  {
+    "key": "SP.pillar2",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/61.txt",
+    "source_quote_LF": [
+      200,
+      202
+    ]
+  },
+  {
+    "key": "Health13",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "Health13",
+    "q": 2,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13.txt",
+    "source_quote_LF": [
+      45,
+      58
+    ]
+  },
+  {
+    "key": "Health13",
+    "q": 3,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13.txt",
+    "source_quote_LF": [
+      82,
+      83
+    ]
+  },
+  {
+    "key": "Health16a",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-16a.txt",
+    "source_quote_LF": [
+      1,
+      33
+    ]
+  },
+  {
+    "key": "Health13a",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13a.txt",
+    "source_quote_LF": [
+      4,
+      9
+    ]
+  },
+  {
+    "key": "Health13a",
+    "q": 2,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-13a.txt",
+    "source_quote_LF": [
+      25,
+      36
+    ]
+  },
+  {
+    "key": "Social138a",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138a.txt",
+    "source_quote_LF": [
+      1,
+      5
+    ]
+  },
+  {
+    "key": "SP.employee-2026",
+    "q": 1,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/61.txt",
+    "source_quote_LF": [
+      375,
+      387
+    ]
+  },
+  {
+    "key": "SP.employee-2026",
+    "q": 2,
+    "reader_chunk": 29,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/61.txt",
+    "source_quote_LF": [
+      390,
+      392
+    ]
+  },
+  {
+    "key": "SPpartial",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-partial-month-current.txt",
+    "source_quote_LF": [
+      64,
+      87
+    ]
+  },
+  {
+    "key": "Social231",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-231.txt",
+    "source_quote_LF": [
+      4,
+      15
+    ]
+  },
+  {
+    "key": "Social231",
+    "q": 2,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-231.txt",
+    "source_quote_LF": [
+      35,
+      46
+    ]
+  },
+  {
+    "key": "VszP.employer",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/66.txt",
+    "source_quote_LF": [
+      355,
+      357
+    ]
+  },
+  {
+    "key": "VszP.employer",
+    "q": 2,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/66.txt",
+    "source_quote_LF": [
+      366,
+      366
+    ]
+  },
+  {
+    "key": "VszP.employer",
+    "q": 3,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/66.txt",
+    "source_quote_LF": [
+      376,
+      376
+    ]
+  },
+  {
+    "key": "Social143",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-143.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "Health17",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-17.txt",
+    "source_quote_LF": [
+      4,
+      11
+    ]
+  },
+  {
+    "key": "Health20",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-20.txt",
+    "source_quote_LF": [
+      4,
+      10
+    ]
+  },
+  {
+    "key": "Health20",
+    "q": 2,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-20.txt",
+    "source_quote_LF": [
+      34,
+      42
+    ]
+  },
+  {
+    "key": "Health.report-decree",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/23.txt",
+    "source_quote_LF": [
+      356,
+      368
+    ]
+  },
+  {
+    "key": "ITA39.payroll",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-39.txt",
+    "source_quote_LF": [
+      87,
+      107
+    ]
+  },
+  {
+    "key": "ITA39.payroll",
+    "q": 2,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-39.txt",
+    "source_quote_LF": [
+      110,
+      121
+    ]
+  },
+  {
+    "key": "ITA38.payroll",
+    "q": 1,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      37,
+      41
+    ]
+  },
+  {
+    "key": "ITA38.payroll",
+    "q": 2,
+    "reader_chunk": 30,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      43,
+      48
+    ]
+  },
+  {
+    "key": "ITA38.payroll",
+    "q": 3,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      58,
+      69
+    ]
+  },
+  {
+    "key": "ITA38.payroll",
+    "q": 4,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "source_quote_LF": [
+      75,
+      84
+    ]
+  },
+  {
+    "key": "Health19",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-19.txt",
+    "source_quote_LF": [
+      45,
+      49
+    ]
+  },
+  {
+    "key": "Health19",
+    "q": 2,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-19.txt",
+    "source_quote_LF": [
+      127,
+      131
+    ]
+  },
+  {
+    "key": "Health38ezl",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-38ezl.txt",
+    "source_quote_LF": [
+      9,
+      11
+    ]
+  },
+  {
+    "key": "Social240",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-240.txt",
+    "source_quote_LF": [
+      4,
+      23
+    ]
+  },
+  {
+    "key": "Social239",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-239.txt",
+    "source_quote_LF": [
+      1,
+      10
+    ]
+  },
+  {
+    "key": "Health18",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-18.txt",
+    "source_quote_LF": [
+      4,
+      11
+    ]
+  },
+  {
+    "key": "Health26",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/18-article-26.txt",
+    "source_quote_LF": [
+      4,
+      23
+    ]
+  },
+  {
+    "key": "TC154.other-duty",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-154.txt",
+    "source_quote_LF": [
+      42,
+      45
+    ]
+  },
+  {
+    "key": "Decision2025.monthly",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-monthly-prehlad-sanction-research/bratislava-prehlad-decision-2025.txt",
+    "source_quote_LF": [
+      4,
+      5
+    ]
+  },
+  {
+    "key": "Decision2025.monthly",
+    "q": 2,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-monthly-prehlad-sanction-research/bratislava-prehlad-decision-2025.txt",
+    "source_quote_LF": [
+      26,
+      34
+    ]
+  },
+  {
+    "key": "Decision2025.monthly",
+    "q": 3,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-monthly-prehlad-sanction-research/bratislava-prehlad-decision-2025.txt",
+    "source_quote_LF": [
+      42,
+      63
+    ]
+  },
+  {
+    "key": "FS.monthly",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t05.txt",
+    "source_quote_LF": [
+      22,
+      26
+    ]
+  },
+  {
+    "key": "TC161",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-161.txt",
+    "source_quote_LF": [
+      1,
+      4
+    ]
+  },
+  {
+    "key": "FS.penalty.calendar",
+    "q": 1,
+    "reader_chunk": 31,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s01.txt",
+    "source_quote_LF": [
+      65,
+      71
+    ]
+  },
+  {
+    "key": "FS.penalty.calendar",
+    "q": 2,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s01.txt",
+    "source_quote_LF": [
+      88,
+      100
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 1,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      314,
+      341
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 2,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      344,
+      354
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 3,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      380,
+      389
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 4,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      396,
+      411
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 5,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      472,
+      480
+    ]
+  },
+  {
+    "key": "SP.A1",
+    "q": 6,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/u01.txt",
+    "source_quote_LF": [
+      486,
+      502
+    ]
+  },
+  {
+    "key": "ITA5.economic-employer",
+    "q": 1,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-5.txt",
+    "source_quote_LF": [
+      99,
+      104
+    ]
+  },
+  {
+    "key": "ITA48.payroll",
+    "q": 1,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-48.txt",
+    "source_quote_LF": [
+      4,
+      22
+    ]
+  },
+  {
+    "key": "ITA36.declaration",
+    "q": 1,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-36.txt",
+    "source_quote_LF": [
+      45,
+      58
+    ]
+  },
+  {
+    "key": "Social19",
+    "q": 1,
+    "reader_chunk": 32,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/10-article-19.txt",
+    "source_quote_LF": [
+      19,
+      27
+    ]
+  },
+  {
+    "key": "ITA44.security",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-44.txt",
+    "source_quote_LF": [
+      1,
+      59
+    ]
+  },
+  {
+    "key": "ITA43.collection",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      170,
+      175
+    ]
+  },
+  {
+    "key": "ITA43.collection",
+    "q": 2,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      190,
+      195
+    ]
+  },
+  {
+    "key": "ITA43.collection",
+    "q": 3,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      205,
+      216
+    ]
+  },
+  {
+    "key": "ITA43.collection",
+    "q": 4,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      228,
+      231
+    ]
+  },
+  {
+    "key": "ITA2.BO",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      227,
+      233
+    ]
+  },
+  {
+    "key": "ITA13.EU-interest",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-13.txt",
+    "source_quote_LF": [
+      50,
+      70
+    ]
+  },
+  {
+    "key": "ITA13.EU-royalty",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-13.txt",
+    "source_quote_LF": [
+      74,
+      94
+    ]
+  },
+  {
+    "key": "ITA13.EU-royalty",
+    "q": 2,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-13.txt",
+    "source_quote_LF": [
+      109,
+      113
+    ]
+  },
+  {
+    "key": "ITA16.PE",
+    "q": 1,
+    "reader_chunk": 33,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      115,
+      142
+    ]
+  },
+  {
+    "key": "ITA16.PE",
+    "q": 2,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "source_quote_LF": [
+      143,
+      154
+    ]
+  },
+  {
+    "key": "ITA17g.instalments",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17g.txt",
+    "source_quote_LF": [
+      4,
+      20
+    ]
+  },
+  {
+    "key": "ITA17g.instalments",
+    "q": 2,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17g.txt",
+    "source_quote_LF": [
+      22,
+      45
+    ]
+  },
+  {
+    "key": "ITA17g.instalments",
+    "q": 3,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-17g.txt",
+    "source_quote_LF": [
+      46,
+      56
+    ]
+  },
+  {
+    "key": "ITA43.unknownBO",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      364,
+      371
+    ]
+  },
+  {
+    "key": "ITA43.credit-election",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      137,
+      162
+    ]
+  },
+  {
+    "key": "ITA43.EU-refund",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "source_quote_LF": [
+      317,
+      325
+    ]
+  },
+  {
+    "key": "ITA43a.challenge",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/13-article-43a.txt",
+    "source_quote_LF": [
+      4,
+      17
+    ]
+  },
+  {
+    "key": "ITA17.adjustment",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5552,
+      5564
+    ]
+  },
+  {
+    "key": "ITA17.adjustment",
+    "q": 2,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5565,
+      5578
+    ]
+  },
+  {
+    "key": "CbCR22a",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1734,
+      1744
+    ]
+  },
+  {
+    "key": "ITA2.links",
+    "q": 1,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      73,
+      80
+    ]
+  },
+  {
+    "key": "ITA2.links",
+    "q": 2,
+    "reader_chunk": 34,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      81,
+      95
+    ]
+  },
+  {
+    "key": "ITA2.links",
+    "q": 3,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      96,
+      110
+    ]
+  },
+  {
+    "key": "ITA2.links",
+    "q": 4,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      111,
+      120
+    ]
+  },
+  {
+    "key": "ITA18.methods",
+    "q": 1,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      4,
+      18
+    ]
+  },
+  {
+    "key": "ITA18.methods",
+    "q": 2,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      18,
+      24
+    ]
+  },
+  {
+    "key": "ITA18.methods",
+    "q": 3,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      25,
+      44
+    ]
+  },
+  {
+    "key": "ITA18.methods",
+    "q": 4,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      45,
+      56
+    ]
+  },
+  {
+    "key": "TPG3.full",
+    "q": 1,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      116,
+      139
+    ]
+  },
+  {
+    "key": "TPG3.full",
+    "q": 2,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      140,
+      152
+    ]
+  },
+  {
+    "key": "TPG3.basic",
+    "q": 1,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      154,
+      169
+    ]
+  },
+  {
+    "key": "TPG3.basic",
+    "q": 2,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      170,
+      182
+    ]
+  },
+  {
+    "key": "TPG3.basic",
+    "q": 3,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      189,
+      193
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 1,
+    "reader_chunk": 35,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      58,
+      70
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 2,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      72,
+      87
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 3,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      89,
+      103
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 4,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      105,
+      120
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 5,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      122,
+      129
+    ]
+  },
+  {
+    "key": "ITA18.APA",
+    "q": 6,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "source_quote_LF": [
+      131,
+      142
+    ]
+  },
+  {
+    "key": "ITA2.civil-footnote",
+    "q": 1,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      14869,
+      14870
+    ]
+  },
+  {
+    "key": "ITA2.transaction",
+    "q": 1,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "source_quote_LF": [
+      200,
+      209
+    ]
+  },
+  {
+    "key": "FS12.significance",
+    "q": 1,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      26,
+      31
+    ]
+  },
+  {
+    "key": "FS12.significance",
+    "q": 2,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      50,
+      59
+    ]
+  },
+  {
+    "key": "TPG2",
+    "q": 1,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      68,
+      82
+    ]
+  },
+  {
+    "key": "TPG2",
+    "q": 2,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      83,
+      101
+    ]
+  },
+  {
+    "key": "TPG2",
+    "q": 3,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      102,
+      110
+    ]
+  },
+  {
+    "key": "FS12.oldtable",
+    "q": 1,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      60,
+      76
+    ]
+  },
+  {
+    "key": "FS12.oldtable",
+    "q": 2,
+    "reader_chunk": 36,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      107,
+      115
+    ]
+  },
+  {
+    "key": "FS12.oldtable",
+    "q": 3,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      151,
+      162
+    ]
+  },
+  {
+    "key": "FS12.oldtable",
+    "q": 4,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      170,
+      184
+    ]
+  },
+  {
+    "key": "FS12.oldtable",
+    "q": 5,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/40.txt",
+    "source_quote_LF": [
+      218,
+      224
+    ]
+  },
+  {
+    "key": "CbCR22g",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1946,
+      1963
+    ]
+  },
+  {
+    "key": "TC69",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-69.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "TC69",
+    "q": 2,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-69.txt",
+    "source_quote_LF": [
+      18,
+      23
+    ]
+  },
+  {
+    "key": "TC69",
+    "q": 3,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-69.txt",
+    "source_quote_LF": [
+      30,
+      35
+    ]
+  },
+  {
+    "key": "Accounting17.9",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s06.txt",
+    "source_quote_LF": [
+      2430,
+      2438
+    ]
+  },
+  {
+    "key": "ITA17.corresponding",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5580,
+      5596
+    ]
+  },
+  {
+    "key": "ITA17.corresponding",
+    "q": 2,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5597,
+      5629
+    ]
+  },
+  {
+    "key": "ITA17.PE",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5631,
+      5642
+    ]
+  },
+  {
+    "key": "ITA17.PE",
+    "q": 2,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      5660,
+      5668
+    ]
+  },
+  {
+    "key": "ITA21a",
+    "q": 1,
+    "reader_chunk": 37,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-21a.txt",
+    "source_quote_LF": [
+      4,
+      11
+    ]
+  },
+  {
+    "key": "ITA21a",
+    "q": 2,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-21a.txt",
+    "source_quote_LF": [
+      18,
+      23
+    ]
+  },
+  {
+    "key": "ITA17k",
+    "q": 1,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      5,
+      9
+    ]
+  },
+  {
+    "key": "ITA17k",
+    "q": 2,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      10,
+      15
+    ]
+  },
+  {
+    "key": "ITA17k",
+    "q": 3,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "source_quote_LF": [
+      63,
+      76
+    ]
+  },
+  {
+    "key": "TPG9",
+    "q": 1,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      412,
+      415
+    ]
+  },
+  {
+    "key": "TPG4",
+    "q": 1,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      199,
+      216
+    ]
+  },
+  {
+    "key": "TPG4",
+    "q": 2,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      218,
+      237
+    ]
+  },
+  {
+    "key": "TPG4",
+    "q": 3,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      238,
+      263
+    ]
+  },
+  {
+    "key": "TPG4",
+    "q": 4,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      264,
+      285
+    ]
+  },
+  {
+    "key": "TPG4",
+    "q": 5,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      286,
+      301
+    ]
+  },
+  {
+    "key": "TPG5",
+    "q": 1,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      307,
+      319
+    ]
+  },
+  {
+    "key": "TPG5",
+    "q": 2,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      321,
+      348
+    ]
+  },
+  {
+    "key": "TPG6.7",
+    "q": 1,
+    "reader_chunk": 38,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      349,
+      364
+    ]
+  },
+  {
+    "key": "TPG8",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      368,
+      382
+    ]
+  },
+  {
+    "key": "TPG8",
+    "q": 2,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/57.txt",
+    "source_quote_LF": [
+      383,
+      402
+    ]
+  },
+  {
+    "key": "TC16",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-16.txt",
+    "source_quote_LF": [
+      8,
+      15
+    ]
+  },
+  {
+    "key": "TC16",
+    "q": 2,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-16.txt",
+    "source_quote_LF": [
+      48,
+      51
+    ]
+  },
+  {
+    "key": "TC16",
+    "q": 3,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-16.txt",
+    "source_quote_LF": [
+      57,
+      63
+    ]
+  },
+  {
+    "key": "CbCR22b",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1804,
+      1810
+    ]
+  },
+  {
+    "key": "CbCR22c",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1838,
+      1853
+    ]
+  },
+  {
+    "key": "CbCR22e",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1912,
+      1928
+    ]
+  },
+  {
+    "key": "CbCR22f",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/22.txt",
+    "source_quote_LF": [
+      1931,
+      1943
+    ]
+  },
+  {
+    "key": "ITA18a",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18a.txt",
+    "source_quote_LF": [
+      3,
+      10
+    ]
+  },
+  {
+    "key": "ITA18a",
+    "q": 2,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18a.txt",
+    "source_quote_LF": [
+      12,
+      18
+    ]
+  },
+  {
+    "key": "ITA18a.footnotes",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/13.txt",
+    "source_quote_LF": [
+      15393,
+      15398
+    ]
+  },
+  {
+    "key": "VAT27.rates",
+    "q": 1,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-27.txt",
+    "source_quote_LF": [
+      4,
+      10
+    ]
+  },
+  {
+    "key": "VAT27.rates",
+    "q": 2,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-27.txt",
+    "source_quote_LF": [
+      12,
+      29
+    ]
+  },
+  {
+    "key": "VAT27.rates",
+    "q": 3,
+    "reader_chunk": 39,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-27.txt",
+    "source_quote_LF": [
+      35,
+      38
+    ]
+  },
+  {
+    "key": "VAT77.period",
+    "q": 1,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-77.txt",
+    "source_quote_LF": [
+      3,
+      30
+    ]
+  },
+  {
+    "key": "VAT78.return",
+    "q": 1,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+    "source_quote_LF": [
+      3,
+      49
+    ]
+  },
+  {
+    "key": "VAT78.return",
+    "q": 2,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+    "source_quote_LF": [
+      67,
+      70
+    ]
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "q": 1,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-85n.txt",
+    "source_quote_LF": [
+      3,
+      35
+    ]
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "q": 2,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-85n.txt",
+    "source_quote_LF": [
+      37,
+      67
+    ]
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "q": 3,
+    "reader_chunk": 40,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-85n.txt",
+    "source_quote_LF": [
+      80,
+      107
+    ]
+  },
+  {
+    "key": "VAT4.status",
+    "q": 1,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "source_quote_LF": [
+      3,
+      38
+    ]
+  },
+  {
+    "key": "VAT4.status",
+    "q": 2,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "source_quote_LF": [
+      40,
+      60
+    ]
+  },
+  {
+    "key": "VAT4.status",
+    "q": 3,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "source_quote_LF": [
+      96,
+      118
+    ]
+  },
+  {
+    "key": "VAT4.status",
+    "q": 4,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "source_quote_LF": [
+      119,
+      151
+    ]
+  },
+  {
+    "key": "VAT4.status",
+    "q": 5,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "source_quote_LF": [
+      183,
+      187
+    ]
+  },
+  {
+    "key": "VAT7.goods",
+    "q": 1,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7.txt",
+    "source_quote_LF": [
+      3,
+      20
+    ]
+  },
+  {
+    "key": "VAT7a.services",
+    "q": 1,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7a.txt",
+    "source_quote_LF": [
+      3,
+      20
+    ]
+  },
+  {
+    "key": "VAT5.foreign",
+    "q": 1,
+    "reader_chunk": 41,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-5.txt",
+    "source_quote_LF": [
+      3,
+      41
+    ]
+  },
+  {
+    "key": "VAT5.foreign",
+    "q": 2,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-5.txt",
+    "source_quote_LF": [
+      43,
+      77
+    ]
+  },
+  {
+    "key": "VAT49.deduction",
+    "q": 1,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+    "source_quote_LF": [
+      3,
+      10
+    ]
+  },
+  {
+    "key": "VAT49.deduction",
+    "q": 2,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+    "source_quote_LF": [
+      25,
+      74
+    ]
+  },
+  {
+    "key": "VAT4a.group",
+    "q": 1,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4a.txt",
+    "source_quote_LF": [
+      3,
+      20
+    ]
+  },
+  {
+    "key": "VAT4b.group",
+    "q": 1,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+    "source_quote_LF": [
+      3,
+      18
+    ]
+  },
+  {
+    "key": "VAT4b.group",
+    "q": 2,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+    "source_quote_LF": [
+      39,
+      52
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "q": 1,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      6,
+      12
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "q": 2,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      66,
+      69
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "q": 3,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      107,
+      108
+    ]
+  },
+  {
+    "key": "VAT.annex7.services",
+    "q": 1,
+    "reader_chunk": 42,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/08.txt",
+    "source_quote_LF": [
+      10,
+      40
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "q": 1,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      109,
+      129
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "q": 2,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      134,
+      155
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "q": 3,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      174,
+      189
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "q": 4,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      208,
+      218
+    ]
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "q": 5,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/09.txt",
+    "source_quote_LF": [
+      219,
+      245
+    ]
+  },
+  {
+    "key": "FS.VAT2026foods",
+    "q": 1,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/54.txt",
+    "source_quote_LF": [
+      92,
+      103
+    ]
+  },
+  {
+    "key": "FS.VATrates",
+    "q": 1,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/54.txt",
+    "source_quote_LF": [
+      40,
+      40
+    ]
+  },
+  {
+    "key": "FS.VATrates",
+    "q": 2,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/54.txt",
+    "source_quote_LF": [
+      57,
+      60
+    ]
+  },
+  {
+    "key": "VAT68cb.smallimport",
+    "q": 1,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68cb.txt",
+    "source_quote_LF": [
+      3,
+      7
+    ]
+  },
+  {
+    "key": "VAT69.reverse",
+    "q": 1,
+    "reader_chunk": 43,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-69.txt",
+    "source_quote_LF": [
+      3,
+      43
+    ]
+  },
+  {
+    "key": "VAT69.reverse",
+    "q": 2,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-69.txt",
+    "source_quote_LF": [
+      47,
+      94
+    ]
+  },
+  {
+    "key": "VAT69.reverse",
+    "q": 3,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-69.txt",
+    "source_quote_LF": [
+      115,
+      130
+    ]
+  },
+  {
+    "key": "VAT78a.control",
+    "q": 1,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78a.txt",
+    "source_quote_LF": [
+      3,
+      16
+    ]
+  },
+  {
+    "key": "VAT78a.control",
+    "q": 2,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78a.txt",
+    "source_quote_LF": [
+      23,
+      45
+    ]
+  },
+  {
+    "key": "VAT78a.control",
+    "q": 3,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78a.txt",
+    "source_quote_LF": [
+      61,
+      75
+    ]
+  },
+  {
+    "key": "VAT78a.control",
+    "q": 4,
+    "reader_chunk": 44,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78a.txt",
+    "source_quote_LF": [
+      122,
+      154
+    ]
+  },
+  {
+    "key": "VAT80.EC",
+    "q": 1,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-80.txt",
+    "source_quote_LF": [
+      3,
+      42
+    ]
+  },
+  {
+    "key": "VAT80.EC",
+    "q": 2,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-80.txt",
+    "source_quote_LF": [
+      75,
+      105
+    ]
+  },
+  {
+    "key": "VAT79.refund",
+    "q": 1,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-79.txt",
+    "source_quote_LF": [
+      3,
+      40
+    ]
+  },
+  {
+    "key": "VAT79.refund",
+    "q": 2,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-79.txt",
+    "source_quote_LF": [
+      47,
+      74
+    ]
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "q": 1,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68g.txt",
+    "source_quote_LF": [
+      4,
+      16
+    ]
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "q": 2,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68g.txt",
+    "source_quote_LF": [
+      87,
+      106
+    ]
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "q": 3,
+    "reader_chunk": 45,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68g.txt",
+    "source_quote_LF": [
+      112,
+      123
+    ]
+  },
+  {
+    "key": "VAT68f.foreignSME",
+    "q": 1,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68f.txt",
+    "source_quote_LF": [
+      3,
+      28
+    ]
+  },
+  {
+    "key": "VAT68f.foreignSME",
+    "q": 2,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-68f.txt",
+    "source_quote_LF": [
+      56,
+      71
+    ]
+  },
+  {
+    "key": "VAT2024.rates",
+    "q": 1,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/16-article-27.txt",
+    "source_quote_LF": [
+      3,
+      27
+    ]
+  },
+  {
+    "key": "VAT2024.rates",
+    "q": 2,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/16-article-27.txt",
+    "source_quote_LF": [
+      31,
+      33
+    ]
+  },
+  {
+    "key": "VAT25.notes",
+    "q": 1,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-25.txt",
+    "source_quote_LF": [
+      3,
+      24
+    ]
+  },
+  {
+    "key": "VAT25.notes",
+    "q": 2,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-25.txt",
+    "source_quote_LF": [
+      40,
+      56
+    ]
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "q": 1,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-11.txt",
+    "source_quote_LF": [
+      3,
+      36
+    ]
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "q": 2,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-11.txt",
+    "source_quote_LF": [
+      71,
+      105
+    ]
+  },
+  {
+    "key": "VAT38.property",
+    "q": 1,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-38.txt",
+    "source_quote_LF": [
+      3,
+      19
+    ]
+  },
+  {
+    "key": "VAT38.property",
+    "q": 2,
+    "reader_chunk": 46,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-38.txt",
+    "source_quote_LF": [
+      66,
+      76
+    ]
+  },
+  {
+    "key": "VAT50.coefficient",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-50.txt",
+    "source_quote_LF": [
+      3,
+      36
+    ]
+  },
+  {
+    "key": "VAT39.finance",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-39.txt",
+    "source_quote_LF": [
+      3,
+      28
+    ]
+  },
+  {
+    "key": "VAT28.post",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-28.txt",
+    "source_quote_LF": [
+      3,
+      4
+    ]
+  },
+  {
+    "key": "VAT29.health",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-29.txt",
+    "source_quote_LF": [
+      3,
+      23
+    ]
+  },
+  {
+    "key": "VAT31.education",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-31.txt",
+    "source_quote_LF": [
+      3,
+      15
+    ]
+  },
+  {
+    "key": "VAT41.gambling",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-41.txt",
+    "source_quote_LF": [
+      3,
+      11
+    ]
+  },
+  {
+    "key": "VAT10.transfer",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-10.txt",
+    "source_quote_LF": [
+      3,
+      14
+    ]
+  },
+  {
+    "key": "VAT8.gifts",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-8.txt",
+    "source_quote_LF": [
+      21,
+      28
+    ]
+  },
+  {
+    "key": "VAT9.private",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-9.txt",
+    "source_quote_LF": [
+      3,
+      29
+    ]
+  },
+  {
+    "key": "VAT54.capital",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-54.txt",
+    "source_quote_LF": [
+      15,
+      26
+    ]
+  },
+  {
+    "key": "VAT54.capital",
+    "q": 2,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-54.txt",
+    "source_quote_LF": [
+      36,
+      66
+    ]
+  },
+  {
+    "key": "VAT52a.capital",
+    "q": 1,
+    "reader_chunk": 47,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-52a.txt",
+    "source_quote_LF": [
+      3,
+      21
+    ]
+  },
+  {
+    "key": "VAT54a.property",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-54a.txt",
+    "source_quote_LF": [
+      3,
+      18
+    ]
+  },
+  {
+    "key": "VAT54d.firstuse",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-54d.txt",
+    "source_quote_LF": [
+      3,
+      31
+    ]
+  },
+  {
+    "key": "VAT85kp.capitaltransition",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-85kp.txt",
+    "source_quote_LF": [
+      3,
+      13
+    ]
+  },
+  {
+    "key": "VAT53.notes",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-53.txt",
+    "source_quote_LF": [
+      3,
+      22
+    ]
+  },
+  {
+    "key": "TC79.overpayment",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/20-article-79.txt",
+    "source_quote_LF": [
+      3,
+      12
+    ]
+  },
+  {
+    "key": "TC79.overpayment",
+    "q": 2,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/20-article-79.txt",
+    "source_quote_LF": [
+      46,
+      48
+    ]
+  },
+  {
+    "key": "TC27.weekend",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/20-article-27.txt",
+    "source_quote_LF": [
+      13,
+      16
+    ]
+  },
+  {
+    "key": "Forms.VATcatalog",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s00.txt",
+    "source_quote_LF": [
+      219,
+      226
+    ]
+  },
+  {
+    "key": "Forms.VATcatalog",
+    "q": 2,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s00.txt",
+    "source_quote_LF": [
+      272,
+      280
+    ]
+  },
+  {
+    "key": "Form.DPHv25",
+    "q": 1,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s04.txt",
+    "source_quote_LF": [
+      51,
+      121
+    ]
+  },
+  {
+    "key": "Form.DPHv25",
+    "q": 2,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s04.txt",
+    "source_quote_LF": [
+      122,
+      180
+    ]
+  },
+  {
+    "key": "Form.DPHv25",
+    "q": 3,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s04.txt",
+    "source_quote_LF": [
+      181,
+      229
+    ]
+  },
+  {
+    "key": "Form.DPHv25",
+    "q": 4,
+    "reader_chunk": 48,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/s04.txt",
+    "source_quote_LF": [
+      230,
+      296
+    ]
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "q": 1,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t01.txt",
+    "source_quote_LF": [
+      1,
+      14
+    ]
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "q": 2,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t01.txt",
+    "source_quote_LF": [
+      29,
+      48
+    ]
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "q": 3,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t01.txt",
+    "source_quote_LF": [
+      70,
+      103
+    ]
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "q": 4,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t01.txt",
+    "source_quote_LF": [
+      116,
+      147
+    ]
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "q": 5,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t01.txt",
+    "source_quote_LF": [
+      169,
+      206
+    ]
+  },
+  {
+    "key": "Form.REGDPv24",
+    "q": 1,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t00.txt",
+    "source_quote_LF": [
+      2,
+      6
+    ]
+  },
+  {
+    "key": "Form.REGDPv24",
+    "q": 2,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t00.txt",
+    "source_quote_LF": [
+      14,
+      26
+    ]
+  },
+  {
+    "key": "Form.REGDPv24",
+    "q": 3,
+    "reader_chunk": 49,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/t00.txt",
+    "source_quote_LF": [
+      184,
+      246
+    ]
+  },
+  {
+    "key": "FS.Intrastat",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/intrastat.txt",
+    "source_quote_LF": [
+      310,
+      321
+    ]
+  },
+  {
+    "key": "FS.EC.fineclass",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/44.txt",
+    "source_quote_LF": [
+      448,
+      452
+    ]
+  },
+  {
+    "key": "VAT15.services",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-15.txt",
+    "source_quote_LF": [
+      3,
+      23
+    ]
+  },
+  {
+    "key": "VAT43.EU",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-43.txt",
+    "source_quote_LF": [
+      3,
+      12
+    ]
+  },
+  {
+    "key": "VAT43.EU",
+    "q": 2,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-43.txt",
+    "source_quote_LF": [
+      25,
+      30
+    ]
+  },
+  {
+    "key": "VAT47.export",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-47.txt",
+    "source_quote_LF": [
+      3,
+      19
+    ]
+  },
+  {
+    "key": "VAT47.export",
+    "q": 2,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-47.txt",
+    "source_quote_LF": [
+      40,
+      43
+    ]
+  },
+  {
+    "key": "VAT84a.import",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-84a.txt",
+    "source_quote_LF": [
+      3,
+      40
+    ]
+  },
+  {
+    "key": "VAT24.import",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-24.txt",
+    "source_quote_LF": [
+      3,
+      30
+    ]
+  },
+  {
+    "key": "VAT51.documents",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-51.txt",
+    "source_quote_LF": [
+      3,
+      29
+    ]
+  },
+  {
+    "key": "VAT46.transport",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-46.txt",
+    "source_quote_LF": [
+      3,
+      20
+    ]
+  },
+  {
+    "key": "VAT69a.representative",
+    "q": 1,
+    "reader_chunk": 50,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-69a.txt",
+    "source_quote_LF": [
+      3,
+      18
+    ]
+  },
+  {
+    "key": "VAT69a.representative",
+    "q": 2,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-69a.txt",
+    "source_quote_LF": [
+      32,
+      39
+    ]
+  },
+  {
+    "key": "VAT69a.representative",
+    "q": 3,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-69a.txt",
+    "source_quote_LF": [
+      59,
+      61
+    ]
+  },
+  {
+    "key": "FS.VATnumber",
+    "q": 1,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/62.txt",
+    "source_quote_LF": [
+      152,
+      154
+    ]
+  },
+  {
+    "key": "VAT2024.registration",
+    "q": 1,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/16-article-4.txt",
+    "source_quote_LF": [
+      3,
+      20
+    ]
+  },
+  {
+    "key": "FS.registration.turnover",
+    "q": 1,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      97,
+      105
+    ]
+  },
+  {
+    "key": "FS.registration.turnover",
+    "q": 2,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      163,
+      181
+    ]
+  },
+  {
+    "key": "FS.registration.turnover",
+    "q": 3,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      205,
+      208
+    ]
+  },
+  {
+    "key": "VAT85kn.oldtransition",
+    "q": 1,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-85kn.txt",
+    "source_quote_LF": [
+      1,
+      4
+    ]
+  },
+  {
+    "key": "FS.registration.voluntary",
+    "q": 1,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      367,
+      393
+    ]
+  },
+  {
+    "key": "FS.registration.voluntary",
+    "q": 2,
+    "reader_chunk": 51,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      406,
+      441
+    ]
+  },
+  {
+    "key": "VAT73.deadline",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-73.txt",
+    "source_quote_LF": [
+      3,
+      23
+    ]
+  },
+  {
+    "key": "VAT74.wording",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-74.txt",
+    "source_quote_LF": [
+      3,
+      39
+    ]
+  },
+  {
+    "key": "VAT74.wording",
+    "q": 2,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-74.txt",
+    "source_quote_LF": [
+      53,
+      57
+    ]
+  },
+  {
+    "key": "VAT72.invoice",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-72.txt",
+    "source_quote_LF": [
+      27,
+      30
+    ]
+  },
+  {
+    "key": "VAT76.retention",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-76.txt",
+    "source_quote_LF": [
+      3,
+      26
+    ]
+  },
+  {
+    "key": "VAT5a.number",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-5a.txt",
+    "source_quote_LF": [
+      3,
+      11
+    ]
+  },
+  {
+    "key": "VAT70.records",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-70.txt",
+    "source_quote_LF": [
+      3,
+      14
+    ]
+  },
+  {
+    "key": "VAT70.records",
+    "q": 2,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-70.txt",
+    "source_quote_LF": [
+      45,
+      55
+    ]
+  },
+  {
+    "key": "VAT81.dereg",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-81.txt",
+    "source_quote_LF": [
+      2,
+      14
+    ]
+  },
+  {
+    "key": "VAT81.dereg",
+    "q": 2,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-81.txt",
+    "source_quote_LF": [
+      29,
+      37
+    ]
+  },
+  {
+    "key": "VAT81.dereg",
+    "q": 3,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-81.txt",
+    "source_quote_LF": [
+      60,
+      68
+    ]
+  },
+  {
+    "key": "VAT82.dereg",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-82.txt",
+    "source_quote_LF": [
+      2,
+      20
+    ]
+  },
+  {
+    "key": "FS.registration.decision",
+    "q": 1,
+    "reader_chunk": 52,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/sources/45.txt",
+    "source_quote_LF": [
+      330,
+      341
+    ]
+  },
+  {
+    "key": "VAT55.initial",
+    "q": 1,
+    "reader_chunk": 53,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/ledgers/slovakia-2026-evidence/shared/17-article-55.txt",
+    "source_quote_LF": [
+      3,
+      15
+    ]
+  },
+  {
+    "key": "VAT22.base",
+    "q": 1,
+    "reader_chunk": 53,
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-22.txt",
+    "source_quote_LF": [
+      3,
+      14
+    ]
+  }
+]

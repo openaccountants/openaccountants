@@ -1,0 +1,27 @@
+{
+  "before_sha256": "09a343035c30983ce93e776f81bbe1469021b3525aaf26e0a907867536f52886",
+  "after_sha256": "32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77",
+  "operations": [
+    {
+      "name": "goods exclusion extent",
+      "before": "Private use then counts as neither a supply of services nor a supply of goods.",
+      "after": "Private use is not a deemed supply of services under the stated rule. The goods self-supply exclusion applies only to the extent that input VAT on the goods was not deducted (§85n(1))."
+    },
+    {
+      "name": "version",
+      "before": "version: 2.5\n",
+      "after": "version: 2.6\n"
+    },
+    {
+      "name": "date",
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "inverse_exact": true,
+  "source_URLs_exact": true,
+  "oa_blocks_exact": true,
+  "oa_count": 2,
+  "CTA_exact": true,
+  "status": "writer repair; independent closure pending"
+}

@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "slovakia-vat-registration-4-7-7a",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 32,
+        "text": "| Item | Rate, amount or boundary | Year | Official source |"
+      },
+      {
+        "LF": 66,
+        "text": "**What the number changes.**"
+      },
+      {
+        "LF": 68,
+        "text": "| Obligation/right | §4 VAT payer | §7/§7a registrant who is not a payer |"
+      },
+      {
+        "LF": 80,
+        "text": "| Action | Statutory time | Official source |"
+      },
+      {
+        "LF": 117,
+        "text": "| Failure | Consequence | Official source |"
+      },
+      {
+        "LF": 172,
+        "text": "| Date | Domestic supplied value | Cumulative domestic turnover |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-payroll-social",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 21,
+        "text": "See also: `slovakia-pit` (the annual return, other income, flat-rate expenses), `sk-corporate-income-tax`, `sk-cross-border` (treaties, non-residents), `sk-company-formation`."
+      },
+      {
+        "LF": 45,
+        "text": "| Item | Rate or amount | Year | Source |"
+      },
+      {
+        "LF": 100,
+        "text": "| Obligation | When | Source |"
+      },
+      {
+        "LF": 121,
+        "text": "| Failure | Consequence | Source |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-pit",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 19,
+        "text": "Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team."
+      },
+      {
+        "LF": 21,
+        "text": "This skill covers the annual income tax of an individual for the 2026 calendar year: employees, the self-employed (SZČO, živnostník) and people with rental, capital or other income. It links to the other Slovakia skills and does not repeat them:"
+      },
+      {
+        "LF": 23,
+        "text": "- [sk-payroll-social](sk-payroll-social.md): the employer's monthly withholding and social and health contributions."
+      },
+      {
+        "LF": 24,
+        "text": "- [sk-corporate-income-tax](sk-corporate-income-tax.md): companies, including the minimum tax for legal persons."
+      },
+      {
+        "LF": 25,
+        "text": "- [sk-tax-overview](sk-tax-overview.md): the system at a glance."
+      },
+      {
+        "LF": 26,
+        "text": "- [sk-cross-border](sk-cross-border.md): residence in detail, non-residents, withholding tax and treaties."
+      },
+      {
+        "LF": 44,
+        "text": "| Item | Rate or amount | Year | Source URL |"
+      },
+      {
+        "LF": 123,
+        "text": "| What | When | Rule |"
+      },
+      {
+        "LF": 139,
+        "text": "| Calculation | Type A, employment only | Type B |"
+      }
+    ]
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 17,
+        "text": "Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team."
+      },
+      {
+        "LF": 22,
+        "text": "- [slovakia-pit](slovakia-pit.md) and [sk-corporate-income-tax](sk-corporate-income-tax.md): income tax of individuals and companies."
+      },
+      {
+        "LF": 23,
+        "text": "- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../../foundation/vat-workflow-base.md)."
+      },
+      {
+        "LF": 36,
+        "text": "| Item | Rate or amount | Year | Source URL |"
+      },
+      {
+        "LF": 99,
+        "text": "| Obligation | Deadline | Source |"
+      },
+      {
+        "LF": 118,
+        "text": "| Output category | 19% base / tax | 5% base / tax | 23% base / tax |"
+      },
+      {
+        "LF": 146,
+        "text": "| Breach | Consequence | Source |"
+      },
+      {
+        "LF": 158,
+        "text": "| Breach | Consequence | Source |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-cross-border",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 19,
+        "text": "Detail lives in the sibling skills. Read [slovakia-pit](slovakia-pit.md) for the individual return, [sk-corporate-income-tax](sk-corporate-income-tax.md) for companies, [sk-payroll-social](sk-payroll-social.md) for payroll and social contributions, and [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for VAT on cross-border services. Those four Guides cover 2026; use their detailed methods with the relevant income year and payment date."
+      },
+      {
+        "LF": 52,
+        "text": "| Item | Rate or amount | Year | Source |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-transfer-pricing",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 17,
+        "text": "> **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on Slov-Lex, the guideline from the Ministry of Finance (mfsr.sk) and the return guidance from the Financial Directorate (financnasprava.sk), read on 23 October 2026 and supplemented by the 27 October 2026 primary checks below. It prepares working papers; it is not authority to file or pay."
+      },
+      {
+        "LF": 19,
+        "text": "This is the transfer pricing (TP) skill for the Slovak pack. It links rather than repeats:"
+      },
+      {
+        "LF": 21,
+        "text": "- Corporate income tax, the base, the return and its deadlines: [sk-corporate-income-tax](sk-corporate-income-tax.md) (2026)."
+      },
+      {
+        "LF": 22,
+        "text": "- Individual income tax, including sole traders with § 6 income: [slovakia-pit](slovakia-pit.md)."
+      },
+      {
+        "LF": 23,
+        "text": "- VAT: [slovakia-vat-return](slovakia-vat-return.md). Overview: [sk-tax-overview](sk-tax-overview.md)."
+      },
+      {
+        "LF": 51,
+        "text": "| Item | Rate or amount | Year | Source URL |"
+      },
+      {
+        "LF": 121,
+        "text": "| Tier | Who keeps it (art. 3) | Content |"
+      }
+    ]
+  },
+  {
+    "slug": "sk-corporate-income-tax",
+    "current_body_unmapped_nonblank": [
+      {
+        "LF": 27,
+        "text": "Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individuals in [slovakia-pit](slovakia-pit.md); employer contributions in [sk-payroll-social](sk-payroll-social.md); VAT in [slovakia-vat-return](slovakia-vat-return.md); setting up a company in [sk-company-formation](sk-company-formation.md)."
+      },
+      {
+        "LF": 33,
+        "text": "| Item | Rate or amount | Year | Source |"
+      },
+      {
+        "LF": 62,
+        "text": "**Common add-backs.**"
+      },
+      {
+        "LF": 73,
+        "text": "| Group | Period | Annual straight-line share |"
+      },
+      {
+        "LF": 85,
+        "text": "| Asset and actual Annex 1 entry | CPA/KP or KS code | Group and ordinary period | Official source |"
+      }
+    ]
+  }
+]

@@ -1,0 +1,415 @@
+ 1 
+Usmernenie 
+Ministerstva financií Slovenskej republiky 
+č. MF/012879/2025-724 
+o určení obsahu dokumentácie  
+podľa § 17 ods. 7 a § 18 ods. 1 zákona č. 595/2003 Z. z. o dani z príjmov v znení 
+neskorších predpisov 
+ 
+              
+ 
+Ministerstvo financií Slovenskej republiky podľa § 17 ods. 7 a § 18 ods. 1 zákona č. 595/2003 
+Z. z. o dani z príjmov v znení neskorších predpisov (ďalej len „zákon o dani z príjmov“) a 
+§ 160 ods. 2 zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení 
+niektorých zákonov v znení neskorších predpisov na zabezpečenie jednotného postupu 
+vydáva usmernenie, ktorým určuje obsah dokumentácie o použitej metóde na účely zistenia 
+spôsobu určenia cien alebo podmienok vo významných kontrolovaných transakciách1), ktoré 
+by sa použili medzi nezávislými osobami v porovnateľných vzťahoch (ďalej len 
+„dokumentácia“). 
+ 
+Toto usmernenie nahrádza usmernenie Ministerstva financií Slovenskej republiky 
+č. MF/020061/2022-724 o určení obsahu dokumentácie podľa § 17 ods. 7 a § 18 ods. 1 
+zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 
+ 
+ 
+ 
+Ing. Martina Bíliková 
+generálna riaditeľka sekcie daňovej a colnej 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1) § 17 ods. 5 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 
+ 2 
+Obsah dokumentácie podľa § 17 ods. 7 a § 18 ods. 1 zákona č. 595/2003 Z. z. o dani 
+z príjmov v znení neskorších predpisov 
+ 
+ 
+Ministerstvo financií Slovenskej republiky podľa § 17 ods. 7 a § 18 ods. 1 zákona o dani 
+z príjmov, ktorým sa ustanovuje vedenie dokumentácie, určuje obsah dokumentácie takto: 
+ 
+ 
+Článok 1 
+Úvodné ustanovenie 
+ 
+Vymedzenie obsahu dokumentácie daňovníka, ktorým je závislá osoba podľa § 2 písm. n) 
+zákona o dani z príjmov alebo daňovník, ktorý vykonáva transakcie so stálou prevádzkarňou 
+v rozsahu vymedzenom podľa § 2 písm. r) zákona o dani z príjmov (ďalej len „daňovník“), 
+vychádza z princípov a zásad uvedených v smernici OECD o transferovom oceňovaní 
+pre nadnárodné podniky a správu daní a Uznesení Rady a zástupcov vlád členských štátov 
+EÚ, ktorí sa zišli na zasadnutí Rady z 27. júna 2006, o kódexe správania pre dokumentáciu 
+o transferovom oceňovaní pre pridružené podniky v Európskej únii  
+(2006/C 176/01). 
+ 
+ 
+Článok 2 
+Všeobecné zásady 
+ 
+1. Pravidlá určenia obsahu a rozsahu dokumentácie sa uplatnia vždy na konkrétne 
+zdaňovacie obdobie, v ktorom sú podmienky pre jednotlivé typy dokumentácie splnené. 
+ 
+2. Toto usmernenie určuje minimálny rozsah dokumentácie. Správca dane môže vyzvať 
+daňovníka na predloženie ďalších informácií slúžiacich k preukázaniu súladu cien 
+použitých v kontrolovaných transakciách s princípom nezávislého vzťahu. 
+ 
+3. Obsah dokumentácie závisí od okolností a podmienok jednotlivých kontrolovaných 
+transakcií daňovníka, ako aj od použitej metódy ocenenia.  
+ 
+4. Skupina kontrolovaných transakcií je viacero kontrolovaných transakcií, ktoré môžu byť 
+uskutočnené aj s rôznymi protistranami a sú 
+a)    rovnakého druhu a uzatvorené za porovnateľných podmienok,  
+b)    vzájomne úzko prepojené a vzájomne podmienené, alebo 
+c)    porovnateľné z hľadiska využívaného majetku, funkcií a rizík. 
+ 
+5. Dokumentácia sa vedie za príslušné zdaňovacie obdobie. Ak nenastanú žiadne nové 
+skutočnosti ovplyvňujúce spôsob ocenenia kontrolovaných transakcií, pri vypracovaní 
+dokumentácie sa môže daňovník odvolať na informácie uvedené v dokumentácii 
+za predchádzajúce zdaňovacie obdobia. 
+ 
+6. Pri stálej prevádzkarni sa hodnota celkových výnosov z hospodárskej činnosti a finančnej 
+činnosti uvedenej v tomto usmernení vzťahuje na celkové ročné príjmy priraditeľné tejto 
+stálej prevádzkarni v súlade s princípom nezávislého vzťahu. 
+ 
+7. Pri finančných transakciách sa pri hodnotách transakcií uvedených v tomto usmernení 
+vychádza z najvyššej hodnoty istiny alebo podkladového aktíva v rámci zdaňovacieho 
+obdobia. 
+ 3 
+ 
+8. Cezhraničnou významnou kontrolovanou transakciou sa na účely tohto usmernenia 
+rozumie významná kontrolovaná transakcia1), ktorej sa zúčastňuje jedna alebo viacero 
+závislých osôb2), ktoré nie sú daňovníkmi s neobmedzenou daňovou povinnosťou3) alebo 
+jedna alebo viacero stálych prevádzkarní daňovníka s neobmedzenou daňovou 
+povinnosťou3), ktoré sú umiestnené v zahraničí. 
+ 
+9. Tuzemskou významnou kontrolovanou transakciou sa na účely tohto usmernenia rozumie 
+významná kontrolovaná transakcia1), ktorej sa zúčastňujú len daňovníci s neobmedzenou 
+daňovou povinnosťou3) alebo stále prevádzkarne4) daňovníkov s obmedzenou daňovou 
+povinnosťou, ktoré sú umiestnené na území Slovenskej republiky. 
+ 
+  
+Článok 3 
+Rozsah dokumentácie 
+ 
+1. Úplná dokumentácia v rozsahu uvedenom v článku 4 sa vedie o  
+a) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných 
+kontrolovaných transakcií u daňovníka, ktorý vykazuje výsledok hospodárenia 
+v individuálnej účtovnej závierke podľa medzinárodných štandardov pre finančné 
+výkazníctvo5), ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 zákona 
+č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov (ďalej len „zákon 
+o účtovníctve“) alebo podľa nariadenia Komisie (ES) č. 2023/1803 z 13. augusta 
+2023, ktorým sa v súlade s nariadením Európskeho parlamentu a Rady (ES) 
+č. 1606/2002 prijímajú určité medzinárodné účtovné štandardy (ďalej len 
+„nariadenie“). 
+b) cezhraničnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných 
+transakcií, ak hodnota takejto kontrolovanej transakcie alebo skupiny kontrolovaných 
+transakcií za zdaňovacie obdobie presiahla 10 000 000 eur, 
+c) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných 
+kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 
+zákona o účtovníctve alebo podľa nariadenia  so závislou osobou, ktorá je 
+daňovníkom nespolupracujúceho štátu,6) 
+d) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných 
+kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 
+zákona o účtovníctve alebo podľa nariadenia  u daňovníka, ktorý v zdaňovacom 
+období uplatňuje úľavu na dani.7)  
+e) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník 
+žiada správcu dane o vydanie rozhodnutia o odsúhlasení použitia metódy ocenenia,8) 
+f) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej daňovník 
+žiada o úpravu základu dane9), okrem úpravy základu dane z príjmov (ďalej len 
+„základ dane“) vo vzťahu k tuzemským kontrolovaným transakciám,  
+ 
+2) § 2 písm. n) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 
+3) § 2 písm. d) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 
+4) § 16 ods. 2 zákona č. 595/2003 Z. z. v znení neskorších predpisov.  
+5) § 17a ods. 1 až 3 zákona č. 431/2002 Z. z. o účtovníctve v znení neskorších predpisov. 
+6) § 2 písm. x) zákona č. 595/2003 Z. z. v znení neskorších predpisov. 
+7) Zákon č. 57/2018 Z. z. o regionálnej investičnej pomoci a o zmene a doplnení niektorých zákonov. 
+8) § 18 ods. 4 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 
+9) § 17 ods. 6 zákona č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov. 
+ 4 
+g) kontrolovanej transakcii alebo skupine kontrolovaných transakcií, pri ktorej 
+za príslušné zdaňovacie obdobie bola podaná žiadosť o začatie mechanizmu riešenia 
+sporov týkajúcich sa zdanenia.10) 
+ 
+2. Základná dokumentácia v rozsahu uvedenom v článku 5, ak sa pri týchto 
+kontrolovaných  transakciách nevedie dokumentácia podľa bodu 1, sa vedie o  
+a) cezhraničnej významnej kontrolovanej transakcii alebo skupine cezhraničných 
+kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 
+zákona o účtovníctve alebo podľa nariadenia u daňovníka, ktorého celkové výnosy 
+z hospodárskej činnosti a z finančnej činnosti11) za príslušné zdaňovacie obdobie 
+presiahli 8 000 000 eur, 
+b) cezhraničnej kontrolovanej transakcii alebo skupine cezhraničných kontrolovaných 
+transakcií, ak hodnota takejto kontrolovanej transakcie alebo skupiny kontrolovaných 
+transakcií za zdaňovacie obdobie presiahla 1 000 000 eur, 
+c) tuzemskej významnej kontrolovanej transakcii alebo skupine tuzemských významných 
+kontrolovaných transakcií, ktorá spĺňa charakteristiky významnosti podľa § 17 ods. 9 
+zákona o účtovníctve alebo podľa nariadenia u daňovníka, ktorý v zdaňovacom období 
+uplatňuje úľavu na dani,7) 
+d) kontrolovanej cezhraničnej transakcii alebo skupine cezhraničných kontrolovaných 
+transakcií so závislou osobou, ktorá je daňovníkom nespolupracujúceho štátu.6) 
+ 
+3. Pri kontrolovaných transakciách, pri ktorých sa nevypracováva dokumentácia 
+podľa bodov 1 a 2, je povinnosť podľa § 17 ods. 7 alebo § 18 ods. 1 zákona o dani 
+z príjmov splnená podaním riadne vyplneného daňového priznania k dani z príjmov za 
+príslušné zdaňovacie obdobie.12) Ak daňovník nesplní povinnosť podľa prvej vety, vedie 
+skrátenú dokumentáciu o významných kontrolovaných transakciách1) podľa článku 6. 
+Významné kontrolované transakcie1), ktoré sa neuviedli v daňovom priznaní z dôvodu 
+nedostatočného počtu riadkov, daňovník uvedie v skrátenej dokumentácii podľa článku 
+6. 
+ 
+4. Daňovník nepripravuje dokumentáciu podľa bodov 1 a 2 v súvislosti s transakciami, ktoré 
+nemajú vplyv na jeho základ dane z príjmov v príslušnom zdaňovacom období okrem 
+úverov a pôžičiek. 
+ 
+5. Ak daňovník pripraví za zdaňovacie obdobie všeobecnú skupinovú dokumentáciu podľa 
+článku 4 bodu 2, nepripravuje všeobecnú skupinovú dokumentáciu podľa článku 5 bodu 2. 
+ 
+ 
+ 
+10) Zákon č. 11/2019 Z. z. o pravidlách riešenia sporov týkajúcich sa zdanenia v znení zákona č. 150/2022 Z.z. 
+11) Celkové výnosy uvedené v tabuľke F v III. časti tlačiva daňového priznania k dani z príjmov právnických 
+osôb alebo celkové príjmy uvedené v tabuľke č. 1 v VI. oddiele tlačiva daňového priznania k dani z príjmov 
+fyzických osôb typu B. 
+12) Vrátane časti týkajúcej sa transakcií závislých osôb podľa § 2 písm. n) zákona č. 595/2003 Z. z.  v znení 
+neskorších predpisov. 
+ 5 
+Článok 4 
+Obsah úplnej dokumentácie 
+ 
+1. Účelom úplnej dokumentácie je zdokumentovať ocenenie významných kontrolovaných 
+transakcií1) daňovníka a iné skutočnosti, ktoré majú na oceňovanie týchto kontrolovaných 
+transakcií vplyv. Úplná dokumentácia predstavuje súbor informácií, údajov a skutočností, 
+ktoré preukazujú a vysvetľujú spôsob tvorby cien daňovníka v kontrolovaných 
+transakciách a preukazujú ich súlad s princípom nezávislého vzťahu. 
+ 
+2. Úplná dokumentácia sa vypracuje za každú kontrolovanú transakciu samostatne alebo 
+za skupinu kontrolovaných transakcií, ak vypracovanie dokumentácie za skupinu 
+kontrolovaných transakcií poskytne spoľahlivejší obraz o použitých metódach ocenenia. 
+V dokumentácii sa uvedú dôvody zlúčenia transakcií do skupiny kontrolovaných 
+transakcií. 
+ 
+3. Úplná dokumentácia pozostáva zo všeobecnej skupinovej dokumentácie a špecifickej 
+dokumentácie. 
+ 
+4. Všeobecná skupinová dokumentácia obsahuje tieto informácie: 
+ 
+a) identifikáciu a právnu formu jednotlivých členov skupiny závislých osôb (ďalej len 
+„skupina“), popis organizačnej štruktúry a vlastníckej štruktúry skupiny, vrátane 
+zmien v porovnaní s predchádzajúcim zdaňovacím obdobím, 
+b) popis podnikateľskej činnosti a obchodnej stratégie skupiny, 
+c) hlavné faktory ziskovosti skupiny, 
+d) popis dodávateľsko-odberateľského reťazca a trhov piatich najvýznamnejších (ak je 
+menej ako päť, všetkých) kategórií výrobkov alebo služieb skupiny, 
+e) popis dodávateľsko-odberateľského reťazca a trhov kategórií výrobkov alebo služieb 
+skupiny, ktoré predstavujú viac ako 5% obratu skupiny, 
+f) zoznam a stručný popis významných dohôd o službách v rámci skupiny okrem služieb 
+výskumu a vývoja a spôsobu ocenenia týchto služieb, 
+g) stručný popis funkcií, rizík a aktív jednotlivých členov skupiny, vrátane zmien 
+v porovnaní s predchádzajúcim zdaňovacím obdobím,  
+h) popis významných zmien v štruktúre skupiny, významných akvizícií alebo predajov 
+častí skupiny, 
+i) popis celkovej stratégie skupiny v oblasti vytvárania, držby a využitia nehmotných 
+aktív, vrátane lokality hlavných zariadení výskumu a vývoja v rámci skupiny a lokalít, 
+z ktorých sú činnosti výskumu a vývoja riadené, 
+j) zoznam významných položiek alebo kategórií nehmotných aktív skupiny s uvedením 
+ich vlastníka, 
+k) zoznam významných dohôd medzi členmi skupiny, ktoré sa týkajú nehmotných aktív, 
+vrátane dohôd o príspevkoch na náklady, licenčných dohôd a dohôd o službách 
+v oblasti výskumu a vývoja, 
+l) všeobecný popis spôsobu tvorby cien kontrolovaných transakcií týkajúcich sa 
+nehmotných aktív v rámci skupiny, 
+m) všeobecný popis významných zmien vlastníctva nehmotných aktív medzi závislými 
+osobami v rámci zdaňovacieho obdobia, vrátane identifikácie príslušných členov 
+skupiny a odplaty za tieto zmeny, 
+n) všeobecný popis spôsobu financovania skupiny, vrátane významných dohôd 
+o financovaní nezávislými stranami, 
+o) identifikácia členov skupiny, ktorí vykonávajú centralizovanú činnosť v oblasti 
+financovania skupiny, 
+ 6 
+p) všeobecný popis spôsobu tvorby ceny pri finančných transakciách medzi členmi 
+skupiny, 
+q) konsolidované finančné výkazy skupiny za príslušné zdaňovacie obdobie, ak boli 
+vyhotovené do času predloženia dokumentácie, 
+r) zoznam a stručný popis existujúcich opatrení predchádzajúcich oceneniu a záväzných 
+daňových stanovísk týkajúcich sa rozdelenia ziskov medzi jednotlivými členmi 
+skupiny, 
+s) iné informácie, ktoré prispejú k preukázaniu súladu použitých cien s princípom 
+nezávislého vzťahu. 
+ 
+5. Špecifická dokumentácia obsahuje tieto informácie: 
+ 
+a) identifikáciu a právnu formu daňovníka, popis jeho organizačnej štruktúry a vlastníckej 
+štruktúry, popis organizačných jednotiek v rámci skupiny, ktorým sú členovia vedenia 
+daňovníka podriadení v rámci organizačnej štruktúry skupiny, vrátane zmien 
+v porovnaní s predchádzajúcim zdaňovacím obdobím,  
+b) popis podnikateľskej činnosti a obchodnej stratégie daňovníka, vrátane zmien 
+v štruktúre podnikateľskej činnosti alebo presunov nehmotných aktív v rámci 
+príslušného alebo predchádzajúceho zdaňovacieho obdobia, vrátane zmien v porovnaní 
+s predchádzajúcim zdaňovacím obdobím, 
+c) za jednotlivú kontrolovanú transakciu alebo skupinu kontrolovaných transakcií: 
+1. popis kontrolovanej transakcie alebo skupiny kontrolovaných transakcií 
+a okolností, za ktorých sa uskutočňuje, 
+2. finančné vyjadrenie hodnoty kontrolovanej transakcie alebo skupiny 
+kontrolovaných transakcií za príslušné zdaňovacie obdobie v členení podľa 
+jednotlivých závislých osôb, 
+3. kópia zmluvy k príslušnej kontrolovanej transakcii alebo skupine 
+kontrolovaných transakcií, ak je k dispozícii v písomnej podobe, 
+4. analýza funkcií, rizík a aktív daňovníka a príslušných závislých osôb 
+v súvislosti s kontrolovanou transakciou, 
+5. metóda, ktorá sa použila pre ocenenie kontrolovanej transakcie a zdôvodnenie 
+jej použitia, vrátane predpokladov, z ktorých použitie metódy vychádza, 
+6. výber testovanej strany pre účely analýzy porovnateľnosti vrátane zdôvodnenia 
+výberu, ak sú relevantné, 
+7. interné porovnateľné transakcie, externé porovnateľné transakcie alebo údaje 
+nezávislých osôb, vrátane popisu zdrojov a metódy získavania týchto údajov, 
+analýza porovnateľnosti (informácie o faktoroch určujúcich porovnateľnosť 
+kontrolovaných transakcií s nekontrolovanými transakciami, charakteristika 
+majetku alebo služby, analýza funkcií, zmluvné podmienky, ekonomické 
+prostredie, špecifické obchodné stratégie), 
+8. popis úprav pre účely porovnateľnosti, ak boli vykonané, 
+9. zdôvodnenie súladu ocenenia kontrolovanej transakcie alebo skupiny 
+kontrolovaných transakcií s princípom nezávislého vzťahu, 
+10. zhrnutie finančných informácií využitých pri použití konkrétnej metódy 
+ocenenia kontrolovanej transakcie alebo skupiny kontrolovaných transakcií 
+a popis ich väzby na údaje účtovnej závierky daňovníka, 
+11. kópia opatrení predchádzajúcich oceneniu, ktoré sa týkajú kontrolovanej 
+transakcie alebo skupiny kontrolovaných transakcií, napríklad odsúhlasenie 
+použitia metódy ocenenia, ak toto opatrenie nebolo vydané v Slovenskej 
+republike, 
+d) iné informácie, ktoré prispejú k preukázaniu súladu použitých cien s princípom 
+nezávislého vzťahu. 
+ 7 
+ 
+ 
+Článok 5 
+Obsah základnej dokumentácie 
+ 
+1. Účelom základnej dokumentácie je zdokumentovať ocenenie významných 
+kontrolovaných transakcií1) daňovníka a iné skutočnosti, ktoré majú na oceňovanie týchto 
+kontrolovaných transakcií vplyv. Základná dokumentácia predstavuje súbor informácií, 
+údajov a skutočností, ktoré preukazujú a vysvetľujú spôsob tvorby cien daňovníka 
+v kontrolovaných transakciách. 
+ 
+2. Základná dokumentácia sa vypracuje za každú kontrolovanú transakciu samostatne alebo 
+za skupinu kontrolovaných transakcií, ak vypracovanie dokumentácie za skupinu 
+kontrolovaných transakcií poskytne spoľahlivejší obraz o použitých metódach ocenenia. 
+V dokumentácii sa uvedú dôvody zlúčenia transakcií do skupiny kontrolovaných 
+transakcií. 
+ 
+3. Základná dokumentácia pozostáva zo všeobecnej skupinovej dokumentácie a špecifickej 
+dokumentácie. 
+ 
+4. Všeobecná skupinová dokumentácia obsahuje tieto informácie: 
+ 
+a) identifikáciu a právnu formu jednotlivých členov skupiny, popis organizačnej 
+štruktúry a vlastníckej štruktúry skupiny, 
+b) stručný popis funkcií, rizík a aktív jednotlivých členov skupiny, 
+c) všeobecný popis spôsobu financovania skupiny.  
+ 
+5. Špecifická dokumentácia obsahuje tieto informácie: 
+ 
+a) identifikáciu a právnu formu daňovníka, popis jeho organizačnej štruktúry a 
+vlastníckej štruktúry, popis organizačných jednotiek v rámci skupiny, ktorým sú 
+členovia vedenia daňovníka podriadení v rámci organizačnej štruktúry skupiny,  
+b) popis podnikateľskej činnosti a obchodnej stratégie daňovníka, 
+c) za jednotlivú kontrolovanú transakciu alebo skupinu kontrolovaných transakcií: 
+1. popis kontrolovanej transakcie alebo skupiny kontrolovaných transakcií 
+a okolností, za ktorých sa uskutočňuje, 
+2. finančné vyjadrenie hodnoty kontrolovanej transakcie alebo skupiny 
+kontrolovaných transakcií za príslušné zdaňovacie obdobie v členení podľa 
+jednotlivých závislých osôb, 
+3. kópia zmluvy k príslušnej kontrolovanej transakcii alebo skupine 
+kontrolovaných transakcií, ak je k dispozícii v písomnej podobe, 
+4. analýza funkcií, rizík a aktív daňovníka a príslušných závislých osôb 
+v súvislosti s kontrolovanou transakciou, 
+5. popis systému transferového oceňovania daňovníka obsahujúci informácie 
+týkajúce sa výberu, spôsobu uplatňovania metódy transferového oceňovania 
+a určenia ceny kontrolovaných transakcií. 
+ 
+Článok 6 
+Obsah skrátenej dokumentácie 
+ 
+Skrátená dokumentácia obsahuje informácie v štruktúre podľa prílohy tohto usmernenia.  
+ 
+ 8 
+ 
+Článok 7 
+Dokumentácia stálej prevádzkarne 
+ 
+Dokumentácia stálej prevádzkarne umiestnenej na území Slovenskej republiky obsahuje 
+okrem náležitostí uvedených v článkoch 4 až 6 aj popis spôsobu priradenia kapitálu 
+a nákladov financovania stálej prevádzkarni, ak stála prevádzkareň uplatňuje v daňových 
+výdavkoch náklady na financovanie. 
+ 
+ 
+Článok 8 
+Špecifické pravidlá 
+ 
+1. Na účely tohto usmernenia daňovníci, ktorí sú závislými osobami z dôvodu prepojenia 
+na základe priamej alebo nepriamej účasti štátu, obce alebo vyššieho územného celku 
+na majetku, kontrole alebo vedení, pripravujú dokumentáciu a preukazujú súlad 
+použitých cien s princípom nezávislého vzťahu len pre kontrolované transakcie 
+s príslušným správcom kapitoly štátneho rozpočtu, s obcou alebo vyšším územným 
+celkom, s nimi zriadenými rozpočtovými organizáciami, príspevkovými organizáciami, 
+ako aj s právnickými osobami, v ktorých má daňovník majetkovú účasť alebo 
+v ktorých má majetkovú účasť príslušný správca kapitoly štátneho rozpočtu, obec alebo 
+vyšší územný celok a nimi zriadené rozpočtové organizácie, príspevkové organizácie 
+a iné právnické osoby, v ktorých majú majetkovú účasť a súčasne spĺňajú podmienky 
+podľa § 2 písm. n) zákona o dani z príjmov. 
+ 
+2. Daňovníci, ktorí vedú dokumentáciu podľa bodu 1, uvádzajú v dokumentácii 
+informácie o organizačnej štruktúre a vlastníckej štruktúre závislých osôb len v rozsahu 
+závislých osôb, s ktorými majú kontrolované transakcie. 
+ 
+3. Ak dochádza k realizácii transakcií medzi závislými osobami, na ktoré sa vzťahujú 
+body 1 a 2 a tieto transakcie sú realizované za špecifických podmienok cenotvorby, 
+pri ktorej je zohľadnený verejný záujem13), správca dane v týchto transakciách 
+neposudzuje súlad s princípom nezávislého vzťahu, napriek prípadným rozdielom cien 
+v porovnaní s transakciami realizovanými v porovnateľných nezávislých vzťahoch, 
+pričom 
+ 
+a) ak ide o zníženie ceny pod cenu, ktorá by bola inak stanovená v rámci nezávislých 
+vzťahov, táto cena je akceptovaná len, ak dochádza k úspore prostriedkov štátneho 
+rozpočtu, rozpočtu obce alebo rozpočtu vyššieho územného celku, 
+b) pri navýšení ceny nad cenu, ktorá by bola inak stanovená v rámci nezávislých 
+vzťahov, táto cena je akceptovaná, ak cenové zvýhodnenie plynie v prospech 
+štátneho rozpočtu, rozpočtu obcí alebo rozpočtu vyššieho územného celku. 
+ 
+4. Ceny regulované na základe osobitného predpisu14) považuje správca dane za ceny 
+v súlade s princípom nezávislého vzťahu, ak by dodržanie princípu nezávislého vzťahu 
+viedlo k cenám v rozpore s príslušnou reguláciou. 
+ 
+13) Verejný záujem predstavuje situácie, ktoré prinášajú majetkový prospech alebo iný prospech širokej 
+verejnosti – teda všetkým alebo väčšine občanov a nie vybraným jednotlivcom, alebo úzkej skupine.  
+I. ÚS 92/2012. Napríklad § 55 až 61 zákona č. 5/2004 Z. z. o službách zamestnanosti a o zmene a doplnení 
+niektorých zákonov v znení neskorších predpisov. 
+14) Napríklad zákon č. 250/2012 Z. z. o regulácii v sieťových odvetviach v znení neskorších predpisov, zákon  
+č. 251/2012 Z. z. o energetike a o zmene a doplnení niektorých zákonov v znení neskorších predpisov. 
+ 9 
+ 
+Článok 9 
+Prechodné a záverečné ustanovenia 
+ 
+Toto usmernenie sa prvýkrát použije pri vypracovaní dokumentácie za zdaňovacie obdobie, 
+pri ktorom posledný deň lehoty na podanie daňového priznania uplynie najskôr 
+po 31. decembri 2025. 

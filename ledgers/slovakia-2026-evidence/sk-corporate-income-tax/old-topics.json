@@ -1,0 +1,769 @@
+{
+  "guide_sha256": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 27162,
+  "main_sha256": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f",
+  "earliest_preimage": {
+    "revision": "513ef7cb^",
+    "present": true,
+    "bytes": 4274,
+    "sha256": "4bdec05c19ab21b8a4226e83098c4b5eeaf34a84b07bd98a7653a44477e62eaf",
+    "complete_old_units": 10,
+    "rows": [
+      {
+        "comparator": "513ef7cb^",
+        "unit": 1,
+        "old_LF_start": 1,
+        "old_LF_end": 11,
+        "old_text": "---\nname: sk-corporate-income-tax\ndescription: \"Source-cited draft: corporate income tax for Slovakia (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: SK\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+        "old_unit_sha256": "af8976f384365d2ee59e20a57fa35b3843c599e91521796e4cb1fc3a43b0a82b",
+        "current_destination": "Current LF1–13",
+        "disposition": "Metadata/year updated, draft trust unchanged."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 2,
+        "old_LF_start": 13,
+        "old_LF_end": 13,
+        "old_text": "# Slovakia Corporate Income Tax",
+        "old_unit_sha256": "134ed72f4b6031b4ab8435849061e3132d505eb2b41f3ffb178b1b6fccbe3ce7",
+        "current_destination": "Current LF15",
+        "disposition": "Topic/heading preserved."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 3,
+        "old_LF_start": 15,
+        "old_LF_end": 15,
+        "old_text": "## Corporate income tax (2025)",
+        "old_unit_sha256": "cfc735203552647f47e49027cd5b76f7106ea39b74eb5a6bb3b7ddb9ab076d35",
+        "current_destination": "Current LF19–172",
+        "disposition": "All2025topics carried to current2026 method."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 4,
+        "old_LF_start": 17,
+        "old_LF_end": 27,
+        "old_text": "- **Overview of CIT structure** — Slovak corporate income tax (daň z príjmov právnických osôb) moved to a three-tier rate structure from 1 January 2025, with a reduced 10% rate for small companies and a new top 24% rate for the largest taxpayers. Resident companies are taxed on worldwide income; non-residents on Slovak-source income.  _(Income Tax Act (Act No. 595/2003 Coll.))_\n- **Reduced CIT rate (small companies)** — 10% percent (where taxable income does not exceed EUR 100,000 in the tax period)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Standard CIT rate** — 21% percent (where taxable income is between EUR 100,000 and EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Top CIT rate (large taxpayers)** — 24% percent (where taxable income exceeds EUR 5,000,000)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **Tax base** — Accounting profit adjusted for tax purposes (non-deductible items added back, exempt items removed)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/income-determination)_\n- **Minimum tax (tax licence)** — EUR 340 up to EUR 1,540+ EUR (Minimum corporate tax reintroduced from 2024, scaled by taxable revenue (approx bands — confirm exact 2025 revenue tiers))  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/taxes-on-corporate-income)_\n- **WHT on dividends to companies/non-residents** — 0% / 35% percent (Generally 0% to corporate shareholders in cooperating states; 35% to non-cooperating jurisdictions)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **WHT on interest** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **WHT on royalties** — 19% / 35% percent (19% standard; 35% to non-cooperating jurisdictions; reduced/0% under EU Interest-Royalty Directive or treaty)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/withholding-taxes)_\n- **CIT return filing deadline** — Within 3 months after the end of the tax period (31 March for a calendar year); extendable by 3 months (6 for foreign income)  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_\n- **CIT payment deadline** — Tax due payable by the filing deadline; advance payments quarterly or monthly depending on prior-year tax  _(Income Tax Act (Act No. 595/2003 Coll.) — https://taxsummaries.pwc.com/slovak-republic/corporate/tax-administration)_",
+        "old_unit_sha256": "badba7e11b5185da4ce8fa656c8c91b678b26f2338deb391f87b821cb6d9c5fb",
+        "current_destination": "Current LF21–22,31–56,60–69,115,130–140,168–169",
+        "disposition": "All11 original bullets retained as topics: residence;10/21/24rates;accountingbase;minimum tax corrected from unsupported1540+;corporate dividends;interest;royalties;return;payment/advances. Old secondary-source URLs remain in complete archived text, not adopted as primary law."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 5,
+        "old_LF_start": 29,
+        "old_LF_end": 29,
+        "old_text": "<!-- openaccountants-cta-block -->",
+        "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "current_destination": "Current LF371",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 6,
+        "old_LF_start": 31,
+        "old_LF_end": 31,
+        "old_text": "---",
+        "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "current_destination": "Current LF373",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 7,
+        "old_LF_start": 33,
+        "old_LF_end": 33,
+        "old_text": "## Talk to a verified accountant",
+        "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "current_destination": "Current LF375",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 8,
+        "old_LF_start": 35,
+        "old_LF_end": 38,
+        "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+        "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+        "current_destination": "Current LF377–380",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 9,
+        "old_LF_start": 40,
+        "old_LF_end": 41,
+        "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+        "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+        "current_destination": "Current LF382–383",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      },
+      {
+        "comparator": "513ef7cb^",
+        "unit": 10,
+        "old_LF_start": 43,
+        "old_LF_end": 45,
+        "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+        "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+        "current_destination": "Current LF385–387",
+        "disposition": "Original CTA/trust/reference block retained byte-exact."
+      }
+    ]
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 13,
+      "old_text": "---\nname: sk-corporate-income-tax\ndescription: \"Slovak corporate income tax (daň z príjmov právnických osôb) for tax year 2026 under Act No. 595/2003 Coll. as amended, including Act No. 261/2025 Coll. Covers the three rates set by taxable revenue (10% up to EUR 100,000, 24% above EUR 5,000,000, 21% otherwise), the minimum tax with its new EUR 11,520 band for revenue above EUR 5,000,000, the tax base from accounting profit, paid-basis expenses, unrecoverable VAT, depreciation groups 0 to 6, the 5-year loss carry-forward with the 50% cap, the two interest limits (25% EBITDA for related-party loans and 30% above EUR 3,000,000 net interest), dividends, advances, the DPPO return and extensions, and penalties. Trigger on: Slovakia corporate tax, DPPO, s.r.o. tax, 10% rate Slovakia, minimálna daň, daňová licencia, preddavky na daň. Out of scope: individuals (slovakia-pit), payroll (sk-payroll-social), VAT (slovakia-vat-return), company set-up (sk-company-formation).\"\nversion: 0.1\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-24\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "91911ac2985eb61b1a7db6f54717d39d3be5ca5b0cf0fab90135d375907be4f4",
+      "current_LF": [
+        1,
+        13
+      ],
+      "disposition": "Metadata retained/expanded."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 15,
+      "old_LF_end": 15,
+      "old_text": "# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing",
+      "old_unit_sha256": "fd8b063deaa78e2372e64ce36213cfc930ffaced3ce8988a2417aa68abbcaba0",
+      "current_LF": [
+        15,
+        15
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov). This skill reads the consolidated version in force from 1 January 2026 on slov-lex.sk, which includes the consolidation package Act No. 261/2025 Coll. Penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The Financial Administration (Finančná správa) runs the return and the portal at financnasprava.sk. Figures are for the 2026 tax period: the calendar year 2026, or a fiscal year (hospodársky rok) that ends in 2026 or 2027. Where a rule applies only to periods that start on or after 1 January 2026, the skill says so.",
+      "old_unit_sha256": "e8adb3cb7e59361a1bcfcd048f8192826061f492e4d43e5de8834d2b8a4b2b21",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "## Who this applies to",
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 21,
+      "old_LF_end": 23,
+      "old_text": "- **Slovak-resident legal persons**: a company with its seat or place of effective management in Slovakia (§ 2(d) second point). Typical clients: s.r.o., a.s., cooperatives. They are taxed on worldwide income.\n- **Non-resident legal persons** with Slovak-source income (§ 16), in particular a permanent establishment in Slovakia. A registered permanent establishment files a DPPO return like a resident. Slovak income with no permanent establishment is mostly taxed by withholding (§ 43); see \"Cross-border points\".\n- **Non-profit bodies** (§ 12(3)) are taxed only on part of their income. Not covered here.",
+      "old_unit_sha256": "9dc0ac111708a1da3f227c02f3f8d587cad430cbc6612770d73ccca4c71d4502",
+      "current_LF": [
+        21,
+        23
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 25,
+      "old_LF_end": 25,
+      "old_text": "Not covered here, refer to a specialist: banks, insurers and leasing companies (special interest and reserve rules); companies in liquidation or bankruptcy (special tax periods in § 41); the special 54% base for banks on card-payment fees to gaming accounts (§ 51eb, new from 2026); the Pillar Two top-up tax under Act No. 507/2023 Coll. (scope check only: multinational and large domestic groups); controlled foreign companies; hybrid mismatches; mergers and divisions; the R&D super-deduction (§ 30c) and the investment deduction (§ 30e) beyond a pointer; transfer pricing documentation.",
+      "old_unit_sha256": "00e33162262eb8693d135e34abdea78558dddb4ba7885e67ea02c564d82fbc15",
+      "current_LF": [
+        25,
+        25
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 27,
+      "old_LF_end": 27,
+      "old_text": "Related skills: an overview in [sk-tax-overview](sk-tax-overview.md); individuals in [slovakia-pit](slovakia-pit.md); employer contributions in [sk-payroll-social](sk-payroll-social.md); VAT in [slovakia-vat-return](slovakia-vat-return.md); setting up a company in [sk-company-formation](sk-company-formation.md).",
+      "old_unit_sha256": "fa0d386022b98b1e55db02b7960ce6041cc205d5f2f60ad7514924802b18425d",
+      "current_LF": [
+        27,
+        27
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 29,
+      "old_LF_end": 29,
+      "old_text": "## Rates, bands and thresholds",
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_LF": [
+        29,
+        29
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 31,
+      "old_LF_end": 31,
+      "old_text": "\"Taxable revenue\" below is zdaniteľné príjmy (výnosy): the company's taxable income in the revenue sense, before expenses. It is not the tax base. The rate band is chosen by revenue, then the single rate applies to the whole tax base after losses. There is no slicing: a company with EUR 100,001 of taxable revenue pays 21% on all of its base.",
+      "old_unit_sha256": "e4523d53a1bb3af822e0d83c878f6b845fbeaca1ef0dfb5376b1332b47963626",
+      "current_LF": [
+        31,
+        31
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 33,
+      "old_LF_end": 56,
+      "old_text": "| Item | Rate or amount | Year | Source |\n|---|---|---|---|\n| CIT rate, taxable revenue up to EUR 100,000 (§ 15(b)(1a)) | 10% of the base after losses | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| CIT rate, taxable revenue above EUR 100,000 and up to EUR 5,000,000 (§ 15(b)(1b)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| CIT rate, taxable revenue above EUR 5,000,000 (§ 15(b)(1c)) | 24% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Exit tax special base (§ 17f, rate in § 15(b)(3)) | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Dividends received from a non-cooperating state, special base (§ 51e(4), rate in § 15(b)(2)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Yield on Slovak, EU or EEA state bonds and treasury bills, special base (§ 51ea, rate in § 15(b)(4)) | 13% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, taxable revenue up to EUR 50,000 (§ 46b(2)(a)) | EUR 340 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 50,000 up to EUR 250,000 (§ 46b(2)(b)) | EUR 960 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 250,000 up to EUR 500,000 (§ 46b(2)(c)) | EUR 1,920 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 500,000 up to EUR 5,000,000 (§ 46b(2)(d)) | EUR 3,840 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Minimum tax, above EUR 5,000,000 (§ 46b(2)(e), new: Act No. 261/2025, periods starting on or after 1 January 2026) | EUR 11,520 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html |\n| Micro-taxpayer (mikrodaňovník): taxable revenue up to EUR 60,000 (§ 2(w)) | Full loss offset, no 50% cap | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Loss carry-forward (§ 30) | 5 periods; capped at 50% of the base unless a micro-taxpayer | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Related-party interest limit (§ 21a) | Interest above 25% of EBITDA (profit before tax plus depreciation plus interest expense) is not deductible | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Interest limitation rule (§ 17k) | Net interest above EUR 3,000,000 added back to the extent it exceeds 30% of tax EBITDA | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Depreciable tangible movable asset (§ 22(2)(a)) | Entry price above EUR 1,700 and useful life over one year | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Advances, prior-year tax above EUR 16,600 (§ 42(1)) | Monthly, 1/12 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Advances, prior-year tax above EUR 5,000 up to EUR 16,600 (§ 42(2)) | Quarterly, 1/4 of prior-year tax | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| No advances, prior-year tax up to EUR 5,000 (§ 42(3)(a)) | None, unless the tax office orders them | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Withholding tax, standard (§ 43(1)(b)) | 19% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Withholding tax, payee in a non-cooperating state (§ 43(1)(c)) | 35% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html |\n| Late payment interest (Tax Procedure Code § 156(2)) | 4 times the ECB main rate a year, at least 15% a year, for at most 4 years. At the ECB main refinancing rate of 2.65% (from 16 September 2026) the 15% floor applies | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |",
+      "old_unit_sha256": "153e1084ee65b7a953df0456fa96d9bb9e76ed4e4b1ceeb210753e3e4a6a8fd4",
+      "current_LF": [
+        33,
+        56
+      ],
+      "disposition": "Every prior rate/minimum/interest/depreciation/advance row retained with current scope qualifications."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 58,
+      "old_LF_end": 58,
+      "old_text": "## The taxable base",
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_LF": [
+        58,
+        58
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 60,
+      "old_LF_end": 60,
+      "old_text": "**Start from accounting profit.** A company that keeps double-entry books starts from the profit or loss in its statutory accounts (Slovak GAAP or IFRS), then adds back and deducts the items the Act lists (§ 17). The result, less tax losses, is the base the rate applies to.",
+      "old_unit_sha256": "7f29de7f2e53d4e269a91236e5ce5228c962baf8b344e888dbc75a0cb0a582f8",
+      "current_LF": [
+        60,
+        60
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 62,
+      "old_LF_end": 67,
+      "old_text": "**Common add-backs.**\n- Expenses that are not tax expenses under § 21, such as representation (entertainment) costs, and fines and penalties imposed by public bodies.\n- Expenses deductible only when paid (§ 17(19)). Among them: rent and royalties; marketing and market studies; commissions; legal and advisory services under CPA codes 69.1, 69.2, 70.1 and 70.22; contractual penalties and late payment interest owed by the company; payments to a person in a non-cooperating state once withholding duties are met. If they are booked in 2026 and paid in 2027, they come into the 2027 base.\n- From 1 January 2026, VAT that a VAT payer has no right to deduct is not a tax expense, and on tangible assets it is not part of the entry price (§ 52zzzk, inserted by Act No. 261/2025). If the split between business and non-business use of the asset later changes, that VAT is not taken into the base either. Check this for any VAT-registered client with exempt supplies or blocked input VAT.\n- Accounting depreciation above tax depreciation.\n- Interest caught by § 21a or § 17k (see below).",
+      "old_unit_sha256": "2d39ae010dd8912511619059ff50ced30f1dcefc0f8672c15404df545a426c5c",
+      "current_LF": [
+        62,
+        67
+      ],
+      "disposition": "All add-back topics preserved; former blanket VAT disallowance corrected to specific85n scope and ordinary cost rules."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 69,
+      "old_LF_end": 69,
+      "old_text": "**Common deductions.** Income not subject to tax, such as most dividends (§ 12(7)(c), below); tax depreciation above accounting depreciation; the R&D super-deduction (§ 30c: 100% of R&D costs, plus 100% of the increase in the two-year average of R&D costs over the average of the two prior periods) and the investment deduction (§ 30e) where the conditions are met.",
+      "old_unit_sha256": "fa0ce1c12214e2da76f76ba02d1e084c63fbe4427ae288dcefb2e2ce138dfa3b",
+      "current_LF": [
+        69,
+        69
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 71,
+      "old_LF_end": 71,
+      "old_text": "**Depreciation (§ 26 and § 27).** Tangible assets go into one of seven groups. Straight-line annual depreciation (§ 27) is entry price divided by the period. In the first year only the months from the month the asset is put into use count. Assets in groups 2 and 3 may instead be depreciated by the accelerated method (§ 28); the method is chosen per new asset and cannot be changed (§ 26(3)). A micro-taxpayer may depreciate assets placed in use in a micro-taxpayer period in groups 0 to 4 in any amount it chooses within the group period, except cars with an entry price of EUR 48,000 or more (§ 26(12)).",
+      "old_unit_sha256": "98e248659c3156b051d8625bbecce4e543ebbfcef6c8703cbc6d797fe7850678",
+      "current_LF": [
+        71,
+        71
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 73,
+      "old_LF_end": 81,
+      "old_text": "| Group | Period | Annual straight-line share |\n|---|---|---|\n| 0 | 2 years | 1/2 |\n| 1 | 4 years | 1/4 |\n| 2 | 6 years | 1/6 |\n| 3 | 8 years | 1/8 |\n| 4 | 12 years | 1/12 |\n| 5 | 20 years | 1/20 |\n| 6 | 40 years | 1/40 |",
+      "old_unit_sha256": "4aecdc7fcab0aad664a569fa5e61643c7eb7a71d4076f3d74281b0c9a1b0aa46",
+      "current_LF": [
+        73,
+        81
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 83,
+      "old_LF_end": 83,
+      "old_text": "Assets that fit no group in Annex 1 go into group 2 (§ 26(2)). § 26(14) as amended from 1 January 2026 (building depreciation over at least half the group 6 period) applies first to the period whose return is filed after 31 December 2025. Annex 1 as amended from that date applies first to technical improvements put into use, and repairs booked, in that period. Where the group, period or annual rate changes, the change is also made for assets already being depreciated, but depreciation already claimed is not reopened (§ 52zzzf). Check the asset's group against the 2026 Annex 1 before carrying last year's register forward.",
+      "old_unit_sha256": "79faaf5c14bdb3e787b91086717ec106cabb1bb9b438dc7ab07f7cd7148c34ba",
+      "current_LF": [
+        83,
+        101
+      ],
+      "disposition": "Prior fallback/building uncertainty replaced by actual Annex1 code method and precise transitional rules."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 85,
+      "old_LF_end": 87,
+      "old_text": "**Interest: two separate limits.**\n- **§ 21a (thin capitalisation).** Interest and related costs on loans from a related person (závislá osoba) are not deductible to the extent they exceed 25% of EBITDA. EBITDA here is accounting profit before tax plus the depreciation and interest expense in it. Banks, insurers and leasing companies are out. § 21a does not apply where the company has already added back interest under § 17k.\n- **§ 17k (ATAD rule).** If net interest expense is above EUR 3,000,000, the excess over 30% of the tax base (increased by net interest and tax depreciation) is added back. Most owner-managed companies never reach the EUR 3,000,000 floor.",
+      "old_unit_sha256": "98a86abf5dbdf31acc467d87ac3951d56223c829b4fad7f51c44d35c89cb19c8",
+      "current_LF": [
+        103,
+        111
+      ],
+      "disposition": "Both interest limits retained, corrected sequencing/denominators/capitalisation and carry boundaries."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 89,
+      "old_LF_end": 89,
+      "old_text": "**Tax losses (§ 30).** A tax loss is deducted over at most the five periods right after the loss year. The yearly deduction is capped at 50% of the base, unless the company is a micro-taxpayer in the year it deducts. Then the full base can be absorbed. A micro-taxpayer is a company with taxable revenue up to EUR 60,000 that has no controlled transaction with a related person, is not in bankruptcy, liquidation or a payment plan, and has a full 12-month period (§ 2(w)). Note the two thresholds differ: EUR 60,000 for the loss rule, EUR 100,000 for the 10% rate. Unused loss falls away after the fifth period and on entry into liquidation or bankruptcy.",
+      "old_unit_sha256": "2194b455e517597866aca44e9b81e5f11b3d919770b2dd5d619d93ba446f586b",
+      "current_LF": [
+        113,
+        113
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 91,
+      "old_LF_end": 91,
+      "old_text": "**Dividends received.** A dividend paid out of a company's profit is not subject to tax in the hands of a Slovak company, to the extent it was not a tax expense of the payer (§ 12(7)(c)). The exception: dividends from a company resident in a non-cooperating state go into a special base taxed at 35% (§ 51e(4) and § 15(b)(2)). The Ministry of Finance publishes a list of cooperating states (states with a tax treaty or an information exchange agreement with Slovakia, less those on the EU list of non-cooperative jurisdictions at 1 January and those with no or a zero corporate tax). A state that is not on that list is a non-cooperating state (§ 2(x)). Use the list valid from 1 January 2026.",
+      "old_unit_sha256": "759b5957e3195ed00d190e4965d0b603a6f3317f73532046fc3dfeb7d02c3ffd",
+      "current_LF": [
+        115,
+        115
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 93,
+      "old_LF_end": 100,
+      "old_text": "**Minimum tax (§ 46b).** A company pays the minimum tax for its revenue band (table above) if its tax after reliefs and foreign tax credit is lower than that figure, or if it has a tax loss. A shorter period is pro-rated by months (§ 46b(6)). It is halved for a company whose staff are at least 20% disabled employees (§ 46b(3)). It does not apply to:\n- a company filing for the first time, for the period in which it was set up (unless it is a successor of a company dissolved without liquidation);\n- non-profit taxpayers under § 12(3) and (4);\n- a company running a sheltered workshop;\n- the special periods in liquidation or bankruptcy;\n- a land community (pozemkové spoločenstvo) with only its own activities and taxable revenue up to EUR 10,000;\n- a company from the period in which it receives notice of proceedings to dissolve it;\n- a registered social enterprise (§ 46b(7)).",
+      "old_unit_sha256": "c6246d3d5a72e9f8347ad61d0705cfa5dee974b7bd8bbd2dc28c66742b69cf2d",
+      "current_LF": [
+        117,
+        124
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 102,
+      "old_LF_end": 102,
+      "old_text": "The excess of minimum tax over the computed tax can be credited against tax in the next three periods. Only the part of that later tax above the minimum tax can absorb it (§ 46b(5)). The credit is lost on dissolution without liquidation, liquidation or bankruptcy (§ 46b(8)).",
+      "old_unit_sha256": "20c31e7a47d316d127cb15f60ae3fbf630f211727f46094555d69350e31b1ccd",
+      "current_LF": [
+        126,
+        126
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 104,
+      "old_LF_end": 104,
+      "old_text": "## Deadlines and filing",
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_LF": [
+        128,
+        128
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 106,
+      "old_LF_end": 116,
+      "old_text": "- **Return.** The DPPO return is due within three calendar months after the end of the tax period: 31 March 2027 for calendar 2026 (§ 49(2)). Tax is payable by the same date.\n- **Extension by notice.** A notice filed with the tax office before the deadline moves it by up to three whole calendar months, to 30 June 2027 for calendar 2026. The new date is the end of the month the company names. If the company has foreign-source income, the move is up to six months, to 30 September 2027 (§ 49(3)(a) and (b)). Tax is due on the new date. Companies in liquidation or bankruptcy apply instead, at least 15 days before the deadline (§ 49(3)(c)).\n- **Form.** On 23 October 2026 the Financial Administration's return page names form MF/012187/2025-721, with filing notes for periods whose deadline falls after 31 December 2025. It has 15 pages and at least five annexes even when blank. Before filing the 2026 return, check that page for a newer form.\n- **Electronic filing.** A legal person entered in the commercial register, and any VAT payer, must file electronically (Tax Procedure Code § 14(1)(a)). Some annexes may be sent in other ways, but the VII-part annex and the § 13a, § 13b, § 30ca and § 30e annexes form part of the return.\n- **Minimum tax** is payable by the return deadline (§ 46b(4)).\n- **Advances in 2026 (§ 42).** The tax that sets them (§ 42(6)) is the tax on the base after losses, at the § 15 rate shown in the previous period's return, less reliefs under the Act. It is the computed tax, not the minimum tax. Based on the 2025 tax:\n  - above EUR 16,600: monthly, 1/12 of that tax, by the end of each month;\n  - above EUR 5,000 up to EUR 16,600: quarterly, 1/4, by the end of each calendar quarter (or quarter of the fiscal year);\n  - up to EUR 5,000: none, unless the tax office orders them.\n  Until the deadline for the 2025 return, advances follow the last known tax, from the 2024 return (§ 42(7)). A company formed during the year (other than by merger or division) pays no advances in its first period (§ 42(4)). A company filing its first return pays no advances until that return is due, then makes up the advances that fell due by the end of the following month (§ 42(8)).\n- **Financial transaction tax.** Separate from CIT, Act No. 279/2024 Coll. taxes financial transactions. Its § 6 rates from 1 January 2026: 0.4%, at most EUR 40 per transaction; 0.8% on cash withdrawals; EUR 2 per payment card. This skill does not cover it beyond this pointer.",
+      "old_unit_sha256": "eb82ae41c8772e688debd789f07b68cffe4f5cde675dba05f3f71734684f1344",
+      "current_LF": [
+        130,
+        140
+      ],
+      "disposition": "All deadlines/advances/transaction-tax pointer retained; actual current form replaces historical vintage."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 118,
+      "old_LF_end": 118,
+      "old_text": "## Penalties and interest",
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_LF": [
+        156,
+        156
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 120,
+      "old_LF_end": 120,
+      "old_text": "From the Tax Procedure Code, Act No. 563/2009 Coll. (version in force from 1 September 2026):",
+      "old_unit_sha256": "15870355816c0acbf25fdc2e36b16b32c7447a6b8fc2e4cbfca995979518e1a7",
+      "current_LF": [
+        158,
+        158
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 122,
+      "old_LF_end": 126,
+      "old_text": "- **Late return (§ 155(1)(a)).** A fine of EUR 100 to EUR 30,000. If the tax office has sent a notice and the return still does not arrive in the time it sets, up to EUR 60,000 (§ 155(1)(b)). A tax office does not impose a fine within a range for the first breach (§ 155(4)).\n- **Tax understated in a return and raised by the tax office (§ 155(1)(f)).** 3 times the ECB main refinancing rate a year on the extra tax, at least 10% a year (§ 155(5)). The rate used is the one on the day the assessment is delivered (§ 155(7)). It runs daily from the day after the filing deadline, at least 1% of the extra tax and at most the extra tax (§ 155(2)). Paying the assessed amount within 15 days of delivery cuts the fine to two thirds (§ 155(17)).\n- **Correction by a supplementary return (§ 155(1)(g)).** The ECB rate a year on the increase, at least 3% a year. If the supplementary return follows the start of a tax audit: twice the ECB rate, at least 7% a year (§ 155(1)(h) and (5)).\n- **Late payment interest (§ 156(2)).** 4 times the ECB main rate in force on the day the arrears arise, at least 15% a year, daily, for at most four years. It applies to late tax and late advances; on a late advance it runs at most to the return deadline (§ 156(4)).\n- **At the current ECB rate.** The ECB main refinancing rate is 2.65% from 16 September 2026. 3 times is 7.95%, 2 times 5.3%, 1 times 2.65% and 4 times 10.6%, so all four floors apply: 10%, 7%, 3% and 15% a year.",
+      "old_unit_sha256": "b92df2978902a98d0f3ad71213dcc01e6e4bbc1f74c0344eda74361928d3e616",
+      "current_LF": [
+        160,
+        164
+      ],
+      "disposition": "All fine branches preserved with dated ECB observations."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 128,
+      "old_LF_end": 128,
+      "old_text": "## Cross-border points",
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_LF": [
+        166,
+        166
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 130,
+      "old_LF_end": 134,
+      "old_text": "- **Withholding on payments abroad (§ 43).** Tax is withheld at 19% on Slovak-source income of a non-resident without a registered permanent establishment, such as royalties, interest and certain services. The rate is 35% where the payee is in a non-cooperating state. A treaty or the EU Interest and Royalties Directive can reduce or remove it. For the detailed rules see [sk-cross-border](sk-cross-border.md).\n- **Dividends paid abroad.** A dividend paid by a Slovak company to a company is not subject to tax (§ 12(7)(c)). The exception is a recipient company that is a taxpayer of a non-cooperating state (§ 12(7)(c)(1)). That dividend is withheld under § 43(2) (§ 16(1)(e) point 9) at 35% (§ 43(1)(c)).\n- **Exit tax (§ 17f).** Moving assets, the seat or the business abroad creates a special base taxed at 21%.\n- **Permanent establishments.** The § 21a and § 17k limits and the rate bands apply to a non-resident's Slovak permanent establishment as they do to a resident company.\n- **Pillar Two.** Act No. 507/2023 Coll. on top-up tax applies to Slovak members of a multinational or large domestic group whose ultimate parent's consolidated accounts show annual revenue of at least EUR 750,000,000 in at least two of the four preceding periods (§ 3(1)(a)). Those groups also need a top-up tax computation. Not covered here.",
+      "old_unit_sha256": "87d7d65ae2862f3dc6a60e76d570fe646ce7b568cdd90e9564237bffee452c4a",
+      "current_LF": [
+        168,
+        172
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 136,
+      "old_LF_end": 136,
+      "old_text": "## Worked examples",
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_LF": [
+        174,
+        174
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 138,
+      "old_LF_end": 138,
+      "old_text": "### Example 1: small s.r.o., 10% rate, minimum tax check",
+      "old_unit_sha256": "ac51b786483f834e9f10ebb964b3a678d6910de782ff8cab64bf3dc2fbc00d94",
+      "current_LF": [
+        176,
+        176
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 140,
+      "old_LF_end": 140,
+      "old_text": "Alfa s.r.o. has a calendar 2026 year. Its taxable revenue is EUR 90,000 and its accounting profit is EUR 20,000. It booked EUR 1,500 of representation costs, which are not tax expenses. It has a 2023 tax loss of EUR 4,000 still unused. It has no related-party transactions.",
+      "old_unit_sha256": "db95751b1ef373115825fde9d6317f9fdc09bf45011ebc40e415150f1dabf75d",
+      "current_LF": [
+        178,
+        178
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 142,
+      "old_LF_end": 148,
+      "old_text": "- Base before losses: EUR 20,000 plus EUR 1,500 is EUR 21,500.\n- Revenue of EUR 90,000 is above EUR 60,000, so Alfa is not a micro-taxpayer. The loss deduction is capped at 50% of EUR 21,500, EUR 10,750. The whole EUR 4,000 fits.\n- Base after losses: EUR 17,500.\n- Revenue is not above EUR 100,000, so the rate is 10%: tax EUR 1,750.\n- Minimum tax for revenue above EUR 50,000 up to EUR 250,000 is EUR 960. EUR 1,750 is higher, so Alfa pays EUR 1,750 by 31 March 2027.\n- 2026 tax is not above EUR 5,000, so there are no advances in 2027.\n- The edge: with revenue of EUR 100,500 instead, the rate on the same base would be 21%, tax EUR 3,675. EUR 500 of extra revenue costs EUR 1,925 of tax.",
+      "old_unit_sha256": "239f0ec2711806cd82de12353d64a180f68e93ab24d1be91d32dc419b8382230",
+      "current_LF": [
+        180,
+        186
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 150,
+      "old_LF_end": 176,
+      "old_text": "```oa-check\nname: Alfa s.r.o., revenue EUR 90,000, profit EUR 20,000, loss EUR 4,000 (2026)\ninputs:\n  revenue: 90000\n  profit: 20000\n  addbacks: 1500\n  loss_bf: 4000\n  min_tax_band: 960\nsteps:\n  - base_before_loss: profit + addbacks\n  - loss_cap: base_before_loss * 0.50\n  - loss_used: min(loss_bf, loss_cap)\n  - base_after_loss: base_before_loss - loss_used\n  - tax_10: base_after_loss * 0.10\n  - tax_payable: max(tax_10, min_tax_band)\n  - tax_if_21: base_after_loss * 0.21\n  - cliff_cost: tax_if_21 - tax_10\nexpected:\n  base_before_loss: 21500.00\n  loss_cap: 10750.00\n  loss_used: 4000.00\n  base_after_loss: 17500.00\n  tax_10: 1750.00\n  tax_payable: 1750.00\n  tax_if_21: 3675.00\n  cliff_cost: 1925.00\n```",
+      "old_unit_sha256": "e22a647c85d37152650adfaf3531d361f5517f041a47b23d2000c31fa0a4e1ad",
+      "current_LF": [
+        194,
+        254
+      ],
+      "disposition": "Original executable core retained; independent variants add meaningful controls."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 178,
+      "old_LF_end": 178,
+      "old_text": "### Example 2: large company at 24%, loss cap and advances",
+      "old_unit_sha256": "77c6a2e404c29bc46656105aabde67b3ffd56b2c28e1db701c8f29147d0b161a",
+      "current_LF": [
+        256,
+        256
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 180,
+      "old_LF_end": 180,
+      "old_text": "Beta a.s. has a calendar 2026 year with taxable revenue of EUR 6,200,000. Its tax base before losses is EUR 300,000. It has EUR 400,000 of tax losses from 2024 and 2025.",
+      "old_unit_sha256": "f1bca3249ad0a6f187ab78e23b6be97d2070f83cca3184e4b5e6a90effa2995a",
+      "current_LF": [
+        258,
+        258
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 37,
+      "old_LF_start": 182,
+      "old_LF_end": 186,
+      "old_text": "- Not a micro-taxpayer, so the loss deduction is capped at 50% of EUR 300,000, EUR 150,000. EUR 250,000 of loss carries forward, within the five-year window.\n- Base after losses: EUR 150,000.\n- Revenue is above EUR 5,000,000, so the rate is 24%: tax EUR 36,000.\n- Minimum tax for revenue above EUR 5,000,000 is EUR 11,520. EUR 36,000 is higher, so it does not bite. Had Beta made a tax loss in 2026, it would still pay EUR 11,520. It could then credit that amount against the part of its 2027 to 2029 tax above the minimum tax.\n- The § 42(6) tax for 2026 is EUR 36,000 (base after losses at 24%, no reliefs). It is above EUR 16,600, so once the 2026 return is due (31 March 2027, or the extended date) Beta pays monthly advances of EUR 3,000 (1/12 of EUR 36,000). Until then its 2027 advances follow its 2025 tax (§ 42(7)).",
+      "old_unit_sha256": "0490a78025319bfa4df442e1f327f74db59e851490a9acc8072ef3aae217c3e3",
+      "current_LF": [
+        260,
+        264
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 38,
+      "old_LF_start": 188,
+      "old_LF_end": 210,
+      "old_text": "```oa-check\nname: Beta a.s., revenue EUR 6,200,000, base EUR 300,000, losses EUR 400,000 (2026)\ninputs:\n  base_before_loss: 300000\n  loss_bf: 400000\n  min_tax_band: 11520\nsteps:\n  - loss_cap: base_before_loss * 0.50\n  - loss_used: min(loss_bf, loss_cap)\n  - loss_cf: loss_bf - loss_used\n  - base_after_loss: base_before_loss - loss_used\n  - tax_24: base_after_loss * 0.24\n  - tax_payable: max(tax_24, min_tax_band)\n  - monthly_advance: tax_payable / 12\nexpected:\n  loss_cap: 150000.00\n  loss_used: 150000.00\n  loss_cf: 250000.00\n  base_after_loss: 150000.00\n  tax_24: 36000.00\n  tax_payable: 36000.00\n  monthly_advance: 3000.00\n```",
+      "old_unit_sha256": "2e63d7a4f4ee6d85c167175a3fb843f3a83593f12dc21a9ed3619f39a417ca29",
+      "current_LF": [
+        270,
+        335
+      ],
+      "disposition": "Original executable core retained; independent variants add meaningful controls."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 39,
+      "old_LF_start": 212,
+      "old_LF_end": 212,
+      "old_text": "## Ask the client first",
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_LF": [
+        337,
+        337
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 40,
+      "old_LF_start": 214,
+      "old_LF_end": 219,
+      "old_text": "1. Taxable revenue for the period. It sets the rate band (EUR 100,000 and EUR 5,000,000), the minimum tax band, and micro-taxpayer status (EUR 60,000).\n2. The tax period: calendar or fiscal year, and whether it is the company's first period (no minimum tax, no advances).\n3. Any transaction with a related person in the period. It removes micro-taxpayer status and brings in § 21a for related-party interest.\n4. Unused tax losses by year, and any minimum tax paid in 2023 to 2025 still to be credited.\n5. Unpaid year-end items in the § 17(19) list (rent, royalties, advisory and legal fees, penalties), and whether the company recovers its input VAT in full.\n6. Foreign income or payments to non-residents, and whether any counterparty is in a non-cooperating state.",
+      "old_unit_sha256": "f66649034a1cb3046ba1566af08310e0c6800667e628f2c407749ef484309093",
+      "current_LF": [
+        339,
+        344
+      ],
+      "disposition": "All prior intake topics retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 41,
+      "old_LF_start": 221,
+      "old_LF_end": 221,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        346,
+        346
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 42,
+      "old_LF_start": 223,
+      "old_LF_end": 234,
+      "old_text": "| Source | URL | Read on |\n|---|---|---|\n| Act No. 595/2003 Coll. on income tax, consolidated version in force 1 January to 30 December 2026 (§ 2(w), § 2(x), § 12(7), § 15, § 16(1)(e), § 17(19), § 17k, § 21, § 21a, § 22, § 26, § 27, § 30, § 30c, § 42, § 43, § 46b, § 49, § 51e, § 51ea, § 51eb, § 52zzzf, § 52zzzj, § 52zzzk) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |\n| Act No. 595/2003 Coll., version in force from 1 December 2025 (2025 minimum tax bands, for comparison) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20251201.html | 2026-10-23 |\n| Act No. 595/2003 Coll., version in force 31 December 2026 (changes affect individuals only) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html | 2026-10-23 |\n| Act No. 261/2025 Coll. on consolidation of public finances (new § 46b(2), § 51eb, § 52zzzj, § 52zzzk) | https://static.slov-lex.sk/static/SK/ZZ/2025/261/20260101.html | 2026-10-23 |\n| Act No. 563/2009 Coll. Tax Procedure Code, version in force from 1 September 2026 (§ 14, § 154, § 155, § 156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |\n| Act No. 279/2024 Coll. on financial transaction tax, version in force from 1 January 2026 (§ 6) | https://static.slov-lex.sk/static/SK/ZZ/2024/279/20260101.html | 2026-10-23 |\n| Ministry of Finance, list of cooperating states under § 2(x), valid from 1 January 2026 | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf | 2026-10-23 |\n| Act No. 507/2023 Coll. on top-up tax, version in force from 31 December 2025 (§ 3(1)) | https://static.slov-lex.sk/static/SK/ZZ/2023/507/20251231.html | 2026-10-23 |\n| European Central Bank, key interest rates (main refinancing rate 2.65% from 16 September 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |\n| Financial Administration, legal persons' income tax return | https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-prijmov/pravnicke-osoby/danove-priznanie-dan-prijem-po | 2026-10-23 |",
+      "old_unit_sha256": "358738ec56c725617cecd7cbfedd99eccfd6bfaa02cb94eb68ec0ea2fc720bfc",
+      "current_LF": [
+        348,
+        365
+      ],
+      "disposition": "Original sources retained/expanded, historical vintage explicit."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 43,
+      "old_LF_start": 236,
+      "old_LF_end": 236,
+      "old_text": "Not yet confirmed: the full 2026 Annex 1 asset classification after the 1 January 2026 changes (Annex 1 is a separate download on slov-lex and was not read; only the group periods in § 26(1) were read); whether the Ministry issues a new DPPO form for 2026 periods (the return page on 23 October 2026 still names MF/012187/2025-721).",
+      "old_unit_sha256": "222e4463b55e7bc6cb49feafd4805ad71d5440b016aff93b2891a155c6b01b40",
+      "current_LF": [
+        83,
+        101
+      ],
+      "disposition": "Actual Annex1 classifications now supplied; future ECB reference-date limit at367 retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 44,
+      "old_LF_start": 238,
+      "old_LF_end": 238,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        369,
+        369
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 45,
+      "old_LF_start": 240,
+      "old_LF_end": 240,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        371,
+        371
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 46,
+      "old_LF_start": 242,
+      "old_LF_end": 242,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 47,
+      "old_LF_start": 244,
+      "old_LF_end": 244,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        375,
+        375
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 48,
+      "old_LF_start": 246,
+      "old_LF_end": 249,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        377,
+        380
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 49,
+      "old_LF_start": 251,
+      "old_LF_end": 252,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        382,
+        383
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 50,
+      "old_LF_start": 254,
+      "old_LF_end": 256,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        385,
+        387
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

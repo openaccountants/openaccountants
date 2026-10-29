@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-10-27",
+  "previous_commit": "169d1855",
+  "previous_checkpoint": "vat-restoration-checkpoint.json",
+  "guide": "skills/international/slovakia/slovakia-vat-return.md",
+  "guide_sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531",
+  "scope": "ordinary \u00a750positiveannualdenominator coefficient method, separately from24earlierrestorationunits",
+  "findings_open": 0,
+  "independent_assertions": 54,
+  "existing_examples": 2,
+  "whole_country_ordinary_complete": false,
+  "accountant_attestation": false,
+  "remaining": [
+    "actualannualzero-denominatorcommoninputmethod",
+    "registrationGuideformatandcomputationalexamples completion pending",
+    "periodvalidreturn/controlstatementlayout",
+    "controlstatementfirstbreachsanctionquestion",
+    "date-specificECBinputs"
+  ],
+  "evidence": [
+    {
+      "file": "vat-coefficient-independent-controls.json",
+      "sha256": "b9611d231da00006ed65dec861a85a229412db0e3758076b897864fa881875f0"
+    },
+    {
+      "file": "vat-coefficient-independent-review.md",
+      "sha256": "3801013a8baa635063ff369f6c8bfabebafbf99204631ce49fdd773bb48fa8d0"
+    },
+    {
+      "file": "vat-coefficient-review-manifest.json",
+      "sha256": "deea2f16afcc7eb68caafff09b581985ce8d14f0ffc3ac6485dd2aaa90aded22"
+    },
+    {
+      "file": "vat-coefficient-source-receipts.json",
+      "sha256": "ffaf1a0b0f4ed55986fad6a696c65749f38f69f0ab15145f32b48e4bb9e4fc18"
+    },
+    {
+      "file": "vat-coefficient-zero-denominator-research.md",
+      "sha256": "e3af0068d847df2bde7e6e6d84ddf60a8110a4f28fe2896b50969b002b0ef3e4"
+    }
+  ]
+}

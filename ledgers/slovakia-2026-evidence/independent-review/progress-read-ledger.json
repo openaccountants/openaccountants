@@ -1,0 +1,205 @@
+{
+  "status": "COMPLETE bounded seven-Guide independent ledger review; disclosed ordinary VAT partial remains",
+  "actual_current_rows_read": {
+    "slovakia-pit": [
+      1,
+      74
+    ],
+    "sk-corporate-income-tax": [
+      1,
+      66
+    ],
+    "sk-payroll-social": [
+      1,
+      67
+    ],
+    "sk-cross-border": [
+      1,
+      58
+    ],
+    "sk-transfer-pricing": [
+      1,
+      70
+    ],
+    "slovakia-vat-return": [
+      1,
+      92
+    ],
+    "slovakia-vat-registration-4-7-7a": [
+      1,
+      66
+    ]
+  },
+  "actual_bounded_source_chunks_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+  ],
+  "full_actual_prior_reports_read": [
+    "sk-whole-pack-review/report.md",
+    "sk-whole-pack-review/final-full-pack-review/report.md",
+    "sk-final-three-vat-source-questions-2026-10-28/report.md"
+  ],
+  "extra_actual_native_reads": [
+    {
+      "key": "ITA2.residence",
+      "LF": [
+        61,
+        73
+      ]
+    },
+    {
+      "key": "ITA38.settlement",
+      "LF": [
+        1,
+        31
+      ]
+    },
+    {
+      "key": "ITA47.rounding",
+      "LF": [
+        1,
+        10
+      ]
+    },
+    {
+      "key": "ITA2.residence",
+      "LF": [
+        15,
+        35
+      ]
+    },
+    {
+      "key": "Social138",
+      "LF": [
+        1,
+        25
+      ]
+    },
+    {
+      "key": "ITA45.relief",
+      "LF": [
+        18,
+        30
+      ]
+    },
+    {
+      "key": "ITA17f.exit",
+      "LF": [
+        16,
+        39
+      ]
+    },
+    {
+      "key": "TPG3.full",
+      "LF": [
+        111,
+        120
+      ]
+    },
+    {
+      "key": "VAT78.return",
+      "LF": [
+        49,
+        70
+      ]
+    },
+    {
+      "key": "VAT4.status",
+      "LF": [
+        38,
+        99
+      ]
+    },
+    {
+      "key": "VAT4.status",
+      "LF": [
+        150,
+        183
+      ]
+    },
+    {
+      "key": "VAT49.deduction",
+      "LF": [
+        3,
+        25
+      ]
+    },
+    {
+      "key": "VAT4b.group",
+      "LF": [
+        18,
+        40
+      ]
+    }
+  ],
+  "mechanical_checks": "initial-membership-check.json; no mechanical result represented as legal reading",
+  "finding_SK_L02": "CLOSED evidence-only extension64–67 independently read and matches successor quotation; Guide and top-level ledger unchanged",
+  "SK_L01": "DDS settlement qualification supported actual38(1) and11(11); full inverse/protection check pending",
+  "next": "No Slovakia research/review work remains within the authorised ledger gate; root owns technical publication. Resume paused France writer batch.",
+  "unread": "Unquoted portions of primary bodies are not asserted read. No unreviewed active493row/643quote remains. Only46oldtopics semantically sampled; all743origin memberships checked.",
+  "finding_SK_L03": "CLOSED evidence-only first quotation15–32 matches independently read actual legal-person residence; verify three-artifact root bridge separately final",
+  "new_pending_finding": "Payroll LF77 blanket PIT-exempt income exclusion needs registered sports-trainer exception and distinct statutory contribution-deduction treatment; root notified",
+  "new_support": "A1-fresh-official-web-response.json actual selected current SocPoist web0–146 read (not rawHTML; rest of273 not read), relevant50/88–95/101–125; no direct EUreg quotation pretence",
+  "calculations": "Reread preserved independent-controls.py in full, copied only OUT destination, ran current14oa fixtures independently of step strings:137 expected fields+18 boundaries all match; outputs in this folder",
+  "actual_unreferenced_quotes_read": [
+    "CbCR22d:1",
+    "FS.dividend-periods:1",
+    "A.instructions-credits:1–3"
+  ],
+  "actual_old_topic_samples_read": "46 old units (28main/18earliest), exact actual comparator bodies; bounded old-only01–03, current destinations reused from complete current row reading. selected-old-topic-samples.json",
+  "old_origin_membership": "743units(401main+342earliest), twelve actual git-show bodies/hash and origin ranges exact",
+  "current_coverage": "All seven nonblank-unmapped-body sets actually inspected: table headers, routing introductions, trust labels and common-addbacks label only, no uncovered substantive rule identified. Sources/metadata/CTA separately preserved.",
+  "successor_actual_read": "All19 newly changed/additional quoted bodies in successor-quotes01–02; root residence extensions; active643 quote identity bridge has0unread.",
+  "final_pins": "final-seven-pair-map.json"
+}

@@ -1,0 +1,136 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "f2f2a0f4ebc8b31692634fdd206e60d7d7c9e209",
+  "Guide_hashes": {
+    "skills/international/slovakia/slovakia-pit.md": "24a455b0de75ccdfa2c127cd843ba28ad67cad22085a744d6e4d8db299aeb390",
+    "skills/international/slovakia/sk-corporate-income-tax.md": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a"
+  },
+  "review": "Independent PASS, no actionable finding",
+  "baseline_units": 122,
+  "independent_expected_outputs": 75,
+  "additional_settlement_controls": 13,
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "remaining_ordinary_partial": [
+    "Annual actual zero-denominator VAT",
+    "Special KV first-breach fine",
+    "Fixed-gross crossing circularity"
+  ],
+  "public_evidence_copy_provenance": [
+    {
+      "private_file": "independent/report.md",
+      "public_file": "income-forms-independent-review.md",
+      "original_sha256": "1916a1c67c38abad67684e3a8e83e656d012d62f4f986332cf9b33c31bdedb78",
+      "public_sha256": "1916a1c67c38abad67684e3a8e83e656d012d62f4f986332cf9b33c31bdedb78",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/findings.json",
+      "public_file": "income-forms-independent-findings.json",
+      "original_sha256": "c38df609dc8b16776fff49af2cc35d18c7b0316614d25bb4b210c5d05a0327f2",
+      "public_sha256": "c38df609dc8b16776fff49af2cc35d18c7b0316614d25bb4b210c5d05a0327f2",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/full-no-loss-ledger.json",
+      "public_file": "income-forms-independent-preservation.json",
+      "original_sha256": "1f27c4a1e549280e3b20871a358fdafd3f4899cbc6bd739e53a9642ea14cf18f",
+      "public_sha256": "1f27c4a1e549280e3b20871a358fdafd3f4899cbc6bd739e53a9642ea14cf18f",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/independent-reference-arithmetic.json",
+      "public_file": "income-forms-independent-arithmetic.json",
+      "original_sha256": "16c538b43be62397d96500eb2c788f58cd21cf846d2ffec0a494e3846ca48c8a",
+      "public_sha256": "16c538b43be62397d96500eb2c788f58cd21cf846d2ffec0a494e3846ca48c8a",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/settlement-controls.json",
+      "public_file": "income-forms-independent-settlement-controls.json",
+      "original_sha256": "acf42160d3eb41d50a2f4d935aae5e6bb59e634fdeeafc991c4f43ecc06c3fd8",
+      "public_sha256": "acf42160d3eb41d50a2f4d935aae5e6bb59e634fdeeafc991c4f43ecc06c3fd8",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/actual-primary-read-receipts.json",
+      "public_file": "income-forms-independent-source-receipts.json",
+      "original_sha256": "b08dbdb1c6e20e81ad286c5ecf68f420cafd0f216c49d7ff7fac449f5b842994",
+      "public_sha256": "b08dbdb1c6e20e81ad286c5ecf68f420cafd0f216c49d7ff7fac449f5b842994",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/fresh-package-receipts.json",
+      "public_file": "income-forms-independent-fresh-packages.json",
+      "original_sha256": "aa696272d85f7e374d152c2ecf5715f12374fa7f1e9cb4f08cf7fb49518f47a2",
+      "public_sha256": "aa696272d85f7e374d152c2ecf5715f12374fa7f1e9cb4f08cf7fb49518f47a2",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/frozen-guide-manifest.json",
+      "public_file": "income-forms-final-hashes.json",
+      "original_sha256": "efe203d3305482d409e3f69fb72a7d2b97a4dbeb8d4c662fcba8fee43376df63",
+      "public_sha256": "efe203d3305482d409e3f69fb72a7d2b97a4dbeb8d4c662fcba8fee43376df63",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/protection-controls.json",
+      "public_file": "income-forms-independent-protection.json",
+      "original_sha256": "1cb63df729145077e8480ad032bc82d6e338b98de30ca548db1224dd54ea75c8",
+      "public_sha256": "1cb63df729145077e8480ad032bc82d6e338b98de30ca548db1224dd54ea75c8",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/law-transition-section-comparison.json",
+      "public_file": "income-forms-law-transition-comparison.json",
+      "original_sha256": "b4b30f519f89b5c45db6f2d227078178ec314f0665ef815fb7d4683530758be8",
+      "public_sha256": "b4b30f519f89b5c45db6f2d227078178ec314f0665ef815fb7d4683530758be8",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/final-audit.json",
+      "public_file": "income-forms-independent-final-audit.json",
+      "original_sha256": "8877d1a38c17be7bface1c247ce965164de29029c85678deb590a8a57d554190",
+      "public_sha256": "8877d1a38c17be7bface1c247ce965164de29029c85678deb590a8a57d554190",
+      "normalization": null
+    },
+    {
+      "private_file": "independent/artifact-manifest.json",
+      "public_file": "income-forms-independent-artifact-manifest.json",
+      "original_sha256": "cc8ef4e0e635b70de41bfe6842f95f55838eaab5d99a0cd9545e89de5a0a09f5",
+      "public_sha256": "cc8ef4e0e635b70de41bfe6842f95f55838eaab5d99a0cd9545e89de5a0a09f5",
+      "normalization": null
+    },
+    {
+      "private_file": "source-receipts.json",
+      "public_file": "income-forms-source-receipts.json",
+      "original_sha256": "bfd62d2b3a37cce1410aafd064536d93ad05f8ad5c9bb7526480dc8bb87f72a4",
+      "public_sha256": "bfd62d2b3a37cce1410aafd064536d93ad05f8ad5c9bb7526480dc8bb87f72a4"
+    },
+    {
+      "private_file": "writer-source-map.md",
+      "public_file": "income-forms-writer-source-map.md",
+      "original_sha256": "fd47c4eb6937b8446044d28fa3741617d5db6eafd5b422623146a2bb391904fb",
+      "public_sha256": "fd47c4eb6937b8446044d28fa3741617d5db6eafd5b422623146a2bb391904fb"
+    },
+    {
+      "private_file": "writer-read-scope.md",
+      "public_file": "income-forms-writer-read-scope.md",
+      "original_sha256": "76b7f9d3df1e364ba1bf0f271eb060471601fdba8381b267d3f3462e82333857",
+      "public_sha256": "76b7f9d3df1e364ba1bf0f271eb060471601fdba8381b267d3f3462e82333857"
+    },
+    {
+      "private_file": "draft-options.md",
+      "public_file": "income-forms-draft-options.md",
+      "original_sha256": "7b1ac6e6c75623b09b2b65fc730024036fb31a7701236af0243b8930c605518f",
+      "public_sha256": "7b1ac6e6c75623b09b2b65fc730024036fb31a7701236af0243b8930c605518f"
+    }
+  ],
+  "checks": {
+    "examples": "11files14blocks0fail0missing",
+    "strict_sync": "2sourceGuides0error/warning/notice;actualHEADblobCASlocalrevision0marker",
+    "schema": "2261source6122generatedPASS;3inheritedwarninggroups798/5/5;--no-index-check",
+    "repository_tests": "129PASSonexactsameGuidecandidatesbeforeevidencecopy;logmonthly-sanction-repository-unit-tests.txt;noimplementationchangesafterthatpass",
+    "MCP_tests": "Localdependenciesabsent;notrerun;noMCPcodechanges"
+  }
+}

@@ -1,0 +1,310 @@
+
+ REGDPv24 Žiadosť o registráciu, oznámenie zmien, žiadosť o zrušenie registrácie na daň z príjmov, daň z pridanej hodnoty a daň z poistenia
+Pre kompletnú funkčnosť aplikácie je potrebné povoliť JavaScript
+ ŽIADOSŤ O REGISTRÁCIU,
+OZNÁMENIE ZMIEN, ŽIADOSŤ
+O ZRUŠENIE REGISTRÁCIE1) 
+ DIČ (ak bolo pridelené) 
+ Identifikačné číslo pre DPH (ak bolo pridelené) 
+ SK 
+ DIČ (ak bolo pridelené) 
+ Identifikačné číslo pre DPH 
+ Fyzická osoba
+ Právnická osoba
+ Žiadosť o registráciu
+ Žiadosť o zrušenie registrácie
+ Oznámenie zmeny týkajúcej sa registrácie
+ Oznámenie zmeny týkajúcej sa identifikačných údajov
+ Dátum, ku ktorému nastala zmena 
+I. Druh dane, ku ktorému sa žiada registrácia, oznámenie zmeny alebo zrušenie registrácie
+ Daň z príjmov 2)
+ získanie povolenia alebo oprávnenia na podnikanie, začatie výkonu inej samostatnej zárobkovej činnosti fyzickou osobou alebo začatie prenajímania nehnuteľnosti fyzickou osobou, vznik povinnosti platiteľa dane z príjmov, vznik stálej prevádzkarne na území Slovenskej republiky, vznik miesta skutočného vedenia na území Slovenskej republiky
+ zrušenie povolenia alebo zánik oprávnenia na podnikanie, ukončenie výkonu inej samostatnej zárobkovej činnosti fyzickou osobou alebo ukončenie prenajímania nehnuteľnosti fyzickou osobou, zánik povinnosti platiteľa dane z príjmov, zánik stálej prevádzkarne na území Slovenskej republiky, zánik miesta skutočného vedenia na území Slovenskej republiky
+ Daň z pridanej hodnoty
+ tuzemská osoba alebo zahraničná osoba
+ skupina 3)
+ počet členov v skupine (vrátane zástupcu skupiny) 
+ Daň z poistenia
+ poisťovateľ
+ poistník
+ právnická osoba, ktorej sú preúčtované náklady poistenia
+ Daň zo sladených nealkoholických nápojov
+ platiteľ dane
+ Uplatňovanie vzniku daňovej povinnosti dňom nadobudnutia nápoja zo zahraničia podľa § 6 ods. 2 zákona o dani zo sladených nealkoholických nápojov 
+ áno
+ nie
+ exportér
+ Identifikačné číslo prevádzkovateľa potravinárskeho podniku (vyplní exportér) 
+II. Fyzická osoba
+ Titul uvádzaný pred menom 
+ Meno 
+ Priezvisko 
+ Titul uvádzaný za menom 
+ IČO 
+ Rodné číslo 
+ Rodné číslo 
+ / 
+ Rodné číslo 2 
+ Dátum narodenia ak ide o fyzickú osobu
+s bydliskom mimo územia SR 
+ Číslo telefónu 
+III. Právnická osoba 4)
+ Obchodné meno alebo názov 
+ Právna forma 111 - Verejná obchodná spoločnosť112 - Spoločnosť s ručením obmedzeným113 - Komanditná spoločnosť117 - Nadácia118 - Neinvestičný fond119 - Nezisková organizácia120 - Nezisková organizácia poskytujúca všeobecne prospešné služby121 - Akciová spoločnosť122 - Európske zoskupenie hospodárskych záujmov123 - Európska spoločnosť124 - Európske družstvo125 - Jednoduchá spoločnosť na akcie141 - Poľovnícka organizácia205 - Družstvo271 - Spoločenstvá vlastníkov pozemkov, bytov a pod.272 - Pozemkové spoločenstvo273 - Združenie účastníkov pozemkových úprav301 - Štátny podnik311 - Národná banka Slovenska312 - Banka-štátny peňažný ústav321 - Rozpočtová organizácia331 - Príspevková organizácia333 - Verejná výskumná inštitúcia381 - Fondy382 - Verejnoprávna inštitúcia383 - Iná organizácia verejnej správy421 - Zahraničná osoba, právnická osoba so sídlom mimo územia SR433 - Sociálna a zdravotné poisťovne434 - Doplnková dôchodková poisťovňa445 - Komoditná burza701 - Združenie (zväz, spolok, spoločnosť, klub ai.)711 - Politická strana, politické hnutie721 - Cirkevná organizácia741 - Stavovská organizácia - profesná komora745 - Komora (s výnimkou profesných komôr)751 - Záujmové združenie právnických osôb801 - Obec (obecný úrad), mesto (mestský úrad)803 - Samosprávny kraj (úrad samosprávneho kraja)804 - Európske zoskupenie územnej spolupráce901 - Zastupiteľské orgány iných štátov911 - Zahraničné kultúrne, informačné stredisko, rozhlasová, tlačová a televízna agentúra921 - Medzinárodné organizácie a združenia931 - Zastúpenie zahraničnej právnickej osoby 
+ IČO (ak bolo pridelené na území SR) 
+IV. Adresa trvalého pobytu alebo sídla
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Štát AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+V. Miesto podnikania na území Slovenskej republiky
+ miesta podnikania fyzickej osoby, ak sa líši od miesta trvalého pobytu
+ stálej prevádzkarne
+ prevádzkarne
+ miesta skutočného vedenia
+ Názov a umiestnenie 
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+Údaje o stálej prevádzkarni daňovníka
+ Druh stálej prevádzkarne 5) 
+ podľa § 16 ods. 2 prvej vety zákona 6) a článku
+ článku 
+ ods. 
+ ods 
+ zmluvy o zamedzení dvojitého zdanenia 
+ medzi Slovenskou republikou a AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ podľa § 16 ods. 2 piatej vety zákona 7) a článku
+ článku 
+ ods. 
+ ods 
+ zmluvy o zamedzení dvojitého zdanenia 
+ medzi Slovenskou republikou a AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ podľa § 16 ods. 2 šiestej vety zákona 8) a článku
+ článku 
+ ods. 
+ ods 
+ zmluvy o zamedzení dvojitého zdanenia 
+ medzi Slovenskou republikou a AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ podľa § 16 ods. 2 siedmej vety zákona 9) a článku
+ článku 
+ ods. 
+ ods 
+ zmluvy o zamedzení dvojitého zdanenia 
+ medzi Slovenskou republikou a AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ Zástupca (meno a priezvisko alebo názov) 
+ Dátum vzniku 
+VI. Organizačná zložka podľa Obchodného zákonníka (výpĺňa sa, ak ide o zahraničnú osobu)
+ IČO organizačnej zložky (vrátane poradového čísla) 
+ IČO organizačnej zložky (vrátane poradového čísla) 
+ / 
+ SID (poradové číslo) 
+ Názov a umiestnenie organizačnej zložky 
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+VII. Osoba oprávnená konať za daňový subjekt
+ Titul uvádzaný pred menom 
+ Meno 
+ Priezvisko 
+ Titul uvádzaný za menom 
+ IČO 
+ Rodné číslo 
+ Rodné číslo - prvá časť 
+ / 
+ Rodné číslo - druhá časť 
+ Dátum narodenia ak ide o fyzickú osobu
+s bydliskom mimo územia SR 
+ Číslo telefónu 
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Štát AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+VIII. Adresa na doručovanie na území členského štátu 10)
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Štát RakúskoBelgickoBulharskoCyprusČeská republikaNemeckoDánskoEstónskoŠpanielskoFínskoFrancúzskoSpojené kráľovstvoGréckoChorvátskoMaďarskoÍrskoTalianskoLitvaLuxemburskoLotyšskoMaltaHolandskoPoľskoPortugalskoRumunskoŠvédskoSlovinskoSlovensko 
+IX. Splnomocnenec na doručovanie v tuzemsku 11)
+ Splnomocnenec – fyzická osoba
+ DIČ (ak bolo pridelené) 
+ Rodné číslo 
+ Rodné číslo - prvá časť 
+ / 
+ Rodné číslo - druhá časť 
+ Meno 
+ Priezvisko 
+ Splnomocnenec – právnická osoba
+ DIČ (ak bolo pridelené) 
+ IČO 
+ Obchodné meno alebo názov 
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Počet príloh (uvádza sa v závislosti od príslušnej dane, ku ktorej sa žiadosť vzťahuje) 
+ Dátum * 
+ Vyhlasujem, že všetky uvedené údaje sú správne a úplné a že som si vedomý dôsledkov spojených s ich uvedením. 
+X. Poznámky
+ X. Poznámky 
+ 1) Tento formulár sa používa pre daň z príjmov, daň z pridanej hodnoty, daň z poistenia a daň zo sladených nealkoholických nápojov. 
+ 2) Registráciou na daň z príjmov je daňový subjekt registrovaný aj na daň z príjmov zo závislej činnosti, daň z príjmov vyberaných zrážkou a daň z príjmov, z ktorých sa zabezpečuje daň. 
+ 3) Pri označení tejto možnosti sa v časti II. až IX. uvádzajú údaje zástupcu skupiny. Údaje o členoch skupiny sa uvádzajú v prílohe k žiadosti. 
+ 4) Organizačná jednotka združenie, ktorá koná vo vlastnom mene, sa považuje za právnickú osobu /§ 4 ods. 2 písm. c) zákona č.563/2009 Z.z. v znení neskorších predpisov (ďalej "daňový poriadok")/. 
+ 5) Daňovník posudzuje vznik stálej prevádzkarne podľa § 16 ods. 2 zákona c. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a v prípade existencie zmluvy o zamedzení dvojitého zdanenia medzi Slovenskou republikou a štátom, ktorého je daňovník rezidentom, aj podľa príslušných ustanovení tejto zmluvy. 
+ 6) Stálou prevádzkarňou sa na účely tohto zákona rozumie trvalé miesto alebo zariadenie na výkon činnosti, prostredníctvom ktorého daňovník s obmedzenou daňovou povinnosťou vykonáva úplne alebo sčasti svoju činnosť na území Slovenskej republiky, a to najmä miesto, z ktorého je činnosť daňovníka organizovaná, pobočka, kancelária, dielňa, pracovisko, miesto predaja, technické zariadenie alebo miesto prieskumu a ťažby prírodných zdrojov. Za výkon činnosti s trvalým miestom na území Slovenskej republiky sa považuje aj opakované sprostredkovanie služieb prepravy a ubytovania, a to aj prostredníctvom digitálnej platformy. 
+ 7) Stavenisko, miesto vykonávania stavebných projektov a montážnych projektov sa považuje za stálu prevádzkareň, len ak výkon činnosti daňovníka s obmedzenou daňovou povinnosťou, alebo jeho závislých osôb na nich presiahne šesť mesiacov. 
+ 8) Za činnosť vykonávanú prostredníctvom stálej prevádzkarne sa považuje aj činnosť vykonávaná na území Slovenskej republiky pri poskytovaní služieb daňovníkom alebo osobami pre neho pracujúcimi, ak doba výkonu tejto činnosti presiahne 183 dní, a to súvisle alebo v niekoľkých obdobiach v akomkoľvek období dvanástich po sebe nasledujúcich mesiacov. 
+ 9) Stálou prevádzkarňou je aj osoba, ktorá koná v zastúpení daňovníka s obmedzenou daňovou povinnosťou a sústavne alebo opakovane prerokováva, uzatvára, sprostredkováva uzavretie zmlúv alebo zohráva hlavnú úlohu smerujúcu k uzatváraniu zmlúv, ktoré sú následne uzatvorené daňovníkom bez zmeny ich podstatných náležitostí a tieto zmluvy sú uzatvorené v mene daňovníka alebo ich predmetom je prevod vlastníckeho práva alebo udelenie práva na užívanie majetku vo vlastníctve daňovníka alebo majetku, ktorý má daňovník právo užívať alebo poskytnutie služieb daňovníkom. 
+ 10) § 30 ods. 5 daňového poriadku. 
+ 11) § 9 ods. 11 daňového poriadku, potrebné doložiť plnomocenstvo. 
+PRÍLOHA 1 - DAŇ Z PRIDANEJ HODNOTY podľa zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov, ktorý sa ďalej neuvádza
+ Registrácia podľa § 4 ods. 2 (vyznačí sa, ak sa zdaniteľná osoba stala platiteľom podľa § 4 ods. 1; zároveň sa nižšie vyznačí aj skutočnosť, na základe ktorej sa stala platiteľom podľa § 4 ods. 1 písm. a) až i), s uvedením dňa, kedy nastala)
+ Oznámenie podľa § 4 ods. 5 (vyznačí sa, ak zdaniteľná osoba podala žiadosť o registráciu podľa § 4 ods. 2 písm. a) a stala sa platiteľom podľa § 4 ods. 1 písm. b) až i) do 31. decembra prebiehajúceho kalendárneho roka; zároveň sa nižšie vyznačí aj príslušná skutočnosť s uvedením dňa, kedy nastala)
+ Oznámenie podľa § 4 ods. 7 (vyznačí sa, ak sa zdaniteľná osoba stala platiteľom podľa § 4 ods. 1 písm. a) až h) po podaní žiadosti o registráciu podľa § 4 ods. 7; zároveň sa nižšie vyznačí aj príslušná skutočnosť s uvedením dňa, kedy nastala)
+ Presiahnutie obratu podľa § 4 ods. 1 písm. a), ak nebol presiahnutý obrat podľa § 4 ods. 1 písm. b)
+ Výlučne z dodaní tovarov a služieb, ktoré sú oslobodené od DPH podľa § 37 až 39
+ dňa 
+ Presiahnutie obratu podľa § 4 ods. 1 písm. b)
+ Výlučne z dodaní tovarov a služieb, ktoré sú oslobodené od DPH podľa § 37 až 39
+ dňa 
+ Právny nástupca platiteľa, ktorý zanikol bez likvidácie /§ 4 ods. 1 písm. c)/
+ dňa 
+ Nadobudnutie podniku alebo jeho časti /§ 4 ods. 1 písm. d)/
+ dňa 
+ Premena obchodnej spoločnosti pri odštiepení alebo pri cezhraničnom odštiepení 
+/§ 4 ods. 1 písm. e)/
+ deň účinnosti 
+ Dodanie stavby, časti stavby alebo stavebného pozemku, ak sa z dodania má presiahnuť obrat
+podľa § 4 ods. 1 písm. b) /§ 4 ods. 1 písm. f)/
+ dňa 
+ Prijatie platby pred dodaním stavby, časti stavby alebo stavebného pozemku, ak sa z dodania
+má presiahnuť obrat podľa § 4 ods. 1 písm. b) /§ 4 ods. 1 písm. g)/
+ dňa 
+ Dodanie tovaru s miestom dodania v tuzemsku zdaniteľnou osobou, ktorá uľahčuje dodanie tovaru
+na území EÚ uskutočnené podľa § 8 ods. 7 prvej vety
+ /§ 4 ods. 1 písm. h)/
+ dňa 
+ Prevádzkareň zahraničnej osoby, ktorá neuplatňuje oslobodenie od DPH podľa § 68f ods. 2 
+/§ 4 ods. 1 písm. i)/
+ dňa 
+ Registrácia podľa § 4 ods. 2 alebo oznámenie podľa § 4 ods. 5 alebo 7, ak sa zdaniteľná osoba stala platiteľom podľa § 48c ods. 5
+ dňa 
+ Registrácia podľa § 4 ods. 7 
+ Pred presiahnutím obratu podla § 4 ods. 1 písm. a) /§ 4 ods. 6 písm. a)/
+ Nadobudnutie majetku dedičstvom (vyznačí sa, ak ide o žiadosť o registráciu po skončení konania o dedičstve podľa § 83 ods. 2 spolu s uvedením dňa nadobudnutia majetku)
+ dňa 
+ Oznámenie podľa § 4 ods. 8 
+ Vyznačí sa, ak sa zdaniteľná osoba rozhodla stať platiteľom dodaním, ktorým bol presiahnutý obrat podľa § 4 ods. 1 písm. a)
+/§ 4 ods. 6 písm. b) a ods. 8 písm. a)/
+ Vyznačí sa, ak sa zdaniteľná osoba rozhodla stať platiteľom po presiahnutí obratu podľa § 4 ods. 1 písm. a), ale pred presiahnutím obratu podľa § 4 ods. 1 písm. b) /§ 4 ods. 6 písm. b) a ods. 8 písm. b)/
+ Registrácia podľa § 5 ods. 3
+ Mám pridelené individuálne identifikačné číslo s príponou EX pre Slovenskú republiku
+ Registrácia podľa § 5 ods. 3, ak sa zdaniteľná osoba stala platiteľom podľa § 48c ods. 5
+ dňa 
+ dňa 
+ Registrácia podľa § 5 ods. 5 (vyznačí sa, ak je zdaniteľná osoba zahraničnou osobou) 
+ Právny nástupca platiteľa, ktorý zanikol bez likvidácie /§ 5 ods. 4 písm. a)/
+ Premena obchodnej spoločnosti pri odštiepení /§ 5 ods. 4 písm. b)/
+ Premena obchodnej spoločnosti pri cezhraničnom odštiepení /§ 5 ods. 4 písm. c)/
+ dňa 
+ deň účinnosti 
+ deň účinnosti 
+ Registrácia pred nadobudnutím tovaru v tuzemsku z iného členského štátu EÚ 
+ podľa § 7 ods. 1
+ podľa § 7 ods. 2
+ Registrácia pred prijatím služby z iného členského štátu EÚ alebo pred dodaním služby do iného členského štátu EÚ podľa § 7a
+ Oznámenie podľa § 4 ods. 11 (vyznačí sa, ak bola podaná žiadosť o registráciu podľa § 4 ods. 2 písm. a), nebolo pridelené IČ pre DPH podľa § 7 alebo § 7a a vznikne povinnosť podať žiadosť o registráciu podľa § 7 alebo § 7a) 
+ povinnosť podľa § 7
+ povinnosť podľa § 7a
+ Oznámenie zmeny registrácie podľa § 6a ods. 1 - z registrácie podľa § 5 na registráciu podľa § 4
+ deň, keď osoba registrovaná podľa § 5 prestala spĺňať status zahraničnej osoby 
+ Oznámenie zmeny registrácie podľa § 6a ods. 2 - z registrácie podľa § 4 na registráciu podľa § 5
+ deň, keď osoba registrovaná podľa § 4 prestala mať v tuzemsku sídlo, miesto podnikania, prevádzkareň, bydlisko alebo miesto, kde sa obvykle zdržiava 
+PRÍLOHA 2 - DAŇ Z PRIDANEJ HODNOTY (člen skupiny)
+ Registrácia člena skupiny
+ Zmena registrácie skupiny z dôvodu 
+ pristúpenia nového člena
+ vystúpenia člena
+ zániku člena bez likvidácie
+ pristúpenie právneho nástupcu zaniknutého člena skupiny
+I. Člen skupiny
+ IČ pre DPH (ak bolo pridelené) alebo DIČ 
+ IČ pre DPH (ak bolo pridelené) alebo DIČ 
+ IČ pre DPH alebo DIČ 
+ IČO 
+ Rodné číslo 
+ Rodné číslo - prvá časť 
+ / 
+ Rodné číslo - druhá časť 
+ Obchodné meno alebo názov právnickej osoby alebo meno a priezvisko fyzickej osoby 
+II. Sídlo (právnická osoba), miesto trvalého pobytu (fyzická osoba)
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Štát AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ Číslo telefónu 
+III. Adresa miesta podnikania alebo prevádzkarne v tuzemsku (vypĺňa sa, ak ide o osobu so sídlom alebo trvalým pobytom v zahraničí)
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Číslo telefónu 
+IV. Štatutárny zástupca
+ Meno 
+ Priezvisko 
+ Rodné číslo 
+ Rodné číslo 
+ / 
+ Rodné číslo 2 
+ Dátum narodenia ak ide o fyzickú osobu s bydliskom mimo územia SR 
+ Ulica 
+ Súpisné/orientačné číslo 
+ Súpisné číslo 
+ / 
+ Orientačné číslo 
+ PSČ 
+ Obec 
+ Štát AndorraSpojené arabské emirátyAfganistanAntigua and BarbudaAnguillaAlbánskoArménskoHolandské AntilyAngolaAntarktídaArgentínaAmerická SamoaRakúskoAustráliaArubaAlandyAzerbajdžánBosna a HercegovinaBarbadosBangladéšBelgickoBurkina FasoBulharskoBahrajnBurundiBeninSvätý BartolomejBermudaBrunei DarussalamBolíviaBonaire,Sv.EustBrazíliaBahamyBhutanOstrovy BouvetBotswanaBieloruskoBelizeKanadaKokos.ostrovyKonžská demokratická republikaStredoafrická republikaKongoŠvajčiarskoPobrežie SlonovinyCookove ostrovyChileKamerunČínaKolumbiaKostarikaSrbsko a Čierna HoraKubaKapverdyCuraçaoVianoč.ostrovyCyprusČeská republikaNemeckoDžibutiDánskoDominicaDominikánska republikaAlžírskoEkvádorEstónskoEgyptZápadná SaharaEritrejský štátŠpanielskoEtiópiaFínskoFidžiFalklandské ostrovyMikronéziaFaerské ostr.FrancúzskoMetropolitné FrGabonSpojené kráľovstvoGrenadaGruzínskoFrancúzska GuayanaGuernseyGhanaGibraltarGrónskoGambiaGuineaGuadeloupeRovníková GuineaGréckoJužná Georgia a južné ostrovy SandwichGuatemalaGuamGuinea-BissauGuyanaHongkongOstrovy Heard a McDonaldHondurasChorvátskoHaitiMaďarskoIndonéziaÍrskoIzraelOstrov ManIndiaBritská oblasť v Indickom oceáneIrakIránIslandTalianskoJerseyJamajkaJordánskoJaponskoKeňaKirgistanKambodžaKiribatiKomorySt. Kitts und NevisSeverná KóreaJužná KóreaKuvajtKajmanské ostr.KazachstanLaosLibanonSt. LuciaLichtenštajnskoSrí LankaLibériaLesothoLitvaLuxemburskoLotyšskoLýbiaMarokoMonakoMoldavskoČierna HoraMadagaskarMarshall.ostr.MacedónskoMaliMjanmarMongolskoMacauSeverné MarianyMartiniqueMauretániaMontserratMaltaMauríciusMaledivyMalawiMexikoMalajziaMozambikNamíbiaNová KaledóniaNigerNorfolkské ostrovyNigériaNikaraguaHolandskoNórskoNepálNaurčinaOstrovy NiueNový ZélandOmánPanamaPeruFrancúzska PolynéziaNezávislý štát Papua-Nová GuineaFilipínyPakistanPoľskoSt. Pierre and MiquelonOstrovy PitcairnPortorikoPalestínsky štátPortugalskoPalauParaguayKatarReunionRumunskoSrbskoRuská federáciaRuandaSaudská ArábiaŠalamúnske ost.SeychelySudánŠvédskoSingapurSv. HelenaSlovinskoSvalbardSlovenskoSierra LeoneSan MarinoSenegalSomálska federatívna republikaSurinamJužný SudánSv.Tomáš a Princov ostrovEl SalvadorSvätý MartinSýriaSvazijskoOstrovy Turks a CaicosČadFrancúzske južné územiaTogoThajskoTadžikistanOstrovy TokelauVýchodný TimorTurkménskoTuniskoTongaOst TimorTureckoTrinidad und TobagoTuvaluštinaTaiwanTanzániaUkrajinaUgandaOstrovy Amerikanisch Minor OutlyingUSAUruguayUzbekistanVatikánSt. Vincent a GrenadinyVenezuelaBritské Panenské ostrovyAmerican Virgin IslandsVietnamVanuatuWallis a FutunaZápadná SamoaNešpecifikovanéOblasti inde nešpecifikovanéJemenMayotteJužná AfrikaZambiaZimbabwe 
+ Potvrdzujem, že osoba uvedená ako zástupca skupiny je určená členmi skupiny na zastupovanie skupiny na účely uplatňovania dane z pridanej hodnoty.
+ Som si vedomý zodpovednosti za povinnosti skupiny vyplývajúce zo zákona o dani z pridanej
+hodnoty a z daňového poriadku. 
+ Dátum 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+Uložené formuláre

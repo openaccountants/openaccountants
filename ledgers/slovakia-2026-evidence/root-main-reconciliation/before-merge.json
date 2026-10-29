@@ -1,0 +1,23 @@
+{
+  "before_head": "2fe37257c4a7414b1c07b3fa6d8ae822aef633fe",
+  "incoming_main": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "Guide_pins": {
+    "slovakia-pit": "be47136e91e27d9e14a8b07e22f5c2e2a4bb4fb3e601c491a4daf22b1d50b98a",
+    "sk-corporate-income-tax": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+    "sk-payroll-social": "62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38",
+    "sk-cross-border": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+    "sk-transfer-pricing": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+    "slovakia-vat-return": "32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77",
+    "slovakia-vat-registration-4-7-7a": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30"
+  },
+  "ledger_pins": {
+    "slovakia-pit": "36fe4cd112988b7bda900e4ac9b956cccb60a6a6af688c1648821728592df46b",
+    "sk-corporate-income-tax": "ca917df28f9efd9ffaf6c8091f61a4226d382f9761a8a125cd46fb72cb8f546e",
+    "sk-payroll-social": "06fa28262f6b43bf0e729c7ce7e4712db6b1cae806e205be89c6cfdb2a49f680",
+    "sk-cross-border": "5ac2496461062ab1053240024ac922962aace8585165663b67975f7275e16f39",
+    "sk-transfer-pricing": "870b440c80bbd5a812c7e77ba6110e91e2200c1159f749663a65c4258363a40f",
+    "slovakia-vat-return": "41e30b273a37986c6993d6d1531ed84689237c2a78f9c9fba8e5e58826ec6aa1",
+    "slovakia-vat-registration-4-7-7a": "4ee70196b6bd6429a5ed8446f806ea5e724ab53130e218e290208392cb04bb7a"
+  },
+  "incoming_relevant_paths": []
+}

@@ -1,0 +1,1392 @@
+{
+  "guide_sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+  "main_revision": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "main_bytes": 20500,
+  "main_sha256": "e7f4f45b9a85d4ebdfb52a1ee51fe6581be3acfe8b787916a70f4836e52c906c",
+  "earliest_preimage": {
+    "revision": "c9c520db^",
+    "present": true,
+    "bytes": 18255,
+    "sha256": "6e0901c419b4d99a7a2ddf7dfdf30f0830662b849dfdc8e17b553ece223c30d2",
+    "complete_old_units": 58,
+    "rows": [
+      {
+        "comparator": "c9c520db^",
+        "unit": 1,
+        "old_LF_start": 1,
+        "old_LF_end": 11,
+        "old_text": "---\nname: slovakia-vat-registration-4-7-7a\ndescription: Which Slovak VAT registration a client actually needs, the 50 000 / 62 500 / 14 000 eur triggers, and why a §7a registrant pays VAT but cannot deduct it.\njurisdiction: SK\ntax_year: 2025\nlast_updated: 2026-07-29\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+        "old_unit_sha256": "49c4d57966f874ceaa222e0c51da58b72120e4ab64d01aa4683ec2377e81a5ff",
+        "current_destination": "Current LF1–17",
+        "disposition": "Original2025metadataupdated2026withouttrust/slugloss."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 2,
+        "old_LF_start": 13,
+        "old_LF_end": 13,
+        "old_text": "# Slovakia VAT registration (§4, §7, §7a): how I handle it",
+        "old_unit_sha256": "41da5f415fa0dd43d3999f2fec8874874a65ff0f5a5d2928d434a4e2a15d2d26",
+        "current_destination": "Current LF15–15",
+        "disposition": "Exactsameoldtopic asmainunitM2: Heading restored asGuide."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 3,
+        "old_LF_start": 15,
+        "old_LF_end": 15,
+        "old_text": "Slovakia has three different VAT registrations and only one of them makes you a VAT payer. §4 is the real thing (you charge VAT, you deduct input VAT). §7 and §7a are administrative registrations that give you a VAT number and an obligation to self-assess tax, with **no right of deduction**. Getting this wrong in either direction is expensive: register under §4 too early and you add 23% to prices your clients cannot reclaim; miss a §7a registration and you have been under-declaring reverse-charge VAT on every Google Ireland or Meta Ireland invoice since your first ad. The rules changed materially on 1 January 2025, so anything written before then is unsafe.",
+        "old_unit_sha256": "25cd1952dc6341433c5fc769cf393b591d1750c578f26513f5e9445c765ac3c0",
+        "current_destination": "Current LF19–19",
+        "disposition": "Exactsameoldtopic asmainunitM4: Payer vsnumber distinction retained; not categorical23%price increase for everyconsumer."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 4,
+        "old_LF_start": 17,
+        "old_LF_end": 17,
+        "old_text": "## Who this is for",
+        "old_unit_sha256": "04e962331b7e0b524d50d5bb270c8691256f50ea62fbddf2c278c9b7be88c8e8",
+        "current_destination": "Current LF21–21",
+        "disposition": "Exactsameoldtopic asmainunitM5: Samepopulation heading."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 5,
+        "old_LF_start": 19,
+        "old_LF_end": 21,
+        "old_text": "- Slovak sole traders (SZČO) and s.r.o.s approaching the turnover threshold, or wondering whether to register voluntarily.\n- Freelancers and small agencies buying services from foreign platforms (ads, SaaS, marketplaces) or billing clients in other EU member states. This is the group that gets caught by §7a, which has **no threshold at all**.\n- Anyone who read a pre-2025 guide quoting 49 790 eur and 20%. Both figures are dead.",
+        "old_unit_sha256": "7cb7e6f328885160fcbe444275bcdf15d279a41366f677abbb1cce3b0fef2dfb",
+        "current_destination": "Current LF23–26",
+        "disposition": "Exactsameoldtopic asmainunitM6: Allthreepopulations retained; oldfigures nowexplicit historicalonly."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 6,
+        "old_LF_start": 23,
+        "old_LF_end": 23,
+        "old_text": "Non-established (foreign) businesses should read §5, not §4. This Guide covers §5 only where it interacts.",
+        "old_unit_sha256": "0e237757d1ce791b2a3a9b8420a319df5f15e3f99634feef392f4c7466b33da8",
+        "current_destination": "Current LF28",
+        "disposition": "Foreign§5topic retained withfixedestablishmentqualification."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 7,
+        "old_LF_start": 25,
+        "old_LF_end": 25,
+        "old_text": "## Before you start, ask the client",
+        "old_unit_sha256": "478b6a870a1dd3f2a2fc747e01a49043833008132b4aec8895a7ab11bd34b40f",
+        "current_destination": "Current LF216–223",
+        "disposition": "Exactsameoldtopic asmainunitM8: Intake moved aftermethods; allquestions retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 8,
+        "old_LF_start": 27,
+        "old_LF_end": 33,
+        "old_text": "1. **What did you actually supply, and where was the place of supply?** Only supplies with a place of supply *in Slovakia* count toward the §4 turnover. Services to business clients in other member states under §15(1) count for nothing. A freelancer billing 100 000 eur to German clients can have a Slovak turnover of zero, and still be obliged to register under §7a.\n2. **What is the cumulative turnover this calendar year, from 1 January?** Not the last twelve months. The measurement period changed on 1 January 2025.\n3. **Have you bought any service from a foreign business established in another EU member state?** Google Ireland, Meta Ireland, Amazon Luxembourg, Stripe Ireland, a Czech subcontractor. Amount is irrelevant. One euro triggers §7a.\n4. **Have you supplied any service to a business in another member state where the customer accounts for the tax?** Also §7a, also no threshold.\n5. **Have you bought goods from other member states?** Track the cumulative untaxed value against 14 000 eur for the calendar year. This is §7.\n6. **Do your customers reclaim VAT?** If they are all consumers or exempt bodies, voluntary §4 registration makes you 23% more expensive overnight.\n7. **Do you have deductible input costs and pre-trading expenditure?** That is the case *for* voluntary registration.",
+        "old_unit_sha256": "735d88232a4ed5d90648bd994b8cd4aa22ef525864ddaff14f38452039089391",
+        "current_destination": "Current LF218–223",
+        "disposition": "Exactsameoldtopic asmainunitM9: Allsevenintakequestions retained semantically:place, calendar, inward/outwardEUservices, goods, customerrecovery, pretradingcosts."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 9,
+        "old_LF_start": 35,
+        "old_LF_end": 35,
+        "old_text": "## The method, step by step",
+        "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+        "current_destination": "Current LF50–50",
+        "disposition": "Exactsameoldtopic asmainunitM10: Method reorganised as taxablebase."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 10,
+        "old_LF_start": 37,
+        "old_LF_end": 37,
+        "old_text": "### Step 1: Test §4 first, because it overrides the others",
+        "old_unit_sha256": "6937b3a6c4455ed105a5f3bf543ae77d32ab419790e66f20fcef749ef20ff80b",
+        "current_destination": "Current LF36–56",
+        "disposition": "Exactsameoldtopic asmainunitM11: §4priority method retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 11,
+        "old_LF_start": 39,
+        "old_LF_end": 39,
+        "old_text": "Two separate turnover triggers, and they do different things.",
+        "old_unit_sha256": "08c457c0d94354db8c0e9ec5a3bc8c92b429d97757e7a5de9839b309ad19c2b7",
+        "current_destination": "Current LF36–38",
+        "disposition": "Exactsameoldtopic asmainunitM12: Two separateturnover triggers retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 12,
+        "old_LF_start": 41,
+        "old_LF_end": 41,
+        "old_text": "**Trigger A, 50 000 eur.** Exceed 50 000 eur of turnover in a calendar year and you become a VAT payer on **1 January of the following year**. Not immediately.",
+        "old_unit_sha256": "4dedf08a0344527e75cd13c2ee5658ff3531ecdc23bc2232a71a0e6cc9680ab3",
+        "current_destination": "Current LF36–38",
+        "disposition": "Exactsameoldtopic asmainunitM13: ThresholdA retained atstatutoryover50000calendarwording."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 13,
+        "old_LF_start": 43,
+        "old_LF_end": 43,
+        "old_text": "**Trigger B, 62 500 eur.** Exceed 62 500 eur during the year and you become a VAT payer **at the moment of the supply that breaches it**, and you must charge VAT on that very supply.",
+        "old_unit_sha256": "b1eb2e1d6eb8aa57cab014ad0ae54c0f5d4d76bb1821a8de81d4609ae7d81d49",
+        "current_destination": "Current LF36–38",
+        "disposition": "Exactsameoldtopic asmainunitM14: ThresholdB retained atover62500andentiresupply."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 14,
+        "old_LF_start": 45,
+        "old_LF_end": 45,
+        "old_text": "### Step 2: Note what changed on 1 January 2025",
+        "old_unit_sha256": "3254a727fddaa5d74f53603ef5450c514f568bea82ab9e9715b251420083aca3",
+        "current_destination": "Current LF44–58",
+        "disposition": "Exactsameoldtopic asmainunitM15: 2025change/historicaltransition retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 15,
+        "old_LF_start": 47,
+        "old_LF_end": 47,
+        "old_text": "The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.",
+        "old_unit_sha256": "e4eee1c8a8156081a7ed6ef33fc333c4ca7d4393bd25b213aa07b6f46163d7d9",
+        "current_destination": "Current LF44–58",
+        "disposition": "Exactsameoldtopic asmainunitM16: Old49790rolling and85kntransition retained historicalonly."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 16,
+        "old_LF_start": 49,
+        "old_LF_end": 49,
+        "old_text": "### Step 3: Know what counts as \"obrat\"",
+        "old_unit_sha256": "96db5b099514ecb12249107e5f5a89311825a4e3fb15bc6d0903ade17473b251",
+        "current_destination": "Current LF52–54",
+        "disposition": "Exactsameoldtopic asmainunitM17: Obratdefinition retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 17,
+        "old_LF_start": 51,
+        "old_LF_end": 51,
+        "old_text": "Turnover means the net value of goods and services supplied **in Slovakia**, excluding supplies exempt under §28 to §36 and §40 to §42.",
+        "old_unit_sha256": "98ef278ede46435053bf5231f4a00a6136f224543d8cd326e58f7324e8eed4f2",
+        "current_destination": "Current LF52–52",
+        "disposition": "Exactsameoldtopic asmainunitM18: Turnover net/place/exemption exclusions retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 18,
+        "old_LF_start": 53,
+        "old_LF_end": 53,
+        "old_text": "Excluded: advance payments (until the supply happens), supplies with a place of supply abroad, free-of-charge supplies, and supplies where the customer accounts for the tax under reverse charge.",
+        "old_unit_sha256": "46f2cc5c87adcb742cccd8d4dcedd635f0b9e0eaa7fbd6fcd4865e4baf45ad97",
+        "current_destination": "Current LF54–54",
+        "disposition": "Exactsameoldtopic asmainunitM19: Overbroadoldreversechargeexclusion corrected: receivedRCnotownsales; ownRCsalesremainturnover; propertyadvanceexception."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 19,
+        "old_LF_start": 55,
+        "old_LF_end": 55,
+        "old_text": "Included, and people miss this: exempt insurance (§37), real estate (§38) and financial services (§39) **do** count, and if you cross the threshold purely on those you must still register and must say so on the form.",
+        "old_unit_sha256": "4c52b96b672a3bad6492e40740c24b237e70194957365f422a7d200e63f9528b",
+        "current_destination": "Current LF52–56",
+        "disposition": "Exactsameoldtopic asmainunitM20: Insurance/property/finance inclusion retained, actualancillarycondition."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 20,
+        "old_LF_start": 57,
+        "old_LF_end": 57,
+        "old_text": "### Step 4: Voluntary §4 registration",
+        "old_unit_sha256": "0a601faec1996fbd6c5fb149ac656ffd7a292d05f102e635c313e9929ccd3082",
+        "current_destination": "Current LF60–62",
+        "disposition": "Exactsameoldtopic asmainunitM21: Voluntarymethod retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 21,
+        "old_LF_start": 59,
+        "old_LF_end": 59,
+        "old_text": "You do not have to wait for 50 000 eur. Four things to tell the client:",
+        "old_unit_sha256": "6da214220d536767437e4a77aa82efc87ece47ea186175d1b07b83fcd382a4cf",
+        "current_destination": "Current LF60–62",
+        "disposition": "Exactsameoldtopic asmainunitM22: Fourvoluntaryconditions andelection retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 22,
+        "old_LF_start": 61,
+        "old_LF_end": 64,
+        "old_text": "- **You must be a \"zdaniteľná osoba\"** (a taxable person carrying on economic activity). The tax office will test this. Preparatory acts before your first sale are enough on settled CJEU authority (C-110/94 INZO, C-268/83 Rompelman, C-527/11 Ablessio), but you carry the burden of proof.\n- **The decision takes up to 21 days.**\n- **There is no backdating.** Registration cannot take effect before the application date.\n- **The tax office can refuse on fraud-risk grounds**, but only on an overall assessment of the evidence.",
+        "old_unit_sha256": "fac5ba8f18dc158e5cdae228dabc1a4267333a1e4dc2882244d51fbf86da1307",
+        "current_destination": "Current LF60–60",
+        "disposition": "Exactsameoldtopic asmainunitM23: Preparatoryacts/CJEU/21days/nobackdate/fraudassessment retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 23,
+        "old_LF_start": 66,
+        "old_LF_end": 66,
+        "old_text": "Separately, if you have crossed 50 000 but not 62 500 eur, you can elect to become a payer early, either on the application itself (§4 ods. 8 písm. a, effective from the supply that broke 50 000) or later by notification (§4 ods. 8 písm. b, effective the day after you notify).",
+        "old_unit_sha256": "9f92df786352a216b30a540a542fbcb10d35848b2f6f1be247c410b876faea46",
+        "current_destination": "Current LF62–62",
+        "disposition": "Exactsameoldtopic asmainunitM24: Separate earlystatuselections retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 24,
+        "old_LF_start": 68,
+        "old_LF_end": 68,
+        "old_text": "### Step 5: Test §7, goods from other member states",
+        "old_unit_sha256": "ce66ecd617a6ba1f51420f81a2f240fd0c0e93d2d6930277ecd019f56dded6e6",
+        "current_destination": "Current LF64–64",
+        "disposition": "Exactsameoldtopic asmainunitM25: Goodsregistration method retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 25,
+        "old_LF_start": 70,
+        "old_LF_end": 70,
+        "old_text": "The application goes in **before** the acquisition that reaches 14 000 eur, not after. Voluntary §7 registration below the threshold is allowed but commits you to taxing acquisitions for at least two calendar years. New means of transport and excise goods are excluded from the count. Non-taxable legal persons (a sports club, a foundation) are caught too.",
+        "old_unit_sha256": "cc4fc47c99c695bbfb5f5a9c02bbc9d26702ef94629af29ffdae717aa995fe39",
+        "current_destination": "Current LF64–64",
+        "disposition": "Exactsameoldtopic asmainunitM26: Goods14000before/2years/newmeans/excise/non-taxablelegalpersons retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 26,
+        "old_LF_start": 72,
+        "old_LF_end": 72,
+        "old_text": "### Step 6: Test §7a, cross-border services, and note there is no threshold",
+        "old_unit_sha256": "79a9ce370c11ed570eba157ddae3c6b2b928aa982ae69657756125fd5ada9d23",
+        "current_destination": "Current LF40–86",
+        "disposition": "Exactsameoldtopic asmainunitM27: Servicesregistration method retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 27,
+        "old_LF_start": 74,
+        "old_LF_end": 74,
+        "old_text": "Two limbs, both with an explicit \"the price does not matter\": before receiving a service from a foreign person in another member state where you are liable under §69(3), and before supplying a service to another member state where the place of supply is determined by §15(1) and the customer accounts for the tax.",
+        "old_unit_sha256": "8616456be2fa4905b7ad19dc7614efd61752ce546a8eaf20c06edab8f528f714",
+        "current_destination": "Current LF40–86",
+        "disposition": "Exactsameoldtopic asmainunitM28: Both§7alimbs/noamount retained; precisebefore supply/receipt."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 28,
+        "old_LF_start": 76,
+        "old_LF_end": 76,
+        "old_text": "You do **not** register under §7a if: the place of supply is determined by §15(2) or §16 rather than §15(1); you are already registered under §7; the service is exempt at its place of supply; **the counterparty is in a third country** (a US, UK or Swiss supplier or customer); or the counterparty is not a taxable person.",
+        "old_unit_sha256": "7a216445d158db018fdd42c318f0b8633de0bc4538dbcb6a1d1944c4c0fb29b8",
+        "current_destination": "Current LF133–135",
+        "disposition": "Exactsameoldtopic asmainunitM29: Allserviceexceptions retained; thirdcountryregistration distinguishedfromRCtax; VATidentifiednontaxablelegalperson15.4b clarified."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 29,
+        "old_LF_start": 78,
+        "old_LF_end": 78,
+        "old_text": "### Step 7: Understand what a §7 or §7a registrant is not",
+        "old_unit_sha256": "ce8c1740441d84af45402c53767fff68c3833040f00089518caed4ba684d0381",
+        "current_destination": "Current LF70–76",
+        "disposition": "Exactsameoldtopic asmainunitM30: Registrationcomparison retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 30,
+        "old_LF_start": 80,
+        "old_LF_end": 87,
+        "old_text": "| | §4 VAT payer (platiteľ) | §7 / §7a registrant |\n|---|---|---|\n| Charges Slovak VAT on own sales | Yes, 23 / 19 / 5% | No |\n| Deducts input VAT | Yes | **No** |\n| Self-assesses reverse-charge VAT | Yes | Yes |\n| Files a VAT return | Every tax period | Only for months where a liability arose. No nil returns. |\n| Has a VAT number (IČ DPH) | Yes | Yes, restricted to the registered purpose |\n| Net cost of an EU service invoice | Neutral (declare and deduct) | **VAT is a real, unrecoverable cost** |",
+        "old_unit_sha256": "fea3d4da86476ec3b06f56fd242e23e8779554aace95c052fe21eea921fc835d",
+        "current_destination": "Current LF70–74",
+        "disposition": "Exactsameoldtopic asmainunitM31: Allsixstatuscomparisonrows retained; no blanket inputcredit."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 31,
+        "old_LF_start": 89,
+        "old_LF_end": 89,
+        "old_text": "A §7a-registered freelancer buying 1 000 eur of Meta Ireland advertising declares 230 eur of Slovak VAT and keeps none of it. Under §4 the same 230 eur would net to zero.",
+        "old_unit_sha256": "17a306c27f20290da8b2975bb3135c03fc5d60a1b1ffd7f0c32b75aa5e6984db",
+        "current_destination": "Current LF76–76",
+        "disposition": "Exactsameoldtopic asmainunitM32: 1000/230example retained withnet/grossqualification."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 32,
+        "old_LF_start": 91,
+        "old_LF_end": 91,
+        "old_text": "### Step 8: File, and then keep filing",
+        "old_unit_sha256": "e1a87b0a011eae9750f99a7160986a3d08d9c538da45f478d6047eca05a16887",
+        "current_destination": "Current LF78–102",
+        "disposition": "Exactsameoldtopic asmainunitM33: Filingmethod retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 33,
+        "old_LF_start": 93,
+        "old_LF_end": 93,
+        "old_text": "The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.",
+        "old_unit_sha256": "24a79c425f8a32898f56152fbf4405325e72105fcce345e5d471e5b9ddca44d4",
+        "current_destination": "Current LF82–96",
+        "disposition": "Exactsameoldtopic asmainunitM34: Allregistration/decision10vs7/deadlines retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 34,
+        "old_LF_start": 95,
+        "old_LF_end": 95,
+        "old_text": "Ongoing obligations for a §7 or §7a registrant: return and payment within 25 days of the end of the month in which the liability arose, no nil returns, quarterly EC Sales List by the 25th where services are supplied, invoices within 15 days marked \"prenesenie daňovej povinnosti\", records kept, invoices retained for ten years. No payment is required if the tax due is not more than 5 eur.",
+        "old_unit_sha256": "ce4040310d2ce339e76730b5958fa7334eeb7433ec5612a320d43e911c0614cd",
+        "current_destination": "Current LF87–102",
+        "disposition": "Exactsameoldtopic asmainunitM35: Everyongoingobligation retained; invoice15days correctlymonthend, records70/retention76/dereg81/82."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 35,
+        "old_LF_start": 97,
+        "old_LF_end": 97,
+        "old_text": "## The traps",
+        "old_unit_sha256": "1ee58b1b2a839d02b84f5a721f86f0a841e773ce799fdc06b90a42f84cabe269",
+        "current_destination": "Current LF115–135",
+        "disposition": "Exactsameoldtopic asmainunitM36: Trapsdistributed through substantivecurrentrules, noomittedlegalcondition."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 36,
+        "old_LF_start": 99,
+        "old_LF_end": 109,
+        "old_text": "1. **\"I only bill EU clients, so I don't need to register.\"** Backwards. Those supplies do not count toward the §4 turnover, and they are exactly what triggers §7a. Registration duty is higher, not lower.\n2. **The Google Ireland / Meta Ireland trap.** A freelancer running 30 eur of ads is required to have registered under §7a *before* the first invoice, self-assess 23%, and file monthly returns. There is no small-amounts let-off. This is the most common unregistered exposure in Slovakia.\n3. **US platforms are different, but you are not off the hook.** A supplier in a third country does not trigger §7a registration. The **liability** still arises: you self-assess and file without registering. Check where the platform entity is actually established, not where the website is.\n4. **Not registering does not cancel the tax.** Failure to register under §7 leaves the obligation to pay, declare and file entirely intact.\n5. **The 62 500 eur circularity.** If you cross 62 500 eur on a supply priced **VAT-inclusive**, the VAT comes out of your margin, and the net figure may not even have breached the threshold. Price net of VAT in contracts near the threshold.\n6. **62 500 eur means immediate, not next year.** Clients who read about the 50 000 rule assume they always have until 1 January. On a lumpy year with one big project, they do not.\n7. **Correcting your turnover downward afterwards does not undo registration.** Once payer status is confirmed by decision, a later credit note that drops you back under the line changes nothing.\n8. **Exempt supplies still count.** Insurance, real estate and financial services under §37 to §39 are inside the turnover.\n9. **§7 is \"before the acquisition\", §7a is \"before the service\".** Both are pre-emptive.\n10. **Pre-2025 material is actively wrong.** Anything quoting 49 790 eur, a rolling 12-month window, a 20% standard rate or a 7-day decision predates the current law. That includes some documents still published on financnasprava.sk.\n11. **You cannot appeal a refusal to register a purported payer** under §4 ods. 10 písm. a). A rejected *voluntary* application under §4 ods. 10 písm. b) can be appealed.",
+        "old_unit_sha256": "7a3737b64b2840cd28cf637845a6eb1503c35a59e1e445c5c54c8517af2a8484",
+        "current_destination": "Current LF48–64",
+        "disposition": "Exactsameoldtopic asmainunitM37: All11traps are distributed throughcurrentmethods:EUclients/services/US/unregisteredtax/circularity/immediacy/creditnote/exempts/preemptive/historicalrates/appeals. Exactdestinations also133–135/179–181/238–240."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 37,
+        "old_LF_start": 111,
+        "old_LF_end": 111,
+        "old_text": "## Rates, thresholds and deadlines",
+        "old_unit_sha256": "959f107106326cab90377c744dbd3c33232c9e5b684f6c9fda3fa3863834cd5b",
+        "current_destination": "Current LF30–46",
+        "disposition": "Exactsameoldtopic asmainunitM38: Rate/thresholdtable retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 38,
+        "old_LF_start": 113,
+        "old_LF_end": 141,
+        "old_text": "| What | Value | Source |\n|---|---|---|\n| Standard VAT rate, from 1 Jan 2025 | 23% | financnasprava.sk, Sadzby dane |\n| Reduced rates, from 1 Jan 2025 | 19% and 5% | financnasprava.sk, Sadzby dane |\n| Standard rate before 1 Jan 2025 | 20% | FS SR §7a information sheet |\n| §4 mandatory registration threshold (payer from 1 January following) | 50 000 eur in a calendar year | 2/DPH/2025/MP |\n| §4 accelerated threshold (payer at the moment of the breaching supply) | 62 500 eur in a calendar year | 2/DPH/2025/MP |\n| Previous §4 threshold, to 31 Dec 2024 | 49 790 eur over up to 12 preceding months (§85kn transitional) | 2/DPH/2025/MP |\n| Turnover measurement period, from 1 Jan 2025 | Calendar year, restarting each 1 January | Consolidated VAT Act |\n| §4 application deadline | 5 working days | 2/DPH/2025/MP |\n| §4 decision, compulsory / voluntary | 10 days / 21 days | 2/DPH/2025/MP |\n| Voluntary registration backdating | Not permitted | 2/DPH/2025/MP |\n| §7 threshold, goods from other member states | 14 000 eur net in a calendar year | VAT Act §7(1) |\n| §7 application timing | **Before** the acquisition that reaches 14 000 eur | VAT Act §7(1) |\n| §7 voluntary registration commitment | Must tax acquisitions for at least 2 calendar years | FS SR §7 information sheet |\n| §7a threshold | **None** (\"nezáleží na výške ceny služby\") | FS SR §7a information sheet |\n| §7a application timing | Before receiving the service; before supplying the service | VAT Act §7a(1), (2) |\n| §7 / §7a decision and IČ DPH allocation | Not later than 10 days (amended from 7, from 1 Jan 2025) | VAT Act §7(3), §7a(3) |\n| §7 / §7a input VAT deduction | **None.** Registrant is not a platiteľ dane | FS SR §7a information sheet |\n| §7 / §7a return and payment | 25 days after the end of the month in which the liability arose. No nil returns. | FS SR §7a information sheet |\n| Minimum tax payable | No obligation where the tax due is not more than 5 eur | FS SR §7a information sheet |\n| EC Sales List for §7a services supplied | Quarterly, within 25 days of quarter end. No nil listing. | FS SR §7a information sheet |\n| Invoice deadline, §15(1) services to another member state | Within 15 days of month end, marked \"prenesenie daňovej povinnosti\" | FS SR §7a information sheet |\n| Invoice retention | 10 years | FS SR §7 information sheet |\n| §7 deregistration test | Below 14 000 eur in the current year **and** the preceding year | FS SR §7 information sheet |\n| Registration form version | Confirm before filing (guidance cites ver. 2015) | FS SR §7a information sheet |\n| Monthly vs quarterly tax period for a new §4 payer (§77) | Confirm before filing | not verified |\n| Public-holiday interaction with \"five working days\" | Confirm before filing | not verified |\n| Late-registration penalties | Confirm before filing | not verified |",
+        "old_unit_sha256": "dcbd3866c2911093d61d2901e72c14db7a735203aebd30afb0a28b150cab988e",
+        "current_destination": "Current LF34–46;82–123",
+        "disposition": "All29oldtabletopicsretained; actualcurrentREGDPv24replacesunconfirmed2015, quarterly/weekend/fine gapspositivelysupplied; old20%/7dayshistoricalonly."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 39,
+        "old_LF_start": 143,
+        "old_LF_end": 143,
+        "old_text": "## Worked example",
+        "old_unit_sha256": "40bb647793c68af3f8f96c521f14672b30afb6da09895a4844b395c83dda02f1",
+        "current_destination": "Current LF137–137",
+        "disposition": "Exactsameoldtopic asmainunitM40: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 40,
+        "old_LF_start": 145,
+        "old_LF_end": 145,
+        "old_text": "**Jana, an SZČO web developer in Košice.** Not VAT-registered at 1 January 2026.",
+        "old_unit_sha256": "2395c8b520fe9101be7715beca6df7240e95c119bd5b0423e6f91978a09a900f",
+        "current_destination": "Current LF141–141",
+        "disposition": "Exactsameoldtopic asmainunitM41: Jana facts retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 41,
+        "old_LF_start": 147,
+        "old_LF_end": 147,
+        "old_text": "**Part 1, the §7a trigger she did not see coming.** In January 2026 Jana buys 200 eur of advertising from **Meta Platforms Ireland Ltd**. Place of supply Slovakia under §15(1), and Jana is liable under §69(3).",
+        "old_unit_sha256": "2490da7e475357740a380ac8418a7356570e95e3f250f6ed98196c235d9fc955",
+        "current_destination": "Current LF141–141",
+        "disposition": "Exactsameoldtopic asmainunitM42: Ireland200receipt fact retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 42,
+        "old_LF_start": 149,
+        "old_LF_end": 153,
+        "old_text": "- She was required to file the §7a application **before receiving that first service**. Amount is irrelevant.\n- She self-assesses: 200 × 23% = **46 eur**.\n- She files a VAT return for January 2026 by **25 February 2026** and pays 46 eur. Above the 5 eur de minimis, so payment is due.\n- She **cannot deduct** the 46 eur. Her real cost of the advertising is **246 eur**, not 200.\n- She continues to invoice her Slovak clients **without VAT**. The §7a number does not make her a payer.",
+        "old_unit_sha256": "6101ffd0e6efa250dbd098e35d727be155045e117b35166d3fdfe59022e9fb94",
+        "current_destination": "Current LF143–143",
+        "disposition": "Exactsameoldtopic asmainunitM43: Allfivebullets retained:before/46/25Feb/246/nonpayer."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 43,
+        "old_LF_start": 155,
+        "old_LF_end": 155,
+        "old_text": "Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.",
+        "old_unit_sha256": "507b26610477f84733a9d9574093069cbd5c713c3d0c62e60e77181ee9e92217",
+        "current_destination": "Current LF145–145",
+        "disposition": "Exactsameoldtopic asmainunitM44: USsameRC/no7a retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 44,
+        "old_LF_start": 157,
+        "old_LF_end": 157,
+        "old_text": "**Part 2, the §4 threshold.** Jana bills Slovak clients 4 500 eur net per month, and a German agency 2 000 eur per month for §15(1) services. The German fees have their place of supply in Germany and **do not enter her turnover at all**.",
+        "old_unit_sha256": "4f363a5b1963bfe93c4e787002c15b0c63d191366ee2973fdb26a2add4127eee",
+        "current_destination": "Current LF170–170",
+        "disposition": "Exactsameoldtopic asmainunitM45: Local/Germanturnover facts retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 45,
+        "old_LF_start": 159,
+        "old_LF_end": 162,
+        "old_text": "| Date | Slovak supplies (net) | Cumulative turnover |\n|---|---|---|\n| 31 Jan to 30 Nov 2026 | 11 × 4 500 | 49 500 |\n| 10 Dec 2026 | 4 500 | **54 000** |",
+        "old_unit_sha256": "63c0da043fdb17d5a54b3f15c865d1669cf9dc1b7e0dc85f1e2ccc901f532cce",
+        "current_destination": "Current LF172–175",
+        "disposition": "Exactsameoldtopic asmainunitM46: Bothturnoverrows retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 46,
+        "old_LF_start": 164,
+        "old_LF_end": 164,
+        "old_text": "She exceeds 50 000 eur on 10 December 2026. Trigger A applies (54 000 is over 50 000 but under 62 500), so she becomes a VAT payer on **1 January 2027** and the 10 December invoice is correctly issued **without** VAT. Her application is due within five working days.",
+        "old_unit_sha256": "c42f1ebac48d8cb3079b76afd3c3aa45f320836685bfb69133237307ecb82901",
+        "current_destination": "Current LF177–177",
+        "disposition": "Exactsameoldtopic asmainunitM47: 54000nextJanstatus retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 47,
+        "old_LF_start": 166,
+        "old_LF_end": 166,
+        "old_text": "**Part 3, the counterfactual that changes everything.** Suppose instead the 10 December invoice is a one-off project at **14 000 eur net**, taking cumulative turnover to **63 500 eur**.",
+        "old_unit_sha256": "62a6800f46a99d06fc6d6b82bd341194c641611d3c7e234c08ec1537b6c37265",
+        "current_destination": "Current LF179–179",
+        "disposition": "Exactsameoldtopic asmainunitM48: Expressnet14000counterfactual retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 48,
+        "old_LF_start": 168,
+        "old_LF_end": 170,
+        "old_text": "- She now exceeds 62 500, so **Trigger B** applies.\n- She becomes a payer **at the moment of that supply**, and must charge VAT **on that invoice itself**: 14 000 × 23% = **3 220 eur**, total **17 220 eur**.\n- Had the contract been priced at 14 000 eur **VAT-inclusive**, she would bear the VAT herself: 14 000 / 1.23 = 11 382.11 net, 2 617.89 VAT. And the net figure would have taken cumulative turnover only to 60 882.11, which does **not** exceed 62 500. This circularity is why contracts near the threshold must be priced net.",
+        "old_unit_sha256": "584bde9c4d87af011cce4a73679758dd02ee36290e5ec099572a210d83331cdb",
+        "current_destination": "Current LF179–181",
+        "disposition": "Exactsameoldtopic asmainunitM49: Net3220/17220 retained; fixedgross11382.11/2617.89diagnostic explicitly notstatusdetermination."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 49,
+        "old_LF_start": 172,
+        "old_LF_end": 172,
+        "old_text": "**Part 4, what §4 registration changes.** From the moment she is a payer, the Meta Ireland VAT reverses out: she declares the 23% and deducts it in the same return, so the advertising costs her 200 eur again.",
+        "old_unit_sha256": "5664e777271302dbfc43c3e33a802cfe9da90cfea9c238fb4affdfb36dcd42d7",
+        "current_destination": "Current LF143–143",
+        "disposition": "Exactsameoldtopic asmainunitM50: Payerpairedinputcredit retained conditional49/51."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 50,
+        "old_LF_start": 174,
+        "old_LF_end": 174,
+        "old_text": "## Sources",
+        "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "current_destination": "Current LF225–225",
+        "disposition": "Exactsameoldtopic asmainunitM51: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 51,
+        "old_LF_start": 176,
+        "old_LF_end": 181,
+        "old_text": "- Finančné riaditeľstvo SR, 2/DPH/2025/MP — Metodický pokyn k registrácii platiteľa DPH podľa § 4 a § 5 zákona č. 222/2004 Z. z. (22 September 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf\n- Finančné riaditeľstvo SR, Úplné znenie zákona č. 222/2004 Z. z. o DPH (consolidated to 28 January 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2025/2025.01.28_zakon_DPH.pdf\n- Finančná správa SR, Sadzby dane: https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane\n- Finančná správa SR, Registračná povinnosť pre DPH: https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/registracna-povinnost-pre-dph\n- FS SR, Informácia k povinnostiam osoby registrovanej podľa § 7: https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.19_DPH_reg_par7.pdf\n- FS SR, Informácia k povinnostiam osoby registrovanej podľa § 7a: https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.18_DPH.pdf",
+        "old_unit_sha256": "81390b1f599a582cf7badbf68241435e09a0b6738fa9dbb2320b8c2d57250edc",
+        "current_destination": "Current LF229–238",
+        "disposition": "AllsixoriginalofficialsourceURLsretained; currentprimaryandactualformsadded."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 52,
+        "old_LF_start": 183,
+        "old_LF_end": 183,
+        "old_text": "**Caution on the two 2018 information sheets.** They remain published by the tax authority and are the clearest official statements of the §7 and §7a *procedural* obligations and of the no-deduction rule, which is why they are cited. They are **out of date on two points**: they state a 20% tax rate (now 23%) and a 7-day registration decision period (now 10 days from 1 January 2025). Where they conflict with the statute, the statute governs.",
+        "old_unit_sha256": "2673030c37472a49c648cf4f933c6cb4af176302e761da39d674f831a2b2bc34",
+        "current_destination": "Current LF238–238",
+        "disposition": "Exactsameoldtopic asmainunitM53: 2018caution retained."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 53,
+        "old_LF_start": 185,
+        "old_LF_end": 185,
+        "old_text": "<!-- openaccountants-cta-block -->",
+        "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "current_destination": "Current LF244–244",
+        "disposition": "Exactsameoldtopic asmainunitM56: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 54,
+        "old_LF_start": 187,
+        "old_LF_end": 187,
+        "old_text": "---",
+        "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "current_destination": "Current LF1–1",
+        "disposition": "Exactsameoldtopic asmainunitM57: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 55,
+        "old_LF_start": 189,
+        "old_LF_end": 189,
+        "old_text": "## Talk to a verified accountant",
+        "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "current_destination": "Current LF248–248",
+        "disposition": "Exactsameoldtopic asmainunitM58: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 56,
+        "old_LF_start": 191,
+        "old_LF_end": 194,
+        "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+        "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+        "current_destination": "Current LF250–253",
+        "disposition": "Exactsameoldtopic asmainunitM59: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 57,
+        "old_LF_start": 196,
+        "old_LF_end": 197,
+        "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+        "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+        "current_destination": "Current LF255–256",
+        "disposition": "Exactsameoldtopic asmainunitM60: Exact retained unit; all embedded topics preserved."
+      },
+      {
+        "comparator": "c9c520db^",
+        "unit": 58,
+        "old_LF_start": 199,
+        "old_LF_end": 201,
+        "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+        "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+        "current_destination": "Current LF258–260",
+        "disposition": "Exactsameoldtopic asmainunitM61: Exact retained unit; all embedded topics preserved."
+      }
+    ]
+  },
+  "prior_423_unit_map_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+  "prior_map_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+  "rows": [
+    {
+      "comparator": "origin/main",
+      "unit": 1,
+      "old_LF_start": 1,
+      "old_LF_end": 13,
+      "old_text": "---\nname: slovakia-vat-registration-4-7-7a\ndescription: \"Which Slovak VAT registration a client needs in 2026 under Act No. 222/2004 Coll.: § 4 (VAT payer, EUR 50,000 calendar-year turnover for payer status from 1 January of the next year, EUR 62,500 for payer status at the crossing supply, application within five working days), voluntary § 4 registration, § 7 (goods from other member states, EUR 14,000) and § 7a (cross-border services, no threshold), and why a § 7 or § 7a registrant self-assesses VAT but cannot deduct it. Covers the 2025 change from EUR 49,790 over 12 months to the calendar-year test, decision times, and the fine for late registration. Trigger on: Slovak VAT registration, registracia DPH, platitel dane, § 7a, IC DPH, Meta or Google Ireland invoices Slovakia. Out of scope: the periodic return, rates, control statement and penalties (slovakia-vat-return), income tax (slovakia-pit).\"\nversion: 1.1\njurisdiction: SK\ntax_year: 2026\nlast_updated: 2026-10-23\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "old_unit_sha256": "ca1ab33fa4f5142ba0524432843fc4d805328562aea61ec09aa0ec417da096cf",
+      "current_LF": [
+        1,
+        13
+      ],
+      "disposition": "Metadata/description updated, originalplatformfields retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 2,
+      "old_LF_start": 15,
+      "old_LF_end": 15,
+      "old_text": "# Slovakia VAT registration (§4, §7, §7a): how I handle it",
+      "old_unit_sha256": "41da5f415fa0dd43d3999f2fec8874874a65ff0f5a5d2928d434a4e2a15d2d26",
+      "current_LF": [
+        15,
+        15
+      ],
+      "disposition": "Heading restored asGuide."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 3,
+      "old_LF_start": 17,
+      "old_LF_end": 17,
+      "old_text": "Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team. Checked against the VAT Act version in force from 1 January 2026 on 23 October 2026: the § 4, § 7, § 7a, § 73, § 77, § 78(3) and § 81 rules below match that version. Rates, the return, the control statement and penalties for late returns are in [slovakia-vat-return](slovakia-vat-return.md).",
+      "old_unit_sha256": "7e10104f4d2ef8805a2f489497dde8a32875d7c6787dc5e2a30dfcc23f3f441f",
+      "current_LF": [
+        17,
+        17
+      ],
+      "disposition": "Source-cited draft/trust retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 4,
+      "old_LF_start": 19,
+      "old_LF_end": 19,
+      "old_text": "Slovakia has three different VAT registrations and only one of them makes you a VAT payer. §4 is the real thing (you charge VAT, you deduct input VAT). §7 and §7a are administrative registrations that give you a VAT number and an obligation to self-assess tax, with **no right of deduction**. Getting this wrong in either direction is expensive: register under §4 too early and you add 23% to prices your clients cannot reclaim; miss a §7a registration and you have been under-declaring reverse-charge VAT on every Google Ireland or Meta Ireland invoice since your first ad. The rules changed materially on 1 January 2025, so anything written before then is unsafe.",
+      "old_unit_sha256": "25cd1952dc6341433c5fc769cf393b591d1750c578f26513f5e9445c765ac3c0",
+      "current_LF": [
+        19,
+        19
+      ],
+      "disposition": "Payer vsnumber distinction retained; not categorical23%price increase for everyconsumer."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 5,
+      "old_LF_start": 21,
+      "old_LF_end": 21,
+      "old_text": "## Who this is for",
+      "old_unit_sha256": "04e962331b7e0b524d50d5bb270c8691256f50ea62fbddf2c278c9b7be88c8e8",
+      "current_LF": [
+        21,
+        21
+      ],
+      "disposition": "Samepopulation heading."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 6,
+      "old_LF_start": 23,
+      "old_LF_end": 25,
+      "old_text": "- Slovak sole traders (SZČO) and s.r.o.s approaching the turnover threshold, or wondering whether to register voluntarily.\n- Freelancers and small agencies buying services from foreign platforms (ads, SaaS, marketplaces) or billing clients in other EU member states. This is the group that gets caught by §7a, which has **no threshold at all**.\n- Anyone who read a pre-2025 guide quoting 49 790 eur and 20%. Both figures are dead.",
+      "old_unit_sha256": "7cb7e6f328885160fcbe444275bcdf15d279a41366f677abbb1cce3b0fef2dfb",
+      "current_LF": [
+        23,
+        26
+      ],
+      "disposition": "Allthreepopulations retained; oldfigures nowexplicit historicalonly."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 7,
+      "old_LF_start": 27,
+      "old_LF_end": 27,
+      "old_text": "Non-established (foreign) businesses should read §5, not §4. This skill covers §5 only where it interacts.",
+      "old_unit_sha256": "1df841f307657b64c2cd5c33f5cb674582440dd52fb9db3d5d7b7e85d6c8e169",
+      "current_LF": [
+        28,
+        28
+      ],
+      "disposition": "Foreignstatus retained with own§5andfixedestablishment§4conditions."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 8,
+      "old_LF_start": 29,
+      "old_LF_end": 29,
+      "old_text": "## Before you start, ask the client",
+      "old_unit_sha256": "478b6a870a1dd3f2a2fc747e01a49043833008132b4aec8895a7ab11bd34b40f",
+      "current_LF": [
+        216,
+        223
+      ],
+      "disposition": "Intake moved aftermethods; allquestions retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 9,
+      "old_LF_start": 31,
+      "old_LF_end": 37,
+      "old_text": "1. **What did you actually supply, and where was the place of supply?** Only supplies with a place of supply *in Slovakia* count toward the §4 turnover. Services to business clients in other member states under §15(1) count for nothing. A freelancer billing 100 000 eur to German clients can have a Slovak turnover of zero, and still be obliged to register under §7a.\n2. **What is the cumulative turnover this calendar year, from 1 January?** Not the last twelve months. The measurement period changed on 1 January 2025.\n3. **Have you bought any service from a foreign business established in another EU member state?** Google Ireland, Meta Ireland, Amazon Luxembourg, Stripe Ireland, a Czech subcontractor. Amount is irrelevant. One euro triggers §7a.\n4. **Have you supplied any service to a business in another member state where the customer accounts for the tax?** Also §7a, also no threshold.\n5. **Have you bought goods from other member states?** Track the cumulative untaxed value against 14 000 eur for the calendar year. This is §7.\n6. **Do your customers reclaim VAT?** If they are all consumers or exempt bodies, voluntary §4 registration makes you 23% more expensive overnight.\n7. **Do you have deductible input costs and pre-trading expenditure?** That is the case *for* voluntary registration.",
+      "old_unit_sha256": "735d88232a4ed5d90648bd994b8cd4aa22ef525864ddaff14f38452039089391",
+      "current_LF": [
+        218,
+        223
+      ],
+      "disposition": "Allsevenintakequestions retained semantically:place, calendar, inward/outwardEUservices, goods, customerrecovery, pretradingcosts."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 10,
+      "old_LF_start": 39,
+      "old_LF_end": 39,
+      "old_text": "## The method, step by step",
+      "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+      "current_LF": [
+        50,
+        50
+      ],
+      "disposition": "Method reorganised as taxablebase."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 11,
+      "old_LF_start": 41,
+      "old_LF_end": 41,
+      "old_text": "### Step 1: Test §4 first, because it overrides the others",
+      "old_unit_sha256": "6937b3a6c4455ed105a5f3bf543ae77d32ab419790e66f20fcef749ef20ff80b",
+      "current_LF": [
+        36,
+        56
+      ],
+      "disposition": "§4priority method retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 12,
+      "old_LF_start": 43,
+      "old_LF_end": 43,
+      "old_text": "Two separate turnover triggers, and they do different things.",
+      "old_unit_sha256": "08c457c0d94354db8c0e9ec5a3bc8c92b429d97757e7a5de9839b309ad19c2b7",
+      "current_LF": [
+        36,
+        38
+      ],
+      "disposition": "Two separateturnover triggers retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 13,
+      "old_LF_start": 45,
+      "old_LF_end": 45,
+      "old_text": "**Trigger A, 50 000 eur.** Exceed 50 000 eur of turnover in a calendar year and you become a VAT payer on **1 January of the following year**. Not immediately.",
+      "old_unit_sha256": "4dedf08a0344527e75cd13c2ee5658ff3531ecdc23bc2232a71a0e6cc9680ab3",
+      "current_LF": [
+        36,
+        38
+      ],
+      "disposition": "ThresholdA retained atstatutoryover50000calendarwording."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 14,
+      "old_LF_start": 47,
+      "old_LF_end": 47,
+      "old_text": "**Trigger B, 62 500 eur.** Exceed 62 500 eur during the year and you become a VAT payer **at the moment of the supply that breaches it**, and you must charge VAT on that very supply.",
+      "old_unit_sha256": "b1eb2e1d6eb8aa57cab014ad0ae54c0f5d4d76bb1821a8de81d4609ae7d81d49",
+      "current_LF": [
+        36,
+        38
+      ],
+      "disposition": "ThresholdB retained atover62500andentiresupply."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 15,
+      "old_LF_start": 49,
+      "old_LF_end": 49,
+      "old_text": "### Step 2: Note what changed on 1 January 2025",
+      "old_unit_sha256": "3254a727fddaa5d74f53603ef5450c514f568bea82ab9e9715b251420083aca3",
+      "current_LF": [
+        44,
+        58
+      ],
+      "disposition": "2025change/historicaltransition retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 16,
+      "old_LF_start": 51,
+      "old_LF_end": 51,
+      "old_text": "The old threshold was 49 790 eur measured over **up to 12 preceding consecutive calendar months**. It is now 50 000 / 62 500 eur measured over the **calendar year**, resetting every 1 January. A transitional rule (§85kn) keeps the old regime alive for anyone who hit 49 790 eur by 31 December 2024.",
+      "old_unit_sha256": "e4eee1c8a8156081a7ed6ef33fc333c4ca7d4393bd25b213aa07b6f46163d7d9",
+      "current_LF": [
+        44,
+        58
+      ],
+      "disposition": "Old49790rolling and85kntransition retained historicalonly."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 17,
+      "old_LF_start": 53,
+      "old_LF_end": 53,
+      "old_text": "### Step 3: Know what counts as \"obrat\"",
+      "old_unit_sha256": "96db5b099514ecb12249107e5f5a89311825a4e3fb15bc6d0903ade17473b251",
+      "current_LF": [
+        52,
+        54
+      ],
+      "disposition": "Obratdefinition retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 18,
+      "old_LF_start": 55,
+      "old_LF_end": 55,
+      "old_text": "Turnover means the net value of goods and services supplied **in Slovakia**, excluding supplies exempt under §28 to §36 and §40 to §42.",
+      "old_unit_sha256": "98ef278ede46435053bf5231f4a00a6136f224543d8cd326e58f7324e8eed4f2",
+      "current_LF": [
+        52,
+        52
+      ],
+      "disposition": "Turnover net/place/exemption exclusions retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 19,
+      "old_LF_start": 57,
+      "old_LF_end": 57,
+      "old_text": "Excluded: advance payments (until the supply happens), supplies with a place of supply abroad, free-of-charge supplies, and supplies where the customer accounts for the tax under reverse charge.",
+      "old_unit_sha256": "46f2cc5c87adcb742cccd8d4dcedd635f0b9e0eaa7fbd6fcd4865e4baf45ad97",
+      "current_LF": [
+        54,
+        54
+      ],
+      "disposition": "Overbroadoldreversechargeexclusion corrected: receivedRCnotownsales; ownRCsalesremainturnover; propertyadvanceexception."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 20,
+      "old_LF_start": 59,
+      "old_LF_end": 59,
+      "old_text": "Included, and people miss this: exempt insurance (§37), real estate (§38) and financial services (§39) **do** count, and if you cross the threshold purely on those you must still register and must say so on the form.",
+      "old_unit_sha256": "4c52b96b672a3bad6492e40740c24b237e70194957365f422a7d200e63f9528b",
+      "current_LF": [
+        52,
+        56
+      ],
+      "disposition": "Insurance/property/finance inclusion retained, actualancillarycondition."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 21,
+      "old_LF_start": 61,
+      "old_LF_end": 61,
+      "old_text": "### Step 4: Voluntary §4 registration",
+      "old_unit_sha256": "0a601faec1996fbd6c5fb149ac656ffd7a292d05f102e635c313e9929ccd3082",
+      "current_LF": [
+        60,
+        62
+      ],
+      "disposition": "Voluntarymethod retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 22,
+      "old_LF_start": 63,
+      "old_LF_end": 63,
+      "old_text": "You do not have to wait for 50 000 eur. Four things to tell the client:",
+      "old_unit_sha256": "6da214220d536767437e4a77aa82efc87ece47ea186175d1b07b83fcd382a4cf",
+      "current_LF": [
+        60,
+        62
+      ],
+      "disposition": "Fourvoluntaryconditions andelection retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 23,
+      "old_LF_start": 65,
+      "old_LF_end": 68,
+      "old_text": "- **You must be a \"zdaniteľná osoba\"** (a taxable person carrying on economic activity). The tax office will test this. Preparatory acts before your first sale are enough on settled CJEU authority (C-110/94 INZO, C-268/83 Rompelman, C-527/11 Ablessio), but you carry the burden of proof.\n- **The decision takes up to 21 days.**\n- **There is no backdating.** Registration cannot take effect before the application date.\n- **The tax office can refuse on fraud-risk grounds**, but only on an overall assessment of the evidence.",
+      "old_unit_sha256": "fac5ba8f18dc158e5cdae228dabc1a4267333a1e4dc2882244d51fbf86da1307",
+      "current_LF": [
+        60,
+        60
+      ],
+      "disposition": "Preparatoryacts/CJEU/21days/nobackdate/fraudassessment retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 24,
+      "old_LF_start": 70,
+      "old_LF_end": 70,
+      "old_text": "Separately, if you have crossed 50 000 but not 62 500 eur, you can elect to become a payer early, either on the application itself (§4 ods. 8 písm. a, effective from the supply that broke 50 000) or later by notification (§4 ods. 8 písm. b, effective the day after you notify).",
+      "old_unit_sha256": "9f92df786352a216b30a540a542fbcb10d35848b2f6f1be247c410b876faea46",
+      "current_LF": [
+        62,
+        62
+      ],
+      "disposition": "Separate earlystatuselections retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 25,
+      "old_LF_start": 72,
+      "old_LF_end": 72,
+      "old_text": "### Step 5: Test §7, goods from other member states",
+      "old_unit_sha256": "ce66ecd617a6ba1f51420f81a2f240fd0c0e93d2d6930277ecd019f56dded6e6",
+      "current_LF": [
+        64,
+        64
+      ],
+      "disposition": "Goodsregistration method retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 26,
+      "old_LF_start": 74,
+      "old_LF_end": 74,
+      "old_text": "The application goes in **before** the acquisition that reaches 14 000 eur, not after. Voluntary §7 registration below the threshold is allowed but commits you to taxing acquisitions for at least two calendar years. New means of transport and excise goods are excluded from the count. Non-taxable legal persons (a sports club, a foundation) are caught too.",
+      "old_unit_sha256": "cc4fc47c99c695bbfb5f5a9c02bbc9d26702ef94629af29ffdae717aa995fe39",
+      "current_LF": [
+        64,
+        64
+      ],
+      "disposition": "Goods14000before/2years/newmeans/excise/non-taxablelegalpersons retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 27,
+      "old_LF_start": 76,
+      "old_LF_end": 76,
+      "old_text": "### Step 6: Test §7a, cross-border services, and note there is no threshold",
+      "old_unit_sha256": "79a9ce370c11ed570eba157ddae3c6b2b928aa982ae69657756125fd5ada9d23",
+      "current_LF": [
+        40,
+        86
+      ],
+      "disposition": "Servicesregistration method retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 28,
+      "old_LF_start": 78,
+      "old_LF_end": 78,
+      "old_text": "Two limbs, both with an explicit \"the price does not matter\": before receiving a service from a foreign person in another member state where you are liable under §69(3), and before supplying a service to another member state where the place of supply is determined by §15(1) and the customer accounts for the tax.",
+      "old_unit_sha256": "8616456be2fa4905b7ad19dc7614efd61752ce546a8eaf20c06edab8f528f714",
+      "current_LF": [
+        40,
+        86
+      ],
+      "disposition": "Both§7alimbs/noamount retained; precisebefore supply/receipt."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 29,
+      "old_LF_start": 80,
+      "old_LF_end": 80,
+      "old_text": "You do **not** register under §7a if: the place of supply is determined by §15(2) or §16 rather than §15(1); you are already registered under §7; the service is exempt at its place of supply; **the counterparty is in a third country** (a US, UK or Swiss supplier or customer); or the counterparty is not a taxable person.",
+      "old_unit_sha256": "7a216445d158db018fdd42c318f0b8633de0bc4538dbcb6a1d1944c4c0fb29b8",
+      "current_LF": [
+        133,
+        135
+      ],
+      "disposition": "Allserviceexceptions retained; thirdcountryregistration distinguishedfromRCtax; VATidentifiednontaxablelegalperson15.4b clarified."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 30,
+      "old_LF_start": 82,
+      "old_LF_end": 82,
+      "old_text": "### Step 7: Understand what a §7 or §7a registrant is not",
+      "old_unit_sha256": "ce8c1740441d84af45402c53767fff68c3833040f00089518caed4ba684d0381",
+      "current_LF": [
+        70,
+        76
+      ],
+      "disposition": "Registrationcomparison retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 31,
+      "old_LF_start": 84,
+      "old_LF_end": 91,
+      "old_text": "| | §4 VAT payer (platiteľ) | §7 / §7a registrant |\n|---|---|---|\n| Charges Slovak VAT on own sales | Yes, 23 / 19 / 5% | No |\n| Deducts input VAT | Yes | **No** |\n| Self-assesses reverse-charge VAT | Yes | Yes |\n| Files a VAT return | Every tax period | Only for months where a liability arose. No nil returns. |\n| Has a VAT number (IČ DPH) | Yes | Yes, restricted to the registered purpose |\n| Net cost of an EU service invoice | Neutral (declare and deduct) | **VAT is a real, unrecoverable cost** |",
+      "old_unit_sha256": "fea3d4da86476ec3b06f56fd242e23e8779554aace95c052fe21eea921fc835d",
+      "current_LF": [
+        70,
+        74
+      ],
+      "disposition": "Allsixstatuscomparisonrows retained; no blanket inputcredit."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 32,
+      "old_LF_start": 93,
+      "old_LF_end": 93,
+      "old_text": "A §7a-registered freelancer buying 1 000 eur of Meta Ireland advertising declares 230 eur of Slovak VAT and keeps none of it. Under §4 the same 230 eur would net to zero.",
+      "old_unit_sha256": "17a306c27f20290da8b2975bb3135c03fc5d60a1b1ffd7f0c32b75aa5e6984db",
+      "current_LF": [
+        76,
+        76
+      ],
+      "disposition": "1000/230example retained withnet/grossqualification."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 33,
+      "old_LF_start": 95,
+      "old_LF_end": 95,
+      "old_text": "### Step 8: File, and then keep filing",
+      "old_unit_sha256": "e1a87b0a011eae9750f99a7160986a3d08d9c538da45f478d6047eca05a16887",
+      "current_LF": [
+        78,
+        102
+      ],
+      "disposition": "Filingmethod retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 34,
+      "old_LF_start": 97,
+      "old_LF_end": 97,
+      "old_text": "The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.",
+      "old_unit_sha256": "24a79c425f8a32898f56152fbf4405325e72105fcce345e5d471e5b9ddca44d4",
+      "current_LF": [
+        82,
+        96
+      ],
+      "disposition": "Allregistration/decision10vs7/deadlines retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 35,
+      "old_LF_start": 99,
+      "old_LF_end": 99,
+      "old_text": "Ongoing obligations for a §7 or §7a registrant: return and payment within 25 days of the end of the month in which the liability arose, no nil returns, quarterly EC Sales List by the 25th where services are supplied, invoices within 15 days marked \"prenesenie daňovej povinnosti\", records kept, invoices retained for ten years. No payment is required if the tax due is not more than 5 eur.",
+      "old_unit_sha256": "ce4040310d2ce339e76730b5958fa7334eeb7433ec5612a320d43e911c0614cd",
+      "current_LF": [
+        87,
+        102
+      ],
+      "disposition": "Everyongoingobligation retained; invoice15days correctlymonthend, records70/retention76/dereg81/82."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 36,
+      "old_LF_start": 101,
+      "old_LF_end": 101,
+      "old_text": "## The traps",
+      "old_unit_sha256": "1ee58b1b2a839d02b84f5a721f86f0a841e773ce799fdc06b90a42f84cabe269",
+      "current_LF": [
+        115,
+        135
+      ],
+      "disposition": "Trapsdistributed through substantivecurrentrules, noomittedlegalcondition."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 37,
+      "old_LF_start": 103,
+      "old_LF_end": 113,
+      "old_text": "1. **\"I only bill EU clients, so I don't need to register.\"** Backwards. Those supplies do not count toward the §4 turnover, and they are exactly what triggers §7a. Registration duty is higher, not lower.\n2. **The Google Ireland / Meta Ireland trap.** A freelancer running 30 eur of ads is required to have registered under §7a *before* the first invoice, self-assess 23%, and file monthly returns. There is no small-amounts let-off. This is the most common unregistered exposure in Slovakia.\n3. **US platforms are different, but you are not off the hook.** A supplier in a third country does not trigger §7a registration. The **liability** still arises: you self-assess and file without registering. Check where the platform entity is actually established, not where the website is.\n4. **Not registering does not cancel the tax.** Failure to register under §7 leaves the obligation to pay, declare and file entirely intact.\n5. **The 62 500 eur circularity.** If you cross 62 500 eur on a supply priced **VAT-inclusive**, the VAT comes out of your margin, and the net figure may not even have breached the threshold. Price net of VAT in contracts near the threshold.\n6. **62 500 eur means immediate, not next year.** Clients who read about the 50 000 rule assume they always have until 1 January. On a lumpy year with one big project, they do not.\n7. **Correcting your turnover downward afterwards does not undo registration.** Once payer status is confirmed by decision, a later credit note that drops you back under the line changes nothing.\n8. **Exempt supplies still count.** Insurance, real estate and financial services under §37 to §39 are inside the turnover.\n9. **§7 is \"before the acquisition\", §7a is \"before the service\".** Both are pre-emptive.\n10. **Pre-2025 material is actively wrong.** Anything quoting 49 790 eur, a rolling 12-month window, a 20% standard rate or a 7-day decision predates the current law. That includes some documents still published on financnasprava.sk.\n11. **You cannot appeal a refusal to register a purported payer** under §4 ods. 10 písm. a). A rejected *voluntary* application under §4 ods. 10 písm. b) can be appealed.",
+      "old_unit_sha256": "7a3737b64b2840cd28cf637845a6eb1503c35a59e1e445c5c54c8517af2a8484",
+      "current_LF": [
+        48,
+        64
+      ],
+      "disposition": "All11traps are distributed throughcurrentmethods:EUclients/services/US/unregisteredtax/circularity/immediacy/creditnote/exempts/preemptive/historicalrates/appeals. Exactdestinations also133–135/179–181/238–240."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 38,
+      "old_LF_start": 115,
+      "old_LF_end": 115,
+      "old_text": "## Rates, thresholds and deadlines",
+      "old_unit_sha256": "959f107106326cab90377c744dbd3c33232c9e5b684f6c9fda3fa3863834cd5b",
+      "current_LF": [
+        30,
+        46
+      ],
+      "disposition": "Rate/thresholdtable retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 39,
+      "old_LF_start": 117,
+      "old_LF_end": 146,
+      "old_text": "| What | Value | Source |\n|---|---|---|\n| Standard VAT rate, from 1 Jan 2025 | 23% | financnasprava.sk, Sadzby dane |\n| Reduced rates, from 1 Jan 2025 (scope changed on 1 Jan 2026; see slovakia-vat-return) | 19% and 5% | VAT Act § 27, version from 1 Jan 2026 |\n| Standard rate before 1 Jan 2025 | 20% | FS SR §7a information sheet |\n| §4 mandatory registration threshold (payer from 1 January following) | 50 000 eur in a calendar year | 2/DPH/2025/MP |\n| §4 accelerated threshold (payer at the moment of the breaching supply) | 62 500 eur in a calendar year | 2/DPH/2025/MP |\n| Previous §4 threshold, to 31 Dec 2024 | 49 790 eur over up to 12 preceding months (§85kn transitional) | 2/DPH/2025/MP |\n| Turnover measurement period, from 1 Jan 2025 | Calendar year, restarting each 1 January | Consolidated VAT Act |\n| §4 application deadline | 5 working days | 2/DPH/2025/MP |\n| §4 decision, compulsory / voluntary | 10 days / 21 days | 2/DPH/2025/MP |\n| Voluntary registration backdating | Not permitted | 2/DPH/2025/MP |\n| §7 threshold, goods from other member states | 14 000 eur net in a calendar year | VAT Act §7(1) |\n| §7 application timing | **Before** the acquisition that reaches 14 000 eur | VAT Act §7(1) |\n| §7 voluntary registration commitment | Must tax acquisitions for at least 2 calendar years | FS SR §7 information sheet |\n| §7a threshold | **None** (\"nezáleží na výške ceny služby\") | FS SR §7a information sheet |\n| §7a application timing | Before receiving the service; before supplying the service | VAT Act §7a(1), (2) |\n| §7 / §7a decision and IČ DPH allocation | Not later than 10 days (amended from 7, from 1 Jan 2025) | VAT Act §7(3), §7a(3) |\n| §7 / §7a input VAT deduction | **None.** Registrant is not a platiteľ dane | FS SR §7a information sheet |\n| §7 / §7a return and payment | 25 days after the end of the month in which the liability arose. No nil returns. | FS SR §7a information sheet |\n| Minimum tax payable | No obligation where the tax due is not more than 5 eur | FS SR §7a information sheet |\n| EC Sales List for §7a services supplied | Quarterly, within 25 days of quarter end. No nil listing. | FS SR §7a information sheet |\n| Invoice deadline, §15(1) services to another member state | Within 15 days from the end of the month of supply (or of an advance payment), marked \"prenesenie daňovej povinnosti\" | VAT Act § 72(2), § 73(1)(d), § 74(1)(k) |\n| Invoice retention | 10 years | FS SR §7 information sheet |\n| §7 deregistration test | Below 14 000 eur in the current year **and** the preceding year | FS SR §7 information sheet |\n| Registration form version | Confirm before filing (guidance cites ver. 2015) | FS SR §7a information sheet |\n| Tax period for a new §4 payer | Calendar month. Quarterly only after more than 12 months from the end of the month of registration, with turnover under 100 000 eur in the preceding 12 months | VAT Act § 77(1), (2) |\n| Deadline ending on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |\n| Late-registration fine | 100 to 30 000 eur; not imposed for a first breach. Every missed return and control statement must then be filed in date order | Tax Procedure Code § 155(1)(c), (4); VAT Act § 78(9), § 78a(14) |\n| Deregistration on request | After at least one calendar year as a payer, if turnover in the previous calendar year did not exceed 50 000 eur | VAT Act § 81(1)(a) |",
+      "old_unit_sha256": "099ee5b0aa19a5612bbf86826a9ae4e388f2d18cd5b1468adf61a3ecf46d1485",
+      "current_LF": [
+        34,
+        123
+      ],
+      "disposition": "Everyoldtableitem retained; currentREGDPv24resolved, historic2015reference preserved ashistory; latefine/statusderegcorrect."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 40,
+      "old_LF_start": 148,
+      "old_LF_end": 148,
+      "old_text": "## Worked example",
+      "old_unit_sha256": "40bb647793c68af3f8f96c521f14672b30afb6da09895a4844b395c83dda02f1",
+      "current_LF": [
+        137,
+        137
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 41,
+      "old_LF_start": 150,
+      "old_LF_end": 150,
+      "old_text": "**Jana, an SZČO web developer in Košice.** Not VAT-registered at 1 January 2026.",
+      "old_unit_sha256": "2395c8b520fe9101be7715beca6df7240e95c119bd5b0423e6f91978a09a900f",
+      "current_LF": [
+        141,
+        141
+      ],
+      "disposition": "Jana facts retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 42,
+      "old_LF_start": 152,
+      "old_LF_end": 152,
+      "old_text": "**Part 1, the §7a trigger she did not see coming.** In January 2026 Jana buys 200 eur of advertising from **Meta Platforms Ireland Ltd**. Place of supply Slovakia under §15(1), and Jana is liable under §69(3).",
+      "old_unit_sha256": "2490da7e475357740a380ac8418a7356570e95e3f250f6ed98196c235d9fc955",
+      "current_LF": [
+        141,
+        141
+      ],
+      "disposition": "Ireland200receipt fact retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 43,
+      "old_LF_start": 154,
+      "old_LF_end": 158,
+      "old_text": "- She was required to file the §7a application **before receiving that first service**. Amount is irrelevant.\n- She self-assesses: 200 × 23% = **46 eur**.\n- She files a VAT return for January 2026 by **25 February 2026** and pays 46 eur. Above the 5 eur de minimis, so payment is due.\n- She **cannot deduct** the 46 eur. Her real cost of the advertising is **246 eur**, not 200.\n- She continues to invoice her Slovak clients **without VAT**. The §7a number does not make her a payer.",
+      "old_unit_sha256": "6101ffd0e6efa250dbd098e35d727be155045e117b35166d3fdfe59022e9fb94",
+      "current_LF": [
+        143,
+        143
+      ],
+      "disposition": "Allfivebullets retained:before/46/25Feb/246/nonpayer."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 44,
+      "old_LF_start": 160,
+      "old_LF_end": 160,
+      "old_text": "Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.",
+      "old_unit_sha256": "507b26610477f84733a9d9574093069cbd5c713c3d0c62e60e77181ee9e92217",
+      "current_LF": [
+        145,
+        145
+      ],
+      "disposition": "USsameRC/no7a retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 45,
+      "old_LF_start": 162,
+      "old_LF_end": 162,
+      "old_text": "**Part 2, the §4 threshold.** Jana bills Slovak clients 4 500 eur net per month, and a German agency 2 000 eur per month for §15(1) services. The German fees have their place of supply in Germany and **do not enter her turnover at all**.",
+      "old_unit_sha256": "4f363a5b1963bfe93c4e787002c15b0c63d191366ee2973fdb26a2add4127eee",
+      "current_LF": [
+        170,
+        170
+      ],
+      "disposition": "Local/Germanturnover facts retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 46,
+      "old_LF_start": 164,
+      "old_LF_end": 167,
+      "old_text": "| Date | Slovak supplies (net) | Cumulative turnover |\n|---|---|---|\n| 31 Jan to 30 Nov 2026 | 11 × 4 500 | 49 500 |\n| 10 Dec 2026 | 4 500 | **54 000** |",
+      "old_unit_sha256": "63c0da043fdb17d5a54b3f15c865d1669cf9dc1b7e0dc85f1e2ccc901f532cce",
+      "current_LF": [
+        172,
+        175
+      ],
+      "disposition": "Bothturnoverrows retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 47,
+      "old_LF_start": 169,
+      "old_LF_end": 169,
+      "old_text": "She exceeds 50 000 eur on 10 December 2026. Trigger A applies (54 000 is over 50 000 but under 62 500), so she becomes a VAT payer on **1 January 2027** and the 10 December invoice is correctly issued **without** VAT. Her application is due within five working days.",
+      "old_unit_sha256": "c42f1ebac48d8cb3079b76afd3c3aa45f320836685bfb69133237307ecb82901",
+      "current_LF": [
+        177,
+        177
+      ],
+      "disposition": "54000nextJanstatus retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 48,
+      "old_LF_start": 171,
+      "old_LF_end": 171,
+      "old_text": "**Part 3, the counterfactual that changes everything.** Suppose instead the 10 December invoice is a one-off project at **14 000 eur net**, taking cumulative turnover to **63 500 eur**.",
+      "old_unit_sha256": "62a6800f46a99d06fc6d6b82bd341194c641611d3c7e234c08ec1537b6c37265",
+      "current_LF": [
+        179,
+        179
+      ],
+      "disposition": "Expressnet14000counterfactual retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 49,
+      "old_LF_start": 173,
+      "old_LF_end": 175,
+      "old_text": "- She now exceeds 62 500, so **Trigger B** applies.\n- She becomes a payer **at the moment of that supply**, and must charge VAT **on that invoice itself**: 14 000 × 23% = **3 220 eur**, total **17 220 eur**.\n- Had the contract been priced at 14 000 eur **VAT-inclusive**, she would bear the VAT herself: 14 000 / 1.23 = 11 382.11 net, 2 617.89 VAT. And the net figure would have taken cumulative turnover only to 60 882.11, which does **not** exceed 62 500. This circularity is why contracts near the threshold must be priced net.",
+      "old_unit_sha256": "584bde9c4d87af011cce4a73679758dd02ee36290e5ec099572a210d83331cdb",
+      "current_LF": [
+        179,
+        181
+      ],
+      "disposition": "Net3220/17220 retained; fixedgross11382.11/2617.89diagnostic explicitly notstatusdetermination."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 50,
+      "old_LF_start": 177,
+      "old_LF_end": 177,
+      "old_text": "**Part 4, what §4 registration changes.** From the moment she is a payer, the Meta Ireland VAT reverses out: she declares the 23% and deducts it in the same return, so the advertising costs her 200 eur again.",
+      "old_unit_sha256": "5664e777271302dbfc43c3e33a802cfe9da90cfea9c238fb4affdfb36dcd42d7",
+      "current_LF": [
+        143,
+        143
+      ],
+      "disposition": "Payerpairedinputcredit retained conditional49/51."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 51,
+      "old_LF_start": 179,
+      "old_LF_end": 179,
+      "old_text": "## Sources",
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_LF": [
+        225,
+        225
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 52,
+      "old_LF_start": 181,
+      "old_LF_end": 188,
+      "old_text": "- Act No. 222/2004 Coll. on VAT, version in force 1 January 2026 to 31 December 2026 (§ 4, 7, 7a, 27, 72, 73, 74, 77, 78, 78a, 81, 85kn), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html\n- Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§ 27, 154, 155), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html\n- Finančné riaditeľstvo SR, 2/DPH/2025/MP - Metodický pokyn k registrácii platiteľa DPH podľa § 4 a § 5 zákona č. 222/2004 Z. z. (22 September 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf\n- Finančné riaditeľstvo SR, Úplné znenie zákona č. 222/2004 Z. z. o DPH (consolidated to 28 January 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2025/2025.01.28_zakon_DPH.pdf\n- Finančná správa SR, Sadzby dane: https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane\n- Finančná správa SR, Registračná povinnosť pre DPH: https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/registracna-povinnost-pre-dph\n- FS SR, Informácia k povinnostiam osoby registrovanej podľa § 7: https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.19_DPH_reg_par7.pdf\n- FS SR, Informácia k povinnostiam osoby registrovanej podľa § 7a: https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.18_DPH.pdf",
+      "old_unit_sha256": "5576c10d29fe7cf0ab8c97345c315f29ff9b2c97dd27ad82013bfb0797597fc0",
+      "current_LF": [
+        229,
+        238
+      ],
+      "disposition": "AlloriginalsourceURLs retained and datednewprimary/forms added."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 53,
+      "old_LF_start": 190,
+      "old_LF_end": 190,
+      "old_text": "**Caution on the two 2018 information sheets.** They remain published by the tax authority and are the clearest official statements of the §7 and §7a *procedural* obligations and of the no-deduction rule, which is why they are cited. They are **out of date on two points**: they state a 20% tax rate (now 23%) and a 7-day registration decision period (now 10 days from 1 January 2025). Where they conflict with the statute, the statute governs.",
+      "old_unit_sha256": "2673030c37472a49c648cf4f933c6cb4af176302e761da39d674f831a2b2bc34",
+      "current_LF": [
+        238,
+        238
+      ],
+      "disposition": "2018caution retained."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 54,
+      "old_LF_start": 192,
+      "old_LF_end": 192,
+      "old_text": "Not yet confirmed: the current version of the registration form.",
+      "old_unit_sha256": "532a44955f7925de3f9074c12266e6ce7788cdde7883fc348ddf67f0396783cd",
+      "current_LF": [
+        106,
+        113
+      ],
+      "disposition": "Oldunconfirmedregistrationform explicitly resolved withactualREGDPv24/catalogvalidity, nohistoryloss."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 55,
+      "old_LF_start": 194,
+      "old_LF_end": 194,
+      "old_text": "> Contributed by Michael Cutajar.",
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "current_LF": [
+        242,
+        242
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 56,
+      "old_LF_start": 196,
+      "old_LF_end": 196,
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_LF": [
+        244,
+        244
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 57,
+      "old_LF_start": 198,
+      "old_LF_end": 198,
+      "old_text": "---",
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_LF": [
+        1,
+        1
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 58,
+      "old_LF_start": 200,
+      "old_LF_end": 200,
+      "old_text": "## Talk to a verified accountant",
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_LF": [
+        248,
+        248
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 59,
+      "old_LF_start": 202,
+      "old_LF_end": 205,
+      "old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_LF": [
+        250,
+        253
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 60,
+      "old_LF_start": 207,
+      "old_LF_end": 208,
+      "old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_LF": [
+        255,
+        256
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    },
+    {
+      "comparator": "origin/main",
+      "unit": 61,
+      "old_LF_start": 210,
+      "old_LF_end": 212,
+      "old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_LF": [
+        258,
+        260
+      ],
+      "disposition": "Exact retained unit; all embedded topics preserved."
+    }
+  ]
+}

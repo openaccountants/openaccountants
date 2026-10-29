@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "base_head": "1cbc9afd",
+  "current_head": "f2f2a0f4ebc8b31692634fdd206e60d7d7c9e209",
+  "files": [
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/slovakia-pit.md",
+      "sha256": "24a455b0de75ccdfa2c127cd843ba28ad67cad22085a744d6e4d8db299aeb390",
+      "bytes": 44119,
+      "matches_frozen_assignment": true
+    },
+    {
+      "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/skills/international/slovakia/sk-corporate-income-tax.md",
+      "sha256": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+      "bytes": 49192,
+      "matches_frozen_assignment": true
+    }
+  ],
+  "review_scope": "exact two-Guide current-form delta only",
+  "unresolved_actionable_delta_findings": 0,
+  "prior_artifacts": "untouched",
+  "guide_readme_git_mutations_by_reviewer": false
+}

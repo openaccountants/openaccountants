@@ -1,0 +1,217 @@
+
+ KVDPHv25 - Kontrolný výkaz pre daň z pridanej hodnoty (platný od 1.1.2025)
+Pre kompletnú funkčnosť aplikácie je potrebné povoliť JavaScript
+ KONTROLNÝ VÝKAZ 
+ DAŇ Z PRIDANEJ HODNOTY 
+ podľa § 78a zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov (ďalej len "zákon") 
+Identifikačné číslo pre daň z pridanej hodnoty *
+ SK 
+ IČ DPH * 
+Druh kontrolného výkazu
+ riadny
+ opravný
+ dodatočný
+Obdobie
+ Mesiac 010203040506070809101112 
+ Štvrťrok 1234 
+ Rok *20252026 
+Názov alebo obchodné meno právnickej alebo meno a priezvisko fyzickej osoby *
+ Názov alebo obchodné meno právnickej alebo meno a priezvisko fyzickej osoby * 
+Adresa sídla alebo trvalého pobytu
+ Ulica 
+ PSČ 
+ Číslo telefónu 
+ Štát 
+ Ulica 
+ PSČ 
+ Číslo telefónu 
+ Štát 
+ Číslo 
+ Obec * 
+ E-mailová adresa 
+ Číslo 
+ Obec 
+ E-mail 
+A. Údaje z vyhotovenej faktúry o dodaní tovarov a služieb
+A.1. Údaje z vyhotovenej faktúry o dodaní tovarov a služieb, ktorú bol platiteľ dane (ďalej len „platiteľ“) povinný vyhotoviť podľa § 71 až 75 zákona, pri ktorých je osobou povinnou platiť daň (okrem zjednodušenej faktúry a faktúry o dodaní plnení oslobodených od dane)
+ Identifikačné číslo pre daň odberateľa 1 
+ Poradové číslo faktúry 2 
+ Dátum dodania tovaru alebo služby alebo dátum prijatia platby 3 
+ Základ dane v eurách 4 
+ Sadzba dane % 5 
+ Suma dane v eurách 6 
+ Kód opravy7 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+A.2. Údaje z vyhotovenej faktúry o dodaní tovarov a služieb, ktorú bol platiteľ povinný vyhotoviť podľa § 71 až 75 zákona, pri ktorých je osobou povinnou platiť 
+daň príjemca plnenia podľa § 69 ods.12 písm. f) až j) zákona
+ Identifikačné číslo pre daň odberateľa 1 
+ Poradové číslo faktúry 2 
+ Dátum dodania tovaru alebo služby alebo dátum prijatia platby 3 
+ Základ dane v eurách 4 
+ Číselný kód tovaru podľa Spoločného colného sadzobníka [tovar podľa § 69 ods. 12 písm. f) a g) zákona] 5 
+ Druh tovaru [tovar podľa § 69 ods. 12 písm. h) a i) zákona] 6 IO (integrované obvody)MT (mobilné telefóny) 
+ Množstvo tovaru [tovar podľa § 69 ods. 12 písm. f) až i) zákona] 7 
+ Merná jednotka 8 kgtmks 
+ Kód opravy 9 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+B. Údaje z prijatej faktúry o dodaní tovarov a služieb alebo iného dokladu o dodaní tovarov a služieb
+B.1. Údaje z prijatej faktúry alebo iného dokladu, pri ktorom je osobou povinnou platiť daň príjemca plnenia podľa § 69 ods. 2, 3, 6, 7 a 9 až 12 zákona (okrem faktúry o dodaní plnení oslobodených od dane)
+ Identifikačné číslo pre daň dodávateľa 1 
+ Poradové číslo faktúry alebo číselná identifikácia dokladu 2 
+ Dátum dodania tovaru alebo služby alebo dátum prijatia platby 3 
+ Základ dane v eurách 4 
+ Sadzba dane % 5 
+ Suma dane v eurách 6 
+ Výška odpočítanej dane v eurách 7 
+ Kód opravy 8 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+B.2. Údaje z prijatej faktúry, z ktorej príjemca plnenia uplatňuje odpočítanie dane a ktorú vyhotovil platiteľ, ktorý je osobou povinnou platiť daň podľa § 69 ods. 1 zákona
+ Identifikačné číslo pre daň dodávateľa 1 
+ Poradové číslo faktúry 2 
+ Dátum dodania tovaru alebo služby alebo dátum prijatia platby 3 
+ Základ dane v eurách 4 
+ Sadzba dane % 5 
+ Suma dane v eurách 6 
+ Výška odpočítanej dane v eurách 7 
+ Kód opravy 8 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+B.3.1. Údaje zo všetkých prijatých zjednodušených faktúr podľa § 74 ods. 3 písm. a) a b) zákona, z ktorých príjemca plnenia uplatňuje odpočítanie dane (ak je celková suma odpočítanej dane za príslušné zdaňovacie obdobie menej ako 3 000 eur)
+ Celková suma základov dane v eurách 1 
+ Celková suma dane v eurách 2 
+ Celková suma odpočítanej dane v eurách 3 
+ Kód opravy 4 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+B.3.2. Údaje zo všetkých prijatých zjednodušených faktúr podľa § 74 ods. 3 písm. a) a b) zákona, z ktorých príjemca plnenia uplatňuje odpočítanie dane (ak je celková suma odpočítanej dane za príslušné zdaňovacie obdobie 3 000 eur a viac)
+ Identifikačné číslo pre daň dodávateľa 1 
+ Celková suma základov dane v eurách 2 
+ Celková suma dane v eurách 3 
+ Celková suma odpočítanej dane v eurách 4 
+ Kód opravy 5 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+ pomocneValidacnePole 
+ pomocneValidacnePole2 
+ pomocneValidacnePole3 
+C. Údaje z faktúry podľa § 71 ods. 2 zákona, ktorá mení pôvodnú faktúru (ďalej len „opravná faktúra“) a údaje z opravného dokladu podľa § 25a zákona (ďalej len „opravný doklad“) 
+C.1. Údaje z vyhotovenej opravnej faktúry a opravného dokladu
+ Identifikačné číslo pre daň odberateľa 1 
+ Poradové číslo opravnej faktúry alebo opravného dokladu2 
+ Poradové číslo pôvodnej vyhotovenej faktúry 3 
+ Rozdiel základu dane v eurách 4 
+ Sadzba dane % 5 
+ Rozdiel sumy dane v eurách 6 
+ Číselný kód tovaru podľa Spoločného colného sadzobníka [tovar podľa § 69 ods. 12 písm. f) a g) zákona] 7 
+ Druh tovaru [tovar podľa § 69 ods. 12 písm. h) a i) zákona] 8 IO (integrované obvody)MT (mobilné telefóny) 
+ Rozdiel množstva tovaru [tovar podľa § 69 ods. 12 písm. f) až i) zákona] 9 
+ Merná jednotka 10 kgtmks 
+ Oprava základu dane podľa § 25a zákona 11 
+ Kód opravy 12 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+C.2. Údaje z prijatej opravnej faktúry a prijatého opravného dokladu
+ Identifikačné číslo pre daň dodávateľa 1 
+ Poradové číslo opravnej faktúry alebo opravného dokladu2 
+ Poradové číslo pôvodnej prijatej faktúry 3 
+ Rozdiel základu dane v eurách 4 
+ Sadzba dane % 5 
+ Rozdiel sumy dane v eurách 6 
+ Rozdiel v sume odpočítanej dane v eurách 7 
+ Oprava odpočítanej dane podľa § 53b zákona8 
+ Kód opravy 9 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+D. Údaje o dodaní tovarov a služieb iných ako uvedených v časti A., z ktorých je platiteľ osobou povinnou platiť daň
+D.1. Údaje o obratoch evidovaných všetkými pokladnicami e-kasa klient
+ Celková suma obratov v eurách evidovaných všetkými pokladnicami e-kasa klient1 
+ Celková suma základov dane vrátane opráv v eurách (základná sadzba) 2 
+ Celková suma dane v eurách (základná sadzba) 3 
+ Celková suma základov dane vrátane opráv v eurách (znížená sadzba) 4 
+ Celková suma dane v eurách (znížená sadzba) 5 
+ Kód opravy 6 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+D.2. Údaje o dodaní tovarov a služieb, ktoré sa neevidujú pokladnicami e-kasa klient
+ Celková suma základov dane vrátane opráv v eurách (základná sadzba) 1 
+ Celková suma dane v eurách (základná sadzba) 2 
+ Celková suma základov dane vrátane opráv v eurách (znížená sadzba) 3 
+ Celková suma dane v eurách (znížená sadzba) 4 
+ Kód opravy 5 1 (zrušenie záznamu)2 (nový záznam) 
+ Predchádzajúca strana
+ 1/1
+ Nasledujúca strana 
+ Pridať
+ Odobrať 
+ Prejsť na 
+  stranu 
+Vysvetlivky k vzoru:
+ Poradové číslo faktúry 
+ Uvádzajú sa okrem číselných znakov aj písmená a iné znaky, napríklad pomlčky, lomky, hviezdičky, ak sú súčasťou poradového čísla faktúry. Poradové číslo sa uvádza bez medzier. 
+ Dátum dodania tovaru alebo služby alebo dátum prijatia platby 
+ Uvádza sa deň, mesiac a rok DD.MM.RRRR. 
+ Základ dane 
+ Uvádza sa s dvomi desatinnými miestami bez zaokrúhlenia. 
+ Druh tovaru 
+ Mobilné telefóny sa uvádzajú skratkou MT a integrované obvody sa uvádzajú skratkou IO. 
+ Množstvo tovaru 
+ Uvádza sa s dvomi desatinnými miestami bez zaokrúhlenia. 
+ Merná jednotka 
+ Uvádza sa kg, t, m alebo ks. 
+ Oprava základu dane podľa § 25a zákona 
+ Ak ide o opravu základu dane podľa § 25a zákona, vyznačí sa "x", v opačnom prípade zostáva stĺpec prázdny. 
+ Oprava odpočítanej dane podľa § 53b zákona 
+ Ak ide o opravu odpočítanej dane podľa § 53b zákona, vyznačí sa "x", v opačnom prípade zostáva stĺpec prázdny. 
+ Kód opravy 
+ Údaj sa vypĺňa len v dodatočnom kontrolnom výkaze.
+Pre zrušenie nesprávne uvedených údajov v riadnom kontrolnom výkaze sa uvádza v stĺpci „kód opravy“ číslo 1.
+Pre uvedenie nových údajov, ktoré neboli v riadnom kontrolnom výkaze správne uvedené alebo ktoré neboli v riadnom kontrolnom výkaze uvedené vôbec, sa v stĺpci „kód opravy“ uvádza číslo 2. 
+Uložené formuláre

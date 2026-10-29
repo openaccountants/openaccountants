@@ -1,0 +1,91 @@
+{
+  "baseline": "f6c2e32f2bfd0f841392cf43f14cfaee00bc4d51",
+  "scope": "mechanical HEAD-to-worktree preservation, not a substitute for independent original-rewrite substantive no-loss review",
+  "rows": [
+    {
+      "path": "skills/international/slovakia/sk-corporate-income-tax.md",
+      "sha256": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+      "original_url_occurrences": 59,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {},
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/sk-cross-border.md",
+      "sha256": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+      "original_url_occurrences": 38,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {},
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/sk-payroll-social.md",
+      "sha256": "4879e2ac41b77ef4def3a4a0a0574dad31e3c270a9823f6821b5b524fb3232b1",
+      "original_url_occurrences": 42,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {
+        "version": [
+          "0.5",
+          "0.8"
+        ]
+      },
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/sk-transfer-pricing.md",
+      "sha256": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+      "original_url_occurrences": 49,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {},
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/slovakia-pit.md",
+      "sha256": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+      "original_url_occurrences": 37,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {
+        "version": [
+          "1.4",
+          "1.6"
+        ]
+      },
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+      "sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+      "original_url_occurrences": 47,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {},
+      "protected_metadata_preserved": true
+    },
+    {
+      "path": "skills/international/slovakia/slovakia-vat-return.md",
+      "sha256": "09a343035c30983ce93e776f81bbe1469021b3525aaf26e0a907867536f52886",
+      "original_url_occurrences": 83,
+      "lost_original_url_occurrences": {},
+      "original_oa_blocks_byte_identical": true,
+      "CTA_byte_identical": true,
+      "metadata_changes": {
+        "version": [
+          "2.4",
+          "2.5"
+        ]
+      },
+      "protected_metadata_preserved": true
+    }
+  ]
+}

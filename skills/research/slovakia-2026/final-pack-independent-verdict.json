@@ -1,0 +1,19 @@
+{
+  "review_type": "advisorytier2wholepublishedtaxpack",
+  "reviewed_guides": 7,
+  "readme": true,
+  "new_findings": 6,
+  "new_findings_open": 0,
+  "original_findings_rechecked": 23,
+  "examples": 14,
+  "independent_expected_fields": 137,
+  "additional_controls": 18,
+  "baseline_units": 423,
+  "verbatim_units": 351,
+  "changed_units_reviewed": 72,
+  "scoped_schema": "PASS7fileszeroerrorszerowarnings",
+  "whole_country_completion": "PARTIAL",
+  "remaining_ordinary_VAT_gaps": 3,
+  "accountant_attestation": false,
+  "reviewer_guide_git_edits": false
+}

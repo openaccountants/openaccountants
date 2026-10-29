@@ -1,0 +1,972 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/F01-F23-final-closure-matrix.json",
+    "bytes": 9605,
+    "sha256": "338e026111620706b07b676d985d682e52c407cecdd1f3df0683a44eb5c95d9d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/F16-link-fix.json",
+    "bytes": 436,
+    "sha256": "d38150bde0f5519e7fa12dd2e3a838c273e8ed2f062753b3b3319ba8e7e2af6c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/F16-link-options.md",
+    "bytes": 320,
+    "sha256": "2ed37ad6d2481a0c7622fe4161d5ace64ce2fcf3cad284b6c6a075c0703c2107"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R02-R03-fix-manifest.json",
+    "bytes": 317,
+    "sha256": "ec52173bf7edffc74c24834854dd084117b29399b7de9d546db9db28b4685937"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R02-R03-format-options.md",
+    "bytes": 422,
+    "sha256": "e3b65a1b70b05c6f71450c37fdac8514d17099f9f16d1222fa1ecd6a9424740b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R04-fix-manifest.json",
+    "bytes": 522,
+    "sha256": "77050f9fba01f809d688c021fe3a152251c55a7c02ddccf9e32d2b6fc6cb6272"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R04-format-options.md",
+    "bytes": 923,
+    "sha256": "80d7a6c5182116d40e655275576c4f9dabc9f24c021fa73b647c92d4d5702603"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R05-current-SZCO-law.md",
+    "bytes": 4603,
+    "sha256": "d2e225eb10634e266a8de4b18772b5c581cc71c1fa076dd15fa26986b837de1b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R05-fix-manifest.json",
+    "bytes": 1585,
+    "sha256": "c6597ce1ffabcf561365ea72fff527c6c309a34add80f99a127f80fd0cf1a4ad"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R05-format-options.md",
+    "bytes": 1328,
+    "sha256": "4062a84480eb11c62e1af02c103ff989094bade6247f20e303c6174a6f050b64"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R06-fix-manifest.json",
+    "bytes": 699,
+    "sha256": "7de10d3fa62defd1af1968dd33b248a609d38482873e67e45443f1cda25ef4fe"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/R06-format-options.md",
+    "bytes": 935,
+    "sha256": "d77cfeaed4394ebc4b1cb1ee5c0ccf33ffe8ea45d0938ae2fd6ee6f46502ec67"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/README-review-options.md",
+    "bytes": 746,
+    "sha256": "a140d14b069783eca980ed87bf189880047b3ce51e8709e1bf155b89a977e1b1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/actual-primary-read-and-hash-receipts.json",
+    "bytes": 11251,
+    "sha256": "b6547c9f057994de849f827659c1d28c1f8cbc68e5d3b752b91054e03f4e30a7"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/additional-source-boundary-controls.json",
+    "bytes": 2776,
+    "sha256": "049d0e59013dbc957a7bf10a51c5cab40a362e0945da3b6aeb76ecaa80f105e4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-sk-corporate-income-tax.md",
+    "bytes": 27162,
+    "sha256": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-sk-cross-border.md",
+    "bytes": 28515,
+    "sha256": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-sk-payroll-social.md",
+    "bytes": 29140,
+    "sha256": "1f63ecfa92278560ee779b0013d1357cfdb190b075f43e993de2be9fd687f527"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-sk-transfer-pricing.md",
+    "bytes": 33795,
+    "sha256": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-slovakia-pit.md",
+    "bytes": 22641,
+    "sha256": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-slovakia-vat-registration-4-7-7a.md",
+    "bytes": 30456,
+    "sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/baseline-ad42-slovakia-vat-return.md",
+    "bytes": 44412,
+    "sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/candidate-final-guide-hashes.json",
+    "bytes": 2173,
+    "sha256": "93b99a374fdb1814d641b78130a7e1fb320548de83bcf784b26561dbac3477d0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/direct-route-outcomes.json",
+    "bytes": 798,
+    "sha256": "7175da18c73eea6fc7051e2c038a308bc125c9e8f84f64914f1470bbb83116b2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/extracted-source-section-manifest.json",
+    "bytes": 49018,
+    "sha256": "bf827236f5932a36970f79fb0bcef0a66862f7847f7f70e5e9209031ccff0b5b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/final-frozen-guide-manifest.json",
+    "bytes": 2173,
+    "sha256": "93b99a374fdb1814d641b78130a7e1fb320548de83bcf784b26561dbac3477d0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/finalize-review.py",
+    "bytes": 8062,
+    "sha256": "eddba5edb3c9889964645f11565c009c9b85b91d08cbffa44e1b98750010a07f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/findings.json",
+    "bytes": 1871,
+    "sha256": "374e2f989052e452591db2952996d8b8a11826523b834c49c99a61d09428c954"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/additional-body-receipts.json",
+    "bytes": 1014,
+    "sha256": "7e72f24886a860ca37cccb39c5ca26987849cba3550eabf3e42db1970b74a39a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/additional-download-receipts.json",
+    "bytes": 642,
+    "sha256": "c376f9a937a86ee6d76825207603d6d233bd15acbbc5d7271d2a474cf571bcb2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/c110-94.pdf",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/c249-12.pdf",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/c265-18.pdf",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1-page4.png",
+    "bytes": 231443,
+    "sha256": "12606db2786b7b859d09b20c1325f163e1d645097784465b1c0c0da7f535917d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.pdf",
+    "bytes": 939503,
+    "sha256": "ae717c354a1152b759600c83e339bcdd831b26c7c4762e30a3679ec099560dab"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/cit-annex1.txt",
+    "bytes": 13339,
+    "sha256": "1620aa0566f7ee17d7fed7547f340434ffb99fbc40b97e6a6e336accc440f625"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/direct-primary-route-web-receipts.json",
+    "bytes": 114168,
+    "sha256": "66eb69ea6cc3f2cf29a6367202307862d99114c82d50aeb694e024ba87903dd6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/health-current.html",
+    "bytes": 1631779,
+    "sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/ita-current.html",
+    "bytes": 3063459,
+    "sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/kv-method-2023.pdf",
+    "bytes": 820444,
+    "sha256": "41f4a78143f25feaa3a78db262fdc5d0a752d814e22fd52ec2ff58e5dc746667"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/kv-method-2023.txt",
+    "bytes": 164088,
+    "sha256": "c25e214abc8f9be8e1da26976b87bbb78604a858a9e38205784415a829fa4f6d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/nrsr538460.html",
+    "bytes": 35053,
+    "sha256": "e9005591030693d48c40c4e8de470a0457ce6f0c15f68159392ecb677539b3d5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.html",
+    "bytes": 46647,
+    "sha256": "08cdc900b72d77bc86a707275c293fe50d52abd8db1c1585c26408a8723afe06"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.pdf",
+    "bytes": 218692,
+    "sha256": "7ecf9f5009301c3ccaf80f345dc96d8bfccd0da53ecba08bbfa649eb9380bbe6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-122.txt",
+    "bytes": 17055,
+    "sha256": "91e3ed3d806d9e22fa3090d02357ebc844c7fc653e5129c6906e190e91603496"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-amendment-page4.png",
+    "bytes": 406371,
+    "sha256": "90253fbb0b651ee064faea7398be3619c37055432f365ab6f6e481360a289190"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-current-pdf.txt",
+    "bytes": 1207217,
+    "sha256": "a814ccfd746b359c58e1d10576d4c20e059a0ad7e10f8c2531307f2ce934ec0e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-current.html",
+    "bytes": 3900388,
+    "sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/social-current.pdf",
+    "bytes": 4546788,
+    "sha256": "abe128e0dcba2c8a20bac57ad5005a41f2529267ddb5fd2870bf56220454fec1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-partial-month-current.html",
+    "bytes": 39816,
+    "sha256": "0df1cf76e6e2bff1f004dc064db3e27c3e1241984c90a978e98d30376317768d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-partial-month-current.txt",
+    "bytes": 9372,
+    "sha256": "bbe309b52cafc44427a25e16ff51fdf919411a783eaa7d80520c9656e7795dbb"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.html",
+    "bytes": 62800,
+    "sha256": "34c2d2dbd360ecf80047f6eb2a2bf3009b526918a5e12118daa18e524ea8d3be"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-july-current.txt",
+    "bytes": 24715,
+    "sha256": "37053f869fc2347023d3820d00594cfc317e9bbd45fa5751891e4d28fc418a01"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-october-current.html",
+    "bytes": 29654,
+    "sha256": "b555522b8f61a9244bc89657ba741a55855e4b5f4434c6d58df2b3cb6cb5e04f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/sp-szco-october-current.txt",
+    "bytes": 5992,
+    "sha256": "699fec44511d5a7fe930c39797c452730667110f07ea549cb821b19aaab2bdc1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/taxcode-current.html",
+    "bytes": 1506665,
+    "sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh/vat-current.html",
+    "bytes": 1984156,
+    "sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/fresh-download-receipts.json",
+    "bytes": 3406,
+    "sha256": "8d254eb1433d5f8b8890491146a541292850f58a53dad7fe26f7ca11827cd542"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/full-no-loss-unit-ledger.json",
+    "bytes": 578878,
+    "sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/independent-14-example-controls.json",
+    "bytes": 7337,
+    "sha256": "b4afd6083cfaad2d716fbeb1ed51740d5a56a0e6e7ca3298a69cc2506823a406"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/independent-controls.py",
+    "bytes": 9385,
+    "sha256": "f7dbfce9adb4239ff6e3e1a8c53fb7cca133c9d3e6f3514ca9a49aee89263ad2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/protection-check.py",
+    "bytes": 4192,
+    "sha256": "d0fbafd7e40da9475ffbbb98152d5986992b1f5f45d7e8fee992a63437965f39"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/protection-controls.json",
+    "bytes": 9740,
+    "sha256": "df6f9133b1081aad4929907679bf77c34e6b8a69d5148eefe98d1436db5ea510"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/report.md",
+    "bytes": 12422,
+    "sha256": "23df1886b3635c16e2239de2938db9e8d7e8374d9acd0541b2ee21e8444a33dc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/review-verdict.json",
+    "bytes": 555,
+    "sha256": "ff13331275b32998f2d1f141ff91966048f5d3cff053f026a0ad3dfdd0a02496"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-country-examples.txt",
+    "bytes": 60,
+    "sha256": "fe82f070d30e6c6aa5877c230b24b875aab77061a1de73be52410aca841cb567"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-final-copy-alignment.json",
+    "bytes": 405,
+    "sha256": "bf0daaf2a663259ca3447df94a32c158913f90862741860eb6c2722de369265a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-local-validation-provenance.json",
+    "bytes": 477,
+    "sha256": "4deffafacaddabe91f2a5f7a746e946dfdda3155640ee79e2056838e241cdfdf"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-schema-no-index.txt",
+    "bytes": 372,
+    "sha256": "9d8fa9d448dd83ecbb2803abd09220c824c021fc23bb768d1924aa82f8d22b1e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-seven-guide-delta-protection.json",
+    "bytes": 3255,
+    "sha256": "92fd4e18b8adc2dab8f99ea8e1f56d6f6dfd70406784b3c777152d136c18fdbb"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-strict-metadata.txt",
+    "bytes": 81,
+    "sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/root-validation.json",
+    "bytes": 2451,
+    "sha256": "2f770cfeb24681e1f9aa4b55f2bd2eac3daf2359c4e7332be199254989224bcc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/scoped-validation.json",
+    "bytes": 560,
+    "sha256": "1555360660203813774d4b3f75adac98dba04fd52dbcad78d43cf85fda7b52f0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-128.txt",
+    "bytes": 2135,
+    "sha256": "db0226766138d79fddc5af038878238398fbf2ebdd49e1fa6a634876168364bf"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-130.txt",
+    "bytes": 382,
+    "sha256": "7fcd7a89e0b2c8b1655997e1efef534d0333c4e9c5670d1f7354fa314730d2e8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-131.txt",
+    "bytes": 2044,
+    "sha256": "10e565fed1e9c53f3a1318b1ac62467a44a4781d103684b05da32d53f523d2d5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-132.txt",
+    "bytes": 374,
+    "sha256": "a9b2af1aa02e56d377ce58b07ec9f6c60b9b017b8ae802507dc1c77813dc6ab1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-133.txt",
+    "bytes": 147,
+    "sha256": "87972b1a3953f5829659573a5b4124a8c7f6e1ce10dff1c4cc6d75db59f35a2b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-135.txt",
+    "bytes": 150,
+    "sha256": "c996e4462b2e0befaa33bb897d294013d8dffe06bd2d7241a7ba6a6401bbc3f0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-136.txt",
+    "bytes": 425,
+    "sha256": "d24bfac14d8225fdb40153d7fdc90874a73a57e324b1846a89b528bced925acc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-137.txt",
+    "bytes": 352,
+    "sha256": "c4e8f35866774b329671ca228b63212d8f52728791c6f2c93807f2afd47b5f75"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138.txt",
+    "bytes": 10672,
+    "sha256": "0712ef53a347bcd04f55da44fe9c9d89641875cc1746e593b0ca4448ea0d1a11"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-138a.txt",
+    "bytes": 341,
+    "sha256": "cda8d41450be372506e8bde80f320c7c3a040cc9e7a3e8f8c2fcd621b7628864"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-141.txt",
+    "bytes": 1437,
+    "sha256": "303baa074ec7148346e1b47689e577c38a15b441e39054a371e4a6976c9af308"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-143.txt",
+    "bytes": 1740,
+    "sha256": "3a4e76c355b8726ec6a1d56d668396797c905c564afe6103025517e9bc15f81c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-19.txt",
+    "bytes": 1305,
+    "sha256": "92057c53c9d8ac04686dc983fe2b6e1a148401f4794cff4949dc8a5ee20c49b5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-231.txt",
+    "bytes": 7832,
+    "sha256": "b738fe7f4f0acd8a406cf41c2694e6f4cb9b5a1b3394329b33ba27653964c748"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-239.txt",
+    "bytes": 697,
+    "sha256": "75df17c1d27c37f660cb2530da8708ce867baa409b75ed81068e2b2f2df9b697"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-240.txt",
+    "bytes": 1350,
+    "sha256": "7bb8a8324bd5704e5dec914dd69a7df8eb8c28b7b4cab67175549a30e2b07e3a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/10-4.txt",
+    "bytes": 3093,
+    "sha256": "d83e4f5c3d5164d7fe665d0f206a87ea0d4e6f9c208f4aa56d6a7def4b1f200e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-11.txt",
+    "bytes": 8481,
+    "sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-12.txt",
+    "bytes": 4329,
+    "sha256": "c597b01bc7c807c65c2ef294ff54aa199eef9370e4af2ce777c03bda1a8cabbe"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-13.txt",
+    "bytes": 7474,
+    "sha256": "6c34b4240621e5cb27e83f637264fb1af8a9f7d0165a07cbaa347e0578959258"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-15.txt",
+    "bytes": 2744,
+    "sha256": "e998719620b7de6ee9bd5c435d7050eb09d1e5c8a9a8a4c1372e5c854f3c128f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-16.txt",
+    "bytes": 11279,
+    "sha256": "f6a9e63e72e2f46b8f82873201af55521adb9613507bf4636ca16f663b59b39a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-17k.txt",
+    "bytes": 5717,
+    "sha256": "7fdb189067a2a8cd3a597246ee5be2efd5505692fc3ae690ae4beba6e2bb4a41"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18.txt",
+    "bytes": 12467,
+    "sha256": "e88265cfdf4e8d66d0889f67d60de14b3e5dede60a20d8026298a8302eebe333"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-18a.txt",
+    "bytes": 1460,
+    "sha256": "8962392fbacac0197a1e65aae7badf9622ffca5a0d34b79aa8fb8b75c69d6285"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-2.txt",
+    "bytes": 17102,
+    "sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-21a.txt",
+    "bytes": 1825,
+    "sha256": "278027a2d3d90289feeaa131a8d564d862f04683889a717c02a4d5701cabd634"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-26.txt",
+    "bytes": 5321,
+    "sha256": "cdeac9c6f18db06bb00f12fd21e04fd5417bab9b08edf72f99b0b489f7b1931d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-27.txt",
+    "bytes": 1223,
+    "sha256": "a4268d8495162642ffcd382491536ac1c0395006eb96d34dd11322aaf436c3a1"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-30.txt",
+    "bytes": 3488,
+    "sha256": "55284be4bad675f7ea713125d95fe3e7c1b0de911b73e18ba444529f446037a6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33.txt",
+    "bytes": 8546,
+    "sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-33a.txt",
+    "bytes": 6907,
+    "sha256": "0befd9d389407482ef021e41fc60eb67a79162f91398532e7430f6c6b02e97c8"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-34.txt",
+    "bytes": 3487,
+    "sha256": "a9c23077333b6f438bfc641739017938596bbd230ace63138a7a977d163450b3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-35.txt",
+    "bytes": 10501,
+    "sha256": "b833649c6c7d0c7e99d0bc4c0135be2399ac7cdd3301b46644ad66e670f6b88f"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-38.txt",
+    "bytes": 9229,
+    "sha256": "c523b51f58f16d7f325abf9662783e60fd00e145ca92d33293a0277e4ddca360"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-39.txt",
+    "bytes": 10761,
+    "sha256": "2aa574f6c580f85bf35305746125d9da6bffbd1641d55e309caa80d33dd77424"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-4.txt",
+    "bytes": 3091,
+    "sha256": "1eebe2ac095c4ab7d8b977632e7a0938517e3950363be311c298f6de2b2a7bdd"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-42.txt",
+    "bytes": 6698,
+    "sha256": "a9865e27f787a316c14fd324e99383abdfdc2717e9e15c0ec8bc22930e038128"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-43.txt",
+    "bytes": 28474,
+    "sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-44.txt",
+    "bytes": 4103,
+    "sha256": "da20873e714aa5351c684c844208019f88a1c2be47a2db148b2dd7de5303e8f3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-45.txt",
+    "bytes": 4119,
+    "sha256": "c5c21b4929e354d4fe871695ee79e275128a607bd615e18108fa761ac2aa1fae"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46.txt",
+    "bytes": 265,
+    "sha256": "1de681aef7983c0cd32c6602ded67815b8fad01be481cb897de2db08ecd12166"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46a.txt",
+    "bytes": 953,
+    "sha256": "ad055c870cd8652e3a97db91374073d89f420c48a0574d50ba6ea17b4528aef6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-46b.txt",
+    "bytes": 5409,
+    "sha256": "2f4734c20c303289317fea256b22c121578d9914fa6b14608ff0f2e4edddc13c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-47.txt",
+    "bytes": 459,
+    "sha256": "4b5c50ee70b3e651bedaf1c02a7f24948173702b8b657878c4700419a950648d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-48.txt",
+    "bytes": 1444,
+    "sha256": "138c4cfe1c9b0606894715e6a1af98535810e138e63cde82e57ec087b3a408b5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-49.txt",
+    "bytes": 9795,
+    "sha256": "765703d38f40482ff0f0169ceccc28e6cc4b6bfedc5ec79093657576ef004dfa"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-5.txt",
+    "bytes": 18543,
+    "sha256": "de6026e151991838127503901dcfcfe3abb324fdf0ca1ec86258e1d887eb1693"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-51ea.txt",
+    "bytes": 901,
+    "sha256": "21ad11054b3a9721ace9bc3ab6c896e3a2811d34b258c3741dca3fcb1cb33309"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzy.txt",
+    "bytes": 8264,
+    "sha256": "ff603324e8551e6b6d993ce2b23baabd3f40347bae3038bffc5024a59a2319bd"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzz.txt",
+    "bytes": 2744,
+    "sha256": "9551152e95bf034fa754c4b5a70daf667d2b28683d0f7e5be7e2caf944545312"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzb.txt",
+    "bytes": 2790,
+    "sha256": "1eee93ce9c8c97e48c713b395aa704cae7cc1c85a007a8e048425e2051707a04"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzj.txt",
+    "bytes": 1028,
+    "sha256": "7d127db77f3dd22ca09dec2a78817b33d1e70293ffb1d93931703fec5f7c30a2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-52zzzk.txt",
+    "bytes": 582,
+    "sha256": "dd195d40bea3a94cc730d7c7b00ee081afbbd2b1bd399628b9aa31b1c6651967"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-6.txt",
+    "bytes": 9042,
+    "sha256": "bf01fbb2aaa0c80967da03d28ff2e8e386018809a21e3d81cb87cec384816c49"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-7.txt",
+    "bytes": 4603,
+    "sha256": "cc2ed36e9635cbed531d1e49a2a8625d90bb4d1f4dd424ac90d083d3093df582"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-8.txt",
+    "bytes": 14360,
+    "sha256": "eba2f8980eda303b3aa0227fcaacd9783973dfc2cbf4aecc13631bbd39394687"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/13-9.txt",
+    "bytes": 20535,
+    "sha256": "e07a2c392761ba5f9974a423c7bf6480e1bbef28b225e4726930ffcc35625c0d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-11.txt",
+    "bytes": 6738,
+    "sha256": "860c02de388db2a86180089b395b53729442240d336adbd6ae2742e665141a50"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-15.txt",
+    "bytes": 1416,
+    "sha256": "de4a20c75eeb484eba3f1711878d1fad71d176712a195d8801ea9f7bc37b1b46"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-19.txt",
+    "bytes": 7355,
+    "sha256": "6f74bde5dbfab5c82cc2079c9d7be2e6adf92909dd68b060ecf29aa66a2b4107"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-2.txt",
+    "bytes": 1376,
+    "sha256": "dd5e2dab264cb36db9fffa1326aaa0981b3b54f1d21b033cce6ff4d982a84bc3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-22.txt",
+    "bytes": 6036,
+    "sha256": "38cf31ae80b2063c59a32a2d57354e434cc51b4517f5a4a795257f83bbb2b914"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-24.txt",
+    "bytes": 1569,
+    "sha256": "46da979d88118c7b0d436b18c5847660a30118b1298f326b441dde3739435098"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-25.txt",
+    "bytes": 3614,
+    "sha256": "bc377da728783f3704b4425acb858b1a144b5efc09ccfb2481abdc1642fccab0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-27.txt",
+    "bytes": 2368,
+    "sha256": "1ec4d246def54856a71377f444b3e468b16d37649f1c350f6a525d707d47579d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-3.txt",
+    "bytes": 2444,
+    "sha256": "e9de28edc85d0af6a33151159e46a57589cfddf0f553c9dbbbf7518bbdd4006c"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-38.txt",
+    "bytes": 5071,
+    "sha256": "93dcfb16dde6902924652a8a3578d7459d1c76638c590ae67006ac56e58bc406"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4.txt",
+    "bytes": 12436,
+    "sha256": "f83af38a63caa6e950a5215b1331150de94d9d44872ff822d5b04aae4e4de974"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-49.txt",
+    "bytes": 5779,
+    "sha256": "e9695400f9f588a7cdedc63d6d9166b4c08a6dbec9de4e3e016cf184a46d2b6a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4a.txt",
+    "bytes": 1212,
+    "sha256": "fe74040f946f6d0a4c799ac05f19f5fd43c7b3d5dc9d22421d30866080c1b5a2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-4b.txt",
+    "bytes": 5929,
+    "sha256": "480639cc4521ac24f67a8dea0606f0953212ba4cb2152f7d8349f4fd8fd7aca5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-5.txt",
+    "bytes": 5203,
+    "sha256": "508d828a647c562d29056b776568b75ce10199bfc1a67650330d5511133a94e7"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-50.txt",
+    "bytes": 2165,
+    "sha256": "c3f9ab9ac7425b3f35c381a3ae92ab56e2011bd0f7c216745b2b826144254494"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-51.txt",
+    "bytes": 2807,
+    "sha256": "24f448e3ae6d3957ace49e4f3f69ab4641e35705d00f967b4b773a53ca8d96a6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-52a.txt",
+    "bytes": 1205,
+    "sha256": "32bc554e657086208bc3dd44a68528c6f53d732cadcc9962cdb262d1f9daa755"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-53.txt",
+    "bytes": 5406,
+    "sha256": "27fb0d3bf0e146213cbf0597b763da72b24f8ce3bfae19832c2ab2d3c9f5e660"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-54.txt",
+    "bytes": 4349,
+    "sha256": "fca70488674d3d363de5c13e2f64e162fb2428a6a5fa28d4766b5e2cb9904801"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-69.txt",
+    "bytes": 10067,
+    "sha256": "dd9aa4219f45daf9f5b8704840647bfb0a509e051199ad582d58496b6727b8c4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7.txt",
+    "bytes": 1297,
+    "sha256": "a617fdd0ff540002f14103ba1fb1b0588db5deb0db786b4f820c8e463a09973b"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-77.txt",
+    "bytes": 2188,
+    "sha256": "19904b3d643daf5b8ca2497ee4b63383555830fa74331d7ecd41ede37f04da35"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78.txt",
+    "bytes": 5712,
+    "sha256": "a5cf422daf617e0be9ba97d7e9527cda4f8e913c4af60ddc1b693ddbe8db3052"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-78a.txt",
+    "bytes": 9199,
+    "sha256": "4748134ba0b8a461be3d7496459a3bfdabf02f099111c32957d6b869e4179b75"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-79.txt",
+    "bytes": 6563,
+    "sha256": "f03a5f2d483cb3c0bf1a35562923e3cf4ae24286d18ce9c79205588007101224"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-7a.txt",
+    "bytes": 1527,
+    "sha256": "02ead7fe5c074971ea785c927d81518e2d0868bdbfbd99a02f2d3919205dc053"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-80.txt",
+    "bytes": 6911,
+    "sha256": "2aad0897ea7c90e91de46be3b15be7f07a24e573c4bf8dd989ffef5c41dc0f98"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-81.txt",
+    "bytes": 5706,
+    "sha256": "7b4d6d2644479d8636625beff7b4d1799306e0a24334d481cabe9f09b655e73d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-82.txt",
+    "bytes": 1467,
+    "sha256": "29a528dc77b42cccb252bb8f44b6cfbdfca4c7094c157abfaf7e76f110d4d6e0"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-84a.txt",
+    "bytes": 2130,
+    "sha256": "e9697ad1fc5caab81be62f7586f2545dd329d39c5d0605913cd6d5154d4937db"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/17-85n.txt",
+    "bytes": 6846,
+    "sha256": "bbfeff90eccd5ef1d4cbc47593173aa5fca9c77f96a5aaf0589759346b742b53"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-11.txt",
+    "bytes": 10805,
+    "sha256": "c021c541cc54872b6dd83e0a8489a1637396cfe001fc5d75a141049c12a46481"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-12.txt",
+    "bytes": 2097,
+    "sha256": "53a29e12e25fc345627299a59b378bee72e8f7fba8f353de2add9971b01b9d9d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-13.txt",
+    "bytes": 7007,
+    "sha256": "e74cbe6c9395256c95f1db08ce036c1c8ea6dfc9f785c63e67db90ec8882206e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-13a.txt",
+    "bytes": 2502,
+    "sha256": "bebed623470f16e99f523fe0766173772f7c8085cfcd9d7080eb8a3c0a311a01"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-16.txt",
+    "bytes": 7723,
+    "sha256": "49b643329f02a523f1a4817a12bfa405f15750e50e17a95c64ad7f1b5c6b1810"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-16a.txt",
+    "bytes": 2051,
+    "sha256": "a0d082786ba531804e0a57960f624c1fe56c4a3803586463c0dcd88fc66a8a02"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-17.txt",
+    "bytes": 3008,
+    "sha256": "e6f28900fc14b8c04f1439f11b8d61b51c8bc27014ddca3458eb74bc0e505633"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-18.txt",
+    "bytes": 2441,
+    "sha256": "fcfba7df6b4605b47b47d4a2da06f0dd6044a66091492a7458c0af974d2378a9"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-19.txt",
+    "bytes": 17611,
+    "sha256": "fbb4bfc80acbc1fd0e9e1929e3c261320acf097553479060d8f01ceff01037a6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-20.txt",
+    "bytes": 3764,
+    "sha256": "e08877891c3a4d7f119d2287468fcb168c32f043e3c48455f624c8327edbeeb4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-26.txt",
+    "bytes": 1507,
+    "sha256": "332506cc4d0891f15efe4ec500321a6bbe647fad6c060ef96244c7601cc69ade"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-38ezk.txt",
+    "bytes": 1207,
+    "sha256": "5a75a9d330b12fea05cfa9967fffd373b343640f6c473b8644a52726b9cb18ac"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/18-38ezl.txt",
+    "bytes": 1376,
+    "sha256": "1737434ccbe45b98de4b93cbf18a4a424e56898195026ffdbb0fa704d7baf9e6"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-14.txt",
+    "bytes": 706,
+    "sha256": "24aebf7d908e07b31932d6b9b39cfd94ea236dd8825848116ba01b8f33202956"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-154.txt",
+    "bytes": 2105,
+    "sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-155.txt",
+    "bytes": 9236,
+    "sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-156.txt",
+    "bytes": 6054,
+    "sha256": "bf8f5309f614dc5a68d092adf735b71ce962730af5cd17d13df5698356c8dc4d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-16.txt",
+    "bytes": 3977,
+    "sha256": "e3fda82aaab0067094e0ccde999df35b0d83441fbfdef77864d0c8017e29075a"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-161.txt",
+    "bytes": 260,
+    "sha256": "6ba954b9f997d72598a91f8bcedd8905a7507aac79b104022f06c494c13a1d9d"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-27.txt",
+    "bytes": 1546,
+    "sha256": "5fb127b445323d5e9c90064da251f0ae62f5eda29d6f8f49d47d7d4b588604cc"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-3.txt",
+    "bytes": 2625,
+    "sha256": "1ae1dda3b40af9e1f5740d4e91bdea3a033f78ac4d293450e8f729a174f0d215"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-69.txt",
+    "bytes": 2359,
+    "sha256": "9988cbdb9ca22f626b6fe35da304352f90e2a2a050a6e655591c8697e78b3efe"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sections/20-79.txt",
+    "bytes": 4991,
+    "sha256": "fd03a71f7c9c743ccd00b3bd5f9d61f988be0196a89cd22061f9fa952124fb83"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sk-corporate-income-tax.md.full.diff",
+    "bytes": 42860,
+    "sha256": "b9bb5d253c11c0c7a77f966a38e4916e2e137d5cc92d7c112ae061475ade98a5"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sk-cross-border.md.full.diff",
+    "bytes": 19092,
+    "sha256": "f205b8522c278ce9fe9c24b09781c535e19089c2c59b46b1cb51839201a91f84"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sk-payroll-social.md.full.diff",
+    "bytes": 44748,
+    "sha256": "71fe4e68fd6e7d8a40738aebad58705b4a32029fb3b6fe75a681f1505ea66b42"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/sk-transfer-pricing.md.full.diff",
+    "bytes": 36540,
+    "sha256": "516941337b6ab5226b4a83ea4e244c22228f349804279a7edfdd9f81bce8b366"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/slovakia-pit.md.full.diff",
+    "bytes": 41263,
+    "sha256": "601938b29be16344feb0749cda56001a813dc5f925c4a76918b9103d42f0b18e"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/slovakia-vat-registration-4-7-7a.md.full.diff",
+    "bytes": 6602,
+    "sha256": "ba8658b1934bd4b6627193c46966e1c36d02249927e0b92d2b0a67ef986e17b4"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/slovakia-vat-return.md.full.diff",
+    "bytes": 21622,
+    "sha256": "fa6aaee6b0c4fe282c5a4da4c649eb4fc189094bfb8f8880fd2a3b99d4b7f7d2"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/final-full-pack-review/url-precheck.json",
+    "bytes": 608,
+    "sha256": "c1f8fe530d239ee763d819aeace0d76c8e249da0d0fe347b9f44e45f1f3fcd46"
+  }
+]

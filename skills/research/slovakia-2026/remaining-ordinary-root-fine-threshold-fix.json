@@ -1,0 +1,11 @@
+{
+  "finding": "TP fine155(11) inclusive non-imposition threshold",
+  "before_sha256": "5d2d1bb25c5144e1426a9f122b08098fecff93b9f9ce189e7c7c4698b83edbfb",
+  "final_sha256": "7894a2f86948a9dca302daa3ddb3a3f2baf3291c0a5c6c40d7f13d12990899e0",
+  "source": "Actual current TaxCode155(11), retainedsources20.txt7190\u20137240 read; target sourceURLintheGuide",
+  "boundaries": {
+    "computed_fine_5_00": "notimposed",
+    "computed_fine_5_10": "exceedsnonimpositionlimit"
+  },
+  "other_Guides": "unchanged"
+}

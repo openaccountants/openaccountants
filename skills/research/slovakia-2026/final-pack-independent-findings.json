@@ -1,0 +1,52 @@
+{
+  "status": "all six newly reported findings corrected and independently reread on frozen candidate",
+  "findings": [
+    {
+      "id": "R01",
+      "priority": 2,
+      "finding": "Historical PIT repo URL absent",
+      "closure": "PIT linked originalURL;historicalMIT/40credit notattestation",
+      "status": "closed"
+    },
+    {
+      "id": "R02",
+      "priority": 2,
+      "finding": "VAT quarterly/fastrefund tenure measured from registration rather thanpayerstatus",
+      "closure": "77/79payer+VATIDclock,endmonthanchors and1000aggregatearrears nowcorrect",
+      "status": "closed"
+    },
+    {
+      "id": "R03",
+      "priority": 2,
+      "finding": "Payrollchildbirthdaymonth rate row shifted month early",
+      "closure": "100through15birthdaymonth/50nextthrough18birthdaymonth",
+      "status": "closed"
+    },
+    {
+      "id": "R04",
+      "priority": 2,
+      "finding": "Fullmonthlysociallimits lackedpartial-month method",
+      "closure": "138(13)dailycentfloor/actualmonthdays/funds/employeeaggregate andseparateemployercap supplied",
+      "status": "closed"
+    },
+    {
+      "id": "R05",
+      "priority": 1,
+      "finding": "SZCOcoveragefollowedstaleJanuaryoverview despiteJuly122/2026amendment",
+      "closure": "Current21/293gnb2876.90coveragegate/annualend/60months/transition supplied;oldoverview qualified",
+      "status": "closed"
+    },
+    {
+      "id": "R06",
+      "priority": 2,
+      "finding": "DDS/PEPPdeductionomittedcontract/earlywithdrawalconditions",
+      "closure": "ITA11(8)–(11)ownpaid/shared180cap/contracts/foreignproducts/clawback supplied",
+      "status": "closed"
+    }
+  ],
+  "ordinary_VAT_gaps_retained": [
+    "annual actual zero included-supplies denominator under50",
+    "78a(15)KV first-breach155(4) interaction",
+    "fixedgross14000 crossing with49500prior turnover payerstatus circularity"
+  ]
+}

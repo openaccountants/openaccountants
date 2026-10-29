@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -1358,8 +1358,8 @@
+       },
+       {
+         "LF_start": 64,
+-        "LF_end": 66,
+-        "quote": "daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l)"
++        "LF_end": 67,
++        "quote": "daňovou stratou rozdiel, o ktorý daňové výdavky prevyšujú zdaniteľné príjmy pri rešpektovaní vecnej a časovej súvislosti1) zdaniteľných príjmov a daňových výdavkov v príslušnom zdaňovacom období, l) zdaňovacím obdobím kalendárny rok, ak tento zákon neustanovuje inak,"
+       }
+     ],
+     "read_date": "2026-10-29",

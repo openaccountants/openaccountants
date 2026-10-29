@@ -1,0 +1,128 @@
+[
+  {
+    "name": "May1200 daily floor before20days",
+    "computed": "774.00",
+    "expected": "774",
+    "source": "SP partial-month instructions / Act138(13)",
+    "pass_": true
+  },
+  {
+    "name": "May774 four fund sum",
+    "computed": "256.57",
+    "expected": "256.57",
+    "source": "SP May2026 actual example",
+    "pass_": true
+  },
+  {
+    "name": "2025 income threshold",
+    "computed": "2876.90",
+    "expected": "2876.90",
+    "source": "Current SP July/October guidance and Act21(7)",
+    "pass_": true
+  },
+  {
+    "name": "Annual coverage income 2876.90",
+    "computed": false,
+    "expected": false,
+    "source": "Act21(5)/293gnb;2025income",
+    "pass_": true
+  },
+  {
+    "name": "Annual coverage income 2876.91",
+    "computed": true,
+    "expected": true,
+    "source": "Act21(5)/293gnb;2025income",
+    "pass_": true
+  },
+  {
+    "name": "More than60month restart 59",
+    "computed": false,
+    "expected": false,
+    "source": "Act21(3) exception",
+    "pass_": true
+  },
+  {
+    "name": "More than60month restart 60",
+    "computed": false,
+    "expected": false,
+    "source": "Act21(3) exception",
+    "pass_": true
+  },
+  {
+    "name": "More than60month restart 61",
+    "computed": true,
+    "expected": true,
+    "source": "Act21(3) exception",
+    "pass_": true
+  },
+  {
+    "name": "DDS own240+60 sharedcap",
+    "computed": "180",
+    "expected": "180",
+    "source": "ITA11(8)–(10)",
+    "pass_": true
+  },
+  {
+    "name": "2026 earlywithdrawal latestaddbackyear",
+    "computed": 2029,
+    "expected": 2029,
+    "source": "ITA11(11)",
+    "pass_": true
+  },
+  {
+    "name": "Child June15birthday",
+    "computed": "900",
+    "expected": "900",
+    "source": "ITA33(1)",
+    "pass_": true
+  },
+  {
+    "name": "Child June18birthday",
+    "computed": "300",
+    "expected": "300",
+    "source": "ITA33(1)",
+    "pass_": true
+  },
+  {
+    "name": "Books ads50stillallowed",
+    "computed": true,
+    "expected": true,
+    "source": "VAT Annex7 ex4901",
+    "pass_": true
+  },
+  {
+    "name": "Periodical erotic10stillallowed",
+    "computed": true,
+    "expected": true,
+    "source": "VAT Annex7 ex4902",
+    "pass_": true
+  },
+  {
+    "name": "Audio narration50allowed",
+    "computed": true,
+    "expected": true,
+    "source": "VAT Annex7a CPA58.11.30",
+    "pass_": true
+  },
+  {
+    "name": "Rentalproportionalexpense",
+    "computed": "1833.33",
+    "expected": "1833.33",
+    "source": "ITA9(1)(g)",
+    "pass_": true
+  },
+  {
+    "name": "Quarterlyturnover exactly100000fails",
+    "computed": false,
+    "expected": false,
+    "source": "VAT77(2)",
+    "pass_": true
+  },
+  {
+    "name": "Fastrefund aggregate exactly1000passes",
+    "computed": true,
+    "expected": true,
+    "source": "VAT79(2)(c)",
+    "pass_": true
+  }
+]

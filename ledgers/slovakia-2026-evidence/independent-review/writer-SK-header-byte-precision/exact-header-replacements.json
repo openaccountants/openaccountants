@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "sk-payroll-social",
+    "before_header": "Guide SHA256 `62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38` (49079 bytes)",
+    "after_header": "Guide SHA256 `62143a36b7cb4be6637db6b163b1cd727b1a8ee272bcc8cb750b55d3cb103f38` (49917 bytes)",
+    "before_sha256": "06fa28262f6b43bf0e729c7ce7e4712db6b1cae806e205be89c6cfdb2a49f680",
+    "after_sha256": "5e3709aca0a5484c40b34d0c71497230ea9e9ca32d2c12875ae33c69150ac4b4",
+    "only_header_bytes_changed": true
+  },
+  {
+    "slug": "slovakia-vat-return",
+    "before_header": "Guide SHA256 `32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77` (50244 bytes)",
+    "after_header": "Guide SHA256 `32fe5026c3adc40bfc5d96e824b7b0093d484c7f879fd7607ab573ddc43cdf77` (50351 bytes)",
+    "before_sha256": "41e30b273a37986c6993d6d1531ed84689237c2a78f9c9fba8e5e58826ec6aa1",
+    "after_sha256": "158fdf8133cabb015dfcb5042a904f510eb1e11b57d6b21d17f1f583466ee0b8",
+    "only_header_bytes_changed": true
+  }
+]

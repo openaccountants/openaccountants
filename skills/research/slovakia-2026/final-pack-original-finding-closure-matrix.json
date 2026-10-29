@@ -1,0 +1,186 @@
+[
+  {
+    "id": "F01",
+    "guide": "sk-corporate-income-tax.md",
+    "original_finding": "Restrict income-tax disallowance to section85n vehicle VAT",
+    "final_byte_disposition": "Vehicle85n restriction only; ordinary19(3)(k)/25(5) VAT treatment and10920machine example preserved",
+    "primary_check": "ITA52zzzk with footnote161;19(3)(k),25(5);VAT85n",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F02",
+    "guide": "sk-transfer-pricing.md",
+    "original_finding": "Use leap-year day splitting and statutory penalty rounding",
+    "final_byte_disposition": "Both fines corrected:1838.50/1225.60 and577.50; leap-year split and dime floor recomputed",
+    "primary_check": "TC155/161; actual FS calendar-year method",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F03",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Dividend rate needs profit-year transition",
+    "final_byte_disposition": "PIT/XB7percent profit2017–23/2025+;2024profit10percent;pre2017qualified",
+    "primary_check": "ITA52zzz(4),52zzzb(5),15/43",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F04",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Securities exemption has two holding/admission clocks and exclusions",
+    "final_byte_disposition": "Two strict one-year clocks; asset/noncashshare exclusions and transition retained",
+    "primary_check": "ITA9(1)(k),52zzz(3)",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F05",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Rental/occasional exemption requires proportional expenses",
+    "final_byte_disposition": "Shared500exemption and proportional expenses supplied;6000/2000rent control",
+    "primary_check": "ITA6(6),9(1)(g)/(i),8(2)",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F06",
+    "guide": "sk-payroll-social.md",
+    "original_finding": "Foreign employer payer status is not decided by branch alone",
+    "final_byte_disposition": "Foreign-employer PE/183day payer gate precedes35(10)/(11), service/economicemployer exceptions",
+    "primary_check": "ITA48(1)/(2),35(10)/(11)",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F07",
+    "guide": "sk-payroll-social.md",
+    "original_finding": "Health minimum has ordinary statutory exceptions",
+    "final_byte_disposition": "Health minimum excluded-day and concurrent-employer election;SZCOexceptions/below3 boundary",
+    "primary_check": "Health16a,16(6)/(8)/(9)",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F08",
+    "guide": "sk-payroll-social.md",
+    "original_finding": "Do not exempt every pensioner from disability/unemployment contributions",
+    "final_byte_disposition": "Actual pension types/disability thresholds and agreement branches replace universal exemption",
+    "primary_check": "Social19(3),128(3),4",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F09",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Complete ordinary child and mortgage credit populations",
+    "final_byte_disposition": "Child birthdays/birth/aggregation/90percent and changingchildcount;old/newmortgage fullmethods",
+    "primary_check": "ITA33,33a,52zzy;actual2023statute33a",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F10",
+    "guide": "sk-corporate-income-tax.md",
+    "original_finding": "Interest limit omits ordinary exceptions and carryforward",
+    "final_byte_disposition": "Two distinct interest methods,denominator,exceptions,capitalisation,backtoback,carry and order",
+    "primary_check": "ITA17(38),17k,21a,52zzr;currentFSnegativeEBITDAFAQ",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F11",
+    "guide": "slovakia-vat-return.md",
+    "original_finding": "Available current form layout should replace an unfetched-source gap",
+    "final_byte_disposition": "Actual DPHv25/KVDPHv25/REGDPv24 mappings retained with correct periods",
+    "primary_check": "Actual DPHpdf;KV607html;REG589html;officialcatalog",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F12",
+    "guide": "sk-transfer-pricing.md",
+    "original_finding": "Materiality reference is ordinary tier selection and is readily verifiable",
+    "final_byte_disposition": "Materiality qualitative decision rule supplied,no inventedEurothreshold",
+    "primary_check": "AccountingAct17(9);MF012879/2025 art3",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F13",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Micro-taxpayer loss relief needs all eligibility conditions",
+    "final_byte_disposition": "All microtaxpayer exclusions,deduction-year status,strict60000boundary",
+    "primary_check": "ITA2(w),30",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F14",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Government-bond income is not uniformly 19% capital income",
+    "final_byte_disposition": "13percent gross51eabonds separated from19percentbankinterest,retail exemption andwithholding",
+    "primary_check": "ITA9(1)(r),15,43(3)(v),51ea,52zzzc",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F15",
+    "guide": "sk-cross-border.md",
+    "original_finding": "Russian residence alone does not tax every payment at 35%",
+    "final_byte_disposition": "35percent requires taxable source/category/collection route/treaty,notRussianresidencealone",
+    "primary_check": "ITA1(2),2(x),16,43,44;2026list",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F16",
+    "guide": "slovakia-pit.md",
+    "original_finding": "Restore the original PIT source credit",
+    "final_byte_disposition": "Historical repo URL restored only during this review R01;MIT/40contributors remain historical",
+    "primary_check": "Original pre92fb PIT Source row;currentactual link",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F17",
+    "guide": "sk-payroll-social.md",
+    "original_finding": "Annual social floors and ceilings reset in January",
+    "final_byte_disposition": "January contribution-year floor/ceiling/specialbase distinguished fromJuly/October income cycle",
+    "primary_check": "Social138(2)/(3)/(8)/(9);R05currentcoverage gate independent",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F18",
+    "guide": "sk-payroll-social.md",
+    "original_finding": "Posting exception needs the employer and replacement tests",
+    "final_byte_disposition": "Posting requires substantialhomeactivity,directrelationship,noreplacement,duration;A1branch/multistate separate",
+    "primary_check": "ActualSP9pageapplicationpp5–9;Reg883Arts11–13",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F19",
+    "guide": "sk-corporate-income-tax.md",
+    "original_finding": "The available depreciation classification is ordinary unfinished work",
+    "final_byte_disposition": "Actual CPA/KS common classifications;hotel/sportsperiod and separate10percentrepairasset",
+    "primary_check": "ActualcurrentAnnex1;ITA22/26/27/52zzzf;FS21/2025",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F20",
+    "guide": "sk-transfer-pricing.md",
+    "original_finding": "Ordinary correction penalties cannot remain undefined within coverage",
+    "final_byte_disposition": "Penalty/interest distinct dues/endpoints,calendar-year/floor;income vs expense ratecliffs",
+    "primary_check": "TC16/69/155/156/161;ITA15/17;actualFS18/2021 p2item3 exclusions",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F21",
+    "guide": "sk-cross-border.md",
+    "original_finding": "Remove stale sibling-year statements and consolidate resolved source gaps",
+    "final_byte_disposition": "2026siblings/284.13/observedECB;31Dec changes first2027returns qualified",
+    "primary_check": "ITA52zzzm;actual14/15bodies;ECB/NBShistory",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F22",
+    "guide": "slovakia-vat-return.md",
+    "original_finding": "Whole original sections absent from the restoration inventory",
+    "final_byte_disposition": "Original716lineVAT read;all50historicaldispositions assessed,currentordinarymethods and explicit3gaps retained",
+    "primary_check": "OriginalVAT;publicF22-disposition/unitledger;currentVATstatute",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  },
+  {
+    "id": "F23",
+    "guide": "slovakia-vat-return.md",
+    "original_finding": "Publication reduced rate needs content exclusions",
+    "final_byte_disposition": "Actualex4901/ex4902ads50;periodicalerotic10;CPA58.11.30onlineads50/audionarration>=50",
+    "primary_check": "ActualVATAnnex7/7aPDF/text",
+    "status": "closed for the stated finding; no whole-country coverage inference"
+  }
+]

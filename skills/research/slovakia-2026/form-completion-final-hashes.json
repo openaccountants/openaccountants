@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-27",
+  "baseline": "265f91ff",
+  "scope": "Only F11/F23 deltas in these two Guides. No other active PIT/CIT files or original pack findings attested.",
+  "guides": [
+    {
+      "name": "slovakia-vat-return.md",
+      "baseline_sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531",
+      "final_sha256": "3736801e9f36dd741fdd1294d5ec10af84038f0432468dbdb885c283921b62ac",
+      "baseline_bytes": 44412,
+      "final_bytes": 49557,
+      "metadata_only_version_changed": {
+        "version": {
+          "before": "2.2",
+          "after": "2.3"
+        }
+      },
+      "platform_metadata_and_attribution_preserved": true,
+      "CTA_suffix_identical": true,
+      "all_original_URLs_retained": true,
+      "two_original_oa_blocks_identical": true,
+      "nine_H2_before_CTA": true,
+      "six_intake_questions": true,
+      "removed_lines_for_no_loss_audit": [
+        "-version: 2.2\n",
+        "-| Reduced rate, Annex 7 points 2 and 3: listed fresh meat, freshwater fish, milk, yoghurt, butter, honey, fresh vegetables, apples and pears, fresh bread and rolls, juices with at most 5 g added sugar per 100 ml, medicines (chapter 30), listed medical aids, printed books, newspapers and periodicals (advertising at most 50%) | 5% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf (\u00a7 27(3)(a)) |\n",
+        "-| Reduced rate, Annex 7a point 2: accommodation (CPA 55), food served as restaurant and catering services (CPA 56), online books and audio books, entry to theatre, opera, ballet and similar events, museums, sports events, fitness centres | 5% | 2026 | https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf (\u00a7 27(3)(b)) |\n",
+        "-\n",
+        "-Not yet confirmed: the row numbers of the 2026 VAT return form and the control statement layout (the official forms were not read, so this skill names no boxes); the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code \u00a7 155(4) also covers the control statement fine in VAT Act \u00a7 78a(15); the annual \u00a7 50 method where the actual annual included-supplies denominator is zero.\n"
+      ]
+    },
+    {
+      "name": "slovakia-vat-registration-4-7-7a.md",
+      "baseline_sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+      "final_sha256": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+      "baseline_bytes": 30456,
+      "final_bytes": 32474,
+      "metadata_only_version_changed": {
+        "version": {
+          "before": "1.2",
+          "after": "1.3"
+        }
+      },
+      "platform_metadata_and_attribution_preserved": true,
+      "CTA_suffix_identical": true,
+      "all_original_URLs_retained": true,
+      "two_original_oa_blocks_identical": true,
+      "nine_H2_before_CTA": true,
+      "six_intake_questions": true,
+      "removed_lines_for_no_loss_audit": [
+        "-version: 1.2\n",
+        "-Not yet confirmed: the current registration form version and identifiers; the former example's specific conclusion that extracting EUR 2,617.89 VAT from a fixed EUR 14,000 crossing price at EUR 49,500 prior turnover prevents \u00a74(1)(b) payer status (the statutory net-value test and gross-price arithmetic were read, but an official interpretation resolving that exact circularity was not obtained).\n"
+      ]
+    }
+  ],
+  "explicit_reservations_preserved": [
+    "annual zero included-supplies denominator",
+    "KV first-breach fine application",
+    "fixed-gross crossing-price registration circularity"
+  ],
+  "lost_content_restored": 0,
+  "no_loss_conclusion": "All baseline methods and source history retained; only version changes, publication-rate scope corrections and now-resolved form reservations replaced/expanded.",
+  "status": "PASS",
+  "whole_pack_PASS": false,
+  "format_provenance": {
+    "F11": "Format-options record preceded edit, per root operation history",
+    "F23": "Format-options record saved in same operation after rates edit, per root operation history; not a prior draft-options step"
+  }
+}

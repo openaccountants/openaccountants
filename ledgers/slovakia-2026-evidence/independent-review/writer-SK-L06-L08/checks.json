@@ -1,0 +1,22 @@
+{
+  "changed_existing_keys": [
+    "TPG3.full",
+    "ITA45.relief",
+    "ITA17f.exit",
+    "Social138"
+  ],
+  "added_keys": [
+    "Social138c"
+  ],
+  "root_ITA2_residence_byte_identity": true,
+  "source_scopes_before_sha256": "caf650c3b8cee0a812cc48c84cd1b61db4835450d181690e223ebdcb6bc6a18e",
+  "successors": {
+    "source-scopes.json": "3c210f3e6061d0e4c632d82943474dd6b4ac10283b68516b96836941b6c78f89",
+    "source-quotes.md": "171439fc9fc849ba7c4badda297e7be70bd8669e302018c177d5f957b8036525",
+    "pit-sources.py": "1d4d604aaa727b6cbe1131f15cc0cd6e11cb863a916e77fe9b353362fcc53be3",
+    "xb-sources.py": "1e9dd6fa9f4e19158e3c6d0097088a7417439cb88cc96a0e899aca95726de8d6",
+    "tp-sources.py": "6c8792019da8782a9a6e7133ff60975c2cbe4a13ec8bd492f8441d630ff61ecd",
+    "payroll-sources.py": "59101c585807a2ce5235bc0b5fc62076a1b5053c9d209dbc513a14b85fbb5382"
+  },
+  "literal_quotes_verified": true
+}

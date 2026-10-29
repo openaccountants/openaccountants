@@ -1,0 +1,296 @@
+Miesto pre evidenčné číslo
+Záznamy daňového úradu
+Strana 1
+DAŇOVÉ PRIZNANIE
+Adresa sídla alebo trvalého pobytu
+Ulica Číslo
+PSČ
+Odtlačok prezentačnej pečiatky daňového úradu
+Dátum
+. .
+Vyhlasujem, že uvedené údaje sú
+správne a úplné.
+M ňového priznania za osobu podávajúcu daňové priznanieeno a priezvisko osoby oprávnenej na podanie da
+DAŇ Z PRIDANEJ HODNOTY
+Rok
+Zdaňovacie obdobie
+opravné
+dodatočné
+(vyznačí sa x)Druh priznania
+riadne ŠtvrťrokMesiac
+Obec
+Daňový úrad
+(1 - 4)(01 - 12)
+Názov alebo obchodné meno právnickej osoby alebo meno a priezvisko fyzickej osoby
+Identifikačné číslo
+pre daň z pridanej hodnoty (ďalej len „daň“)
+(vyznačí sa x)
+Zdaniteľná osoba podľa § 3 ods. 5 zákona uplatňujúca odpočítanie dane
+Platiteľ dane
+Iná osoba registrovaná pre daň
+Daňový zástupca podľa § 69a zákonaV zda ovacom obdobň í nevznikla
+daňová povinnosť ani nárok
+na odpočítanie dane
+(vyznačí sa x)
+DPHv25_1
+DPH
+MF/007833/2025-731
+Dátum zistenia skutočnosti na podanie
+dodatočného daňového priznania
+..
+Údaje sa vypĺňajú paličkovým písmom (podľa tohto vzoru), písacím strojom alebo tlačiarňou, a to čiernou alebo tmavomodrou farbou.
+Číselné údaje sa zarovnávajú vpravo, ostatné údaje sa píšu zľava. Nevyplnené riadky sa ponechávajú prázdne.
+Osoba povinná podať daňové priznanie podľa § 78 ods. 3 a 4 zákona č. 222/2004 Z. z.
+Odtlačok pečiatky a podpis osoby podávajúcej daňové priznanie alebo osoby
+oprávnenej na podanie daňového priznania za osobu podávajúcu daňové priznanie
+Daňové identifikačné číslo / Rodné číslo
+Daňový zástupca podľa § 69aa zákona
+Telefónne číslo Emailová adresa
+Telefónne číslo Emailová adresa
+o dani z pridanej hodnoty v znení neskorších predpisov (ďalej len „zákon“)
+Strana 2
+Identifikačné číslo pre daňDPHv25_2 Daňové identifikačné číslo / Rodné číslo
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+01 02
+Dodanie tovaru
+a služby podľa
+§8a9z á k o n a
+a daň podľa § 81
+zákona 03
+05
+07
+09
+11
+14
+Tovar, pri ktorom
+druhý odberateľ
+platí daň podľa
+§ 69 ods. 7
+zákona
+Základ dane Daň
+z toho:
+13
+15
+04
+06
+08
+10
+12
+Nadobudnutie
+tovaru
+v tuzemsku
+podľa § 11 a 11a
+zákona
+Dodanie tovaru a služby,
+nadobudnutie tovaru a dovoz
+tovaru do tuzemska, pri ktorom sa
+uhrádza daň podľa § 84a ods. 3
+zákona, s oslobodením od dane
+p ľ a§4 6 ,4 7a§4 8o d s .8od
+zákona
+p ľ a§4 3o d s .1a4z á k o n aod
+Tovar a služb ,a
+pri ktorých
+príjemca platí daň
+podľa § 69 ods. 2,
+3a9a ž1 2
+zákona
+základná
+sadzba dane
+MF/007833/2025-731
+,,
+01a 02aznížená sadzba
+dane podľa § 27
+ods. 3 zákona
+,,
+05a 06a
+,,
+09a 10a
+,,
+09b 10b
+,,
+11a 12a
+,,
+11b 12b
+,,
+11cDovoz tovaru
+do tuzemska,
+pri ktorom sa
+uhrádza daň
+podľa § 84a ods. 3
+zákona
+12c
+,,
+11d 12d
+,,
+11e 12e
+,
+,D ň celkoma
+17
+Daň podľa § 48ca ods. 2, § 48d ods. 1 5a§4 8 eo d s .3 ,6a8z á k o n a 16
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+Strana 3
+Identifikačné číslo pre daňDPHv25_3 Daňové identifikačné číslo / Rodné číslo
+,,
+,
+,
+,
+,
+,
+,
+N í ňovej povinnosti podľa § 79 zákonaadmerný odpočet odpoč taný od vlastnej da
+V ňová povinnosť na úhradulastná da
+33
+34
+35
+-
+-
+V ňová povinnosťlastná da
+32
+28
+37
+ÚDAJE DODATOČNÉHO
+DAŇOVÉHO PRIZNANIA
+R ňovejozdiel oproti poslednej známej vlastnej da
+povinnosti alebo nadmernému odpočtu (+/–) D ň na úhradu (+/–)a
+36
+25
+Splnenie podmienok
+podľa § 79 ods. 2 zákona (vyznačí sa x)
+,
+,
+O í ľa dane podľa § 55 zákonadpoč tanie dane pri registrácii platite
+V ľ a§6 0z á k o n arátenie dane cestujúcim pri vývoze tovaru pod
+30
+31
+Oprava odpočítanej dane podľa § 53 a 53a zákona (+/-)
+Nadmerný odpočet
+,
+24Rozdiel v základe dane a v dani
+podľa § 25 ods. 1 až 3, § 65
+ods. 10 a 11 zákona (+/-)
+,
+27
+,
+26Rozdiel v základe dane a v dani
+podľa § 25a zákona (+/-)
+,
+29
+Oprava odpočítanej dane podľa § 53b zákona (+/-)
+MF/007833/2025-731
+,
+,
+22
+23
+podľa § 51 ods.1 písm. d) zákona
+z toho:
+,
+22a
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+daň zaplatená colnému
+orgánu v tuzemsku
+pri dovoze tovaru
+,
+,
+23a
+23c
+,
+23b
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+daň uplatnená platiteľom
+dane podľa § 84a ods. 3
+zákona pri dovoze tovaru
+do tuzemska
+,
+,
+,
+,
+18
+19
+20
+21
+podľa § 51 ods.1 písm. a) zákona
+O č tanie dane celkomdpo í
+podľa § 49 až 52a§5 4a ž5 4 dz á k o n a
+,
+18a
+,
+20a
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona
+základná
+sadzba dane
+znížená sadzba
+dane podľa § 27
+ods. 3 zákona
+znížená sadzba
+dane podľa § 27
+ods. 2 zákona

@@ -1,0 +1,593 @@
+
+ Katalóg formulárov - PFS
+ Preskočiť na hlavný obsah
+ 23. 10. 2026
+ 23. 10. 2026 10:26:22
+ Dočasná nedostupnosť kontaktného formulára a elektronickej registrácie EORI
+ 21. 10. 2026
+ 21. 10. 2026 13:22:20
+ Prerušenie internetového pripojenia na PCÚ Trnava NS - 08. až 09.11.2026
+Server TA02
+ Finančná správa
+ Formuláre
+ Kontakty
+ FaQ
+English
+ 2
+ Prihlásenie
+ Registrácia
+Podnikatelia a organizácie
+Občania
+Daňoví a colní špecialisti
+Elektronické služby
+Katalóg formulárov
+Rýchle odkazy
+Infoservis
+Virtuálna registračná pokladnica 2
+Príručky a návody
+Platenie daní
+Daňový kalendár
+Zistenie miestnej príslušnosti
+Overenie IČ DPH
+Aplikácia eDane
+Informačné zoznamy
+Intrastat
+Taric/Kvóta
+ Nachádzate sa vo verejne dostupnej časti portálu finančnej správy. V nižšie zobrazenom katalógu elektronických formulárov sú zverejnené všetky aktuálne elektronické formuláre, 
+ ktoré po vyplnení nie je možné priamo podať finančnej správe. Pre podávanie elektronických formulárov finančnej správe je potrebné sa prihlásiť.
+Katalóg formulárov
+Výstup Vám prezentuje vybrané údaje z katalógu formulárov.
+ Katalóg elektronických formulárov
+Vyhľadávacie kritériá
+ Oblasť:
+ Všetky
+ Daňová exekúcia
+ Daňová kontrola
+ eFaktúra
+ Interné dokumenty
+ Medzinárodná výmena informácií
+ Podanie pre FS
+ Pokladnice eKasa
+ Register
+ Správa daní
+ Správa spotrebných daní
+ Sťažnosti
+ Účtovné dokumenty – Register účtovných závierok (RÚZ)
+ Agenda:
+ Všetky
+ Akreditácia poskytovateľa služby (SP)
+ Autorizácia pre CReg
+ Autorizácia pre daňový subjekt
+ Certifikácia
+ CESOP
+ DAC2_CRS
+ DAC4_CbCR
+ DAC6
+ DAC7
+ Daň vyberaná zrážkou
+ Daň z emisných kvót
+ Daň z finančných transakcií
+ Daň z motorových vozidiel
+ Daň z poistenia
+ Daň z pridanej hodnoty
+ Daň z príjmov fyzickej osoby
+ Daň z príjmov právnickej osoby
+ Daň zo sladených nealkoholických nápojov
+ Daň zo závislej činnosti - platiteľ dane
+ Daňová exekúcia
+ Daňová kontrola dane z motorových vozidiel
+ Daňová kontrola dane z poistenia
+ Daňová kontrola dane z pridanej hodnoty
+ Daňová kontrola dane z príjmu fyzickej osoby
+ Daňová kontrola dane z príjmu právnickej osoby
+ Daňová kontrola dane zo závislej činnosti
+ Daňová kontrola iných daní a odvodov
+ Dorovnávacia daň
+ FATCA
+ Iné dane
+ Interná agenda - Soft warning
+ Interné dokumenty
+ Nešpecifikovaná agenda
+ Odklad zo zasielania údajov do systému eKasa
+ Odvod z nadmerných príjmov
+ Osobitný odvod finančných inštitúcií
+ Osobitný odvod obchodných reťazcov
+ Osobitný odvod z podnikania v regulovaných odvetviach
+ OSS
+ Oznámenie o zmene predajného miesta alebo predmetu činnosti pre eKasa
+ Oznámenie schválenia účtovnej závierky
+ Podanie pre FS - Register
+ Podanie pre FS - Správa daní
+ Podanie pre FS - Správa spotrebných daní
+ Pridelenie kódu pokladnice eKasa
+ Registrácia FATCA
+ Registrácia na daň z príjmov, daň z pridanej hodnoty, daň z poistenia a daň zo sladených nealkoholických nápojov
+ Registrácia na JKM
+ Registrácia na spotrebné dane
+ Registrácia servisných organizácií
+ Solidárny príspevok
+ Spotrebná daň z elektriny
+ Spotrebná daň z liehu
+ Spotrebná daň z minerálneho oleja
+ Spotrebná daň z piva
+ Spotrebná daň z tabakových výrobkov
+ Spotrebná daň z uhlia
+ Spotrebná daň z vína
+ Spotrebná daň zo zemného plynu
+ Správa s informáciami o dani z príjmov
+ Sťažnosť
+ Sťažnosť - subjekt CReg
+ Strata prihlasovacích údajov k virtuálnej registračnej pokladnici
+ Súhlas správcu dane so zápisom v obchodnom registri a s návrhom na výmaz
+ Účtovné výkazy pre neziskové organizácie
+ Účtovné výkazy pre ostatné typy účtovných jednotiek
+ Účtovné výkazy pre podnikateľské subjekty účtujúce v sústave jednoduchého účtovníctva
+ Účtovné výkazy pre podnikateľské subjekty účtujúce v sústave podvojného účtovníctva
+ Vrátenie dane z pridanej hodnoty
+ Vyplácajúci zástupca
+ Zabezpečenie dane
+ Zastupovanie pre daňový subjekt
+ Zastupovanie pre subjekt CReg
+ Názov verzie formulára:
+ Zobraziť aj staré verzie
+Výsledky vyhľadávania
+ Kód
+ Názov
+ Aktivita
+ eFaktúra
+ Akreditácia poskytovateľa služby (SP)
+ Všeobecné podanie pre akreditáciu poskytovateľa služby (SP)
+ VP_eFA_SP
+ Všeobecné podanie - eFaktúra
+ Medzinárodná výmena informácií
+ CESOP
+ Sprievodný list pre nahlásenie údajov do CESOP
+ SL_CESOP
+ Sprievodný list pre nahlásenie údajov do CESOP podľa § 70a zákona č.222/2004 Z. z.
+ DAC2_CRS
+ Oznámenie DAC2/CRS
+ OZN_DAC2
+ Oznámenie DAC2/CRS (platné od 1.1.2017)
+ DAC4_CbCR
+ Oznámenie DAC4/CbCR
+ OZN_DAC4_CbCR
+ Oznámenie DAC4/CbCR (platné od 1.1.2020)
+ Správa DAC4/CbCR
+ SPR_DAC4_CbCR
+ Správa DAC4/CbCR (platná od 1.10.2017)
+ DAC6
+ Oznámenie DAC6
+ OZN_DAC6
+ Oznámenie DAC6 (platné od 1.1.2021)
+ Vyhlásenie DAC6
+ VYHL_DAC6
+ Vyhlásenie DAC6 (platné od 1.1.2021)
+ DAC7
+ DAC7 Registračný formulár
+ REGDAC7
+ Žiadosť o registráciu, oznámenie zmeny údajov, žiadosť o zrušenie registrácie DAC7/DPI
+ Oznámenie DAC7/DPI
+ OZN_DAC7
+ Oznámenie DAC7/DPI (§22i ods. 2 a ods. 5 zákona č. 442/2012)
+ Oznámenie o výbere ČŠ
+ OZN_CS_DAC7
+ Oznámenie o výbere ČŠ DAC7 (platné od 2023)
+ Vyhlásenie oznamujúceho prevádzkovateľa platformy
+ VYHL_DAC7_22i
+ Vyhlásenie oznamujúceho prevádzkovateľa DAC7/DPI (§22i ods. 3 zákona)
+ Vyhlásenie vylúčeného prevádzkovateľa platformy
+ VYHL_DAC7_22m
+ Vyhlásenie vylúčeného prevádzkovateľa platformy DAC7/DPI (§22m ods. 7 zákona)
+ FATCA
+ Oznámenie FATCA
+ FATCAv18
+ Oznámenie FATCA (platné od 1.1.2019)
+ Registrácia FATCA
+ REGFATCAv16
+ Oznámenie o pridelení (zrušení) GIIN pre FATCA (platné od 1.5.2016)
+ Pokladnice eKasa
+ Odklad zo zasielania údajov do systému eKasa
+ Oznámenie o zániku dôvodu na povolenie odkladu zo zasielania zo systému eKasa
+ OZNoZPOeKasav19
+ Oznámenie o zániku dôvodu na povolenie odkladu zo zasielania zo systému eKasa
+ Žiadosť o povolenie odkladu zo zasielania údajov do systému eKasa
+ ZoPOeKasav19
+ Žiadosť o povolenie odkladu zo zasielania údajov do systému eKasa
+ Oznámenie o zmene predajného miesta alebo predmetu činnosti pre eKasa
+ Oznámenie o zmene predajného miesta alebo o zmene predmetu činnosti alebo o zmene obchodného mena podnikateľa
+ OZNoZUeKasav19
+ Oznámenie o zmene predajného miesta alebo o zmene predmetu činnosti alebo o zmene obchodného mena podnikateľa
+ Pridelenie kódu pokladnice eKasa
+ Oznámenie o ukončení používania pokladnice eKasa
+ OZNoUPPEKKv19
+ Oznámenie o ukončení používania pokladnice eKasa
+ Žiadosť o pridelenie kódu pokladnice eKasa
+ ZoPKEKKv19
+ Žiadosť o pridelenie kódu pokladnice eKasa
+ Strata prihlasovacích údajov k virtuálnej registračnej pokladnici
+ Oznámenie o strate/zneužití alebo odcudzení prihlasovacích údajov k VRP
+ OZNoSPUVRPv19
+ Oznámenie o strate/zneužití alebo odcudzení prihlasovacích údajov k VRP
+ Register
+ Podanie pre FS - Register
+ Všeobecné podanie pre finančnú správu
+ VP_REGv24
+ Všeobecné podanie - Register (platné od 1.4.2024)
+ Žiadosť o vydanie potvrdenia o daňovej rezidencii
+ ZIA51g1v21
+ Žiadosť o vydanie potvrdenia o daňovej rezidencii podľa § 51g ods. 1 (vzor platný od 1.1.2021)
+ Registrácia na daň z príjmov, daň z pridanej hodnoty, daň z poistenia a daň zo sladených nealkoholických nápojov
+ Žiadosť o registráciu, oznámenie zmien, žiadosť o zrušenie registrácie na daň z príjmov, daň z pridanej hodnoty a daň z poistenia
+ REGDPv24
+ Žiadosť o registráciu, oznámenie zmien a žiadosť o zrušenie registrácie (platná od 1.1.2025)
+ Registrácia na spotrebné dane
+ Žiadosť o registráciu, vydanie povolenia na spotrebnú daň, oznámenie zmien, žiadosť o zrušenie registrácie a povolenia na spotrebnú daň
+ REGSPDv25
+ Žiadosť o registráciu, vydanie povolenia na spotrebnú daň, oznámenie zmien, žiadosť o zrušenie registrácie a povolenia na spotrebnú daň (platná od 1.9.2025)
+ Správa daní
+ Daň vyberaná zrážkou
+ Oznámenie o uzavretí dohody s daňovníkom o nevyberaní dane zrážkou
+ OZN4314v24
+ Oznámenie o uzavretí dohody s daňovníkom o nevyberaní dane zrážkou § 43 ods. 14 (vzor sa použije za rok 2024, 2025)
+ Oznámenie o výške nepeňažného plnenia a dátume jeho poskytnutia
+ OZN4317Bv20
+ Oznámenie o výške nepeňažného plnenia a dátume jeho poskytnutia § 43 ods. 17 písm. b (vzor sa použije za rok 2020, 2021, 2022, 2023, 2024, 2025)
+ Oznámenie o začatí poberania nepeňažných plnení
+ OZN4318v20
+ Oznámenie o začatí poberania nepeňažných plnení § 43 ods. 18 (vzor sa použije od 1.1.2020)
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou
+ OZN4311v21
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou § 43 ods. 11 (vzor platný pre rok 2021, 2022, 2023, 2024, 2025)
+ OZN4311v26
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou § 43 ods. 11 (vzor platný pre rok 2026)
+ OZN4313v20
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou § 43 ods. 13 (vzor sa použije za rok 2020, 2021, 2022, 2023, 2024, 2025)
+ OZN4315v25
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou § 43 ods. 15 (vzor sa použije počnúc zdaňovacím obdobím, ktoré začne v roku 2025)
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou z peňažného a nepeňažného plnenia
+ OZN4317Av20
+ Oznámenie o zrazení a odvedení dane vyberanej zrážkou § 43 ods. 17 písm. a (vzor sa použije za rok 2020, 2021, 2022, 2023, 2024, 2025)
+ Daň z finančných transakcií
+ Oznámenie o dani z finančných transakcií
+ OZNDFTv25
+ Oznámenie o dani z finančných transakcií (platné od 1.4.2025)
+ OZNDFTv26
+ Oznámenie o dani z finančných transakcií (platné od 1.1.2026)
+ Daň z motorových vozidiel
+ Daňové priznanie k dani z motorových vozidiel
+ DMVv20
+ Daňové priznanie k dani z motorových vozidiel za zdaňovacie obdobie od 2020 do 2024 (platné od 1.12.2020)
+ DMVv25
+ Daňové priznanie k dani z motorových vozidiel za zdaňovacie obdobie od 2025 (platné od 1.1.2025)
+ Oznámenie o zániku daňovej povinnosti
+ OZN87v19
+ Oznámenie o zániku daňovej povinnosti podľa § 8 ods. 7 (vzor platný od 1.1.2020)
+ Daň z poistenia
+ Daňové priznanie k dani z poistenia
+ DPDPv18
+ Daňové priznanie k dani z poistenia (platné od 1.1.2019)
+ Daň z pridanej hodnoty
+ Daňové priznanie k dani z pridanej hodnoty
+ DPHv21
+ Daňové priznanie k dani z pridanej hodnoty (platné od 1.1.2021)
+ DPHv25
+ Daňové priznanie k dani z pridanej hodnoty (platné od 1.7.2025)
+ Kontrolný výkaz pre daň z pridanej hodnoty
+ KVDPHv23
+ Kontrolný výkaz pre daň z pridanej hodnoty (platný od 1.7.2023)
+ KVDPHv25
+ Kontrolný výkaz pre daň z pridanej hodnoty (platný od 1.1.2025)
+ OSS Daňové priznanie
+ DPOSS_68ca
+ Daňové priznanie podľa § 68ca zákona č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov
+ DPOSS_EUv01
+ Daňové priznanie k DPH, úprava pre Úniu
+ DPOSS_IM
+ Daňové priznanie k DPH, úprava pre dovoz
+ DPOSS_NONEU
+ Daňové priznanie k DPH, úprava mimo Únie
+ OSS Formulár vylúčenia
+ REXOSS_EU
+ Žiadosť o zrušenie povolenia uplatňovať osobitnú úpravu pre Úniu, oznámenie
+ REXOSS_IS_SPv01
+ Žiadosť o zrušenie registrácie sprostredkovateľa pre osobitnú úpravu pre dovoz, oznámenie
+ REXOSS_NONEU
+ Žiadosť o zrušenie povolenia uplatňovať osobitnú úpravu mimo Únie, oznámenie
+ REXOSS_ZO_NONSPv01
+ Žiadosť o zrušenie povolenia uplatňovať osobitnú úpravu pre dovoz (zdaniteľná osoba bez sprostredkovateľa), oznámenie
+ REXOSS_ZO_SP
+ Žiadosť o zrušenie povolenia uplatňovať osobitnú úpravu pre dovoz (zdaniteľná osoba zastúpená sprostredkovateľom), oznámenie
+ OSS Registračný formulár
+ REGOSS_EU
+ Žiadosť o registráciu pre uplatňovanie osobitnej úpravy pre Úniu, oznámenie zmeny údajov
+ REGOSS_IM_ZOv01
+ Žiadosť o registráciu zdaniteľnej osoby bez sprostredkovateľa alebo zastúpenej sprostredkovateľom pre uplatňovanie osobitnej úpravy pre dovoz, oznámenie zmeny údajov
+ REGOSS_IS_SP
+ Žiadosť o registráciu sprostredkovateľa pre uplatňovanie osobitnej úpravy pre dovoz, oznámenie zmeny údajov
+ REGOSS_NONEUv01
+ Žiadosť o registráciu pre uplatňovanie osobitnej úpravy mimo Únie, oznámenie zmeny údajov
+ OSS Všeobecné podanie
+ VP_OSS
+ Všeobecné podanie OSS
+ Oznámenie o použití osobného motorového vozidla na podnikanie
+ OZNMVv26
+ Oznámenie o použití osobného motorového vozidla na podnikanie podľa § 85n ods. 9 a 10 písm. b)
+ Oznámenie o účtoch používaných na podnikanie
+ OZN6DPHv21
+ Oznámenie o účtoch používaných na podnikanie platiteľa podľa § 6 a § 85kk zákona
+ Oznámenie o uplatňovaní osobitnej úpravy
+ OZN68Dv16
+ Oznámenie o uplatňovaní osobitnej úpravy (platné od 1.1.2016)
+ SME Oznámenie
+ OZNSMEv25_1
+ Oznámenie uplatňovania osobitnej úpravy oslobodenia od dane pre malý podnik, aktualizácia zoznamu členských štátov pre uplatňovanie osobitnej úpravy, oznámenie zmeny údajov, zrušenie uplatňovania osobitnej úpravy
+ SME Oznámenie malého podniku zahraničnej osoby
+ OZN68fSMEv25
+ Oznámenie malého podniku zahraničnej osoby (platné od 1.1.2025)
+ SME Štvrťročný výkaz malého podniku tuzemskej osoby
+ QVSMEv25
+ Štvrťročný výkaz malého podniku tuzemskej osoby (platný od 1.1.2025)
+ Súhrnný výkaz pre daň z pridanej hodnoty
+ SVDPHv20
+ Súhrnný výkaz pre daň z pridanej hodnoty (platný od 1.1.2020)
+ Vrátenie dane z pridanej hodnoty
+ ZIADPHv19
+ Žiadosť o vrátenie dane z pridanej hodnoty cestujúcim pri vývoze tovaru podľa §59 a §60 zákona o DPH
+ Záznamy o kúpených pozemných motorových vozidlách
+ ZAZMVv18
+ Záznamy o kúpených pozemných motorových vozidlách
+ Žiadosť o povolenie na prevádzkovanie osobitného skladu
+ ZIAOSKLv20
+ Žiadosť o povolenie na prevádzkovanie osobitného skladu podľa § 48d zákona o DPH (platná od 1. 1. 2020)
+ Daň z príjmov fyzickej osoby
+ Daňové priznanie k dani z príjmov fyzickej osoby (typ A)
+ DPFOAv24
+ Daňové priznanie k dani z príjmov FO (typ A) za obdobie 2024 (platné od 1.1.2025)
+ DPFOAv25
+ Daňové priznanie k dani z príjmov FO (typ A) za obdobie 2025 (platné od 1.1.2026)
+ Daňové priznanie k dani z príjmov fyzickej osoby (typ B)
+ DPFOBv24
+ Daňové priznanie k dani z príjmov FO (typ B) za obdobie 2024 (platné od 1.1.2025)
+ DPFOBv25
+ Daňové priznanie k dani z príjmov FO (typ B) za obdobie 2025 (platné od 1.1.2026)
+ Oznámenie daňovníka o predĺžení lehoty na podanie daňového priznania
+ OZN493v24
+ Oznámenie daňovníka o predĺžení lehoty na podanie daňového priznania podľa § 49 ods. 3 písm. a) alebo b) (platné od 1.1.2025)
+ Oznámenie o reverznom hybridnom subjekte
+ OZN49a911v22
+ Oznámenie o reverznom hybridnom subjekte podľa § 49a ods. 9 a 11 (platné od 1.1.2022)
+ Oznámenie o uzatvorení zmluvy s daňovníkom so sídlom alebo s bydliskom v zahraničí
+ OZN49a5v23
+ Oznámenie o uzatvorení zmluvy s daňovníkom so sídlom alebo s bydliskom v zahraničí podľa § 49a ods. 5 (vzor platný od 1.1.2023)
+ Oznámenie o vykonaní úpravy základu dane
+ OZN176v23
+ Oznámenie o vykonaní úpravy základu dane podľa § 17 ods. 6 (vzor platný pre zdaňovacie obdobia končiace po 31.12.2022)
+ Oznámenie o výške nepeňažného plnenia nad rozsah určený osobitným predpisom a dátume jeho poskytnutia
+ OZN49a6v22
+ Oznámenie držiteľa podľa § 49a ods. 6 o výške nepeňažného plnenia nad rozsah určený osobitným predpisom a dátume jeho poskytnutia poskytovateľovi zdravotnej starostlivosti (vzor platný od 1.1.2023)
+ Oznámenie o vzniku stálej prevádzkarne
+ OZN49a4v23
+ Oznámenie o vzniku stálej prevádzkarne podľa § 49a ods. 4 (vzor platný od 1.1.2023)
+ Vyhlásenie o poukázaní sumy do výšky 2% (3%) zaplatenej dane
+ V2Pv25
+ Vyhlásenie o poukázaní sumy do výšky 2% (3%) zaplatenej dane za zdaňovacie obdobie 2025
+ Žiadosť o vydanie potvrdenia o zaplatení dane
+ ZIA51g2v21
+ Žiadosť o vydanie potvrdenia o zaplatení dane podľa § 51g ods. 2 (vzor platný od 1.1.2021)
+ Daň z príjmov právnickej osoby
+ Daňové priznanie k dani z príjmov právnickej osoby
+ DPPOv24
+ Daňové priznanie k dani z príjmov PO za obdobie 2024 (platné od 1.1.2025)
+ DPPOv25
+ Daňové priznanie k dani z príjmov PO za obdobie 2025 (platné od 1.1.2026)
+ Oznámenie daňovníka o predĺžení lehoty na podanie daňového priznania
+ OZN493v24
+ Oznámenie daňovníka o predĺžení lehoty na podanie daňového priznania podľa § 49 ods. 3 písm. a) alebo b) (platné od 1.1.2025)
+ Oznámenie o reverznom hybridnom subjekte
+ OZN49a911v22
+ Oznámenie o reverznom hybridnom subjekte podľa § 49a ods. 9 a 11 (platné od 1.1.2022)
+ Oznámenie o uzatvorení zmluvy s daňovníkom so sídlom alebo s bydliskom v zahraničí
+ OZN49a5v23
+ Oznámenie o uzatvorení zmluvy s daňovníkom so sídlom alebo s bydliskom v zahraničí podľa § 49a ods. 5 (vzor platný od 1.1.2023)
+ Oznámenie o vykonaní úpravy základu dane
+ OZN176v23
+ Oznámenie o vykonaní úpravy základu dane podľa § 17 ods. 6 (vzor platný pre zdaňovacie obdobia končiace po 31.12.2022)
+ Oznámenie o výške nepeňažného plnenia nad rozsah určený osobitným predpisom a dátume jeho poskytnutia
+ OZN49a6v22
+ Oznámenie držiteľa podľa § 49a ods. 6 o výške nepeňažného plnenia nad rozsah určený osobitným predpisom a dátume jeho poskytnutia poskytovateľovi zdravotnej starostlivosti (vzor platný od 1.1.2023)
+ Oznámenie o vzniku stálej prevádzkarne
+ OZN49a4v23
+ Oznámenie o vzniku stálej prevádzkarne podľa § 49a ods. 4 (vzor platný od 1.1.2023)
+ Žiadosť o vrátenie dane
+ ZIA4321v20
+ Žiadosť o vrátenie dane podľa § 43 ods. 21 zákona o dani z príjmov (platná od 1.1.2020)
+ Žiadosť o vydanie potvrdenia o zaplatení dane
+ ZIA51g2v21
+ Žiadosť o vydanie potvrdenia o zaplatení dane podľa § 51g ods. 2 (vzor platný od 1.1.2021)
+ Daň zo sladených nealkoholických nápojov
+ Daňové priznanie k dani zo sladených nealkoholických nápojov
+ DPSNNv25
+ Daňové priznanie k dani zo sladených nealkoholických nápojov (platné od 1.1.2025)
+ Daň zo závislej činnosti - platiteľ dane
+ Hlásenie o vyúčtovaní dane a o úhrne príjmov zo závislej činnosti
+ HLASENIEv22
+ Hlásenie o vyúčtovaní dane a o úhrne príjmov zo závislej činnosti za zdaňovacie obdobie 2022 (platné od 1.1.2023)
+ HLASENIEv23
+ Hlásenie o vyúčtovaní dane a o úhrne príjmov zo závislej činnosti za zdaňovacie obdobie 2023, 2024, 2025 (platné od 1.1.2024)
+ Prehľad o zrazených a odvedených preddavkoch na daň
+ PREHLADv19
+ Prehľad o zrazených a odvedených preddavkoch na daň za zdaňovacie obdobie 2019, 2020, 2021, 2022, 2023
+ PREHLADv24
+ Prehľad o zrazených a odvedených preddavkoch na daň za zdaňovacie obdobie 2024, 2025
+ PREHLADv26
+ Prehľad o zrazených a odvedených preddavkoch na daň za zdaňovacie obdobie 2026
+ Dorovnávacia daň
+ Daňové priznanie k dorovnávacej dani
+ DPDDv24
+ Daňové priznanie k dorovnávacej dani podľa zákona č. 507/2023 Z. z.
+ Oznámenie o podávajúcom subjekte
+ OZN3967v24
+ Oznámenie o podávajúcom subjekte podľa § 39 ods. 6 a 7 zákona č. 507/2023 Z. z.
+ Oznámenie s informáciami na určenie dorovnávacej dane
+ OZN391v24
+ Oznámenie s informáciami na určenie dorovnávacej dane podľa § 39 ods. 1 zákona č. 507/2023 Z. z.
+ Osobitný odvod z podnikania v regulovaných odvetviach
+ Oznámenie podľa zákona o osobitnom odvode z podnikania v regulovaných odvetviach
+ OZNRO32v26
+ Oznámenie podľa § 3 ods. 2 zákona o osobitnom odvode z podnikania v regulovaných odvetviach (platné od 1.1.2026)
+ OZNRO83v26
+ Oznámenie podľa § 8 ods. 3 zákona o osobitnom odvode z podnikania v regulovaných odvetviach  (platné od 1.1.2026)
+ OZNRO91v25
+ Oznámenie na zúčtovanie odvodov podľa § 9 ods. 1 zákona o osobitnom odvode z podnikania v regulovaných odvetviach  (platné od 1.1.2025)
+ Podanie pre FS - Správa daní
+ DAC7 Všeobecné podanie
+ VP_DAC7
+ Všeobecné podanie DAC7
+ Všeobecné podanie pre finančnú správu
+ VP_DANv24
+ Všeobecné podanie - Správa daní (platné od 1.4.2024)
+ Solidárny príspevok
+ Oznámenie o solidárnom príspevku
+ OZNSOLPv24
+ Oznámenie podľa § 7 zákona č. 519/2022 Z. z. o solidárnom príspevku z činností v odvetviach ropy, zemného plynu, uhlia a rafinérií a o doplnení niektorých zákonov (platné od 1.1.2025)
+ Zabezpečenie dane
+ Oznámenie o zrazení a odvedení sumy na zabezpečenie dane
+ OZN443v21
+ Oznámenie o zrazení a odvedení sumy na zabezpečenie dane § 44 ods. 3 (vzor platný pre rok 2021, 2022, 2023, 2024, 2025, 2026)
+ Správa spotrebných daní
+ Podanie pre FS - Správa spotrebných daní
+ Všeobecné podanie pre finančnú správu
+ VP_SPDv24
+ Všeobecné podanie - Spotrebné dane (platné od 1.4.2024)
+ Spotrebná daň z elektriny
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z elektriny
+ SPDELv20
+ Daňové priznanie k spotrebnej dani z elektriny (platné od 1.1.2020)
+ SPDELv25
+ Daňové priznanie k spotrebnej dani z elektriny (platné od 1.9.2025)
+ Spotrebná daň z liehu
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z liehu
+ SPDLHv12b
+ Daňové priznanie k spotrebnej dani z liehu (platné od 1.4.2012)
+ SPDLHv23
+ Daňové priznanie k spotrebnej dani z liehu (platné od 1.3.2023)
+ SPDLHv24
+ Daňové priznanie k spotrebnej dani z liehu (platné od 1.1.2024)
+ Spotrebná daň z minerálneho oleja
+ Daňové priznanie k spotrebnej dani z minerálneho oleja
+ SPDMOv21
+ Daňové priznanie k spotrebnej dani z minerálneho oleja (platné od 1.7.2021)
+ SPDMOv25
+ Daňové priznanie k spotrebnej dani z minerálneho oleja (platné od 1.9.2025)
+ Spotrebná daň z piva
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z piva
+ SPDPVv12b
+ Daňové priznanie k spotrebnej dani z piva (platné od 1.4.2012)
+ Spotrebná daň z tabakových výrobkov
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z bezdymových tabakových výrobkov
+ SPDBTVv17
+ Daňové priznanie k spotrebnej dani z bezdymových tabakových výrobkov (platné od 1.5.2017 / od 1.7.2024)
+ SPDBTVv25
+ Daňové priznanie k spotrebnej dani z bezdymových tabakových výrobkov (platné od 1.2.2025)
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z tabakových výrobkov
+ SPDTVv16
+ Daňové priznanie k spotrebnej dani z tabakových výrobkov (platné od 1.1.2016 / od 1.7.2024)
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z výrobku súvisiaceho s tabakovými výrobkami
+ SPDITVv25
+ Daňové priznanie k spotrebnej dani z výrobku súvisiaceho s tabakovými výrobkami (platné od 1.2.2025)
+ Spotrebná daň z uhlia
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z uhlia
+ SPDUHv20
+ Daňové priznanie k spotrebnej dani z uhlia (platné od 1.1.2020)
+ Spotrebná daň z vína
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani z vína a medziproduktu
+ SPDVNv12b
+ Daňové priznanie k spotrebnej dani z vína a medziproduktu (platné od 1.4.2012)
+ Spotrebná daň zo zemného plynu
+ Daňové priznanie a dodatočné daňové priznanie k spotrebnej dani zo zemného plynu
+ SPDZPv20
+ Daňové priznanie k spotrebnej dani zo zemného plynu (platné od 1.1.2020)
+ SPDZPv25
+ Daňové priznanie k spotrebnej dani zo zemného plynu (platné od 1.9.2025)
+ Sťažnosti
+ Sťažnosť
+ Sťažnosť
+ STAZ_Dv17
+ Sťažnosť (platná od 1.6.2017)
+ Sťažnosť - subjekt CReg
+ Sťažnosť - subjekt CReg
+ STAZ_Cv17
+ Sťažnosť - subjekt CReg (platná od 1.6.2017)
+ Účtovné dokumenty – Register účtovných závierok (RÚZ)
+ Oznámenie schválenia účtovnej závierky
+ Oznámenie o dátume schválenia účtovnej závierky
+ UZOZNv21
+ Oznámenie o dátume schválenia účtovnej závierky (platné od 1.1.2022)
+ Správa s informáciami o dani z príjmov
+ Správa s informáciami o dani z príjmov
+ SIDPv24
+ Správa s informáciami o dani z príjmov (vzor 2024)
+ Účtovné výkazy pre neziskové organizácie
+ Účtovná závierka neziskovej účtovnej jednotky v sústave jednoduchého účtovníctva
+ UZNOv21
+ Účtovná závierka neziskovej účtovnej jednotky v sústave jednoduchého účtovníctva (platná od 1.1.2022)
+ VP-UVNOv21
+ Všeobecné podanie k ÚZ - Neziskové organizácie účtujúce v sústave jednoduchého účtovníctva
+ Účtovná závierka neziskovej účtovnej jednotky v sústave podvojného účtovníctva
+ UZNUJv21
+ Účtovná závierka neziskovej účtovnej jednotky v sústave podvojného účtovníctva (platná od 1.1.2022)
+ VP-UVNUJv21
+ Všeobecné podanie k ÚZ - Neziskové organizácie účtujúce v sústave podvojného účtovníctva
+ Účtovné výkazy pre ostatné typy účtovných jednotiek
+ Účtovná závierka pre ostatné typy účtovných jednotiek
+ VP-FONDNEHv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Fondy nehnuteľností
+ VP-FONDv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Fondy
+ VP-IFRSv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - ÚJ účtujúce podľa IFRS
+ VP-OCPv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Obchodníci s cennými papiermi účtujúci podľa slovenských predpisov
+ VP-PlaIEPv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Platobné inštitúcie a inštitúcie elektronických peňazí účtujúce podľa slovenských predpisov
+ VP-PZFIv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Pobočka zahraničnej finančnej inštitúcie
+ VP-SKISPSv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Subjekt kolektívneho investovania s právnou subjektivitou
+ VP-ZFONDv15
+ Všeobecné podanie k ÚZ - ostatné typy UJ - Záručný fond, fond ochrany vkladov
+ Účtovné výkazy pre podnikateľské subjekty účtujúce v sústave jednoduchého účtovníctva
+ Účtovná závierka podnikateľskej účtovnej jednotky v sústave jednoduchého účtovníctva
+ UZFOv14
+ Účtovná závierka v JÚ (účinná od 31.12.2014)
+ VP-UVFOv15
+ Všeobecné podanie k ÚZ - Podnikateľské subjekty účtujúce v sústave jednoduchého účtovníctva
+ Účtovné výkazy pre podnikateľské subjekty účtujúce v sústave podvojného účtovníctva
+ Účtovná závierka podnikateľskej účtovnej jednotky v sústave podvojného účtovníctva
+ UZMUJv14
+ Účtovná závierka mikro účtovnej jednotky (účinná od 31.12.2014)
+ UZPODv14
+ Účtovná závierka podnikateľov v PÚ - malá a veľká účtovná jednotka (účinná od 31.12.2014)
+ VP-MUJv15
+ Všeobecné podanie k ÚZ - Mikro účtovné jednotky
+ VP-PODv15
+ Všeobecné podanie k ÚZ - Podnikateľské subjekty účtujúce v sústave podvojného účtovníctva
+Tlač obsahu
+ Odporučiť známemu
+ Opýtať sa k téme
+Finančná správa
+Pre médiá
+Aktuálne: dane a clá
+Praktické príklady
+Formuláre
+Kontakty
+O portáli FS
+Ministerstvo financií SR
+Poskytovanie informácií podľa zák. č. 211/2000 Z. z.
+Kariéra
+Vyhlásenie o prístupnosti
+Vyhlásenie o cookies
+Mapa stránok
+RSS
+Copyright © 2026 Finančné riaditeľstvo SR
+ Prevádzku stránky www.financnasprava.sk a správu jej obsahu zabezpečuje Finančné riaditeľstvo SR

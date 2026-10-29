@@ -1,0 +1,32 @@
+{
+  "before_sha256": "4879e2ac41b77ef4def3a4a0a0574dad31e3c270a9823f6821b5b524fb3232b1",
+  "after_sha256": "55277ecd8c00160c8f04fbbc8640a36c041d64bd1dbecec0e0251bcb16002f9a",
+  "operations": [
+    {
+      "name": "trainer and pre2026 transition",
+      "before": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). From 2026 the employee and employer pay social insurance on any pay accounted during sickness, maternity or care leave. The old exclusion periods are gone for employees (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12)).",
+      "after": "**Employee social base.** Pay from the work, except income that is not taxable or is exempt from income tax, and except employer contributions to supplementary pension saving (Act 461/2003 §138(1)). The income-tax exemption does not remove qualifying registered-trainer income from the social base: that income is included before its separate trainer deduction. For an employee's qualifying legal relationship as a trainer entered in the register of natural persons in sport, §138c gives a EUR 300 monthly deduction, limited to that relationship's assessment base if lower. Employer accident and guarantee insurance use the employee base before that deduction (§138(6)); do not remove the deduction from those bases. A profit share paid to an employee who holds no capital is included. The base is capped at EUR 16,764 a month; employer accident insurance runs on the full pay (§138(10)). For remuneration for 2026 periods, the employee and employer pay social insurance on assessment-base income accounted during sickness, maternity or care leave: the old employee exclusion periods are abolished. If pay is accounted after 31 December 2025 for a period before 1 January 2026 containing the then-excluded days, adjust the base under the law effective through 31 December 2025, as the authority's transition instruction requires (Sociálna poisťovňa, changes from 1 January 2026, item 26). Where someone has several jobs, social contributions run from the highest base down (§138(12))."
+    },
+    {
+      "name": "independent health-base reference",
+      "before": "**Employee health base.** The same employment income, with no ceiling (Act 580/2004 §13(1); VšZP, employer page).",
+      "after": "**Employee health base.** Employment income under the health law's own §10b and §13(1), with no ceiling (Act 580/2004; VšZP, employer page)."
+    },
+    {
+      "name": "version",
+      "before": "version: 0.8\n",
+      "after": "version: 0.9\n"
+    },
+    {
+      "name": "date",
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "inverse_exact": true,
+  "source_URLs_exact": true,
+  "oa_blocks_exact": true,
+  "oa_count": 2,
+  "CTA_exact": true,
+  "status": "writer repair; independent closure pending"
+}

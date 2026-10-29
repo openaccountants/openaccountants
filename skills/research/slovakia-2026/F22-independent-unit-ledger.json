@@ -1,0 +1,464 @@
+{
+  "scope": "F22 specific omitted groups; not a whole-pack completeness count",
+  "unit_count": 50,
+  "counts": {
+    "comparison_rows": 16,
+    "named_tests": 12,
+    "review_templates": 2,
+    "confidence_labels": 3,
+    "reference_only_topics": 12,
+    "historical_trust_publication_claims": 5
+  },
+  "units": [
+    {
+      "id": "C01",
+      "type": "comparison_row",
+      "historical_topic": "Standard rate",
+      "historical_SK_cell": "23% (from 2025; previously 20%)",
+      "historical_MT_cell": "18%",
+      "current_SK_disposition": "Rates table; historical corrections",
+      "primary_basis": "VAT27 and Annex7/7a",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C02",
+      "type": "comparison_row",
+      "historical_topic": "Reduced rates",
+      "historical_SK_cell": "19%, 5% (from 2025; previously 10%)",
+      "historical_MT_cell": "12%, 7%, 5%",
+      "current_SK_disposition": "Rates table with commodity/CPA qualifications",
+      "primary_basis": "VAT27 and Annex7/7a",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C03",
+      "type": "comparison_row",
+      "historical_topic": "Return form",
+      "historical_SK_cell": "DPHv25 (~34 rows from July 2025)",
+      "historical_MT_cell": "Malta periodic VAT return (~45 boxes)",
+      "current_SK_disposition": "DPHv25 matrix",
+      "primary_basis": "actual s04.pdf pages2-3",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C04",
+      "type": "comparison_row",
+      "historical_topic": "Control Statement",
+      "historical_SK_cell": "Kontrolny vykaz (mandatory)",
+      "historical_MT_cell": "No equivalent",
+      "current_SK_disposition": "KVDPHv25 sections",
+      "primary_basis": "actual t01.html",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C05",
+      "type": "comparison_row",
+      "historical_topic": "Filing frequency",
+      "historical_SK_cell": "Monthly / Quarterly",
+      "historical_MT_cell": "Quarterly (Art. 10), Annual (Art. 11)",
+      "current_SK_disposition": "Tax-period table",
+      "primary_basis": "VAT77",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C06",
+      "type": "comparison_row",
+      "historical_topic": "Filing deadline",
+      "historical_SK_cell": "25th of following month",
+      "historical_MT_cell": "21st of month after quarter",
+      "current_SK_disposition": "Return deadline table",
+      "primary_basis": "VAT78,TC27(4)",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C07",
+      "type": "comparison_row",
+      "historical_topic": "Payment deadline",
+      "historical_SK_cell": "25th",
+      "historical_MT_cell": "Same as filing",
+      "current_SK_disposition": "Payment deadline table",
+      "primary_basis": "VAT78,TC27(4)",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C08",
+      "type": "comparison_row",
+      "historical_topic": "Small enterprise threshold",
+      "historical_SK_cell": "EUR 49,790",
+      "historical_MT_cell": "EUR 35,000",
+      "current_SK_disposition": "Current registration and EU SME routes",
+      "primary_basis": "VAT4,68f,68g",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C09",
+      "type": "comparison_row",
+      "historical_topic": "Capital goods movable",
+      "historical_SK_cell": "5-year adjustment",
+      "historical_MT_cell": "> EUR 1,160 gross",
+      "current_SK_disposition": "Capital-goods register",
+      "primary_basis": "VAT52a/54/Annex1",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C10",
+      "type": "comparison_row",
+      "historical_topic": "Capital goods immovable",
+      "historical_SK_cell": "20-year adjustment",
+      "historical_MT_cell": "No specific adjustment period",
+      "current_SK_disposition": "Capital-goods register",
+      "primary_basis": "VAT52a/54/54a/54d",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C11",
+      "type": "comparison_row",
+      "historical_topic": "Blocked: entertainment",
+      "historical_SK_cell": "Yes (fully blocked, Sec. 49(7)(a))",
+      "historical_MT_cell": "Yes (10th Schedule)",
+      "current_SK_disposition": "Hospitality block",
+      "primary_basis": "VAT49(7)(a)",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C12",
+      "type": "comparison_row",
+      "historical_topic": "Blocked: passenger cars",
+      "historical_SK_cell": "50% from 2026 (M1/L1e/L3e)",
+      "historical_MT_cell": "Fully blocked (10th Schedule)",
+      "current_SK_disposition": "Vehicle50%/exclusive-use boundary",
+      "primary_basis": "VAT85n",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C13",
+      "type": "comparison_row",
+      "historical_topic": "Import VAT reverse charge",
+      "historical_SK_cell": "Available from July 2025",
+      "historical_MT_cell": "Not available",
+      "current_SK_disposition": "Import self-assessment/AEO method",
+      "primary_basis": "VAT24/84a",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C14",
+      "type": "comparison_row",
+      "historical_topic": "Domestic reverse charge",
+      "historical_SK_cell": "Construction, waste, electronics > EUR 5K, emissions",
+      "historical_MT_cell": "No domestic reverse charge",
+      "current_SK_disposition": "Domestic reverse-charge categories",
+      "primary_basis": "VAT69(12)",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C15",
+      "type": "comparison_row",
+      "historical_topic": "Currency",
+      "historical_SK_cell": "EUR",
+      "historical_MT_cell": "EUR",
+      "current_SK_disposition": "Euro in README and form denominations",
+      "primary_basis": "DPHv25 and VAT monetary provisions",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "C16",
+      "type": "comparison_row",
+      "historical_topic": "Tax authority",
+      "historical_SK_cell": "Financna sprava",
+      "historical_MT_cell": "CFR",
+      "current_SK_disposition": "Financial Administration sources/portal",
+      "primary_basis": "official catalog/current Guide Sources",
+      "MT_disposition": "Removed from operative Slovak Guide: no verified Maltese primary support in old file/proposal. Historical cell retained verbatim; no2026Maltese-law claim.",
+      "rule11_basis": "Unsupported comparison content may be removed; supported Slovak rule retained or corrected."
+    },
+    {
+      "id": "T01",
+      "type": "named_test",
+      "historical_title": "Standard domestic purchase, 23% DPH [T1]",
+      "historical_full_facts_and_output": "Input: Slovak supplier, office supplies, gross EUR 246, DPH EUR 46, net EUR 200. Registered taxpayer.\nExpected output: Row 20 += EUR 46. Fully recoverable.",
+      "current_mapping": "19 total;21 domestic subset",
+      "primary_basis": "VAT49(2)(a)/51(1)(a)",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T02",
+      "type": "named_test",
+      "historical_title": "EU service, reverse charge [T1]",
+      "historical_full_facts_and_output": "Input: German supplier, consulting EUR 1,000, no VAT. Registered taxpayer.\nExpected output: Row 08 = EUR 1,000. Row 08a = EUR 230 (23%). Row 24 = EUR 230. Net = zero.",
+      "current_mapping": "09b/10b;19 input",
+      "primary_basis": "VAT15(1),69(3),49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T03",
+      "type": "named_test",
+      "historical_title": "Entertainment expense (blocked) [T1]",
+      "historical_full_facts_and_output": "Input: Slovak restaurant, business dinner EUR 500 gross, DPH EUR 94 (23%), net EUR 406.\nExpected output: Input DPH = EUR 0. Entertainment fully blocked (Sec. 49(7)(a)). No recovery.",
+      "current_mapping": "No deductible input",
+      "primary_basis": "VAT49(7)(a)",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T04",
+      "type": "named_test",
+      "historical_title": "EU B2B sale [T1]",
+      "historical_full_facts_and_output": "Input: Registered client sells goods to Polish company EUR 5,000, 0% DPH.\nExpected output: Row 04 = EUR 5,000. No output DPH. EC Sales List.",
+      "current_mapping": "13/14 exempt base;ECsales list",
+      "primary_basis": "VAT43/80",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T05",
+      "type": "named_test",
+      "historical_title": "Non-EU software subscription [T1]",
+      "historical_full_facts_and_output": "Input: US supplier (Notion), EUR 20/month, no VAT. Registered taxpayer.\nExpected output: Row 09 = EUR 20. Row 09a = EUR 4.60 (23%). Row 25 = EUR 4.60. Net = zero.",
+      "current_mapping": "09b/10b;19 input",
+      "primary_basis": "VAT15(1),69(3),49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T06",
+      "type": "named_test",
+      "historical_title": "Reduced rate domestic purchase (5%) [T1]",
+      "historical_full_facts_and_output": "Input: Slovak supplier, bread and milk at 5%, gross EUR 105, DPH EUR 5, net EUR 100.\nExpected output: Row 22 += EUR 5. Fully recoverable.",
+      "current_mapping": "18a total;20a domestic subset",
+      "primary_basis": "VAT27 Annex7,49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T07",
+      "type": "named_test",
+      "historical_title": "Import VAT reverse charge (from July 2025) [T2]",
+      "historical_full_facts_and_output": "Input: Client imports machinery from US, customs value EUR 50,000. Opts for import RC.\nExpected output: Row 11 = EUR 50,000. Row 11a = EUR 11,500 (23%). Row 23a = EUR 11,500. Net = zero. Flag for reviewer: confirm eligibility.",
+      "current_mapping": "11e/12e;19 total;23c subset",
+      "primary_basis": "VAT24/84a,49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T08",
+      "type": "named_test",
+      "historical_title": "Passenger vehicle (from 2026, 50%) [T2]",
+      "historical_full_facts_and_output": "Input: M1 car EUR 20,000 + DPH EUR 4,600 (23%). Mixed business/private use. No electronic records.\nExpected output: Row 20 += EUR 2,300 (50%). Remaining EUR 2,300 is cost. Flag for reviewer.",
+      "current_mapping": "19 total;21 domestic subset at50%",
+      "primary_basis": "VAT85n,49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T09",
+      "type": "named_test",
+      "historical_title": "Construction services (domestic RC) [T1]",
+      "historical_full_facts_and_output": "Input: Slovak subcontractor, construction EUR 15,000. Both parties registered.\nExpected output: Buyer: Row 10 = EUR 15,000, Row 10a = EUR 3,450 (23%). Row 26 = EUR 3,450. Net = zero.",
+      "current_mapping": "09b/10b;19 input",
+      "primary_basis": "VAT69(12)(j),49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T10",
+      "type": "named_test",
+      "historical_title": "Export of goods [T1]",
+      "historical_full_facts_and_output": "Input: Slovak company exports to US client, EUR 8,000.\nExpected output: Row 05 = EUR 8,000. No output DPH. Zero-rated.",
+      "current_mapping": "13/15 exempt base",
+      "primary_basis": "VAT47",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T11",
+      "type": "named_test",
+      "historical_title": "Intra-EU goods acquisition [T1]",
+      "historical_full_facts_and_output": "Input: Austrian supplier, goods EUR 3,000, 0% with AT VAT number.\nExpected output: Row 07 = EUR 3,000. Row 07a = EUR 690 (23%). Row 23 = EUR 690. Net = zero.",
+      "current_mapping": "07/08;19 input",
+      "primary_basis": "VAT11/20,69(6),49/51",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Apply actual taxable supply, payer status, documentary and deduction gates; no unconditional full recovery merely from VAT registration."
+    },
+    {
+      "id": "T12",
+      "type": "named_test",
+      "historical_title": "Section 7 entity receives EU services (no deduction) [T1]",
+      "historical_full_facts_and_output": "Input: Section 7 registered entity receives German consulting EUR 500.\nExpected output: Row 08 = EUR 500. Row 08a = EUR 115 (23%). NO input deduction. Must pay EUR 115.",
+      "current_mapping": "09b/10b;32/35due115;noinput/noKV",
+      "primary_basis": "VAT7a(1),69(3),78(3),49(1),78a(1)",
+      "rule11_basis": "Named fixture duplicates a retained legal method; corrected aliases/eligibility replace unsupported old output. Original facts retained verbatim in archive.",
+      "qualifications": "Existing7registration: no new7aapplication; nonpayer self-assesses115/noinput."
+    },
+    {
+      "id": "E01",
+      "type": "literal_workflow_template",
+      "original": "REVIEWER FLAG",
+      "disposition": "Removed duplicate reviewer-output boilerplate. Current source-gap, intake and professional-review safeguards remain; original template retained in archive.",
+      "rule11_basis": "Boilerplate/duplicate format, not tax entitlement."
+    },
+    {
+      "id": "E02",
+      "type": "literal_workflow_template",
+      "original": "ESCALATION REQUIRED",
+      "disposition": "Removed duplicate reviewer-output boilerplate. Current source-gap, intake and professional-review safeguards remain; original template retained in archive.",
+      "rule11_basis": "Boilerplate/duplicate format, not tax entitlement."
+    },
+    {
+      "id": "L01",
+      "type": "confidence_taxonomy",
+      "original": "T1 deterministic/no judgement",
+      "disposition": "Removed author-assigned confidence labels; no accountant attestation inferred. T1economic methods remain; T2coefficient/import/vehicle rules remain with explicit gaps. Old T3complex groups/nonstandard supplies/triangulation/SOPARFI-like labels were exclusions, not previously supplied computations.",
+      "rule11_basis": "Workflow taxonomy/unsupported confidence claims; no covered computation removed."
+    },
+    {
+      "id": "L02",
+      "type": "confidence_taxonomy",
+      "original": "T2 reviewer judgement",
+      "disposition": "Removed author-assigned confidence labels; no accountant attestation inferred. T1economic methods remain; T2coefficient/import/vehicle rules remain with explicit gaps. Old T3complex groups/nonstandard supplies/triangulation/SOPARFI-like labels were exclusions, not previously supplied computations.",
+      "rule11_basis": "Workflow taxonomy/unsupported confidence claims; no covered computation removed."
+    },
+    {
+      "id": "L03",
+      "type": "confidence_taxonomy",
+      "original": "T3 out of scope/escalate",
+      "disposition": "Removed author-assigned confidence labels; no accountant attestation inferred. T1economic methods remain; T2coefficient/import/vehicle rules remain with explicit gaps. Old T3complex groups/nonstandard supplies/triangulation/SOPARFI-like labels were exclusions, not previously supplied computations.",
+      "rule11_basis": "Workflow taxonomy/unsupported confidence claims; no covered computation removed."
+    },
+    {
+      "id": "D01",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Corporate income tax (dan z prijmov pravnickych osob):** 21% (from 2025) on adjusted profit",
+      "disposition": "CIT rate method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D02",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Small business CIT:** 10% for companies with revenue up to EUR 60,000 (from 2025)",
+      "disposition": "CIT small-company revenue method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D03",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Personal income tax:** 19% (up to EUR 47,537.98) / 25% above",
+      "disposition": "PIT bands",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D04",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Dividend tax:** 7% withholding (from 2025)",
+      "disposition": "PIT/XB profit-period dividend method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D05",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Social contributions:** employer ~35.2%, employee ~13.4%",
+      "disposition": "Payroll social method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D06",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Health insurance:** employer 10%, employee 4%",
+      "disposition": "Payroll health method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D07",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Motor vehicle tax (dan z motorovych vozidiel):** Based on engine power, for business vehicles",
+      "disposition": "Removed unsupported reference-only shorthand; no motor-vehicle-tax computation supplied before/after.",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D08",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Local taxes:** Property tax (administered by municipalities)",
+      "disposition": "Removed unsupported reference-only shorthand; no municipal property-tax computation supplied before/after.",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D09",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Minimum tax (from 2025):** EUR 340 - EUR 3,840 depending on revenue tier",
+      "disposition": "CIT current minimum-tax method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D10",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Special industry levies:** Banking levy, insurance levy, regulated industry contributions",
+      "disposition": "Removed unsupported reference-only shorthand for banking levy,insurance levy and regulated-industry contributions; none computed before/after.",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D11",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **Withholding tax:** 19% on royalties, interest, and management fees paid to non-residents (reduced by DTTs)",
+      "disposition": "XB withholding/source/treaty method",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "D12",
+      "type": "direct_tax_reference_only_topic",
+      "historical_full_unit": "- **MOSS/OSS:** One-stop shop for B2C digital services and distance sales to EU consumers",
+      "disposition": "OSS high-level pointer retained in current VAT cross-border section and linked EU Guide; no complete special-scheme computation certified.",
+      "rule11_basis": "Current sibling method for covered categories; unsourced reference-only content may be removed. Archive is not current legal coverage."
+    },
+    {
+      "id": "H01",
+      "type": "historical_trust_publication_claim",
+      "historical_claim": "Validated By \u2014 Deep research verification,April2026",
+      "disposition": "Unsupported/obsolete in-body trust or publication boilerplate removed; original remains verbatim. Current pending_review/tier2/source-cited-draft status retained.",
+      "rule11_basis": "Unsupported historical trust claim/boilerplate; current Rule9/10publication model controls."
+    },
+    {
+      "id": "H02",
+      "type": "historical_trust_publication_claim",
+      "historical_claim": "Validation Date \u20142026-04-10",
+      "disposition": "Unsupported/obsolete in-body trust or publication boilerplate removed; original remains verbatim. Current pending_review/tier2/source-cited-draft status retained.",
+      "rule11_basis": "Unsupported historical trust claim/boilerplate; current Rule9/10publication model controls."
+    },
+    {
+      "id": "H03",
+      "type": "historical_trust_publication_claim",
+      "historical_claim": "Status \u2014validated",
+      "disposition": "Unsupported/obsolete in-body trust or publication boilerplate removed; original remains verbatim. Current pending_review/tier2/source-cited-draft status retained.",
+      "rule11_basis": "Unsupported historical trust claim/boilerplate; current Rule9/10publication model controls."
+    },
+    {
+      "id": "H04",
+      "type": "historical_trust_publication_claim",
+      "historical_claim": "Validation by qualified Slovak adviser required before production use",
+      "disposition": "Unsupported/obsolete in-body trust or publication boilerplate removed; original remains verbatim. Current pending_review/tier2/source-cited-draft status retained.",
+      "rule11_basis": "Unsupported historical trust claim/boilerplate; current Rule9/10publication model controls."
+    },
+    {
+      "id": "H05",
+      "type": "historical_trust_publication_claim",
+      "historical_claim": "Skill may not be published without practitioner sign-off",
+      "disposition": "Unsupported/obsolete in-body trust or publication boilerplate removed; original remains verbatim. Current pending_review/tier2/source-cited-draft status retained.",
+      "rule11_basis": "Unsupported historical trust claim/boilerplate; current Rule9/10publication model controls."
+    }
+  ]
+}

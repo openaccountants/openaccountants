@@ -1,0 +1,216 @@
+{
+  "count": 30,
+  "all_pass": true,
+  "controls": [
+    {
+      "name": "July ordinary filing deadline weekday",
+      "actual": "Monday",
+      "expected": "Monday",
+      "source": "ITA49(2)",
+      "pass": true
+    },
+    {
+      "name": "Five days exclude filing deadline",
+      "actual": "2026-09-05",
+      "expected": "2026-09-05",
+      "source": "TC27(2); ITA39(11)",
+      "pass": true
+    },
+    {
+      "name": "Fifth day is Saturday",
+      "actual": "Saturday",
+      "expected": "Saturday",
+      "source": "calendar",
+      "pass": true
+    },
+    {
+      "name": "Weekend tolerance endpoint",
+      "actual": "2026-09-07",
+      "expected": "2026-09-07",
+      "source": "TC27(4); FS monthly July2026 example",
+      "pass": true
+    },
+    {
+      "name": "7 September inclusive tolerance",
+      "actual": true,
+      "expected": true,
+      "source": "ITA39(11); FS FAQ13",
+      "pass": true
+    },
+    {
+      "name": "8 September beyond tolerance",
+      "actual": false,
+      "expected": false,
+      "source": "ITA39(11)",
+      "pass": true
+    },
+    {
+      "name": "paid wages, no advance, no payout, late",
+      "actual": "special financial/request gateway absent; filing duty retained",
+      "expected": "special financial/request gateway absent; filing duty retained",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "advance duty, not paid, first breach",
+      "actual": "j/e category; first breach no range fine",
+      "expected": "j/e category; first breach no range fine",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "advance duty, already paid, later filing breach",
+      "actual": "j/e category; range 100-10000",
+      "expected": "j/e category; range 100-10000",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "payout request, no advance, later breach",
+      "actual": "j/e category; range 100-10000",
+      "expected": "j/e category; range 100-10000",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "no income/no request/no summary duty",
+      "actual": "no required-summary special trigger",
+      "expected": "no required-summary special trigger",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "no income but payout request and required summary",
+      "actual": "j/e category; first breach no range fine",
+      "expected": "j/e category; first breach no range fine",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "financial gateway and prior breach within tolerance",
+      "actual": "within tolerance",
+      "expected": "within tolerance",
+      "source": "ITA39(9),(11),(12); TC154(1)j;155(1)e,(4); FS guidance",
+      "pass": true
+    },
+    {
+      "name": "new monthly form same tax-office j history",
+      "actual": true,
+      "expected": true,
+      "source": "FS second chance",
+      "pass": true
+    },
+    {
+      "name": "different a1 category not same j history",
+      "actual": false,
+      "expected": false,
+      "source": "FS second chance",
+      "pass": true
+    },
+    {
+      "name": "customs office assessed separately",
+      "actual": false,
+      "expected": false,
+      "source": "FS second chance",
+      "pass": true
+    },
+    {
+      "name": "ordinary wage remittance: five days after wage payment",
+      "actual": "2026-08-17",
+      "expected": "2026-08-17",
+      "source": "ITA35(6); TC27(2),(4)",
+      "pass": true
+    },
+    {
+      "name": "advance ECB reference date",
+      "actual": "2026-08-18",
+      "expected": "2026-08-18",
+      "source": "TC156(2)",
+      "pass": true
+    },
+    {
+      "name": "one-day late payment counts payment day",
+      "actual": 1,
+      "expected": 1,
+      "source": "TC156(2)",
+      "pass": true
+    },
+    {
+      "name": "on-time payment has zero days",
+      "actual": 0,
+      "expected": 0,
+      "source": "TC156(2)",
+      "pass": true
+    },
+    {
+      "name": "hypothetical ECB2% triggers15%floor",
+      "actual": "0.15",
+      "expected": "0.15",
+      "source": "TC156(2); hypothetical rate, no actual ECB assertion",
+      "pass": true
+    },
+    {
+      "name": "hypothetical ECB4% gives16%",
+      "actual": "0.16",
+      "expected": "0.16",
+      "source": "TC156(2); hypothetical rate",
+      "pass": true
+    },
+    {
+      "name": "payment before reconciliation",
+      "actual": "2027-01-20",
+      "expected": "2027-01-20",
+      "source": "TC156(5)",
+      "pass": true
+    },
+    {
+      "name": "still unpaid: reconciliation cutoff",
+      "actual": "2027-03-10",
+      "expected": "2027-03-10",
+      "source": "TC156(5)",
+      "pass": true
+    },
+    {
+      "name": "payment after deadline cannot extend cutoff",
+      "actual": "2027-03-31",
+      "expected": "2027-03-31",
+      "source": "TC156(5)",
+      "pass": true
+    },
+    {
+      "name": "ten-cent downward rounding",
+      "actual": "15.1",
+      "expected": "15.1",
+      "source": "TC161",
+      "pass": true
+    },
+    {
+      "name": "exactly five euro not assessed",
+      "actual": false,
+      "expected": false,
+      "source": "TC156(6)b",
+      "pass": true
+    },
+    {
+      "name": "five euro ten exceeds exemption",
+      "actual": true,
+      "expected": true,
+      "source": "TC156(6)b",
+      "pass": true
+    },
+    {
+      "name": "late form but remitted on time: payment interest principal zero",
+      "actual": "0.00",
+      "expected": "0",
+      "source": "TC156(1)d",
+      "pass": true
+    },
+    {
+      "name": "first-fine relief does not change payment interest rate",
+      "actual": "0.15",
+      "expected": "0.15",
+      "source": "TC155(4) versus156",
+      "pass": true
+    }
+  ]
+}

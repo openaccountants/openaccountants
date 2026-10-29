@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Fresh full Slovakia VAT registration Guide independent source/no-loss review only",
+  "reviewed_sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+  "findings": [{"id":"REG-INDEP-01","type":"template","finding":"Seven intake questions exceeded template three-to-six maximum","resolution":"Root combined first two questions and renumbered remainder, without dropping facts","status":"fixed"}],
+  "remaining_substantive_findings": [],
+  "lost_content_restored": 0,
+  "retained_precise_reservations": ["Current registration form version and identifiers", "Exact fixed-gross crossing-supply circularity conclusion"],
+  "country_attestation": false,
+  "licensed_accountant_signoff": false
+}

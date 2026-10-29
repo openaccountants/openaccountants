@@ -1,0 +1,5 @@
+{
+  "url": "https://static.slov-lex.sk/static/SK/ZZ/2003/595/20240101.html",
+  "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+  "verified_TLS_escalated_attempt": "2026-10-29: HTTP403 Forbidden; no raw primary HTML acquired; official web extraction separately retained."
+}

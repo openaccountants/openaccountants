@@ -1,0 +1,466 @@
+[
+  {
+    "name": "old snapshot equals actual git old parent",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "current snapshot equals actual main187064a8",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "reviewed current final hash",
+    "pass": true,
+    "detail": "7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  },
+  {
+    "name": "full CTA old current integrated byte-identical",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata name",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata jurisdiction",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata review_status",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata trust_label",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata tier",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "protected original metadata license",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "current metadata preserved description",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "current metadata preserved category",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "current metadata preserved tax_year",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "year2026tier2draft",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "description 80\u2013150 words",
+    "pass": true,
+    "detail": 125
+  },
+  {
+    "name": "exact current H2 headings preserved",
+    "pass": true,
+    "detail": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The taxable base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Worked examples",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  },
+  {
+    "name": "contributed-by preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "two existing executable blocks byte-identical",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "existing example1 output_vat",
+    "pass": true,
+    "detail": {
+      "actual": "10080.00",
+      "expected": "10080"
+    }
+  },
+  {
+    "name": "existing example1 payable",
+    "pass": true,
+    "detail": {
+      "actual": "5480.00",
+      "expected": "5480"
+    }
+  },
+  {
+    "name": "existing example2 output_vat",
+    "pass": true,
+    "detail": {
+      "actual": "7360.00",
+      "expected": "7360"
+    }
+  },
+  {
+    "name": "existing example2 input_vat",
+    "pass": true,
+    "detail": {
+      "actual": "4485.00",
+      "expected": "4485"
+    }
+  },
+  {
+    "name": "existing example2 payable",
+    "pass": true,
+    "detail": {
+      "actual": "2875.00",
+      "expected": "2875"
+    }
+  },
+  {
+    "name": "gift17 inclusive output exception",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "gift17.01 outside output exception",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "movable1700 equality not statutory greater-than threshold",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "movable1700.01 threshold met",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "firstuse2026 movable inclusive5year end2030",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "firstuse2026 property inclusive20year end2045",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "property39.99 below40pct reset threshold",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "property40 meets at-least40pct reset threshold",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "sixyear office passes age with no resetting event",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "eligible import50000 at23pct11500",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "fully taxable eligible import netzero",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "complete import base adds dutyandcost",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "import eligibility (True, '4', True, False)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "import eligibility (True, '4', False, False)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "import eligibility (False, '5', True, False)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "import eligibility (False, '5', True, True)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "import eligibility (True, '7a', True, True)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "M1car5750 cap2875",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "N1fullytaxablefuel200vat46",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "old mixedM1car2026running46cap23",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "2024creditnote1000 original20not2026rate",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "25(6) exception (True, True, True, True)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "25(6) exception (True, True, True, False)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "25(6) exception (False, True, True, True)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "25(6) exception (True, True, False, True)",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "cashrefund5 excluded /5.01 above threshold",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "refund100 offset80 leaves20",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "EC fine100 lower bound",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "EC fine10000 upper bound",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "persistent500 repeatedsame not1000",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "discoveryJune2026 nextmonthendJuly31",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "filingobligation2026 ordinary5year through2031yearend",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "December2025 obligationJan2026 same2031 origin",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "IntrastatAug2026report15SepTuesday",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "IntrastatJuly2026deadlineSat15Aug movesMon17",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "exampleMarch2026VAT25AprSaturday27AprMonday",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "VATidSK10digitsnotvalidity",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Group payer.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Historical corrections.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Classify the underlying supply.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Domestic exemption catalogue.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Transfer of a business.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Private use and business gifts.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Capital-goods register.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Credit notes.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Older office/property sale.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Vehicle boundaries.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Refund offsets and audited refunds.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Electronic return.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Adjacent goods reporting only.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Correcting the VAT return.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Specific international exemptions.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added paragraph Tax representative.",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single replaced import paragraph",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single client question extension",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single added sanction table",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "seven source rows added",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "single export evidence condition restored",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "exact entire baseline restored by reversing declared additions",
+    "pass": true,
+    "detail": {
+      "normalized_sha256": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80",
+      "baseline": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80"
+    }
+  },
+  {
+    "name": "existing reservations exact",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "verified raw vat-act-2026-browser.txt",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "verified raw tax-code-2026-browser.txt",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "verified raw ecsales-method.pdf",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "verified raw ecsales-current.html",
+    "pass": true,
+    "detail": null
+  }
+]

@@ -1,0 +1,237 @@
+[
+  {
+    "name": "SK PIT 2026, SZCO flat-rate expenses, revenue EUR 48,000, 15% rate",
+    "independently_recomputed": {
+      "flat_expenses": "20000",
+      "partial_base": "22000",
+      "allowance": "5966.73",
+      "base": "16033.27",
+      "tax": "2404.99",
+      "micro_loss_used": "8000",
+      "controlled_trader_loss_used": "5000",
+      "controlled_trader_loss_left": "3000",
+      "government_bond_tax": "130.00",
+      "foreign_bank_interest_tax": "190.00",
+      "exempt_retail_bond_tax": "0"
+    },
+    "expected_fields": 11,
+    "all_match": true
+  },
+  {
+    "name": "SK PIT 2026, employee, allowance phase-out and child bonus taper",
+    "independently_recomputed": {
+      "allowance_cap": "14661.11",
+      "allowance": "2661.11",
+      "base": "33338.89",
+      "tax": "6334.39",
+      "taper_threshold": "27432.0",
+      "bonus": "343.20",
+      "tax_after_bonus": "5991.19",
+      "child_15_in_june": "900",
+      "child_18_in_june": "300",
+      "child_born_june": "700",
+      "changing_count_cap": "1300.000",
+      "changing_count_bonus": "1300.000",
+      "low_base_bonus": "580.00",
+      "combined_base": "6000",
+      "combined_bonus": "1200",
+      "partial_combined_base": "4000",
+      "partial_combined_bonus": "1160.00",
+      "old_mortgage_bonus": "400",
+      "new_mortgage_bonus": "1200",
+      "new_partial_bonus": "600",
+      "return_balance_variant": "591.19"
+    },
+    "expected_fields": 21,
+    "all_match": true
+  },
+  {
+    "name": "Alfa s.r.o., revenue EUR 90,000, profit EUR 20,000, loss EUR 4,000 (2026)",
+    "independently_recomputed": {
+      "base_before_loss": "21500",
+      "loss_cap": "10750",
+      "loss_used": "4000",
+      "base_after_loss": "17500",
+      "tax_10": "1750.0",
+      "tax_payable": "1750.0",
+      "tax_if_21": "3675.00",
+      "cliff_cost": "1925.00",
+      "computer_first_year": "600.00",
+      "ordinary_car_first_year": "3750.00",
+      "qualifying_bev_first_year": "7500.00",
+      "furniture_first_year": "500.00",
+      "admin_building_full_year": "20000",
+      "qualifying_hotel_full_year": "40000",
+      "improvements_boundary": "80000",
+      "improvement_excess_over_boundary": "0",
+      "separate_improvements_full_year": "13333.33",
+      "min_credit_room_variant": "790.0",
+      "min_credit_used_variant": "500",
+      "tax_after_prior_credit_variant": "1250.0",
+      "final_payment_variant": "250.0"
+    },
+    "expected_fields": 21,
+    "all_match": true
+  },
+  {
+    "name": "Beta a.s., revenue EUR 6,200,000, base EUR 300,000, losses EUR 400,000 (2026)",
+    "independently_recomputed": {
+      "loss_cap": "150000",
+      "loss_used": "150000",
+      "loss_cf": "250000",
+      "base_after_loss": "150000",
+      "tax_24": "36000.00",
+      "tax_payable": "36000.00",
+      "monthly_advance": "3000.00",
+      "statutory_sum_bases": "2000000",
+      "tax_ebitda": "7000000",
+      "interest_capacity": "2100000.0",
+      "interest_addback": "1900000.0",
+      "threshold_boundary_excess": "0",
+      "carry_room": "400000",
+      "interest_carry_used": "400000",
+      "interest_carry_left": "1500000.0",
+      "thin_covered_costs": "100000",
+      "thin_capacity": "75000",
+      "thin_disallowed": "25000",
+      "thin_allowed": "75000",
+      "thin_negative_ebitda_disallowed": "100000",
+      "thin_zero_ebitda_disallowed": "100000",
+      "final_payment_variant": "6000.00"
+    },
+    "expected_fields": 22,
+    "all_match": true
+  },
+  {
+    "name": "Cafe Dunaj s.r.o., March 2026 return",
+    "independently_recomputed": {
+      "output_vat": "10080.00",
+      "payable": "5480"
+    },
+    "expected_fields": 2,
+    "all_match": true
+  },
+  {
+    "name": "Tatra Consulting s.r.o., April 2026 return",
+    "independently_recomputed": {
+      "output_vat": "7360.00",
+      "input_vat": "4485.00",
+      "payable": "2875"
+    },
+    "expected_fields": 3,
+    "all_match": true
+  },
+  {
+    "name": "SK first EU service as non-payer and equivalent service after payer registration, 2026",
+    "independently_recomputed": {
+      "output_vat": "46.00",
+      "nonpayer_tax": "46.00",
+      "nonpayer_cost": "246.00",
+      "payer_net_vat": "0",
+      "payer_cost": "200"
+    },
+    "expected_fields": 5,
+    "all_match": true
+  },
+  {
+    "name": "SK domestic thresholds and net versus fixed-gross invoice prices, 2026",
+    "independently_recomputed": {
+      "turnover_before": "49500",
+      "ordinary_turnover": "54000",
+      "ordinary_excess_50000": "4000",
+      "ordinary_room_to_62500": "8500",
+      "alternative_turnover": "63500",
+      "alternative_excess_62500": "1000",
+      "project_vat": "3220.00",
+      "project_total": "17220.00",
+      "gross_price_net": "11382.11",
+      "gross_price_vat": "2617.89"
+    },
+    "expected_fields": 10,
+    "all_match": true
+  },
+  {
+    "name": "Jana, EUR 2,500 gross, one child under 15, declaration signed (2026)",
+    "independently_recomputed": {
+      "ee_social": "235.00",
+      "ee_health": "125.00",
+      "advance": "312.13",
+      "advance_after_bonus": "212.13",
+      "net_pay": "1927.87",
+      "er_social": "610.00",
+      "employer_cost": "3405.00",
+      "to_social_insurer": "865.00"
+    },
+    "expected_fields": 8,
+    "all_match": true
+  },
+  {
+    "name": "Peter, SZCO, 2025 tax base 21,000 plus 7,500 contributions, social from July 2026",
+    "independently_recomputed": {
+      "social_base": "1598.25",
+      "social_month": "529.80",
+      "health_base": "1345.89",
+      "health_advance": "215.34",
+      "special_month": "131.34",
+      "annual_floor_2026": "914.4",
+      "annual_ceiling_2026": "16764",
+      "annual_special_2026": "396.24",
+      "cycle_income_threshold_2026": "9144"
+    },
+    "expected_fields": 9,
+    "all_match": true
+  },
+  {
+    "name": "SK royalty to a foreign company, 19% and 35% withholding (2026)",
+    "independently_recomputed": {
+      "wht_19": "1520.00",
+      "net_paid": "6480.00",
+      "wht_35_noncooperating": "2800.00"
+    },
+    "expected_fields": 3,
+    "all_match": true
+  },
+  {
+    "name": "SK company, credit for foreign royalty tax capped at treaty rate (2026)",
+    "independently_recomputed": {
+      "sk_tax": "84000.00",
+      "foreign_share_pct": "12.500",
+      "credit_limit": "10500",
+      "credit": "5000.00",
+      "tax_payable": "79000",
+      "not_creditable": "2500"
+    },
+    "expected_fields": 6,
+    "all_match": true
+  },
+  {
+    "name": "Management fee cut to the median, audit penalty at the 10% floor (2026)",
+    "independently_recomputed": {
+      "adjustment": "70000",
+      "extra_tax": "14700.00",
+      "penalty": "1838.5",
+      "penalty_paid_early": "1225.6",
+      "minimum_penalty": "147.00"
+    },
+    "expected_fields": 5,
+    "all_match": true
+  },
+  {
+    "name": "Royalty self-correction at 24%, supplementary return penalty at the 3% floor (2025 return, corrected 2026)",
+    "independently_recomputed": {
+      "add_back": "120000",
+      "over_basic_threshold": "200000",
+      "extra_tax": "28800.00",
+      "penalty": "577.5",
+      "late_interest_variant": "118.3",
+      "small_revenue_after": "100500",
+      "small_tax_before": "2000.0",
+      "small_tax_after": "4410.00",
+      "small_extra_tax": "2410.00",
+      "large_revenue_after": "5000500",
+      "large_extra_tax": "6240.00"
+    },
+    "expected_fields": 11,
+    "all_match": true
+  }
+]

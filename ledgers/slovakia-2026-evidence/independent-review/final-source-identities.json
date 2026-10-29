@@ -1,0 +1,1898 @@
+[
+  {
+    "key": "ITA2.links",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 4
+  },
+  {
+    "key": "ITA2.micro",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 1
+  },
+  {
+    "key": "ITA2.noncoop",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 1
+  },
+  {
+    "key": "ITA2.transaction",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 1
+  },
+  {
+    "key": "ITA15.corporate",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e998719620b7de6ee9bd5c435d7050eb09d1e5c8a9a8a4c1372e5c854f3c128f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA17.adjustment",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA17.corresponding",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA17.PE",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA17k",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7fdb189067a2a8cd3a597246ee5be2efd5505692fc3ae690ae4beba6e2bb4a41",
+    "quotations": 3
+  },
+  {
+    "key": "ITA18.methods",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e88265cfdf4e8d66d0889f67d60de14b3e5dede60a20d8026298a8302eebe333",
+    "quotations": 4
+  },
+  {
+    "key": "ITA18.APA",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e88265cfdf4e8d66d0889f67d60de14b3e5dede60a20d8026298a8302eebe333",
+    "quotations": 6
+  },
+  {
+    "key": "ITA18.records",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e88265cfdf4e8d66d0889f67d60de14b3e5dede60a20d8026298a8302eebe333",
+    "quotations": 2
+  },
+  {
+    "key": "ITA18a",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "8962392fbacac0197a1e65aae7badf9622ffca5a0d34b79aa8fb8b75c69d6285",
+    "quotations": 2
+  },
+  {
+    "key": "ITA21a",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "278027a2d3d90289feeaa131a8d564d862f04683889a717c02a4d5701cabd634",
+    "quotations": 2
+  },
+  {
+    "key": "ITA49.filing",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "765703d38f40482ff0f0169ceccc28e6cc4b6bfedc5ec79093657576ef004dfa",
+    "quotations": 3
+  },
+  {
+    "key": "TC155.ranges",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 1
+  },
+  {
+    "key": "TC155.daily",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 2
+  },
+  {
+    "key": "TC155.first",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 1
+  },
+  {
+    "key": "TC155.floor",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 2
+  },
+  {
+    "key": "TC155.threshold",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 1
+  },
+  {
+    "key": "TC155.repeat",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "af6ecef52465be8e2efcaa7590fbd7c8521dc80f13dd216bc196394fb2a836b3",
+    "quotations": 2
+  },
+  {
+    "key": "TC16",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "e3fda82aaab0067094e0ccde999df35b0d83441fbfdef77864d0c8017e29075a",
+    "quotations": 3
+  },
+  {
+    "key": "TC69",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "9988cbdb9ca22f626b6fe35da304352f90e2a2a050a6e655591c8697e78b3efe",
+    "quotations": 3
+  },
+  {
+    "key": "TC156",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "bf8f5309f614dc5a68d092adf735b71ce962730af5cd17d13df5698356c8dc4d",
+    "quotations": 3
+  },
+  {
+    "key": "TC161",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "6ba954b9f997d72598a91f8bcedd8905a7507aac79b104022f06c494c13a1d9d",
+    "quotations": 1
+  },
+  {
+    "key": "FS.penalty.calendar",
+    "raw_sha256": "2469bd613f1bfa2bfbaa2ca4b75fcfb6a05b99ade1008e8c4cd1c3535fdbe8c4",
+    "reader_sha256": "d435200178e0c54312f0071bf7fbd74f86f95e27210cd0693bd5fd7df4fd7e44",
+    "quotations": 2
+  },
+  {
+    "key": "NBS.ECB",
+    "raw_sha256": "06fb9a997ca60dd144f675daf87bbd5d6b9c55bc61be90087c3861e4f152cb0c",
+    "reader_sha256": "90845ba33213037299b8c1097aca5318abf3befcc4e31a322ce872d60b20aa87",
+    "quotations": 1
+  },
+  {
+    "key": "ECB.history",
+    "raw_sha256": "18060fd5335a68d59c8daf9fd0b340396e0d4539db5f088741d30e7618365d89",
+    "reader_sha256": "aa721ca4ad32531620fab4c498a2d5ce20d4128a9dd3100073782700795e0ac0",
+    "quotations": 2
+  },
+  {
+    "key": "Accounting17.9",
+    "raw_sha256": "3a4c3e5ccf84edb0226c9592f53d6cc3b9fa622d51a07582d13a12f66526b698",
+    "reader_sha256": "45df70ce55819db73ead83a8294a21d234ff644abc45a5cdb9b9643fb0826fb5",
+    "quotations": 1
+  },
+  {
+    "key": "TPG2",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 3
+  },
+  {
+    "key": "TPG3.full",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 2
+  },
+  {
+    "key": "TPG3.basic",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 3
+  },
+  {
+    "key": "TPG4",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 5
+  },
+  {
+    "key": "TPG5",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 2
+  },
+  {
+    "key": "TPG6.7",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 1
+  },
+  {
+    "key": "TPG8",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 2
+  },
+  {
+    "key": "TPG9",
+    "raw_sha256": "7aa68a9d1d1273777ea01dba75a76d647ae523c71f39da5bdd54375ceda2e24b",
+    "reader_sha256": "9c281c5ad0e92f981da8af5ce96e88bd78e8a174e4154a15268deb9c7d3badcf",
+    "quotations": 1
+  },
+  {
+    "key": "FS12.significance",
+    "raw_sha256": "f8e5f576a277307df5a60bdc2ebc9b3b143927223d893f887fe0cb72a5671438",
+    "reader_sha256": "26336a718acb1d1083526f245f0d3e6bcfde0cc583e5ff007377223801917841",
+    "quotations": 2
+  },
+  {
+    "key": "FS12.oldtable",
+    "raw_sha256": "f8e5f576a277307df5a60bdc2ebc9b3b143927223d893f887fe0cb72a5671438",
+    "reader_sha256": "26336a718acb1d1083526f245f0d3e6bcfde0cc583e5ff007377223801917841",
+    "quotations": 5
+  },
+  {
+    "key": "CbCR22a",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22b",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22c",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22d",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22e",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22f",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "CbCR22g",
+    "raw_sha256": "58c1be45f63a9df70043bed529e4c3e343fbcde8f80b97b1aa39b3a034268cc7",
+    "reader_sha256": "7506cfbcba80bb808a825ab4017346f7742186badc9bd821cc82342e79d2018a",
+    "quotations": 1
+  },
+  {
+    "key": "FS14.vintage",
+    "raw_sha256": "3332439ed41f7dcc4040023bc87f411799ff41f99e73564631f3c43b4e06bd2c",
+    "reader_sha256": "93fb2e2f2f443131482bc5239a83aa9fea38929fafbce54ca715f84d03e8a0c4",
+    "quotations": 1
+  },
+  {
+    "key": "FS14.tables",
+    "raw_sha256": "3332439ed41f7dcc4040023bc87f411799ff41f99e73564631f3c43b4e06bd2c",
+    "reader_sha256": "93fb2e2f2f443131482bc5239a83aa9fea38929fafbce54ca715f84d03e8a0c4",
+    "quotations": 5
+  },
+  {
+    "key": "FS18.revenue",
+    "raw_sha256": "6f71dfaa52be99f51205a1e0cf8bb8ece70ca93470f2c894416a52746518fd58",
+    "reader_sha256": "ff6ce42f37ed293f0e5684319a569eca2c4c69d888e398f832f3bf53f560e72a",
+    "quotations": 2
+  },
+  {
+    "key": "ITA18a.footnotes",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA2.civil-footnote",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA2.residence",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 3
+  },
+  {
+    "key": "ITA4.PIT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "1eebe2ac095c4ab7d8b977632e7a0938517e3950363be311c298f6de2b2a7bdd",
+    "quotations": 2
+  },
+  {
+    "key": "ITA5.pay",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "de6026e151991838127503901dcfcfe3abb324fdf0ca1ec86258e1d887eb1693",
+    "quotations": 1
+  },
+  {
+    "key": "ITA5.contributions",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "de6026e151991838127503901dcfcfe3abb324fdf0ca1ec86258e1d887eb1693",
+    "quotations": 1
+  },
+  {
+    "key": "ITA6.business",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "bf01fbb2aaa0c80967da03d28ff2e8e386018809a21e3d81cb87cec384816c49",
+    "quotations": 1
+  },
+  {
+    "key": "ITA6.no-rental-loss",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "bf01fbb2aaa0c80967da03d28ff2e8e386018809a21e3d81cb87cec384816c49",
+    "quotations": 1
+  },
+  {
+    "key": "ITA6.flat",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "bf01fbb2aaa0c80967da03d28ff2e8e386018809a21e3d81cb87cec384816c49",
+    "quotations": 1
+  },
+  {
+    "key": "ITA7.capital",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "cc2ed36e9635cbed531d1e49a2a8625d90bb4d1f4dd424ac90d083d3093df582",
+    "quotations": 3
+  },
+  {
+    "key": "ITA8.categories",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "eba2f8980eda303b3aa0227fcaacd9783973dfc2cbf4aecc13631bbd39394687",
+    "quotations": 2
+  },
+  {
+    "key": "ITA9.rental500",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e07a2c392761ba5f9974a423c7bf6480e1bbef28b225e4726930ffcc35625c0d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA9.shared500",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e07a2c392761ba5f9974a423c7bf6480e1bbef28b225e4726930ffcc35625c0d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA9.securities",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e07a2c392761ba5f9974a423c7bf6480e1bbef28b225e4726930ffcc35625c0d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA9.retail-bonds",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e07a2c392761ba5f9974a423c7bf6480e1bbef28b225e4726930ffcc35625c0d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.base",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.personal",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.spouse",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.spouse-conditions",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.pensioner",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.nonresident",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.DDS-PEPP",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA11.allocation",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "903fcfd65a6d6652036dfbd479e5349e093c10e8746337b960875935613e539f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA15.PIT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e998719620b7de6ee9bd5c435d7050eb09d1e5c8a9a8a4c1372e5c854f3c128f",
+    "quotations": 2
+  },
+  {
+    "key": "ITA30.loss",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "55284be4bad675f7ea713125d95fe3e7c1b0de911b73e18ba444529f446037a6",
+    "quotations": 1
+  },
+  {
+    "key": "ITA32.filing",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA33.child-age",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33.child-months",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33.child-cap",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33.child-parent",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33.child-taper",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7ebdabc95d05669a4c544f82022ab16c797c2c844c7ccb35863e609e79dee37f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33a.eligibility",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "0befd9d389407482ef021e41fc60eb67a79162f91398532e7430f6c6b02e97c8",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33a.window",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "0befd9d389407482ef021e41fc60eb67a79162f91398532e7430f6c6b02e97c8",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33a.order-payout",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "0befd9d389407482ef021e41fc60eb67a79162f91398532e7430f6c6b02e97c8",
+    "quotations": 1
+  },
+  {
+    "key": "ITA33a.death",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "0befd9d389407482ef021e41fc60eb67a79162f91398532e7430f6c6b02e97c8",
+    "quotations": 1
+  },
+  {
+    "key": "ITA34.advances",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a9c23077333b6f438bfc641739017938596bbd230ace63138a7a977d163450b3",
+    "quotations": 2
+  },
+  {
+    "key": "ITA38.settlement",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c523b51f58f16d7f325abf9662783e60fd00e145ca92d33293a0277e4ddca360",
+    "quotations": 2
+  },
+  {
+    "key": "TC14.electronic",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "24aebf7d908e07b31932d6b9b39cfd94ea236dd8825848116ba01b8f33202956",
+    "quotations": 1
+  },
+  {
+    "key": "ITA43.PIT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 4
+  },
+  {
+    "key": "ITA45.relief",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c5c21b4929e354d4fe871695ee79e275128a607bd615e18108fa761ac2aa1fae",
+    "quotations": 3
+  },
+  {
+    "key": "ITA46.payment",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "1de681aef7983c0cd32c6602ded67815b8fad01be481cb897de2db08ecd12166",
+    "quotations": 1
+  },
+  {
+    "key": "ITA46a.minimum",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "ad055c870cd8652e3a97db91374073d89f420c48a0574d50ba6ea17b4528aef6",
+    "quotations": 1
+  },
+  {
+    "key": "ITA47.rounding",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4b5c50ee70b3e651bedaf1c02a7f24948173702b8b657878c4700419a950648d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA51e.dividends",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA51ea.bonds",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "21ad11054b3a9721ace9bc3ab6c896e3a2811d34b258c3741dca3fcb1cb33309",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zi.dividends2017",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzz.transitions",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "9551152e95bf034fa754c4b5a70daf667d2b28683d0f7e5be7e2caf944545312",
+    "quotations": 2
+  },
+  {
+    "key": "ITA52zzzb.dividends2025",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "1eee93ce9c8c97e48c713b395aa704cae7cc1c85a007a8e048425e2051707a04",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzzc.bonds",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA52zzzj.2026",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7d127db77f3dd22ca09dec2a78817b33d1e70293ffb1d93931703fec5f7c30a2",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzzm.2027",
+    "raw_sha256": "0833fe3ab302b5190c7440a860d6d021be994d8c2253fbc6912440617466c569",
+    "reader_sha256": "e18adb6d028efaa17185ff3543f1a528de9e7b0a95631800d0da91e46419497f",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzy.mortgages",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "ff603324e8551e6b6d993ce2b23baabd3f40347bae3038bffc5024a59a2319bd",
+    "quotations": 2
+  },
+  {
+    "key": "ITA33a.historical2023",
+    "raw_sha256": "bbb98ea0187a9dc2a5996a49a60744292cdc471966b52a8f01e5007ab6a274f9",
+    "reader_sha256": "c8fb5b17cf4be0b80494044044a5c1533fbdda161bb57d42e672eb850cf83f87",
+    "quotations": 5
+  },
+  {
+    "key": "Minimum168.2025",
+    "raw_sha256": "a77df5d9da0cfcc4e0895b7b484b64ff75c7855a79b24fd7b2954cadbd9ec92c",
+    "reader_sha256": "d0d227b2daa82a4d4f42e9de9cead71af49e405d9d1035c30d18d30643d4d241",
+    "quotations": 1
+  },
+  {
+    "key": "Wage2024",
+    "raw_sha256": "303be8aac10cbf8edfd4255a095d45759a7ea75e2cb9f869e6442dc49d7e9f2e",
+    "reader_sha256": "0a5d51562a51bdc1821c8829effdc4799b162308372bbbdd50aea3b121cca5ce",
+    "quotations": 1
+  },
+  {
+    "key": "FS.dividend-periods",
+    "raw_sha256": "e70abbcd261905bec89651dd2aed085a3e587b6b6145d5428ec1ef559427a524",
+    "reader_sha256": "00a6d53a12652e103802a9eea4647681d74130b7c4a883764566a18734958baf",
+    "quotations": 1
+  },
+  {
+    "key": "ITA15.dividend2024",
+    "raw_sha256": "fda7e70985ae15040b31a149e9a5f5e461e807abc728716f6444909721d54189",
+    "reader_sha256": "d0b8d7bd0a003e4196f61046d1bb1c547a29d48e24047ed26daa5f1c2277df20",
+    "quotations": 1
+  },
+  {
+    "key": "A.details",
+    "raw_sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933",
+    "reader_sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880",
+    "quotations": 9
+  },
+  {
+    "key": "A.base",
+    "raw_sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933",
+    "reader_sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880",
+    "quotations": 2
+  },
+  {
+    "key": "A.relief-credit",
+    "raw_sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933",
+    "reader_sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880",
+    "quotations": 3
+  },
+  {
+    "key": "A.settlement-notes",
+    "raw_sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933",
+    "reader_sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880",
+    "quotations": 3
+  },
+  {
+    "key": "A.payout-attachments",
+    "raw_sha256": "00a859a885eb84cafd16844eeba8ad7183e28ee603607544ec7abcd1b366f933",
+    "reader_sha256": "2d085ac03c99e36725e1339c160c219a82309f0743a645417a30f049d34d8880",
+    "quotations": 12
+  },
+  {
+    "key": "B.details",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 6
+  },
+  {
+    "key": "B.employment",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 6
+  },
+  {
+    "key": "B.flat-expenses",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 4
+  },
+  {
+    "key": "B.business-loss",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 7
+  },
+  {
+    "key": "B.rental",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 4
+  },
+  {
+    "key": "B.capital-other",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 6
+  },
+  {
+    "key": "B.scales-relief",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 2
+  },
+  {
+    "key": "B.credits",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 2
+  },
+  {
+    "key": "B.settlement",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 4
+  },
+  {
+    "key": "B.payout-attachments",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 11
+  },
+  {
+    "key": "B.dividends",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 10
+  },
+  {
+    "key": "B.bonds",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 5
+  },
+  {
+    "key": "B.contribution-annex",
+    "raw_sha256": "732cfe6a998c02569b0f3fcfa72ea2d46b2c822fbb7b83a25b8a6cd78e987900",
+    "reader_sha256": "960e507f02f11160bcc7641f8365a8416c30c1d8b6d33ca042ee4bb712166658",
+    "quotations": 7
+  },
+  {
+    "key": "A.instructions-filing",
+    "raw_sha256": "ed661b8dbf4456961b67fc64d3640cac54d7aa83656455e617fe8a6ec6849b05",
+    "reader_sha256": "5cc86695724b5b87b4dfe1172da9ca759d851e1e2680a46128386e048d78c49e",
+    "quotations": 3
+  },
+  {
+    "key": "A.instructions-credits",
+    "raw_sha256": "ed661b8dbf4456961b67fc64d3640cac54d7aa83656455e617fe8a6ec6849b05",
+    "reader_sha256": "5cc86695724b5b87b4dfe1172da9ca759d851e1e2680a46128386e048d78c49e",
+    "quotations": 3
+  },
+  {
+    "key": "B.instructions-flat",
+    "raw_sha256": "838403b7fd5534109c455ff31ef212ec0c595f3d6dfd8bc7ec2f2f28654a4cb9",
+    "reader_sha256": "63b92e24cbfb151a608e61e67595c515b589e4657054fff3d49ccdb42d83808d",
+    "quotations": 4
+  },
+  {
+    "key": "Act261.PIT",
+    "raw_sha256": "9b53b4a0301021d2faaddaa5288637df8e99313124545f8402e7215a6ad9dcb7",
+    "reader_sha256": "8d3ec9c68d730e5d5cf1c9f3f8c0f47ae77cbee18417971826b984332ec11ef0",
+    "quotations": 3
+  },
+  {
+    "key": "TC154.return-duty",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d",
+    "quotations": 1
+  },
+  {
+    "key": "TC154.other-duty",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA1.treaty",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4bf9cc10f6d7d30169560c798b446ead7f145b2aa783037dcf20505b85cc352d",
+    "quotations": 1
+  },
+  {
+    "key": "ITA17f.exit",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "0f2f4d7fd0c123ca49abda775b6982b364f3708e9a11506364760b86454e83ba",
+    "quotations": 4
+  },
+  {
+    "key": "ITA17g.instalments",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "88890797b1d490b7c42f413ab029b557e68fe81c7c9c5f249a3a5bb8d44e7665",
+    "quotations": 3
+  },
+  {
+    "key": "ITA43a.challenge",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a217d6f9415572a2ed192027202a7b7099fdd29ee07c86937f8a5ac80a5815f0",
+    "quotations": 1
+  },
+  {
+    "key": "ITA16.source",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "f6a9e63e72e2f46b8f82873201af55521adb9613507bf4636ca16f663b59b39a",
+    "quotations": 4
+  },
+  {
+    "key": "ITA16.PE",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "f6a9e63e72e2f46b8f82873201af55521adb9613507bf4636ca16f663b59b39a",
+    "quotations": 2
+  },
+  {
+    "key": "ITA13.EU-interest",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "6c34b4240621e5cb27e83f637264fb1af8a9f7d0165a07cbaa347e0578959258",
+    "quotations": 1
+  },
+  {
+    "key": "ITA13.EU-royalty",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "6c34b4240621e5cb27e83f637264fb1af8a9f7d0165a07cbaa347e0578959258",
+    "quotations": 2
+  },
+  {
+    "key": "ITA12.dividends",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c597b01bc7c807c65c2ef294ff54aa199eef9370e4af2ce777c03bda1a8cabbe",
+    "quotations": 1
+  },
+  {
+    "key": "ITA43.nonresident",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 3
+  },
+  {
+    "key": "ITA43.credit-election",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 1
+  },
+  {
+    "key": "ITA43.collection",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 4
+  },
+  {
+    "key": "ITA43.EU-refund",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 1
+  },
+  {
+    "key": "ITA43.unknownBO",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "d436efaf36a57faffb43414a7ac26f243c530203b5502914dc49407099cd8b22",
+    "quotations": 1
+  },
+  {
+    "key": "ITA44.security",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "da20873e714aa5351c684c844208019f88a1c2be47a2db148b2dd7de5303e8f3",
+    "quotations": 1
+  },
+  {
+    "key": "ITA2.BO",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "06918a159527d4a29ea05dc7b723f9d72de5d0f14f7f1d39dfeffe61e60ea615",
+    "quotations": 1
+  },
+  {
+    "key": "MF.cooperation2026",
+    "raw_sha256": "43e5a2732ef055bbc7de337b6776d73758894db423ce87197851f1c4a3cdbbaa",
+    "reader_sha256": "13ee4d2a2cb1776b88e535854026de353942fe9533214dcfdd3257ddde357bcb",
+    "quotations": 3
+  },
+  {
+    "key": "ITA17.accounts",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "b1a4e13e36c85b1be4725c4297a15752edf412b1ac5dd58c96be6bd73ba2d801",
+    "quotations": 2
+  },
+  {
+    "key": "ITA17.paid",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "b1a4e13e36c85b1be4725c4297a15752edf412b1ac5dd58c96be6bd73ba2d801",
+    "quotations": 1
+  },
+  {
+    "key": "ITA17.pre-adjustment",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "b1a4e13e36c85b1be4725c4297a15752edf412b1ac5dd58c96be6bd73ba2d801",
+    "quotations": 1
+  },
+  {
+    "key": "ITA21.disallow",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "1fb47c2e638c405314771708ee8560edfc6477b446afb34af2214a146568a704",
+    "quotations": 3
+  },
+  {
+    "key": "ITA22.assets",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a4a30aec05d3b89e3b6633c61193a032d1aa262a41bc2f52f809f7e5900abbc1",
+    "quotations": 2
+  },
+  {
+    "key": "ITA19.VAT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "905721898af88cb28b32d6d705cf8fdedd5cd1740bb07ef3eb5933c8e0ac510a",
+    "quotations": 1
+  },
+  {
+    "key": "ITA25.VAT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e1d2fcab6fdd111d422e66c81ef0be0bfbb5461a32385f7cc82073c9b32aff44",
+    "quotations": 1
+  },
+  {
+    "key": "ITA30c.pointer",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "6d4f05f6a893a1556c25f13b305de1f920c5d67f6bba54dc2b0d4925f7ea679c",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzr.interest",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "e60d37b8d6e0ba0fe21cfac4eba1c4413b73556fa9edfd45dc8aa46bdf838218",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzzf.assets",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c988ef06183d8afcfd549dbff053ce9445c468501fa45d08c28a39369ef2ada3",
+    "quotations": 1
+  },
+  {
+    "key": "ITA51eb.scope",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a8f0f301048bb45880a0a276d807a9f0844d6979c0b07ef7f11b68f8941cad10",
+    "quotations": 1
+  },
+  {
+    "key": "ITA26.depreciation",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "cdeac9c6f18db06bb00f12fd21e04fd5417bab9b08edf72f99b0b489f7b1931d",
+    "quotations": 2
+  },
+  {
+    "key": "ITA27.straight",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a4268d8495162642ffcd382491536ac1c0395006eb96d34dd11322aaf436c3a1",
+    "quotations": 1
+  },
+  {
+    "key": "ITA42.advances",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "a9865e27f787a316c14fd324e99383abdfdc2717e9e15c0ec8bc22930e038128",
+    "quotations": 2
+  },
+  {
+    "key": "ITA46b.minimum",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "2f4734c20c303289317fea256b22c121578d9914fa6b14608ff0f2e4edddc13c",
+    "quotations": 2
+  },
+  {
+    "key": "ITA17k.complete",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7fdb189067a2a8cd3a597246ee5be2efd5505692fc3ae690ae4beba6e2bb4a41",
+    "quotations": 5
+  },
+  {
+    "key": "ITA21a.complete",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "278027a2d3d90289feeaa131a8d564d862f04683889a717c02a4d5701cabd634",
+    "quotations": 1
+  },
+  {
+    "key": "ITA105b.entities",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 1
+  },
+  {
+    "key": "FTT6.pointer",
+    "raw_sha256": "1d7a92876a7041eb2f24d6e527669f0c48cbc201a4477ff0f8376235f8c6661c",
+    "reader_sha256": "2e1ec799ea34cc80ec7fdbf1d9bf85773086aa448aef194b79a408b57cedd453",
+    "quotations": 1
+  },
+  {
+    "key": "TopUp3.scope",
+    "raw_sha256": "c1420edd4ac92cbe4f0d0c4d20104edf817f2af082553e1b3518470d2dffc5ea",
+    "reader_sha256": "e61d868b2c4a74a57e87ec7b41b990e9ba4e6ad5b7ba56d6d5587172e482c7d2",
+    "quotations": 1
+  },
+  {
+    "key": "CITannex.cars",
+    "raw_sha256": "ae717c354a1152b759600c83e339bcdd831b26c7c4762e30a3679ec099560dab",
+    "reader_sha256": "1620aa0566f7ee17d7fed7547f340434ffb99fbc40b97e6a6e336accc440f625",
+    "quotations": 3
+  },
+  {
+    "key": "CITannex.furniture-improvements",
+    "raw_sha256": "ae717c354a1152b759600c83e339bcdd831b26c7c4762e30a3679ec099560dab",
+    "reader_sha256": "1620aa0566f7ee17d7fed7547f340434ffb99fbc40b97e6a6e336accc440f625",
+    "quotations": 2
+  },
+  {
+    "key": "CITannex.buildings",
+    "raw_sha256": "ae717c354a1152b759600c83e339bcdd831b26c7c4762e30a3679ec099560dab",
+    "reader_sha256": "1620aa0566f7ee17d7fed7547f340434ffb99fbc40b97e6a6e336accc440f625",
+    "quotations": 1
+  },
+  {
+    "key": "FS.thin-negative",
+    "raw_sha256": "776699989620858aad8b321106822f6e9cd405176dbacd1245af22c0c36cfeb8",
+    "reader_sha256": "6f6e546382e71e89f89d15d1a5b7c686d53cbb7910c34c513969f4b0a07538e1",
+    "quotations": 1
+  },
+  {
+    "key": "C.adjustments",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 4
+  },
+  {
+    "key": "C.minimum-settlement",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 2
+  },
+  {
+    "key": "C.tableA-B",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 3
+  },
+  {
+    "key": "C.loss",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 3
+  },
+  {
+    "key": "C.tableK-L",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 3
+  },
+  {
+    "key": "C.attachments",
+    "raw_sha256": "f6241f795ca8383234abd4002f2c2b73283c91f88d47006df912ba73d500a989",
+    "reader_sha256": "a4ec022ff517b4b8c0a81b4c01524ad58627d7bb585e92a55a36a59b72a42745",
+    "quotations": 1
+  },
+  {
+    "key": "C.instructions-vintage",
+    "raw_sha256": "712d42625e6304f52efbac415789424b760b9158c2f901027c14e250db61d36f",
+    "reader_sha256": "1ed8c73009a1f0b199478b6194a5ec41f5566320215c0ffdfcdbd29b9d5470bc",
+    "quotations": 2
+  },
+  {
+    "key": "C.instructions-payment",
+    "raw_sha256": "712d42625e6304f52efbac415789424b760b9158c2f901027c14e250db61d36f",
+    "reader_sha256": "1ed8c73009a1f0b199478b6194a5ec41f5566320215c0ffdfcdbd29b9d5470bc",
+    "quotations": 1
+  },
+  {
+    "key": "ITA30.loss-CIT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "55284be4bad675f7ea713125d95fe3e7c1b0de911b73e18ba444529f446037a6",
+    "quotations": 2
+  },
+  {
+    "key": "ITA12.nonprofit-scope",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c597b01bc7c807c65c2ef294ff54aa199eef9370e4af2ce777c03bda1a8cabbe",
+    "quotations": 1
+  },
+  {
+    "key": "ITA52zzzj.CIT",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "7d127db77f3dd22ca09dec2a78817b33d1e70293ffb1d93931703fec5f7c30a2",
+    "quotations": 2
+  },
+  {
+    "key": "ITA52zzzk.vehicles",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "dd195d40bea3a94cc730d7c7b00ee081afbbd2b1bd399628b9aa31b1c6651967",
+    "quotations": 1
+  },
+  {
+    "key": "Social128",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "db0226766138d79fddc5af038878238398fbf2ebdd49e1fa6a634876168364bf",
+    "quotations": 3
+  },
+  {
+    "key": "Social130",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "7fcd7a89e0b2c8b1655997e1efef534d0333c4e9c5670d1f7354fa314730d2e8",
+    "quotations": 1
+  },
+  {
+    "key": "Social131",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "10e565fed1e9c53f3a1318b1ac62467a44a4781d103684b05da32d53f523d2d5",
+    "quotations": 2
+  },
+  {
+    "key": "Social132",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "a9b2af1aa02e56d377ce58b07ec9f6c60b9b017b8ae802507dc1c77813dc6ab1",
+    "quotations": 1
+  },
+  {
+    "key": "Social133",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "87972b1a3953f5829659573a5b4124a8c7f6e1ce10dff1c4cc6d75db59f35a2b",
+    "quotations": 1
+  },
+  {
+    "key": "Social135",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "c996e4462b2e0befaa33bb897d294013d8dffe06bd2d7241a7ba6a6401bbc3f0",
+    "quotations": 1
+  },
+  {
+    "key": "Social136",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "d24bfac14d8225fdb40153d7fdc90874a73a57e324b1846a89b528bced925acc",
+    "quotations": 1
+  },
+  {
+    "key": "Social137",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "c4e8f35866774b329671ca228b63212d8f52728791c6f2c93807f2afd47b5f75",
+    "quotations": 1
+  },
+  {
+    "key": "Social138a",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "cda8d41450be372506e8bde80f320c7c3a040cc9e7a3e8f8c2fcd621b7628864",
+    "quotations": 1
+  },
+  {
+    "key": "Social141",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "303baa074ec7148346e1b47689e577c38a15b441e39054a371e4a6976c9af308",
+    "quotations": 1
+  },
+  {
+    "key": "Social143",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "3a4e76c355b8726ec6a1d56d668396797c905c564afe6103025517e9bc15f81c",
+    "quotations": 1
+  },
+  {
+    "key": "Social239",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "75df17c1d27c37f660cb2530da8708ce867baa409b75ed81068e2b2f2df9b697",
+    "quotations": 1
+  },
+  {
+    "key": "Social240",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "7bb8a8324bd5704e5dec914dd69a7df8eb8c28b7b4cab67175549a30e2b07e3a",
+    "quotations": 1
+  },
+  {
+    "key": "Social138",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "0712ef53a347bcd04f55da44fe9c9d89641875cc1746e593b0ca4448ea0d1a11",
+    "quotations": 6
+  },
+  {
+    "key": "Social4",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "d83e4f5c3d5164d7fe665d0f206a87ea0d4e6f9c208f4aa56d6a7def4b1f200e",
+    "quotations": 1
+  },
+  {
+    "key": "Social5",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "aa26222b9222c6bb91ae16ce22ae66ae9d29c9925a79b0cd1e988ae2e1a8f1a3",
+    "quotations": 1
+  },
+  {
+    "key": "Social19",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "92057c53c9d8ac04686dc983fe2b6e1a148401f4794cff4949dc8a5ee20c49b5",
+    "quotations": 1
+  },
+  {
+    "key": "Social21",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "79b350c89f6fb5edfe5d1437f33048135a78ca5246f3a96a0c7f8e3ae18b3458",
+    "quotations": 4
+  },
+  {
+    "key": "Social136a",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "e70a93acc5631693ef740953fc14c7e9963884439eb33a5aa33388dabdfdbb82",
+    "quotations": 1
+  },
+  {
+    "key": "Social231",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "b738fe7f4f0acd8a406cf41c2694e6f4cb9b5a1b3394329b33ba27653964c748",
+    "quotations": 2
+  },
+  {
+    "key": "Social293gma",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "ae746b3c0bf4c70c15666eb1f6c690c0b05ca42f255eaf965063f156de6e1217",
+    "quotations": 2
+  },
+  {
+    "key": "Health12",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "53a29e12e25fc345627299a59b378bee72e8f7fba8f353de2add9971b01b9d9d",
+    "quotations": 2
+  },
+  {
+    "key": "Health13",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "e74cbe6c9395256c95f1db08ce036c1c8ea6dfc9f785c63e67db90ec8882206e",
+    "quotations": 3
+  },
+  {
+    "key": "Health13a",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "bebed623470f16e99f523fe0766173772f7c8085cfcd9d7080eb8a3c0a311a01",
+    "quotations": 2
+  },
+  {
+    "key": "Health16",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "49b643329f02a523f1a4817a12bfa405f15750e50e17a95c64ad7f1b5c6b1810",
+    "quotations": 4
+  },
+  {
+    "key": "Health16a",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "a0d082786ba531804e0a57960f624c1fe56c4a3803586463c0dcd88fc66a8a02",
+    "quotations": 1
+  },
+  {
+    "key": "Health17",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "e6f28900fc14b8c04f1439f11b8d61b51c8bc27014ddca3458eb74bc0e505633",
+    "quotations": 1
+  },
+  {
+    "key": "Health18",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "fcfba7df6b4605b47b47d4a2da06f0dd6044a66091492a7458c0af974d2378a9",
+    "quotations": 1
+  },
+  {
+    "key": "Health19",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "fbb4bfc80acbc1fd0e9e1929e3c261320acf097553479060d8f01ceff01037a6",
+    "quotations": 2
+  },
+  {
+    "key": "Health20",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "e08877891c3a4d7f119d2287468fcb168c32f043e3c48455f624c8327edbeeb4",
+    "quotations": 2
+  },
+  {
+    "key": "Health26",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "332506cc4d0891f15efe4ec500321a6bbe647fad6c060ef96244c7601cc69ade",
+    "quotations": 1
+  },
+  {
+    "key": "Health38ezk",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "5a75a9d330b12fea05cfa9967fffd373b343640f6c473b8644a52726b9cb18ac",
+    "quotations": 1
+  },
+  {
+    "key": "Health38ezl",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "1737434ccbe45b98de4b93cbf18a4a424e56898195026ffdbb0fa704d7baf9e6",
+    "quotations": 1
+  },
+  {
+    "key": "SP.table",
+    "raw_sha256": "aca64f259a5051dd158343b91c15bc3017145a19eba8b4932a37adede7a28f5b",
+    "reader_sha256": "5d820a6f38fdcd55b8f0c50212d3bb6b8de24d388f82ca7c9b27169173551da3",
+    "quotations": 5
+  },
+  {
+    "key": "SP.pillar2",
+    "raw_sha256": "cfde414f1c165c4f1317a9377bff09d06f2fdabf8bc54fb4bf09fcb25e7fefc0",
+    "reader_sha256": "649ddb7ba44a200e204294dafe2edd2013f9a6c165776ed9c96118b70d851e6b",
+    "quotations": 1
+  },
+  {
+    "key": "MinimumWage2026",
+    "raw_sha256": "a35e87e6720c9acb69956ffcc25890d218192fdc663ff466f18e189aef7e1d61",
+    "reader_sha256": "732e50f51a4e79a8ddc543d76c82b4a08ade6b96ee00c4e876f668bf4e812e5f",
+    "quotations": 1
+  },
+  {
+    "key": "Health.report-decree",
+    "raw_sha256": "687fc5480d97f4cb203b08850ca2c8cd39843ed13538022ad2a0d9556cdedb3e",
+    "reader_sha256": "84812d0f6516da77373470a3b5835db6f16dca8580844cd9c6f6b65585e65280",
+    "quotations": 1
+  },
+  {
+    "key": "VszP.employer",
+    "raw_sha256": "d92c7989da9d407ec2bfff4f9523025bcd2daa00e16ba1c42db57e1627d62c0b",
+    "reader_sha256": "b39a276f90da51e62a2ff52aff7f21d1827b4cf30cb767bd55790b0f6b74fa7e",
+    "quotations": 3
+  },
+  {
+    "key": "ITA35.payroll",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "b833649c6c7d0c7e99d0bc4c0135be2399ac7cdd3301b46644ad66e670f6b88f",
+    "quotations": 4
+  },
+  {
+    "key": "ITA38.payroll",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "c523b51f58f16d7f325abf9662783e60fd00e145ca92d33293a0277e4ddca360",
+    "quotations": 4
+  },
+  {
+    "key": "ITA39.payroll",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "2aa574f6c580f85bf35305746125d9da6bffbd1641d55e309caa80d33dd77424",
+    "quotations": 2
+  },
+  {
+    "key": "ITA48.payroll",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "138c4cfe1c9b0606894715e6a1af98535810e138e63cde82e57ec087b3a408b5",
+    "quotations": 1
+  },
+  {
+    "key": "FS.monthly",
+    "raw_sha256": "cb8912b0262e80c097da05f8170c6a75ce936bf62475bea9068a248c2bf7e66b",
+    "reader_sha256": "23ee7a9b2f02d64e959f5a92fee2876000109ebd2c53a36cc7dd8a3993c4798a",
+    "quotations": 1
+  },
+  {
+    "key": "SP.A1",
+    "raw_sha256": "250679b5bdf4786ab3463747486843d411c3627aa03c27c2ea2ccc4ecc763d4d",
+    "reader_sha256": "7269e0342d7ef4b67c6fd40ef62f35361bea6f6314f64c6b956b5ffc17ca6d0d",
+    "quotations": 6
+  },
+  {
+    "key": "SPJuly",
+    "raw_sha256": "34c2d2dbd360ecf80047f6eb2a2bf3009b526918a5e12118daa18e524ea8d3be",
+    "reader_sha256": "37053f869fc2347023d3820d00594cfc317e9bbd45fa5751891e4d28fc418a01",
+    "quotations": 4
+  },
+  {
+    "key": "SPOctober",
+    "raw_sha256": "b555522b8f61a9244bc89657ba741a55855e4b5f4434c6d58df2b3cb6cb5e04f",
+    "reader_sha256": "699fec44511d5a7fe930c39797c452730667110f07ea549cb821b19aaab2bdc1",
+    "quotations": 1
+  },
+  {
+    "key": "SPpartial",
+    "raw_sha256": "0df1cf76e6e2bff1f004dc064db3e27c3e1241984c90a978e98d30376317768d",
+    "reader_sha256": "bbe309b52cafc44427a25e16ff51fdf919411a783eaa7d80520c9656e7795dbb",
+    "quotations": 1
+  },
+  {
+    "key": "Social122",
+    "raw_sha256": "7ecf9f5009301c3ccaf80f345dc96d8bfccd0da53ecba08bbfa649eb9380bbe6",
+    "reader_sha256": "91e3ed3d806d9e22fa3090d02357ebc844c7fc653e5129c6906e190e91603496",
+    "quotations": 4
+  },
+  {
+    "key": "VAT27.rates",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "1ec4d246def54856a71377f444b3e468b16d37649f1c350f6a525d707d47579d",
+    "quotations": 3
+  },
+  {
+    "key": "VAT4.status",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "f83af38a63caa6e950a5215b1331150de94d9d44872ff822d5b04aae4e4de974",
+    "quotations": 7
+  },
+  {
+    "key": "VAT5.foreign",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "508d828a647c562d29056b776568b75ce10199bfc1a67650330d5511133a94e7",
+    "quotations": 2
+  },
+  {
+    "key": "VAT7.goods",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "a617fdd0ff540002f14103ba1fb1b0588db5deb0db786b4f820c8e463a09973b",
+    "quotations": 1
+  },
+  {
+    "key": "VAT7a.services",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "02ead7fe5c074971ea785c927d81518e2d0868bdbfbd99a02f2d3919205dc053",
+    "quotations": 1
+  },
+  {
+    "key": "VAT11.acquisitions",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "860c02de388db2a86180089b395b53729442240d336adbd6ae2742e665141a50",
+    "quotations": 3
+  },
+  {
+    "key": "VAT15.services",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "de4a20c75eeb484eba3f1711878d1fad71d176712a195d8801ea9f7bc37b1b46",
+    "quotations": 1
+  },
+  {
+    "key": "VAT4a.group",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "fe74040f946f6d0a4c799ac05f19f5fd43c7b3d5dc9d22421d30866080c1b5a2",
+    "quotations": 1
+  },
+  {
+    "key": "VAT4b.group",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "480639cc4521ac24f67a8dea0606f0953212ba4cb2152f7d8349f4fd8fd7aca5",
+    "quotations": 3
+  },
+  {
+    "key": "VAT22.base",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "38cf31ae80b2063c59a32a2d57354e434cc51b4517f5a4a795257f83bbb2b914",
+    "quotations": 1
+  },
+  {
+    "key": "VAT24.import",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "46da979d88118c7b0d436b18c5847660a30118b1298f326b441dde3739435098",
+    "quotations": 1
+  },
+  {
+    "key": "VAT25.notes",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "bc377da728783f3704b4425acb858b1a144b5efc09ccfb2481abdc1642fccab0",
+    "quotations": 2
+  },
+  {
+    "key": "VAT49.deduction",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "e9695400f9f588a7cdedc63d6d9166b4c08a6dbec9de4e3e016cf184a46d2b6a",
+    "quotations": 3
+  },
+  {
+    "key": "VAT50.coefficient",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "c3f9ab9ac7425b3f35c381a3ae92ab56e2011bd0f7c216745b2b826144254494",
+    "quotations": 1
+  },
+  {
+    "key": "VAT51.documents",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "24f448e3ae6d3957ace49e4f3f69ab4641e35705d00f967b4b773a53ca8d96a6",
+    "quotations": 1
+  },
+  {
+    "key": "VAT69.reverse",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "dd9aa4219f45daf9f5b8704840647bfb0a509e051199ad582d58496b6727b8c4",
+    "quotations": 3
+  },
+  {
+    "key": "VAT77.period",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "19904b3d643daf5b8ca2497ee4b63383555830fa74331d7ecd41ede37f04da35",
+    "quotations": 1
+  },
+  {
+    "key": "VAT78.return",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "a5cf422daf617e0be9ba97d7e9527cda4f8e913c4af60ddc1b693ddbe8db3052",
+    "quotations": 2
+  },
+  {
+    "key": "VAT78a.control",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "4748134ba0b8a461be3d7496459a3bfdabf02f099111c32957d6b869e4179b75",
+    "quotations": 4
+  },
+  {
+    "key": "VAT79.refund",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "f03a5f2d483cb3c0bf1a35562923e3cf4ae24286d18ce9c79205588007101224",
+    "quotations": 2
+  },
+  {
+    "key": "VAT80.EC",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "2aad0897ea7c90e91de46be3b15be7f07a24e573c4bf8dd989ffef5c41dc0f98",
+    "quotations": 2
+  },
+  {
+    "key": "VAT84a.import",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "e9697ad1fc5caab81be62f7586f2545dd329d39c5d0605913cd6d5154d4937db",
+    "quotations": 1
+  },
+  {
+    "key": "VAT85n.vehicles",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "bbfeff90eccd5ef1d4cbc47593173aa5fca9c77f96a5aaf0589759346b742b53",
+    "quotations": 3
+  },
+  {
+    "key": "VAT52a.capital",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "32bc554e657086208bc3dd44a68528c6f53d732cadcc9962cdb262d1f9daa755",
+    "quotations": 1
+  },
+  {
+    "key": "VAT54.capital",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "fca70488674d3d363de5c13e2f64e162fb2428a6a5fa28d4766b5e2cb9904801",
+    "quotations": 2
+  },
+  {
+    "key": "VAT53.notes",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "27fb0d3bf0e146213cbf0597b763da72b24f8ce3bfae19832c2ab2d3c9f5e660",
+    "quotations": 1
+  },
+  {
+    "key": "VAT5a.number",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "8db6b2b9a71d312e7da253186d7738271bed3d9e421eef4a2d39438d28811fb9",
+    "quotations": 1
+  },
+  {
+    "key": "VAT8.gifts",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "111c8e71f0f06ebeb4430d255684e7917b6304c2ffc3e5e2bf0679ff82e3dda8",
+    "quotations": 1
+  },
+  {
+    "key": "VAT9.private",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "3083e3d9b62b5767e4c487d784a5928f6eff670440c432e084411ec351789ead",
+    "quotations": 1
+  },
+  {
+    "key": "VAT10.transfer",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "f6991f71ee5aaf20ef1be66354962a2706cab376a0cd5ca7f9401bf4bef60368",
+    "quotations": 1
+  },
+  {
+    "key": "VAT28.post",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "577be22ec8345f5f514af3cc4600fb847d8df985c94019fb364466f482523e9f",
+    "quotations": 1
+  },
+  {
+    "key": "VAT29.health",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "f649a7144a79fa89a56e566e90520c7e5b7556d27e899a0fb7b5432319b2eb84",
+    "quotations": 1
+  },
+  {
+    "key": "VAT31.education",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "107527a73c16fedcec7d95067ee4d0b1a063d7da4ab576da77ca380e0a569185",
+    "quotations": 1
+  },
+  {
+    "key": "VAT39.finance",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "7749a4b9b0806fa9699368fba4d7c1d52ae5065eab585570d8d0985479601674",
+    "quotations": 1
+  },
+  {
+    "key": "VAT41.gambling",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "aed601e11acb4d2470c5e227d197cfe69ef89a425fe74608e51307af0dff296c",
+    "quotations": 1
+  },
+  {
+    "key": "VAT43.EU",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "98c12314cd3b8ba3f354ee65e65f94114acfce1f226af91caab1360dcdc25c1f",
+    "quotations": 2
+  },
+  {
+    "key": "VAT46.transport",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "6e8398247776d862befecfa22cf48b1ea7c6e0c5d4e74230d94f1b5db3794d98",
+    "quotations": 1
+  },
+  {
+    "key": "VAT47.export",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "3938ea89f1fd8f87a6dc9789cfd3d03c7d61af6005d9ac13b9556e4d8aa65af8",
+    "quotations": 2
+  },
+  {
+    "key": "VAT54a.property",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "1285bbe39e3135b20dd865172716c5fb7de17a984fedcd7c92d17667ca8cf735",
+    "quotations": 1
+  },
+  {
+    "key": "VAT54d.firstuse",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "0a76cdb7f2319cf16dbf61a9b783b2ea879683017e09b7644c45bb0062331f3b",
+    "quotations": 1
+  },
+  {
+    "key": "VAT55.initial",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "36f2ff3908b3fcc42b4197be98b5bd77e97d9b865a1b93a6aadd206aae5961d2",
+    "quotations": 1
+  },
+  {
+    "key": "VAT68cb.smallimport",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "9c5a8dc6d81a6bd7bb69082db5fe368470f8f9204c1fc4d8507913b86ddefbbe",
+    "quotations": 1
+  },
+  {
+    "key": "VAT68f.foreignSME",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "762799829006c032279f226e01106397fd34c791fd6d28b3e82819a31687e5d0",
+    "quotations": 2
+  },
+  {
+    "key": "VAT68g.domesticSME",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "817b66dcfd2838080af0e415ed9a863405c1a64052b230aeafa0ebe05599885f",
+    "quotations": 3
+  },
+  {
+    "key": "VAT69a.representative",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "f6475975f48c9d56678977cc2111c932ac062374f9a10db58fbd7c1134ca380c",
+    "quotations": 3
+  },
+  {
+    "key": "VAT70.records",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "fa43016c29ad9ebe34ea0f226bf7cce36a7eaa3f070c0e04a58ba5f94b633909",
+    "quotations": 2
+  },
+  {
+    "key": "VAT72.invoice",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "7216ec63b20f596b2b1f683ecb24e2832b3cc28793329ae97f953a56ab645ae3",
+    "quotations": 1
+  },
+  {
+    "key": "VAT73.deadline",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "bdf6ee0403b4931b8f08ae6b7acde6dd8bc4fdd19338037bcf3517a5a16c462c",
+    "quotations": 1
+  },
+  {
+    "key": "VAT74.wording",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "2ff82cc27c64870028f7580914798cf29a358abc3b89a8139afa0c4847931481",
+    "quotations": 2
+  },
+  {
+    "key": "VAT76.retention",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "4bdb59299a0e230d8cf717b60a798fc63e1de062e4def838e4be980e1cd2a4df",
+    "quotations": 1
+  },
+  {
+    "key": "VAT81.dereg",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "7b4d6d2644479d8636625beff7b4d1799306e0a24334d481cabe9f09b655e73d",
+    "quotations": 3
+  },
+  {
+    "key": "VAT82.dereg",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "29a528dc77b42cccb252bb8f44b6cfbdfca4c7094c157abfaf7e76f110d4d6e0",
+    "quotations": 1
+  },
+  {
+    "key": "VAT85kn.oldtransition",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "06960130941cd01501957febbfb2e84ea8068dc7c0cb5c61539797f3b5f24d68",
+    "quotations": 1
+  },
+  {
+    "key": "VAT85kp.capitaltransition",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "37f566c705317389819264b07dfc7bf5d794fa3b2b9c1379f08665908d06bd31",
+    "quotations": 1
+  },
+  {
+    "key": "VAT2024.rates",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "reader_sha256": "4671256ae4c06478fb95305b2bc1322ebc5cff829f9fff1919dd0c602b8167a1",
+    "quotations": 2
+  },
+  {
+    "key": "VAT2024.registration",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "reader_sha256": "efc39b86553904b11d8200b35e45b74bcbaecbb38e3319e91b7a1d7bcc9a79ca",
+    "quotations": 1
+  },
+  {
+    "key": "TC27.weekend",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "5fb127b445323d5e9c90064da251f0ae62f5eda29d6f8f49d47d7d4b588604cc",
+    "quotations": 1
+  },
+  {
+    "key": "VAT.annex7.services",
+    "raw_sha256": "2c666fcf8b716ae279c6dff74f58157656610bde1dee571ad1112a71824680db",
+    "reader_sha256": "9eb4d1e292d2854f4624bbb3ccf3028420b6aaaf0c253d37087d70798431c7eb",
+    "quotations": 1
+  },
+  {
+    "key": "VAT.annex7.goods19",
+    "raw_sha256": "c91eb5167c22fbc1018380c890f0dea2a89ce3322d3e52ade6f45d70af77a1b2",
+    "reader_sha256": "566c456c7c5075c6dfa337c8870f8f6c666db1b95b98399028dca21721029229",
+    "quotations": 3
+  },
+  {
+    "key": "VAT.annex7.goods5",
+    "raw_sha256": "c91eb5167c22fbc1018380c890f0dea2a89ce3322d3e52ade6f45d70af77a1b2",
+    "reader_sha256": "566c456c7c5075c6dfa337c8870f8f6c666db1b95b98399028dca21721029229",
+    "quotations": 5
+  },
+  {
+    "key": "FS.VATrates",
+    "raw_sha256": "8cdf02d7b06fce4d40c548f0adf0eea39b46c05e4c40eebb2e80d582ba2f570d",
+    "reader_sha256": "a9d222bba495428f4e906f59fc84eb76643fb6355a98b75fd8d04b72237650a1",
+    "quotations": 2
+  },
+  {
+    "key": "FS.EC.fineclass",
+    "raw_sha256": "b78df23fa6c3f29a4e48f812fa0b4f73d0f9c764f2c0b98474eb966b3ae19531",
+    "reader_sha256": "2d9458a8445d5239517eab0aa1753e07a4b19ba5024bf560420011e4f1fcd6c5",
+    "quotations": 1
+  },
+  {
+    "key": "FS.registration.turnover",
+    "raw_sha256": "c54b6e92ee861a83e6c8aa67bc91dbe27f278707da4444b5de257ddd57be6961",
+    "reader_sha256": "5315a49efb50b8ac70a2acd2ca6edd3ab8fbe1a573742c9fdd5bd75c7d883164",
+    "quotations": 3
+  },
+  {
+    "key": "FS.registration.decision",
+    "raw_sha256": "c54b6e92ee861a83e6c8aa67bc91dbe27f278707da4444b5de257ddd57be6961",
+    "reader_sha256": "5315a49efb50b8ac70a2acd2ca6edd3ab8fbe1a573742c9fdd5bd75c7d883164",
+    "quotations": 1
+  },
+  {
+    "key": "FS.registration.voluntary",
+    "raw_sha256": "c54b6e92ee861a83e6c8aa67bc91dbe27f278707da4444b5de257ddd57be6961",
+    "reader_sha256": "5315a49efb50b8ac70a2acd2ca6edd3ab8fbe1a573742c9fdd5bd75c7d883164",
+    "quotations": 2
+  },
+  {
+    "key": "FS.VATnumber",
+    "raw_sha256": "41b1cef8059a9c8e5aa85e604cb5c8c0302a285456001397fee65268fbf621e2",
+    "reader_sha256": "6c22c6db6ab3a298d0ee729b4d776310b8a4e0a9248690aebc96de3bba00c9ba",
+    "quotations": 1
+  },
+  {
+    "key": "Forms.VATcatalog",
+    "raw_sha256": "6de7fd8432e8c4c63b97575ee8414fc4af2141011d09db3fa46b14902440f1ef",
+    "reader_sha256": "5243c3be16dfc0d87a2260bad8f0aaacdd2e28beea77efc4e9361c81d208329a",
+    "quotations": 2
+  },
+  {
+    "key": "Form.REGDPv24",
+    "raw_sha256": "e8133cfd0cd90917315b63a53b0129aad01cdd9132f5bbbacf65751fbadff08a",
+    "reader_sha256": "108e411868ae7d46c7449d6cd17608b24dec73a2f24b958b0b4e75dd50b1aa16",
+    "quotations": 3
+  },
+  {
+    "key": "Form.KVDPHv25",
+    "raw_sha256": "6dbb8564cae2b1d601b7f6e2dc2d9e5a013206e8e51013ee69948ef060846e85",
+    "reader_sha256": "64468af38832a11cde323813a6c2f0e7a72793ff4e38553bba420692209b861b",
+    "quotations": 5
+  },
+  {
+    "key": "Form.DPHv25",
+    "raw_sha256": "e7b3ecff6cdf4e6fd38539e2900588e1b3031a7d5782e1ce066a24479273b325",
+    "reader_sha256": "1e9d6a8a493dbf1f5c8757829fb2d76ace5caa726dcc50d9d89c14018c6f7c3c",
+    "quotations": 4
+  },
+  {
+    "key": "VAT38.property",
+    "raw_sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "reader_sha256": "93dcfb16dde6902924652a8a3578d7459d1c76638c590ae67006ac56e58bc406",
+    "quotations": 2
+  },
+  {
+    "key": "FS.Intrastat",
+    "raw_sha256": "6d98fe94c66e0c3f4903f0849478e615f91d06780765f860191c3ce7c25f6528",
+    "reader_sha256": "274630c931fa6b4c511fa465775ee773c4c8aa52add8d27e3f74ff7b6922342b",
+    "quotations": 1
+  },
+  {
+    "key": "ITA5.economic-employer",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "de6026e151991838127503901dcfcfe3abb324fdf0ca1ec86258e1d887eb1693",
+    "quotations": 1
+  },
+  {
+    "key": "ITA36.declaration",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "39ad7d77ce1bf191c31f9bc502289176bb02d0251bf12eb31eb7e454d1f8e567",
+    "quotations": 1
+  },
+  {
+    "key": "SP.employee-2026",
+    "raw_sha256": "cfde414f1c165c4f1317a9377bff09d06f2fdabf8bc54fb4bf09fcb25e7fefc0",
+    "reader_sha256": "649ddb7ba44a200e204294dafe2edd2013f9a6c165776ed9c96118b70d851e6b",
+    "quotations": 2
+  },
+  {
+    "key": "ITA161.vehicle-reference",
+    "raw_sha256": "93939c0632b1d891bbb1bd6dc17b515da634028fd0a2fb01459865fb7473a4b8",
+    "reader_sha256": "4659952ea9d98829537fef2e288a39a97b9d15c68fe4701a783f9ecf82bf073d",
+    "quotations": 1
+  },
+  {
+    "key": "FS.VAT2026foods",
+    "raw_sha256": "8cdf02d7b06fce4d40c548f0adf0eea39b46c05e4c40eebb2e80d582ba2f570d",
+    "reader_sha256": "a9d222bba495428f4e906f59fc84eb76643fb6355a98b75fd8d04b72237650a1",
+    "quotations": 1
+  },
+  {
+    "key": "TC79.overpayment",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "fd03a71f7c9c743ccd00b3bd5f9d61f988be0196a89cd22061f9fa952124fb83",
+    "quotations": 2
+  },
+  {
+    "key": "Decision2025.monthly",
+    "raw_sha256": "ad55118c42d8e2c449b7e97b4d0a4f88128f7fdbd2b262687f3bbfee50281d31",
+    "reader_sha256": "ebecf23c8dd85578e933ee90168a7a108030b320f40e3af1b3f1d58dd543393c",
+    "quotations": 3
+  },
+  {
+    "key": "Social138c",
+    "raw_sha256": "883564e7dc2f5c8b43992fa0f874b3582db848e3adf5ac43419ab805d9ca9af2",
+    "reader_sha256": "76276b05952fb47b2f0ba6119d9dacaa6ecf08957c0ee56f419147ae04e93404",
+    "quotations": 1
+  },
+  {
+    "key": "TC154.registration",
+    "raw_sha256": "cf52f9588139ff6ddc5b725fe4cb5e148b6f491eec01cd2c02efb156f6b327f0",
+    "reader_sha256": "1722095de409cbe7fabb6e351349adeb93897e57fda1c22bc8149e5b14e4838d",
+    "quotations": 1
+  },
+  {
+    "key": "VAT2024.goods-decision",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+    "quotations": 1
+  },
+  {
+    "key": "VAT2024.services-decision",
+    "raw_sha256": "6caf8d8068919024640b25c8cb874381990ba048151b0a376e62958596fc6596",
+    "reader_sha256": "607dfd9276ef9f734d16cfaa553bf31b366cb6f4db90811d469bebe05c9c3620",
+    "quotations": 1
+  },
+  {
+    "key": "Health10b",
+    "raw_sha256": "d06c38b39598a19a6ce47127be600dada4e5401996ed5c969ebda1fdf332af51",
+    "reader_sha256": "3e6b69d089e9ec21a1364d951be116482bd6e8fb010932dfc7250ac391611061",
+    "quotations": 2
+  },
+  {
+    "key": "SP.A1.current-admin",
+    "raw_sha256": "a15690aea189ce92cbc70f5436a2b44717ca036e2f961a3ed146f684aff632ef",
+    "reader_sha256": "d587b9a5932523a42b17b15e747e51b36d73cc8886fe6be92567ff75865fe72e",
+    "quotations": 3
+  }
+]

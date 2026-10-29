@@ -1,0 +1,183 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "f6c2e32f2bfd0f841392cf43f14cfaee00bc4d51",
+  "main_baseline": "73f566473aaab8cda1e1a28c0fb8a9c3cd6f7dd0",
+  "review": "fresh independent full seven-Guide and README source/no-loss/ordinary-method review; no outstanding actionable findings from this pass",
+  "new_findings_fixed": [
+    "R01 original historical source URL",
+    "R02 payer-status clocks",
+    "R03 inclusive birthday-month bonus",
+    "R04 partial-month social bases",
+    "R05 July122/2026compulsorycoverage amendment",
+    "R06 pension contract eligibility and withdrawal addback"
+  ],
+  "original_findings": 23,
+  "no_loss_units": 423,
+  "independent_examples": 14,
+  "independent_expected_values": 137,
+  "additional_independent_boundary_controls": 18,
+  "reviewed_hashes": {
+    "skills/international/slovakia/slovakia-pit.md": "d61ef8fe971f677f85fc080e5ecaac69dbe71c055a4a7f43284ce62a6c8a4ea9",
+    "skills/international/slovakia/sk-corporate-income-tax.md": "0b2a88c6b7a8ab0518340cb07e0a636cf1200642edd2af42f495b6179051b70a",
+    "skills/international/slovakia/sk-payroll-social.md": "4879e2ac41b77ef4def3a4a0a0574dad31e3c270a9823f6821b5b524fb3232b1",
+    "skills/international/slovakia/sk-cross-border.md": "bd57065a15ce1f58a8fe316ff6786d24c073d6b542fd38822ce5629e554e081e",
+    "skills/international/slovakia/sk-transfer-pricing.md": "06932ed5dd86be07371da3d893f06677e4fc9165551014179750c098003ce598",
+    "skills/international/slovakia/slovakia-vat-return.md": "09a343035c30983ce93e776f81bbe1469021b3525aaf26e0a907867536f52886",
+    "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30",
+    "skills/international/slovakia/README.md": "9bf143533b8c46a6ca76c923bd8378efebb162cb15433189f723df300adad538"
+  },
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "remaining_ordinary_VAT": [
+    "Actual annual zero-denominator common-input coefficient",
+    "Special KV first-breach fine interaction",
+    "Fixed-gross crossing-supply circularity"
+  ],
+  "remaining_scope": "These are unfinished ordinary VAT interpretations, not specialist exceptions. Further precise current administrative/judicial authority is needed; no blanket assertion that official research is impossible.",
+  "publication": "local country checkpoint only; no push or new PR; country-batch gate remains",
+  "validation": "14examplesPASS; strict3changedGuidesPASS; schema--no-index-checkPASS with inherited798/5/5warninggroups; scoped7Guideindependentschema0errors0warnings",
+  "test_limits": "Generated index default check remains inherited mismatch.129repo tests passed earlier on unchanged code; MCPdependenciesabsentlocally; no code changed, no unnecessary rerun, CI required at publication.",
+  "evidence_scope": "Public selected reports/controls/read receipts plus frozen complete private194filemanifest; full raw bodies/renders/diffs remain in local original evidence and are not all copied here.",
+  "copy_provenance": [
+    {
+      "private_file": "report.md",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-review.md",
+      "original_sha256": "23df1886b3635c16e2239de2938db9e8d7e8374d9acd0541b2ee21e8444a33dc",
+      "public_sha256": "23df1886b3635c16e2239de2938db9e8d7e8374d9acd0541b2ee21e8444a33dc",
+      "normalization": null
+    },
+    {
+      "private_file": "findings.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-findings.json",
+      "original_sha256": "374e2f989052e452591db2952996d8b8a11826523b834c49c99a61d09428c954",
+      "public_sha256": "374e2f989052e452591db2952996d8b8a11826523b834c49c99a61d09428c954",
+      "normalization": null
+    },
+    {
+      "private_file": "review-verdict.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-verdict.json",
+      "original_sha256": "ff13331275b32998f2d1f141ff91966048f5d3cff053f026a0ad3dfdd0a02496",
+      "public_sha256": "ff13331275b32998f2d1f141ff91966048f5d3cff053f026a0ad3dfdd0a02496",
+      "normalization": null
+    },
+    {
+      "private_file": "F01-F23-final-closure-matrix.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-original-finding-closure-matrix.json",
+      "original_sha256": "338e026111620706b07b676d985d682e52c407cecdd1f3df0683a44eb5c95d9d",
+      "public_sha256": "338e026111620706b07b676d985d682e52c407cecdd1f3df0683a44eb5c95d9d",
+      "normalization": null
+    },
+    {
+      "private_file": "full-no-loss-unit-ledger.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-no-loss-ledger.json",
+      "original_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+      "public_sha256": "7c0210e5320a6687950cfee3ae3df747a622eff5928e6bc0d21767e7eade94c5",
+      "normalization": null
+    },
+    {
+      "private_file": "final-frozen-guide-manifest.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-reviewed-guide-hashes.json",
+      "original_sha256": "93b99a374fdb1814d641b78130a7e1fb320548de83bcf784b26561dbac3477d0",
+      "public_sha256": "93b99a374fdb1814d641b78130a7e1fb320548de83bcf784b26561dbac3477d0",
+      "normalization": null
+    },
+    {
+      "private_file": "independent-14-example-controls.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-example-controls.json",
+      "original_sha256": "b4afd6083cfaad2d716fbeb1ed51740d5a56a0e6e7ca3298a69cc2506823a406",
+      "public_sha256": "b4afd6083cfaad2d716fbeb1ed51740d5a56a0e6e7ca3298a69cc2506823a406",
+      "normalization": null
+    },
+    {
+      "private_file": "additional-source-boundary-controls.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-boundary-controls.json",
+      "original_sha256": "049d0e59013dbc957a7bf10a51c5cab40a362e0945da3b6aeb76ecaa80f105e4",
+      "public_sha256": "049d0e59013dbc957a7bf10a51c5cab40a362e0945da3b6aeb76ecaa80f105e4",
+      "normalization": null
+    },
+    {
+      "private_file": "protection-controls.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-protection-controls.json",
+      "original_sha256": "df6f9133b1081aad4929907679bf77c34e6b8a69d5148eefe98d1436db5ea510",
+      "public_sha256": "df6f9133b1081aad4929907679bf77c34e6b8a69d5148eefe98d1436db5ea510",
+      "normalization": null
+    },
+    {
+      "private_file": "scoped-validation.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-scoped-validation.json",
+      "original_sha256": "1555360660203813774d4b3f75adac98dba04fd52dbcad78d43cf85fda7b52f0",
+      "public_sha256": "1555360660203813774d4b3f75adac98dba04fd52dbcad78d43cf85fda7b52f0",
+      "normalization": null
+    },
+    {
+      "private_file": "actual-primary-read-and-hash-receipts.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-independent-source-receipts.json",
+      "original_sha256": "b6547c9f057994de849f827659c1d28c1f8cbc68e5d3b752b91054e03f4e30a7",
+      "public_sha256": "b6547c9f057994de849f827659c1d28c1f8cbc68e5d3b752b91054e03f4e30a7",
+      "normalization": null
+    },
+    {
+      "private_file": "fresh-download-receipts.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-fresh-source-downloads.json",
+      "original_sha256": "8d254eb1433d5f8b8890491146a541292850f58a53dad7fe26f7ca11827cd542",
+      "public_sha256": "8d254eb1433d5f8b8890491146a541292850f58a53dad7fe26f7ca11827cd542",
+      "normalization": null
+    },
+    {
+      "private_file": "direct-route-outcomes.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-remaining-VAT-direct-routes.json",
+      "original_sha256": "7175da18c73eea6fc7051e2c038a308bc125c9e8f84f64914f1470bbb83116b2",
+      "public_sha256": "7175da18c73eea6fc7051e2c038a308bc125c9e8f84f64914f1470bbb83116b2",
+      "normalization": null
+    },
+    {
+      "private_file": "artifact-manifest.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-complete-private-artifact-manifest.json",
+      "original_sha256": "449ce8e9d8e55c9741cb9ed8d5ad313b088f8a3bda43ceecd818e2c32d43dbed",
+      "public_sha256": "449ce8e9d8e55c9741cb9ed8d5ad313b088f8a3bda43ceecd818e2c32d43dbed",
+      "normalization": null
+    },
+    {
+      "private_file": "root-seven-guide-delta-protection.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-root-delta-protection.json",
+      "original_sha256": "92fd4e18b8adc2dab8f99ea8e1f56d6f6dfd70406784b3c777152d136c18fdbb",
+      "public_sha256": "92fd4e18b8adc2dab8f99ea8e1f56d6f6dfd70406784b3c777152d136c18fdbb",
+      "normalization": null
+    },
+    {
+      "private_file": "root-validation.json",
+      "public_file": "skills/research/slovakia-2026/final-pack-root-validation.json",
+      "original_sha256": "2f770cfeb24681e1f9aa4b55f2bd2eac3daf2359c4e7332be199254989224bcc",
+      "public_sha256": "2f770cfeb24681e1f9aa4b55f2bd2eac3daf2359c4e7332be199254989224bcc",
+      "normalization": null
+    },
+    {
+      "private_file": "root-country-examples.txt",
+      "public_file": "skills/research/slovakia-2026/final-pack-country-examples.txt",
+      "original_sha256": "fe82f070d30e6c6aa5877c230b24b875aab77061a1de73be52410aca841cb567",
+      "public_sha256": "fe82f070d30e6c6aa5877c230b24b875aab77061a1de73be52410aca841cb567",
+      "normalization": null
+    },
+    {
+      "private_file": "root-strict-metadata.txt",
+      "public_file": "skills/research/slovakia-2026/final-pack-strict-metadata.txt",
+      "original_sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+      "public_sha256": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+      "normalization": null
+    },
+    {
+      "private_file": "root-schema-no-index.txt",
+      "public_file": "skills/research/slovakia-2026/final-pack-schema-no-index.txt",
+      "original_sha256": "9d8fa9d448dd83ecbb2803abd09220c824c021fc23bb768d1924aa82f8d22b1e",
+      "public_sha256": "9d8fa9d448dd83ecbb2803abd09220c824c021fc23bb768d1924aa82f8d22b1e",
+      "normalization": null
+    },
+    {
+      "private_file": "R05-current-SZCO-law.md",
+      "public_file": "skills/research/slovakia-2026/final-pack-July-SZCO-source-finding.md",
+      "original_sha256": "d2e225eb10634e266a8de4b18772b5c581cc71c1fa076dd15fa26986b837de1b",
+      "public_sha256": "d2e225eb10634e266a8de4b18772b5c581cc71c1fa076dd15fa26986b837de1b",
+      "normalization": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/vat-2024-full-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html",
+    "sha256": "0908716fc90e16f445b09271cd8bf5c2d2277ca3e172a4ddaaefda6bf1327e07",
+    "bytes": 505459,
+    "read_on": "2026-10-27",
+    "method": "Complete live browser DOM text"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/tax-2026-jan-full-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260101.html",
+    "sha256": "a12bbade26a2bbd223e313b15c4979c7e6eaca57f51a7980654625aade0349b6",
+    "bytes": 398319,
+    "read_on": "2026-10-27",
+    "method": "Complete live browser DOM text"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/registration-completion/sources/fs-registration-method.pdf",
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf",
+    "sha256": "c54b6e92ee861a83e6c8aa67bc91dbe27f278707da4444b5de257ddd57be6961",
+    "bytes": 386442,
+    "read_on": "2026-10-27",
+    "method": "curl normal TLS verification; full PDF and extracted text read"
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/vat-act-2026-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "sha256": "acc5a74c44c5efe077cdcd84dfe42b53c26faf1e95ddb1861767b2f26ff699c6",
+    "bytes": 570637,
+    "characters": 525194,
+    "method": "Live Brave browser DOM body.innerText captured in150000-character slices; script request403; fresh web open corroborates source/current period",
+    "read_on": "2026-10-27"
+  },
+  {
+    "file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-no-loss/sources/tax-code-2026-browser.txt",
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html",
+    "sha256": "2c8ed12052b2ca1c3b817a8a64f756398983b496eb62945c5b518d0e890fced4",
+    "bytes": 399983,
+    "characters": 366160,
+    "method": "Live Brave browser DOM body.innerText captured in150000-character slices; script request403; fresh web open corroborates source/current period",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.19_DPH_reg_par7.pdf",
+    "read_on": "2026-10-27",
+    "bytes": 495864,
+    "sha256": "44d275adb0e2c9968df7ab687ba54e1513908102b89e10c2a430f172fa2a490e",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2018/2018.06.18_DPH.pdf",
+    "read_on": "2026-10-27",
+    "bytes": 475842,
+    "sha256": "4c72413b11e96db7b507003a95c67246178287157a8128c8108f7e38d8fab442",
+    "returncode": 0,
+    "stderr": ""
+  }
+]

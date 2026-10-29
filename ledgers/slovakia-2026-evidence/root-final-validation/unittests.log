@@ -1,0 +1,349 @@
+test_formation_super_rate_starts_in_2025_26 (test_au_guide_regressions.AustralianGuideRegressionTests.test_formation_super_rate_starts_in_2025_26) ... ok
+test_kilometre_cap_matches_the_stated_rate_and_distance (test_au_guide_regressions.AustralianGuideRegressionTests.test_kilometre_cap_matches_the_stated_rate_and_distance) ... ok
+test_kilometre_rates_are_bound_to_their_financial_years (test_au_guide_regressions.AustralianGuideRegressionTests.test_kilometre_rates_are_bound_to_their_financial_years) ... ok
+test_nfp_super_rates_follow_the_table_years (test_au_guide_regressions.AustralianGuideRegressionTests.test_nfp_super_rates_follow_the_table_years) ... ok
+test_nfp_workpaper_dates_the_rate_from_july_2025 (test_au_guide_regressions.AustralianGuideRegressionTests.test_nfp_workpaper_dates_the_rate_from_july_2025) ... ok
+test_payroll_guide_rows (test_au_payroll_tax_table.PayrollTaxTableTest.test_payroll_guide_rows) ... ok
+test_rates_card_row (test_au_payroll_tax_table.PayrollTaxTableTest.test_rates_card_row) ... ok
+test_crypto_rate_scale (test_au_refresh_2026_27.Refresh202627Test.test_crypto_rate_scale) ... ok
+test_payg_instalment_factors (test_au_refresh_2026_27.Refresh202627Test.test_payg_instalment_factors) ... ok
+test_rental_thresholds (test_au_refresh_2026_27.Refresh202627Test.test_rental_thresholds) ... ok
+test_caps_length (test_build_agent_skills.DescriptionTests.test_caps_length) ... ok
+test_keeps_a_real_trigger_description (test_build_agent_skills.DescriptionTests.test_keeps_a_real_trigger_description) ... ok
+test_replaces_a_broken_description_with_the_opening_and_says_skill (test_build_agent_skills.DescriptionTests.test_replaces_a_broken_description_with_the_opening_and_says_skill) ... ok
+test_readme_stats_block_has_two_states (test_build_agent_skills.SkillFileTests.test_readme_stats_block_has_two_states) ... ok
+test_skill_md_has_frontmatter_body_and_live_figures_section (test_build_agent_skills.SkillFileTests.test_skill_md_has_frontmatter_body_and_live_figures_section) ... ok
+test_index_matches_folders (test_build_agent_skills.TreeTests.test_index_matches_folders) ... ok
+test_missing_sentence_warns_instead_of_failing (test_build_index_counts.StampLlmsCountsTests.test_missing_sentence_warns_instead_of_failing) ... ok
+test_restamps_figures_and_keeps_line_endings (test_build_index_counts.StampLlmsCountsTests.test_restamps_figures_and_keeps_line_endings) ... ok
+test_restamps_the_pre_rename_wording (test_build_index_counts.StampLlmsCountsTests.test_restamps_the_pre_rename_wording) ... ok
+test_unchanged_figures_do_not_rewrite (test_build_index_counts.StampLlmsCountsTests.test_unchanged_figures_do_not_rewrite) ... ok
+test_correct_example_passes (test_check_examples.CheckExamplesTest.test_correct_example_passes) ... ok
+test_file_without_blocks_passes (test_check_examples.CheckExamplesTest.test_file_without_blocks_passes) ... ok
+test_helpers_and_decimal_rounding (test_check_examples.CheckExamplesTest.test_helpers_and_decimal_rounding) ... ok
+test_tolerance_is_respected (test_check_examples.CheckExamplesTest.test_tolerance_is_respected) ... ok
+test_unknown_name_is_reported (test_check_examples.CheckExamplesTest.test_unknown_name_is_reported) ... ok
+test_unsafe_expression_is_rejected (test_check_examples.CheckExamplesTest.test_unsafe_expression_is_rejected) ... ok
+test_wrong_expected_fails_with_actual (test_check_examples.CheckExamplesTest.test_wrong_expected_fails_with_actual) ... ok
+test_jurisdiction_has_no_empty_duplicate_heading (test_contradiction_report.ContradictionReportTests.test_jurisdiction_has_no_empty_duplicate_heading) ... ok
+test_prose_binds_at_an_anchor_the_old_literal_range_excluded (test_contradiction_tax_year.BindingYearWindowTests.test_prose_binds_at_an_anchor_the_old_literal_range_excluded)
+A fixed range(2023, 2028) made sentence_years() return nothing here, ... ok
+test_window_follows_the_resolved_year (test_contradiction_tax_year.BindingYearWindowTests.test_window_follows_the_resolved_year) ... ok
+test_all_null_required_branch_disqualifies_a_rates_file (test_contradiction_tax_year.CanonicalRatesPopulationTests.test_all_null_required_branch_disqualifies_a_rates_file) ... ok
+test_null_required_leaf_disqualifies_a_rates_file (test_contradiction_tax_year.CanonicalRatesPopulationTests.test_null_required_leaf_disqualifies_a_rates_file) ... ok
+test_todo_marker_anywhere_disqualifies_a_rates_file (test_contradiction_tax_year.CanonicalRatesPopulationTests.test_todo_marker_anywhere_disqualifies_a_rates_file) ... ok
+test_unpopulated_skeleton_is_skipped_not_selected (test_contradiction_tax_year.CanonicalRatesPopulationTests.test_unpopulated_skeleton_is_skipped_not_selected) ... ok
+test_explicit_year_must_have_a_populated_rates_file (test_contradiction_tax_year.ContradictionTaxYearTests.test_explicit_year_must_have_a_populated_rates_file) ... ok
+test_frontmatter_year_wins_and_missing_year_uses_default (test_contradiction_tax_year.ContradictionTaxYearTests.test_frontmatter_year_wins_and_missing_year_uses_default) ... ok
+test_malformed_or_mismatched_canonical_rate_file_fails_closed (test_contradiction_tax_year.ContradictionTaxYearTests.test_malformed_or_mismatched_canonical_rate_file_fails_closed) ... ok
+test_missing_rate_directory_fails (test_contradiction_tax_year.ContradictionTaxYearTests.test_missing_rate_directory_fails) ... ok
+test_selects_newest_valid_rate_year (test_contradiction_tax_year.ContradictionTaxYearTests.test_selects_newest_valid_rate_year) ... ok
+test_zero_canonical_rate_year_fails_closed (test_contradiction_tax_year.ContradictionTaxYearTests.test_zero_canonical_rate_year_fails_closed) ... ok
+test_a_future_default_never_drags_undated_claims_forward (test_contradiction_tax_year.RealPackagesTreeTests.test_a_future_default_never_drags_undated_claims_forward)
+The structural regression, exercised through extract_claims. ... ok
+test_a_skeleton_rates_file_never_becomes_the_default_year (test_contradiction_tax_year.RealPackagesTreeTests.test_a_skeleton_rates_file_never_becomes_the_default_year)
+ANNUAL-UPDATE-RUNBOOK.md has next year's skeleton created in December, ... ok
+test_untagged_guides_bind_to_the_year_they_say_they_cover (test_contradiction_tax_year.RealPackagesTreeTests.test_untagged_guides_bind_to_the_year_they_say_they_cover) ... ok
+test_us_federal_guides_carry_no_frontmatter_tax_year (test_contradiction_tax_year.RealPackagesTreeTests.test_us_federal_guides_carry_no_frontmatter_tax_year)
+The premise the rest of this class rests on; assert it, don't assume. ... ok
+test_repository_copy_follows_the_rules (test_copy_rules.CopyRulesTest.test_repository_copy_follows_the_rules) ... ok
+test_scope_is_not_empty (test_copy_rules.CopyRulesTest.test_scope_is_not_empty) ... ok
+test_no_readme (test_coverage_partial.PartialDomainsTest.test_no_readme) ... ok
+test_partial_block_is_read (test_coverage_partial.PartialDomainsTest.test_partial_block_is_read) ... ok
+test_depends_on_must_be_string_list (test_frontmatter_yaml.FrontmatterYamlTests.test_depends_on_must_be_string_list) ... ok
+test_duplicate_key_is_rejected (test_frontmatter_yaml.FrontmatterYamlTests.test_duplicate_key_is_rejected) ... ok
+test_inline_dash_after_mapping_key_is_rejected (test_frontmatter_yaml.FrontmatterYamlTests.test_inline_dash_after_mapping_key_is_rejected) ... ok
+test_norway_code_must_be_quoted (test_frontmatter_yaml.FrontmatterYamlTests.test_norway_code_must_be_quoted) ... ok
+test_root_must_be_mapping (test_frontmatter_yaml.FrontmatterYamlTests.test_root_must_be_mapping) ... ok
+test_unquoted_colon_space_is_rejected (test_frontmatter_yaml.FrontmatterYamlTests.test_unquoted_colon_space_is_rejected) ... ok
+test_valid_block_sequence_parses (test_frontmatter_yaml.FrontmatterYamlTests.test_valid_block_sequence_parses) ... ok
+test_commit_lookup_failure_does_not_send_partial_ingestion (test_ingest_workflow.IngestWorkflowTests.test_commit_lookup_failure_does_not_send_partial_ingestion) ... ok
+test_human_commit_without_file_attributes_reaches_platform (test_ingest_workflow.IngestWorkflowTests.test_human_commit_without_file_attributes_reaches_platform) ... FAIL
+test_aggregate_bot_cannot_rewrite_existing_source (test_sync_integrity.GitBackedIntegrityTests.test_aggregate_bot_cannot_rewrite_existing_source) ... ok
+test_bot_echo_of_ingested_human_edit_is_a_notice (test_sync_integrity.GitBackedIntegrityTests.test_bot_echo_of_ingested_human_edit_is_a_notice) ... ok
+test_bot_overwrite_of_unseen_human_edit_still_fails (test_sync_integrity.GitBackedIntegrityTests.test_bot_overwrite_of_unseen_human_edit_still_fails) ... ok
+test_bot_rerender_without_human_edit_is_a_notice (test_sync_integrity.GitBackedIntegrityTests.test_bot_rerender_without_human_edit_is_a_notice) ... ok
+test_cli_provenance_shape_is_json_serializable (test_sync_integrity.GitBackedIntegrityTests.test_cli_provenance_shape_is_json_serializable) ... ok
+test_human_authored_unversioned_main_rewrite_fails_strict_audit (test_sync_integrity.GitBackedIntegrityTests.test_human_authored_unversioned_main_rewrite_fails_strict_audit) ... ok
+test_idempotent_no_op_can_repair_stale_sync_state (test_sync_integrity.GitBackedIntegrityTests.test_idempotent_no_op_can_repair_stale_sync_state) ... ok
+test_idempotent_repair_hashes_filtered_crlf_blob (test_sync_integrity.GitBackedIntegrityTests.test_idempotent_repair_hashes_filtered_crlf_blob) ... ok
+test_invalid_content_revision_fails (test_sync_integrity.GitBackedIntegrityTests.test_invalid_content_revision_fails) ... ERROR
+test_matching_blob_provenance_allows_forward_render (test_sync_integrity.GitBackedIntegrityTests.test_matching_blob_provenance_allows_forward_render) ... ERROR
+test_merge_base_excludes_unrelated_main_only_changes (test_sync_integrity.GitBackedIntegrityTests.test_merge_base_excludes_unrelated_main_only_changes) ... ok
+test_missing_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_missing_provenance_fails_closed) ... ERROR
+test_new_guide_requires_null_blob_and_valid_revision (test_sync_integrity.GitBackedIntegrityTests.test_new_guide_requires_null_blob_and_valid_revision) ... ERROR
+test_no_op_provenance_always_validates_content_revision (test_sync_integrity.GitBackedIntegrityTests.test_no_op_provenance_always_validates_content_revision) ... ok
+test_non_guide_markdown_edit_is_ignored (test_sync_integrity.GitBackedIntegrityTests.test_non_guide_markdown_edit_is_ignored) ... ok
+test_source_deletion_requires_human_review (test_sync_integrity.GitBackedIntegrityTests.test_source_deletion_requires_human_review) ... ok
+test_source_rename_fails_strict_main_audit (test_sync_integrity.GitBackedIntegrityTests.test_source_rename_fails_strict_main_audit) ... ERROR
+test_stale_blob_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_stale_blob_provenance_fails_closed) ... ERROR
+test_sync_preflight_rejects_malformed_yaml_before_publication (test_sync_integrity.GitBackedIntegrityTests.test_sync_preflight_rejects_malformed_yaml_before_publication) ... ERROR
+test_existing_version_cannot_be_removed (test_sync_integrity.GuideComparisonTests.test_existing_version_cannot_be_removed) ... ok
+test_forward_dated_and_versioned_edit_passes (test_sync_integrity.GuideComparisonTests.test_forward_dated_and_versioned_edit_passes) ... ok
+test_frontmatter_key_reordering_only_passes (test_sync_integrity.GuideComparisonTests.test_frontmatter_key_reordering_only_passes) ... ok
+test_incident_shape_detects_heading_split_and_uncertainty (test_sync_integrity.GuideComparisonTests.test_incident_shape_detects_heading_split_and_uncertainty) ... ok
+test_invalid_legacy_base_can_be_repaired (test_sync_integrity.GuideComparisonTests.test_invalid_legacy_base_can_be_repaired) ... ok
+test_invalid_yaml_fails_before_metadata_comparison (test_sync_integrity.GuideComparisonTests.test_invalid_yaml_fails_before_metadata_comparison) ... ok
+test_last_updated_regression_fails (test_sync_integrity.GuideComparisonTests.test_last_updated_regression_fails) ... ok
+test_line_endings_and_trailing_whitespace_are_ignored (test_sync_integrity.GuideComparisonTests.test_line_endings_and_trailing_whitespace_are_ignored) ... ok
+test_new_guide_heading_must_match_frontmatter_version (test_sync_integrity.GuideComparisonTests.test_new_guide_heading_must_match_frontmatter_version) ... ok
+test_new_guide_version_must_be_numeric_when_present (test_sync_integrity.GuideComparisonTests.test_new_guide_version_must_be_numeric_when_present) ... ok
+test_non_numeric_version_warns_but_uses_date_guard (test_sync_integrity.GuideComparisonTests.test_non_numeric_version_warns_but_uses_date_guard) ... ok
+test_numeric_version_cannot_become_non_numeric (test_sync_integrity.GuideComparisonTests.test_numeric_version_cannot_become_non_numeric) ... ok
+test_numeric_version_regression_fails_even_with_newer_date (test_sync_integrity.GuideComparisonTests.test_numeric_version_regression_fails_even_with_newer_date) ... ok
+test_optional_missing_version_does_not_crash (test_sync_integrity.GuideComparisonTests.test_optional_missing_version_does_not_crash) ... ok
+test_same_day_unversioned_edit_fails_in_strict_audit (test_sync_integrity.GuideComparisonTests.test_same_day_unversioned_edit_fails_in_strict_audit) ... ok
+test_same_day_unversioned_edit_fails_in_sync_mode (test_sync_integrity.GuideComparisonTests.test_same_day_unversioned_edit_fails_in_sync_mode) ... ok
+test_same_day_unversioned_edit_warns_in_audit_mode (test_sync_integrity.GuideComparisonTests.test_same_day_unversioned_edit_warns_in_audit_mode) ... ok
+test_yaml_boolean_jurisdiction_fails_closed (test_sync_integrity.GuideComparisonTests.test_yaml_boolean_jurisdiction_fails_closed) ... ok
+test_pack_readme_is_not_audited_as_a_guide (test_sync_integrity.PackReadmeTests.test_pack_readme_is_not_audited_as_a_guide) ... ok
+test_database_values_cannot_add_query_parameters (test_sync_integrity.VerificationWorkbookQueryTests.test_database_values_cannot_add_query_parameters) ... ok
+test_hostile_jurisdictions_fail_before_query_build (test_sync_integrity.VerificationWorkbookQueryTests.test_hostile_jurisdictions_fail_before_query_build) ... ok
+test_hostile_or_malformed_slug_components_fail_before_query_build (test_sync_integrity.VerificationWorkbookQueryTests.test_hostile_or_malformed_slug_components_fail_before_query_build) ... ok
+test_postgrest_filters_are_percent_encoded_as_single_values (test_sync_integrity.VerificationWorkbookQueryTests.test_postgrest_filters_are_percent_encoded_as_single_values) ... ok
+test_repository_inventory_matches_validated_selector_grammar (test_sync_integrity.VerificationWorkbookQueryTests.test_repository_inventory_matches_validated_selector_grammar) ... ok
+test_selectors_are_mutually_exclusive_and_required (test_sync_integrity.VerificationWorkbookQueryTests.test_selectors_are_mutually_exclusive_and_required) ... ok
+test_valid_selectors_include_grouped_and_multi_part_jurisdictions (test_sync_integrity.VerificationWorkbookQueryTests.test_valid_selectors_include_grouped_and_multi_part_jurisdictions) ... ok
+test_legacy_flat_depends_on_is_grandfathered (test_validate_guides.GeneratedPackagesTreeTests.test_legacy_flat_depends_on_is_grandfathered) ... ok
+test_malformed_generated_frontmatter_is_an_error (test_validate_guides.GeneratedPackagesTreeTests.test_malformed_generated_frontmatter_is_an_error) ... ok
+test_readmes_and_us_federal_are_not_double_reported (test_validate_guides.GeneratedPackagesTreeTests.test_readmes_and_us_federal_are_not_double_reported) ... ok
+test_valid_generated_frontmatter_passes (test_validate_guides.GeneratedPackagesTreeTests.test_valid_generated_frontmatter_passes) ... ok
+test_a_doc_opening_on_a_horizontal_rule_is_still_skipped (test_validate_guides.MisplacedFrontmatterTests.test_a_doc_opening_on_a_horizontal_rule_is_still_skipped) ... ok
+test_byte_order_mark_before_frontmatter_is_rejected (test_validate_guides.MisplacedFrontmatterTests.test_byte_order_mark_before_frontmatter_is_rejected) ... ok
+test_leading_blank_line_before_frontmatter_is_rejected (test_validate_guides.MisplacedFrontmatterTests.test_leading_blank_line_before_frontmatter_is_rejected) ... ok
+test_leading_space_before_frontmatter_is_rejected (test_validate_guides.MisplacedFrontmatterTests.test_leading_space_before_frontmatter_is_rejected) ... ok
+test_duplicate_keys_are_an_error (test_validate_guides.StrictFrontmatterTests.test_duplicate_keys_are_an_error) ... ok
+test_malformed_yaml_is_an_error (test_validate_guides.StrictFrontmatterTests.test_malformed_yaml_is_an_error) ... ok
+test_valid_guide_passes (test_validate_guides.StrictFrontmatterTests.test_valid_guide_passes) ... ok
+test_rejects_missing_or_invalid_tier (test_validate_quality_metadata.QualityMetadataValidationTests.test_rejects_missing_or_invalid_tier) ... ok
+test_tier_one_accepts_current_and_legacy_reviewer_fields (test_validate_quality_metadata.QualityMetadataValidationTests.test_tier_one_accepts_current_and_legacy_reviewer_fields) ... ok
+test_tier_one_requires_a_real_reviewer (test_validate_quality_metadata.QualityMetadataValidationTests.test_tier_one_requires_a_real_reviewer) ... ok
+test_tier_two_allows_research_review_but_not_verification (test_validate_quality_metadata.QualityMetadataValidationTests.test_tier_two_allows_research_review_but_not_verification) ... ok
+test_non_tax_skill_is_ignored (test_validate_sources_staleness.SourcesCheckTest.test_non_tax_skill_is_ignored) ... ok
+test_section_with_url_passes (test_validate_sources_staleness.SourcesCheckTest.test_section_with_url_passes) ... ok
+test_section_without_url_warns (test_validate_sources_staleness.SourcesCheckTest.test_section_without_url_warns) ... ok
+test_tax_skill_without_section_warns (test_validate_sources_staleness.SourcesCheckTest.test_tax_skill_without_section_warns) ... ok
+test_url_after_next_heading_does_not_count (test_validate_sources_staleness.SourcesCheckTest.test_url_after_next_heading_does_not_count) ... ok
+test_fresh_passes (test_validate_sources_staleness.StalenessCheckTest.test_fresh_passes) ... ok
+test_old_last_updated_warns (test_validate_sources_staleness.StalenessCheckTest.test_old_last_updated_warns) ... ok
+test_old_tax_year_warns (test_validate_sources_staleness.StalenessCheckTest.test_old_tax_year_warns) ... ok
+test_previous_year_is_fine (test_validate_sources_staleness.StalenessCheckTest.test_previous_year_is_fine) ... ok
+test_no_workflow_interpolates_untrusted_input_into_a_script_body (test_workflow_permissions.WorkflowPermissionTests.test_no_workflow_interpolates_untrusted_input_into_a_script_body)
+`script:` blocks must read from env, never from ${{ ... }} directly. ... ok
+test_only_the_commenting_job_can_write (test_workflow_permissions.WorkflowPermissionTests.test_only_the_commenting_job_can_write) ... ok
+test_validate_workflow_declares_least_privilege_default (test_workflow_permissions.WorkflowPermissionTests.test_validate_workflow_declares_least_privilege_default) ... ok
+
+======================================================================
+ERROR: test_invalid_content_revision_fails (test_sync_integrity.GitBackedIntegrityTests.test_invalid_content_revision_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmps5hdglyx/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmps5hdglyx'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 401, in test_invalid_content_revision_fails
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_matching_blob_provenance_allows_forward_render (test_sync_integrity.GitBackedIntegrityTests.test_matching_blob_provenance_allows_forward_render)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3c_d7vee/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp3c_d7vee'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 306, in test_matching_blob_provenance_allows_forward_render
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_missing_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_missing_provenance_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmplt2jyk8w/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmplt2jyk8w'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 361, in test_missing_provenance_fails_closed
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_new_guide_requires_null_blob_and_valid_revision (test_sync_integrity.GitBackedIntegrityTests.test_new_guide_requires_null_blob_and_valid_revision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp0msbedry/skills/foundation/new-synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmp0msbedry'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 382, in test_new_guide_requires_null_blob_and_valid_revision
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/new-synthetic-guide.md'
+
+======================================================================
+ERROR: test_source_rename_fails_strict_main_audit (test_sync_integrity.GitBackedIntegrityTests.test_source_rename_fails_strict_main_audit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpjazmayua/skills/foundation/renamed-synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpjazmayua'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 597, in test_source_rename_fails_strict_main_audit
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        strict_metadata=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/renamed-synthetic-guide.md'
+
+======================================================================
+ERROR: test_stale_blob_provenance_fails_closed (test_sync_integrity.GitBackedIntegrityTests.test_stale_blob_provenance_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpq_17cwn7/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpq_17cwn7'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 324, in test_stale_blob_provenance_fails_closed
+    findings, _ = sync_integrity.run_integrity_check(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+ERROR: test_sync_preflight_rejects_malformed_yaml_before_publication (test_sync_integrity.GitBackedIntegrityTests.test_sync_preflight_rejects_malformed_yaml_before_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 206, in read_worktree_file
+    candidate.relative_to(repo)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: '/private/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpy7k1dijh/skills/foundation/synthetic-guide.md' is not in the subpath of '/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/tmpy7k1dijh'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_sync_integrity.py", line 345, in test_sync_preflight_rejects_malformed_yaml_before_publication
+    findings, count = sync_integrity.run_integrity_check(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.repo, self.base, None, "sync", provenance
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 898, in run_integrity_check
+    else read_worktree_file(repo, change.after_path)
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/scripts/check-sync-integrity.py", line 208, in read_worktree_file
+    raise IntegrityError(f"path escapes repository: {path!r}") from exc
+check_sync_integrity.IntegrityError: path escapes repository: 'skills/foundation/synthetic-guide.md'
+
+======================================================================
+FAIL: test_human_commit_without_file_attributes_reaches_platform (test_ingest_workflow.IngestWorkflowTests.test_human_commit_without_file_attributes_reaches_platform)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-slovakia/tests/test_ingest_workflow.py", line 64, in test_human_commit_without_file_attributes_reaches_platform
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : CAPTURED_BODY={"headSha":"head","paths":["skills/example.md","skills/new.md","skills/renamed.md"],"authors":[{"name":"Contributor","email":"person@example.test","login":"contributor"},{"name":"Sync","email":"sync@openaccountants.com","login":null}]}
+/bin/bash: line 57: RUNNER_TEMP: unbound variable
+
+
+----------------------------------------------------------------------
+Ran 129 tests in 7.036s
+
+FAILED (failures=1, errors=7)

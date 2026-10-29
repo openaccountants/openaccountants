@@ -1,0 +1,26 @@
+
+slovakia-vat-registration-4-7-7a earliest unit33 oldLF[93, 93]
+OLD:The §4 application is due within five working days of the day the turnover was exceeded, or the day payer status was acquired. Decision timing: 10 days for a compulsory §4 registration, 21 days for a voluntary one, 10 days for §7 and §7a. Note that §7(3) and §7a(3) were amended with effect from 1 January 2025 to replace seven days with ten. Several of the tax authority's own information sheets still say seven. The statute says ten.
+DEST:Current LF82–96
+DISPOSITION:Exactsameoldtopic asmainunitM34: Allregistration/decision10vs7/deadlines retained.
+CURRENT [82, 96] | §4 application after the relevant threshold/status trigger | Five working days; identify the event and date | §4(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Mandatory §4 decision and number | Within ten days of receipt; for §4(4)(b)(2), the application and required evidence govern the start | §4(4), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html; FS method §2.3 |
+| Ordinary voluntary §4 decision | Within 21 days | §4(7), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7 application | Before the threshold acquisition | §7(1), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7a application | Before receiving/supplying the qualifying service | §7a(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7/§7a decision/number | Within ten days of receipt | §7(3), §7a(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Non-payer's reverse-charge return and payment | Within 25 days after the month of liability; no nil returns; payment exception up to EUR 5 | §78(3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| New §4 payer's period and ordinary return/payment | Calendar month; return/payment within 25 days after period end | §77(1), §78(1), (2), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Qualifying quarterly payer election | Notify within 25 days after the month conditions are met; quarter starts under §77(3) | §77(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| §7/§7a EC Sales List for reportable services supplied | Quarterly, within 25 days after quarter end; no nil list | §80(3), (5), (9), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Invoice for §15(1) service placed in another member state | Within 15 days after month-end of supply or advance; reverse-charge wording where customer is liable | §72(2), §73(1)(d), §74(1)(k), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Ordinary non-payer invoice retention | Ten years following the year concerned | §76(2), (3), https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html |
+| Deadline ends on Saturday, Sunday or public holiday | Next working day | Tax Procedure Code §27(4), https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html |
+
+After an application following EUR 50,000 turnover, a later immediate-payer event before year-end must be notified **without delay**, giving its date (§4(5)). If EUR 62,500 is exceeded within the initial five-working-day application window before the first application was filed, the special application rule in §4(2)(c) applies. Do not submit an application on the assumption that status can wait until next January.
+
+slovakia-vat-registration-4-7-7a earliest unit43 oldLF[155, 155]
+OLD:Had she bought the same ads from a **US** entity, no §7a registration would be required, but the 46 eur of self-assessed VAT and the return would still be due.
+DEST:Current LF145–145
+DISPOSITION:Exactsameoldtopic asmainunitM44: USsameRC/no7a retained.
+CURRENT [145, 145] If the actual supplier were a US business, the same facts produce EUR 46 tax and a return, but no §7a registration trigger. Once Jana is a §4 payer with the number and documentation required by §51, an equivalent later EUR 200 service used wholly for deductible activity produces EUR 46 output and EUR 46 input VAT, a zero net effect and EUR 200 cost. This later-service credit does not automatically reopen the January return. Any claim for pre-registration inputs must separately satisfy §55(1), (2), including its first-period, expense-year and general deduction conditions (§49(2)(b), §51).

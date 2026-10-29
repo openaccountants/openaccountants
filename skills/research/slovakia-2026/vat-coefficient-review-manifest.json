@@ -1,0 +1,14 @@
+{
+  "baseline_commit": "169d1855",
+  "baseline_sha256": "7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766",
+  "final_guide_sha256": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531",
+  "control_count": 54,
+  "all_pass": true,
+  "existing_examples": 2,
+  "scope": "positive actual annual included-supplies denominator; ordinary mixed-input coefficient method",
+  "result": "PASS positive actual annual denominator ordinary method",
+  "finite_findings_open": 0,
+  "annual_zero_denominator": "ordinary unresolved; see separate finite research note",
+  "report_sha256": "3801013a8baa635063ff369f6c8bfabebafbf99204631ce49fdd773bb48fa8d0",
+  "zero_denominator_note_sha256": "e3af0068d847df2bde7e6e6d84ddf60a8110a4f28fe2896b50969b002b0ef3e4"
+}

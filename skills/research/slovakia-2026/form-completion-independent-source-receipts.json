@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://www.financnasprava.sk/sk/katalog-formularov",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/catalog.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 379478,
+    "sha256": "b296919dd0b26dfd381ebba12b2d56da9ac91bad4911bb1dcc017f8e16250cb7",
+    "read_scope": "Actual active catalog version identifiers and valid-from dates, read through fresh official web body and retained HTML"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/VzoryTlaciv/DPHv25.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/DPHv25.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 79701,
+    "sha256": "e7b3ecff6cdf4e6fd38539e2900588e1b3031a7d5782e1ce066a24479273b325",
+    "read_scope": "Complete 3-page actual form; independent pdftotext extraction and visual inspection of operative pages2/3; all new row mappings checked"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/eFormVzor/DP/form.607.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/KVDPHv25.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 436111,
+    "sha256": "6dbb8564cae2b1d601b7f6e2dc2d9e5a013206e8e51013ee69948ef060846e85",
+    "read_scope": "Actual form section headers A1\u2013D2, B3.1/B3.2 thresholds, explanatory correction-code notes; fresh official web body and retained HTML"
+  },
+  {
+    "url": "https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/REGDPv24.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 1348265,
+    "sha256": "e8133cfd0cd90917315b63a53b0129aad01cdd9132f5bbbacf65751fbadff08a",
+    "read_scope": "Actual identity/action/tax type plus complete relevant Annex1 selections; fresh official web body and retained HTML"
+  },
+  {
+    "url": "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5815198-2.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/annex7.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 809427,
+    "sha256": "c91eb5167c22fbc1018380c890f0dea2a89ce3322d3e52ade6f45d70af77a1b2",
+    "read_scope": "Actual current Annex7 PDF, ex4901/ex4902 and separate adjacent publication/media categories; operative page5 independently rendered/read"
+  },
+  {
+    "url": "https://static.slov-lex.sk/pdf/prilohy/SK/ZZ/2004/222/20260101_5747469-2.pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/annex7a.pdf",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 321190,
+    "sha256": "2c666fcf8b716ae279c6dff74f58157656610bde1dee571ad1112a71824680db",
+    "read_scope": "Actual complete one-page current Annex7a, CPA58.11.30 advertising/narration gates; independently rendered/read"
+  },
+  {
+    "url": "https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-whole-pack-review/form-completion/independent/vat-act.html",
+    "status": 0,
+    "stderr": "",
+    "method": "independent fresh curl normal TLS; no bypass",
+    "read_date": "2026-10-27",
+    "bytes": 1984156,
+    "sha256": "36f744ae52d49bb459ea66e09daf4f16fccdb8122fd5b785c050dcbe96199f12",
+    "read_scope": "Actual current2026 law, \u00a74(6)\u2013(13) statutory routes and \u00a727 rate-to-annex linkage; independently extracted body"
+  }
+]

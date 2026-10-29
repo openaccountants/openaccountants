@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "265f91ffdc1e66002cc28d34b260e4c03ff6301f",
+  "findings_closed": [
+    "F09",
+    "F10",
+    "F11",
+    "F13",
+    "F14",
+    "F19",
+    "F23"
+  ],
+  "initial_delta_findings_closed": 3,
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "independent_controls": {
+    "ordinary": 50,
+    "KV_boundaries": 3,
+    "publication_boundaries": 10
+  },
+  "form_process_provenance": "F11 draft options preceded edit; F23 option record was written after edit and is disclosed as a sequencing deviation, not retroactively compliant.",
+  "Guide_hashes": {
+    "skills/international/slovakia/slovakia-pit.md": "e6ac260e6292250752edbdf87384ca37da4cd0d5a845c257fd41a08092d1abbf",
+    "skills/international/slovakia/sk-corporate-income-tax.md": "e20a2c9d720fe0c8802e778eaebd764868c36f9f9dcd08ea14ee6331a750b84a",
+    "skills/international/slovakia/slovakia-vat-return.md": "3736801e9f36dd741fdd1294d5ec10af84038f0432468dbdb885c283921b62ac",
+    "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md": "f9639a246420161adbe0f4d1fbc452c98fa13fb3c6feecde7944578a2ff3ec30"
+  },
+  "remaining": [
+    "CurrentDPFO/DPPOforms",
+    "Annualactualzero-denominatorVAT",
+    "KVfirstbreachsanction",
+    "Fixedgrosscrossingcircularity",
+    "Payrollcalendar/posting,XBpaymentcategory/treaty,TPordinarycorrection/ratecliff",
+    "FullhistoricalVATsectiondispositions"
+  ],
+  "checks": {
+    "country_examples": "11files,14blocks,0failures,0missing",
+    "strict_sync": "4sourceGuides,0errors/warnings/notices;actualHEADblobCASandlocalrevision0marker",
+    "schema": "2261source/6122generatedPASS;3inheritedwarninggroups (798sources,5vintage,5jurisdiction)",
+    "index": "Inheritedgeneratedindexmismatchnotregenerated;source-onlyvalidation"
+  }
+}

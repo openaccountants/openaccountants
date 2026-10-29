@@ -1,0 +1,86 @@
+{
+  "as_of": "2026-10-27",
+  "previous_commit": "e1e5eac7cdead804da8be1f8064d4dfbbc23d883",
+  "scope": "Whole registration Guide completion only",
+  "guide": "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md",
+  "guide_sha256": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+  "independent_review": "PASS",
+  "substantive_findings_open": 0,
+  "examples": 2,
+  "primary_extracts_verified": 38,
+  "authored_h2": 9,
+  "intake_questions": 6,
+  "writer_preservation_units": 104,
+  "lost_content_restored": 0,
+  "whole_country_ordinary_complete": false,
+  "accountant_attestation": false,
+  "remaining": [
+    "Annual actual zero-denominator common-input VAT method",
+    "Period-valid VAT return/control-statement layout",
+    "Control-statement first-breach sanction question",
+    "Current registration form version/identifiers",
+    "Exact fixed-gross crossing-supply circularity"
+  ],
+  "evidence": [
+    {
+      "file": "registration-independent-review.md",
+      "sha256": "bbeadfe83dbab0a5b750c8be3f0246fd53867dd96b105f9465278232a10a8c00"
+    },
+    {
+      "file": "registration-review-manifest.json",
+      "sha256": "ec2271270a25758fe9e20166503b741890c472dbc1a07f1589ca0205c34a68bf"
+    },
+    {
+      "file": "registration-independent-controls.json",
+      "sha256": "d9fbb32d2c9050aa11863505a25d259b55c5b714c1f3826eb5cd0ca82e142638"
+    },
+    {
+      "file": "registration-finding-closure.json",
+      "sha256": "e10a2a88096af1ded496910d8725a6a0a30eb475c65285f8f71e96582af230c6"
+    },
+    {
+      "file": "registration-primary-extract-controls.json",
+      "sha256": "7b7f4f0e28be5907134d97e944c2a405d598cc8767146fbcb26dd781bc716f1f"
+    },
+    {
+      "file": "registration-fresh-web-receipts.json",
+      "sha256": "0bb51fe17a28a2b8464f12e4f3c49d05de39c37e55c0d8a5d1732a2ff103579c"
+    },
+    {
+      "file": "registration-preservation-ledger.md",
+      "sha256": "408734a26a26a1015b3fb7e4faa6838956190095fb8c48de27886b8581500496"
+    },
+    {
+      "file": "registration-preservation-ledger.json",
+      "sha256": "29626b3964e8807a65c951565c1220edc0dd10edf17bac220dacca8f9750dc83"
+    },
+    {
+      "file": "registration-source-map.md",
+      "sha256": "7ac6257b6ec6fb5e619f2859f468018fc8d4deb765042221df920d92ab7c6670"
+    },
+    {
+      "file": "registration-source-receipts.json",
+      "sha256": "2c4553ef5d6e2e7a27f77ee156ef4e09f9549b4a92114980a738b926205021e8"
+    }
+  ],
+  "validation": {
+    "all_country_examples": "11 files, 14 blocks, 0 failures, 0 missing",
+    "strict_sync": "2 changed source Guides, 0 errors/warnings/notices",
+    "frontmatter": "2261 source Guides and 6122 generated package blocks; PASS; 3 inherited warning groups",
+    "default_index_check": "Inherited index count mismatch; generated files intentionally untouched",
+    "coverage": "VAT partial; country incomplete"
+  },
+  "country_source_hashes": {
+    "skills/international/slovakia/README.md": "78cbf25412a15c6fd87d597ba9749d786ddc0fbb955f149733c40622455142fc",
+    "skills/international/slovakia/references.md": "c6dbf7cd9e9e42ad52354f5d4fdb6260a333177b3bcf8a87e0f68fcdc8716472",
+    "skills/international/slovakia/sk-company-formation.md": "e824e5d28a4a15f6d9a727a7a78b49d6b04462e11bd29fbab1406e2f116cee5b",
+    "skills/international/slovakia/sk-corporate-income-tax.md": "8afaf9371dd5bee6cf560f17ff303aac94fd35b976ed0c6f280adb9332507f1f",
+    "skills/international/slovakia/sk-cross-border.md": "5a88fc351ce01784c781c8953c3f02e6272f79cf5a727d5dea381279bfb926bd",
+    "skills/international/slovakia/sk-payroll-social.md": "1f63ecfa92278560ee779b0013d1357cfdb190b075f43e993de2be9fd687f527",
+    "skills/international/slovakia/sk-tax-overview.md": "238ae80d30a5f919a3beb51942a38c8ef2156b7d42cdd7955c46959f88bc35f9",
+    "skills/international/slovakia/sk-transfer-pricing.md": "26c52e39c771681ecfe24300819346344b9b1c050b8cf563eeecb20b0df02c23",
+    "skills/international/slovakia/slovakia-pit.md": "6b23be1b6980652e10f7cd202806a289f6f2445f4ee70f6149136733229a3a07",
+    "skills/international/slovakia/slovakia-vat-registration-4-7-7a.md": "5ab2c6bb66d001b1f2da8240d5303388839a5fbf0c62580210c5a9a06a29f70b",
+    "skills/international/slovakia/slovakia-vat-return.md": "ed89e131b285eb476a96020734d33bbe3ce506a1abf2b386d99cb2fe4691c531"
+  }
+}

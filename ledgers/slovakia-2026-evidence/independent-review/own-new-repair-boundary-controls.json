@@ -1,0 +1,38 @@
+{
+  "source": "Act461/2003\u00a7138(1)c/\u00a7138(6)/\u00a7138c; actual own native reads recorded",
+  "checks": [
+    {
+      "gross_trainer_relationship_base": 0,
+      "separate_deduction": 0,
+      "other_social_base": 0,
+      "employer_accident_and_guarantee_base": 0,
+      "conditions": "Registered qualifying trainer legal relationship; no unclaimed health-base import.",
+      "pass": true
+    },
+    {
+      "gross_trainer_relationship_base": 250,
+      "separate_deduction": 250,
+      "other_social_base": 0,
+      "employer_accident_and_guarantee_base": 250,
+      "conditions": "Registered qualifying trainer legal relationship; no unclaimed health-base import.",
+      "pass": true
+    },
+    {
+      "gross_trainer_relationship_base": 300,
+      "separate_deduction": 300,
+      "other_social_base": 0,
+      "employer_accident_and_guarantee_base": 300,
+      "conditions": "Registered qualifying trainer legal relationship; no unclaimed health-base import.",
+      "pass": true
+    },
+    {
+      "gross_trainer_relationship_base": 500,
+      "separate_deduction": 300,
+      "other_social_base": 200,
+      "employer_accident_and_guarantee_base": 500,
+      "conditions": "Registered qualifying trainer legal relationship; no unclaimed health-base import.",
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,9 @@
+{
+  "schema_errors": [],
+  "schema_warnings": [],
+  "examples_exit": 0,
+  "examples_output": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+  "diff_exit": 0,
+  "diff_output": "",
+  "scope": "Writer-repair technical checks SK-L04/05/09; independent closure pending"
+}

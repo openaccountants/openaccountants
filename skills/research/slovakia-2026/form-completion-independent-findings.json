@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "F11/F23 source/content/no-loss only",
+  "findings": [
+    {
+      "id": "SKFORM1",
+      "status": "closed",
+      "description": "REGDP source row now continuous with source table"
+    },
+    {
+      "id": "SKFORM2",
+      "status": "closed",
+      "description": "Exact ex4901/ex4902/CPA58.11.30 category labels now explicit"
+    }
+  ],
+  "process_disclosure": {
+    "id": "SKPROCESS1",
+    "status": "historical deviation disclosed",
+    "description": "F11 options preceded edit; F23 options saved same operation after rates edit. No false prior-options compliance claim."
+  },
+  "whole_pack_PASS": false
+}

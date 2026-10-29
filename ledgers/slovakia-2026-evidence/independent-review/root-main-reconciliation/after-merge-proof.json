@@ -1,0 +1,30 @@
+{
+  "merged_head": "74b47cb642cd0be5150eae53d77509890545388f",
+  "all7_Guide_bytes_exact": true,
+  "unchanged_ledger_bytes": 5,
+  "two_concurrent_authorized_header_only_corrections": {
+    "sk-payroll-social": {
+      "premerge_ledger_sha256": "06fa28262f6b43bf0e729c7ce7e4712db6b1cae806e205be89c6cfdb2a49f680",
+      "current_ledger_sha256": "5e3709aca0a5484c40b34d0c71497230ea9e9ca32d2c12875ae33c69150ac4b4",
+      "exact_before_file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-header-byte-precision/sk-payroll-social-before.md",
+      "only_changed_line": 3,
+      "actual_current_Guide_bytes": 49917
+    },
+    "slovakia-vat-return": {
+      "premerge_ledger_sha256": "41e30b273a37986c6993d6d1531ed84689237c2a78f9c9fba8e5e58826ec6aa1",
+      "current_ledger_sha256": "158fdf8133cabb015dfcb5042a904f510eb1e11b57d6b21d17f1f583466ee0b8",
+      "exact_before_file": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/sk-ledger-independent-review-2026-10-29/writer-SK-header-byte-precision/slovakia-vat-return-before.md",
+      "only_changed_line": 3,
+      "actual_current_Guide_bytes": 50351
+    }
+  },
+  "merge_commit_changed_country_or_ledgers": false,
+  "identity": [
+    "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>",
+    "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>",
+    "2fe37257c4a7414b1c07b3fa6d8ae822aef633fe 62b7639a5a68324a83a96bb0190fff8b7c76f8c5"
+  ],
+  "before_head": "2fe37257c4a7414b1c07b3fa6d8ae822aef633fe",
+  "main": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "normal_merge": true
+}

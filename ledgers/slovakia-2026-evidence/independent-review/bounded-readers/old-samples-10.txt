@@ -1,0 +1,110 @@
+
+slovakia-vat-return main unit13 oldLF[68, 79]
+OLD:| Obligation | Deadline | Source |
+|---|---|---|
+| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |
+| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |
+| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |
+| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |
+| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |
+| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |
+| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |
+| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |
+| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |
+| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |
+DEST:[99, 110]
+DISPOSITION:Exact retained unit; all embedded topics preserved.
+CURRENT [99, 110] | Obligation | Deadline | Source |
+|---|---|---|
+| Tax period | Calendar month. A calendar quarter if § 77(2) is met and the change is notified within 25 days after the end of the month the conditions were met; it takes effect from the next calendar quarter | VAT Act § 77 |
+| VAT return and payment, Slovak payer | 25 days after the end of each tax period; tax paid in the same time | VAT Act § 78(1), (2)(a) |
+| Deadline falling on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |
+| First return when the VAT number arrives after that deadline | Five working days from delivery of the registration decision | VAT Act § 78(2)(a)(1) |
+| VAT return and payment, foreign payer | 25 days after the end of a period in which tax was due, exempt intra-EU or export supplies were made, exempt goods were acquired, or a deduction is claimed | VAT Act § 78(2)(b) |
+| Non-payer liable under § 69 | 25 days after the end of the month the liability arose; no payment if EUR 5 or less | VAT Act § 78(3) |
+| Control statement (kontrolny vykaz) | Electronically, in XML, for every period with a return, 25 days after the period. Not due if the return reports no supplies, or only exempt § 43 or § 47 supplies with no deduction (or only a § 49(2)(d) deduction) | VAT Act § 78a(1), (16) |
+| Answer to a tax office request on the control statement | Five working days from delivery of the request | VAT Act § 78a(13) |
+| EC sales list (suhrnny vykaz) | Monthly, 25 days after the period; quarterly if § 80(2) is met; a § 7 or § 7a registrant supplying § 15(1) services files for each quarter in which it supplied them | VAT Act § 80 |
+| EU SME scheme quarterly report (Slovak business using the scheme abroad) | End of the month after the quarter | VAT Act § 68g(8) |
+
+slovakia-vat-return main unit17 oldLF[87, 97]
+OLD:| Breach | Consequence | Source |
+|---|---|---|
+| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |
+| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |
+| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |
+| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |
+| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |
+| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |
+| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |
+| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |
+| Fines of EUR 5 or less | Not imposed | § 155(11) |
+DEST:[146, 156]
+DISPOSITION:Exact retained unit; all embedded topics preserved.
+CURRENT [146, 156] | Breach | Consequence | Source |
+|---|---|---|
+| Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |
+| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |
+| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |
+| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |
+| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |
+| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |
+| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |
+| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |
+| Fines of EUR 5 or less | Not imposed | § 155(11) |
+
+slovakia-vat-return main unit29 oldLF[173, 173]
+OLD:Not yet confirmed: the row numbers of the 2026 VAT return form and the control statement layout (the official forms were not read, so this skill names no boxes); the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the detail of the § 50 coefficient (rounding and de minimis), which was not re-read for this version.
+DEST:[250, 250]
+DISPOSITION:Oldform/coefficientdetail gaps partly resolved by actualforms/positiveD method; ECBdate needs actualdate and specialfirstchance/annualD0 remain precise.
+CURRENT [250, 250] Not yet confirmed: the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the annual § 50 method where the actual annual included-supplies denominator is zero.
+
+slovakia-vat-return earliest unit79 oldLF[293, 298]
+OLD:| Registration Type | Input VAT Recovery | Legislation |
+| --- | --- | --- |
+| Section 4 registered (standard) | Full recovery (subject to blocks) | Sec. 49 |
+| Section 4a (voluntary) | Full recovery once registered | Sec. 49 |
+| Section 7/7a (EU purposes only) | NO input VAT recovery | Sec. 7 |
+| Non-registered | NO recovery | -- |
+DEST:Current LF27–32;65;165; companionregistration70–76
+DISPOSITION:All4 registration/recoverypopulations retained. Voluntary4 not4a; registerednumberalone7/7a no inputcredit. Nonregistered liabilities remain; specificpreinput55companionroute retained.
+CURRENT [27, 32] - **VAT payers (platitel) under § 4.** A taxable person with its seat, place of business or fixed establishment in Slovakia (or, failing that, its residence or usual abode there) becomes a payer from 1 January of the year after its turnover passed EUR 50,000, or at the supply that takes turnover in the current year past EUR 62,500 (VAT Act § 4(1)(a) and (b)). Voluntary registration is allowed (§ 4(6) and (7)). The registration tests sit in the sibling skill.
+- **Foreign persons registered under § 5.** A business with no seat, place of business, establishment or residence in Slovakia becomes a payer from its first taxable supply in Slovakia, unless all its Slovak supplies fall in the § 5(2) list (for example supplies where the customer accounts for the tax, or supplies covered by OSS). It applies to the Bratislava Tax Office within five working days (§ 5(1) to (3)).
+- **Persons who are not payers but owe tax under § 69.** Someone registered only under § 7 or § 7a, or not registered at all, who receives a reverse-charge supply files a return only for the month the liability arose, and does not pay if the tax is EUR 5 or less (§ 78(3)).
+- **Out:** a business below the § 4 thresholds that is not a payer charges no VAT and files no periodic VAT return. It must still check § 7 and § 7a.
+
+**Group payer.** A qualifying Slovak VAT group is one taxable person: members must be financially, economically and organisationally linked under § 4a, and the group becomes a payer on registration under § 4b. Its representative acts for the group and members have joint and several liability. Use the group's VAT number and registration decision for the return; a voluntary ordinary registration is under § 4, not § 4a ([VAT Act §§ 4a–4b](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-4a)).
+CURRENT [70, 76] **Mixed taxable/exempt inputs: § 50 coefficient.** First attribute each purchase to its actual use: eligible inputs exclusively serving supplies with a deduction right are deductible under the ordinary rules; inputs exclusively serving no-credit exempt supplies are not. Apply the coefficient only to common inputs serving both, after the applicable business/private-use and statutory deduction restrictions. Do not reduce every input merely because the business also makes an exempt supply ([§ 49(3)–(6)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-49); [Financial Administration, direct attribution and proportional deduction](https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/odpocitanie-dane)).
+
+For a positive denominator, let `N` be the VAT-exclusive value of annual supplies carrying a deduction right and `D` the VAT-exclusive value of all annual supplies, after the following exclusions. Include supplies whose place is outside Slovakia, classifying them by their actual deduction entitlement under § 49(6); overseas location alone neither excludes them nor creates a deduction right. Exclude from **both N and D** a business/independent-business-part transfer, sales of assets used in the business other than inventory, occasional exempt financial services under § 39, and occasional property transfers/lettings. Ordinary recurring financial services/property letting are not excluded merely because of their category. Compute `k=ceil(100×N/D)/100`, rounding the **coefficient upward to two decimals**, then multiply eligible common input VAT by k. An exact0.95 stays0.95;0.9501 gives0.96;0.9901 gives1.00 through the ordinary rounding rule. Do not substitute the old unsupported95%-means-full-deduction shortcut ([§ 50(1)–(2)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).
+
+During the year use the previous year's coefficient. If it cannot be used, estimate a coefficient from the activity's nature **with the tax administrator's consent**. After year end calculate the coefficient from the completed year's actual values, recompute the annual deductible common-input VAT, and settle the difference from deductions already taken in the **last tax period of that year**, increasing or decreasing deduction as appropriate. Apply the same reconciliation for the part of a year during which a business became or ceased to be a payer. Where the accounting period is a financial year, that financial year replaces calendar year for these calculations ([§ 50(3)–(5)](https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html#paragraf-50)).
+
+For example, suppose the prior coefficient is0.60, the year's eligible common input VAT is23,000, and the year's included supplies are240,000 with deduction rights and120,000 without. A separate50,000 disposal of a used business asset is excluded from both values. `N=240,000`, `D=360,000`, so the final coefficient is0.67 and annual common deduction15,410. If13,800 was deducted using0.60, increase deduction by1,610 in the last period. Separately attributable eligible input VAT is added in full; blocked/exclusively no-credit input is not added. In a separate case, suppose the provisional coefficient was0.67 and15,410 was actually deducted during the year on23,000 common VAT. If that case's supported final coefficient is0.61, the annual deduction is14,030: reduce the provisional15,410 deduction by1,380. These are illustrative exact-cent inputs, not a return-row mapping.
+
+slovakia-vat-return earliest unit100 oldLF[381, 389]
+OLD:| Violation | Penalty | Legislation |
+| --- | --- | --- |
+| Late filing of DPH return | EUR 30 - EUR 16,000 | Tax Administration Act Sec. 155 |
+| Late payment of DPH | Interest at ECB rate + 10% p.a., from day after due date | Tax Administration Act Sec. 156 |
+| Tax shortfall (additional assessment) | 10% of additional tax (if voluntary disclosure) / 20% (if audit) | Tax Administration Act Sec. 154 |
+| Control Statement non-filing | Up to EUR 10,000 | Sec. 78a |
+| EC Sales List non-filing | Up to EUR 10,000 | Sec. 80 |
+| Failure to register | Back-assessment + penalty | Sec. 4 |
+| Repeated non-compliance | Double penalties | Tax Administration Act Sec. 155(3) |
+DEST:Current LF148–161
+DISPOSITION:Alllatefiling/payment/shortfall/KV/EC/registration/repeatfine topics retained with actual2026ranges/dailyECBfloorbranches. Old30–16000/ECB+10/fixed10vs20/doublepenalty not currentlaw; persistentbranch repeatedsameamount, specialKVup10k/100k separatelyreserved.
+CURRENT [148, 161] | Return not filed on time | Fine EUR 100 to 30,000; EUR 100 to 60,000 if not filed by the date in a tax office request (only one of the two is imposed) | Tax Procedure Code § 154(1)(a), § 155(1)(a), (b), (3) |
+| Registration not made on time | Fine EUR 100 to 30,000 | § 155(1)(c) |
+| First breach, fines set within a range | The tax office does not impose a fine set within a range for a first breach | § 155(4) |
+| Tax under-declared, found by the tax office | 3 times the ECB base rate a year (at least 10% a year) on the extra tax, counted daily from the deadline; at least 1% of the assessed sum and at most the sum itself. Two thirds of that fine if the assessment is paid within 15 days | § 155(1)(f), (2), (5), (17) |
+| Supplementary return raising tax | ECB base rate a year (at least 3%); twice the ECB rate (at least 7%) if filed after an audit has started | § 155(1)(g), (h), (5) |
+| Control statement missing, late, incomplete or wrong, or defects not fixed by the requested date | Fine up to EUR 10,000; up to EUR 100,000 for repeated breaches | VAT Act § 78a(15) |
+| Fast refund obtained on false data | Fine up to 1.3% of the refund | VAT Act § 79(8) |
+| Late payment | Interest at 4 times the ECB base rate, at least 15% a year, counted daily from the day after the due date, for at most four years; not charged if EUR 5 or less | Tax Procedure Code § 156(2), (6)(b) |
+| Fines of EUR 5 or less | Not imposed | § 155(11) |
+
+| Breach | Consequence | Source |
+|---|---|---|
+| Failure to meet the EC sales list's non-monetary filing duty |100 to 10,000 euros under the 2026 range; apply the first-breach rule in § 155(4) |[Tax Procedure Code § 154(1)(j)/155(1)(e)](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-155); [FS methodology identifies the statutory sanction classification](https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2018/2018.01.04_MP_vykazov.pdf), section 6/p 8 |
+| Persistent non-monetary breach after an unsuccessful fine |The specified § 155(1)(d)/(e) fine can be imposed repeatedly at the same amount while the breach persists; there is no general automatic doubling rule |[Tax Procedure Code § 155(16)](https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html#paragraf-155) |

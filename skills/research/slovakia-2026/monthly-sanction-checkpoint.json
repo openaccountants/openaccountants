@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-10-27",
+  "baseline_commit": "1cbc9afd9e2e8d0a5a43d66637d2384ced589e69",
+  "Guide": "skills/international/slovakia/sk-payroll-social.md",
+  "Guide_sha256": "8e4902cd4f0b56f2f1ee603ed1c037a7ac5b6b7e20e768a6debee5bada8a263d",
+  "review": "PASS30independentboundaries;noactionablefinding;2originaloaunchanged",
+  "source_scope": "Current statutes, actual FS guidance and individual historical administrative decision. Historical tariff superseded; finality unverified.",
+  "whole_country_complete": false,
+  "accountant_attestation": false,
+  "public_evidence_names": "Prefix monthly-sanction; independent manifest retains original private filenames and exact hashes.",
+  "checks": {
+    "country_examples": "11files14blocks0fail0missing",
+    "strict_sync": "3currentchangedGuides0error/warning/notice;PIT/CITreviewpendingandnotstagedinthischeckpoint",
+    "schema": "2261source/6122generatedPASSwith3inheritedwarninggroups798/5/5;--no-index-check",
+    "repository_unit_tests": "129PASSusingbundledPython3.12.14andcanonicalTMPDIRplusRUNNER_TEMP. InitialPython3.9runfailed1+19errors; secondPython3.12runfailed7macOSvar/privatepatherrors; exactfinalenvironmentresolvesallwithoutcodechanges.",
+    "MCP_tests": "Not rerun locally: required MCP dependencies absent; no runtime/server code changed. CI remains required on publication."
+  },
+  "public_report_copy": {
+    "normalization": "Trailing blank line removed from public report copy only after diff-check; original frozen independent report and manifest unchanged in local evidence. No Guide bytes changed.",
+    "original_sha256": "c9dd0e53eda37871bb39a13d79ee15c614ecf567a1c0d03c1ba0255e83324a61",
+    "public_sha256": "c2f3356cff9d1e85d9894e4d450ec2bb52638fd42c537a09fb4b2fb2466f0d82"
+  }
+}

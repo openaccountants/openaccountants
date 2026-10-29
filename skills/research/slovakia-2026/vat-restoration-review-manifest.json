@@ -1,0 +1,33 @@
+{
+  "old_revision": "c9c520db^1",
+  "current_main": "187064a83bc15251730448448f9ed8a57a388ba6",
+  "old_sha256": "20fb3aabb198b7ebc98b559691d7cdc6fe1982a2bc00e8c80863b3b22d048c1a",
+  "current_main_sha256": "cb21ae475f7bf28d1e02ad30419c41512e100b8a6c5b2b9038bc34af1eb04d80",
+  "final_sha256": "7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766",
+  "old_words": 6484,
+  "current_main_words": 3872,
+  "integrated_words": 5907,
+  "original_rewrite_word_loss_pct": 40.283775447254776,
+  "h2": [
+    "## Who this applies to",
+    "## Rates, bands and thresholds",
+    "## The taxable base",
+    "## Deadlines and filing",
+    "## Penalties and interest",
+    "## Cross-border points",
+    "## Worked examples",
+    "## Ask the client first",
+    "## Sources",
+    "## Talk to a verified accountant"
+  ],
+  "controls": 87,
+  "all_pass": true,
+  "result": "PASS within stated restoration/no-loss-preservation scope",
+  "restored_units": 24,
+  "finite_findings_raised": 2,
+  "finite_findings_open": 0,
+  "main_controls": 87,
+  "final_delta_controls": 7,
+  "report_sha256": "2ded9444e14db02c6348bcab3a7f29c18f9b4da9bbbf836fb7022b428013af6e",
+  "report_file": "output/europe-closeout-2026-10-27/sk-no-loss/independent/report.md"
+}

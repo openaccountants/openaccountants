@@ -1,0 +1,10 @@
+§ 47
+Zaokrúhľovanie
+Všetky prepočty podľa tohto zákona sa vykonajú s presnosťou na dve desatinné miesta,
+ pričom druhá číslica za desatinnou čiarkou sa upraví podľa číslic, ktoré nasledujú
+ po nej, tak, že
+a)
+ zaokrúhľovaná číslica, po ktorej nasleduje číslica menšia ako päť, zostáva bez zmeny,
+b)
+ zaokrúhľovaná číslica, po ktorej nasleduje číslica päť alebo číslica väčšia ako päť,
+ sa zväčšuje o jednu.

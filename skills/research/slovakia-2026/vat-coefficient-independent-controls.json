@@ -1,0 +1,272 @@
+[
+  {
+    "name": "baseline reviewed24unit hash",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "final frozen hash",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "law rawbody verified before reread",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "FS actualrawbody independently hashverified",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "FSforeignplace supplies actually in body",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "FSpriorcoefficient/consentedestimate actually in body",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "FSdirectattribution actually in body",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "ceil coefficient (95, 100)",
+    "pass": true,
+    "detail": "19/20"
+  },
+  {
+    "name": "ceil coefficient (9501, 10000)",
+    "pass": true,
+    "detail": "24/25"
+  },
+  {
+    "name": "ceil coefficient (9901, 10000)",
+    "pass": true,
+    "detail": "1"
+  },
+  {
+    "name": "ceil coefficient (99, 100)",
+    "pass": true,
+    "detail": "99/100"
+  },
+  {
+    "name": "ceil coefficient (0, 100)",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "ceil coefficient (1, 1000000)",
+    "pass": true,
+    "detail": "1/100"
+  },
+  {
+    "name": "ceil coefficient (100, 100)",
+    "pass": true,
+    "detail": "1"
+  },
+  {
+    "name": "ceil coefficient (240000, 360000)",
+    "pass": true,
+    "detail": "67/100"
+  },
+  {
+    "name": "ceil coefficient (61, 100)",
+    "pass": true,
+    "detail": "61/100"
+  },
+  {
+    "name": "no95shortcut final95 deduces21850",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "example prior.60common23000deduct13800",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "example N240000D360000 coefficient.67",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "example excludedasset50000keeps.67",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "example annual15410",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "example upward1610",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "separate example provisional.67 annual15410",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "separate example final.61 annual14030",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "separate example reduction1380",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "prior.60 instead would increase230\u2014not alternate assumption",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "direct full4600/no-credit0/common2300at67 deduction6141",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "direct full4600/no-credit0/common2300at60 deduction5980",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "commonpool adjustment161 preservesdirectamount",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "foreignright30k enters both60k/100k to90k/130k",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "foreignno-right20k onlyD60k/120k",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "ordinaryexemptfin20k denominator retained60/120",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "occasionalexcludedfin20k bothremoved60/100",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "usedasset30k taxablereceipt excludedboth60/100",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "inventorysale30k retainedboth90/130",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "zeroDenominator not silently assigned0or1",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "explicitpositiveD scope",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "taxadministratorconsent expressed",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "lastperiod/partyear/financialyear expressed",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "two existing blocks byte-identical",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "existingexample1 output_vat",
+    "pass": true,
+    "detail": "10080.00"
+  },
+  {
+    "name": "existingexample1 payable",
+    "pass": true,
+    "detail": "5480.00"
+  },
+  {
+    "name": "existingexample2 output_vat",
+    "pass": true,
+    "detail": "7360.00"
+  },
+  {
+    "name": "existingexample2 input_vat",
+    "pass": true,
+    "detail": "4485.00"
+  },
+  {
+    "name": "existingexample2 payable",
+    "pass": true,
+    "detail": "2875.00"
+  },
+  {
+    "name": "entireCTA exact",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "ninecontentH2plusCTA exact",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "allmetadata exceptintendedversion exact",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "contribution exact",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "source row joinedactualtable",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "FSsource row correct3cellswithURLsecond",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "separate downward provisional assumption explicit",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "only precise reservation replaced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "name": "reverse exact declared method/source/reservation/version towholebaseline",
+    "pass": true,
+    "detail": "7509ed359239a39aa2e136e9c018a7cdc4b496094021222e21d1a41097198766"
+  }
+]
