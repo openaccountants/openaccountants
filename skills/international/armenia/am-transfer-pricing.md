@@ -1,37 +1,15 @@
 ---
 name: am-transfer-pricing
 description: "Prepare Armenia transfer-pricing workpapers for 2026: identify related persons, controlled cross-border and specified domestic transactions, separate the annual regulation and notification thresholds, select a supported pricing method, calculate a range and reconcile adjustments. Covers local/master documentation, the statutory country-reporting trigger, notification form structure, deadlines and sanctions. Includes two reproducible examples and preserved supplementary research controls for aggregation, CUP, cost-plus, resale, net margin, financing and missing documentation. Use for Armenian related-party pricing, permanent-establishment allocations, market margins and controlled-transaction notices. Supplies the actual local/master documentation and country-report forms, contents, reporting-entity notice, currencies, languages and delivery clocks. Specialist transactions, large-group statutory/order scope mismatches, remedies, actual portal acceptance and independent accountant review remain separate boundaries. Checked against the law."
-jurisdiction: AM
-category: transfer-pricing
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.2
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Armenian Tax Code, current Armenian consolidation, Chapter 73 and sanctions"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/en/acts/231892"
-    title: "Official English Tax Code translation through HO-60-N, used with Armenian corrections"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/169936"
-    title: "Government Decision 556-N, pricing methods, consolidated through 1658-N"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/169904"
-    title: "Government Decision 853-N, range rules, consolidated through 1655-N"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/218049"
-    title: "SRC Order 671-N controlled-transaction notification, 2026 consolidation"
-    as_of: "2026-10-24"
-  - url: "https://www.src.am/storage/menu_contents_227/hr_hhpekn_2022_941l_64647ea664962.pdf"
-    title: "SRC 941-L prescribed local file"
-    as_of: "2026-10-26"
-  - url: "https://www.src.am/storage/menu_contents_227/hr_hhpekn_2022_942l_64647ea6633b1.pdf"
-    title: "SRC 942-L prescribed master file"
-    as_of: "2026-10-26"
-  - url: "https://www.src.am/storage/menu_contents_227/hr_hhpekn_2022_939l_64647ea66105f.pdf"
-    title: "SRC 939-L country report and form"
-    as_of: "2026-10-26"
+jurisdiction: AM
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: transfer-pricing
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Armenia transfer-pricing preparation v0.2
@@ -155,7 +133,6 @@ Use the reporting group's consolidated reporting **currency**, identified in the
 
 Submit **electronically only**, in Armenian, Russian or English. Before an authority request, the reporting parent can correct the report under Annex 6; that is not a blanket right to overwrite an already requested report. Reconcile all tables and the notification to the consolidated perimeter, retain delivery evidence and distinguish these reporting mechanics from any separately established international exchange/surrogate obligation. [939-L Annex 4–11/Form 1][countryorder]
 
-
 ### File and settle the distinct adjustment
 
 Keep a transaction-to-notification-to-1032-N bridge, the filing receipt and separate liability/account reconciliation. Code 53(7) uses the electronic system's receipt/registration notice as the filing date; preparing a form locally is not filing. Under 53(10), the ordinary period restrictions include a distinct **five-year TP** limit rather than the ordinary three years, with the specific TP checked-period exception. The liability-increasing/credit-reducing route in 53(10.1) qualifies those restrictions; do not turn five years into unconditional permission to revise any assessed amount. Article 54 permits the specified 374 TPcorrections, separately from correcting the 375 notification. [53–54/374–375][code]
@@ -175,8 +152,6 @@ Article 401 ordinary tax late-payment interest is 0.075% a day, capped at 730 da
 Analyse PE/head-office dealings separately from annual notification, while retaining Article 376's PE documentation request power. Withholding, deductibility, customs and VAT are separate from the pricing calculation. An adjustment does not prove a foreign corresponding deduction/refund. Article 377 provides MAP where an effective treaty exists; Article 378 permits an application for an advance pricing agreement for transactions with nonresident related parties. Actual treaty, competent-authority procedure, deadlines and current APA conditions require their own primary instruments. No bilateral treaty/MLI or granted agreement is verified in this Guide. [363–364, 376–378][code]
 
 ## Two worked examples that recompute
-
-
 
 ### 2. CUP sales shortfall
 
@@ -266,7 +241,26 @@ Read on **24 October 2026**. Targeted current Armenian Chapter 73 and Articles 4
 [range]: https://www.arlis.am/hy/acts/169904
 [notice]: https://www.arlis.am/hy/acts/218049
 
-
 [tp-return]: https://www.arlis.am/hy/acts/178495
 
 **Not yet confirmed:** authority treatment of a large-group parent/revenue perimeter that differs between Code 376 and the express 942-L/939-L resident/consolidated-revenue wording; actual international exchange or foreign surrogate obligations; specialist finance/intangible/restructuring and royalty-rate methods, MAP/APA and detailed assessment/remedies. The prescribed ordinary local/master/country-report contents and delivery method are supplied above. No live filing acceptance or named professional attestation is claimed.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

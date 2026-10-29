@@ -1,12 +1,15 @@
 ---
 name: mc-transfer-pricing
 description: "Monaco transfer pricing reference for 2026 based on the normal foreign commercial and financial conditions rule in Ordinance 3.152. Covers foreign counterparties, controlled and common control profit transfers, comparison evidence, related deduction restrictions and ordinary business profits tax adjustments. Use for Monaco related party pricing, foreign management fees, finance charges and arm length working papers. Includes two reproducible adjustment illustrations with explicit assumptions. Covers the country by country reporting population, annual notification, reporting deadline and distinct statutory sanctions. Separates source evidence from a benchmark or agreement. Source cited draft awaiting a named Monaco professional review."
-jurisdiction: MC
-category: transfer-pricing
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-25
 version: 1.3
+jurisdiction: MC
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: transfer-pricing
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Monaco transfer pricing and normal foreign conditions
@@ -118,3 +121,23 @@ expected:
 | Project 1.129, project status only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
 
 **Not yet confirmed:** a separate prescribed master/local-file instrument, safe harbours and advance/corresponding-agreement procedures. No exemption from article 14 or ordinary books/evidence duties is inferred. These specialist instruments and multinational minimum-tax calculations require a separate determination; the ordinary pricing working paper and CbCR filing screen above still apply.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

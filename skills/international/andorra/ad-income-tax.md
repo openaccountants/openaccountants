@@ -1,805 +1,189 @@
 ---
 name: ad-income-tax
-description: Use this skill whenever asked about Andorra personal income tax (IRPF — Impost sobre la Renda de les Persones Físiques) for residents or self-employed individuals. Trigger on phrases like "how much tax do I pay in Andorra", "IRPF Andorra", "income tax return Andorra", "declaració IRPF", "self-employed Andorra", "autònom Andorra", "compte propi", "CASS contributions", "social security Andorra", "move to Andorra taxes", "Andorra tax residency", "183 days Andorra", or any question about computing, filing, or planning income tax for an Andorran tax resident. Also trigger when reviewing IRPF deductions (housing, dependants, education), CASS social security brackets, IGI registration thresholds, or non-resident withholding (IRNR) on Andorra-source income. This skill covers IRPF rates and brackets, the bonificació mechanism, savings base exemption, CASS contribution tables for employed and self-employed workers, IGI (indirect tax) obligations, penalties, real-estate capital gains, and double taxation agreements. ALWAYS read this skill before touching any Andorra income tax work.
+description: "Compute Andorra resident personal income tax for calendar 2026, including employment, pensions, direct or objective sole-trader income, rental income, investments and capital gains. Use for fiscal residence, IRPF allowances and proportional bonus, family and housing reductions, loss pools, property sale and reinvestment, foreign-tax credits, advances and annual return reconciliation. This Guide distinguishes employment expense relief from business deductions, general income from savings and resident property taxation from IRNR. Read the payroll and social Guide for the actual 2026 CASS category and wage period, the IGI Guide for indirect tax, and the corporate and cross-border Guides for their separate computations. Figures require the cited facts and documents. Source-cited draft, without accountant attestation."
 jurisdiction: AD
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 0.2
 ---
 
-# andorra-income-tax
+# Andorra individual income tax (IRPF), 2026 v0.2
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
-**Quick Reference**
+Resident individuals, including employees, pensioners, sole traders and landlords, for calendar 2026; amounts in EUR. Resident income is worldwide. Residence requires more than 183 days, counting sporadic absences unless foreign residence is evidenced, or the principal activity/economic-interest base in Andorra. A resident spouse and minor children create a rebuttable presumption; daily frontier workers commuting from Spain/France have the specific exclusion. Record days, economic facts and any operative treaty before choosing IRPF or IRNR. [Law 5/2014 arts. 4, 8][law].
 
-| Field | Value |
-| --- | --- |
-| Country | Andorra (Principat d'Andorra) |
-| Tax | IRPF — Impost sobre la Renda de les Persones Físiques |
-| Currency | EUR only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Llei 5/2014, del 24 d'abril, de l'impost sobre la renda de les persones físiques |
-| Tax authority | Departament de Tributs i de Fronteres (DTF) |
-| Filing portal | Seu Electrònica / e-tramits.ad |
-| Filing deadline | 1 April -- 30 September of the following year (e-tramits.ad) |
-| Social security authority | Caixa Andorrana de Seguretat Social (CASS) |
-| Minimum wage (SMI 2025) | EUR 1,447.33/month gross (5.2% increase from 2024; augelegalfiscal.com) |
-| Validated by | Pending — requires sign-off by a licensed Andorran tax advisor or equivalent |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Compute the general and savings bases separately. Use the combined payroll/social Guide for CASS, the IGI Guide for indirect tax, the corporate Guide for imported business-base rules, and the non-resident Guide for IRNR/PE and corporate departure. These are source-cited drafts, without accountant attestation.
 
-### IRPF Rate Brackets -- General Tax Base (Base General) 2025
+## Rates, bands and thresholds
 
-**IRPF Rate Brackets -- General Tax Base (Base General) 2025**  _(e-tramits.ad; invicoandorra.com; andorra-solutions.com)_
+| Item | 2026 rule | Primary authority |
+|---|---|---|
+| Statutory rate | 10% on positive general and savings liquidation bases | [Arts. 43–44][law] |
+| Personal reduction | 24,000; 30,000 for qualifying incapacity; conditional household/spouse rule up to 40,000 | [Art. 35(1)][law] |
+| Family reduction | 1,000 per qualifying descendant under 25, ascendant over 65, or ward/foster dependant; annual income not above the applicable minimum-wage benchmark, plus cohabitation/dependence tests | [Art. 35(2)][law] |
+| Disability/dependency and tuition | Family amount multiplied by 1.5 for the specified recognised cases, without the ordinary age test; actual qualifying higher-education tuition up to 300 per descendant | [Art. 35(2)–(3)][law] |
+| Employment expenses | Employee public social-security contributions plus 3% of eligible gross employment receipts, capped at 2,500; specified receipt classes excluded | [Arts. 12–13][law] |
+| General-income bonus | 50% of 10% of general income after the first-paragraph personal reduction, maximum 800 | [Art. 46][law] |
+| Savings reduction | 3,000; liquidation base cannot become negative | [Arts. 34, 37][law] |
+| Home acquisition | 50% of qualifying payments, maximum 5,000/year; conditions and reinvestment coordination below | [Art. 38][law] |
+| Affordable-rental acquisition | 50% of qualifying payments, maximum 5,000/year, for the specified affordable permanent-home rental | [Art. 38 bis][law] |
+| Pension contributions | Lesser of 30% of net employment/business income and 5,000/year; qualifying instrument required | [Art. 39(1)][law]; [regulation art. 18][reg] |
+| Objective business option | Prior-year turnover at most 300,000, or 150,000 for professionals; estimated expenses 80% strictly commercial, 3% directors, 40% other | [Art. 17][law] |
+| Ordinary tax late interest | 4.05% annually for 2026 under the statutory period/base rules; distinct from the 3.24% legal rate | [General Tax Law art. 23][general]; [Budget Law 1/2026 art. 17][budget] |
 
-| Annual Taxable Income (EUR) | Nominal Rate | Bonificació | Net Tax on Band | Cumulative Tax at Top of Band |
-| --- | --- | --- | --- | --- |
-| 0 -- 24,000 | 0% | n/a | EUR 0 | EUR 0 |
-| 24,001 -- 40,000 | 10% | Up to EUR 800 | EUR 800 on full EUR 16,000 band | EUR 800 |
-| Above 40,000 | 10% | None | 10% × excess | EUR 800 + 10% × (income − 40,000) |
+The 24,000 amount is a base reduction. The bonus is proportional before its cap: do not deduct a flat 800 whenever income enters the next band. Eligibility for an enhanced household reduction depends on general-base income, not an unsupported requirement that the partner receives no income of any kind. [Arts. 35, 43–46][law].
 
-Covers employment income, self-employment/business income, rental income.
-Source: e-tramits.ad; invicoandorra.com; andorra-solutions.com
+## The base
 
-**Mechanism for the 5% effective band (24,001–40,000):** The law imposes a 10% rate but grants a bonificació (bonus rebate) of up to EUR 800 for income in this band. EUR 16,000 × 10% = EUR 1,600 gross tax; EUR 1,600 − EUR 800 = EUR 800 net tax → effective rate ~5% on the band. (invicoandorra.com; andorra-solutions.com)
+1. **Reconcile source income and timing.** Employment and capital receipts are recognised when due or, if earlier, collected; business income follows the accounting accrual rules; gains arise on the relevant asset alteration. Retain invoices, payslips, contracts, asset and CASS records, not only bank descriptions. Own-account transfers, loan principal and refundable deposits are not automatically sales or operating expenses. Output IGI collected and recoverable input IGI must be reconciled separately from net business revenue/cost. [Arts. 4, 12, 14–16, 42][law]; [corporate arts. 9, 19][cit].
+2. **Employment and pensions.** Include covered salary, bonuses, taxable benefits, notice/termination amounts and the article 12 pension/benefit classes. Article 5 separately exempts mandatory termination compensation, qualifying personal-injury compensation, specified disability/widow/orphan/social benefits, scholarships and qualifying prizes. Medical-cost reimbursements described in article 12(2)(g) are not income. Check each legal condition. Deduct employee public social contributions and 3% only on article 13's eligible employment receipts, capped at 2,500. The 3% excludes the listed unemployment, representation, travel, option, termination, public-office and pension/other receipt categories. For non-CASS private pension receipts, article 12(3) prevents taxing qualifying contributions already taxed and not previously deducted; annuities use its contribution/provision ratio and cumulative limit. [Arts. 5, 12–13, 29][law].
+3. **Direct business method.** Reconcile accounting profit to tax using corporate articles 9–19, with the IRPF article 16 exceptions. Capital expenditure follows effective depreciation and the corporate Annex I lives; interest, impairments, provisions, grants, related payments and timing require their own adjustments. Add back income tax, fines, disallowed donations/private expenditure and communal taxes treated through the credit. Family wages/rent require contracts, actual work/rights, social registration where required and evidenced market value. Own pension-plan contributions use the personal reduction route. Client meals/representation are classified under the actual law, including corporate article 13's limits, rather than the former blanket prohibition. [Arts. 16, 18, 47][law]; [corporate arts. 9–14, 19 and Annex I][cit].
+4. **Registered sole-trader special expenses.** Article 16(3) supplies separate rules: qualifying home rent, insurance/utilities/community/security costs use 35% of cost multiplied by the business-area ratio, unless a different percentage is evidenced; home depreciation uses the statutory area and 40%-of-acquisition-cost constraint, and qualifying Andorran-bank financing uses the business-area ratio. Evidence occasional work-related away-from-usual-place meals and electronic payment: cap at 1% of net turnover and 1,500/year. Actual public transport needs invoices; own-vehicle work travel uses 0.31/km plus evidenced tolls/parking, and 20% of compulsory vehicle insurance qualifies under its separate rule. Avoid claiming the same cost twice. For a contribution base above 100%, the statute additionally specifies 1.18% of the self-employed CASS contribution; retain that calculation separately from ordinary contribution expense. A generic floor-area or mileage estimate does not replace these rules. [Art. 16(3)][law].
+5. **Objective business method.** Verify prior-year turnover, annualising a start-year, and the timely all-activity election. Elect before the preceding year ends, or within one month of starting; the method binds for at least three years and renunciation precedes the year of effect. Apply the relevant 80%/3%/40% expense percentage to activity revenue, with asset-disposal results added separately. Compute each activity then integrate; do not additionally deduct actual costs or an employment 3% allowance. Apply market value to free/self-use or materially underpriced supplies under article 15(3). Keep business/private asset allocation under article 18, including its three-year sale rule and cessation exception. [Arts. 15, 17–18][law].
+6. **Rental income.** First test article 14(2): rental is business income if, at any time in the preceding period, at least six properties were let/offered or gross rent exceeded EUR 100,000; the statutory combined-property counting rule includes jointly acquired accessories and at most two parking spaces. Return to capital-income treatment only after both triggers cease for two consecutive periods, effective in the next period; a business-treatment option also exists. For rental that remains capital income, use documented direct-method costs or the elected 40% gross-rent expense method, with its prior-year notice and minimum three-year binding period. Article 21 permits an additional ten percentage points for qualifying Andorran permanent-home rents below 9/m² and no more than 1,250/month; verify both limits and the contract before the enhanced deduction. Keep this rental-expense election separate from the acquisition reduction in article 38 bis. [Arts. 14(2), 20–21][law]; [Law 5/2025 art. 79(1)][housing]; [Government explanation of the ten-percentage-point rental increase](https://www.govern.ad/ca/w/canvis-en-reglaments-alguns-impostos-derivats-llei-per-al-creixement-sostenible-dret-habitatge).
+7. **Savings and exemptions.** Include taxable interest, foreign dividends and other article 22 receipts, deducting evidenced custody/administration/intermediation costs under article 23. Article 5(j) exempts the specified distributions by Andorran-resident entities/Andorran collective investments subject to corporate tax. Share/collective-investment disposals use article 5(k): aggregate related/family holdings, test the preceding twelve months and 25% boundary, or the specified ten-year holding alternative. Interests backed at least 50% by Andorran property are excluded. The foreign-property ten-year exemption is a separate rule. Gifts/inheritances received are outside IRPF under article 4(4); the donor's gain exemptions and carryover values/dates require article 5(l)–(m), not an inference that every gift or property filing is exempt. [Arts. 4–5, 22–27][law].
+8. **Gains, losses and reductions.** For ordinary taxable disposals reconcile transfer and acquisition values, qualifying costs/improvements, market-value safeguards and the statutory homogeneous-share cost method. Unproved/private/gift/gambling losses are disallowed; repurchase loss rules use one year for assets/unlisted shares and two months for listed homogeneous securities. General income and savings each have their own ten-year negative-base carryforward; do not cross-net the two pools. Apply personal/family reductions first, then qualifying home/pension/maintenance reductions without creating a negative liquidation base. Share family relief equally where entitlement is equal, with the nearest-relative rule; short periods/deceased dependants use article 36. Deduct qualifying civil/judicial/notarial spouse maintenance, excluding child support. [Arts. 24–27, 30–39][law].
+9. **Liquidate and settle.** Tax positive general and savings liquidation bases at 10%, deduct the article 46 bonus first, then qualifying communal, foreign and incentive credits without a negative settlement liability. Article 47 communal-tax and article 48 foreign-credit balances have a three-year insufficiency carryforward; retain origin/expiry/evidence. Donations and business incentives use articles 48 bis/49 and their actual conditions. Finally deduct withholding, advances and the property payment on account; an excess is a refund, not a negative tax charge. [Arts. 44–49, 52, 58][law].
 
-**Key point:** There is no separate personal allowance — the EUR 24,000 zero-rate band IS the personal allowance.
+For CASS pensions and similar benefits, obtain the contribution history before fixing gross taxable employment income. If contributions began before 1 January 2015 and the recipient had at least fifteen total CASS contribution years when the benefit began, reduce each year’s receipt by 1% for each pre-2015 contribution year, rounding a fraction of a year up to a whole year. Cap the reduction at 30% of that year’s pension or benefit. This reduces the receipt used in the ordinary net-employment calculation; it does not make pensions eligible for the 3% employment-expense allowance. [Additional provision 5 and final provision 5; arts. 12–13][law].
 
-### IRPF Rate -- Savings Tax Base (Base de l'Estalvi) 2025
+**Personal and investment reductions.** The household EUR 40,000 rule requires the qualifying cohabiting spouse/partner facts and unused general-base personal reduction, capped jointly as article 35 provides. Family relief uses age/status at accrual, the annual-income test, CONAVA disability or COVASS dependency recognition and equal-sharing/nearest-relative rules. The EUR 300 tuition amount is actual qualifying higher-education tuition, not a flat additional allowance. Home acquisition includes qualifying acquisition costs and, for third-party borrowing, principal, interest and associated loan costs; register in the parish census within twelve months of acquisition or restore relief plus interest in the failure period. The same 50%-of-paid-cost, EUR 5,000 annual maximum structure applies to article 38 bis's acquired home let for another individual's habitual/permanent residence at a legally affordable price. Obtain the actual regulated affordable classification; the under-EUR-9 rental-income incentive is a different test. Pension contributions must meet regulation article 18's instrument, provider, irrevocable rights and permitted-access requirements, including the specified unemployment/illness/departure exceptions; an ordinary savings product is not enough. [Arts. 35–39][law]; [regulation art. 18][reg].
 
-**IRPF Rate -- Savings Tax Base (Base de l'Estalvi) 2025**  _(invicoandorra.com; andorrainc.com)_
+**Andorran property disposals.** Article 27 bis has a separate real-value base, also covering its property-rich interests/rights, judicial awards and debt-settlement acts. Add lawful, invoiced improvements and qualifying direct acquisition/development costs; subtract prior tax-deductible depreciation. The gain is reduced by coefficients 0.8 for more than six through seven years, 0.6 for more than seven through eight, 0.4 for more than eight through nine, and 0.2 for more than nine through ten; after more than ten years it is excluded from the base. Calculate dates exactly. Additional provision 9 separately charges 10% of the defined gain below two years and 5% from two to under five years, before the annual savings-base calculation. The non-resident 25%/20%/15%/10% schedule is a different regime. [Art. 27 bis and additional provision 9][law]; [Law 5/2025 art. 79 and fifth transition][housing].
 
-| Annual Savings Income (EUR) | Rate |
-| --- | --- |
-| 0 -- 3,000 | 0% (exempt) |
-| Above 3,000 | 10% on excess |
+For principal-home reinvestment, verify the article 5(r) nationality/effective-residence or five-year legal-residence condition, qualifying habitual home, no outstanding general-administration debt and prior approval. Full relief requires reinvestment of the sale proceeds, with proportional relief for less. The statutory reinvestment period is one year; the regulation also addresses a new home bought within six months before sale. Obtain approval before the transfer and execute within three months of approval. Submit the sale/new deed within one month, census proof within six months of reinvestment, and annual residence/utility evidence. Article 5(r) states the four-year habitual-home condition; comply with the approval's actual conditions and preserve evidence. Loss of relief requires the prescribed self-assessment and interest within one month. Coordinate exempt gain with the new-home reduction under article 38(2). [Arts. 5(r), 38(2)][law]; [regulation art. 14][reg].
 
-### CASS Contribution Rates (salaried employees and self-employed)
+## Deadlines and filing
 
-**CASS Contribution Rates**  _(remotepeople.com; en.wikipedia.org/wiki/Caixa_Andorrana_de_Seguretat_Social)_
+| Duty | Statutory method/deadline | Source |
+|---|---|---|
+| Annual IRPF | File and pay between 1 April and 30 September following the tax year: 2026 income in 2027 | [Arts. 55–56][law] |
+| Filing exclusions | Sole employment, movable-capital and exempt sources have article 55(2)'s exclusion; article 55(3) overrides where the covered income was not subject to required payments on account | [Art. 55][law] |
+| Business advance | September; 50% prior settlement liability or elected 5% prior business net income; first activity period excluded; short-period rules apply | [Art. 51(8)][law]; [regulation art. 19][reg] |
+| Resident property payment on account | 10% of the income determined under the property rules; private contract within 30 days, public deed simultaneously; exempt-income and deferred-price conditions apply | [Arts. 51 bis–ter][law] |
+| Ordinary negative annual settlement | Provisional assessment/refund within the statutory three-month framework from filing; interest for authority-attributable delay | [Art. 58][law] |
+| Objective business/rental option | Before preceding year-end; business start option within one month; minimum three years | [Arts. 17, 21][law] |
 
-| Branch | Employee | Employer | Self-Employed (Compte Propi) |
-| --- | --- | --- | --- |
-| General Branch | 3.0% | 7.0% | 10.0% |
-| Retirement Branch | 3.5% | 8.5% | 12.0% |
-| **Total** | **6.5%** | **15.5%** | **22.0%** |
+Obtain the NRT, reconcile the approved return to the source-level workpapers and retain submission, payment, withholding and property-notary evidence. Employment withholding follows the payroll Guide's personalised ministerial percentage and CASS/non-CASS filing distinction; the old illustrative salary bands are not a filing instruction. A return exclusion is not an exemption from the underlying tax. [Arts. 50–55][law]; [regulation arts. 24–36][reg].
 
-Employer handles full remittance of both employee and employer shares monthly.
-No explicit published ceiling for salaried employee contribution base — applies to full actual gross salary. [RESEARCH GAP — reviewer to confirm ceiling directly with CASS: public@cass.ad / +376 870 870]
+**Resident investment-income withholding.** The ordinary rate is 10% of gross taxable movable-capital income. Article 51(4) permits the taxpayer to request the EUR 3,000 savings reduction at source without duplicating it across payers. Use the regulation article 38 official communication, based on a reasonable estimate of all movable-capital income for the year, identifying the relevant account, deposit, instrument or contract. A valid election prevents withholding on the receipts covered by that election under article 37(3); promptly notify the payer on the official model if the all-payer estimate no longer supports the reduction, so withholding resumes on subsequent receipts. Retain the original communications. Capitalisation operations have article 37(2)’s separate gain-base and derived-rate calculation rather than an automatic 10% of returned capital. [Law arts. 51(4), 51(6)–(7)][law]; [regulation arts. 37–38][reg].
 
-### CASS Self-Employed Monthly Contribution Brackets (2025)
+For foreign securities within article 50(9), the responsible custodian/intermediary reduces withholding by the qualifying foreign-tax credit: the lesser of evidenced actual comparable foreign income tax and 10% of the gross receipt. Compute this limit receipt by receipt for withholding; do not substitute it for the annual article 48 credit calculation. Article 5 exempt income has no withholding and no declaration obligation under article 51(7). [Arts. 50(2), 50(6), 50(9), 51(5)–(7)][law]; [regulation art. 37(4)][reg].
 
-**CASS Self-Employed Monthly Contribution Brackets (2025)**  _(cass.ad/cotitzacions-del-treballadors-per-compte-propi; elysiumconsultingfirm.com)_
+Declare and remit movable-capital withholding during April, July, October and January for the preceding quarter. The January annual summary identifies recipients, NRT, income and withholding. Authorised financial/insurance entities instead submit the signed original external-auditor report during the following first calendar semester; using their existing external auditors requires prior ministry approval. The separate January declaration for article 38 elections still reports the relevant receipts and any withholding. [Regulation art. 39][reg].
 
-| % of Base | Monthly Base (EUR) | Monthly Quota (EUR) | Applicable Bracket |
-| --- | --- | --- | --- |
-| 25% | 668.13 | 146.99 | Net income < EUR 6,000 + specific conditions |
-| 50% | 1,525.33 | 335.57 | Net income EUR 6,000 -- 12,000 |
-| 62.5% | 1,670.33 | 367.47 | Net income EUR 12,000 -- 18,000 |
-| 75% | 2,004.39 | 440.97 | Net income EUR 18,000 -- 24,000 |
-| 100% | 2,672.52 | 587.95 | Standard rate |
-| 125% | 3,340.65 | 734.94 | Net income > EUR 40,000 |
-| 137.5% | 3,674.72 | 808.44 | Net income > EUR 50,000 |
+## Penalties and interest
 
-Reference base (100%): EUR 2,672.52/month — official CASS website (cass.ad, updated 30 January 2025).
-Note: Secondary sources citing Decree 16/2025 (published 29 January 2025) use EUR 2,560.99 as the 100% base. The cass.ad official page should be used as the filing reference.
+Under General Tax Law article 24, voluntary late filing with tax payable attracts 2% when less than two months late, 5% between two and twelve, and 10% after twelve; filing following a formal request uses 15% if its deadline is met. Article 24(4)–(5) controls interaction: after six months, or with a prior request, interest and applicable sanctions are not automatically excluded. Identify the actual period and whether the administration requested filing before calculating. [General Tax Law art. 24][general].
 
-Monthly quota = monthly base × 22%. Verify: EUR 2,672.52 × 22% = EUR 587.95 ✓; EUR 3,340.65 × 22% = EUR 734.94 ✓; EUR 3,674.72 × 22% = EUR 808.44 ✓
+Executive-recovery charges are mutually exclusive: 2% before the enforcement notice, 10% within the reduced enforcement-payment conditions, otherwise 20%. The ordinary 20% charge is compatible with interest; the 2% and 10% charges exclude it. Apply article 23's overdue base/period and the 2026 tax late-interest rate of 4.05%; CASS has separate rules. [Arts. 23–25][general]; [Budget art. 17][budget].
 
-### Conservative Defaults
+IRPF articles 59–61 specify simple-offence fines of EUR 150–3,000 and defraudation sanctions of 50%–150% of evaded tax, with the general-law graduation rules. The specific statute controls over an assumed universal EUR 200/250 general documentary fine. Article 60 separately identifies the property-value discrepancy offence; it is not a valuation safe harbour. Article 62 permits thirteen working days for representations on the proposed sanction and sets the guarantee requirement for suspension on appeal. General Tax Law article 132 has conditional 30% agreement/payment and further 25% timely-sanction-payment reductions; the actual offence, appeal and payment facts govern. Do not automatically equate every error with evasion or add all charges together. [IRPF arts. 59–62][law]; [General Tax Law arts. 125–132][general].
 
-**Conservative Defaults**
+## Cross-border points
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency status | STOP — do not compute IRPF without confirming ≥183-day presence or principal economic interests |
-| Unknown spousal income | Do not apply the EUR 40,000 spousal threshold uplift |
-| Unknown CASS bracket | Apply 100% base (EUR 587.95/month) — highest safe assumption for standard rate |
-| Unknown IGI registration status | Assume not registered if turnover < EUR 40,000 |
-| Unknown housing deduction basis | 0% — do not apply without mortgage/rental documentation |
-| Unknown dependent status | 0 dependants — do not apply deductions without documentation |
-| Unknown capital gains holding period | Apply highest applicable rate |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
+Aggregate worldwide receipts by their correct general/savings category and apply an operative treaty only after residence, income article and evidence checks. Article 48's credit is the lower of actual qualifying foreign income tax (within the treaty limit) and Andorran tax attributable to the same income under Andorran expense rules. Include foreign tax in gross income; group by country, with each PE separate. Retain tax/payment proof and the three-year insufficiency-credit ledger; foreign tax above the substantive cap is not automatically a transferable credit. [Arts. 3, 4, 48][law].
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+On loss of taxpayer status through fiscal-residence change, include all income pending imputation in the last resident period under article 42(3). Record departure facts and outstanding accrual/deferred-income schedules. Immigration authorisation and deposits are separate from the fiscal-residence test. Non-resident wages, treaty employment cases, PE profits and company migration use the companion cross-border Guide. [Arts. 8, 40–42][law].
 
-### Required Inputs
+## Two worked examples that recompute
 
-**Minimum viable** — full-year bank statement (CSV, PDF, or pasted text) plus confirmation of: (1) fiscal residency status (≥183 days in AD, or principal economic interests in AD), (2) employment or self-employment status, (3) family situation (single / married or de facto partner / dependent children or ascendants), (4) NRT (Número de Registre Tributari).
+### 1. Direct-method sole trader, without the employment allowance
 
-**Recommended** — all sales invoices, purchase invoices/receipts, CASS contribution payment records, prior-year IRPF declaration, employer IRPF withholding certificate (if employed), mortgage or rental contract (if claiming housing deduction), tuition receipts (if claiming education deduction).
+Assume a full-year resident's revenue is 55,000 net of IGI, evidenced ordinary deductible business expenses 9,000 and actual deductible self-employed CASS 7,055.40. The correctly established prior-year category supports a 100% CASS base throughout the year; no reduction, additional contribution deduction, family/home/pension relief, other income, credit or payment on account applies. General income is 38,944.60. After 24,000 personal reduction, gross tax is 1,494.46 and the proportional bonus 747.23, leaving 747.23. [Arts. 16, 35, 43–46][law].
 
-**Ideal** — complete income and expenditure account, asset register, CASS annual declaration, all documentation for deductions, employer withholding certificate showing total income and tax withheld.
-
-**Refusal if minimum is missing — SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This IRPF declaration was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that the wholly-and-exclusively test is met."
-
-### Refusal Catalogue
-
-- **R-AD-1** — Residency status unclear. "Andorran fiscal residency requires ≥183 days physical presence, or principal economic interests in Andorra, or primary family ties in Andorra. This skill cannot determine tax liability without confirming residence status. Please confirm before proceeding."  _(e-tramits.ad)_
-- **R-AD-2** — Non-resident income (IRNR). "Non-resident Andorran source income is taxed under the IRNR regime at flat 10% (payer withholds). Scope of this skill is limited to fiscal residents. For IRNR analysis, use the dedicated IRNR section below or escalate to a licensed Andorran advisor."
-- **R-AD-3** — Corporate / entity income. "This skill covers natural persons (IRPF) only. Andorran companies and branches file under the Impost de Societats (IS) at 10%. Escalate to an Andorran advisor."
-- **R-AD-4** — Complex capital gains (real estate). "Real-estate capital gains require verification of purchase date, cost base, notarial fees, and reinvestment details. Out of scope for automated classification. Escalate to a licensed Andorran advisor."
-- **R-AD-5** — Arrears / enforcement. "Client has outstanding IRPF or CASS arrears or is subject to DTF enforcement. Late payment surcharges of 10%–20% plus formal sanctions (EUR 500–EUR 20,000) may apply. Do not advise on quantum without advisor involvement. Escalate immediately."
-- **R-AD-6** — IGI return requested. "This skill covers IRPF (direct tax) only. For IGI (indirect tax / VAT equivalent), use the andorra-igi skill."
-- **R-AD-7** — Inheritance, gifts, wealth. "Andorra has no inheritance tax, gift tax, or wealth tax. These are out of scope. Simply note the absence and confirm no filing required."
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier for Andorran bank statements. When a transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description. If multiple patterns match, use the most specific. All amounts are in EUR.
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**3.1 Income Patterns (Credits on Bank Statement)**
-
-| Pattern | IRPF Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + TRANSFERÈNCIA, PAGAMENT, INGRÉS, PAYMENT | General base — business income | Full credit = gross revenue | If IGI-registered, extract net (excl. 4.5% IGI) |
-| HONORARIS, FEES, PROFESSIONAL FEES, CONSULTORIA | General base — business income | Professional fees | Typical for autònom |
-| STRIPE PAYOUT, STRIPE TRANSFER | General base — business income | Platform payout | Match to underlying invoices |
-| PAYPAL PAYOUT, PAYPAL TRANSFER | General base — business income | Platform payout | Verify against invoices |
-| WISE PAYOUT, WISE TRANSFER | General base — business income | International payout | Use EUR equivalent |
-| REVOLUT PAYOUT | General base — business income | Check if business or personal Revolut |  |
-| SALARI, NÒMINA, SALARY, EMPLOYER [name] | General base — employment income | Employment income | Employer withholds IRPF and CASS |
-| LLOGUER, RENDA, RENT RECEIVED | General base — rental income | Rental income |  |
-| INTERESSOS, INTEREST RECEIVED | Savings base | Investment income | First EUR 3,000/year exempt |
-| DIVIDEND ANDORRÀ, DIVIDEND ANDORRAN | EXEMPT | Dividends from Andorran companies: fully exempt | Already taxed at corporate level (andorrainc.com) |
-| DIVIDEND, DIVIDEND ESTRANGER | Savings base | Foreign dividends: savings base, first EUR 3,000 exempt |  |
-| PLUSVÀLUA, CAPITAL GAIN | Savings base or general (depends on asset) | Flag for reviewer classification | Holding period critical |
-| DTF DEVOLUCIÓ, TAX REFUND, DEVOLUCIÓ IMPOST | EXCLUDE | Not income — prior year refund |  |
-| SUBVENCIÓ, GRANT, GOVERN | Check nature | Revenue grants = income; capital grants = EXCLUDE |  |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible (Business Expenses)
-
-**3.2 Expense Patterns (Debits) -- Fully Deductible (Business Expenses)**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| LLOGUER OFICINA, OFFICE RENT, DESPATX [commercial] | Office rent | Fully deductible | Dedicated business premises |
-| ASSEGURANÇA PROFESSIONAL, PROFESSIONAL INDEMNITY | Professional insurance | Fully deductible |  |
-| GESTOR, ASSESSOR, COMPTABLE, ACCOUNTANT, ACCA | Accountancy / advisory fees | Fully deductible |  |
-| ADVOCAT, NOTARI, LEGAL, LAWYER (business) | Legal/notarial fees | Fully deductible | Must be business-related |
-| MATERIAL OFICINA, STATIONERY, OFFICE SUPPLIES | Office supplies | Fully deductible |  |
-| PUBLICITAT, MARKETING, GOOGLE ADS, META ADS | Marketing / advertising | Fully deductible |  |
-| FORMACIÓ, CPD, CURS, SEMINAR, TRAINING | Training / CPD | Fully deductible | Must relate to current activity |
-| COL·LEGI PROFESSIONAL, PROFESSIONAL BODY, SUBSCRIPTION | Professional subscriptions | Fully deductible |  |
-| COMISSIÓ BANCÀRIA, COMISSIONS, BANK FEE, BANK CHARGE | Bank charges | Fully deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Fully deductible |  |
-| DOMINI, HOSTING, CLOUDFLARE, AWS, DIGITALOCEAN | IT infrastructure | Fully deductible (if under capitalisation threshold) | Recurring hosting = expense |
-| CORREUS, MISSATGERIA, POSTAGE (business) | Postage / courier | Fully deductible | Business correspondence |
-
-### 3.3 Expense Patterns (Debits) -- SaaS and Software (Fully Deductible if Recurring Subscription)
-
-**3.3 Expense Patterns (Debits) -- SaaS and Software (Fully Deductible if Recurring Subscription)**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Fully deductible | Recurring = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Fully deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Fully deductible |  |
-| SOFTWARE LLICÈNCIA (perpetual, high value) | Capital item | Capitalise — flag for reviewer | Perpetual licence = asset; rate [RESEARCH GAP — reviewer to confirm Andorran depreciation schedule] |
-
-### 3.4 Expense Patterns (Debits) -- Utilities (May Need Apportionment)
-
-**3.4 Expense Patterns (Debits) -- Utilities (May Need Apportionment)**
-
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| FEDA (Forces Elèctriques d'Andorra), ELECTRICITAT | Electricity | T2 if home office | 100% if dedicated office; proportional if home |
-| ANDORRA TELECOM, TELEFON, INTERNET, FIBRA | Telecoms / broadband | T2 | Business use portion only; default 0% if mixed |
-| MÒBIL, MOBILE, PHONE | Phone | T2 | Business use portion only |
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**3.5 Expense Patterns (Debits) -- Travel**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| VUELO, AVIÓ, RYANAIR, VUELING, IBERIA | Flights | Deductible if wholly business travel |  |
-| HOTEL, BOOKING.COM, AIRBNB (business) | Accommodation | Deductible if wholly business travel |  |
-| TAXI, TRANSFER, BOLT, UBER | Local transport | Deductible if business purpose |  |
-| GASOLINERA, GASOLINA, FUEL, CARBURANT | Vehicle fuel | T2 — business % only | Requires mileage log |
-| APARCAMENT, PARKING | Parking | T2 — business % only |  |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**3.6 Expense Patterns (Debits) -- NOT Deductible**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, DINAR, SOPAR, ENTERTAINMENT, CLIENT MEAL | Entertainment | NOT deductible | No partial deduction |
-| PERSONAL, SUPERMERCATS, SUPERMERCAT, CONSUM, LIDL | Personal expenses | NOT deductible | Private living costs |
-| MULTA, SANCIÓ, FINE, PENALTY | Fines / penalties | NOT deductible | Public policy |
-| DTF PAGAMENT, IRPF PAGAMENT, TAX PAYMENT | Income tax payments | NOT deductible | Tax on income cannot reduce income |
-| RETIRADA, EXTRACCIÓ, ATM (personal) | Drawings | NOT deductible | Not an expense |
-| QUOTA SOCIAL, PARTICIPACIÓ (own company) | Capital investment | NOT deductible | Capital outflow |
-
-### 3.7 Exclusions (Neither Income nor Expense)
-
-**3.7 Exclusions (Neither Income nor Expense)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERÈNCIA PRÒPIA, ENTRE COMPTES, OWN ACCOUNT | EXCLUDE | Own-account transfer |
-| RETORN PRÉSTEC, AMORTITZACIÓ PRÉSTEC, LOAN REPAYMENT | EXCLUDE | Loan principal movement |
-| CASS, COTITZACIÓ CASS, SEGURETAT SOCIAL | CASS deduction line | Deductible in IRPF (6.5% employee share or self-employed quota), NOT as a business expense |
-| IGI PAGAMENT, CFR IGI | EXCLUDE | IGI liability payment — not an expense |
-| INGRÉS PROPI, TRANSFERÈNCIA INTERNA | EXCLUDE | Internal transfer |
-
-### 3.8 Andorran Banks -- Statement Format Reference
-
-**3.8 Andorran Banks -- Statement Format Reference**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Crèdit Andorrà | TRANSFERÈNCIA, DOMICILIACIÓ, COMISSIÓ | PDF/CSV; description contains counterparty + reference |
-| Banca Privada d'Andorra (BPA) | TRANSFER, TRF, CARRER | PDF; dates DD/MM/YYYY |
-| MoraBanc | TRANSFERÈNCIA, REBUT, COMISSIÓ | PDF/CSV; merchant name in description |
-| Andbanc | TRANSFERÈNCIA, D.D., COMISSIONS | PDF/CSV |
-| Vall Banc | INGRÉS, CÀRREC, DOMICILIACIÓ | PDF |
-| Revolut Business | PAYMENT, TRANSFER, CARD PAYMENT | CSV; clean counterparty names; multi-currency — use EUR |
-| Wise Business | TRANSFER, CONVERSION, FEE | CSV; multi-currency — use EUR amounts |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Single Resident Autònom, Mid-Range Income
-
-**Profile:** Single, no dependants, self-employed consultant, Andorran resident (≥183 days).
-**Gross business revenue:** EUR 55,000
-**Business expenses (deductible):** EUR 9,000
-**CASS quota (100% bracket):** EUR 587.95/month × 12 = EUR 7,055.40/year
-**General expenses deduction:** 3% × (EUR 55,000 − EUR 9,000 − EUR 7,055.40) = 3% × EUR 38,944.60 = EUR 1,168.34 → capped at **EUR 400**
-
-**Computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross revenue | 55,000.00 |
-| Less: business expenses | (9,000.00) |
-| Less: CASS self-employed quota (deductible) | (7,055.40) |
-| Sub-total | 38,944.60 |
-| Less: general expenses deduction (capped) | (400.00) |
-| IRPF general base (taxable) | 38,544.60 |
-| Tax on EUR 0–24,000 at 0% | 0.00 |
-| Tax on EUR 24,001–38,544.60 (band of EUR 14,544.60): 10% = EUR 1,454.46 minus bonificació EUR 800 (partial band) | 654.46 |
-| **Total IRPF due** | **654.46** |
-
-Bonificació note: The EUR 800 bonificació applies when income exceeds EUR 40,000 (using the full band). Here income is EUR 38,544.60 — within the EUR 24,001–40,000 band. The bonificació is proportionally available up to EUR 800. At full band occupancy: EUR 16,000 × 10% − EUR 800 = EUR 800 at EUR 40,000. At EUR 38,544.60, taxable in band = EUR 14,544.60; gross tax EUR 1,454.46; bonificació = EUR 800 (maximum); net tax = EUR 654.46.
-
-**Representative bank statement lines used:**
-```
-15/01/2025 ; Crèdit Andorrà TRANSFERÈNCIA ENTRADA ; CLIENT GLOBAL SA ; FACTURA 2025-001 ; +5,450.00 ; EUR
-03/02/2025 ; MoraBanc CÀRREC ; ANDORRA TELECOM ; FIBRA OPTICA FEB ; -89.00 ; EUR
-01/03/2025 ; Crèdit Andorrà CÀRREC ; GOOGLE WORKSPACE ; SUB MAR 2025 ; -12.00 ; EUR
-10/03/2025 ; Andbanc CÀRREC ; CASS QUOTA FEB ; COTITZACIÓ ; -587.95 ; EUR
+```oa-check
+name: Andorra 2026 direct business income and proportional bonus
+inputs:
+  net_revenue: 55000
+  evidenced_business_expenses: 9000
+  deductible_cass_paid: 7055.40
+  personal_reduction: 24000
+steps:
+  general_income: net_revenue - evidenced_business_expenses - deductible_cass_paid
+  liquidation_base: max(0, general_income - personal_reduction)
+  gross_tax: liquidation_base * 0.10
+  bonus: min(800, liquidation_base * 0.10 * 0.50)
+  settlement_tax: max(0, gross_tax - bonus)
+expected:
+  general_income: 38944.60
+  liquidation_base: 14944.60
+  gross_tax: 1494.46
+  bonus: 747.23
+  settlement_tax: 747.23
 ```
 
-### Example 2 -- Resident with Spouse (Zero Income Partner)
+### 2. Ordinary wages, foreign dividends and a capped credit
 
-**Profile:** Married, spouse earns EUR 0, single earner. Gross employment income EUR 36,000.
-**Employer withholds IRPF** (no provisional tax for employee).
-**Spousal relief:** If spouse earns zero, the effective zero-rate band rises to EUR 40,000 (lavallassociats.com; andorra-solutions.com).
+Assume ordinary salary 60,000, employee CASS 3,900, and all salary qualifies for the 3% expense deduction. No family/home/pension relief or losses. Foreign dividends are 8,000 gross, with 800 qualifying actual foreign tax permitted by the operative treaty and no other savings income/cost. Employment expense is 1,800, general income 54,300, general tax after the 800 bonus is 2,230. Savings tax is 500 after its 3,000 reduction. The allowable foreign credit is 500, fully usable; the above-cap 300 is not an insufficiency carryforward. Actual resident withholding of 2,000 leaves 230 payable. The withholding is an evidenced input, not a salary-table rate. [Arts. 13, 35, 37, 43–48, 52][law].
 
-**Computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross employment income | 36,000.00 |
-| Less: employee CASS (6.5%) | (2,340.00) |
-| Less: general expenses deduction (3% × EUR 33,660 = EUR 1,009.80, capped) | (400.00) |
-| IRPF general base | 33,260.00 |
-| Applied threshold with spousal relief = EUR 40,000 | — |
-| Income EUR 33,260 is below EUR 40,000 spousal threshold | 0.00 |
-| **Total IRPF due** | **0.00** |
-
-Without spousal relief: EUR 33,260 − EUR 24,000 = EUR 9,260 in 10% band; gross tax EUR 926 − EUR 800 bonificació = EUR 126 due. The spousal relief eliminates this entirely.
-
-**Representative bank statement lines used:**
-```
-28/02/2025 ; Vall Banc INGRÉS ; EMPRESA XYZ SL ; NÒMINA FEB 2025 ; +3,000.00 ; EUR
-```
-
-### Example 3 -- Savings Base (Foreign Dividends)
-
-**Computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Foreign dividends received | 8,000.00 |
-| Less: savings base exemption | (3,000.00) |
-| Taxable savings base | 5,000.00 |
-| IRPF at 10% | 500.00 |
-| **Total savings base IRPF due** | **500.00** |
-
-**Profile:** Resident, receives EUR 8,000 in foreign dividends, no other savings income.
-
-Note: Andorran company dividends = EUR 0 IRPF (fully exempt). Only foreign dividends are on the savings base. (andorrainc.com)
-
-**Representative bank statement line:**
-```
-15/04/2025 ; MoraBanc INGRÉS ; BROKER INTERNACIONAL SA ; DIVIDEND ACCIÓ XYZ ; +8,000.00 ; EUR
+```oa-check
+name: Andorra 2026 employment savings and capped foreign credit
+inputs:
+  ordinary_salary: 60000
+  employee_cass: 3900
+  foreign_dividends_gross: 8000
+  qualifying_foreign_tax: 800
+  actual_resident_withholding: 2000
+steps:
+  employment_expense: min(2500, ordinary_salary * 0.03)
+  general_income: ordinary_salary - employee_cass - employment_expense
+  general_base: max(0, general_income - 24000)
+  general_tax: max(0, general_base * 0.10 - min(800, general_base * 0.10 * 0.50))
+  savings_base: max(0, foreign_dividends_gross - 3000)
+  savings_tax: savings_base * 0.10
+  foreign_credit: min(qualifying_foreign_tax, savings_tax)
+  settlement_tax: general_tax + savings_tax - foreign_credit
+  final_payment: settlement_tax - actual_resident_withholding
+expected:
+  employment_expense: 1800
+  general_income: 54300
+  general_base: 30300
+  general_tax: 2230
+  savings_base: 5000
+  savings_tax: 500
+  foreign_credit: 500
+  settlement_tax: 2230
+  final_payment: 230
 ```
 
-### Example 4 -- New Autònom (Start-of-Activity CASS Reduction)
-
-**Profile:** Single, first year of self-employment (newly registered, not previously registered for ≥36 months). Net income for year EUR 18,000. Eligible for 25% CASS base.
-
-**CASS (first 12 months, 25% base, start-of-activity regime):**
-25% base = EUR 668.13/month. Only general branch (10%): EUR 668.13 × 10% = EUR 66.81/month.
-Annual CASS = EUR 66.81 × 12 = EUR 801.72.
-(Note: no pension points accrued; limited health coverage — elysiumconsultingfirm.com)
-
-**IRPF computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Gross revenue | 18,000.00 |
-| Less: business expenses (assumed EUR 2,000) | (2,000.00) |
-| Less: CASS paid | (801.72) |
-| Sub-total | 15,198.28 |
-| Less: general expenses deduction (3% capped at EUR 400) | (400.00) |
-| IRPF general base | 14,798.28 |
-| Tax on EUR 0–14,798.28 at 0% (below EUR 24,000 threshold) | 0.00 |
-| **Total IRPF due** | **0.00** |
-
-### Example 5 -- High-Income Autònom (125% CASS Bracket)
-
-**Profile:** Single, no dependants. Net income EUR 48,000. CASS at 125% bracket (net income > EUR 40,000).
-
-**CASS:** EUR 734.94/month × 12 = EUR 8,819.28/year
-
-**IRPF computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Net business profit | 48,000.00 |
-| Less: CASS quota | (8,819.28) |
-| Less: general expenses deduction (3% × EUR 39,180.72 = EUR 1,175.42, capped at EUR 400) | (400.00) |
-| IRPF general base | 38,780.72 |
-| Tax on EUR 0–24,000 at 0% | 0.00 |
-| Tax on EUR 24,001–38,780.72: band = EUR 14,780.72; gross 10% = EUR 1,478.07; minus bonificació EUR 800 | 678.07 |
-| **Total IRPF due** | **678.07** |
-
-### Example 6 -- Real-Estate Capital Gain (Held 3 Years, Resident)
-
-**Profile:** Resident sells apartment purchased 3 years ago. Purchase price EUR 200,000; sale price EUR 250,000. Gain = EUR 50,000.
-
-Holding period 2–10 years: rate is 10% (decreasing by 1% per year from year 2; at year 3 = approximately 9%, but confirm exact schedule with DTF [RESEARCH GAP — exact year-by-year rate step-down not fully confirmed from reviewed sources]).
-
-Using 10% conservative:
-
-**Computation**
-
-| Step | Amount (EUR) |
-| --- | --- |
-| Sale price | 250,000.00 |
-| Less: purchase price | (200,000.00) |
-| Capital gain | 50,000.00 |
-| IRPF at 10% (conservative; reviewer to confirm exact year-3 rate) | 5,000.00 |
-| **Estimated IRPF on gain** | **5,000.00** |
-
-Reinvestment exemption: if reinvesting in primary residence within 6 months → EUR 0 IRPF. Flag for reviewer.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Fiscal Residency Test
-
-- **Fiscal residency test** — A natural person is an Andorran fiscal resident if any one of the following is satisfied: physically present in Andorra for more than 183 days in the calendar year (border data is used to verify), OR their principal centre of economic interests is in Andorra, OR their primary family ties are in Andorra. If residency is uncertain: STOP and apply Refusal R-AD-1.  _(Llei 5/2014 (IRPF); e-tramits.ad)_
-
-### 5.2 Income Classification
-
-**5.2 Income Classification**
-
-| Base | Included Income |
-| --- | --- |
-| General base (base general) | Employment income; self-employment / business income; rental income |
-| Savings base (base de l'estalvi) | Interest; foreign dividends; financial capital gains |
-
-- **Andorran company dividends exclusion** — Andorran company dividends: fully exempt. Do not include in either base.  _(andorrainc.com)_
-
-### 5.3 IRPF Rate Application (General Base)
-
-- **IRPF rate application steps** — 1. Compute net income in general base (revenue minus deductible expenses minus CASS). 2. Apply EUR 400 general expenses deduction (capped; 3% of income up to EUR 400). 3. Apply any family/housing deductions (see 5.5). 4. Apply zero-rate band: EUR 0–24,000 = EUR 0 tax. 5. Band EUR 24,001–40,000: gross tax 10% on band income, minus bonificació up to EUR 800. 6. Above EUR 40,000: 10% on excess, no bonificació. 7. Spousal relief: if spouse earns EUR 0, the zero-rate threshold rises to EUR 40,000 for the filing taxpayer.
-
-### 5.4 Wholly-and-Exclusively Test
-
-- **Wholly-and-exclusively test** — An expense is deductible only if incurred wholly and exclusively in the production of income. Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.  _(General principle of Andorran IRPF; andorra-solutions.com)_
-
-### 5.5 Key Deductions (2025)
-
-**5.5 Key Deductions (2025)**  _(lavallassociats.com; aaa.ad; andorra-solutions.com)_
-
-| Deduction | Amount (EUR) | Conditions |
-| --- | --- | --- |
-| General expenses deduction | 3% of income, max EUR 400/year | All residents automatically |
-| Employee CASS contributions (6.5%) | Actual amount paid | Employed persons; fully deductible |
-| Self-employed CASS quota | Actual quota paid | Autònom; fully deductible |
-| Dependent child/ascendant | EUR 750 per dependent | Dependent: age <25 or >65, lives with taxpayer, earns <EUR 12,000/year |
-| Additional dependent child (2025 new) | EUR 1,000 per dependent child | Child under 25, lives with taxpayer, earns below SMI (EUR 1,447.33/month) |
-| Higher education supplement (2025 new) | EUR 300 per enrolled dependent | Dependent enrolled in university; requires tuition documentation |
-| Primary residence acquisition (2025 new) | 50% of amounts paid, max EUR 5,000/year | Mortgage principal + interest + acquisition costs for primary home |
-| Affordable rental investment (2025 new) | 50% of amounts paid, max EUR 5,000/year | Property rented at ≤EUR 12.45/m²; requires rental contract |
-| Disability deductions | [RESEARCH GAP — reviewer to confirm exact amounts with DTF] | Various; confirm at impostos@govern.ad |
-
-Maximum combined new child deduction per eligible child under 25 earning below SMI with university enrollment: EUR 1,000 + EUR 300 = EUR 1,300.
-
-### 5.6 Non-Deductible Expenses
-
-**5.6 Non-Deductible Expenses**
-
-| Expense | Reason |
-| --- | --- |
-| Entertainment (client meals, events) | Personal consumption; not business purpose |
-| Personal living expenses | Not business-related |
-| Fines and penalties | Public policy |
-| Income tax itself (IRPF) | Tax on income |
-| Drawings / personal withdrawals | Not an expense |
-| Capital expenditure (undepreciated) | Must be depreciated — rate schedule [RESEARCH GAP — reviewer to confirm Andorran depreciation rates] |
-
-### 5.7 Capital Gains Treatment
-
-- **Share disposals (resident individuals)** — Taxpayer owns ≤25% of company: exempt. Shares held ≥10 years (any ownership %): exempt. Shares held 5–10 years: 50% reduction → effective ~5%. Shares held <5 years (ownership >25%): standard savings base rate 10%.  _(andorrainc.com; goldenharbors.com)_
-
-**Real-estate capital gains (resident individuals)**  _(andorrainc.com; goldenharbors.com)_
-
-| Holding Period | Rate |
-| --- | --- |
-| Within 2 years of purchase | 15% (10% + 5% speculative surcharge) |
-| 2–10 years | 10% (declining by 1%/year from year 2; exact year-by-year schedule [RESEARCH GAP — reviewer to confirm with DTF]) |
-| After 10 years | 0% (full exemption) |
-| Reinvestment in primary residence within 6 months | Full exemption |
-
-- **Non-residents capital gains rate** — Non-residents: 15% within 2 years, 10% thereafter; no 10-year exemption.  _(andorrainc.com; goldenharbors.com)_
-
-### 5.8 IGI (Indirect Tax / VAT Equivalent)
-
-- **IGI registration threshold** — Self-employed must register for IGI if annual turnover exceeds EUR 40,000 (agricultural: EUR 150,000 threshold).  _(loyalbusinessconsulting.com; andorra-solutions.com; gestoriabonconsellandorra.com)_
-
-**5.8 IGI Rates**  _(loyalbusinessconsulting.com; andorra-solutions.com; gestoriabonconsellandorra.com)_
-
-| IGI Rate | Applies To |
-| --- | --- |
-| 0% | Medical, education, financial, postal services |
-| 1% | Food, books, newspapers |
-| 2.5% | Transport, cultural events |
-| 4.5% | Standard rate (most goods and services) |
-| 9.5% | Banking / financial services |
-
-- **IGI filing frequency** — Turnover < EUR 250,000/year: semi-annual (July and January). Turnover EUR 250,000–EUR 3,600,000/year: quarterly (April, July, October, January). Turnover ≥ EUR 3,600,000/year: monthly. Simplified regime available for turnover ≤ EUR 100,000.  _(loyalbusinessconsulting.com; andorra-solutions.com; gestoriabonconsellandorra.com)_
-
-### 5.9 Withholding at Source
-
-**5.9 Withholding at Source**  _(andorra-solutions.com; remotepeople.com)_
-
-| Income Type | Withholding Rate |
-| --- | --- |
-| Employment income (residents) | Personalised schedule calculated by DTF — not a fixed rate |
-| Savings/capital income (residents) | 10%; taxpayer can request reduction if total savings income < EUR 3,000 |
-| Non-residents (IRNR) | 10% at source on employment income, professional fees, rentals |
-| Non-resident bank interest, dividends from Andorran sources | Exempt from withholding |
-
-### 5.10 IRPF Filing Obligations
-
-- **Filing obligation triggers** — Must file IRPF if any of the following: earns income from economic activities (self-employment, business) — any amount; receives employment or real-estate income totalling ≥ EUR 24,000; receives savings/investment income not subject to withholding exceeding EUR 3,000; has capital gains or losses to report.  _(e-tramits.ad)_
-- **Filing window** — 1 April – 30 September of the year following the tax year. For tax year 2025: file 1 April 2026 – 30 September 2026.  _(e-tramits.ad)_
-
-Online (preferred): Seu Electrònica at e-tramits.ad using MIL credentials or electronic certificate
-In-person (by appointment): Departament de Tributs i de Fronteres, Baixada del Molí 26, AD500 Andorra la Vella. Hours: Mon–Thu 08:00–15:00, Fri 08:00–14:30
-Contact: impostos@govern.ad / Tel: 147 or +376 885 005
-
-### 5.11 CASS Payment Rules (Self-Employed)
-
-- **CASS payment rules** — Pay by bank transfer between the 10th and 15th of each month. Annual income declaration: January (ordinary). Adaptive declarations permitted: April, July, October. Registration: within 30 calendar days of starting activity. Deregistration: within 30 days of ceasing activity. Late payment surcharges: up to 1 month late = 5%; 1–6 months = 10%; over 6 months = 20%. Formal sanctions: EUR 500–EUR 20,000 depending on severity.  _(cass.ad; elysiumconsultingfirm.com)_
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Deduction
-
-- **Home office deduction rules** — Calculate proportion of home used for business: dedicated room(s) as percentage of total floor area. Apply that percentage to: rent or mortgage interest, electricity (FEDA), internet (Andorra Telecom), maintenance. Must be a dedicated workspace — a dual-use room (kitchen table, living room) does NOT qualify. Client must document the calculation and retain records. Conservative default: 0% deduction until reviewer confirms dedicated workspace arrangement. Flag for reviewer: Confirm room count, floor area basis, and that workspace is genuinely dedicated and used exclusively for business.  _(IRPF deductions framework (Llei 5/2014))_
-
-### 6.2 Motor Vehicle Business Use
-
-- **Motor vehicle business use rules** — Only the business-use percentage of fuel, insurance, maintenance, and depreciation is deductible. Client must maintain a mileage log (business trips vs total mileage). Depreciation rate: [RESEARCH GAP — reviewer to confirm Andorran depreciation rates for motor vehicles]. Conservative default: 0% business use until mileage log provided. Flag for reviewer: Confirm business percentage is documented with mileage log and is reasonable.
-
-### 6.3 Phone / Internet Mixed Use
-
-- **Phone/internet mixed use rules** — Business use portion only; client must provide reasonable estimate. Conservative default: 0% deduction until business percentage confirmed.
-
-### 6.4 Spousal Income Verification
-
-- **Spousal income verification** — Spousal relief (EUR 40,000 threshold) requires spouse/de facto partner to have EUR 0 income. Do not apply without written confirmation. Flag for reviewer: Confirm spouse earns zero from all sources for the tax year.
-
-### 6.5 Dependent Child / Ascendant Deductions
-
-- **Dependent deduction conditions** — Each qualifying dependent: age <25 or >65, lives with taxpayer, earns <EUR 12,000/year. Additional EUR 1,000 (2025): child under 25, earns below SMI (EUR 1,447.33/month). Education EUR 300 (2025): enrolled in university — requires tuition documentation. Flag for reviewer: Confirm ages, cohabitation, income levels, and obtain enrollment documentation for education deduction.
-
-### 6.6 Housing Deduction (2025 New Measure)
-
-- **Housing deduction conditions** — 50% of mortgage principal + interest + acquisition costs; max EUR 5,000/year. Only for primary residence acquisition. Requires mortgage statements and purchase documentation. Flag for reviewer: Confirm property is primary residence, obtain all mortgage/acquisition documents, verify EUR 5,000 annual cap not exceeded.
-
-### 6.7 Capital Gains Holding Period
-
-- **Holding period measurement** — Holding period is measured from notarial deed date of acquisition to notarial deed date of sale. Notarial records are the authoritative source. Flag for reviewer: Obtain copies of both purchase and sale deeds to confirm exact holding period.
-
-### 6.8 IGI / Income Interaction
-
-- **IGI/income interaction rules** — If self-employed and IGI-registered: income for IRPF = net of IGI collected (exclude the 4.5% from revenue). If not IGI-registered (below EUR 40,000 threshold): no IGI collected, full invoice amount = IRPF income. Flag for reviewer: Confirm IGI registration status and that the correct net/gross basis is used.
-
-### 6.9 Active Residency Financial Deposit (Self-Employed)
-
-- **Active residency deposit rules** — Self-employed active residency requires a EUR 50,000 financial deposit with an Andorran bank. This deposit is non-refundable as a cash refund but remains invested (not a cost but a capital lockup). The deposit itself is NOT deductible for IRPF purposes. Flag for reviewer: Confirm client has active residency; note deposit is a balance sheet item, not a P&L expense.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-ANDORRA INCOME TAX (IRPF) -- WORKING PAPER
-Tax year: 2025
-Client: ___________________________
-NRT: ___________________________
-Status: Employed / Self-Employed (Autònom) / Both
-Family situation: Single / Married (partner earns EUR ___) / Dependants: ___
-
-A. GENERAL TAX BASE (BASE GENERAL)
-
-A1. EMPLOYMENT INCOME
-  Gross salary / nòmina                          ___________
-  Less: employee CASS (6.5%)                     ___________
-  Net employment income                          ___________
-
-A2. SELF-EMPLOYMENT INCOME (AUTÒNOM)
-  Gross revenue (net of IGI if registered)       ___________
-  Less: deductible business expenses             ___________
-  Less: CASS self-employed quota paid            ___________
-  Net self-employment income                     ___________
-
-A3. RENTAL INCOME
-  Gross rental receipts                          ___________
-  Less: allowable expenses (mortgage interest,
-        repairs, insurance, depreciation)        ___________
-  Net rental income                              ___________
-
-A4. TOTAL GENERAL BASE (A1 + A2 + A3)           ___________
-
-B. DEDUCTIONS FROM GENERAL BASE
-  B1. General expenses deduction (3%, max EUR 400)  ___________
-  B2. Dependent child / ascendant (EUR 750 each)    ___________
-  B3. Additional child deduction 2025 (EUR 1,000)   ___________
-  B4. Education supplement 2025 (EUR 300)           ___________
-  B5. Primary residence acquisition (50%, max EUR 5,000) ___________
-  B6. Affordable rental investment (50%, max EUR 5,000)  ___________
-  B7. TOTAL DEDUCTIONS                              ___________
-
-C. TAXABLE GENERAL BASE (A4 - B7)               ___________
-  (If spouse earns EUR 0, apply EUR 40,000 threshold)
-
-D. IRPF ON GENERAL BASE
-  D1. EUR 0–24,000 at 0%                         0.00
-  D2. EUR 24,001–40,000: gross 10% minus bonificació (max EUR 800) ___________
-  D3. Above EUR 40,000 at 10%                    ___________
-  D4. TOTAL IRPF GENERAL BASE (D1 + D2 + D3)    ___________
-
-E. SAVINGS TAX BASE (BASE DE L'ESTALVI)
-  E1. Interest income                            ___________
-  E2. Foreign dividends                          ___________
-  E3. Financial capital gains                    ___________
-  E4. Less: EUR 3,000 exemption                  (3,000.00)
-  E5. Taxable savings base (if positive)         ___________
-  E6. IRPF on savings base at 10%               ___________
-
-F. TOTAL IRPF DUE (D4 + E6)                     ___________
-  Less: withholding tax already deducted at source  ___________
-  NET IRPF PAYABLE / (REFUNDABLE)               ___________
-
-G. CASS SUMMARY
-  G1. Employee CASS paid (6.5% of gross salary)  ___________
-  G2. Employer CASS paid (15.5% — not taxpayer cost)  ___________
-  G3. Self-employed CASS quota paid (from bracket table)  ___________
-
-REVIEWER FLAGS:
-  [ ] Residency confirmed (≥183 days or principal economic interests)?
-  [ ] NRT verified?
-  [ ] Spousal income confirmed (if applying EUR 40,000 threshold)?
-  [ ] Dependent ages, cohabitation, and income documented?
-  [ ] Education enrollment documentation obtained?
-  [ ] Housing deduction primary-residence status confirmed?
-  [ ] IGI registration status confirmed?
-  [ ] CASS bracket appropriate to net income level?
-  [ ] All T2 items flagged for review?
-  [ ] Capital items treated correctly (not expensed)?
-  [ ] Entertainment and personal expenses excluded?
-```
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Andorran Bank Statement Formats
-
-**Andorran Bank Statement Formats**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Crèdit Andorrà | PDF, CSV | Data, Descripció, Càrrec, Abonament, Saldo | Most common; description contains counterparty + reference |
-| MoraBanc | PDF, CSV | Data valor, Concepte, Import, Saldo | Card transactions show merchant name |
-| Andbanc | PDF, CSV | Data, Detall, Dèbit, Crèdit, Saldo |  |
-| Banca Privada d'Andorra (BPA) | PDF | Data, Descripció, Import |  |
-| Vall Banc | PDF | Data, Concepte, Càrrec, Abonament |  |
-| Revolut Business | CSV | Date, Counterparty, Amount, Currency | Clean data; multi-currency possible — use EUR |
-| Wise Business | CSV | Date, Description, Amount, Currency | Multi-currency; conversion fees are separate line |
-
-### Key Andorran / Catalan Banking Terms
-
-**Key Andorran / Catalan Banking Terms**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRANSFERÈNCIA / TRF | Transfer | Check direction: abonament (credit) = income; càrrec (debit) = expense |
-| DOMICILIACIÓ / DOMICILIAT | Direct debit | Regular expense (utility, subscription, insurance) |
-| ORDRE PERMANENT | Standing order | Regular expense (rent, loan) |
-| TARGETA / PAGAMENT TARGETA | Card payment | Expense — check merchant name |
-| INGRÉS / ABONAMENT | Credit / deposit | Potential income |
-| COMISSIÓ / COMISSIONS | Bank commission / charges | Deductible (business account only) |
-| INTERESSOS CREDITORS | Credit interest | Savings base income |
-| INTERESSOS DEUTORS | Debit interest (overdraft) | Potentially deductible business finance cost |
-| RETIRADA / EXTRACCIÓ | Cash withdrawal | Ask what cash was spent on |
-| SALDO | Balance | Not income or expense |
-| PRÉSTEC / AMORTITZACIÓ | Loan / repayment | Loan principal = exclude; interest = check deductibility |
-| IMPOST IRPF | Income tax payment | NOT deductible |
-| CASS COTITZACIÓ | CASS contribution | IRPF deduction — separate line in working paper |
-| IGI LIQUIDACIÓ | IGI payment | NOT an income tax expense — exclude |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING — reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- ANDORRA IRPF
-1. Fiscal residency: have you been physically present in Andorra for ≥183 days in 2025?
-   If no, do you have your principal economic interests or family ties in Andorra?
-2. Employment status: employed by an Andorran employer, self-employed (autònom), or both?
-3. NRT (Número de Registre Tributari): please provide your NRT.
-4. Family situation: single, married/de facto partner? Does your partner earn income?
-   Do you have dependent children (under 25) or dependent ascendants (over 65)?
-   If yes, do they live with you and earn below EUR 12,000/year?
-   Are any of them enrolled in university in 2025?
-5. Home office: dedicated room or shared space? If dedicated, what % of floor area?
-6. Vehicle: do you use a car for business? If yes, what % is business use? Do you keep a mileage log?
-7. Phone/internet: what % is business use?
-8. CASS contributions: total amount paid in 2025? Which bracket were you on?
-9. IGI registration: are you registered for IGI? What is your annual turnover?
-10. Housing: did you purchase a primary residence in 2025? Do you have a mortgage?
-    Do you own property rented at affordable rates (≤EUR 12.45/m²)?
-11. Capital gains: did you sell any shares, real estate, or other assets in 2025?
-12. Any other income (foreign dividends, interest, foreign employment)?
-```
-
-## Section 10 -- Reference Material
-
-### Key Legislation and Authorities
-
-**Key Legislation and Authorities**
-
-| Topic | Reference |
-| --- | --- |
-| IRPF primary legislation | Llei 5/2014, del 24 d'abril, de l'impost sobre la renda de les persones físiques |
-| IRPF rates and brackets | e-tramits.ad (official filing portal); invicoandorra.com; andorra-solutions.com |
-| IRPF deductions (2025 measures) | lavallassociats.com; aaa.ad |
-| CASS contribution rates | cass.ad/cotitzacions-del-treballadors-per-compte-propi (official) |
-| CASS self-employed reduced regimes | elysiumconsultingfirm.com (citing Decree 16/2025) |
-| IGI legislation | Llei 11/2012 (IGI) |
-| Non-resident income tax (IRNR) | elysiumconsultingfirm.com/en/publications/the-non-resident-income-tax-nrit-irnr-in-andorra |
-| Double taxation agreements | elysiumconsultingfirm.com/en/publications/double-taxation-agreements-dta-in-andorra-2025-update |
-| Minimum wage (SMI 2025) | augelegalfiscal.com/en/minimum-wage-2025/ |
-| Criminal tax offences | Llei 15/2017; elysiumconsultingfirm.com/en/publications/tax-offence-in-andorra |
-| Filing contact | impostos@govern.ad / Tel: 147 or +376 885 005 |
-| CASS contact | public@cass.ad / +376 870 870 |
-
-### Double Taxation Agreements in Force (end-2025)
-
-21 DTAs following the OECD Model Convention:
-France (2015), Spain (2016), Luxembourg (2016), Portugal (2016), Liechtenstein (2016), UAE (2017), Malta (2017), Cyprus (2019), San Marino (2021), Hungary (2022), Monaco (2023), Czech Republic (2023), Croatia (2023), Iceland (2024), Netherlands (2024), South Korea (2025), Lithuania (2025), Montenegro (2025), Latvia (2025), Romania (2025), United Kingdom (2025).
-
-Source: elysiumconsultingfirm.com/en/publications/double-taxation-agreements-dta-in-andorra-2025-update
-
-### Other Andorran Taxes (Context)
-
-**Other Andorran Taxes (Context)**
-
-| Tax | Rate | Notes |
-| --- | --- | --- |
-| Corporate tax (IS) | 10% flat; 5% for new companies with net income ≤ EUR 50,000 |  |
-| IGI (indirect / VAT equivalent) | 4.5% standard; 0% / 1% / 2.5% / 9.5% special | See Section 5.8 |
-| Inheritance / gift tax | None | No filing required |
-| Wealth tax | None | No filing required |
-| Branch remittance tax | None |  |
-| Real-estate transfer tax (ITP) | [RESEARCH GAP — confirm rate with DTF; separate from IRPF gain] |  |
-
-### Penalties and Sanctions
-
-**Administrative (IRPF/IGI):**
-- Failure to file / failure to pay (no loss to treasury): EUR 150–EUR 3,000 (immigrantinvest.com)
-- Underpayment of tax (loss to treasury): 50%–150% of unpaid tax amount (immigrantinvest.com)
-- Late payment interest rate (2025): 4.06% per annum (updated annually)
-
-**Criminal tax fraud (Llei 15/2017):**
-- Basic offence: evasion ≥ EUR 75,000 AND ≥ 5% of total liability → 3 months to 3 years' imprisonment + fine 1×–4× defrauded amount
-- Aggravated offence: evasion ≥ EUR 150,000 AND ≥ 5% of total liability (or organised crime) → 1–5 years' imprisonment + fine 1×–4× defrauded amount
-- Voluntary regularisation before proceedings: eliminates criminal liability
-
-Source: elysiumconsultingfirm.com/en/publications/tax-offence-in-andorra-origin-functioning-and-application
-
-### Research Gaps and Confidence Notes
-
-**Research Gaps and Confidence Notes**
-
-| Topic | Confidence | Action Required |
-| --- | --- | --- |
-| IRPF brackets and rates (general base) | High — multiple sources confirm | Review annually for budget changes |
-| Savings base EUR 3,000 exemption | High | Review annually |
-| CASS employee 6.5% / employer 15.5% split | High | Review annually |
-| CASS self-employed brackets (100% base = EUR 2,672.52) | Medium-High — official cass.ad vs Decree 16/2025 discrepancy noted | Use cass.ad as filing reference; verify directly |
-| CASS ceiling for salaried employees | NOT CONFIRMED | Verify directly with CASS (public@cass.ad) |
-| 2025 deduction changes (housing, children, education) | High — lavallassociats.com; aaa.ad | Confirm operative date in Llei 5/2014 amendment |
-| Exact year-by-year real-estate CGT rate step-down | Low | Confirm exact schedule with DTF |
-| Andorran depreciation rates for capital assets | NOT CONFIRMED | Confirm with DTF or qualified Andorran advisor |
-| Real-estate transfer tax (ITP) | NOT CONFIRMED | Confirm rate and filing with DTF |
-| Disability deductions exact amounts | NOT CONFIRMED | Confirm with DTF: impostos@govern.ad |
-
-### Test Suite
-
-Input: Single, gross revenue EUR 20,000, expenses EUR 2,000, CASS at 50% bracket (EUR 335.57/month × 12 = EUR 4,026.84).
-Expected: Net income = EUR 20,000 − EUR 2,000 − EUR 4,026.84 = EUR 13,973.16. Less general deduction (3% = EUR 419.19, capped EUR 400) = EUR 13,573.16. Below EUR 24,000 → IRPF EUR 0.
-
-Input: Single, no dependants, gross revenue EUR 50,000, expenses EUR 10,000, CASS 100% bracket (EUR 587.95 × 12 = EUR 7,055.40).
-Expected: Net = EUR 50,000 − EUR 10,000 − EUR 7,055.40 = EUR 32,944.60. Less EUR 400 deduction = EUR 32,544.60. Tax: EUR 0 on EUR 0–24,000; band EUR 24,001–32,544.60 = EUR 8,544.60 × 10% = EUR 854.46 minus bonificació EUR 800 = EUR 54.46. Total IRPF = EUR 54.46.
-
-Input: Single, gross revenue EUR 75,000, expenses EUR 15,000, CASS 125% bracket (EUR 734.94 × 12 = EUR 8,819.28).
-Expected: Net = EUR 75,000 − EUR 15,000 − EUR 8,819.28 = EUR 51,180.72. Less EUR 400 = EUR 50,780.72. Tax: EUR 0 on EUR 0–24,000; EUR 24,001–40,000 (EUR 16,000): EUR 1,600 − EUR 800 = EUR 800; EUR 40,001–50,780.72 (EUR 10,780.72) × 10% = EUR 1,078.07. Total IRPF = EUR 1,878.07.
-
-Input: Married, spouse EUR 0 income. Taxpayer employment income EUR 38,000. Employee CASS: EUR 38,000 × 6.5% = EUR 2,470. Net = EUR 38,000 − EUR 2,470 = EUR 35,530. Less EUR 400 = EUR 35,130. Spousal relief raises threshold to EUR 40,000. EUR 35,130 < EUR 40,000 → IRPF EUR 0.
-
-Input: Foreign dividends EUR 12,000, no other savings income.
-Expected: Taxable savings base = EUR 12,000 − EUR 3,000 = EUR 9,000. IRPF at 10% = EUR 900.
-
-Input: Dividend from Andorran SL EUR 5,000.
-Expected: Fully exempt. IRPF EUR 0. Do not include in any base.
-
-Input: Self-employed, net income EUR 45,000 → 125% bracket.
-Expected: EUR 734.94/month × 12 = EUR 8,819.28/year. Verify: EUR 3,340.65 × 22% = EUR 734.94 ✓.
-
-Input: First-time registrant, month 1. Only general branch at 10% on 25% base = EUR 668.13 × 10% = EUR 66.81.
-Expected: Monthly CASS = EUR 66.81. Annual (12 months) = EUR 801.72. No pension points.
-
-## PROHIBITIONS
-
-- **Fiscal residency confirmation required** — NEVER compute IRPF without confirming fiscal residency status (≥183 days or principal economic interests)  _(PROHIBITIONS)_
-- **Spousal threshold requires written confirmation** — NEVER apply the EUR 40,000 spousal threshold without written confirmation that spouse earns EUR 0  _(PROHIBITIONS)_
-- **Andorran dividends exempt from any base** — NEVER include Andorran company dividends in any tax base — they are fully exempt  _(PROHIBITIONS)_
-- **IRPF not deductible as business expense** — NEVER deduct IRPF itself as a business expense  _(PROHIBITIONS)_
-- **Fines and penalties not deductible** — NEVER deduct fines or penalties  _(PROHIBITIONS)_
-- **Entertainment expenses not deductible** — NEVER allow entertainment expenses as a deduction  _(PROHIBITIONS)_
-- **IGI excluded from IRPF income** — NEVER include IGI collected in income for IRPF (net revenue basis for IGI-registered traders)  _(PROHIBITIONS)_
-- **Bonificació cap enforcement** — NEVER apply the bonificació above EUR 800 — the cap is EUR 800  _(PROHIBITIONS)_
-- **CASS always deductible from IRPF income** — NEVER omit the CASS contribution as a deduction from IRPF income — it is always deductible  _(PROHIBITIONS)_
-- **Use official CASS base figure** — NEVER use the secondary-source CASS base (EUR 2,560.99) for filing — use the official cass.ad figure (EUR 2,672.52) or verify directly  _(PROHIBITIONS)_
-- **CASS ceiling for salaried employees not confirmed** — NEVER confirm CASS ceiling for salaried employees without checking directly with CASS — no authoritative ceiling found  _(PROHIBITIONS)_
-- **Calculations must be labeled estimated** — NEVER present tax calculations as definitive — always label as estimated and require reviewer sign-off  _(PROHIBITIONS)_
-- **Advisor review required before filing** — NEVER file without a qualified Andorran advisor reviewing all figures  _(PROHIBITIONS)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+## Ask the client first
+
+- What are the year's presence, economic-interest, family and foreign-residence facts?
+- Which receipts are wages, business, rent, investments, benefits, grants or disposals, and when were they due/paid?
+- Which costs, CASS category/payments, assets, actual-use and prior-year elections are evidenced?
+- What establish spouse/dependant income, recognition, cohabitation, tuition, home and pension eligibility?
+- Which tax losses, communal/foreign credits, treaty documents, withholding and advance payments remain available?
+- For property, what establish ownership dates, tax basis/depreciation, improvements, deed/contract and reinvestment approval?
+
+## Sources
+
+| Source and read scope | URL | Read on |
+|---|---|---|
+| Law 5/2014, current consolidation: cited residence, income classes, expense/base, exemption, property, reduction, credit, withholding and return articles, additional provision 5 and final provision 5 | https://www.portaljuridicandorra.ad/L2014005 | 2026-10-27 |
+| Law 5/2014 version register, current thirteenth consolidation and application-date qualification | https://www.portaljuridicandorra.ad/L2014005_F | 2026-10-27 |
+| IRPF regulation of 29 December 2023, arts. 14, 18–19, 24–39 cited procedures | https://www.portaljuridicandorra.ad/R20231229D | 2026-10-27 |
+| Law 5/2025 art. 79 and fifth transition, property, rental and family amendments | https://www.portaljuridicandorra.ad/L2025005 | 2026-10-27 |
+| Corporate Law 95/2010 arts. 9–14, 18–19 and Annex I, imported business-base method | https://www.portaljuridicandorra.ad/L2010095 | 2026-10-27 |
+| General Tax Law 21/2014, arts. 23–25 and 125–132, interest/charges and sanctions | https://www.portaljuridicandorra.ad/L2014021 | 2026-10-27 |
+| Government explanation, qualifying rental reduction | https://www.govern.ad/ca/w/canvis-en-reglaments-alguns-impostos-derivats-llei-per-al-creixement-sostenible-dret-habitatge | 2026-10-27 |
+| Budget Law 1/2026 art. 17, annual legal and tax late-interest rates | https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
+
+The legal portal consolidations expressly lack official legal status; their current/historical text is provided through the BOPA service. The cited amendment is separately checked. Exact retrievals and article-read limits are in the country research record. The independent source and preservation review, including its repair closure, is recorded in [country research](../../research/andorra-2026/research.md). This remains a source-cited draft without licensed-accountant attestation, and the exact dependent-income benchmark below remains unconfirmed.
+
+Not yet confirmed: The old share-gain 50% relief for five-to-ten-year holdings is not established by current article 5(k); use its actual ownership/holding exemption instead. The precise 2026 annual dependent-income minimum-wage benchmark after the July wage change needs the applicable annual figure; do not silently compare annual income to one monthly salary or reuse the 2025 annual amount. The old fixed 12.45/m² affordable-rent qualification, the separate immigration/deposit and wealth/other-property-tax claims, including the old fixed 50,000 deposit statement, are not established here. Verify the actual regulated affordable-home classification before article 38 bis relief. The old criminal-fraud claims (EUR 75,000/EUR 150,000 plus 5% tests, three-month-to-three-year or one-to-five-year imprisonment, one-to-four-times fines and automatic voluntary-regularisation immunity) have not been verified against the current Criminal Code and are not applied. Blanket absence of inheritance/gift/wealth/branch-remittance tax and no-filing claims are not established by this IRPF scope. The legacy simplified-IGI EUR 100,000 threshold is outside the ordinary IGI method and requires its actual special-regime conditions. Historic dividend and optional special-regime transitions, and case-specific treaty results are outside the ordinary computations. The ordinary CASS pension contribution-history reduction is supplied above. Article 5(r)'s closing reference to two years does not reconcile its stated four-year habitual-home condition; follow the actual prior approval and obtain clarification for a disputed period. No blanket no-filing or no-tax conclusion is made for those separate regimes.
+
+[law]: https://www.portaljuridicandorra.ad/L2014005
+[reg]: https://www.portaljuridicandorra.ad/R20231229D
+[cit]: https://www.portaljuridicandorra.ad/L2010095
+[general]: https://www.portaljuridicandorra.ad/L2014021
+[budget]: https://www.portaljuridicandorra.ad/L2026001
+[housing]: https://www.portaljuridicandorra.ad/L2025005
 
 <!-- openaccountants-cta-block -->
 

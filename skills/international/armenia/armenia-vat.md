@@ -7,15 +7,9 @@ tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-category: international
-sources:
-  - https://www.arlis.am/hy/acts/215611/latest
-  - https://www.arlis.am/en/acts/231892
-  - https://www.arlis.am/hy/acts/226008
-  - https://www.arlis.am/hy/acts/175524
-  - https://www.arlis.am/hy/acts/231429
 ---
 
 # Armenia VAT: ordinary 2026 computation and evidence
@@ -260,7 +254,6 @@ expected:
 | Actual 1562-L: all 4 pages, form, instructions and 1 January 2025 commencement | https://www.src.am/storage/menu_contents_227/hr_pek_2024_1562_L_6757f76f7ac17.pdf | 2026-10-25 |
 | Actual 1561-L: complete 1 page repeal and 1 January 2025 commencement | https://www.src.am/storage/menu_contents_227/hr_pek_2024_1561_L_6757f76f8377e.pdf | 2026-10-25 |
 
-
 | Fresh native 73(6)/122 and current 1261-N complete loss-documentation method; 1467-N operative schedule lookup and Annex 2 method; exact scope in loss-debt-research.md | https://www.arlis.am/hy/acts/215611/latest ; https://www.arlis.am/hy/acts/171651/latest ; https://www.arlis.am/hy/acts/127175/latest |2026-10-26|
 
 [code]: https://www.arlis.am/hy/acts/215611/latest
@@ -280,8 +273,6 @@ expected:
 [studyform]: https://www.src.am/storage/menu_contents_227/hr_pek_2024_1562_L_6757f76f7ac17.pdf
 [studyrepeal]: https://www.src.am/storage/menu_contents_227/hr_pek_2024_1561_L_6757f76f8377e.pdf
 
-
-
 Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https://www.arlis.am/hy/acts/226008) is the general 1 July 2026 commencement and enumerated 1 January 2027 exception provision. Article 31 instead amends Tax Code 293(2); it is not the commencement authority. Other source read dates remain as recorded.
 
 [lossdocs]: https://www.arlis.am/hy/acts/171651/latest
@@ -289,6 +280,8 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 [naturalloss]: https://www.arlis.am/hy/acts/127175/latest
 
 **Not yet confirmed:** return-period/restoration mapping when the exporter fails its own required export-declaration deadline. Ordinary timely-export proof and filing are supplied; the buyer statement missing alone is not that failure. The unresolved late-filing recovery is a conditional failure boundary, not a missing ordinary timely-export method. Ordinary loss classification/documentation, current norm lookup and annual VATtrue-up are supplied in the corporate/VAT methods. Specialist exemption/base/vehicle/leasing schemes and January 2027 implementation are separate boundaries. Actual taxpayer evidence, portal acceptance and professional attestation are not represented as obtained; fresh whole-pack review remains pending.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-capital-gains"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -62,7 +62,7 @@ Out of scope here: assets held in a business or company (de-einkommensteuer-free
 - **Church tax.** For a church member the flat tax is reduced by 25% of the church tax, which gives tax = (e - 4q) / (4 + k), where e is the income, q the creditable foreign tax and k the church-tax rate ([§ 32d(1) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)). The rate k is set by state law; confirm it for the client's state. Banks withhold church tax unless the client blocked the data transfer, in which case the client declares it ([§ 51a EStG](https://www.gesetze-im-internet.de/estg/__51a.html)).
 - **Solidarity surcharge.** 5.5% of the flat tax. The exemption threshold that frees most salary earners does not help: on bank withholding the threshold test in [§ 3(3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) leaves out tax under § 32d(3) and (4) EStG, so the 5.5% ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)) is charged on the flat tax in full.
 - **Foreign withholding tax** is credited against the flat tax, capped per item of income (§ 32d(5) EStG). Treaty refund cases go to de-treaty-withholding-rates.
-- **Bought before 2009.** Gains on shares bought before 1 January 2009 are outside the flat tax unless § 17 applies ([§ 52(28) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). Fund units bought before 2009 and held privately: growth to 31 December 2017 is tax-free; later growth is taxable only above a one-time EUR 100,000 allowance ([§ 56(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__56.html)).
+- **Bought before 2009.** Gains on shares bought before 1 January 2009 are outside the flat tax unless § 17 applies ([§ 52(28) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). Derivatives and other securities have their own start dates in the same paragraph: for a Termingeschäft the right must have been acquired after 31 December 2008 (§ 52(28) sentence 12 EStG). Fund units bought before 2009 and held privately: growth to 31 December 2017 is tax-free; later growth is taxable only above a one-time EUR 100,000 allowance ([§ 56(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__56.html)).
 
 **Loss pots** ([§ 20(6) EStG](https://www.gesetze-im-internet.de/estg/__20.html)).
 
@@ -81,7 +81,8 @@ Out of scope here: assets held in a business or company (de-einkommensteuer-free
 3. Lump sum = base return less the year's distributions, never below zero.
 4. In the year of purchase, cut by one twelfth for each full month before the month of purchase.
 5. It counts as received on the first working day of the next year. The 2026 lump sum (Basiszins 3.20%) is taxed in 2027; the 2025 lump sum (2.53%) was taxed in 2026.
-6. On a sale, lump sums already taxed are deducted from the gain ([§ 19(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). With a foreign broker the client tracks them.
+6. The fund's Teilfreistellung applies to the lump sum, as it is part of the fund's income ([§ 16(1) no. 2](https://www.gesetze-im-internet.de/invstg_2018/__16.html) and [§ 20(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). A German bank that holds the units collects the tax from the client's account or sets it against the allowance ([§ 44(1) and (1b) EStG](https://www.gesetze-im-internet.de/estg/__44.html)).
+7. On a sale, lump sums already taxed are deducted from the gain ([§ 19(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). With a foreign broker the client tracks them.
 
 **Large holdings (§ 17 EStG).** A sale of shares in any company, German or foreign, is business income if the seller held at least 1%, directly or indirectly, at any time in the five years before the sale ([§ 17(1)](https://www.gesetze-im-internet.de/estg/__17.html): "zu mindestens 1 Prozent beteiligt war"). A holding cut below 1% still counts, and gifted shares count if the giver met the test. Liquidation and capital repayments count as a sale (§ 17(4)). Under the partial-income method (Teileinkünfteverfahren), 60% of the price less 60% of cost and selling costs is taxable ([§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)), less the allowance: the share sold of EUR 9,060, cut by the gain above the same share of EUR 36,100. The result joins other income at the normal rate. A loss is 60% deductible and can offset other income, but is barred in part for shares received free or not in a qualifying holding for the full five years (§ 17(2)).
 
@@ -90,7 +91,7 @@ Out of scope here: assets held in a business or company (de-einkommensteuer-free
 **Private sales (§ 23 EStG).**
 
 - Land and buildings sold "nicht mehr als zehn Jahre" after purchase; other assets (crypto, gold, foreign currency, collectibles) sold "nicht mehr als ein Jahr" after purchase ([§ 23(1)](https://www.gesetze-im-internet.de/estg/__23.html)). Exactly one year is still taxable.
-- Property is outside § 23 if the owner lived in it exclusively between purchase and sale, or in the year of sale and the two years before. Everyday objects are outside § 23.
+- Property is outside § 23 if the owner lived in it exclusively between purchase and sale, or in the year of sale and the two years before (§ 23(1) no. 1 sentence 3: "ausschließlich zu eigenen Wohnzwecken oder im Jahr der Veräußerung und in den beiden vorangegangenen Jahren"). Letting it out at any point breaks the first test; the second test looks only at the three calendar years ending with the sale. Everyday objects ("Gegenstände des täglichen Gebrauchs") are outside § 23 (§ 23(1) no. 2 sentence 2).
 - Gain = price less cost and sale costs; for a let property, cost is reduced by depreciation claimed (§ 23(3)).
 - **Freigrenze.** Gains stay tax-free if the total private-sales gain in the calendar year is "weniger als 1 000 Euro" (§ 23(3) sentence 5). It is a cliff: at EUR 1,000 or more the whole gain is taxed. The EUR 1,000 limit applies from 2024 ([Wachstumschancengesetz, BGBl. 2024 I Nr. 108](https://www.recht.bund.de/bgbl/1/2024/108/VO.html), Art. 2 no. 5, in force from 1 January 2024 under Art. 35(4)); for 2023 and earlier the gain had to be below EUR 600.
 - Losses only offset private-sales gains of the same year, the year before or later years.
@@ -185,6 +186,66 @@ expected:
   total: 834.55
 ```
 
+**Example 3: losses at two banks.** In 2026 the client lost EUR 3,000 selling shares at bank A and gained EUR 5,000 selling shares at bank B. Bank B withholds on the EUR 5,000 (less any allowance used there). The client asks bank A for a loss certificate by 15 December 2026 and files Anlage KAP; the tax office sets the EUR 3,000 against the share gain at bank B and refunds the excess tax ([§ 43a(3) EStG](https://www.gesetze-im-internet.de/estg/__43a.html), § 20(6) sentence 5). Without the certificate the loss stays at bank A and is carried into 2027 there.
+
+**Example 4: Vorabpauschale on an equity ETF.** An accumulating equity ETF was worth EUR 50,000 on 1 January 2026 and rose by more than EUR 1,120 over 2026, with no distributions. Base return: EUR 50,000 x 70% x 3.20% = EUR 1,120. Teilfreistellung 30%, so EUR 784 is taxable. It counts as received on the first working day of 2027 ([§ 18 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__18.html), [§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same holding for 2025 gave EUR 50,000 x 70% x 2.53% = EUR 885.50, received early in 2026.
+
+```oa-check
+name: DE Vorabpauschale 2026 and 2025, equity ETF
+inputs:
+  start_value: 50000
+  basiszins_2026: 0.032
+  basiszins_2025: 0.0253
+  teilfreistellung: 0.30
+steps:
+  - base_2026: start_value * 0.70 * basiszins_2026
+  - taxable_2026: base_2026 * (1 - teilfreistellung)
+  - base_2025: start_value * 0.70 * basiszins_2025
+expected:
+  base_2026: 1120
+  taxable_2026: 784
+  base_2025: 885.50
+```
+
+**Example 5: crypto and the Freigrenze cliff.** Bitcoin bought 1 March 2025 for EUR 10,000 and sold 15 February 2026 for EUR 10,900: a gain of EUR 900 within one year. With no other private sales the total is below EUR 1,000, so it is tax-free. If the client also sold gold within a year at a EUR 200 gain, the total is EUR 1,100 and the whole EUR 1,100 is taxed at the normal rate. Sold on 2 March 2026, more than one year after purchase, the Bitcoin would be outside § 23 ([§ 23(1) no. 2 and (3) EStG](https://www.gesetze-im-internet.de/estg/__23.html)).
+
+**Example 6: selling a 2% stake.** The client sells a whole 2% holding in a GmbH for EUR 100,000; cost EUR 40,000, no selling costs. Taxable: 60% of EUR 100,000 less 60% of EUR 40,000 = EUR 36,000. The allowance for 2% is 2% of EUR 9,060 = EUR 181.20, cut by the amount the gain exceeds 2% of EUR 36,100 (EUR 722), so it is nil. EUR 36,000 joins the client's other income ([§ 17(3) EStG](https://www.gesetze-im-internet.de/estg/__17.html), [§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)).
+
+```oa-check
+name: DE § 17 sale of a 2% stake, allowance fully cut
+inputs:
+  price: 100000
+  cost: 40000
+  share: 0.02
+steps:
+  - gain: price * 0.60 - cost * 0.60
+  - allowance_start: 9060 * share
+  - cut_threshold: 36100 * share
+  - allowance: max(allowance_start - max(gain - cut_threshold, 0), 0)
+  - taxable: gain - allowance
+expected:
+  gain: 36000
+  allowance_start: 181.20
+  cut_threshold: 722
+  allowance: 0
+  taxable: 36000
+```
+
+**Example 7: selling a flat.** A flat bought in 2018 was let until 2023 and lived in by the owner from January 2024 until its sale in June 2026. It was the owner's home in the year of sale and the two years before, so the gain is outside § 23 even though the sale is within ten years. Had it still been let at the sale, the whole gain would be taxed at the normal rate (§ 23(1) no. 1 sentence 3 EStG).
+
+## When to refer
+
+Refer to a German Steuerberater when:
+
+- The client is leaving Germany, or giving shares to someone abroad, with a holding of 1% or more or large fund holdings ([§ 6 AStG](https://www.gesetze-im-internet.de/astg/__6.html)); the exit tax needs a valuation and the holding history.
+- Assets are held in a business, a partnership or a company.
+- The case turns on a tax treaty, or on crediting foreign tax beyond the per-item cap.
+- Crypto goes beyond buying, selling and swapping: staking, lending, mining, DeFi, NFTs, or tokens that work like securities.
+- A § 17 sale involves a loss, shares received as a gift, a capital reduction or a liquidation.
+- The client wants the § 32d(2) no. 3 option, which runs for four more years unless revoked and cannot be made again after revocation.
+
+Do not state a combined flat-tax rate with church tax without the client's state church-tax rate, and do not estimate a Vorabpauschale without the fund's actual prices.
+
 ## Ask the client first
 
 - Are the assets held privately or in a business, and are you married and assessed jointly?
@@ -240,4 +301,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-capital-gains` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-capital-gains. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-capital-gains` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-capital-gains. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -12,14 +12,6 @@ depends_on:
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - https://www.arlis.am/hy/acts/215611/latest
-  - https://www.arlis.am/hy/acts/224823
-  - https://www.arlis.am/hy/acts/172160
-  - https://www.arlis.am/hy/acts/230046
-  - https://www.arlis.am/hy/acts/230432
-  - https://www.arlis.am/hy/acts/223829
-  - https://www.arlis.am/hy/acts/231489
 ---
 
 # Armenia payroll: 2026 ordinary salary and statutory reconciliation
@@ -108,7 +100,6 @@ Let **M** be the benefit-law minimum: the Minimum Wage Law Article 1 amount plus
 
 For the ordinary 20% branch, **0.5 M = 46,875**, **5 M = 468,750**, **10 M = 937,500** and **15 M = 1,406,250** AMD. The Ministry's historical 2015 worked examples likewise used an income-tax-inclusive minimum above the tax-exclusive wage figure; those historical numbers are not 2026 rates or caps. Current 2026 assignment and calculation belong to the Unified Social Service under Article 24: use its notified employer-funded amount for payment and reconcile the underlying period, statutory base and population. Correct disputed underlying records/calculations through the Service process rather than silently replacing its notice with a private calculator. [22/24][benefitlaw]; [1024-N Annex 5, 3/9/17–20/29][benefitprocedure]; [Ministry 2015 explanation, historical context only][historicalbenefit]
 
-
 Let **A** be the statutory average monthly salary/income computed above. Apply these tests before daily conversion. [22(1)–(6)][benefitlaw]
 
 | Population / benefit | Monthly calculation base |
@@ -120,7 +111,6 @@ Let **A** be the statutory average monthly salary/income computed above. Apply t
 **Self-employed overrides come first.** Under current **1024-N Annex 5(17)(2)**, a person in the turnover-tax system when incapacity arises has the benefit calculated from **0.5 M**, regardless of a higher prior-year general-system average. Paragraph **17(3)** likewise uses 0.5 M where the prescribed preceding-year profit-tax base is absent; apply 17(1) for its separate below-minimum preceding-year case. These rules override the ordinary average/percentage/cap row; they are not permission to invent a prior-year base. Ordinary self-employed maternity also requires activity suspension for the entitlement period under **12(2)**, except the expressly stated Benefits Law **4(3.1)(2)–(3)** cases. Paragraphs 13–15 separately govern those maternity exceptions and combined employee/self-employed income; do not deny every maternity case merely because no profit tax was paid. Confirm the tax regime, prior-year base, dates and reported suspension before calculating. [1024-N Annex 5(12)–(18)][benefitprocedure]; [4(3.1)–(3.2), 22][benefitlaw]
 
 For an algebraic illustration, A = **0.55 M** gives employee sickness base **0.44 M**, while A = **0.4 M** triggers base **0.5 M**. Do not impose a floor on every result after applying 80%. Divide the applicable monthly base by **30.4**, then multiply by eligible calendar days, splitting employer/state days for sickness. This differs from leave's /21 or /25. The Service's actual calculation must reconcile to the statutory inputs and the relevant tax-inclusive M. [22(1)–(6), (15)–(20)][benefitlaw]
-
 
 Ordinary maternity leave is **140 calendar days**, **155** for the specified complicated birth and **180** for multiple birth, with the adoption/early-birth/surrogacy branches. Government Annex 5(20) sets the minimum **total** maternity amount at **(50% × M) / 30.4 × 140 days**, or **70 days for its premature-birth case**. At ordinary M = 93,750, the 140-day minimum is **215,871.710526… AMD before payment rounding and PIT**, not a rounded net payment. Compare the calculated maternity total with the applicable minimum; do not use 140 days to replace the actual 155/180-day entitlement. Sick leave during unpaid or child-care leave and the self-employed suspended/micro/border-exempt cases have their specified denial/exception rules; maternity's self-employed exception is separate. [Labour 172][labour]; [Benefits Law 4, 11, 22][benefitlaw]; [1024-N Annex 5, 12–20, 25–26][benefitprocedure]
 
@@ -136,7 +126,6 @@ PIT is calculated from these statutory incapacity/maternity benefits under Code 
 [minimumfaq]: https://welfare.gov.am/labor-legislation-faq
 [historicalbenefit]: https://old.mlsa.am/?p=4879
 [benefitprocedure]: https://www.arlis.am/hy/acts/196905/latest
-
 
 ## Deadlines and filing
 
@@ -252,7 +241,6 @@ expected:
 
 Read/reused 24 October 2026:
 
-
 [code]: https://www.arlis.am/hy/acts/215611/latest
 [pension]: https://www.arlis.am/hy/acts/224823
 [stamp]: https://www.arlis.am/hy/acts/230046
@@ -261,13 +249,14 @@ Read/reused 24 October 2026:
 [form]: https://www.arlis.am/hy/acts/223829
 [form-amend]: https://www.arlis.am/hy/acts/231489
 
-
 [salarylist]: https://www.arlis.am/hy/acts/126230/latest
 [healthaccounts]: https://www.uhif.am/am/requisites
 
 Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16 and 45(1)(8)](https://www.arlis.am/hy/acts/230432/latest) expressly defer article 16 until 1 January 2027. Other source read dates remain as recorded.
 
 **Not yet confirmed:** operative Government procedure/commencement for Health 14(12) mistaken/no-liability payments and the specified suspended/age-65 entrepreneur refund implementation. Ordinary working-time, minimum-pay, leave and termination methods and the current statutory health transition are supplied; the ordinary benefit method now states the explicit statutory tax-inclusive calculation and uses the Service notice for payment, with the statutory inputs reconciled separately. Specialist employment/R&D/foreign-status branches, actual portal signatures/rounding/acceptance and enforcement/remedies remain separate boundaries. These are conditional exceptional-payment/refund boundaries, distinct from the ordinary contribution/payroll method and supplied participant-excess procedure. No country approval or professional attestation is claimed.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

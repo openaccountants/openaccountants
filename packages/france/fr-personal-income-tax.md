@@ -14,10 +14,10 @@ description: >
   results in depth (fr-income-tax), social contributions (fr-social-contributions),
   gains on securities (fr-capital-gains), rental income (fr-rental-income), crypto
   (fr-crypto-tax), leaving France (leaving-france-exit-tax), audits (fr-tax-audit).
-version: 1.1
+version: 1.2
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -94,11 +94,11 @@ Self-employed results in depth are in `fr-income-tax`; social contributions in `
 | Micro-foncier (CGI art. 32) | Gross rent up to EUR 15,000; 30% allowance | Income of 2025 | https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
 | Retirement savings (PER) deduction ceiling per person | 10% of last year's net professional income; max EUR 37,094, min EUR 4,637 (paid 2025); max EUR 37,680, min EUR 4,710 (paid 2026) | 2025 and 2026 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf |
 | Maintenance to an adult child, deduction limit | EUR 6,855 per child; EUR 13,710 if the payer alone supports the child's household | Income of 2025 | same |
-| Gifts to bodies of general interest (reduction) | 66%, base capped at 20% of taxable income | Income of 2025 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/aide_memoire.pdf |
+| Gifts to bodies of general interest (reduction) | 66%, base capped at 20% of taxable income; gifts above the cap are carried to the next 5 years (aide-mémoire, note 18: "Les dons excédant ce plafond sont reportés sur les 5 années suivantes") | Income of 2025 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/aide_memoire.pdf |
 | Gifts to bodies helping people in difficulty (reduction) | 75%, base EUR 1,000 for gifts 1 Jan to 13 Oct 2025, EUR 2,000 for the year if gifts were made 14 Oct to 31 Dec 2025 | Income of 2025 | same |
 | Union dues (credit) | 66%, base capped at 1% of salaries and pensions | Income of 2025 | same |
 | Home help credit (CGI art. 199 sexdecies) | 50% of expenses up to EUR 12,000 (+EUR 1,500 per child, EUR 750 in alternating residence, per member over 65; overall max EUR 15,000); first year EUR 15,000 (max EUR 18,000); EUR 20,000 where an invalidity condition is met | Income of 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F12 |
-| January advance of the home help and childcare credits | 60% of the credit received the year before | Paid January 2026 | same |
+| January advance of the home help and childcare credits | 60% of the credit received the year before; an advance that turns out too high is repaid in September (F12: "vous devrez rembourser le trop-perçu en septembre") | Paid January 2026 | same |
 | Childcare credit, child under 6 (CGI art. 200 quater B) | 50% of costs up to EUR 3,500 per child (EUR 1,750 in alternating residence) | Income of 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F8 |
 | Overall cap on tax advantages (CGI art. 200-0 A) | EUR 10,000, raised by EUR 8,000 for overseas investment and SOFICA reductions | Income of 2025 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/plafonnement.pdf |
 | Withholding default grid, metropolitan France and abroad (CGI art. 204 H, III-1-a) | 0% below EUR 1,635 a month, rising to 43% at EUR 55,558 and above | From 1 May 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000033779948/2026-10-24 |
@@ -250,6 +250,22 @@ expected:
   levies_if_2026: 1860.00
 ```
 
+**Example 3: the décote, single person, income of 2025.** A single person (1 share) has net taxable income of EUR 20,000. The scale gives (20,000 - 11,600) x 11% = EUR 924. That is below the EUR 1,982 single-person threshold, so the décote is EUR 897 less 45.25% of EUR 924 (EUR 418.11): EUR 478.89. The tax after the décote is EUR 445.11 (CGI art. 197, I-4-a; BOFiP BOI-IR-LIQ-20-20-30-20260407).
+
+```oa-check
+name: France 2026 return, single person, décote, income of 2025, RNI EUR 20,000
+inputs:
+  rni: 20000
+steps:
+  - gross_tax: (min(rni, 29579) - 11600) * 0.11
+  - decote: min(max(897 - gross_tax * 0.4525, 0), gross_tax)
+  - tax: gross_tax - decote
+expected:
+  gross_tax: 924.00
+  decote: 478.89
+  tax: 445.11
+```
+
 ## Ask the client first
 
 - Were you resident in France for tax purposes for all of 2025? A non-resident is taxed only on French-source income at a minimum rate, and a part-year resident needs a referral.
@@ -258,6 +274,8 @@ expected:
 - Did you receive dividends, interest or gains on securities, and in which year? The year sets the social levies (17.2% or 18.6%), and the option for the scale changes the whole investment computation.
 - Is your reference income near EUR 250,000 (single) or EUR 500,000 (couple)? The CEHR and the CDHR then apply.
 - Did you receive a one-off sum (severance pay, arrears, an exceptional bonus)? The quotient system applies only if you ask for it on the return.
+
+Defaults while waiting for answers (OpenAccountants working practice): single, 1 share; no children; investment income under the flat tax, no option for the scale; no credit applied where eligibility is unclear; the household withholding rate on the last avis d'impôt; unemployment benefit or salary unclear, apply the 10% salary deduction either way and use the line the payer's statement names.
 
 ## Sources
 

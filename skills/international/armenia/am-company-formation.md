@@ -3,23 +3,13 @@ name: am-company-formation
 description: "Use for ordinary Armenian limited liability company formation in 2026, founder and foreign-document requirements, charter capital, contributions, registration periods and first compliance steps. Covers natural and legal founders, a sole founder, paper and information-system routes, tax-regime statements and beneficial-owner filing dates. Trigger on Armenia LLC, company registration, share capital, founder documents, beneficial ownership or incorporation timing. Distinguishes a statutory processing period from an accepted application and company registration from permission for a regulated activity. Checked against the law; state duties, complete electronic identification, AML classification, accounts and sector-specific implementation remain to be confirmed. No named Armenian professional has attested this Guide."
 version: 0.2
 jurisdiction: AM
-category: formation
 tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://www.arlis.am/hy/acts/218933"
-    title: "Current Law on State Registration, Articles 17, 34, 35 and 60.1–60.3"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/207710/latest"
-    title: "Current Law on Limited Liability Companies"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Tax Code, Articles 254 and 267"
-    as_of: "2026-10-24"
 ---
 
 # Armenia LLC formation and first compliance steps v0.2
@@ -56,7 +46,6 @@ The annual results meeting must be held at least once a year and within two to s
 
 Confirm the actual activity and licences; founder identity and document certification; registered office and director; state-duty amount; accepted online identification route; applicable tax-regime filing; beneficial-owner analysis under AML rules; accounting and financial-statement rules; and immigration or employment permissions. This guide does not confirm a filing acceptance, fee, bank account, permit or professional sign-off.
 
-
 ## Sources
 
 | Official source and retained original read scope | URL | Read on |
@@ -68,6 +57,8 @@ Confirm the actual activity and licences; founder identity and document certific
 The read dates above are retained from the preserved draft and its initial source review; this structural correction does not claim a fresh full-law read.
 
 **Not yet confirmed:** Complete state-duty, electronic-identity, AML, accounts and regulated-sector implementation; actual filing acceptance and named professional attestation.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

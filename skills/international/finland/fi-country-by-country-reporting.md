@@ -2,12 +2,15 @@
 name: fi-country-by-country-reporting
 description: >
   Prepare Finland country-by-country tax reporting and reporting-entity notifications for 2026 periods. Determine the group or standalone-with-PE threshold, ultimate-parent, secondary or surrogate role and the separate notification duty. Covers statutory foreign-parent failure conditions, information refusal, currency thresholds, jurisdictional revenue and tax aggregation, equity, employees, tangible assets and constituent-entity identifiers. Distinguish consolidated sales used for the threshold from country rows in the report. Includes MyTax and CSV preparation, report and notification deadlines, exchange evidence and sanctions. Trigger on CbCR, DAC4, maakohtainen raportti, reporting entity, EUR 750 million group or Finnish secondary reporting. Public company-law reporting and Pillar Two returns are separate obligations.
-jurisdiction: FI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.6
+jurisdiction: FI
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland country-by-country reporting v0.6
@@ -145,3 +148,23 @@ Not yet confirmed: no taxpayer-specific foreign exchange relationship or filing 
 [notification]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/notification-of-the-reporting-entity-how-to-file-the-notification-in-mytax/
 [detail]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/49771/verotuksen-maakohtainen-raportti3/
 [csv]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/country-by-country-reporting-guidance-for-generating-csv-files/
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

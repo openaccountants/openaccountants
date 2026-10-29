@@ -264,6 +264,8 @@ Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remu
 [travel-2026]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
 [travel-trader]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48192/liikkeen-ja-ammatinharjoittajien-seka-maataloudenharjoittajien-matkakustannusten-vahentaminen/
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -281,9 +283,3 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
-
-[ax-law]: https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119
-[ax-media-law]: https://www.regeringen.ax/alandsk-lagstiftning/alex/2019103
-[ax-media]: https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/89754/medieavgift-i-landskapet-%C3%A5land4/
-
-[health-detail]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/338472/vakuutetun-sairausvakuutusmaksu2/

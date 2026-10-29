@@ -7,13 +7,15 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-payments-on-account"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
 # UK payments on account (2026-27)
+
+## UK payments on account: Self Assessment skill v3.4
 
 > **Source-cited draft.** Built from the Taxes Management Act 1970 (TMA 1970) ss. 59A, 59B and 86, the Income Tax (Payments on Account) Regulations 1996 (SI 1996/1654) as amended in 1997 and 2008, Finance Act 2009 Schedule 56 and HMRC pages on GOV.UK, all read on 2026-10-24 or 2026-10-26. No accountant has reviewed it. Do not file from it without review by a qualified UK professional.
 
@@ -77,8 +79,8 @@ Sources: TMA 1970 ss. 59A(2) and 59B(4); [payments on account](https://www.gov.u
 - **Weekends and holidays.** Interest runs from the due date even if it is not a business day (s. 86(3)). Payments not made by Faster Payments or card should reach HMRC by the last working day before.
 - **Reducing payments: SA303.** If this year's bill will be lower, the person can claim, before 31 January after the year, that the payments be cut to 50% of a stated lower amount, or to nil (s. 59A(3), (4)). The claim states the grounds. It is made online ("Reduce payments on account" in the HMRC online account) or on form SA303 by post. HMRC repays or adjusts amounts already paid (s. 59A(5)).
 - **A wrong claim costs interest.** If the bill turns out higher, interest runs from the original dates as if each payment had been the lower of (a) the reduced payment plus half the balancing payment and (b) the payment that was due before the claim (s. 86(4)-(5)). A fraudulent or negligent claim also carries a penalty up to the shortfall it caused (s. 59A(6)).
-- **Making Tax Digital for Income Tax.** From 6 April 2026 sole traders and landlords with 2024-25 qualifying income over GBP 50,000 send quarterly updates through software (thresholds in the table above). The quarterly updates report figures; they do not collect tax. Payments on account stay on 31 January and 31 July, the base stays last year's bill, the year still ends with a return due 31 January, and SA303 claims still work.
-- **Paying.** HMRC online account, bank transfer, card, Direct Debit, or a budget payment plan ahead of the date. Anyone who cannot pay should contact HMRC about a Time to Pay arrangement; interest still runs ([pay your Self Assessment bill](https://www.gov.uk/pay-self-assessment-tax-bill)).
+- **Making Tax Digital for Income Tax.** From 6 April 2026 sole traders and landlords with 2024-25 qualifying income over GBP 50,000 send quarterly updates through software (thresholds in the table above). The quarterly updates report figures; they do not collect tax. For a standard tax year the update deadlines are 7 August (6 April to 5 July), 7 November (to 5 October), 7 February (to 5 January) and 7 May after the year (to 5 April) ([send quarterly updates](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates)). For 2026-27 that is 7 August 2026, 7 November 2026, 7 February 2027 and 7 May 2027. None of these dates is a payment date. Payments on account stay on 31 January and 31 July, the base stays last year's bill, the year still ends with a return due 31 January, and SA303 claims still work.
+- **Paying.** HMRC online account, bank transfer, card, Direct Debit, or a budget payment plan ahead of the date. Anyone who cannot pay should contact HMRC about a Time to Pay arrangement; interest still runs ([pay your Self Assessment bill](https://www.gov.uk/pay-self-assessment-tax-bill)). Inside MTD for Income Tax, if a payment plan is agreed and the payments are made, late payment penalties are paused from the date the person contacted HMRC; a penalty can still be charged if no plan is agreed or the plan is not kept ([MTD penalties](https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax)).
 
 ## Penalties and interest
 
@@ -158,6 +160,90 @@ expected:
   interest_total: 174.85
 ```
 
+**Example 3: the two tests (threshold cases).** All figures are for the 2025-26 return, setting 2026-27 payments.
+- Relevant amount GBP 850 (or GBP 980): under GBP 1,000, so no payments on account. The whole amount is paid with the balancing payment on 31 January 2027 (s. 59A(1)(c); reg 3).
+- Assessed GBP 20,000, GBP 17,000 deducted at source, relevant amount GBP 3,000: 85% was collected at source, so no payments on account even though GBP 3,000 is over GBP 1,000 (s. 59A(1)(d); reg 4).
+- An employee with a side trade: assessed GBP 18,000, GBP 14,000 through PAYE. Only 77.8% at source, so payments on account apply: relevant amount GBP 4,000, each payment GBP 2,000.
+
+```oa-check
+name: The 80% at-source test, 2025-26 figures setting 2026-27 payments
+inputs:
+  assessed_a: 20000
+  at_source_a: 17000
+  assessed_b: 18000
+  at_source_b: 14000
+steps:
+  - at_source_share_a: round(at_source_a / assessed_a, 4)
+  - at_source_share_b: round(at_source_b / assessed_b, 4)
+  - relevant_b: assessed_b - at_source_b
+  - each_poa_b: relevant_b / 2
+expected:
+  at_source_share_a: 0.8500
+  at_source_share_b: 0.7778
+  relevant_b: 4000.00
+  each_poa_b: 2000.00
+```
+
+**Example 4: excluded items taken out (edge case).** A 2025-26 return shows income tax and Class 4 of GBP 4,000, capital gains tax of GBP 3,000, voluntary Class 2 for 52 weeks at the 2025-26 rate of GBP 3.50 a week (GBP 182; the rate is GBP 3.65 from 2026-27 under SI 2026/231) and a student loan repayment of GBP 1,200. The total paid with the return is GBP 8,382, but the base is GBP 4,000 only. Each 2026-27 payment on account is GBP 2,000, due 31 January 2027 and 31 July 2027. If the total had been used, each payment would wrongly be GBP 4,191. A student loan alone can also push a bill over GBP 1,000 when the income tax part is under it; then no payments on account are due.
+
+```oa-check
+name: Base with capital gains tax, voluntary Class 2 and student loan removed, 2026-27 payments
+inputs:
+  income_tax_and_class4: 4000
+  cgt: 3000
+  weekly_class2: 3.50
+  weeks: 52
+  student_loan: 1200
+steps:
+  - class2: weekly_class2 * weeks
+  - total_due: income_tax_and_class4 + cgt + class2 + student_loan
+  - each_poa: income_tax_and_class4 / 2
+expected:
+  class2: 182.00
+  total_due: 8382.00
+  each_poa: 2000.00
+```
+
+**Example 5: a late payment on account (interest only).** A first payment on account of GBP 3,000 due 31 January 2026 is paid on 15 April 2026, 74 days late. The rate in force is 7.75% (Bank Rate 3.75% plus 4%). Interest is GBP 3,000 x 7.75% x 74 / 365 = GBP 47.14. No penalty applies to a late payment on account.
+
+```oa-check
+name: Late payment interest on a payment on account paid 74 days late at 7.75%
+inputs:
+  overdue: 3000
+  rate_pct: 7.75
+  days: 74
+steps:
+  - interest: round(overdue * rate_pct / 100 * days / 365, 2)
+expected:
+  interest: 47.14
+```
+
+**Example 6: three years in cash (full cycle).** A contractor with no PAYE income had a 2023-24 bill under GBP 1,000, so no payments on account for 2024-25. The 2024-25 relevant amount is GBP 12,000.
+- 31 January 2026: 2024-25 balancing payment GBP 12,000 plus first 2025-26 payment GBP 6,000 = GBP 18,000. 31 July 2026: GBP 6,000.
+- If 2025-26 comes to GBP 12,000: balancing payment nil; 31 January 2027 cash GBP 6,000 (first 2026-27 payment); 31 July 2027 GBP 6,000.
+- If 2025-26 comes to GBP 14,000: balancing payment GBP 2,000 plus first 2026-27 payment GBP 7,000 = GBP 9,000 on 31 January 2027; GBP 7,000 on 31 July 2027.
+- If 2025-26 comes to GBP 8,000: GBP 4,000 overpaid. The first 2026-27 payment is GBP 4,000. If HMRC sets the overpayment against it, nothing is paid on 31 January 2027 (s. 59B(4)).
+- Inside MTD for Income Tax from 6 April 2026 the quarterly updates add no payment dates; the same cash dates apply.
+
+```oa-check
+name: Three-year cash cycle, payments on account for 2025-26 and 2026-27
+inputs:
+  relevant_2024_25: 12000
+  actual_high: 14000
+  actual_low: 8000
+steps:
+  - jan_2026_cash: relevant_2024_25 + relevant_2024_25 / 2
+  - poas_paid_2025_26: relevant_2024_25
+  - jan_2027_cash_high: actual_high - poas_paid_2025_26 + actual_high / 2
+  - overpaid_low: poas_paid_2025_26 - actual_low
+  - jan_2027_cash_low: max(actual_low / 2 - overpaid_low, 0)
+expected:
+  jan_2026_cash: 18000.00
+  jan_2027_cash_high: 9000.00
+  overpaid_low: 4000.00
+  jan_2027_cash_low: 0.00
+```
+
 ## Ask the client first
 
 1. What was last year's Self Assessment bill, and how much of the tax was collected at source (PAYE, coding out, tax on interest)? This sets both tests.
@@ -186,6 +272,8 @@ expected:
 | Bank of England, Bank Rate | https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate | 2026-10-24 |
 | GOV.UK, Self Assessment penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
 | GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-26 |
+| GOV.UK, Send quarterly updates (MTD for Income Tax) | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-10-27 |
+| Social Security (Contributions) (Rates, Limits and Thresholds Amendments ...) Regulations 2026, SI 2026/231 (Class 2 GBP 3.50 to GBP 3.65) | https://www.legislation.gov.uk/uksi/2026/231/made | 2026-10-24 |
 | GOV.UK, Find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-24 |
 
 Not yet confirmed: the Bank Rate after the 5 November 2026 decision; the online payment plan limit for Self Assessment debts (not stated here); and the treatment of foreign tax credit relief in the s. 59A assessed amount (stated from the structure of s. 59A(1), not from an HMRC page). Carried from v3.2: the bank statement pattern library (now the 31 January note under Deadlines) and the refusal list (now the out of scope lines under Who this applies to).
@@ -206,4 +294,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-payments-on-account` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-payments-on-account. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-payments-on-account` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-payments-on-account. If neither is available, confirm every figure against the official source pages cited above before relying on it.

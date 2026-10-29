@@ -2,12 +2,15 @@
 name: fi-property-transfer-tax
 description: >
   Calculate Finnish transfer tax on direct real estate, buildings and housing or real-estate-company shares acquired in 2026. Establish the taxable consideration, property-company debt and ownership percentage before applying the statutory rate. Covers signing versus ownership-transfer deadlines, private and agent-assisted transactions, new construction, foreign buyers, indirect property interests, earnout consideration under the 2026 amendment, corrections, refunds and statutory late-filing sanctions. Trigger on varainsiirtovero, debt-free price, housing shares, property purchase, additional consideration or title registration. Annual real-estate tax is a separate liability, while rental income and disposal gains belong in the individual or corporate income-tax computation.
-jurisdiction: FI
-category: property
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.5
+jurisdiction: FI
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: property
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland property transfer tax v0.5
@@ -154,3 +157,23 @@ Not yet confirmed: none for the ordinary acquisition computation above. Reorgani
 [corrections]: https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/errors-in-return-or-payment/
 [stock]: https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/
 [late]: https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/if-your-transfer-tax-return-or-your-payment-is-overdue/
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

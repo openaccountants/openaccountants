@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://gov.gg/article/120182/Claiming-back-VAT",
+    "status": 200,
+    "file": "claiming-vat-current.html",
+    "sha256": "470f62afc0a3a1077d9afc0d2f968706d888093a0a7080e3aada2a83372add34",
+    "bytes": 71530,
+    "read_utc": "2026-10-27T23:50:33.053423+00:00"
+  },
+  {
+    "url": "https://gov.gg/article/153088/Why-do-I-have-to-pay-Duty",
+    "status": 200,
+    "file": "why-duty-current.html",
+    "sha256": "eb2df15e136b7eb8d332db9dc187f1b7da3efdacec13786aff53a07dca360415",
+    "bytes": 72476,
+    "read_utc": "2026-10-27T23:50:35.025295+00:00"
+  }
+]

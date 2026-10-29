@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-payroll"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -56,6 +56,7 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027, unless a lin
 | Statutory pay recovery | 92%; 109% with Small Employers' Relief (Class 1 NIC £45,000 or less in the last complete tax year); SSP not recoverable | 2026/27 | https://www.gov.uk/recover-statutory-payments |
 | Student loan thresholds (9%) | Plan 1 £26,900; Plan 2 £29,385; Plan 4 £33,795; Plan 5 £25,000 a year | 2026/27 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
 | Student loan monthly thresholds | Plan 1 £2,241.66; Plan 2 £2,448.75; Plan 4 £2,816.25; Plan 5 £2,083.33; PGL £1,750 | 2026/27 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
+| Student loan weekly thresholds | Plan 1 £517.30; Plan 2 £565.09; Plan 4 £649.90; Plan 5 £480.76; PGL £403.84 | 2026/27 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
 | Postgraduate loan | 6% above £21,000 | 2026/27 | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 |
 | Auto-enrolment trigger | £10,000 a year (£833 a month, £192 a week, £768 per 4 weeks) | 2026/27 | https://www.thepensionsregulator.gov.uk/en/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds |
 | Qualifying earnings band | £6,240 to £50,270 a year (£520 to £4,189 a month; £120 to £967 a week; £480 to £3,867 per 4 weeks) | 2026/27 | https://www.thepensionsregulator.gov.uk/en/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds |
@@ -102,6 +103,8 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027, unless a lin
 
 **Benefits in kind.** Benefits not payrolled go on a P11D, with Class 1A at 15% on the P11D(b). An employee whose benefits are all payrolled needs no P11D, but the P11D(b) is still due ([reporting and paying](https://www.gov.uk/employer-reporting-expenses-benefits/reporting-and-paying)). Example: a £6,000 car benefit not payrolled for 2026/27 means a P11D and P11D(b) by 6 July 2027 and £900 Class 1A by 22 July 2027. Payrolling is voluntary in 2026/27.
 
+**Termination awards.** Class 1A at 15% is due on the part of a termination award above £30,000, only where Class 1 has not already been paid on it. Unlike Class 1A on benefits, it is paid through PAYE, not after the year end ([pay Class 1A](https://www.gov.uk/pay-class-1a-national-insurance)).
+
 **Mandatory payrolling of benefits (announced, not yet final law).** From 6 April 2027 most employers providing medical benefit, cars, vans and car and van fuel must report them in payroll and calculate Income Tax and Class 1A in real time, with no P11D for them. From 6 April 2028 most other benefits follow; payrolling loans and accommodation stays voluntary. The detailed regulations are to be introduced at Budget 2026 ([policy paper](https://www.gov.uk/government/publications/changes-to-reporting-of-benefits-in-kind-from-april-2027/mandatory-reporting-of-benefits-in-kind-in-real-time-information-rti-from-april-2027); [phased introduction](https://www.gov.uk/guidance/draft-guidance-and-legislation-to-aid-preparation-for-reporting-benefits-in-kind-in-real-time/the-phased-introduction-of-mandatory-payrolling-for-benefits-in-kind)). Check the software supports the new FPS fields.
 
 **Payslips and working time.**
@@ -130,11 +133,11 @@ Figures are for the 2026/27 tax year, 6 April 2026 to 5 April 2027, unless a lin
 - No one paid in a tax month: send an EPS by the 19th instead of an FPS. Inactivity of 1 to 12 months can be flagged in advance.
 - A missing EPS lets HMRC estimate a specified charge; an EPS after the 19th means the reduction is not applied to that month's bill.
 - P11D filing: fewer than 500 employees through PAYE Online; 500 or more through software; paper only from employers who stopped trading. Correct a P11D(b) by showing the total Class 1A due, not the difference.
-- 2025/26 year-end: P60s by 31 May 2026, P11D and P11D(b) by 6 July 2026, Class 1A by 22 July 2026 have passed. Correct 2025/26 through an Earlier Year Update using the 2025/26 figures: LEL £125 a week (£542 a month, £6,500 a year); PT, ST and UEL as 2026/27; employer and Class 1A rate 15%; Employment Allowance £10,500; SMP and SPP flat rate £187.18; SSP £118.75 with 3 waiting days and the LEL test; Small Employers' Relief 108.5%; student loan thresholds Plan 1 £26,065, Plan 2 £28,470, Plan 4 £32,745, postgraduate £21,000; minimum wage from 1 April 2025 £12.21, £10.00 and £7.55 ([2025/26 rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026); SI 2026/357).
+- 2025/26 year-end: P60s by 31 May 2026, P11D and P11D(b) by 6 July 2026, Class 1A by 22 July 2026 have passed. Correct 2025/26 through an Earlier Year Update using the 2025/26 figures: LEL £125 a week (£542 a month, £6,500 a year); PT, ST and UEL as 2026/27; employer and Class 1A rate 15%; Employment Allowance £10,500; SMP and SPP flat rate £187.18; SSP £118.75 with 3 waiting days and the LEL test; Small Employers' Relief 108.5%; student loan thresholds Plan 1 £26,065, Plan 2 £28,470, Plan 4 £32,745, postgraduate £21,000; minimum wage from 1 April 2025 £12.21, £10.00 and £7.55; accommodation offset £10.66 a day (£74.62 a week) before 1 April 2026 ([2025/26 rates](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026); SI 2026/357).
 
 ## Penalties and interest
 
-- **Late or missing FPS or EPS** (Finance Act 2009 Sch 55; [late filing](https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time)): monthly, by employee count: 1 to 9 £100; 10 to 49 £200; 50 to 249 £300; 250 or more £400. No penalty if all payments on the late FPS were within 3 days of payday (regular late filers excepted), for a new employer whose first FPS is within 30 days of paying, or for the first failure in the tax year (not for annual schemes). Notices are quarterly; pay within 30 days to avoid interest. A specified charge is replaced only by sending the missing return, not by later year-to-date figures.
+- **Late or missing FPS or EPS** (Finance Act 2009 Sch 55; [late filing](https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time)): monthly, by employee count: 1 to 9 £100; 10 to 49 £200; 50 to 249 £300; 250 or more £400. No penalty if all payments on the late FPS were within 3 days of payday (regular late filers excepted), for a new employer whose first FPS is within 30 days of paying, or for the first failure in the tax year (not for annual schemes). Notices are quarterly; pay within 30 days to avoid interest. Appeal online in HMRC's PAYE for employers service by selecting 'Appeal a penalty', or in writing ([late filing](https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time)). A specified charge is replaced only by sending the missing return, not by later year-to-date figures.
 - **Late PAYE payment** (Finance Act 2009 Sch 56; [late payment](https://www.gov.uk/guidance/what-happens-if-you-dont-pay-paye-and-national-insurance-on-time)): the first late payment in a year is not a default. Then 1% for 1 to 3 defaults, 2% for 4 to 6, 3% for 7 to 9, 4% for 10 or more, on the amount late. A further 5% if still unpaid after 6 months and 5% more after 12 months, even for a single late payment. Interest runs daily.
 - **Class 1A, Class 1B and HMRC determinations**: 5% if unpaid 30 days after the due date, and further 5% at 6 and 12 months.
 - **Late P11D(b)**: £100 per 50 employees for each month or part month.
@@ -193,6 +196,25 @@ expected:
   net_after_ea: 750.00
 ```
 
+**Example 3: SSP from day one.** An employee works 5 qualifying days a week, has average weekly earnings of £140, and is off sick for 3 qualifying days in June 2026. 80% of £140 is £112, lower than £123.25, so the weekly rate is £112 and the daily rate £22.40. SSP for the 3 days is £67.20, paid from the first day and not recoverable from HMRC. Before 6 April 2026 the 3 waiting days meant nothing was paid for a 3-day absence ([rates and thresholds](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027); SSCBA 1992 s 157).
+
+```oa-check
+name: SSP from day one, AWE 140, 3 days of 5
+inputs:
+  awe: 140
+  days: 3
+steps:
+  - weekly: min(awe * 0.80, 123.25)
+  - daily: weekly / 5
+  - ssp: daily * days
+expected:
+  weekly: 112.00
+  daily: 22.40
+  ssp: 67.20
+```
+
+**Example 4: late FPS.** An employer with 12 employees sends an FPS late without a valid reason. It is not the first failure of the tax year, and the payments were not within 3 days of payday. The penalty for 10 to 49 employees is £200 for that month. Paying within 30 days of the notice avoids interest ([late filing](https://www.gov.uk/guidance/what-happens-if-you-dont-report-payroll-information-on-time)).
+
 ## Ask the client first
 
 - Is the employer registered with HMRC, and when is the first payday?
@@ -230,7 +252,7 @@ expected:
 | The Pensions Regulator, earnings thresholds | https://www.thepensionsregulator.gov.uk/en/employers/new-employers/im-an-employer-who-has-to-provide-a-pension/declare-your-compliance/ongoing-duties-for-employers/earnings-thresholds | 2026-10-24 |
 | gov.uk, workplace pension contributions | https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay | 2026-10-24 |
 
-Not yet confirmed: the final regulations and HMRC guidance for mandatory payrolling of benefits from 6 April 2027 (due at Budget 2026), including any penalty easement; minimum wage underpayment penalty figures; how the £15,000 Apprenticeship Levy allowance is shared in a connected group; the legislation text of the 2026/27 student loan thresholds (HMRC rates page used).
+Not yet confirmed: the exact PAYE period in which Class 1A on a termination award is paid (GOV.UK says only "through PAYE"); the final regulations and HMRC guidance for mandatory payrolling of benefits from 6 April 2027 (due at Budget 2026), including any penalty easement; minimum wage underpayment penalty figures; how the £15,000 Apprenticeship Levy allowance is shared in a connected group; the legislation text of the 2026/27 student loan thresholds (HMRC rates page used).
 
 <!-- openaccountants-cta-block -->
 
@@ -252,4 +274,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -3,13 +3,12 @@ name: austria-vat-return
 description: "Austrian VAT (Umsatzsteuer) for tax year 2026 in the deep-tax shape: who must charge VAT, the rates under § 10 UStG 1994 (20%, 13%, 10%, the 4.9% rate on listed basic foods from 1 July 2026, 19% for Jungholz and Mittelberg), the small business exemption under § 6 Abs 1 Z 27 (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), the UVA period (monthly above EUR 100,000, quarterly, none at or below EUR 55,000), the due date on the 15th of the second following month, the annual U 1 by 30 April or 30 June, reverse charge under § 19, the recapitulative statement (ZM), the late-filing surcharge (§ 135 BAO) and late-payment surcharges (§ 217 BAO). Trigger on: Austrian VAT return, UVA, Umsatzsteuervoranmeldung, U 30, U 1, Kleinunternehmerregelung, Säumniszuschlag, Austrian reverse charge. Out of scope: the Kennzahl-by-Kennzahl bank-statement method in at-vat-return; corporate income tax in at-corporate-income-tax; non-residents and treaties in at-cross-border."
 version: 2.2
 jurisdiction: AT
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-27
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -180,3 +179,23 @@ expected:
 | BMF, U 13a instructions for the ZM (late surcharge and coercive penalty) | https://formulare.bmf.gv.at/service/formulare/inter-steuern/pdfd/9999/u13a.pdf | 2026-10-23 |
 
 Not yet confirmed: the reasonableness cap for input VAT on zero-emission cars was not read for 2026.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

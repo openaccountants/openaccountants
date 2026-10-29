@@ -10,16 +10,6 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Tax Code, Articles 103, 125, 253–270"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/en/acts/231892"
-    title: "Official English Tax Code translation; checked against current Armenian provisions"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/206337"
-    title: "HO-76-N annual personal declaration transition"
-    as_of: "2026-10-24"
 ---
 
 # Armenia business tax planning v0.4
@@ -109,7 +99,6 @@ For micro-to-turnover or micro-to-ordinary exit, Article **272** applies the new
 [hightechlist]: https://www.arlis.am/hy/acts/203094/latest
 [microfuture]: https://www.arlis.am/hy/acts/231487/latest
 
-
 ## Activity-specific cost reductions
 
 For the activities in Article 258(1)(1), (4), (6) and (10), documented eligible expenses reduce the calculated turnover tax, subject to separate rules and minimums:
@@ -171,12 +160,13 @@ Turnover-tax returns and payment are quarterly and due by the 20th day of the fo
 | Government 142-N, full 32-code high-technology activity annex | https://www.arlis.am/hy/acts/203094/latest | 2026-10-26 |
 | 1001-N, future 2027 micro declaration amendments and commencement | https://www.arlis.am/hy/acts/231487/latest | 2026-10-26 |
 
-
 - [Current Armenian Tax Code, official Armenian text](https://www.arlis.am/hy/acts/215611/latest), especially Articles 30, 103, 125, 150, 253–270.
 - [Official English Tax Code translation](https://www.arlis.am/en/acts/231892), checked against the current Armenian provisions.
 - [HO-76-N annual declaration transition](https://www.arlis.am/hy/acts/206337), relevant only to the personal-return context in the comparison.
 
 **Not yet confirmed:** taxpayer-specific classification and facts, the specialist incentives/disputes/treaty matters stated outside this ordinary comparison, fresh independent whole-country review and named professional attestation. No live taxpayer portal or return was accessed.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

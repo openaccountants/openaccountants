@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cyprus-social-contributions"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -38,7 +38,7 @@ Sibling skills: PAYE and the payroll run in `cyprus-payroll`; income tax and the
 | Social Insurance, state share (employees) | 5.2% (total 22.8%) | 2026 | Same URL |
 | Social Insurance, self-employed own share | 16.6% of insurable income (state adds 5.2%, total 21.8%) | 2026 | Same URL |
 | Voluntary contributor, own share | 15% of declared earnings (state 4.7%, total 19.7%) | 2026 | Same URL |
-| Voluntary contributor working abroad for a Cypriot employer | 17.6% up to the maximum insurable earnings (state 5.2%) | 2026 | Same URL |
+| Voluntary contributor working abroad for a Cypriot employer | 17.6% on either basic insurable earnings or normal earnings, as agreed in the contract of employment, up to the maximum insurable earnings (state 5.2%) | 2026 | Same URL |
 | Rates printed in the Social Insurance Law from 2024 (employee / employer / state; self-employed / state; voluntary / state) | 8.9% / 8.9% / 5.3%; 16.8% / 5.3%; 15.2% / 4.8%, each subject to the actuarial-study proviso | 2024 on | SIL arts. 5(1)(στ), 12(ζ), 15(1)(στ), https://www.cylaw.org/nomoi/enop/non-ind/2010_1_59/full.html |
 | Next legislated step | 9.5% / 9.5% / 5.7% employees; 18% self-employed | 2029 | SIL arts. 5(1)(ζ), 12(η), same URL |
 | Maximum insurable earnings, monthly-paid employees | EUR 5,742 a month from 1 January 2026 | 2026 | Social Insurance Services notice, https://sisweb.mlsi.gov.cy/anotato2025/ |
@@ -82,8 +82,8 @@ The law text and the applied rates differ by 0.1 point. Each rate article has a 
 | What | When | Source |
 |---|---|---|
 | Employer registration (form YKA 01-001), Register of Employers | Before recruiting staff | Business in Cyprus page |
-| New-hire notification, ERGANI only | No later than one day before the person starts | Same page |
-| Registration of an employed or self-employed person without a Social Insurance number (form YKA 1-008) | Before contributions are reported | Social Insurance Services, registration of employees, https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/DF541D1E90F75C56C22586A10042515C?OpenDocument |
+| New-hire notification, ERGANI only | No later than one day before the person starts; the paper "Declaration for the recruitment" was abolished from 13 September 2021 | Same page |
+| Registration of an employed or self-employed person without a Social Insurance number (form YKA 1-008) | Before contributions are reported. A self-employed person files it by hand or post at the District Social Insurance Office with a copy of ID card, passport or alien registration certificate; the number is usually given within 1 to 2 weeks | Social Insurance Services, registration of employees, https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/DF541D1E90F75C56C22586A10042515C?OpenDocument; Business in Cyprus page |
 | Employer contributions: Social Insurance, Central Holiday, Redundancy, HRDF, Social Cohesion and GHS on pay | End of the calendar month after the month they are for | Social Insurance Services, deadlines page |
 | Self-employed Social Insurance (with GHS) | Every three months | Business in Cyprus page |
 | GHS withheld on dividends, interest, non-residents' income, employee benefits and office holders' pay, to the Tax Department | End of the following month | Tax Department deadlines, https://www.gov.cy/mof-tax/prothesmies/ |
@@ -187,7 +187,7 @@ expected:
 | Tax Department, deadlines calendar | https://www.gov.cy/mof-tax/prothesmies/ | 2026-10-26 |
 | Income Tax Law 118(I)/2002, consolidated (CyLaw): art. 14 | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-24 |
 
-Not yet confirmed: the instrument that applies 8.8% / 16.6% / 15% in place of the 8.9% / 16.8% / 15.2% printed in SIL arts. 5, 12 and 15 (actuarial-study proviso); the self-employed insurable income amounts by occupational category and any ceiling on self-employed income; the exact quarterly due dates for the self-employed and the late charge on self-employed contributions; the 2026 deadline for self-assessed GHS on self-employed income and on rent with no withholding (the calendar shows 1 August for 2024 audited accounts only); the Social Insurance (Contributions) Regulations themselves (Regulations 8, 10 to 12, not found on CyLaw); the Central Holiday Fund rate above 40 days of leave; whether the 3% to 27% charge applies to Redundancy, HRDF and Central Holiday contributions; the bank-statement pattern library, Greek terminology list, Excel working-paper template, test suite and onboarding checklist from v0.1 (practice notes, not law, not carried).
+Not yet confirmed: the instrument that applies 8.8% / 16.6% / 15% in place of the 8.9% / 16.8% / 15.2% printed in SIL arts. 5, 12 and 15 (actuarial-study proviso); the self-employed insurable income amounts by occupational category and any ceiling on self-employed income; the exact quarterly due dates for the self-employed and the late charge on self-employed contributions; the 2026 deadline for self-assessed GHS on self-employed income and on rent with no withholding (the calendar shows 1 August for 2024 audited accounts only); the Social Insurance (Contributions) Regulations themselves (Regulations 8, 10 to 12, not found on CyLaw); the Central Holiday Fund rate above 40 days of leave; whether the 3% to 27% charge applies to Redundancy, HRDF and Central Holiday contributions; the Tax Department self-assessment codes for GHS (code 315 on employee pay, officers' earnings and other income; code 316 on interest, dividends and rents) from the 2025 return guide (v0.1, not re-read for 2026); the bank-statement pattern library, Greek terminology list, Excel working-paper template, test suite and onboarding checklist from v0.1 (practice notes, not law, not carried).
 
 <!-- openaccountants-cta-block -->
 
@@ -209,4 +209,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

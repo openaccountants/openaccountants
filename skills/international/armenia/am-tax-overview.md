@@ -3,23 +3,13 @@ name: am-tax-overview
 description: "Use as the 2026 Armenian country entry point for personal income tax, company profit tax, VAT, pension and other social payments, payroll, transfer pricing and cross-border questions. Routes individuals, registered entrepreneurs, resident organisations, non-residents and permanent establishments to the appropriate detailed Guide. Highlights the distinction between headline rates, a legally established tax base, special-regime eligibility and year-specific annual filing dates. Also routes incorporation and business-regime comparison questions to the supporting Guides. This overview is a map, not a complete computation or taxpayer classification. All seven tax domains apply. The detailed Guides supply all seven ordinary domains, including the statutory benefit minimum, Service payment route and current SRC treaty-refund application/approval/account method. Independent source-review records and remaining specialist/operational boundaries are preserved; named professional attestation remains pending."
 version: 0.3
 jurisdiction: AM
-category: international
 tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Tax Code"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/206337"
-    title: "HO-76-N annual individual declaration transition"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/223829"
-    title: "300-N individual income declaration effective in 2026"
-    as_of: "2026-10-24"
 ---
 
 # Armenia tax overview v0.3
@@ -47,7 +37,6 @@ Ordinary corporate profit tax returns and payment are generally due by 20 April 
 
 The headline rates above are signposts, not a computation. This map does not settle the taxpayer's residence, source, classification, VAT status, special regime, treaty protection, deductions or filing obligation. It does not catalogue every tax, duty, municipal charge, customs rule, exemption, refund, licence or sector-specific obligation. The domain Guides state their remaining gaps and must be read with their source dates. All seven ordinary-domain methods are supplied. All are checked against the law, with independent source review recorded in the country research and named professional attestation pending. Exceptional late-export/health-error recovery and specialist populations retain the explicit boundaries in the detailed Guides.
 
-
 ## Sources
 
 | Official source and retained original read scope | URL | Read on |
@@ -59,6 +48,8 @@ The headline rates above are signposts, not a computation. This map does not set
 The read dates above are retained from the preserved draft and its initial source review; this structural correction does not claim a fresh full-law read.
 
 **Not yet confirmed:** The ordinary and specialist gaps recorded in the country README and detailed Guides; actual filing acceptance and named professional attestation.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

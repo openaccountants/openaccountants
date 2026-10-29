@@ -12,15 +12,15 @@ description: >
   recomputable examples. Corporate residence, permanent establishments, outbound
   withholding, foreign credits and exit taxation are addressed in the linked
   corporate cross-border skill.
+version: 1.5
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.5
-category: international
 ---
 
 # Finland corporate income tax v1.5
@@ -190,6 +190,8 @@ Not yet confirmed: proposals only, not 2026 law and not to be applied: an announ
 [instalments]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/
 [calendar]: https://www.vero.fi/en/businesses-and-corporations/important_dates_and_deadlines_for_corporate_taxpayers/
 [interest-guide]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

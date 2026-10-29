@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -172,3 +171,23 @@ These groups follow their own base rules or a separate regime. Do not compute th
 | D.Lgs. 472/1997 art. 13 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13 | 2026-10-24 |
 
 Not yet confirmed: the 2026 IRAP return instructions (figures above are the tax year 2025 ones carried forward); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

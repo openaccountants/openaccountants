@@ -1,31 +1,15 @@
 ---
 name: am-corporate-income-tax
 description: "Prepare Armenia 2026 ordinary corporate and registered-PE profit-tax workpapers: reconcile accounts to the tax base, test documented deductions and capped costs, replace book depreciation, age prior losses, compute the lower-of quarterly advance and reconcile annual credits. Includes two reproducible examples and preserved supplementary research controls covering the tax bridge, representation, depreciation, losses, instalments, interest and donations. Use for Armenian CIT, business expenses, asset amortisation and annual profit-tax returns. Maps ordinary turnover and micro eligibility, computation and transitions, and the published profit-tax return with sign and special-row limits. Specialist incentives/assets, actual portal discrepancies and professional attestation remain separate. Checked against the law."
+version: 0.4
 jurisdiction: AM
 tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.4
-category: international
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Tax Code, corporate computation and advances"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/en/acts/231892"
-    title: "Official English reproduction, with current Armenian corrections"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/226008"
-    title: "HO-234-N 2026 base amendments"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/228632"
-    title: "HO-385-N commencement gates"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/226558"
-    title: "749-N July 2026 return consolidation"
-    as_of: "2026-10-24"
 ---
 
 # Armenia corporate income tax preparation v0.4
@@ -340,6 +324,8 @@ Read **24 October 2026**: targeted current Armenian Code Articles 103–125, 130
 [refundform]: https://www.arlis.am/hy/acts/144655/latest
 
 **Not yet confirmed:** actual electronic resolution of the printed foreign-credit 95 formula defect. Reopening pre 2019 debt assessments, exhaustive commodity norms, mixed-period specialist dairy losses and sector incentives require their separate instruments/facts. Specialist schemes and actual taxpayer facts require their stated separate evidence; no professional attestation has been obtained.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

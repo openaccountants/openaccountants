@@ -3,13 +3,13 @@ name: at-vat-return
 description: "Austrian VAT (Umsatzsteuer) for tax year 2026, worked box by box: how to turn a business's bank statement and invoices into the advance return (Umsatzsteuervoranmeldung, UVA, form U 30) and the annual return (U 1) under the Umsatzsteuergesetz 1994 as in force on 26 October 2026. Covers the 20%, 13% and 10% rates, the 4.9% rate on listed basic foods from 1 July 2026, the end of the 0% photovoltaic rate, the small business exemption (EUR 55,000 with the 10% tolerance) and the EU SME scheme (EUR 100,000 EU-wide), monthly or quarterly UVA periods, the 15th of the second following month, the U 1 by 30 April or 30 June, reverse charge, the recapitulative statement (ZM), the Kennzahl map, input VAT blocks, late-payment and late-filing surcharges, VAT interest and self-disclosure. Trigger on: prepare UVA, Austrian VAT return, Umsatzsteuer, U 30, Kennzahl, Kleinunternehmer, ZM Austria. Out of scope: income tax (at-income-tax), corporate tax (at-corporate-income-tax), non-residents and treaties (at-cross-border); the short overview is austria-vat-return."
 version: 0.3
 jurisdiction: AT
-category: international
 tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 

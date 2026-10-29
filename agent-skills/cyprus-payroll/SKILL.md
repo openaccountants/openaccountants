@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cyprus-payroll"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -64,10 +64,10 @@ The Social Insurance Law 59(I)/2010 art. 5(1)(στ) prints 8.9% employee, 8.9% e
 **Pay.** All pay and benefits are taxable: wages, overtime, tips, bonuses, commissions, fees, perquisites and benefits in kind (note 16; ITL art. 5(1)(β)). Benefits in kind are valued at market value under the Tax Department leaflet (https://www.gov.cy/mof-tax/documents/paroches-se-eidos/). A loan to a director or shareholder is a deemed benefit of 9% a year on the balance (ITL art. 5(1)(ζ)); it goes in line A2.
 
 **Order of the computation.**
-1. Insurable earnings: gross pay for the period, capped at EUR 5,742 a month or EUR 1,325 a week. If the employer pays into the Central Holiday Fund, its contribution is added to earnings first (Social Insurance Services contributions page, worked example).
-2. Employee Social Insurance (8.8%) on insurable earnings. Employee GHS (2.65%) on pay, uncapped until the person's income for the year passes EUR 180,000.
+1. Insurable earnings: gross pay for the period, capped at EUR 5,742 a month or EUR 1,325 a week. The same ceiling caps the Social Insurance Fund, the Annual Paid Leave (Central Holiday) Fund, the Redundancy Fund and the Human Resource Development levy (Social Insurance Services notice to employers, December 2025); the Social Cohesion Fund has no ceiling. If the employer pays into the Central Holiday Fund, its contribution is added to earnings first (Social Insurance Services contributions page, worked example).
+2. Employee Social Insurance (8.8%) on insurable earnings. Employee GHS (2.65%) on pay, uncapped until the person's income for the year passes EUR 180,000. Once the year's income on lines A1, A2, A9 and A10 of the T.D.59A passes EUR 180,000, the employer stops withholding GHS from the following month on income from lines A2, A9a and A10a (T.D.59A Part C line 4 and note 22). The ceiling counts all of the person's income, so GHS withheld elsewhere counts too.
 3. Deduct the contributions within the one-fifth cap, any documented first-employment deduction (line B2), and the personal deductions the employee declares (children, housing, green). The art. 14B personal deductions sit outside the one-fifth cap and are declared as a final amount per category, without income or children details (T.D. FAQs, questions 10 and 11).
-4. Apply the 2026 bands to get C1. The employer withholds only the share for the pay it pays: C1 x (A1 + A2 + A3) / A6 (Part C line 2). It never withholds tax on rent or other non-employment income; the employee pays that through provisional tax (note 21; see `cyprus-income-tax`).
+4. Apply the 2026 bands to get C1. The employer withholds only the share for the pay it pays: C1 x (A1 + A2 + A3) / A6 (Part C line 2). Line A3 brings in a Social Insurance pension or widow's pension only where the employee ticks line A3(b) asking for tax to be deducted on it (T.D.59A Part A line 3). It never withholds tax on rent or other non-employment income; the employee pays that through provisional tax (note 21; see `cyprus-income-tax`).
 5. Monthly withholding is C2 / 13 or C2 / 12 "accordingly"; weekly is C2 / 52 (Part C line 3). Divide by 13 where a thirteenth salary is paid (this skill's reading). Tax on bonuses and other income not paid regularly is withheld in the month it is paid (note 16).
 
 **Two employers.** Each employer withholds on its own pay, using the total income the employee declares on the T.D.59A given to that employer (PAYE FAQ).
@@ -208,7 +208,7 @@ expected:
 | Public Default Interest Rate for 2026 Order, K.D.P. 376/2025 | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-24 |
 | Ministry of Labour, minimum wage statement (27 December 2025) | https://www.gov.cy/ergasia-kai-koinonikes-asfaliseis/dilosi-tou-ypourgou-ergasias-kai-koinonikon-asfaliseon-gia-tin-afxisi-tou-ethnikou-katotatou-misthou/ | 2026-10-26 |
 
-Not yet confirmed: the extended deadline for the 2025 annual PAYE return (T.D.7; reported as 30 November 2026 by secondary sources, not shown on the Tax Department deadlines calendar read); the instrument that sets 8.8% / 8.8% / 5.2% in place of the 8.9% / 8.9% / 5.3% printed in Social Insurance Law art. 5(1)(στ) (the actuarial-study proviso; the Order was not found on CyLaw); the Minimum Wage (Amending) Order of 2025 itself (only the ministry statement was read); whether the employer may apply the 25% art. 8(21B) exemption through PAYE; the 13 divisor reading for a thirteenth salary (the form says only "accordingly"); how the monthly ceiling applies in a month in which a thirteenth salary is paid; the Central Holiday Fund rate above 40 days of leave ("increased accordingly"); the bank-statement pattern library, payslip glossary, Excel working-paper template and onboarding checklist from v0.1 (practice notes, not law, not carried).
+Not yet confirmed: the extended deadline for the 2025 annual PAYE return (T.D.7; reported as 30 November 2026 by secondary sources, not shown on the Tax Department deadlines calendar read); the instrument that sets 8.8% / 8.8% / 5.2% in place of the 8.9% / 8.9% / 5.3% printed in Social Insurance Law art. 5(1)(στ) (the actuarial-study proviso; the Order was not found on CyLaw); the Minimum Wage (Amending) Order of 2025 itself (only the ministry statement was read); whether the employer may apply the 25% art. 8(21B) exemption through PAYE; the 13 divisor reading for a thirteenth salary (the form says only "accordingly"); how the monthly ceiling applies in a month in which a thirteenth salary is paid; the Central Holiday Fund rate above 40 days of leave ("increased accordingly"); that the employer may issue the T.D.63 on the Tax Department's template or its own with the same details (v0.1, T.D.63 page, not re-read); the bank-statement pattern library, payslip glossary, Excel working-paper template and onboarding checklist from v0.1 (practice notes, not law, not carried).
 
 <!-- openaccountants-cta-block -->
 
@@ -230,4 +230,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -12,13 +12,6 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - https://www.arlis.am/hy/acts/215611/latest
-  - https://www.arlis.am/hy/acts/224823
-  - https://www.arlis.am/hy/acts/172160
-  - https://www.arlis.am/hy/acts/230046
-  - https://www.arlis.am/hy/acts/218648
-  - https://www.arlis.am/hy/acts/230432
 ---
 
 # Armenia social payments, stamp payments and health insurance
@@ -231,7 +224,6 @@ expected:
 [code]: https://www.arlis.am/hy/acts/215611/latest
 [pensionrefund]: https://www.arlis.am/hy/acts/179268/latest
 
-
 [salarylist]: https://www.arlis.am/hy/acts/126230/latest
 [capforms]: https://www.arlis.am/hy/acts/114736/latest
 [cessation]: https://www.arlis.am/hy/acts/121967/latest
@@ -245,6 +237,8 @@ expected:
 Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16 and 45(1)(8)](https://www.arlis.am/hy/acts/230432/latest) expressly defer article 16 until 1 January 2027. Other source read dates remain as recorded.
 
 **Not yet confirmed:** operative Government procedure/commencement forHealth 14(12) mistaken/no-liability payments and specified suspended/age 65 entrepreneur refunds. Specialist populations, agreements, related-person coverage, all state-paid priority exceptions and historic stamp-family refunds remain separate boundaries. No live participant refund, accepted return, fresh independent country review or named accountant attestation is represented as obtained. The current statutory transitional deadline and ordinary contribution/participant-excess methods are supplied. The unresolved mistake/suspension/age-65 refund implementation is a conditional recovery boundary, not a universal refund entitlement or a missing ordinary contribution computation.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

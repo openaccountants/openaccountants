@@ -1,12 +1,15 @@
 ---
 name: mc-cross-border
 description: "Monaco cross border tax working paper for 2026. Separates business profits tax scope, foreign operation exclusions and evidenced foreign income tax credits, including gross up and the same income limit. Covers French national residence screening and the statutory cessation treatment of a seat or establishment transfer. Use for Monaco foreign royalties, withholding credits, relocation, treaties and business departure questions. Includes two reproducible ordinary credit illustrations. Routes participation relief, cessation computations, cross border employment and social coverage, financial account self certification and country by country reporting. Source cited draft awaiting named Monaco professional review. Specialist treaty rates and multinational minimum tax calculations need their own determination."
-jurisdiction: MC
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-25
 version: 1.2
+jurisdiction: MC
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Monaco cross-border tax, residence and foreign credits
@@ -122,3 +125,23 @@ expected:
 | Project 1.129, record and explanatory text only | https://legimonaco.mc/projet/1.129 | 2026-10-24 |
 
 **Not yet confirmed:** specialist treaty-rate tables and source-country refund procedures, financial-institution industry implementation and operative multinational minimum-tax calculations. No generic zero withholding, full treaty access, foreign refund or unrealised-gain/deferral treatment is asserted. The ordinary scope, credit, participation, cessation, account-holder and employment routes above apply on their stated facts.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

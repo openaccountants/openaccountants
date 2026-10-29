@@ -256,6 +256,8 @@ Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 1
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

@@ -3,7 +3,7 @@
 Every tax skill in this repository, in the open [Agent Skills](https://agentskills.io) format: one folder, one `SKILL.md`, with a `name`, a `description` that tells the AI when to use it, and the method. Install a country and your AI knows how that country's income tax, VAT or GST, payroll, company formation and cross-border rules work, every time the topic comes up.
 
 <!-- oa-skills-stats:start -->
-**2,082 skills** across **273 jurisdictions**. 33 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2,049 are tier 2 (checked against the law, or sourced from the law).
+**2,093 skills** across **273 jurisdictions**. 33 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2,060 are tier 2 (checked against the law, or sourced from the law).
 <!-- oa-skills-stats:end -->
 
 > General reference only, not advice on your situation. Confirm with a qualified professional in the relevant jurisdiction before you file, pay or amend.

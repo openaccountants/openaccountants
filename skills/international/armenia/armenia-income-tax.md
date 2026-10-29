@@ -12,19 +12,6 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Code, individual income categories and filing"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/206337"
-    title: "HO-76-N annual filing and payment transition"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/215597"
-    title: "HO-324-N prefilled declarations and signed refund condition"
-    as_of: "2026-10-24"
-  - url: "https://arlis.am/hy/acts/223829"
-    title: "300-N April 2026 annual declaration consolidation"
-    as_of: "2026-10-24"
 ---
 
 # Armenia individual income tax preparation v0.4
@@ -188,7 +175,6 @@ The authority gives **10 working days** to correct incomplete/inconsistent docum
 [oldmortgageprocedure]: https://www.arlis.am/hy/acts/96164/latest
 [dividendrefund]: https://www.arlis.am/hy/acts/200942/latest
 
-
 ### Actual annual form
 
 The April 2026 consolidation of **300-N** provides the annual declaration in Annex 3. Separate tax-agent receipts and no-agent receipts; do not move all withheld salary into the no-agent taxable base. The initially retrieved October 2025–April 2026 text is historical for later filing; follow its current incorporation rather than a date in the page title. [300-N][form]
@@ -312,6 +298,8 @@ Read on **24 October 2026**: targeted current Armenian Articles 20, 25, 140–15
 [profitform]: https://www.arlis.am/hy/acts/226558/latest
 
 **Not yet confirmed:** actual electronic handling of the stated entrepreneur rate/form and personal settlement-sign discrepancies. The ordinary social-expense, mortgage and dividend-reinvestment refund methods are supplied above. No live taxpayer return was accessed; this does not substitute for the statutory method or independent review.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

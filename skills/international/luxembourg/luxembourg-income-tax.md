@@ -294,6 +294,8 @@ Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu pag
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

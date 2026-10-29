@@ -1,0 +1,106 @@
+{
+  "baseline": "a23757a23537adb396146d8294f3d404b7d9ac53",
+  "protected_scalars_equal": true,
+  "CTA_tails_byte_exact": true,
+  "all_original_32_controls_archived_byte_exact": true,
+  "main_controls": 18,
+  "files": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "old_bytes": 5729,
+      "new_bytes": 8069,
+      "byte_change_percent": 40.84,
+      "old_lines": 40,
+      "new_lines": 52,
+      "new_sha256": "d808b1b33df34d63460217b207f681417d9c27e03d2d8d62287cb7917e981dd8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "old_bytes": 19304,
+      "new_bytes": 25430,
+      "byte_change_percent": 31.73,
+      "old_lines": 163,
+      "new_lines": 199,
+      "new_sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4"
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "old_bytes": 8792,
+      "new_bytes": 12375,
+      "byte_change_percent": 40.75,
+      "old_lines": 79,
+      "new_lines": 125,
+      "new_sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007"
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "old_bytes": 43283,
+      "new_bytes": 67245,
+      "byte_change_percent": 55.36,
+      "old_lines": 320,
+      "new_lines": 418,
+      "new_sha256": "130728de1cbf2ca27b91ea2ed7e6c2410b20c9149ea6e653f85ae38963da1d5f"
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "old_bytes": 8447,
+      "new_bytes": 9223,
+      "byte_change_percent": 9.19,
+      "old_lines": 110,
+      "new_lines": 110,
+      "new_sha256": "1611f398bb155f265e5998ed808be7a6a78ab4be3f546a1f75e0a40053e5f33d"
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "old_bytes": 29733,
+      "new_bytes": 43597,
+      "byte_change_percent": 46.63,
+      "old_lines": 330,
+      "new_lines": 339,
+      "new_sha256": "cf17eff62e9e284603e06ff6effd07371b69653b442f1b7db3f0f0187ff155d8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "old_bytes": 35420,
+      "new_bytes": 38946,
+      "byte_change_percent": 9.95,
+      "old_lines": 394,
+      "new_lines": 326,
+      "new_sha256": "e77c522e1e277e16134a505f7576831a2432afd189b2f54f62b33e903daadfd8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "old_bytes": 15192,
+      "new_bytes": 16781,
+      "byte_change_percent": 10.46,
+      "old_lines": 184,
+      "new_lines": 183,
+      "new_sha256": "f40b6e738ee039ade43cfc7f72f913af9bb1989d002360144bcfcc5406a5513f"
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "old_bytes": 13739,
+      "new_bytes": 16361,
+      "byte_change_percent": 19.08,
+      "old_lines": 147,
+      "new_lines": 157,
+      "new_sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2"
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "old_bytes": 51467,
+      "new_bytes": 52428,
+      "byte_change_percent": 1.87,
+      "old_lines": 399,
+      "new_lines": 319,
+      "new_sha256": "d5982c3b7040a0e2541778ee49187e81d00d3773420a0d8c5c384967fcfbb662"
+    }
+  ],
+  "original_candidate": "21fe2436e7ee3333a6347a8b50eed0881bece759",
+  "repair": "Both whole-pack findings fixed and verified; bounded contribution-workflow addition accepted; current Guide differences from accepted body are review-status prose only",
+  "accepted_legal_body_head": "4f2539df8ac40f8496c1de98488284630c014d11",
+  "review_original_head": "e98e95296a5f61fa4e30745a47a1eee3bdc7997d",
+  "lost_content_restored": 2,
+  "final_admin_confirmation": "ACCEPT at0952cd3b; all ten Guide/README blobs fixed to23fa6a44 final independent manifest",
+  "final_admin_manifest": "review/final-administrative-confirmation.json"
+}

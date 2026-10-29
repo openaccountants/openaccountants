@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-non-dom"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -64,13 +64,17 @@ The cost applies even when the claim covers one small source. Brought-forward ov
 
 **Overseas Workday Relief (ITEPA 2003 Part 2 Chapter 5C).** A qualifying new resident employee can elect and claim relief on the part of employment income for duties performed outside the UK. No FIG claim is needed and the money no longer has to stay offshore. The limit for each qualifying year is the lower of 30% of the qualifying employment income or £300,000, counted across all years in which that year's earnings are taxed, such as a later bonus (EIM43600). Earnings taxed before the employment year cannot use it. Transitional rules (EIM43605): an arrival in 2023/24 or 2024/25 who used OWR on the remittance basis gets OWR without the limit for years ending before 6 April 2028; a 2022/23 arrival who used OWR gets none for 2025/26. Earnings for remittance basis years keep the old OWR rules.
 
-**Old money: pre-6 April 2025 FIG.** FIG that arose to a remittance basis user before 6 April 2025 "will continue to be taxed at the usual tax rates if they are remitted to the UK on or after 6 April 2025, unless these amounts are designated under the temporary repatriation facility" (HS264). The old remittance rules still decide what a remittance is (money or assets brought in, used for UK services or debts, benefits to relevant persons such as a spouse, minor children and close companies), and mixed fund ordering still applies. Remitted foreign dividends are taxed at the normal rates, not the dividend rates, with no dividend allowance. Business investment relief claims end after 5 April 2028.
+- **Transitional length (EIM43605).** An employee who became UK resident in 2023/24 or 2024/25, qualified for OWR and was taxed on the remittance basis for at least one of those years "will still be eligible for OWR for their first three years of UK residence" if not a qualifying new resident in 2025/26, and "for their first four years of UK residence" if they are. For 2026/27: a 2024/25 arrival in this group is in year 3 and gets OWR with no limit; a 2023/24 arrival gets 2026/27 (year 4) only if also a qualifying new resident in 2025/26.
+- **Late-paid remittance basis earnings (EIM43605).** Earnings for a pre-6 April 2025 remittance basis year received on or after 6 April 2025 stay on the remittance basis; if received before 6 April 2028 they can be included in a TRF designation.
+- **More than once (EIM43560).** "An employee can be eligible for OWR more than once in their lifetime provided the 10 year rule of non-residence is met between periods of UK residence."
 
-**The TRF (FA 2025 Sch 10).** "Qualifying overseas capital" can be designated in the 2025/26, 2026/27 or 2027/28 return: pre-6 April 2025 FIG, amounts of uncertain origin in a mixed fund, capital payments and benefits from non-UK trusts matched to pre-2025 FIG, and assets derived from such FIG. Partial designation is allowed and nothing has to be brought in. Once the charge is paid the capital can be remitted later without further tax, and designated capital comes out of a mixed fund first. The charge is "charged as if they were amounts of income tax" (para 9), but HMRC treats it as a charge on capital: no foreign tax credit, no effect on adjusted net income, bands or payments on account, and earlier remittance basis charges cannot be set against it (RDRM73400). Foreign income is converted at the rate on 6 April of the designation year (6 April 2026 for 2026/27); foreign gains at the rate on disposal (HS264). Money taken from offshore to pay the charge is itself a remittance unless designated.
+**Old money: pre-6 April 2025 FIG.** FIG that arose to a remittance basis user before 6 April 2025 "will continue to be taxed at the usual tax rates if they are remitted to the UK on or after 6 April 2025, unless these amounts are designated under the temporary repatriation facility" (HS264). The old remittance rules still decide what a remittance is (money or assets brought in, used for UK services or debts, benefits to relevant persons such as a spouse, minor children and close companies), and mixed fund ordering still applies. Remitted foreign dividends are taxed at the normal rates, not the dividend rates, with no dividend allowance. Foreign tax credit is due only on the same proportion of the foreign tax as the part of the income remitted (HS264). Business investment relief claims end after 5 April 2028.
+
+**The TRF (FA 2025 Sch 10).** "Qualifying overseas capital" can be designated in the 2025/26, 2026/27 or 2027/28 return: pre-6 April 2025 FIG, amounts of uncertain origin in a mixed fund, capital payments and benefits from non-UK trusts matched to pre-2025 FIG, and assets derived from such FIG. Partial designation is allowed and nothing has to be brought in. Once the charge is paid the capital can be remitted later without further tax, and designated capital comes out of a mixed fund first. The charge is "charged as if they were amounts of income tax" (para 9), but HMRC treats it as a charge on capital: no foreign tax credit, no effect on adjusted net income, bands or payments on account, and earlier remittance basis charges cannot be set against it (RDRM73400). Foreign income is converted at the rate on 6 April of the designation year (6 April 2026 for 2026/27); foreign gains at the rate on disposal (HS264). Money taken from offshore to pay the charge is itself a remittance unless designated. Pre-2025 FIG invested in exempt property or in UK companies under business investment relief can be designated without disposing of the property or removing the investment (HS264). The charge cannot frank Gift Aid (RDRM73400). Overpayment relief is not available for a designation election, because it covers only income tax, CGT, Class 4 NIC and corporation tax (RDRM73320).
 
 **Rebasing to 5 April 2017 (FA 2025 Sch 11 para 1).** On a disposal on or after 6 April 2025 the gain is computed from market value on 5 April 2017 if all of these hold: the asset was held on 5 April 2017; it "was not situated in the United Kingdom at any time in the period beginning with 6 March 2024 and ending with 5 April 2025"; the person was never UK domiciled (including deemed domicile under ITA 2007 s835BA) before 2025/26; and they made a remittance basis claim under ITA s809B for at least one year from 2017/18 to 2024/25 in which the remittance basis did not apply automatically. It applies despite the spouse no-gain/no-loss rule and follows share reorganisations. Para 2 carves out assets in the UK only for public access, repairs or sale, personal clothing, footwear, jewellery or watches, the under-£1,000 notional remittance rule, or temporary importation. Para 3: the person can elect out for a disposal, and the election "is irrevocable". Elect out when original cost beats the 2017 value. Para 4 amends the separate 2017 rebasing for deemed domiciliaries (refer). Rebasing changes only the base cost; the gain is taxed as it arises.
 
-**Inheritance tax (IHTA 1984 s6A).** Long-term UK resident "at all times in a tax year if they were UK resident for at least 10 of the previous 20 tax years". Not long-term resident after 10 consecutive non-resident years in the previous 19, or after the "required number" of consecutive non-resident years ending last year. Count the resident years in the 20 tax years ending with the last resident year: 13 or fewer needs 3, 14 needs 4, and so on to 20, which needs 10. After 10 years away the count resets. HMRC transitional rules: someone without UK domicile or deemed domicile on 30 October 2024, non-resident for 2025/26 and not returning, is not long-term resident; someone deemed domiciled on 30 October 2024 who leaves the same way drops out after 3 years. Section 6B modifies the test for young persons; ss267ZC to 267ZE allow an election in. Any IHT computation is a refer case.
+**Inheritance tax (IHTA 1984 s6A).** Long-term UK resident "at all times in a tax year if they were UK resident for at least 10 of the previous 20 tax years". Not long-term resident after 10 consecutive non-resident years in the previous 19, or after the "required number" of consecutive non-resident years ending last year. Count the resident years in the 20 tax years ending with the last resident year: 13 or fewer needs 3, 14 needs 4, and so on to 20, which needs 10. After 10 years away the count resets. HMRC transitional rules: someone without UK domicile or deemed domicile on 30 October 2024, non-resident for 2025/26 and not returning, is not long-term resident; someone deemed domiciled on 30 October 2024 who leaves the same way drops out after 3 years. Residence for 2012/13 and earlier is decided "as it would have been determined for income tax purposes for that tax year", and from 2013/14 by the statutory residence test (s6A(5)). Section 6B modifies the test for young persons; ss267ZC to 267ZE allow an election in. Any IHT computation is a refer case.
 
 **Trusts (pointer only).** Overseas assets in a trust the person set up or added to are within IHT "even when you were not a long-term UK resident", except trust assets placed in trust while non-UK domiciled that were overseas on 30 October 2024 and at death (GOV.UK). Settlor and beneficiary charges, capital payment matching, transfer of assets abroad and TRF designation of trust amounts are refer cases. Tell trustees when long-term residence status changes.
 
@@ -78,7 +82,7 @@ The cost applies even when the claim covers one small source. Brought-forward ov
 
 - **Return.** SA100 with the SA109 "Residence and foreign income and gains (FIG) regime etc" pages for the FIG claim, the OWR election and claim, and the TRF election; SA106 for foreign income; SA108 for gains. MTD for Income Tax users claim through their software (HS264).
 - **2026/27 dates.** Register for Self Assessment by 5 October 2027. Paper return by 31 October 2027, online return and balancing payment by 31 January 2028, second payment on account 31 July 2028 (GOV.UK deadlines pattern; that page currently shows the 2025/26 dates).
-- **FIG claim and TRF designation for 2026/27:** in the return or an amendment, by 31 January 2029 (s845A(5); Sch 10 para 8(1)). Each can be amended in the same window. Outside it a designation cannot be withdrawn and there is no repayment if the money is later spent abroad. Late claims only under HMRC's general late claims policy. No consequential claim after careless or deliberate loss of tax (s845A(6)).
+- **FIG claim and TRF designation for 2026/27:** in the return or an amendment, by 31 January 2029 (s845A(5); Sch 10 para 8(1)). Each can be amended in the same window. If the notice to file was issued after 31 October following the tax year and the claim or election was made in time, it can be amended up to 3 months after the date of the notice (RFIG42300; RDRM73320). Outside it a designation cannot be withdrawn and there is no repayment if the money is later spent abroad. Late claims only under HMRC's general late claims policy. No consequential claim after careless or deliberate loss of tax (s845A(6)).
 - **TRF boxes.** HS264 lists SA109 box 50 (election), 51 (total designated, excluding trust amounts), 52 (trust capital payments and benefits) and 54 (other information) on the 2025/26 return. Entries in sterling.
 - **Rebasing election out:** TMA 1970 ss42 and 43 claim procedure (Sch 11 para 3(2)).
 - **2025/26 returns being filed now:** online return and payment by 31 January 2027; FIG claim and TRF designation (12%) until 31 January 2028.
@@ -156,6 +160,43 @@ expected:
   saving_vs_undesignated: 9900
 ```
 
+### Example 3: OWR financial limit with a later bonus
+
+HMRC's own case (EIM43600, Example 4). Sergei is a qualifying new resident for 2025/26 and makes an OWR election. He earns £500,000 for 2025/26 and 40% of his duties are outside the UK: £200,000 of qualifying foreign employment income. Relief is the lower of £300,000 and 30% of £500,000 (£150,000), so £150,000. In 2026/27 he receives a £100,000 bonus for 2025/26 duties. His 2025/26 qualifying employment income charged to tax is now £600,000; the limit is the lower of £300,000 and £180,000, less £150,000 already claimed. He claims £30,000 in his 2026/27 return.
+
+```oa-check
+name: OWR limit across two tax years for one qualifying year (EIM43600 Example 4)
+inputs:
+  earnings_y1: 500000
+  bonus_y2: 100000
+  overseas_share: 0.40
+  cap: 300000
+steps:
+  - qfei_y1: earnings_y1 * overseas_share
+  - relief_y1: min(qfei_y1, min(cap, earnings_y1 * 0.30))
+  - limit_total: min(cap, (earnings_y1 + bonus_y2) * 0.30)
+  - relief_y2: min(bonus_y2 * overseas_share, limit_total - relief_y1)
+expected:
+  qfei_y1: 200000
+  relief_y1: 150000
+  limit_total: 180000
+  relief_y2: 30000
+```
+
+## When to refuse or refer
+
+- Non-UK trusts of any kind, including TRF designation of trust amounts.
+- Any inheritance tax computation, lifetime transfers, the tail after leaving, elections under ss267ZC to 267ZE, and the young persons rule.
+- Mixed funds: identifying what was remitted and choosing what to designate.
+- Residence doubt: any SRT question, split years, and look-backs reaching 2012/13 or earlier.
+- Treaty residence and double taxation relief where the OWR limit bites.
+- Transfer of assets abroad and the settlements legislation.
+- Domicile before 2025/26, where rebasing or old years turn on it; valuations at 5 April 2017.
+- Business investment relief and exempt property history.
+- Members of Parliament in the look-back period.
+- Late claims or elections: only HMRC's general late claims policy can help.
+- Do not confirm that a client qualifies until residence for every year in the look-back is established.
+
 ## Ask the client first
 
 1. Were you UK resident (under the SRT, counting split and treaty years) in any of the 10 tax years before you arrived? In which year did your current UK residence start? Were you ever a member of Parliament?
@@ -189,11 +230,15 @@ expected:
 | HMRC RFIG44000 (qualifying new residents) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig44000 | 2026-10-26 |
 | HMRC RFIG43000 (effect of a claim) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig43000 | 2026-10-26 |
 | HMRC EIM43600 (OWR financial limit) | https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43600 | 2026-10-26 |
+| HMRC EIM43605 (OWR transitional rules) | https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43605 | 2026-10-27 |
+| HMRC EIM43560 (OWR eligibility) | https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim43560 | 2026-10-27 |
+| HMRC RFIG42300 (FIG claim time limits) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig42300 | 2026-10-27 |
+| HMRC RDRM73320 (TRF designation election) | https://www.gov.uk/hmrc-internal-manuals/residence-domicile-and-remittance-basis/rdrm73320 | 2026-10-27 |
 | GOV.UK, Self Assessment deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-24 |
 | GOV.UK, Self Assessment penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 
-Not yet confirmed: the 2026/27 SA109 box numbers for the TRF and FIG claims; the 2026/27 Self Assessment dates as printed by GOV.UK (pattern applied); the OWR transitional table (EIM43605), the RFIG42100 quantification rule and the business investment relief end date, carried from version 1.0 but not re-read today; the remittance basis charge figures (RDRM32210) and deemed domicile Conditions A and B (ITA s835BA), kept as history only; the OWR claim time limit; the commencement of the age-10 test for 2025/26.
+Not yet confirmed: the 2026/27 SA109 box numbers for the TRF and FIG claims; the 2026/27 Self Assessment dates as printed by GOV.UK (pattern applied); the RFIG42100 quantification rule, carried from version 1.0 but not re-read; the remittance basis charge figures (RDRM32210) and deemed domicile Conditions A and B (ITA s835BA), kept as history only; the OWR claim time limit; the commencement of the age-10 test for 2025/26.
 
 <!-- openaccountants-cta-block -->
 
@@ -215,4 +260,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-non-dom` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-non-dom. If neither is available, confirm every figure against the official source pages cited above before relying on it.

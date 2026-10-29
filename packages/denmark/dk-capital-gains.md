@@ -4,7 +4,7 @@ description: "Danish capital gains for individuals, income year 2026. Covers sha
 version: 1.1
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

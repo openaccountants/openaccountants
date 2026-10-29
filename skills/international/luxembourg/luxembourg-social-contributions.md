@@ -195,6 +195,8 @@ expected:
 
 Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); the amount the CCSS actually charges for a late exit or missing wage declaration within the art. 445 CSS cap of EUR 2,500; a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the reference period the AAA uses to set the bonus-malus factor (the old version's 1 April Y-2 to 31 March Y-1 came from secondary sources; the AAA page was down on 27 October 2026); bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -212,5 +214,3 @@ version (and the professional behind it) is at
 > **General reference only.** This document does not constitute tax, legal, or
 > financial advice. Verify figures against the cited primary sources or with a
 > licensed professional before relying on them.
-
-> Contributed by Ryan Duguid.

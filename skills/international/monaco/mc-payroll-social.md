@@ -1,15 +1,15 @@
 ---
 name: mc-payroll-social
 description: "Monaco payroll and social contributions for all of 2026, separating January to September and October rate periods. Covers professional and domestic employers, ordinary bases and caps, directors, part time and absent workers, CAMTI and CARTI self employed classes, wages and payslips, filings, sanctions and French cross border tax collection. Use for Monaco payroll, pension, social security, gross to net and independent contribution questions. Includes two reproducible ordinary payroll examples and sourced in-year transitions. Source cited draft awaiting named Monaco professional review."
+version: 1.4
 jurisdiction: MC
-category: international
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.4
 ---
 
 # Monaco payroll and social contributions
@@ -198,6 +198,8 @@ expected:
 | Ministerial response 9837, Monaco salary collection | https://questions.assemblee-nationale.fr/q15/15-9837QE.htm | 2026-10-25 |
 
 The earlier official PDFs were read and visually checked from dated archive captures because their live download IDs now return 2026 documents. They are not claimed as fresh live 2025 downloads. Original source URLs, capture dates, hashes, corroborating instruments and exceptions are recorded in the country research receipts. The January to September 2026 (social year 2025-26) CCSS, CAR and CMRC caps, the 0.88% CAR variable employer rate and the 2025-26 CAMTI and CARTI quarterly amounts are confirmed from the official October 2025 CSM circulars themselves (headed "au 1er octobre 2025"; the social year runs to 30 September), re-read 27 October 2026 from the dated archive captures; no live official page now states them. **Not yet confirmed:** special occupational flat bases, derogatory CMRC contracts and sector-specific employment costs. These require their own schedule; do not apply the ordinary examples to those cases without classification.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

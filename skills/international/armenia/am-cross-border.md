@@ -1,31 +1,15 @@
 ---
 name: am-cross-border
 description: "Prepare Armenia 2026 corporate and personal cross-border workpapers: establish residence and permanent-establishment status, classify Armenian-source receipts, separate PE profit from non-attributed income, compute domestic nonresident withholding and reconcile capped foreign-tax credit. Covers offshore services, payment and dividend triggers, quarterly versus annual filing, electronic residence certificates and enacted future-date gates. Includes two examples and supplementary research controls for royalties, net-guaranteed consultancy, dividends, credit limitation and carryforward, and PE attribution. Use for Armenian nonresident payments, foreign companies, source of income, tax treaties and foreign tax. Supplies ordinary personal source/property, agent/no-agent reporting and departure-year methods. Maps the current SRC recipient application, authority approval and receiving-account instruction. Taxpayer-specific treaty entitlement, specialist property/exit/mobility and actual bank-settlement timing remain separate boundaries. Checked against the law."
-jurisdiction: AM
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.2
-sources:
-  - url: "https://www.arlis.am/hy/acts/215611/latest"
-    title: "Current Armenian Tax Code, residence, source, nonresident tax, credit and procedure"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/en/acts/231892"
-    title: "Official English Tax Code translation, used with current Armenian amendments"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/226008"
-    title: "HO-234-N, May 2026 amendment including offshore services and payment events"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/217374"
-    title: "HO-377-N, repeal of former labour-supply PE provision and residence certification"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/228632"
-    title: "HO-385-N, future February 2027 dividend amendments and transition"
-    as_of: "2026-10-24"
-  - url: "https://www.arlis.am/hy/acts/217191"
-    title: "SRC Order 345-N through 1629-N, residence applications and certificate"
-    as_of: "2026-10-24"
+jurisdiction: AM
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Armenia corporate and personal cross-border preparation v0.2
@@ -193,7 +177,6 @@ Reconcile category totals, non-taxable but reportable amounts, agent withholding
 
 **Departure:** re-test residence each year from actual travel days and retained vital interests. Code 25(5)'s whole-year rule means a flight does not itself end that year's worldwide-income treatment. In a later established nonresident year, classify continuing Armenian salary, rent, dividends, royalties and property receipts through the source/rate/exemption and agent/no-agent sequence above. Retain bank/portal access, authority notices, the relevant calendar and evidence of paid tax so that next-year filing and refunds are actually followed through. No unsupported special pre-departure deadline or automatic tax clearance is imposed here. A treaty override still requires the actual treaty and operative relief procedure identified separately below. [20, 25, 141, 144, 150–158][code]
 
-
 ## Two worked examples that recompute
 
 All amounts are hypothetical AMD. Corporate recipient/scope, source, no relief and the stated dates/classification are assumed established. Examples are workpapers, not accepted filings.
@@ -278,9 +261,7 @@ Read on **24 October 2026**. Current Armenian Code targeted Articles 2, 19–27,
 [certificate]: https://www.arlis.am/hy/acts/217191
 [service]: https://e-services.src.am/en/services/f811e3c1-d638-4e7d-966b-f10a36040678
 
-
 Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https://www.arlis.am/hy/acts/226008) is the general 1 July 2026 commencement and enumerated 1 January 2027 exception provision. Article 31 instead amends Tax Code 293(2); it is not the commencement authority. Other source read dates remain as recorded.
-
 
 [quarterform]: https://www.arlis.am/hy/acts/201372/latest
 [quarteramend]: https://www.arlis.am/hy/acts/200736/latest
@@ -292,3 +273,23 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 [treatyformsamend]: https://www.arlis.am/hy/acts/20140/latest
 
 **Not yet confirmed:** a separate current unconditional treaty-refund cash-transfer clock and complete internal Treasury posting workflow; the actual taxpayer's treaty/MLI entitlement requires its own facts and operative instruments. The current Code 304/SRC specimen claimant, approval and account-instruction route is supplied above. The ordinary personal source/property, agent/no-agent filing and departure method is supplied above. Specialist treaty-rate tables, restructurings, exit/CFC, securities and social-security instruments remain separate scope. No live return/refund/certificate or named accountant attestation is claimed; independent source-review records are preserved in the country research.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

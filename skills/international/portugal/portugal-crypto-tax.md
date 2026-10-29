@@ -223,6 +223,8 @@ Not yet confirmed: the acquisition value of crypto received as a reward (this sk
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

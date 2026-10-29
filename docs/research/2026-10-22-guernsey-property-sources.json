@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Royal Court overview",
+    "url": "https://www.guernseyroyalcourt.gg/article/1921/Document-Duty",
+    "as_of": "2026-10-22",
+    "sha256": "623de1486bbc615162ad0c0a780071a4cdcda4dec5412b00b5e794dd18067766",
+    "locators": "Document duty overview; legal index unavailable"
+  },
+  {
+    "title": "2026 Budget",
+    "url": "https://parliament.gg/parliamentary-business/assets/propositions/P2025-121",
+    "as_of": "2026-10-22",
+    "sha256": "7e87c4bdf9353e2447a7b8ef433b6e51b6e6d05ee43cdad4335f809d9db5a675",
+    "locators": "Both 2025 duty amendment ordinances ss1\u20135; paragraphs 5.87\u20135.96 and footnote16"
+  },
+  {
+    "title": "Official 21 May 2026 response",
+    "url": "https://parliament.gg/parliamentary-business/assets/questions/2026-16",
+    "as_of": "2026-10-22",
+    "sha256": "c658686b320256eda1401091395d3871ad60340fd0cdc3f7a29bb16784971ee1",
+    "locators": "Question11, pp5\u20136, Tables1 and3; Table2 is hypothetical"
+  },
+  {
+    "title": "5 November 2025 Hansard",
+    "url": "https://parliament.gg/parliamentary-business/hansard/hansard-14-33",
+    "as_of": "2026-10-22",
+    "sha256": "bc4a6c728feafbd63d172115e6e6ef6c98b47324215a79d9e1c2c84ff252a2f8",
+    "locators": "Printed pp63\u201365: budget propositions12 and13 individually carried"
+  },
+  {
+    "title": "Greffier registration and collection",
+    "url": "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds",
+    "as_of": "2026-10-22",
+    "locators": "Introduction and Registry duties",
+    "sha256": "3a5dd7a14d916a9b1bb389f532870e17dbc1cf9ce0de92ef6eba339af8c8e579"
+  },
+  {
+    "title": "Conveyances",
+    "url": "https://www.guernseyroyalcourt.gg/article/1919/Conveyances",
+    "as_of": "2026-10-22",
+    "locators": "Advocate and Contracts Court paragraph",
+    "sha256": "80300314e74cb5102808d276327554a8048a81779080df322cde2d12c7783fe7"
+  },
+  {
+    "title": "Contracts Court",
+    "url": "https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court",
+    "as_of": "2026-10-22",
+    "locators": "Witnessing and prior-to-registration sequence",
+    "sha256": "56c9b102c6427a5e4bd7139846477d77c034584ef621d4d97391690078d4bcdc"
+  }
+]

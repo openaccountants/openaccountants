@@ -7,8 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 depends_on:
   - de-self-employed-income-tax
 category: international
@@ -185,3 +183,23 @@ The 30-day month in the steps is a simplification for this example; count calend
 | Mein ELSTER, "Antrag auf Anpassung von Vorauszahlungen" | https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg | 2026-10-27 (named from the earlier version; page not re-read) |
 
 Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

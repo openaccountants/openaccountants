@@ -11,12 +11,15 @@ description: >
   decision, building value, annual tax, municipal real-estate rate or property
   information corrections. Transfer tax on buying property and income tax on
   rent or gains are separate computations in the companion skills.
-jurisdiction: FI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.1
+jurisdiction: FI
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland annual real-estate tax v0.1
@@ -178,3 +181,23 @@ Not yet confirmed: case-specific municipal zone inputs and actual building featu
 [decision]: https://www.vero.fi/en/individuals/property/real-estate-tax/
 [payment]: https://www.vero.fi/en/individuals/property/real-estate-tax/paying-real-estate-tax/
 [penalty]: https://www.vero.fi/en/individuals/property/real-estate-tax/real-estate-tax-decision/late-filing-penalty-fees-and-punitive-tax-increases-in-real-estate-taxation/
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -12,12 +12,15 @@ description: >
   and separate country-by-country reporting obligations. Includes ordinary transaction calculations and two
   recomputable examples. Specialist arrangements require a separately scoped
   transaction analysis; no professional attestation is claimed.
-jurisdiction: FI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-26
 version: 0.7
+jurisdiction: FI
+tax_year: 2026
+last_updated: 2026-10-27
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Finland transfer-pricing documentation v0.7
@@ -189,7 +192,6 @@ The 23 October source work and independent review remain preserved in the countr
 
 Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustments, APA/MAP case outcomes and special financing/intangible/restructuring terms. These are transaction inputs or specialist procedures; no universal margin, treaty outcome or professional sign-off is asserted. Independent review of this revision is recorded in the pack README.
 
-
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/
 [form]: https://www.vero.fi/en/About-us/contact-us/forms/filling-instructions/78-explanation-of-transfer-prices-how-to-fill-out-the-form/
@@ -202,3 +204,23 @@ Not yet confirmed: taxpayer-specific benchmarks, foreign corresponding adjustmen
 
 [services]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-of-sale-of-services/
 [loans]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/intra-group-financing/intercompany-lending-and-borrowing/
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

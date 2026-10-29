@@ -1,15 +1,15 @@
 ---
 name: netherlands-30-percent-ruling
 description: "The Dutch expat scheme (30% ruling, expatregeling) for employees recruited or seconded from abroad, tax year 2026. Covers who qualifies (150 km rule, PhD and returning-employee exceptions, the 2026 salary norms of EUR 48,013 and EUR 36,497), the 30% tax-free allowance for 2026 and the cut to 27% from 1 January 2027 written into the law, the transitional rule that keeps 30% for rulings applied by the last pay period of 2023, the WNT cap (EUR 262,000, so EUR 78,600 a year), the 4-month application window, the 5-year term and earlier-stay reductions, the annual choice against actual costs, and the end of partial non-resident status after the 2026 return. Trigger on: 30% ruling, 30 percent ruling, expat scheme, expatregeling, 30%-regeling, extraterritorial costs, tax-free allowance for expats. Out of scope: general payroll (nl-payroll-tax, netherlands-payroll), box 1 to 3 income tax (nl-income-tax), residence and treaties (nl-cross-border, nl-double-tax-relief), employees sent abroad from the Netherlands."
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-27
 version: 0.3
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 

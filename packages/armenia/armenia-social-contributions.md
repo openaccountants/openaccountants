@@ -1,10 +1,10 @@
 ---
 name: armenia-social-contributions
-description: Use this skill whenever asked about Armenia payroll social contributions and personal income tax for employees, individual entrepreneurs, or expatriates. Trigger on phrases like "Armenia payroll tax", "Armenian pension contribution", "funded pension 5% 10%", "military stamp duty Armenia", "Insurance Foundation for Servicemen", "Armenia social security", "how much PIT do I withhold in Armenia", "Armenian employer social tax", "mandatory health insurance Armenia", "SRC monthly payroll return", "net pay calculation Armenia", or any question about Armenian payroll withholding obligations. Also trigger when classifying bank statement transactions that relate to SRC tax payments, pension contributions, military stamp duty, or salary payments from Armenian banks (Ameriabank, Ardshinbank, Acba Bank, Inecobank, Converse Bank). This skill covers the flat 20% PIT, mandatory funded pension contribution, military stamp duty, the new mandatory health insurance contribution (effective Dec 2025/Jan 2026), the fact that the private sector has NO separate employer social tax, monthly filing deadlines, penalties, bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any Armenian payroll or social-contribution work.
-version: 0.1
+description: "Use for Armenian 2026 pension social payments, military stamp and universal health insurance. Establish participation, residence status, age, elections, income class, register entry and continuation before calculating employee or entrepreneur amounts. Covers ordinary monthly and annual pension caps, elected participants, employer-funded childcare, stamp populations and periods, health funding and separate transitional reporting/payment. Includes two conditional examples with supplementary controls preserved in the research record. Trigger on Armenia social contributions, funded pension, stamp payment, health insurance or entrepreneur contributions. Checked against the law: the health deadline wording discrepancy, separate erroneous-payment procedure, specialist exceptions, live acceptance and named accountant attestation remain open; independent source review is recorded in the country research."
+version: 0.3
 jurisdiction: AM
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,443 +14,231 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Armenia Social Contributions & Payroll Withholding
+# Armenia social payments, stamp payments and health insurance
 
-## Armenia Social Contributions & Payroll Withholding Skill v0.1
+## Who this applies to
 
-## Section 1 -- Quick reference
+2026 computation, checked against the law, read 24 October 2026, for employees, individual entrepreneurs/notaries and specified self-employed persons. Establish the person, income class, period, residence status, pension participation/elections and health-register entry before calculating. Read with `social-contributions-workflow-base` and [payroll](armenia-payroll.md); ordinary salary PIT is not the same legal obligation as pension, military stamp or health insurance. Fresh whole-pack review and named accountant attestation remain pending.
 
-**Read this whole section before computing or classifying anything.**
+Do not treat bank references or an unknown employment status as proof of a statutory category. Obtain contracts, accrued salary and paid contract-income registers, birth date, residence permit, pension election/cessation/cap-waiver documents, other income sources, health-register notice and payer status, social-package status, prior returns and payment accounts.
 
-**Quick reference table**
+## Rates, bands and thresholds
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Armenia |
-| Primary Legislation | Tax Code of the Republic of Armenia (effective 1 Jan 2018, as amended) — ARLIS arlis.am/en/acts/205620 |
-| Supporting Legislation | Law on Funded Pensions; Law on the Insurance Foundation for Servicemen (military stamp duty); Law on Universal/Mandatory Health Insurance |
-| Tax Authority | State Revenue Committee of the Republic of Armenia (SRC) — e-filing at src.am |
-| Currency | AMD only |
-| Personal income tax | Flat 20% on gross employment income, no allowance, no brackets (effective 1 Jan 2023) — PwC |
-| Employer separate social tax | NONE — private sector has no employer-paid social security contribution; employer withholds employee amounts only — PwC / Vardanyan & Partners |
-| Funded pension (employee) | 5% of gross if gross < AMD 500,000; else 10% of gross − AMD 25,000, capped — PwC |
-| Funded pension max contribution | AMD 87,500/month (base capped at AMD 1,125,000 = 15× min wage) — PwC |
-| Military stamp duty (employee) | AMD 1,000/month if gross ≤ AMD 1,000,000; AMD 15,000/month if > AMD 1,000,000 (from Dec 2025) — PwC / Vardanyan |
-| Mandatory health insurance (employee) | AMD 4,800/month (gross 200,001–500,000); AMD 10,800/month (gross > 500,000); exempt ≤ 200,000 (from 25 Dec 2025) — PwC |
-| Minimum monthly wage | AMD 75,000 (effective 1 Jan 2023, unchanged through 2025/2026) — tradingeconomics / arka.am |
-| Monthly filing + payment deadline | 20th day of the month following the reporting month, via SRC e-portal — SRC / Vardanyan |
-| Validated by | Pending — requires sign-off by an Armenian licensed tax adviser |
-| Validation date | Pending |
+| Obligation | Ordinary 2026 method | Primary source |
+|---|---|---|
+| Pension, mandatory pre-retirement salary branch | 5% through AMD 500,000 monthly; above that, 10% less AMD 25,000, subject to cap/elections | [Pension 5–6][pension] |
+| Pension ordinary monthly base ceiling | 15 × statutory monthly minimum wage; AMD 1,125,000 using AMD 75,000 | [Pension 6(6)][pension], [wage 1][wage] |
+| Ordinary mandatory monthly pension ceiling | AMD 87,500 under the preceding branch, absent cap waiver/special case | [Pension 6(7)][pension] |
+| Ordinary annual pension base ceiling | 180 × minimum wage on 1 January; AMD 13,500,000 for 2026 | [Pension 6(6)][pension], [wage 1][wage] |
+| Ordinary mandatory annual pension ceiling | AMD 1,050,000 under the annual 10%-less-300,000 branch, subject to status and aggregate reconciliation | [Pension 6(7)–(9)][pension] |
+| Pension actual-business annual income | 5% through AMD 6 million; above, 10% less AMD 300,000, with applicable caps | [Pension 2(27), 6(2)(2)][pension] |
+| Pension specified turnover-tax activities | AMD 5,000 monthly, separate from the ordinary actual-income method | [Pension 6(2)(3), (5)][pension] |
+| Military stamp, eligible monthly agent population | AMD 1,000 through AMD 1 million base; AMD 15,000 from AMD 1,000,001 | [Stamp 9–12][stamp] |
+| Military stamp, eligible annual population | AMD 12,000 through AMD 12 million base; AMD 120,000 from AMD 12,000,001 | [Stamp 9–12][stamp] |
+| Health statutory full premium | AMD 129,600 annually / AMD 10,800 monthly | [Health 13][health] |
+| Health 2026 eligible employee contribution | AMD 4,800 through AMD 500,000 salary; full AMD 10,800 from AMD 500,001, after entry/status tests | [Health 45–46][health] |
 
-- **Pension birth-date eligibility** — Mandatory funded pension applies only to employees born on or after 1 January 1974. Those born before are exempt.  _(PwC)_
+## The base
 
-**Payroll deduction overview (employees, private sector):**
+### Pension participation is more than a birth-year switch
 
-**Payroll deduction overview (employees, private sector)**
+Article 5 includes employees, notaries and entrepreneurs born on/after **1 January 1974**, and pre-1974 persons who submitted the pension-fund choice application. That election cannot simply be reversed. Resident-status foreigners/stateless persons follow the general rule unless an applicable international agreement says otherwise. A person reaching pension age does not automatically disappear from payroll: cessation needs the prescribed application; salary cessation starts the following month, while the business-income cessation date is the year's 1 January under the statutory branch. [5][pension]
 
-| Item | Payer | Rate / amount | Authority |
-| --- | --- | --- | --- |
-| Personal income tax (PIT) | Employee (withheld) | 20% flat of gross | PwC |
-| Funded pension contribution | Employee (withheld) | 5% (< 500k) or 10% − 25,000 (≥ 500k), capped 87,500 | PwC |
-| Military stamp duty | Employee (withheld) | AMD 1,000 (≤ 1,000,000) or AMD 15,000 (> 1,000,000) | PwC / Vardanyan |
-| Mandatory health insurance | Employee (withheld) | AMD 0 / 4,800 / 10,800 by band | PwC |
-| Employer separate social tax | Employer | **AMD 0 — none** | PwC / Vardanyan |
+The Article 6(3) elected/continuing-after-pension-age branch uses **5%**, rather than automatically applying the mandatory young-worker 10%-less-25,000 limb. The start dates differ by income class. Establish actual status and applications. Self-employed income has its own voluntary-payment route. The statutory definition excludes exclusively microenterprise entrepreneurs from the ordinary entrepreneur definition and includes them in the self-employed definition; do not charge them the turnover-regime monthly amount just because they have a registration. [2(2)/(9), 5–7][pension]
 
-**Conservative defaults**
+For the ordinary mandatory branch with eligible monthly base B and no cap waiver:
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown birth year | STOP — funded pension depends on birth date (on/after 1 Jan 1974). Do not compute pension without it |
-| Unknown period (pre/post Dec 2025) | Assume the current two-tier military stamp + new health contribution apply only from Dec 2025/Jan 2026; flag pre-Dec-2025 periods for reviewer |
-| Unknown employment status | Treat as an employee under an employment contract; individual-entrepreneur rules differ — flag |
-| Unknown citizenship | Health insurance applies to Armenian citizens; for foreigners confirm with reviewer |
-| Employer social tax line seen on statement | There is no employer social tax — treat as a misclassification and flag |
+`capped_B = min(B, 15 × minimum_wage)`; `payment = 5% × capped_B` through 500,000, otherwise `10% × capped_B − 25,000`.
 
-## Section 2 -- Required inputs and refusal catalogue
+The law's salary definition includes specified contractual income. Monthly aggregate income includes salary/equivalents accrued by all employers and contract income paid in that month. Annual aggregate income includes the specified business/salary/contract categories. Article 6(6)–(9) provides multi-source ceilings; turnover-activity amounts enter the maximum and voluntary self-employed payments have a stated exclusion. Article 6(11) permits an election not to apply the ordinary base ceilings. Use the separate participant reconciliation below; do not reduce each employer's withholding in anticipation of the same personal refund. [2(4), 6–7][pension]
 
-### Required inputs
+### Salary equivalents and the actual pension applications
 
-- **Minimum viable** — Monthly gross employment income (AMD) and the employee's birth year (or confirmation born on/after 1 Jan 1974). Without birth year, STOP on the pension line. Do not compute the funded pension contribution.
-- **Recommended** — The payroll period (month/year, to determine whether the Dec 2025/Jan 2026 changes apply), Armenian citizenship status (for health insurance), and whether the worker is an employee or an individual entrepreneur.
-- **Ideal** — The SRC monthly unified payroll report, the employment contract, and bank statements showing salary credits and SRC remittances.
+The implementing salary list is joint **416-N/107-N/561-N**, not a rule that every taxable benefit is pensionable salary. Within employment contracts/hiring acts, it includes basic/additional pay, overtime, night/rest/holiday work, additions and bonuses regardless of frequency/funding, paid idle time including reinstatement, lawful strike pay, paid special breaks, extra workload and mandatory work-related medical-examination time. Annual paid leave, specified paid study/public-duty leave and **unused-leave compensation on termination** are included. Its wage-fund one-off-payment limb excludes statutory compensation, including statutory temporary-incapacity/maternity benefits, aid and social-needs payments. Author remuneration is included except Code 4(1)(34) royalties. Civil work/service-contract income is a separate statutory limb, not an employment benefit. Keep this pension list separate from PIT exemptions and the health salary test. [Joint list 1(1)–(3)][salarylist]; [Pension 2(1)(4)][pension]
 
-### Refusal catalogue
+For a **cap waiver or restoration**, use current **189-N**, paragraphs 2–20 and Forms 1–4:
 
-- **R-AM-SC-1** — Trigger: employee birth year/decade not provided. Message: "Birth year is mandatory to compute the funded pension contribution. The mandatory funded pension applies only to employees born on or after 1 January 1974; those born earlier are exempt. Cannot compute the pension line without this information."  _(R-AM-SC-1)_
-- **R-AM-SC-2** — Trigger: the payroll period is before December 2025, or it is ambiguous whether the new military-stamp two-tier schedule and the new health insurance contribution apply. Message: "The two-tier military stamp duty (AMD 1,000 / 15,000) and the mandatory health insurance contribution take effect from December 2025 / January 2026. Earlier periods used a different (multi-tier) military stamp schedule and had no health contribution. Escalate the exact go-live date to a reviewer before computing pre-2026 periods. [RESEARCH GAP — reviewer to confirm exact effective date]"  _(R-AM-SC-2)_
-- **R-AM-SC-3** — Trigger: the worker is an individual entrepreneur, not an employee. Message: "Individual-entrepreneur funded pension, military stamp duty, and health insurance use annual-income formulas that differ from the employee withholding rules, and some figures rest on secondary sources only. Escalate to a reviewer. [RESEARCH GAP — IE military stamp AMD 12,000/120,000 and IE health AMD 129,600 are secondary-source only]"  _(R-AM-SC-3)_
-- **R-AM-SC-4** — Trigger: the employee is a foreign citizen and the health insurance line is in question. Message: "The new mandatory health insurance contribution is documented for Armenian citizens employed under employment contracts. Application to foreign citizens is not confirmed. Escalate to a reviewer. [RESEARCH GAP — reviewer to confirm foreign-citizen health insurance treatment]"  _(R-AM-SC-4)_
-- **R-AM-SC-5** — Trigger: unpaid PIT or contributions from prior periods. Message: "Late-payment interest accrues at 0.075% per day (Tax Code Art. 401) up to 730 days, and late filing adds further penalties. Do not quantify arrears without the SRC account statement. Escalate to a licensed adviser."  _(R-AM-SC-5 / Tax Code Art. 401)_
+| Applicant | Waiver / restoration route | Effective date |
+|---|---|---|
+| Ordinary employee | Signed paper request to employer; employer retains it and submits signed electronic **Form 1 / Form 3** through personalised accounting by the **last working day of receipt month** | First day of the month after submission to the tax authority |
+| Entrepreneur/notary or employee of a tax-agent-exempt employer | Signed electronic **Form 2 / Form 4** through personalised accounting | Entrepreneur/notary: 1 January of submission year; employee: first day of following month |
 
-## Section 3 -- Payment pattern library
+The paper request identifies employer, applicant/full identity-document details, public-service number or alternative certificate, date and signature. Employer electronic forms identify employer/TIN, worker/identifier, date and registration number; direct forms also contain the relevant employer identity/TIN fields. Multiple employers can use any one employer. A person with employee and entrepreneur/notary income needs separate monthly/annual elections. Restoration is available to the paragraph 6 participants who applied for waiver; the paragraph 2 six-month rule runs from the **2017 commencement**, not afresh from each 2026 election. Mistaken employee submissions can be cancelled only before any following-month personalised return, including another employer's; entrepreneurs/notaries must cancel within that year and before the annual return. [189-N 2–20, Forms 1–4][capforms]
 
-This is the deterministic pre-classifier for bank statement transactions related to Armenian payroll and social contributions. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
+For **pension-age cessation**, current joint **182-N/127-N** Annex 2 requires name/address, TIN if any, identity-document type/number, public-service number or alternative, date and signature. Ordinary employees hand the signed paper request to the employer, which communicates it through the statutory employee-registration application; it is legally submitted to the tax authority **when handed to the employer**. Entrepreneurs/notaries, self-employed persons and exempt-employer employees apply electronically. Pension 5(7) ends salary and turnover-activity payments from the following month's first day, and business-income payments from 1 January of that year. A separate application to the pension-register manager to receive a funded pension triggers SRC notice to the employer within one working day after SRC receives the register information. Retain that notice; birthday alone is insufficient. This cessation procedure and its deemed filing date differ from the cap-election forms. [Pension 5(4)–(7)][pension]; [joint 182-N/127-N, Annexes 1–3][cessation]
 
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. PIT, pension, military stamp, and health-insurance remittances EXCLUDE from any VAT return classification — they are statutory withholding obligations remitted by the employer as tax agent, not business supplies.
+### Multiple sources: reconcile paid pension contributions once
 
-### 3.1 SRC tax / contribution remittances (employer as tax agent)
+For the ordinary mandatory pre-retirement participant without a cap waiver, retain each agent's salary/contract base, assessment, remittance and reporting period. Compare the person's settled monthly payments with the applicable Article 6(7) monthly maximum, including the AMD 87,500 ceiling at the ordinary maximum base. Do not substitute one agent's income for all sources or give every agent the individual's full refund. The actual return mechanism is joint **181-N/126-N**, current incorporation from 1 July 2023. [6(6)–(9)][pension]; [joint procedure 2–6][pensionrefund]
 
-**SRC tax / contribution remittances**
+For example, two employers each accrue AMD 1 million and each withhold/remit AMD 75,000 under the ordinary branch. Total paid is AMD 150,000; the applicable aggregate maximum is AMD 87,500, leaving AMD 62,500 for the participant's refund procedure. The full period obligation must first be discharged. Accrued withholding alone is not cash available for refund. [6(2)/(6)/(7)][pension]; [joint procedure 6/11][pensionrefund]
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ՊԵԿ, SRC, STATE REVENUE COMMITTEE | EXCLUDE — SRC remittance | Monthly remittance of withheld PIT + contributions |
-| ԵԿԱՄՏԱՀԱՐԿ, INCOME TAX, PIT, IIT | EXCLUDE — withheld 20% PIT | Final monthly withholding |
-| ԿԵՆՍԱԹՈՇԱԿ, PENSION, FUNDED PENSION | EXCLUDE — funded pension contribution | Employee withholding |
-| ԴՐՈՇՄԱՆԻՇ, MILITARY STAMP, STAMP DUTY | EXCLUDE — military stamp duty | Insurance Foundation for Servicemen |
-| ԱՌՈՂՋԱՊԱՀՈՒԹՅՈՒՆ, HEALTH INSURANCE | EXCLUDE — mandatory health contribution | From Dec 2025 |
+For annual reconciliation, joint paragraph 2(2) defines the annual maximum after subtracting annual social payments paid for turnover-tax activities from the statutory annual maximum. Paragraph 3 uses the profit-tax calculation for the employee who is also an entrepreneur/notary and takes the year's monthly calculated social payments into account. Pension 6(9) excludes voluntary self-employed payments from this maximum; apply the actual status branch rather than adding every bank debit. Use the contribution card after prior monthly refunds, because joint paragraph 13 reduces the recorded paid amount when a refund is made. Do not refund the same excess again in the annual calculation. [6(6)–(9)][pension]; [joint procedure 2–3/13][pensionrefund]
 
-### 3.2 Remittances appearing on specific Armenian banks
+In the preceding two-employer example repeated for 12 months, original paid contributions total AMD 1.8 million. Twelve monthly refunds total AMD 750,000, leaving AMD 1.05 million recorded paid. With no other sources/status changes, that already equals the ordinary annual ceiling; an additional AMD 750,000 annual refund would duplicate the monthly refunds. [6(7)][pension]; [joint procedure 13][pensionrefund]
 
-**Remittances appearing on specific Armenian banks**
+Refund routing is to the **participant's own bank account**, not a second employer payroll credit or the pension register manager. Under current joint paragraphs 10–12, the tax authority obtains bank-account/ownership/validity information from the CBA's central bank-account register and sends Treasury a payment instruction within **two working days after receiving that information**. The participant can supply an account belonging to them under 10.1. Treasury transfers within **two working days after the instruction**. These are different event-based clocks, not a guaranteed four-day period from payroll filing. The instruction identifies the participant, public-service number or stated alternative, bridge account, bank/account, refund amount and period. A filed cap-waiver application under Pension 6(11)/(12) excludes this excess-refund route under joint paragraph 15. [Joint procedure 4–6/10–15][pensionrefund]
 
-| Bank | Typical debit description | Treatment |
-| --- | --- | --- |
-| Ameriabank | "SRC TAX PAYMENT" or "ՊԵԿ" | EXCLUDE — SRC remittance |
-| Ardshinbank | "STATE BUDGET" or "INCOME TAX" | EXCLUDE — SRC remittance |
-| Acba Bank | "ՊԵԿ" or "TAX/SOCIAL PAYMENT" | EXCLUDE — SRC remittance |
-| Inecobank | "SRC" or "PENSION CONTRIBUTION" | EXCLUDE — SRC remittance |
-| Converse Bank | "STATE REVENUE COMMITTEE" | EXCLUDE — SRC remittance |
+**Employer-funded exception:** Article 6(10) requires AMD **3,000 per month from the employer's own funds** for the specified participant on childcare leave, from the month following leave commencement through the month the child reaches two, inclusive, while the employment relationship exists. Do not repeat a universal “no employer pension payment” rule. This is distinct from ordinary employee withholding and from state co-financing. [6(10)][pension]
 
-### 3.3 Salary and payroll (exclude from contribution classification)
+### Military stamp: population, base and separate periods
 
-**Salary and payroll patterns**
+Article 11 covers the specified resident employment/contract-income populations, non-resident Armenian-source/work populations and registered entrepreneurs/notaries. It excludes the specified no-income/no-base cases and foreigners/stateless persons without Armenian residence status. If eligible civil-contract income is insufficient to withhold the stamp, 11(3.1) instead requires the agent to pay from its own funds; it is not permission to show negative net income or erase liability. Specified military-family refunds require their own application/procedure. [11][stamp]
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ԱՇԽԱՏԱՎԱՐՁ, SALARY, WAGE (outgoing) | EXCLUDE — payroll expense (net pay) | Net of all withholdings |
-| SALARY, WAGE (incoming) | EXCLUDE — employment income received | Net pay credited to employee |
+Article 9 distinguishes monthly agent/qualifying exempt-employer populations from annual non-agent/entrepreneur/notary populations. Employee base is salary/equivalents and relevant civil-contract income. Entrepreneur stamp base is the specified **turnover or gross income** from regime reports, including mixed-regime aggregation, rather than automatically taxable business profit. Tax-agent withholding is calculated per agent under Article 14; do not apply pension aggregate-cap rules to stamp payments. [9, 12–15][stamp]
 
-### 3.4 Items that are NOT employee social contributions (do not confuse)
+The 2026 monthly/annual rates above follow HO-477-N. Its early employee branch covers salary of AMD 200,001 or more and applies to relationships from **1 December 2025**, although published 24 December and effective the next day. The other change begins **1 January 2026**. A universal “payment on/after 25 December” switch is wrong for historical recomputation. Reconstruct earlier periods under the then-operative table. [HO-477-N 1–2][stamp-amend]
 
-**Items that are NOT employee social contributions**
+### Health insurance: entry, continuation and payer
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| EMPLOYER SOCIAL TAX, SOC TAX | FLAG — Armenia has NO employer social tax | Likely a misclassification; escalate |
-| VAT, ԱԱՀ | EXCLUDE — VAT remittance, not a payroll contribution | Separate regime |
-| CIT, PROFIT TAX (18%) | EXCLUDE — corporate income tax, not payroll | Separate regime |
-| DIVIDEND, ROYALTY, INTEREST WHT | EXCLUDE — other withholding taxes | Not employee social contributions |
+Read the current September 2026 consolidation, not only the initial December law. Article 11 covers Armenian citizens in the enumerated groups and specified resident-status foreigners/refugee populations. Citizenship alone does not decide payment, and covered status is not necessarily the same as employee deduction. Register status, population, funding and commencement all matter. [11–12, 45–46][health]
 
-### 3.5 Pension / benefit payments received (not contributions)
+For the ordinary employee phase:
 
-**Pension / benefit payments received**
+- The initial November 2025 reported-salary test is tied to returns submitted as of 25 December 2025 and the Article 45(1)(3) conditions.
+- In **January–November 2026**, salary reaching AMD **200,001 per employer** activates the Article 45(1)(4) branch from the following month's first day and applies to that following month's salary onwards. It is not automatic same-month entry merely because a pay amount crossed the threshold.
+- Once the branch is triggered, the law continues calculation despite a salary reduction during the following **12 months**. Below AMD 200,001 is therefore not a universal zero-payment band for an existing participant. Later phases have their own dates; do not backdate 2027 populations.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PENSION RECEIVED, ԹՈՇԱԿ (incoming) | EXCLUDE — pension income received | Not a contribution paid |
+[45][health]
 
-## Section 4 -- Worked examples
+For established 2026 payers, Article 46(9) sets the AMD 4,800 agent amount through 500,000 per employer and the full monthly rate from 500,001. Article 46(17) provides AMD 6,000 state financing for the specified lower-paid group **except social-package beneficiaries**. Those beneficiaries have a separate AMD 6,000 self-payment obligation under 46(18). A low or absent salary can still require the agent's AMD 4,800 under 46(20). After employment ends, 46(19) provides self-payment during the stated continuing insured period. A state-paid status/refund branch under 46(16) must be tested separately; do not assume every covered worker is automatically exempt at payroll. [46][health]
 
-Six bank-statement / payroll classifications for a hypothetical Armenian software company and its employees, all assuming a period from December 2025 onward (new health contribution and two-tier military stamp in force). All employees assumed born on/after 1 Jan 1974 (pension applies) and Armenian citizens, unless stated.
+Multiple calculation bases/employers require the Article 14(7)–(8) total-premium and application/refund reconciliation, not an invented proportional deduction. Obtain the Fund record and payment evidence before recognising a refund. Employer payment of all or part is permitted under 14(9); tax treatment of a particular employer-paid benefit is a separate question. [14][health]
 
-### Example 1 -- Standard mid-range salary, gross AMD 300,000
+The specified 2025-income entrepreneur/notary phase uses the AMD **2,400,001** gross-income/turnover test in 45(1)(5). Under the April-amended transitional rule, the 2026 annual amount is the full statutory premium, payable by **20 July 2026**; covered status follows full payment as prescribed. Suspended/restarted activity and special payment arrangements have separate 46(20.1)/(20.2) provisions. This Guide does not invent a monthly employee-band election for an entrepreneur. [45–46][health]
 
-**Input line:**
-`05.01.2026 ; ARMSOFT LLC SALARY ; CREDIT ; NET PAY DEC 2025 ; +219,200 ; AMD`
+## Deadlines and filing
 
-**Reasoning:**
-Gross AMD 300,000. PIT = 20% × 300,000 = AMD 60,000. Pension: gross < 500,000 → 5% × 300,000 = AMD 15,000. Military stamp: gross ≤ 1,000,000 → AMD 1,000. Health: gross in band 200,001–500,000 → AMD 4,800. Total withheld = 60,000 + 15,000 + 1,000 + 4,800 = AMD 80,800. Net = 300,000 − 80,800 = **AMD 219,200**. Matches the credit. Salary credit (pattern 3.3) — exclude from VAT.
+Pension Article 7 makes the employer the agent, ties ordinary salary payments/reporting to the Tax Code monthly deadlines and separates annual/self-payment routes. Ordinary monthly PIT/social return and PIT payment are through the following month's **20th** under Tax Code 156/158; stamp Article 14 also uses the following month's 20th after calculation. Pension Article 8 governs personal-account recording, amended liabilities and former-worker corrections. Reconcile assessed amounts, remittance dates and allocation to each obligation. [Pension 7–8][pension], [Stamp 13–15][stamp], [Tax Code 156/158][code]
 
-**Classification:** EXCLUDE — net employment income received. Withholdings remitted by employer to SRC.
+### Separate health payment and register workflow
 
-### Example 2 -- Higher salary above pension threshold, gross AMD 600,000
+Health 46(14) says the specified employee premiums are **not reflected in the 2026 monthly income-tax calculations**. Under 46(13), salary in those returns supplies the calculation basis, but **salary reductions in amended returns are disregarded** for this calculation. Do not insert a health column, reverse an entered payer merely because payroll was reduced, or net a pension refund against health. Current 46(11) expressly requires the specified December 2025/2026 employee payments by the **20th inclusive of the month of obtaining payer status**. Apply this current statutory transition to its stated population. General 14(3) and the older Ministry leaflet do not replace it; reconcile the Fund status/payment notice for the particular month. The older wording is recorded as historical evidence, not a missing statutory deadline. Entrepreneur/notary 2026 full-year payment instead follows 46(12)'s **20 July 2026** deadline. [14–15/46(11)–(15)][health]; [1986-N 16–17][healthnotice]
 
-**Input line:**
-`05.01.2026 ; ARMSOFT LLC SALARY ; CREDIT ; NET PAY DEC 2025 ; +433,200 ; AMD`
+The Fund's current Armenian payment instructions distinguish these routes. Recheck the published details before an actual transfer; these are separate from PIT, pension and stamp accounts. [Fund payment instructions][healthaccounts]
 
-**Reasoning:**
-Gross AMD 600,000. PIT = 20% × 600,000 = AMD 120,000. Pension: gross ≥ 500,000 → 10% × 600,000 − 25,000 = 60,000 − 25,000 = AMD 35,000 (base below the AMD 1,125,000 cap). Military stamp: gross ≤ 1,000,000 → AMD 1,000. Health: gross > 500,000 → AMD 10,800. Total withheld = 120,000 + 35,000 + 1,000 + 10,800 = AMD 166,800. Net = 600,000 − 166,800 = **AMD 433,200**. Matches.
+| Payment population | Published account | Required allocation details |
+|---|---|---|
+| Employee, entrepreneur/notary and exempt-employer employee premiums to the state budget | **900005003703** | TIN and relevant persons' public-service identifiers |
+| Insured person who must self-pay during the continuing 12-month period, including after employment ends | **900018010380** | Person's name, surname and public-service identifier |
+| Social-package beneficiary's partial premium | **900018010471** | Employer TIN and person's public-service identifier |
 
-**Classification:** EXCLUDE — net employment income received.
+All three instructions specify purpose **«Առողջության համընդհանուր ապահովագրավճար»**. Payment evidence must retain payer, person, period and amount, not only a total bank debit. [Fund payment instructions][healthaccounts]
 
-### Example 3 -- High earner above all caps, gross AMD 1,500,000
+Under current **1987-N 3/5–7**, SRC supplies each month's 2026 data by the following month's 25th and the relevant paid-person list within **three working days following full payment**. The ordinary employer list depends on the whole premium amount for its payer employees being transferred. SRC's instruction to Finance follows full settlement/list preparation within two working days; Finance transfers within one working day after receipt. Those are inter-authority settlement clocks, not a guarantee that a salary bank debit creates immediate insured status. Annex 4/8 begin **1 January 2027**, so they are not 2026 authority for the future population/exchange branches. Retain the Fund register/status notice alongside the SRC report and treasury allocation. [1987-N 2, Annex 3–10/15–16, Forms 1–2][healthsettlement]
 
-**Input line:**
-`05.01.2026 ; ARMSOFT LLC SALARY ; CREDIT ; NET PAY DEC 2025 DIRECTOR ; +1,086,700 ; AMD`
+The Fund register is accessible through the electronic-health system/mobile application. Its individual account records calculated/paid premium, difference, group and payer/insured-status dates. Current **25-N 3–4/7/11** provides monthly source-data updates. Current **1986-N**, amended 26 September 2026, provides status/payment/late-payment notices normally within three working days after the relevant ground; the notice includes legal basis, date, amount, deadline/method and consequences. A wrong recipient/content notice is cancelled by an additional notice within one working day after discovery. This is a notice correction, not permission to reduce a statutory premium. [25-N][healthregister]; [1986-N 4–17][healthnotice]
 
-**Reasoning:**
-Gross AMD 1,500,000. PIT = 20% × 1,500,000 = AMD 300,000. Pension: base capped at AMD 1,125,000 → 10% × 1,125,000 − 25,000 = 112,500 − 25,000 = AMD 87,500 (the statutory maximum). Military stamp: gross > 1,000,000 → AMD 15,000. Health: gross > 500,000 → AMD 10,800. Total withheld = 300,000 + 87,500 + 15,000 + 10,800 = AMD 413,300. Net = 1,500,000 − 413,300 = **AMD 1,086,700**. Matches.
+### Health refunds: participant excess is not an erroneous treasury transfer
 
-**Classification:** EXCLUDE — net employment income received. Pension at statutory max AMD 87,500.
+For several bases/employers, Health 14(7)–(8) and the Fund board's **5 February 2026 decision 1, Annex 6** govern the actual excess-premium application. Settlement and register completion must exist; paragraph 5 permits the monthly application from the first day of the following month after the register information is entered. Paragraph 6 states the corresponding annual route. A one-time application supports later monthly/annual excess refunds. Form 2 identifies name/full name, public-service number, monthly/annual selection, bank/account or the stated no-account identity route, date, signature, consent and obligation to update changed details. The adopted paragraph 8 route is **info@uhif.am**; the Fund also publishes its online form with own-account confirmation, contact details, identifier/alternative and monthly/annual selection. No application has been submitted for a real person here. [Health 14(7)–(8)][health]; [board Annex 6, paragraphs 4–14/Form 2][healthrefund]; [published online form][healthrefundonline]
 
-### Example 4 -- Low earner exempt from health, gross AMD 200,000
+The Fund matches SRC payment information against its register and checks the actual excess. Paragraph 10 gives one working day after application for its conclusion, paragraph 12 two working days for transfer after that conclusion, subject to entitlement. The statutory three-working-day rule depends on settlement/register completion and an application; it is not an unconditional three days from salary withholding. No excess means rejection; only the existing excess is refundable, with written reasons under paragraphs 15–17 within five working days of application. The separate 46(16) state-paid-population refund has its own **five-working-day clock after SRC informs the Fund** and one-time electronic application. Do not apply the three-day rule to every refund. [Health 14(7)–(8)/46(16)][health]; [board Annex 6, paragraphs 3/5–17][healthrefund]
 
-**Input line:**
-`05.01.2026 ; ARMSOFT LLC SALARY ; CREDIT ; NET PAY DEC 2025 JUNIOR ; +149,000 ; AMD`
+Health 14(12)'s **mistaken payment without liability / transfer above assessed liability** is a different Government-procedure branch. Its commencement is expressly conditional on that implementing act. The board participant-excess form does not establish that separate procedure or authorize cancelling the next employer payment. The current implementing act and its operative date have not been established in this research. [14(12) commencement note][health]
 
-**Reasoning:**
-Gross AMD 200,000. PIT = 20% × 200,000 = AMD 40,000. Pension: gross < 500,000 → 5% × 200,000 = AMD 10,000. Military stamp: gross ≤ 1,000,000 → AMD 1,000. Health: gross ≤ 200,000 → **exempt (AMD 0)**. Total withheld = 40,000 + 10,000 + 1,000 = AMD 51,000. Net = 200,000 − 51,000 = **AMD 149,000**. Matches. Note the AMD 200,000 health threshold is the upper edge of the exempt band (exempt if ≤ 200,000).
+The Fund also publishes an actual **mistaken-transfer application**, a separate one-page DOCX listed on its official documents page. It asks the Fund to verify a transfer mistakenly made **to the Fund's account**, gives the reason/amount and claimant's own bank/account, and requires identity/contact details, company/entrepreneur registration evidence where applicable, representative authority and payment proof, with signature/date. This is useful evidence for that Fund-transfer case. Its text contains no Government enactment, general Treasury procedure or commencement clause; it does not establish the distinct Health 14(12) state-budget branch. [Fund document listing](https://www.uhif.am/am/documents); [actual mistaken-transfer form](https://vnxctzddivqjdrwwspgw.supabase.co/storage/v1/object/public/documents/official_docs/1788347293816_1775200508371_document.docx), read visually and structurally 26 October 2026.
 
-**Classification:** EXCLUDE — net employment income received. No health contribution (at/under threshold).
+## Penalties and interest
 
-### Example 5 -- Employee born before 1 Jan 1974 (pension-exempt), gross AMD 300,000
+Do not apply one arrears formula to all lines. Health Article 16’s import of tax-law late-payment terms takes effect **1 January 2027**, under Health Article 45(1)(8); it is not a current 2026 basis for charging the Tax Code interest rate. Tax Code 401 prescribes 0.075% daily with its 730-day limit for its own tax branch. Establish any other operative 2026 health collection/sanction basis separately before assigning an amount; no general 2026 health-interest exemption is inferred. Stamp Article **13(4) explicitly excludes tax-law late-payment interest**, although recovery/enforcement remains. Pension corrections, penalties and debt require their own legal/account reconciliation. No stamp interest is computed merely by analogy with PIT. [Health 16, 45(1)(8)][health], [Stamp 13][stamp], [Tax Code 401–403][code]
 
-**Input line:**
-`05.01.2026 ; ARMSOFT LLC SALARY ; CREDIT ; NET PAY DEC 2025 SENIOR ; +234,200 ; AMD`
+## Cross-border points
 
-**Reasoning:**
-Employee born 1968 → exempt from the mandatory funded pension. Gross AMD 300,000. PIT = 20% × 300,000 = AMD 60,000. Pension: **AMD 0 (born before 1 Jan 1974)**. Military stamp: gross ≤ 1,000,000 → AMD 1,000. Health: gross 200,001–500,000 → AMD 4,800. Total withheld = 60,000 + 0 + 1,000 + 4,800 = AMD 65,800. Net = 300,000 − 65,800 = **AMD 234,200**. Matches. Contrast with Example 1 (same gross, but pension-eligible): the AMD 15,000 difference is the omitted pension contribution.
+Pension and stamp residence-status tests differ from PIT residence/source. Check permits, employer/agent identity, contract versus employment, place of work and actual international social-security agreement before excluding a posted worker or foreign citizen. No treaty coverage certificate or agreement-based relief is verified here. Health resident-foreigner eligibility is expressly addressed in Article 11, subject to group/phase/status. [Pension 5][pension], [Stamp 9/11][stamp], [Health 11/45][health]
 
-**Classification:** EXCLUDE — net employment income received. Pension omitted (birth date before 1 Jan 1974).
+## Two worked examples that recompute
 
-### Example 6 -- SRC monthly remittance (employer remitting withheld amounts)
+Hypothetical AMD inputs. Status, eligible base and operative month are assumed established. No control proves refund, return acceptance, health entry or final net pay.
 
-**Input line:**
-`20.01.2026 ; STATE REVENUE COMMITTEE ; DEBIT ; ՊԵԿ MONTHLY PAYROLL DEC 2025 ; -1,234,000 ; AMD`
+### 1. Ordinary mandatory pension limbs
 
-**Reasoning:**
-Matches "STATE REVENUE COMMITTEE" / "ՊԵԿ" (pattern 3.1). This is the employer remitting the aggregate withheld PIT + funded pension + military stamp + health insurance for all staff for December 2025, due by the 20th of the following month. It is a remittance of amounts already withheld from employees, not a business expense or VAT item. The constituent lines should reconcile to the sum of each employee's withholdings on the SRC monthly report.
+Pre-retirement mandatory participant, no cap waiver or other sources: 300,000 gives 15,000; 600,000 gives 35,000. [6(2)][pension]
 
-**Classification:** EXCLUDE — SRC remittance (employer as tax agent). Reconcile to the monthly payroll report.
-
-## Section 5 -- Tier 1 rules
-
-These rules apply when payroll data is clear and all required inputs are available. Apply exactly as written. All figures per PwC Worldwide Tax Summaries (Armenia) and Vardanyan & Partners unless marked otherwise.
-
-### Rule 1 -- Personal income tax is a flat 20%
-
-- **Personal income tax rate** — 20% percent (Flat on gross, no personal allowance, no brackets, effective 1 Jan 2023. Employer is tax agent and applies final monthly withholding.)  _(PwC)_
-
-### Rule 2 -- No separate employer social tax
-
-- **No employer social tax** — Armenia's private sector has no separate employer-paid social security contribution. The employer only withholds and remits employee amounts. Never add an employer social-tax line for private-sector employers.  _(PwC / Vardanyan & Partners)_
-
-### Rule 3 -- Funded pension contribution (employees)
-
-- **Funded pension contribution formula** — if gross_monthly < 500,000: pension = 0.05 × gross_monthly else: base = min(gross_monthly, 1,125,000)      # base ceiling = 15 × min wage 75,000 pension = 0.10 × base − 25,000             # max 87,500 at base = 1,125,000 Applies only to employees born on or after 1 January 1974; those born earlier are exempt. There is no separate employer pension share — the state co-finances from the budget.  _(PwC)_
-
-### Rule 4 -- Pension base ceiling and maximum
-
-- **Pension base ceiling and maximum** — The pension calculation base is capped at AMD 1,125,000/month (15 × the AMD 75,000 minimum wage), giving a maximum employee contribution of AMD 87,500/month (10% × 1,125,000 − 25,000).  _(PwC)_
-
-### Rule 5 -- Military stamp duty (Insurance Foundation for Servicemen), employees
-
-- **Military stamp duty** — Two-tier, from December 2025: AMD 1,000/month if monthly gross ≤ AMD 1,000,000; AMD 15,000/month if gross > AMD 1,000,000. Withheld monthly by the employer. (Replaced the prior multi-tier AMD 1,500–15,000 schedule.)  _(PwC / Vardanyan)_
-
-### Rule 6 -- Mandatory health insurance contribution (employees), from 25 Dec 2025
-
-- **Mandatory health insurance contribution formula** — For Armenian citizens under employment contracts: if gross_monthly <= 200,000:      health = 0          # exempt elif gross_monthly <= 500,000:    health = 4,800      # band 200,001–500,000 else:                             health = 10,800     # gross > 500,000 Effective from 25 December 2025 per PwC (some secondary sources say first payroll January 2026). [RESEARCH GAP — reviewer to confirm exact go-live and any later phase-in for sub-AMD-200,000 earners]  _(PwC)_
-
-### Rule 7 -- Net pay formula (private-sector employee)
-
-- **Net pay formula** — net_pay = gross − PIT − funded_pension − military_stamp − health_insurance PIT = 0.20 × gross
-
-### Rule 8 -- Monthly filing and remittance deadline
-
-- **Monthly filing and remittance deadline** — File the SRC monthly unified payroll / income-tax & social-payment report and remit all withheld amounts (PIT, pension, stamp, health) via the SRC e-portal by the 20th day of the month following the reporting month.  _(SRC / Vardanyan)_
-
-### Rule 9 -- Other withholding-tax rates (context, not employee social contributions)
-
-- **Other withholding-tax rates** — Royalties 10%; interest 20% (from 1 Jan 2023); property lease income 10% (plus an additional 10% if annual lease income exceeds AMD 60,000,000); dividends 5% (refundable if reinvested in the same entity within the tax year).  _(PwC)_
-
-### Rule 10 -- Annual personal income tax declaration
-
-- **Annual personal income tax declaration** — Required only for income not taxed at source. For FY2025 the deadline is 1 November 2026; from 2027 the window is 2 March – 1 July of the following year.  _(PwC)_
-
-### Rule 11 -- Minimum monthly wage
-
-- **Minimum monthly wage** — AMD 75,000/month AMD (Effective 1 Jan 2023, unchanged through 2025 and 2026; a planned rise to AMD 85,000 for 2026 was discussed but not enacted as of early 2026. Used as the basis for the pension base ceiling (15× = 1,125,000).)  _(tradingeconomics / arka.am)_
-
-## Section 6 -- Tier 2 catalogue
-
-When payroll data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.
-
-### T2-1 -- Period straddling the December 2025 reform
-
-- **Period straddling reform** — Trigger: payroll period spans late 2025, or it is unclear whether the new military-stamp two-tier schedule and health contribution apply. Issue: Pre-December-2025 periods used the prior multi-tier military stamp duty (AMD 1,500–15,000) and had no mandatory health insurance contribution. The exact go-live of both items is documented mainly by PwC/Vardanyan, not directly from the SRC text. Action: Flag for reviewer. Confirm the effective date against the SRC/arlis.am Tax Code before computing affected periods. [RESEARCH GAP — reviewer to confirm exact effective date]
-
-### T2-2 -- Individual entrepreneur (sole proprietor) contributions
-
-- **Individual entrepreneur contributions** — Trigger: the worker is an individual entrepreneur, not an employee under an employment contract. Issue: IE pension is annual-income based (5% if annual basic income ≤ AMD 6,000,000; else 10% of income − AMD 300,000). IE military stamp is reportedly AMD 12,000/year (annual income ≤ AMD 12,000,000) or AMD 120,000/year (> AMD 12,000,000) from January 2026 — secondary source only. IE health insurance is reportedly AMD 129,600/year for 2025 income ≥ AMD 2,400,001, due by 20 April — verify. Action: Flag for reviewer. [RESEARCH GAP — IE military stamp and IE health figures are secondary-source only]
-
-### T2-3 -- Foreign-citizen employees
-
-- **Foreign-citizen employees** — Trigger: the employee is a foreign citizen. Issue: Funded pension applies to Armenian and foreign citizens born on/after 1 Jan 1974, but health insurance is documented for Armenian citizens; foreign-citizen treatment is unconfirmed. Public-sector employees and those not employed as of 1 July 2014 cannot opt out of the pension. Action: Flag for reviewer to confirm citizenship-specific treatment. [RESEARCH GAP — reviewer to confirm foreign-citizen health insurance treatment]
-
-### T2-4 -- Pension opt-in/opt-out and birth-date edge cases
-
-- **Pension opt-in/opt-out and birth-date edge cases** — Trigger: employee born close to 1 Jan 1974, or claims a pension opt-out. Issue: Those born before 1 Jan 1974 are exempt; public-sector employees and those not employed as of 1 July 2014 cannot opt out. Edge cases around opt-in/opt-out require confirmation. Action: Flag for reviewer. Do not apply or omit the pension contribution on assumption alone.
-
-### T2-5 -- Pension formula wording above AMD 500,000
-
-- **Pension formula wording above AMD 500,000** — Trigger: gross at or above AMD 500,000. Issue: The formula above AMD 500,000 is sometimes worded as "10% of the maximum threshold − AMD 25,000." The operative reading is 10% of gross (subject to the AMD 1,125,000 base ceiling) − AMD 25,000, capped at AMD 87,500. Action: Apply the operative reading; flag any case where a third-party computation diverges.
-
-### T2-6 -- Arrears, penalties, and the "stamp tax" conflict
-
-- **Arrears, penalties, and the stamp tax conflict** — Trigger: unpaid contributions, or a query about whether Armenia has a stamp tax. Issue: PwC's corporate page states Armenia "does not have stamp taxes," but the individual page, Vardanyan, and other guides confirm the military insurance stamp duty (a stamp fee to the Insurance Foundation for Servicemen) is withheld from payroll. Treat it as a mandatory payroll deduction, not a classic stamp tax. Late-payment interest is 0.075%/day up to 730 days. Action: Treat the military stamp as a payroll deduction. Do not quantify arrears without the SRC statement; escalate to a licensed adviser.
-
-## Section 7 -- Excel working paper template
-
-When producing an Armenian payroll withholding computation, structure the working paper as follows:
-
-```
-ARMENIA PAYROLL WITHHOLDING -- WORKING PAPER
-Client / Employer: [name]
-Employee: [name]
-Period (month/year): [____]   (confirm Dec-2025+ for new health/military rules)
-Prepared: [date]
-
-INPUT DATA
-  Monthly gross income (AMD):        [____]
-  Birth year:                        [____]
-  Born on/after 1 Jan 1974:          [YES/NO]   -> pension applies?
-  Armenian citizen:                  [YES/NO]   -> health insurance applies?
-  Employee or Individual Entrepreneur: [EMP / IE]
-
-COMPUTATION (private-sector employee)
-  PIT (20% × gross):                 AMD [____]
-  Funded pension:
-    if gross < 500,000:  5% × gross  AMD [____]
-    if gross >= 500,000: 10% × min(gross,1,125,000) − 25,000 (max 87,500)  AMD [____]
-    (AMD 0 if born before 1 Jan 1974)
-  Military stamp duty:
-    1,000 if gross <= 1,000,000; else 15,000   AMD [____]
-  Health insurance (from Dec 2025):
-    0 if gross <= 200,000;
-    4,800 if 200,001–500,000;
-    10,800 if > 500,000                         AMD [____]
-  Total withheld:                    AMD [____]
-  NET PAY (gross − total withheld):  AMD [____]
-
-EMPLOYER SOCIAL TAX
-  Private sector:                    AMD 0 (none)
-
-FILING
-  SRC monthly report + remittance due: 20th of following month
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+```oa-check
+name: Armenia ordinary mandatory pension two limbs
+inputs:
+  lower_base: 300000
+  upper_base: 600000
+steps:
+  - lower_payment: lower_base * 0.05
+  - upper_payment: upper_base * 0.10 - 25000
+expected:
+  lower_payment: 15000
+  upper_payment: 35000
 ```
 
-## Section 8 -- Bank statement reading guide
+### 7. Existing health payer after salary drops
 
-### How payroll items appear on Armenian bank statements
+Entered payer still within continuation period, ordinary non-social-package lower-paid branch, current salary 150,000: agent amount 4,800 plus state financing 6,000 = full 10,800. The drop below 200,001 does not itself set the contribution to zero. [45(1)(4), 46(9)/(17)][health]
 
-**Ameriabank:**
-- Salary credit: "SALARY", "ԱՇԽԱՏԱՎԱՐՁ", employer name + "NET PAY"
-- SRC remittance (employer): "SRC TAX PAYMENT", "ՊԵԿ", "STATE BUDGET"
-- Timing of SRC remittance: by the 20th of the month following the payroll month
+```oa-check
+name: Armenia continuing health payer lower salary funding
+inputs:
+  established_agent_amount: 4800
+  established_state_financing: 6000
+steps:
+  - full_monthly_funding: established_agent_amount + established_state_financing
+expected:
+  full_monthly_funding: 10800
+```
 
-**Ardshinbank:**
-- Salary credit: "SALARY", employer name
-- SRC remittance: "STATE BUDGET", "INCOME TAX", "ՊԵԿ"
+## Ask the client first
 
-**Acba Bank / Inecobank / Converse Bank:**
-- SRC remittance: "ՊԵԿ", "SRC", "STATE REVENUE COMMITTEE", "PENSION CONTRIBUTION"
+- Which period and each income class, earned/paid dates, employers and other sources apply?
+- What birth date, Armenian residence status, pension participation/election/cessation/cap waiver and childcare leave dates are documented?
+- Which business regime and annual income/turnover returns establish each distinct base?
+- What health-register group, entry month, continuation period, social-package/state-paid status, multiple-source funding and termination date apply?
+- Which declarations, assessments, treasury allocations, refunds and arrears exist?
 
-**Key identification tips:**
-1. Employee salary credits are the net figure (after PIT, pension, military stamp, health) — never the gross.
-2. Employer SRC remittances are outgoing (DEBIT), aggregate across staff, and dated around the 20th of the following month.
-3. There is no separate employer social-tax line — if one appears, flag it as a likely misclassification.
-4. Do not confuse SRC payroll remittances with VAT (ԱԱՀ), corporate profit tax (18%), or dividend/royalty/interest WHT.
-5. Armenian-script references: ՊԵԿ (SRC), եկամտահարկ (income tax), կենսաթոշակ (pension), դրոշմանիշ (stamp), առողջապահություն (health).
+## Sources
 
-## Section 9 -- Onboarding fallback
+| Official source and actual read scope | URL | Read on |
+|---|---|---|
+| [Funded Pensions law, consolidation 224823][pension], targeted Articles 2, 5–8, metadata applicable from 18 May 2026; read 24 October 2026. Historical consolidation 91100 was discovery only. | https://www.arlis.am/hy/acts/224823 | 2026-10-24 |
+| [Minimum Monthly Wage law][wage], Articles 1–4 and metadata; read 24 October 2026. Its 75,000 statutory amount is used where Pension Article 6 expressly cross-refers; it is not a universal gross salary or every statutory calculation base. | https://www.arlis.am/hy/acts/172160 | 2026-10-24 |
+| [Current military compensation/stamp law, consolidation 230046][stamp], Articles 9–15 and September 2026 metadata; read 24 October 2026. | https://www.arlis.am/hy/acts/230046 | 2026-10-24 |
+| [HO-477-N][stamp-amend], actual amendment and commencement; read 24 October 2026. | https://www.arlis.am/hy/acts/218648 | 2026-10-24 |
+| [Universal Health Insurance law, consolidation 230432][health], targeted Articles 11–16 and 45–46, September 2026 metadata; read 24 October 2026. Earlier April consolidation 224417 was compared for those provisions: September change in targeted transition text is the ministry-name update, not a new salary formula. Full medical-benefit rules not implemented. | https://www.arlis.am/hy/acts/230432 | 2026-10-24 |
+| [Current Armenian Tax Code][code], targeted Articles 142, 147, 150–158, 401–403; read/reused 24 October 2026. PIT methods are in the companion Guides. | https://www.arlis.am/hy/acts/215611/latest | 2026-10-24 |
+| Current native Pension 6(6)–(9): monthly/annual aggregate, maximum, turnover and voluntary self-employed distinctions | https://www.arlis.am/hy/acts/224823/latest | 2026-10-25 |
+| Joint 181-N/126-N current full ordinary multiple-source refund procedure, Annex paragraphs 1–15, incorporating 2023 changes | https://www.arlis.am/hy/acts/179268/latest | 2026-10-25 |
 
-If the client provides only a bank statement and no other information:
+| Joint 416-N/107-N/561-N: complete pension salary-equivalent list 1(1)–(3), including benefits/leave/royalty distinctions and current metadata | https://www.arlis.am/hy/acts/126230/latest | 2026-10-26 |
+| 189-N: full procedure 2–20 and actual Forms 1–4, current status; historical commencement waiting period distinguished | https://www.arlis.am/hy/acts/114736/latest | 2026-10-26 |
+| Joint 182-N/127-N: complete ordinary cessation Annexes 1–3, actual Annex 2 form and register-to-employer notice | https://www.arlis.am/hy/acts/121967/latest | 2026-10-26 |
+| Fund current native payment instructions: all three account populations, identification and purpose; English page compared | https://www.uhif.am/am/requisites | 2026-10-26 |
+| 1987-N: commencement and complete ordinary Annex 3–10/15–16, Forms 1–2; Annex 4/8 explicitly 2027 | https://www.arlis.am/hy/acts/219163/latest | 2026-10-26 |
+| Current 25-N: targeted Annex 3–4/7/8/11 and 2 October 2026 incorporation metadata; individual account/access/update fields | https://www.arlis.am/hy/acts/219364/latest | 2026-10-26 |
+| Current 1986-N: all Annex 1–17 and 26 September 2026 incorporation metadata; corrected notice is distinct from liability adjustment | https://www.arlis.am/hy/acts/219155/latest | 2026-10-26 |
+| Actual Fund board 5 February 2026 decision 1 Annex 6: all 5 PDFpages rendered/read, paragraphs 1–17 and Forms 1–2; discovered via Fund documents UI | https://vnxctzddivqjdrwwspgw.supabase.co/storage/v1/object/public/documents/official_docs/1771924519311_document.pdf | 2026-10-26 |
+| Current published blank online refund form, monthly/annual selection, identity/account/update fields; no application submitted | https://www.uhif.am/am/refund | 2026-10-26 |
+| Fresh current native Pension 5/8 and Health 14–15/46: cessation, amended liability, excess-refund conditions, transitional payment/reporting and correction rules | https://www.arlis.am/hy/acts/224823/latest ; https://www.arlis.am/hy/acts/230432/latest | 2026-10-26 |
+| Fund official listing and actual mistaken-transfer DOCX, complete one-page visual/structural reading; scope distinct from Government Treasury procedure | https://www.uhif.am/am/documents ; https://vnxctzddivqjdrwwspgw.supabase.co/storage/v1/object/public/documents/official_docs/1788347293816_1775200508371_document.docx | 2026-10-26 |
 
-1. **Scan for salary credits** — identify net pay amounts and the employer.
-2. **Scan for SRC remittances** — identify outgoing payments matching Section 3.1/3.2 patterns around the 20th of each month.
-3. **Reverse-engineer gross from net (employee, born ≥ 1974, Armenian citizen, Dec 2025+):** for a net figure, test the bracket — net AMD 219,200 implies gross AMD 300,000 (Example 1); net AMD 433,200 implies gross AMD 600,000 (Example 2). The mapping is not always unique, so confirm against the payslip.
-4. **Flag for reviewer:** "Gross/withholding figures derived from bank-statement net amounts only. Birth year, citizenship, and period (pre/post Dec 2025) have not been independently verified. Reviewer must confirm before relying on the computation."
+[pension]: https://www.arlis.am/hy/acts/224823
+[wage]: https://www.arlis.am/hy/acts/172160
+[stamp]: https://www.arlis.am/hy/acts/230046
+[stamp-amend]: https://www.arlis.am/hy/acts/218648
+[health]: https://www.arlis.am/hy/acts/230432
+[code]: https://www.arlis.am/hy/acts/215611/latest
+[pensionrefund]: https://www.arlis.am/hy/acts/179268/latest
 
-### Calculation examples (Dec 2025+, employee born ≥ 1974, Armenian citizen)
+[salarylist]: https://www.arlis.am/hy/acts/126230/latest
+[capforms]: https://www.arlis.am/hy/acts/114736/latest
+[cessation]: https://www.arlis.am/hy/acts/121967/latest
+[healthaccounts]: https://www.uhif.am/am/requisites
+[healthsettlement]: https://www.arlis.am/hy/acts/219163/latest
+[healthregister]: https://www.arlis.am/hy/acts/219364/latest
+[healthnotice]: https://www.arlis.am/hy/acts/219155/latest
+[healthrefund]: https://vnxctzddivqjdrwwspgw.supabase.co/storage/v1/object/public/documents/official_docs/1771924519311_document.pdf
+[healthrefundonline]: https://www.uhif.am/am/refund
 
-**Calculation examples (Dec 2025+, employee born ≥ 1974, Armenian citizen)**  _(PwC Worldwide Tax Summaries (Armenia) and Vardanyan & Partners)_
+Targeted commencement recheck, **25 October 2026**: [current Health Law arts. 16 and 45(1)(8)](https://www.arlis.am/hy/acts/230432/latest) expressly defer article 16 until 1 January 2027. Other source read dates remain as recorded.
 
-| Gross (AMD) | PIT (20%) | Pension | Military stamp | Health | Total withheld | Net pay |
-| --- | --- | --- | --- | --- | --- | --- |
-| 75,000 (min wage) | 15,000 | 3,750 | 1,000 | 0 | 19,750 | 55,250 |
-| 200,000 | 40,000 | 10,000 | 1,000 | 0 | 51,000 | 149,000 |
-| 300,000 | 60,000 | 15,000 | 1,000 | 4,800 | 80,800 | 219,200 |
-| 600,000 | 120,000 | 35,000 | 1,000 | 10,800 | 166,800 | 433,200 |
-| 1,000,000 | 200,000 | 75,000 | 1,000 | 10,800 | 286,800 | 713,200 |
-| 1,500,000 | 300,000 | 87,500 | 15,000 | 10,800 | 413,300 | 1,086,700 |
+**Not yet confirmed:** operative Government procedure/commencement forHealth 14(12) mistaken/no-liability payments and specified suspended/age 65 entrepreneur refunds. Specialist populations, agreements, related-person coverage, all state-paid priority exceptions and historic stamp-family refunds remain separate boundaries. No live participant refund, accepted return, fresh independent country review or named accountant attestation is represented as obtained. The current statutory transitional deadline and ordinary contribution/participant-excess methods are supplied. The unresolved mistake/suspension/age-65 refund implementation is a conditional recovery boundary, not a universal refund entitlement or a missing ordinary contribution computation.
 
-Source for all rates/thresholds: PwC Worldwide Tax Summaries (Armenia) and Vardanyan & Partners. Pension at 1,000,000 = 10% × 1,000,000 − 25,000 = 75,000 (base below the 1,125,000 cap). Military stamp at exactly 1,000,000 = AMD 1,000 (≤ 1,000,000 tier).
-
-### Thresholds and key amounts
-
-**Thresholds and key amounts**  _(PwC / Vardanyan / tradingeconomics / arka.am)_
-
-| Item | Value | Source |
-| --- | --- | --- |
-| PIT flat rate | 20% of gross | PwC |
-| Pension 5%→10% threshold | AMD 500,000/month gross | PwC |
-| Pension base ceiling | AMD 1,125,000/month (15 × AMD 75,000) | PwC |
-| Pension fixed deduction (10% formula) | AMD 25,000 | PwC |
-| Pension maximum contribution | AMD 87,500/month | PwC |
-| Pension birth-date eligibility | Born on/after 1 Jan 1974 | PwC |
-| Military stamp band break | AMD 1,000,000/month (1,000 vs 15,000) | PwC / Vardanyan |
-| Health insurance entry threshold | Gross > AMD 200,000/month | PwC |
-| Health insurance band break | AMD 500,000/month (4,800 vs 10,800) | PwC |
-| Minimum monthly wage | AMD 75,000 | tradingeconomics / arka.am |
-| Property lease surcharge trigger | Annual lease income > AMD 60,000,000 | PwC |
-| Corporate income tax (context) | 18% on net profit | Vardanyan / PwC |
-
-### Penalties
-
-**Penalties**  _(Tax Code / mondaq / Vardanyan)_
-
-| Penalty | Rate / detail | Source |
-| --- | --- | --- |
-| Late payment of tax / contributions | 0.075% of unpaid amount per day (Tax Code Art. 401; ~27% annualized), up to 730 days (2 years) | Tax Code / mondaq / Vardanyan |
-| Late filing of a return/declaration | 5% of unpaid tax per 15-day period of delay, in addition to the 0.075%/day late-payment interest. [RESEARCH GAP — cap not confirmed from primary text] | mondaq / Vardanyan |
-
-### Forms and deadlines
-
-**Forms and deadlines**  _(SRC / Vardanyan / PwC)_
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| Monthly unified payroll / income-tax & social-payment report (SRC e-portal) | Report and remit withheld PIT, funded pension, military stamp, health insurance | 20th of the following month | SRC / Vardanyan |
-| Annual personal income tax declaration | Self-declaration of income NOT taxed at source | FY2025: 1 Nov 2026; from 2027: 2 Mar – 1 Jul of following year | PwC |
-
-### Individual entrepreneur summary (verify before use)
-
-- Pension: 5% of gross if annual basic income ≤ AMD 6,000,000 (paid monthly); else 10% of income − AMD 300,000. — PwC
-- Military stamp: AMD 12,000/year (annual income ≤ AMD 12,000,000) or AMD 120,000/year (> AMD 12,000,000), from January 2026. [RESEARCH GAP — secondary source only]
-- Health insurance: AMD 129,600/year for 2025 income ≥ AMD 2,400,001, due by 20 April. [RESEARCH GAP — verify]
-
-### Test suite
-
-**Test 1:** Gross AMD 300,000, born 1990, Armenian citizen, Dec 2025+. → PIT 60,000; pension 15,000; military 1,000; health 4,800; total 80,800; **net 219,200**.
-
-**Test 2:** Gross AMD 600,000, born 1985. → PIT 120,000; pension (10%×600,000−25,000) 35,000; military 1,000; health 10,800; total 166,800; **net 433,200**.
-
-**Test 3:** Gross AMD 1,500,000, born 1980. → PIT 300,000; pension capped 87,500; military 15,000; health 10,800; total 413,300; **net 1,086,700**.
-
-**Test 4:** Gross AMD 200,000, born 1992. → PIT 40,000; pension 10,000; military 1,000; health 0 (≤ threshold); total 51,000; **net 149,000**.
-
-**Test 5:** Gross AMD 300,000, born 1968 (before 1 Jan 1974). → PIT 60,000; pension **0**; military 1,000; health 4,800; total 65,800; **net 234,200**.
-
-**Test 6:** Gross AMD 75,000 (min wage), born 1995. → PIT 15,000; pension 3,750; military 1,000; health 0; total 19,750; **net 55,250**.
-
-**Test 7:** Gross AMD 1,000,000, born 1988. → PIT 200,000; pension (10%×1,000,000−25,000) 75,000; military 1,000 (≤ 1,000,000 tier); health 10,800; total 286,800; **net 713,200**.
-
-**Test 8:** Private-sector employer remittance for one AMD 300,000 employee (born 1990). → Employer social tax **0**; remits PIT 60,000 + pension 15,000 + military 1,000 + health 4,800 = AMD 80,800 to SRC by the 20th of the following month.
-
-### Prohibitions
-
-- **No employer separate social-tax line for private-sector employers** — NEVER add an employer separate social-tax line for private-sector employers — Armenia has none.  _(unsure)_
-- **Pension requires birth year knowledge** — NEVER compute the funded pension without knowing the employee's birth year (eligibility hinges on birth on/after 1 Jan 1974).  _(unsure)_
-- **No pre-Dec 2025 application without confirmation** — NEVER apply the two-tier military stamp duty or the health insurance contribution to periods before December 2025 without reviewer confirmation.  _(unsure)_
-- **Never report gross as net pay** — NEVER report the gross figure as net pay — salary credits on statements are net of all withholdings.  _(unsure)_
-- **Military stamp is a mandatory payroll deduction** — NEVER treat the military stamp duty as a classic stamp tax or omit it because one PwC page says Armenia "has no stamp taxes" — it is a mandatory payroll deduction.  _(unsure)_
-- **IE rules differ from employee withholding** — NEVER apply employee withholding formulas to an individual entrepreneur — the IE annual-income rules differ.  _(unsure)_
-- **Pension cap enforcement** — NEVER exceed the pension maximum of AMD 87,500/month or compute pension on a base above AMD 1,125,000/month.  _(unsure)_
-- **No arrears quantification without SRC statement** — NEVER quantify arrears or penalties without the SRC account statement — escalate to a licensed adviser.  _(unsure)_
-- **Figures are estimates only** — NEVER present figures as definitive — label as estimated and direct the client to their SRC account and payslip, given the very recent Dec 2025/Jan 2026 changes.  _(unsure)_
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. This is a Tier-2 (research-verified) skill: several December 2025 / January 2026 figures rest on PwC and Vardanyan & Partners guides rather than directly fetched SRC/arlis.am text, and items marked "[RESEARCH GAP — reviewer to confirm]" require independent confirmation.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

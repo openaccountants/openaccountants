@@ -247,6 +247,8 @@ Not yet confirmed: the monthly social minimum wage for skilled workers (qualifiÃ
 
 > Contributed by Ryan Duguid.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---

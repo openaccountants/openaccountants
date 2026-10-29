@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-deductions"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-10-27"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -73,13 +73,13 @@ metadata:
 
 ### Own home (eigen woning)
 
-- **Deductible:** interest on the eigenwoningschuld (debt to buy, improve or maintain the main residence, or buy off ground lease), financing costs (advice, arrangement and notary fees for the mortgage deed, NHG fee), and periodic ground-lease payments (erfpacht, opstal, beklemming) (Wet IB art. 3.120). Money borrowed for anything else is a box 3 debt. For loans taken out before 2013, arrangement fees count only up to 1.5% of the debt and EUR 3,630.
+- **Deductible:** interest on the eigenwoningschuld (debt to buy, improve or maintain the main residence, or buy off ground lease), financing costs (advice, arrangement and notary fees for the mortgage deed, NHG fee), and periodic ground-lease payments (erfpacht, opstal, beklemming) (Wet IB art. 3.120). Money borrowed for anything else is a box 3 debt. For loans taken out before 2013, arrangement fees count only up to 1.5% of the debt and EUR 3,630. Penalty interest (boeterente) paid on repaying or refinancing is deductible if the loan belongs to the eigenwoningschuld ([Fiscale informatie 2026 ch. 10](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere)).
 - **Debt from 2013:** interest is deductible only if the loan is repaid at least annuity (linear also qualifies) within 360 months, by contract and in fact (art. 3.119a, 3.119c). Months used on an earlier repayment-bound loan come off the 360. **Debt held at 31 December 2012** keeps the old rules and needs no repayment. An increase after 2012 is new debt and must meet the test.
 - **Loan from family, a BV, an employer or a foreign lender:** deductible, but the return must carry the loan data (start date, term, amount, repayment method, rate, lender's name, address and BSN or RSIN) (art. 3.119g).
 - **Prepaid interest:** contractually agreed prepayment in 2026 for a period up to 1 July 2027 is deductible in 2026 in full. A longer prepayment is spread over the years it covers. A voluntary payment for 2027 counts in 2027 and is a box 3 asset on 1 January 2027.
 - **Home not lived in:** a new home empty or being built stays an own home if the client expects to move in within 3 years after the end of the year. An old home empty and for sale stays an own home in the year it was left and the 3 years after; let months fall out of box 1.
 - **Eigenwoningforfait:** the WOZ value for the year times the band rate (art. 3.112), added to box 1, for the period the address is the registered home.
-- **Wet Hillen:** if the forfait is more than the deductible costs, 71.867% of the difference is deducted in 2026 (art. 3.123a). Prepaid or late-paid interest is allocated to the year it covers for this test. Partners are combined. The Belastingdienst says the deduction can be refused where interest was prepaid or paid late, or the loan is from the employer.
+- **Wet Hillen:** if the forfait is more than the deductible costs, 71.867% of the difference is deducted in 2026 (art. 3.123a). Prepaid or late-paid interest is allocated to the year it covers for this test. Partners are combined. With more than one own home, the income and costs of all homes are taken together ([Belastingdienst, Wet Hillen](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld)). The Belastingdienst says the deduction can be refused where interest was prepaid or paid late, or the loan is from the employer.
 
 ### Tariefsaanpassing
 
@@ -87,7 +87,7 @@ If taxable box 1 income plus the "base-reducing items" is more than EUR 78,426, 
 
 ### Alimony (onderhoudsverplichtingen)
 
-Deductible (Wet IB art. 6.3): periodic payments under a family-law duty, except to relatives in the direct line or second degree, so partner alimony to an ex-spouse or a spouse living permanently apart; lump sums buying off partner alimony paid to the **former** spouse; recovered social assistance; pension-rights and annuity settlements on divorce. Not deductible: child maintenance (a family-law duty to a relative in the direct line), a buy-out through an annuity whose premiums were already deducted (art. 6.4). Evidence: the arrangement (court or agreed) and proof of payment.
+Deductible (Wet IB art. 6.3): periodic payments under a family-law duty, except to relatives in the direct line or second degree, so partner alimony to an ex-spouse or a spouse living permanently apart; lump sums buying off partner alimony paid to the **former** spouse; recovered social assistance; pension-rights and annuity settlements on divorce; old-age pension paid on as partner alimony. A lump sum is not deductible if paid before the court dissolved the marriage, or if the client lives unmarried with the ex-partner. Not deductible: child maintenance (a family-law duty to a relative in the direct line), lawyer and court costs to reduce or end partner alimony, a buy-out through an annuity whose premiums were already deducted (art. 6.4; [Fiscale informatie 2026 ch. 19](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_betaalde_partneralimentatie)). Evidence: the arrangement (court or agreed) and proof of payment.
 
 **Ex-partner stays in the co-owned home** under an alimony arrangement: for 2 years the home stays an own home; the client deducts interest on their share and also deducts their share of the forfait as alimony. After 2 years the share goes to box 3, but the forfait share stays deductible as alimony. Interest paid on the ex's share is deductible as alimony (Fiscale informatie 2026 ch. 19).
 
@@ -95,13 +95,14 @@ Deductible (Wet IB art. 6.3): periodic payments under a family-law duty, except 
 
 - **For whom (art. 6.16):** the client, the partner, children under 27, severely disabled household members aged 27 or over, and care-dependent parents, brothers or sisters living with the client.
 - **What (art. 6.17):** medical and surgical help (doctor; paramedic on a doctor's prescription or a listed paramedic with a statement), travel for treatment, other transport if the client cannot walk 100 metres (EUR 925), prescribed medicines, aids used mainly by sick or disabled people, extra household help (with dated invoices naming the helper), a prescribed diet (fixed amounts from the diet list), extra clothing and bedding, and travel to visit a household member nursed more than 1 month more than 10 km away.
-- **Never (art. 6.17(2), 6.18):** glasses, contact lenses and other vision aids, eye laser treatment replacing them, mobility scooters, wheelchairs, home adaptations, insurance premiums, CAK and Zvw own contributions, the own risk (eigen risico), and care covered by the basic Zvw package. Only the part the client bears after any reimbursement counts.
+- **Never (art. 6.17(2), 6.18):** glasses, contact lenses and other vision aids, eye laser treatment replacing them, mobility scooters, wheelchairs, home adaptations, insurance premiums, CAK and Zvw own contributions, the own risk (eigen risico), and care covered by the basic Zvw package. Only the part the client bears after any reimbursement counts, and a reimbursement the client could get counts even if not claimed, whoever would pay it. Also never: a payment due for basic-package care from a non-contracted provider; mental-health and dyslexia care for anyone under 18; costs to prevent illness (travel vaccinations are the exception, for any kind of trip). Prism glasses that do not support vision are deductible ([Fiscale informatie 2026 ch. 17](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten)).
+- **Aids and transport examples:** insoles, prostheses, assistance, signal, guide and therapy dogs; a hearing aid only for the extra price of a dearer device chosen because it works better for the client. Travel for treatment by bus or ambulance counts at the cost paid, less reimbursements ([Fiscale informatie 2026 ch. 17](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten)).
 - **Increase and threshold:** see the rates table. The increase does not apply to medical help (a) or to visit travel (i).
 - **Low income:** if the deduction leaves credits unused, the Belastingdienst pays a separate tegemoetkoming automatically.
 
 ### Gifts (giften)
 
-- **Ordinary gifts (andere giften):** to an ANBI or an SBBI support foundation (art. 6.35); provable in writing; not cash (art. 6.37); only the part above the floor counts, up to the ceiling (art. 6.39). A gift to an SBBI itself is not deductible.
+- **Ordinary gifts (andere giften):** to an ANBI or an SBBI support foundation (art. 6.35); provable in writing; nothing received in return (buying a cookbook from a patients' association is not a gift); not cash (art. 6.37); only the part above the floor counts, up to the ceiling (art. 6.39). A gift to an SBBI itself is not deductible.
 - **Periodic gifts:** fixed equal payments at least yearly for 5 or more years, to an ANBI or a qualifying association (25 or more members, full legal capacity, not liable to corporate tax, based in the EU or a listed state), under a notarial or private deed (art. 6.33, 6.34, 6.38(1)). No floor, no 10% ceiling. The deed may end the gift early on loss of status, bankruptcy, the donor's disability or unemployment, or death (art. 6.34, 6.38(6),(7)).
 - **Cultural ANBI:** the gift is raised by 25%, at most EUR 1,250, and the ordinary-gift ceiling rises by the same amount (art. 6.39a).
 - **Volunteers:** a waived allowance counts if the ANBI issued a statement, the volunteer had a right to it, the ANBI could pay and the volunteer was free to take it; waived actual costs count, car at EUR 0.23 per km (art. 6.36; see the rates table for the pending EUR 0.25).
@@ -232,7 +233,7 @@ expected:
 
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not yet enacted on 24 October 2026) raises the car rate in Wet IB art. 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 with effect back to 1 January 2026 (art. I parts H and I, art. LXIII(1)(a)), and repeals the specific care-cost deduction (afdeling 6.5) from 1 January 2028 (art. II part G). The "repeal without commencement date" notes on wetten.overheid.nl for art. 6.17 to 6.20 refer to this bill. Recheck the car rates once the Staatsblad text is published.
 
-Not yet confirmed: (1) whether the Uitvoeringsregeling IB 2001 art. 40 weekend-cost km rate will also be raised to EUR 0.25 for 2026 (the Belastingdienst already says so; the regulation in force says EUR 0.23); (2) a STAP-budget or other non-tax successor to the study-cost deduction: no official page read, so not stated; (3) the belastingrente rate for income tax: left to nl-income-tax.
+Not yet confirmed: (0) the older version said a lump-sum buy-out of ground lease and building insurance are not own-home costs, and that a diet not on the diet list gives no deduction; the Belastingdienst chapters read on 27 October 2026 did not state these in words, so they are left out of the rules; (1) whether the Uitvoeringsregeling IB 2001 art. 40 weekend-cost km rate will also be raised to EUR 0.25 for 2026 (the Belastingdienst already says so; the regulation in force says EUR 0.23); (2) a STAP-budget or other non-tax successor to the study-cost deduction: no official page read, so not stated; (3) the belastingrente rate for income tax: left to nl-income-tax.
 
 <!-- openaccountants-cta-block -->
 
@@ -254,4 +255,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-deductions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-deductions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

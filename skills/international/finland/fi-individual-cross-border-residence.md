@@ -2,14 +2,14 @@
 name: fi-individual-cross-border-residence
 description: >
   Determine Finnish individual residence, Finnish-source income and ordinary international double-tax relief for 2026. Covers arrival, departure, the Finnish-citizen three-year presumption, treaty residence, nonresident wage and investment taxation, progressive assessment, pensions, property income, foreign employment and the six-month exemption. Establish the actual source and treaty treatment before calculating withholding or relief. Includes net-income foreign-tax-credit limits, oldest-first five-year carryovers, progression exemption, source-tax refunds and filing routes. Trigger on moving to Finland, leaving Finland, tax residence, foreign wages, foreign pension, Finnish rent, source-tax card, nonresident dividends or foreign-tax credit. Social insurance and corporate permanent establishments use separate skills.
-jurisdiction: FI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-27
 version: 0.5
+jurisdiction: FI
+tax_year: 2026
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -169,3 +169,23 @@ Not yet confirmed: country-specific treaty rates and unusual special-service/ele
 [residence]: https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/
 [nonresident]: https://www.vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/
 [municipal]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
