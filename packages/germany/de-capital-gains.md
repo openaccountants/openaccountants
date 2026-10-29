@@ -4,7 +4,7 @@ description: "German tax on private investment income and gains for a resident i
 version: 1.2
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

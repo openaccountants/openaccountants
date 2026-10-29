@@ -1,14 +1,14 @@
 ---
 name: ad-payroll-social
 description: "Andorra payroll and CASS social security for tax year 2026. Covers resident employee IRPF withholding, non-resident employment and the elected frontier or seasonal method, ordinary employee and employer contributions, working pension recipients, self-employed income and turnover tiers, director classification, startup reductions, the separate young-worker regime and health complements. Distinguishes the January and July minimum wages and the 2026 average-salary reference. Includes gross-to-net reconciliation, benefits and reimbursements, employer and worker registrations, monthly combined CASS and tax declarations, non-CASS filing, rate notices, regularisation and penalties. Use for Andorra payroll, employee net salary, employer cost, retencions, CASS0031, compte propi and contribution-base questions. Source-cited draft requiring professional review."
+version: 0.2
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
 ---
 
 # Andorra payroll and social security, 2026
@@ -227,6 +227,8 @@ expected:
 | General Tax Law 21/2014, arts 23–25, 125–132; Budget Law 1/2026 art 17 | https://www.portaljuridicandorra.ad/L2014021 ; https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
 
 Not yet confirmed: the old universal 7%-maximum gross-salary bands, EUR 750 ascendant reduction, salaried CASS ceiling, five-day post-hire grace period, twenty-day separate payroll remittance and blanket EUR 500–10,000 minimum-wage fine have no current primary support and are not applied. Legacy numbered DTF form mappings (300/310/311/312/315/316/317/340/341 and annexes) require the actual current approved form rather than inference from a number; the statutory CASS/non-CASS workflow above is confirmed. No complete current CASS enforcement-interest assessment is calculated from the regulation's partly superseded article 29: use the actual CASS notice and operative enforcement rule, not the tax 4.05% rate. For partial-month health complements, CASS expressly supplies the actual amount. Treaty/foreign social-coverage matrices and precise termination entitlement, food/lodging administrative valuations or special benefits require the actual relevant instrument and worker facts. Individual savings, capital gains and annual relief methods are in `ad-income-tax` rather than duplicated as payroll deductions. Portal consolidations lack official legal status; retain operative amendment annotations when checking historical periods.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

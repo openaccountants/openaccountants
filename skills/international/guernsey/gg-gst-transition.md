@@ -2,23 +2,15 @@
 name: gg-gst-transition
 description: >
   Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft separates the current absence of domestic VAT/GST from existing customs and excise duties, and preserves the future-GST planning work. The added current-scope analysis has received independent source review. Future charging and operational legislation remains outstanding; no current GST liability is inferred from the approved plan.
-jurisdiction: GG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.4
-verified_by: pending
-sources:
-  - url: "https://gov.gg/taxreform"
-    title: "States of Guernsey, approved Tax Reform package and timetable"
-    as_of: "2026-10-22"
-  - url: "https://statesvoting-records.gov.gg/Propositions/Details/2682"
-    title: "P.2026/49 Proposition 1 as amended, carried 2 October 2026"
-    as_of: "2026-10-22"
-  - url: "https://statesvoting-records.gov.gg/Propositions/Details/2787"
-    title: "P.2026/49 Proposition 15, direction to prepare legislation"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey GST transition: approved policy and implementation evidence
@@ -127,3 +119,23 @@ All three sources in frontmatter were read on 22 October 2026: [official timetab
 ## Disclaimer
 
 General reference and planning material only. A qualified professional must verify the applicable law, commencement and facts before filing, paying or acting on this draft.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

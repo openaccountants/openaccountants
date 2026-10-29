@@ -1,12 +1,15 @@
 ---
 name: ad-non-resident-income-tax
 description: "Andorra non-resident income tax and cross-border working papers for individuals, companies and permanent establishments in tax year 2026. Covers residence and source tests, services, royalties, employment, rental and capital income, domestic exemptions, gross withholding, property gains and buyer retention. Includes ordinary PE accounting adjustments, restricted head-office charges, losses and credits, advances, final cessation valuation, company migration and individual pending-income attribution. Explains filing, representatives, evidence, refunds, current penalties and interest. Provides selected Spain and France treaty methods using authority texts incorporating the MLI, plus resident foreign-tax credit rules. Use for Andorra IRNR, overseas supplier payments, non-resident landlords, branches, departure and treaty-relief questions. Source-cited draft requiring professional review."
-jurisdiction: AD
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-27
 version: 0.3
+jurisdiction: AD
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Andorra non-resident income tax and cross-border methods, 2026
@@ -188,3 +191,23 @@ expected:
 | General Tax Law 21/2014 arts 23–25, 125–132; Budget Law 1/2026 art 17 | https://www.portaljuridicandorra.ad/L2014021 ; https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
 
 Not yet confirmed: no complete current treaty-rate/social-agreement matrix, universal residence-certificate validity period or live form/schema is certified; apply the actual period's instrument and document. Full MAP/arbitration, reorganisation, foreign-investment/ITP and special-regime procedures are separate specialist work. A case-specific property-rich share exemption needs the exact interaction of article 15 with the equivalent-property facts and treaty; do not automatically grant or deny it solely from a share label. Consolidations lack official legal status and authentic treaty/MLI texts prevail over authority syntheses. Ordinary source, non-PE base, PE profit/cessation, withholding, filing and refund methods are supplied above; historical transitions require the actual event date and underlying enactment.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

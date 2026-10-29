@@ -7,14 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `qa-company-formation.md`
-4. `qa-corporate-income-tax.md`
-5. `qa-payroll-social.md`
-6. `qa-tax-overview.md`
-7. `qa-vat-gst.md`
-8. `qatar-tax.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `README.md`
+4. `qa-company-formation.md`
+5. `qa-corporate-income-tax.md`
+6. `qa-cross-border-tax.md`
+7. `qa-payroll-social.md`
+8. `qa-tax-overview.md`
+9. `qa-transfer-pricing.md`
+10. `qa-vat-gst.md`
+11. `qatar-tax.md`
+12. `payroll-workflow-base.md`
+13. `company-formation-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

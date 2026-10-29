@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-28T09:36:11+00:00",
+ "generated_at": "2026-10-29T10:11:10+00:00",
  "counts": {
-  "guides": 2261,
+  "guides": 2272,
   "jurisdictions": 274,
   "accountant_reviewed": 33
  },
@@ -2423,12 +2423,12 @@
    "path": "skills/international/andorra/ad-corporate-income-tax.md",
    "name": "ad-corporate-income-tax",
    "jurisdiction": "AD",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "ad-income-tax",
@@ -2439,8 +2439,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "ad-non-resident-income-tax",
+   "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+   "name": "ad-non-resident-income-tax",
+   "jurisdiction": "AD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "ad-payroll-social",
@@ -2451,32 +2463,44 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "ad-tax-overview",
    "path": "skills/international/andorra/ad-tax-overview.md",
    "name": "ad-tax-overview",
    "jurisdiction": "AD",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "ad-transfer-pricing",
+   "path": "skills/international/andorra/ad-transfer-pricing.md",
+   "name": "ad-transfer-pricing",
+   "jurisdiction": "AD",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "andorra-igi",
    "path": "skills/international/andorra/andorra-igi.md",
    "name": "andorra-igi",
    "jurisdiction": "AD",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "ao-company-formation",
@@ -2704,7 +2728,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "am-corporate-income-tax",
@@ -2728,7 +2752,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "am-tax-overview",
@@ -2740,7 +2764,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "am-transfer-pricing",
@@ -2752,7 +2776,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "armenia-income-tax",
@@ -2764,7 +2788,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "armenia-payroll",
@@ -2776,7 +2800,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "armenia-social-contributions",
@@ -2788,7 +2812,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "armenia-tax-optimization",
@@ -2800,7 +2824,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "armenia-vat",
@@ -2812,7 +2836,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "aw-individual-income-tax",
@@ -9160,7 +9184,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "fi-property-transfer-tax",
@@ -9196,7 +9220,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "fi-yel-social",
@@ -9736,7 +9760,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "de-corporate-tax",
@@ -10555,6 +10579,30 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "gg-company-accounts-and-reporting",
+   "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+   "name": "gg-company-accounts-and-reporting",
+   "jurisdiction": "GG",
+   "category": "financial-statements",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-company-formation",
+   "path": "skills/international/guernsey/gg-company-formation.md",
+   "name": "gg-company-formation",
+   "jurisdiction": "GG",
+   "category": "formation",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
    "slug": "gg-corporate-tax-substance",
    "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
    "name": "gg-corporate-tax-substance",
@@ -10564,7 +10612,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-gst-transition",
+   "path": "skills/international/guernsey/gg-gst-transition.md",
+   "name": "gg-gst-transition",
+   "jurisdiction": "GG",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "gg-individual-income-tax",
@@ -10576,7 +10636,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "gg-payroll-social-insurance",
@@ -10588,7 +10648,55 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-property-document-duty",
+   "path": "skills/international/guernsey/gg-property-document-duty.md",
+   "name": "gg-property-document-duty",
+   "jurisdiction": "GG",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-secondary-pensions",
+   "path": "skills/international/guernsey/gg-secondary-pensions.md",
+   "name": "gg-secondary-pensions",
+   "jurisdiction": "GG",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-transfer-pricing-and-connected-transactions",
+   "path": "skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md",
+   "name": "gg-transfer-pricing-and-connected-transactions",
+   "jurisdiction": "GG",
+   "category": "transfer-pricing",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "gg-uk-treaty-employment-and-relief",
+   "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+   "name": "gg-uk-treaty-employment-and-relief",
+   "jurisdiction": "GG",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "gw-company-formation",
@@ -18040,7 +18148,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-27"
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "pt-cross-border",
@@ -18191,72 +18299,96 @@
    "path": "skills/international/qatar/qa-company-formation.md",
    "name": "qa-company-formation",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "formation",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "qa-corporate-income-tax",
    "path": "skills/international/qatar/qa-corporate-income-tax.md",
    "name": "qa-corporate-income-tax",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "qa-cross-border-tax",
+   "path": "skills/international/qatar/qa-cross-border-tax.md",
+   "name": "qa-cross-border-tax",
+   "jurisdiction": "QA",
+   "category": "cross-border",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "qa-payroll-social",
    "path": "skills/international/qatar/qa-payroll-social.md",
    "name": "qa-payroll-social",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "qa-tax-overview",
    "path": "skills/international/qatar/qa-tax-overview.md",
    "name": "qa-tax-overview",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
+  },
+  {
+   "slug": "qa-transfer-pricing",
+   "path": "skills/international/qatar/qa-transfer-pricing.md",
+   "name": "qa-transfer-pricing",
+   "jurisdiction": "QA",
+   "category": "transfer-pricing",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "qa-vat-gst",
    "path": "skills/international/qatar/qa-vat-gst.md",
    "name": "qa-vat-gst",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "qatar-tax",
    "path": "skills/international/qatar/qatar-tax.md",
    "name": "qatar-tax",
    "jurisdiction": "QA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-28"
   },
   {
    "slug": "cg-company-formation",

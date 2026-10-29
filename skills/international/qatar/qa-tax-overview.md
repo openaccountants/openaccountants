@@ -12,15 +12,15 @@ description: >
   and foreign-income routing. Preserves the existing overview slug while supplying
   the pack's individual income-tax computation. Treaty-specific conclusions and
   special-regime computations require separate analysis.
+version: 0.1
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-category: international
-version: 0.1
 ---
 
 # Qatar individual income tax and business income v0.1
@@ -248,6 +248,8 @@ source and factual analysis.
 General reference only. A qualified Qatar tax professional must review the
 facts, records, elections and applicable law before filing or acting. This is a
 source-cited draft, not professional attestation.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

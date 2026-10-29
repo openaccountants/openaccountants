@@ -3,11 +3,11 @@ name: andorra-igi
 description: "Andorra IGI indirect tax for entrepreneurs, professionals and importers in tax year 2026. Covers registration thresholds and voluntary status, domestic goods and services, place of supply, foreign digital services, import valuation, reverse charge, zero and reduced rates, input deduction, investment cars, private use, bad debts, corrections, credit carryforward, refunds and business closure. Includes the half-yearly, quarterly and monthly filing thresholds, invoice evidence, property payment rules and penalties. Distinguishes Andorran IGI from EU VAT, non-subject activities from zero-rated supplies, and investment vehicles from dealer inventory. Use for Andorra VAT or IGI returns, SaaS purchases, Customs IGI, deductible input tax and cessation questions. Source-cited draft requiring professional review."
 version: 2.1
 jurisdiction: AD
-category: international
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -180,6 +180,8 @@ expected:
 | General Tax Law 21/2014 arts 23–25, 125–132; Budget Law 1/2026 art 17 | https://www.portaljuridicandorra.ad/L2014021 ; https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
 
 Not yet confirmed: the old A1–C5 return-box mapping and 31 March annual summary lack current approved-form support; use the actual filing interface. No primary basis supports bank/vendor names as tax classifiers, automatic EU-style annual pro rata, zero recovery for every investment car, unconditional restaurant exclusion, 2.5% optical/parapharmaceutical treatment, or generic exempt-without-credit medical/education/residential rental. Precise traveller-refund documents, international-transport/gold special conditions, particular customs tariff/origin preferences and ITP exemptions require the relevant separate instrument; their specialist procedures are outside this ordinary method. Old EUR 10,000/EUR 500/40%/four-default/EUR 5,000 “red flags” were internal workflow heuristics, not statutory thresholds. Portal consolidations lack official legal status; the law controls over the regulation's inconsistent EUR 3.6 million endpoint.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

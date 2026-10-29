@@ -11,15 +11,15 @@ description: >
   Distinguishes GCC home-country insurance from the Qatari employee calculation
   and routes non-GCC workers and optional self-employed enrolment separately.
   Includes two checked computations and primary legislation for professional review.
+version: 0.1
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-category: payroll
-version: 0.1
 ---
 
 # Qatar payroll and social insurance v0.1
@@ -255,6 +255,8 @@ require separate current authority decisions and are outside this Guide's scope.
 
 Source-cited draft. A qualified Qatar professional must review the employee
 coverage, records and applicable scheme before remittance or acting.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

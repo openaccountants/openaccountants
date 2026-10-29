@@ -1,13 +1,13 @@
 ---
 name: ad-tax-overview
 description: "Source-cited draft: tax overview for Andorra (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+version: 0.2
 jurisdiction: AD
 tax_year: 2025
-last_updated: 2026-10-23
-version: 0.2
-category: international
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -27,6 +27,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Corporate income tax (IS) filing window** — The month following the six months after the period ends: July for a 31 December year-end. Earlier filing does not alter payment/refund deadlines. Filing rule checked 23 October 2026; other overview entries remain subject to their stated review limits. [Corporate-tax regulation, Article 45](https://www.portaljuridicandorra.ad/R20231229C).
 - **Wealth, inheritance and gift tax** — Andorra levies no wealth tax, no inheritance tax and no gift tax  _(Andorran tax code (absence of wealth/inheritance statute))_
 - **Communal (local) taxes** — Each of the 7 parishes (comuns) levies local taxes such as the foc i lloc residence tax and business activity taxes ((approx — rates vary by parish; confirm locally))  _(Llei de finances comunals)_
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

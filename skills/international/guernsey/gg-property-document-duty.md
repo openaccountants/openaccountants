@@ -2,35 +2,15 @@
 name: gg-property-document-duty
 description: >
   Prepare Guernsey property document-duty working papers for 2026 conveyances, including graduated rates, the repealed additional-property surcharge, conditional downsizing relief and transaction evidence. Use for document duty, property purchase costs, realty versus personalty and the 2025 surcharge transition. This source-cited draft covers the island of Guernsey and does not extend these rates to Alderney or Sark. It supplies recomputable examples using established chargeable realty values, not a valuation opinion. The new statutory extension supplies ordinary charging/valuation, named exemption gates, indirect-transfer self-assessment/payment and appeal methods, checked in the fresh whole-pack review. Complex valuations, relief claim administration and title advice remain separate requirements. Retain the transaction date, official source version and advocate's classification before relying on a calculation.
-jurisdiction: GG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.5
-verified_by: pending
-sources:
-  - url: "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds"
-    title: "HM Greffier: registration, duty assessment and collection"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyroyalcourt.gg/article/1919/Conveyances"
-    title: "Advocate preparation and presentation of conveyances"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court"
-    title: "Contracts Court witnessing and registration sequence"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyroyalcourt.gg/article/1921/Document-Duty"
-    title: "Royal Court document-duty overview"
-    as_of: "2026-10-22"
-  - url: "https://parliament.gg/parliamentary-business/assets/questions/2026-16"
-    title: "21 May 2026 official response, question 11, current rates and examples"
-    as_of: "2026-10-22"
-  - url: "https://parliament.gg/parliamentary-business/assets/propositions/P2025-121"
-    title: "2026 Budget, duty amendment ordinances and paragraphs 5.87–5.96"
-    as_of: "2026-10-22"
-  - url: "https://parliament.gg/parliamentary-business/hansard/hansard-14-33"
-    title: "5 November 2025 Hansard, pages 63–65, budget propositions 12 and 13"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey property document duty v0.5
@@ -218,3 +198,23 @@ Original source receipts and scoped independent review are preserved. Not yet co
 ## Disclaimer
 
 General tax and accounting reference material. A qualified local professional must verify the current law, transaction facts and filing/payment requirements before anyone acts. No professional attestation is claimed.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

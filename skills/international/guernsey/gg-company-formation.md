@@ -2,26 +2,15 @@
 name: gg-company-formation
 description: >
   Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent whole-pack source review is recorded in the Sources section; professional attestation remains pending.
-jurisdiction: GG
-category: formation
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.2
-verified_by: pending
-sources:
-  - url: "https://www.guernseyregistry.com/companyformation"
-    title: "Guernsey Registry: Incorporating a Company"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/companyfees"
-    title: "Guernsey Registry: Limited Companies fee schedule, effective 1 December 2025"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/newcompanyinfo"
-    title: "Guernsey Registry: Information for newly incorporated companies"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0"
-    title: "Guernsey Registry: Guidance for directors of new local trading companies"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: formation
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey: forming a local company limited by shares
@@ -80,7 +69,6 @@ Section 17 now confirms the memorandum, first-director consents/particulars, reg
 
 Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
 
-
 ## Two recomputing fee examples
 
 The amounts are Registry fees effective 1 December 2025 and currently published on 27 October 2026. They exclude CSP/professional charges and assume one chosen service. [Registry fee schedule](https://www.guernseyregistry.com/companyfees).
@@ -123,3 +111,23 @@ expected:
 | All original Registry sources in frontmatter | Original scope, ownership and handover guidance and prior review retained | 2026-10-22 |
 
 Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

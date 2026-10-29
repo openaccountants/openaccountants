@@ -4,7 +4,7 @@ description: "Use for Armenian 2026 pension social payments, military stamp and 
 version: 0.3
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

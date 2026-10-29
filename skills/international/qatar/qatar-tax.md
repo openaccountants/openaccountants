@@ -14,12 +14,12 @@ description: >
 version: 2.1
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-category: international
 ---
 
 # Qatar indirect-tax routing v2.1
@@ -159,6 +159,8 @@ Foreign VAT entitlement, excise and customs computations need their own country,
 product and period analysis and are outside this VAT-status scope.
 
 Source-cited draft for qualified professional review before filing or acting.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

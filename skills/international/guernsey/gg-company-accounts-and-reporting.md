@@ -2,41 +2,15 @@
 name: gg-company-accounts-and-reporting
 description: >
   Guernsey company accounting and reporting reference for ordinary local trading companies limited by shares. Covers transaction records, retention, annual accounts, financial periods, member circulation, audit-waiver timing and the separate annual validation. Includes December-incorporation and advance-waiver examples, a document workflow and explicit gaps for audit-excluded companies and specialised entities. Prepared for 2026 from Guernsey Registry primary guidance, including the current annual-validation page and directors handbook. Current consolidated accounts, validation and audit-waiver provisions and the audit-exclusion regulations were recovered and checked on 27 October 2026. Specialised entities and the detailed civil-penalty boundary rules remain outside the established ordinary methods; this draft requires professional review before reliance.
-jurisdiction: GG
-category: financial-statements
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.5
-verified_by: pending
-sources:
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0"
-    title: "Limited Companies civil penalties, July 2026"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0"
-    title: "Annual-validation civil penalties, July 2026"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/companyfees"
-    title: "Guernsey Registry: Limited Companies fee schedule, effective 1 December 2025"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0"
-    title: "Guernsey Registry: Guidance for directors of new local trading companies"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies"
-    title: "Guernsey Registry: Annual Validation - Companies"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/resolutions"
-    title: "Guernsey Registry: Resolutions and Waivers"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0"
-    title: "Guernsey Registry: Audit Exemption Waiver Resolutions"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0"
-    title: "Company annual validation questions and options: 2026 onwards"
-    as_of: "2026-10-22"
-  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0"
-    title: "Company Annual Validation Guidance: issued 4 December 2024"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: financial-statements
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey: company accounts, records and annual reporting
@@ -168,7 +142,6 @@ Check the six-year retention starting point, the financial-period length, the De
 
 General reference only. A qualified Guernsey professional must review the facts and current law before filing or relying on relief. This draft is not accountant-attested.
 
-
 ## Second recomputing control: separate fees
 
 For an established category-6 company filing one annual validation and one waiver resolution, the current Registry charges are £260 and £15, total **£275**. A category-5 company on the stated alternative facts pays £525 plus £15, total **£540**. No late penalty or professional fee is assumed and this does not establish audit-waiver eligibility. [Current fee schedule](https://www.guernseyregistry.com/companyfees).
@@ -197,3 +170,23 @@ expected:
 | Registry sources listed in frontmatter | Original guidance read and prior independent scoped reviews retained; current fee schedule rechecked | 2026-10-22; fees 2026-10-27 |
 
 Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

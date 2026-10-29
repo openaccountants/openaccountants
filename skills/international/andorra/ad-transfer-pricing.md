@@ -1,12 +1,15 @@
 ---
 name: ad-transfer-pricing
 description: "Andorra transfer pricing for resident companies, related individuals, group entities and permanent establishments in tax year 2026. Identifies the distinct ownership, family, director and control tests; builds a market-value working paper from actual transactions, comparables, functions, risks and evidence; reconciles services and related financing to the tax base. Covers financing deduction proof, advance-pricing applications, approval effects and annual agreement reporting, plus country-by-country group thresholds, notification, report contents, local filing and surrogate conditions. Includes current information sanctions and tax interest. Use for Andorra intercompany charges, shareholder loans, service allocations, pricing adjustments and CbCR questions. Actual treaty disputes and live exchange eligibility need the operative case-specific instruments."
-jurisdiction: AD
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-27
 version: 0.3
+jurisdiction: AD
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Andorra transfer pricing v0.3
@@ -164,3 +167,23 @@ Not yet confirmed: a universal minimum transaction threshold, fixed markup/inter
 [law]: https://www.portaljuridicandorra.ad/L2010095
 [reg]: https://www.portaljuridicandorra.ad/R20231229C
 [irnr]: https://www.portaljuridicandorra.ad/L2010094
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

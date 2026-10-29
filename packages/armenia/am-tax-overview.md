@@ -4,7 +4,7 @@ description: "Use as the 2026 Armenian country entry point for personal income t
 version: 0.3
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international

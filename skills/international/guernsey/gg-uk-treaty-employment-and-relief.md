@@ -2,47 +2,15 @@
 name: gg-uk-treaty-employment-and-relief
 description: >
   Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides, mutual-agreement time limits and the published arbitration procedure with an official status discrepancy. Includes domestic treaty-credit and unilateral-relief limits, claim periods and later tax adjustments, with checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
-jurisdiction: GG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: "1.3"
-verified_by: pending
-sources:
-  - url: "https://www.gov.uk/government/publications/double-taxation-treaty-relief-form-dt-individual"
-    title: "Currently published DT-Individual 10/22: ordinary UK pension relief submission, certification and PAYE adjustments"
-    as_of: "2026-10-28"
-  - url: "https://www.gov.uk/hmrc-internal-manuals/paye-manual/paye81010"
-    title: "HMRC PAYE81010, new claim form for every new income source"
-    as_of: "2026-10-28"
-  - url: "https://gov.gg/CHttpHandler.ashx?id=149847&p=0"
-    title: "Form 675 02/23, limited pre-2020 UK-resident Guernsey pension population"
-    as_of: "2026-10-28"
-  - url: "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819"
-    title: "Income Tax Law v.0113, sections 173 and 176: domestic credit, unilateral relief, claims and adjustments"
-    as_of: "2026-10-28"
-  - url: "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf"
-    title: "Guernsey Dispute Resolution Profile, updated 17 March 2025, questions 2, 5–12 and 16–17"
-    as_of: "2026-10-22"
-  - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/2021-uk-guernsey-exchange-of-letters-in-force"
-    title: "December 2021 exchange of letters: Article 27 effective 1 January 2022"
-    as_of: "2026-10-22"
-  - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement"
-    title: "UK–Guernsey arbitration memorandum: procedure and effective-date clause"
-    as_of: "2026-10-22"
-  - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
-    title: "HMRC DT8602 treaty summary, payment-category conditions"
-    as_of: "2026-10-22"
-  - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–14, 17–19, 21–28"
-    as_of: "2026-10-22"
-  - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
-    title: "HMRC Guernsey tax treaties, entry into force and effective dates"
-    as_of: "2026-10-22"
-  - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600"
-    title: "HMRC DT8600, Guernsey agreements in force"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey–UK: residence, employment, investment income and relief
@@ -322,7 +290,6 @@ Disputes about the claim's existence, validity or amount belong in the originati
 
 Paragraph 8 limits mandatory assistance, including incompatible administrative measures, public policy, failure to pursue all reasonable domestic collection/conservancy measures, clearly disproportionate burden, and taxes considered contrary to generally accepted taxation principles. Do not treat a foreign debt notice as proof that every condition is met. Retain the assessment, challenge/collection status and notices; current domestic enforcement procedure and case-specific authority decisions need separate legal review. [Article 27(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
-
 ## Penalties and interest
 
 No treaty penalty or interest rate is calculated here. Determine domestic late-return, late-payment and inaccurate-claim consequences separately. A treaty claim or mutual-agreement request is not assumed to suspend collection. Keep each territory's filing and payment calendar while seeking relief.
@@ -395,3 +362,23 @@ Additional source read on **28 October 2026**: [Revenue MAP Guidance issue8,12 F
 ## Disclaimer
 
 Source-cited draft. A qualified reviewer must establish the taxpayer's facts, domestic law and treaty entitlement before filing, paying or relying on relief.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

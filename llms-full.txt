@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,261 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,272 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2261 skills, 274 jurisdictions, 33 accountant-reviewed)
+## Skill inventory (2272 skills, 274 jurisdictions, 33 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -346,8 +346,10 @@ https://www.openaccountants.com
 - ad-company-formation | AD | tier 2 | reviewed_by -
 - ad-corporate-income-tax | AD | tier 2 | reviewed_by -
 - ad-income-tax | AD | tier 2 | reviewed_by -
+- ad-non-resident-income-tax | AD | tier 2 | reviewed_by -
 - ad-payroll-social | AD | tier 2 | reviewed_by -
 - ad-tax-overview | AD | tier 2 | reviewed_by -
+- ad-transfer-pricing | AD | tier 2 | reviewed_by -
 - andorra-igi | AD | tier 2 | reviewed_by -
 - ao-company-formation | AO | tier 2 | reviewed_by -
 - ao-corporate-income-tax | AO | tier 2 | reviewed_by -
@@ -1022,9 +1024,16 @@ https://www.openaccountants.com
 - guatemala-iva | GT | tier 2 | reviewed_by -
 - guatemala-payroll | GT | tier 2 | reviewed_by -
 - guatemala-social-contributions | GT | tier 2 | reviewed_by -
+- gg-company-accounts-and-reporting | GG | tier 2 | reviewed_by -
+- gg-company-formation | GG | tier 2 | reviewed_by -
 - gg-corporate-tax-substance | GG | tier 2 | reviewed_by -
+- gg-gst-transition | GG | tier 2 | reviewed_by -
 - gg-individual-income-tax | GG | tier 2 | reviewed_by -
 - gg-payroll-social-insurance | GG | tier 2 | reviewed_by -
+- gg-property-document-duty | GG | tier 2 | reviewed_by -
+- gg-secondary-pensions | GG | tier 2 | reviewed_by -
+- gg-transfer-pricing-and-connected-transactions | GG | tier 2 | reviewed_by -
+- gg-uk-treaty-employment-and-relief | GG | tier 2 | reviewed_by -
 - gw-company-formation | GW | tier 2 | reviewed_by -
 - gw-corporate-income-tax | GW | tier 2 | reviewed_by -
 - gw-income-tax | GW | tier 2 | reviewed_by -
@@ -1660,8 +1669,10 @@ https://www.openaccountants.com
 - pr-self-employment-tax-2025 | PR | tier 2 | reviewed_by -
 - qa-company-formation | QA | tier 2 | reviewed_by -
 - qa-corporate-income-tax | QA | tier 2 | reviewed_by -
+- qa-cross-border-tax | QA | tier 2 | reviewed_by -
 - qa-payroll-social | QA | tier 2 | reviewed_by -
 - qa-tax-overview | QA | tier 2 | reviewed_by -
+- qa-transfer-pricing | QA | tier 2 | reviewed_by -
 - qa-vat-gst | QA | tier 2 | reviewed_by -
 - qatar-tax | QA | tier 2 | reviewed_by -
 - cg-company-formation | CG | tier 2 | reviewed_by -

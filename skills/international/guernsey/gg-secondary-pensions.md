@@ -2,32 +2,15 @@
 name: gg-secondary-pensions
 description: >
   Prepare 2026 Guernsey secondary-pension enrolment and contribution working papers for employers. Covers designated and voluntary employees, phased employer start dates, minimum contributions, the earnings base, enrolment deferral, opt-outs, refunds, re-enrolment and quarterly reporting. Distinguishes payments to the pension provider from Revenue Service returns and social-insurance contributions. Use for workplace pension setup, payroll contribution calculations and compliance reviews. Based on official employer guidance checked in October 2026. Direct statutory reconciliation, detailed enforcement, scheme-specific conditions and independent review remain outstanding; this source-cited draft does not establish comprehensive payroll coverage or professional attestation.
-jurisdiction: GG
-category: payroll
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.2
-verified_by: pending
-sources:
-  - url: "https://gov.gg/secondary-pensions-employer-guidance"
-    title: "Employer scope and operative dates"
-    as_of: "2026-10-22"
-  - url: "https://gov.gg/article/196678/How-much-do-we-need-to-pay"
-    title: "Contributions and calculation"
-    as_of: "2026-10-22"
-  - url: "https://gov.gg/article/196666/What-do-we-need-to-do-Pension-scheme-not-included-in-contract-of-employment"
-    title: "Non-compulsory scheme employer duties"
-    as_of: "2026-10-22"
-  - url: "https://gov.gg/article/196679/Opting-in-and-out"
-    title: "Opting in and out"
-    as_of: "2026-10-22"
-  - url: "https://gov.gg/Secondary-Pensions"
-    title: "Secondary pensions reporting"
-    as_of: "2026-10-22"
-  - url: "https://gov.gg/CHttpHandler.ashx?id=102818&p=0"
-    title: "2026 contribution limits, pp19–20"
-    as_of: "2026-10-22"
+jurisdiction: GG
+tax_year: 2026
+last_updated: 2026-10-28
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: payroll
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Guernsey secondary pensions: enrolment, contributions and reporting
@@ -155,3 +138,23 @@ Not yet confirmed: full underlying-Law notice prerequisites, new-employer commen
 ## Disclaimer
 
 General working-paper reference only. A qualified professional must verify current law, scheme documents and the employee's facts before filing, paying or acting on this source-cited draft.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
